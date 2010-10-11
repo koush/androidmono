@@ -1,61 +1,55 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class FloatMath : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class FloatMath : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static FloatMath()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.FloatMath), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.FloatMath(@__env);
-			}
-		}
-		protected FloatMath(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected FloatMath(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sin8214;
+		internal static global::MonoJavaBridge.MethodId _sin8518;
 		public static float sin(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._sin8214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._sin8518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cos8215;
+		internal static global::MonoJavaBridge.MethodId _cos8519;
 		public static float cos(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._cos8215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._cos8519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sqrt8216;
+		internal static global::MonoJavaBridge.MethodId _sqrt8520;
 		public static float sqrt(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._sqrt8216, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._sqrt8520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ceil8217;
+		internal static global::MonoJavaBridge.MethodId _ceil8521;
 		public static float ceil(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._ceil8217, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._ceil8521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _floor8218;
+		internal static global::MonoJavaBridge.MethodId _floor8522;
 		public static float floor(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._floor8218, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticFloatMethod(android.util.FloatMath.staticClass, global::android.util.FloatMath._floor8522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.FloatMath.staticClass = @__class;
-			global::android.util.FloatMath._sin8214 = @__env.GetStaticMethodID(global::android.util.FloatMath.staticClass, "sin", "(F)F");
-			global::android.util.FloatMath._cos8215 = @__env.GetStaticMethodID(global::android.util.FloatMath.staticClass, "cos", "(F)F");
-			global::android.util.FloatMath._sqrt8216 = @__env.GetStaticMethodID(global::android.util.FloatMath.staticClass, "sqrt", "(F)F");
-			global::android.util.FloatMath._ceil8217 = @__env.GetStaticMethodID(global::android.util.FloatMath.staticClass, "ceil", "(F)F");
-			global::android.util.FloatMath._floor8218 = @__env.GetStaticMethodID(global::android.util.FloatMath.staticClass, "floor", "(F)F");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.FloatMath.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/FloatMath"));
+			global::android.util.FloatMath._sin8518 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "sin", "(F)F");
+			global::android.util.FloatMath._cos8519 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "cos", "(F)F");
+			global::android.util.FloatMath._sqrt8520 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "sqrt", "(F)F");
+			global::android.util.FloatMath._ceil8521 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "ceil", "(F)F");
+			global::android.util.FloatMath._floor8522 = @__env.GetStaticMethodIDNoThrow(global::android.util.FloatMath.staticClass, "floor", "(F)F");
 		}
 	}
 }

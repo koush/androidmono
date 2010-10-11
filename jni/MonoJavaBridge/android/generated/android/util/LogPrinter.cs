@@ -1,43 +1,38 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class LogPrinter : java.lang.Object, Printer
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class LogPrinter : java.lang.Object, Printer
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LogPrinter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.LogPrinter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.LogPrinter(@__env);
-			}
-		}
-		protected LogPrinter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected LogPrinter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _println8236;
+		internal static global::MonoJavaBridge.MethodId _println8540;
 		public virtual void println(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.LogPrinter._println8236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.LogPrinter._println8540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.LogPrinter.staticClass, global::android.util.LogPrinter._println8236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.LogPrinter.staticClass, global::android.util.LogPrinter._println8540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LogPrinter8237;
-		public LogPrinter(int arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LogPrinter8541;
+		public LogPrinter(int arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.LogPrinter.staticClass, global::android.util.LogPrinter._LogPrinter8237, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.LogPrinter.staticClass, global::android.util.LogPrinter._LogPrinter8541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.LogPrinter.staticClass = @__class;
-			global::android.util.LogPrinter._println8236 = @__env.GetMethodID(global::android.util.LogPrinter.staticClass, "println", "(Ljava/lang/String;)V");
-			global::android.util.LogPrinter._LogPrinter8237 = @__env.GetMethodID(global::android.util.LogPrinter.staticClass, "<init>", "(ILjava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.LogPrinter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/LogPrinter"));
+			global::android.util.LogPrinter._println8540 = @__env.GetMethodIDNoThrow(global::android.util.LogPrinter.staticClass, "println", "(Ljava/lang/String;)V");
+			global::android.util.LogPrinter._LogPrinter8541 = @__env.GetMethodIDNoThrow(global::android.util.LogPrinter.staticClass, "<init>", "(ILjava/lang/String;)V");
 		}
 	}
 }

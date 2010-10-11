@@ -1,46 +1,33 @@
 namespace android
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class Manifest : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class Manifest : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Manifest()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.Manifest), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.Manifest(@__env);
-			}
-		}
-		internal Manifest(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Manifest(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class permission : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class permission : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static permission()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.Manifest.permission), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.Manifest.permission(@__env);
-				}
-			}
-			internal permission(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal permission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _permission0;
-			public permission()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _permission0;
+			public permission()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.Manifest.permission.staticClass, global::android.Manifest.permission._permission0, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission.staticClass, global::android.Manifest.permission._permission0);
+				Init(@__env, handle);
 			}
 			public static global::java.lang.String ACCESS_CHECKIN_PROPERTIES
 			{
@@ -840,35 +827,30 @@ namespace android
 					return "android.permission.WRITE_SYNC_SETTINGS";
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.Manifest.permission.staticClass = @__class;
-				global::android.Manifest.permission._permission0 = @__env.GetMethodID(global::android.Manifest.permission.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.Manifest.permission.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest$permission"));
+				global::android.Manifest.permission._permission0 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class permission_group : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class permission_group : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static permission_group()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.Manifest.permission_group), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.Manifest.permission_group(@__env);
-				}
-			}
-			internal permission_group(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal permission_group(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _permission_group1;
-			public permission_group()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _permission_group1;
+			public permission_group()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.Manifest.permission_group.staticClass, global::android.Manifest.permission_group._permission_group1, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission_group.staticClass, global::android.Manifest.permission_group._permission_group1);
+				Init(@__env, handle);
 			}
 			public static global::java.lang.String ACCOUNTS
 			{
@@ -947,22 +929,25 @@ namespace android
 					return "android.permission-group.SYSTEM_TOOLS";
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.Manifest.permission_group.staticClass = @__class;
-				global::android.Manifest.permission_group._permission_group1 = @__env.GetMethodID(global::android.Manifest.permission_group.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.Manifest.permission_group.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest$permission_group"));
+				global::android.Manifest.permission_group._permission_group1 = @__env.GetMethodIDNoThrow(global::android.Manifest.permission_group.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Manifest2;
-		public Manifest()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Manifest2;
+		public Manifest()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.Manifest.staticClass, global::android.Manifest._Manifest2, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.staticClass, global::android.Manifest._Manifest2);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.Manifest.staticClass = @__class;
-			global::android.Manifest._Manifest2 = @__env.GetMethodID(global::android.Manifest.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.Manifest.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/Manifest"));
+			global::android.Manifest._Manifest2 = @__env.GetMethodIDNoThrow(global::android.Manifest.staticClass, "<init>", "()V");
 		}
 	}
 }

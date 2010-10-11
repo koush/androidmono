@@ -1,154 +1,148 @@
 namespace android.app.admin
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class DeviceAdminInfo : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class DeviceAdminInfo : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DeviceAdminInfo()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.admin.DeviceAdminInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.app.admin.DeviceAdminInfo(@__env);
-			}
-		}
-		internal DeviceAdminInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DeviceAdminInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString859;
+		internal static global::MonoJavaBridge.MethodId _toString871;
 		public sealed override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._toString859));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._toString871)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._toString859));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._toString871)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPackageName860;
+		internal static global::MonoJavaBridge.MethodId _getPackageName872;
 		public global::java.lang.String getPackageName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._getPackageName860));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._getPackageName872)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getPackageName860));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getPackageName872)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getComponent861;
+		internal static global::MonoJavaBridge.MethodId _getComponent873;
 		public global::android.content.ComponentName getComponent() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ComponentName>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._getComponent861));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._getComponent873)) as android.content.ComponentName;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ComponentName>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getComponent861));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getComponent873)) as android.content.ComponentName;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dump862;
+		internal static global::MonoJavaBridge.MethodId _dump874;
 		public void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DeviceAdminInfo._dump862, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._dump874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._dump862, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._dump874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel863;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel875;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DeviceAdminInfo._writeToParcel863, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._writeToParcel875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._writeToParcel863, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._writeToParcel875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents864;
+		internal static global::MonoJavaBridge.MethodId _describeContents876;
 		public int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.admin.DeviceAdminInfo._describeContents864);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._describeContents876);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._describeContents864);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._describeContents876);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getActivityInfo865;
+		internal static global::MonoJavaBridge.MethodId _getActivityInfo877;
 		public global::android.content.pm.ActivityInfo getActivityInfo() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.ActivityInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._getActivityInfo865));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._getActivityInfo877)) as android.content.pm.ActivityInfo;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.ActivityInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getActivityInfo865));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getActivityInfo877)) as android.content.pm.ActivityInfo;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadDescription866;
+		internal static global::MonoJavaBridge.MethodId _loadDescription878;
 		public global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._loadDescription866, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._loadDescription878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._loadDescription866, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._loadDescription878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadLabel867;
+		internal static global::MonoJavaBridge.MethodId _loadLabel879;
 		public global::java.lang.CharSequence loadLabel(android.content.pm.PackageManager arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._loadLabel867, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._loadLabel879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._loadLabel867, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._loadLabel879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadIcon868;
+		internal static global::MonoJavaBridge.MethodId _loadIcon880;
 		public global::android.graphics.drawable.Drawable loadIcon(android.content.pm.PackageManager arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._loadIcon868, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._loadIcon880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._loadIcon868, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._loadIcon880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isVisible869;
+		internal static global::MonoJavaBridge.MethodId _isVisible881;
 		public bool isVisible() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.app.admin.DeviceAdminInfo._isVisible869);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._isVisible881);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._isVisible869);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._isVisible881);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getReceiverName870;
+		internal static global::MonoJavaBridge.MethodId _getReceiverName882;
 		public global::java.lang.String getReceiverName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._getReceiverName870));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._getReceiverName882)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getReceiverName870));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getReceiverName882)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _usesPolicy871;
+		internal static global::MonoJavaBridge.MethodId _usesPolicy883;
 		public bool usesPolicy(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.app.admin.DeviceAdminInfo._usesPolicy871, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._usesPolicy883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._usesPolicy871, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._usesPolicy883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTagForPolicy872;
+		internal static global::MonoJavaBridge.MethodId _getTagForPolicy884;
 		public global::java.lang.String getTagForPolicy(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo._getTagForPolicy872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._getTagForPolicy884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getTagForPolicy872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getTagForPolicy884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DeviceAdminInfo873;
-		public DeviceAdminInfo(android.content.Context arg0, android.content.pm.ResolveInfo arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DeviceAdminInfo885;
+		public DeviceAdminInfo(android.content.Context arg0, android.content.pm.ResolveInfo arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._DeviceAdminInfo873, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._DeviceAdminInfo885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
 		public static int USES_POLICY_LIMIT_PASSWORD
 		{
@@ -185,7 +179,7 @@ namespace android.app.admin
 				return 4;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR874;
+		internal static global::MonoJavaBridge.FieldId _CREATOR886;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -193,24 +187,25 @@ namespace android.app.admin
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.app.admin.DeviceAdminInfo.staticClass = @__class;
-			global::android.app.admin.DeviceAdminInfo._toString859 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.app.admin.DeviceAdminInfo._getPackageName860 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "getPackageName", "()Ljava/lang/String;");
-			global::android.app.admin.DeviceAdminInfo._getComponent861 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "getComponent", "()Landroid/content/ComponentName;");
-			global::android.app.admin.DeviceAdminInfo._dump862 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::android.app.admin.DeviceAdminInfo._writeToParcel863 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.app.admin.DeviceAdminInfo._describeContents864 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "describeContents", "()I");
-			global::android.app.admin.DeviceAdminInfo._getActivityInfo865 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "getActivityInfo", "()Landroid/content/pm/ActivityInfo;");
-			global::android.app.admin.DeviceAdminInfo._loadDescription866 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			global::android.app.admin.DeviceAdminInfo._loadLabel867 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			global::android.app.admin.DeviceAdminInfo._loadIcon868 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "loadIcon", "(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;");
-			global::android.app.admin.DeviceAdminInfo._isVisible869 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "isVisible", "()Z");
-			global::android.app.admin.DeviceAdminInfo._getReceiverName870 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "getReceiverName", "()Ljava/lang/String;");
-			global::android.app.admin.DeviceAdminInfo._usesPolicy871 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "usesPolicy", "(I)Z");
-			global::android.app.admin.DeviceAdminInfo._getTagForPolicy872 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "getTagForPolicy", "(I)Ljava/lang/String;");
-			global::android.app.admin.DeviceAdminInfo._DeviceAdminInfo873 = @__env.GetMethodID(global::android.app.admin.DeviceAdminInfo.staticClass, "<init>", "(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.app.admin.DeviceAdminInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DeviceAdminInfo"));
+			global::android.app.admin.DeviceAdminInfo._toString871 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.app.admin.DeviceAdminInfo._getPackageName872 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "getPackageName", "()Ljava/lang/String;");
+			global::android.app.admin.DeviceAdminInfo._getComponent873 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "getComponent", "()Landroid/content/ComponentName;");
+			global::android.app.admin.DeviceAdminInfo._dump874 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
+			global::android.app.admin.DeviceAdminInfo._writeToParcel875 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.app.admin.DeviceAdminInfo._describeContents876 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "describeContents", "()I");
+			global::android.app.admin.DeviceAdminInfo._getActivityInfo877 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "getActivityInfo", "()Landroid/content/pm/ActivityInfo;");
+			global::android.app.admin.DeviceAdminInfo._loadDescription878 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
+			global::android.app.admin.DeviceAdminInfo._loadLabel879 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
+			global::android.app.admin.DeviceAdminInfo._loadIcon880 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "loadIcon", "(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;");
+			global::android.app.admin.DeviceAdminInfo._isVisible881 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "isVisible", "()Z");
+			global::android.app.admin.DeviceAdminInfo._getReceiverName882 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "getReceiverName", "()Ljava/lang/String;");
+			global::android.app.admin.DeviceAdminInfo._usesPolicy883 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "usesPolicy", "(I)Z");
+			global::android.app.admin.DeviceAdminInfo._getTagForPolicy884 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "getTagForPolicy", "(I)Ljava/lang/String;");
+			global::android.app.admin.DeviceAdminInfo._DeviceAdminInfo885 = @__env.GetMethodIDNoThrow(global::android.app.admin.DeviceAdminInfo.staticClass, "<init>", "(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V");
 		}
 	}
 }

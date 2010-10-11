@@ -1,43 +1,38 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class MutableContextWrapper : android.content.ContextWrapper
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MutableContextWrapper : android.content.ContextWrapper
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static MutableContextWrapper()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.MutableContextWrapper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.MutableContextWrapper(@__env);
-			}
-		}
-		protected MutableContextWrapper(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected MutableContextWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setBaseContext1634;
+		internal static global::MonoJavaBridge.MethodId _setBaseContext1728;
 		public virtual void setBaseContext(android.content.Context arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.MutableContextWrapper._setBaseContext1634, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.MutableContextWrapper._setBaseContext1728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._setBaseContext1634, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._setBaseContext1728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MutableContextWrapper1635;
-		public MutableContextWrapper(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _MutableContextWrapper1729;
+		public MutableContextWrapper(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._MutableContextWrapper1635, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._MutableContextWrapper1729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.MutableContextWrapper.staticClass = @__class;
-			global::android.content.MutableContextWrapper._setBaseContext1634 = @__env.GetMethodID(global::android.content.MutableContextWrapper.staticClass, "setBaseContext", "(Landroid/content/Context;)V");
-			global::android.content.MutableContextWrapper._MutableContextWrapper1635 = @__env.GetMethodID(global::android.content.MutableContextWrapper.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.MutableContextWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/MutableContextWrapper"));
+			global::android.content.MutableContextWrapper._setBaseContext1728 = @__env.GetMethodIDNoThrow(global::android.content.MutableContextWrapper.staticClass, "setBaseContext", "(Landroid/content/Context;)V");
+			global::android.content.MutableContextWrapper._MutableContextWrapper1729 = @__env.GetMethodIDNoThrow(global::android.content.MutableContextWrapper.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

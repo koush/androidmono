@@ -1,47 +1,44 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AndroidException : java.lang.Exception
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AndroidException : java.lang.Exception
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AndroidException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.AndroidException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.AndroidException(@__env);
-			}
-		}
-		protected AndroidException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AndroidException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AndroidException8133;
-		public AndroidException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AndroidException8437;
+		public AndroidException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.AndroidException.staticClass, global::android.util.AndroidException._AndroidException8133, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.AndroidException.staticClass, global::android.util.AndroidException._AndroidException8437);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AndroidException8134;
-		public AndroidException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AndroidException8438;
+		public AndroidException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.AndroidException.staticClass, global::android.util.AndroidException._AndroidException8134, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.AndroidException.staticClass, global::android.util.AndroidException._AndroidException8438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AndroidException8135;
-		public AndroidException(java.lang.Exception arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AndroidException8439;
+		public AndroidException(java.lang.Exception arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.AndroidException.staticClass, global::android.util.AndroidException._AndroidException8135, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.AndroidException.staticClass, global::android.util.AndroidException._AndroidException8439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.AndroidException.staticClass = @__class;
-			global::android.util.AndroidException._AndroidException8133 = @__env.GetMethodID(global::android.util.AndroidException.staticClass, "<init>", "()V");
-			global::android.util.AndroidException._AndroidException8134 = @__env.GetMethodID(global::android.util.AndroidException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.util.AndroidException._AndroidException8135 = @__env.GetMethodID(global::android.util.AndroidException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.AndroidException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/AndroidException"));
+			global::android.util.AndroidException._AndroidException8437 = @__env.GetMethodIDNoThrow(global::android.util.AndroidException.staticClass, "<init>", "()V");
+			global::android.util.AndroidException._AndroidException8438 = @__env.GetMethodIDNoThrow(global::android.util.AndroidException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.util.AndroidException._AndroidException8439 = @__env.GetMethodIDNoThrow(global::android.util.AndroidException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
 		}
 	}
 }

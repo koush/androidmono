@@ -1,40 +1,36 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class LinearGradient : android.graphics.Shader
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class LinearGradient : android.graphics.Shader
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LinearGradient()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.LinearGradient), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.LinearGradient(@__env);
-			}
-		}
-		protected LinearGradient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected LinearGradient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LinearGradient3155;
-		public LinearGradient(float arg0, float arg1, float arg2, float arg3, int[] arg4, float[] arg5, android.graphics.Shader.TileMode arg6)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LinearGradient3334;
+		public LinearGradient(float arg0, float arg1, float arg2, float arg3, int[] arg4, float[] arg5, android.graphics.Shader.TileMode arg6)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.LinearGradient.staticClass, global::android.graphics.LinearGradient._LinearGradient3155, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.LinearGradient.staticClass, global::android.graphics.LinearGradient._LinearGradient3334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LinearGradient3156;
-		public LinearGradient(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, android.graphics.Shader.TileMode arg6)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LinearGradient3335;
+		public LinearGradient(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, android.graphics.Shader.TileMode arg6)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.LinearGradient.staticClass, global::android.graphics.LinearGradient._LinearGradient3156, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.LinearGradient.staticClass, global::android.graphics.LinearGradient._LinearGradient3335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.LinearGradient.staticClass = @__class;
-			global::android.graphics.LinearGradient._LinearGradient3155 = @__env.GetMethodID(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFF[I[FLandroid/graphics/Shader$TileMode;)V");
-			global::android.graphics.LinearGradient._LinearGradient3156 = @__env.GetMethodID(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFFIILandroid/graphics/Shader$TileMode;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.LinearGradient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/LinearGradient"));
+			global::android.graphics.LinearGradient._LinearGradient3334 = @__env.GetMethodIDNoThrow(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFF[I[FLandroid/graphics/Shader$TileMode;)V");
+			global::android.graphics.LinearGradient._LinearGradient3335 = @__env.GetMethodIDNoThrow(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFFIILandroid/graphics/Shader$TileMode;)V");
 		}
 	}
 }

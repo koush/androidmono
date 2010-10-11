@@ -1,51 +1,47 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class TextPaint : android.graphics.Paint
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class TextPaint : android.graphics.Paint
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TextPaint()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.TextPaint), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.TextPaint(@__env);
-			}
-		}
-		protected TextPaint(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected TextPaint(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set7598;
+		internal static global::MonoJavaBridge.MethodId _set7890;
 		public virtual void set(android.text.TextPaint arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.TextPaint._set7598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.TextPaint._set7890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.TextPaint.staticClass, global::android.text.TextPaint._set7598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextPaint.staticClass, global::android.text.TextPaint._set7890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextPaint7599;
-		public TextPaint()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TextPaint7891;
+		public TextPaint()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint7599, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint7891);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextPaint7600;
-		public TextPaint(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TextPaint7892;
+		public TextPaint(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint7600, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint7892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextPaint7601;
-		public TextPaint(android.graphics.Paint arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TextPaint7893;
+		public TextPaint(android.graphics.Paint arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint7601, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint7893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _bgColor7602;
+		internal static global::MonoJavaBridge.FieldId _bgColor7894;
 		public int bgColor
 		{
 			get
@@ -56,7 +52,7 @@ namespace android.text
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _baselineShift7603;
+		internal static global::MonoJavaBridge.FieldId _baselineShift7895;
 		public int baselineShift
 		{
 			get
@@ -67,7 +63,7 @@ namespace android.text
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _linkColor7604;
+		internal static global::MonoJavaBridge.FieldId _linkColor7896;
 		public int linkColor
 		{
 			get
@@ -78,7 +74,7 @@ namespace android.text
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _drawableState7605;
+		internal static global::MonoJavaBridge.FieldId _drawableState7897;
 		public int[] drawableState
 		{
 			get
@@ -89,7 +85,7 @@ namespace android.text
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _density7606;
+		internal static global::MonoJavaBridge.FieldId _density7898;
 		public float density
 		{
 			get
@@ -100,13 +96,14 @@ namespace android.text
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.TextPaint.staticClass = @__class;
-			global::android.text.TextPaint._set7598 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "set", "(Landroid/text/TextPaint;)V");
-			global::android.text.TextPaint._TextPaint7599 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "()V");
-			global::android.text.TextPaint._TextPaint7600 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "(I)V");
-			global::android.text.TextPaint._TextPaint7601 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "(Landroid/graphics/Paint;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.TextPaint.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/TextPaint"));
+			global::android.text.TextPaint._set7890 = @__env.GetMethodIDNoThrow(global::android.text.TextPaint.staticClass, "set", "(Landroid/text/TextPaint;)V");
+			global::android.text.TextPaint._TextPaint7891 = @__env.GetMethodIDNoThrow(global::android.text.TextPaint.staticClass, "<init>", "()V");
+			global::android.text.TextPaint._TextPaint7892 = @__env.GetMethodIDNoThrow(global::android.text.TextPaint.staticClass, "<init>", "(I)V");
+			global::android.text.TextPaint._TextPaint7893 = @__env.GetMethodIDNoThrow(global::android.text.TextPaint.staticClass, "<init>", "(Landroid/graphics/Paint;)V");
 		}
 	}
 }

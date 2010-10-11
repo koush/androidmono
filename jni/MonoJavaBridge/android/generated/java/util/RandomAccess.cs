@@ -1,39 +1,25 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface RandomAccess 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.RandomAccess_))]
+	public interface RandomAccess  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class RandomAccess_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.RandomAccess))]
+	public sealed partial class RandomAccess_ : java.lang.Object, RandomAccess
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static RandomAccess_()
 		{
-			get { return __RandomAccess.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __RandomAccess : java.lang.Object, RandomAccess
-	{
-		internal static global::java.lang.Class staticClass;
-		static __RandomAccess()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__RandomAccess), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.__RandomAccess(@__env);
-			}
-		}
-		internal __RandomAccess(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal RandomAccess_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.__RandomAccess.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.RandomAccess_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/RandomAccess"));
 		}
 	}
 }

@@ -1,28 +1,22 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class Config : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class Config : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Config()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.Config), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.Config(@__env);
-			}
-		}
-		internal Config(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Config(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Config8181;
-		public Config()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Config8485;
+		public Config()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.Config.staticClass, global::android.util.Config._Config8181, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Config.staticClass, global::android.util.Config._Config8485);
+			Init(@__env, handle);
 		}
 		public static bool DEBUG
 		{
@@ -59,10 +53,11 @@ namespace android.util
 				return true;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.Config.staticClass = @__class;
-			global::android.util.Config._Config8181 = @__env.GetMethodID(global::android.util.Config.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.Config.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Config"));
+			global::android.util.Config._Config8485 = @__env.GetMethodIDNoThrow(global::android.util.Config.staticClass, "<init>", "()V");
 		}
 	}
 }

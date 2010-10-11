@@ -1,50 +1,36 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DialogInterface_OnCancelListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnCancelListener_))]
+	public interface DialogInterface_OnCancelListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onCancel(android.content.DialogInterface arg0);
 	}
 
-	public partial class DialogInterface_OnCancelListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.DialogInterface_OnCancelListener))]
+	public sealed partial class DialogInterface_OnCancelListener_ : java.lang.Object, DialogInterface_OnCancelListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DialogInterface_OnCancelListener_()
 		{
-			get { return __DialogInterface_OnCancelListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DialogInterface_OnCancelListener : java.lang.Object, DialogInterface_OnCancelListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DialogInterface_OnCancelListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface_OnCancelListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__DialogInterface_OnCancelListener(@__env);
-			}
-		}
-		internal __DialogInterface_OnCancelListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DialogInterface_OnCancelListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCancel1415;
+		internal static global::MonoJavaBridge.MethodId _onCancel1509;
 		 void android.content.DialogInterface_OnCancelListener.onCancel(android.content.DialogInterface arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener._onCancel1415, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnCancelListener_._onCancel1509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener.staticClass, global::android.content.__DialogInterface_OnCancelListener._onCancel1415, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnCancelListener_.staticClass, global::android.content.DialogInterface_OnCancelListener_._onCancel1509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__DialogInterface_OnCancelListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnCancelListener._onCancel1415 = @__env.GetMethodID(global::android.content.__DialogInterface_OnCancelListener.staticClass, "android.content.DialogInterface_OnCancelListener.onCancel", "(Landroid/content/DialogInterface;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.DialogInterface_OnCancelListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnCancelListener"));
+			global::android.content.DialogInterface_OnCancelListener_._onCancel1509 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnCancelListener_.staticClass, "onCancel", "(Landroid/content/DialogInterface;)V");
 		}
 	}
 }

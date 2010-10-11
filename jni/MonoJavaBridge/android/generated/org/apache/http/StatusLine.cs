@@ -1,72 +1,58 @@
 namespace org.apache.http
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface StatusLine 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.StatusLine_))]
+	public interface StatusLine  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.ProtocolVersion getProtocolVersion();
 		int getStatusCode();
 		global::java.lang.String getReasonPhrase();
 	}
 
-	public partial class StatusLine_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.StatusLine))]
+	public sealed partial class StatusLine_ : java.lang.Object, StatusLine
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static StatusLine_()
 		{
-			get { return __StatusLine.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __StatusLine : java.lang.Object, StatusLine
-	{
-		internal static global::java.lang.Class staticClass;
-		static __StatusLine()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.__StatusLine), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.__StatusLine(@__env);
-			}
-		}
-		internal __StatusLine(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal StatusLine_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProtocolVersion14365;
+		internal static global::MonoJavaBridge.MethodId _getProtocolVersion16280;
 		 global::org.apache.http.ProtocolVersion org.apache.http.StatusLine.getProtocolVersion() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.apache.http.ProtocolVersion>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__StatusLine._getProtocolVersion14365));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getProtocolVersion16280)) as org.apache.http.ProtocolVersion;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.apache.http.ProtocolVersion>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__StatusLine.staticClass, global::org.apache.http.__StatusLine._getProtocolVersion14365));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getProtocolVersion16280)) as org.apache.http.ProtocolVersion;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getStatusCode14366;
+		internal static global::MonoJavaBridge.MethodId _getStatusCode16281;
 		 int org.apache.http.StatusLine.getStatusCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.__StatusLine._getStatusCode14366);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getStatusCode16281);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.__StatusLine.staticClass, global::org.apache.http.__StatusLine._getStatusCode14366);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getStatusCode16281);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getReasonPhrase14367;
+		internal static global::MonoJavaBridge.MethodId _getReasonPhrase16282;
 		 global::java.lang.String org.apache.http.StatusLine.getReasonPhrase() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__StatusLine._getReasonPhrase14367));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_._getReasonPhrase16282)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__StatusLine.staticClass, global::org.apache.http.__StatusLine._getReasonPhrase14367));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getReasonPhrase16282)) as java.lang.String;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.__StatusLine.staticClass = @__class;
-			global::org.apache.http.__StatusLine._getProtocolVersion14365 = @__env.GetMethodID(global::org.apache.http.__StatusLine.staticClass, "org.apache.http.StatusLine.getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
-			global::org.apache.http.__StatusLine._getStatusCode14366 = @__env.GetMethodID(global::org.apache.http.__StatusLine.staticClass, "org.apache.http.StatusLine.getStatusCode", "()I");
-			global::org.apache.http.__StatusLine._getReasonPhrase14367 = @__env.GetMethodID(global::org.apache.http.__StatusLine.staticClass, "org.apache.http.StatusLine.getReasonPhrase", "()Ljava/lang/String;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.StatusLine_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/StatusLine"));
+			global::org.apache.http.StatusLine_._getProtocolVersion16280 = @__env.GetMethodIDNoThrow(global::org.apache.http.StatusLine_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
+			global::org.apache.http.StatusLine_._getStatusCode16281 = @__env.GetMethodIDNoThrow(global::org.apache.http.StatusLine_.staticClass, "getStatusCode", "()I");
+			global::org.apache.http.StatusLine_._getReasonPhrase16282 = @__env.GetMethodIDNoThrow(global::org.apache.http.StatusLine_.staticClass, "getReasonPhrase", "()Ljava/lang/String;");
 		}
 	}
 }

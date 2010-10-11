@@ -1,24 +1,17 @@
 namespace android.gesture
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class OrientedBoundingBox : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class OrientedBoundingBox : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static OrientedBoundingBox()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.gesture.OrientedBoundingBox), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.gesture.OrientedBoundingBox(@__env);
-			}
-		}
-		protected OrientedBoundingBox(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected OrientedBoundingBox(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _squareness2889;
+		internal static global::MonoJavaBridge.FieldId _squareness3063;
 		public float squareness
 		{
 			get
@@ -26,7 +19,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _width2890;
+		internal static global::MonoJavaBridge.FieldId _width3064;
 		public float width
 		{
 			get
@@ -34,7 +27,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _height2891;
+		internal static global::MonoJavaBridge.FieldId _height3065;
 		public float height
 		{
 			get
@@ -42,7 +35,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _orientation2892;
+		internal static global::MonoJavaBridge.FieldId _orientation3066;
 		public float orientation
 		{
 			get
@@ -50,7 +43,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _centerX2893;
+		internal static global::MonoJavaBridge.FieldId _centerX3067;
 		public float centerX
 		{
 			get
@@ -58,7 +51,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _centerY2894;
+		internal static global::MonoJavaBridge.FieldId _centerY3068;
 		public float centerY
 		{
 			get
@@ -66,9 +59,10 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.gesture.OrientedBoundingBox.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.gesture.OrientedBoundingBox.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/OrientedBoundingBox"));
 		}
 	}
 }

@@ -1,64 +1,62 @@
 namespace android.view.animation
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AnticipateOvershootInterpolator : java.lang.Object, Interpolator
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AnticipateOvershootInterpolator : java.lang.Object, Interpolator
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AnticipateOvershootInterpolator()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.AnticipateOvershootInterpolator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.animation.AnticipateOvershootInterpolator(@__env);
-			}
-		}
-		protected AnticipateOvershootInterpolator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AnticipateOvershootInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation9636;
+		internal static global::MonoJavaBridge.MethodId _getInterpolation9983;
 		public virtual float getInterpolation(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation9636, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation9983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation9636, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation9983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AnticipateOvershootInterpolator9637;
-		public AnticipateOvershootInterpolator()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AnticipateOvershootInterpolator9984;
+		public AnticipateOvershootInterpolator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9637, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9984);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AnticipateOvershootInterpolator9638;
-		public AnticipateOvershootInterpolator(float arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AnticipateOvershootInterpolator9985;
+		public AnticipateOvershootInterpolator(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9638, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AnticipateOvershootInterpolator9639;
-		public AnticipateOvershootInterpolator(float arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AnticipateOvershootInterpolator9986;
+		public AnticipateOvershootInterpolator(float arg0, float arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9639, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AnticipateOvershootInterpolator9640;
-		public AnticipateOvershootInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AnticipateOvershootInterpolator9987;
+		public AnticipateOvershootInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9640, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AnticipateOvershootInterpolator.staticClass, global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.animation.AnticipateOvershootInterpolator.staticClass = @__class;
-			global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation9636 = @__env.GetMethodID(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "getInterpolation", "(F)F");
-			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9637 = @__env.GetMethodID(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "()V");
-			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9638 = @__env.GetMethodID(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "(F)V");
-			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9639 = @__env.GetMethodID(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "(FF)V");
-			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9640 = @__env.GetMethodID(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.animation.AnticipateOvershootInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/AnticipateOvershootInterpolator"));
+			global::android.view.animation.AnticipateOvershootInterpolator._getInterpolation9983 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9984 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "()V");
+			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9985 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "(F)V");
+			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9986 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "(FF)V");
+			global::android.view.animation.AnticipateOvershootInterpolator._AnticipateOvershootInterpolator9987 = @__env.GetMethodIDNoThrow(global::android.view.animation.AnticipateOvershootInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

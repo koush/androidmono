@@ -1,33 +1,28 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class BitmapShader : android.graphics.Shader
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class BitmapShader : android.graphics.Shader
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static BitmapShader()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.BitmapShader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.BitmapShader(@__env);
-			}
-		}
-		protected BitmapShader(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected BitmapShader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BitmapShader2981;
-		public BitmapShader(android.graphics.Bitmap arg0, android.graphics.Shader.TileMode arg1, android.graphics.Shader.TileMode arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BitmapShader3155;
+		public BitmapShader(android.graphics.Bitmap arg0, android.graphics.Shader.TileMode arg1, android.graphics.Shader.TileMode arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.BitmapShader.staticClass, global::android.graphics.BitmapShader._BitmapShader2981, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.BitmapShader.staticClass, global::android.graphics.BitmapShader._BitmapShader3155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.BitmapShader.staticClass = @__class;
-			global::android.graphics.BitmapShader._BitmapShader2981 = @__env.GetMethodID(global::android.graphics.BitmapShader.staticClass, "<init>", "(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.BitmapShader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/BitmapShader"));
+			global::android.graphics.BitmapShader._BitmapShader3155 = @__env.GetMethodIDNoThrow(global::android.graphics.BitmapShader.staticClass, "<init>", "(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V");
 		}
 	}
 }

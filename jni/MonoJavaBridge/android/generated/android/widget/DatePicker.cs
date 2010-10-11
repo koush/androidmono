@@ -1,184 +1,167 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class DatePicker : android.widget.FrameLayout
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DatePicker : android.widget.FrameLayout
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DatePicker()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.DatePicker), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.DatePicker(@__env);
-			}
-		}
-		protected DatePicker(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected DatePicker(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnDateChangedListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.DatePicker.OnDateChangedListener_))]
+		public interface OnDateChangedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onDateChanged(android.widget.DatePicker arg0, int arg1, int arg2, int arg3);
 		}
 
-		public partial class OnDateChangedListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.DatePicker.OnDateChangedListener))]
+		public sealed partial class OnDateChangedListener_ : java.lang.Object, OnDateChangedListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnDateChangedListener_()
 			{
-				get { return __OnDateChangedListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnDateChangedListener : java.lang.Object, OnDateChangedListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnDateChangedListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.DatePicker.__OnDateChangedListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.widget.DatePicker.__OnDateChangedListener(@__env);
-				}
-			}
-			internal __OnDateChangedListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnDateChangedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onDateChanged10786;
+			internal static global::MonoJavaBridge.MethodId _onDateChanged11163;
 			 void android.widget.DatePicker.OnDateChangedListener.onDateChanged(android.widget.DatePicker arg0, int arg1, int arg2, int arg3) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.DatePicker.__OnDateChangedListener._onDateChanged10786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DatePicker.OnDateChangedListener_._onDateChanged11163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.__OnDateChangedListener.staticClass, global::android.widget.DatePicker.__OnDateChangedListener._onDateChanged10786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.OnDateChangedListener_.staticClass, global::android.widget.DatePicker.OnDateChangedListener_._onDateChanged11163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.widget.DatePicker.__OnDateChangedListener.staticClass = @__class;
-				global::android.widget.DatePicker.__OnDateChangedListener._onDateChanged10786 = @__env.GetMethodID(global::android.widget.DatePicker.__OnDateChangedListener.staticClass, "android.widget.DatePicker.OnDateChangedListener.onDateChanged", "(Landroid/widget/DatePicker;III)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.DatePicker.OnDateChangedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DatePicker$OnDateChangedListener"));
+				global::android.widget.DatePicker.OnDateChangedListener_._onDateChanged11163 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.OnDateChangedListener_.staticClass, "onDateChanged", "(Landroid/widget/DatePicker;III)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _init10787;
+		internal static global::MonoJavaBridge.MethodId _init11164;
 		public virtual void init(int arg0, int arg1, int arg2, android.widget.DatePicker.OnDateChangedListener arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DatePicker._init10787, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DatePicker._init11164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._init10787, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._init11164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYear10788;
+		internal static global::MonoJavaBridge.MethodId _getYear11165;
 		public virtual int getYear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.DatePicker._getYear10788);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.DatePicker._getYear11165);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getYear10788);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getYear11165);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMonth10789;
+		internal static global::MonoJavaBridge.MethodId _getMonth11166;
 		public virtual int getMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.DatePicker._getMonth10789);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.DatePicker._getMonth11166);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getMonth10789);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getMonth11166);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDayOfMonth10790;
+		internal static global::MonoJavaBridge.MethodId _getDayOfMonth11167;
 		public virtual int getDayOfMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.DatePicker._getDayOfMonth10790);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.DatePicker._getDayOfMonth11167);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getDayOfMonth10790);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getDayOfMonth11167);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEnabled10791;
+		internal static global::MonoJavaBridge.MethodId _setEnabled11168;
 		public override void setEnabled(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DatePicker._setEnabled10791, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DatePicker._setEnabled11168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._setEnabled10791, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._setEnabled11168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState10792;
+		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState11169;
 		protected override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DatePicker._onRestoreInstanceState10792, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DatePicker._onRestoreInstanceState11169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._onRestoreInstanceState10792, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._onRestoreInstanceState11169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState10793;
+		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState11170;
 		protected override global::android.os.Parcelable onSaveInstanceState() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.DatePicker._onSaveInstanceState10793));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.DatePicker._onSaveInstanceState11170)) as android.os.Parcelable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._onSaveInstanceState10793));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._onSaveInstanceState11170)) as android.os.Parcelable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchRestoreInstanceState10794;
+		internal static global::MonoJavaBridge.MethodId _dispatchRestoreInstanceState11171;
 		protected override void dispatchRestoreInstanceState(android.util.SparseArray arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DatePicker._dispatchRestoreInstanceState10794, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DatePicker._dispatchRestoreInstanceState11171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._dispatchRestoreInstanceState10794, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._dispatchRestoreInstanceState11171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateDate10795;
+		internal static global::MonoJavaBridge.MethodId _updateDate11172;
 		public virtual void updateDate(int arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DatePicker._updateDate10795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DatePicker._updateDate11172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._updateDate10795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._updateDate11172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DatePicker10796;
-		public DatePicker(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DatePicker11173;
+		public DatePicker(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker10796, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker11173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DatePicker10797;
-		public DatePicker(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DatePicker11174;
+		public DatePicker(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker10797, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker11174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DatePicker10798;
-		public DatePicker(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DatePicker11175;
+		public DatePicker(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker10798, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DatePicker.staticClass, global::android.widget.DatePicker._DatePicker11175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.DatePicker.staticClass = @__class;
-			global::android.widget.DatePicker._init10787 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "init", "(IIILandroid/widget/DatePicker$OnDateChangedListener;)V");
-			global::android.widget.DatePicker._getYear10788 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "getYear", "()I");
-			global::android.widget.DatePicker._getMonth10789 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "getMonth", "()I");
-			global::android.widget.DatePicker._getDayOfMonth10790 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "getDayOfMonth", "()I");
-			global::android.widget.DatePicker._setEnabled10791 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "setEnabled", "(Z)V");
-			global::android.widget.DatePicker._onRestoreInstanceState10792 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V");
-			global::android.widget.DatePicker._onSaveInstanceState10793 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;");
-			global::android.widget.DatePicker._dispatchRestoreInstanceState10794 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "dispatchRestoreInstanceState", "(Landroid/util/SparseArray;)V");
-			global::android.widget.DatePicker._updateDate10795 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "updateDate", "(III)V");
-			global::android.widget.DatePicker._DatePicker10796 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.DatePicker._DatePicker10797 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::android.widget.DatePicker._DatePicker10798 = @__env.GetMethodID(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.DatePicker.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DatePicker"));
+			global::android.widget.DatePicker._init11164 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "init", "(IIILandroid/widget/DatePicker$OnDateChangedListener;)V");
+			global::android.widget.DatePicker._getYear11165 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "getYear", "()I");
+			global::android.widget.DatePicker._getMonth11166 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "getMonth", "()I");
+			global::android.widget.DatePicker._getDayOfMonth11167 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "getDayOfMonth", "()I");
+			global::android.widget.DatePicker._setEnabled11168 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "setEnabled", "(Z)V");
+			global::android.widget.DatePicker._onRestoreInstanceState11169 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V");
+			global::android.widget.DatePicker._onSaveInstanceState11170 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;");
+			global::android.widget.DatePicker._dispatchRestoreInstanceState11171 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "dispatchRestoreInstanceState", "(Landroid/util/SparseArray;)V");
+			global::android.widget.DatePicker._updateDate11172 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "updateDate", "(III)V");
+			global::android.widget.DatePicker._DatePicker11173 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.DatePicker._DatePicker11174 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.DatePicker._DatePicker11175 = @__env.GetMethodIDNoThrow(global::android.widget.DatePicker.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

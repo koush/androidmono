@@ -1,6 +1,6 @@
 namespace java.security
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Key_))]
 	public interface Key : java.io.Serializable
 	{
 		byte[] getEncoded();
@@ -8,64 +8,51 @@ namespace java.security
 		global::java.lang.String getFormat();
 	}
 
-	public partial class Key_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Key))]
+	public sealed partial class Key_ : java.lang.Object, Key
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Key_()
 		{
-			get { return __Key.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Key : java.lang.Object, Key
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Key()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.__Key), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.__Key(@__env);
-			}
-		}
-		internal __Key(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Key_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEncoded13166;
+		internal static global::MonoJavaBridge.MethodId _getEncoded14778;
 		 byte[] java.security.Key.getEncoded() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getEncoded13166));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Key_._getEncoded14778)) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getEncoded13166));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Key_.staticClass, global::java.security.Key_._getEncoded14778)) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlgorithm13167;
+		internal static global::MonoJavaBridge.MethodId _getAlgorithm14779;
 		 global::java.lang.String java.security.Key.getAlgorithm() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getAlgorithm13167));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Key_._getAlgorithm14779)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getAlgorithm13167));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Key_.staticClass, global::java.security.Key_._getAlgorithm14779)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFormat13168;
+		internal static global::MonoJavaBridge.MethodId _getFormat14780;
 		 global::java.lang.String java.security.Key.getFormat() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getFormat13168));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Key_._getFormat14780)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getFormat13168));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Key_.staticClass, global::java.security.Key_._getFormat14780)) as java.lang.String;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.__Key.staticClass = @__class;
-			global::java.security.__Key._getEncoded13166 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getEncoded", "()[B");
-			global::java.security.__Key._getAlgorithm13167 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.__Key._getFormat13168 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getFormat", "()Ljava/lang/String;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.Key_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Key"));
+			global::java.security.Key_._getEncoded14778 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getEncoded", "()[B");
+			global::java.security.Key_._getAlgorithm14779 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getAlgorithm", "()Ljava/lang/String;");
+			global::java.security.Key_._getFormat14780 = @__env.GetMethodIDNoThrow(global::java.security.Key_.staticClass, "getFormat", "()Ljava/lang/String;");
 		}
 	}
 }

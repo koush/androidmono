@@ -1,90 +1,86 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SuperscriptSpan : android.text.style.MetricAffectingSpan, ParcelableSpan
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SuperscriptSpan : android.text.style.MetricAffectingSpan, ParcelableSpan
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SuperscriptSpan()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.SuperscriptSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.SuperscriptSpan(@__env);
-			}
-		}
-		protected SuperscriptSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SuperscriptSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8057;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel8361;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.SuperscriptSpan._writeToParcel8057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan._writeToParcel8361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._writeToParcel8057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._writeToParcel8361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents8058;
+		internal static global::MonoJavaBridge.MethodId _describeContents8362;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.SuperscriptSpan._describeContents8058);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan._describeContents8362);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._describeContents8058);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._describeContents8362);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId8059;
+		internal static global::MonoJavaBridge.MethodId _getSpanTypeId8363;
 		public virtual int getSpanTypeId() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.SuperscriptSpan._getSpanTypeId8059);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan._getSpanTypeId8363);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._getSpanTypeId8059);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._getSpanTypeId8363);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState8060;
+		internal static global::MonoJavaBridge.MethodId _updateDrawState8364;
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.SuperscriptSpan._updateDrawState8060, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan._updateDrawState8364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._updateDrawState8060, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._updateDrawState8364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState8061;
+		internal static global::MonoJavaBridge.MethodId _updateMeasureState8365;
 		public override void updateMeasureState(android.text.TextPaint arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.SuperscriptSpan._updateMeasureState8061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan._updateMeasureState8365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._updateMeasureState8061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._updateMeasureState8365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SuperscriptSpan8062;
-		public SuperscriptSpan()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SuperscriptSpan8366;
+		public SuperscriptSpan()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan8062, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan8366);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SuperscriptSpan8063;
-		public SuperscriptSpan(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SuperscriptSpan8367;
+		public SuperscriptSpan(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan8063, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.SuperscriptSpan.staticClass, global::android.text.style.SuperscriptSpan._SuperscriptSpan8367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.SuperscriptSpan.staticClass = @__class;
-			global::android.text.style.SuperscriptSpan._writeToParcel8057 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.text.style.SuperscriptSpan._describeContents8058 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "describeContents", "()I");
-			global::android.text.style.SuperscriptSpan._getSpanTypeId8059 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "getSpanTypeId", "()I");
-			global::android.text.style.SuperscriptSpan._updateDrawState8060 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.SuperscriptSpan._updateMeasureState8061 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.SuperscriptSpan._SuperscriptSpan8062 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "()V");
-			global::android.text.style.SuperscriptSpan._SuperscriptSpan8063 = @__env.GetMethodID(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.SuperscriptSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/SuperscriptSpan"));
+			global::android.text.style.SuperscriptSpan._writeToParcel8361 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.text.style.SuperscriptSpan._describeContents8362 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "describeContents", "()I");
+			global::android.text.style.SuperscriptSpan._getSpanTypeId8363 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "getSpanTypeId", "()I");
+			global::android.text.style.SuperscriptSpan._updateDrawState8364 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.SuperscriptSpan._updateMeasureState8365 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.SuperscriptSpan._SuperscriptSpan8366 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "()V");
+			global::android.text.style.SuperscriptSpan._SuperscriptSpan8367 = @__env.GetMethodIDNoThrow(global::android.text.style.SuperscriptSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

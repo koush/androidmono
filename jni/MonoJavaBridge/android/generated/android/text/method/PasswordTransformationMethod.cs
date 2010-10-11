@@ -1,106 +1,101 @@
 namespace android.text.method
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PasswordTransformationMethod : java.lang.Object, TransformationMethod, TextWatcher
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PasswordTransformationMethod : java.lang.Object, TransformationMethod, TextWatcher
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PasswordTransformationMethod()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.method.PasswordTransformationMethod), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.method.PasswordTransformationMethod(@__env);
-			}
-		}
-		protected PasswordTransformationMethod(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PasswordTransformationMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance7838;
+		internal static global::MonoJavaBridge.MethodId _getInstance8133;
 		public static global::android.text.method.PasswordTransformationMethod getInstance() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.PasswordTransformationMethod>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._getInstance7838));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._getInstance8133)) as android.text.method.PasswordTransformationMethod;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFocusChanged7839;
+		internal static global::MonoJavaBridge.MethodId _onFocusChanged8134;
 		public virtual void onFocusChanged(android.view.View arg0, java.lang.CharSequence arg1, bool arg2, int arg3, android.graphics.Rect arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.PasswordTransformationMethod._onFocusChanged7839, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod._onFocusChanged8134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._onFocusChanged7839, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._onFocusChanged8134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public void onFocusChanged(android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4)
 		{
 			onFocusChanged(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3, arg4);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged7840;
+		internal static global::MonoJavaBridge.MethodId _onTextChanged8135;
 		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.PasswordTransformationMethod._onTextChanged7840, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod._onTextChanged8135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._onTextChanged7840, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._onTextChanged8135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void onTextChanged(string arg0, int arg1, int arg2, int arg3)
 		{
 			onTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged7841;
+		internal static global::MonoJavaBridge.MethodId _beforeTextChanged8136;
 		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.PasswordTransformationMethod._beforeTextChanged7841, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod._beforeTextChanged8136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._beforeTextChanged7841, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._beforeTextChanged8136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void beforeTextChanged(string arg0, int arg1, int arg2, int arg3)
 		{
 			beforeTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged7842;
+		internal static global::MonoJavaBridge.MethodId _afterTextChanged8137;
 		public virtual void afterTextChanged(android.text.Editable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.PasswordTransformationMethod._afterTextChanged7842, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod._afterTextChanged8137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._afterTextChanged7842, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._afterTextChanged8137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTransformation7843;
+		internal static global::MonoJavaBridge.MethodId _getTransformation8138;
 		public virtual global::java.lang.CharSequence getTransformation(java.lang.CharSequence arg0, android.view.View arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.PasswordTransformationMethod._getTransformation7843, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod._getTransformation8138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._getTransformation7843, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._getTransformation8138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
 		public java.lang.CharSequence getTransformation(string arg0, android.view.View arg1)
 		{
 			return getTransformation((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PasswordTransformationMethod7844;
-		public PasswordTransformationMethod()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PasswordTransformationMethod8139;
+		public PasswordTransformationMethod()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod7844, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod8139);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.method.PasswordTransformationMethod.staticClass = @__class;
-			global::android.text.method.PasswordTransformationMethod._getInstance7838 = @__env.GetStaticMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "getInstance", "()Landroid/text/method/PasswordTransformationMethod;");
-			global::android.text.method.PasswordTransformationMethod._onFocusChanged7839 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V");
-			global::android.text.method.PasswordTransformationMethod._onTextChanged7840 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.text.method.PasswordTransformationMethod._beforeTextChanged7841 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.text.method.PasswordTransformationMethod._afterTextChanged7842 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
-			global::android.text.method.PasswordTransformationMethod._getTransformation7843 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
-			global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod7844 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.method.PasswordTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/PasswordTransformationMethod"));
+			global::android.text.method.PasswordTransformationMethod._getInstance8133 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "getInstance", "()Landroid/text/method/PasswordTransformationMethod;");
+			global::android.text.method.PasswordTransformationMethod._onFocusChanged8134 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V");
+			global::android.text.method.PasswordTransformationMethod._onTextChanged8135 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
+			global::android.text.method.PasswordTransformationMethod._beforeTextChanged8136 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
+			global::android.text.method.PasswordTransformationMethod._afterTextChanged8137 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
+			global::android.text.method.PasswordTransformationMethod._getTransformation8138 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
+			global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod8139 = @__env.GetMethodIDNoThrow(global::android.text.method.PasswordTransformationMethod.staticClass, "<init>", "()V");
 		}
 	}
 }

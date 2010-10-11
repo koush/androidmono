@@ -1,33 +1,28 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PaintFlagsDrawFilter : android.graphics.DrawFilter
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PaintFlagsDrawFilter : android.graphics.DrawFilter
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PaintFlagsDrawFilter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.PaintFlagsDrawFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.PaintFlagsDrawFilter(@__env);
-			}
-		}
-		protected PaintFlagsDrawFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PaintFlagsDrawFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PaintFlagsDrawFilter3352;
-		public PaintFlagsDrawFilter(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PaintFlagsDrawFilter3534;
+		public PaintFlagsDrawFilter(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PaintFlagsDrawFilter.staticClass, global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3352, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PaintFlagsDrawFilter.staticClass, global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.PaintFlagsDrawFilter.staticClass = @__class;
-			global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3352 = @__env.GetMethodID(global::android.graphics.PaintFlagsDrawFilter.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.PaintFlagsDrawFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PaintFlagsDrawFilter"));
+			global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3534 = @__env.GetMethodIDNoThrow(global::android.graphics.PaintFlagsDrawFilter.staticClass, "<init>", "(II)V");
 		}
 	}
 }

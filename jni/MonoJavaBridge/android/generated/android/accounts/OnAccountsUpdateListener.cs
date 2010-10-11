@@ -1,50 +1,36 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface OnAccountsUpdateListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.accounts.OnAccountsUpdateListener_))]
+	public interface OnAccountsUpdateListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onAccountsUpdated(android.accounts.Account[] arg0);
 	}
 
-	public partial class OnAccountsUpdateListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accounts.OnAccountsUpdateListener))]
+	public sealed partial class OnAccountsUpdateListener_ : java.lang.Object, OnAccountsUpdateListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static OnAccountsUpdateListener_()
 		{
-			get { return __OnAccountsUpdateListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __OnAccountsUpdateListener : java.lang.Object, OnAccountsUpdateListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __OnAccountsUpdateListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.__OnAccountsUpdateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.__OnAccountsUpdateListener(@__env);
-			}
-		}
-		internal __OnAccountsUpdateListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal OnAccountsUpdateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onAccountsUpdated123;
+		internal static global::MonoJavaBridge.MethodId _onAccountsUpdated132;
 		 void android.accounts.OnAccountsUpdateListener.onAccountsUpdated(android.accounts.Account[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.__OnAccountsUpdateListener._onAccountsUpdated123, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.__OnAccountsUpdateListener.staticClass, global::android.accounts.__OnAccountsUpdateListener._onAccountsUpdated123, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.OnAccountsUpdateListener_.staticClass, global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.__OnAccountsUpdateListener.staticClass = @__class;
-			global::android.accounts.__OnAccountsUpdateListener._onAccountsUpdated123 = @__env.GetMethodID(global::android.accounts.__OnAccountsUpdateListener.staticClass, "android.accounts.OnAccountsUpdateListener.onAccountsUpdated", "([Landroid/accounts/Account;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.OnAccountsUpdateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OnAccountsUpdateListener"));
+			global::android.accounts.OnAccountsUpdateListener_._onAccountsUpdated132 = @__env.GetMethodIDNoThrow(global::android.accounts.OnAccountsUpdateListener_.staticClass, "onAccountsUpdated", "([Landroid/accounts/Account;)V");
 		}
 	}
 }

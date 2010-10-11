@@ -1,72 +1,67 @@
 namespace android.content.pm
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PermissionGroupInfo : android.content.pm.PackageItemInfo, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PermissionGroupInfo : android.content.pm.PackageItemInfo, android.os.Parcelable
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PermissionGroupInfo()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.PermissionGroupInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.pm.PermissionGroupInfo(@__env);
-			}
-		}
-		protected PermissionGroupInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PermissionGroupInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1967;
+		internal static global::MonoJavaBridge.MethodId _toString2121;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.PermissionGroupInfo._toString1967));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo._toString2121)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._toString1967));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._toString2121)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1968;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel2122;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.PermissionGroupInfo._writeToParcel1968, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo._writeToParcel2122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._writeToParcel1968, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._writeToParcel2122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1969;
+		internal static global::MonoJavaBridge.MethodId _describeContents2123;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.PermissionGroupInfo._describeContents1969);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo._describeContents2123);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._describeContents1969);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._describeContents2123);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadDescription1970;
+		internal static global::MonoJavaBridge.MethodId _loadDescription2124;
 		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.PermissionGroupInfo._loadDescription1970, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo._loadDescription2124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._loadDescription1970, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._loadDescription2124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PermissionGroupInfo1971;
-		public PermissionGroupInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PermissionGroupInfo2125;
+		public PermissionGroupInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo1971, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo2125);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PermissionGroupInfo1972;
-		public PermissionGroupInfo(android.content.pm.PermissionGroupInfo arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PermissionGroupInfo2126;
+		public PermissionGroupInfo(android.content.pm.PermissionGroupInfo arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo1972, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PermissionGroupInfo.staticClass, global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo2126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _descriptionRes1973;
+		internal static global::MonoJavaBridge.FieldId _descriptionRes2127;
 		public int descriptionRes
 		{
 			get
@@ -77,7 +72,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _nonLocalizedDescription1974;
+		internal static global::MonoJavaBridge.FieldId _nonLocalizedDescription2128;
 		public global::java.lang.CharSequence nonLocalizedDescription
 		{
 			get
@@ -88,7 +83,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1975;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2129;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -96,15 +91,16 @@ namespace android.content.pm
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.pm.PermissionGroupInfo.staticClass = @__class;
-			global::android.content.pm.PermissionGroupInfo._toString1967 = @__env.GetMethodID(global::android.content.pm.PermissionGroupInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.PermissionGroupInfo._writeToParcel1968 = @__env.GetMethodID(global::android.content.pm.PermissionGroupInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.PermissionGroupInfo._describeContents1969 = @__env.GetMethodID(global::android.content.pm.PermissionGroupInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.PermissionGroupInfo._loadDescription1970 = @__env.GetMethodID(global::android.content.pm.PermissionGroupInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo1971 = @__env.GetMethodID(global::android.content.pm.PermissionGroupInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo1972 = @__env.GetMethodID(global::android.content.pm.PermissionGroupInfo.staticClass, "<init>", "(Landroid/content/pm/PermissionGroupInfo;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.pm.PermissionGroupInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PermissionGroupInfo"));
+			global::android.content.pm.PermissionGroupInfo._toString2121 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.pm.PermissionGroupInfo._writeToParcel2122 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.PermissionGroupInfo._describeContents2123 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "describeContents", "()I");
+			global::android.content.pm.PermissionGroupInfo._loadDescription2124 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
+			global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo2125 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "<init>", "()V");
+			global::android.content.pm.PermissionGroupInfo._PermissionGroupInfo2126 = @__env.GetMethodIDNoThrow(global::android.content.pm.PermissionGroupInfo.staticClass, "<init>", "(Landroid/content/pm/PermissionGroupInfo;)V");
 		}
 	}
 }

@@ -1,102 +1,98 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AlphabetIndexer : android.database.DataSetObserver, SectionIndexer
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AlphabetIndexer : android.database.DataSetObserver, SectionIndexer
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AlphabetIndexer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.AlphabetIndexer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.AlphabetIndexer(@__env);
-			}
-		}
-		protected AlphabetIndexer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AlphabetIndexer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compare10545;
+		internal static global::MonoJavaBridge.MethodId _compare10901;
 		protected virtual int compare(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.AlphabetIndexer._compare10545, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._compare10901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._compare10545, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._compare10901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setCursor10546;
+		internal static global::MonoJavaBridge.MethodId _setCursor10902;
 		public virtual void setCursor(android.database.Cursor arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.AlphabetIndexer._setCursor10546, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._setCursor10902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._setCursor10546, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._setCursor10902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onChanged10547;
+		internal static global::MonoJavaBridge.MethodId _onChanged10903;
 		public override void onChanged() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.AlphabetIndexer._onChanged10547);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._onChanged10903);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._onChanged10547);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._onChanged10903);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onInvalidated10548;
+		internal static global::MonoJavaBridge.MethodId _onInvalidated10904;
 		public override void onInvalidated() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.AlphabetIndexer._onInvalidated10548);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._onInvalidated10904);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._onInvalidated10548);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._onInvalidated10904);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSections10549;
+		internal static global::MonoJavaBridge.MethodId _getSections10905;
 		public virtual global::java.lang.Object[] getSections() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AlphabetIndexer._getSections10549));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._getSections10905)) as java.lang.Object[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getSections10549));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getSections10905)) as java.lang.Object[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPositionForSection10550;
+		internal static global::MonoJavaBridge.MethodId _getPositionForSection10906;
 		public virtual int getPositionForSection(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.AlphabetIndexer._getPositionForSection10550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._getPositionForSection10906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getPositionForSection10550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getPositionForSection10906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSectionForPosition10551;
+		internal static global::MonoJavaBridge.MethodId _getSectionForPosition10907;
 		public virtual int getSectionForPosition(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.AlphabetIndexer._getSectionForPosition10551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AlphabetIndexer._getSectionForPosition10907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getSectionForPosition10551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getSectionForPosition10907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AlphabetIndexer10552;
-		public AlphabetIndexer(android.database.Cursor arg0, int arg1, java.lang.CharSequence arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AlphabetIndexer10908;
+		public AlphabetIndexer(android.database.Cursor arg0, int arg1, java.lang.CharSequence arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._AlphabetIndexer10552, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._AlphabetIndexer10908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.AlphabetIndexer.staticClass = @__class;
-			global::android.widget.AlphabetIndexer._compare10545 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I");
-			global::android.widget.AlphabetIndexer._setCursor10546 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "setCursor", "(Landroid/database/Cursor;)V");
-			global::android.widget.AlphabetIndexer._onChanged10547 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "onChanged", "()V");
-			global::android.widget.AlphabetIndexer._onInvalidated10548 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "onInvalidated", "()V");
-			global::android.widget.AlphabetIndexer._getSections10549 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "getSections", "()[Ljava/lang/Object;");
-			global::android.widget.AlphabetIndexer._getPositionForSection10550 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "getPositionForSection", "(I)I");
-			global::android.widget.AlphabetIndexer._getSectionForPosition10551 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "getSectionForPosition", "(I)I");
-			global::android.widget.AlphabetIndexer._AlphabetIndexer10552 = @__env.GetMethodID(global::android.widget.AlphabetIndexer.staticClass, "<init>", "(Landroid/database/Cursor;ILjava/lang/CharSequence;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.AlphabetIndexer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AlphabetIndexer"));
+			global::android.widget.AlphabetIndexer._compare10901 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.widget.AlphabetIndexer._setCursor10902 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "setCursor", "(Landroid/database/Cursor;)V");
+			global::android.widget.AlphabetIndexer._onChanged10903 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "onChanged", "()V");
+			global::android.widget.AlphabetIndexer._onInvalidated10904 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "onInvalidated", "()V");
+			global::android.widget.AlphabetIndexer._getSections10905 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "getSections", "()[Ljava/lang/Object;");
+			global::android.widget.AlphabetIndexer._getPositionForSection10906 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "getPositionForSection", "(I)I");
+			global::android.widget.AlphabetIndexer._getSectionForPosition10907 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "getSectionForPosition", "(I)I");
+			global::android.widget.AlphabetIndexer._AlphabetIndexer10908 = @__env.GetMethodIDNoThrow(global::android.widget.AlphabetIndexer.staticClass, "<init>", "(Landroid/database/Cursor;ILjava/lang/CharSequence;)V");
 		}
 	}
 }

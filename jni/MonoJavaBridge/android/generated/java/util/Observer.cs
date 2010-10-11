@@ -1,50 +1,36 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Observer 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Observer_))]
+	public interface Observer  : global::MonoJavaBridge.IJavaObject 
 	{
 		void update(java.util.Observable arg0, java.lang.Object arg1);
 	}
 
-	public partial class Observer_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.Observer))]
+	public sealed partial class Observer_ : java.lang.Object, Observer
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Observer_()
 		{
-			get { return __Observer.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Observer : java.lang.Object, Observer
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Observer()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__Observer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.__Observer(@__env);
-			}
-		}
-		internal __Observer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Observer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _update13791;
+		internal static global::MonoJavaBridge.MethodId _update15602;
 		 void java.util.Observer.update(java.util.Observable arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.__Observer._update13791, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Observer_._update15602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.__Observer.staticClass, global::java.util.__Observer._update13791, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Observer_.staticClass, global::java.util.Observer_._update15602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.__Observer.staticClass = @__class;
-			global::java.util.__Observer._update13791 = @__env.GetMethodID(global::java.util.__Observer.staticClass, "java.util.Observer.update", "(Ljava/util/Observable;Ljava/lang/Object;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Observer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Observer"));
+			global::java.util.Observer_._update15602 = @__env.GetMethodIDNoThrow(global::java.util.Observer_.staticClass, "update", "(Ljava/util/Observable;Ljava/lang/Object;)V");
 		}
 	}
 }

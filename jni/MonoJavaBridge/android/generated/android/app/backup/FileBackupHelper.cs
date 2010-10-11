@@ -1,53 +1,48 @@
 namespace android.app.backup
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class FileBackupHelper : android.app.backup.FileBackupHelperBase, BackupHelper
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class FileBackupHelper : android.app.backup.FileBackupHelperBase, BackupHelper
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static FileBackupHelper()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.backup.FileBackupHelper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.app.backup.FileBackupHelper(@__env);
-			}
-		}
-		protected FileBackupHelper(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected FileBackupHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performBackup930;
+		internal static global::MonoJavaBridge.MethodId _performBackup944;
 		public virtual void performBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.backup.FileBackupHelper._performBackup930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.backup.FileBackupHelper._performBackup944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.backup.FileBackupHelper.staticClass, global::android.app.backup.FileBackupHelper._performBackup930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.FileBackupHelper.staticClass, global::android.app.backup.FileBackupHelper._performBackup944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _restoreEntity931;
+		internal static global::MonoJavaBridge.MethodId _restoreEntity945;
 		public virtual void restoreEntity(android.app.backup.BackupDataInputStream arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.backup.FileBackupHelper._restoreEntity931, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.backup.FileBackupHelper._restoreEntity945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.backup.FileBackupHelper.staticClass, global::android.app.backup.FileBackupHelper._restoreEntity931, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.FileBackupHelper.staticClass, global::android.app.backup.FileBackupHelper._restoreEntity945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _FileBackupHelper932;
-		public FileBackupHelper(android.content.Context arg0, java.lang.String[] arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _FileBackupHelper946;
+		public FileBackupHelper(android.content.Context arg0, java.lang.String[] arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.app.backup.FileBackupHelper.staticClass, global::android.app.backup.FileBackupHelper._FileBackupHelper932, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.FileBackupHelper.staticClass, global::android.app.backup.FileBackupHelper._FileBackupHelper946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.app.backup.FileBackupHelper.staticClass = @__class;
-			global::android.app.backup.FileBackupHelper._performBackup930 = @__env.GetMethodID(global::android.app.backup.FileBackupHelper.staticClass, "performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V");
-			global::android.app.backup.FileBackupHelper._restoreEntity931 = @__env.GetMethodID(global::android.app.backup.FileBackupHelper.staticClass, "restoreEntity", "(Landroid/app/backup/BackupDataInputStream;)V");
-			global::android.app.backup.FileBackupHelper._FileBackupHelper932 = @__env.GetMethodID(global::android.app.backup.FileBackupHelper.staticClass, "<init>", "(Landroid/content/Context;[Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.app.backup.FileBackupHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/backup/FileBackupHelper"));
+			global::android.app.backup.FileBackupHelper._performBackup944 = @__env.GetMethodIDNoThrow(global::android.app.backup.FileBackupHelper.staticClass, "performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V");
+			global::android.app.backup.FileBackupHelper._restoreEntity945 = @__env.GetMethodIDNoThrow(global::android.app.backup.FileBackupHelper.staticClass, "restoreEntity", "(Landroid/app/backup/BackupDataInputStream;)V");
+			global::android.app.backup.FileBackupHelper._FileBackupHelper946 = @__env.GetMethodIDNoThrow(global::android.app.backup.FileBackupHelper.staticClass, "<init>", "(Landroid/content/Context;[Ljava/lang/String;)V");
 		}
 	}
 }

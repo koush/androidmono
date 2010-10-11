@@ -1,46 +1,76 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class CharacterStyle : java.lang.Object
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.text.style.CharacterStyle_))]
+	public abstract partial class CharacterStyle : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static CharacterStyle()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.CharacterStyle), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected CharacterStyle(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected CharacterStyle(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _wrap7936;
+		internal static global::MonoJavaBridge.MethodId _wrap8233;
 		public static global::android.text.style.CharacterStyle wrap(android.text.style.CharacterStyle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.style.CharacterStyle>(@__env, @__env.CallStaticObjectMethodPtr(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._wrap7936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._wrap8233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.style.CharacterStyle;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7937;
+		internal static global::MonoJavaBridge.MethodId _updateDrawState8234;
 		public abstract void updateDrawState(android.text.TextPaint arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getUnderlying7938;
+		internal static global::MonoJavaBridge.MethodId _getUnderlying8235;
 		public virtual global::android.text.style.CharacterStyle getUnderlying() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.style.CharacterStyle>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.CharacterStyle._getUnderlying7938));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.CharacterStyle._getUnderlying8235)) as android.text.style.CharacterStyle;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.style.CharacterStyle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._getUnderlying7938));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._getUnderlying8235)) as android.text.style.CharacterStyle;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _CharacterStyle7939;
-		public CharacterStyle()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _CharacterStyle8236;
+		public CharacterStyle()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._CharacterStyle7939, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._CharacterStyle8236);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.CharacterStyle.staticClass = @__class;
-			global::android.text.style.CharacterStyle._wrap7936 = @__env.GetStaticMethodID(global::android.text.style.CharacterStyle.staticClass, "wrap", "(Landroid/text/style/CharacterStyle;)Landroid/text/style/CharacterStyle;");
-			global::android.text.style.CharacterStyle._updateDrawState7937 = @__env.GetMethodID(global::android.text.style.CharacterStyle.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.CharacterStyle._getUnderlying7938 = @__env.GetMethodID(global::android.text.style.CharacterStyle.staticClass, "getUnderlying", "()Landroid/text/style/CharacterStyle;");
-			global::android.text.style.CharacterStyle._CharacterStyle7939 = @__env.GetMethodID(global::android.text.style.CharacterStyle.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.CharacterStyle.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/CharacterStyle"));
+			global::android.text.style.CharacterStyle._wrap8233 = @__env.GetStaticMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "wrap", "(Landroid/text/style/CharacterStyle;)Landroid/text/style/CharacterStyle;");
+			global::android.text.style.CharacterStyle._updateDrawState8234 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.CharacterStyle._getUnderlying8235 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "getUnderlying", "()Landroid/text/style/CharacterStyle;");
+			global::android.text.style.CharacterStyle._CharacterStyle8236 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.CharacterStyle))]
+	public sealed partial class CharacterStyle_ : android.text.style.CharacterStyle
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static CharacterStyle_()
+		{
+			InitJNI();
+		}
+		internal CharacterStyle_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _updateDrawState8237;
+		public override void updateDrawState(android.text.TextPaint arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_._updateDrawState8237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.CharacterStyle_.staticClass, global::android.text.style.CharacterStyle_._updateDrawState8237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.CharacterStyle_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/CharacterStyle"));
+			global::android.text.style.CharacterStyle_._updateDrawState8237 = @__env.GetMethodIDNoThrow(global::android.text.style.CharacterStyle_.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
 		}
 	}
 }

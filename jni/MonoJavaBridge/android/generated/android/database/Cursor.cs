@@ -1,7 +1,7 @@
 namespace android.database
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Cursor 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.database.Cursor_))]
+	public interface Cursor  : global::MonoJavaBridge.IJavaObject 
 	{
 		short getShort(int arg0);
 		int getInt(int arg0);
@@ -43,413 +43,401 @@ namespace android.database
 		global::android.os.Bundle respond(android.os.Bundle arg0);
 	}
 
-	public partial class Cursor_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.Cursor))]
+	public sealed partial class Cursor_ : java.lang.Object, Cursor
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Cursor_()
 		{
-			get { return __Cursor.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Cursor : java.lang.Object, Cursor
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Cursor()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.__Cursor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.database.__Cursor(@__env);
-			}
-		}
-		internal __Cursor(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Cursor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getShort2395;
+		internal static global::MonoJavaBridge.MethodId _getShort2561;
 		 short android.database.Cursor.getShort(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallShortMethod(this, global::android.database.__Cursor._getShort2395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallShortMethod(this.JvmHandle, global::android.database.Cursor_._getShort2561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualShortMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getShort2395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getShort2561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInt2396;
+		internal static global::MonoJavaBridge.MethodId _getInt2562;
 		 int android.database.Cursor.getInt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.__Cursor._getInt2396, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.Cursor_._getInt2562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getInt2396, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getInt2562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLong2397;
+		internal static global::MonoJavaBridge.MethodId _getLong2563;
 		 long android.database.Cursor.getLong(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.database.__Cursor._getLong2397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.database.Cursor_._getLong2563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getLong2397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getLong2563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat2398;
+		internal static global::MonoJavaBridge.MethodId _getFloat2564;
 		 float android.database.Cursor.getFloat(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.database.__Cursor._getFloat2398, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.database.Cursor_._getFloat2564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getFloat2398, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getFloat2564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDouble2399;
+		internal static global::MonoJavaBridge.MethodId _getDouble2565;
 		 double android.database.Cursor.getDouble(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::android.database.__Cursor._getDouble2399, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallDoubleMethod(this.JvmHandle, global::android.database.Cursor_._getDouble2565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getDouble2399, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getDouble2565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close2400;
+		internal static global::MonoJavaBridge.MethodId _close2566;
 		 void android.database.Cursor.close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._close2400);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._close2566);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._close2400);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._close2566);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getString2401;
+		internal static global::MonoJavaBridge.MethodId _getString2567;
 		 global::java.lang.String android.database.Cursor.getString(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.__Cursor._getString2401, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.Cursor_._getString2567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getString2401, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getString2567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isFirst2402;
+		internal static global::MonoJavaBridge.MethodId _isFirst2568;
 		 bool android.database.Cursor.isFirst() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._isFirst2402);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._isFirst2568);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._isFirst2402);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._isFirst2568);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isClosed2403;
+		internal static global::MonoJavaBridge.MethodId _isClosed2569;
 		 bool android.database.Cursor.isClosed() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._isClosed2403);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._isClosed2569);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._isClosed2403);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._isClosed2569);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPosition2404;
+		internal static global::MonoJavaBridge.MethodId _getPosition2570;
 		 int android.database.Cursor.getPosition() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.__Cursor._getPosition2404);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.Cursor_._getPosition2570);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getPosition2404);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getPosition2570);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getExtras2405;
+		internal static global::MonoJavaBridge.MethodId _getExtras2571;
 		 global::android.os.Bundle android.database.Cursor.getExtras() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.__Cursor._getExtras2405));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.Cursor_._getExtras2571)) as android.os.Bundle;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getExtras2405));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getExtras2571)) as android.os.Bundle;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _registerContentObserver2406;
+		internal static global::MonoJavaBridge.MethodId _registerContentObserver2572;
 		 void android.database.Cursor.registerContentObserver(android.database.ContentObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._registerContentObserver2406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._registerContentObserver2572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._registerContentObserver2406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._registerContentObserver2572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterContentObserver2407;
+		internal static global::MonoJavaBridge.MethodId _unregisterContentObserver2573;
 		 void android.database.Cursor.unregisterContentObserver(android.database.ContentObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._unregisterContentObserver2407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._unregisterContentObserver2573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._unregisterContentObserver2407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._unregisterContentObserver2573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCount2408;
+		internal static global::MonoJavaBridge.MethodId _getCount2574;
 		 int android.database.Cursor.getCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.__Cursor._getCount2408);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.Cursor_._getCount2574);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getCount2408);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getCount2574);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _move2409;
+		internal static global::MonoJavaBridge.MethodId _move2575;
 		 bool android.database.Cursor.move(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._move2409, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._move2575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._move2409, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._move2575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _moveToPosition2410;
+		internal static global::MonoJavaBridge.MethodId _moveToPosition2576;
 		 bool android.database.Cursor.moveToPosition(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._moveToPosition2410, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._moveToPosition2576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._moveToPosition2410, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._moveToPosition2576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _moveToFirst2411;
+		internal static global::MonoJavaBridge.MethodId _moveToFirst2577;
 		 bool android.database.Cursor.moveToFirst() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._moveToFirst2411);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._moveToFirst2577);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._moveToFirst2411);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._moveToFirst2577);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _moveToLast2412;
+		internal static global::MonoJavaBridge.MethodId _moveToLast2578;
 		 bool android.database.Cursor.moveToLast() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._moveToLast2412);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._moveToLast2578);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._moveToLast2412);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._moveToLast2578);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _moveToNext2413;
+		internal static global::MonoJavaBridge.MethodId _moveToNext2579;
 		 bool android.database.Cursor.moveToNext() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._moveToNext2413);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._moveToNext2579);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._moveToNext2413);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._moveToNext2579);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _moveToPrevious2414;
+		internal static global::MonoJavaBridge.MethodId _moveToPrevious2580;
 		 bool android.database.Cursor.moveToPrevious() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._moveToPrevious2414);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._moveToPrevious2580);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._moveToPrevious2414);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._moveToPrevious2580);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isLast2415;
+		internal static global::MonoJavaBridge.MethodId _isLast2581;
 		 bool android.database.Cursor.isLast() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._isLast2415);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._isLast2581);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._isLast2415);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._isLast2581);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isBeforeFirst2416;
+		internal static global::MonoJavaBridge.MethodId _isBeforeFirst2582;
 		 bool android.database.Cursor.isBeforeFirst() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._isBeforeFirst2416);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._isBeforeFirst2582);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._isBeforeFirst2416);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._isBeforeFirst2582);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isAfterLast2417;
+		internal static global::MonoJavaBridge.MethodId _isAfterLast2583;
 		 bool android.database.Cursor.isAfterLast() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._isAfterLast2417);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._isAfterLast2583);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._isAfterLast2417);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._isAfterLast2583);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnIndex2418;
+		internal static global::MonoJavaBridge.MethodId _getColumnIndex2584;
 		 int android.database.Cursor.getColumnIndex(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.__Cursor._getColumnIndex2418, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.Cursor_._getColumnIndex2584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getColumnIndex2418, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getColumnIndex2584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnIndexOrThrow2419;
+		internal static global::MonoJavaBridge.MethodId _getColumnIndexOrThrow2585;
 		 int android.database.Cursor.getColumnIndexOrThrow(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.__Cursor._getColumnIndexOrThrow2419, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.Cursor_._getColumnIndexOrThrow2585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getColumnIndexOrThrow2419, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getColumnIndexOrThrow2585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnName2420;
+		internal static global::MonoJavaBridge.MethodId _getColumnName2586;
 		 global::java.lang.String android.database.Cursor.getColumnName(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.__Cursor._getColumnName2420, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.Cursor_._getColumnName2586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getColumnName2420, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getColumnName2586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnNames2421;
+		internal static global::MonoJavaBridge.MethodId _getColumnNames2587;
 		 global::java.lang.String[] android.database.Cursor.getColumnNames() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.__Cursor._getColumnNames2421));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.Cursor_._getColumnNames2587)) as java.lang.String[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getColumnNames2421));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getColumnNames2587)) as java.lang.String[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnCount2422;
+		internal static global::MonoJavaBridge.MethodId _getColumnCount2588;
 		 int android.database.Cursor.getColumnCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.__Cursor._getColumnCount2422);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.Cursor_._getColumnCount2588);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getColumnCount2422);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getColumnCount2588);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBlob2423;
+		internal static global::MonoJavaBridge.MethodId _getBlob2589;
 		 byte[] android.database.Cursor.getBlob(int arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.__Cursor._getBlob2423, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.Cursor_._getBlob2589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getBlob2423, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getBlob2589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _copyStringToBuffer2424;
+		internal static global::MonoJavaBridge.MethodId _copyStringToBuffer2590;
 		 void android.database.Cursor.copyStringToBuffer(int arg0, android.database.CharArrayBuffer arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._copyStringToBuffer2424, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._copyStringToBuffer2590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._copyStringToBuffer2424, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._copyStringToBuffer2590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isNull2425;
+		internal static global::MonoJavaBridge.MethodId _isNull2591;
 		 bool android.database.Cursor.isNull(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._isNull2425, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._isNull2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._isNull2425, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._isNull2591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deactivate2426;
+		internal static global::MonoJavaBridge.MethodId _deactivate2592;
 		 void android.database.Cursor.deactivate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._deactivate2426);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._deactivate2592);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._deactivate2426);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._deactivate2592);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requery2427;
+		internal static global::MonoJavaBridge.MethodId _requery2593;
 		 bool android.database.Cursor.requery() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._requery2427);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._requery2593);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._requery2427);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._requery2593);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _registerDataSetObserver2428;
+		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver2594;
 		 void android.database.Cursor.registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._registerDataSetObserver2428, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._registerDataSetObserver2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._registerDataSetObserver2428, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._registerDataSetObserver2594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterDataSetObserver2429;
+		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver2595;
 		 void android.database.Cursor.unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._unregisterDataSetObserver2429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._unregisterDataSetObserver2595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._unregisterDataSetObserver2429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._unregisterDataSetObserver2595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setNotificationUri2430;
+		internal static global::MonoJavaBridge.MethodId _setNotificationUri2596;
 		 void android.database.Cursor.setNotificationUri(android.content.ContentResolver arg0, android.net.Uri arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.__Cursor._setNotificationUri2430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.Cursor_._setNotificationUri2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._setNotificationUri2430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._setNotificationUri2596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getWantsAllOnMoveCalls2431;
+		internal static global::MonoJavaBridge.MethodId _getWantsAllOnMoveCalls2597;
 		 bool android.database.Cursor.getWantsAllOnMoveCalls() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.__Cursor._getWantsAllOnMoveCalls2431);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.Cursor_._getWantsAllOnMoveCalls2597);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._getWantsAllOnMoveCalls2431);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._getWantsAllOnMoveCalls2597);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _respond2432;
+		internal static global::MonoJavaBridge.MethodId _respond2598;
 		 global::android.os.Bundle android.database.Cursor.respond(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.__Cursor._respond2432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.Cursor_._respond2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.__Cursor.staticClass, global::android.database.__Cursor._respond2432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.Cursor_.staticClass, global::android.database.Cursor_._respond2598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.database.__Cursor.staticClass = @__class;
-			global::android.database.__Cursor._getShort2395 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getShort", "(I)S");
-			global::android.database.__Cursor._getInt2396 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getInt", "(I)I");
-			global::android.database.__Cursor._getLong2397 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getLong", "(I)J");
-			global::android.database.__Cursor._getFloat2398 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getFloat", "(I)F");
-			global::android.database.__Cursor._getDouble2399 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getDouble", "(I)D");
-			global::android.database.__Cursor._close2400 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.close", "()V");
-			global::android.database.__Cursor._getString2401 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getString", "(I)Ljava/lang/String;");
-			global::android.database.__Cursor._isFirst2402 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.isFirst", "()Z");
-			global::android.database.__Cursor._isClosed2403 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.isClosed", "()Z");
-			global::android.database.__Cursor._getPosition2404 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getPosition", "()I");
-			global::android.database.__Cursor._getExtras2405 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getExtras", "()Landroid/os/Bundle;");
-			global::android.database.__Cursor._registerContentObserver2406 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.registerContentObserver", "(Landroid/database/ContentObserver;)V");
-			global::android.database.__Cursor._unregisterContentObserver2407 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.unregisterContentObserver", "(Landroid/database/ContentObserver;)V");
-			global::android.database.__Cursor._getCount2408 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getCount", "()I");
-			global::android.database.__Cursor._move2409 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.move", "(I)Z");
-			global::android.database.__Cursor._moveToPosition2410 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.moveToPosition", "(I)Z");
-			global::android.database.__Cursor._moveToFirst2411 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.moveToFirst", "()Z");
-			global::android.database.__Cursor._moveToLast2412 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.moveToLast", "()Z");
-			global::android.database.__Cursor._moveToNext2413 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.moveToNext", "()Z");
-			global::android.database.__Cursor._moveToPrevious2414 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.moveToPrevious", "()Z");
-			global::android.database.__Cursor._isLast2415 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.isLast", "()Z");
-			global::android.database.__Cursor._isBeforeFirst2416 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.isBeforeFirst", "()Z");
-			global::android.database.__Cursor._isAfterLast2417 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.isAfterLast", "()Z");
-			global::android.database.__Cursor._getColumnIndex2418 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getColumnIndex", "(Ljava/lang/String;)I");
-			global::android.database.__Cursor._getColumnIndexOrThrow2419 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getColumnIndexOrThrow", "(Ljava/lang/String;)I");
-			global::android.database.__Cursor._getColumnName2420 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getColumnName", "(I)Ljava/lang/String;");
-			global::android.database.__Cursor._getColumnNames2421 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getColumnNames", "()[Ljava/lang/String;");
-			global::android.database.__Cursor._getColumnCount2422 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getColumnCount", "()I");
-			global::android.database.__Cursor._getBlob2423 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getBlob", "(I)[B");
-			global::android.database.__Cursor._copyStringToBuffer2424 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.copyStringToBuffer", "(ILandroid/database/CharArrayBuffer;)V");
-			global::android.database.__Cursor._isNull2425 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.isNull", "(I)Z");
-			global::android.database.__Cursor._deactivate2426 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.deactivate", "()V");
-			global::android.database.__Cursor._requery2427 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.requery", "()Z");
-			global::android.database.__Cursor._registerDataSetObserver2428 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.database.__Cursor._unregisterDataSetObserver2429 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.database.__Cursor._setNotificationUri2430 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.setNotificationUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V");
-			global::android.database.__Cursor._getWantsAllOnMoveCalls2431 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.getWantsAllOnMoveCalls", "()Z");
-			global::android.database.__Cursor._respond2432 = @__env.GetMethodID(global::android.database.__Cursor.staticClass, "android.database.Cursor.respond", "(Landroid/os/Bundle;)Landroid/os/Bundle;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.database.Cursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/Cursor"));
+			global::android.database.Cursor_._getShort2561 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getShort", "(I)S");
+			global::android.database.Cursor_._getInt2562 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getInt", "(I)I");
+			global::android.database.Cursor_._getLong2563 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getLong", "(I)J");
+			global::android.database.Cursor_._getFloat2564 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getFloat", "(I)F");
+			global::android.database.Cursor_._getDouble2565 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getDouble", "(I)D");
+			global::android.database.Cursor_._close2566 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "close", "()V");
+			global::android.database.Cursor_._getString2567 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getString", "(I)Ljava/lang/String;");
+			global::android.database.Cursor_._isFirst2568 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "isFirst", "()Z");
+			global::android.database.Cursor_._isClosed2569 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "isClosed", "()Z");
+			global::android.database.Cursor_._getPosition2570 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getPosition", "()I");
+			global::android.database.Cursor_._getExtras2571 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getExtras", "()Landroid/os/Bundle;");
+			global::android.database.Cursor_._registerContentObserver2572 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "registerContentObserver", "(Landroid/database/ContentObserver;)V");
+			global::android.database.Cursor_._unregisterContentObserver2573 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "unregisterContentObserver", "(Landroid/database/ContentObserver;)V");
+			global::android.database.Cursor_._getCount2574 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getCount", "()I");
+			global::android.database.Cursor_._move2575 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "move", "(I)Z");
+			global::android.database.Cursor_._moveToPosition2576 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "moveToPosition", "(I)Z");
+			global::android.database.Cursor_._moveToFirst2577 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "moveToFirst", "()Z");
+			global::android.database.Cursor_._moveToLast2578 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "moveToLast", "()Z");
+			global::android.database.Cursor_._moveToNext2579 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "moveToNext", "()Z");
+			global::android.database.Cursor_._moveToPrevious2580 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "moveToPrevious", "()Z");
+			global::android.database.Cursor_._isLast2581 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "isLast", "()Z");
+			global::android.database.Cursor_._isBeforeFirst2582 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "isBeforeFirst", "()Z");
+			global::android.database.Cursor_._isAfterLast2583 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "isAfterLast", "()Z");
+			global::android.database.Cursor_._getColumnIndex2584 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getColumnIndex", "(Ljava/lang/String;)I");
+			global::android.database.Cursor_._getColumnIndexOrThrow2585 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getColumnIndexOrThrow", "(Ljava/lang/String;)I");
+			global::android.database.Cursor_._getColumnName2586 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getColumnName", "(I)Ljava/lang/String;");
+			global::android.database.Cursor_._getColumnNames2587 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getColumnNames", "()[Ljava/lang/String;");
+			global::android.database.Cursor_._getColumnCount2588 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getColumnCount", "()I");
+			global::android.database.Cursor_._getBlob2589 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getBlob", "(I)[B");
+			global::android.database.Cursor_._copyStringToBuffer2590 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "copyStringToBuffer", "(ILandroid/database/CharArrayBuffer;)V");
+			global::android.database.Cursor_._isNull2591 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "isNull", "(I)Z");
+			global::android.database.Cursor_._deactivate2592 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "deactivate", "()V");
+			global::android.database.Cursor_._requery2593 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "requery", "()Z");
+			global::android.database.Cursor_._registerDataSetObserver2594 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.database.Cursor_._unregisterDataSetObserver2595 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.database.Cursor_._setNotificationUri2596 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "setNotificationUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)V");
+			global::android.database.Cursor_._getWantsAllOnMoveCalls2597 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "getWantsAllOnMoveCalls", "()Z");
+			global::android.database.Cursor_._respond2598 = @__env.GetMethodIDNoThrow(global::android.database.Cursor_.staticClass, "respond", "(Landroid/os/Bundle;)Landroid/os/Bundle;");
 		}
 	}
 }

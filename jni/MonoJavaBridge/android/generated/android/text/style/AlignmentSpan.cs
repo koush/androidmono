@@ -1,50 +1,36 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.AlignmentSpan_))]
 	public interface AlignmentSpan : ParagraphStyle
 	{
 		global::android.text.Layout.Alignment getAlignment();
 	}
 
-	public partial class AlignmentSpan_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.AlignmentSpan))]
+	public sealed partial class AlignmentSpan_ : java.lang.Object, AlignmentSpan
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static AlignmentSpan_()
 		{
-			get { return __AlignmentSpan.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __AlignmentSpan : java.lang.Object, AlignmentSpan
-	{
-		internal static global::java.lang.Class staticClass;
-		static __AlignmentSpan()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__AlignmentSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.__AlignmentSpan(@__env);
-			}
-		}
-		internal __AlignmentSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal AlignmentSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlignment7919;
+		internal static global::MonoJavaBridge.MethodId _getAlignment8216;
 		 global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.__AlignmentSpan._getAlignment7919));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_._getAlignment8216)) as android.text.Layout.Alignment;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.__AlignmentSpan.staticClass, global::android.text.style.__AlignmentSpan._getAlignment7919));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_.staticClass, global::android.text.style.AlignmentSpan_._getAlignment8216)) as android.text.Layout.Alignment;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.__AlignmentSpan.staticClass = @__class;
-			global::android.text.style.__AlignmentSpan._getAlignment7919 = @__env.GetMethodID(global::android.text.style.__AlignmentSpan.staticClass, "android.text.style.AlignmentSpan.getAlignment", "()Landroid/text/Layout$Alignment;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.AlignmentSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/AlignmentSpan"));
+			global::android.text.style.AlignmentSpan_._getAlignment8216 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;");
 		}
 	}
 }

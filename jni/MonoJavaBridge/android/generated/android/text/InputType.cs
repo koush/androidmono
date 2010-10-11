@@ -1,39 +1,25 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface InputType 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.InputType_))]
+	public interface InputType  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class InputType_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.InputType))]
+	public sealed partial class InputType_ : java.lang.Object, InputType
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static InputType_()
 		{
-			get { return __InputType.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __InputType : java.lang.Object, InputType
-	{
-		internal static global::java.lang.Class staticClass;
-		static __InputType()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.__InputType), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.__InputType(@__env);
-			}
-		}
-		internal __InputType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal InputType_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.__InputType.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.InputType_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/InputType"));
 		}
 	}
 }

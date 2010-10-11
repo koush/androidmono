@@ -1,99 +1,94 @@
 namespace android.view.inputmethod
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class InputBinding : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class InputBinding : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static InputBinding()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.inputmethod.InputBinding), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.inputmethod.InputBinding(@__env);
-			}
-		}
-		internal InputBinding(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal InputBinding(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString9803;
+		internal static global::MonoJavaBridge.MethodId _toString10150;
 		public sealed override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.InputBinding._toString9803));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._toString10150)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._toString9803));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._toString10150)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel9804;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel10151;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.InputBinding._writeToParcel9804, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._writeToParcel10151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._writeToParcel9804, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._writeToParcel10151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents9805;
+		internal static global::MonoJavaBridge.MethodId _describeContents10152;
 		public int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.inputmethod.InputBinding._describeContents9805);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._describeContents10152);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._describeContents9805);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._describeContents10152);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConnection9806;
+		internal static global::MonoJavaBridge.MethodId _getConnection10153;
 		public global::android.view.inputmethod.InputConnection getConnection() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.InputBinding._getConnection9806));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._getConnection10153)) as android.view.inputmethod.InputConnection;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnection9806));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnection10153)) as android.view.inputmethod.InputConnection;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConnectionToken9807;
+		internal static global::MonoJavaBridge.MethodId _getConnectionToken10154;
 		public global::android.os.IBinder getConnectionToken() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.InputBinding._getConnectionToken9807));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._getConnectionToken10154)) as android.os.IBinder;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnectionToken9807));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnectionToken10154)) as android.os.IBinder;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getUid9808;
+		internal static global::MonoJavaBridge.MethodId _getUid10155;
 		public int getUid() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.inputmethod.InputBinding._getUid9808);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._getUid10155);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getUid9808);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getUid10155);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPid9809;
+		internal static global::MonoJavaBridge.MethodId _getPid10156;
 		public int getPid() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.inputmethod.InputBinding._getPid9809);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding._getPid10156);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getPid9809);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getPid10156);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _InputBinding9810;
-		public InputBinding(android.view.inputmethod.InputConnection arg0, android.os.IBinder arg1, int arg2, int arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _InputBinding10157;
+		public InputBinding(android.view.inputmethod.InputConnection arg0, android.os.IBinder arg1, int arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._InputBinding9810, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._InputBinding10157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _InputBinding9811;
-		public InputBinding(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.InputBinding arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _InputBinding10158;
+		public InputBinding(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.InputBinding arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._InputBinding9811, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._InputBinding10158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR9812;
+		internal static global::MonoJavaBridge.FieldId _CREATOR10159;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -101,18 +96,19 @@ namespace android.view.inputmethod
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.inputmethod.InputBinding.staticClass = @__class;
-			global::android.view.inputmethod.InputBinding._toString9803 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.view.inputmethod.InputBinding._writeToParcel9804 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.view.inputmethod.InputBinding._describeContents9805 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "describeContents", "()I");
-			global::android.view.inputmethod.InputBinding._getConnection9806 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "getConnection", "()Landroid/view/inputmethod/InputConnection;");
-			global::android.view.inputmethod.InputBinding._getConnectionToken9807 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "getConnectionToken", "()Landroid/os/IBinder;");
-			global::android.view.inputmethod.InputBinding._getUid9808 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "getUid", "()I");
-			global::android.view.inputmethod.InputBinding._getPid9809 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "getPid", "()I");
-			global::android.view.inputmethod.InputBinding._InputBinding9810 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/os/IBinder;II)V");
-			global::android.view.inputmethod.InputBinding._InputBinding9811 = @__env.GetMethodID(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputBinding;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.inputmethod.InputBinding.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputBinding"));
+			global::android.view.inputmethod.InputBinding._toString10150 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.view.inputmethod.InputBinding._writeToParcel10151 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.view.inputmethod.InputBinding._describeContents10152 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "describeContents", "()I");
+			global::android.view.inputmethod.InputBinding._getConnection10153 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getConnection", "()Landroid/view/inputmethod/InputConnection;");
+			global::android.view.inputmethod.InputBinding._getConnectionToken10154 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getConnectionToken", "()Landroid/os/IBinder;");
+			global::android.view.inputmethod.InputBinding._getUid10155 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getUid", "()I");
+			global::android.view.inputmethod.InputBinding._getPid10156 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "getPid", "()I");
+			global::android.view.inputmethod.InputBinding._InputBinding10157 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/os/IBinder;II)V");
+			global::android.view.inputmethod.InputBinding._InputBinding10158 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputBinding.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputBinding;)V");
 		}
 	}
 }

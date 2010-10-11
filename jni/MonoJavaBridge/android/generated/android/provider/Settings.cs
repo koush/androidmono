@@ -1,58 +1,45 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class Settings : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class Settings : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Settings()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.Settings), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.provider.Settings(@__env);
-			}
-		}
-		internal Settings(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Settings(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class NameValueTable : java.lang.Object, BaseColumns
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class NameValueTable : java.lang.Object, BaseColumns
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static NameValueTable()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.Settings.NameValueTable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.provider.Settings.NameValueTable(@__env);
-				}
-			}
-			protected NameValueTable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected NameValueTable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putString6905;
+			internal static global::MonoJavaBridge.MethodId _putString7181;
 			protected static bool putString(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String arg2, java.lang.String arg3) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.NameValueTable.staticClass, global::android.provider.Settings.NameValueTable._putString6905, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.NameValueTable.staticClass, global::android.provider.Settings.NameValueTable._putString7181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6906;
+			internal static global::MonoJavaBridge.MethodId _getUriFor7182;
 			public static global::android.net.Uri getUriFor(android.net.Uri arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.NameValueTable.staticClass, global::android.provider.Settings.NameValueTable._getUriFor6906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Settings.NameValueTable.staticClass, global::android.provider.Settings.NameValueTable._getUriFor7182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _NameValueTable6907;
-			public NameValueTable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _NameValueTable7183;
+			public NameValueTable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.Settings.NameValueTable.staticClass, global::android.provider.Settings.NameValueTable._NameValueTable6907, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Settings.NameValueTable.staticClass, global::android.provider.Settings.NameValueTable._NameValueTable7183);
+				Init(@__env, handle);
 			}
 			public static global::java.lang.String NAME
 			{
@@ -68,121 +55,116 @@ namespace android.provider
 					return "value";
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.provider.Settings.NameValueTable.staticClass = @__class;
-				global::android.provider.Settings.NameValueTable._putString6905 = @__env.GetStaticMethodID(global::android.provider.Settings.NameValueTable.staticClass, "putString", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Z");
-				global::android.provider.Settings.NameValueTable._getUriFor6906 = @__env.GetStaticMethodID(global::android.provider.Settings.NameValueTable.staticClass, "getUriFor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;");
-				global::android.provider.Settings.NameValueTable._NameValueTable6907 = @__env.GetMethodID(global::android.provider.Settings.NameValueTable.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.provider.Settings.NameValueTable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$NameValueTable"));
+				global::android.provider.Settings.NameValueTable._putString7181 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.NameValueTable.staticClass, "putString", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Z");
+				global::android.provider.Settings.NameValueTable._getUriFor7182 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.NameValueTable.staticClass, "getUriFor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;");
+				global::android.provider.Settings.NameValueTable._NameValueTable7183 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.NameValueTable.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class Secure : android.provider.Settings.NameValueTable
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class Secure : android.provider.Settings.NameValueTable
 		{
-			internal new static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static Secure()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.Settings.Secure), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.provider.Settings.Secure(@__env);
-				}
-			}
-			internal Secure(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal Secure(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6908;
+			internal static global::MonoJavaBridge.MethodId _getInt7184;
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getInt6908, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getInt7184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6909;
+			internal static global::MonoJavaBridge.MethodId _getInt7185;
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getInt6909, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getInt7185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putInt6910;
+			internal static global::MonoJavaBridge.MethodId _putInt7186;
 			public static bool putInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putInt6910, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putInt7186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6911;
+			internal static global::MonoJavaBridge.MethodId _getLong7187;
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getLong6911, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getLong7187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6912;
+			internal static global::MonoJavaBridge.MethodId _getLong7188;
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getLong6912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getLong7188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putLong6913;
+			internal static global::MonoJavaBridge.MethodId _putLong7189;
 			public static bool putLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putLong6913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putLong7189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6914;
+			internal static global::MonoJavaBridge.MethodId _getFloat7190;
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getFloat6914, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getFloat7190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6915;
+			internal static global::MonoJavaBridge.MethodId _getFloat7191;
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getFloat6915, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getFloat7191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putFloat6916;
+			internal static global::MonoJavaBridge.MethodId _putFloat7192;
 			public static bool putFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putFloat6916, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putFloat7192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getString6917;
+			internal static global::MonoJavaBridge.MethodId _getString7193;
 			public static global::java.lang.String getString(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getString6917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getString7193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putString6918;
+			internal static global::MonoJavaBridge.MethodId _putString7194;
 			public static bool putString(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putString6918, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._putString7194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6919;
+			internal static global::MonoJavaBridge.MethodId _getUriFor7195;
 			public static global::android.net.Uri getUriFor(java.lang.String arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getUriFor6919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._getUriFor7195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _isLocationProviderEnabled6920;
+			internal static global::MonoJavaBridge.MethodId _isLocationProviderEnabled7196;
 			public static bool isLocationProviderEnabled(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._isLocationProviderEnabled6920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._isLocationProviderEnabled7196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _setLocationProviderEnabled6921;
+			internal static global::MonoJavaBridge.MethodId _setLocationProviderEnabled7197;
 			public static void setLocationProviderEnabled(android.content.ContentResolver arg0, java.lang.String arg1, bool arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.CallStaticVoidMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._setLocationProviderEnabled6921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				@__env.CallStaticVoidMethod(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._setLocationProviderEnabled7197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Secure6922;
-			public Secure()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _Secure7198;
+			public Secure()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._Secure6922, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Settings.Secure.staticClass, global::android.provider.Settings.Secure._Secure7198);
+				Init(@__env, handle);
 			}
 			public static global::java.lang.String SYS_PROP_SETTING_VERSION
 			{
@@ -191,7 +173,7 @@ namespace android.provider
 					return "sys.settings_secure_version";
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6923;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI7199;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
@@ -563,175 +545,165 @@ namespace android.provider
 					return "allowed_geolocation_origins";
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.provider.Settings.Secure.staticClass = @__class;
-				global::android.provider.Settings.Secure._getInt6908 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I");
-				global::android.provider.Settings.Secure._getInt6909 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I");
-				global::android.provider.Settings.Secure._putInt6910 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z");
-				global::android.provider.Settings.Secure._getLong6911 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J");
-				global::android.provider.Settings.Secure._getLong6912 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J");
-				global::android.provider.Settings.Secure._putLong6913 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z");
-				global::android.provider.Settings.Secure._getFloat6914 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F");
-				global::android.provider.Settings.Secure._getFloat6915 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F");
-				global::android.provider.Settings.Secure._putFloat6916 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z");
-				global::android.provider.Settings.Secure._getString6917 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;");
-				global::android.provider.Settings.Secure._putString6918 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z");
-				global::android.provider.Settings.Secure._getUriFor6919 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;");
-				global::android.provider.Settings.Secure._isLocationProviderEnabled6920 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "isLocationProviderEnabled", "(Landroid/content/ContentResolver;Ljava/lang/String;)Z");
-				global::android.provider.Settings.Secure._setLocationProviderEnabled6921 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "setLocationProviderEnabled", "(Landroid/content/ContentResolver;Ljava/lang/String;Z)V");
-				global::android.provider.Settings.Secure._Secure6922 = @__env.GetMethodID(global::android.provider.Settings.Secure.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.provider.Settings.Secure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$Secure"));
+				global::android.provider.Settings.Secure._getInt7184 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I");
+				global::android.provider.Settings.Secure._getInt7185 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I");
+				global::android.provider.Settings.Secure._putInt7186 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z");
+				global::android.provider.Settings.Secure._getLong7187 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J");
+				global::android.provider.Settings.Secure._getLong7188 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J");
+				global::android.provider.Settings.Secure._putLong7189 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z");
+				global::android.provider.Settings.Secure._getFloat7190 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F");
+				global::android.provider.Settings.Secure._getFloat7191 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F");
+				global::android.provider.Settings.Secure._putFloat7192 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z");
+				global::android.provider.Settings.Secure._getString7193 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;");
+				global::android.provider.Settings.Secure._putString7194 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z");
+				global::android.provider.Settings.Secure._getUriFor7195 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;");
+				global::android.provider.Settings.Secure._isLocationProviderEnabled7196 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "isLocationProviderEnabled", "(Landroid/content/ContentResolver;Ljava/lang/String;)Z");
+				global::android.provider.Settings.Secure._setLocationProviderEnabled7197 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "setLocationProviderEnabled", "(Landroid/content/ContentResolver;Ljava/lang/String;Z)V");
+				global::android.provider.Settings.Secure._Secure7198 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.Secure.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class SettingNotFoundException : android.util.AndroidException
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class SettingNotFoundException : android.util.AndroidException
 		{
-			internal new static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static SettingNotFoundException()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.Settings.SettingNotFoundException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.provider.Settings.SettingNotFoundException(@__env);
-				}
-			}
-			protected SettingNotFoundException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected SettingNotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _SettingNotFoundException6924;
-			public SettingNotFoundException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _SettingNotFoundException7200;
+			public SettingNotFoundException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.Settings.SettingNotFoundException.staticClass, global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException6924, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Settings.SettingNotFoundException.staticClass, global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException7200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.provider.Settings.SettingNotFoundException.staticClass = @__class;
-				global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException6924 = @__env.GetMethodID(global::android.provider.Settings.SettingNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.provider.Settings.SettingNotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$SettingNotFoundException"));
+				global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException7200 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.SettingNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class System : android.provider.Settings.NameValueTable
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class System : android.provider.Settings.NameValueTable
 		{
-			internal new static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static System()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.Settings.System), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.provider.Settings.System(@__env);
-				}
-			}
-			internal System(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal System(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6925;
+			internal static global::MonoJavaBridge.MethodId _getInt7201;
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getInt6925, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getInt7201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6926;
+			internal static global::MonoJavaBridge.MethodId _getInt7202;
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getInt6926, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getInt7202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putInt6927;
+			internal static global::MonoJavaBridge.MethodId _putInt7203;
 			public static bool putInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putInt6927, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putInt7203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6928;
+			internal static global::MonoJavaBridge.MethodId _getLong7204;
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getLong6928, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getLong7204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6929;
+			internal static global::MonoJavaBridge.MethodId _getLong7205;
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getLong6929, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getLong7205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putLong6930;
+			internal static global::MonoJavaBridge.MethodId _putLong7206;
 			public static bool putLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putLong6930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putLong7206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6931;
+			internal static global::MonoJavaBridge.MethodId _getFloat7207;
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getFloat6931, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getFloat7207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6932;
+			internal static global::MonoJavaBridge.MethodId _getFloat7208;
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getFloat6932, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getFloat7208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putFloat6933;
+			internal static global::MonoJavaBridge.MethodId _putFloat7209;
 			public static bool putFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putFloat6933, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putFloat7209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getString6934;
+			internal static global::MonoJavaBridge.MethodId _getString7210;
 			public static global::java.lang.String getString(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getString6934, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getString7210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getConfiguration6935;
+			internal static global::MonoJavaBridge.MethodId _getConfiguration7211;
 			public static void getConfiguration(android.content.ContentResolver arg0, android.content.res.Configuration arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getConfiguration6935, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getConfiguration7211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putString6936;
+			internal static global::MonoJavaBridge.MethodId _putString7212;
 			public static bool putString(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putString6936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putString7212, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6937;
+			internal static global::MonoJavaBridge.MethodId _getUriFor7213;
 			public static global::android.net.Uri getUriFor(java.lang.String arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getUriFor6937, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getUriFor7213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _putConfiguration6938;
+			internal static global::MonoJavaBridge.MethodId _putConfiguration7214;
 			public static bool putConfiguration(android.content.ContentResolver arg0, android.content.res.Configuration arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putConfiguration6938, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._putConfiguration7214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getShowGTalkServiceStatus6939;
+			internal static global::MonoJavaBridge.MethodId _getShowGTalkServiceStatus7215;
 			public static bool getShowGTalkServiceStatus(android.content.ContentResolver arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getShowGTalkServiceStatus6939, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._getShowGTalkServiceStatus7215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _setShowGTalkServiceStatus6940;
+			internal static global::MonoJavaBridge.MethodId _setShowGTalkServiceStatus7216;
 			public static void setShowGTalkServiceStatus(android.content.ContentResolver arg0, bool arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._setShowGTalkServiceStatus6940, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._setShowGTalkServiceStatus7216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _System6941;
-			public System()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _System7217;
+			public System()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._System6941, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Settings.System.staticClass, global::android.provider.Settings.System._System7217);
+				Init(@__env, handle);
 			}
 			public static global::java.lang.String SYS_PROP_SETTING_VERSION
 			{
@@ -740,7 +712,7 @@ namespace android.provider
 					return "sys.settings_system_version";
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6942;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI7218;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
@@ -1063,7 +1035,7 @@ namespace android.provider
 					return "volume_bluetooth_sco";
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _VOLUME_SETTINGS6943;
+			internal static global::MonoJavaBridge.FieldId _VOLUME_SETTINGS7219;
 			public static global::java.lang.String[] VOLUME_SETTINGS
 			{
 				get
@@ -1085,7 +1057,7 @@ namespace android.provider
 					return "ringtone";
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_RINGTONE_URI6944;
+			internal static global::MonoJavaBridge.FieldId _DEFAULT_RINGTONE_URI7220;
 			public static global::android.net.Uri DEFAULT_RINGTONE_URI
 			{
 				get
@@ -1100,7 +1072,7 @@ namespace android.provider
 					return "notification_sound";
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_NOTIFICATION_URI6945;
+			internal static global::MonoJavaBridge.FieldId _DEFAULT_NOTIFICATION_URI7221;
 			public static global::android.net.Uri DEFAULT_NOTIFICATION_URI
 			{
 				get
@@ -1115,7 +1087,7 @@ namespace android.provider
 					return "alarm_alert";
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_ALARM_ALERT_URI6946;
+			internal static global::MonoJavaBridge.FieldId _DEFAULT_ALARM_ALERT_URI7222;
 			public static global::android.net.Uri DEFAULT_ALARM_ALERT_URI
 			{
 				get
@@ -1473,33 +1445,35 @@ namespace android.provider
 					return "wifi_watchdog_ping_timeout_ms";
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.provider.Settings.System.staticClass = @__class;
-				global::android.provider.Settings.System._getInt6925 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I");
-				global::android.provider.Settings.System._getInt6926 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I");
-				global::android.provider.Settings.System._putInt6927 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z");
-				global::android.provider.Settings.System._getLong6928 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J");
-				global::android.provider.Settings.System._getLong6929 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J");
-				global::android.provider.Settings.System._putLong6930 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z");
-				global::android.provider.Settings.System._getFloat6931 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F");
-				global::android.provider.Settings.System._getFloat6932 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F");
-				global::android.provider.Settings.System._putFloat6933 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z");
-				global::android.provider.Settings.System._getString6934 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;");
-				global::android.provider.Settings.System._getConfiguration6935 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)V");
-				global::android.provider.Settings.System._putString6936 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z");
-				global::android.provider.Settings.System._getUriFor6937 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;");
-				global::android.provider.Settings.System._putConfiguration6938 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)Z");
-				global::android.provider.Settings.System._getShowGTalkServiceStatus6939 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getShowGTalkServiceStatus", "(Landroid/content/ContentResolver;)Z");
-				global::android.provider.Settings.System._setShowGTalkServiceStatus6940 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "setShowGTalkServiceStatus", "(Landroid/content/ContentResolver;Z)V");
-				global::android.provider.Settings.System._System6941 = @__env.GetMethodID(global::android.provider.Settings.System.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.provider.Settings.System.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings$System"));
+				global::android.provider.Settings.System._getInt7201 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I");
+				global::android.provider.Settings.System._getInt7202 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I");
+				global::android.provider.Settings.System._putInt7203 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z");
+				global::android.provider.Settings.System._getLong7204 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J");
+				global::android.provider.Settings.System._getLong7205 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J");
+				global::android.provider.Settings.System._putLong7206 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z");
+				global::android.provider.Settings.System._getFloat7207 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F");
+				global::android.provider.Settings.System._getFloat7208 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F");
+				global::android.provider.Settings.System._putFloat7209 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z");
+				global::android.provider.Settings.System._getString7210 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;");
+				global::android.provider.Settings.System._getConfiguration7211 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)V");
+				global::android.provider.Settings.System._putString7212 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z");
+				global::android.provider.Settings.System._getUriFor7213 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;");
+				global::android.provider.Settings.System._putConfiguration7214 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "putConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)Z");
+				global::android.provider.Settings.System._getShowGTalkServiceStatus7215 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "getShowGTalkServiceStatus", "(Landroid/content/ContentResolver;)Z");
+				global::android.provider.Settings.System._setShowGTalkServiceStatus7216 = @__env.GetStaticMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "setShowGTalkServiceStatus", "(Landroid/content/ContentResolver;Z)V");
+				global::android.provider.Settings.System._System7217 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.System.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Settings6947;
-		public Settings()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Settings7223;
+		public Settings()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.provider.Settings.staticClass, global::android.provider.Settings._Settings6947, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Settings.staticClass, global::android.provider.Settings._Settings7223);
+			Init(@__env, handle);
 		}
 		public static global::java.lang.String ACTION_SETTINGS
 		{
@@ -1718,10 +1692,11 @@ namespace android.provider
 				return "settings";
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.provider.Settings.staticClass = @__class;
-			global::android.provider.Settings._Settings6947 = @__env.GetMethodID(global::android.provider.Settings.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.provider.Settings.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/Settings"));
+			global::android.provider.Settings._Settings7223 = @__env.GetMethodIDNoThrow(global::android.provider.Settings.staticClass, "<init>", "()V");
 		}
 	}
 }

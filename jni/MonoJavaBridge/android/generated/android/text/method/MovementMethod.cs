@@ -1,7 +1,7 @@
 namespace android.text.method
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface MovementMethod 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.method.MovementMethod_))]
+	public interface MovementMethod  : global::MonoJavaBridge.IJavaObject 
 	{
 		void initialize(android.widget.TextView arg0, android.text.Spannable arg1);
 		bool onKeyDown(android.widget.TextView arg0, android.text.Spannable arg1, int arg2, android.view.KeyEvent arg3);
@@ -13,115 +13,101 @@ namespace android.text.method
 		bool canSelectArbitrarily();
 	}
 
-	public partial class MovementMethod_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.method.MovementMethod))]
+	public sealed partial class MovementMethod_ : java.lang.Object, MovementMethod
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static MovementMethod_()
 		{
-			get { return __MovementMethod.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __MovementMethod : java.lang.Object, MovementMethod
-	{
-		internal static global::java.lang.Class staticClass;
-		static __MovementMethod()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.method.__MovementMethod), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.method.__MovementMethod(@__env);
-			}
-		}
-		internal __MovementMethod(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal MovementMethod_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _initialize7817;
+		internal static global::MonoJavaBridge.MethodId _initialize8110;
 		 void android.text.method.MovementMethod.initialize(android.widget.TextView arg0, android.text.Spannable arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.__MovementMethod._initialize7817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.MovementMethod_._initialize8110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._initialize7817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._initialize8110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown7818;
+		internal static global::MonoJavaBridge.MethodId _onKeyDown8111;
 		 bool android.text.method.MovementMethod.onKeyDown(android.widget.TextView arg0, android.text.Spannable arg1, int arg2, android.view.KeyEvent arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__MovementMethod._onKeyDown7818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_._onKeyDown8111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._onKeyDown7818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._onKeyDown8111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp7819;
+		internal static global::MonoJavaBridge.MethodId _onKeyUp8112;
 		 bool android.text.method.MovementMethod.onKeyUp(android.widget.TextView arg0, android.text.Spannable arg1, int arg2, android.view.KeyEvent arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__MovementMethod._onKeyUp7819, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_._onKeyUp8112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._onKeyUp7819, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._onKeyUp8112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent7820;
+		internal static global::MonoJavaBridge.MethodId _onTouchEvent8113;
 		 bool android.text.method.MovementMethod.onTouchEvent(android.widget.TextView arg0, android.text.Spannable arg1, android.view.MotionEvent arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__MovementMethod._onTouchEvent7820, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_._onTouchEvent8113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._onTouchEvent7820, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._onTouchEvent8113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTrackballEvent7821;
+		internal static global::MonoJavaBridge.MethodId _onTrackballEvent8114;
 		 bool android.text.method.MovementMethod.onTrackballEvent(android.widget.TextView arg0, android.text.Spannable arg1, android.view.MotionEvent arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__MovementMethod._onTrackballEvent7821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_._onTrackballEvent8114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._onTrackballEvent7821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._onTrackballEvent8114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyOther7822;
+		internal static global::MonoJavaBridge.MethodId _onKeyOther8115;
 		 bool android.text.method.MovementMethod.onKeyOther(android.widget.TextView arg0, android.text.Spannable arg1, android.view.KeyEvent arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__MovementMethod._onKeyOther7822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_._onKeyOther8115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._onKeyOther7822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._onKeyOther8115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTakeFocus7823;
+		internal static global::MonoJavaBridge.MethodId _onTakeFocus8116;
 		 void android.text.method.MovementMethod.onTakeFocus(android.widget.TextView arg0, android.text.Spannable arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.__MovementMethod._onTakeFocus7823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.MovementMethod_._onTakeFocus8116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._onTakeFocus7823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._onTakeFocus8116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _canSelectArbitrarily7824;
+		internal static global::MonoJavaBridge.MethodId _canSelectArbitrarily8117;
 		 bool android.text.method.MovementMethod.canSelectArbitrarily() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__MovementMethod._canSelectArbitrarily7824);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_._canSelectArbitrarily8117);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__MovementMethod.staticClass, global::android.text.method.__MovementMethod._canSelectArbitrarily7824);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.method.MovementMethod_.staticClass, global::android.text.method.MovementMethod_._canSelectArbitrarily8117);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.method.__MovementMethod.staticClass = @__class;
-			global::android.text.method.__MovementMethod._initialize7817 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.initialize", "(Landroid/widget/TextView;Landroid/text/Spannable;)V");
-			global::android.text.method.__MovementMethod._onKeyDown7818 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.onKeyDown", "(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z");
-			global::android.text.method.__MovementMethod._onKeyUp7819 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.onKeyUp", "(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z");
-			global::android.text.method.__MovementMethod._onTouchEvent7820 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.onTouchEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z");
-			global::android.text.method.__MovementMethod._onTrackballEvent7821 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.onTrackballEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z");
-			global::android.text.method.__MovementMethod._onKeyOther7822 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.onKeyOther", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/KeyEvent;)Z");
-			global::android.text.method.__MovementMethod._onTakeFocus7823 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V");
-			global::android.text.method.__MovementMethod._canSelectArbitrarily7824 = @__env.GetMethodID(global::android.text.method.__MovementMethod.staticClass, "android.text.method.MovementMethod.canSelectArbitrarily", "()Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.method.MovementMethod_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/MovementMethod"));
+			global::android.text.method.MovementMethod_._initialize8110 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "initialize", "(Landroid/widget/TextView;Landroid/text/Spannable;)V");
+			global::android.text.method.MovementMethod_._onKeyDown8111 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onKeyDown", "(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z");
+			global::android.text.method.MovementMethod_._onKeyUp8112 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onKeyUp", "(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z");
+			global::android.text.method.MovementMethod_._onTouchEvent8113 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onTouchEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z");
+			global::android.text.method.MovementMethod_._onTrackballEvent8114 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onTrackballEvent", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z");
+			global::android.text.method.MovementMethod_._onKeyOther8115 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onKeyOther", "(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/KeyEvent;)Z");
+			global::android.text.method.MovementMethod_._onTakeFocus8116 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "onTakeFocus", "(Landroid/widget/TextView;Landroid/text/Spannable;I)V");
+			global::android.text.method.MovementMethod_._canSelectArbitrarily8117 = @__env.GetMethodIDNoThrow(global::android.text.method.MovementMethod_.staticClass, "canSelectArbitrarily", "()Z");
 		}
 	}
 }

@@ -1,50 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AEDFC761-C0ED-4A82-824F-60C6299A9086}</ProjectGuid>
+    <ProjectGuid>{9E6B94B9-A8CA-4497-838F-52620C9B6220}</ProjectGuid>
     <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MonoJavaBridge</RootNamespace>
     <AssemblyName>MonoJavaBridge</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin</OutputPath>
-    <DefineConstants>DEBUG</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\bin</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-    </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="FieldId.cs" />
+    <Compile Include="IJavaObject.cs" />
     <Compile Include="JavaBridge.cs" />
+    <Compile Include="JavaException.cs" />
+    <Compile Include="JavaObject.cs" />
+    <Compile Include="JavaVM.cs" />
+    <Compile Include="JavaVMInitArgs.cs" />
+    <Compile Include="JNIEnv.delegates.cs" />
+    <Compile Include="JNIEnv.env.cs" />
+    <Compile Include="JNIEnv.functions.cs" />
+    <Compile Include="JNIEnv.raw.cs" />
+    <Compile Include="JNIException.cs" />
+    <Compile Include="JniGlobalHandle.cs" />
+    <Compile Include="JniHandle.cs" />
+    <Compile Include="JniLocalHandle.cs" />
+    <Compile Include="JNINativeMethod.cs" />
+    <Compile Include="JNIResult.cs" />
+    <Compile Include="MethodId.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JavaVMOption.cs" />
+    <Compile Include="JNIEnv.cs" />
+    <Compile Include="Value.cs" />
+    <Compile Include="JNIEnv.array.cs" />
+    <Compile Include="Javabridge.link.cs" />
+    <Compile Include="JavaClassAttribute.cs" />
+    <Compile Include="JavaInterfaceAttribute.cs" />
+    <Compile Include="JavaProxyAttribute.cs" />
   </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\jni4net.n\jni4net.n.androidmono.csproj">
-      <Project>{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}</Project>
-      <Name>jni4net.n.androidmono</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

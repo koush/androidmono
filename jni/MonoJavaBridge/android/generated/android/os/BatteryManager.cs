@@ -1,28 +1,22 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class BatteryManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class BatteryManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static BatteryManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.BatteryManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.BatteryManager(@__env);
-			}
-		}
-		protected BatteryManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected BatteryManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BatteryManager5881;
-		public BatteryManager()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BatteryManager6146;
+		public BatteryManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager5881, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager6146);
+			Init(@__env, handle);
 		}
 		public static global::java.lang.String EXTRA_STATUS
 		{
@@ -185,10 +179,11 @@ namespace android.os
 				return 2;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.BatteryManager.staticClass = @__class;
-			global::android.os.BatteryManager._BatteryManager5881 = @__env.GetMethodID(global::android.os.BatteryManager.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.BatteryManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/BatteryManager"));
+			global::android.os.BatteryManager._BatteryManager6146 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -1,40 +1,36 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ComposeShader : android.graphics.Shader
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ComposeShader : android.graphics.Shader
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ComposeShader()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.ComposeShader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.ComposeShader(@__env);
-			}
-		}
-		protected ComposeShader(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ComposeShader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ComposeShader3126;
-		public ComposeShader(android.graphics.Shader arg0, android.graphics.Shader arg1, android.graphics.Xfermode arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ComposeShader3303;
+		public ComposeShader(android.graphics.Shader arg0, android.graphics.Shader arg1, android.graphics.Xfermode arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.ComposeShader.staticClass, global::android.graphics.ComposeShader._ComposeShader3126, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ComposeShader.staticClass, global::android.graphics.ComposeShader._ComposeShader3303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ComposeShader3127;
-		public ComposeShader(android.graphics.Shader arg0, android.graphics.Shader arg1, android.graphics.PorterDuff.Mode arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ComposeShader3304;
+		public ComposeShader(android.graphics.Shader arg0, android.graphics.Shader arg1, android.graphics.PorterDuff.Mode arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.ComposeShader.staticClass, global::android.graphics.ComposeShader._ComposeShader3127, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ComposeShader.staticClass, global::android.graphics.ComposeShader._ComposeShader3304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.ComposeShader.staticClass = @__class;
-			global::android.graphics.ComposeShader._ComposeShader3126 = @__env.GetMethodID(global::android.graphics.ComposeShader.staticClass, "<init>", "(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/Xfermode;)V");
-			global::android.graphics.ComposeShader._ComposeShader3127 = @__env.GetMethodID(global::android.graphics.ComposeShader.staticClass, "<init>", "(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/PorterDuff$Mode;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.ComposeShader.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ComposeShader"));
+			global::android.graphics.ComposeShader._ComposeShader3303 = @__env.GetMethodIDNoThrow(global::android.graphics.ComposeShader.staticClass, "<init>", "(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/Xfermode;)V");
+			global::android.graphics.ComposeShader._ComposeShader3304 = @__env.GetMethodIDNoThrow(global::android.graphics.ComposeShader.staticClass, "<init>", "(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/PorterDuff$Mode;)V");
 		}
 	}
 }

@@ -1,39 +1,25 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface ContextMenu_ContextMenuInfo 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ContextMenu_ContextMenuInfo_))]
+	public interface ContextMenu_ContextMenuInfo  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class ContextMenu_ContextMenuInfo_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ContextMenu_ContextMenuInfo))]
+	public sealed partial class ContextMenu_ContextMenuInfo_ : java.lang.Object, ContextMenu_ContextMenuInfo
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ContextMenu_ContextMenuInfo_()
 		{
-			get { return __ContextMenu_ContextMenuInfo.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ContextMenu_ContextMenuInfo : java.lang.Object, ContextMenu_ContextMenuInfo
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ContextMenu_ContextMenuInfo()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__ContextMenu_ContextMenuInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.__ContextMenu_ContextMenuInfo(@__env);
-			}
-		}
-		internal __ContextMenu_ContextMenuInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ContextMenu_ContextMenuInfo_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.__ContextMenu_ContextMenuInfo.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.ContextMenu_ContextMenuInfo_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ContextMenu_ContextMenuInfo"));
 		}
 	}
 }

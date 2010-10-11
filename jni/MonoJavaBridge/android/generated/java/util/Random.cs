@@ -1,140 +1,136 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Random : java.lang.Object, java.io.Serializable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Random : java.lang.Object, java.io.Serializable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Random()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.Random), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.Random(@__env);
-			}
-		}
-		protected Random(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Random(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _next13792;
+		internal static global::MonoJavaBridge.MethodId _next15620;
 		protected virtual int next(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Random._next13792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Random._next15620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._next13792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._next15620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextDouble13793;
+		internal static global::MonoJavaBridge.MethodId _nextDouble15621;
 		public virtual double nextDouble() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::java.util.Random._nextDouble13793);
+				return @__env.CallDoubleMethod(this.JvmHandle, global::java.util.Random._nextDouble15621);
 			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextDouble13793);
+				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextDouble15621);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextInt13794;
+		internal static global::MonoJavaBridge.MethodId _nextInt15622;
 		public virtual int nextInt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Random._nextInt13794, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Random._nextInt15622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt13794, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextInt15622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextInt13795;
+		internal static global::MonoJavaBridge.MethodId _nextInt15623;
 		public virtual int nextInt() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Random._nextInt13795);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Random._nextInt15623);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt13795);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextInt15623);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextLong13796;
+		internal static global::MonoJavaBridge.MethodId _nextLong15624;
 		public virtual long nextLong() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.util.Random._nextLong13796);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.Random._nextLong15624);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextLong13796);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextLong15624);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextBytes13797;
+		internal static global::MonoJavaBridge.MethodId _nextBytes15625;
 		public virtual void nextBytes(byte[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Random._nextBytes13797, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Random._nextBytes15625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextBytes13797, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextBytes15625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSeed13798;
+		internal static global::MonoJavaBridge.MethodId _setSeed15626;
 		public virtual void setSeed(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Random._setSeed13798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Random._setSeed15626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Random.staticClass, global::java.util.Random._setSeed13798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._setSeed15626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextBoolean13799;
+		internal static global::MonoJavaBridge.MethodId _nextBoolean15627;
 		public virtual bool nextBoolean() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Random._nextBoolean13799);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Random._nextBoolean15627);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextBoolean13799);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextBoolean15627);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextFloat13800;
+		internal static global::MonoJavaBridge.MethodId _nextFloat15628;
 		public virtual float nextFloat() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::java.util.Random._nextFloat13800);
+				return @__env.CallFloatMethod(this.JvmHandle, global::java.util.Random._nextFloat15628);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextFloat13800);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextFloat15628);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextGaussian13801;
+		internal static global::MonoJavaBridge.MethodId _nextGaussian15629;
 		public virtual double nextGaussian() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::java.util.Random._nextGaussian13801);
+				return @__env.CallDoubleMethod(this.JvmHandle, global::java.util.Random._nextGaussian15629);
 			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextGaussian13801);
+				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.Random.staticClass, global::java.util.Random._nextGaussian15629);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Random13802;
-		public Random()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Random15630;
+		public Random()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Random.staticClass, global::java.util.Random._Random13802, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Random.staticClass, global::java.util.Random._Random15630);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Random13803;
-		public Random(long arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Random15631;
+		public Random(long arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Random.staticClass, global::java.util.Random._Random13803, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Random.staticClass, global::java.util.Random._Random15631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.Random.staticClass = @__class;
-			global::java.util.Random._next13792 = @__env.GetMethodID(global::java.util.Random.staticClass, "next", "(I)I");
-			global::java.util.Random._nextDouble13793 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextDouble", "()D");
-			global::java.util.Random._nextInt13794 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextInt", "(I)I");
-			global::java.util.Random._nextInt13795 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextInt", "()I");
-			global::java.util.Random._nextLong13796 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextLong", "()J");
-			global::java.util.Random._nextBytes13797 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextBytes", "([B)V");
-			global::java.util.Random._setSeed13798 = @__env.GetMethodID(global::java.util.Random.staticClass, "setSeed", "(J)V");
-			global::java.util.Random._nextBoolean13799 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextBoolean", "()Z");
-			global::java.util.Random._nextFloat13800 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextFloat", "()F");
-			global::java.util.Random._nextGaussian13801 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextGaussian", "()D");
-			global::java.util.Random._Random13802 = @__env.GetMethodID(global::java.util.Random.staticClass, "<init>", "()V");
-			global::java.util.Random._Random13803 = @__env.GetMethodID(global::java.util.Random.staticClass, "<init>", "(J)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Random.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Random"));
+			global::java.util.Random._next15620 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "next", "(I)I");
+			global::java.util.Random._nextDouble15621 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextDouble", "()D");
+			global::java.util.Random._nextInt15622 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextInt", "(I)I");
+			global::java.util.Random._nextInt15623 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextInt", "()I");
+			global::java.util.Random._nextLong15624 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextLong", "()J");
+			global::java.util.Random._nextBytes15625 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextBytes", "([B)V");
+			global::java.util.Random._setSeed15626 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "setSeed", "(J)V");
+			global::java.util.Random._nextBoolean15627 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextBoolean", "()Z");
+			global::java.util.Random._nextFloat15628 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextFloat", "()F");
+			global::java.util.Random._nextGaussian15629 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "nextGaussian", "()D");
+			global::java.util.Random._Random15630 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "<init>", "()V");
+			global::java.util.Random._Random15631 = @__env.GetMethodIDNoThrow(global::java.util.Random.staticClass, "<init>", "(J)V");
 		}
 	}
 }

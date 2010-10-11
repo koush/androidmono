@@ -1,53 +1,48 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class MaskFilterSpan : android.text.style.CharacterStyle, UpdateAppearance
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MaskFilterSpan : android.text.style.CharacterStyle, UpdateAppearance
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static MaskFilterSpan()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.MaskFilterSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.MaskFilterSpan(@__env);
-			}
-		}
-		protected MaskFilterSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected MaskFilterSpan(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMaskFilter7997;
+		internal static global::MonoJavaBridge.MethodId _getMaskFilter8297;
 		public virtual global::android.graphics.MaskFilter getMaskFilter() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.MaskFilter>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.MaskFilterSpan._getMaskFilter7997));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.MaskFilterSpan._getMaskFilter8297)) as android.graphics.MaskFilter;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.MaskFilter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._getMaskFilter7997));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._getMaskFilter8297)) as android.graphics.MaskFilter;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7998;
+		internal static global::MonoJavaBridge.MethodId _updateDrawState8298;
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.MaskFilterSpan._updateDrawState7998, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.MaskFilterSpan._updateDrawState8298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._updateDrawState7998, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._updateDrawState8298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MaskFilterSpan7999;
-		public MaskFilterSpan(android.graphics.MaskFilter arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _MaskFilterSpan8299;
+		public MaskFilterSpan(android.graphics.MaskFilter arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._MaskFilterSpan7999, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._MaskFilterSpan8299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.MaskFilterSpan.staticClass = @__class;
-			global::android.text.style.MaskFilterSpan._getMaskFilter7997 = @__env.GetMethodID(global::android.text.style.MaskFilterSpan.staticClass, "getMaskFilter", "()Landroid/graphics/MaskFilter;");
-			global::android.text.style.MaskFilterSpan._updateDrawState7998 = @__env.GetMethodID(global::android.text.style.MaskFilterSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.MaskFilterSpan._MaskFilterSpan7999 = @__env.GetMethodID(global::android.text.style.MaskFilterSpan.staticClass, "<init>", "(Landroid/graphics/MaskFilter;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.MaskFilterSpan.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/MaskFilterSpan"));
+			global::android.text.style.MaskFilterSpan._getMaskFilter8297 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "getMaskFilter", "()Landroid/graphics/MaskFilter;");
+			global::android.text.style.MaskFilterSpan._updateDrawState8298 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.MaskFilterSpan._MaskFilterSpan8299 = @__env.GetMethodIDNoThrow(global::android.text.style.MaskFilterSpan.staticClass, "<init>", "(Landroid/graphics/MaskFilter;)V");
 		}
 	}
 }

@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class InputConnectionConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class InputConnectionConstants 
 	{
 		public static int GET_TEXT_WITH_STYLES
 		{

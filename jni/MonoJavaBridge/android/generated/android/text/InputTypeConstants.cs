@@ -1,7 +1,7 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class InputTypeConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class InputTypeConstants 
 	{
 		public static int TYPE_MASK_CLASS
 		{

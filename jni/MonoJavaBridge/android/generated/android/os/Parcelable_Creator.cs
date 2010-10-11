@@ -1,60 +1,47 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Parcelable_Creator 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.Parcelable_Creator_))]
+	public interface Parcelable_Creator  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object[] newArray(int arg0);
 		global::java.lang.Object createFromParcel(android.os.Parcel arg0);
 	}
 
-	public partial class Parcelable_Creator_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.Parcelable_Creator))]
+	public sealed partial class Parcelable_Creator_ : java.lang.Object, Parcelable_Creator
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Parcelable_Creator_()
 		{
-			get { return __Parcelable_Creator.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Parcelable_Creator : java.lang.Object, Parcelable_Creator
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Parcelable_Creator()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.__Parcelable_Creator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.__Parcelable_Creator(@__env);
-			}
-		}
-		internal __Parcelable_Creator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Parcelable_Creator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _newArray6388;
+		internal static global::MonoJavaBridge.MethodId _newArray6660;
 		 global::java.lang.Object[] android.os.Parcelable_Creator.newArray(int arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__Parcelable_Creator._newArray6388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Parcelable_Creator_._newArray6660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__Parcelable_Creator.staticClass, global::android.os.__Parcelable_Creator._newArray6388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Parcelable_Creator_.staticClass, global::android.os.Parcelable_Creator_._newArray6660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromParcel6389;
+		internal static global::MonoJavaBridge.MethodId _createFromParcel6661;
 		 global::java.lang.Object android.os.Parcelable_Creator.createFromParcel(android.os.Parcel arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__Parcelable_Creator._createFromParcel6389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Parcelable_Creator_._createFromParcel6661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__Parcelable_Creator.staticClass, global::android.os.__Parcelable_Creator._createFromParcel6389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Parcelable_Creator_.staticClass, global::android.os.Parcelable_Creator_._createFromParcel6661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.__Parcelable_Creator.staticClass = @__class;
-			global::android.os.__Parcelable_Creator._newArray6388 = @__env.GetMethodID(global::android.os.__Parcelable_Creator.staticClass, "android.os.Parcelable_Creator.newArray", "(I)[Ljava/lang/Object;");
-			global::android.os.__Parcelable_Creator._createFromParcel6389 = @__env.GetMethodID(global::android.os.__Parcelable_Creator.staticClass, "android.os.Parcelable_Creator.createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.Parcelable_Creator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcelable_Creator"));
+			global::android.os.Parcelable_Creator_._newArray6660 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_Creator_.staticClass, "newArray", "(I)[Ljava/lang/Object;");
+			global::android.os.Parcelable_Creator_._createFromParcel6661 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_Creator_.staticClass, "createFromParcel", "(Landroid/os/Parcel;)Ljava/lang/Object;");
 		}
 	}
 }

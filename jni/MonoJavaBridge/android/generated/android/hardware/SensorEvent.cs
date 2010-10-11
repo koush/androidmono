@@ -1,24 +1,17 @@
 namespace android.hardware
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SensorEvent : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SensorEvent : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SensorEvent()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.SensorEvent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.hardware.SensorEvent(@__env);
-			}
-		}
-		protected SensorEvent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SensorEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _values4169;
+		internal static global::MonoJavaBridge.FieldId _values4371;
 		public float[] values
 		{
 			get
@@ -26,7 +19,7 @@ namespace android.hardware
 				return default(float[]);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sensor4170;
+		internal static global::MonoJavaBridge.FieldId _sensor4372;
 		public global::android.hardware.Sensor sensor
 		{
 			get
@@ -37,7 +30,7 @@ namespace android.hardware
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _accuracy4171;
+		internal static global::MonoJavaBridge.FieldId _accuracy4373;
 		public int accuracy
 		{
 			get
@@ -48,7 +41,7 @@ namespace android.hardware
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _timestamp4172;
+		internal static global::MonoJavaBridge.FieldId _timestamp4374;
 		public long timestamp
 		{
 			get
@@ -59,9 +52,10 @@ namespace android.hardware
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.hardware.SensorEvent.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.hardware.SensorEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/SensorEvent"));
 		}
 	}
 }

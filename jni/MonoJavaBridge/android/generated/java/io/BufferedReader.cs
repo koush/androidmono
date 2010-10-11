@@ -1,130 +1,126 @@
 namespace java.io
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class BufferedReader : java.io.Reader
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class BufferedReader : java.io.Reader
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static BufferedReader()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.io.BufferedReader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.io.BufferedReader(@__env);
-			}
-		}
-		protected BufferedReader(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected BufferedReader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _readLine12096;
+		internal static global::MonoJavaBridge.MethodId _readLine12483;
 		public virtual global::java.lang.String readLine() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.BufferedReader._readLine12096));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.BufferedReader._readLine12483)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._readLine12096));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._readLine12483)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12097;
+		internal static global::MonoJavaBridge.MethodId _close12484;
 		public override void close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.io.BufferedReader._close12097);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedReader._close12484);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._close12097);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._close12484);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _mark12098;
+		internal static global::MonoJavaBridge.MethodId _mark12485;
 		public override void mark(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.io.BufferedReader._mark12098, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedReader._mark12485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._mark12098, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._mark12485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _reset12099;
+		internal static global::MonoJavaBridge.MethodId _reset12486;
 		public override void reset() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.io.BufferedReader._reset12099);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.BufferedReader._reset12486);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._reset12099);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._reset12486);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read12100;
+		internal static global::MonoJavaBridge.MethodId _read12487;
 		public override int read(char[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.io.BufferedReader._read12100, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.BufferedReader._read12487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._read12100, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._read12487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read12101;
+		internal static global::MonoJavaBridge.MethodId _read12488;
 		public override int read() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.io.BufferedReader._read12101);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.BufferedReader._read12488);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._read12101);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._read12488);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _skip12102;
+		internal static global::MonoJavaBridge.MethodId _skip12489;
 		public override long skip(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.io.BufferedReader._skip12102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.io.BufferedReader._skip12489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._skip12102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._skip12489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _markSupported12103;
+		internal static global::MonoJavaBridge.MethodId _markSupported12490;
 		public override bool markSupported() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.io.BufferedReader._markSupported12103);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.BufferedReader._markSupported12490);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._markSupported12103);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._markSupported12490);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ready12104;
+		internal static global::MonoJavaBridge.MethodId _ready12491;
 		public override bool ready() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.io.BufferedReader._ready12104);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.BufferedReader._ready12491);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._ready12104);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._ready12491);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BufferedReader12105;
-		public BufferedReader(java.io.Reader arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BufferedReader12492;
+		public BufferedReader(java.io.Reader arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.BufferedReader.staticClass, global::java.io.BufferedReader._BufferedReader12105, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.BufferedReader.staticClass, global::java.io.BufferedReader._BufferedReader12492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BufferedReader12106;
-		public BufferedReader(java.io.Reader arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BufferedReader12493;
+		public BufferedReader(java.io.Reader arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.BufferedReader.staticClass, global::java.io.BufferedReader._BufferedReader12106, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.BufferedReader.staticClass, global::java.io.BufferedReader._BufferedReader12493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.io.BufferedReader.staticClass = @__class;
-			global::java.io.BufferedReader._readLine12096 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "readLine", "()Ljava/lang/String;");
-			global::java.io.BufferedReader._close12097 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "close", "()V");
-			global::java.io.BufferedReader._mark12098 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "mark", "(I)V");
-			global::java.io.BufferedReader._reset12099 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "reset", "()V");
-			global::java.io.BufferedReader._read12100 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "read", "([CII)I");
-			global::java.io.BufferedReader._read12101 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "read", "()I");
-			global::java.io.BufferedReader._skip12102 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "skip", "(J)J");
-			global::java.io.BufferedReader._markSupported12103 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "markSupported", "()Z");
-			global::java.io.BufferedReader._ready12104 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "ready", "()Z");
-			global::java.io.BufferedReader._BufferedReader12105 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "<init>", "(Ljava/io/Reader;I)V");
-			global::java.io.BufferedReader._BufferedReader12106 = @__env.GetMethodID(global::java.io.BufferedReader.staticClass, "<init>", "(Ljava/io/Reader;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.io.BufferedReader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/BufferedReader"));
+			global::java.io.BufferedReader._readLine12483 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "readLine", "()Ljava/lang/String;");
+			global::java.io.BufferedReader._close12484 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "close", "()V");
+			global::java.io.BufferedReader._mark12485 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "mark", "(I)V");
+			global::java.io.BufferedReader._reset12486 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "reset", "()V");
+			global::java.io.BufferedReader._read12487 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "read", "([CII)I");
+			global::java.io.BufferedReader._read12488 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "read", "()I");
+			global::java.io.BufferedReader._skip12489 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "skip", "(J)J");
+			global::java.io.BufferedReader._markSupported12490 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "markSupported", "()Z");
+			global::java.io.BufferedReader._ready12491 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "ready", "()Z");
+			global::java.io.BufferedReader._BufferedReader12492 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "<init>", "(Ljava/io/Reader;I)V");
+			global::java.io.BufferedReader._BufferedReader12493 = @__env.GetMethodIDNoThrow(global::java.io.BufferedReader.staticClass, "<init>", "(Ljava/io/Reader;)V");
 		}
 	}
 }

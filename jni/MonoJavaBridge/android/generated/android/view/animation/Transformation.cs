@@ -1,120 +1,114 @@
 namespace android.view.animation
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Transformation : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Transformation : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Transformation()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.Transformation), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.animation.Transformation(@__env);
-			}
-		}
-		protected Transformation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Transformation(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString9711;
+		internal static global::MonoJavaBridge.MethodId _toString10058;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._toString9711));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.animation.Transformation._toString10058)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toString9711));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toString10058)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear9712;
+		internal static global::MonoJavaBridge.MethodId _clear10059;
 		public virtual void clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._clear9712);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.Transformation._clear10059);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._clear9712);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._clear10059);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set9713;
+		internal static global::MonoJavaBridge.MethodId _set10060;
 		public virtual void set(android.view.animation.Transformation arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._set9713, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.Transformation._set10060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._set9713, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._set10060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compose9714;
+		internal static global::MonoJavaBridge.MethodId _compose10061;
 		public virtual void compose(android.view.animation.Transformation arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._compose9714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.Transformation._compose10061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._compose9714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._compose10061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAlpha9715;
+		internal static global::MonoJavaBridge.MethodId _setAlpha10062;
 		public virtual void setAlpha(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._setAlpha9715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.Transformation._setAlpha10062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._setAlpha9715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._setAlpha10062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toShortString9716;
+		internal static global::MonoJavaBridge.MethodId _toShortString10063;
 		public virtual global::java.lang.String toShortString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._toShortString9716));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.animation.Transformation._toShortString10063)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toShortString9716));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toShortString10063)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMatrix9717;
+		internal static global::MonoJavaBridge.MethodId _getMatrix10064;
 		public virtual global::android.graphics.Matrix getMatrix() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._getMatrix9717));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.animation.Transformation._getMatrix10064)) as android.graphics.Matrix;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getMatrix9717));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getMatrix10064)) as android.graphics.Matrix;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTransformationType9718;
+		internal static global::MonoJavaBridge.MethodId _getTransformationType10065;
 		public virtual int getTransformationType() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.animation.Transformation._getTransformationType9718);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.Transformation._getTransformationType10065);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getTransformationType9718);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getTransformationType10065);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTransformationType9719;
+		internal static global::MonoJavaBridge.MethodId _setTransformationType10066;
 		public virtual void setTransformationType(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._setTransformationType9719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.Transformation._setTransformationType10066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._setTransformationType9719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._setTransformationType10066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlpha9720;
+		internal static global::MonoJavaBridge.MethodId _getAlpha10067;
 		public virtual float getAlpha() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.Transformation._getAlpha9720);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.Transformation._getAlpha10067);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getAlpha9720);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getAlpha10067);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Transformation9721;
-		public Transformation()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Transformation10068;
+		public Transformation()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._Transformation9721, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._Transformation10068);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TYPE_IDENTITY9722;
+		internal static global::MonoJavaBridge.FieldId _TYPE_IDENTITY10069;
 		public static int TYPE_IDENTITY
 		{
 			get
@@ -125,7 +119,7 @@ namespace android.view.animation
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TYPE_ALPHA9723;
+		internal static global::MonoJavaBridge.FieldId _TYPE_ALPHA10070;
 		public static int TYPE_ALPHA
 		{
 			get
@@ -136,7 +130,7 @@ namespace android.view.animation
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TYPE_MATRIX9724;
+		internal static global::MonoJavaBridge.FieldId _TYPE_MATRIX10071;
 		public static int TYPE_MATRIX
 		{
 			get
@@ -147,7 +141,7 @@ namespace android.view.animation
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TYPE_BOTH9725;
+		internal static global::MonoJavaBridge.FieldId _TYPE_BOTH10072;
 		public static int TYPE_BOTH
 		{
 			get
@@ -158,20 +152,21 @@ namespace android.view.animation
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.animation.Transformation.staticClass = @__class;
-			global::android.view.animation.Transformation._toString9711 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.view.animation.Transformation._clear9712 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "clear", "()V");
-			global::android.view.animation.Transformation._set9713 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "set", "(Landroid/view/animation/Transformation;)V");
-			global::android.view.animation.Transformation._compose9714 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "compose", "(Landroid/view/animation/Transformation;)V");
-			global::android.view.animation.Transformation._setAlpha9715 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "setAlpha", "(F)V");
-			global::android.view.animation.Transformation._toShortString9716 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "toShortString", "()Ljava/lang/String;");
-			global::android.view.animation.Transformation._getMatrix9717 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "getMatrix", "()Landroid/graphics/Matrix;");
-			global::android.view.animation.Transformation._getTransformationType9718 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "getTransformationType", "()I");
-			global::android.view.animation.Transformation._setTransformationType9719 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "setTransformationType", "(I)V");
-			global::android.view.animation.Transformation._getAlpha9720 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "getAlpha", "()F");
-			global::android.view.animation.Transformation._Transformation9721 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.animation.Transformation.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/Transformation"));
+			global::android.view.animation.Transformation._toString10058 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.view.animation.Transformation._clear10059 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "clear", "()V");
+			global::android.view.animation.Transformation._set10060 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "set", "(Landroid/view/animation/Transformation;)V");
+			global::android.view.animation.Transformation._compose10061 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "compose", "(Landroid/view/animation/Transformation;)V");
+			global::android.view.animation.Transformation._setAlpha10062 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "setAlpha", "(F)V");
+			global::android.view.animation.Transformation._toShortString10063 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "toShortString", "()Ljava/lang/String;");
+			global::android.view.animation.Transformation._getMatrix10064 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "getMatrix", "()Landroid/graphics/Matrix;");
+			global::android.view.animation.Transformation._getTransformationType10065 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "getTransformationType", "()I");
+			global::android.view.animation.Transformation._setTransformationType10066 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "setTransformationType", "(I)V");
+			global::android.view.animation.Transformation._getAlpha10067 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "getAlpha", "()F");
+			global::android.view.animation.Transformation._Transformation10068 = @__env.GetMethodIDNoThrow(global::android.view.animation.Transformation.staticClass, "<init>", "()V");
 		}
 	}
 }

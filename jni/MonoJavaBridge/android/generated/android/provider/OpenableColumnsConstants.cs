@@ -1,7 +1,7 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class OpenableColumnsConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class OpenableColumnsConstants 
 	{
 		public static global::java.lang.String DISPLAY_NAME
 		{

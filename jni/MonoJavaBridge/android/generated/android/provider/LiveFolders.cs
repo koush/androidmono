@@ -1,21 +1,14 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class LiveFolders : java.lang.Object, BaseColumns
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class LiveFolders : java.lang.Object, BaseColumns
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LiveFolders()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.LiveFolders), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.provider.LiveFolders(@__env);
-			}
-		}
-		internal LiveFolders(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal LiveFolders(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
 		public static global::java.lang.String NAME
@@ -109,9 +102,10 @@ namespace android.provider
 				return "android.intent.action.CREATE_LIVE_FOLDER";
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.provider.LiveFolders.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.provider.LiveFolders.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/LiveFolders"));
 		}
 	}
 }

@@ -1,202 +1,198 @@
 namespace android.telephony
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ServiceState : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ServiceState : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ServiceState()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.telephony.ServiceState), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.telephony.ServiceState(@__env);
-			}
-		}
-		protected ServiceState(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ServiceState(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals7125;
+		internal static global::MonoJavaBridge.MethodId _equals7405;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._equals7125, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState._equals7405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._equals7125, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._equals7405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7126;
+		internal static global::MonoJavaBridge.MethodId _toString7406;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._toString7126));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.telephony.ServiceState._toString7406)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._toString7126));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._toString7406)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode7127;
+		internal static global::MonoJavaBridge.MethodId _hashCode7407;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._hashCode7127);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.ServiceState._hashCode7407);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._hashCode7127);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._hashCode7407);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getState7128;
+		internal static global::MonoJavaBridge.MethodId _getState7408;
 		public virtual int getState() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._getState7128);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.ServiceState._getState7408);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getState7128);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getState7408);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setState7129;
+		internal static global::MonoJavaBridge.MethodId _setState7409;
 		public virtual void setState(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setState7129, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._setState7409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setState7129, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setState7409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7130;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel7410;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._writeToParcel7130, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._writeToParcel7410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._writeToParcel7130, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._writeToParcel7410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents7131;
+		internal static global::MonoJavaBridge.MethodId _describeContents7411;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._describeContents7131);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.ServiceState._describeContents7411);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._describeContents7131);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._describeContents7411);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _copyFrom7132;
+		internal static global::MonoJavaBridge.MethodId _copyFrom7412;
 		protected virtual void copyFrom(android.telephony.ServiceState arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._copyFrom7132, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._copyFrom7412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._copyFrom7132, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._copyFrom7412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRoaming7133;
+		internal static global::MonoJavaBridge.MethodId _getRoaming7413;
 		public virtual bool getRoaming() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._getRoaming7133);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState._getRoaming7413);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getRoaming7133);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getRoaming7413);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOperatorAlphaLong7134;
+		internal static global::MonoJavaBridge.MethodId _getOperatorAlphaLong7414;
 		public virtual global::java.lang.String getOperatorAlphaLong() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._getOperatorAlphaLong7134));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.telephony.ServiceState._getOperatorAlphaLong7414)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaLong7134));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaLong7414)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOperatorAlphaShort7135;
+		internal static global::MonoJavaBridge.MethodId _getOperatorAlphaShort7415;
 		public virtual global::java.lang.String getOperatorAlphaShort() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._getOperatorAlphaShort7135));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.telephony.ServiceState._getOperatorAlphaShort7415)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaShort7135));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaShort7415)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOperatorNumeric7136;
+		internal static global::MonoJavaBridge.MethodId _getOperatorNumeric7416;
 		public virtual global::java.lang.String getOperatorNumeric() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._getOperatorNumeric7136));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.telephony.ServiceState._getOperatorNumeric7416)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorNumeric7136));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorNumeric7416)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIsManualSelection7137;
+		internal static global::MonoJavaBridge.MethodId _getIsManualSelection7417;
 		public virtual bool getIsManualSelection() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._getIsManualSelection7137);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState._getIsManualSelection7417);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getIsManualSelection7137);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getIsManualSelection7417);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setStateOutOfService7138;
+		internal static global::MonoJavaBridge.MethodId _setStateOutOfService7418;
 		public virtual void setStateOutOfService() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setStateOutOfService7138);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._setStateOutOfService7418);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setStateOutOfService7138);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setStateOutOfService7418);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setStateOff7139;
+		internal static global::MonoJavaBridge.MethodId _setStateOff7419;
 		public virtual void setStateOff() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setStateOff7139);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._setStateOff7419);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setStateOff7139);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setStateOff7419);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setRoaming7140;
+		internal static global::MonoJavaBridge.MethodId _setRoaming7420;
 		public virtual void setRoaming(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setRoaming7140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._setRoaming7420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setRoaming7140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setRoaming7420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOperatorName7141;
+		internal static global::MonoJavaBridge.MethodId _setOperatorName7421;
 		public virtual void setOperatorName(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setOperatorName7141, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._setOperatorName7421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setOperatorName7141, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setOperatorName7421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIsManualSelection7142;
+		internal static global::MonoJavaBridge.MethodId _setIsManualSelection7422;
 		public virtual void setIsManualSelection(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setIsManualSelection7142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.ServiceState._setIsManualSelection7422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setIsManualSelection7142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setIsManualSelection7422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ServiceState7143;
-		public ServiceState()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ServiceState7423;
+		public ServiceState()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState7143, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState7423);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ServiceState7144;
-		public ServiceState(android.telephony.ServiceState arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ServiceState7424;
+		public ServiceState(android.telephony.ServiceState arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState7144, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState7424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ServiceState7145;
-		public ServiceState(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ServiceState7425;
+		public ServiceState(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState7145, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._ServiceState7425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
 		public static int STATE_IN_SERVICE
 		{
@@ -226,7 +222,7 @@ namespace android.telephony
 				return 3;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR7146;
+		internal static global::MonoJavaBridge.FieldId _CREATOR7426;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -234,30 +230,31 @@ namespace android.telephony
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.telephony.ServiceState.staticClass = @__class;
-			global::android.telephony.ServiceState._equals7125 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.telephony.ServiceState._toString7126 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.telephony.ServiceState._hashCode7127 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "hashCode", "()I");
-			global::android.telephony.ServiceState._getState7128 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getState", "()I");
-			global::android.telephony.ServiceState._setState7129 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setState", "(I)V");
-			global::android.telephony.ServiceState._writeToParcel7130 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.telephony.ServiceState._describeContents7131 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "describeContents", "()I");
-			global::android.telephony.ServiceState._copyFrom7132 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "copyFrom", "(Landroid/telephony/ServiceState;)V");
-			global::android.telephony.ServiceState._getRoaming7133 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getRoaming", "()Z");
-			global::android.telephony.ServiceState._getOperatorAlphaLong7134 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getOperatorAlphaLong", "()Ljava/lang/String;");
-			global::android.telephony.ServiceState._getOperatorAlphaShort7135 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getOperatorAlphaShort", "()Ljava/lang/String;");
-			global::android.telephony.ServiceState._getOperatorNumeric7136 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getOperatorNumeric", "()Ljava/lang/String;");
-			global::android.telephony.ServiceState._getIsManualSelection7137 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getIsManualSelection", "()Z");
-			global::android.telephony.ServiceState._setStateOutOfService7138 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setStateOutOfService", "()V");
-			global::android.telephony.ServiceState._setStateOff7139 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setStateOff", "()V");
-			global::android.telephony.ServiceState._setRoaming7140 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setRoaming", "(Z)V");
-			global::android.telephony.ServiceState._setOperatorName7141 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setOperatorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.telephony.ServiceState._setIsManualSelection7142 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setIsManualSelection", "(Z)V");
-			global::android.telephony.ServiceState._ServiceState7143 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "<init>", "()V");
-			global::android.telephony.ServiceState._ServiceState7144 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/telephony/ServiceState;)V");
-			global::android.telephony.ServiceState._ServiceState7145 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.telephony.ServiceState.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/ServiceState"));
+			global::android.telephony.ServiceState._equals7405 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.telephony.ServiceState._toString7406 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.ServiceState._hashCode7407 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "hashCode", "()I");
+			global::android.telephony.ServiceState._getState7408 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "getState", "()I");
+			global::android.telephony.ServiceState._setState7409 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "setState", "(I)V");
+			global::android.telephony.ServiceState._writeToParcel7410 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.telephony.ServiceState._describeContents7411 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "describeContents", "()I");
+			global::android.telephony.ServiceState._copyFrom7412 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "copyFrom", "(Landroid/telephony/ServiceState;)V");
+			global::android.telephony.ServiceState._getRoaming7413 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "getRoaming", "()Z");
+			global::android.telephony.ServiceState._getOperatorAlphaLong7414 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "getOperatorAlphaLong", "()Ljava/lang/String;");
+			global::android.telephony.ServiceState._getOperatorAlphaShort7415 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "getOperatorAlphaShort", "()Ljava/lang/String;");
+			global::android.telephony.ServiceState._getOperatorNumeric7416 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "getOperatorNumeric", "()Ljava/lang/String;");
+			global::android.telephony.ServiceState._getIsManualSelection7417 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "getIsManualSelection", "()Z");
+			global::android.telephony.ServiceState._setStateOutOfService7418 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "setStateOutOfService", "()V");
+			global::android.telephony.ServiceState._setStateOff7419 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "setStateOff", "()V");
+			global::android.telephony.ServiceState._setRoaming7420 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "setRoaming", "(Z)V");
+			global::android.telephony.ServiceState._setOperatorName7421 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "setOperatorName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::android.telephony.ServiceState._setIsManualSelection7422 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "setIsManualSelection", "(Z)V");
+			global::android.telephony.ServiceState._ServiceState7423 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "()V");
+			global::android.telephony.ServiceState._ServiceState7424 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/telephony/ServiceState;)V");
+			global::android.telephony.ServiceState._ServiceState7425 = @__env.GetMethodIDNoThrow(global::android.telephony.ServiceState.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

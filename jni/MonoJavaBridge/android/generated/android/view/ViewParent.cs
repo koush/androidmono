@@ -1,7 +1,7 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface ViewParent 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewParent_))]
+	public interface ViewParent  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.view.ViewParent getParent();
 		global::android.view.View focusSearch(android.view.View arg0, int arg1);
@@ -23,215 +23,201 @@ namespace android.view
 		void childDrawableStateChanged(android.view.View arg0);
 	}
 
-	public partial class ViewParent_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ViewParent))]
+	public sealed partial class ViewParent_ : java.lang.Object, ViewParent
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ViewParent_()
 		{
-			get { return __ViewParent.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ViewParent : java.lang.Object, ViewParent
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ViewParent()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__ViewParent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.__ViewParent(@__env);
-			}
-		}
-		internal __ViewParent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ViewParent_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParent9318;
+		internal static global::MonoJavaBridge.MethodId _getParent9628;
 		 global::android.view.ViewParent android.view.ViewParent.getParent() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__ViewParent._getParent9318));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ViewParent>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewParent_._getParent9628)) as android.view.ViewParent;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._getParent9318));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ViewParent>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._getParent9628)) as android.view.ViewParent;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _focusSearch9319;
+		internal static global::MonoJavaBridge.MethodId _focusSearch9629;
 		 global::android.view.View android.view.ViewParent.focusSearch(android.view.View arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__ViewParent._focusSearch9319, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewParent_._focusSearch9629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._focusSearch9319, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._focusSearch9629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createContextMenu9320;
+		internal static global::MonoJavaBridge.MethodId _createContextMenu9630;
 		 void android.view.ViewParent.createContextMenu(android.view.ContextMenu arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._createContextMenu9320, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._createContextMenu9630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._createContextMenu9320, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._createContextMenu9630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isLayoutRequested9321;
+		internal static global::MonoJavaBridge.MethodId _isLayoutRequested9631;
 		 bool android.view.ViewParent.isLayoutRequested() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._isLayoutRequested9321);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewParent_._isLayoutRequested9631);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._isLayoutRequested9321);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._isLayoutRequested9631);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestLayout9322;
+		internal static global::MonoJavaBridge.MethodId _requestLayout9632;
 		 void android.view.ViewParent.requestLayout() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestLayout9322);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._requestLayout9632);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestLayout9322);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._requestLayout9632);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestChildFocus9323;
+		internal static global::MonoJavaBridge.MethodId _requestChildFocus9633;
 		 void android.view.ViewParent.requestChildFocus(android.view.View arg0, android.view.View arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestChildFocus9323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._requestChildFocus9633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestChildFocus9323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._requestChildFocus9633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _focusableViewAvailable9324;
+		internal static global::MonoJavaBridge.MethodId _focusableViewAvailable9634;
 		 void android.view.ViewParent.focusableViewAvailable(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._focusableViewAvailable9324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._focusableViewAvailable9634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._focusableViewAvailable9324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._focusableViewAvailable9634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _showContextMenuForChild9325;
+		internal static global::MonoJavaBridge.MethodId _showContextMenuForChild9635;
 		 bool android.view.ViewParent.showContextMenuForChild(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._showContextMenuForChild9325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewParent_._showContextMenuForChild9635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._showContextMenuForChild9325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._showContextMenuForChild9635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestChildRectangleOnScreen9326;
+		internal static global::MonoJavaBridge.MethodId _requestChildRectangleOnScreen9636;
 		 bool android.view.ViewParent.requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._requestChildRectangleOnScreen9326, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewParent_._requestChildRectangleOnScreen9636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestChildRectangleOnScreen9326, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._requestChildRectangleOnScreen9636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearChildFocus9327;
+		internal static global::MonoJavaBridge.MethodId _clearChildFocus9637;
 		 void android.view.ViewParent.clearChildFocus(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._clearChildFocus9327, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._clearChildFocus9637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._clearChildFocus9327, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._clearChildFocus9637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _recomputeViewAttributes9328;
+		internal static global::MonoJavaBridge.MethodId _recomputeViewAttributes9638;
 		 void android.view.ViewParent.recomputeViewAttributes(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._recomputeViewAttributes9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._recomputeViewAttributes9638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._recomputeViewAttributes9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._recomputeViewAttributes9638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _bringChildToFront9329;
+		internal static global::MonoJavaBridge.MethodId _bringChildToFront9639;
 		 void android.view.ViewParent.bringChildToFront(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._bringChildToFront9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._bringChildToFront9639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._bringChildToFront9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._bringChildToFront9639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestDisallowInterceptTouchEvent9330;
+		internal static global::MonoJavaBridge.MethodId _requestDisallowInterceptTouchEvent9640;
 		 void android.view.ViewParent.requestDisallowInterceptTouchEvent(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestDisallowInterceptTouchEvent9330, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._requestDisallowInterceptTouchEvent9640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestDisallowInterceptTouchEvent9330, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._requestDisallowInterceptTouchEvent9640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateChild9331;
+		internal static global::MonoJavaBridge.MethodId _invalidateChild9641;
 		 void android.view.ViewParent.invalidateChild(android.view.View arg0, android.graphics.Rect arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._invalidateChild9331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._invalidateChild9641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._invalidateChild9331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._invalidateChild9641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateChildInParent9332;
+		internal static global::MonoJavaBridge.MethodId _invalidateChildInParent9642;
 		 global::android.view.ViewParent android.view.ViewParent.invalidateChildInParent(int[] arg0, android.graphics.Rect arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__ViewParent._invalidateChildInParent9332, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ViewParent>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewParent_._invalidateChildInParent9642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.ViewParent;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._invalidateChildInParent9332, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ViewParent>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._invalidateChildInParent9642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.ViewParent;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChildVisibleRect9333;
+		internal static global::MonoJavaBridge.MethodId _getChildVisibleRect9643;
 		 bool android.view.ViewParent.getChildVisibleRect(android.view.View arg0, android.graphics.Rect arg1, android.graphics.Point arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._getChildVisibleRect9333, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ViewParent_._getChildVisibleRect9643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._getChildVisibleRect9333, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._getChildVisibleRect9643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestTransparentRegion9334;
+		internal static global::MonoJavaBridge.MethodId _requestTransparentRegion9644;
 		 void android.view.ViewParent.requestTransparentRegion(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestTransparentRegion9334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._requestTransparentRegion9644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestTransparentRegion9334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._requestTransparentRegion9644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _childDrawableStateChanged9335;
+		internal static global::MonoJavaBridge.MethodId _childDrawableStateChanged9645;
 		 void android.view.ViewParent.childDrawableStateChanged(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__ViewParent._childDrawableStateChanged9335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewParent_._childDrawableStateChanged9645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._childDrawableStateChanged9335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewParent_.staticClass, global::android.view.ViewParent_._childDrawableStateChanged9645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.__ViewParent.staticClass = @__class;
-			global::android.view.__ViewParent._getParent9318 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.getParent", "()Landroid/view/ViewParent;");
-			global::android.view.__ViewParent._focusSearch9319 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.focusSearch", "(Landroid/view/View;I)Landroid/view/View;");
-			global::android.view.__ViewParent._createContextMenu9320 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.createContextMenu", "(Landroid/view/ContextMenu;)V");
-			global::android.view.__ViewParent._isLayoutRequested9321 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.isLayoutRequested", "()Z");
-			global::android.view.__ViewParent._requestLayout9322 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.requestLayout", "()V");
-			global::android.view.__ViewParent._requestChildFocus9323 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.view.__ViewParent._focusableViewAvailable9324 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.focusableViewAvailable", "(Landroid/view/View;)V");
-			global::android.view.__ViewParent._showContextMenuForChild9325 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.showContextMenuForChild", "(Landroid/view/View;)Z");
-			global::android.view.__ViewParent._requestChildRectangleOnScreen9326 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z");
-			global::android.view.__ViewParent._clearChildFocus9327 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.clearChildFocus", "(Landroid/view/View;)V");
-			global::android.view.__ViewParent._recomputeViewAttributes9328 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.recomputeViewAttributes", "(Landroid/view/View;)V");
-			global::android.view.__ViewParent._bringChildToFront9329 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.bringChildToFront", "(Landroid/view/View;)V");
-			global::android.view.__ViewParent._requestDisallowInterceptTouchEvent9330 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.requestDisallowInterceptTouchEvent", "(Z)V");
-			global::android.view.__ViewParent._invalidateChild9331 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.invalidateChild", "(Landroid/view/View;Landroid/graphics/Rect;)V");
-			global::android.view.__ViewParent._invalidateChildInParent9332 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.invalidateChildInParent", "([ILandroid/graphics/Rect;)Landroid/view/ViewParent;");
-			global::android.view.__ViewParent._getChildVisibleRect9333 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z");
-			global::android.view.__ViewParent._requestTransparentRegion9334 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.requestTransparentRegion", "(Landroid/view/View;)V");
-			global::android.view.__ViewParent._childDrawableStateChanged9335 = @__env.GetMethodID(global::android.view.__ViewParent.staticClass, "android.view.ViewParent.childDrawableStateChanged", "(Landroid/view/View;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.ViewParent_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewParent"));
+			global::android.view.ViewParent_._getParent9628 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "getParent", "()Landroid/view/ViewParent;");
+			global::android.view.ViewParent_._focusSearch9629 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "focusSearch", "(Landroid/view/View;I)Landroid/view/View;");
+			global::android.view.ViewParent_._createContextMenu9630 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "createContextMenu", "(Landroid/view/ContextMenu;)V");
+			global::android.view.ViewParent_._isLayoutRequested9631 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "isLayoutRequested", "()Z");
+			global::android.view.ViewParent_._requestLayout9632 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "requestLayout", "()V");
+			global::android.view.ViewParent_._requestChildFocus9633 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "requestChildFocus", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.view.ViewParent_._focusableViewAvailable9634 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "focusableViewAvailable", "(Landroid/view/View;)V");
+			global::android.view.ViewParent_._showContextMenuForChild9635 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z");
+			global::android.view.ViewParent_._requestChildRectangleOnScreen9636 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "requestChildRectangleOnScreen", "(Landroid/view/View;Landroid/graphics/Rect;Z)Z");
+			global::android.view.ViewParent_._clearChildFocus9637 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "clearChildFocus", "(Landroid/view/View;)V");
+			global::android.view.ViewParent_._recomputeViewAttributes9638 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "recomputeViewAttributes", "(Landroid/view/View;)V");
+			global::android.view.ViewParent_._bringChildToFront9639 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "bringChildToFront", "(Landroid/view/View;)V");
+			global::android.view.ViewParent_._requestDisallowInterceptTouchEvent9640 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "requestDisallowInterceptTouchEvent", "(Z)V");
+			global::android.view.ViewParent_._invalidateChild9641 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "invalidateChild", "(Landroid/view/View;Landroid/graphics/Rect;)V");
+			global::android.view.ViewParent_._invalidateChildInParent9642 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "invalidateChildInParent", "([ILandroid/graphics/Rect;)Landroid/view/ViewParent;");
+			global::android.view.ViewParent_._getChildVisibleRect9643 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "getChildVisibleRect", "(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z");
+			global::android.view.ViewParent_._requestTransparentRegion9644 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "requestTransparentRegion", "(Landroid/view/View;)V");
+			global::android.view.ViewParent_._childDrawableStateChanged9645 = @__env.GetMethodIDNoThrow(global::android.view.ViewParent_.staticClass, "childDrawableStateChanged", "(Landroid/view/View;)V");
 		}
 	}
 }

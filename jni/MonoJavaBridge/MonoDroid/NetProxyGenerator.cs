@@ -1,4 +1,3 @@
-
 using System;
 using System.IO;
 using System.Reflection;
@@ -119,6 +118,7 @@ namespace MonoDroid
             myModel = model;
 
             var androidTypes = from type in myModel.Types where type.Name.StartsWith("android.") && !type.Name.StartsWith("android.test.") select type;
+            //var androidTypes = from type in myModel.Types where type.Name == "java.lang.Object" select type;
             foreach (var type in androidTypes)
             {
                 AddAllTypes(myModel, myTypesOfInterest, type);
@@ -140,8 +140,8 @@ namespace MonoDroid
                     }
                     // jni4net exposes java.util.List.listIterator with a return type of Iterator, and not ListIterator...
                     // massage this so it works.
-                    if ((type.Name == "java.util.AbstractList" || type.Name == "java.util.concurrent.CopyOnWriteArrayList") && method.Name == "listIterator")
-                        method.Return = "java.util.Iterator";
+                    //if ((type.Name == "java.util.AbstractList" || type.Name == "java.util.concurrent.CopyOnWriteArrayList") && method.Name == "listIterator")
+                    //    method.Return = "java.util.Iterator";
                 }
                 if (type.Parent != null)
                     type.Parent = EscapeName(type.Parent);
@@ -160,11 +160,13 @@ namespace MonoDroid
         
         static NetProxyGenerator()
         {
+            /*
             Assembly jniAssembly = typeof(net.sf.jni4net.Bridge).Assembly;
             foreach (var type in jniAssembly.GetTypes())
             {
                 myJniTypes.Add(type.FullName, type);
-            }            
+            } 
+            */          
 
             for (int i = 0; i < myKeywords.Length; i++)
             {
@@ -231,7 +233,7 @@ namespace MonoDroid
             var file = Path.Combine(type.Namespace.Replace('.', Path.DirectorySeparatorChar), type.SimpleName + ".cs").Replace("@", string.Empty);
             return Path.Combine("generated", file);
         }        
-        
+
         protected override bool BeginType (Type type)
         {
             myInitJni.Clear();
@@ -239,10 +241,26 @@ namespace MonoDroid
             if (myJniTypes.ContainsKey(type.Name) || !myTypesOfInterest.Contains(type))
                 return false;
             
-            if (type.IsInterface)
-                WriteLine("[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]");
+            if (type.WrappedInterface == null)
+            {
+                if (type.IsInterface)
+                {
+                    WriteLine("[global::MonoJavaBridge.JavaInterface(typeof(global::{0}_))]", type.Name);
+                }
+                else if (type.Abstract)
+                {
+                    WriteLine("[global::MonoJavaBridge.JavaClass(typeof(global::{0}_))]", type.Name);
+                }
+                else
+                {
+                    WriteLine("[global::MonoJavaBridge.JavaClass()]");
+                }
+            }
             else
-                WriteLine("[global::net.sf.jni4net.attributes.JavaClassAttribute()]");
+            {
+                WriteLine("[global::MonoJavaBridge.JavaProxy(typeof(global::{0}))]", type.Name.Substring(0, type.Name.Length - 1));
+                //WriteLine("[global::net.sf.jni4net.attributes.ClrWrapperAttribute(typeof(global::{0}), typeof(global::{0}_))]", type.WrappedInterface);
+            }
             
             Write(type.Scope);
             if (type.IsNew)
@@ -256,10 +274,12 @@ namespace MonoDroid
             if (type.IsInterface)
                 Write("interface {0}", type.SimpleName);
             else
-                Write("class {0}", type.SimpleName);
+                Write("partial class {0}", type.SimpleName);
             
             if (type.Parent != null || type.Interfaces.Count > 0)
                 Write(":");
+            if (type.IsInterface && type.Interfaces.Count == 0)
+                Write(" : global::MonoJavaBridge.IJavaObject");
             
             if (type.Parent != null)
                 Write(type.Parent, false);
@@ -275,14 +295,24 @@ namespace MonoDroid
             if (!type.IsInterface && !type.Static)
             {
                 myIndent++;
-                WriteLine("internal {0}static global::java.lang.Class staticClass;", type.Parent == null || myJniTypes.ContainsKey(type.Parent) ? "" : "new ");
+                WriteLine("internal {0}static global::MonoJavaBridge.JniGlobalHandle staticClass;", type.Parent == null || myJniTypes.ContainsKey(type.Parent) ? "" : "new ");
+
+                /*
+                if (!type.HasEmptyConstructor)
+                {
+                    WriteLine("public {0}(){{}}", type.SimpleName);
+                }
+                */
+                
                 WriteLine("static {0}()", type.SimpleName);
                 WriteLine("{");
                 myIndent++;
-                WriteLine("global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::{0}), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);", type.Name);
+                //WriteLine("global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::{0}), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);", type.Name);
+                WriteLine("InitJNI();");
                 myIndent--;
                 WriteLine("}");
                 
+                /*
                 if (!type.Abstract)
                 {
                     WriteLine("private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper", myJniTypes.ContainsKey(type.Parent) ? string.Empty : "new ");
@@ -297,8 +327,9 @@ namespace MonoDroid
                     myIndent--;
                     WriteLine("}");
                 }
+                */
 
-                WriteLine("{1} {0}(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
+                WriteLine("{1} {0}(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
                 WriteLine("{");
                 WriteLine("}");
                 
@@ -321,6 +352,7 @@ namespace MonoDroid
         void GenerateInterfaceStubs(Type interfaceType)
         {
             WriteLine();
+            /*
             WriteLine("public partial class {0}_", interfaceType.SimpleName);
             WriteLine("{");
             myIndent++;
@@ -332,34 +364,74 @@ namespace MonoDroid
             WriteLine("}");
             myIndent--;
             WriteLine("}");
-            
             WriteLine();
+            */
             
             Type wrapperType = new Type();
-            wrapperType.Name = interfaceType.Name.Insert(interfaceType.Name.LastIndexOf('.') + 1, "__");
+            wrapperType.WrappedInterface = interfaceType.Name;
+            wrapperType.WrappedInterfaceType = interfaceType;
+            //wrapperType.Name = interfaceType.Name.Insert(interfaceType.Name.LastIndexOf('.') + 1, "_");
+            wrapperType.Name = interfaceType.Name + "_";
             wrapperType.Scope = interfaceType.Scope;
             wrapperType.IsSealed = true;
-            wrapperType.Parent = "java.lang.Object";
-            wrapperType.ParentType = myModel.FindType("java.lang.Object");
-            wrapperType.Interfaces.Add(interfaceType.Name);
-            wrapperType.InterfaceTypes.Add(interfaceType);
-            
-            var h = new HashSet<Type>();
-            AddAllInterfaces(interfaceType, h);
-            foreach (var i in h)
+            if (interfaceType.IsInterface)
             {
-                foreach (var m in i.Methods)
+                wrapperType.Parent = "java.lang.Object";
+                wrapperType.ParentType = myModel.FindType("java.lang.Object");
+                wrapperType.Interfaces.Add(interfaceType.Name);
+                wrapperType.InterfaceTypes.Add(interfaceType);
+
+                var h = new HashSet<Type>();
+                AddAllInterfaces(interfaceType, h);
+                foreach (var i in h)
                 {
-                    var mc = new Method();
-                    mc.Type = wrapperType;
-                    mc.Name = i.Name + "." + m.Name;
-                    //mc.Scope = "public";
-                    mc.Parameters.AddRange(m.Parameters);
-                    mc.ParameterTypes.AddRange(m.ParameterTypes);
-                    mc.Return = m.Return;
-                    mc.ReturnType = m.ReturnType;
-                    if (!wrapperType.Methods.Contains(mc))
-                        wrapperType.Methods.Add(mc);
+                    foreach (var m in i.Methods)
+                    {
+                        var mc = new Method();
+                        mc.Type = wrapperType;
+                        mc.Name = i.Name + "." + m.Name;
+                        //mc.Scope = "public";
+                        mc.Parameters.AddRange(m.Parameters);
+                        mc.ParameterTypes.AddRange(m.ParameterTypes);
+                        mc.Return = m.Return;
+                        mc.ReturnType = m.ReturnType;
+                        if (!wrapperType.Methods.Contains(mc))
+                            wrapperType.Methods.Add(mc);
+                    }
+                }
+            }
+            else
+            {
+                wrapperType.Parent = interfaceType.Name;
+                wrapperType.ParentType = interfaceType;
+
+                var curType = interfaceType;
+                var allImplementedMethods = new Methods();
+                while (curType != null)
+                {
+                    foreach (var m in curType.Methods)
+                    {
+                        if (!m.Abstract)
+                        {
+                            if (!allImplementedMethods.Contains(m))
+                                allImplementedMethods.Add(m);
+                            continue;
+                        }
+                        if (allImplementedMethods.Contains(m))
+                            continue;
+                        var mc = new Method();
+                        mc.Type = wrapperType;
+                        mc.Name = m.Name;
+                        mc.Scope = m.Scope;
+                        mc.IsOverride = true;
+                        mc.Parameters.AddRange(m.Parameters);
+                        mc.ParameterTypes.AddRange(m.ParameterTypes);
+                        mc.Return = m.Return;
+                        mc.ReturnType = m.ReturnType;
+                        if (!wrapperType.Methods.Contains(mc))
+                            wrapperType.Methods.Add(mc);
+                    }
+                    curType = curType.ParentType;
                 }
             }
             
@@ -375,15 +447,22 @@ namespace MonoDroid
             {
                 myInitJni.Clear();
                 base.EndType(type);
+                
                 if (type.IsInterface)
                     GenerateInterfaceStubs(type);
+
                 return;
             }
+
             myIndent++;
-            WriteLine("private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)");
+            WriteLine("private static void InitJNI()");
             WriteLine("{");
             myIndent++;
-            WriteLine("global::{0}.staticClass = @__class;", type.Name);
+            WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
+            if (type.WrappedInterface == null)
+                WriteLine("global::{0}.staticClass = @__env.NewGlobalRef(@__env.FindClass(\"{1}\"));", type.Name, GetJavaName(type).Replace('.', '/'));
+            else
+                WriteLine("global::{0}.staticClass = @__env.NewGlobalRef(@__env.FindClass(\"{1}\"));", type.Name, GetJavaName(type.WrappedInterfaceType).Replace('.', '/'));
             foreach (var initJni in myInitJni)
             {
                 WriteLine(initJni);
@@ -391,8 +470,11 @@ namespace MonoDroid
             myIndent--;
             WriteLine("}");
             myIndent--;
+
             myInitJni.Clear();
             base.EndType(type);
+            if (type.Abstract)
+                GenerateInterfaceStubs(type);
         }
 
         List<string> myInitJni = new List<string>();
@@ -405,7 +487,7 @@ namespace MonoDroid
             bool hasValue = !string.IsNullOrEmpty(field.Value);
             
             if (!hasValue)
-                WriteLine("internal static global::net.sf.jni4net.jni.FieldId _{0}{1};", field.Name.Replace("@",""), myMemberCounter++);
+                WriteLine("internal static global::MonoJavaBridge.FieldId _{0}{1};", field.Name.Replace("@",""), myMemberCounter++);
             
             Write(field.Scope);
             if (field.Static)
@@ -541,7 +623,7 @@ namespace MonoDroid
         public static string GetMethodStatement(Method method)
         {
             if (method.IsConstructor)
-                return "@__env.NewObject({1});";
+                return "global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject({1});";
 
             var type = method.ReturnType;
             var typeName = method.Return;
@@ -570,6 +652,7 @@ namespace MonoDroid
             }
             
             StringBuilder ret = new StringBuilder();
+            /*
             if (typeName.EndsWith("[]"))
             {
                 // TODO: Actually return something
@@ -586,12 +669,23 @@ namespace MonoDroid
                     ret.AppendFormat("return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<{0}>", typeName);
                 }
             }
-            
-            ret.Append("(@__env, @__env.Call{0}ObjectMethodPtr({1}));");
+            */
+            if (method.Return == null)
+                Console.WriteLine(method.ToString() + "::" + method.Type);
+            if (method.Return.EndsWith("[]"))
+                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", method.Return.Substring(0, method.Return.Length - 2));
+            else if (method.ReturnType.IsInterface)
+                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::{0}>", method.Return);
+            else
+                ret.Append("return global::MonoJavaBridge.JavaBridge.WrapJavaObject");
+            //ret.AppendFormat("(typeof({0}), ", method.Return);            
+            ret.Append("(@__env.Call{0}ObjectMethod({1}))");
+            ret.AppendFormat(" as {0};", method.Return);
             
             return ret.ToString();
         }
         
+        /*
         public string GetParameterStatement(Type parameterType, string parameter)
         {
             switch (parameter)
@@ -636,6 +730,12 @@ namespace MonoDroid
                 return "ParFullC2J(@__env, {0})";
             return "ParStrongCp2J({0})";
         }
+        */
+        
+        public string GetParameterStatement(Type parameterType, string parameter) 
+        {
+            return "ConvertToValue({0})";
+        }
 
         protected override void EmitMethod (Method method)
         {
@@ -677,10 +777,11 @@ namespace MonoDroid
                     methodId = method.Name;
                 else
                     methodId = method.Name.Substring(method.Name.LastIndexOf('.') + 1);
+                string methodIdLookup = methodId;
                 methodId = string.Format("_{0}{1}", methodId.Replace("@",""), myMemberCounter++);
-                string initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodID(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : method.Name, signature, method.Static ? "Static" : string.Empty);
+                string initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodIDNoThrow(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : methodIdLookup, signature, method.Static ? "Static" : string.Empty);
                 myInitJni.Add(initJni);
-                WriteLine("internal static global::net.sf.jni4net.jni.MethodId {0};", methodId);
+                WriteLine("internal static global::MonoJavaBridge.MethodId {0};", methodId);
                 
                 //WriteLine("[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.InternalCall)]");
                 Write(method.Scope);
@@ -724,22 +825,21 @@ namespace MonoDroid
             {
                 Write(")");
                 if (method.IsConstructor)
-                    Write(" : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv)");
+                    Write(" : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)");
                 WriteLine();
                 WriteLine("{");
                 myIndent++;
                 // TODO: Remove this if statement when array returns are properly supported
-                if (method.Return == null || !method.Return.EndsWith("[]"))
-                    WriteLine("global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;");
+                WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
                 var statement = GetMethodStatement(method);
                 StringBuilder parBuilder = new StringBuilder();
                 if (method.Static || method.IsConstructor)
                     parBuilder.AppendFormat("{0}.staticClass, ", method.Type.Name);
                 else
-                    parBuilder.Append("this, ");
+                    parBuilder.Append("this.JvmHandle, ");
                 parBuilder.AppendFormat("global::{0}.{1}", method.Type.Name, methodId);
-                if (method.IsConstructor)
-                    parBuilder.Append(", this");
+                //if (method.IsConstructor)
+                //    parBuilder.Append(", this");
                 bool hasCharSequenceArgument = false;
                 for (int i = 0; i < method.Parameters.Count; i++)
                 {
@@ -748,12 +848,14 @@ namespace MonoDroid
                     var par = method.Parameters[i];
                     if (par == "java.lang.CharSequence")
                         hasCharSequenceArgument = true;
-                    parBuilder.Append("global::net.sf.jni4net.utils.Convertor.");
+                    parBuilder.Append("global::MonoJavaBridge.JavaBridge.");
                     parBuilder.Append(string.Format(GetParameterStatement(parType, par), "arg" + i));
                 }
                 if (method.Static || method.IsConstructor)
                 {
                     WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
+                    if (method.IsConstructor)
+                        WriteLine("Init(@__env, handle);");
                 }
                 else
                 {
@@ -763,7 +865,7 @@ namespace MonoDroid
                     myIndent--;
                     WriteLine("else");
                     myIndent++;
-                    WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this, ", "this, global::{0}.staticClass, "), method.Type.Name));
+                    WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this.JvmHandle, ", "this.JvmHandle, global::{0}.staticClass, "), method.Type.Name));
                     myIndent--;
                 }
                 myIndent--;

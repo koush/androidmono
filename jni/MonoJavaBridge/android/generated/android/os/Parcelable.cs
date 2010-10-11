@@ -1,61 +1,47 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Parcelable 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.Parcelable_))]
+	public interface Parcelable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void writeToParcel(android.os.Parcel arg0, int arg1);
 		int describeContents();
 	}
 
-	public partial class Parcelable_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.Parcelable))]
+	public sealed partial class Parcelable_ : java.lang.Object, Parcelable
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Parcelable_()
 		{
-			get { return __Parcelable.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Parcelable : java.lang.Object, Parcelable
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Parcelable()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.__Parcelable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.__Parcelable(@__env);
-			}
-		}
-		internal __Parcelable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Parcelable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6390;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel6662;
 		 void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.__Parcelable._writeToParcel6390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Parcelable_._writeToParcel6662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.__Parcelable.staticClass, global::android.os.__Parcelable._writeToParcel6390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Parcelable_.staticClass, global::android.os.Parcelable_._writeToParcel6662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents6391;
+		internal static global::MonoJavaBridge.MethodId _describeContents6663;
 		 int android.os.Parcelable.describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.__Parcelable._describeContents6391);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.os.Parcelable_._describeContents6663);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.__Parcelable.staticClass, global::android.os.__Parcelable._describeContents6391);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Parcelable_.staticClass, global::android.os.Parcelable_._describeContents6663);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.__Parcelable.staticClass = @__class;
-			global::android.os.__Parcelable._writeToParcel6390 = @__env.GetMethodID(global::android.os.__Parcelable.staticClass, "android.os.Parcelable.writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.os.__Parcelable._describeContents6391 = @__env.GetMethodID(global::android.os.__Parcelable.staticClass, "android.os.Parcelable.describeContents", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.Parcelable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Parcelable"));
+			global::android.os.Parcelable_._writeToParcel6662 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.os.Parcelable_._describeContents6663 = @__env.GetMethodIDNoThrow(global::android.os.Parcelable_.staticClass, "describeContents", "()I");
 		}
 	}
 }

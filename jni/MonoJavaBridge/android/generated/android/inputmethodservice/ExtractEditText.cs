@@ -1,157 +1,154 @@
 namespace android.inputmethodservice
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ExtractEditText : android.widget.EditText
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ExtractEditText : android.widget.EditText
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ExtractEditText()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.ExtractEditText), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.inputmethodservice.ExtractEditText(@__env);
-			}
-		}
-		protected ExtractEditText(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ExtractEditText(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasFocus4228;
+		internal static global::MonoJavaBridge.MethodId _hasFocus4450;
 		public override bool hasFocus() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._hasFocus4228);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._hasFocus4450);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasFocus4228);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasFocus4450);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasWindowFocus4229;
+		internal static global::MonoJavaBridge.MethodId _hasWindowFocus4451;
 		public override bool hasWindowFocus() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._hasWindowFocus4229);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._hasWindowFocus4451);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasWindowFocus4229);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasWindowFocus4451);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performClick4230;
+		internal static global::MonoJavaBridge.MethodId _performClick4452;
 		public override bool performClick() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._performClick4230);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._performClick4452);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._performClick4230);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._performClick4452);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isFocused4231;
+		internal static global::MonoJavaBridge.MethodId _isFocused4453;
 		public override bool isFocused() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._isFocused4231);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._isFocused4453);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._isFocused4231);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._isFocused4453);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setExtractedText4232;
+		internal static global::MonoJavaBridge.MethodId _setExtractedText4454;
 		public override void setExtractedText(android.view.inputmethod.ExtractedText arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._setExtractedText4232, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._setExtractedText4454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._setExtractedText4232, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._setExtractedText4454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSelectionChanged4233;
+		internal static global::MonoJavaBridge.MethodId _onSelectionChanged4455;
 		protected override void onSelectionChanged(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._onSelectionChanged4233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._onSelectionChanged4455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._onSelectionChanged4233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._onSelectionChanged4455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isInputMethodTarget4234;
+		internal static global::MonoJavaBridge.MethodId _isInputMethodTarget4456;
 		public override bool isInputMethodTarget() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4234);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4456);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4234);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4456);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTextContextMenuItem4235;
+		internal static global::MonoJavaBridge.MethodId _onTextContextMenuItem4457;
 		public override bool onTextContextMenuItem(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4235, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4235, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startInternalChanges4236;
+		internal static global::MonoJavaBridge.MethodId _startInternalChanges4458;
 		public virtual void startInternalChanges() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._startInternalChanges4236);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._startInternalChanges4458);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._startInternalChanges4236);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._startInternalChanges4458);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _finishInternalChanges4237;
+		internal static global::MonoJavaBridge.MethodId _finishInternalChanges4459;
 		public virtual void finishInternalChanges() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._finishInternalChanges4237);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._finishInternalChanges4459);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._finishInternalChanges4237);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._finishInternalChanges4459);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasVerticalScrollBar4238;
+		internal static global::MonoJavaBridge.MethodId _hasVerticalScrollBar4460;
 		public virtual bool hasVerticalScrollBar() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4238);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4460);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4238);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4460);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ExtractEditText4239;
-		public ExtractEditText(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ExtractEditText4461;
+		public ExtractEditText(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText4239, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText4461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ExtractEditText4240;
-		public ExtractEditText(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ExtractEditText4462;
+		public ExtractEditText(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText4240, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText4462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ExtractEditText4241;
-		public ExtractEditText(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ExtractEditText4463;
+		public ExtractEditText(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText4241, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._ExtractEditText4463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.inputmethodservice.ExtractEditText.staticClass = @__class;
-			global::android.inputmethodservice.ExtractEditText._hasFocus4228 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "hasFocus", "()Z");
-			global::android.inputmethodservice.ExtractEditText._hasWindowFocus4229 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "hasWindowFocus", "()Z");
-			global::android.inputmethodservice.ExtractEditText._performClick4230 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "performClick", "()Z");
-			global::android.inputmethodservice.ExtractEditText._isFocused4231 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "isFocused", "()Z");
-			global::android.inputmethodservice.ExtractEditText._setExtractedText4232 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "setExtractedText", "(Landroid/view/inputmethod/ExtractedText;)V");
-			global::android.inputmethodservice.ExtractEditText._onSelectionChanged4233 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "onSelectionChanged", "(II)V");
-			global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4234 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "isInputMethodTarget", "()Z");
-			global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4235 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "onTextContextMenuItem", "(I)Z");
-			global::android.inputmethodservice.ExtractEditText._startInternalChanges4236 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "startInternalChanges", "()V");
-			global::android.inputmethodservice.ExtractEditText._finishInternalChanges4237 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "finishInternalChanges", "()V");
-			global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4238 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "hasVerticalScrollBar", "()Z");
-			global::android.inputmethodservice.ExtractEditText._ExtractEditText4239 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.inputmethodservice.ExtractEditText._ExtractEditText4240 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.inputmethodservice.ExtractEditText._ExtractEditText4241 = @__env.GetMethodID(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.inputmethodservice.ExtractEditText.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/ExtractEditText"));
+			global::android.inputmethodservice.ExtractEditText._hasFocus4450 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "hasFocus", "()Z");
+			global::android.inputmethodservice.ExtractEditText._hasWindowFocus4451 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "hasWindowFocus", "()Z");
+			global::android.inputmethodservice.ExtractEditText._performClick4452 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "performClick", "()Z");
+			global::android.inputmethodservice.ExtractEditText._isFocused4453 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "isFocused", "()Z");
+			global::android.inputmethodservice.ExtractEditText._setExtractedText4454 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "setExtractedText", "(Landroid/view/inputmethod/ExtractedText;)V");
+			global::android.inputmethodservice.ExtractEditText._onSelectionChanged4455 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "onSelectionChanged", "(II)V");
+			global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4456 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "isInputMethodTarget", "()Z");
+			global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4457 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "onTextContextMenuItem", "(I)Z");
+			global::android.inputmethodservice.ExtractEditText._startInternalChanges4458 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "startInternalChanges", "()V");
+			global::android.inputmethodservice.ExtractEditText._finishInternalChanges4459 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "finishInternalChanges", "()V");
+			global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4460 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "hasVerticalScrollBar", "()Z");
+			global::android.inputmethodservice.ExtractEditText._ExtractEditText4461 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.inputmethodservice.ExtractEditText._ExtractEditText4462 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.inputmethodservice.ExtractEditText._ExtractEditText4463 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.ExtractEditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

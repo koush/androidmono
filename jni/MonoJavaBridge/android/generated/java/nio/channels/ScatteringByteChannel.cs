@@ -1,101 +1,87 @@
 namespace java.nio.channels
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.nio.channels.ScatteringByteChannel_))]
 	public interface ScatteringByteChannel : ReadableByteChannel
 	{
 		long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
 		long read(java.nio.ByteBuffer[] arg0);
 	}
 
-	public partial class ScatteringByteChannel_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.channels.ScatteringByteChannel))]
+	public sealed partial class ScatteringByteChannel_ : java.lang.Object, ScatteringByteChannel
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ScatteringByteChannel_()
 		{
-			get { return __ScatteringByteChannel.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ScatteringByteChannel : java.lang.Object, ScatteringByteChannel
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ScatteringByteChannel()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.__ScatteringByteChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.nio.channels.__ScatteringByteChannel(@__env);
-			}
-		}
-		internal __ScatteringByteChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ScatteringByteChannel_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read12962;
+		internal static global::MonoJavaBridge.MethodId _read14507;
 		 long java.nio.channels.ScatteringByteChannel.read(java.nio.ByteBuffer[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.nio.channels.__ScatteringByteChannel._read12962, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_._read14507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.__ScatteringByteChannel.staticClass, global::java.nio.channels.__ScatteringByteChannel._read12962, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._read14507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read12963;
+		internal static global::MonoJavaBridge.MethodId _read14508;
 		 long java.nio.channels.ScatteringByteChannel.read(java.nio.ByteBuffer[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.nio.channels.__ScatteringByteChannel._read12963, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_._read14508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.__ScatteringByteChannel.staticClass, global::java.nio.channels.__ScatteringByteChannel._read12963, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._read14508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read12964;
+		internal static global::MonoJavaBridge.MethodId _read14509;
 		 int java.nio.channels.ReadableByteChannel.read(java.nio.ByteBuffer arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.channels.__ScatteringByteChannel._read12964, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_._read14509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__ScatteringByteChannel.staticClass, global::java.nio.channels.__ScatteringByteChannel._read12964, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._read14509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12965;
+		internal static global::MonoJavaBridge.MethodId _close14510;
 		 void java.nio.channels.Channel.close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__ScatteringByteChannel._close12965);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_._close14510);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__ScatteringByteChannel.staticClass, global::java.nio.channels.__ScatteringByteChannel._close12965);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._close14510);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isOpen12966;
+		internal static global::MonoJavaBridge.MethodId _isOpen14511;
 		 bool java.nio.channels.Channel.isOpen() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.channels.__ScatteringByteChannel._isOpen12966);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_._isOpen14511);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__ScatteringByteChannel.staticClass, global::java.nio.channels.__ScatteringByteChannel._isOpen12966);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._isOpen14511);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12967;
+		internal static global::MonoJavaBridge.MethodId _close14512;
 		 void java.io.Closeable.close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__ScatteringByteChannel._close12967);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_._close14512);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__ScatteringByteChannel.staticClass, global::java.nio.channels.__ScatteringByteChannel._close12967);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.ScatteringByteChannel_.staticClass, global::java.nio.channels.ScatteringByteChannel_._close14512);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.nio.channels.__ScatteringByteChannel.staticClass = @__class;
-			global::java.nio.channels.__ScatteringByteChannel._read12962 = @__env.GetMethodID(global::java.nio.channels.__ScatteringByteChannel.staticClass, "java.nio.channels.ScatteringByteChannel.read", "([Ljava/nio/ByteBuffer;II)J");
-			global::java.nio.channels.__ScatteringByteChannel._read12963 = @__env.GetMethodID(global::java.nio.channels.__ScatteringByteChannel.staticClass, "java.nio.channels.ScatteringByteChannel.read", "([Ljava/nio/ByteBuffer;)J");
-			global::java.nio.channels.__ScatteringByteChannel._read12964 = @__env.GetMethodID(global::java.nio.channels.__ScatteringByteChannel.staticClass, "java.nio.channels.ReadableByteChannel.read", "(Ljava/nio/ByteBuffer;)I");
-			global::java.nio.channels.__ScatteringByteChannel._close12965 = @__env.GetMethodID(global::java.nio.channels.__ScatteringByteChannel.staticClass, "java.nio.channels.Channel.close", "()V");
-			global::java.nio.channels.__ScatteringByteChannel._isOpen12966 = @__env.GetMethodID(global::java.nio.channels.__ScatteringByteChannel.staticClass, "java.nio.channels.Channel.isOpen", "()Z");
-			global::java.nio.channels.__ScatteringByteChannel._close12967 = @__env.GetMethodID(global::java.nio.channels.__ScatteringByteChannel.staticClass, "java.io.Closeable.close", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.nio.channels.ScatteringByteChannel_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/ScatteringByteChannel"));
+			global::java.nio.channels.ScatteringByteChannel_._read14507 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J");
+			global::java.nio.channels.ScatteringByteChannel_._read14508 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "([Ljava/nio/ByteBuffer;)J");
+			global::java.nio.channels.ScatteringByteChannel_._read14509 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "read", "(Ljava/nio/ByteBuffer;)I");
+			global::java.nio.channels.ScatteringByteChannel_._close14510 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V");
+			global::java.nio.channels.ScatteringByteChannel_._isOpen14511 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "isOpen", "()Z");
+			global::java.nio.channels.ScatteringByteChannel_._close14512 = @__env.GetMethodIDNoThrow(global::java.nio.channels.ScatteringByteChannel_.staticClass, "close", "()V");
 		}
 	}
 }

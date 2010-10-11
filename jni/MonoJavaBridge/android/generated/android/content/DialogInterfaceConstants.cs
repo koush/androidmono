@@ -1,7 +1,7 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class DialogInterfaceConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class DialogInterfaceConstants 
 	{
 		public static int BUTTON_POSITIVE
 		{

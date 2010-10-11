@@ -1,108 +1,128 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class SpannableStringInternal : java.lang.Object
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.text.SpannableStringInternal_))]
+	public abstract partial class SpannableStringInternal : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SpannableStringInternal()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.SpannableStringInternal), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected SpannableStringInternal(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SpannableStringInternal(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7561;
+		internal static global::MonoJavaBridge.MethodId _toString7853;
 		public sealed override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringInternal._toString7561));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.SpannableStringInternal._toString7853)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._toString7561));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._toString7853)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _length7562;
+		internal static global::MonoJavaBridge.MethodId _length7854;
 		public virtual int length() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._length7562);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal._length7854);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._length7562);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._length7854);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _charAt7563;
+		internal static global::MonoJavaBridge.MethodId _charAt7855;
 		public virtual char charAt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.text.SpannableStringInternal._charAt7563, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallCharMethod(this.JvmHandle, global::android.text.SpannableStringInternal._charAt7855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._charAt7563, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._charAt7855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChars7564;
+		internal static global::MonoJavaBridge.MethodId _getChars7856;
 		public virtual void getChars(int arg0, int arg1, char[] arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.SpannableStringInternal._getChars7564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.SpannableStringInternal._getChars7856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getChars7564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getChars7856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpans7565;
+		internal static global::MonoJavaBridge.MethodId _getSpans7857;
 		public virtual global::java.lang.Object[] getSpans(int arg0, int arg1, java.lang.Class arg2) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringInternal._getSpans7565, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.SpannableStringInternal._getSpans7857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpans7565, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpans7857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanStart7566;
+		internal static global::MonoJavaBridge.MethodId _getSpanStart7858;
 		public virtual int getSpanStart(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._getSpanStart7566, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal._getSpanStart7858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanStart7566, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanStart7858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanEnd7567;
+		internal static global::MonoJavaBridge.MethodId _getSpanEnd7859;
 		public virtual int getSpanEnd(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._getSpanEnd7567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal._getSpanEnd7859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanEnd7567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanEnd7859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanFlags7568;
+		internal static global::MonoJavaBridge.MethodId _getSpanFlags7860;
 		public virtual int getSpanFlags(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._getSpanFlags7568, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal._getSpanFlags7860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanFlags7568, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanFlags7860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextSpanTransition7569;
+		internal static global::MonoJavaBridge.MethodId _nextSpanTransition7861;
 		public virtual int nextSpanTransition(int arg0, int arg1, java.lang.Class arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._nextSpanTransition7569, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal._nextSpanTransition7861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._nextSpanTransition7569, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._nextSpanTransition7861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.SpannableStringInternal.staticClass = @__class;
-			global::android.text.SpannableStringInternal._toString7561 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.text.SpannableStringInternal._length7562 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "length", "()I");
-			global::android.text.SpannableStringInternal._charAt7563 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "charAt", "(I)C");
-			global::android.text.SpannableStringInternal._getChars7564 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "getChars", "(II[CI)V");
-			global::android.text.SpannableStringInternal._getSpans7565 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "getSpans", "(IILjava/lang/Class;)[Ljava/lang/Object;");
-			global::android.text.SpannableStringInternal._getSpanStart7566 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "getSpanStart", "(Ljava/lang/Object;)I");
-			global::android.text.SpannableStringInternal._getSpanEnd7567 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "getSpanEnd", "(Ljava/lang/Object;)I");
-			global::android.text.SpannableStringInternal._getSpanFlags7568 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "getSpanFlags", "(Ljava/lang/Object;)I");
-			global::android.text.SpannableStringInternal._nextSpanTransition7569 = @__env.GetMethodID(global::android.text.SpannableStringInternal.staticClass, "nextSpanTransition", "(IILjava/lang/Class;)I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.SpannableStringInternal.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpannableStringInternal"));
+			global::android.text.SpannableStringInternal._toString7853 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.SpannableStringInternal._length7854 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "length", "()I");
+			global::android.text.SpannableStringInternal._charAt7855 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "charAt", "(I)C");
+			global::android.text.SpannableStringInternal._getChars7856 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "getChars", "(II[CI)V");
+			global::android.text.SpannableStringInternal._getSpans7857 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "getSpans", "(IILjava/lang/Class;)[Ljava/lang/Object;");
+			global::android.text.SpannableStringInternal._getSpanStart7858 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "getSpanStart", "(Ljava/lang/Object;)I");
+			global::android.text.SpannableStringInternal._getSpanEnd7859 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "getSpanEnd", "(Ljava/lang/Object;)I");
+			global::android.text.SpannableStringInternal._getSpanFlags7860 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "getSpanFlags", "(Ljava/lang/Object;)I");
+			global::android.text.SpannableStringInternal._nextSpanTransition7861 = @__env.GetMethodIDNoThrow(global::android.text.SpannableStringInternal.staticClass, "nextSpanTransition", "(IILjava/lang/Class;)I");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.SpannableStringInternal))]
+	public sealed partial class SpannableStringInternal_ : android.text.SpannableStringInternal
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static SpannableStringInternal_()
+		{
+			InitJNI();
+		}
+		internal SpannableStringInternal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.SpannableStringInternal_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/SpannableStringInternal"));
 		}
 	}
 }

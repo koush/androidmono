@@ -1,6 +1,6 @@
 namespace org.apache.http
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpEntityEnclosingRequest_))]
 	public interface HttpEntityEnclosingRequest : HttpRequest
 	{
 		global::org.apache.http.HttpEntity getEntity();
@@ -8,243 +8,231 @@ namespace org.apache.http
 		bool expectContinue();
 	}
 
-	public partial class HttpEntityEnclosingRequest_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.HttpEntityEnclosingRequest))]
+	public sealed partial class HttpEntityEnclosingRequest_ : java.lang.Object, HttpEntityEnclosingRequest
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HttpEntityEnclosingRequest_()
 		{
-			get { return __HttpEntityEnclosingRequest.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HttpEntityEnclosingRequest : java.lang.Object, HttpEntityEnclosingRequest
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HttpEntityEnclosingRequest()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.__HttpEntityEnclosingRequest), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.__HttpEntityEnclosingRequest(@__env);
-			}
-		}
-		internal __HttpEntityEnclosingRequest(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HttpEntityEnclosingRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEntity14240;
+		internal static global::MonoJavaBridge.MethodId _getEntity16155;
 		 global::org.apache.http.HttpEntity org.apache.http.HttpEntityEnclosingRequest.getEntity() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpEntity>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getEntity14240));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpEntity>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getEntity16155)) as org.apache.http.HttpEntity;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpEntity>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getEntity14240));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpEntity>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getEntity16155)) as org.apache.http.HttpEntity;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEntity14241;
+		internal static global::MonoJavaBridge.MethodId _setEntity16156;
 		 void org.apache.http.HttpEntityEnclosingRequest.setEntity(org.apache.http.HttpEntity arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._setEntity14241, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._setEntity16156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._setEntity14241, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._setEntity16156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _expectContinue14242;
+		internal static global::MonoJavaBridge.MethodId _expectContinue16157;
 		 bool org.apache.http.HttpEntityEnclosingRequest.expectContinue() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._expectContinue14242);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._expectContinue16157);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._expectContinue14242);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._expectContinue16157);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRequestLine14243;
+		internal static global::MonoJavaBridge.MethodId _getRequestLine16158;
 		 global::org.apache.http.RequestLine org.apache.http.HttpRequest.getRequestLine() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.RequestLine>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getRequestLine14243));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.RequestLine>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getRequestLine16158)) as org.apache.http.RequestLine;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.RequestLine>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getRequestLine14243));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.RequestLine>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getRequestLine16158)) as org.apache.http.RequestLine;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProtocolVersion14244;
+		internal static global::MonoJavaBridge.MethodId _getProtocolVersion16159;
 		 global::org.apache.http.ProtocolVersion org.apache.http.HttpMessage.getProtocolVersion() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.apache.http.ProtocolVersion>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getProtocolVersion14244));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getProtocolVersion16159)) as org.apache.http.ProtocolVersion;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.apache.http.ProtocolVersion>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getProtocolVersion14244));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getProtocolVersion16159)) as org.apache.http.ProtocolVersion;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParams14245;
+		internal static global::MonoJavaBridge.MethodId _getParams16160;
 		 global::org.apache.http.@params.HttpParams org.apache.http.HttpMessage.getParams() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.@params.HttpParams>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getParams14245));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getParams16160)) as org.apache.http.@params.HttpParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.@params.HttpParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getParams14245));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getParams16160)) as org.apache.http.@params.HttpParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setParams14246;
+		internal static global::MonoJavaBridge.MethodId _setParams16161;
 		 void org.apache.http.HttpMessage.setParams(org.apache.http.@params.HttpParams arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._setParams14246, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._setParams16161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._setParams14246, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._setParams16161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHeaders14247;
+		internal static global::MonoJavaBridge.MethodId _getHeaders16162;
 		 global::org.apache.http.Header[] org.apache.http.HttpMessage.getHeaders(java.lang.String arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getHeaders14247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getHeaders16162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getHeaders14247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getHeaders16162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _containsHeader14248;
+		internal static global::MonoJavaBridge.MethodId _containsHeader16163;
 		 bool org.apache.http.HttpMessage.containsHeader(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._containsHeader14248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._containsHeader16163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._containsHeader14248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._containsHeader16163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFirstHeader14249;
+		internal static global::MonoJavaBridge.MethodId _getFirstHeader16164;
 		 global::org.apache.http.Header org.apache.http.HttpMessage.getFirstHeader(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.Header>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getFirstHeader14249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getFirstHeader16164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.Header>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getFirstHeader14249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getFirstHeader16164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLastHeader14250;
+		internal static global::MonoJavaBridge.MethodId _getLastHeader16165;
 		 global::org.apache.http.Header org.apache.http.HttpMessage.getLastHeader(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.Header>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getLastHeader14250, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getLastHeader16165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.Header>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getLastHeader14250, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getLastHeader16165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.Header;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAllHeaders14251;
+		internal static global::MonoJavaBridge.MethodId _getAllHeaders16166;
 		 global::org.apache.http.Header[] org.apache.http.HttpMessage.getAllHeaders() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._getAllHeaders14251));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._getAllHeaders16166)) as org.apache.http.Header[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._getAllHeaders14251));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._getAllHeaders16166)) as org.apache.http.Header[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addHeader14252;
+		internal static global::MonoJavaBridge.MethodId _addHeader16167;
 		 void org.apache.http.HttpMessage.addHeader(org.apache.http.Header arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._addHeader14252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._addHeader16167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._addHeader14252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._addHeader16167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addHeader14253;
+		internal static global::MonoJavaBridge.MethodId _addHeader16168;
 		 void org.apache.http.HttpMessage.addHeader(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._addHeader14253, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._addHeader16168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._addHeader14253, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._addHeader16168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeader14254;
+		internal static global::MonoJavaBridge.MethodId _setHeader16169;
 		 void org.apache.http.HttpMessage.setHeader(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._setHeader14254, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._setHeader16169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._setHeader14254, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._setHeader16169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeader14255;
+		internal static global::MonoJavaBridge.MethodId _setHeader16170;
 		 void org.apache.http.HttpMessage.setHeader(org.apache.http.Header arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._setHeader14255, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._setHeader16170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._setHeader14255, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._setHeader16170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeaders14256;
+		internal static global::MonoJavaBridge.MethodId _setHeaders16171;
 		 void org.apache.http.HttpMessage.setHeaders(org.apache.http.Header[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._setHeaders14256, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<org.apache.http.Header[], org.apache.http.Header>(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._setHeaders16171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._setHeaders14256, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<org.apache.http.Header[], org.apache.http.Header>(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._setHeaders16171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeHeader14257;
+		internal static global::MonoJavaBridge.MethodId _removeHeader16172;
 		 void org.apache.http.HttpMessage.removeHeader(org.apache.http.Header arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._removeHeader14257, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._removeHeader16172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._removeHeader14257, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._removeHeader16172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeHeaders14258;
+		internal static global::MonoJavaBridge.MethodId _removeHeaders16173;
 		 void org.apache.http.HttpMessage.removeHeaders(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest._removeHeaders14258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._removeHeaders16173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._removeHeaders14258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._removeHeaders16173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _headerIterator14259;
+		internal static global::MonoJavaBridge.MethodId _headerIterator16174;
 		 global::org.apache.http.HeaderIterator org.apache.http.HttpMessage.headerIterator() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HeaderIterator>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._headerIterator14259));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._headerIterator16174)) as org.apache.http.HeaderIterator;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HeaderIterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._headerIterator14259));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._headerIterator16174)) as org.apache.http.HeaderIterator;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _headerIterator14260;
+		internal static global::MonoJavaBridge.MethodId _headerIterator16175;
 		 global::org.apache.http.HeaderIterator org.apache.http.HttpMessage.headerIterator(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HeaderIterator>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest._headerIterator14260, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_._headerIterator16175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HeaderIterator;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HeaderIterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, global::org.apache.http.__HttpEntityEnclosingRequest._headerIterator14260, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, global::org.apache.http.HttpEntityEnclosingRequest_._headerIterator16175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HeaderIterator;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.__HttpEntityEnclosingRequest.staticClass = @__class;
-			global::org.apache.http.__HttpEntityEnclosingRequest._getEntity14240 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpEntityEnclosingRequest.getEntity", "()Lorg/apache/http/HttpEntity;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._setEntity14241 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpEntityEnclosingRequest.setEntity", "(Lorg/apache/http/HttpEntity;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._expectContinue14242 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpEntityEnclosingRequest.expectContinue", "()Z");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getRequestLine14243 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpRequest.getRequestLine", "()Lorg/apache/http/RequestLine;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getProtocolVersion14244 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getParams14245 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.getParams", "()Lorg/apache/http/@params/HttpParams;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._setParams14246 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.setParams", "(Lorg/apache/http/@params/HttpParams;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getHeaders14247 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.getHeaders", "(Ljava/lang/String;)[Lorg/apache/http/Header;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._containsHeader14248 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.containsHeader", "(Ljava/lang/String;)Z");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getFirstHeader14249 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.getFirstHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getLastHeader14250 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.getLastHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._getAllHeaders14251 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.getAllHeaders", "()[Lorg/apache/http/Header;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._addHeader14252 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.addHeader", "(Lorg/apache/http/Header;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._addHeader14253 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.addHeader", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._setHeader14254 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.setHeader", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._setHeader14255 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.setHeader", "(Lorg/apache/http/Header;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._setHeaders14256 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.setHeaders", "([Lorg/apache/http/Header;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._removeHeader14257 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.removeHeader", "(Lorg/apache/http/Header;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._removeHeaders14258 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.removeHeaders", "(Ljava/lang/String;)V");
-			global::org.apache.http.__HttpEntityEnclosingRequest._headerIterator14259 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.headerIterator", "()Lorg/apache/http/HeaderIterator;");
-			global::org.apache.http.__HttpEntityEnclosingRequest._headerIterator14260 = @__env.GetMethodID(global::org.apache.http.__HttpEntityEnclosingRequest.staticClass, "org.apache.http.HttpMessage.headerIterator", "(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.HttpEntityEnclosingRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpEntityEnclosingRequest"));
+			global::org.apache.http.HttpEntityEnclosingRequest_._getEntity16155 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getEntity", "()Lorg/apache/http/HttpEntity;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._setEntity16156 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "setEntity", "(Lorg/apache/http/HttpEntity;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._expectContinue16157 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "expectContinue", "()Z");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getRequestLine16158 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getRequestLine", "()Lorg/apache/http/RequestLine;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getProtocolVersion16159 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getProtocolVersion", "()Lorg/apache/http/ProtocolVersion;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getParams16160 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getParams", "()Lorg/apache/http/@params/HttpParams;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._setParams16161 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "setParams", "(Lorg/apache/http/@params/HttpParams;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getHeaders16162 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getHeaders", "(Ljava/lang/String;)[Lorg/apache/http/Header;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._containsHeader16163 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "containsHeader", "(Ljava/lang/String;)Z");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getFirstHeader16164 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getFirstHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getLastHeader16165 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getLastHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._getAllHeaders16166 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "getAllHeaders", "()[Lorg/apache/http/Header;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._addHeader16167 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "addHeader", "(Lorg/apache/http/Header;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._addHeader16168 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "addHeader", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._setHeader16169 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._setHeader16170 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "setHeader", "(Lorg/apache/http/Header;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._setHeaders16171 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "setHeaders", "([Lorg/apache/http/Header;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._removeHeader16172 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "removeHeader", "(Lorg/apache/http/Header;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._removeHeaders16173 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "removeHeaders", "(Ljava/lang/String;)V");
+			global::org.apache.http.HttpEntityEnclosingRequest_._headerIterator16174 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "headerIterator", "()Lorg/apache/http/HeaderIterator;");
+			global::org.apache.http.HttpEntityEnclosingRequest_._headerIterator16175 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpEntityEnclosingRequest_.staticClass, "headerIterator", "(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;");
 		}
 	}
 }

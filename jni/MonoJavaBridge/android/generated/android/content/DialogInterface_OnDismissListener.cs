@@ -1,50 +1,36 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DialogInterface_OnDismissListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnDismissListener_))]
+	public interface DialogInterface_OnDismissListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onDismiss(android.content.DialogInterface arg0);
 	}
 
-	public partial class DialogInterface_OnDismissListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.DialogInterface_OnDismissListener))]
+	public sealed partial class DialogInterface_OnDismissListener_ : java.lang.Object, DialogInterface_OnDismissListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DialogInterface_OnDismissListener_()
 		{
-			get { return __DialogInterface_OnDismissListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DialogInterface_OnDismissListener : java.lang.Object, DialogInterface_OnDismissListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DialogInterface_OnDismissListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface_OnDismissListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__DialogInterface_OnDismissListener(@__env);
-			}
-		}
-		internal __DialogInterface_OnDismissListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DialogInterface_OnDismissListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDismiss1417;
+		internal static global::MonoJavaBridge.MethodId _onDismiss1511;
 		 void android.content.DialogInterface_OnDismissListener.onDismiss(android.content.DialogInterface arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnDismissListener._onDismiss1417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnDismissListener_._onDismiss1511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnDismissListener.staticClass, global::android.content.__DialogInterface_OnDismissListener._onDismiss1417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnDismissListener_.staticClass, global::android.content.DialogInterface_OnDismissListener_._onDismiss1511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__DialogInterface_OnDismissListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnDismissListener._onDismiss1417 = @__env.GetMethodID(global::android.content.__DialogInterface_OnDismissListener.staticClass, "android.content.DialogInterface_OnDismissListener.onDismiss", "(Landroid/content/DialogInterface;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.DialogInterface_OnDismissListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnDismissListener"));
+			global::android.content.DialogInterface_OnDismissListener_._onDismiss1511 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnDismissListener_.staticClass, "onDismiss", "(Landroid/content/DialogInterface;)V");
 		}
 	}
 }

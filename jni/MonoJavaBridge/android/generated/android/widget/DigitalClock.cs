@@ -1,60 +1,56 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class DigitalClock : android.widget.TextView
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DigitalClock : android.widget.TextView
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DigitalClock()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.DigitalClock), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.DigitalClock(@__env);
-			}
-		}
-		protected DigitalClock(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected DigitalClock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onAttachedToWindow10818;
+		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow11195;
 		protected override void onAttachedToWindow() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DigitalClock._onAttachedToWindow10818);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DigitalClock._onAttachedToWindow11195);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onAttachedToWindow10818);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onAttachedToWindow11195);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow10819;
+		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow11196;
 		protected override void onDetachedFromWindow() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.DigitalClock._onDetachedFromWindow10819);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.DigitalClock._onDetachedFromWindow11196);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onDetachedFromWindow10819);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onDetachedFromWindow11196);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DigitalClock10820;
-		public DigitalClock(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DigitalClock11197;
+		public DigitalClock(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._DigitalClock10820, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._DigitalClock11197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DigitalClock10821;
-		public DigitalClock(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DigitalClock11198;
+		public DigitalClock(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._DigitalClock10821, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._DigitalClock11198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.DigitalClock.staticClass = @__class;
-			global::android.widget.DigitalClock._onAttachedToWindow10818 = @__env.GetMethodID(global::android.widget.DigitalClock.staticClass, "onAttachedToWindow", "()V");
-			global::android.widget.DigitalClock._onDetachedFromWindow10819 = @__env.GetMethodID(global::android.widget.DigitalClock.staticClass, "onDetachedFromWindow", "()V");
-			global::android.widget.DigitalClock._DigitalClock10820 = @__env.GetMethodID(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.DigitalClock._DigitalClock10821 = @__env.GetMethodID(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.DigitalClock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/DigitalClock"));
+			global::android.widget.DigitalClock._onAttachedToWindow11195 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "onAttachedToWindow", "()V");
+			global::android.widget.DigitalClock._onDetachedFromWindow11196 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "onDetachedFromWindow", "()V");
+			global::android.widget.DigitalClock._DigitalClock11197 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.DigitalClock._DigitalClock11198 = @__env.GetMethodIDNoThrow(global::android.widget.DigitalClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

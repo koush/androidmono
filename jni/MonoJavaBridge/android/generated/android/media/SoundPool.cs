@@ -1,250 +1,241 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SoundPool : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SoundPool : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SoundPool()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.SoundPool), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.SoundPool(@__env);
-			}
-		}
-		protected SoundPool(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SoundPool(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnLoadCompleteListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.SoundPool.OnLoadCompleteListener_))]
+		public interface OnLoadCompleteListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onLoadComplete(android.media.SoundPool arg0, int arg1, int arg2);
 		}
 
-		public partial class OnLoadCompleteListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.SoundPool.OnLoadCompleteListener))]
+		public sealed partial class OnLoadCompleteListener_ : java.lang.Object, OnLoadCompleteListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnLoadCompleteListener_()
 			{
-				get { return __OnLoadCompleteListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnLoadCompleteListener : java.lang.Object, OnLoadCompleteListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnLoadCompleteListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.SoundPool.__OnLoadCompleteListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.SoundPool.__OnLoadCompleteListener(@__env);
-				}
-			}
-			internal __OnLoadCompleteListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnLoadCompleteListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onLoadComplete4856;
+			internal static global::MonoJavaBridge.MethodId _onLoadComplete5093;
 			 void android.media.SoundPool.OnLoadCompleteListener.onLoadComplete(android.media.SoundPool arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.SoundPool.__OnLoadCompleteListener._onLoadComplete4856, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool.OnLoadCompleteListener_._onLoadComplete5093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.__OnLoadCompleteListener.staticClass, global::android.media.SoundPool.__OnLoadCompleteListener._onLoadComplete4856, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.OnLoadCompleteListener_.staticClass, global::android.media.SoundPool.OnLoadCompleteListener_._onLoadComplete5093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.SoundPool.__OnLoadCompleteListener.staticClass = @__class;
-				global::android.media.SoundPool.__OnLoadCompleteListener._onLoadComplete4856 = @__env.GetMethodID(global::android.media.SoundPool.__OnLoadCompleteListener.staticClass, "android.media.SoundPool.OnLoadCompleteListener.onLoadComplete", "(Landroid/media/SoundPool;II)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.SoundPool.OnLoadCompleteListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool$OnLoadCompleteListener"));
+				global::android.media.SoundPool.OnLoadCompleteListener_._onLoadComplete5093 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.OnLoadCompleteListener_.staticClass, "onLoadComplete", "(Landroid/media/SoundPool;II)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _load4857;
+		internal static global::MonoJavaBridge.MethodId _finalize5094;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._finalize5094);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._finalize5094);
+		}
+		internal static global::MonoJavaBridge.MethodId _load5095;
 		public virtual int load(android.content.Context arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4857, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.SoundPool._load5095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4857, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load5095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _load4858;
+		internal static global::MonoJavaBridge.MethodId _load5096;
 		public virtual int load(android.content.res.AssetFileDescriptor arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4858, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.SoundPool._load5096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4858, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load5096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _load4859;
+		internal static global::MonoJavaBridge.MethodId _load5097;
 		public virtual int load(java.io.FileDescriptor arg0, long arg1, long arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.SoundPool._load5097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load5097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _load4860;
+		internal static global::MonoJavaBridge.MethodId _load5098;
 		public virtual int load(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4860, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.SoundPool._load5098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4860, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load5098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPriority4861;
+		internal static global::MonoJavaBridge.MethodId _setPriority5099;
 		public virtual void setPriority(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._setPriority4861, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._setPriority5099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setPriority4861, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setPriority5099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stop4862;
+		internal static global::MonoJavaBridge.MethodId _stop5100;
 		public virtual void stop(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._stop4862, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._stop5100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._stop4862, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._stop5100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _resume4863;
+		internal static global::MonoJavaBridge.MethodId _resume5101;
 		public virtual void resume(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._resume4863, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._resume5101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._resume4863, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._resume5101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _release4864;
+		internal static global::MonoJavaBridge.MethodId _release5102;
 		public virtual void release() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._release4864);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._release5102);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._release4864);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._release5102);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unload4865;
+		internal static global::MonoJavaBridge.MethodId _unload5103;
 		public virtual bool unload(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.SoundPool._unload4865, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.SoundPool._unload5103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._unload4865, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._unload5103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _play4866;
+		internal static global::MonoJavaBridge.MethodId _play5104;
 		public virtual int play(int arg0, float arg1, float arg2, int arg3, int arg4, float arg5) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.SoundPool._play4866, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.SoundPool._play5104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._play4866, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._play5104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _pause4867;
+		internal static global::MonoJavaBridge.MethodId _pause5105;
 		public virtual void pause(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._pause4867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._pause5105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._pause4867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._pause5105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setVolume4868;
+		internal static global::MonoJavaBridge.MethodId _setVolume5106;
 		public virtual void setVolume(int arg0, float arg1, float arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._setVolume4868, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._setVolume5106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setVolume4868, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setVolume5106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _autoPause4869;
+		internal static global::MonoJavaBridge.MethodId _autoPause5107;
 		public virtual void autoPause() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._autoPause4869);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._autoPause5107);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._autoPause4869);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._autoPause5107);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _autoResume4870;
+		internal static global::MonoJavaBridge.MethodId _autoResume5108;
 		public virtual void autoResume() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._autoResume4870);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._autoResume5108);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._autoResume4870);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._autoResume5108);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLoop4871;
+		internal static global::MonoJavaBridge.MethodId _setLoop5109;
 		public virtual void setLoop(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._setLoop4871, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._setLoop5109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setLoop4871, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setLoop5109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setRate4872;
+		internal static global::MonoJavaBridge.MethodId _setRate5110;
 		public virtual void setRate(int arg0, float arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._setRate4872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._setRate5110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setRate4872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setRate5110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnLoadCompleteListener4873;
+		internal static global::MonoJavaBridge.MethodId _setOnLoadCompleteListener5111;
 		public virtual void setOnLoadCompleteListener(android.media.SoundPool.OnLoadCompleteListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.SoundPool._setOnLoadCompleteListener4873, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.SoundPool._setOnLoadCompleteListener5111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setOnLoadCompleteListener4873, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setOnLoadCompleteListener5111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SoundPool4874;
-		public SoundPool(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SoundPool5112;
+		public SoundPool(int arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.SoundPool.staticClass, global::android.media.SoundPool._SoundPool4874, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.SoundPool.staticClass, global::android.media.SoundPool._SoundPool5112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.SoundPool.staticClass = @__class;
-			global::android.media.SoundPool._load4857 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "load", "(Landroid/content/Context;II)I");
-			global::android.media.SoundPool._load4858 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "load", "(Landroid/content/res/AssetFileDescriptor;I)I");
-			global::android.media.SoundPool._load4859 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "load", "(Ljava/io/FileDescriptor;JJI)I");
-			global::android.media.SoundPool._load4860 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "load", "(Ljava/lang/String;I)I");
-			global::android.media.SoundPool._setPriority4861 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "setPriority", "(II)V");
-			global::android.media.SoundPool._stop4862 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "stop", "(I)V");
-			global::android.media.SoundPool._resume4863 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "resume", "(I)V");
-			global::android.media.SoundPool._release4864 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "release", "()V");
-			global::android.media.SoundPool._unload4865 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "unload", "(I)Z");
-			global::android.media.SoundPool._play4866 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "play", "(IFFIIF)I");
-			global::android.media.SoundPool._pause4867 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "pause", "(I)V");
-			global::android.media.SoundPool._setVolume4868 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "setVolume", "(IFF)V");
-			global::android.media.SoundPool._autoPause4869 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "autoPause", "()V");
-			global::android.media.SoundPool._autoResume4870 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "autoResume", "()V");
-			global::android.media.SoundPool._setLoop4871 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "setLoop", "(II)V");
-			global::android.media.SoundPool._setRate4872 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "setRate", "(IF)V");
-			global::android.media.SoundPool._setOnLoadCompleteListener4873 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "setOnLoadCompleteListener", "(Landroid/media/SoundPool$OnLoadCompleteListener;)V");
-			global::android.media.SoundPool._SoundPool4874 = @__env.GetMethodID(global::android.media.SoundPool.staticClass, "<init>", "(III)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.SoundPool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/SoundPool"));
+			global::android.media.SoundPool._finalize5094 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "finalize", "()V");
+			global::android.media.SoundPool._load5095 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "load", "(Landroid/content/Context;II)I");
+			global::android.media.SoundPool._load5096 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "load", "(Landroid/content/res/AssetFileDescriptor;I)I");
+			global::android.media.SoundPool._load5097 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "load", "(Ljava/io/FileDescriptor;JJI)I");
+			global::android.media.SoundPool._load5098 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "load", "(Ljava/lang/String;I)I");
+			global::android.media.SoundPool._setPriority5099 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setPriority", "(II)V");
+			global::android.media.SoundPool._stop5100 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "stop", "(I)V");
+			global::android.media.SoundPool._resume5101 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "resume", "(I)V");
+			global::android.media.SoundPool._release5102 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "release", "()V");
+			global::android.media.SoundPool._unload5103 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "unload", "(I)Z");
+			global::android.media.SoundPool._play5104 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "play", "(IFFIIF)I");
+			global::android.media.SoundPool._pause5105 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "pause", "(I)V");
+			global::android.media.SoundPool._setVolume5106 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setVolume", "(IFF)V");
+			global::android.media.SoundPool._autoPause5107 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "autoPause", "()V");
+			global::android.media.SoundPool._autoResume5108 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "autoResume", "()V");
+			global::android.media.SoundPool._setLoop5109 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setLoop", "(II)V");
+			global::android.media.SoundPool._setRate5110 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setRate", "(IF)V");
+			global::android.media.SoundPool._setOnLoadCompleteListener5111 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "setOnLoadCompleteListener", "(Landroid/media/SoundPool$OnLoadCompleteListener;)V");
+			global::android.media.SoundPool._SoundPool5112 = @__env.GetMethodIDNoThrow(global::android.media.SoundPool.staticClass, "<init>", "(III)V");
 		}
 	}
 }

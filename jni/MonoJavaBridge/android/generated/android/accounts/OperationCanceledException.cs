@@ -1,54 +1,52 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class OperationCanceledException : android.accounts.AccountsException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class OperationCanceledException : android.accounts.AccountsException
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static OperationCanceledException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.OperationCanceledException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.OperationCanceledException(@__env);
-			}
-		}
-		protected OperationCanceledException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected OperationCanceledException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException124;
-		public OperationCanceledException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationCanceledException133;
+		public OperationCanceledException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException124, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException133);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException125;
-		public OperationCanceledException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationCanceledException134;
+		public OperationCanceledException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException125, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException126;
-		public OperationCanceledException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationCanceledException135;
+		public OperationCanceledException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException126, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException127;
-		public OperationCanceledException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationCanceledException136;
+		public OperationCanceledException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException127, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OperationCanceledException.staticClass, global::android.accounts.OperationCanceledException._OperationCanceledException136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.OperationCanceledException.staticClass = @__class;
-			global::android.accounts.OperationCanceledException._OperationCanceledException124 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "()V");
-			global::android.accounts.OperationCanceledException._OperationCanceledException125 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.accounts.OperationCanceledException._OperationCanceledException126 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::android.accounts.OperationCanceledException._OperationCanceledException127 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.OperationCanceledException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/OperationCanceledException"));
+			global::android.accounts.OperationCanceledException._OperationCanceledException133 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "()V");
+			global::android.accounts.OperationCanceledException._OperationCanceledException134 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.accounts.OperationCanceledException._OperationCanceledException135 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::android.accounts.OperationCanceledException._OperationCanceledException136 = @__env.GetMethodIDNoThrow(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 	}
 }

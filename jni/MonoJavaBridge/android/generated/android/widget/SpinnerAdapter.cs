@@ -1,150 +1,136 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SpinnerAdapter_))]
 	public interface SpinnerAdapter : Adapter
 	{
 		global::android.view.View getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2);
 	}
 
-	public partial class SpinnerAdapter_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.SpinnerAdapter))]
+	public sealed partial class SpinnerAdapter_ : java.lang.Object, SpinnerAdapter
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static SpinnerAdapter_()
 		{
-			get { return __SpinnerAdapter.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __SpinnerAdapter : java.lang.Object, SpinnerAdapter
-	{
-		internal static global::java.lang.Class staticClass;
-		static __SpinnerAdapter()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__SpinnerAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.__SpinnerAdapter(@__env);
-			}
-		}
-		internal __SpinnerAdapter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal SpinnerAdapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDropDownView11612;
+		internal static global::MonoJavaBridge.MethodId _getDropDownView11999;
 		 global::android.view.View android.widget.SpinnerAdapter.getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__SpinnerAdapter._getDropDownView11612, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getDropDownView11999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getDropDownView11612, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getDropDownView11999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty11613;
+		internal static global::MonoJavaBridge.MethodId _isEmpty12000;
 		 bool android.widget.Adapter.isEmpty() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.__SpinnerAdapter._isEmpty11613);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._isEmpty12000);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._isEmpty11613);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._isEmpty12000);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCount11614;
+		internal static global::MonoJavaBridge.MethodId _getCount12001;
 		 int android.widget.Adapter.getCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__SpinnerAdapter._getCount11614);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getCount12001);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getCount11614);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getCount12001);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _registerDataSetObserver11615;
+		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver12002;
 		 void android.widget.Adapter.registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.__SpinnerAdapter._registerDataSetObserver11615, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._registerDataSetObserver12002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._registerDataSetObserver11615, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._registerDataSetObserver12002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterDataSetObserver11616;
+		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver12003;
 		 void android.widget.Adapter.unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.__SpinnerAdapter._unregisterDataSetObserver11616, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._unregisterDataSetObserver12003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._unregisterDataSetObserver11616, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._unregisterDataSetObserver12003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItem11617;
+		internal static global::MonoJavaBridge.MethodId _getItem12004;
 		 global::java.lang.Object android.widget.Adapter.getItem(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__SpinnerAdapter._getItem11617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getItem12004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getItem11617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getItem12004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItemId11618;
+		internal static global::MonoJavaBridge.MethodId _getItemId12005;
 		 long android.widget.Adapter.getItemId(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.widget.__SpinnerAdapter._getItemId11618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getItemId12005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getItemId11618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getItemId12005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasStableIds11619;
+		internal static global::MonoJavaBridge.MethodId _hasStableIds12006;
 		 bool android.widget.Adapter.hasStableIds() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.__SpinnerAdapter._hasStableIds11619);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._hasStableIds12006);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._hasStableIds11619);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._hasStableIds12006);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getView11620;
+		internal static global::MonoJavaBridge.MethodId _getView12007;
 		 global::android.view.View android.widget.Adapter.getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__SpinnerAdapter._getView11620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getView12007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getView11620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getView12007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItemViewType11621;
+		internal static global::MonoJavaBridge.MethodId _getItemViewType12008;
 		 int android.widget.Adapter.getItemViewType(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__SpinnerAdapter._getItemViewType11621, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getItemViewType12008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getItemViewType11621, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getItemViewType12008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getViewTypeCount11622;
+		internal static global::MonoJavaBridge.MethodId _getViewTypeCount12009;
 		 int android.widget.Adapter.getViewTypeCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__SpinnerAdapter._getViewTypeCount11622);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_._getViewTypeCount12009);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__SpinnerAdapter.staticClass, global::android.widget.__SpinnerAdapter._getViewTypeCount11622);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.SpinnerAdapter_.staticClass, global::android.widget.SpinnerAdapter_._getViewTypeCount12009);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.__SpinnerAdapter.staticClass = @__class;
-			global::android.widget.__SpinnerAdapter._getDropDownView11612 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.SpinnerAdapter.getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
-			global::android.widget.__SpinnerAdapter._isEmpty11613 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.isEmpty", "()Z");
-			global::android.widget.__SpinnerAdapter._getCount11614 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.getCount", "()I");
-			global::android.widget.__SpinnerAdapter._registerDataSetObserver11615 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.widget.__SpinnerAdapter._unregisterDataSetObserver11616 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.widget.__SpinnerAdapter._getItem11617 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.getItem", "(I)Ljava/lang/Object;");
-			global::android.widget.__SpinnerAdapter._getItemId11618 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.getItemId", "(I)J");
-			global::android.widget.__SpinnerAdapter._hasStableIds11619 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.hasStableIds", "()Z");
-			global::android.widget.__SpinnerAdapter._getView11620 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
-			global::android.widget.__SpinnerAdapter._getItemViewType11621 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.getItemViewType", "(I)I");
-			global::android.widget.__SpinnerAdapter._getViewTypeCount11622 = @__env.GetMethodID(global::android.widget.__SpinnerAdapter.staticClass, "android.widget.Adapter.getViewTypeCount", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.SpinnerAdapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/SpinnerAdapter"));
+			global::android.widget.SpinnerAdapter_._getDropDownView11999 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+			global::android.widget.SpinnerAdapter_._isEmpty12000 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "isEmpty", "()Z");
+			global::android.widget.SpinnerAdapter_._getCount12001 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getCount", "()I");
+			global::android.widget.SpinnerAdapter_._registerDataSetObserver12002 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.widget.SpinnerAdapter_._unregisterDataSetObserver12003 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.widget.SpinnerAdapter_._getItem12004 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getItem", "(I)Ljava/lang/Object;");
+			global::android.widget.SpinnerAdapter_._getItemId12005 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getItemId", "(I)J");
+			global::android.widget.SpinnerAdapter_._hasStableIds12006 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "hasStableIds", "()Z");
+			global::android.widget.SpinnerAdapter_._getView12007 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+			global::android.widget.SpinnerAdapter_._getItemViewType12008 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getItemViewType", "(I)I");
+			global::android.widget.SpinnerAdapter_._getViewTypeCount12009 = @__env.GetMethodIDNoThrow(global::android.widget.SpinnerAdapter_.staticClass, "getViewTypeCount", "()I");
 		}
 	}
 }

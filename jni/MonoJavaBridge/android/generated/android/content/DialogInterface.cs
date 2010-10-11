@@ -1,61 +1,47 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DialogInterface 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_))]
+	public interface DialogInterface  : global::MonoJavaBridge.IJavaObject 
 	{
 		void cancel();
 		void dismiss();
 	}
 
-	public partial class DialogInterface_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.DialogInterface))]
+	public sealed partial class DialogInterface_ : java.lang.Object, DialogInterface
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DialogInterface_()
 		{
-			get { return __DialogInterface.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DialogInterface : java.lang.Object, DialogInterface
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DialogInterface()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__DialogInterface(@__env);
-			}
-		}
-		internal __DialogInterface(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DialogInterface_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel1421;
+		internal static global::MonoJavaBridge.MethodId _cancel1515;
 		 void android.content.DialogInterface.cancel() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._cancel1421);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_._cancel1515);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._cancel1421);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_.staticClass, global::android.content.DialogInterface_._cancel1515);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dismiss1422;
+		internal static global::MonoJavaBridge.MethodId _dismiss1516;
 		 void android.content.DialogInterface.dismiss() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._dismiss1422);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_._dismiss1516);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._dismiss1422);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_.staticClass, global::android.content.DialogInterface_._dismiss1516);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__DialogInterface.staticClass = @__class;
-			global::android.content.__DialogInterface._cancel1421 = @__env.GetMethodID(global::android.content.__DialogInterface.staticClass, "android.content.DialogInterface.cancel", "()V");
-			global::android.content.__DialogInterface._dismiss1422 = @__env.GetMethodID(global::android.content.__DialogInterface.staticClass, "android.content.DialogInterface.dismiss", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.DialogInterface_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface"));
+			global::android.content.DialogInterface_._cancel1515 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_.staticClass, "cancel", "()V");
+			global::android.content.DialogInterface_._dismiss1516 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_.staticClass, "dismiss", "()V");
 		}
 	}
 }

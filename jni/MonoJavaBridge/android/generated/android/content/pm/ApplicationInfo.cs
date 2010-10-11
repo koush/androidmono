@@ -1,131 +1,121 @@
 namespace android.content.pm
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ApplicationInfo : android.content.pm.PackageItemInfo, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ApplicationInfo : android.content.pm.PackageItemInfo, android.os.Parcelable
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ApplicationInfo()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.ApplicationInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.pm.ApplicationInfo(@__env);
-			}
-		}
-		protected ApplicationInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ApplicationInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public new class DisplayNameComparator : java.lang.Object, java.util.Comparator
+		[global::MonoJavaBridge.JavaClass()]
+		public new partial class DisplayNameComparator : java.lang.Object, java.util.Comparator
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static DisplayNameComparator()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.ApplicationInfo.DisplayNameComparator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.content.pm.ApplicationInfo.DisplayNameComparator(@__env);
-				}
-			}
-			protected DisplayNameComparator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected DisplayNameComparator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _compare1759;
+			internal static global::MonoJavaBridge.MethodId _compare1853;
 			public virtual int compare(android.content.pm.ApplicationInfo arg0, android.content.pm.ApplicationInfo arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _compare1760;
+			internal static global::MonoJavaBridge.MethodId _compare1854;
 			public virtual int compare(java.lang.Object arg0, java.lang.Object arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1760, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1760, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _DisplayNameComparator1761;
-			public DisplayNameComparator(android.content.pm.PackageManager arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _DisplayNameComparator1855;
+			public DisplayNameComparator(android.content.pm.PackageManager arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator1761, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator1855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass = @__class;
-				global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1759 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I");
-				global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1760 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-				global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator1761 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "<init>", "(Landroid/content/pm/PackageManager;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ApplicationInfo$DisplayNameComparator"));
+				global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1853 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I");
+				global::android.content.pm.ApplicationInfo.DisplayNameComparator._compare1854 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
+				global::android.content.pm.ApplicationInfo.DisplayNameComparator._DisplayNameComparator1855 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.DisplayNameComparator.staticClass, "<init>", "(Landroid/content/pm/PackageManager;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1762;
+		internal static global::MonoJavaBridge.MethodId _toString1856;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.ApplicationInfo._toString1762));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo._toString1856)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._toString1762));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._toString1856)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dump1763;
+		internal static global::MonoJavaBridge.MethodId _dump1857;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.ApplicationInfo._dump1763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo._dump1857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._dump1763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._dump1857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1764;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel1858;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.ApplicationInfo._writeToParcel1764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo._writeToParcel1858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._writeToParcel1764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._writeToParcel1858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1765;
+		internal static global::MonoJavaBridge.MethodId _describeContents1859;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.ApplicationInfo._describeContents1765);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo._describeContents1859);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._describeContents1765);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._describeContents1859);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadDescription1766;
+		internal static global::MonoJavaBridge.MethodId _loadDescription1860;
 		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.ApplicationInfo._loadDescription1766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo._loadDescription1860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._loadDescription1766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._loadDescription1860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ApplicationInfo1767;
-		public ApplicationInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ApplicationInfo1861;
+		public ApplicationInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._ApplicationInfo1767, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._ApplicationInfo1861);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ApplicationInfo1768;
-		public ApplicationInfo(android.content.pm.ApplicationInfo arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ApplicationInfo1862;
+		public ApplicationInfo(android.content.pm.ApplicationInfo arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._ApplicationInfo1768, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ApplicationInfo.staticClass, global::android.content.pm.ApplicationInfo._ApplicationInfo1862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _taskAffinity1769;
+		internal static global::MonoJavaBridge.FieldId _taskAffinity1863;
 		public global::java.lang.String taskAffinity
 		{
 			get
@@ -136,7 +126,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _permission1770;
+		internal static global::MonoJavaBridge.FieldId _permission1864;
 		public global::java.lang.String permission
 		{
 			get
@@ -147,7 +137,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _processName1771;
+		internal static global::MonoJavaBridge.FieldId _processName1865;
 		public global::java.lang.String processName
 		{
 			get
@@ -158,7 +148,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _className1772;
+		internal static global::MonoJavaBridge.FieldId _className1866;
 		public global::java.lang.String className
 		{
 			get
@@ -169,7 +159,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _descriptionRes1773;
+		internal static global::MonoJavaBridge.FieldId _descriptionRes1867;
 		public int descriptionRes
 		{
 			get
@@ -180,7 +170,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _theme1774;
+		internal static global::MonoJavaBridge.FieldId _theme1868;
 		public int theme
 		{
 			get
@@ -191,7 +181,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _manageSpaceActivityName1775;
+		internal static global::MonoJavaBridge.FieldId _manageSpaceActivityName1869;
 		public global::java.lang.String manageSpaceActivityName
 		{
 			get
@@ -202,7 +192,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _backupAgentName1776;
+		internal static global::MonoJavaBridge.FieldId _backupAgentName1870;
 		public global::java.lang.String backupAgentName
 		{
 			get
@@ -346,7 +336,7 @@ namespace android.content.pm
 				return 262144;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _flags1777;
+		internal static global::MonoJavaBridge.FieldId _flags1871;
 		public int flags
 		{
 			get
@@ -357,7 +347,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sourceDir1778;
+		internal static global::MonoJavaBridge.FieldId _sourceDir1872;
 		public global::java.lang.String sourceDir
 		{
 			get
@@ -368,7 +358,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _publicSourceDir1779;
+		internal static global::MonoJavaBridge.FieldId _publicSourceDir1873;
 		public global::java.lang.String publicSourceDir
 		{
 			get
@@ -379,7 +369,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sharedLibraryFiles1780;
+		internal static global::MonoJavaBridge.FieldId _sharedLibraryFiles1874;
 		public global::java.lang.String[] sharedLibraryFiles
 		{
 			get
@@ -390,7 +380,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _dataDir1781;
+		internal static global::MonoJavaBridge.FieldId _dataDir1875;
 		public global::java.lang.String dataDir
 		{
 			get
@@ -401,7 +391,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _uid1782;
+		internal static global::MonoJavaBridge.FieldId _uid1876;
 		public int uid
 		{
 			get
@@ -412,7 +402,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _targetSdkVersion1783;
+		internal static global::MonoJavaBridge.FieldId _targetSdkVersion1877;
 		public int targetSdkVersion
 		{
 			get
@@ -423,7 +413,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _enabled1784;
+		internal static global::MonoJavaBridge.FieldId _enabled1878;
 		public bool enabled
 		{
 			get
@@ -434,7 +424,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1785;
+		internal static global::MonoJavaBridge.FieldId _CREATOR1879;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -442,16 +432,17 @@ namespace android.content.pm
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.pm.ApplicationInfo.staticClass = @__class;
-			global::android.content.pm.ApplicationInfo._toString1762 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.ApplicationInfo._dump1763 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::android.content.pm.ApplicationInfo._writeToParcel1764 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.ApplicationInfo._describeContents1765 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.ApplicationInfo._loadDescription1766 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
-			global::android.content.pm.ApplicationInfo._ApplicationInfo1767 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.ApplicationInfo._ApplicationInfo1768 = @__env.GetMethodID(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "(Landroid/content/pm/ApplicationInfo;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.pm.ApplicationInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/ApplicationInfo"));
+			global::android.content.pm.ApplicationInfo._toString1856 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.pm.ApplicationInfo._dump1857 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
+			global::android.content.pm.ApplicationInfo._writeToParcel1858 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.ApplicationInfo._describeContents1859 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "describeContents", "()I");
+			global::android.content.pm.ApplicationInfo._loadDescription1860 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;");
+			global::android.content.pm.ApplicationInfo._ApplicationInfo1861 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "()V");
+			global::android.content.pm.ApplicationInfo._ApplicationInfo1862 = @__env.GetMethodIDNoThrow(global::android.content.pm.ApplicationInfo.staticClass, "<init>", "(Landroid/content/pm/ApplicationInfo;)V");
 		}
 	}
 }

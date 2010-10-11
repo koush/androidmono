@@ -1,50 +1,36 @@
 namespace android.sax
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface EndTextElementListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.sax.EndTextElementListener_))]
+	public interface EndTextElementListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void end(java.lang.String arg0);
 	}
 
-	public partial class EndTextElementListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.sax.EndTextElementListener))]
+	public sealed partial class EndTextElementListener_ : java.lang.Object, EndTextElementListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static EndTextElementListener_()
 		{
-			get { return __EndTextElementListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __EndTextElementListener : java.lang.Object, EndTextElementListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __EndTextElementListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.sax.__EndTextElementListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.sax.__EndTextElementListener(@__env);
-			}
-		}
-		internal __EndTextElementListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal EndTextElementListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _end6976;
+		internal static global::MonoJavaBridge.MethodId _end7252;
 		 void android.sax.EndTextElementListener.end(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.sax.__EndTextElementListener._end6976, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndTextElementListener_._end7252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__EndTextElementListener.staticClass, global::android.sax.__EndTextElementListener._end6976, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.EndTextElementListener_.staticClass, global::android.sax.EndTextElementListener_._end7252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.sax.__EndTextElementListener.staticClass = @__class;
-			global::android.sax.__EndTextElementListener._end6976 = @__env.GetMethodID(global::android.sax.__EndTextElementListener.staticClass, "android.sax.EndTextElementListener.end", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.sax.EndTextElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndTextElementListener"));
+			global::android.sax.EndTextElementListener_._end7252 = @__env.GetMethodIDNoThrow(global::android.sax.EndTextElementListener_.staticClass, "end", "(Ljava/lang/String;)V");
 		}
 	}
 }

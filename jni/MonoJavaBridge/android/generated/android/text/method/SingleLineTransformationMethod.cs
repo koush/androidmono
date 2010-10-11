@@ -1,58 +1,55 @@
 namespace android.text.method
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SingleLineTransformationMethod : android.text.method.ReplacementTransformationMethod
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SingleLineTransformationMethod : android.text.method.ReplacementTransformationMethod
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SingleLineTransformationMethod()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.method.SingleLineTransformationMethod), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.method.SingleLineTransformationMethod(@__env);
-			}
-		}
-		protected SingleLineTransformationMethod(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SingleLineTransformationMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance7869;
+		internal static global::MonoJavaBridge.MethodId _getInstance8166;
 		public static global::android.text.method.SingleLineTransformationMethod getInstance() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.SingleLineTransformationMethod>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getInstance7869));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getInstance8166)) as android.text.method.SingleLineTransformationMethod;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOriginal7870;
+		internal static global::MonoJavaBridge.MethodId _getOriginal8167;
 		protected override char[] getOriginal() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod._getOriginal7870));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.SingleLineTransformationMethod._getOriginal8167)) as char[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getOriginal7870));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getOriginal8167)) as char[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getReplacement7871;
+		internal static global::MonoJavaBridge.MethodId _getReplacement8168;
 		protected override char[] getReplacement() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod._getReplacement7871));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.SingleLineTransformationMethod._getReplacement8168)) as char[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getReplacement7871));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getReplacement8168)) as char[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SingleLineTransformationMethod7872;
-		public SingleLineTransformationMethod()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SingleLineTransformationMethod8169;
+		public SingleLineTransformationMethod()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._SingleLineTransformationMethod7872, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._SingleLineTransformationMethod8169);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.method.SingleLineTransformationMethod.staticClass = @__class;
-			global::android.text.method.SingleLineTransformationMethod._getInstance7869 = @__env.GetStaticMethodID(global::android.text.method.SingleLineTransformationMethod.staticClass, "getInstance", "()Landroid/text/method/SingleLineTransformationMethod;");
-			global::android.text.method.SingleLineTransformationMethod._getOriginal7870 = @__env.GetMethodID(global::android.text.method.SingleLineTransformationMethod.staticClass, "getOriginal", "()[C");
-			global::android.text.method.SingleLineTransformationMethod._getReplacement7871 = @__env.GetMethodID(global::android.text.method.SingleLineTransformationMethod.staticClass, "getReplacement", "()[C");
-			global::android.text.method.SingleLineTransformationMethod._SingleLineTransformationMethod7872 = @__env.GetMethodID(global::android.text.method.SingleLineTransformationMethod.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.method.SingleLineTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/SingleLineTransformationMethod"));
+			global::android.text.method.SingleLineTransformationMethod._getInstance8166 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "getInstance", "()Landroid/text/method/SingleLineTransformationMethod;");
+			global::android.text.method.SingleLineTransformationMethod._getOriginal8167 = @__env.GetMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "getOriginal", "()[C");
+			global::android.text.method.SingleLineTransformationMethod._getReplacement8168 = @__env.GetMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "getReplacement", "()[C");
+			global::android.text.method.SingleLineTransformationMethod._SingleLineTransformationMethod8169 = @__env.GetMethodIDNoThrow(global::android.text.method.SingleLineTransformationMethod.staticClass, "<init>", "()V");
 		}
 	}
 }

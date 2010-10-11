@@ -1,233 +1,228 @@
 namespace android.graphics.drawable
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class RotateDrawable : android.graphics.drawable.Drawable, android.graphics.drawable.Drawable.Callback
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class RotateDrawable : android.graphics.drawable.Drawable, android.graphics.drawable.Drawable.Callback
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static RotateDrawable()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.RotateDrawable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.drawable.RotateDrawable(@__env);
-			}
-		}
-		protected RotateDrawable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected RotateDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _inflate3944;
+		internal static global::MonoJavaBridge.MethodId _inflate4143;
 		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._inflate3944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._inflate4143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._inflate3944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._inflate4143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDrawable3945;
+		internal static global::MonoJavaBridge.MethodId _getDrawable4144;
 		public virtual global::android.graphics.drawable.Drawable getDrawable() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.RotateDrawable._getDrawable3945));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getDrawable4144)) as android.graphics.drawable.Drawable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getDrawable3945));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getDrawable4144)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _draw3946;
+		internal static global::MonoJavaBridge.MethodId _draw4145;
 		public override void draw(android.graphics.Canvas arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._draw3946, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._draw4145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._draw3946, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._draw4145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3947;
+		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations4146;
 		public override int getChangingConfigurations() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.RotateDrawable._getChangingConfigurations3947);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getChangingConfigurations4146);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getChangingConfigurations3947);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getChangingConfigurations4146);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3948;
+		internal static global::MonoJavaBridge.MethodId _setAlpha4147;
 		public override void setAlpha(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._setAlpha3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._setAlpha4147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._setAlpha3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._setAlpha4147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3949;
+		internal static global::MonoJavaBridge.MethodId _setColorFilter4148;
 		public override void setColorFilter(android.graphics.ColorFilter arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._setColorFilter3949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._setColorFilter4148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._setColorFilter3949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._setColorFilter4148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isStateful3950;
+		internal static global::MonoJavaBridge.MethodId _isStateful4149;
 		public override bool isStateful() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.RotateDrawable._isStateful3950);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._isStateful4149);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._isStateful3950);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._isStateful4149);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setVisible3951;
+		internal static global::MonoJavaBridge.MethodId _setVisible4150;
 		public override bool setVisible(bool arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.RotateDrawable._setVisible3951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._setVisible4150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._setVisible3951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._setVisible4150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3952;
+		internal static global::MonoJavaBridge.MethodId _getOpacity4151;
 		public override int getOpacity() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.RotateDrawable._getOpacity3952);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getOpacity4151);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getOpacity3952);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getOpacity4151);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onStateChange3953;
+		internal static global::MonoJavaBridge.MethodId _onStateChange4152;
 		protected override bool onStateChange(int[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.RotateDrawable._onStateChange3953, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._onStateChange4152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._onStateChange3953, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._onStateChange4152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLevelChange3954;
+		internal static global::MonoJavaBridge.MethodId _onLevelChange4153;
 		protected override bool onLevelChange(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.RotateDrawable._onLevelChange3954, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._onLevelChange4153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._onLevelChange3954, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._onLevelChange4153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onBoundsChange3955;
+		internal static global::MonoJavaBridge.MethodId _onBoundsChange4154;
 		protected override void onBoundsChange(android.graphics.Rect arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._onBoundsChange3955, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._onBoundsChange4154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._onBoundsChange3955, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._onBoundsChange4154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicWidth3956;
+		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth4155;
 		public override int getIntrinsicWidth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.RotateDrawable._getIntrinsicWidth3956);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getIntrinsicWidth4155);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getIntrinsicWidth3956);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getIntrinsicWidth4155);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicHeight3957;
+		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight4156;
 		public override int getIntrinsicHeight() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.RotateDrawable._getIntrinsicHeight3957);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getIntrinsicHeight4156);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getIntrinsicHeight3957);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getIntrinsicHeight4156);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPadding3958;
+		internal static global::MonoJavaBridge.MethodId _getPadding4157;
 		public override bool getPadding(android.graphics.Rect arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.RotateDrawable._getPadding3958, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getPadding4157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getPadding3958, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getPadding4157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _mutate3959;
+		internal static global::MonoJavaBridge.MethodId _mutate4158;
 		public override global::android.graphics.drawable.Drawable mutate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.RotateDrawable._mutate3959));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._mutate4158)) as android.graphics.drawable.Drawable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._mutate3959));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._mutate4158)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3960;
+		internal static global::MonoJavaBridge.MethodId _getConstantState4159;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.RotateDrawable._getConstantState3960));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._getConstantState4159)) as android.graphics.drawable.Drawable.ConstantState;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getConstantState3960));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._getConstantState4159)) as android.graphics.drawable.Drawable.ConstantState;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable3961;
+		internal static global::MonoJavaBridge.MethodId _invalidateDrawable4160;
 		public virtual void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._invalidateDrawable3961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._invalidateDrawable4160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._invalidateDrawable3961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._invalidateDrawable4160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _scheduleDrawable3962;
+		internal static global::MonoJavaBridge.MethodId _scheduleDrawable4161;
 		public virtual void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._scheduleDrawable3962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._scheduleDrawable4161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._scheduleDrawable3962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._scheduleDrawable4161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unscheduleDrawable3963;
+		internal static global::MonoJavaBridge.MethodId _unscheduleDrawable4162;
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.RotateDrawable._unscheduleDrawable3963, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._unscheduleDrawable4162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._unscheduleDrawable3963, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._unscheduleDrawable4162, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RotateDrawable3964;
-		public RotateDrawable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RotateDrawable4163;
+		public RotateDrawable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._RotateDrawable3964, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._RotateDrawable4163);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.drawable.RotateDrawable.staticClass = @__class;
-			global::android.graphics.drawable.RotateDrawable._inflate3944 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
-			global::android.graphics.drawable.RotateDrawable._getDrawable3945 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.RotateDrawable._draw3946 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.graphics.drawable.RotateDrawable._getChangingConfigurations3947 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getChangingConfigurations", "()I");
-			global::android.graphics.drawable.RotateDrawable._setAlpha3948 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "setAlpha", "(I)V");
-			global::android.graphics.drawable.RotateDrawable._setColorFilter3949 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
-			global::android.graphics.drawable.RotateDrawable._isStateful3950 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "isStateful", "()Z");
-			global::android.graphics.drawable.RotateDrawable._setVisible3951 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "setVisible", "(ZZ)Z");
-			global::android.graphics.drawable.RotateDrawable._getOpacity3952 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getOpacity", "()I");
-			global::android.graphics.drawable.RotateDrawable._onStateChange3953 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "onStateChange", "([I)Z");
-			global::android.graphics.drawable.RotateDrawable._onLevelChange3954 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "onLevelChange", "(I)Z");
-			global::android.graphics.drawable.RotateDrawable._onBoundsChange3955 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
-			global::android.graphics.drawable.RotateDrawable._getIntrinsicWidth3956 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getIntrinsicWidth", "()I");
-			global::android.graphics.drawable.RotateDrawable._getIntrinsicHeight3957 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getIntrinsicHeight", "()I");
-			global::android.graphics.drawable.RotateDrawable._getPadding3958 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z");
-			global::android.graphics.drawable.RotateDrawable._mutate3959 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.RotateDrawable._getConstantState3960 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
-			global::android.graphics.drawable.RotateDrawable._invalidateDrawable3961 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V");
-			global::android.graphics.drawable.RotateDrawable._scheduleDrawable3962 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
-			global::android.graphics.drawable.RotateDrawable._unscheduleDrawable3963 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
-			global::android.graphics.drawable.RotateDrawable._RotateDrawable3964 = @__env.GetMethodID(global::android.graphics.drawable.RotateDrawable.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.drawable.RotateDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/RotateDrawable"));
+			global::android.graphics.drawable.RotateDrawable._inflate4143 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
+			global::android.graphics.drawable.RotateDrawable._getDrawable4144 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.RotateDrawable._draw4145 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.graphics.drawable.RotateDrawable._getChangingConfigurations4146 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getChangingConfigurations", "()I");
+			global::android.graphics.drawable.RotateDrawable._setAlpha4147 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "setAlpha", "(I)V");
+			global::android.graphics.drawable.RotateDrawable._setColorFilter4148 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
+			global::android.graphics.drawable.RotateDrawable._isStateful4149 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "isStateful", "()Z");
+			global::android.graphics.drawable.RotateDrawable._setVisible4150 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "setVisible", "(ZZ)Z");
+			global::android.graphics.drawable.RotateDrawable._getOpacity4151 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getOpacity", "()I");
+			global::android.graphics.drawable.RotateDrawable._onStateChange4152 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "onStateChange", "([I)Z");
+			global::android.graphics.drawable.RotateDrawable._onLevelChange4153 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "onLevelChange", "(I)Z");
+			global::android.graphics.drawable.RotateDrawable._onBoundsChange4154 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
+			global::android.graphics.drawable.RotateDrawable._getIntrinsicWidth4155 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getIntrinsicWidth", "()I");
+			global::android.graphics.drawable.RotateDrawable._getIntrinsicHeight4156 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getIntrinsicHeight", "()I");
+			global::android.graphics.drawable.RotateDrawable._getPadding4157 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z");
+			global::android.graphics.drawable.RotateDrawable._mutate4158 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.RotateDrawable._getConstantState4159 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
+			global::android.graphics.drawable.RotateDrawable._invalidateDrawable4160 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V");
+			global::android.graphics.drawable.RotateDrawable._scheduleDrawable4161 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
+			global::android.graphics.drawable.RotateDrawable._unscheduleDrawable4162 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
+			global::android.graphics.drawable.RotateDrawable._RotateDrawable4163 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.RotateDrawable.staticClass, "<init>", "()V");
 		}
 	}
 }

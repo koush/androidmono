@@ -1,50 +1,36 @@
 namespace org.apache.http.conn.scheme
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface HostNameResolver 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.scheme.HostNameResolver_))]
+	public interface HostNameResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.InetAddress resolve(java.lang.String arg0);
 	}
 
-	public partial class HostNameResolver_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.conn.scheme.HostNameResolver))]
+	public sealed partial class HostNameResolver_ : java.lang.Object, HostNameResolver
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HostNameResolver_()
 		{
-			get { return __HostNameResolver.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HostNameResolver : java.lang.Object, HostNameResolver
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HostNameResolver()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.conn.scheme.__HostNameResolver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.conn.scheme.__HostNameResolver(@__env);
-			}
-		}
-		internal __HostNameResolver(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HostNameResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _resolve14480;
+		internal static global::MonoJavaBridge.MethodId _resolve16395;
 		 global::java.net.InetAddress org.apache.http.conn.scheme.HostNameResolver.resolve(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.conn.scheme.__HostNameResolver._resolve14480, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.HostNameResolver_._resolve16395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.conn.scheme.__HostNameResolver.staticClass, global::org.apache.http.conn.scheme.__HostNameResolver._resolve14480, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.HostNameResolver_.staticClass, global::org.apache.http.conn.scheme.HostNameResolver_._resolve16395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.conn.scheme.__HostNameResolver.staticClass = @__class;
-			global::org.apache.http.conn.scheme.__HostNameResolver._resolve14480 = @__env.GetMethodID(global::org.apache.http.conn.scheme.__HostNameResolver.staticClass, "org.apache.http.conn.scheme.HostNameResolver.resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.conn.scheme.HostNameResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/HostNameResolver"));
+			global::org.apache.http.conn.scheme.HostNameResolver_._resolve16395 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.HostNameResolver_.staticClass, "resolve", "(Ljava/lang/String;)Ljava/net/InetAddress;");
 		}
 	}
 }

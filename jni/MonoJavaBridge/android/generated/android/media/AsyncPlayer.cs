@@ -1,53 +1,48 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AsyncPlayer : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AsyncPlayer : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AsyncPlayer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.AsyncPlayer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.AsyncPlayer(@__env);
-			}
-		}
-		protected AsyncPlayer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AsyncPlayer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stop4589;
+		internal static global::MonoJavaBridge.MethodId _stop4820;
 		public virtual void stop() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.AsyncPlayer._stop4589);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.AsyncPlayer._stop4820);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._stop4589);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._stop4820);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _play4590;
+		internal static global::MonoJavaBridge.MethodId _play4821;
 		public virtual void play(android.content.Context arg0, android.net.Uri arg1, bool arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.AsyncPlayer._play4590, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.AsyncPlayer._play4821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._play4590, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._play4821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AsyncPlayer4591;
-		public AsyncPlayer(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AsyncPlayer4822;
+		public AsyncPlayer(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._AsyncPlayer4591, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._AsyncPlayer4822, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.AsyncPlayer.staticClass = @__class;
-			global::android.media.AsyncPlayer._stop4589 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "stop", "()V");
-			global::android.media.AsyncPlayer._play4590 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "play", "(Landroid/content/Context;Landroid/net/Uri;ZI)V");
-			global::android.media.AsyncPlayer._AsyncPlayer4591 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.AsyncPlayer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AsyncPlayer"));
+			global::android.media.AsyncPlayer._stop4820 = @__env.GetMethodIDNoThrow(global::android.media.AsyncPlayer.staticClass, "stop", "()V");
+			global::android.media.AsyncPlayer._play4821 = @__env.GetMethodIDNoThrow(global::android.media.AsyncPlayer.staticClass, "play", "(Landroid/content/Context;Landroid/net/Uri;ZI)V");
+			global::android.media.AsyncPlayer._AsyncPlayer4822 = @__env.GetMethodIDNoThrow(global::android.media.AsyncPlayer.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

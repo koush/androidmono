@@ -1,50 +1,36 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DialogInterface_OnMultiChoiceClickListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnMultiChoiceClickListener_))]
+	public interface DialogInterface_OnMultiChoiceClickListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onClick(android.content.DialogInterface arg0, int arg1, bool arg2);
 	}
 
-	public partial class DialogInterface_OnMultiChoiceClickListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.DialogInterface_OnMultiChoiceClickListener))]
+	public sealed partial class DialogInterface_OnMultiChoiceClickListener_ : java.lang.Object, DialogInterface_OnMultiChoiceClickListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DialogInterface_OnMultiChoiceClickListener_()
 		{
-			get { return __DialogInterface_OnMultiChoiceClickListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DialogInterface_OnMultiChoiceClickListener : java.lang.Object, DialogInterface_OnMultiChoiceClickListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DialogInterface_OnMultiChoiceClickListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface_OnMultiChoiceClickListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__DialogInterface_OnMultiChoiceClickListener(@__env);
-			}
-		}
-		internal __DialogInterface_OnMultiChoiceClickListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DialogInterface_OnMultiChoiceClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onClick1419;
+		internal static global::MonoJavaBridge.MethodId _onClick1513;
 		 void android.content.DialogInterface_OnMultiChoiceClickListener.onClick(android.content.DialogInterface arg0, int arg1, bool arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnMultiChoiceClickListener._onClick1419, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick1513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnMultiChoiceClickListener.staticClass, global::android.content.__DialogInterface_OnMultiChoiceClickListener._onClick1419, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass, global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick1513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__DialogInterface_OnMultiChoiceClickListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnMultiChoiceClickListener._onClick1419 = @__env.GetMethodID(global::android.content.__DialogInterface_OnMultiChoiceClickListener.staticClass, "android.content.DialogInterface_OnMultiChoiceClickListener.onClick", "(Landroid/content/DialogInterface;IZ)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnMultiChoiceClickListener"));
+			global::android.content.DialogInterface_OnMultiChoiceClickListener_._onClick1513 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnMultiChoiceClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;IZ)V");
 		}
 	}
 }

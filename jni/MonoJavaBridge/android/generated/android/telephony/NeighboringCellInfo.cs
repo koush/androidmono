@@ -1,136 +1,133 @@
 namespace android.telephony
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class NeighboringCellInfo : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class NeighboringCellInfo : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static NeighboringCellInfo()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.telephony.NeighboringCellInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.telephony.NeighboringCellInfo(@__env);
-			}
-		}
-		protected NeighboringCellInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected NeighboringCellInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7064;
+		internal static global::MonoJavaBridge.MethodId _toString7344;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.NeighboringCellInfo._toString7064));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._toString7344)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._toString7064));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._toString7344)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7065;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel7345;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo._writeToParcel7065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._writeToParcel7345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._writeToParcel7065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._writeToParcel7345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents7066;
+		internal static global::MonoJavaBridge.MethodId _describeContents7346;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._describeContents7066);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._describeContents7346);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._describeContents7066);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._describeContents7346);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRssi7067;
+		internal static global::MonoJavaBridge.MethodId _getRssi7347;
 		public virtual int getRssi() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getRssi7067);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getRssi7347);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getRssi7067);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getRssi7347);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLac7068;
+		internal static global::MonoJavaBridge.MethodId _getLac7348;
 		public virtual int getLac() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getLac7068);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getLac7348);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getLac7068);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getLac7348);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCid7069;
+		internal static global::MonoJavaBridge.MethodId _getCid7349;
 		public virtual int getCid() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getCid7069);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getCid7349);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getCid7069);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getCid7349);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPsc7070;
+		internal static global::MonoJavaBridge.MethodId _getPsc7350;
 		public virtual int getPsc() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getPsc7070);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getPsc7350);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getPsc7070);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getPsc7350);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNetworkType7071;
+		internal static global::MonoJavaBridge.MethodId _getNetworkType7351;
 		public virtual int getNetworkType() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getNetworkType7071);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getNetworkType7351);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getNetworkType7071);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getNetworkType7351);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setCid7072;
+		internal static global::MonoJavaBridge.MethodId _setCid7352;
 		public virtual void setCid(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo._setCid7072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._setCid7352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setCid7072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setCid7352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setRssi7073;
+		internal static global::MonoJavaBridge.MethodId _setRssi7353;
 		public virtual void setRssi(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo._setRssi7073, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._setRssi7353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setRssi7073, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setRssi7353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NeighboringCellInfo7074;
-		public NeighboringCellInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NeighboringCellInfo7354;
+		public NeighboringCellInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7074, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7354);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NeighboringCellInfo7075;
-		public NeighboringCellInfo(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NeighboringCellInfo7355;
+		public NeighboringCellInfo(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7075, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NeighboringCellInfo7076;
-		public NeighboringCellInfo(int arg0, java.lang.String arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NeighboringCellInfo7356;
+		public NeighboringCellInfo(int arg0, java.lang.String arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7076, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NeighboringCellInfo7077;
-		public NeighboringCellInfo(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NeighboringCellInfo7357;
+		public NeighboringCellInfo(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7077, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
 		public static int UNKNOWN_RSSI
 		{
@@ -146,7 +143,7 @@ namespace android.telephony
 				return -1;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR7078;
+		internal static global::MonoJavaBridge.FieldId _CREATOR7358;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -154,23 +151,24 @@ namespace android.telephony
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.telephony.NeighboringCellInfo.staticClass = @__class;
-			global::android.telephony.NeighboringCellInfo._toString7064 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.telephony.NeighboringCellInfo._writeToParcel7065 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.telephony.NeighboringCellInfo._describeContents7066 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "describeContents", "()I");
-			global::android.telephony.NeighboringCellInfo._getRssi7067 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "getRssi", "()I");
-			global::android.telephony.NeighboringCellInfo._getLac7068 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "getLac", "()I");
-			global::android.telephony.NeighboringCellInfo._getCid7069 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "getCid", "()I");
-			global::android.telephony.NeighboringCellInfo._getPsc7070 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "getPsc", "()I");
-			global::android.telephony.NeighboringCellInfo._getNetworkType7071 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "getNetworkType", "()I");
-			global::android.telephony.NeighboringCellInfo._setCid7072 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "setCid", "(I)V");
-			global::android.telephony.NeighboringCellInfo._setRssi7073 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "setRssi", "(I)V");
-			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7074 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "()V");
-			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7075 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(II)V");
-			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7076 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(ILjava/lang/String;I)V");
-			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7077 = @__env.GetMethodID(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.telephony.NeighboringCellInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/NeighboringCellInfo"));
+			global::android.telephony.NeighboringCellInfo._toString7344 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.NeighboringCellInfo._writeToParcel7345 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.telephony.NeighboringCellInfo._describeContents7346 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "describeContents", "()I");
+			global::android.telephony.NeighboringCellInfo._getRssi7347 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getRssi", "()I");
+			global::android.telephony.NeighboringCellInfo._getLac7348 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getLac", "()I");
+			global::android.telephony.NeighboringCellInfo._getCid7349 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getCid", "()I");
+			global::android.telephony.NeighboringCellInfo._getPsc7350 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getPsc", "()I");
+			global::android.telephony.NeighboringCellInfo._getNetworkType7351 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "getNetworkType", "()I");
+			global::android.telephony.NeighboringCellInfo._setCid7352 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "setCid", "(I)V");
+			global::android.telephony.NeighboringCellInfo._setRssi7353 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "setRssi", "(I)V");
+			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7354 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "()V");
+			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7355 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(II)V");
+			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7356 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(ILjava/lang/String;I)V");
+			global::android.telephony.NeighboringCellInfo._NeighboringCellInfo7357 = @__env.GetMethodIDNoThrow(global::android.telephony.NeighboringCellInfo.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

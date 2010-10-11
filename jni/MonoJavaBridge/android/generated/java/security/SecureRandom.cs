@@ -1,143 +1,142 @@
 namespace java.security
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SecureRandom : java.util.Random
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SecureRandom : java.util.Random
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SecureRandom()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.SecureRandom), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.SecureRandom(@__env);
-			}
-		}
-		protected SecureRandom(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SecureRandom(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _next13281;
+		internal static global::MonoJavaBridge.MethodId _next14916;
 		protected sealed override int next(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.security.SecureRandom._next13281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.SecureRandom._next14916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._next13281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._next14916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13282;
+		internal static global::MonoJavaBridge.MethodId _getInstance14917;
 		public static global::java.security.SecureRandom getInstance(java.lang.String arg0, java.security.Provider arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.SecureRandom>(@__env, @__env.CallStaticObjectMethodPtr(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getInstance13282, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getInstance14917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.SecureRandom;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13283;
+		internal static global::MonoJavaBridge.MethodId _getInstance14918;
 		public static global::java.security.SecureRandom getInstance(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.SecureRandom>(@__env, @__env.CallStaticObjectMethodPtr(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getInstance13283, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getInstance14918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.SecureRandom;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13284;
+		internal static global::MonoJavaBridge.MethodId _getInstance14919;
 		public static global::java.security.SecureRandom getInstance(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.SecureRandom>(@__env, @__env.CallStaticObjectMethodPtr(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getInstance13284, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getInstance14919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.SecureRandom;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlgorithm13285;
+		internal static global::MonoJavaBridge.MethodId _getAlgorithm14920;
 		public virtual global::java.lang.String getAlgorithm() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.SecureRandom._getAlgorithm13285));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SecureRandom._getAlgorithm14920)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getAlgorithm13285));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getAlgorithm14920)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProvider13286;
+		internal static global::MonoJavaBridge.MethodId _getProvider14921;
 		public virtual global::java.security.Provider getProvider() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.Provider>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.SecureRandom._getProvider13286));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SecureRandom._getProvider14921)) as java.security.Provider;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.Provider>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getProvider13286));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getProvider14921)) as java.security.Provider;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextBytes13287;
+		internal static global::MonoJavaBridge.MethodId _nextBytes14922;
 		public override void nextBytes(byte[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.security.SecureRandom._nextBytes13287, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.security.SecureRandom._nextBytes14922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._nextBytes13287, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._nextBytes14922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSeed13288;
+		internal static global::MonoJavaBridge.MethodId _setSeed14923;
 		public override void setSeed(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.security.SecureRandom._setSeed13288, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.security.SecureRandom._setSeed14923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._setSeed13288, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._setSeed14923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSeed13289;
+		internal static global::MonoJavaBridge.MethodId _setSeed14924;
 		public virtual void setSeed(byte[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.security.SecureRandom._setSeed13289, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.security.SecureRandom._setSeed14924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._setSeed13289, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._setSeed14924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSeed13290;
+		internal static global::MonoJavaBridge.MethodId _getSeed14925;
 		public static byte[] getSeed(int arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getSeed13290, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._getSeed14925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _generateSeed13291;
+		internal static global::MonoJavaBridge.MethodId _generateSeed14926;
 		public virtual byte[] generateSeed(int arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.SecureRandom._generateSeed13291, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SecureRandom._generateSeed14926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._generateSeed13291, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SecureRandom.staticClass, global::java.security.SecureRandom._generateSeed14926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SecureRandom13292;
-		public SecureRandom(byte[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SecureRandom14927;
+		public SecureRandom(byte[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._SecureRandom13292, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._SecureRandom14927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SecureRandom13293;
-		public SecureRandom()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SecureRandom14928;
+		public SecureRandom()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._SecureRandom13293, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._SecureRandom14928);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SecureRandom13294;
-		protected SecureRandom(java.security.SecureRandomSpi arg0, java.security.Provider arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SecureRandom14929;
+		protected SecureRandom(java.security.SecureRandomSpi arg0, java.security.Provider arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._SecureRandom13294, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandom.staticClass, global::java.security.SecureRandom._SecureRandom14929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.SecureRandom.staticClass = @__class;
-			global::java.security.SecureRandom._next13281 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "next", "(I)I");
-			global::java.security.SecureRandom._getInstance13282 = @__env.GetStaticMethodID(global::java.security.SecureRandom.staticClass, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/SecureRandom;");
-			global::java.security.SecureRandom._getInstance13283 = @__env.GetStaticMethodID(global::java.security.SecureRandom.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/security/SecureRandom;");
-			global::java.security.SecureRandom._getInstance13284 = @__env.GetStaticMethodID(global::java.security.SecureRandom.staticClass, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/SecureRandom;");
-			global::java.security.SecureRandom._getAlgorithm13285 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.SecureRandom._getProvider13286 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "getProvider", "()Ljava/security/Provider;");
-			global::java.security.SecureRandom._nextBytes13287 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "nextBytes", "([B)V");
-			global::java.security.SecureRandom._setSeed13288 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "setSeed", "(J)V");
-			global::java.security.SecureRandom._setSeed13289 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "setSeed", "([B)V");
-			global::java.security.SecureRandom._getSeed13290 = @__env.GetStaticMethodID(global::java.security.SecureRandom.staticClass, "getSeed", "(I)[B");
-			global::java.security.SecureRandom._generateSeed13291 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "generateSeed", "(I)[B");
-			global::java.security.SecureRandom._SecureRandom13292 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "<init>", "([B)V");
-			global::java.security.SecureRandom._SecureRandom13293 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "<init>", "()V");
-			global::java.security.SecureRandom._SecureRandom13294 = @__env.GetMethodID(global::java.security.SecureRandom.staticClass, "<init>", "(Ljava/security/SecureRandomSpi;Ljava/security/Provider;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.SecureRandom.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SecureRandom"));
+			global::java.security.SecureRandom._next14916 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "next", "(I)I");
+			global::java.security.SecureRandom._getInstance14917 = @__env.GetStaticMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/SecureRandom;");
+			global::java.security.SecureRandom._getInstance14918 = @__env.GetStaticMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/security/SecureRandom;");
+			global::java.security.SecureRandom._getInstance14919 = @__env.GetStaticMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/SecureRandom;");
+			global::java.security.SecureRandom._getAlgorithm14920 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "getAlgorithm", "()Ljava/lang/String;");
+			global::java.security.SecureRandom._getProvider14921 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "getProvider", "()Ljava/security/Provider;");
+			global::java.security.SecureRandom._nextBytes14922 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "nextBytes", "([B)V");
+			global::java.security.SecureRandom._setSeed14923 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "setSeed", "(J)V");
+			global::java.security.SecureRandom._setSeed14924 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "setSeed", "([B)V");
+			global::java.security.SecureRandom._getSeed14925 = @__env.GetStaticMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "getSeed", "(I)[B");
+			global::java.security.SecureRandom._generateSeed14926 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "generateSeed", "(I)[B");
+			global::java.security.SecureRandom._SecureRandom14927 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "<init>", "([B)V");
+			global::java.security.SecureRandom._SecureRandom14928 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "<init>", "()V");
+			global::java.security.SecureRandom._SecureRandom14929 = @__env.GetMethodIDNoThrow(global::java.security.SecureRandom.staticClass, "<init>", "(Ljava/security/SecureRandomSpi;Ljava/security/Provider;)V");
 		}
 	}
 }

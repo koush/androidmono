@@ -1,654 +1,559 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class MediaPlayer : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MediaPlayer : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static MediaPlayer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.MediaPlayer(@__env);
-			}
-		}
-		protected MediaPlayer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected MediaPlayer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnBufferingUpdateListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnBufferingUpdateListener_))]
+		public interface OnBufferingUpdateListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onBufferingUpdate(android.media.MediaPlayer arg0, int arg1);
 		}
 
-		public partial class OnBufferingUpdateListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnBufferingUpdateListener))]
+		public sealed partial class OnBufferingUpdateListener_ : java.lang.Object, OnBufferingUpdateListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnBufferingUpdateListener_()
 			{
-				get { return __OnBufferingUpdateListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnBufferingUpdateListener : java.lang.Object, OnBufferingUpdateListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnBufferingUpdateListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnBufferingUpdateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnBufferingUpdateListener(@__env);
-				}
-			}
-			internal __OnBufferingUpdateListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnBufferingUpdateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onBufferingUpdate4746;
+			internal static global::MonoJavaBridge.MethodId _onBufferingUpdate4981;
 			 void android.media.MediaPlayer.OnBufferingUpdateListener.onBufferingUpdate(android.media.MediaPlayer arg0, int arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnBufferingUpdateListener._onBufferingUpdate4746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnBufferingUpdateListener_._onBufferingUpdate4981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnBufferingUpdateListener.staticClass, global::android.media.MediaPlayer.__OnBufferingUpdateListener._onBufferingUpdate4746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnBufferingUpdateListener_.staticClass, global::android.media.MediaPlayer.OnBufferingUpdateListener_._onBufferingUpdate4981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnBufferingUpdateListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnBufferingUpdateListener._onBufferingUpdate4746 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnBufferingUpdateListener.staticClass, "android.media.MediaPlayer.OnBufferingUpdateListener.onBufferingUpdate", "(Landroid/media/MediaPlayer;I)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnBufferingUpdateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnBufferingUpdateListener"));
+				global::android.media.MediaPlayer.OnBufferingUpdateListener_._onBufferingUpdate4981 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnBufferingUpdateListener_.staticClass, "onBufferingUpdate", "(Landroid/media/MediaPlayer;I)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnCompletionListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnCompletionListener_))]
+		public interface OnCompletionListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCompletion(android.media.MediaPlayer arg0);
 		}
 
-		public partial class OnCompletionListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnCompletionListener))]
+		public sealed partial class OnCompletionListener_ : java.lang.Object, OnCompletionListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnCompletionListener_()
 			{
-				get { return __OnCompletionListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnCompletionListener : java.lang.Object, OnCompletionListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnCompletionListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnCompletionListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnCompletionListener(@__env);
-				}
-			}
-			internal __OnCompletionListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnCompletionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onCompletion4747;
+			internal static global::MonoJavaBridge.MethodId _onCompletion4982;
 			 void android.media.MediaPlayer.OnCompletionListener.onCompletion(android.media.MediaPlayer arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnCompletionListener._onCompletion4747, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnCompletionListener_._onCompletion4982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnCompletionListener.staticClass, global::android.media.MediaPlayer.__OnCompletionListener._onCompletion4747, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnCompletionListener_.staticClass, global::android.media.MediaPlayer.OnCompletionListener_._onCompletion4982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnCompletionListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnCompletionListener._onCompletion4747 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnCompletionListener.staticClass, "android.media.MediaPlayer.OnCompletionListener.onCompletion", "(Landroid/media/MediaPlayer;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnCompletionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnCompletionListener"));
+				global::android.media.MediaPlayer.OnCompletionListener_._onCompletion4982 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnCompletionListener_.staticClass, "onCompletion", "(Landroid/media/MediaPlayer;)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnErrorListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnErrorListener_))]
+		public interface OnErrorListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onError(android.media.MediaPlayer arg0, int arg1, int arg2);
 		}
 
-		public partial class OnErrorListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnErrorListener))]
+		public sealed partial class OnErrorListener_ : java.lang.Object, OnErrorListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnErrorListener_()
 			{
-				get { return __OnErrorListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnErrorListener : java.lang.Object, OnErrorListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnErrorListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnErrorListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnErrorListener(@__env);
-				}
-			}
-			internal __OnErrorListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnErrorListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onError4748;
+			internal static global::MonoJavaBridge.MethodId _onError4983;
 			 bool android.media.MediaPlayer.OnErrorListener.onError(android.media.MediaPlayer arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer.__OnErrorListener._onError4748, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.OnErrorListener_._onError4983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.__OnErrorListener.staticClass, global::android.media.MediaPlayer.__OnErrorListener._onError4748, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.OnErrorListener_.staticClass, global::android.media.MediaPlayer.OnErrorListener_._onError4983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnErrorListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnErrorListener._onError4748 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnErrorListener.staticClass, "android.media.MediaPlayer.OnErrorListener.onError", "(Landroid/media/MediaPlayer;II)Z");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnErrorListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnErrorListener"));
+				global::android.media.MediaPlayer.OnErrorListener_._onError4983 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnErrorListener_.staticClass, "onError", "(Landroid/media/MediaPlayer;II)Z");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnInfoListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnInfoListener_))]
+		public interface OnInfoListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onInfo(android.media.MediaPlayer arg0, int arg1, int arg2);
 		}
 
-		public partial class OnInfoListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnInfoListener))]
+		public sealed partial class OnInfoListener_ : java.lang.Object, OnInfoListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnInfoListener_()
 			{
-				get { return __OnInfoListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnInfoListener : java.lang.Object, OnInfoListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnInfoListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnInfoListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnInfoListener(@__env);
-				}
-			}
-			internal __OnInfoListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnInfoListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onInfo4749;
+			internal static global::MonoJavaBridge.MethodId _onInfo4984;
 			 bool android.media.MediaPlayer.OnInfoListener.onInfo(android.media.MediaPlayer arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer.__OnInfoListener._onInfo4749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.OnInfoListener_._onInfo4984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.__OnInfoListener.staticClass, global::android.media.MediaPlayer.__OnInfoListener._onInfo4749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.OnInfoListener_.staticClass, global::android.media.MediaPlayer.OnInfoListener_._onInfo4984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnInfoListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnInfoListener._onInfo4749 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnInfoListener.staticClass, "android.media.MediaPlayer.OnInfoListener.onInfo", "(Landroid/media/MediaPlayer;II)Z");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnInfoListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnInfoListener"));
+				global::android.media.MediaPlayer.OnInfoListener_._onInfo4984 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnInfoListener_.staticClass, "onInfo", "(Landroid/media/MediaPlayer;II)Z");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnPreparedListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnPreparedListener_))]
+		public interface OnPreparedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onPrepared(android.media.MediaPlayer arg0);
 		}
 
-		public partial class OnPreparedListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnPreparedListener))]
+		public sealed partial class OnPreparedListener_ : java.lang.Object, OnPreparedListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnPreparedListener_()
 			{
-				get { return __OnPreparedListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnPreparedListener : java.lang.Object, OnPreparedListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnPreparedListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnPreparedListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnPreparedListener(@__env);
-				}
-			}
-			internal __OnPreparedListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnPreparedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onPrepared4750;
+			internal static global::MonoJavaBridge.MethodId _onPrepared4985;
 			 void android.media.MediaPlayer.OnPreparedListener.onPrepared(android.media.MediaPlayer arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnPreparedListener._onPrepared4750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnPreparedListener_._onPrepared4985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnPreparedListener.staticClass, global::android.media.MediaPlayer.__OnPreparedListener._onPrepared4750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnPreparedListener_.staticClass, global::android.media.MediaPlayer.OnPreparedListener_._onPrepared4985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnPreparedListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnPreparedListener._onPrepared4750 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnPreparedListener.staticClass, "android.media.MediaPlayer.OnPreparedListener.onPrepared", "(Landroid/media/MediaPlayer;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnPreparedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnPreparedListener"));
+				global::android.media.MediaPlayer.OnPreparedListener_._onPrepared4985 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnPreparedListener_.staticClass, "onPrepared", "(Landroid/media/MediaPlayer;)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnSeekCompleteListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnSeekCompleteListener_))]
+		public interface OnSeekCompleteListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onSeekComplete(android.media.MediaPlayer arg0);
 		}
 
-		public partial class OnSeekCompleteListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnSeekCompleteListener))]
+		public sealed partial class OnSeekCompleteListener_ : java.lang.Object, OnSeekCompleteListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnSeekCompleteListener_()
 			{
-				get { return __OnSeekCompleteListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnSeekCompleteListener : java.lang.Object, OnSeekCompleteListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnSeekCompleteListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnSeekCompleteListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnSeekCompleteListener(@__env);
-				}
-			}
-			internal __OnSeekCompleteListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnSeekCompleteListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onSeekComplete4751;
+			internal static global::MonoJavaBridge.MethodId _onSeekComplete4986;
 			 void android.media.MediaPlayer.OnSeekCompleteListener.onSeekComplete(android.media.MediaPlayer arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnSeekCompleteListener._onSeekComplete4751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnSeekCompleteListener_._onSeekComplete4986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnSeekCompleteListener.staticClass, global::android.media.MediaPlayer.__OnSeekCompleteListener._onSeekComplete4751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnSeekCompleteListener_.staticClass, global::android.media.MediaPlayer.OnSeekCompleteListener_._onSeekComplete4986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnSeekCompleteListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnSeekCompleteListener._onSeekComplete4751 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnSeekCompleteListener.staticClass, "android.media.MediaPlayer.OnSeekCompleteListener.onSeekComplete", "(Landroid/media/MediaPlayer;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnSeekCompleteListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnSeekCompleteListener"));
+				global::android.media.MediaPlayer.OnSeekCompleteListener_._onSeekComplete4986 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnSeekCompleteListener_.staticClass, "onSeekComplete", "(Landroid/media/MediaPlayer;)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnVideoSizeChangedListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnVideoSizeChangedListener_))]
+		public interface OnVideoSizeChangedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onVideoSizeChanged(android.media.MediaPlayer arg0, int arg1, int arg2);
 		}
 
-		public partial class OnVideoSizeChangedListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaPlayer.OnVideoSizeChangedListener))]
+		public sealed partial class OnVideoSizeChangedListener_ : java.lang.Object, OnVideoSizeChangedListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnVideoSizeChangedListener_()
 			{
-				get { return __OnVideoSizeChangedListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnVideoSizeChangedListener : java.lang.Object, OnVideoSizeChangedListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnVideoSizeChangedListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.MediaPlayer.__OnVideoSizeChangedListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.MediaPlayer.__OnVideoSizeChangedListener(@__env);
-				}
-			}
-			internal __OnVideoSizeChangedListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnVideoSizeChangedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onVideoSizeChanged4752;
+			internal static global::MonoJavaBridge.MethodId _onVideoSizeChanged4987;
 			 void android.media.MediaPlayer.OnVideoSizeChangedListener.onVideoSizeChanged(android.media.MediaPlayer arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnVideoSizeChangedListener._onVideoSizeChanged4752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnVideoSizeChangedListener_._onVideoSizeChanged4987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnVideoSizeChangedListener.staticClass, global::android.media.MediaPlayer.__OnVideoSizeChangedListener._onVideoSizeChanged4752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.OnVideoSizeChangedListener_.staticClass, global::android.media.MediaPlayer.OnVideoSizeChangedListener_._onVideoSizeChanged4987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.MediaPlayer.__OnVideoSizeChangedListener.staticClass = @__class;
-				global::android.media.MediaPlayer.__OnVideoSizeChangedListener._onVideoSizeChanged4752 = @__env.GetMethodID(global::android.media.MediaPlayer.__OnVideoSizeChangedListener.staticClass, "android.media.MediaPlayer.OnVideoSizeChangedListener.onVideoSizeChanged", "(Landroid/media/MediaPlayer;II)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.MediaPlayer.OnVideoSizeChangedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer$OnVideoSizeChangedListener"));
+				global::android.media.MediaPlayer.OnVideoSizeChangedListener_._onVideoSizeChanged4987 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.OnVideoSizeChangedListener_.staticClass, "onVideoSizeChanged", "(Landroid/media/MediaPlayer;II)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _start4753;
+		internal static global::MonoJavaBridge.MethodId _finalize4988;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._finalize4988);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._finalize4988);
+		}
+		internal static global::MonoJavaBridge.MethodId _start4989;
 		public virtual void start() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._start4753);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._start4989);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._start4753);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._start4989);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stop4754;
+		internal static global::MonoJavaBridge.MethodId _stop4990;
 		public virtual void stop() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._stop4754);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._stop4990);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._stop4754);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._stop4990);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _reset4755;
+		internal static global::MonoJavaBridge.MethodId _reset4991;
 		public virtual void reset() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._reset4755);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._reset4991);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._reset4755);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._reset4991);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _release4756;
+		internal static global::MonoJavaBridge.MethodId _release4992;
 		public virtual void release() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._release4756);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._release4992);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._release4756);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._release4992);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _create4757;
+		internal static global::MonoJavaBridge.MethodId _create4993;
 		public static global::android.media.MediaPlayer create(android.content.Context arg0, android.net.Uri arg1, android.view.SurfaceHolder arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.MediaPlayer>(@__env, @__env.CallStaticObjectMethodPtr(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._create4757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._create4993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.media.MediaPlayer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _create4758;
+		internal static global::MonoJavaBridge.MethodId _create4994;
 		public static global::android.media.MediaPlayer create(android.content.Context arg0, android.net.Uri arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.MediaPlayer>(@__env, @__env.CallStaticObjectMethodPtr(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._create4758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._create4994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.media.MediaPlayer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _create4759;
+		internal static global::MonoJavaBridge.MethodId _create4995;
 		public static global::android.media.MediaPlayer create(android.content.Context arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.MediaPlayer>(@__env, @__env.CallStaticObjectMethodPtr(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._create4759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._create4995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.media.MediaPlayer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _prepare4760;
+		internal static global::MonoJavaBridge.MethodId _prepare4996;
 		public virtual void prepare() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._prepare4760);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._prepare4996);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepare4760);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepare4996);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDuration4761;
+		internal static global::MonoJavaBridge.MethodId _getDuration4997;
 		public virtual int getDuration() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getDuration4761);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.MediaPlayer._getDuration4997);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getDuration4761);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getDuration4997);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _pause4762;
+		internal static global::MonoJavaBridge.MethodId _pause4998;
 		public virtual void pause() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._pause4762);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._pause4998);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._pause4762);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._pause4998);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDisplay4763;
+		internal static global::MonoJavaBridge.MethodId _setDisplay4999;
 		public virtual void setDisplay(android.view.SurfaceHolder arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDisplay4763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setDisplay4999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDisplay4763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDisplay4999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDataSource4764;
+		internal static global::MonoJavaBridge.MethodId _setDataSource5000;
 		public virtual void setDataSource(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setDataSource5000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource5000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDataSource4765;
+		internal static global::MonoJavaBridge.MethodId _setDataSource5001;
 		public virtual void setDataSource(java.io.FileDescriptor arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4765, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setDataSource5001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4765, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource5001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDataSource4766;
+		internal static global::MonoJavaBridge.MethodId _setDataSource5002;
 		public virtual void setDataSource(java.io.FileDescriptor arg0, long arg1, long arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setDataSource5002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource5002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDataSource4767;
+		internal static global::MonoJavaBridge.MethodId _setDataSource5003;
 		public virtual void setDataSource(android.content.Context arg0, android.net.Uri arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setDataSource5003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource5003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _prepareAsync4768;
+		internal static global::MonoJavaBridge.MethodId _prepareAsync5004;
 		public virtual void prepareAsync() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._prepareAsync4768);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._prepareAsync5004);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepareAsync4768);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepareAsync5004);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setWakeMode4769;
+		internal static global::MonoJavaBridge.MethodId _setWakeMode5005;
 		public virtual void setWakeMode(android.content.Context arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setWakeMode4769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setWakeMode5005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setWakeMode4769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setWakeMode5005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setScreenOnWhilePlaying4770;
+		internal static global::MonoJavaBridge.MethodId _setScreenOnWhilePlaying5006;
 		public virtual void setScreenOnWhilePlaying(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setScreenOnWhilePlaying4770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setScreenOnWhilePlaying5006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setScreenOnWhilePlaying4770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setScreenOnWhilePlaying5006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVideoWidth4771;
+		internal static global::MonoJavaBridge.MethodId _getVideoWidth5007;
 		public virtual int getVideoWidth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getVideoWidth4771);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.MediaPlayer._getVideoWidth5007);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoWidth4771);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoWidth5007);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVideoHeight4772;
+		internal static global::MonoJavaBridge.MethodId _getVideoHeight5008;
 		public virtual int getVideoHeight() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getVideoHeight4772);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.MediaPlayer._getVideoHeight5008);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoHeight4772);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoHeight5008);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isPlaying4773;
+		internal static global::MonoJavaBridge.MethodId _isPlaying5009;
 		public virtual bool isPlaying() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer._isPlaying4773);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer._isPlaying5009);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._isPlaying4773);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._isPlaying5009);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _seekTo4774;
+		internal static global::MonoJavaBridge.MethodId _seekTo5010;
 		public virtual void seekTo(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._seekTo4774, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._seekTo5010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._seekTo4774, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._seekTo5010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCurrentPosition4775;
+		internal static global::MonoJavaBridge.MethodId _getCurrentPosition5011;
 		public virtual int getCurrentPosition() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getCurrentPosition4775);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.media.MediaPlayer._getCurrentPosition5011);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getCurrentPosition4775);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getCurrentPosition5011);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAudioStreamType4776;
+		internal static global::MonoJavaBridge.MethodId _setAudioStreamType5012;
 		public virtual void setAudioStreamType(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setAudioStreamType4776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setAudioStreamType5012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setAudioStreamType4776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setAudioStreamType5012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLooping4777;
+		internal static global::MonoJavaBridge.MethodId _setLooping5013;
 		public virtual void setLooping(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setLooping4777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setLooping5013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setLooping4777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setLooping5013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isLooping4778;
+		internal static global::MonoJavaBridge.MethodId _isLooping5014;
 		public virtual bool isLooping() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer._isLooping4778);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer._isLooping5014);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._isLooping4778);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._isLooping5014);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setVolume4779;
+		internal static global::MonoJavaBridge.MethodId _setVolume5015;
 		public virtual void setVolume(float arg0, float arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setVolume4779, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setVolume5015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setVolume4779, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setVolume5015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnPreparedListener4780;
+		internal static global::MonoJavaBridge.MethodId _setOnPreparedListener5016;
 		public virtual void setOnPreparedListener(android.media.MediaPlayer.OnPreparedListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnPreparedListener4780, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnPreparedListener5016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnPreparedListener4780, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnPreparedListener5016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnCompletionListener4781;
+		internal static global::MonoJavaBridge.MethodId _setOnCompletionListener5017;
 		public virtual void setOnCompletionListener(android.media.MediaPlayer.OnCompletionListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnCompletionListener4781, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnCompletionListener5017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnCompletionListener4781, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnCompletionListener5017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnBufferingUpdateListener4782;
+		internal static global::MonoJavaBridge.MethodId _setOnBufferingUpdateListener5018;
 		public virtual void setOnBufferingUpdateListener(android.media.MediaPlayer.OnBufferingUpdateListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnBufferingUpdateListener4782, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnBufferingUpdateListener5018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnBufferingUpdateListener4782, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnBufferingUpdateListener5018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnSeekCompleteListener4783;
+		internal static global::MonoJavaBridge.MethodId _setOnSeekCompleteListener5019;
 		public virtual void setOnSeekCompleteListener(android.media.MediaPlayer.OnSeekCompleteListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnSeekCompleteListener4783, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnSeekCompleteListener5019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnSeekCompleteListener4783, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnSeekCompleteListener5019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnVideoSizeChangedListener4784;
+		internal static global::MonoJavaBridge.MethodId _setOnVideoSizeChangedListener5020;
 		public virtual void setOnVideoSizeChangedListener(android.media.MediaPlayer.OnVideoSizeChangedListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnVideoSizeChangedListener4784, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnVideoSizeChangedListener5020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnVideoSizeChangedListener4784, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnVideoSizeChangedListener5020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnErrorListener4785;
+		internal static global::MonoJavaBridge.MethodId _setOnErrorListener5021;
 		public virtual void setOnErrorListener(android.media.MediaPlayer.OnErrorListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnErrorListener4785, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnErrorListener5021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnErrorListener4785, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnErrorListener5021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnInfoListener4786;
+		internal static global::MonoJavaBridge.MethodId _setOnInfoListener5022;
 		public virtual void setOnInfoListener(android.media.MediaPlayer.OnInfoListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnInfoListener4786, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._setOnInfoListener5022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnInfoListener4786, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnInfoListener5022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MediaPlayer4787;
-		public MediaPlayer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _MediaPlayer5023;
+		public MediaPlayer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._MediaPlayer4787, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._MediaPlayer5023);
+			Init(@__env, handle);
 		}
 		public static int MEDIA_ERROR_UNKNOWN
 		{
@@ -706,44 +611,46 @@ namespace android.media
 				return 802;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.MediaPlayer.staticClass = @__class;
-			global::android.media.MediaPlayer._start4753 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "start", "()V");
-			global::android.media.MediaPlayer._stop4754 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "stop", "()V");
-			global::android.media.MediaPlayer._reset4755 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "reset", "()V");
-			global::android.media.MediaPlayer._release4756 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "release", "()V");
-			global::android.media.MediaPlayer._create4757 = @__env.GetStaticMethodID(global::android.media.MediaPlayer.staticClass, "create", "(Landroid/content/Context;Landroid/net/Uri;Landroid/view/SurfaceHolder;)Landroid/media/MediaPlayer;");
-			global::android.media.MediaPlayer._create4758 = @__env.GetStaticMethodID(global::android.media.MediaPlayer.staticClass, "create", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/MediaPlayer;");
-			global::android.media.MediaPlayer._create4759 = @__env.GetStaticMethodID(global::android.media.MediaPlayer.staticClass, "create", "(Landroid/content/Context;I)Landroid/media/MediaPlayer;");
-			global::android.media.MediaPlayer._prepare4760 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "prepare", "()V");
-			global::android.media.MediaPlayer._getDuration4761 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "getDuration", "()I");
-			global::android.media.MediaPlayer._pause4762 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "pause", "()V");
-			global::android.media.MediaPlayer._setDisplay4763 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setDisplay", "(Landroid/view/SurfaceHolder;)V");
-			global::android.media.MediaPlayer._setDataSource4764 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Ljava/lang/String;)V");
-			global::android.media.MediaPlayer._setDataSource4765 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Ljava/io/FileDescriptor;)V");
-			global::android.media.MediaPlayer._setDataSource4766 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Ljava/io/FileDescriptor;JJ)V");
-			global::android.media.MediaPlayer._setDataSource4767 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Landroid/content/Context;Landroid/net/Uri;)V");
-			global::android.media.MediaPlayer._prepareAsync4768 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "prepareAsync", "()V");
-			global::android.media.MediaPlayer._setWakeMode4769 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setWakeMode", "(Landroid/content/Context;I)V");
-			global::android.media.MediaPlayer._setScreenOnWhilePlaying4770 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setScreenOnWhilePlaying", "(Z)V");
-			global::android.media.MediaPlayer._getVideoWidth4771 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "getVideoWidth", "()I");
-			global::android.media.MediaPlayer._getVideoHeight4772 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "getVideoHeight", "()I");
-			global::android.media.MediaPlayer._isPlaying4773 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "isPlaying", "()Z");
-			global::android.media.MediaPlayer._seekTo4774 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "seekTo", "(I)V");
-			global::android.media.MediaPlayer._getCurrentPosition4775 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "getCurrentPosition", "()I");
-			global::android.media.MediaPlayer._setAudioStreamType4776 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setAudioStreamType", "(I)V");
-			global::android.media.MediaPlayer._setLooping4777 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setLooping", "(Z)V");
-			global::android.media.MediaPlayer._isLooping4778 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "isLooping", "()Z");
-			global::android.media.MediaPlayer._setVolume4779 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setVolume", "(FF)V");
-			global::android.media.MediaPlayer._setOnPreparedListener4780 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnPreparedListener", "(Landroid/media/MediaPlayer$OnPreparedListener;)V");
-			global::android.media.MediaPlayer._setOnCompletionListener4781 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnCompletionListener", "(Landroid/media/MediaPlayer$OnCompletionListener;)V");
-			global::android.media.MediaPlayer._setOnBufferingUpdateListener4782 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnBufferingUpdateListener", "(Landroid/media/MediaPlayer$OnBufferingUpdateListener;)V");
-			global::android.media.MediaPlayer._setOnSeekCompleteListener4783 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnSeekCompleteListener", "(Landroid/media/MediaPlayer$OnSeekCompleteListener;)V");
-			global::android.media.MediaPlayer._setOnVideoSizeChangedListener4784 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnVideoSizeChangedListener", "(Landroid/media/MediaPlayer$OnVideoSizeChangedListener;)V");
-			global::android.media.MediaPlayer._setOnErrorListener4785 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnErrorListener", "(Landroid/media/MediaPlayer$OnErrorListener;)V");
-			global::android.media.MediaPlayer._setOnInfoListener4786 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "setOnInfoListener", "(Landroid/media/MediaPlayer$OnInfoListener;)V");
-			global::android.media.MediaPlayer._MediaPlayer4787 = @__env.GetMethodID(global::android.media.MediaPlayer.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.MediaPlayer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/MediaPlayer"));
+			global::android.media.MediaPlayer._finalize4988 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "finalize", "()V");
+			global::android.media.MediaPlayer._start4989 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "start", "()V");
+			global::android.media.MediaPlayer._stop4990 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "stop", "()V");
+			global::android.media.MediaPlayer._reset4991 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "reset", "()V");
+			global::android.media.MediaPlayer._release4992 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "release", "()V");
+			global::android.media.MediaPlayer._create4993 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "create", "(Landroid/content/Context;Landroid/net/Uri;Landroid/view/SurfaceHolder;)Landroid/media/MediaPlayer;");
+			global::android.media.MediaPlayer._create4994 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "create", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/MediaPlayer;");
+			global::android.media.MediaPlayer._create4995 = @__env.GetStaticMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "create", "(Landroid/content/Context;I)Landroid/media/MediaPlayer;");
+			global::android.media.MediaPlayer._prepare4996 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "prepare", "()V");
+			global::android.media.MediaPlayer._getDuration4997 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "getDuration", "()I");
+			global::android.media.MediaPlayer._pause4998 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "pause", "()V");
+			global::android.media.MediaPlayer._setDisplay4999 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setDisplay", "(Landroid/view/SurfaceHolder;)V");
+			global::android.media.MediaPlayer._setDataSource5000 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Ljava/lang/String;)V");
+			global::android.media.MediaPlayer._setDataSource5001 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Ljava/io/FileDescriptor;)V");
+			global::android.media.MediaPlayer._setDataSource5002 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Ljava/io/FileDescriptor;JJ)V");
+			global::android.media.MediaPlayer._setDataSource5003 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setDataSource", "(Landroid/content/Context;Landroid/net/Uri;)V");
+			global::android.media.MediaPlayer._prepareAsync5004 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "prepareAsync", "()V");
+			global::android.media.MediaPlayer._setWakeMode5005 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setWakeMode", "(Landroid/content/Context;I)V");
+			global::android.media.MediaPlayer._setScreenOnWhilePlaying5006 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setScreenOnWhilePlaying", "(Z)V");
+			global::android.media.MediaPlayer._getVideoWidth5007 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "getVideoWidth", "()I");
+			global::android.media.MediaPlayer._getVideoHeight5008 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "getVideoHeight", "()I");
+			global::android.media.MediaPlayer._isPlaying5009 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "isPlaying", "()Z");
+			global::android.media.MediaPlayer._seekTo5010 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "seekTo", "(I)V");
+			global::android.media.MediaPlayer._getCurrentPosition5011 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "getCurrentPosition", "()I");
+			global::android.media.MediaPlayer._setAudioStreamType5012 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setAudioStreamType", "(I)V");
+			global::android.media.MediaPlayer._setLooping5013 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setLooping", "(Z)V");
+			global::android.media.MediaPlayer._isLooping5014 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "isLooping", "()Z");
+			global::android.media.MediaPlayer._setVolume5015 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setVolume", "(FF)V");
+			global::android.media.MediaPlayer._setOnPreparedListener5016 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnPreparedListener", "(Landroid/media/MediaPlayer$OnPreparedListener;)V");
+			global::android.media.MediaPlayer._setOnCompletionListener5017 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnCompletionListener", "(Landroid/media/MediaPlayer$OnCompletionListener;)V");
+			global::android.media.MediaPlayer._setOnBufferingUpdateListener5018 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnBufferingUpdateListener", "(Landroid/media/MediaPlayer$OnBufferingUpdateListener;)V");
+			global::android.media.MediaPlayer._setOnSeekCompleteListener5019 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnSeekCompleteListener", "(Landroid/media/MediaPlayer$OnSeekCompleteListener;)V");
+			global::android.media.MediaPlayer._setOnVideoSizeChangedListener5020 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnVideoSizeChangedListener", "(Landroid/media/MediaPlayer$OnVideoSizeChangedListener;)V");
+			global::android.media.MediaPlayer._setOnErrorListener5021 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnErrorListener", "(Landroid/media/MediaPlayer$OnErrorListener;)V");
+			global::android.media.MediaPlayer._setOnInfoListener5022 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "setOnInfoListener", "(Landroid/media/MediaPlayer$OnInfoListener;)V");
+			global::android.media.MediaPlayer._MediaPlayer5023 = @__env.GetMethodIDNoThrow(global::android.media.MediaPlayer.staticClass, "<init>", "()V");
 		}
 	}
 }

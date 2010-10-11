@@ -1,83 +1,88 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ContentQueryMap : java.util.Observable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ContentQueryMap : java.util.Observable
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ContentQueryMap()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.ContentQueryMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.ContentQueryMap(@__env);
-			}
-		}
-		protected ContentQueryMap(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ContentQueryMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close1178;
+		internal static global::MonoJavaBridge.MethodId _finalize1201;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap._finalize1201);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._finalize1201);
+		}
+		internal static global::MonoJavaBridge.MethodId _close1202;
 		public virtual void close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._close1178);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap._close1202);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._close1178);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._close1202);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requery1179;
+		internal static global::MonoJavaBridge.MethodId _requery1203;
 		public virtual void requery() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._requery1179);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap._requery1203);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._requery1179);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._requery1203);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setKeepUpdated1180;
+		internal static global::MonoJavaBridge.MethodId _setKeepUpdated1204;
 		public virtual void setKeepUpdated(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._setKeepUpdated1180, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap._setKeepUpdated1204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._setKeepUpdated1180, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._setKeepUpdated1204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getValues1181;
+		internal static global::MonoJavaBridge.MethodId _getValues1205;
 		public virtual global::android.content.ContentValues getValues(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentQueryMap._getValues1181, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentQueryMap._getValues1205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ContentValues;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getValues1181, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getValues1205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ContentValues;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRows1182;
+		internal static global::MonoJavaBridge.MethodId _getRows1206;
 		public virtual global::java.util.Map getRows() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentQueryMap._getRows1182));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentQueryMap._getRows1206)) as java.util.Map;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getRows1182));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getRows1206)) as java.util.Map;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ContentQueryMap1183;
-		public ContentQueryMap(android.database.Cursor arg0, java.lang.String arg1, bool arg2, android.os.Handler arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ContentQueryMap1207;
+		public ContentQueryMap(android.database.Cursor arg0, java.lang.String arg1, bool arg2, android.os.Handler arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._ContentQueryMap1183, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._ContentQueryMap1207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.ContentQueryMap.staticClass = @__class;
-			global::android.content.ContentQueryMap._close1178 = @__env.GetMethodID(global::android.content.ContentQueryMap.staticClass, "close", "()V");
-			global::android.content.ContentQueryMap._requery1179 = @__env.GetMethodID(global::android.content.ContentQueryMap.staticClass, "requery", "()V");
-			global::android.content.ContentQueryMap._setKeepUpdated1180 = @__env.GetMethodID(global::android.content.ContentQueryMap.staticClass, "setKeepUpdated", "(Z)V");
-			global::android.content.ContentQueryMap._getValues1181 = @__env.GetMethodID(global::android.content.ContentQueryMap.staticClass, "getValues", "(Ljava/lang/String;)Landroid/content/ContentValues;");
-			global::android.content.ContentQueryMap._getRows1182 = @__env.GetMethodID(global::android.content.ContentQueryMap.staticClass, "getRows", "()Ljava/util/Map;");
-			global::android.content.ContentQueryMap._ContentQueryMap1183 = @__env.GetMethodID(global::android.content.ContentQueryMap.staticClass, "<init>", "(Landroid/database/Cursor;Ljava/lang/String;ZLandroid/os/Handler;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.ContentQueryMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentQueryMap"));
+			global::android.content.ContentQueryMap._finalize1201 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "finalize", "()V");
+			global::android.content.ContentQueryMap._close1202 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "close", "()V");
+			global::android.content.ContentQueryMap._requery1203 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "requery", "()V");
+			global::android.content.ContentQueryMap._setKeepUpdated1204 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "setKeepUpdated", "(Z)V");
+			global::android.content.ContentQueryMap._getValues1205 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "getValues", "(Ljava/lang/String;)Landroid/content/ContentValues;");
+			global::android.content.ContentQueryMap._getRows1206 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "getRows", "()Ljava/util/Map;");
+			global::android.content.ContentQueryMap._ContentQueryMap1207 = @__env.GetMethodIDNoThrow(global::android.content.ContentQueryMap.staticClass, "<init>", "(Landroid/database/Cursor;Ljava/lang/String;ZLandroid/os/Handler;)V");
 		}
 	}
 }

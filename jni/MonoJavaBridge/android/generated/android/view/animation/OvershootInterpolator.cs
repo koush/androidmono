@@ -1,57 +1,54 @@
 namespace android.view.animation
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class OvershootInterpolator : java.lang.Object, Interpolator
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class OvershootInterpolator : java.lang.Object, Interpolator
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static OvershootInterpolator()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.OvershootInterpolator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.animation.OvershootInterpolator(@__env);
-			}
-		}
-		protected OvershootInterpolator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected OvershootInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation9695;
+		internal static global::MonoJavaBridge.MethodId _getInterpolation10042;
 		public virtual float getInterpolation(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.OvershootInterpolator._getInterpolation9695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.OvershootInterpolator._getInterpolation10042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._getInterpolation9695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._getInterpolation10042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OvershootInterpolator9696;
-		public OvershootInterpolator()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OvershootInterpolator10043;
+		public OvershootInterpolator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator9696, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator10043);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OvershootInterpolator9697;
-		public OvershootInterpolator(float arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OvershootInterpolator10044;
+		public OvershootInterpolator(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator9697, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator10044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OvershootInterpolator9698;
-		public OvershootInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OvershootInterpolator10045;
+		public OvershootInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator9698, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.OvershootInterpolator.staticClass, global::android.view.animation.OvershootInterpolator._OvershootInterpolator10045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.animation.OvershootInterpolator.staticClass = @__class;
-			global::android.view.animation.OvershootInterpolator._getInterpolation9695 = @__env.GetMethodID(global::android.view.animation.OvershootInterpolator.staticClass, "getInterpolation", "(F)F");
-			global::android.view.animation.OvershootInterpolator._OvershootInterpolator9696 = @__env.GetMethodID(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "()V");
-			global::android.view.animation.OvershootInterpolator._OvershootInterpolator9697 = @__env.GetMethodID(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(F)V");
-			global::android.view.animation.OvershootInterpolator._OvershootInterpolator9698 = @__env.GetMethodID(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.animation.OvershootInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/OvershootInterpolator"));
+			global::android.view.animation.OvershootInterpolator._getInterpolation10042 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.OvershootInterpolator._OvershootInterpolator10043 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "()V");
+			global::android.view.animation.OvershootInterpolator._OvershootInterpolator10044 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(F)V");
+			global::android.view.animation.OvershootInterpolator._OvershootInterpolator10045 = @__env.GetMethodIDNoThrow(global::android.view.animation.OvershootInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

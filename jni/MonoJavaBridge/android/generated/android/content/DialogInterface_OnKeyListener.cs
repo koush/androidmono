@@ -1,50 +1,36 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DialogInterface_OnKeyListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnKeyListener_))]
+	public interface DialogInterface_OnKeyListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2);
 	}
 
-	public partial class DialogInterface_OnKeyListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.DialogInterface_OnKeyListener))]
+	public sealed partial class DialogInterface_OnKeyListener_ : java.lang.Object, DialogInterface_OnKeyListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DialogInterface_OnKeyListener_()
 		{
-			get { return __DialogInterface_OnKeyListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DialogInterface_OnKeyListener : java.lang.Object, DialogInterface_OnKeyListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DialogInterface_OnKeyListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface_OnKeyListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__DialogInterface_OnKeyListener(@__env);
-			}
-		}
-		internal __DialogInterface_OnKeyListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DialogInterface_OnKeyListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKey1418;
+		internal static global::MonoJavaBridge.MethodId _onKey1512;
 		 bool android.content.DialogInterface_OnKeyListener.onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.__DialogInterface_OnKeyListener._onKey1418, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.DialogInterface_OnKeyListener_._onKey1512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.__DialogInterface_OnKeyListener.staticClass, global::android.content.__DialogInterface_OnKeyListener._onKey1418, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.DialogInterface_OnKeyListener_.staticClass, global::android.content.DialogInterface_OnKeyListener_._onKey1512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__DialogInterface_OnKeyListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnKeyListener._onKey1418 = @__env.GetMethodID(global::android.content.__DialogInterface_OnKeyListener.staticClass, "android.content.DialogInterface_OnKeyListener.onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.DialogInterface_OnKeyListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnKeyListener"));
+			global::android.content.DialogInterface_OnKeyListener_._onKey1512 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnKeyListener_.staticClass, "onKey", "(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z");
 		}
 	}
 }

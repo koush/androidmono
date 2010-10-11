@@ -1,153 +1,148 @@
 namespace org.apache.http
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ProtocolVersion : java.lang.Object, java.io.Serializable, java.lang.Cloneable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ProtocolVersion : java.lang.Object, java.io.Serializable, java.lang.Cloneable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ProtocolVersion()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.ProtocolVersion), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.ProtocolVersion(@__env);
-			}
-		}
-		protected ProtocolVersion(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ProtocolVersion(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals14349;
+		internal static global::MonoJavaBridge.MethodId _equals16264;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.ProtocolVersion._equals14349, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._equals16264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._equals14349, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._equals16264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString14350;
+		internal static global::MonoJavaBridge.MethodId _toString16265;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.ProtocolVersion._toString14350));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._toString16265)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._toString14350));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._toString16265)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode14351;
+		internal static global::MonoJavaBridge.MethodId _hashCode16266;
 		public sealed override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.ProtocolVersion._hashCode14351);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._hashCode16266);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._hashCode14351);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._hashCode16266);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone14352;
-		public virtual global::java.lang.Object clone() 
+		internal static global::MonoJavaBridge.MethodId _clone16267;
+		public virtual new global::java.lang.Object clone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.ProtocolVersion._clone14352));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._clone16267)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._clone14352));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._clone16267)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProtocol14353;
+		internal static global::MonoJavaBridge.MethodId _getProtocol16268;
 		public virtual global::java.lang.String getProtocol() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.ProtocolVersion._getProtocol14353));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._getProtocol16268)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._getProtocol14353));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._getProtocol16268)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMajor14354;
+		internal static global::MonoJavaBridge.MethodId _getMajor16269;
 		public virtual int getMajor() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.ProtocolVersion._getMajor14354);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._getMajor16269);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._getMajor14354);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._getMajor16269);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMinor14355;
+		internal static global::MonoJavaBridge.MethodId _getMinor16270;
 		public virtual int getMinor() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.ProtocolVersion._getMinor14355);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._getMinor16270);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._getMinor14355);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._getMinor16270);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _forVersion14356;
+		internal static global::MonoJavaBridge.MethodId _forVersion16271;
 		public virtual global::org.apache.http.ProtocolVersion forVersion(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.apache.http.ProtocolVersion>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.ProtocolVersion._forVersion14356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._forVersion16271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.ProtocolVersion;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.apache.http.ProtocolVersion>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._forVersion14356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._forVersion16271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.ProtocolVersion;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isComparable14357;
+		internal static global::MonoJavaBridge.MethodId _isComparable16272;
 		public virtual bool isComparable(org.apache.http.ProtocolVersion arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.ProtocolVersion._isComparable14357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._isComparable16272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._isComparable14357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._isComparable16272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareToVersion14358;
+		internal static global::MonoJavaBridge.MethodId _compareToVersion16273;
 		public virtual int compareToVersion(org.apache.http.ProtocolVersion arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.ProtocolVersion._compareToVersion14358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._compareToVersion16273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._compareToVersion14358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._compareToVersion16273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _greaterEquals14359;
+		internal static global::MonoJavaBridge.MethodId _greaterEquals16274;
 		public virtual bool greaterEquals(org.apache.http.ProtocolVersion arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.ProtocolVersion._greaterEquals14359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._greaterEquals16274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._greaterEquals14359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._greaterEquals16274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _lessEquals14360;
+		internal static global::MonoJavaBridge.MethodId _lessEquals16275;
 		public virtual bool lessEquals(org.apache.http.ProtocolVersion arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.ProtocolVersion._lessEquals14360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion._lessEquals16275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._lessEquals14360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._lessEquals16275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ProtocolVersion14361;
-		public ProtocolVersion(java.lang.String arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ProtocolVersion16276;
+		public ProtocolVersion(java.lang.String arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._ProtocolVersion14361, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolVersion.staticClass, global::org.apache.http.ProtocolVersion._ProtocolVersion16276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.ProtocolVersion.staticClass = @__class;
-			global::org.apache.http.ProtocolVersion._equals14349 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::org.apache.http.ProtocolVersion._toString14350 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "toString", "()Ljava/lang/String;");
-			global::org.apache.http.ProtocolVersion._hashCode14351 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "hashCode", "()I");
-			global::org.apache.http.ProtocolVersion._clone14352 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "clone", "()Ljava/lang/Object;");
-			global::org.apache.http.ProtocolVersion._getProtocol14353 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "getProtocol", "()Ljava/lang/String;");
-			global::org.apache.http.ProtocolVersion._getMajor14354 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "getMajor", "()I");
-			global::org.apache.http.ProtocolVersion._getMinor14355 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "getMinor", "()I");
-			global::org.apache.http.ProtocolVersion._forVersion14356 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "forVersion", "(II)Lorg/apache/http/ProtocolVersion;");
-			global::org.apache.http.ProtocolVersion._isComparable14357 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "isComparable", "(Lorg/apache/http/ProtocolVersion;)Z");
-			global::org.apache.http.ProtocolVersion._compareToVersion14358 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "compareToVersion", "(Lorg/apache/http/ProtocolVersion;)I");
-			global::org.apache.http.ProtocolVersion._greaterEquals14359 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "greaterEquals", "(Lorg/apache/http/ProtocolVersion;)Z");
-			global::org.apache.http.ProtocolVersion._lessEquals14360 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "lessEquals", "(Lorg/apache/http/ProtocolVersion;)Z");
-			global::org.apache.http.ProtocolVersion._ProtocolVersion14361 = @__env.GetMethodID(global::org.apache.http.ProtocolVersion.staticClass, "<init>", "(Ljava/lang/String;II)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.ProtocolVersion.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ProtocolVersion"));
+			global::org.apache.http.ProtocolVersion._equals16264 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::org.apache.http.ProtocolVersion._toString16265 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "toString", "()Ljava/lang/String;");
+			global::org.apache.http.ProtocolVersion._hashCode16266 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "hashCode", "()I");
+			global::org.apache.http.ProtocolVersion._clone16267 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "clone", "()Ljava/lang/Object;");
+			global::org.apache.http.ProtocolVersion._getProtocol16268 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "getProtocol", "()Ljava/lang/String;");
+			global::org.apache.http.ProtocolVersion._getMajor16269 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "getMajor", "()I");
+			global::org.apache.http.ProtocolVersion._getMinor16270 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "getMinor", "()I");
+			global::org.apache.http.ProtocolVersion._forVersion16271 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "forVersion", "(II)Lorg/apache/http/ProtocolVersion;");
+			global::org.apache.http.ProtocolVersion._isComparable16272 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "isComparable", "(Lorg/apache/http/ProtocolVersion;)Z");
+			global::org.apache.http.ProtocolVersion._compareToVersion16273 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "compareToVersion", "(Lorg/apache/http/ProtocolVersion;)I");
+			global::org.apache.http.ProtocolVersion._greaterEquals16274 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "greaterEquals", "(Lorg/apache/http/ProtocolVersion;)Z");
+			global::org.apache.http.ProtocolVersion._lessEquals16275 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "lessEquals", "(Lorg/apache/http/ProtocolVersion;)Z");
+			global::org.apache.http.ProtocolVersion._ProtocolVersion16276 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolVersion.staticClass, "<init>", "(Ljava/lang/String;II)V");
 		}
 	}
 }

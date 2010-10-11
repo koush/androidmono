@@ -1,7 +1,7 @@
 namespace android.speech
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface RecognitionListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.speech.RecognitionListener_))]
+	public interface RecognitionListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onError(int arg0);
 		void onEvent(int arg0, android.os.Bundle arg1);
@@ -14,125 +14,111 @@ namespace android.speech
 		void onPartialResults(android.os.Bundle arg0);
 	}
 
-	public partial class RecognitionListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.speech.RecognitionListener))]
+	public sealed partial class RecognitionListener_ : java.lang.Object, RecognitionListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static RecognitionListener_()
 		{
-			get { return __RecognitionListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __RecognitionListener : java.lang.Object, RecognitionListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __RecognitionListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.speech.__RecognitionListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.speech.__RecognitionListener(@__env);
-			}
-		}
-		internal __RecognitionListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal RecognitionListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onError7005;
+		internal static global::MonoJavaBridge.MethodId _onError7282;
 		 void android.speech.RecognitionListener.onError(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onError7005, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onError7282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onError7005, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onError7282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onEvent7006;
+		internal static global::MonoJavaBridge.MethodId _onEvent7283;
 		 void android.speech.RecognitionListener.onEvent(int arg0, android.os.Bundle arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onEvent7006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onEvent7283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onEvent7006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onEvent7283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onReadyForSpeech7007;
+		internal static global::MonoJavaBridge.MethodId _onReadyForSpeech7284;
 		 void android.speech.RecognitionListener.onReadyForSpeech(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onReadyForSpeech7007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onReadyForSpeech7284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onReadyForSpeech7007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onReadyForSpeech7284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onBeginningOfSpeech7008;
+		internal static global::MonoJavaBridge.MethodId _onBeginningOfSpeech7285;
 		 void android.speech.RecognitionListener.onBeginningOfSpeech() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onBeginningOfSpeech7008);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onBeginningOfSpeech7285);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onBeginningOfSpeech7008);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onBeginningOfSpeech7285);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onRmsChanged7009;
+		internal static global::MonoJavaBridge.MethodId _onRmsChanged7286;
 		 void android.speech.RecognitionListener.onRmsChanged(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onRmsChanged7009, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onRmsChanged7286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onRmsChanged7009, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onRmsChanged7286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onBufferReceived7010;
+		internal static global::MonoJavaBridge.MethodId _onBufferReceived7287;
 		 void android.speech.RecognitionListener.onBufferReceived(byte[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onBufferReceived7010, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onBufferReceived7287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onBufferReceived7010, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onBufferReceived7287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onEndOfSpeech7011;
+		internal static global::MonoJavaBridge.MethodId _onEndOfSpeech7288;
 		 void android.speech.RecognitionListener.onEndOfSpeech() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onEndOfSpeech7011);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onEndOfSpeech7288);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onEndOfSpeech7011);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onEndOfSpeech7288);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onResults7012;
+		internal static global::MonoJavaBridge.MethodId _onResults7289;
 		 void android.speech.RecognitionListener.onResults(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onResults7012, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onResults7289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onResults7012, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onResults7289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onPartialResults7013;
+		internal static global::MonoJavaBridge.MethodId _onPartialResults7290;
 		 void android.speech.RecognitionListener.onPartialResults(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.__RecognitionListener._onPartialResults7013, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_._onPartialResults7290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.__RecognitionListener.staticClass, global::android.speech.__RecognitionListener._onPartialResults7013, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.RecognitionListener_.staticClass, global::android.speech.RecognitionListener_._onPartialResults7290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.speech.__RecognitionListener.staticClass = @__class;
-			global::android.speech.__RecognitionListener._onError7005 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onError", "(I)V");
-			global::android.speech.__RecognitionListener._onEvent7006 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onEvent", "(ILandroid/os/Bundle;)V");
-			global::android.speech.__RecognitionListener._onReadyForSpeech7007 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onReadyForSpeech", "(Landroid/os/Bundle;)V");
-			global::android.speech.__RecognitionListener._onBeginningOfSpeech7008 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onBeginningOfSpeech", "()V");
-			global::android.speech.__RecognitionListener._onRmsChanged7009 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onRmsChanged", "(F)V");
-			global::android.speech.__RecognitionListener._onBufferReceived7010 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onBufferReceived", "([B)V");
-			global::android.speech.__RecognitionListener._onEndOfSpeech7011 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onEndOfSpeech", "()V");
-			global::android.speech.__RecognitionListener._onResults7012 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onResults", "(Landroid/os/Bundle;)V");
-			global::android.speech.__RecognitionListener._onPartialResults7013 = @__env.GetMethodID(global::android.speech.__RecognitionListener.staticClass, "android.speech.RecognitionListener.onPartialResults", "(Landroid/os/Bundle;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.speech.RecognitionListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognitionListener"));
+			global::android.speech.RecognitionListener_._onError7282 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onError", "(I)V");
+			global::android.speech.RecognitionListener_._onEvent7283 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onEvent", "(ILandroid/os/Bundle;)V");
+			global::android.speech.RecognitionListener_._onReadyForSpeech7284 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onReadyForSpeech", "(Landroid/os/Bundle;)V");
+			global::android.speech.RecognitionListener_._onBeginningOfSpeech7285 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onBeginningOfSpeech", "()V");
+			global::android.speech.RecognitionListener_._onRmsChanged7286 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onRmsChanged", "(F)V");
+			global::android.speech.RecognitionListener_._onBufferReceived7287 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onBufferReceived", "([B)V");
+			global::android.speech.RecognitionListener_._onEndOfSpeech7288 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onEndOfSpeech", "()V");
+			global::android.speech.RecognitionListener_._onResults7289 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onResults", "(Landroid/os/Bundle;)V");
+			global::android.speech.RecognitionListener_._onPartialResults7290 = @__env.GetMethodIDNoThrow(global::android.speech.RecognitionListener_.staticClass, "onPartialResults", "(Landroid/os/Bundle;)V");
 		}
 	}
 }

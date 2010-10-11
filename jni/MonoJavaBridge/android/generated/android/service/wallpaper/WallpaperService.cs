@@ -1,240 +1,236 @@
 namespace android.service.wallpaper
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class WallpaperService : android.app.Service
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.service.wallpaper.WallpaperService_))]
+	public abstract partial class WallpaperService : android.app.Service
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static WallpaperService()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.service.wallpaper.WallpaperService), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected WallpaperService(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected WallpaperService(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class Engine : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class Engine : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static Engine()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.service.wallpaper.WallpaperService.Engine), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.service.wallpaper.WallpaperService.Engine(@__env);
-				}
-			}
-			protected Engine(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected Engine(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onCreate6983;
+			internal static global::MonoJavaBridge.MethodId _onCreate7259;
 			public virtual void onCreate(android.view.SurfaceHolder arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onCreate6983, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onCreate7259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onCreate6983, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onCreate7259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onDestroy6984;
+			internal static global::MonoJavaBridge.MethodId _onDestroy7260;
 			public virtual void onDestroy() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onDestroy6984);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onDestroy7260);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onDestroy6984);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onDestroy7260);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _isVisible6985;
+			internal static global::MonoJavaBridge.MethodId _isVisible7261;
 			public virtual bool isVisible() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.service.wallpaper.WallpaperService.Engine._isVisible6985);
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._isVisible7261);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._isVisible6985);
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._isVisible7261);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent6986;
+			internal static global::MonoJavaBridge.MethodId _onTouchEvent7262;
 			public virtual void onTouchEvent(android.view.MotionEvent arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onTouchEvent6986, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onTouchEvent7262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onTouchEvent6986, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onTouchEvent7262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onVisibilityChanged6987;
+			internal static global::MonoJavaBridge.MethodId _onVisibilityChanged7263;
 			public virtual void onVisibilityChanged(bool arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged6987, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged7263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged6987, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged7263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getDesiredMinimumWidth6988;
+			internal static global::MonoJavaBridge.MethodId _getDesiredMinimumWidth7264;
 			public virtual int getDesiredMinimumWidth() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth6988);
+					return @__env.CallIntMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth7264);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth6988);
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth7264);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getDesiredMinimumHeight6989;
+			internal static global::MonoJavaBridge.MethodId _getDesiredMinimumHeight7265;
 			public virtual int getDesiredMinimumHeight() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumHeight6989);
+					return @__env.CallIntMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumHeight7265);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumHeight6989);
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumHeight7265);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onSurfaceCreated6990;
+			internal static global::MonoJavaBridge.MethodId _onSurfaceCreated7266;
 			public virtual void onSurfaceCreated(android.view.SurfaceHolder arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceCreated6990, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceCreated7266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceCreated6990, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceCreated7266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onSurfaceChanged6991;
+			internal static global::MonoJavaBridge.MethodId _onSurfaceChanged7267;
 			public virtual void onSurfaceChanged(android.view.SurfaceHolder arg0, int arg1, int arg2, int arg3) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged6991, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged7267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged6991, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged7267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getSurfaceHolder6992;
+			internal static global::MonoJavaBridge.MethodId _getSurfaceHolder7268;
 			public virtual global::android.view.SurfaceHolder getSurfaceHolder() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SurfaceHolder>(@__env, @__env.CallObjectMethodPtr(this, global::android.service.wallpaper.WallpaperService.Engine._getSurfaceHolder6992));
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SurfaceHolder>(@__env.CallObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._getSurfaceHolder7268)) as android.view.SurfaceHolder;
 				else
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SurfaceHolder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getSurfaceHolder6992));
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SurfaceHolder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getSurfaceHolder7268)) as android.view.SurfaceHolder;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _isPreview6993;
+			internal static global::MonoJavaBridge.MethodId _isPreview7269;
 			public virtual bool isPreview() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.service.wallpaper.WallpaperService.Engine._isPreview6993);
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._isPreview7269);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._isPreview6993);
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._isPreview7269);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _setTouchEventsEnabled6994;
+			internal static global::MonoJavaBridge.MethodId _setTouchEventsEnabled7270;
 			public virtual void setTouchEventsEnabled(bool arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._setTouchEventsEnabled6994, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._setTouchEventsEnabled7270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._setTouchEventsEnabled6994, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._setTouchEventsEnabled7270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onOffsetsChanged6995;
+			internal static global::MonoJavaBridge.MethodId _onOffsetsChanged7271;
 			public virtual void onOffsetsChanged(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onOffsetsChanged6995, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onOffsetsChanged7271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onOffsetsChanged6995, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onOffsetsChanged7271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onCommand6996;
+			internal static global::MonoJavaBridge.MethodId _onCommand7272;
 			public virtual global::android.os.Bundle onCommand(java.lang.String arg0, int arg1, int arg2, int arg3, android.os.Bundle arg4, bool arg5) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.service.wallpaper.WallpaperService.Engine._onCommand6996, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onCommand7272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as android.os.Bundle;
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onCommand6996, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onCommand7272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as android.os.Bundle;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onDesiredSizeChanged6997;
+			internal static global::MonoJavaBridge.MethodId _onDesiredSizeChanged7273;
 			public virtual void onDesiredSizeChanged(int arg0, int arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged6997, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged7273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged6997, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged7273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onSurfaceDestroyed6998;
+			internal static global::MonoJavaBridge.MethodId _onSurfaceDestroyed7274;
 			public virtual void onSurfaceDestroyed(android.view.SurfaceHolder arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed6998, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed7274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed6998, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed7274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Engine6999;
-			public Engine(android.service.wallpaper.WallpaperService arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _Engine7275;
+			public Engine(android.service.wallpaper.WallpaperService arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._Engine6999, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._Engine7275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.service.wallpaper.WallpaperService.Engine.staticClass = @__class;
-				global::android.service.wallpaper.WallpaperService.Engine._onCreate6983 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onCreate", "(Landroid/view/SurfaceHolder;)V");
-				global::android.service.wallpaper.WallpaperService.Engine._onDestroy6984 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onDestroy", "()V");
-				global::android.service.wallpaper.WallpaperService.Engine._isVisible6985 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "isVisible", "()Z");
-				global::android.service.wallpaper.WallpaperService.Engine._onTouchEvent6986 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)V");
-				global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged6987 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onVisibilityChanged", "(Z)V");
-				global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth6988 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "getDesiredMinimumWidth", "()I");
-				global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumHeight6989 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "getDesiredMinimumHeight", "()I");
-				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceCreated6990 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceCreated", "(Landroid/view/SurfaceHolder;)V");
-				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged6991 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceChanged", "(Landroid/view/SurfaceHolder;III)V");
-				global::android.service.wallpaper.WallpaperService.Engine._getSurfaceHolder6992 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "getSurfaceHolder", "()Landroid/view/SurfaceHolder;");
-				global::android.service.wallpaper.WallpaperService.Engine._isPreview6993 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "isPreview", "()Z");
-				global::android.service.wallpaper.WallpaperService.Engine._setTouchEventsEnabled6994 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "setTouchEventsEnabled", "(Z)V");
-				global::android.service.wallpaper.WallpaperService.Engine._onOffsetsChanged6995 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onOffsetsChanged", "(FFFFII)V");
-				global::android.service.wallpaper.WallpaperService.Engine._onCommand6996 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onCommand", "(Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;");
-				global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged6997 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onDesiredSizeChanged", "(II)V");
-				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed6998 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceDestroyed", "(Landroid/view/SurfaceHolder;)V");
-				global::android.service.wallpaper.WallpaperService.Engine._Engine6999 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "<init>", "(Landroid/service/wallpaper/WallpaperService;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.service.wallpaper.WallpaperService.Engine.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/service/wallpaper/WallpaperService$Engine"));
+				global::android.service.wallpaper.WallpaperService.Engine._onCreate7259 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onCreate", "(Landroid/view/SurfaceHolder;)V");
+				global::android.service.wallpaper.WallpaperService.Engine._onDestroy7260 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onDestroy", "()V");
+				global::android.service.wallpaper.WallpaperService.Engine._isVisible7261 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "isVisible", "()Z");
+				global::android.service.wallpaper.WallpaperService.Engine._onTouchEvent7262 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)V");
+				global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged7263 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onVisibilityChanged", "(Z)V");
+				global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth7264 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "getDesiredMinimumWidth", "()I");
+				global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumHeight7265 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "getDesiredMinimumHeight", "()I");
+				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceCreated7266 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceCreated", "(Landroid/view/SurfaceHolder;)V");
+				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged7267 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceChanged", "(Landroid/view/SurfaceHolder;III)V");
+				global::android.service.wallpaper.WallpaperService.Engine._getSurfaceHolder7268 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "getSurfaceHolder", "()Landroid/view/SurfaceHolder;");
+				global::android.service.wallpaper.WallpaperService.Engine._isPreview7269 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "isPreview", "()Z");
+				global::android.service.wallpaper.WallpaperService.Engine._setTouchEventsEnabled7270 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "setTouchEventsEnabled", "(Z)V");
+				global::android.service.wallpaper.WallpaperService.Engine._onOffsetsChanged7271 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onOffsetsChanged", "(FFFFII)V");
+				global::android.service.wallpaper.WallpaperService.Engine._onCommand7272 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onCommand", "(Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;");
+				global::android.service.wallpaper.WallpaperService.Engine._onDesiredSizeChanged7273 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onDesiredSizeChanged", "(II)V");
+				global::android.service.wallpaper.WallpaperService.Engine._onSurfaceDestroyed7274 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "onSurfaceDestroyed", "(Landroid/view/SurfaceHolder;)V");
+				global::android.service.wallpaper.WallpaperService.Engine._Engine7275 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.Engine.staticClass, "<init>", "(Landroid/service/wallpaper/WallpaperService;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onBind7000;
+		internal static global::MonoJavaBridge.MethodId _onBind7276;
 		public sealed override global::android.os.IBinder onBind(android.content.Intent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.service.wallpaper.WallpaperService._onBind7000, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService._onBind7276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IBinder;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._onBind7000, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._onBind7276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IBinder;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCreate7001;
+		internal static global::MonoJavaBridge.MethodId _onCreate7277;
 		public override void onCreate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService._onCreate7001);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService._onCreate7277);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._onCreate7001);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._onCreate7277);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDestroy7002;
+		internal static global::MonoJavaBridge.MethodId _onDestroy7278;
 		public override void onDestroy() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.service.wallpaper.WallpaperService._onDestroy7002);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService._onDestroy7278);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._onDestroy7002);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._onDestroy7278);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCreateEngine7003;
+		internal static global::MonoJavaBridge.MethodId _onCreateEngine7279;
 		public abstract global::android.service.wallpaper.WallpaperService.Engine onCreateEngine();
-		internal static global::net.sf.jni4net.jni.MethodId _WallpaperService7004;
-		public WallpaperService()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _WallpaperService7280;
+		public WallpaperService()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._WallpaperService7004, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.service.wallpaper.WallpaperService.staticClass, global::android.service.wallpaper.WallpaperService._WallpaperService7280);
+			Init(@__env, handle);
 		}
 		public static global::java.lang.String SERVICE_INTERFACE
 		{
@@ -250,14 +246,43 @@ namespace android.service.wallpaper
 				return "android.service.wallpaper";
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.service.wallpaper.WallpaperService.staticClass = @__class;
-			global::android.service.wallpaper.WallpaperService._onBind7000 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.staticClass, "onBind", "(Landroid/content/Intent;)Landroid/os/IBinder;");
-			global::android.service.wallpaper.WallpaperService._onCreate7001 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.staticClass, "onCreate", "()V");
-			global::android.service.wallpaper.WallpaperService._onDestroy7002 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.staticClass, "onDestroy", "()V");
-			global::android.service.wallpaper.WallpaperService._onCreateEngine7003 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.staticClass, "onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
-			global::android.service.wallpaper.WallpaperService._WallpaperService7004 = @__env.GetMethodID(global::android.service.wallpaper.WallpaperService.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.service.wallpaper.WallpaperService.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/service/wallpaper/WallpaperService"));
+			global::android.service.wallpaper.WallpaperService._onBind7276 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "onBind", "(Landroid/content/Intent;)Landroid/os/IBinder;");
+			global::android.service.wallpaper.WallpaperService._onCreate7277 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "onCreate", "()V");
+			global::android.service.wallpaper.WallpaperService._onDestroy7278 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "onDestroy", "()V");
+			global::android.service.wallpaper.WallpaperService._onCreateEngine7279 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
+			global::android.service.wallpaper.WallpaperService._WallpaperService7280 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.service.wallpaper.WallpaperService))]
+	public sealed partial class WallpaperService_ : android.service.wallpaper.WallpaperService
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static WallpaperService_()
+		{
+			InitJNI();
+		}
+		internal WallpaperService_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _onCreateEngine7281;
+		public override global::android.service.wallpaper.WallpaperService.Engine onCreateEngine() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService_._onCreateEngine7281)) as android.service.wallpaper.WallpaperService.Engine;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService_.staticClass, global::android.service.wallpaper.WallpaperService_._onCreateEngine7281)) as android.service.wallpaper.WallpaperService.Engine;
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.service.wallpaper.WallpaperService_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/service/wallpaper/WallpaperService"));
+			global::android.service.wallpaper.WallpaperService_._onCreateEngine7281 = @__env.GetMethodIDNoThrow(global::android.service.wallpaper.WallpaperService_.staticClass, "onCreateEngine", "()Landroid/service/wallpaper/WallpaperService$Engine;");
 		}
 	}
 }

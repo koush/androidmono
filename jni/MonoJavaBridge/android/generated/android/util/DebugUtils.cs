@@ -1,40 +1,35 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class DebugUtils : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DebugUtils : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DebugUtils()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.DebugUtils), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.DebugUtils(@__env);
-			}
-		}
-		protected DebugUtils(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected DebugUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isObjectSelected8182;
+		internal static global::MonoJavaBridge.MethodId _isObjectSelected8486;
 		public static bool isObjectSelected(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._isObjectSelected8182, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._isObjectSelected8486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DebugUtils8183;
-		public DebugUtils()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DebugUtils8487;
+		public DebugUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._DebugUtils8183, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._DebugUtils8487);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.DebugUtils.staticClass = @__class;
-			global::android.util.DebugUtils._isObjectSelected8182 = @__env.GetStaticMethodID(global::android.util.DebugUtils.staticClass, "isObjectSelected", "(Ljava/lang/Object;)Z");
-			global::android.util.DebugUtils._DebugUtils8183 = @__env.GetMethodID(global::android.util.DebugUtils.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.DebugUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/DebugUtils"));
+			global::android.util.DebugUtils._isObjectSelected8486 = @__env.GetStaticMethodIDNoThrow(global::android.util.DebugUtils.staticClass, "isObjectSelected", "(Ljava/lang/Object;)Z");
+			global::android.util.DebugUtils._DebugUtils8487 = @__env.GetMethodIDNoThrow(global::android.util.DebugUtils.staticClass, "<init>", "()V");
 		}
 	}
 }

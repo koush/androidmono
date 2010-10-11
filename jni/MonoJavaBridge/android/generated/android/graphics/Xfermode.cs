@@ -1,33 +1,38 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Xfermode : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Xfermode : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Xfermode()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Xfermode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.Xfermode(@__env);
-			}
-		}
-		protected Xfermode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Xfermode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Xfermode3630;
-		public Xfermode()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _finalize3821;
+		protected override void finalize() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._Xfermode3630, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Xfermode._finalize3821);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._finalize3821);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		internal static global::MonoJavaBridge.MethodId _Xfermode3822;
+		public Xfermode()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::android.graphics.Xfermode.staticClass = @__class;
-			global::android.graphics.Xfermode._Xfermode3630 = @__env.GetMethodID(global::android.graphics.Xfermode.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._Xfermode3822);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.Xfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Xfermode"));
+			global::android.graphics.Xfermode._finalize3821 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "finalize", "()V");
+			global::android.graphics.Xfermode._Xfermode3822 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "<init>", "()V");
 		}
 	}
 }

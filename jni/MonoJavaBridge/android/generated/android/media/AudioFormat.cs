@@ -1,28 +1,22 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AudioFormat : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AudioFormat : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AudioFormat()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.AudioFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.AudioFormat(@__env);
-			}
-		}
-		protected AudioFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AudioFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AudioFormat4592;
-		public AudioFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AudioFormat4823;
+		public AudioFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat4592, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat4823);
+			Init(@__env, handle);
 		}
 		public static int ENCODING_INVALID
 		{
@@ -318,10 +312,11 @@ namespace android.media
 				return 12;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.AudioFormat.staticClass = @__class;
-			global::android.media.AudioFormat._AudioFormat4592 = @__env.GetMethodID(global::android.media.AudioFormat.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.AudioFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioFormat"));
+			global::android.media.AudioFormat._AudioFormat4823 = @__env.GetMethodIDNoThrow(global::android.media.AudioFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

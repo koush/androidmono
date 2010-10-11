@@ -1,90 +1,84 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class ParcelUuid : java.lang.Object, Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class ParcelUuid : java.lang.Object, Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ParcelUuid()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.ParcelUuid), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.ParcelUuid(@__env);
-			}
-		}
-		internal ParcelUuid(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ParcelUuid(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals6379;
+		internal static global::MonoJavaBridge.MethodId _equals6651;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.ParcelUuid._equals6379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.ParcelUuid._equals6651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._equals6379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._equals6651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString6380;
+		internal static global::MonoJavaBridge.MethodId _toString6652;
 		public sealed override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelUuid._toString6380));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.ParcelUuid._toString6652)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._toString6380));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._toString6652)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode6381;
+		internal static global::MonoJavaBridge.MethodId _hashCode6653;
 		public sealed override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.ParcelUuid._hashCode6381);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.os.ParcelUuid._hashCode6653);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._hashCode6381);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._hashCode6653);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6382;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel6654;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.ParcelUuid._writeToParcel6382, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ParcelUuid._writeToParcel6654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._writeToParcel6382, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._writeToParcel6654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents6383;
+		internal static global::MonoJavaBridge.MethodId _describeContents6655;
 		public int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.ParcelUuid._describeContents6383);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.os.ParcelUuid._describeContents6655);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._describeContents6383);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._describeContents6655);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _fromString6384;
+		internal static global::MonoJavaBridge.MethodId _fromString6656;
 		public static global::android.os.ParcelUuid fromString(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelUuid>(@__env, @__env.CallStaticObjectMethodPtr(android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._fromString6384, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._fromString6656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.ParcelUuid;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getUuid6385;
+		internal static global::MonoJavaBridge.MethodId _getUuid6657;
 		public global::java.util.UUID getUuid() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.UUID>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelUuid._getUuid6385));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.ParcelUuid._getUuid6657)) as java.util.UUID;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.UUID>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._getUuid6385));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._getUuid6657)) as java.util.UUID;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ParcelUuid6386;
-		public ParcelUuid(java.util.UUID arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ParcelUuid6658;
+		public ParcelUuid(java.util.UUID arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._ParcelUuid6386, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._ParcelUuid6658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR6387;
+		internal static global::MonoJavaBridge.FieldId _CREATOR6659;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -92,17 +86,18 @@ namespace android.os
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.ParcelUuid.staticClass = @__class;
-			global::android.os.ParcelUuid._equals6379 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.os.ParcelUuid._toString6380 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.os.ParcelUuid._hashCode6381 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "hashCode", "()I");
-			global::android.os.ParcelUuid._writeToParcel6382 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.os.ParcelUuid._describeContents6383 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "describeContents", "()I");
-			global::android.os.ParcelUuid._fromString6384 = @__env.GetStaticMethodID(global::android.os.ParcelUuid.staticClass, "fromString", "(Ljava/lang/String;)Landroid/os/ParcelUuid;");
-			global::android.os.ParcelUuid._getUuid6385 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "getUuid", "()Ljava/util/UUID;");
-			global::android.os.ParcelUuid._ParcelUuid6386 = @__env.GetMethodID(global::android.os.ParcelUuid.staticClass, "<init>", "(Ljava/util/UUID;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.ParcelUuid.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelUuid"));
+			global::android.os.ParcelUuid._equals6651 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.os.ParcelUuid._toString6652 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.os.ParcelUuid._hashCode6653 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "hashCode", "()I");
+			global::android.os.ParcelUuid._writeToParcel6654 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.os.ParcelUuid._describeContents6655 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "describeContents", "()I");
+			global::android.os.ParcelUuid._fromString6656 = @__env.GetStaticMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "fromString", "(Ljava/lang/String;)Landroid/os/ParcelUuid;");
+			global::android.os.ParcelUuid._getUuid6657 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "getUuid", "()Ljava/util/UUID;");
+			global::android.os.ParcelUuid._ParcelUuid6658 = @__env.GetMethodIDNoThrow(global::android.os.ParcelUuid.staticClass, "<init>", "(Ljava/util/UUID;)V");
 		}
 	}
 }

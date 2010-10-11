@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class InputMethodConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class InputMethodConstants 
 	{
 		public static global::java.lang.String SERVICE_INTERFACE
 		{

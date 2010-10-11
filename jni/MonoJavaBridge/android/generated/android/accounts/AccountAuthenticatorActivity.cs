@@ -1,63 +1,58 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AccountAuthenticatorActivity : android.app.Activity
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AccountAuthenticatorActivity : android.app.Activity
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccountAuthenticatorActivity()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.AccountAuthenticatorActivity), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.AccountAuthenticatorActivity(@__env);
-			}
-		}
-		protected AccountAuthenticatorActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AccountAuthenticatorActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCreate54;
+		internal static global::MonoJavaBridge.MethodId _onCreate63;
 		protected override void onCreate(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity._onCreate54, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity._onCreate63, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._onCreate54, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._onCreate63, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAccountAuthenticatorResult55;
+		internal static global::MonoJavaBridge.MethodId _setAccountAuthenticatorResult64;
 		public virtual void setAccountAuthenticatorResult(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult55, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult64, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult55, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult64, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _finish56;
+		internal static global::MonoJavaBridge.MethodId _finish65;
 		public override void finish() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity._finish56);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity._finish65);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._finish56);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._finish65);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccountAuthenticatorActivity57;
-		public AccountAuthenticatorActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccountAuthenticatorActivity66;
+		public AccountAuthenticatorActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity57, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity66);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.AccountAuthenticatorActivity.staticClass = @__class;
-			global::android.accounts.AccountAuthenticatorActivity._onCreate54 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult55 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorActivity.staticClass, "setAccountAuthenticatorResult", "(Landroid/os/Bundle;)V");
-			global::android.accounts.AccountAuthenticatorActivity._finish56 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorActivity.staticClass, "finish", "()V");
-			global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity57 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorActivity.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.AccountAuthenticatorActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountAuthenticatorActivity"));
+			global::android.accounts.AccountAuthenticatorActivity._onCreate63 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
+			global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult64 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "setAccountAuthenticatorResult", "(Landroid/os/Bundle;)V");
+			global::android.accounts.AccountAuthenticatorActivity._finish65 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "finish", "()V");
+			global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity66 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorActivity.staticClass, "<init>", "()V");
 		}
 	}
 }

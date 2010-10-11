@@ -1,39 +1,25 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.WrapTogetherSpan_))]
 	public interface WrapTogetherSpan : ParagraphStyle
 	{
 	}
 
-	public partial class WrapTogetherSpan_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.WrapTogetherSpan))]
+	public sealed partial class WrapTogetherSpan_ : java.lang.Object, WrapTogetherSpan
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static WrapTogetherSpan_()
 		{
-			get { return __WrapTogetherSpan.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __WrapTogetherSpan : java.lang.Object, WrapTogetherSpan
-	{
-		internal static global::java.lang.Class staticClass;
-		static __WrapTogetherSpan()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__WrapTogetherSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.__WrapTogetherSpan(@__env);
-			}
-		}
-		internal __WrapTogetherSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal WrapTogetherSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.__WrapTogetherSpan.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.WrapTogetherSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/WrapTogetherSpan"));
 		}
 	}
 }

@@ -1,195 +1,236 @@
 namespace android.database
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class AbstractWindowedCursor : android.database.AbstractCursor
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.database.AbstractWindowedCursor_))]
+	public abstract partial class AbstractWindowedCursor : android.database.AbstractCursor
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AbstractWindowedCursor()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.AbstractWindowedCursor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected AbstractWindowedCursor(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AbstractWindowedCursor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getShort2324;
+		internal static global::MonoJavaBridge.MethodId _getShort2488;
 		public override short getShort(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallShortMethod(this, global::android.database.AbstractWindowedCursor._getShort2324, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallShortMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getShort2488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualShortMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getShort2324, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getShort2488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInt2325;
+		internal static global::MonoJavaBridge.MethodId _getInt2489;
 		public override int getInt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.database.AbstractWindowedCursor._getInt2325, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getInt2489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getInt2325, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getInt2489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLong2326;
+		internal static global::MonoJavaBridge.MethodId _getLong2490;
 		public override long getLong(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.database.AbstractWindowedCursor._getLong2326, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getLong2490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getLong2326, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getLong2490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat2327;
+		internal static global::MonoJavaBridge.MethodId _getFloat2491;
 		public override float getFloat(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.database.AbstractWindowedCursor._getFloat2327, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getFloat2491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getFloat2327, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getFloat2491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDouble2328;
+		internal static global::MonoJavaBridge.MethodId _getDouble2492;
 		public override double getDouble(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::android.database.AbstractWindowedCursor._getDouble2328, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallDoubleMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getDouble2492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getDouble2328, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getDouble2492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getString2329;
+		internal static global::MonoJavaBridge.MethodId _getString2493;
 		public override global::java.lang.String getString(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractWindowedCursor._getString2329, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getString2493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getString2329, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getString2493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getWindow2330;
+		internal static global::MonoJavaBridge.MethodId _getWindow2494;
 		public override global::android.database.CursorWindow getWindow() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.CursorWindow>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractWindowedCursor._getWindow2330));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getWindow2494)) as android.database.CursorWindow;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.CursorWindow>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getWindow2330));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getWindow2494)) as android.database.CursorWindow;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBlob2331;
+		internal static global::MonoJavaBridge.MethodId _getBlob2495;
 		public override byte[] getBlob(int arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractWindowedCursor._getBlob2331, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._getBlob2495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getBlob2331, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._getBlob2495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _copyStringToBuffer2332;
+		internal static global::MonoJavaBridge.MethodId _copyStringToBuffer2496;
 		public override void copyStringToBuffer(int arg0, android.database.CharArrayBuffer arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.AbstractWindowedCursor._copyStringToBuffer2332, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._copyStringToBuffer2496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._copyStringToBuffer2332, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._copyStringToBuffer2496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isNull2333;
+		internal static global::MonoJavaBridge.MethodId _isNull2497;
 		public override bool isNull(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.AbstractWindowedCursor._isNull2333, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._isNull2497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isNull2333, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isNull2497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _checkPosition2334;
+		internal static global::MonoJavaBridge.MethodId _checkPosition2498;
 		protected override void checkPosition() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.AbstractWindowedCursor._checkPosition2334);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._checkPosition2498);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._checkPosition2334);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._checkPosition2498);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isBlob2335;
+		internal static global::MonoJavaBridge.MethodId _isBlob2499;
 		public virtual bool isBlob(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.AbstractWindowedCursor._isBlob2335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._isBlob2499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isBlob2335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isBlob2499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isLong2336;
+		internal static global::MonoJavaBridge.MethodId _isLong2500;
 		public virtual bool isLong(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.AbstractWindowedCursor._isLong2336, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._isLong2500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isLong2336, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isLong2500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isFloat2337;
+		internal static global::MonoJavaBridge.MethodId _isFloat2501;
 		public virtual bool isFloat(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.AbstractWindowedCursor._isFloat2337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._isFloat2501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isFloat2337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isFloat2501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isString2338;
+		internal static global::MonoJavaBridge.MethodId _isString2502;
 		public virtual bool isString(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.AbstractWindowedCursor._isString2338, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._isString2502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isString2338, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._isString2502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setWindow2339;
+		internal static global::MonoJavaBridge.MethodId _setWindow2503;
 		public virtual void setWindow(android.database.CursorWindow arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.AbstractWindowedCursor._setWindow2339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._setWindow2503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._setWindow2339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._setWindow2503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasWindow2340;
+		internal static global::MonoJavaBridge.MethodId _hasWindow2504;
 		public virtual bool hasWindow() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.database.AbstractWindowedCursor._hasWindow2340);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor._hasWindow2504);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._hasWindow2340);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._hasWindow2504);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AbstractWindowedCursor2341;
-		public AbstractWindowedCursor()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AbstractWindowedCursor2505;
+		public AbstractWindowedCursor()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._AbstractWindowedCursor2341, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.AbstractWindowedCursor.staticClass, global::android.database.AbstractWindowedCursor._AbstractWindowedCursor2505);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.database.AbstractWindowedCursor.staticClass = @__class;
-			global::android.database.AbstractWindowedCursor._getShort2324 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getShort", "(I)S");
-			global::android.database.AbstractWindowedCursor._getInt2325 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getInt", "(I)I");
-			global::android.database.AbstractWindowedCursor._getLong2326 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getLong", "(I)J");
-			global::android.database.AbstractWindowedCursor._getFloat2327 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getFloat", "(I)F");
-			global::android.database.AbstractWindowedCursor._getDouble2328 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getDouble", "(I)D");
-			global::android.database.AbstractWindowedCursor._getString2329 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getString", "(I)Ljava/lang/String;");
-			global::android.database.AbstractWindowedCursor._getWindow2330 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getWindow", "()Landroid/database/CursorWindow;");
-			global::android.database.AbstractWindowedCursor._getBlob2331 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "getBlob", "(I)[B");
-			global::android.database.AbstractWindowedCursor._copyStringToBuffer2332 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "copyStringToBuffer", "(ILandroid/database/CharArrayBuffer;)V");
-			global::android.database.AbstractWindowedCursor._isNull2333 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "isNull", "(I)Z");
-			global::android.database.AbstractWindowedCursor._checkPosition2334 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "checkPosition", "()V");
-			global::android.database.AbstractWindowedCursor._isBlob2335 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "isBlob", "(I)Z");
-			global::android.database.AbstractWindowedCursor._isLong2336 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "isLong", "(I)Z");
-			global::android.database.AbstractWindowedCursor._isFloat2337 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "isFloat", "(I)Z");
-			global::android.database.AbstractWindowedCursor._isString2338 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "isString", "(I)Z");
-			global::android.database.AbstractWindowedCursor._setWindow2339 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "setWindow", "(Landroid/database/CursorWindow;)V");
-			global::android.database.AbstractWindowedCursor._hasWindow2340 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "hasWindow", "()Z");
-			global::android.database.AbstractWindowedCursor._AbstractWindowedCursor2341 = @__env.GetMethodID(global::android.database.AbstractWindowedCursor.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.database.AbstractWindowedCursor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractWindowedCursor"));
+			global::android.database.AbstractWindowedCursor._getShort2488 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getShort", "(I)S");
+			global::android.database.AbstractWindowedCursor._getInt2489 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getInt", "(I)I");
+			global::android.database.AbstractWindowedCursor._getLong2490 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getLong", "(I)J");
+			global::android.database.AbstractWindowedCursor._getFloat2491 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getFloat", "(I)F");
+			global::android.database.AbstractWindowedCursor._getDouble2492 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getDouble", "(I)D");
+			global::android.database.AbstractWindowedCursor._getString2493 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getString", "(I)Ljava/lang/String;");
+			global::android.database.AbstractWindowedCursor._getWindow2494 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getWindow", "()Landroid/database/CursorWindow;");
+			global::android.database.AbstractWindowedCursor._getBlob2495 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "getBlob", "(I)[B");
+			global::android.database.AbstractWindowedCursor._copyStringToBuffer2496 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "copyStringToBuffer", "(ILandroid/database/CharArrayBuffer;)V");
+			global::android.database.AbstractWindowedCursor._isNull2497 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "isNull", "(I)Z");
+			global::android.database.AbstractWindowedCursor._checkPosition2498 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "checkPosition", "()V");
+			global::android.database.AbstractWindowedCursor._isBlob2499 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "isBlob", "(I)Z");
+			global::android.database.AbstractWindowedCursor._isLong2500 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "isLong", "(I)Z");
+			global::android.database.AbstractWindowedCursor._isFloat2501 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "isFloat", "(I)Z");
+			global::android.database.AbstractWindowedCursor._isString2502 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "isString", "(I)Z");
+			global::android.database.AbstractWindowedCursor._setWindow2503 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "setWindow", "(Landroid/database/CursorWindow;)V");
+			global::android.database.AbstractWindowedCursor._hasWindow2504 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "hasWindow", "()Z");
+			global::android.database.AbstractWindowedCursor._AbstractWindowedCursor2505 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.database.AbstractWindowedCursor))]
+	public sealed partial class AbstractWindowedCursor_ : android.database.AbstractWindowedCursor
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static AbstractWindowedCursor_()
+		{
+			InitJNI();
+		}
+		internal AbstractWindowedCursor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _getCount2506;
+		public override int getCount() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor_._getCount2506);
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor_.staticClass, global::android.database.AbstractWindowedCursor_._getCount2506);
+		}
+		internal static global::MonoJavaBridge.MethodId _getColumnNames2507;
+		public override global::java.lang.String[] getColumnNames() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor_._getColumnNames2507)) as java.lang.String[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.AbstractWindowedCursor_.staticClass, global::android.database.AbstractWindowedCursor_._getColumnNames2507)) as java.lang.String[];
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.database.AbstractWindowedCursor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/AbstractWindowedCursor"));
+			global::android.database.AbstractWindowedCursor_._getCount2506 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor_.staticClass, "getCount", "()I");
+			global::android.database.AbstractWindowedCursor_._getColumnNames2507 = @__env.GetMethodIDNoThrow(global::android.database.AbstractWindowedCursor_.staticClass, "getColumnNames", "()[Ljava/lang/String;");
 		}
 	}
 }

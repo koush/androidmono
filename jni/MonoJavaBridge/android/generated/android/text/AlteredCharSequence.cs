@@ -1,83 +1,77 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AlteredCharSequence : java.lang.Object, java.lang.CharSequence, GetChars
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AlteredCharSequence : java.lang.Object, java.lang.CharSequence, GetChars
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AlteredCharSequence()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.AlteredCharSequence), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.AlteredCharSequence(@__env);
-			}
-		}
-		protected AlteredCharSequence(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AlteredCharSequence(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7305;
+		internal static global::MonoJavaBridge.MethodId _toString7585;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.AlteredCharSequence._toString7305));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.AlteredCharSequence._toString7585)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._toString7305));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._toString7585)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _length7306;
+		internal static global::MonoJavaBridge.MethodId _length7586;
 		public virtual int length() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.AlteredCharSequence._length7306);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.AlteredCharSequence._length7586);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._length7306);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._length7586);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _charAt7307;
+		internal static global::MonoJavaBridge.MethodId _charAt7587;
 		public virtual char charAt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.text.AlteredCharSequence._charAt7307, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallCharMethod(this.JvmHandle, global::android.text.AlteredCharSequence._charAt7587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._charAt7307, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._charAt7587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChars7308;
+		internal static global::MonoJavaBridge.MethodId _getChars7588;
 		public virtual void getChars(int arg0, int arg1, char[] arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.AlteredCharSequence._getChars7308, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.AlteredCharSequence._getChars7588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._getChars7308, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._getChars7588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _subSequence7309;
+		internal static global::MonoJavaBridge.MethodId _subSequence7589;
 		public virtual global::java.lang.CharSequence subSequence(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.AlteredCharSequence._subSequence7309, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.AlteredCharSequence._subSequence7589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._subSequence7309, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._subSequence7589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _make7310;
+		internal static global::MonoJavaBridge.MethodId _make7590;
 		public static global::android.text.AlteredCharSequence make(java.lang.CharSequence arg0, char[] arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.AlteredCharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._make7310, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.AlteredCharSequence.staticClass, global::android.text.AlteredCharSequence._make7590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.text.AlteredCharSequence;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.AlteredCharSequence.staticClass = @__class;
-			global::android.text.AlteredCharSequence._toString7305 = @__env.GetMethodID(global::android.text.AlteredCharSequence.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.text.AlteredCharSequence._length7306 = @__env.GetMethodID(global::android.text.AlteredCharSequence.staticClass, "length", "()I");
-			global::android.text.AlteredCharSequence._charAt7307 = @__env.GetMethodID(global::android.text.AlteredCharSequence.staticClass, "charAt", "(I)C");
-			global::android.text.AlteredCharSequence._getChars7308 = @__env.GetMethodID(global::android.text.AlteredCharSequence.staticClass, "getChars", "(II[CI)V");
-			global::android.text.AlteredCharSequence._subSequence7309 = @__env.GetMethodID(global::android.text.AlteredCharSequence.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
-			global::android.text.AlteredCharSequence._make7310 = @__env.GetStaticMethodID(global::android.text.AlteredCharSequence.staticClass, "make", "(Ljava/lang/CharSequence;[CII)Landroid/text/AlteredCharSequence;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.AlteredCharSequence.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/AlteredCharSequence"));
+			global::android.text.AlteredCharSequence._toString7585 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.AlteredCharSequence._length7586 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "length", "()I");
+			global::android.text.AlteredCharSequence._charAt7587 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "charAt", "(I)C");
+			global::android.text.AlteredCharSequence._getChars7588 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "getChars", "(II[CI)V");
+			global::android.text.AlteredCharSequence._subSequence7589 = @__env.GetMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
+			global::android.text.AlteredCharSequence._make7590 = @__env.GetStaticMethodIDNoThrow(global::android.text.AlteredCharSequence.staticClass, "make", "(Ljava/lang/CharSequence;[CII)Landroid/text/AlteredCharSequence;");
 		}
 	}
 }

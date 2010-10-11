@@ -1,33 +1,38 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PathEffect : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PathEffect : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PathEffect()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.PathEffect), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.PathEffect(@__env);
-			}
-		}
-		protected PathEffect(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PathEffect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PathEffect3408;
-		public PathEffect()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _finalize3591;
+		protected override void finalize() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PathEffect.staticClass, global::android.graphics.PathEffect._PathEffect3408, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PathEffect._finalize3591);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PathEffect.staticClass, global::android.graphics.PathEffect._finalize3591);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		internal static global::MonoJavaBridge.MethodId _PathEffect3592;
+		public PathEffect()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::android.graphics.PathEffect.staticClass = @__class;
-			global::android.graphics.PathEffect._PathEffect3408 = @__env.GetMethodID(global::android.graphics.PathEffect.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PathEffect.staticClass, global::android.graphics.PathEffect._PathEffect3592);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.PathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PathEffect"));
+			global::android.graphics.PathEffect._finalize3591 = @__env.GetMethodIDNoThrow(global::android.graphics.PathEffect.staticClass, "finalize", "()V");
+			global::android.graphics.PathEffect._PathEffect3592 = @__env.GetMethodIDNoThrow(global::android.graphics.PathEffect.staticClass, "<init>", "()V");
 		}
 	}
 }

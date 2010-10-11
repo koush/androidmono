@@ -1,60 +1,100 @@
 namespace android.text.method
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class ReplacementTransformationMethod : java.lang.Object, TransformationMethod
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.text.method.ReplacementTransformationMethod_))]
+	public abstract partial class ReplacementTransformationMethod : java.lang.Object, TransformationMethod
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ReplacementTransformationMethod()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.method.ReplacementTransformationMethod), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected ReplacementTransformationMethod(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ReplacementTransformationMethod(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFocusChanged7850;
+		internal static global::MonoJavaBridge.MethodId _onFocusChanged8145;
 		public virtual void onFocusChanged(android.view.View arg0, java.lang.CharSequence arg1, bool arg2, int arg3, android.graphics.Rect arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.ReplacementTransformationMethod._onFocusChanged7850, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod._onFocusChanged8145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._onFocusChanged7850, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._onFocusChanged8145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public void onFocusChanged(android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4)
 		{
 			onFocusChanged(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3, arg4);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTransformation7851;
+		internal static global::MonoJavaBridge.MethodId _getTransformation8146;
 		public virtual global::java.lang.CharSequence getTransformation(java.lang.CharSequence arg0, android.view.View arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.ReplacementTransformationMethod._getTransformation7851, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod._getTransformation8146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._getTransformation7851, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._getTransformation8146, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
 		public java.lang.CharSequence getTransformation(string arg0, android.view.View arg1)
 		{
 			return getTransformation((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOriginal7852;
+		internal static global::MonoJavaBridge.MethodId _getOriginal8147;
 		protected abstract char[] getOriginal();
-		internal static global::net.sf.jni4net.jni.MethodId _getReplacement7853;
+		internal static global::MonoJavaBridge.MethodId _getReplacement8148;
 		protected abstract char[] getReplacement();
-		internal static global::net.sf.jni4net.jni.MethodId _ReplacementTransformationMethod7854;
-		public ReplacementTransformationMethod()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ReplacementTransformationMethod8149;
+		public ReplacementTransformationMethod()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod7854, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod8149);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.method.ReplacementTransformationMethod.staticClass = @__class;
-			global::android.text.method.ReplacementTransformationMethod._onFocusChanged7850 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V");
-			global::android.text.method.ReplacementTransformationMethod._getTransformation7851 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
-			global::android.text.method.ReplacementTransformationMethod._getOriginal7852 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "getOriginal", "()[C");
-			global::android.text.method.ReplacementTransformationMethod._getReplacement7853 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "getReplacement", "()[C");
-			global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod7854 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.method.ReplacementTransformationMethod.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ReplacementTransformationMethod"));
+			global::android.text.method.ReplacementTransformationMethod._onFocusChanged8145 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V");
+			global::android.text.method.ReplacementTransformationMethod._getTransformation8146 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
+			global::android.text.method.ReplacementTransformationMethod._getOriginal8147 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "getOriginal", "()[C");
+			global::android.text.method.ReplacementTransformationMethod._getReplacement8148 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "getReplacement", "()[C");
+			global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod8149 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.method.ReplacementTransformationMethod))]
+	public sealed partial class ReplacementTransformationMethod_ : android.text.method.ReplacementTransformationMethod
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ReplacementTransformationMethod_()
+		{
+			InitJNI();
+		}
+		internal ReplacementTransformationMethod_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _getOriginal8150;
+		protected override char[] getOriginal() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod_._getOriginal8150)) as char[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod_.staticClass, global::android.text.method.ReplacementTransformationMethod_._getOriginal8150)) as char[];
+		}
+		internal static global::MonoJavaBridge.MethodId _getReplacement8151;
+		protected override char[] getReplacement() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod_._getReplacement8151)) as char[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.ReplacementTransformationMethod_.staticClass, global::android.text.method.ReplacementTransformationMethod_._getReplacement8151)) as char[];
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.method.ReplacementTransformationMethod_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/ReplacementTransformationMethod"));
+			global::android.text.method.ReplacementTransformationMethod_._getOriginal8150 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod_.staticClass, "getOriginal", "()[C");
+			global::android.text.method.ReplacementTransformationMethod_._getReplacement8151 = @__env.GetMethodIDNoThrow(global::android.text.method.ReplacementTransformationMethod_.staticClass, "getReplacement", "()[C");
 		}
 	}
 }

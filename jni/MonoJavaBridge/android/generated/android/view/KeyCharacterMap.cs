@@ -1,46 +1,33 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class KeyCharacterMap : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class KeyCharacterMap : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static KeyCharacterMap()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.KeyCharacterMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.KeyCharacterMap(@__env);
-			}
-		}
-		protected KeyCharacterMap(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected KeyCharacterMap(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class KeyData : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class KeyData : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static KeyData()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.KeyCharacterMap.KeyData), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.view.KeyCharacterMap.KeyData(@__env);
-				}
-			}
-			protected KeyData(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected KeyData(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _KeyData8462;
-			public KeyData()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _KeyData8766;
+			public KeyData()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.view.KeyCharacterMap.KeyData.staticClass, global::android.view.KeyCharacterMap.KeyData._KeyData8462, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.KeyCharacterMap.KeyData.staticClass, global::android.view.KeyCharacterMap.KeyData._KeyData8766);
+				Init(@__env, handle);
 			}
 			public static int META_LENGTH
 			{
@@ -49,7 +36,7 @@ namespace android.view
 					return 4;
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _displayLabel8463;
+			internal static global::MonoJavaBridge.FieldId _displayLabel8767;
 			public char displayLabel
 			{
 				get
@@ -60,7 +47,7 @@ namespace android.view
 				{
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _number8464;
+			internal static global::MonoJavaBridge.FieldId _number8768;
 			public char number
 			{
 				get
@@ -71,7 +58,7 @@ namespace android.view
 				{
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _meta8465;
+			internal static global::MonoJavaBridge.FieldId _meta8769;
 			public char[] meta
 			{
 				get
@@ -82,114 +69,126 @@ namespace android.view
 				{
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.view.KeyCharacterMap.KeyData.staticClass = @__class;
-				global::android.view.KeyCharacterMap.KeyData._KeyData8462 = @__env.GetMethodID(global::android.view.KeyCharacterMap.KeyData.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.view.KeyCharacterMap.KeyData.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/KeyCharacterMap$KeyData"));
+				global::android.view.KeyCharacterMap.KeyData._KeyData8766 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.KeyData.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get8466;
+		internal static global::MonoJavaBridge.MethodId _finalize8770;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.KeyCharacterMap._finalize8770);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._finalize8770);
+		}
+		internal static global::MonoJavaBridge.MethodId _get8771;
 		public virtual int get(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.KeyCharacterMap._get8466, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.KeyCharacterMap._get8771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._get8466, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._get8771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _load8467;
+		internal static global::MonoJavaBridge.MethodId _load8772;
 		public static global::android.view.KeyCharacterMap load(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.KeyCharacterMap>(@__env, @__env.CallStaticObjectMethodPtr(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._load8467, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._load8772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.KeyCharacterMap;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNumber8468;
+		internal static global::MonoJavaBridge.MethodId _getNumber8773;
 		public virtual char getNumber(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getNumber8468, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getNumber8773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getNumber8468, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getNumber8773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDeadChar8469;
+		internal static global::MonoJavaBridge.MethodId _getDeadChar8774;
 		public static int getDeadChar(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getDeadChar8469, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticIntMethod(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getDeadChar8774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel8470;
+		internal static global::MonoJavaBridge.MethodId _getDisplayLabel8775;
 		public virtual char getDisplayLabel(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getDisplayLabel8470, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getDisplayLabel8775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getDisplayLabel8470, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getDisplayLabel8775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getKeyData8471;
+		internal static global::MonoJavaBridge.MethodId _getKeyData8776;
 		public virtual bool getKeyData(int arg0, android.view.KeyCharacterMap.KeyData arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.KeyCharacterMap._getKeyData8471, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getKeyData8776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getKeyData8471, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getKeyData8776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMatch8472;
+		internal static global::MonoJavaBridge.MethodId _getMatch8777;
 		public virtual char getMatch(int arg0, char[] arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getMatch8472, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getMatch8777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getMatch8472, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getMatch8777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMatch8473;
+		internal static global::MonoJavaBridge.MethodId _getMatch8778;
 		public virtual char getMatch(int arg0, char[] arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getMatch8473, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
+				return @__env.CallCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getMatch8778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getMatch8473, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getMatch8778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isPrintingKey8474;
+		internal static global::MonoJavaBridge.MethodId _isPrintingKey8779;
 		public virtual bool isPrintingKey(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.KeyCharacterMap._isPrintingKey8474, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.KeyCharacterMap._isPrintingKey8779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._isPrintingKey8474, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._isPrintingKey8779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEvents8475;
+		internal static global::MonoJavaBridge.MethodId _getEvents8780;
 		public virtual global::android.view.KeyEvent[] getEvents(char[] arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.view.KeyCharacterMap._getEvents8475, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.KeyEvent>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getEvents8780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.KeyEvent[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getEvents8475, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.KeyEvent>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getEvents8780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.KeyEvent[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getKeyboardType8476;
+		internal static global::MonoJavaBridge.MethodId _getKeyboardType8781;
 		public virtual int getKeyboardType() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.KeyCharacterMap._getKeyboardType8476);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.KeyCharacterMap._getKeyboardType8781);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getKeyboardType8476);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getKeyboardType8781);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deviceHasKey8477;
+		internal static global::MonoJavaBridge.MethodId _deviceHasKey8782;
 		public static bool deviceHasKey(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._deviceHasKey8477, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._deviceHasKey8782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deviceHasKeys8478;
+		internal static global::MonoJavaBridge.MethodId _deviceHasKeys8783;
 		public static bool[] deviceHasKeys(int[] arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._deviceHasKeys8478, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<bool>(@__env.CallStaticObjectMethod(android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._deviceHasKeys8783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as bool[];
 		}
 		public static int BUILT_IN_KEYBOARD
 		{
@@ -247,22 +246,24 @@ namespace android.view
 				return 2147483647;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.KeyCharacterMap.staticClass = @__class;
-			global::android.view.KeyCharacterMap._get8466 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "get", "(II)I");
-			global::android.view.KeyCharacterMap._load8467 = @__env.GetStaticMethodID(global::android.view.KeyCharacterMap.staticClass, "load", "(I)Landroid/view/KeyCharacterMap;");
-			global::android.view.KeyCharacterMap._getNumber8468 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getNumber", "(I)C");
-			global::android.view.KeyCharacterMap._getDeadChar8469 = @__env.GetStaticMethodID(global::android.view.KeyCharacterMap.staticClass, "getDeadChar", "(II)I");
-			global::android.view.KeyCharacterMap._getDisplayLabel8470 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getDisplayLabel", "(I)C");
-			global::android.view.KeyCharacterMap._getKeyData8471 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getKeyData", "(ILandroid/view/KeyCharacterMap$KeyData;)Z");
-			global::android.view.KeyCharacterMap._getMatch8472 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getMatch", "(I[CI)C");
-			global::android.view.KeyCharacterMap._getMatch8473 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getMatch", "(I[C)C");
-			global::android.view.KeyCharacterMap._isPrintingKey8474 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "isPrintingKey", "(I)Z");
-			global::android.view.KeyCharacterMap._getEvents8475 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getEvents", "([C)[Landroid/view/KeyEvent;");
-			global::android.view.KeyCharacterMap._getKeyboardType8476 = @__env.GetMethodID(global::android.view.KeyCharacterMap.staticClass, "getKeyboardType", "()I");
-			global::android.view.KeyCharacterMap._deviceHasKey8477 = @__env.GetStaticMethodID(global::android.view.KeyCharacterMap.staticClass, "deviceHasKey", "(I)Z");
-			global::android.view.KeyCharacterMap._deviceHasKeys8478 = @__env.GetStaticMethodID(global::android.view.KeyCharacterMap.staticClass, "deviceHasKeys", "([I)[Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.KeyCharacterMap.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/KeyCharacterMap"));
+			global::android.view.KeyCharacterMap._finalize8770 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "finalize", "()V");
+			global::android.view.KeyCharacterMap._get8771 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "get", "(II)I");
+			global::android.view.KeyCharacterMap._load8772 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "load", "(I)Landroid/view/KeyCharacterMap;");
+			global::android.view.KeyCharacterMap._getNumber8773 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getNumber", "(I)C");
+			global::android.view.KeyCharacterMap._getDeadChar8774 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getDeadChar", "(II)I");
+			global::android.view.KeyCharacterMap._getDisplayLabel8775 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getDisplayLabel", "(I)C");
+			global::android.view.KeyCharacterMap._getKeyData8776 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getKeyData", "(ILandroid/view/KeyCharacterMap$KeyData;)Z");
+			global::android.view.KeyCharacterMap._getMatch8777 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getMatch", "(I[CI)C");
+			global::android.view.KeyCharacterMap._getMatch8778 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getMatch", "(I[C)C");
+			global::android.view.KeyCharacterMap._isPrintingKey8779 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "isPrintingKey", "(I)Z");
+			global::android.view.KeyCharacterMap._getEvents8780 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getEvents", "([C)[Landroid/view/KeyEvent;");
+			global::android.view.KeyCharacterMap._getKeyboardType8781 = @__env.GetMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "getKeyboardType", "()I");
+			global::android.view.KeyCharacterMap._deviceHasKey8782 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "deviceHasKey", "(I)Z");
+			global::android.view.KeyCharacterMap._deviceHasKeys8783 = @__env.GetStaticMethodIDNoThrow(global::android.view.KeyCharacterMap.staticClass, "deviceHasKeys", "([I)[Z");
 		}
 	}
 }

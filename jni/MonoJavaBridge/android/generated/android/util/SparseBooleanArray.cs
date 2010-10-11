@@ -1,150 +1,146 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SparseBooleanArray : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SparseBooleanArray : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SparseBooleanArray()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.SparseBooleanArray), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.SparseBooleanArray(@__env);
-			}
-		}
-		protected SparseBooleanArray(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SparseBooleanArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get8287;
+		internal static global::MonoJavaBridge.MethodId _get8591;
 		public virtual bool get(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.util.SparseBooleanArray._get8287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.util.SparseBooleanArray._get8591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._get8287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._get8591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get8288;
+		internal static global::MonoJavaBridge.MethodId _get8592;
 		public virtual bool get(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.util.SparseBooleanArray._get8288, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.util.SparseBooleanArray._get8592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._get8288, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._get8592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _put8289;
+		internal static global::MonoJavaBridge.MethodId _put8593;
 		public virtual void put(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._put8289, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray._put8593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._put8289, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._put8593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _append8290;
+		internal static global::MonoJavaBridge.MethodId _append8594;
 		public virtual void append(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._append8290, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray._append8594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._append8290, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._append8594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear8291;
+		internal static global::MonoJavaBridge.MethodId _clear8595;
 		public virtual void clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._clear8291);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray._clear8595);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._clear8291);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._clear8595);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _size8292;
+		internal static global::MonoJavaBridge.MethodId _size8596;
 		public virtual int size() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.SparseBooleanArray._size8292);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray._size8596);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._size8292);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._size8596);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _delete8293;
+		internal static global::MonoJavaBridge.MethodId _delete8597;
 		public virtual void delete(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._delete8293, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray._delete8597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._delete8293, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._delete8597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _keyAt8294;
+		internal static global::MonoJavaBridge.MethodId _keyAt8598;
 		public virtual int keyAt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.SparseBooleanArray._keyAt8294, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray._keyAt8598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._keyAt8294, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._keyAt8598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _valueAt8295;
+		internal static global::MonoJavaBridge.MethodId _valueAt8599;
 		public virtual bool valueAt(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.util.SparseBooleanArray._valueAt8295, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.util.SparseBooleanArray._valueAt8599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._valueAt8295, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._valueAt8599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _indexOfKey8296;
+		internal static global::MonoJavaBridge.MethodId _indexOfKey8600;
 		public virtual int indexOfKey(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.SparseBooleanArray._indexOfKey8296, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray._indexOfKey8600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._indexOfKey8296, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._indexOfKey8600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _indexOfValue8297;
+		internal static global::MonoJavaBridge.MethodId _indexOfValue8601;
 		public virtual int indexOfValue(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.SparseBooleanArray._indexOfValue8297, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray._indexOfValue8601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._indexOfValue8297, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._indexOfValue8601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SparseBooleanArray8298;
-		public SparseBooleanArray(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SparseBooleanArray8602;
+		public SparseBooleanArray(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._SparseBooleanArray8298, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._SparseBooleanArray8602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SparseBooleanArray8299;
-		public SparseBooleanArray()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SparseBooleanArray8603;
+		public SparseBooleanArray()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._SparseBooleanArray8299, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._SparseBooleanArray8603);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.SparseBooleanArray.staticClass = @__class;
-			global::android.util.SparseBooleanArray._get8287 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "get", "(I)Z");
-			global::android.util.SparseBooleanArray._get8288 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "get", "(IZ)Z");
-			global::android.util.SparseBooleanArray._put8289 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "put", "(IZ)V");
-			global::android.util.SparseBooleanArray._append8290 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "append", "(IZ)V");
-			global::android.util.SparseBooleanArray._clear8291 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "clear", "()V");
-			global::android.util.SparseBooleanArray._size8292 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "size", "()I");
-			global::android.util.SparseBooleanArray._delete8293 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "delete", "(I)V");
-			global::android.util.SparseBooleanArray._keyAt8294 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "keyAt", "(I)I");
-			global::android.util.SparseBooleanArray._valueAt8295 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "valueAt", "(I)Z");
-			global::android.util.SparseBooleanArray._indexOfKey8296 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "indexOfKey", "(I)I");
-			global::android.util.SparseBooleanArray._indexOfValue8297 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "indexOfValue", "(Z)I");
-			global::android.util.SparseBooleanArray._SparseBooleanArray8298 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "<init>", "(I)V");
-			global::android.util.SparseBooleanArray._SparseBooleanArray8299 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.SparseBooleanArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/SparseBooleanArray"));
+			global::android.util.SparseBooleanArray._get8591 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "get", "(I)Z");
+			global::android.util.SparseBooleanArray._get8592 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "get", "(IZ)Z");
+			global::android.util.SparseBooleanArray._put8593 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "put", "(IZ)V");
+			global::android.util.SparseBooleanArray._append8594 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "append", "(IZ)V");
+			global::android.util.SparseBooleanArray._clear8595 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "clear", "()V");
+			global::android.util.SparseBooleanArray._size8596 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "size", "()I");
+			global::android.util.SparseBooleanArray._delete8597 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "delete", "(I)V");
+			global::android.util.SparseBooleanArray._keyAt8598 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "keyAt", "(I)I");
+			global::android.util.SparseBooleanArray._valueAt8599 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "valueAt", "(I)Z");
+			global::android.util.SparseBooleanArray._indexOfKey8600 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "indexOfKey", "(I)I");
+			global::android.util.SparseBooleanArray._indexOfValue8601 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "indexOfValue", "(Z)I");
+			global::android.util.SparseBooleanArray._SparseBooleanArray8602 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "<init>", "(I)V");
+			global::android.util.SparseBooleanArray._SparseBooleanArray8603 = @__env.GetMethodIDNoThrow(global::android.util.SparseBooleanArray.staticClass, "<init>", "()V");
 		}
 	}
 }

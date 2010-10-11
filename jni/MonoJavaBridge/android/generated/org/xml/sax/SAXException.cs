@@ -1,94 +1,92 @@
 namespace org.xml.sax
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SAXException : java.lang.Exception
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SAXException : java.lang.Exception
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SAXException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.SAXException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.xml.sax.SAXException(@__env);
-			}
-		}
-		protected SAXException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SAXException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCause14603;
+		internal static global::MonoJavaBridge.MethodId _getCause16523;
 		public override global::java.lang.Throwable getCause() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Throwable>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.SAXException._getCause14603));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException._getCause16523)) as java.lang.Throwable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Throwable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._getCause14603));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._getCause16523)) as java.lang.Throwable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString14604;
+		internal static global::MonoJavaBridge.MethodId _toString16524;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.SAXException._toString14604));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException._toString16524)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._toString14604));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._toString16524)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMessage14605;
+		internal static global::MonoJavaBridge.MethodId _getMessage16525;
 		public override global::java.lang.String getMessage() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.SAXException._getMessage14605));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException._getMessage16525)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._getMessage14605));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._getMessage16525)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getException14606;
+		internal static global::MonoJavaBridge.MethodId _getException16526;
 		public virtual global::java.lang.Exception getException() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Exception>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.SAXException._getException14606));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException._getException16526)) as java.lang.Exception;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Exception>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._getException14606));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._getException16526)) as java.lang.Exception;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException14607;
-		public SAXException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SAXException16527;
+		public SAXException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException14607, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException16527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException14608;
-		public SAXException(java.lang.Exception arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SAXException16528;
+		public SAXException(java.lang.Exception arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException14608, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException16528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException14609;
-		public SAXException(java.lang.String arg0, java.lang.Exception arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SAXException16529;
+		public SAXException(java.lang.String arg0, java.lang.Exception arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException14609, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException16529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException14610;
-		public SAXException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SAXException16530;
+		public SAXException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException14610, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXException.staticClass, global::org.xml.sax.SAXException._SAXException16530);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.xml.sax.SAXException.staticClass = @__class;
-			global::org.xml.sax.SAXException._getCause14603 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getCause", "()Ljava/lang/Throwable;");
-			global::org.xml.sax.SAXException._toString14604 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "toString", "()Ljava/lang/String;");
-			global::org.xml.sax.SAXException._getMessage14605 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::org.xml.sax.SAXException._getException14606 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getException", "()Ljava/lang/Exception;");
-			global::org.xml.sax.SAXException._SAXException14607 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::org.xml.sax.SAXException._SAXException14608 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
-			global::org.xml.sax.SAXException._SAXException14609 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V");
-			global::org.xml.sax.SAXException._SAXException14610 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.xml.sax.SAXException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/SAXException"));
+			global::org.xml.sax.SAXException._getCause16523 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "getCause", "()Ljava/lang/Throwable;");
+			global::org.xml.sax.SAXException._toString16524 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "toString", "()Ljava/lang/String;");
+			global::org.xml.sax.SAXException._getMessage16525 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::org.xml.sax.SAXException._getException16526 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "getException", "()Ljava/lang/Exception;");
+			global::org.xml.sax.SAXException._SAXException16527 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::org.xml.sax.SAXException._SAXException16528 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			global::org.xml.sax.SAXException._SAXException16529 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V");
+			global::org.xml.sax.SAXException._SAXException16530 = @__env.GetMethodIDNoThrow(global::org.xml.sax.SAXException.staticClass, "<init>", "()V");
 		}
 	}
 }

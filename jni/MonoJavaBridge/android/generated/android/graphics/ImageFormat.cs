@@ -1,34 +1,28 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ImageFormat : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ImageFormat : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ImageFormat()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.ImageFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.ImageFormat(@__env);
-			}
-		}
-		protected ImageFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ImageFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBitsPerPixel3133;
+		internal static global::MonoJavaBridge.MethodId _getBitsPerPixel3311;
 		public static int getBitsPerPixel(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel3133, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel3311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ImageFormat3134;
-		public ImageFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ImageFormat3312;
+		public ImageFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat3134, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat3312);
+			Init(@__env, handle);
 		}
 		public static int UNKNOWN
 		{
@@ -72,11 +66,12 @@ namespace android.graphics
 				return 256;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.ImageFormat.staticClass = @__class;
-			global::android.graphics.ImageFormat._getBitsPerPixel3133 = @__env.GetStaticMethodID(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
-			global::android.graphics.ImageFormat._ImageFormat3134 = @__env.GetMethodID(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.ImageFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ImageFormat"));
+			global::android.graphics.ImageFormat._getBitsPerPixel3311 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
+			global::android.graphics.ImageFormat._ImageFormat3312 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

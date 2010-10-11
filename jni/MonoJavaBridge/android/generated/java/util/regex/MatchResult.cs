@@ -1,7 +1,7 @@
 namespace java.util.regex
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface MatchResult 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.regex.MatchResult_))]
+	public interface MatchResult  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String group();
 		global::java.lang.String group(int arg0);
@@ -12,105 +12,91 @@ namespace java.util.regex
 		int groupCount();
 	}
 
-	public partial class MatchResult_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.regex.MatchResult))]
+	public sealed partial class MatchResult_ : java.lang.Object, MatchResult
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static MatchResult_()
 		{
-			get { return __MatchResult.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __MatchResult : java.lang.Object, MatchResult
-	{
-		internal static global::java.lang.Class staticClass;
-		static __MatchResult()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.regex.__MatchResult), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.regex.__MatchResult(@__env);
-			}
-		}
-		internal __MatchResult(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal MatchResult_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _group13884;
+		internal static global::MonoJavaBridge.MethodId _group15748;
 		 global::java.lang.String java.util.regex.MatchResult.group() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.__MatchResult._group13884));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.regex.MatchResult_._group15748)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._group13884));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._group15748)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _group13885;
+		internal static global::MonoJavaBridge.MethodId _group15749;
 		 global::java.lang.String java.util.regex.MatchResult.group(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.__MatchResult._group13885, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.regex.MatchResult_._group15749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._group13885, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._group15749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _start13886;
+		internal static global::MonoJavaBridge.MethodId _start15750;
 		 int java.util.regex.MatchResult.start() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._start13886);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_._start15750);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._start13886);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._start15750);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _start13887;
+		internal static global::MonoJavaBridge.MethodId _start15751;
 		 int java.util.regex.MatchResult.start(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._start13887, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_._start15751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._start13887, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._start15751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _end13888;
+		internal static global::MonoJavaBridge.MethodId _end15752;
 		 int java.util.regex.MatchResult.end() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._end13888);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_._end15752);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._end13888);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._end15752);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _end13889;
+		internal static global::MonoJavaBridge.MethodId _end15753;
 		 int java.util.regex.MatchResult.end(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._end13889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_._end15753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._end13889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._end15753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _groupCount13890;
+		internal static global::MonoJavaBridge.MethodId _groupCount15754;
 		 int java.util.regex.MatchResult.groupCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._groupCount13890);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_._groupCount15754);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._groupCount13890);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.MatchResult_.staticClass, global::java.util.regex.MatchResult_._groupCount15754);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.regex.__MatchResult.staticClass = @__class;
-			global::java.util.regex.__MatchResult._group13884 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.group", "()Ljava/lang/String;");
-			global::java.util.regex.__MatchResult._group13885 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.group", "(I)Ljava/lang/String;");
-			global::java.util.regex.__MatchResult._start13886 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.start", "()I");
-			global::java.util.regex.__MatchResult._start13887 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.start", "(I)I");
-			global::java.util.regex.__MatchResult._end13888 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.end", "()I");
-			global::java.util.regex.__MatchResult._end13889 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.end", "(I)I");
-			global::java.util.regex.__MatchResult._groupCount13890 = @__env.GetMethodID(global::java.util.regex.__MatchResult.staticClass, "java.util.regex.MatchResult.groupCount", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.regex.MatchResult_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/regex/MatchResult"));
+			global::java.util.regex.MatchResult_._group15748 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "group", "()Ljava/lang/String;");
+			global::java.util.regex.MatchResult_._group15749 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "group", "(I)Ljava/lang/String;");
+			global::java.util.regex.MatchResult_._start15750 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "start", "()I");
+			global::java.util.regex.MatchResult_._start15751 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "start", "(I)I");
+			global::java.util.regex.MatchResult_._end15752 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "end", "()I");
+			global::java.util.regex.MatchResult_._end15753 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "end", "(I)I");
+			global::java.util.regex.MatchResult_._groupCount15754 = @__env.GetMethodIDNoThrow(global::java.util.regex.MatchResult_.staticClass, "groupCount", "()I");
 		}
 	}
 }

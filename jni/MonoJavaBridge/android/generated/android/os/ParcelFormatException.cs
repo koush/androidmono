@@ -1,40 +1,36 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ParcelFormatException : java.lang.RuntimeException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ParcelFormatException : java.lang.RuntimeException
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ParcelFormatException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.ParcelFormatException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.ParcelFormatException(@__env);
-			}
-		}
-		protected ParcelFormatException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ParcelFormatException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ParcelFormatException6377;
-		public ParcelFormatException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ParcelFormatException6649;
+		public ParcelFormatException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException6377, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException6649);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ParcelFormatException6378;
-		public ParcelFormatException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ParcelFormatException6650;
+		public ParcelFormatException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException6378, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException6650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.ParcelFormatException.staticClass = @__class;
-			global::android.os.ParcelFormatException._ParcelFormatException6377 = @__env.GetMethodID(global::android.os.ParcelFormatException.staticClass, "<init>", "()V");
-			global::android.os.ParcelFormatException._ParcelFormatException6378 = @__env.GetMethodID(global::android.os.ParcelFormatException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.ParcelFormatException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ParcelFormatException"));
+			global::android.os.ParcelFormatException._ParcelFormatException6649 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFormatException.staticClass, "<init>", "()V");
+			global::android.os.ParcelFormatException._ParcelFormatException6650 = @__env.GetMethodIDNoThrow(global::android.os.ParcelFormatException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

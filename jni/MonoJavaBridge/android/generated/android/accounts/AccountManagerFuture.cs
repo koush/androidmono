@@ -1,7 +1,7 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface AccountManagerFuture 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.accounts.AccountManagerFuture_))]
+	public interface AccountManagerFuture  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool cancel(bool arg0);
 		bool isCancelled();
@@ -10,85 +10,71 @@ namespace android.accounts
 		global::java.lang.Object getResult(long arg0, java.util.concurrent.TimeUnit arg1);
 	}
 
-	public partial class AccountManagerFuture_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accounts.AccountManagerFuture))]
+	public sealed partial class AccountManagerFuture_ : java.lang.Object, AccountManagerFuture
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static AccountManagerFuture_()
 		{
-			get { return __AccountManagerFuture.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __AccountManagerFuture : java.lang.Object, AccountManagerFuture
-	{
-		internal static global::java.lang.Class staticClass;
-		static __AccountManagerFuture()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.__AccountManagerFuture), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.__AccountManagerFuture(@__env);
-			}
-		}
-		internal __AccountManagerFuture(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal AccountManagerFuture_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel92;
+		internal static global::MonoJavaBridge.MethodId _cancel101;
 		 bool android.accounts.AccountManagerFuture.cancel(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.accounts.__AccountManagerFuture._cancel92, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_._cancel101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.__AccountManagerFuture.staticClass, global::android.accounts.__AccountManagerFuture._cancel92, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._cancel101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isCancelled93;
+		internal static global::MonoJavaBridge.MethodId _isCancelled102;
 		 bool android.accounts.AccountManagerFuture.isCancelled() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.accounts.__AccountManagerFuture._isCancelled93);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_._isCancelled102);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.__AccountManagerFuture.staticClass, global::android.accounts.__AccountManagerFuture._isCancelled93);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._isCancelled102);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isDone94;
+		internal static global::MonoJavaBridge.MethodId _isDone103;
 		 bool android.accounts.AccountManagerFuture.isDone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.accounts.__AccountManagerFuture._isDone94);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_._isDone103);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.__AccountManagerFuture.staticClass, global::android.accounts.__AccountManagerFuture._isDone94);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._isDone103);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getResult95;
+		internal static global::MonoJavaBridge.MethodId _getResult104;
 		 global::java.lang.Object android.accounts.AccountManagerFuture.getResult() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.__AccountManagerFuture._getResult95));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_._getResult104)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.__AccountManagerFuture.staticClass, global::android.accounts.__AccountManagerFuture._getResult95));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._getResult104)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getResult96;
+		internal static global::MonoJavaBridge.MethodId _getResult105;
 		 global::java.lang.Object android.accounts.AccountManagerFuture.getResult(long arg0, java.util.concurrent.TimeUnit arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.__AccountManagerFuture._getResult96, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_._getResult105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.__AccountManagerFuture.staticClass, global::android.accounts.__AccountManagerFuture._getResult96, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._getResult105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.__AccountManagerFuture.staticClass = @__class;
-			global::android.accounts.__AccountManagerFuture._cancel92 = @__env.GetMethodID(global::android.accounts.__AccountManagerFuture.staticClass, "android.accounts.AccountManagerFuture.cancel", "(Z)Z");
-			global::android.accounts.__AccountManagerFuture._isCancelled93 = @__env.GetMethodID(global::android.accounts.__AccountManagerFuture.staticClass, "android.accounts.AccountManagerFuture.isCancelled", "()Z");
-			global::android.accounts.__AccountManagerFuture._isDone94 = @__env.GetMethodID(global::android.accounts.__AccountManagerFuture.staticClass, "android.accounts.AccountManagerFuture.isDone", "()Z");
-			global::android.accounts.__AccountManagerFuture._getResult95 = @__env.GetMethodID(global::android.accounts.__AccountManagerFuture.staticClass, "android.accounts.AccountManagerFuture.getResult", "()Ljava/lang/Object;");
-			global::android.accounts.__AccountManagerFuture._getResult96 = @__env.GetMethodID(global::android.accounts.__AccountManagerFuture.staticClass, "android.accounts.AccountManagerFuture.getResult", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.AccountManagerFuture_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerFuture"));
+			global::android.accounts.AccountManagerFuture_._cancel101 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "cancel", "(Z)Z");
+			global::android.accounts.AccountManagerFuture_._isCancelled102 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "isCancelled", "()Z");
+			global::android.accounts.AccountManagerFuture_._isDone103 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "isDone", "()Z");
+			global::android.accounts.AccountManagerFuture_._getResult104 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "getResult", "()Ljava/lang/Object;");
+			global::android.accounts.AccountManagerFuture_._getResult105 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerFuture_.staticClass, "getResult", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;");
 		}
 	}
 }

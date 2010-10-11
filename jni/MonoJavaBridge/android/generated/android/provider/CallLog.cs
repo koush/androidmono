@@ -1,54 +1,41 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class CallLog : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class CallLog : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static CallLog()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.CallLog), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.provider.CallLog(@__env);
-			}
-		}
-		protected CallLog(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected CallLog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class Calls : java.lang.Object, BaseColumns
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class Calls : java.lang.Object, BaseColumns
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static Calls()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.CallLog.Calls), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.provider.CallLog.Calls(@__env);
-				}
-			}
-			protected Calls(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected Calls(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getLastOutgoingCall6728;
+			internal static global::MonoJavaBridge.MethodId _getLastOutgoingCall7004;
 			public static global::java.lang.String getLastOutgoingCall(android.content.Context arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._getLastOutgoingCall6728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._getLastOutgoingCall7004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Calls6729;
-			public Calls()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _Calls7005;
+			public Calls()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._Calls6729, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._Calls7005);
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6730;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_URI7006;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
@@ -56,7 +43,7 @@ namespace android.provider
 					return default(global::android.net.Uri);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URI6731;
+			internal static global::MonoJavaBridge.FieldId _CONTENT_FILTER_URI7007;
 			public static global::android.net.Uri CONTENT_FILTER_URI
 			{
 				get
@@ -162,18 +149,20 @@ namespace android.provider
 					return "numberlabel";
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.provider.CallLog.Calls.staticClass = @__class;
-				global::android.provider.CallLog.Calls._getLastOutgoingCall6728 = @__env.GetStaticMethodID(global::android.provider.CallLog.Calls.staticClass, "getLastOutgoingCall", "(Landroid/content/Context;)Ljava/lang/String;");
-				global::android.provider.CallLog.Calls._Calls6729 = @__env.GetMethodID(global::android.provider.CallLog.Calls.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.provider.CallLog.Calls.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/CallLog$Calls"));
+				global::android.provider.CallLog.Calls._getLastOutgoingCall7004 = @__env.GetStaticMethodIDNoThrow(global::android.provider.CallLog.Calls.staticClass, "getLastOutgoingCall", "(Landroid/content/Context;)Ljava/lang/String;");
+				global::android.provider.CallLog.Calls._Calls7005 = @__env.GetMethodIDNoThrow(global::android.provider.CallLog.Calls.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _CallLog6732;
-		public CallLog()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _CallLog7008;
+		public CallLog()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.provider.CallLog.staticClass, global::android.provider.CallLog._CallLog6732, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.CallLog.staticClass, global::android.provider.CallLog._CallLog7008);
+			Init(@__env, handle);
 		}
 		public static global::java.lang.String AUTHORITY
 		{
@@ -182,7 +171,7 @@ namespace android.provider
 				return "call_log";
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6733;
+		internal static global::MonoJavaBridge.FieldId _CONTENT_URI7009;
 		public static global::android.net.Uri CONTENT_URI
 		{
 			get
@@ -190,10 +179,11 @@ namespace android.provider
 				return default(global::android.net.Uri);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.provider.CallLog.staticClass = @__class;
-			global::android.provider.CallLog._CallLog6732 = @__env.GetMethodID(global::android.provider.CallLog.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.provider.CallLog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/CallLog"));
+			global::android.provider.CallLog._CallLog7008 = @__env.GetMethodIDNoThrow(global::android.provider.CallLog.staticClass, "<init>", "()V");
 		}
 	}
 }

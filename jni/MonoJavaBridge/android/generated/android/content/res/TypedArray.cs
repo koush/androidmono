@@ -1,305 +1,300 @@
 namespace android.content.res
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class TypedArray : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class TypedArray : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TypedArray()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.res.TypedArray), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.res.TypedArray(@__env);
-			}
-		}
-		protected TypedArray(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected TypedArray(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString2187;
+		internal static global::MonoJavaBridge.MethodId _toString2341;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._toString2187));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._toString2341)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._toString2187));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._toString2341)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBoolean2188;
+		internal static global::MonoJavaBridge.MethodId _getBoolean2342;
 		public virtual bool getBoolean(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._getBoolean2188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray._getBoolean2342, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getBoolean2188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getBoolean2342, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInt2189;
+		internal static global::MonoJavaBridge.MethodId _getInt2343;
 		public virtual int getInt(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getInt2189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getInt2343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInt2189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInt2343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat2190;
+		internal static global::MonoJavaBridge.MethodId _getFloat2344;
 		public virtual float getFloat(int arg0, float arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getFloat2190, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.content.res.TypedArray._getFloat2344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFloat2190, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFloat2344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _length2191;
+		internal static global::MonoJavaBridge.MethodId _length2345;
 		public virtual int length() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._length2191);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._length2345);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._length2191);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._length2345);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getValue2192;
+		internal static global::MonoJavaBridge.MethodId _getValue2346;
 		public virtual bool getValue(int arg0, android.util.TypedValue arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._getValue2192, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray._getValue2346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getValue2192, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getValue2346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getResources2193;
+		internal static global::MonoJavaBridge.MethodId _getResources2347;
 		public virtual global::android.content.res.Resources getResources() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.Resources>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getResources2193));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getResources2347)) as android.content.res.Resources;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.Resources>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getResources2193));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getResources2347)) as android.content.res.Resources;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInteger2194;
+		internal static global::MonoJavaBridge.MethodId _getInteger2348;
 		public virtual int getInteger(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getInteger2194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getInteger2348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInteger2194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInteger2348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getString2195;
+		internal static global::MonoJavaBridge.MethodId _getString2349;
 		public virtual global::java.lang.String getString(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getString2195, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getString2349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getString2195, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getString2349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex2196;
+		internal static global::MonoJavaBridge.MethodId _getIndex2350;
 		public virtual int getIndex(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getIndex2196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getIndex2350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getIndex2196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getIndex2350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getText2197;
+		internal static global::MonoJavaBridge.MethodId _getText2351;
 		public virtual global::java.lang.CharSequence getText(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getText2197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getText2351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getText2197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getText2351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _recycle2198;
+		internal static global::MonoJavaBridge.MethodId _recycle2352;
 		public virtual void recycle() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.res.TypedArray._recycle2198);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.TypedArray._recycle2352);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._recycle2198);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._recycle2352);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextArray2199;
+		internal static global::MonoJavaBridge.MethodId _getTextArray2353;
 		public virtual global::java.lang.CharSequence[] getTextArray(int arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getTextArray2199, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getTextArray2353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getTextArray2199, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getTextArray2353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDimension2200;
+		internal static global::MonoJavaBridge.MethodId _getDimension2354;
 		public virtual float getDimension(int arg0, float arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getDimension2200, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.content.res.TypedArray._getDimension2354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimension2200, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimension2354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDimensionPixelOffset2201;
+		internal static global::MonoJavaBridge.MethodId _getDimensionPixelOffset2355;
 		public virtual int getDimensionPixelOffset(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getDimensionPixelOffset2201, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getDimensionPixelOffset2355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimensionPixelOffset2201, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimensionPixelOffset2355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDimensionPixelSize2202;
+		internal static global::MonoJavaBridge.MethodId _getDimensionPixelSize2356;
 		public virtual int getDimensionPixelSize(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getDimensionPixelSize2202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getDimensionPixelSize2356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimensionPixelSize2202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimensionPixelSize2356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFraction2203;
+		internal static global::MonoJavaBridge.MethodId _getFraction2357;
 		public virtual float getFraction(int arg0, int arg1, int arg2, float arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getFraction2203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.content.res.TypedArray._getFraction2357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFraction2203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFraction2357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDrawable2204;
+		internal static global::MonoJavaBridge.MethodId _getDrawable2358;
 		public virtual global::android.graphics.drawable.Drawable getDrawable(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getDrawable2204, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getDrawable2358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDrawable2204, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDrawable2358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColor2205;
+		internal static global::MonoJavaBridge.MethodId _getColor2359;
 		public virtual int getColor(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getColor2205, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getColor2359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColor2205, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColor2359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColorStateList2206;
+		internal static global::MonoJavaBridge.MethodId _getColorStateList2360;
 		public virtual global::android.content.res.ColorStateList getColorStateList(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getColorStateList2206, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getColorStateList2360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.ColorStateList;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColorStateList2206, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColorStateList2360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.ColorStateList;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPositionDescription2207;
+		internal static global::MonoJavaBridge.MethodId _getPositionDescription2361;
 		public virtual global::java.lang.String getPositionDescription() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getPositionDescription2207));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getPositionDescription2361)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getPositionDescription2207));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getPositionDescription2361)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndexCount2208;
+		internal static global::MonoJavaBridge.MethodId _getIndexCount2362;
 		public virtual int getIndexCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getIndexCount2208);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getIndexCount2362);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getIndexCount2208);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getIndexCount2362);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNonResourceString2209;
+		internal static global::MonoJavaBridge.MethodId _getNonResourceString2363;
 		public virtual global::java.lang.String getNonResourceString(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getNonResourceString2209, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getNonResourceString2363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getNonResourceString2209, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getNonResourceString2363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLayoutDimension2210;
+		internal static global::MonoJavaBridge.MethodId _getLayoutDimension2364;
 		public virtual int getLayoutDimension(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getLayoutDimension2210, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getLayoutDimension2364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getLayoutDimension2210, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getLayoutDimension2364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLayoutDimension2211;
+		internal static global::MonoJavaBridge.MethodId _getLayoutDimension2365;
 		public virtual int getLayoutDimension(int arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getLayoutDimension2211, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getLayoutDimension2365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getLayoutDimension2211, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getLayoutDimension2365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getResourceId2212;
+		internal static global::MonoJavaBridge.MethodId _getResourceId2366;
 		public virtual int getResourceId(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getResourceId2212, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.TypedArray._getResourceId2366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getResourceId2212, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getResourceId2366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasValue2213;
+		internal static global::MonoJavaBridge.MethodId _hasValue2367;
 		public virtual bool hasValue(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._hasValue2213, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray._hasValue2367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._hasValue2213, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._hasValue2367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _peekValue2214;
+		internal static global::MonoJavaBridge.MethodId _peekValue2368;
 		public virtual global::android.util.TypedValue peekValue(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.TypedValue>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._peekValue2214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._peekValue2368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.TypedValue;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.TypedValue>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._peekValue2214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._peekValue2368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.TypedValue;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.res.TypedArray.staticClass = @__class;
-			global::android.content.res.TypedArray._toString2187 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.res.TypedArray._getBoolean2188 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getBoolean", "(IZ)Z");
-			global::android.content.res.TypedArray._getInt2189 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getInt", "(II)I");
-			global::android.content.res.TypedArray._getFloat2190 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getFloat", "(IF)F");
-			global::android.content.res.TypedArray._length2191 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "length", "()I");
-			global::android.content.res.TypedArray._getValue2192 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getValue", "(ILandroid/util/TypedValue;)Z");
-			global::android.content.res.TypedArray._getResources2193 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getResources", "()Landroid/content/res/Resources;");
-			global::android.content.res.TypedArray._getInteger2194 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getInteger", "(II)I");
-			global::android.content.res.TypedArray._getString2195 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getString", "(I)Ljava/lang/String;");
-			global::android.content.res.TypedArray._getIndex2196 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getIndex", "(I)I");
-			global::android.content.res.TypedArray._getText2197 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getText", "(I)Ljava/lang/CharSequence;");
-			global::android.content.res.TypedArray._recycle2198 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "recycle", "()V");
-			global::android.content.res.TypedArray._getTextArray2199 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getTextArray", "(I)[Ljava/lang/CharSequence;");
-			global::android.content.res.TypedArray._getDimension2200 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getDimension", "(IF)F");
-			global::android.content.res.TypedArray._getDimensionPixelOffset2201 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getDimensionPixelOffset", "(II)I");
-			global::android.content.res.TypedArray._getDimensionPixelSize2202 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getDimensionPixelSize", "(II)I");
-			global::android.content.res.TypedArray._getFraction2203 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getFraction", "(IIIF)F");
-			global::android.content.res.TypedArray._getDrawable2204 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getDrawable", "(I)Landroid/graphics/drawable/Drawable;");
-			global::android.content.res.TypedArray._getColor2205 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getColor", "(II)I");
-			global::android.content.res.TypedArray._getColorStateList2206 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getColorStateList", "(I)Landroid/content/res/ColorStateList;");
-			global::android.content.res.TypedArray._getPositionDescription2207 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getPositionDescription", "()Ljava/lang/String;");
-			global::android.content.res.TypedArray._getIndexCount2208 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getIndexCount", "()I");
-			global::android.content.res.TypedArray._getNonResourceString2209 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getNonResourceString", "(I)Ljava/lang/String;");
-			global::android.content.res.TypedArray._getLayoutDimension2210 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getLayoutDimension", "(II)I");
-			global::android.content.res.TypedArray._getLayoutDimension2211 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getLayoutDimension", "(ILjava/lang/String;)I");
-			global::android.content.res.TypedArray._getResourceId2212 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getResourceId", "(II)I");
-			global::android.content.res.TypedArray._hasValue2213 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "hasValue", "(I)Z");
-			global::android.content.res.TypedArray._peekValue2214 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "peekValue", "(I)Landroid/util/TypedValue;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.res.TypedArray.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/TypedArray"));
+			global::android.content.res.TypedArray._toString2341 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.res.TypedArray._getBoolean2342 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getBoolean", "(IZ)Z");
+			global::android.content.res.TypedArray._getInt2343 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getInt", "(II)I");
+			global::android.content.res.TypedArray._getFloat2344 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getFloat", "(IF)F");
+			global::android.content.res.TypedArray._length2345 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "length", "()I");
+			global::android.content.res.TypedArray._getValue2346 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getValue", "(ILandroid/util/TypedValue;)Z");
+			global::android.content.res.TypedArray._getResources2347 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getResources", "()Landroid/content/res/Resources;");
+			global::android.content.res.TypedArray._getInteger2348 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getInteger", "(II)I");
+			global::android.content.res.TypedArray._getString2349 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getString", "(I)Ljava/lang/String;");
+			global::android.content.res.TypedArray._getIndex2350 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getIndex", "(I)I");
+			global::android.content.res.TypedArray._getText2351 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getText", "(I)Ljava/lang/CharSequence;");
+			global::android.content.res.TypedArray._recycle2352 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "recycle", "()V");
+			global::android.content.res.TypedArray._getTextArray2353 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getTextArray", "(I)[Ljava/lang/CharSequence;");
+			global::android.content.res.TypedArray._getDimension2354 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getDimension", "(IF)F");
+			global::android.content.res.TypedArray._getDimensionPixelOffset2355 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getDimensionPixelOffset", "(II)I");
+			global::android.content.res.TypedArray._getDimensionPixelSize2356 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getDimensionPixelSize", "(II)I");
+			global::android.content.res.TypedArray._getFraction2357 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getFraction", "(IIIF)F");
+			global::android.content.res.TypedArray._getDrawable2358 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getDrawable", "(I)Landroid/graphics/drawable/Drawable;");
+			global::android.content.res.TypedArray._getColor2359 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getColor", "(II)I");
+			global::android.content.res.TypedArray._getColorStateList2360 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getColorStateList", "(I)Landroid/content/res/ColorStateList;");
+			global::android.content.res.TypedArray._getPositionDescription2361 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getPositionDescription", "()Ljava/lang/String;");
+			global::android.content.res.TypedArray._getIndexCount2362 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getIndexCount", "()I");
+			global::android.content.res.TypedArray._getNonResourceString2363 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getNonResourceString", "(I)Ljava/lang/String;");
+			global::android.content.res.TypedArray._getLayoutDimension2364 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getLayoutDimension", "(II)I");
+			global::android.content.res.TypedArray._getLayoutDimension2365 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getLayoutDimension", "(ILjava/lang/String;)I");
+			global::android.content.res.TypedArray._getResourceId2366 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "getResourceId", "(II)I");
+			global::android.content.res.TypedArray._hasValue2367 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "hasValue", "(I)Z");
+			global::android.content.res.TypedArray._peekValue2368 = @__env.GetMethodIDNoThrow(global::android.content.res.TypedArray.staticClass, "peekValue", "(I)Landroid/util/TypedValue;");
 		}
 	}
 }

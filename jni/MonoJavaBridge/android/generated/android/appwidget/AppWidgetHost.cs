@@ -1,120 +1,115 @@
 namespace android.appwidget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AppWidgetHost : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AppWidgetHost : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AppWidgetHost()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.appwidget.AppWidgetHost), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.appwidget.AppWidgetHost(@__env);
-			}
-		}
-		protected AppWidgetHost(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AppWidgetHost(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCreateView941;
+		internal static global::MonoJavaBridge.MethodId _onCreateView956;
 		protected virtual global::android.appwidget.AppWidgetHostView onCreateView(android.content.Context arg0, int arg1, android.appwidget.AppWidgetProviderInfo arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetHostView>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetHost._onCreateView941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._onCreateView956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.appwidget.AppWidgetHostView;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetHostView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._onCreateView941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._onCreateView956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.appwidget.AppWidgetHostView;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createView942;
+		internal static global::MonoJavaBridge.MethodId _createView957;
 		public virtual global::android.appwidget.AppWidgetHostView createView(android.content.Context arg0, int arg1, android.appwidget.AppWidgetProviderInfo arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetHostView>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetHost._createView942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._createView957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.appwidget.AppWidgetHostView;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetHostView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._createView942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._createView957, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.appwidget.AppWidgetHostView;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startListening943;
+		internal static global::MonoJavaBridge.MethodId _startListening958;
 		public virtual void startListening() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetHost._startListening943);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._startListening958);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._startListening943);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._startListening958);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stopListening944;
+		internal static global::MonoJavaBridge.MethodId _stopListening959;
 		public virtual void stopListening() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetHost._stopListening944);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._stopListening959);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._stopListening944);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._stopListening959);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _allocateAppWidgetId945;
+		internal static global::MonoJavaBridge.MethodId _allocateAppWidgetId960;
 		public virtual int allocateAppWidgetId() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.appwidget.AppWidgetHost._allocateAppWidgetId945);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._allocateAppWidgetId960);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._allocateAppWidgetId945);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._allocateAppWidgetId960);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deleteAppWidgetId946;
+		internal static global::MonoJavaBridge.MethodId _deleteAppWidgetId961;
 		public virtual void deleteAppWidgetId(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetHost._deleteAppWidgetId946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._deleteAppWidgetId961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._deleteAppWidgetId946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._deleteAppWidgetId961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deleteHost947;
+		internal static global::MonoJavaBridge.MethodId _deleteHost962;
 		public virtual void deleteHost() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetHost._deleteHost947);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._deleteHost962);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._deleteHost947);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._deleteHost962);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deleteAllHosts948;
+		internal static global::MonoJavaBridge.MethodId _deleteAllHosts963;
 		public static void deleteAllHosts() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._deleteAllHosts948);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._deleteAllHosts963);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onProviderChanged949;
+		internal static global::MonoJavaBridge.MethodId _onProviderChanged964;
 		protected virtual void onProviderChanged(int arg0, android.appwidget.AppWidgetProviderInfo arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetHost._onProviderChanged949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost._onProviderChanged964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._onProviderChanged949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._onProviderChanged964, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetHost950;
-		public AppWidgetHost(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AppWidgetHost965;
+		public AppWidgetHost(android.content.Context arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._AppWidgetHost950, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.appwidget.AppWidgetHost.staticClass, global::android.appwidget.AppWidgetHost._AppWidgetHost965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.appwidget.AppWidgetHost.staticClass = @__class;
-			global::android.appwidget.AppWidgetHost._onCreateView941 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "onCreateView", "(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;");
-			global::android.appwidget.AppWidgetHost._createView942 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "createView", "(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;");
-			global::android.appwidget.AppWidgetHost._startListening943 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "startListening", "()V");
-			global::android.appwidget.AppWidgetHost._stopListening944 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "stopListening", "()V");
-			global::android.appwidget.AppWidgetHost._allocateAppWidgetId945 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "allocateAppWidgetId", "()I");
-			global::android.appwidget.AppWidgetHost._deleteAppWidgetId946 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "deleteAppWidgetId", "(I)V");
-			global::android.appwidget.AppWidgetHost._deleteHost947 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "deleteHost", "()V");
-			global::android.appwidget.AppWidgetHost._deleteAllHosts948 = @__env.GetStaticMethodID(global::android.appwidget.AppWidgetHost.staticClass, "deleteAllHosts", "()V");
-			global::android.appwidget.AppWidgetHost._onProviderChanged949 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "onProviderChanged", "(ILandroid/appwidget/AppWidgetProviderInfo;)V");
-			global::android.appwidget.AppWidgetHost._AppWidgetHost950 = @__env.GetMethodID(global::android.appwidget.AppWidgetHost.staticClass, "<init>", "(Landroid/content/Context;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.appwidget.AppWidgetHost.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/appwidget/AppWidgetHost"));
+			global::android.appwidget.AppWidgetHost._onCreateView956 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "onCreateView", "(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;");
+			global::android.appwidget.AppWidgetHost._createView957 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "createView", "(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;");
+			global::android.appwidget.AppWidgetHost._startListening958 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "startListening", "()V");
+			global::android.appwidget.AppWidgetHost._stopListening959 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "stopListening", "()V");
+			global::android.appwidget.AppWidgetHost._allocateAppWidgetId960 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "allocateAppWidgetId", "()I");
+			global::android.appwidget.AppWidgetHost._deleteAppWidgetId961 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "deleteAppWidgetId", "(I)V");
+			global::android.appwidget.AppWidgetHost._deleteHost962 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "deleteHost", "()V");
+			global::android.appwidget.AppWidgetHost._deleteAllHosts963 = @__env.GetStaticMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "deleteAllHosts", "()V");
+			global::android.appwidget.AppWidgetHost._onProviderChanged964 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "onProviderChanged", "(ILandroid/appwidget/AppWidgetProviderInfo;)V");
+			global::android.appwidget.AppWidgetHost._AppWidgetHost965 = @__env.GetMethodIDNoThrow(global::android.appwidget.AppWidgetHost.staticClass, "<init>", "(Landroid/content/Context;I)V");
 		}
 	}
 }

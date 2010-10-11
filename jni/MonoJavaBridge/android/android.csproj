@@ -751,7 +751,6 @@
     <Compile Include="generated\android\view\WindowManager_BadTokenException.cs" />
     <Compile Include="generated\android\view\WindowManager_LayoutParams.cs" />
     <Compile Include="generated\android\webkit\CacheManager.cs" />
-    <Compile Include="generated\android\webkit\CallbackProxy.cs" />
     <Compile Include="generated\android\webkit\ConsoleMessage.cs" />
     <Compile Include="generated\android\webkit\CookieManager.cs" />
     <Compile Include="generated\android\webkit\CookieSyncManager.cs" />
@@ -2314,10 +2313,8 @@
     <Compile Include="generated\org\xmlpull\v1\XmlPullParserException.cs" />
     <Compile Include="generated\org\xmlpull\v1\XmlPullParserFactory.cs" />
     <Compile Include="generated\org\xmlpull\v1\XmlSerializer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="android\OnClickListener.cs" />
-    <Compile Include="android\OnLongClickListener.cs" />
+    <Compile Include="java\lang\Object.cs" />
+    <Compile Include="java\lang\String.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -2345,15 +2342,13 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\JavaBridge\MonoJavaBridge.csproj">
-      <Project>{AEDFC761-C0ED-4A82-824F-60C6299A9086}</Project>
+      <Project>{9E6B94B9-A8CA-4497-838F-52620C9B6220}</Project>
       <Name>MonoJavaBridge</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\jni4net.n\jni4net.n.androidmono.csproj">
-      <Project>{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}</Project>
-      <Name>jni4net.n.androidmono</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="android\" />
+    <Folder Include="java\" />
+    <Folder Include="java\lang\" />
   </ItemGroup>
 </Project>

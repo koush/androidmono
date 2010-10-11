@@ -1,34 +1,28 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class CameraProfile : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class CameraProfile : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static CameraProfile()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.CameraProfile), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.CameraProfile(@__env);
-			}
-		}
-		protected CameraProfile(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected CameraProfile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getJpegEncodingQualityParameter4707;
+		internal static global::MonoJavaBridge.MethodId _getJpegEncodingQualityParameter4940;
 		public static int getJpegEncodingQualityParameter(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._getJpegEncodingQualityParameter4707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticIntMethod(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._getJpegEncodingQualityParameter4940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _CameraProfile4708;
-		public CameraProfile()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _CameraProfile4941;
+		public CameraProfile()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._CameraProfile4708, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._CameraProfile4941);
+			Init(@__env, handle);
 		}
 		public static int QUALITY_LOW
 		{
@@ -51,11 +45,12 @@ namespace android.media
 				return 2;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.CameraProfile.staticClass = @__class;
-			global::android.media.CameraProfile._getJpegEncodingQualityParameter4707 = @__env.GetStaticMethodID(global::android.media.CameraProfile.staticClass, "getJpegEncodingQualityParameter", "(I)I");
-			global::android.media.CameraProfile._CameraProfile4708 = @__env.GetMethodID(global::android.media.CameraProfile.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.CameraProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CameraProfile"));
+			global::android.media.CameraProfile._getJpegEncodingQualityParameter4940 = @__env.GetStaticMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "getJpegEncodingQualityParameter", "(I)I");
+			global::android.media.CameraProfile._CameraProfile4941 = @__env.GetMethodIDNoThrow(global::android.media.CameraProfile.staticClass, "<init>", "()V");
 		}
 	}
 }

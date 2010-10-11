@@ -1,7 +1,7 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class BaseColumnsConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class BaseColumnsConstants 
 	{
 		public static global::java.lang.String _ID
 		{

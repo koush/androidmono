@@ -1,64 +1,67 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ToneGenerator : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ToneGenerator : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ToneGenerator()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.ToneGenerator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.ToneGenerator(@__env);
-			}
-		}
-		protected ToneGenerator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ToneGenerator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _release4879;
+		internal static global::MonoJavaBridge.MethodId _finalize5117;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.ToneGenerator._finalize5117);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._finalize5117);
+		}
+		internal static global::MonoJavaBridge.MethodId _release5118;
 		public virtual void release() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.ToneGenerator._release4879);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.ToneGenerator._release5118);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._release4879);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._release5118);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startTone4880;
+		internal static global::MonoJavaBridge.MethodId _startTone5119;
 		public virtual bool startTone(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.ToneGenerator._startTone4880, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.ToneGenerator._startTone5119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone4880, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone5119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startTone4881;
+		internal static global::MonoJavaBridge.MethodId _startTone5120;
 		public virtual bool startTone(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.ToneGenerator._startTone4881, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.ToneGenerator._startTone5120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone4881, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone5120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stopTone4882;
+		internal static global::MonoJavaBridge.MethodId _stopTone5121;
 		public virtual void stopTone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.ToneGenerator._stopTone4882);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.ToneGenerator._stopTone5121);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._stopTone4882);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._stopTone5121);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ToneGenerator4883;
-		public ToneGenerator(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ToneGenerator5122;
+		public ToneGenerator(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._ToneGenerator4883, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._ToneGenerator5122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
 		public static int TONE_DTMF_0
 		{
@@ -767,14 +770,16 @@ namespace android.media
 				return 0;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.ToneGenerator.staticClass = @__class;
-			global::android.media.ToneGenerator._release4879 = @__env.GetMethodID(global::android.media.ToneGenerator.staticClass, "release", "()V");
-			global::android.media.ToneGenerator._startTone4880 = @__env.GetMethodID(global::android.media.ToneGenerator.staticClass, "startTone", "(I)Z");
-			global::android.media.ToneGenerator._startTone4881 = @__env.GetMethodID(global::android.media.ToneGenerator.staticClass, "startTone", "(II)Z");
-			global::android.media.ToneGenerator._stopTone4882 = @__env.GetMethodID(global::android.media.ToneGenerator.staticClass, "stopTone", "()V");
-			global::android.media.ToneGenerator._ToneGenerator4883 = @__env.GetMethodID(global::android.media.ToneGenerator.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.ToneGenerator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/ToneGenerator"));
+			global::android.media.ToneGenerator._finalize5117 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "finalize", "()V");
+			global::android.media.ToneGenerator._release5118 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "release", "()V");
+			global::android.media.ToneGenerator._startTone5119 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "startTone", "(I)Z");
+			global::android.media.ToneGenerator._startTone5120 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "startTone", "(II)Z");
+			global::android.media.ToneGenerator._stopTone5121 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "stopTone", "()V");
+			global::android.media.ToneGenerator._ToneGenerator5122 = @__env.GetMethodIDNoThrow(global::android.media.ToneGenerator.staticClass, "<init>", "(II)V");
 		}
 	}
 }

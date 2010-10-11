@@ -1,170 +1,329 @@
 namespace java.nio
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class IntBuffer : java.nio.Buffer, java.lang.Comparable
+	[global::MonoJavaBridge.JavaClass(typeof(global::java.nio.IntBuffer_))]
+	public abstract partial class IntBuffer : java.nio.Buffer, java.lang.Comparable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static IntBuffer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.IntBuffer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected IntBuffer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected IntBuffer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get12805;
+		internal static global::MonoJavaBridge.MethodId _get14225;
 		public abstract int get();
-		internal static global::net.sf.jni4net.jni.MethodId _get12806;
+		internal static global::MonoJavaBridge.MethodId _get14226;
 		public virtual global::java.nio.IntBuffer get(int[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.IntBuffer._get12806, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._get14226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._get12806, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._get14226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get12807;
+		internal static global::MonoJavaBridge.MethodId _get14227;
 		public virtual global::java.nio.IntBuffer get(int[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.IntBuffer._get12807, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._get14227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.IntBuffer;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._get12807, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._get14227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get12808;
+		internal static global::MonoJavaBridge.MethodId _get14228;
 		public abstract int get(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _put12809;
+		internal static global::MonoJavaBridge.MethodId _put14229;
 		public virtual global::java.nio.IntBuffer put(java.nio.IntBuffer arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.IntBuffer._put12809, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._put14229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._put12809, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._put14229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _put12810;
+		internal static global::MonoJavaBridge.MethodId _put14230;
 		public abstract global::java.nio.IntBuffer put(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _put12811;
+		internal static global::MonoJavaBridge.MethodId _put14231;
 		public abstract global::java.nio.IntBuffer put(int arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _put12812;
+		internal static global::MonoJavaBridge.MethodId _put14232;
 		public virtual global::java.nio.IntBuffer put(int[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.IntBuffer._put12812, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._put14232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.IntBuffer;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._put12812, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._put14232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _put12813;
+		internal static global::MonoJavaBridge.MethodId _put14233;
 		public virtual global::java.nio.IntBuffer put(int[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.IntBuffer._put12813, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._put14233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._put12813, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._put14233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12814;
+		internal static global::MonoJavaBridge.MethodId _equals14234;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.IntBuffer._equals12814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer._equals14234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._equals12814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._equals14234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12815;
+		internal static global::MonoJavaBridge.MethodId _toString14235;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.IntBuffer._toString12815));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._toString14235)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._toString12815));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._toString14235)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12816;
+		internal static global::MonoJavaBridge.MethodId _hashCode14236;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.IntBuffer._hashCode12816);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.IntBuffer._hashCode14236);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._hashCode12816);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._hashCode14236);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12817;
+		internal static global::MonoJavaBridge.MethodId _compareTo14237;
 		public virtual int compareTo(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.IntBuffer._compareTo12817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.IntBuffer._compareTo14237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._compareTo12817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._compareTo14237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12818;
+		internal static global::MonoJavaBridge.MethodId _compareTo14238;
 		public virtual int compareTo(java.nio.IntBuffer arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.IntBuffer._compareTo12818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.IntBuffer._compareTo14238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._compareTo12818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._compareTo14238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isDirect12819;
+		internal static global::MonoJavaBridge.MethodId _isDirect14239;
 		public abstract bool isDirect();
-		internal static global::net.sf.jni4net.jni.MethodId _wrap12820;
+		internal static global::MonoJavaBridge.MethodId _hasArray14240;
+		public sealed override bool hasArray() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer._hasArray14240);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._hasArray14240);
+		}
+		internal static global::MonoJavaBridge.MethodId _array14241;
+		public override global::java.lang.Object array() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer._array14241)) as java.lang.Object;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._array14241)) as java.lang.Object;
+		}
+		internal static global::MonoJavaBridge.MethodId _arrayOffset14242;
+		public sealed override int arrayOffset() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.IntBuffer._arrayOffset14242);
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._arrayOffset14242);
+		}
+		internal static global::MonoJavaBridge.MethodId _wrap14243;
 		public static global::java.nio.IntBuffer wrap(int[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._wrap12820, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._wrap14243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _wrap12821;
+		internal static global::MonoJavaBridge.MethodId _wrap14244;
 		public static global::java.nio.IntBuffer wrap(int[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._wrap12821, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._wrap14244, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _allocate12822;
+		internal static global::MonoJavaBridge.MethodId _allocate14245;
 		public static global::java.nio.IntBuffer allocate(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.IntBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._allocate12822, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.IntBuffer.staticClass, global::java.nio.IntBuffer._allocate14245, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _duplicate12823;
+		internal static global::MonoJavaBridge.MethodId _duplicate14246;
 		public abstract global::java.nio.IntBuffer duplicate();
-		internal static global::net.sf.jni4net.jni.MethodId _slice12824;
+		internal static global::MonoJavaBridge.MethodId _slice14247;
 		public abstract global::java.nio.IntBuffer slice();
-		internal static global::net.sf.jni4net.jni.MethodId _asReadOnlyBuffer12825;
+		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer14248;
 		public abstract global::java.nio.IntBuffer asReadOnlyBuffer();
-		internal static global::net.sf.jni4net.jni.MethodId _compact12826;
+		internal static global::MonoJavaBridge.MethodId _compact14249;
 		public abstract global::java.nio.IntBuffer compact();
-		internal static global::net.sf.jni4net.jni.MethodId _order12827;
+		internal static global::MonoJavaBridge.MethodId _order14250;
 		public abstract global::java.nio.ByteOrder order();
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.nio.IntBuffer.staticClass = @__class;
-			global::java.nio.IntBuffer._get12805 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "get", "()I");
-			global::java.nio.IntBuffer._get12806 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "get", "([I)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._get12807 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "get", "([III)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._get12808 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "get", "(I)I");
-			global::java.nio.IntBuffer._put12809 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "put", "(Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._put12810 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "put", "(I)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._put12811 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "put", "(II)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._put12812 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "put", "([III)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._put12813 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "put", "([I)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._equals12814 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.nio.IntBuffer._toString12815 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.nio.IntBuffer._hashCode12816 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "hashCode", "()I");
-			global::java.nio.IntBuffer._compareTo12817 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.nio.IntBuffer._compareTo12818 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "compareTo", "(Ljava/nio/IntBuffer;)I");
-			global::java.nio.IntBuffer._isDirect12819 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "isDirect", "()Z");
-			global::java.nio.IntBuffer._wrap12820 = @__env.GetStaticMethodID(global::java.nio.IntBuffer.staticClass, "wrap", "([III)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._wrap12821 = @__env.GetStaticMethodID(global::java.nio.IntBuffer.staticClass, "wrap", "([I)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._allocate12822 = @__env.GetStaticMethodID(global::java.nio.IntBuffer.staticClass, "allocate", "(I)Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._duplicate12823 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "duplicate", "()Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._slice12824 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "slice", "()Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._asReadOnlyBuffer12825 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "asReadOnlyBuffer", "()Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._compact12826 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "compact", "()Ljava/nio/IntBuffer;");
-			global::java.nio.IntBuffer._order12827 = @__env.GetMethodID(global::java.nio.IntBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.nio.IntBuffer.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/IntBuffer"));
+			global::java.nio.IntBuffer._get14225 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "get", "()I");
+			global::java.nio.IntBuffer._get14226 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "get", "([I)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._get14227 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "get", "([III)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._get14228 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "get", "(I)I");
+			global::java.nio.IntBuffer._put14229 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "put", "(Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._put14230 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "put", "(I)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._put14231 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "put", "(II)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._put14232 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "put", "([III)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._put14233 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "put", "([I)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._equals14234 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.nio.IntBuffer._toString14235 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.nio.IntBuffer._hashCode14236 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "hashCode", "()I");
+			global::java.nio.IntBuffer._compareTo14237 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.nio.IntBuffer._compareTo14238 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "compareTo", "(Ljava/nio/IntBuffer;)I");
+			global::java.nio.IntBuffer._isDirect14239 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "isDirect", "()Z");
+			global::java.nio.IntBuffer._hasArray14240 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "hasArray", "()Z");
+			global::java.nio.IntBuffer._array14241 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "array", "()Ljava/lang/Object;");
+			global::java.nio.IntBuffer._arrayOffset14242 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "arrayOffset", "()I");
+			global::java.nio.IntBuffer._wrap14243 = @__env.GetStaticMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "wrap", "([III)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._wrap14244 = @__env.GetStaticMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "wrap", "([I)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._allocate14245 = @__env.GetStaticMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "allocate", "(I)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._duplicate14246 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "duplicate", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._slice14247 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "slice", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._asReadOnlyBuffer14248 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "asReadOnlyBuffer", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._compact14249 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "compact", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer._order14250 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.nio.IntBuffer))]
+	public sealed partial class IntBuffer_ : java.nio.IntBuffer
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static IntBuffer_()
+		{
+			InitJNI();
+		}
+		internal IntBuffer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _get14251;
+		public override int get() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.IntBuffer_._get14251);
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._get14251);
+		}
+		internal static global::MonoJavaBridge.MethodId _get14252;
+		public override int get(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.IntBuffer_._get14252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._get14252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _put14253;
+		public override global::java.nio.IntBuffer put(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._put14253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._put14253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.IntBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _put14254;
+		public override global::java.nio.IntBuffer put(int arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._put14254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.nio.IntBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._put14254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.nio.IntBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _isDirect14255;
+		public override bool isDirect() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer_._isDirect14255);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._isDirect14255);
+		}
+		internal static global::MonoJavaBridge.MethodId _duplicate14256;
+		public override global::java.nio.IntBuffer duplicate() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._duplicate14256)) as java.nio.IntBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._duplicate14256)) as java.nio.IntBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _slice14257;
+		public override global::java.nio.IntBuffer slice() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._slice14257)) as java.nio.IntBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._slice14257)) as java.nio.IntBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer14258;
+		public override global::java.nio.IntBuffer asReadOnlyBuffer() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._asReadOnlyBuffer14258)) as java.nio.IntBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._asReadOnlyBuffer14258)) as java.nio.IntBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _compact14259;
+		public override global::java.nio.IntBuffer compact() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._compact14259)) as java.nio.IntBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._compact14259)) as java.nio.IntBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _order14260;
+		public override global::java.nio.ByteOrder order() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_._order14260)) as java.nio.ByteOrder;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._order14260)) as java.nio.ByteOrder;
+		}
+		internal static global::MonoJavaBridge.MethodId _isReadOnly14261;
+		public override bool isReadOnly() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer_._isReadOnly14261);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.IntBuffer_.staticClass, global::java.nio.IntBuffer_._isReadOnly14261);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.nio.IntBuffer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/IntBuffer"));
+			global::java.nio.IntBuffer_._get14251 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "get", "()I");
+			global::java.nio.IntBuffer_._get14252 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "get", "(I)I");
+			global::java.nio.IntBuffer_._put14253 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "put", "(I)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer_._put14254 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "put", "(II)Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer_._isDirect14255 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "isDirect", "()Z");
+			global::java.nio.IntBuffer_._duplicate14256 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "duplicate", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer_._slice14257 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "slice", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer_._asReadOnlyBuffer14258 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "asReadOnlyBuffer", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer_._compact14259 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "compact", "()Ljava/nio/IntBuffer;");
+			global::java.nio.IntBuffer_._order14260 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "order", "()Ljava/nio/ByteOrder;");
+			global::java.nio.IntBuffer_._isReadOnly14261 = @__env.GetMethodIDNoThrow(global::java.nio.IntBuffer_.staticClass, "isReadOnly", "()Z");
 		}
 	}
 }

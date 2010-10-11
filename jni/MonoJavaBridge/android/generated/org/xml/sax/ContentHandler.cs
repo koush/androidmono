@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface ContentHandler 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ContentHandler_))]
+	public interface ContentHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, org.xml.sax.Attributes arg3);
 		void characters(char[] arg0, int arg1, int arg2);
@@ -16,145 +16,131 @@ namespace org.xml.sax
 		void endPrefixMapping(java.lang.String arg0);
 	}
 
-	public partial class ContentHandler_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.xml.sax.ContentHandler))]
+	public sealed partial class ContentHandler_ : java.lang.Object, ContentHandler
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ContentHandler_()
 		{
-			get { return __ContentHandler.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ContentHandler : java.lang.Object, ContentHandler
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ContentHandler()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__ContentHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.xml.sax.__ContentHandler(@__env);
-			}
-		}
-		internal __ContentHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ContentHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startElement14568;
+		internal static global::MonoJavaBridge.MethodId _startElement16488;
 		 void org.xml.sax.ContentHandler.startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, org.xml.sax.Attributes arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startElement14568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._startElement16488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startElement14568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._startElement16488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _characters14569;
+		internal static global::MonoJavaBridge.MethodId _characters16489;
 		 void org.xml.sax.ContentHandler.characters(char[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._characters14569, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._characters16489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._characters14569, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._characters16489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endElement14570;
+		internal static global::MonoJavaBridge.MethodId _endElement16490;
 		 void org.xml.sax.ContentHandler.endElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endElement14570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._endElement16490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endElement14570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._endElement16490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startDocument14571;
+		internal static global::MonoJavaBridge.MethodId _startDocument16491;
 		 void org.xml.sax.ContentHandler.startDocument() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startDocument14571);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._startDocument16491);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startDocument14571);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._startDocument16491);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endDocument14572;
+		internal static global::MonoJavaBridge.MethodId _endDocument16492;
 		 void org.xml.sax.ContentHandler.endDocument() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endDocument14572);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._endDocument16492);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endDocument14572);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._endDocument16492);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startPrefixMapping14573;
+		internal static global::MonoJavaBridge.MethodId _startPrefixMapping16493;
 		 void org.xml.sax.ContentHandler.startPrefixMapping(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startPrefixMapping14573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._startPrefixMapping16493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startPrefixMapping14573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._startPrefixMapping16493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ignorableWhitespace14574;
+		internal static global::MonoJavaBridge.MethodId _ignorableWhitespace16494;
 		 void org.xml.sax.ContentHandler.ignorableWhitespace(char[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._ignorableWhitespace14574, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._ignorableWhitespace16494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._ignorableWhitespace14574, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._ignorableWhitespace16494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _processingInstruction14575;
+		internal static global::MonoJavaBridge.MethodId _processingInstruction16495;
 		 void org.xml.sax.ContentHandler.processingInstruction(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._processingInstruction14575, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._processingInstruction16495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._processingInstruction14575, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._processingInstruction16495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDocumentLocator14576;
+		internal static global::MonoJavaBridge.MethodId _setDocumentLocator16496;
 		 void org.xml.sax.ContentHandler.setDocumentLocator(org.xml.sax.Locator arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._setDocumentLocator14576, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._setDocumentLocator16496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._setDocumentLocator14576, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._setDocumentLocator16496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _skippedEntity14577;
+		internal static global::MonoJavaBridge.MethodId _skippedEntity16497;
 		 void org.xml.sax.ContentHandler.skippedEntity(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._skippedEntity14577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._skippedEntity16497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._skippedEntity14577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._skippedEntity16497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endPrefixMapping14578;
+		internal static global::MonoJavaBridge.MethodId _endPrefixMapping16498;
 		 void org.xml.sax.ContentHandler.endPrefixMapping(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endPrefixMapping14578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_._endPrefixMapping16498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endPrefixMapping14578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ContentHandler_.staticClass, global::org.xml.sax.ContentHandler_._endPrefixMapping16498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.xml.sax.__ContentHandler.staticClass = @__class;
-			global::org.xml.sax.__ContentHandler._startElement14568 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V");
-			global::org.xml.sax.__ContentHandler._characters14569 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.characters", "([CII)V");
-			global::org.xml.sax.__ContentHandler._endElement14570 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._startDocument14571 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startDocument", "()V");
-			global::org.xml.sax.__ContentHandler._endDocument14572 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endDocument", "()V");
-			global::org.xml.sax.__ContentHandler._startPrefixMapping14573 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._ignorableWhitespace14574 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.ignorableWhitespace", "([CII)V");
-			global::org.xml.sax.__ContentHandler._processingInstruction14575 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._setDocumentLocator14576 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
-			global::org.xml.sax.__ContentHandler._skippedEntity14577 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.skippedEntity", "(Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._endPrefixMapping14578 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endPrefixMapping", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.xml.sax.ContentHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ContentHandler"));
+			global::org.xml.sax.ContentHandler_._startElement16488 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V");
+			global::org.xml.sax.ContentHandler_._characters16489 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "characters", "([CII)V");
+			global::org.xml.sax.ContentHandler_._endElement16490 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ContentHandler_._startDocument16491 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "startDocument", "()V");
+			global::org.xml.sax.ContentHandler_._endDocument16492 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "endDocument", "()V");
+			global::org.xml.sax.ContentHandler_._startPrefixMapping16493 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ContentHandler_._ignorableWhitespace16494 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "ignorableWhitespace", "([CII)V");
+			global::org.xml.sax.ContentHandler_._processingInstruction16495 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ContentHandler_._setDocumentLocator16496 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
+			global::org.xml.sax.ContentHandler_._skippedEntity16497 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "skippedEntity", "(Ljava/lang/String;)V");
+			global::org.xml.sax.ContentHandler_._endPrefixMapping16498 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ContentHandler_.staticClass, "endPrefixMapping", "(Ljava/lang/String;)V");
 		}
 	}
 }

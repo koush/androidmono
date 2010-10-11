@@ -1,342 +1,342 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Date : java.lang.Object, java.io.Serializable, java.lang.Cloneable, java.lang.Comparable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Date : java.lang.Object, java.io.Serializable, java.lang.Cloneable, java.lang.Comparable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Date()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.Date), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.Date(@__env);
-			}
-		}
-		protected Date(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Date(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13646;
+		internal static global::MonoJavaBridge.MethodId _equals15358;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Date._equals13646, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Date._equals15358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._equals13646, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._equals15358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13647;
+		internal static global::MonoJavaBridge.MethodId _toString15359;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toString13647));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Date._toString15359)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toString13647));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._toString15359)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13648;
+		internal static global::MonoJavaBridge.MethodId _hashCode15360;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._hashCode13648);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._hashCode15360);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._hashCode13648);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._hashCode15360);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone13649;
-		public virtual global::java.lang.Object clone() 
+		internal static global::MonoJavaBridge.MethodId _clone15361;
+		public virtual new global::java.lang.Object clone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._clone13649));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Date._clone15361)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._clone13649));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._clone15361)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo13650;
+		internal static global::MonoJavaBridge.MethodId _compareTo15362;
 		public virtual int compareTo(java.util.Date arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._compareTo13650, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._compareTo15362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo13650, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._compareTo15362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo13651;
+		internal static global::MonoJavaBridge.MethodId _compareTo15363;
 		public virtual int compareTo(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._compareTo13651, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._compareTo15363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo13651, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._compareTo15363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _after13652;
+		internal static global::MonoJavaBridge.MethodId _after15364;
 		public virtual bool after(java.util.Date arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Date._after13652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Date._after15364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._after13652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._after15364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _before13653;
+		internal static global::MonoJavaBridge.MethodId _before15365;
 		public virtual bool before(java.util.Date arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Date._before13653, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Date._before15365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._before13653, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._before15365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _parse13654;
+		internal static global::MonoJavaBridge.MethodId _parse15366;
 		public static long parse(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(java.util.Date.staticClass, global::java.util.Date._parse13654, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticLongMethod(java.util.Date.staticClass, global::java.util.Date._parse15366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTime13655;
+		internal static global::MonoJavaBridge.MethodId _setTime15367;
 		public virtual void setTime(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setTime13655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setTime15367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setTime13655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setTime15367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTime13656;
+		internal static global::MonoJavaBridge.MethodId _getTime15368;
 		public virtual long getTime() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.util.Date._getTime13656);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.Date._getTime15368);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getTime13656);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getTime15368);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYear13657;
+		internal static global::MonoJavaBridge.MethodId _getYear15369;
 		public virtual int getYear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getYear13657);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getYear15369);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getYear13657);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getYear15369);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMonth13658;
+		internal static global::MonoJavaBridge.MethodId _getMonth15370;
 		public virtual int getMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getMonth13658);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getMonth15370);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getMonth13658);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getMonth15370);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDate13659;
+		internal static global::MonoJavaBridge.MethodId _getDate15371;
 		public virtual int getDate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getDate13659);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getDate15371);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getDate13659);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getDate15371);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHours13660;
+		internal static global::MonoJavaBridge.MethodId _getHours15372;
 		public virtual int getHours() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getHours13660);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getHours15372);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getHours13660);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getHours15372);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMinutes13661;
+		internal static global::MonoJavaBridge.MethodId _getMinutes15373;
 		public virtual int getMinutes() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getMinutes13661);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getMinutes15373);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getMinutes13661);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getMinutes15373);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSeconds13662;
+		internal static global::MonoJavaBridge.MethodId _getSeconds15374;
 		public virtual int getSeconds() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getSeconds13662);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getSeconds15374);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getSeconds13662);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getSeconds15374);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _UTC13663;
+		internal static global::MonoJavaBridge.MethodId _UTC15375;
 		public static long UTC(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(java.util.Date.staticClass, global::java.util.Date._UTC13663, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticLongMethod(java.util.Date.staticClass, global::java.util.Date._UTC15375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDate13664;
+		internal static global::MonoJavaBridge.MethodId _setDate15376;
 		public virtual void setDate(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setDate13664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setDate15376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setDate13664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setDate15376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMonth13665;
+		internal static global::MonoJavaBridge.MethodId _setMonth15377;
 		public virtual void setMonth(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setMonth13665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setMonth15377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setMonth13665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setMonth15377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHours13666;
+		internal static global::MonoJavaBridge.MethodId _setHours15378;
 		public virtual void setHours(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setHours13666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setHours15378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setHours13666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setHours15378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMinutes13667;
+		internal static global::MonoJavaBridge.MethodId _setMinutes15379;
 		public virtual void setMinutes(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setMinutes13667, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setMinutes15379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setMinutes13667, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setMinutes15379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSeconds13668;
+		internal static global::MonoJavaBridge.MethodId _setSeconds15380;
 		public virtual void setSeconds(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setSeconds13668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setSeconds15380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setSeconds13668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setSeconds15380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setYear13669;
+		internal static global::MonoJavaBridge.MethodId _setYear15381;
 		public virtual void setYear(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Date._setYear13669, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Date._setYear15381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setYear13669, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._setYear15381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDay13670;
+		internal static global::MonoJavaBridge.MethodId _getDay15382;
 		public virtual int getDay() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getDay13670);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getDay15382);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getDay13670);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getDay15382);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toLocaleString13671;
+		internal static global::MonoJavaBridge.MethodId _toLocaleString15383;
 		public virtual global::java.lang.String toLocaleString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toLocaleString13671));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Date._toLocaleString15383)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toLocaleString13671));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._toLocaleString15383)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toGMTString13672;
+		internal static global::MonoJavaBridge.MethodId _toGMTString15384;
 		public virtual global::java.lang.String toGMTString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toGMTString13672));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Date._toGMTString15384)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toGMTString13672));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._toGMTString15384)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimezoneOffset13673;
+		internal static global::MonoJavaBridge.MethodId _getTimezoneOffset15385;
 		public virtual int getTimezoneOffset() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._getTimezoneOffset13673);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Date._getTimezoneOffset15385);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getTimezoneOffset13673);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Date.staticClass, global::java.util.Date._getTimezoneOffset15385);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Date13674;
-		public Date()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Date15386;
+		public Date()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date13674, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date15386);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Date13675;
-		public Date(long arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Date15387;
+		public Date(long arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date13675, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date15387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Date13676;
-		public Date(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Date15388;
+		public Date(int arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date13676, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date15388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Date13677;
-		public Date(int arg0, int arg1, int arg2, int arg3, int arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Date15389;
+		public Date(int arg0, int arg1, int arg2, int arg3, int arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date13677, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date15389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Date13678;
-		public Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Date15390;
+		public Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date13678, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date15390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Date13679;
-		public Date(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Date15391;
+		public Date(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date13679, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Date.staticClass, global::java.util.Date._Date15391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.Date.staticClass = @__class;
-			global::java.util.Date._equals13646 = @__env.GetMethodID(global::java.util.Date.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.Date._toString13647 = @__env.GetMethodID(global::java.util.Date.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.util.Date._hashCode13648 = @__env.GetMethodID(global::java.util.Date.staticClass, "hashCode", "()I");
-			global::java.util.Date._clone13649 = @__env.GetMethodID(global::java.util.Date.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.Date._compareTo13650 = @__env.GetMethodID(global::java.util.Date.staticClass, "compareTo", "(Ljava/util/Date;)I");
-			global::java.util.Date._compareTo13651 = @__env.GetMethodID(global::java.util.Date.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.util.Date._after13652 = @__env.GetMethodID(global::java.util.Date.staticClass, "after", "(Ljava/util/Date;)Z");
-			global::java.util.Date._before13653 = @__env.GetMethodID(global::java.util.Date.staticClass, "before", "(Ljava/util/Date;)Z");
-			global::java.util.Date._parse13654 = @__env.GetStaticMethodID(global::java.util.Date.staticClass, "parse", "(Ljava/lang/String;)J");
-			global::java.util.Date._setTime13655 = @__env.GetMethodID(global::java.util.Date.staticClass, "setTime", "(J)V");
-			global::java.util.Date._getTime13656 = @__env.GetMethodID(global::java.util.Date.staticClass, "getTime", "()J");
-			global::java.util.Date._getYear13657 = @__env.GetMethodID(global::java.util.Date.staticClass, "getYear", "()I");
-			global::java.util.Date._getMonth13658 = @__env.GetMethodID(global::java.util.Date.staticClass, "getMonth", "()I");
-			global::java.util.Date._getDate13659 = @__env.GetMethodID(global::java.util.Date.staticClass, "getDate", "()I");
-			global::java.util.Date._getHours13660 = @__env.GetMethodID(global::java.util.Date.staticClass, "getHours", "()I");
-			global::java.util.Date._getMinutes13661 = @__env.GetMethodID(global::java.util.Date.staticClass, "getMinutes", "()I");
-			global::java.util.Date._getSeconds13662 = @__env.GetMethodID(global::java.util.Date.staticClass, "getSeconds", "()I");
-			global::java.util.Date._UTC13663 = @__env.GetStaticMethodID(global::java.util.Date.staticClass, "UTC", "(IIIIII)J");
-			global::java.util.Date._setDate13664 = @__env.GetMethodID(global::java.util.Date.staticClass, "setDate", "(I)V");
-			global::java.util.Date._setMonth13665 = @__env.GetMethodID(global::java.util.Date.staticClass, "setMonth", "(I)V");
-			global::java.util.Date._setHours13666 = @__env.GetMethodID(global::java.util.Date.staticClass, "setHours", "(I)V");
-			global::java.util.Date._setMinutes13667 = @__env.GetMethodID(global::java.util.Date.staticClass, "setMinutes", "(I)V");
-			global::java.util.Date._setSeconds13668 = @__env.GetMethodID(global::java.util.Date.staticClass, "setSeconds", "(I)V");
-			global::java.util.Date._setYear13669 = @__env.GetMethodID(global::java.util.Date.staticClass, "setYear", "(I)V");
-			global::java.util.Date._getDay13670 = @__env.GetMethodID(global::java.util.Date.staticClass, "getDay", "()I");
-			global::java.util.Date._toLocaleString13671 = @__env.GetMethodID(global::java.util.Date.staticClass, "toLocaleString", "()Ljava/lang/String;");
-			global::java.util.Date._toGMTString13672 = @__env.GetMethodID(global::java.util.Date.staticClass, "toGMTString", "()Ljava/lang/String;");
-			global::java.util.Date._getTimezoneOffset13673 = @__env.GetMethodID(global::java.util.Date.staticClass, "getTimezoneOffset", "()I");
-			global::java.util.Date._Date13674 = @__env.GetMethodID(global::java.util.Date.staticClass, "<init>", "()V");
-			global::java.util.Date._Date13675 = @__env.GetMethodID(global::java.util.Date.staticClass, "<init>", "(J)V");
-			global::java.util.Date._Date13676 = @__env.GetMethodID(global::java.util.Date.staticClass, "<init>", "(III)V");
-			global::java.util.Date._Date13677 = @__env.GetMethodID(global::java.util.Date.staticClass, "<init>", "(IIIII)V");
-			global::java.util.Date._Date13678 = @__env.GetMethodID(global::java.util.Date.staticClass, "<init>", "(IIIIII)V");
-			global::java.util.Date._Date13679 = @__env.GetMethodID(global::java.util.Date.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Date.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Date"));
+			global::java.util.Date._equals15358 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.Date._toString15359 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Date._hashCode15360 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "hashCode", "()I");
+			global::java.util.Date._clone15361 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.util.Date._compareTo15362 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "compareTo", "(Ljava/util/Date;)I");
+			global::java.util.Date._compareTo15363 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.util.Date._after15364 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "after", "(Ljava/util/Date;)Z");
+			global::java.util.Date._before15365 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "before", "(Ljava/util/Date;)Z");
+			global::java.util.Date._parse15366 = @__env.GetStaticMethodIDNoThrow(global::java.util.Date.staticClass, "parse", "(Ljava/lang/String;)J");
+			global::java.util.Date._setTime15367 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setTime", "(J)V");
+			global::java.util.Date._getTime15368 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getTime", "()J");
+			global::java.util.Date._getYear15369 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getYear", "()I");
+			global::java.util.Date._getMonth15370 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getMonth", "()I");
+			global::java.util.Date._getDate15371 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getDate", "()I");
+			global::java.util.Date._getHours15372 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getHours", "()I");
+			global::java.util.Date._getMinutes15373 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getMinutes", "()I");
+			global::java.util.Date._getSeconds15374 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getSeconds", "()I");
+			global::java.util.Date._UTC15375 = @__env.GetStaticMethodIDNoThrow(global::java.util.Date.staticClass, "UTC", "(IIIIII)J");
+			global::java.util.Date._setDate15376 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setDate", "(I)V");
+			global::java.util.Date._setMonth15377 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setMonth", "(I)V");
+			global::java.util.Date._setHours15378 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setHours", "(I)V");
+			global::java.util.Date._setMinutes15379 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setMinutes", "(I)V");
+			global::java.util.Date._setSeconds15380 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setSeconds", "(I)V");
+			global::java.util.Date._setYear15381 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "setYear", "(I)V");
+			global::java.util.Date._getDay15382 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getDay", "()I");
+			global::java.util.Date._toLocaleString15383 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "toLocaleString", "()Ljava/lang/String;");
+			global::java.util.Date._toGMTString15384 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "toGMTString", "()Ljava/lang/String;");
+			global::java.util.Date._getTimezoneOffset15385 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "getTimezoneOffset", "()I");
+			global::java.util.Date._Date15386 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "()V");
+			global::java.util.Date._Date15387 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(J)V");
+			global::java.util.Date._Date15388 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(III)V");
+			global::java.util.Date._Date15389 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(IIIII)V");
+			global::java.util.Date._Date15390 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(IIIIII)V");
+			global::java.util.Date._Date15391 = @__env.GetMethodIDNoThrow(global::java.util.Date.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

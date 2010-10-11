@@ -1,137 +1,134 @@
 namespace java.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class FieldPosition : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class FieldPosition : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static FieldPosition()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.text.FieldPosition), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.text.FieldPosition(@__env);
-			}
-		}
-		protected FieldPosition(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected FieldPosition(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13422;
+		internal static global::MonoJavaBridge.MethodId _equals15098;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.text.FieldPosition._equals13422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.FieldPosition._equals15098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._equals13422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._equals15098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13423;
+		internal static global::MonoJavaBridge.MethodId _toString15099;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.FieldPosition._toString13423));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.FieldPosition._toString15099)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._toString13423));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._toString15099)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13424;
+		internal static global::MonoJavaBridge.MethodId _hashCode15100;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.FieldPosition._hashCode13424);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.FieldPosition._hashCode15100);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._hashCode13424);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._hashCode15100);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getField13425;
+		internal static global::MonoJavaBridge.MethodId _getField15101;
 		public virtual int getField() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.FieldPosition._getField13425);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.FieldPosition._getField15101);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getField13425);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getField15101);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBeginIndex13426;
+		internal static global::MonoJavaBridge.MethodId _getBeginIndex15102;
 		public virtual int getBeginIndex() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.FieldPosition._getBeginIndex13426);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.FieldPosition._getBeginIndex15102);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getBeginIndex13426);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getBeginIndex15102);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEndIndex13427;
+		internal static global::MonoJavaBridge.MethodId _getEndIndex15103;
 		public virtual int getEndIndex() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.FieldPosition._getEndIndex13427);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.FieldPosition._getEndIndex15103);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getEndIndex13427);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getEndIndex15103);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFieldAttribute13428;
+		internal static global::MonoJavaBridge.MethodId _getFieldAttribute15104;
 		public virtual global::java.text.Format.Field getFieldAttribute() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.Format.Field>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.FieldPosition._getFieldAttribute13428));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.FieldPosition._getFieldAttribute15104)) as java.text.Format.Field;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.Format.Field>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getFieldAttribute13428));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getFieldAttribute15104)) as java.text.Format.Field;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setBeginIndex13429;
+		internal static global::MonoJavaBridge.MethodId _setBeginIndex15105;
 		public virtual void setBeginIndex(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.text.FieldPosition._setBeginIndex13429, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.FieldPosition._setBeginIndex15105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setBeginIndex13429, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setBeginIndex15105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEndIndex13430;
+		internal static global::MonoJavaBridge.MethodId _setEndIndex15106;
 		public virtual void setEndIndex(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.text.FieldPosition._setEndIndex13430, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.FieldPosition._setEndIndex15106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setEndIndex13430, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setEndIndex15106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _FieldPosition13431;
-		public FieldPosition(java.text.Format.Field arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _FieldPosition15107;
+		public FieldPosition(java.text.Format.Field arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.text.FieldPosition.staticClass, global::java.text.FieldPosition._FieldPosition13431, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.FieldPosition.staticClass, global::java.text.FieldPosition._FieldPosition15107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _FieldPosition13432;
-		public FieldPosition(java.text.Format.Field arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _FieldPosition15108;
+		public FieldPosition(java.text.Format.Field arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.text.FieldPosition.staticClass, global::java.text.FieldPosition._FieldPosition13432, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.FieldPosition.staticClass, global::java.text.FieldPosition._FieldPosition15108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _FieldPosition13433;
-		public FieldPosition(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _FieldPosition15109;
+		public FieldPosition(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.text.FieldPosition.staticClass, global::java.text.FieldPosition._FieldPosition13433, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.FieldPosition.staticClass, global::java.text.FieldPosition._FieldPosition15109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.text.FieldPosition.staticClass = @__class;
-			global::java.text.FieldPosition._equals13422 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.text.FieldPosition._toString13423 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.text.FieldPosition._hashCode13424 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "hashCode", "()I");
-			global::java.text.FieldPosition._getField13425 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getField", "()I");
-			global::java.text.FieldPosition._getBeginIndex13426 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getBeginIndex", "()I");
-			global::java.text.FieldPosition._getEndIndex13427 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getEndIndex", "()I");
-			global::java.text.FieldPosition._getFieldAttribute13428 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getFieldAttribute", "()Ljava/text/Format$Field;");
-			global::java.text.FieldPosition._setBeginIndex13429 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "setBeginIndex", "(I)V");
-			global::java.text.FieldPosition._setEndIndex13430 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "setEndIndex", "(I)V");
-			global::java.text.FieldPosition._FieldPosition13431 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "<init>", "(Ljava/text/Format$Field;)V");
-			global::java.text.FieldPosition._FieldPosition13432 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "<init>", "(Ljava/text/Format$Field;I)V");
-			global::java.text.FieldPosition._FieldPosition13433 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.text.FieldPosition.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/FieldPosition"));
+			global::java.text.FieldPosition._equals15098 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.FieldPosition._toString15099 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.text.FieldPosition._hashCode15100 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "hashCode", "()I");
+			global::java.text.FieldPosition._getField15101 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getField", "()I");
+			global::java.text.FieldPosition._getBeginIndex15102 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getBeginIndex", "()I");
+			global::java.text.FieldPosition._getEndIndex15103 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getEndIndex", "()I");
+			global::java.text.FieldPosition._getFieldAttribute15104 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "getFieldAttribute", "()Ljava/text/Format$Field;");
+			global::java.text.FieldPosition._setBeginIndex15105 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "setBeginIndex", "(I)V");
+			global::java.text.FieldPosition._setEndIndex15106 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "setEndIndex", "(I)V");
+			global::java.text.FieldPosition._FieldPosition15107 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "<init>", "(Ljava/text/Format$Field;)V");
+			global::java.text.FieldPosition._FieldPosition15108 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "<init>", "(Ljava/text/Format$Field;I)V");
+			global::java.text.FieldPosition._FieldPosition15109 = @__env.GetMethodIDNoThrow(global::java.text.FieldPosition.staticClass, "<init>", "(I)V");
 		}
 	}
 }

@@ -1,46 +1,40 @@
 namespace android.accessibilityservice
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AccessibilityServiceInfo : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AccessibilityServiceInfo : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccessibilityServiceInfo()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accessibilityservice.AccessibilityServiceInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accessibilityservice.AccessibilityServiceInfo(@__env);
-			}
-		}
-		protected AccessibilityServiceInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AccessibilityServiceInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel25;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel27;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel27, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents26;
+		internal static global::MonoJavaBridge.MethodId _describeContents28;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents28);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents28);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccessibilityServiceInfo27;
-		public AccessibilityServiceInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccessibilityServiceInfo29;
+		public AccessibilityServiceInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._AccessibilityServiceInfo27, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._AccessibilityServiceInfo29);
+			Init(@__env, handle);
 		}
 		public static int FEEDBACK_SPOKEN
 		{
@@ -84,7 +78,7 @@ namespace android.accessibilityservice
 				return 1;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _eventTypes28;
+		internal static global::MonoJavaBridge.FieldId _eventTypes30;
 		public int eventTypes
 		{
 			get
@@ -95,7 +89,7 @@ namespace android.accessibilityservice
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _packageNames29;
+		internal static global::MonoJavaBridge.FieldId _packageNames31;
 		public global::java.lang.String[] packageNames
 		{
 			get
@@ -106,7 +100,7 @@ namespace android.accessibilityservice
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _feedbackType30;
+		internal static global::MonoJavaBridge.FieldId _feedbackType32;
 		public int feedbackType
 		{
 			get
@@ -117,7 +111,7 @@ namespace android.accessibilityservice
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _notificationTimeout31;
+		internal static global::MonoJavaBridge.FieldId _notificationTimeout33;
 		public long notificationTimeout
 		{
 			get
@@ -128,7 +122,7 @@ namespace android.accessibilityservice
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _flags32;
+		internal static global::MonoJavaBridge.FieldId _flags34;
 		public int flags
 		{
 			get
@@ -139,7 +133,7 @@ namespace android.accessibilityservice
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR33;
+		internal static global::MonoJavaBridge.FieldId _CREATOR35;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -147,12 +141,13 @@ namespace android.accessibilityservice
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accessibilityservice.AccessibilityServiceInfo.staticClass = @__class;
-			global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25 = @__env.GetMethodID(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26 = @__env.GetMethodID(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "describeContents", "()I");
-			global::android.accessibilityservice.AccessibilityServiceInfo._AccessibilityServiceInfo27 = @__env.GetMethodID(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accessibilityservice.AccessibilityServiceInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accessibilityservice/AccessibilityServiceInfo"));
+			global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel27 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.accessibilityservice.AccessibilityServiceInfo._describeContents28 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "describeContents", "()I");
+			global::android.accessibilityservice.AccessibilityServiceInfo._AccessibilityServiceInfo29 = @__env.GetMethodIDNoThrow(global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -1,197 +1,194 @@
 namespace java.lang
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Package : java.lang.Object, java.lang.reflect.AnnotatedElement
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Package : java.lang.Object, java.lang.reflect.AnnotatedElement
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Package()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.lang.Package), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.lang.Package(@__env);
-			}
-		}
-		protected Package(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Package(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12218;
+		internal static global::MonoJavaBridge.MethodId _toString13087;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._toString12218));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._toString13087)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._toString12218));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._toString13087)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12219;
+		internal static global::MonoJavaBridge.MethodId _hashCode13088;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.lang.Package._hashCode12219);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Package._hashCode13088);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._hashCode12219);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._hashCode13088);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getName12220;
+		internal static global::MonoJavaBridge.MethodId _getName13089;
 		public virtual global::java.lang.String getName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getName12220));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getName13089)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getName12220));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getName13089)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPackage12221;
+		internal static global::MonoJavaBridge.MethodId _getPackage13090;
 		public static global::java.lang.Package getPackage(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Package>(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Package.staticClass, global::java.lang.Package._getPackage12221, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Package.staticClass, global::java.lang.Package._getPackage13090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Package;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAnnotation12222;
+		internal static global::MonoJavaBridge.MethodId _getAnnotation13091;
 		public virtual global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.annotation.Annotation>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getAnnotation12222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getAnnotation13091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.annotation.Annotation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getAnnotation12222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getAnnotation13091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isAnnotationPresent12223;
+		internal static global::MonoJavaBridge.MethodId _isAnnotationPresent13092;
 		public virtual bool isAnnotationPresent(java.lang.Class arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.lang.Package._isAnnotationPresent12223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Package._isAnnotationPresent13092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isAnnotationPresent12223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._isAnnotationPresent13092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAnnotations12224;
+		internal static global::MonoJavaBridge.MethodId _getAnnotations13093;
 		public virtual global::java.lang.annotation.Annotation[] getAnnotations() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getAnnotations12224));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getAnnotations13093)) as java.lang.annotation.Annotation[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getAnnotations12224));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getAnnotations13093)) as java.lang.annotation.Annotation[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDeclaredAnnotations12225;
+		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations13094;
 		public virtual global::java.lang.annotation.Annotation[] getDeclaredAnnotations() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getDeclaredAnnotations12225));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getDeclaredAnnotations13094)) as java.lang.annotation.Annotation[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getDeclaredAnnotations12225));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getDeclaredAnnotations13094)) as java.lang.annotation.Annotation[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPackages12226;
+		internal static global::MonoJavaBridge.MethodId _getPackages13095;
 		public static global::java.lang.Package[] getPackages() 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Package.staticClass, global::java.lang.Package._getPackages12226));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Package>(@__env.CallStaticObjectMethod(java.lang.Package.staticClass, global::java.lang.Package._getPackages13095)) as java.lang.Package[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isSealed12227;
+		internal static global::MonoJavaBridge.MethodId _isSealed13096;
 		public virtual bool isSealed() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.lang.Package._isSealed12227);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Package._isSealed13096);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed12227);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed13096);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isSealed12228;
+		internal static global::MonoJavaBridge.MethodId _isSealed13097;
 		public virtual bool isSealed(java.net.URL arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.lang.Package._isSealed12228, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Package._isSealed13097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed12228, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed13097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationTitle12229;
+		internal static global::MonoJavaBridge.MethodId _getSpecificationTitle13098;
 		public virtual global::java.lang.String getSpecificationTitle() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationTitle12229));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getSpecificationTitle13098)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationTitle12229));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationTitle13098)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationVersion12230;
+		internal static global::MonoJavaBridge.MethodId _getSpecificationVersion13099;
 		public virtual global::java.lang.String getSpecificationVersion() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVersion12230));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getSpecificationVersion13099)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVersion12230));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVersion13099)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationVendor12231;
+		internal static global::MonoJavaBridge.MethodId _getSpecificationVendor13100;
 		public virtual global::java.lang.String getSpecificationVendor() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVendor12231));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getSpecificationVendor13100)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVendor12231));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVendor13100)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getImplementationTitle12232;
+		internal static global::MonoJavaBridge.MethodId _getImplementationTitle13101;
 		public virtual global::java.lang.String getImplementationTitle() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationTitle12232));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getImplementationTitle13101)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationTitle12232));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationTitle13101)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getImplementationVersion12233;
+		internal static global::MonoJavaBridge.MethodId _getImplementationVersion13102;
 		public virtual global::java.lang.String getImplementationVersion() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVersion12233));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getImplementationVersion13102)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVersion12233));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVersion13102)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getImplementationVendor12234;
+		internal static global::MonoJavaBridge.MethodId _getImplementationVendor13103;
 		public virtual global::java.lang.String getImplementationVendor() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVendor12234));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Package._getImplementationVendor13103)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVendor12234));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVendor13103)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isCompatibleWith12235;
+		internal static global::MonoJavaBridge.MethodId _isCompatibleWith13104;
 		public virtual bool isCompatibleWith(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.lang.Package._isCompatibleWith12235, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.Package._isCompatibleWith13104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isCompatibleWith12235, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Package.staticClass, global::java.lang.Package._isCompatibleWith13104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.lang.Package.staticClass = @__class;
-			global::java.lang.Package._toString12218 = @__env.GetMethodID(global::java.lang.Package.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.lang.Package._hashCode12219 = @__env.GetMethodID(global::java.lang.Package.staticClass, "hashCode", "()I");
-			global::java.lang.Package._getName12220 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getName", "()Ljava/lang/String;");
-			global::java.lang.Package._getPackage12221 = @__env.GetStaticMethodID(global::java.lang.Package.staticClass, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;");
-			global::java.lang.Package._getAnnotation12222 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
-			global::java.lang.Package._isAnnotationPresent12223 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z");
-			global::java.lang.Package._getAnnotations12224 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;");
-			global::java.lang.Package._getDeclaredAnnotations12225 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
-			global::java.lang.Package._getPackages12226 = @__env.GetStaticMethodID(global::java.lang.Package.staticClass, "getPackages", "()[Ljava/lang/Package;");
-			global::java.lang.Package._isSealed12227 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isSealed", "()Z");
-			global::java.lang.Package._isSealed12228 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isSealed", "(Ljava/net/URL;)Z");
-			global::java.lang.Package._getSpecificationTitle12229 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationTitle", "()Ljava/lang/String;");
-			global::java.lang.Package._getSpecificationVersion12230 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationVersion", "()Ljava/lang/String;");
-			global::java.lang.Package._getSpecificationVendor12231 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationVendor", "()Ljava/lang/String;");
-			global::java.lang.Package._getImplementationTitle12232 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationTitle", "()Ljava/lang/String;");
-			global::java.lang.Package._getImplementationVersion12233 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationVersion", "()Ljava/lang/String;");
-			global::java.lang.Package._getImplementationVendor12234 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationVendor", "()Ljava/lang/String;");
-			global::java.lang.Package._isCompatibleWith12235 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isCompatibleWith", "(Ljava/lang/String;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.lang.Package.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Package"));
+			global::java.lang.Package._toString13087 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.Package._hashCode13088 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "hashCode", "()I");
+			global::java.lang.Package._getName13089 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getName", "()Ljava/lang/String;");
+			global::java.lang.Package._getPackage13090 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Package.staticClass, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;");
+			global::java.lang.Package._getAnnotation13091 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
+			global::java.lang.Package._isAnnotationPresent13092 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z");
+			global::java.lang.Package._getAnnotations13093 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+			global::java.lang.Package._getDeclaredAnnotations13094 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+			global::java.lang.Package._getPackages13095 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Package.staticClass, "getPackages", "()[Ljava/lang/Package;");
+			global::java.lang.Package._isSealed13096 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "isSealed", "()Z");
+			global::java.lang.Package._isSealed13097 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "isSealed", "(Ljava/net/URL;)Z");
+			global::java.lang.Package._getSpecificationTitle13098 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getSpecificationTitle", "()Ljava/lang/String;");
+			global::java.lang.Package._getSpecificationVersion13099 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getSpecificationVersion", "()Ljava/lang/String;");
+			global::java.lang.Package._getSpecificationVendor13100 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getSpecificationVendor", "()Ljava/lang/String;");
+			global::java.lang.Package._getImplementationTitle13101 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getImplementationTitle", "()Ljava/lang/String;");
+			global::java.lang.Package._getImplementationVersion13102 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getImplementationVersion", "()Ljava/lang/String;");
+			global::java.lang.Package._getImplementationVendor13103 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "getImplementationVendor", "()Ljava/lang/String;");
+			global::java.lang.Package._isCompatibleWith13104 = @__env.GetMethodIDNoThrow(global::java.lang.Package.staticClass, "isCompatibleWith", "(Ljava/lang/String;)Z");
 		}
 	}
 }

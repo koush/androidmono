@@ -1,91 +1,77 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.WindowManager_))]
 	public interface WindowManager : ViewManager
 	{
 		global::android.view.Display getDefaultDisplay();
 		void removeViewImmediate(android.view.View arg0);
 	}
 
-	public partial class WindowManager_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.WindowManager))]
+	public sealed partial class WindowManager_ : java.lang.Object, WindowManager
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static WindowManager_()
 		{
-			get { return __WindowManager.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __WindowManager : java.lang.Object, WindowManager
-	{
-		internal static global::java.lang.Class staticClass;
-		static __WindowManager()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__WindowManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.__WindowManager(@__env);
-			}
-		}
-		internal __WindowManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal WindowManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultDisplay9489;
+		internal static global::MonoJavaBridge.MethodId _getDefaultDisplay9836;
 		 global::android.view.Display android.view.WindowManager.getDefaultDisplay() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__WindowManager._getDefaultDisplay9489));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_._getDefaultDisplay9836)) as android.view.Display;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._getDefaultDisplay9489));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_.staticClass, global::android.view.WindowManager_._getDefaultDisplay9836)) as android.view.Display;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeViewImmediate9490;
+		internal static global::MonoJavaBridge.MethodId _removeViewImmediate9837;
 		 void android.view.WindowManager.removeViewImmediate(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__WindowManager._removeViewImmediate9490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_._removeViewImmediate9837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._removeViewImmediate9490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_.staticClass, global::android.view.WindowManager_._removeViewImmediate9837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addView9491;
+		internal static global::MonoJavaBridge.MethodId _addView9838;
 		 void android.view.ViewManager.addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__WindowManager._addView9491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_._addView9838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._addView9491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_.staticClass, global::android.view.WindowManager_._addView9838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateViewLayout9492;
+		internal static global::MonoJavaBridge.MethodId _updateViewLayout9839;
 		 void android.view.ViewManager.updateViewLayout(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__WindowManager._updateViewLayout9492, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_._updateViewLayout9839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._updateViewLayout9492, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_.staticClass, global::android.view.WindowManager_._updateViewLayout9839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeView9493;
+		internal static global::MonoJavaBridge.MethodId _removeView9840;
 		 void android.view.ViewManager.removeView(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__WindowManager._removeView9493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_._removeView9840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._removeView9493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_.staticClass, global::android.view.WindowManager_._removeView9840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.__WindowManager.staticClass = @__class;
-			global::android.view.__WindowManager._getDefaultDisplay9489 = @__env.GetMethodID(global::android.view.__WindowManager.staticClass, "android.view.WindowManager.getDefaultDisplay", "()Landroid/view/Display;");
-			global::android.view.__WindowManager._removeViewImmediate9490 = @__env.GetMethodID(global::android.view.__WindowManager.staticClass, "android.view.WindowManager.removeViewImmediate", "(Landroid/view/View;)V");
-			global::android.view.__WindowManager._addView9491 = @__env.GetMethodID(global::android.view.__WindowManager.staticClass, "android.view.ViewManager.addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
-			global::android.view.__WindowManager._updateViewLayout9492 = @__env.GetMethodID(global::android.view.__WindowManager.staticClass, "android.view.ViewManager.updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
-			global::android.view.__WindowManager._removeView9493 = @__env.GetMethodID(global::android.view.__WindowManager.staticClass, "android.view.ViewManager.removeView", "(Landroid/view/View;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.WindowManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/WindowManager"));
+			global::android.view.WindowManager_._getDefaultDisplay9836 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "getDefaultDisplay", "()Landroid/view/Display;");
+			global::android.view.WindowManager_._removeViewImmediate9837 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "removeViewImmediate", "(Landroid/view/View;)V");
+			global::android.view.WindowManager_._addView9838 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "addView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
+			global::android.view.WindowManager_._updateViewLayout9839 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "updateViewLayout", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V");
+			global::android.view.WindowManager_._removeView9840 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_.staticClass, "removeView", "(Landroid/view/View;)V");
 		}
 	}
 }

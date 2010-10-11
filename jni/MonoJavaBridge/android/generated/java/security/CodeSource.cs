@@ -1,108 +1,106 @@
 namespace java.security
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class CodeSource : java.lang.Object, java.io.Serializable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class CodeSource : java.lang.Object, java.io.Serializable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static CodeSource()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.CodeSource), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.CodeSource(@__env);
-			}
-		}
-		protected CodeSource(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected CodeSource(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13156;
+		internal static global::MonoJavaBridge.MethodId _equals14768;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.CodeSource._equals13156, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.CodeSource._equals14768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._equals13156, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._equals14768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13157;
+		internal static global::MonoJavaBridge.MethodId _toString14769;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._toString13157));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._toString14769)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._toString13157));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._toString14769)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13158;
+		internal static global::MonoJavaBridge.MethodId _hashCode14770;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.security.CodeSource._hashCode13158);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.CodeSource._hashCode14770);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._hashCode13158);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._hashCode14770);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLocation13159;
+		internal static global::MonoJavaBridge.MethodId _getLocation14771;
 		public virtual global::java.net.URL getLocation() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URL>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._getLocation13159));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._getLocation14771)) as java.net.URL;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URL>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getLocation13159));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getLocation14771)) as java.net.URL;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCertificates13160;
+		internal static global::MonoJavaBridge.MethodId _getCertificates14772;
 		public virtual global::java.security.cert.Certificate[] getCertificates() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._getCertificates13160));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._getCertificates14772)) as java.security.cert.Certificate[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCertificates13160));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCertificates14772)) as java.security.cert.Certificate[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _implies13161;
+		internal static global::MonoJavaBridge.MethodId _implies14773;
 		public virtual bool implies(java.security.CodeSource arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.CodeSource._implies13161, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.CodeSource._implies14773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._implies13161, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._implies14773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCodeSigners13162;
+		internal static global::MonoJavaBridge.MethodId _getCodeSigners14774;
 		public virtual global::java.security.CodeSigner[] getCodeSigners() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._getCodeSigners13162));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSource._getCodeSigners14774)) as java.security.CodeSigner[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCodeSigners13162));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.CodeSigner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCodeSigners14774)) as java.security.CodeSigner[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _CodeSource13163;
-		public CodeSource(java.net.URL arg0, java.security.CodeSigner[] arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _CodeSource14775;
+		public CodeSource(java.net.URL arg0, java.security.CodeSigner[] arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._CodeSource13163, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._CodeSource14775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _CodeSource13164;
-		public CodeSource(java.net.URL arg0, java.security.cert.Certificate[] arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _CodeSource14776;
+		public CodeSource(java.net.URL arg0, java.security.cert.Certificate[] arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._CodeSource13164, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSource.staticClass, global::java.security.CodeSource._CodeSource14776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.CodeSource.staticClass = @__class;
-			global::java.security.CodeSource._equals13156 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.security.CodeSource._toString13157 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.security.CodeSource._hashCode13158 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "hashCode", "()I");
-			global::java.security.CodeSource._getLocation13159 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "getLocation", "()Ljava/net/URL;");
-			global::java.security.CodeSource._getCertificates13160 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "getCertificates", "()[Ljava/security/cert/Certificate;");
-			global::java.security.CodeSource._implies13161 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "implies", "(Ljava/security/CodeSource;)Z");
-			global::java.security.CodeSource._getCodeSigners13162 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "getCodeSigners", "()[Ljava/security/CodeSigner;");
-			global::java.security.CodeSource._CodeSource13163 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/CodeSigner;)V");
-			global::java.security.CodeSource._CodeSource13164 = @__env.GetMethodID(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/cert/Certificate;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.CodeSource.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/CodeSource"));
+			global::java.security.CodeSource._equals14768 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.security.CodeSource._toString14769 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.security.CodeSource._hashCode14770 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "hashCode", "()I");
+			global::java.security.CodeSource._getLocation14771 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "getLocation", "()Ljava/net/URL;");
+			global::java.security.CodeSource._getCertificates14772 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "getCertificates", "()[Ljava/security/cert/Certificate;");
+			global::java.security.CodeSource._implies14773 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "implies", "(Ljava/security/CodeSource;)Z");
+			global::java.security.CodeSource._getCodeSigners14774 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "getCodeSigners", "()[Ljava/security/CodeSigner;");
+			global::java.security.CodeSource._CodeSource14775 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/CodeSigner;)V");
+			global::java.security.CodeSource._CodeSource14776 = @__env.GetMethodIDNoThrow(global::java.security.CodeSource.staticClass, "<init>", "(Ljava/net/URL;[Ljava/security/cert/Certificate;)V");
 		}
 	}
 }

@@ -1,205 +1,202 @@
 namespace android.telephony
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PhoneNumberUtils : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PhoneNumberUtils : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PhoneNumberUtils()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.telephony.PhoneNumberUtils), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.telephony.PhoneNumberUtils(@__env);
-			}
-		}
-		protected PhoneNumberUtils(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PhoneNumberUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compare7083;
+		internal static global::MonoJavaBridge.MethodId _compare7363;
 		public static bool compare(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._compare7083, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._compare7363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compare7084;
+		internal static global::MonoJavaBridge.MethodId _compare7364;
 		public static bool compare(android.content.Context arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._compare7084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._compare7364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isISODigit7085;
+		internal static global::MonoJavaBridge.MethodId _isISODigit7365;
 		public static bool isISODigit(char arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isISODigit7085, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isISODigit7365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _is12Key7086;
+		internal static global::MonoJavaBridge.MethodId _is12Key7366;
 		public static bool is12Key(char arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._is12Key7086, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._is12Key7366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isDialable7087;
+		internal static global::MonoJavaBridge.MethodId _isDialable7367;
 		public static bool isDialable(char arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isDialable7087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isDialable7367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isReallyDialable7088;
+		internal static global::MonoJavaBridge.MethodId _isReallyDialable7368;
 		public static bool isReallyDialable(char arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isReallyDialable7088, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isReallyDialable7368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isNonSeparator7089;
+		internal static global::MonoJavaBridge.MethodId _isNonSeparator7369;
 		public static bool isNonSeparator(char arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isNonSeparator7089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isNonSeparator7369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isStartsPostDial7090;
+		internal static global::MonoJavaBridge.MethodId _isStartsPostDial7370;
 		public static bool isStartsPostDial(char arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isStartsPostDial7090, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isStartsPostDial7370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNumberFromIntent7091;
+		internal static global::MonoJavaBridge.MethodId _getNumberFromIntent7371;
 		public static global::java.lang.String getNumberFromIntent(android.content.Intent arg0, android.content.Context arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._getNumberFromIntent7091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._getNumberFromIntent7371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _extractNetworkPortion7092;
+		internal static global::MonoJavaBridge.MethodId _extractNetworkPortion7372;
 		public static global::java.lang.String extractNetworkPortion(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._extractNetworkPortion7092, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._extractNetworkPortion7372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stripSeparators7093;
+		internal static global::MonoJavaBridge.MethodId _stripSeparators7373;
 		public static global::java.lang.String stripSeparators(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._stripSeparators7093, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._stripSeparators7373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _extractPostDialPortion7094;
+		internal static global::MonoJavaBridge.MethodId _extractPostDialPortion7374;
 		public static global::java.lang.String extractPostDialPortion(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._extractPostDialPortion7094, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._extractPostDialPortion7374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toCallerIDMinMatch7095;
+		internal static global::MonoJavaBridge.MethodId _toCallerIDMinMatch7375;
 		public static global::java.lang.String toCallerIDMinMatch(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._toCallerIDMinMatch7095, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._toCallerIDMinMatch7375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getStrippedReversed7096;
+		internal static global::MonoJavaBridge.MethodId _getStrippedReversed7376;
 		public static global::java.lang.String getStrippedReversed(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._getStrippedReversed7096, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._getStrippedReversed7376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stringFromStringAndTOA7097;
+		internal static global::MonoJavaBridge.MethodId _stringFromStringAndTOA7377;
 		public static global::java.lang.String stringFromStringAndTOA(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._stringFromStringAndTOA7097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._stringFromStringAndTOA7377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toaFromString7098;
+		internal static global::MonoJavaBridge.MethodId _toaFromString7378;
 		public static int toaFromString(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._toaFromString7098, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticIntMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._toaFromString7378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _calledPartyBCDToString7099;
+		internal static global::MonoJavaBridge.MethodId _calledPartyBCDToString7379;
 		public static global::java.lang.String calledPartyBCDToString(byte[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._calledPartyBCDToString7099, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._calledPartyBCDToString7379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _calledPartyBCDFragmentToString7100;
+		internal static global::MonoJavaBridge.MethodId _calledPartyBCDFragmentToString7380;
 		public static global::java.lang.String calledPartyBCDFragmentToString(byte[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._calledPartyBCDFragmentToString7100, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._calledPartyBCDFragmentToString7380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isWellFormedSmsAddress7101;
+		internal static global::MonoJavaBridge.MethodId _isWellFormedSmsAddress7381;
 		public static bool isWellFormedSmsAddress(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isWellFormedSmsAddress7101, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isWellFormedSmsAddress7381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isGlobalPhoneNumber7102;
+		internal static global::MonoJavaBridge.MethodId _isGlobalPhoneNumber7382;
 		public static bool isGlobalPhoneNumber(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isGlobalPhoneNumber7102, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isGlobalPhoneNumber7382, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _networkPortionToCalledPartyBCD7103;
+		internal static global::MonoJavaBridge.MethodId _networkPortionToCalledPartyBCD7383;
 		public static byte[] networkPortionToCalledPartyBCD(java.lang.String arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCD7103, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCD7383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _networkPortionToCalledPartyBCDWithLength7104;
+		internal static global::MonoJavaBridge.MethodId _networkPortionToCalledPartyBCDWithLength7384;
 		public static byte[] networkPortionToCalledPartyBCDWithLength(java.lang.String arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCDWithLength7104, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCDWithLength7384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _numberToCalledPartyBCD7105;
+		internal static global::MonoJavaBridge.MethodId _numberToCalledPartyBCD7385;
 		public static byte[] numberToCalledPartyBCD(java.lang.String arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._numberToCalledPartyBCD7105, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._numberToCalledPartyBCD7385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatNumber7106;
+		internal static global::MonoJavaBridge.MethodId _formatNumber7386;
 		public static global::java.lang.String formatNumber(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatNumber7106, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatNumber7386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatNumber7107;
+		internal static global::MonoJavaBridge.MethodId _formatNumber7387;
 		public static void formatNumber(android.text.Editable arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatNumber7107, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatNumber7387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFormatTypeForLocale7108;
+		internal static global::MonoJavaBridge.MethodId _getFormatTypeForLocale7388;
 		public static int getFormatTypeForLocale(java.util.Locale arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._getFormatTypeForLocale7108, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticIntMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._getFormatTypeForLocale7388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatNanpNumber7109;
+		internal static global::MonoJavaBridge.MethodId _formatNanpNumber7389;
 		public static void formatNanpNumber(android.text.Editable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatNanpNumber7109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatNanpNumber7389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatJapaneseNumber7110;
+		internal static global::MonoJavaBridge.MethodId _formatJapaneseNumber7390;
 		public static void formatJapaneseNumber(android.text.Editable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatJapaneseNumber7110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._formatJapaneseNumber7390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmergencyNumber7111;
+		internal static global::MonoJavaBridge.MethodId _isEmergencyNumber7391;
 		public static bool isEmergencyNumber(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isEmergencyNumber7111, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._isEmergencyNumber7391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _convertKeypadLettersToDigits7112;
+		internal static global::MonoJavaBridge.MethodId _convertKeypadLettersToDigits7392;
 		public static global::java.lang.String convertKeypadLettersToDigits(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._convertKeypadLettersToDigits7112, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._convertKeypadLettersToDigits7392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PhoneNumberUtils7113;
-		public PhoneNumberUtils()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PhoneNumberUtils7393;
+		public PhoneNumberUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._PhoneNumberUtils7113, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.PhoneNumberUtils.staticClass, global::android.telephony.PhoneNumberUtils._PhoneNumberUtils7393);
+			Init(@__env, handle);
 		}
 		public static char PAUSE
 		{
@@ -257,40 +254,41 @@ namespace android.telephony
 				return 2;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.telephony.PhoneNumberUtils.staticClass = @__class;
-			global::android.telephony.PhoneNumberUtils._compare7083 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)Z");
-			global::android.telephony.PhoneNumberUtils._compare7084 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "compare", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z");
-			global::android.telephony.PhoneNumberUtils._isISODigit7085 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isISODigit", "(C)Z");
-			global::android.telephony.PhoneNumberUtils._is12Key7086 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "is12Key", "(C)Z");
-			global::android.telephony.PhoneNumberUtils._isDialable7087 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isDialable", "(C)Z");
-			global::android.telephony.PhoneNumberUtils._isReallyDialable7088 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isReallyDialable", "(C)Z");
-			global::android.telephony.PhoneNumberUtils._isNonSeparator7089 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isNonSeparator", "(C)Z");
-			global::android.telephony.PhoneNumberUtils._isStartsPostDial7090 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isStartsPostDial", "(C)Z");
-			global::android.telephony.PhoneNumberUtils._getNumberFromIntent7091 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "getNumberFromIntent", "(Landroid/content/Intent;Landroid/content/Context;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._extractNetworkPortion7092 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "extractNetworkPortion", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._stripSeparators7093 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "stripSeparators", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._extractPostDialPortion7094 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "extractPostDialPortion", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._toCallerIDMinMatch7095 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "toCallerIDMinMatch", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._getStrippedReversed7096 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "getStrippedReversed", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._stringFromStringAndTOA7097 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "stringFromStringAndTOA", "(Ljava/lang/String;I)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._toaFromString7098 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "toaFromString", "(Ljava/lang/String;)I");
-			global::android.telephony.PhoneNumberUtils._calledPartyBCDToString7099 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "calledPartyBCDToString", "([BII)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._calledPartyBCDFragmentToString7100 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "calledPartyBCDFragmentToString", "([BII)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._isWellFormedSmsAddress7101 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isWellFormedSmsAddress", "(Ljava/lang/String;)Z");
-			global::android.telephony.PhoneNumberUtils._isGlobalPhoneNumber7102 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isGlobalPhoneNumber", "(Ljava/lang/String;)Z");
-			global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCD7103 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "networkPortionToCalledPartyBCD", "(Ljava/lang/String;)[B");
-			global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCDWithLength7104 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "networkPortionToCalledPartyBCDWithLength", "(Ljava/lang/String;)[B");
-			global::android.telephony.PhoneNumberUtils._numberToCalledPartyBCD7105 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "numberToCalledPartyBCD", "(Ljava/lang/String;)[B");
-			global::android.telephony.PhoneNumberUtils._formatNumber7106 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "formatNumber", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._formatNumber7107 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "formatNumber", "(Landroid/text/Editable;I)V");
-			global::android.telephony.PhoneNumberUtils._getFormatTypeForLocale7108 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "getFormatTypeForLocale", "(Ljava/util/Locale;)I");
-			global::android.telephony.PhoneNumberUtils._formatNanpNumber7109 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "formatNanpNumber", "(Landroid/text/Editable;)V");
-			global::android.telephony.PhoneNumberUtils._formatJapaneseNumber7110 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "formatJapaneseNumber", "(Landroid/text/Editable;)V");
-			global::android.telephony.PhoneNumberUtils._isEmergencyNumber7111 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "isEmergencyNumber", "(Ljava/lang/String;)Z");
-			global::android.telephony.PhoneNumberUtils._convertKeypadLettersToDigits7112 = @__env.GetStaticMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "convertKeypadLettersToDigits", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.telephony.PhoneNumberUtils._PhoneNumberUtils7113 = @__env.GetMethodID(global::android.telephony.PhoneNumberUtils.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.telephony.PhoneNumberUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/telephony/PhoneNumberUtils"));
+			global::android.telephony.PhoneNumberUtils._compare7363 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "compare", "(Ljava/lang/String;Ljava/lang/String;)Z");
+			global::android.telephony.PhoneNumberUtils._compare7364 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "compare", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z");
+			global::android.telephony.PhoneNumberUtils._isISODigit7365 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isISODigit", "(C)Z");
+			global::android.telephony.PhoneNumberUtils._is12Key7366 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "is12Key", "(C)Z");
+			global::android.telephony.PhoneNumberUtils._isDialable7367 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isDialable", "(C)Z");
+			global::android.telephony.PhoneNumberUtils._isReallyDialable7368 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isReallyDialable", "(C)Z");
+			global::android.telephony.PhoneNumberUtils._isNonSeparator7369 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isNonSeparator", "(C)Z");
+			global::android.telephony.PhoneNumberUtils._isStartsPostDial7370 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isStartsPostDial", "(C)Z");
+			global::android.telephony.PhoneNumberUtils._getNumberFromIntent7371 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "getNumberFromIntent", "(Landroid/content/Intent;Landroid/content/Context;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._extractNetworkPortion7372 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "extractNetworkPortion", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._stripSeparators7373 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "stripSeparators", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._extractPostDialPortion7374 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "extractPostDialPortion", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._toCallerIDMinMatch7375 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "toCallerIDMinMatch", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._getStrippedReversed7376 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "getStrippedReversed", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._stringFromStringAndTOA7377 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "stringFromStringAndTOA", "(Ljava/lang/String;I)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._toaFromString7378 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "toaFromString", "(Ljava/lang/String;)I");
+			global::android.telephony.PhoneNumberUtils._calledPartyBCDToString7379 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "calledPartyBCDToString", "([BII)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._calledPartyBCDFragmentToString7380 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "calledPartyBCDFragmentToString", "([BII)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._isWellFormedSmsAddress7381 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isWellFormedSmsAddress", "(Ljava/lang/String;)Z");
+			global::android.telephony.PhoneNumberUtils._isGlobalPhoneNumber7382 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isGlobalPhoneNumber", "(Ljava/lang/String;)Z");
+			global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCD7383 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "networkPortionToCalledPartyBCD", "(Ljava/lang/String;)[B");
+			global::android.telephony.PhoneNumberUtils._networkPortionToCalledPartyBCDWithLength7384 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "networkPortionToCalledPartyBCDWithLength", "(Ljava/lang/String;)[B");
+			global::android.telephony.PhoneNumberUtils._numberToCalledPartyBCD7385 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "numberToCalledPartyBCD", "(Ljava/lang/String;)[B");
+			global::android.telephony.PhoneNumberUtils._formatNumber7386 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "formatNumber", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._formatNumber7387 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "formatNumber", "(Landroid/text/Editable;I)V");
+			global::android.telephony.PhoneNumberUtils._getFormatTypeForLocale7388 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "getFormatTypeForLocale", "(Ljava/util/Locale;)I");
+			global::android.telephony.PhoneNumberUtils._formatNanpNumber7389 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "formatNanpNumber", "(Landroid/text/Editable;)V");
+			global::android.telephony.PhoneNumberUtils._formatJapaneseNumber7390 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "formatJapaneseNumber", "(Landroid/text/Editable;)V");
+			global::android.telephony.PhoneNumberUtils._isEmergencyNumber7391 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "isEmergencyNumber", "(Ljava/lang/String;)Z");
+			global::android.telephony.PhoneNumberUtils._convertKeypadLettersToDigits7392 = @__env.GetStaticMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "convertKeypadLettersToDigits", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.telephony.PhoneNumberUtils._PhoneNumberUtils7393 = @__env.GetMethodIDNoThrow(global::android.telephony.PhoneNumberUtils.staticClass, "<init>", "()V");
 		}
 	}
 }

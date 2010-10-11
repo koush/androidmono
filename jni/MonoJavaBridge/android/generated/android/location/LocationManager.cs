@@ -1,274 +1,267 @@
 namespace android.location
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class LocationManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class LocationManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LocationManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.LocationManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.location.LocationManager(@__env);
-			}
-		}
-		protected LocationManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected LocationManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProvider4550;
+		internal static global::MonoJavaBridge.MethodId _getProvider4772;
 		public virtual global::android.location.LocationProvider getProvider(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.LocationProvider>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getProvider4550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getProvider4772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.LocationProvider;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.LocationProvider>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProvider4550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProvider4772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.LocationProvider;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProviders4551;
+		internal static global::MonoJavaBridge.MethodId _getProviders4773;
 		public virtual global::java.util.List getProviders(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getProviders4551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getProviders4773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProviders4552;
+		internal static global::MonoJavaBridge.MethodId _getProviders4774;
 		public virtual global::java.util.List getProviders(android.location.Criteria arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getProviders4552, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getProviders4774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4552, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAllProviders4553;
+		internal static global::MonoJavaBridge.MethodId _getAllProviders4775;
 		public virtual global::java.util.List getAllProviders() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getAllProviders4553));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getAllProviders4775)) as java.util.List;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getAllProviders4553));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getAllProviders4775)) as java.util.List;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBestProvider4554;
+		internal static global::MonoJavaBridge.MethodId _getBestProvider4776;
 		public virtual global::java.lang.String getBestProvider(android.location.Criteria arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getBestProvider4554, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getBestProvider4776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getBestProvider4554, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getBestProvider4776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestLocationUpdates4555;
+		internal static global::MonoJavaBridge.MethodId _requestLocationUpdates4777;
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.location.LocationListener arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._requestLocationUpdates4555, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._requestLocationUpdates4777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4555, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestLocationUpdates4556;
+		internal static global::MonoJavaBridge.MethodId _requestLocationUpdates4778;
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.location.LocationListener arg3, android.os.Looper arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._requestLocationUpdates4556, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._requestLocationUpdates4778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4556, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestLocationUpdates4557;
+		internal static global::MonoJavaBridge.MethodId _requestLocationUpdates4779;
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.app.PendingIntent arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._requestLocationUpdates4557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._requestLocationUpdates4779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeUpdates4558;
+		internal static global::MonoJavaBridge.MethodId _removeUpdates4780;
 		public virtual void removeUpdates(android.location.LocationListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeUpdates4558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._removeUpdates4780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeUpdates4558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeUpdates4780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeUpdates4559;
+		internal static global::MonoJavaBridge.MethodId _removeUpdates4781;
 		public virtual void removeUpdates(android.app.PendingIntent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeUpdates4559, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._removeUpdates4781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeUpdates4559, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeUpdates4781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addProximityAlert4560;
+		internal static global::MonoJavaBridge.MethodId _addProximityAlert4782;
 		public virtual void addProximityAlert(double arg0, double arg1, float arg2, long arg3, android.app.PendingIntent arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._addProximityAlert4560, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._addProximityAlert4782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addProximityAlert4560, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addProximityAlert4782, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeProximityAlert4561;
+		internal static global::MonoJavaBridge.MethodId _removeProximityAlert4783;
 		public virtual void removeProximityAlert(android.app.PendingIntent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeProximityAlert4561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._removeProximityAlert4783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeProximityAlert4561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeProximityAlert4783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isProviderEnabled4562;
+		internal static global::MonoJavaBridge.MethodId _isProviderEnabled4784;
 		public virtual bool isProviderEnabled(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._isProviderEnabled4562, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationManager._isProviderEnabled4784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._isProviderEnabled4562, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._isProviderEnabled4784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLastKnownLocation4563;
+		internal static global::MonoJavaBridge.MethodId _getLastKnownLocation4785;
 		public virtual global::android.location.Location getLastKnownLocation(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.Location>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getLastKnownLocation4563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getLastKnownLocation4785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.Location;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.Location>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getLastKnownLocation4563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getLastKnownLocation4785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.Location;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addTestProvider4564;
+		internal static global::MonoJavaBridge.MethodId _addTestProvider4786;
 		public virtual void addTestProvider(java.lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4, bool arg5, bool arg6, bool arg7, int arg8, int arg9) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._addTestProvider4564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._addTestProvider4786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addTestProvider4564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addTestProvider4786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeTestProvider4565;
+		internal static global::MonoJavaBridge.MethodId _removeTestProvider4787;
 		public virtual void removeTestProvider(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeTestProvider4565, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._removeTestProvider4787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeTestProvider4565, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeTestProvider4787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTestProviderLocation4566;
+		internal static global::MonoJavaBridge.MethodId _setTestProviderLocation4788;
 		public virtual void setTestProviderLocation(java.lang.String arg0, android.location.Location arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._setTestProviderLocation4566, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._setTestProviderLocation4788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderLocation4566, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderLocation4788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearTestProviderLocation4567;
+		internal static global::MonoJavaBridge.MethodId _clearTestProviderLocation4789;
 		public virtual void clearTestProviderLocation(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._clearTestProviderLocation4567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._clearTestProviderLocation4789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderLocation4567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderLocation4789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTestProviderEnabled4568;
+		internal static global::MonoJavaBridge.MethodId _setTestProviderEnabled4790;
 		public virtual void setTestProviderEnabled(java.lang.String arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._setTestProviderEnabled4568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._setTestProviderEnabled4790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderEnabled4568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderEnabled4790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearTestProviderEnabled4569;
+		internal static global::MonoJavaBridge.MethodId _clearTestProviderEnabled4791;
 		public virtual void clearTestProviderEnabled(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._clearTestProviderEnabled4569, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._clearTestProviderEnabled4791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderEnabled4569, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderEnabled4791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTestProviderStatus4570;
+		internal static global::MonoJavaBridge.MethodId _setTestProviderStatus4792;
 		public virtual void setTestProviderStatus(java.lang.String arg0, int arg1, android.os.Bundle arg2, long arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._setTestProviderStatus4570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._setTestProviderStatus4792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderStatus4570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderStatus4792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearTestProviderStatus4571;
+		internal static global::MonoJavaBridge.MethodId _clearTestProviderStatus4793;
 		public virtual void clearTestProviderStatus(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._clearTestProviderStatus4571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._clearTestProviderStatus4793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderStatus4571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderStatus4793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addGpsStatusListener4572;
+		internal static global::MonoJavaBridge.MethodId _addGpsStatusListener4794;
 		public virtual bool addGpsStatusListener(android.location.GpsStatus.Listener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._addGpsStatusListener4572, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationManager._addGpsStatusListener4794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addGpsStatusListener4572, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addGpsStatusListener4794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeGpsStatusListener4573;
+		internal static global::MonoJavaBridge.MethodId _removeGpsStatusListener4795;
 		public virtual void removeGpsStatusListener(android.location.GpsStatus.Listener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeGpsStatusListener4573, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._removeGpsStatusListener4795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeGpsStatusListener4573, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeGpsStatusListener4795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addNmeaListener4574;
+		internal static global::MonoJavaBridge.MethodId _addNmeaListener4796;
 		public virtual bool addNmeaListener(android.location.GpsStatus.NmeaListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._addNmeaListener4574, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationManager._addNmeaListener4796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addNmeaListener4574, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addNmeaListener4796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeNmeaListener4575;
+		internal static global::MonoJavaBridge.MethodId _removeNmeaListener4797;
 		public virtual void removeNmeaListener(android.location.GpsStatus.NmeaListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeNmeaListener4575, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.LocationManager._removeNmeaListener4797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeNmeaListener4575, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeNmeaListener4797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getGpsStatus4576;
+		internal static global::MonoJavaBridge.MethodId _getGpsStatus4798;
 		public virtual global::android.location.GpsStatus getGpsStatus(android.location.GpsStatus arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.GpsStatus>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getGpsStatus4576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getGpsStatus4798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.GpsStatus;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.GpsStatus>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getGpsStatus4576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getGpsStatus4798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.GpsStatus;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendExtraCommand4577;
+		internal static global::MonoJavaBridge.MethodId _sendExtraCommand4799;
 		public virtual bool sendExtraCommand(java.lang.String arg0, java.lang.String arg1, android.os.Bundle arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._sendExtraCommand4577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.LocationManager._sendExtraCommand4799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._sendExtraCommand4577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._sendExtraCommand4799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public static global::java.lang.String NETWORK_PROVIDER
 		{
@@ -319,37 +312,38 @@ namespace android.location
 				return "location";
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.location.LocationManager.staticClass = @__class;
-			global::android.location.LocationManager._getProvider4550 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getProvider", "(Ljava/lang/String;)Landroid/location/LocationProvider;");
-			global::android.location.LocationManager._getProviders4551 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getProviders", "(Z)Ljava/util/List;");
-			global::android.location.LocationManager._getProviders4552 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getProviders", "(Landroid/location/Criteria;Z)Ljava/util/List;");
-			global::android.location.LocationManager._getAllProviders4553 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getAllProviders", "()Ljava/util/List;");
-			global::android.location.LocationManager._getBestProvider4554 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getBestProvider", "(Landroid/location/Criteria;Z)Ljava/lang/String;");
-			global::android.location.LocationManager._requestLocationUpdates4555 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "requestLocationUpdates", "(Ljava/lang/String;JFLandroid/location/LocationListener;)V");
-			global::android.location.LocationManager._requestLocationUpdates4556 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "requestLocationUpdates", "(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V");
-			global::android.location.LocationManager._requestLocationUpdates4557 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "requestLocationUpdates", "(Ljava/lang/String;JFLandroid/app/PendingIntent;)V");
-			global::android.location.LocationManager._removeUpdates4558 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "removeUpdates", "(Landroid/location/LocationListener;)V");
-			global::android.location.LocationManager._removeUpdates4559 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "removeUpdates", "(Landroid/app/PendingIntent;)V");
-			global::android.location.LocationManager._addProximityAlert4560 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "addProximityAlert", "(DDFJLandroid/app/PendingIntent;)V");
-			global::android.location.LocationManager._removeProximityAlert4561 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "removeProximityAlert", "(Landroid/app/PendingIntent;)V");
-			global::android.location.LocationManager._isProviderEnabled4562 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "isProviderEnabled", "(Ljava/lang/String;)Z");
-			global::android.location.LocationManager._getLastKnownLocation4563 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getLastKnownLocation", "(Ljava/lang/String;)Landroid/location/Location;");
-			global::android.location.LocationManager._addTestProvider4564 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "addTestProvider", "(Ljava/lang/String;ZZZZZZZII)V");
-			global::android.location.LocationManager._removeTestProvider4565 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "removeTestProvider", "(Ljava/lang/String;)V");
-			global::android.location.LocationManager._setTestProviderLocation4566 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "setTestProviderLocation", "(Ljava/lang/String;Landroid/location/Location;)V");
-			global::android.location.LocationManager._clearTestProviderLocation4567 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "clearTestProviderLocation", "(Ljava/lang/String;)V");
-			global::android.location.LocationManager._setTestProviderEnabled4568 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "setTestProviderEnabled", "(Ljava/lang/String;Z)V");
-			global::android.location.LocationManager._clearTestProviderEnabled4569 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "clearTestProviderEnabled", "(Ljava/lang/String;)V");
-			global::android.location.LocationManager._setTestProviderStatus4570 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "setTestProviderStatus", "(Ljava/lang/String;ILandroid/os/Bundle;J)V");
-			global::android.location.LocationManager._clearTestProviderStatus4571 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "clearTestProviderStatus", "(Ljava/lang/String;)V");
-			global::android.location.LocationManager._addGpsStatusListener4572 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "addGpsStatusListener", "(Landroid/location/GpsStatus$Listener;)Z");
-			global::android.location.LocationManager._removeGpsStatusListener4573 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "removeGpsStatusListener", "(Landroid/location/GpsStatus$Listener;)V");
-			global::android.location.LocationManager._addNmeaListener4574 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "addNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)Z");
-			global::android.location.LocationManager._removeNmeaListener4575 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "removeNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)V");
-			global::android.location.LocationManager._getGpsStatus4576 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "getGpsStatus", "(Landroid/location/GpsStatus;)Landroid/location/GpsStatus;");
-			global::android.location.LocationManager._sendExtraCommand4577 = @__env.GetMethodID(global::android.location.LocationManager.staticClass, "sendExtraCommand", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.location.LocationManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/LocationManager"));
+			global::android.location.LocationManager._getProvider4772 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getProvider", "(Ljava/lang/String;)Landroid/location/LocationProvider;");
+			global::android.location.LocationManager._getProviders4773 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getProviders", "(Z)Ljava/util/List;");
+			global::android.location.LocationManager._getProviders4774 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getProviders", "(Landroid/location/Criteria;Z)Ljava/util/List;");
+			global::android.location.LocationManager._getAllProviders4775 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getAllProviders", "()Ljava/util/List;");
+			global::android.location.LocationManager._getBestProvider4776 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getBestProvider", "(Landroid/location/Criteria;Z)Ljava/lang/String;");
+			global::android.location.LocationManager._requestLocationUpdates4777 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "requestLocationUpdates", "(Ljava/lang/String;JFLandroid/location/LocationListener;)V");
+			global::android.location.LocationManager._requestLocationUpdates4778 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "requestLocationUpdates", "(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V");
+			global::android.location.LocationManager._requestLocationUpdates4779 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "requestLocationUpdates", "(Ljava/lang/String;JFLandroid/app/PendingIntent;)V");
+			global::android.location.LocationManager._removeUpdates4780 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeUpdates", "(Landroid/location/LocationListener;)V");
+			global::android.location.LocationManager._removeUpdates4781 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeUpdates", "(Landroid/app/PendingIntent;)V");
+			global::android.location.LocationManager._addProximityAlert4782 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "addProximityAlert", "(DDFJLandroid/app/PendingIntent;)V");
+			global::android.location.LocationManager._removeProximityAlert4783 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeProximityAlert", "(Landroid/app/PendingIntent;)V");
+			global::android.location.LocationManager._isProviderEnabled4784 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "isProviderEnabled", "(Ljava/lang/String;)Z");
+			global::android.location.LocationManager._getLastKnownLocation4785 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getLastKnownLocation", "(Ljava/lang/String;)Landroid/location/Location;");
+			global::android.location.LocationManager._addTestProvider4786 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "addTestProvider", "(Ljava/lang/String;ZZZZZZZII)V");
+			global::android.location.LocationManager._removeTestProvider4787 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeTestProvider", "(Ljava/lang/String;)V");
+			global::android.location.LocationManager._setTestProviderLocation4788 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "setTestProviderLocation", "(Ljava/lang/String;Landroid/location/Location;)V");
+			global::android.location.LocationManager._clearTestProviderLocation4789 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "clearTestProviderLocation", "(Ljava/lang/String;)V");
+			global::android.location.LocationManager._setTestProviderEnabled4790 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "setTestProviderEnabled", "(Ljava/lang/String;Z)V");
+			global::android.location.LocationManager._clearTestProviderEnabled4791 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "clearTestProviderEnabled", "(Ljava/lang/String;)V");
+			global::android.location.LocationManager._setTestProviderStatus4792 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "setTestProviderStatus", "(Ljava/lang/String;ILandroid/os/Bundle;J)V");
+			global::android.location.LocationManager._clearTestProviderStatus4793 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "clearTestProviderStatus", "(Ljava/lang/String;)V");
+			global::android.location.LocationManager._addGpsStatusListener4794 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "addGpsStatusListener", "(Landroid/location/GpsStatus$Listener;)Z");
+			global::android.location.LocationManager._removeGpsStatusListener4795 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeGpsStatusListener", "(Landroid/location/GpsStatus$Listener;)V");
+			global::android.location.LocationManager._addNmeaListener4796 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "addNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)Z");
+			global::android.location.LocationManager._removeNmeaListener4797 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "removeNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)V");
+			global::android.location.LocationManager._getGpsStatus4798 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "getGpsStatus", "(Landroid/location/GpsStatus;)Landroid/location/GpsStatus;");
+			global::android.location.LocationManager._sendExtraCommand4799 = @__env.GetMethodIDNoThrow(global::android.location.LocationManager.staticClass, "sendExtraCommand", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z");
 		}
 	}
 }

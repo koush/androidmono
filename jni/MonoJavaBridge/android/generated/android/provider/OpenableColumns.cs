@@ -1,39 +1,25 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface OpenableColumns 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.OpenableColumns_))]
+	public interface OpenableColumns  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class OpenableColumns_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.provider.OpenableColumns))]
+	public sealed partial class OpenableColumns_ : java.lang.Object, OpenableColumns
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static OpenableColumns_()
 		{
-			get { return __OpenableColumns.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __OpenableColumns : java.lang.Object, OpenableColumns
-	{
-		internal static global::java.lang.Class staticClass;
-		static __OpenableColumns()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.__OpenableColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.provider.__OpenableColumns(@__env);
-			}
-		}
-		internal __OpenableColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal OpenableColumns_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.provider.__OpenableColumns.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.provider.OpenableColumns_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/OpenableColumns"));
 		}
 	}
 }

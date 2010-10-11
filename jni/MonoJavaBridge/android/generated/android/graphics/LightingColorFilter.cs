@@ -1,33 +1,28 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class LightingColorFilter : android.graphics.ColorFilter
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class LightingColorFilter : android.graphics.ColorFilter
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LightingColorFilter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.LightingColorFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.LightingColorFilter(@__env);
-			}
-		}
-		protected LightingColorFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected LightingColorFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LightingColorFilter3154;
-		public LightingColorFilter(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LightingColorFilter3333;
+		public LightingColorFilter(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.LightingColorFilter.staticClass, global::android.graphics.LightingColorFilter._LightingColorFilter3154, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.LightingColorFilter.staticClass, global::android.graphics.LightingColorFilter._LightingColorFilter3333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.LightingColorFilter.staticClass = @__class;
-			global::android.graphics.LightingColorFilter._LightingColorFilter3154 = @__env.GetMethodID(global::android.graphics.LightingColorFilter.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.LightingColorFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/LightingColorFilter"));
+			global::android.graphics.LightingColorFilter._LightingColorFilter3333 = @__env.GetMethodIDNoThrow(global::android.graphics.LightingColorFilter.staticClass, "<init>", "(II)V");
 		}
 	}
 }

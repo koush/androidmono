@@ -1,66 +1,60 @@
 namespace android.view.accessibility
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class AccessibilityManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class AccessibilityManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccessibilityManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.accessibility.AccessibilityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.accessibility.AccessibilityManager(@__env);
-			}
-		}
-		internal AccessibilityManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal AccessibilityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _interrupt9537;
+		internal static global::MonoJavaBridge.MethodId _interrupt9884;
 		public void interrupt() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager._interrupt9537);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager._interrupt9884);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._interrupt9537);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._interrupt9884);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEnabled9538;
+		internal static global::MonoJavaBridge.MethodId _isEnabled9885;
 		public bool isEnabled() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityManager._isEnabled9538);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager._isEnabled9885);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._isEnabled9538);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._isEnabled9885);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendAccessibilityEvent9539;
+		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEvent9886;
 		public void sendAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent9539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent9886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent9539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent9886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAccessibilityServiceList9540;
+		internal static global::MonoJavaBridge.MethodId _getAccessibilityServiceList9887;
 		public global::java.util.List getAccessibilityServiceList() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList9540));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList9887)) as java.util.List;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList9540));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList9887)) as java.util.List;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.accessibility.AccessibilityManager.staticClass = @__class;
-			global::android.view.accessibility.AccessibilityManager._interrupt9537 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityManager.staticClass, "interrupt", "()V");
-			global::android.view.accessibility.AccessibilityManager._isEnabled9538 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityManager.staticClass, "isEnabled", "()Z");
-			global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent9539 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityManager.staticClass, "sendAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V");
-			global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList9540 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityManager.staticClass, "getAccessibilityServiceList", "()Ljava/util/List;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.accessibility.AccessibilityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityManager"));
+			global::android.view.accessibility.AccessibilityManager._interrupt9884 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "interrupt", "()V");
+			global::android.view.accessibility.AccessibilityManager._isEnabled9885 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "isEnabled", "()Z");
+			global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent9886 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "sendAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V");
+			global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList9887 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityManager.staticClass, "getAccessibilityServiceList", "()Ljava/util/List;");
 		}
 	}
 }

@@ -1,61 +1,47 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface ComponentCallbacks 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.ComponentCallbacks_))]
+	public interface ComponentCallbacks  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onConfigurationChanged(android.content.res.Configuration arg0);
 		void onLowMemory();
 	}
 
-	public partial class ComponentCallbacks_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.ComponentCallbacks))]
+	public sealed partial class ComponentCallbacks_ : java.lang.Object, ComponentCallbacks
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ComponentCallbacks_()
 		{
-			get { return __ComponentCallbacks.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ComponentCallbacks : java.lang.Object, ComponentCallbacks
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ComponentCallbacks()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__ComponentCallbacks), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__ComponentCallbacks(@__env);
-			}
-		}
-		internal __ComponentCallbacks(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ComponentCallbacks_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onConfigurationChanged1087;
+		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged1104;
 		 void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onConfigurationChanged1087, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onConfigurationChanged1104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onConfigurationChanged1087, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onConfigurationChanged1104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLowMemory1088;
+		internal static global::MonoJavaBridge.MethodId _onLowMemory1105;
 		 void android.content.ComponentCallbacks.onLowMemory() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onLowMemory1088);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onLowMemory1105);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onLowMemory1088);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onLowMemory1105);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__ComponentCallbacks.staticClass = @__class;
-			global::android.content.__ComponentCallbacks._onConfigurationChanged1087 = @__env.GetMethodID(global::android.content.__ComponentCallbacks.staticClass, "android.content.ComponentCallbacks.onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
-			global::android.content.__ComponentCallbacks._onLowMemory1088 = @__env.GetMethodID(global::android.content.__ComponentCallbacks.staticClass, "android.content.ComponentCallbacks.onLowMemory", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.ComponentCallbacks_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ComponentCallbacks"));
+			global::android.content.ComponentCallbacks_._onConfigurationChanged1104 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
+			global::android.content.ComponentCallbacks_._onLowMemory1105 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
 		}
 	}
 }

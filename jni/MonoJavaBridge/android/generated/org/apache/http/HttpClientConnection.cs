@@ -1,6 +1,6 @@
 namespace org.apache.http
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpClientConnection_))]
 	public interface HttpClientConnection : HttpConnection
 	{
 		void flush();
@@ -11,165 +11,151 @@ namespace org.apache.http
 		void receiveResponseEntity(org.apache.http.HttpResponse arg0);
 	}
 
-	public partial class HttpClientConnection_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.HttpClientConnection))]
+	public sealed partial class HttpClientConnection_ : java.lang.Object, HttpClientConnection
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HttpClientConnection_()
 		{
-			get { return __HttpClientConnection.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HttpClientConnection : java.lang.Object, HttpClientConnection
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HttpClientConnection()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.__HttpClientConnection), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.__HttpClientConnection(@__env);
-			}
-		}
-		internal __HttpClientConnection(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HttpClientConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _flush14205;
+		internal static global::MonoJavaBridge.MethodId _flush16120;
 		 void org.apache.http.HttpClientConnection.flush() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._flush14205);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._flush16120);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._flush14205);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._flush16120);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isResponseAvailable14206;
+		internal static global::MonoJavaBridge.MethodId _isResponseAvailable16121;
 		 bool org.apache.http.HttpClientConnection.isResponseAvailable(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.__HttpClientConnection._isResponseAvailable14206, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._isResponseAvailable16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._isResponseAvailable14206, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._isResponseAvailable16121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendRequestHeader14207;
+		internal static global::MonoJavaBridge.MethodId _sendRequestHeader16122;
 		 void org.apache.http.HttpClientConnection.sendRequestHeader(org.apache.http.HttpRequest arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._sendRequestHeader14207, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._sendRequestHeader16122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._sendRequestHeader14207, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._sendRequestHeader16122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendRequestEntity14208;
+		internal static global::MonoJavaBridge.MethodId _sendRequestEntity16123;
 		 void org.apache.http.HttpClientConnection.sendRequestEntity(org.apache.http.HttpEntityEnclosingRequest arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._sendRequestEntity14208, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._sendRequestEntity16123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._sendRequestEntity14208, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._sendRequestEntity16123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _receiveResponseHeader14209;
+		internal static global::MonoJavaBridge.MethodId _receiveResponseHeader16124;
 		 global::org.apache.http.HttpResponse org.apache.http.HttpClientConnection.receiveResponseHeader() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpClientConnection._receiveResponseHeader14209));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._receiveResponseHeader16124)) as org.apache.http.HttpResponse;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._receiveResponseHeader14209));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._receiveResponseHeader16124)) as org.apache.http.HttpResponse;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _receiveResponseEntity14210;
+		internal static global::MonoJavaBridge.MethodId _receiveResponseEntity16125;
 		 void org.apache.http.HttpClientConnection.receiveResponseEntity(org.apache.http.HttpResponse arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._receiveResponseEntity14210, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._receiveResponseEntity16125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._receiveResponseEntity14210, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._receiveResponseEntity16125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _shutdown14211;
+		internal static global::MonoJavaBridge.MethodId _shutdown16126;
 		 void org.apache.http.HttpConnection.shutdown() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._shutdown14211);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._shutdown16126);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._shutdown14211);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._shutdown16126);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close14212;
+		internal static global::MonoJavaBridge.MethodId _close16127;
 		 void org.apache.http.HttpConnection.close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._close14212);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._close16127);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._close14212);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._close16127);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isOpen14213;
+		internal static global::MonoJavaBridge.MethodId _isOpen16128;
 		 bool org.apache.http.HttpConnection.isOpen() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.__HttpClientConnection._isOpen14213);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._isOpen16128);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._isOpen14213);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._isOpen16128);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMetrics14214;
+		internal static global::MonoJavaBridge.MethodId _getMetrics16129;
 		 global::org.apache.http.HttpConnectionMetrics org.apache.http.HttpConnection.getMetrics() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpConnectionMetrics>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpClientConnection._getMetrics14214));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpConnectionMetrics>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._getMetrics16129)) as org.apache.http.HttpConnectionMetrics;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpConnectionMetrics>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._getMetrics14214));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpConnectionMetrics>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._getMetrics16129)) as org.apache.http.HttpConnectionMetrics;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isStale14215;
+		internal static global::MonoJavaBridge.MethodId _isStale16130;
 		 bool org.apache.http.HttpConnection.isStale() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.apache.http.__HttpClientConnection._isStale14215);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._isStale16130);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._isStale14215);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._isStale16130);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSocketTimeout14216;
+		internal static global::MonoJavaBridge.MethodId _setSocketTimeout16131;
 		 void org.apache.http.HttpConnection.setSocketTimeout(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpClientConnection._setSocketTimeout14216, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._setSocketTimeout16131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._setSocketTimeout14216, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._setSocketTimeout16131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSocketTimeout14217;
+		internal static global::MonoJavaBridge.MethodId _getSocketTimeout16132;
 		 int org.apache.http.HttpConnection.getSocketTimeout() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.__HttpClientConnection._getSocketTimeout14217);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_._getSocketTimeout16132);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.__HttpClientConnection.staticClass, global::org.apache.http.__HttpClientConnection._getSocketTimeout14217);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.HttpClientConnection_.staticClass, global::org.apache.http.HttpClientConnection_._getSocketTimeout16132);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.__HttpClientConnection.staticClass = @__class;
-			global::org.apache.http.__HttpClientConnection._flush14205 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpClientConnection.flush", "()V");
-			global::org.apache.http.__HttpClientConnection._isResponseAvailable14206 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpClientConnection.isResponseAvailable", "(I)Z");
-			global::org.apache.http.__HttpClientConnection._sendRequestHeader14207 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpClientConnection.sendRequestHeader", "(Lorg/apache/http/HttpRequest;)V");
-			global::org.apache.http.__HttpClientConnection._sendRequestEntity14208 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpClientConnection.sendRequestEntity", "(Lorg/apache/http/HttpEntityEnclosingRequest;)V");
-			global::org.apache.http.__HttpClientConnection._receiveResponseHeader14209 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpClientConnection.receiveResponseHeader", "()Lorg/apache/http/HttpResponse;");
-			global::org.apache.http.__HttpClientConnection._receiveResponseEntity14210 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpClientConnection.receiveResponseEntity", "(Lorg/apache/http/HttpResponse;)V");
-			global::org.apache.http.__HttpClientConnection._shutdown14211 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.shutdown", "()V");
-			global::org.apache.http.__HttpClientConnection._close14212 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.close", "()V");
-			global::org.apache.http.__HttpClientConnection._isOpen14213 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.isOpen", "()Z");
-			global::org.apache.http.__HttpClientConnection._getMetrics14214 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.getMetrics", "()Lorg/apache/http/HttpConnectionMetrics;");
-			global::org.apache.http.__HttpClientConnection._isStale14215 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.isStale", "()Z");
-			global::org.apache.http.__HttpClientConnection._setSocketTimeout14216 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.setSocketTimeout", "(I)V");
-			global::org.apache.http.__HttpClientConnection._getSocketTimeout14217 = @__env.GetMethodID(global::org.apache.http.__HttpClientConnection.staticClass, "org.apache.http.HttpConnection.getSocketTimeout", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.HttpClientConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpClientConnection"));
+			global::org.apache.http.HttpClientConnection_._flush16120 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "flush", "()V");
+			global::org.apache.http.HttpClientConnection_._isResponseAvailable16121 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "isResponseAvailable", "(I)Z");
+			global::org.apache.http.HttpClientConnection_._sendRequestHeader16122 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "sendRequestHeader", "(Lorg/apache/http/HttpRequest;)V");
+			global::org.apache.http.HttpClientConnection_._sendRequestEntity16123 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "sendRequestEntity", "(Lorg/apache/http/HttpEntityEnclosingRequest;)V");
+			global::org.apache.http.HttpClientConnection_._receiveResponseHeader16124 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "receiveResponseHeader", "()Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.HttpClientConnection_._receiveResponseEntity16125 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "receiveResponseEntity", "(Lorg/apache/http/HttpResponse;)V");
+			global::org.apache.http.HttpClientConnection_._shutdown16126 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "shutdown", "()V");
+			global::org.apache.http.HttpClientConnection_._close16127 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "close", "()V");
+			global::org.apache.http.HttpClientConnection_._isOpen16128 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "isOpen", "()Z");
+			global::org.apache.http.HttpClientConnection_._getMetrics16129 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "getMetrics", "()Lorg/apache/http/HttpConnectionMetrics;");
+			global::org.apache.http.HttpClientConnection_._isStale16130 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "isStale", "()Z");
+			global::org.apache.http.HttpClientConnection_._setSocketTimeout16131 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "setSocketTimeout", "(I)V");
+			global::org.apache.http.HttpClientConnection_._getSocketTimeout16132 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpClientConnection_.staticClass, "getSocketTimeout", "()I");
 		}
 	}
 }

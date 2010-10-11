@@ -1,54 +1,52 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AccountsException : java.lang.Exception
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AccountsException : java.lang.Exception
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccountsException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.AccountsException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.AccountsException(@__env);
-			}
-		}
-		protected AccountsException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AccountsException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccountsException97;
-		public AccountsException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccountsException106;
+		public AccountsException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException97, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException106);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccountsException98;
-		public AccountsException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccountsException107;
+		public AccountsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException98, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccountsException99;
-		public AccountsException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccountsException108;
+		public AccountsException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException99, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccountsException100;
-		public AccountsException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccountsException109;
+		public AccountsException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException100, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountsException.staticClass, global::android.accounts.AccountsException._AccountsException109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.AccountsException.staticClass = @__class;
-			global::android.accounts.AccountsException._AccountsException97 = @__env.GetMethodID(global::android.accounts.AccountsException.staticClass, "<init>", "()V");
-			global::android.accounts.AccountsException._AccountsException98 = @__env.GetMethodID(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.accounts.AccountsException._AccountsException99 = @__env.GetMethodID(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::android.accounts.AccountsException._AccountsException100 = @__env.GetMethodID(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.AccountsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountsException"));
+			global::android.accounts.AccountsException._AccountsException106 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "()V");
+			global::android.accounts.AccountsException._AccountsException107 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.accounts.AccountsException._AccountsException108 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::android.accounts.AccountsException._AccountsException109 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountsException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 	}
 }

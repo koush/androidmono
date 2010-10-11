@@ -1,87 +1,89 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Typeface : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Typeface : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Typeface()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Typeface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.Typeface(@__env);
-			}
-		}
-		protected Typeface(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Typeface(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _create3616;
+		internal static global::MonoJavaBridge.MethodId _finalize3806;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Typeface._finalize3806);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._finalize3806);
+		}
+		internal static global::MonoJavaBridge.MethodId _create3807;
 		public static global::android.graphics.Typeface create(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._create3616, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._create3807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Typeface;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _create3617;
+		internal static global::MonoJavaBridge.MethodId _create3808;
 		public static global::android.graphics.Typeface create(android.graphics.Typeface arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._create3617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._create3808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Typeface;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getStyle3618;
+		internal static global::MonoJavaBridge.MethodId _getStyle3809;
 		public virtual int getStyle() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.Typeface._getStyle3618);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Typeface._getStyle3809);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._getStyle3618);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._getStyle3809);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isBold3619;
+		internal static global::MonoJavaBridge.MethodId _isBold3810;
 		public virtual bool isBold() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.Typeface._isBold3619);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Typeface._isBold3810);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isBold3619);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isBold3810);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isItalic3620;
+		internal static global::MonoJavaBridge.MethodId _isItalic3811;
 		public virtual bool isItalic() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.Typeface._isItalic3620);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Typeface._isItalic3811);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isItalic3620);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isItalic3811);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _defaultFromStyle3621;
+		internal static global::MonoJavaBridge.MethodId _defaultFromStyle3812;
 		public static global::android.graphics.Typeface defaultFromStyle(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._defaultFromStyle3621, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._defaultFromStyle3812, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Typeface;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromAsset3622;
+		internal static global::MonoJavaBridge.MethodId _createFromAsset3813;
 		public static global::android.graphics.Typeface createFromAsset(android.content.res.AssetManager arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._createFromAsset3622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._createFromAsset3813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Typeface;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromFile3623;
+		internal static global::MonoJavaBridge.MethodId _createFromFile3814;
 		public static global::android.graphics.Typeface createFromFile(java.io.File arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._createFromFile3623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._createFromFile3814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Typeface;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromFile3624;
+		internal static global::MonoJavaBridge.MethodId _createFromFile3815;
 		public static global::android.graphics.Typeface createFromFile(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._createFromFile3624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._createFromFile3815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Typeface;
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _DEFAULT3625;
+		internal static global::MonoJavaBridge.FieldId _DEFAULT3816;
 		public static global::android.graphics.Typeface DEFAULT
 		{
 			get
@@ -89,7 +91,7 @@ namespace android.graphics
 				return default(global::android.graphics.Typeface);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_BOLD3626;
+		internal static global::MonoJavaBridge.FieldId _DEFAULT_BOLD3817;
 		public static global::android.graphics.Typeface DEFAULT_BOLD
 		{
 			get
@@ -97,7 +99,7 @@ namespace android.graphics
 				return default(global::android.graphics.Typeface);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _SANS_SERIF3627;
+		internal static global::MonoJavaBridge.FieldId _SANS_SERIF3818;
 		public static global::android.graphics.Typeface SANS_SERIF
 		{
 			get
@@ -105,7 +107,7 @@ namespace android.graphics
 				return default(global::android.graphics.Typeface);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _SERIF3628;
+		internal static global::MonoJavaBridge.FieldId _SERIF3819;
 		public static global::android.graphics.Typeface SERIF
 		{
 			get
@@ -113,7 +115,7 @@ namespace android.graphics
 				return default(global::android.graphics.Typeface);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _MONOSPACE3629;
+		internal static global::MonoJavaBridge.FieldId _MONOSPACE3820;
 		public static global::android.graphics.Typeface MONOSPACE
 		{
 			get
@@ -149,18 +151,20 @@ namespace android.graphics
 				return 3;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.Typeface.staticClass = @__class;
-			global::android.graphics.Typeface._create3616 = @__env.GetStaticMethodID(global::android.graphics.Typeface.staticClass, "create", "(Ljava/lang/String;I)Landroid/graphics/Typeface;");
-			global::android.graphics.Typeface._create3617 = @__env.GetStaticMethodID(global::android.graphics.Typeface.staticClass, "create", "(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;");
-			global::android.graphics.Typeface._getStyle3618 = @__env.GetMethodID(global::android.graphics.Typeface.staticClass, "getStyle", "()I");
-			global::android.graphics.Typeface._isBold3619 = @__env.GetMethodID(global::android.graphics.Typeface.staticClass, "isBold", "()Z");
-			global::android.graphics.Typeface._isItalic3620 = @__env.GetMethodID(global::android.graphics.Typeface.staticClass, "isItalic", "()Z");
-			global::android.graphics.Typeface._defaultFromStyle3621 = @__env.GetStaticMethodID(global::android.graphics.Typeface.staticClass, "defaultFromStyle", "(I)Landroid/graphics/Typeface;");
-			global::android.graphics.Typeface._createFromAsset3622 = @__env.GetStaticMethodID(global::android.graphics.Typeface.staticClass, "createFromAsset", "(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;");
-			global::android.graphics.Typeface._createFromFile3623 = @__env.GetStaticMethodID(global::android.graphics.Typeface.staticClass, "createFromFile", "(Ljava/io/File;)Landroid/graphics/Typeface;");
-			global::android.graphics.Typeface._createFromFile3624 = @__env.GetStaticMethodID(global::android.graphics.Typeface.staticClass, "createFromFile", "(Ljava/lang/String;)Landroid/graphics/Typeface;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.Typeface.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Typeface"));
+			global::android.graphics.Typeface._finalize3806 = @__env.GetMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "finalize", "()V");
+			global::android.graphics.Typeface._create3807 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "create", "(Ljava/lang/String;I)Landroid/graphics/Typeface;");
+			global::android.graphics.Typeface._create3808 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "create", "(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;");
+			global::android.graphics.Typeface._getStyle3809 = @__env.GetMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "getStyle", "()I");
+			global::android.graphics.Typeface._isBold3810 = @__env.GetMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "isBold", "()Z");
+			global::android.graphics.Typeface._isItalic3811 = @__env.GetMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "isItalic", "()Z");
+			global::android.graphics.Typeface._defaultFromStyle3812 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "defaultFromStyle", "(I)Landroid/graphics/Typeface;");
+			global::android.graphics.Typeface._createFromAsset3813 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "createFromAsset", "(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;");
+			global::android.graphics.Typeface._createFromFile3814 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "createFromFile", "(Ljava/io/File;)Landroid/graphics/Typeface;");
+			global::android.graphics.Typeface._createFromFile3815 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.Typeface.staticClass, "createFromFile", "(Ljava/lang/String;)Landroid/graphics/Typeface;");
 		}
 	}
 }

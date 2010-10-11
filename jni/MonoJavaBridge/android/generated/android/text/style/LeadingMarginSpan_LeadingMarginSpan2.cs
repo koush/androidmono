@@ -1,70 +1,56 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_))]
 	public interface LeadingMarginSpan_LeadingMarginSpan2 : LeadingMarginSpan, WrapTogetherSpan
 	{
 		int getLeadingMarginLineCount();
 	}
 
-	public partial class LeadingMarginSpan_LeadingMarginSpan2_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2))]
+	public sealed partial class LeadingMarginSpan_LeadingMarginSpan2_ : java.lang.Object, LeadingMarginSpan_LeadingMarginSpan2
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static LeadingMarginSpan_LeadingMarginSpan2_()
 		{
-			get { return __LeadingMarginSpan_LeadingMarginSpan2.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __LeadingMarginSpan_LeadingMarginSpan2 : java.lang.Object, LeadingMarginSpan_LeadingMarginSpan2
-	{
-		internal static global::java.lang.Class staticClass;
-		static __LeadingMarginSpan_LeadingMarginSpan2()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2(@__env);
-			}
-		}
-		internal __LeadingMarginSpan_LeadingMarginSpan2(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal LeadingMarginSpan_LeadingMarginSpan2_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLeadingMarginLineCount7980;
+		internal static global::MonoJavaBridge.MethodId _getLeadingMarginLineCount8280;
 		 int android.text.style.LeadingMarginSpan_LeadingMarginSpan2.getLeadingMarginLineCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._getLeadingMarginLineCount7980);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMarginLineCount8280);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._getLeadingMarginLineCount7980);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMarginLineCount8280);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLeadingMargin7981;
+		internal static global::MonoJavaBridge.MethodId _getLeadingMargin8281;
 		 int android.text.style.LeadingMarginSpan.getLeadingMargin(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._getLeadingMargin7981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMargin8281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._getLeadingMargin7981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMargin8281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _drawLeadingMargin7982;
+		internal static global::MonoJavaBridge.MethodId _drawLeadingMargin8282;
 		 void android.text.style.LeadingMarginSpan.drawLeadingMargin(android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.lang.CharSequence arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._drawLeadingMargin7982, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._drawLeadingMargin8282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass, global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._drawLeadingMargin7982, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._drawLeadingMargin8282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg9), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg10), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg11));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass = @__class;
-			global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._getLeadingMarginLineCount7980 = @__env.GetMethodID(global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass, "android.text.style.LeadingMarginSpan_LeadingMarginSpan2.getLeadingMarginLineCount", "()I");
-			global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._getLeadingMargin7981 = @__env.GetMethodID(global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass, "android.text.style.LeadingMarginSpan.getLeadingMargin", "(Z)I");
-			global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2._drawLeadingMargin7982 = @__env.GetMethodID(global::android.text.style.__LeadingMarginSpan_LeadingMarginSpan2.staticClass, "android.text.style.LeadingMarginSpan.drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/LeadingMarginSpan_LeadingMarginSpan2"));
+			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMarginLineCount8280 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, "getLeadingMarginLineCount", "()I");
+			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._getLeadingMargin8281 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, "getLeadingMargin", "(Z)I");
+			global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_._drawLeadingMargin8282 = @__env.GetMethodIDNoThrow(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_.staticClass, "drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V");
 		}
 	}
 }

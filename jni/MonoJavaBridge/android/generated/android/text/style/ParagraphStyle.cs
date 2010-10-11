@@ -1,39 +1,25 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface ParagraphStyle 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.ParagraphStyle_))]
+	public interface ParagraphStyle  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class ParagraphStyle_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.ParagraphStyle))]
+	public sealed partial class ParagraphStyle_ : java.lang.Object, ParagraphStyle
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ParagraphStyle_()
 		{
-			get { return __ParagraphStyle.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ParagraphStyle : java.lang.Object, ParagraphStyle
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ParagraphStyle()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__ParagraphStyle), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.__ParagraphStyle(@__env);
-			}
-		}
-		internal __ParagraphStyle(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ParagraphStyle_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.__ParagraphStyle.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.ParagraphStyle_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/ParagraphStyle"));
 		}
 	}
 }

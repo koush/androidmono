@@ -1,33 +1,26 @@
 namespace android.gesture
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Prediction : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Prediction : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Prediction()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.gesture.Prediction), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.gesture.Prediction(@__env);
-			}
-		}
-		protected Prediction(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Prediction(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString2895;
+		internal static global::MonoJavaBridge.MethodId _toString3069;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.Prediction._toString2895));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.Prediction._toString3069)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString2895));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString3069)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _name2896;
+		internal static global::MonoJavaBridge.FieldId _name3070;
 		public global::java.lang.String name
 		{
 			get
@@ -35,7 +28,7 @@ namespace android.gesture
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _score2897;
+		internal static global::MonoJavaBridge.FieldId _score3071;
 		public double score
 		{
 			get
@@ -46,10 +39,11 @@ namespace android.gesture
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.gesture.Prediction.staticClass = @__class;
-			global::android.gesture.Prediction._toString2895 = @__env.GetMethodID(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.gesture.Prediction.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/Prediction"));
+			global::android.gesture.Prediction._toString3069 = @__env.GetMethodIDNoThrow(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
 		}
 	}
 }

@@ -1,50 +1,36 @@
 namespace org.xml.sax
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface EntityResolver 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.EntityResolver_))]
+	public interface EntityResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1);
 	}
 
-	public partial class EntityResolver_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.xml.sax.EntityResolver))]
+	public sealed partial class EntityResolver_ : java.lang.Object, EntityResolver
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static EntityResolver_()
 		{
-			get { return __EntityResolver.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __EntityResolver : java.lang.Object, EntityResolver
-	{
-		internal static global::java.lang.Class staticClass;
-		static __EntityResolver()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__EntityResolver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.xml.sax.__EntityResolver(@__env);
-			}
-		}
-		internal __EntityResolver(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal EntityResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _resolveEntity14581;
+		internal static global::MonoJavaBridge.MethodId _resolveEntity16501;
 		 global::org.xml.sax.InputSource org.xml.sax.EntityResolver.resolveEntity(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__EntityResolver._resolveEntity14581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.EntityResolver_._resolveEntity16501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__EntityResolver.staticClass, global::org.xml.sax.__EntityResolver._resolveEntity14581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.EntityResolver_.staticClass, global::org.xml.sax.EntityResolver_._resolveEntity16501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.xml.sax.__EntityResolver.staticClass = @__class;
-			global::org.xml.sax.__EntityResolver._resolveEntity14581 = @__env.GetMethodID(global::org.xml.sax.__EntityResolver.staticClass, "org.xml.sax.EntityResolver.resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.xml.sax.EntityResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/EntityResolver"));
+			global::org.xml.sax.EntityResolver_._resolveEntity16501 = @__env.GetMethodIDNoThrow(global::org.xml.sax.EntityResolver_.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 		}
 	}
 }

@@ -1,33 +1,38 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class DrawFilter : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DrawFilter : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DrawFilter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.DrawFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.DrawFilter(@__env);
-			}
-		}
-		protected DrawFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected DrawFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DrawFilter3131;
-		public DrawFilter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _finalize3308;
+		protected override void finalize() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._DrawFilter3131, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.DrawFilter._finalize3308);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._finalize3308);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		internal static global::MonoJavaBridge.MethodId _DrawFilter3309;
+		public DrawFilter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::android.graphics.DrawFilter.staticClass = @__class;
-			global::android.graphics.DrawFilter._DrawFilter3131 = @__env.GetMethodID(global::android.graphics.DrawFilter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._DrawFilter3309);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.DrawFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/DrawFilter"));
+			global::android.graphics.DrawFilter._finalize3308 = @__env.GetMethodIDNoThrow(global::android.graphics.DrawFilter.staticClass, "finalize", "()V");
+			global::android.graphics.DrawFilter._DrawFilter3309 = @__env.GetMethodIDNoThrow(global::android.graphics.DrawFilter.staticClass, "<init>", "()V");
 		}
 	}
 }

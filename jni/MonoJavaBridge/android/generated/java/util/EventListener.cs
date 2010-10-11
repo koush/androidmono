@@ -1,39 +1,25 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface EventListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.EventListener_))]
+	public interface EventListener  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class EventListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.EventListener))]
+	public sealed partial class EventListener_ : java.lang.Object, EventListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static EventListener_()
 		{
-			get { return __EventListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __EventListener : java.lang.Object, EventListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __EventListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__EventListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.__EventListener(@__env);
-			}
-		}
-		internal __EventListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal EventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.__EventListener.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.EventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/EventListener"));
 		}
 	}
 }

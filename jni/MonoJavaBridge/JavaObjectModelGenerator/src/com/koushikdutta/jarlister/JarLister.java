@@ -568,6 +568,7 @@ public class JarLister {
 				*/
 				
 				wr.endElement("Methods");
+                dataElement(wr, "HasEmptyConstructor", hasEmptyConstructor);
 				
 				if (clazz.getDeclaredFields().length > 0 && !clazz.isPrimitive() && !clazz.isInterface() && !clazz.getName().equals("java.lang.Character") && !clazz.getName().equals("java.text.CharacterIterator") && !clazz.getName().equals("java.lang.Float") && !clazz.getName().equals("java.lang.Byte") && !clazz.getName().equals("java.lang.Double"))
 				{

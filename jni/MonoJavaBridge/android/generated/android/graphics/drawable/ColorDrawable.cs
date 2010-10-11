@@ -1,120 +1,116 @@
 namespace android.graphics.drawable
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ColorDrawable : android.graphics.drawable.Drawable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ColorDrawable : android.graphics.drawable.Drawable
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ColorDrawable()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.ColorDrawable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.drawable.ColorDrawable(@__env);
-			}
-		}
-		protected ColorDrawable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ColorDrawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _inflate3709;
+		internal static global::MonoJavaBridge.MethodId _inflate3901;
 		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.ColorDrawable._inflate3709, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._inflate3901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._inflate3709, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._inflate3901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _draw3710;
+		internal static global::MonoJavaBridge.MethodId _draw3902;
 		public override void draw(android.graphics.Canvas arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.ColorDrawable._draw3710, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._draw3902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._draw3710, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._draw3902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3711;
+		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations3903;
 		public override int getChangingConfigurations() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.ColorDrawable._getChangingConfigurations3711);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._getChangingConfigurations3903);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getChangingConfigurations3711);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getChangingConfigurations3903);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3712;
+		internal static global::MonoJavaBridge.MethodId _setAlpha3904;
 		public override void setAlpha(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.ColorDrawable._setAlpha3712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._setAlpha3904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._setAlpha3712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._setAlpha3904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3713;
+		internal static global::MonoJavaBridge.MethodId _setColorFilter3905;
 		public override void setColorFilter(android.graphics.ColorFilter arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.ColorDrawable._setColorFilter3713, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._setColorFilter3905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._setColorFilter3713, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._setColorFilter3905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3714;
+		internal static global::MonoJavaBridge.MethodId _getOpacity3906;
 		public override int getOpacity() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.ColorDrawable._getOpacity3714);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._getOpacity3906);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getOpacity3714);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getOpacity3906);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3715;
+		internal static global::MonoJavaBridge.MethodId _getConstantState3907;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.ColorDrawable._getConstantState3715));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._getConstantState3907)) as android.graphics.drawable.Drawable.ConstantState;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getConstantState3715));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getConstantState3907)) as android.graphics.drawable.Drawable.ConstantState;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlpha3716;
+		internal static global::MonoJavaBridge.MethodId _getAlpha3908;
 		public virtual int getAlpha() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.ColorDrawable._getAlpha3716);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._getAlpha3908);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getAlpha3716);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getAlpha3908);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ColorDrawable3717;
-		public ColorDrawable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ColorDrawable3909;
+		public ColorDrawable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._ColorDrawable3717, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._ColorDrawable3909);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ColorDrawable3718;
-		public ColorDrawable(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ColorDrawable3910;
+		public ColorDrawable(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._ColorDrawable3718, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._ColorDrawable3910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.drawable.ColorDrawable.staticClass = @__class;
-			global::android.graphics.drawable.ColorDrawable._inflate3709 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
-			global::android.graphics.drawable.ColorDrawable._draw3710 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.graphics.drawable.ColorDrawable._getChangingConfigurations3711 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "getChangingConfigurations", "()I");
-			global::android.graphics.drawable.ColorDrawable._setAlpha3712 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "setAlpha", "(I)V");
-			global::android.graphics.drawable.ColorDrawable._setColorFilter3713 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
-			global::android.graphics.drawable.ColorDrawable._getOpacity3714 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "getOpacity", "()I");
-			global::android.graphics.drawable.ColorDrawable._getConstantState3715 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
-			global::android.graphics.drawable.ColorDrawable._getAlpha3716 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "getAlpha", "()I");
-			global::android.graphics.drawable.ColorDrawable._ColorDrawable3717 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "<init>", "()V");
-			global::android.graphics.drawable.ColorDrawable._ColorDrawable3718 = @__env.GetMethodID(global::android.graphics.drawable.ColorDrawable.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.drawable.ColorDrawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/ColorDrawable"));
+			global::android.graphics.drawable.ColorDrawable._inflate3901 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
+			global::android.graphics.drawable.ColorDrawable._draw3902 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.graphics.drawable.ColorDrawable._getChangingConfigurations3903 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "getChangingConfigurations", "()I");
+			global::android.graphics.drawable.ColorDrawable._setAlpha3904 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "setAlpha", "(I)V");
+			global::android.graphics.drawable.ColorDrawable._setColorFilter3905 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
+			global::android.graphics.drawable.ColorDrawable._getOpacity3906 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "getOpacity", "()I");
+			global::android.graphics.drawable.ColorDrawable._getConstantState3907 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
+			global::android.graphics.drawable.ColorDrawable._getAlpha3908 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "getAlpha", "()I");
+			global::android.graphics.drawable.ColorDrawable._ColorDrawable3909 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "<init>", "()V");
+			global::android.graphics.drawable.ColorDrawable._ColorDrawable3910 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.ColorDrawable.staticClass, "<init>", "(I)V");
 		}
 	}
 }

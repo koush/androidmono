@@ -1,7 +1,7 @@
 namespace java.security.cert
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface X509Extension 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.cert.X509Extension_))]
+	public interface X509Extension  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool hasUnsupportedCriticalExtension();
 		global::java.util.Set getCriticalExtensionOIDs();
@@ -9,74 +9,61 @@ namespace java.security.cert
 		byte[] getExtensionValue(java.lang.String arg0);
 	}
 
-	public partial class X509Extension_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.cert.X509Extension))]
+	public sealed partial class X509Extension_ : java.lang.Object, X509Extension
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static X509Extension_()
 		{
-			get { return __X509Extension.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __X509Extension : java.lang.Object, X509Extension
-	{
-		internal static global::java.lang.Class staticClass;
-		static __X509Extension()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.cert.__X509Extension), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.cert.__X509Extension(@__env);
-			}
-		}
-		internal __X509Extension(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal X509Extension_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasUnsupportedCriticalExtension13352;
+		internal static global::MonoJavaBridge.MethodId _hasUnsupportedCriticalExtension15025;
 		 bool java.security.cert.X509Extension.hasUnsupportedCriticalExtension() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.cert.__X509Extension._hasUnsupportedCriticalExtension13352);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension15025);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._hasUnsupportedCriticalExtension13352);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension15025);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCriticalExtensionOIDs13353;
+		internal static global::MonoJavaBridge.MethodId _getCriticalExtensionOIDs15026;
 		 global::java.util.Set java.security.cert.X509Extension.getCriticalExtensionOIDs() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.__X509Extension._getCriticalExtensionOIDs13353));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_._getCriticalExtensionOIDs15026)) as java.util.Set;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._getCriticalExtensionOIDs13353));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._getCriticalExtensionOIDs15026)) as java.util.Set;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNonCriticalExtensionOIDs13354;
+		internal static global::MonoJavaBridge.MethodId _getNonCriticalExtensionOIDs15027;
 		 global::java.util.Set java.security.cert.X509Extension.getNonCriticalExtensionOIDs() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.__X509Extension._getNonCriticalExtensionOIDs13354));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs15027)) as java.util.Set;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._getNonCriticalExtensionOIDs13354));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs15027)) as java.util.Set;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getExtensionValue13355;
+		internal static global::MonoJavaBridge.MethodId _getExtensionValue15028;
 		 byte[] java.security.cert.X509Extension.getExtensionValue(java.lang.String arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.__X509Extension._getExtensionValue13355, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_._getExtensionValue15028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._getExtensionValue13355, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._getExtensionValue15028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.cert.__X509Extension.staticClass = @__class;
-			global::java.security.cert.__X509Extension._hasUnsupportedCriticalExtension13352 = @__env.GetMethodID(global::java.security.cert.__X509Extension.staticClass, "java.security.cert.X509Extension.hasUnsupportedCriticalExtension", "()Z");
-			global::java.security.cert.__X509Extension._getCriticalExtensionOIDs13353 = @__env.GetMethodID(global::java.security.cert.__X509Extension.staticClass, "java.security.cert.X509Extension.getCriticalExtensionOIDs", "()Ljava/util/Set;");
-			global::java.security.cert.__X509Extension._getNonCriticalExtensionOIDs13354 = @__env.GetMethodID(global::java.security.cert.__X509Extension.staticClass, "java.security.cert.X509Extension.getNonCriticalExtensionOIDs", "()Ljava/util/Set;");
-			global::java.security.cert.__X509Extension._getExtensionValue13355 = @__env.GetMethodID(global::java.security.cert.__X509Extension.staticClass, "java.security.cert.X509Extension.getExtensionValue", "(Ljava/lang/String;)[B");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.cert.X509Extension_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/X509Extension"));
+			global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension15025 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "hasUnsupportedCriticalExtension", "()Z");
+			global::java.security.cert.X509Extension_._getCriticalExtensionOIDs15026 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getCriticalExtensionOIDs", "()Ljava/util/Set;");
+			global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs15027 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;");
+			global::java.security.cert.X509Extension_._getExtensionValue15028 = @__env.GetMethodIDNoThrow(global::java.security.cert.X509Extension_.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B");
 		}
 	}
 }

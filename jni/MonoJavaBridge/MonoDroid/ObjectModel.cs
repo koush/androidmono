@@ -215,6 +215,21 @@ namespace MonoDroid
 	
 	public class Type : Overridable
 	{
+        public bool HasEmptyConstructor
+        {
+            get;set;
+        }
+        
+        public string WrappedInterface
+        {
+            get;set;
+        }
+        
+        public Type WrappedInterfaceType
+        {
+            get;set;
+        }
+        
         public string NativeName
         {
             get;set;

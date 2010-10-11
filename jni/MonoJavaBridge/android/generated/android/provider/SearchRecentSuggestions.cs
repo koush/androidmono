@@ -1,57 +1,51 @@
 namespace android.provider
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SearchRecentSuggestions : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SearchRecentSuggestions : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SearchRecentSuggestions()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.SearchRecentSuggestions), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.provider.SearchRecentSuggestions(@__env);
-			}
-		}
-		protected SearchRecentSuggestions(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SearchRecentSuggestions(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _truncateHistory6899;
+		internal static global::MonoJavaBridge.MethodId _truncateHistory7175;
 		protected virtual void truncateHistory(android.content.ContentResolver arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions._truncateHistory6899, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions._truncateHistory7175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._truncateHistory6899, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._truncateHistory7175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearHistory6900;
+		internal static global::MonoJavaBridge.MethodId _clearHistory7176;
 		public virtual void clearHistory() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions._clearHistory6900);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions._clearHistory7176);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._clearHistory6900);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._clearHistory7176);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _saveRecentQuery6901;
+		internal static global::MonoJavaBridge.MethodId _saveRecentQuery7177;
 		public virtual void saveRecentQuery(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions._saveRecentQuery6901, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions._saveRecentQuery7177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._saveRecentQuery6901, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._saveRecentQuery7177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SearchRecentSuggestions6902;
-		public SearchRecentSuggestions(android.content.Context arg0, java.lang.String arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SearchRecentSuggestions7178;
+		public SearchRecentSuggestions(android.content.Context arg0, java.lang.String arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._SearchRecentSuggestions6902, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._SearchRecentSuggestions7178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _QUERIES_PROJECTION_1LINE6903;
+		internal static global::MonoJavaBridge.FieldId _QUERIES_PROJECTION_1LINE7179;
 		public static global::java.lang.String[] QUERIES_PROJECTION_1LINE
 		{
 			get
@@ -59,7 +53,7 @@ namespace android.provider
 				return default(global::java.lang.String[]);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _QUERIES_PROJECTION_2LINE6904;
+		internal static global::MonoJavaBridge.FieldId _QUERIES_PROJECTION_2LINE7180;
 		public static global::java.lang.String[] QUERIES_PROJECTION_2LINE
 		{
 			get
@@ -95,13 +89,14 @@ namespace android.provider
 				return 4;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.provider.SearchRecentSuggestions.staticClass = @__class;
-			global::android.provider.SearchRecentSuggestions._truncateHistory6899 = @__env.GetMethodID(global::android.provider.SearchRecentSuggestions.staticClass, "truncateHistory", "(Landroid/content/ContentResolver;I)V");
-			global::android.provider.SearchRecentSuggestions._clearHistory6900 = @__env.GetMethodID(global::android.provider.SearchRecentSuggestions.staticClass, "clearHistory", "()V");
-			global::android.provider.SearchRecentSuggestions._saveRecentQuery6901 = @__env.GetMethodID(global::android.provider.SearchRecentSuggestions.staticClass, "saveRecentQuery", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.provider.SearchRecentSuggestions._SearchRecentSuggestions6902 = @__env.GetMethodID(global::android.provider.SearchRecentSuggestions.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.provider.SearchRecentSuggestions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/provider/SearchRecentSuggestions"));
+			global::android.provider.SearchRecentSuggestions._truncateHistory7175 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "truncateHistory", "(Landroid/content/ContentResolver;I)V");
+			global::android.provider.SearchRecentSuggestions._clearHistory7176 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "clearHistory", "()V");
+			global::android.provider.SearchRecentSuggestions._saveRecentQuery7177 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "saveRecentQuery", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::android.provider.SearchRecentSuggestions._SearchRecentSuggestions7178 = @__env.GetMethodIDNoThrow(global::android.provider.SearchRecentSuggestions.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;I)V");
 		}
 	}
 }

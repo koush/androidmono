@@ -1,33 +1,28 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class DeadObjectException : android.os.RemoteException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DeadObjectException : android.os.RemoteException
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DeadObjectException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.DeadObjectException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.DeadObjectException(@__env);
-			}
-		}
-		protected DeadObjectException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected DeadObjectException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DeadObjectException6023;
-		public DeadObjectException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _DeadObjectException6291;
+		public DeadObjectException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.DeadObjectException.staticClass, global::android.os.DeadObjectException._DeadObjectException6023, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DeadObjectException.staticClass, global::android.os.DeadObjectException._DeadObjectException6291);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.DeadObjectException.staticClass = @__class;
-			global::android.os.DeadObjectException._DeadObjectException6023 = @__env.GetMethodID(global::android.os.DeadObjectException.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.DeadObjectException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/DeadObjectException"));
+			global::android.os.DeadObjectException._DeadObjectException6291 = @__env.GetMethodIDNoThrow(global::android.os.DeadObjectException.staticClass, "<init>", "()V");
 		}
 	}
 }

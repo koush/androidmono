@@ -1,50 +1,46 @@
 namespace android.sax
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class RootElement : android.sax.Element
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class RootElement : android.sax.Element
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static RootElement()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.sax.RootElement), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.sax.RootElement(@__env);
-			}
-		}
-		protected RootElement(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected RootElement(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getContentHandler6977;
+		internal static global::MonoJavaBridge.MethodId _getContentHandler7253;
 		public virtual global::org.xml.sax.ContentHandler getContentHandler() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.RootElement._getContentHandler6977));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ContentHandler>(@__env.CallObjectMethod(this.JvmHandle, global::android.sax.RootElement._getContentHandler7253)) as org.xml.sax.ContentHandler;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler6977));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ContentHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler7253)) as org.xml.sax.ContentHandler;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RootElement6978;
-		public RootElement(java.lang.String arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RootElement7254;
+		public RootElement(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement6978, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement7254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RootElement6979;
-		public RootElement(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RootElement7255;
+		public RootElement(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement6979, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement7255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.sax.RootElement.staticClass = @__class;
-			global::android.sax.RootElement._getContentHandler6977 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;");
-			global::android.sax.RootElement._RootElement6978 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.sax.RootElement._RootElement6979 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.sax.RootElement.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/RootElement"));
+			global::android.sax.RootElement._getContentHandler7253 = @__env.GetMethodIDNoThrow(global::android.sax.RootElement.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;");
+			global::android.sax.RootElement._RootElement7254 = @__env.GetMethodIDNoThrow(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::android.sax.RootElement._RootElement7255 = @__env.GetMethodIDNoThrow(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

@@ -1,169 +1,166 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class MonthDisplayHelper : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MonthDisplayHelper : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static MonthDisplayHelper()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.MonthDisplayHelper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.MonthDisplayHelper(@__env);
-			}
-		}
-		protected MonthDisplayHelper(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected MonthDisplayHelper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOffset8238;
+		internal static global::MonoJavaBridge.MethodId _getOffset8542;
 		public virtual int getOffset() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getOffset8238);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getOffset8542);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getOffset8238);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getOffset8542);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYear8239;
+		internal static global::MonoJavaBridge.MethodId _getYear8543;
 		public virtual int getYear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getYear8239);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getYear8543);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getYear8239);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getYear8543);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMonth8240;
+		internal static global::MonoJavaBridge.MethodId _getMonth8544;
 		public virtual int getMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getMonth8240);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getMonth8544);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getMonth8240);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getMonth8544);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getWeekStartDay8241;
+		internal static global::MonoJavaBridge.MethodId _getWeekStartDay8545;
 		public virtual int getWeekStartDay() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getWeekStartDay8241);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getWeekStartDay8545);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getWeekStartDay8241);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getWeekStartDay8545);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFirstDayOfMonth8242;
+		internal static global::MonoJavaBridge.MethodId _getFirstDayOfMonth8546;
 		public virtual int getFirstDayOfMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getFirstDayOfMonth8242);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getFirstDayOfMonth8546);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getFirstDayOfMonth8242);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getFirstDayOfMonth8546);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNumberOfDaysInMonth8243;
+		internal static global::MonoJavaBridge.MethodId _getNumberOfDaysInMonth8547;
 		public virtual int getNumberOfDaysInMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth8243);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth8547);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth8243);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth8547);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDigitsForRow8244;
+		internal static global::MonoJavaBridge.MethodId _getDigitsForRow8548;
 		public virtual int[] getDigitsForRow(int arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.util.MonthDisplayHelper._getDigitsForRow8244, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getDigitsForRow8548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getDigitsForRow8244, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getDigitsForRow8548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDayAt8245;
+		internal static global::MonoJavaBridge.MethodId _getDayAt8549;
 		public virtual int getDayAt(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getDayAt8245, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getDayAt8549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getDayAt8245, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getDayAt8549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRowOf8246;
+		internal static global::MonoJavaBridge.MethodId _getRowOf8550;
 		public virtual int getRowOf(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getRowOf8246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getRowOf8550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getRowOf8246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getRowOf8550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnOf8247;
+		internal static global::MonoJavaBridge.MethodId _getColumnOf8551;
 		public virtual int getColumnOf(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getColumnOf8247, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._getColumnOf8551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getColumnOf8247, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getColumnOf8551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _previousMonth8248;
+		internal static global::MonoJavaBridge.MethodId _previousMonth8552;
 		public virtual void previousMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.MonthDisplayHelper._previousMonth8248);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._previousMonth8552);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._previousMonth8248);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._previousMonth8552);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextMonth8249;
+		internal static global::MonoJavaBridge.MethodId _nextMonth8553;
 		public virtual void nextMonth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.MonthDisplayHelper._nextMonth8249);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._nextMonth8553);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._nextMonth8249);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._nextMonth8553);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isWithinCurrentMonth8250;
+		internal static global::MonoJavaBridge.MethodId _isWithinCurrentMonth8554;
 		public virtual bool isWithinCurrentMonth(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.util.MonthDisplayHelper._isWithinCurrentMonth8250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.util.MonthDisplayHelper._isWithinCurrentMonth8554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._isWithinCurrentMonth8250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._isWithinCurrentMonth8554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MonthDisplayHelper8251;
-		public MonthDisplayHelper(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _MonthDisplayHelper8555;
+		public MonthDisplayHelper(int arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._MonthDisplayHelper8251, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._MonthDisplayHelper8555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MonthDisplayHelper8252;
-		public MonthDisplayHelper(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _MonthDisplayHelper8556;
+		public MonthDisplayHelper(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._MonthDisplayHelper8252, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._MonthDisplayHelper8556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.MonthDisplayHelper.staticClass = @__class;
-			global::android.util.MonthDisplayHelper._getOffset8238 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getOffset", "()I");
-			global::android.util.MonthDisplayHelper._getYear8239 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getYear", "()I");
-			global::android.util.MonthDisplayHelper._getMonth8240 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getMonth", "()I");
-			global::android.util.MonthDisplayHelper._getWeekStartDay8241 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getWeekStartDay", "()I");
-			global::android.util.MonthDisplayHelper._getFirstDayOfMonth8242 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getFirstDayOfMonth", "()I");
-			global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth8243 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getNumberOfDaysInMonth", "()I");
-			global::android.util.MonthDisplayHelper._getDigitsForRow8244 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getDigitsForRow", "(I)[I");
-			global::android.util.MonthDisplayHelper._getDayAt8245 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getDayAt", "(II)I");
-			global::android.util.MonthDisplayHelper._getRowOf8246 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getRowOf", "(I)I");
-			global::android.util.MonthDisplayHelper._getColumnOf8247 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "getColumnOf", "(I)I");
-			global::android.util.MonthDisplayHelper._previousMonth8248 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "previousMonth", "()V");
-			global::android.util.MonthDisplayHelper._nextMonth8249 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "nextMonth", "()V");
-			global::android.util.MonthDisplayHelper._isWithinCurrentMonth8250 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "isWithinCurrentMonth", "(II)Z");
-			global::android.util.MonthDisplayHelper._MonthDisplayHelper8251 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "<init>", "(III)V");
-			global::android.util.MonthDisplayHelper._MonthDisplayHelper8252 = @__env.GetMethodID(global::android.util.MonthDisplayHelper.staticClass, "<init>", "(II)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.MonthDisplayHelper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/MonthDisplayHelper"));
+			global::android.util.MonthDisplayHelper._getOffset8542 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getOffset", "()I");
+			global::android.util.MonthDisplayHelper._getYear8543 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getYear", "()I");
+			global::android.util.MonthDisplayHelper._getMonth8544 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getMonth", "()I");
+			global::android.util.MonthDisplayHelper._getWeekStartDay8545 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getWeekStartDay", "()I");
+			global::android.util.MonthDisplayHelper._getFirstDayOfMonth8546 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getFirstDayOfMonth", "()I");
+			global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth8547 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getNumberOfDaysInMonth", "()I");
+			global::android.util.MonthDisplayHelper._getDigitsForRow8548 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getDigitsForRow", "(I)[I");
+			global::android.util.MonthDisplayHelper._getDayAt8549 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getDayAt", "(II)I");
+			global::android.util.MonthDisplayHelper._getRowOf8550 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getRowOf", "(I)I");
+			global::android.util.MonthDisplayHelper._getColumnOf8551 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "getColumnOf", "(I)I");
+			global::android.util.MonthDisplayHelper._previousMonth8552 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "previousMonth", "()V");
+			global::android.util.MonthDisplayHelper._nextMonth8553 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "nextMonth", "()V");
+			global::android.util.MonthDisplayHelper._isWithinCurrentMonth8554 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "isWithinCurrentMonth", "(II)Z");
+			global::android.util.MonthDisplayHelper._MonthDisplayHelper8555 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "<init>", "(III)V");
+			global::android.util.MonthDisplayHelper._MonthDisplayHelper8556 = @__env.GetMethodIDNoThrow(global::android.util.MonthDisplayHelper.staticClass, "<init>", "(II)V");
 		}
 	}
 }

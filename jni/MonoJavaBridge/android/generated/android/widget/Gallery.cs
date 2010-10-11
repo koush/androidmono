@@ -1,401 +1,395 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Gallery : android.widget.AbsSpinner, android.view.GestureDetector.OnGestureListener
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Gallery : android.widget.AbsSpinner, android.view.GestureDetector.OnGestureListener
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Gallery()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.Gallery), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.Gallery(@__env);
-			}
-		}
-		protected Gallery(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Gallery(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public new class LayoutParams : android.view.ViewGroup.LayoutParams
+		[global::MonoJavaBridge.JavaClass()]
+		public new partial class LayoutParams : android.view.ViewGroup.LayoutParams
 		{
-			internal new static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static LayoutParams()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.Gallery.LayoutParams), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.widget.Gallery.LayoutParams(@__env);
-				}
-			}
-			protected LayoutParams(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10932;
-			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11311;
+			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams10932, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams11311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10933;
-			public LayoutParams(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11312;
+			public LayoutParams(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams10933, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams11312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10934;
-			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11313;
+			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams10934, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.LayoutParams.staticClass, global::android.widget.Gallery.LayoutParams._LayoutParams11313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.widget.Gallery.LayoutParams.staticClass = @__class;
-				global::android.widget.Gallery.LayoutParams._LayoutParams10932 = @__env.GetMethodID(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-				global::android.widget.Gallery.LayoutParams._LayoutParams10933 = @__env.GetMethodID(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(II)V");
-				global::android.widget.Gallery.LayoutParams._LayoutParams10934 = @__env.GetMethodID(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.Gallery.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Gallery$LayoutParams"));
+				global::android.widget.Gallery.LayoutParams._LayoutParams11311 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+				global::android.widget.Gallery.LayoutParams._LayoutParams11312 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(II)V");
+				global::android.widget.Gallery.LayoutParams._LayoutParams11313 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown10935;
+		internal static global::MonoJavaBridge.MethodId _onKeyDown11314;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onKeyDown10935, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onKeyDown11314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onKeyDown10935, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onKeyDown11314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp10936;
+		internal static global::MonoJavaBridge.MethodId _onKeyUp11315;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onKeyUp10936, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onKeyUp11315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onKeyUp10936, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onKeyUp11315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent10937;
+		internal static global::MonoJavaBridge.MethodId _onTouchEvent11316;
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onTouchEvent10937, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onTouchEvent11316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onTouchEvent10937, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onTouchEvent11316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchKeyEvent10938;
+		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent11317;
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._dispatchKeyEvent10938, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._dispatchKeyEvent11317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchKeyEvent10938, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchKeyEvent11317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setGravity10939;
+		internal static global::MonoJavaBridge.MethodId _setGravity11318;
 		public virtual void setGravity(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._setGravity10939, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._setGravity11318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setGravity10939, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setGravity11318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _showContextMenu10940;
+		internal static global::MonoJavaBridge.MethodId _showContextMenu11319;
 		public override bool showContextMenu() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._showContextMenu10940);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._showContextMenu11319);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._showContextMenu10940);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._showContextMenu11319);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFocusChanged10941;
+		internal static global::MonoJavaBridge.MethodId _onFocusChanged11320;
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._onFocusChanged10941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._onFocusChanged11320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onFocusChanged10941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onFocusChanged11320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchSetPressed10942;
+		internal static global::MonoJavaBridge.MethodId _dispatchSetPressed11321;
 		protected override void dispatchSetPressed(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._dispatchSetPressed10942, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._dispatchSetPressed11321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchSetPressed10942, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchSetPressed11321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getContextMenuInfo10943;
+		internal static global::MonoJavaBridge.MethodId _getContextMenuInfo11322;
 		protected override global::android.view.ContextMenu_ContextMenuInfo getContextMenuInfo() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._getContextMenuInfo10943));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Gallery._getContextMenuInfo11322)) as android.view.ContextMenu_ContextMenuInfo;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getContextMenuInfo10943));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getContextMenuInfo11322)) as android.view.ContextMenu_ContextMenuInfo;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _computeHorizontalScrollRange10944;
+		internal static global::MonoJavaBridge.MethodId _computeHorizontalScrollRange11323;
 		protected override int computeHorizontalScrollRange() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Gallery._computeHorizontalScrollRange10944);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Gallery._computeHorizontalScrollRange11323);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollRange10944);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollRange11323);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _computeHorizontalScrollOffset10945;
+		internal static global::MonoJavaBridge.MethodId _computeHorizontalScrollOffset11324;
 		protected override int computeHorizontalScrollOffset() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Gallery._computeHorizontalScrollOffset10945);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Gallery._computeHorizontalScrollOffset11324);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollOffset10945);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollOffset11324);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _computeHorizontalScrollExtent10946;
+		internal static global::MonoJavaBridge.MethodId _computeHorizontalScrollExtent11325;
 		protected override int computeHorizontalScrollExtent() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Gallery._computeHorizontalScrollExtent10946);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Gallery._computeHorizontalScrollExtent11325);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollExtent10946);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollExtent11325);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLayout10947;
+		internal static global::MonoJavaBridge.MethodId _onLayout11326;
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._onLayout10947, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._onLayout11326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onLayout10947, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onLayout11326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchSetSelected10948;
+		internal static global::MonoJavaBridge.MethodId _dispatchSetSelected11327;
 		public override void dispatchSetSelected(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._dispatchSetSelected10948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._dispatchSetSelected11327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchSetSelected10948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchSetSelected11327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _showContextMenuForChild10949;
+		internal static global::MonoJavaBridge.MethodId _showContextMenuForChild11328;
 		public override bool showContextMenuForChild(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._showContextMenuForChild10949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._showContextMenuForChild11328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._showContextMenuForChild10949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._showContextMenuForChild11328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChildDrawingOrder10950;
+		internal static global::MonoJavaBridge.MethodId _getChildDrawingOrder11329;
 		protected override int getChildDrawingOrder(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Gallery._getChildDrawingOrder10950, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Gallery._getChildDrawingOrder11329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getChildDrawingOrder10950, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getChildDrawingOrder11329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChildStaticTransformation10951;
+		internal static global::MonoJavaBridge.MethodId _getChildStaticTransformation11330;
 		protected override bool getChildStaticTransformation(android.view.View arg0, android.view.animation.Transformation arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._getChildStaticTransformation10951, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._getChildStaticTransformation11330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getChildStaticTransformation10951, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getChildStaticTransformation11330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _checkLayoutParams10952;
+		internal static global::MonoJavaBridge.MethodId _checkLayoutParams11331;
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._checkLayoutParams10952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._checkLayoutParams11331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._checkLayoutParams10952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._checkLayoutParams11331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams10953;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams11332;
 		public override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._generateLayoutParams10953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Gallery._generateLayoutParams11332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateLayoutParams10953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateLayoutParams11332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams10954;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams11333;
 		protected override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._generateLayoutParams10954, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Gallery._generateLayoutParams11333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateLayoutParams10954, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateLayoutParams11333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _generateDefaultLayoutParams10955;
+		internal static global::MonoJavaBridge.MethodId _generateDefaultLayoutParams11334;
 		protected override global::android.view.ViewGroup.LayoutParams generateDefaultLayoutParams() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._generateDefaultLayoutParams10955));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Gallery._generateDefaultLayoutParams11334)) as android.view.ViewGroup.LayoutParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateDefaultLayoutParams10955));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateDefaultLayoutParams11334)) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLongPress10956;
+		internal static global::MonoJavaBridge.MethodId _onLongPress11335;
 		public virtual void onLongPress(android.view.MotionEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._onLongPress10956, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._onLongPress11335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onLongPress10956, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onLongPress11335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSingleTapUp10957;
+		internal static global::MonoJavaBridge.MethodId _onSingleTapUp11336;
 		public virtual bool onSingleTapUp(android.view.MotionEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onSingleTapUp10957, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onSingleTapUp11336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onSingleTapUp10957, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onSingleTapUp11336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onScroll10958;
+		internal static global::MonoJavaBridge.MethodId _onScroll11337;
 		public virtual bool onScroll(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onScroll10958, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onScroll11337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onScroll10958, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onScroll11337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFling10959;
+		internal static global::MonoJavaBridge.MethodId _onFling11338;
 		public virtual bool onFling(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onFling10959, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onFling11338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onFling10959, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onFling11338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onShowPress10960;
+		internal static global::MonoJavaBridge.MethodId _onShowPress11339;
 		public virtual void onShowPress(android.view.MotionEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._onShowPress10960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._onShowPress11339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onShowPress10960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onShowPress11339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDown10961;
+		internal static global::MonoJavaBridge.MethodId _onDown11340;
 		public virtual bool onDown(android.view.MotionEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onDown10961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Gallery._onDown11340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onDown10961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onDown11340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setCallbackDuringFling10962;
+		internal static global::MonoJavaBridge.MethodId _setCallbackDuringFling11341;
 		public virtual void setCallbackDuringFling(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._setCallbackDuringFling10962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._setCallbackDuringFling11341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setCallbackDuringFling10962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setCallbackDuringFling11341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAnimationDuration10963;
+		internal static global::MonoJavaBridge.MethodId _setAnimationDuration11342;
 		public virtual void setAnimationDuration(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._setAnimationDuration10963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._setAnimationDuration11342, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setAnimationDuration10963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setAnimationDuration11342, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSpacing10964;
+		internal static global::MonoJavaBridge.MethodId _setSpacing11343;
 		public virtual void setSpacing(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._setSpacing10964, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._setSpacing11343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setSpacing10964, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setSpacing11343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setUnselectedAlpha10965;
+		internal static global::MonoJavaBridge.MethodId _setUnselectedAlpha11344;
 		public virtual void setUnselectedAlpha(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Gallery._setUnselectedAlpha10965, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Gallery._setUnselectedAlpha11344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setUnselectedAlpha10965, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setUnselectedAlpha11344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Gallery10966;
-		public Gallery(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Gallery11345;
+		public Gallery(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery10966, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery11345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Gallery10967;
-		public Gallery(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Gallery11346;
+		public Gallery(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery10967, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery11346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Gallery10968;
-		public Gallery(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Gallery11347;
+		public Gallery(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery10968, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Gallery.staticClass, global::android.widget.Gallery._Gallery11347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.Gallery.staticClass = @__class;
-			global::android.widget.Gallery._onKeyDown10935 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.Gallery._onKeyUp10936 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.Gallery._onTouchEvent10937 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.Gallery._dispatchKeyEvent10938 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z");
-			global::android.widget.Gallery._setGravity10939 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "setGravity", "(I)V");
-			global::android.widget.Gallery._showContextMenu10940 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "showContextMenu", "()Z");
-			global::android.widget.Gallery._onFocusChanged10941 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
-			global::android.widget.Gallery._dispatchSetPressed10942 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "dispatchSetPressed", "(Z)V");
-			global::android.widget.Gallery._getContextMenuInfo10943 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "getContextMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
-			global::android.widget.Gallery._computeHorizontalScrollRange10944 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "computeHorizontalScrollRange", "()I");
-			global::android.widget.Gallery._computeHorizontalScrollOffset10945 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "computeHorizontalScrollOffset", "()I");
-			global::android.widget.Gallery._computeHorizontalScrollExtent10946 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "computeHorizontalScrollExtent", "()I");
-			global::android.widget.Gallery._onLayout10947 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onLayout", "(ZIIII)V");
-			global::android.widget.Gallery._dispatchSetSelected10948 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "dispatchSetSelected", "(Z)V");
-			global::android.widget.Gallery._showContextMenuForChild10949 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z");
-			global::android.widget.Gallery._getChildDrawingOrder10950 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "getChildDrawingOrder", "(II)I");
-			global::android.widget.Gallery._getChildStaticTransformation10951 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "getChildStaticTransformation", "(Landroid/view/View;Landroid/view/animation/Transformation;)Z");
-			global::android.widget.Gallery._checkLayoutParams10952 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
-			global::android.widget.Gallery._generateLayoutParams10953 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;");
-			global::android.widget.Gallery._generateLayoutParams10954 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;");
-			global::android.widget.Gallery._generateDefaultLayoutParams10955 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "generateDefaultLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;");
-			global::android.widget.Gallery._onLongPress10956 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onLongPress", "(Landroid/view/MotionEvent;)V");
-			global::android.widget.Gallery._onSingleTapUp10957 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onSingleTapUp", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.Gallery._onScroll10958 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onScroll", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z");
-			global::android.widget.Gallery._onFling10959 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onFling", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z");
-			global::android.widget.Gallery._onShowPress10960 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onShowPress", "(Landroid/view/MotionEvent;)V");
-			global::android.widget.Gallery._onDown10961 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "onDown", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.Gallery._setCallbackDuringFling10962 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "setCallbackDuringFling", "(Z)V");
-			global::android.widget.Gallery._setAnimationDuration10963 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "setAnimationDuration", "(I)V");
-			global::android.widget.Gallery._setSpacing10964 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "setSpacing", "(I)V");
-			global::android.widget.Gallery._setUnselectedAlpha10965 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "setUnselectedAlpha", "(F)V");
-			global::android.widget.Gallery._Gallery10966 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::android.widget.Gallery._Gallery10967 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.Gallery._Gallery10968 = @__env.GetMethodID(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.Gallery.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Gallery"));
+			global::android.widget.Gallery._onKeyDown11314 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.Gallery._onKeyUp11315 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.Gallery._onTouchEvent11316 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.Gallery._dispatchKeyEvent11317 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z");
+			global::android.widget.Gallery._setGravity11318 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "setGravity", "(I)V");
+			global::android.widget.Gallery._showContextMenu11319 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "showContextMenu", "()Z");
+			global::android.widget.Gallery._onFocusChanged11320 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
+			global::android.widget.Gallery._dispatchSetPressed11321 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "dispatchSetPressed", "(Z)V");
+			global::android.widget.Gallery._getContextMenuInfo11322 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "getContextMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
+			global::android.widget.Gallery._computeHorizontalScrollRange11323 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "computeHorizontalScrollRange", "()I");
+			global::android.widget.Gallery._computeHorizontalScrollOffset11324 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "computeHorizontalScrollOffset", "()I");
+			global::android.widget.Gallery._computeHorizontalScrollExtent11325 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "computeHorizontalScrollExtent", "()I");
+			global::android.widget.Gallery._onLayout11326 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onLayout", "(ZIIII)V");
+			global::android.widget.Gallery._dispatchSetSelected11327 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "dispatchSetSelected", "(Z)V");
+			global::android.widget.Gallery._showContextMenuForChild11328 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z");
+			global::android.widget.Gallery._getChildDrawingOrder11329 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "getChildDrawingOrder", "(II)I");
+			global::android.widget.Gallery._getChildStaticTransformation11330 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "getChildStaticTransformation", "(Landroid/view/View;Landroid/view/animation/Transformation;)Z");
+			global::android.widget.Gallery._checkLayoutParams11331 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
+			global::android.widget.Gallery._generateLayoutParams11332 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;");
+			global::android.widget.Gallery._generateLayoutParams11333 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;");
+			global::android.widget.Gallery._generateDefaultLayoutParams11334 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "generateDefaultLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;");
+			global::android.widget.Gallery._onLongPress11335 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onLongPress", "(Landroid/view/MotionEvent;)V");
+			global::android.widget.Gallery._onSingleTapUp11336 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onSingleTapUp", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.Gallery._onScroll11337 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onScroll", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z");
+			global::android.widget.Gallery._onFling11338 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onFling", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z");
+			global::android.widget.Gallery._onShowPress11339 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onShowPress", "(Landroid/view/MotionEvent;)V");
+			global::android.widget.Gallery._onDown11340 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "onDown", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.Gallery._setCallbackDuringFling11341 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "setCallbackDuringFling", "(Z)V");
+			global::android.widget.Gallery._setAnimationDuration11342 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "setAnimationDuration", "(I)V");
+			global::android.widget.Gallery._setSpacing11343 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "setSpacing", "(I)V");
+			global::android.widget.Gallery._setUnselectedAlpha11344 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "setUnselectedAlpha", "(F)V");
+			global::android.widget.Gallery._Gallery11345 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.Gallery._Gallery11346 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.Gallery._Gallery11347 = @__env.GetMethodIDNoThrow(global::android.widget.Gallery.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

@@ -1,7 +1,7 @@
 namespace java.security
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Principal 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Principal_))]
+	public interface Principal  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		global::java.lang.String toString();
@@ -9,75 +9,61 @@ namespace java.security
 		global::java.lang.String getName();
 	}
 
-	public partial class Principal_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Principal))]
+	public sealed partial class Principal_ : java.lang.Object, Principal
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Principal_()
 		{
-			get { return __Principal.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Principal : java.lang.Object, Principal
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Principal()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.__Principal), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.__Principal(@__env);
-			}
-		}
-		internal __Principal(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Principal_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13236;
+		internal static global::MonoJavaBridge.MethodId _equals14871;
 		 bool java.security.Principal.equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.__Principal._equals13236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.Principal_._equals14871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._equals13236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._equals14871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13237;
+		internal static global::MonoJavaBridge.MethodId _toString14872;
 		 global::java.lang.String java.security.Principal.toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Principal._toString13237));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Principal_._toString14872)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._toString13237));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._toString14872)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13238;
+		internal static global::MonoJavaBridge.MethodId _hashCode14873;
 		 int java.security.Principal.hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.security.__Principal._hashCode13238);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.Principal_._hashCode14873);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._hashCode13238);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._hashCode14873);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getName13239;
+		internal static global::MonoJavaBridge.MethodId _getName14874;
 		 global::java.lang.String java.security.Principal.getName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Principal._getName13239));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.Principal_._getName14874)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._getName13239));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._getName14874)) as java.lang.String;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.__Principal.staticClass = @__class;
-			global::java.security.__Principal._equals13236 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.equals", "(Ljava/lang/Object;)Z");
-			global::java.security.__Principal._toString13237 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.toString", "()Ljava/lang/String;");
-			global::java.security.__Principal._hashCode13238 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.hashCode", "()I");
-			global::java.security.__Principal._getName13239 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.getName", "()Ljava/lang/String;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.Principal_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Principal"));
+			global::java.security.Principal_._equals14871 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.security.Principal_._toString14872 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.security.Principal_._hashCode14873 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "hashCode", "()I");
+			global::java.security.Principal_._getName14874 = @__env.GetMethodIDNoThrow(global::java.security.Principal_.staticClass, "getName", "()Ljava/lang/String;");
 		}
 	}
 }

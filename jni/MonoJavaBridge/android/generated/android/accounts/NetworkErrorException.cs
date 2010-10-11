@@ -1,54 +1,52 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class NetworkErrorException : android.accounts.AccountsException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class NetworkErrorException : android.accounts.AccountsException
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static NetworkErrorException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.NetworkErrorException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.NetworkErrorException(@__env);
-			}
-		}
-		protected NetworkErrorException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected NetworkErrorException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NetworkErrorException119;
-		public NetworkErrorException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NetworkErrorException128;
+		public NetworkErrorException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException119, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException128);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NetworkErrorException120;
-		public NetworkErrorException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NetworkErrorException129;
+		public NetworkErrorException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException120, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NetworkErrorException121;
-		public NetworkErrorException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NetworkErrorException130;
+		public NetworkErrorException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException121, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _NetworkErrorException122;
-		public NetworkErrorException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _NetworkErrorException131;
+		public NetworkErrorException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException122, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.NetworkErrorException.staticClass, global::android.accounts.NetworkErrorException._NetworkErrorException131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.NetworkErrorException.staticClass = @__class;
-			global::android.accounts.NetworkErrorException._NetworkErrorException119 = @__env.GetMethodID(global::android.accounts.NetworkErrorException.staticClass, "<init>", "()V");
-			global::android.accounts.NetworkErrorException._NetworkErrorException120 = @__env.GetMethodID(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.accounts.NetworkErrorException._NetworkErrorException121 = @__env.GetMethodID(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::android.accounts.NetworkErrorException._NetworkErrorException122 = @__env.GetMethodID(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.NetworkErrorException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/NetworkErrorException"));
+			global::android.accounts.NetworkErrorException._NetworkErrorException128 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "()V");
+			global::android.accounts.NetworkErrorException._NetworkErrorException129 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.accounts.NetworkErrorException._NetworkErrorException130 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::android.accounts.NetworkErrorException._NetworkErrorException131 = @__env.GetMethodIDNoThrow(global::android.accounts.NetworkErrorException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 	}
 }

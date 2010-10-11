@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface XMLReader 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.XMLReader_))]
+	public interface XMLReader  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setProperty(java.lang.String arg0, java.lang.Object arg1);
 		global::java.lang.Object getProperty(java.lang.String arg0);
@@ -19,175 +19,161 @@ namespace org.xml.sax
 		global::org.xml.sax.ErrorHandler getErrorHandler();
 	}
 
-	public partial class XMLReader_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.xml.sax.XMLReader))]
+	public sealed partial class XMLReader_ : java.lang.Object, XMLReader
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static XMLReader_()
 		{
-			get { return __XMLReader.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __XMLReader : java.lang.Object, XMLReader
-	{
-		internal static global::java.lang.Class staticClass;
-		static __XMLReader()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__XMLReader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.xml.sax.__XMLReader(@__env);
-			}
-		}
-		internal __XMLReader(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal XMLReader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setProperty14619;
+		internal static global::MonoJavaBridge.MethodId _setProperty16539;
 		 void org.xml.sax.XMLReader.setProperty(java.lang.String arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setProperty14619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._setProperty16539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setProperty14619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._setProperty16539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProperty14620;
+		internal static global::MonoJavaBridge.MethodId _getProperty16540;
 		 global::java.lang.Object org.xml.sax.XMLReader.getProperty(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getProperty14620, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._getProperty16540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getProperty14620, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getProperty16540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _parse14621;
+		internal static global::MonoJavaBridge.MethodId _parse16541;
 		 void org.xml.sax.XMLReader.parse(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._parse14621, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._parse16541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._parse14621, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._parse16541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _parse14622;
+		internal static global::MonoJavaBridge.MethodId _parse16542;
 		 void org.xml.sax.XMLReader.parse(org.xml.sax.InputSource arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._parse14622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._parse16542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._parse14622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._parse16542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getContentHandler14623;
+		internal static global::MonoJavaBridge.MethodId _getContentHandler16543;
 		 global::org.xml.sax.ContentHandler org.xml.sax.XMLReader.getContentHandler() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getContentHandler14623));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ContentHandler>(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._getContentHandler16543)) as org.xml.sax.ContentHandler;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getContentHandler14623));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ContentHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getContentHandler16543)) as org.xml.sax.ContentHandler;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setFeature14624;
+		internal static global::MonoJavaBridge.MethodId _setFeature16544;
 		 void org.xml.sax.XMLReader.setFeature(java.lang.String arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setFeature14624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._setFeature16544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setFeature14624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._setFeature16544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFeature14625;
+		internal static global::MonoJavaBridge.MethodId _getFeature16545;
 		 bool org.xml.sax.XMLReader.getFeature(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.xml.sax.__XMLReader._getFeature14625, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._getFeature16545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getFeature14625, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getFeature16545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEntityResolver14626;
+		internal static global::MonoJavaBridge.MethodId _setEntityResolver16546;
 		 void org.xml.sax.XMLReader.setEntityResolver(org.xml.sax.EntityResolver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setEntityResolver14626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._setEntityResolver16546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setEntityResolver14626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._setEntityResolver16546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEntityResolver14627;
+		internal static global::MonoJavaBridge.MethodId _getEntityResolver16547;
 		 global::org.xml.sax.EntityResolver org.xml.sax.XMLReader.getEntityResolver() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.EntityResolver>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getEntityResolver14627));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.EntityResolver>(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._getEntityResolver16547)) as org.xml.sax.EntityResolver;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.EntityResolver>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getEntityResolver14627));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.EntityResolver>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getEntityResolver16547)) as org.xml.sax.EntityResolver;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDTDHandler14628;
+		internal static global::MonoJavaBridge.MethodId _setDTDHandler16548;
 		 void org.xml.sax.XMLReader.setDTDHandler(org.xml.sax.DTDHandler arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setDTDHandler14628, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._setDTDHandler16548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setDTDHandler14628, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._setDTDHandler16548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDTDHandler14629;
+		internal static global::MonoJavaBridge.MethodId _getDTDHandler16549;
 		 global::org.xml.sax.DTDHandler org.xml.sax.XMLReader.getDTDHandler() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.DTDHandler>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getDTDHandler14629));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.DTDHandler>(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._getDTDHandler16549)) as org.xml.sax.DTDHandler;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.DTDHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getDTDHandler14629));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.DTDHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getDTDHandler16549)) as org.xml.sax.DTDHandler;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setContentHandler14630;
+		internal static global::MonoJavaBridge.MethodId _setContentHandler16550;
 		 void org.xml.sax.XMLReader.setContentHandler(org.xml.sax.ContentHandler arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setContentHandler14630, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._setContentHandler16550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setContentHandler14630, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._setContentHandler16550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setErrorHandler14631;
+		internal static global::MonoJavaBridge.MethodId _setErrorHandler16551;
 		 void org.xml.sax.XMLReader.setErrorHandler(org.xml.sax.ErrorHandler arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setErrorHandler14631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._setErrorHandler16551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setErrorHandler14631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._setErrorHandler16551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getErrorHandler14632;
+		internal static global::MonoJavaBridge.MethodId _getErrorHandler16552;
 		 global::org.xml.sax.ErrorHandler org.xml.sax.XMLReader.getErrorHandler() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ErrorHandler>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getErrorHandler14632));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ErrorHandler>(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_._getErrorHandler16552)) as org.xml.sax.ErrorHandler;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ErrorHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getErrorHandler14632));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ErrorHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.XMLReader_.staticClass, global::org.xml.sax.XMLReader_._getErrorHandler16552)) as org.xml.sax.ErrorHandler;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.xml.sax.__XMLReader.staticClass = @__class;
-			global::org.xml.sax.__XMLReader._setProperty14619 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V");
-			global::org.xml.sax.__XMLReader._getProperty14620 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.getProperty", "(Ljava/lang/String;)Ljava/lang/Object;");
-			global::org.xml.sax.__XMLReader._parse14621 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.parse", "(Ljava/lang/String;)V");
-			global::org.xml.sax.__XMLReader._parse14622 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.parse", "(Lorg/xml/sax/InputSource;)V");
-			global::org.xml.sax.__XMLReader._getContentHandler14623 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.getContentHandler", "()Lorg/xml/sax/ContentHandler;");
-			global::org.xml.sax.__XMLReader._setFeature14624 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.setFeature", "(Ljava/lang/String;Z)V");
-			global::org.xml.sax.__XMLReader._getFeature14625 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.getFeature", "(Ljava/lang/String;)Z");
-			global::org.xml.sax.__XMLReader._setEntityResolver14626 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V");
-			global::org.xml.sax.__XMLReader._getEntityResolver14627 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.getEntityResolver", "()Lorg/xml/sax/EntityResolver;");
-			global::org.xml.sax.__XMLReader._setDTDHandler14628 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V");
-			global::org.xml.sax.__XMLReader._getDTDHandler14629 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.getDTDHandler", "()Lorg/xml/sax/DTDHandler;");
-			global::org.xml.sax.__XMLReader._setContentHandler14630 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.setContentHandler", "(Lorg/xml/sax/ContentHandler;)V");
-			global::org.xml.sax.__XMLReader._setErrorHandler14631 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V");
-			global::org.xml.sax.__XMLReader._getErrorHandler14632 = @__env.GetMethodID(global::org.xml.sax.__XMLReader.staticClass, "org.xml.sax.XMLReader.getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.xml.sax.XMLReader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/XMLReader"));
+			global::org.xml.sax.XMLReader_._setProperty16539 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V");
+			global::org.xml.sax.XMLReader_._getProperty16540 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;");
+			global::org.xml.sax.XMLReader_._parse16541 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "parse", "(Ljava/lang/String;)V");
+			global::org.xml.sax.XMLReader_._parse16542 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "parse", "(Lorg/xml/sax/InputSource;)V");
+			global::org.xml.sax.XMLReader_._getContentHandler16543 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;");
+			global::org.xml.sax.XMLReader_._setFeature16544 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setFeature", "(Ljava/lang/String;Z)V");
+			global::org.xml.sax.XMLReader_._getFeature16545 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
+			global::org.xml.sax.XMLReader_._setEntityResolver16546 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V");
+			global::org.xml.sax.XMLReader_._getEntityResolver16547 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getEntityResolver", "()Lorg/xml/sax/EntityResolver;");
+			global::org.xml.sax.XMLReader_._setDTDHandler16548 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V");
+			global::org.xml.sax.XMLReader_._getDTDHandler16549 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getDTDHandler", "()Lorg/xml/sax/DTDHandler;");
+			global::org.xml.sax.XMLReader_._setContentHandler16550 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setContentHandler", "(Lorg/xml/sax/ContentHandler;)V");
+			global::org.xml.sax.XMLReader_._setErrorHandler16551 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V");
+			global::org.xml.sax.XMLReader_._getErrorHandler16552 = @__env.GetMethodIDNoThrow(global::org.xml.sax.XMLReader_.staticClass, "getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
 		}
 	}
 }

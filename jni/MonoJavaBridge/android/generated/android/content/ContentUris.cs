@@ -1,54 +1,49 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ContentUris : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ContentUris : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ContentUris()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.ContentUris), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.ContentUris(@__env);
-			}
-		}
-		protected ContentUris(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ContentUris(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _parseId1223;
+		internal static global::MonoJavaBridge.MethodId _parseId1247;
 		public static long parseId(android.net.Uri arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.content.ContentUris.staticClass, global::android.content.ContentUris._parseId1223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticLongMethod(android.content.ContentUris.staticClass, global::android.content.ContentUris._parseId1247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _appendId1224;
+		internal static global::MonoJavaBridge.MethodId _appendId1248;
 		public static global::android.net.Uri.Builder appendId(android.net.Uri.Builder arg0, long arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallStaticObjectMethodPtr(android.content.ContentUris.staticClass, global::android.content.ContentUris._appendId1224, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.ContentUris.staticClass, global::android.content.ContentUris._appendId1248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri.Builder;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _withAppendedId1225;
+		internal static global::MonoJavaBridge.MethodId _withAppendedId1249;
 		public static global::android.net.Uri withAppendedId(android.net.Uri arg0, long arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.content.ContentUris.staticClass, global::android.content.ContentUris._withAppendedId1225, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.ContentUris.staticClass, global::android.content.ContentUris._withAppendedId1249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ContentUris1226;
-		public ContentUris()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ContentUris1250;
+		public ContentUris()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.ContentUris.staticClass, global::android.content.ContentUris._ContentUris1226, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ContentUris.staticClass, global::android.content.ContentUris._ContentUris1250);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.ContentUris.staticClass = @__class;
-			global::android.content.ContentUris._parseId1223 = @__env.GetStaticMethodID(global::android.content.ContentUris.staticClass, "parseId", "(Landroid/net/Uri;)J");
-			global::android.content.ContentUris._appendId1224 = @__env.GetStaticMethodID(global::android.content.ContentUris.staticClass, "appendId", "(Landroid/net/Uri$Builder;J)Landroid/net/Uri$Builder;");
-			global::android.content.ContentUris._withAppendedId1225 = @__env.GetStaticMethodID(global::android.content.ContentUris.staticClass, "withAppendedId", "(Landroid/net/Uri;J)Landroid/net/Uri;");
-			global::android.content.ContentUris._ContentUris1226 = @__env.GetMethodID(global::android.content.ContentUris.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.ContentUris.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ContentUris"));
+			global::android.content.ContentUris._parseId1247 = @__env.GetStaticMethodIDNoThrow(global::android.content.ContentUris.staticClass, "parseId", "(Landroid/net/Uri;)J");
+			global::android.content.ContentUris._appendId1248 = @__env.GetStaticMethodIDNoThrow(global::android.content.ContentUris.staticClass, "appendId", "(Landroid/net/Uri$Builder;J)Landroid/net/Uri$Builder;");
+			global::android.content.ContentUris._withAppendedId1249 = @__env.GetStaticMethodIDNoThrow(global::android.content.ContentUris.staticClass, "withAppendedId", "(Landroid/net/Uri;J)Landroid/net/Uri;");
+			global::android.content.ContentUris._ContentUris1250 = @__env.GetMethodIDNoThrow(global::android.content.ContentUris.staticClass, "<init>", "()V");
 		}
 	}
 }

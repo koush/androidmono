@@ -1,88 +1,68 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class Filter : java.lang.Object
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.widget.Filter_))]
+	public abstract partial class Filter : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Filter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.Filter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected Filter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Filter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface FilterListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Filter.FilterListener_))]
+		public interface FilterListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onFilterComplete(int arg0);
 		}
 
-		public partial class FilterListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.Filter.FilterListener))]
+		public sealed partial class FilterListener_ : java.lang.Object, FilterListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static FilterListener_()
 			{
-				get { return __FilterListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __FilterListener : java.lang.Object, FilterListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __FilterListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.Filter.__FilterListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.widget.Filter.__FilterListener(@__env);
-				}
-			}
-			internal __FilterListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal FilterListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onFilterComplete10895;
+			internal static global::MonoJavaBridge.MethodId _onFilterComplete11272;
 			 void android.widget.Filter.FilterListener.onFilterComplete(int arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.Filter.__FilterListener._onFilterComplete10895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Filter.FilterListener_._onFilterComplete11272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.__FilterListener.staticClass, global::android.widget.Filter.__FilterListener._onFilterComplete10895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Filter.FilterListener_.staticClass, global::android.widget.Filter.FilterListener_._onFilterComplete11272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.widget.Filter.__FilterListener.staticClass = @__class;
-				global::android.widget.Filter.__FilterListener._onFilterComplete10895 = @__env.GetMethodID(global::android.widget.Filter.__FilterListener.staticClass, "android.widget.Filter.FilterListener.onFilterComplete", "(I)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.Filter.FilterListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterListener"));
+				global::android.widget.Filter.FilterListener_._onFilterComplete11272 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterListener_.staticClass, "onFilterComplete", "(I)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		protected class FilterResults : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		protected partial class FilterResults : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static FilterResults()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.Filter.FilterResults), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.widget.Filter.FilterResults(@__env);
-				}
-			}
-			protected FilterResults(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected FilterResults(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _FilterResults10896;
-			public FilterResults()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _FilterResults11273;
+			public FilterResults()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.Filter.FilterResults.staticClass, global::android.widget.Filter.FilterResults._FilterResults10896, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.FilterResults.staticClass, global::android.widget.Filter.FilterResults._FilterResults11273);
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _values10897;
+			internal static global::MonoJavaBridge.FieldId _values11274;
 			public global::java.lang.Object values
 			{
 				get
@@ -93,7 +73,7 @@ namespace android.widget
 				{
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _count10898;
+			internal static global::MonoJavaBridge.FieldId _count11275;
 			public int count
 			{
 				get
@@ -104,66 +84,107 @@ namespace android.widget
 				{
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.widget.Filter.FilterResults.staticClass = @__class;
-				global::android.widget.Filter.FilterResults._FilterResults10896 = @__env.GetMethodID(global::android.widget.Filter.FilterResults.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.Filter.FilterResults.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter$FilterResults"));
+				global::android.widget.Filter.FilterResults._FilterResults11273 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.FilterResults.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _filter10899;
+		internal static global::MonoJavaBridge.MethodId _filter11276;
 		public virtual void filter(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Filter._filter10899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Filter._filter11276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter10899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter11276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void filter(string arg0)
 		{
 			filter((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _filter10900;
+		internal static global::MonoJavaBridge.MethodId _filter11277;
 		public virtual void filter(java.lang.CharSequence arg0, android.widget.Filter.FilterListener arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Filter._filter10900, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Filter._filter11277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter10900, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter11277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void filter(string arg0, android.widget.Filter.FilterListener arg1)
 		{
 			filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performFiltering10901;
+		internal static global::MonoJavaBridge.MethodId _performFiltering11278;
 		protected abstract global::android.widget.Filter.FilterResults performFiltering(java.lang.CharSequence arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _publishResults10902;
+		internal static global::MonoJavaBridge.MethodId _publishResults11279;
 		protected abstract void publishResults(java.lang.CharSequence arg0, android.widget.Filter.FilterResults arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _convertResultToString10903;
+		internal static global::MonoJavaBridge.MethodId _convertResultToString11280;
 		public virtual global::java.lang.CharSequence convertResultToString(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Filter._convertResultToString10903, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Filter._convertResultToString11280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._convertResultToString10903, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Filter.staticClass, global::android.widget.Filter._convertResultToString11280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Filter10904;
-		public Filter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Filter11281;
+		public Filter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Filter.staticClass, global::android.widget.Filter._Filter10904, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.staticClass, global::android.widget.Filter._Filter11281);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.Filter.staticClass = @__class;
-			global::android.widget.Filter._filter10899 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;)V");
-			global::android.widget.Filter._filter10900 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterListener;)V");
-			global::android.widget.Filter._performFiltering10901 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
-			global::android.widget.Filter._publishResults10902 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
-			global::android.widget.Filter._convertResultToString10903 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "convertResultToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
-			global::android.widget.Filter._Filter10904 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.Filter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
+			global::android.widget.Filter._filter11276 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;)V");
+			global::android.widget.Filter._filter11277 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "filter", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterListener;)V");
+			global::android.widget.Filter._performFiltering11278 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
+			global::android.widget.Filter._publishResults11279 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
+			global::android.widget.Filter._convertResultToString11280 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "convertResultToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
+			global::android.widget.Filter._Filter11281 = @__env.GetMethodIDNoThrow(global::android.widget.Filter.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.Filter))]
+	public sealed partial class Filter_ : android.widget.Filter
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Filter_()
+		{
+			InitJNI();
+		}
+		internal Filter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _performFiltering11282;
+		protected override global::android.widget.Filter.FilterResults performFiltering(java.lang.CharSequence arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Filter_._performFiltering11282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.Filter.FilterResults;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Filter_.staticClass, global::android.widget.Filter_._performFiltering11282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.Filter.FilterResults;
+		}
+		internal static global::MonoJavaBridge.MethodId _publishResults11283;
+		protected override void publishResults(java.lang.CharSequence arg0, android.widget.Filter.FilterResults arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Filter_._publishResults11283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Filter_.staticClass, global::android.widget.Filter_._publishResults11283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Filter"));
+			global::android.widget.Filter_._performFiltering11282 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "performFiltering", "(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;");
+			global::android.widget.Filter_._publishResults11283 = @__env.GetMethodIDNoThrow(global::android.widget.Filter_.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
 		}
 	}
 }

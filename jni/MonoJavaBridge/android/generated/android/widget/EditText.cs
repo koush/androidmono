@@ -1,141 +1,138 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class EditText : android.widget.TextView
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class EditText : android.widget.TextView
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EditText()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.EditText), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.EditText(@__env);
-			}
-		}
-		protected EditText(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected EditText(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setText10822;
+		internal static global::MonoJavaBridge.MethodId _setText11199;
 		public override void setText(java.lang.CharSequence arg0, android.widget.TextView.BufferType arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.EditText._setText10822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.EditText._setText11199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setText10822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._setText11199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public void setText(string arg0, android.widget.TextView.BufferType arg1)
 		{
 			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _selectAll10823;
+		internal static global::MonoJavaBridge.MethodId _selectAll11200;
 		public virtual void selectAll() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.EditText._selectAll10823);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.EditText._selectAll11200);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._selectAll10823);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._selectAll11200);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getText10824;
+		internal static global::MonoJavaBridge.MethodId _getText11201;
 		public virtual new global::android.text.Editable getText() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.EditText._getText10824));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.EditText._getText11201)) as android.text.Editable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getText10824));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._getText11201)) as android.text.Editable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSelection10825;
+		internal static global::MonoJavaBridge.MethodId _setSelection11202;
 		public virtual void setSelection(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.EditText._setSelection10825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.EditText._setSelection11202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection10825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection11202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSelection10826;
+		internal static global::MonoJavaBridge.MethodId _setSelection11203;
 		public virtual void setSelection(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.EditText._setSelection10826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.EditText._setSelection11203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection10826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection11203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultEditable10827;
+		internal static global::MonoJavaBridge.MethodId _getDefaultEditable11204;
 		protected override bool getDefaultEditable() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.EditText._getDefaultEditable10827);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.EditText._getDefaultEditable11204);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultEditable10827);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultEditable11204);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultMovementMethod10828;
+		internal static global::MonoJavaBridge.MethodId _getDefaultMovementMethod11205;
 		protected override global::android.text.method.MovementMethod getDefaultMovementMethod() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.EditText._getDefaultMovementMethod10828));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.method.MovementMethod>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.EditText._getDefaultMovementMethod11205)) as android.text.method.MovementMethod;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultMovementMethod10828));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.method.MovementMethod>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultMovementMethod11205)) as android.text.method.MovementMethod;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEllipsize10829;
+		internal static global::MonoJavaBridge.MethodId _setEllipsize11206;
 		public override void setEllipsize(android.text.TextUtils.TruncateAt arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.EditText._setEllipsize10829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.EditText._setEllipsize11206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setEllipsize10829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._setEllipsize11206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _extendSelection10830;
+		internal static global::MonoJavaBridge.MethodId _extendSelection11207;
 		public virtual void extendSelection(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.EditText._extendSelection10830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.EditText._extendSelection11207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._extendSelection10830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.EditText.staticClass, global::android.widget.EditText._extendSelection11207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditText10831;
-		public EditText(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _EditText11208;
+		public EditText(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.EditText.staticClass, global::android.widget.EditText._EditText10831, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.EditText.staticClass, global::android.widget.EditText._EditText11208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditText10832;
-		public EditText(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _EditText11209;
+		public EditText(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.EditText.staticClass, global::android.widget.EditText._EditText10832, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.EditText.staticClass, global::android.widget.EditText._EditText11209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditText10833;
-		public EditText(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _EditText11210;
+		public EditText(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.EditText.staticClass, global::android.widget.EditText._EditText10833, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.EditText.staticClass, global::android.widget.EditText._EditText11210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.EditText.staticClass = @__class;
-			global::android.widget.EditText._setText10822 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "setText", "(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V");
-			global::android.widget.EditText._selectAll10823 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "selectAll", "()V");
-			global::android.widget.EditText._getText10824 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "getText", "()Landroid/text/Editable;");
-			global::android.widget.EditText._setSelection10825 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "setSelection", "(I)V");
-			global::android.widget.EditText._setSelection10826 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "setSelection", "(II)V");
-			global::android.widget.EditText._getDefaultEditable10827 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "getDefaultEditable", "()Z");
-			global::android.widget.EditText._getDefaultMovementMethod10828 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "getDefaultMovementMethod", "()Landroid/text/method/MovementMethod;");
-			global::android.widget.EditText._setEllipsize10829 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)V");
-			global::android.widget.EditText._extendSelection10830 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "extendSelection", "(I)V");
-			global::android.widget.EditText._EditText10831 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.EditText._EditText10832 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.EditText._EditText10833 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.EditText.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/EditText"));
+			global::android.widget.EditText._setText11199 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setText", "(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V");
+			global::android.widget.EditText._selectAll11200 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "selectAll", "()V");
+			global::android.widget.EditText._getText11201 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "getText", "()Landroid/text/Editable;");
+			global::android.widget.EditText._setSelection11202 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setSelection", "(I)V");
+			global::android.widget.EditText._setSelection11203 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setSelection", "(II)V");
+			global::android.widget.EditText._getDefaultEditable11204 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "getDefaultEditable", "()Z");
+			global::android.widget.EditText._getDefaultMovementMethod11205 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "getDefaultMovementMethod", "()Landroid/text/method/MovementMethod;");
+			global::android.widget.EditText._setEllipsize11206 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)V");
+			global::android.widget.EditText._extendSelection11207 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "extendSelection", "(I)V");
+			global::android.widget.EditText._EditText11208 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.EditText._EditText11209 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.EditText._EditText11210 = @__env.GetMethodIDNoThrow(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

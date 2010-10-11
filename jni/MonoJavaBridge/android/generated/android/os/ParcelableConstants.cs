@@ -1,7 +1,7 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class ParcelableConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class ParcelableConstants 
 	{
 		public static int PARCELABLE_WRITE_RETURN_VALUE
 		{

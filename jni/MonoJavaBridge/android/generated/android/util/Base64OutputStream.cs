@@ -1,63 +1,58 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Base64OutputStream : java.io.FilterOutputStream
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Base64OutputStream : java.io.FilterOutputStream
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Base64OutputStream()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.Base64OutputStream), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.Base64OutputStream(@__env);
-			}
-		}
-		protected Base64OutputStream(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Base64OutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _write8177;
+		internal static global::MonoJavaBridge.MethodId _write8481;
 		public override void write(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.Base64OutputStream._write8177, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.Base64OutputStream._write8481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._write8177, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._write8481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _write8178;
+		internal static global::MonoJavaBridge.MethodId _write8482;
 		public override void write(byte[] arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.Base64OutputStream._write8178, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.Base64OutputStream._write8482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._write8178, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._write8482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close8179;
+		internal static global::MonoJavaBridge.MethodId _close8483;
 		public override void close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.Base64OutputStream._close8179);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.Base64OutputStream._close8483);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._close8179);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._close8483);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Base64OutputStream8180;
-		public Base64OutputStream(java.io.OutputStream arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Base64OutputStream8484;
+		public Base64OutputStream(java.io.OutputStream arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._Base64OutputStream8180, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Base64OutputStream.staticClass, global::android.util.Base64OutputStream._Base64OutputStream8484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.Base64OutputStream.staticClass = @__class;
-			global::android.util.Base64OutputStream._write8177 = @__env.GetMethodID(global::android.util.Base64OutputStream.staticClass, "write", "(I)V");
-			global::android.util.Base64OutputStream._write8178 = @__env.GetMethodID(global::android.util.Base64OutputStream.staticClass, "write", "([BII)V");
-			global::android.util.Base64OutputStream._close8179 = @__env.GetMethodID(global::android.util.Base64OutputStream.staticClass, "close", "()V");
-			global::android.util.Base64OutputStream._Base64OutputStream8180 = @__env.GetMethodID(global::android.util.Base64OutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.Base64OutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Base64OutputStream"));
+			global::android.util.Base64OutputStream._write8481 = @__env.GetMethodIDNoThrow(global::android.util.Base64OutputStream.staticClass, "write", "(I)V");
+			global::android.util.Base64OutputStream._write8482 = @__env.GetMethodIDNoThrow(global::android.util.Base64OutputStream.staticClass, "write", "([BII)V");
+			global::android.util.Base64OutputStream._close8483 = @__env.GetMethodIDNoThrow(global::android.util.Base64OutputStream.staticClass, "close", "()V");
+			global::android.util.Base64OutputStream._Base64OutputStream8484 = @__env.GetMethodIDNoThrow(global::android.util.Base64OutputStream.staticClass, "<init>", "(Ljava/io/OutputStream;I)V");
 		}
 	}
 }

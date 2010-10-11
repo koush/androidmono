@@ -1,7 +1,7 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface SharedPreferences_Editor 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.SharedPreferences_Editor_))]
+	public interface SharedPreferences_Editor  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.content.SharedPreferences_Editor putBoolean(java.lang.String arg0, bool arg1);
 		global::android.content.SharedPreferences_Editor putInt(java.lang.String arg0, int arg1);
@@ -13,115 +13,101 @@ namespace android.content
 		bool commit();
 	}
 
-	public partial class SharedPreferences_Editor_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.SharedPreferences_Editor))]
+	public sealed partial class SharedPreferences_Editor_ : java.lang.Object, SharedPreferences_Editor
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static SharedPreferences_Editor_()
 		{
-			get { return __SharedPreferences_Editor.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __SharedPreferences_Editor : java.lang.Object, SharedPreferences_Editor
-	{
-		internal static global::java.lang.Class staticClass;
-		static __SharedPreferences_Editor()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__SharedPreferences_Editor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.__SharedPreferences_Editor(@__env);
-			}
-		}
-		internal __SharedPreferences_Editor(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal SharedPreferences_Editor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putBoolean1663;
+		internal static global::MonoJavaBridge.MethodId _putBoolean1757;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.putBoolean(java.lang.String arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._putBoolean1663, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._putBoolean1757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._putBoolean1663, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._putBoolean1757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putInt1664;
+		internal static global::MonoJavaBridge.MethodId _putInt1758;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.putInt(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._putInt1664, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._putInt1758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._putInt1664, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._putInt1758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putLong1665;
+		internal static global::MonoJavaBridge.MethodId _putLong1759;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.putLong(java.lang.String arg0, long arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._putLong1665, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._putLong1759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._putLong1665, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._putLong1759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putFloat1666;
+		internal static global::MonoJavaBridge.MethodId _putFloat1760;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.putFloat(java.lang.String arg0, float arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._putFloat1666, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._putFloat1760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._putFloat1666, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._putFloat1760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear1667;
+		internal static global::MonoJavaBridge.MethodId _clear1761;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._clear1667));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._clear1761)) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._clear1667));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._clear1761)) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _remove1668;
+		internal static global::MonoJavaBridge.MethodId _remove1762;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.remove(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._remove1668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._remove1762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._remove1668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._remove1762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putString1669;
+		internal static global::MonoJavaBridge.MethodId _putString1763;
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences_Editor.putString(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor._putString1669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._putString1763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._putString1669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._putString1763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.SharedPreferences_Editor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _commit1670;
+		internal static global::MonoJavaBridge.MethodId _commit1764;
 		 bool android.content.SharedPreferences_Editor.commit() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.__SharedPreferences_Editor._commit1670);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_._commit1764);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.__SharedPreferences_Editor.staticClass, global::android.content.__SharedPreferences_Editor._commit1670);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SharedPreferences_Editor_.staticClass, global::android.content.SharedPreferences_Editor_._commit1764);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.__SharedPreferences_Editor.staticClass = @__class;
-			global::android.content.__SharedPreferences_Editor._putBoolean1663 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.putBoolean", "(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._putInt1664 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.putInt", "(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._putLong1665 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.putLong", "(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._putFloat1666 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.putFloat", "(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._clear1667 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.clear", "()Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._remove1668 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.remove", "(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._putString1669 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.putString", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;");
-			global::android.content.__SharedPreferences_Editor._commit1670 = @__env.GetMethodID(global::android.content.__SharedPreferences_Editor.staticClass, "android.content.SharedPreferences_Editor.commit", "()Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.SharedPreferences_Editor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SharedPreferences_Editor"));
+			global::android.content.SharedPreferences_Editor_._putBoolean1757 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "putBoolean", "(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._putInt1758 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "putInt", "(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._putLong1759 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "putLong", "(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._putFloat1760 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "putFloat", "(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._clear1761 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "clear", "()Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._remove1762 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "remove", "(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._putString1763 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "putString", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;");
+			global::android.content.SharedPreferences_Editor_._commit1764 = @__env.GetMethodIDNoThrow(global::android.content.SharedPreferences_Editor_.staticClass, "commit", "()Z");
 		}
 	}
 }

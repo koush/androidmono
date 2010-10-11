@@ -1,43 +1,38 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class MenuInflater : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MenuInflater : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static MenuInflater()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.MenuInflater), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.MenuInflater(@__env);
-			}
-		}
-		protected MenuInflater(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected MenuInflater(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _inflate8578;
+		internal static global::MonoJavaBridge.MethodId _inflate8884;
 		public virtual void inflate(int arg0, android.view.Menu arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MenuInflater._inflate8578, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.MenuInflater._inflate8884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MenuInflater.staticClass, global::android.view.MenuInflater._inflate8578, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.MenuInflater.staticClass, global::android.view.MenuInflater._inflate8884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MenuInflater8579;
-		public MenuInflater(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _MenuInflater8885;
+		public MenuInflater(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.MenuInflater.staticClass, global::android.view.MenuInflater._MenuInflater8579, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.MenuInflater.staticClass, global::android.view.MenuInflater._MenuInflater8885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.MenuInflater.staticClass = @__class;
-			global::android.view.MenuInflater._inflate8578 = @__env.GetMethodID(global::android.view.MenuInflater.staticClass, "inflate", "(ILandroid/view/Menu;)V");
-			global::android.view.MenuInflater._MenuInflater8579 = @__env.GetMethodID(global::android.view.MenuInflater.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.MenuInflater.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MenuInflater"));
+			global::android.view.MenuInflater._inflate8884 = @__env.GetMethodIDNoThrow(global::android.view.MenuInflater.staticClass, "inflate", "(ILandroid/view/Menu;)V");
+			global::android.view.MenuInflater._MenuInflater8885 = @__env.GetMethodIDNoThrow(global::android.view.MenuInflater.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

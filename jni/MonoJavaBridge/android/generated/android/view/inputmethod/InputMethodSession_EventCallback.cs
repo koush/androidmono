@@ -1,50 +1,36 @@
 namespace android.view.inputmethod
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface InputMethodSession_EventCallback 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.inputmethod.InputMethodSession_EventCallback_))]
+	public interface InputMethodSession_EventCallback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void finishedEvent(int arg0, bool arg1);
 	}
 
-	public partial class InputMethodSession_EventCallback_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.inputmethod.InputMethodSession_EventCallback))]
+	public sealed partial class InputMethodSession_EventCallback_ : java.lang.Object, InputMethodSession_EventCallback
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static InputMethodSession_EventCallback_()
 		{
-			get { return __InputMethodSession_EventCallback.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __InputMethodSession_EventCallback : java.lang.Object, InputMethodSession_EventCallback
-	{
-		internal static global::java.lang.Class staticClass;
-		static __InputMethodSession_EventCallback()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.inputmethod.__InputMethodSession_EventCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.inputmethod.__InputMethodSession_EventCallback(@__env);
-			}
-		}
-		internal __InputMethodSession_EventCallback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal InputMethodSession_EventCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _finishedEvent9904;
+		internal static global::MonoJavaBridge.MethodId _finishedEvent10251;
 		 void android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9904, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent10251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9904, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.InputMethodSession_EventCallback_.staticClass, global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent10251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass = @__class;
-			global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9904 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, "android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent", "(IZ)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.inputmethod.InputMethodSession_EventCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputMethodSession_EventCallback"));
+			global::android.view.inputmethod.InputMethodSession_EventCallback_._finishedEvent10251 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputMethodSession_EventCallback_.staticClass, "finishedEvent", "(IZ)V");
 		}
 	}
 }

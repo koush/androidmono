@@ -1,7 +1,7 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class MenuConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class MenuConstants 
 	{
 		public static int NONE
 		{

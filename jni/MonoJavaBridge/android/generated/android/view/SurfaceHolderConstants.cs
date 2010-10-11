@@ -1,7 +1,7 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class SurfaceHolderConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class SurfaceHolderConstants 
 	{
 		public static int SURFACE_TYPE_NORMAL
 		{

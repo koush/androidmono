@@ -1,7 +1,7 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class SpannedConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class SpannedConstants 
 	{
 		public static int SPAN_POINT_MARK_MASK
 		{

@@ -1,56 +1,50 @@
 namespace android.webkit
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class JsResult : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class JsResult : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static JsResult()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.JsResult), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.webkit.JsResult(@__env);
-			}
-		}
-		protected JsResult(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected JsResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel9978;
+		internal static global::MonoJavaBridge.MethodId _cancel10325;
 		public virtual void cancel() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.JsResult._cancel9978);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.JsResult._cancel10325);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel9978);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel10325);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _confirm9979;
+		internal static global::MonoJavaBridge.MethodId _confirm10326;
 		public virtual void confirm() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.JsResult._confirm9979);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.JsResult._confirm10326);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm9979);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm10326);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _wakeUp9980;
+		internal static global::MonoJavaBridge.MethodId _wakeUp10327;
 		protected virtual void wakeUp() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.JsResult._wakeUp9980);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.JsResult._wakeUp10327);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp9980);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp10327);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.webkit.JsResult.staticClass = @__class;
-			global::android.webkit.JsResult._cancel9978 = @__env.GetMethodID(global::android.webkit.JsResult.staticClass, "cancel", "()V");
-			global::android.webkit.JsResult._confirm9979 = @__env.GetMethodID(global::android.webkit.JsResult.staticClass, "confirm", "()V");
-			global::android.webkit.JsResult._wakeUp9980 = @__env.GetMethodID(global::android.webkit.JsResult.staticClass, "wakeUp", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.webkit.JsResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/JsResult"));
+			global::android.webkit.JsResult._cancel10325 = @__env.GetMethodIDNoThrow(global::android.webkit.JsResult.staticClass, "cancel", "()V");
+			global::android.webkit.JsResult._confirm10326 = @__env.GetMethodIDNoThrow(global::android.webkit.JsResult.staticClass, "confirm", "()V");
+			global::android.webkit.JsResult._wakeUp10327 = @__env.GetMethodIDNoThrow(global::android.webkit.JsResult.staticClass, "wakeUp", "()V");
 		}
 	}
 }

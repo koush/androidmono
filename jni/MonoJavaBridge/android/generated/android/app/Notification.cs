@@ -1,80 +1,76 @@
 namespace android.app
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Notification : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Notification : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Notification()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.Notification), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.app.Notification(@__env);
-			}
-		}
-		protected Notification(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Notification(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString668;
+		internal static global::MonoJavaBridge.MethodId _toString678;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.Notification._toString668));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Notification._toString678)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.Notification.staticClass, global::android.app.Notification._toString668));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Notification.staticClass, global::android.app.Notification._toString678)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel669;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel679;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.Notification._writeToParcel669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Notification._writeToParcel679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._writeToParcel669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Notification.staticClass, global::android.app.Notification._writeToParcel679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents670;
+		internal static global::MonoJavaBridge.MethodId _describeContents680;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.Notification._describeContents670);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.Notification._describeContents680);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._describeContents670);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.Notification.staticClass, global::android.app.Notification._describeContents680);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLatestEventInfo671;
+		internal static global::MonoJavaBridge.MethodId _setLatestEventInfo681;
 		public virtual void setLatestEventInfo(android.content.Context arg0, java.lang.CharSequence arg1, java.lang.CharSequence arg2, android.app.PendingIntent arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.Notification._setLatestEventInfo671, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Notification._setLatestEventInfo681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._setLatestEventInfo671, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Notification.staticClass, global::android.app.Notification._setLatestEventInfo681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void setLatestEventInfo(android.content.Context arg0, string arg1, string arg2, android.app.PendingIntent arg3)
 		{
 			setLatestEventInfo(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2, arg3);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Notification672;
-		public Notification()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Notification682;
+		public Notification()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.app.Notification.staticClass, global::android.app.Notification._Notification672, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Notification.staticClass, global::android.app.Notification._Notification682);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Notification673;
-		public Notification(int arg0, java.lang.CharSequence arg1, long arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Notification683;
+		public Notification(int arg0, java.lang.CharSequence arg1, long arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.app.Notification.staticClass, global::android.app.Notification._Notification673, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Notification.staticClass, global::android.app.Notification._Notification683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Notification674;
-		public Notification(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Notification684;
+		public Notification(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.app.Notification.staticClass, global::android.app.Notification._Notification674, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.Notification.staticClass, global::android.app.Notification._Notification684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
 		public static int DEFAULT_ALL
 		{
@@ -104,7 +100,7 @@ namespace android.app
 				return 4;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _when675;
+		internal static global::MonoJavaBridge.FieldId _when685;
 		public long when
 		{
 			get
@@ -115,7 +111,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _icon676;
+		internal static global::MonoJavaBridge.FieldId _icon686;
 		public int icon
 		{
 			get
@@ -126,7 +122,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _number677;
+		internal static global::MonoJavaBridge.FieldId _number687;
 		public int number
 		{
 			get
@@ -137,7 +133,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _contentIntent678;
+		internal static global::MonoJavaBridge.FieldId _contentIntent688;
 		public global::android.app.PendingIntent contentIntent
 		{
 			get
@@ -148,7 +144,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _deleteIntent679;
+		internal static global::MonoJavaBridge.FieldId _deleteIntent689;
 		public global::android.app.PendingIntent deleteIntent
 		{
 			get
@@ -159,7 +155,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _tickerText680;
+		internal static global::MonoJavaBridge.FieldId _tickerText690;
 		public global::java.lang.CharSequence tickerText
 		{
 			get
@@ -170,7 +166,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _contentView681;
+		internal static global::MonoJavaBridge.FieldId _contentView691;
 		public global::android.widget.RemoteViews contentView
 		{
 			get
@@ -181,7 +177,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _iconLevel682;
+		internal static global::MonoJavaBridge.FieldId _iconLevel692;
 		public int iconLevel
 		{
 			get
@@ -192,7 +188,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sound683;
+		internal static global::MonoJavaBridge.FieldId _sound693;
 		public global::android.net.Uri sound
 		{
 			get
@@ -210,7 +206,7 @@ namespace android.app
 				return -1;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _audioStreamType684;
+		internal static global::MonoJavaBridge.FieldId _audioStreamType694;
 		public int audioStreamType
 		{
 			get
@@ -221,7 +217,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _vibrate685;
+		internal static global::MonoJavaBridge.FieldId _vibrate695;
 		public long[] vibrate
 		{
 			get
@@ -232,7 +228,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _ledARGB686;
+		internal static global::MonoJavaBridge.FieldId _ledARGB696;
 		public int ledARGB
 		{
 			get
@@ -243,7 +239,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _ledOnMS687;
+		internal static global::MonoJavaBridge.FieldId _ledOnMS697;
 		public int ledOnMS
 		{
 			get
@@ -254,7 +250,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _ledOffMS688;
+		internal static global::MonoJavaBridge.FieldId _ledOffMS698;
 		public int ledOffMS
 		{
 			get
@@ -265,7 +261,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _defaults689;
+		internal static global::MonoJavaBridge.FieldId _defaults699;
 		public int defaults
 		{
 			get
@@ -325,7 +321,7 @@ namespace android.app
 				return 64;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _flags690;
+		internal static global::MonoJavaBridge.FieldId _flags700;
 		public int flags
 		{
 			get
@@ -336,7 +332,7 @@ namespace android.app
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR691;
+		internal static global::MonoJavaBridge.FieldId _CREATOR701;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -344,16 +340,17 @@ namespace android.app
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.app.Notification.staticClass = @__class;
-			global::android.app.Notification._toString668 = @__env.GetMethodID(global::android.app.Notification.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.app.Notification._writeToParcel669 = @__env.GetMethodID(global::android.app.Notification.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.app.Notification._describeContents670 = @__env.GetMethodID(global::android.app.Notification.staticClass, "describeContents", "()I");
-			global::android.app.Notification._setLatestEventInfo671 = @__env.GetMethodID(global::android.app.Notification.staticClass, "setLatestEventInfo", "(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V");
-			global::android.app.Notification._Notification672 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "()V");
-			global::android.app.Notification._Notification673 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "(ILjava/lang/CharSequence;J)V");
-			global::android.app.Notification._Notification674 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.app.Notification.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/Notification"));
+			global::android.app.Notification._toString678 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.app.Notification._writeToParcel679 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.app.Notification._describeContents680 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "describeContents", "()I");
+			global::android.app.Notification._setLatestEventInfo681 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "setLatestEventInfo", "(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V");
+			global::android.app.Notification._Notification682 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "<init>", "()V");
+			global::android.app.Notification._Notification683 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "<init>", "(ILjava/lang/CharSequence;J)V");
+			global::android.app.Notification._Notification684 = @__env.GetMethodIDNoThrow(global::android.app.Notification.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

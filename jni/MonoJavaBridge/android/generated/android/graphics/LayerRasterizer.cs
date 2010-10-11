@@ -1,53 +1,48 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class LayerRasterizer : android.graphics.Rasterizer
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class LayerRasterizer : android.graphics.Rasterizer
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LayerRasterizer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.LayerRasterizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.LayerRasterizer(@__env);
-			}
-		}
-		protected LayerRasterizer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected LayerRasterizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addLayer3151;
+		internal static global::MonoJavaBridge.MethodId _addLayer3330;
 		public virtual void addLayer(android.graphics.Paint arg0, float arg1, float arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.LayerRasterizer._addLayer3151, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.LayerRasterizer._addLayer3330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer3151, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer3330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addLayer3152;
+		internal static global::MonoJavaBridge.MethodId _addLayer3331;
 		public virtual void addLayer(android.graphics.Paint arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.LayerRasterizer._addLayer3152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.LayerRasterizer._addLayer3331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer3152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer3331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LayerRasterizer3153;
-		public LayerRasterizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LayerRasterizer3332;
+		public LayerRasterizer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._LayerRasterizer3153, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._LayerRasterizer3332);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.LayerRasterizer.staticClass = @__class;
-			global::android.graphics.LayerRasterizer._addLayer3151 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V");
-			global::android.graphics.LayerRasterizer._addLayer3152 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V");
-			global::android.graphics.LayerRasterizer._LayerRasterizer3153 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.LayerRasterizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/LayerRasterizer"));
+			global::android.graphics.LayerRasterizer._addLayer3330 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V");
+			global::android.graphics.LayerRasterizer._addLayer3331 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V");
+			global::android.graphics.LayerRasterizer._LayerRasterizer3332 = @__env.GetMethodIDNoThrow(global::android.graphics.LayerRasterizer.staticClass, "<init>", "()V");
 		}
 	}
 }

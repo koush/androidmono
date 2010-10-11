@@ -1,387 +1,390 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class Calendar : java.lang.Object, java.io.Serializable, java.lang.Cloneable, java.lang.Comparable
+	[global::MonoJavaBridge.JavaClass(typeof(global::java.util.Calendar_))]
+	public abstract partial class Calendar : java.lang.Object, java.io.Serializable, java.lang.Cloneable, java.lang.Comparable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Calendar()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.Calendar), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected Calendar(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Calendar(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add13587;
+		internal static global::MonoJavaBridge.MethodId _add15275;
 		public abstract void add(int arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _get13588;
+		internal static global::MonoJavaBridge.MethodId _get15276;
 		public virtual int get(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._get13588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._get15276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._get13588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._get15276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13589;
+		internal static global::MonoJavaBridge.MethodId _equals15277;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Calendar._equals13589, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Calendar._equals15277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._equals13589, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._equals15277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13590;
+		internal static global::MonoJavaBridge.MethodId _toString15278;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._toString13590));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Calendar._toString15278)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._toString13590));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._toString15278)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13591;
+		internal static global::MonoJavaBridge.MethodId _hashCode15279;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._hashCode13591);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._hashCode15279);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._hashCode13591);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._hashCode15279);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone13592;
-		public virtual global::java.lang.Object clone() 
+		internal static global::MonoJavaBridge.MethodId _clone15280;
+		public virtual new global::java.lang.Object clone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._clone13592));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Calendar._clone15280)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._clone13592));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._clone15280)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo13593;
+		internal static global::MonoJavaBridge.MethodId _compareTo15281;
 		public virtual int compareTo(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._compareTo13593, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._compareTo15281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._compareTo13593, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._compareTo15281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo13594;
+		internal static global::MonoJavaBridge.MethodId _compareTo15282;
 		public virtual int compareTo(java.util.Calendar arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._compareTo13594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._compareTo15282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._compareTo13594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._compareTo15282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear13595;
+		internal static global::MonoJavaBridge.MethodId _clear15283;
 		public virtual void clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._clear13595);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._clear15283);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._clear13595);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._clear15283);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear13596;
+		internal static global::MonoJavaBridge.MethodId _clear15284;
 		public virtual void clear(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._clear13596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._clear15284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._clear13596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._clear15284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13597;
+		internal static global::MonoJavaBridge.MethodId _getInstance15285;
 		public static global::java.util.Calendar getInstance() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance13597));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance15285)) as java.util.Calendar;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13598;
+		internal static global::MonoJavaBridge.MethodId _getInstance15286;
 		public static global::java.util.Calendar getInstance(java.util.TimeZone arg0, java.util.Locale arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance13598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance15286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Calendar;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13599;
+		internal static global::MonoJavaBridge.MethodId _getInstance15287;
 		public static global::java.util.Calendar getInstance(java.util.Locale arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance13599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance15287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Calendar;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13600;
+		internal static global::MonoJavaBridge.MethodId _getInstance15288;
 		public static global::java.util.Calendar getInstance(java.util.TimeZone arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance13600, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.Calendar.staticClass, global::java.util.Calendar._getInstance15288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Calendar;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isSet13601;
+		internal static global::MonoJavaBridge.MethodId _isSet15289;
 		public virtual bool isSet(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Calendar._isSet13601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Calendar._isSet15289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._isSet13601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._isSet15289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set13602;
+		internal static global::MonoJavaBridge.MethodId _set15290;
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._set13602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._set15290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set13602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._set15290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set13603;
+		internal static global::MonoJavaBridge.MethodId _set15291;
 		public virtual void set(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._set13603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._set15291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set13603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._set15291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set13604;
+		internal static global::MonoJavaBridge.MethodId _set15292;
 		public virtual void set(int arg0, int arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._set13604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._set15292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set13604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._set15292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set13605;
+		internal static global::MonoJavaBridge.MethodId _set15293;
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._set13605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._set15293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set13605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._set15293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _after13606;
+		internal static global::MonoJavaBridge.MethodId _after15294;
 		public virtual bool after(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Calendar._after13606, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Calendar._after15294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._after13606, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._after15294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _before13607;
+		internal static global::MonoJavaBridge.MethodId _before15295;
 		public virtual bool before(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Calendar._before13607, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Calendar._before15295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._before13607, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._before15295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _complete13608;
+		internal static global::MonoJavaBridge.MethodId _complete15296;
 		protected virtual void complete() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._complete13608);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._complete15296);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._complete13608);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._complete15296);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales13609;
+		internal static global::MonoJavaBridge.MethodId _getAvailableLocales15297;
 		public static global::java.util.Locale[] getAvailableLocales() 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, global::java.util.Calendar._getAvailableLocales13609));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.util.Calendar.staticClass, global::java.util.Calendar._getAvailableLocales15297)) as java.util.Locale[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName13610;
+		internal static global::MonoJavaBridge.MethodId _getDisplayName15298;
 		public virtual global::java.lang.String getDisplayName(int arg0, int arg1, java.util.Locale arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getDisplayName13610, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Calendar._getDisplayName15298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getDisplayName13610, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getDisplayName15298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTime13611;
+		internal static global::MonoJavaBridge.MethodId _setTime15299;
 		public virtual void setTime(java.util.Date arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._setTime13611, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._setTime15299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTime13611, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTime15299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTime13612;
+		internal static global::MonoJavaBridge.MethodId _getTime15300;
 		public virtual global::java.util.Date getTime() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getTime13612));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Calendar._getTime15300)) as java.util.Date;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTime13612));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTime15300)) as java.util.Date;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone13613;
+		internal static global::MonoJavaBridge.MethodId _getTimeZone15301;
 		public virtual global::java.util.TimeZone getTimeZone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getTimeZone13613));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Calendar._getTimeZone15301)) as java.util.TimeZone;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTimeZone13613));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTimeZone15301)) as java.util.TimeZone;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone13614;
+		internal static global::MonoJavaBridge.MethodId _setTimeZone15302;
 		public virtual void setTimeZone(java.util.TimeZone arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._setTimeZone13614, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._setTimeZone15302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTimeZone13614, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTimeZone15302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeInMillis13615;
+		internal static global::MonoJavaBridge.MethodId _getTimeInMillis15303;
 		public virtual long getTimeInMillis() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.util.Calendar._getTimeInMillis13615);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.Calendar._getTimeInMillis15303);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTimeInMillis13615);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTimeInMillis15303);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _computeTime13616;
+		internal static global::MonoJavaBridge.MethodId _computeTime15304;
 		protected abstract void computeTime();
-		internal static global::net.sf.jni4net.jni.MethodId _computeFields13617;
+		internal static global::MonoJavaBridge.MethodId _computeFields15305;
 		protected abstract void computeFields();
-		internal static global::net.sf.jni4net.jni.MethodId _setTimeInMillis13618;
+		internal static global::MonoJavaBridge.MethodId _setTimeInMillis15306;
 		public virtual void setTimeInMillis(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._setTimeInMillis13618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._setTimeInMillis15306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTimeInMillis13618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTimeInMillis15306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _internalGet13619;
+		internal static global::MonoJavaBridge.MethodId _internalGet15307;
 		protected virtual int internalGet(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._internalGet13619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._internalGet15307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._internalGet13619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._internalGet15307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayNames13620;
+		internal static global::MonoJavaBridge.MethodId _getDisplayNames15308;
 		public virtual global::java.util.Map getDisplayNames(int arg0, int arg1, java.util.Locale arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getDisplayNames13620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Calendar._getDisplayNames15308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.Map;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getDisplayNames13620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getDisplayNames15308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.Map;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _roll13621;
+		internal static global::MonoJavaBridge.MethodId _roll15309;
 		public virtual void roll(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._roll13621, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._roll15309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._roll13621, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._roll15309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _roll13622;
+		internal static global::MonoJavaBridge.MethodId _roll15310;
 		public abstract void roll(int arg0, bool arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _setLenient13623;
+		internal static global::MonoJavaBridge.MethodId _setLenient15311;
 		public virtual void setLenient(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._setLenient13623, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._setLenient15311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setLenient13623, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._setLenient15311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isLenient13624;
+		internal static global::MonoJavaBridge.MethodId _isLenient15312;
 		public virtual bool isLenient() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Calendar._isLenient13624);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Calendar._isLenient15312);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._isLenient13624);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._isLenient15312);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setFirstDayOfWeek13625;
+		internal static global::MonoJavaBridge.MethodId _setFirstDayOfWeek15313;
 		public virtual void setFirstDayOfWeek(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._setFirstDayOfWeek13625, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._setFirstDayOfWeek15313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setFirstDayOfWeek13625, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._setFirstDayOfWeek15313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFirstDayOfWeek13626;
+		internal static global::MonoJavaBridge.MethodId _getFirstDayOfWeek15314;
 		public virtual int getFirstDayOfWeek() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._getFirstDayOfWeek13626);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._getFirstDayOfWeek15314);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getFirstDayOfWeek13626);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getFirstDayOfWeek15314);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMinimalDaysInFirstWeek13627;
+		internal static global::MonoJavaBridge.MethodId _setMinimalDaysInFirstWeek15315;
 		public virtual void setMinimalDaysInFirstWeek(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.Calendar._setMinimalDaysInFirstWeek13627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar._setMinimalDaysInFirstWeek15315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setMinimalDaysInFirstWeek13627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._setMinimalDaysInFirstWeek15315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMinimalDaysInFirstWeek13628;
+		internal static global::MonoJavaBridge.MethodId _getMinimalDaysInFirstWeek15316;
 		public virtual int getMinimalDaysInFirstWeek() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._getMinimalDaysInFirstWeek13628);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._getMinimalDaysInFirstWeek15316);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getMinimalDaysInFirstWeek13628);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getMinimalDaysInFirstWeek15316);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMinimum13629;
+		internal static global::MonoJavaBridge.MethodId _getMinimum15317;
 		public abstract int getMinimum(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getMaximum13630;
+		internal static global::MonoJavaBridge.MethodId _getMaximum15318;
 		public abstract int getMaximum(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getGreatestMinimum13631;
+		internal static global::MonoJavaBridge.MethodId _getGreatestMinimum15319;
 		public abstract int getGreatestMinimum(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getLeastMaximum13632;
+		internal static global::MonoJavaBridge.MethodId _getLeastMaximum15320;
 		public abstract int getLeastMaximum(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getActualMinimum13633;
+		internal static global::MonoJavaBridge.MethodId _getActualMinimum15321;
 		public virtual int getActualMinimum(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._getActualMinimum13633, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._getActualMinimum15321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getActualMinimum13633, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getActualMinimum15321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getActualMaximum13634;
+		internal static global::MonoJavaBridge.MethodId _getActualMaximum15322;
 		public virtual int getActualMaximum(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Calendar._getActualMaximum13634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar._getActualMaximum15322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getActualMaximum13634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar.staticClass, global::java.util.Calendar._getActualMaximum15322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Calendar13635;
-		protected Calendar(java.util.TimeZone arg0, java.util.Locale arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Calendar15323;
+		protected Calendar(java.util.TimeZone arg0, java.util.Locale arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Calendar.staticClass, global::java.util.Calendar._Calendar13635, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Calendar.staticClass, global::java.util.Calendar._Calendar15323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Calendar13636;
-		protected Calendar()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Calendar15324;
+		protected Calendar()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.Calendar.staticClass, global::java.util.Calendar._Calendar13636, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Calendar.staticClass, global::java.util.Calendar._Calendar15324);
+			Init(@__env, handle);
 		}
 		public static int ERA
 		{
@@ -691,59 +694,158 @@ namespace java.util
 				return 2;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.Calendar.staticClass = @__class;
-			global::java.util.Calendar._add13587 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "add", "(II)V");
-			global::java.util.Calendar._get13588 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "get", "(I)I");
-			global::java.util.Calendar._equals13589 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.Calendar._toString13590 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.util.Calendar._hashCode13591 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "hashCode", "()I");
-			global::java.util.Calendar._clone13592 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.Calendar._compareTo13593 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.util.Calendar._compareTo13594 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/util/Calendar;)I");
-			global::java.util.Calendar._clear13595 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clear", "()V");
-			global::java.util.Calendar._clear13596 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clear", "(I)V");
-			global::java.util.Calendar._getInstance13597 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "()Ljava/util/Calendar;");
-			global::java.util.Calendar._getInstance13598 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;Ljava/util/Locale;)Ljava/util/Calendar;");
-			global::java.util.Calendar._getInstance13599 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/util/Calendar;");
-			global::java.util.Calendar._getInstance13600 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;)Ljava/util/Calendar;");
-			global::java.util.Calendar._isSet13601 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "isSet", "(I)Z");
-			global::java.util.Calendar._set13602 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(IIIIII)V");
-			global::java.util.Calendar._set13603 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(II)V");
-			global::java.util.Calendar._set13604 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(III)V");
-			global::java.util.Calendar._set13605 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(IIIII)V");
-			global::java.util.Calendar._after13606 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "after", "(Ljava/lang/Object;)Z");
-			global::java.util.Calendar._before13607 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "before", "(Ljava/lang/Object;)Z");
-			global::java.util.Calendar._complete13608 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "complete", "()V");
-			global::java.util.Calendar._getAvailableLocales13609 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
-			global::java.util.Calendar._getDisplayName13610 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getDisplayName", "(IILjava/util/Locale;)Ljava/lang/String;");
-			global::java.util.Calendar._setTime13611 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTime", "(Ljava/util/Date;)V");
-			global::java.util.Calendar._getTime13612 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTime", "()Ljava/util/Date;");
-			global::java.util.Calendar._getTimeZone13613 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTimeZone", "()Ljava/util/TimeZone;");
-			global::java.util.Calendar._setTimeZone13614 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V");
-			global::java.util.Calendar._getTimeInMillis13615 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTimeInMillis", "()J");
-			global::java.util.Calendar._computeTime13616 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "computeTime", "()V");
-			global::java.util.Calendar._computeFields13617 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "computeFields", "()V");
-			global::java.util.Calendar._setTimeInMillis13618 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTimeInMillis", "(J)V");
-			global::java.util.Calendar._internalGet13619 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "internalGet", "(I)I");
-			global::java.util.Calendar._getDisplayNames13620 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getDisplayNames", "(IILjava/util/Locale;)Ljava/util/Map;");
-			global::java.util.Calendar._roll13621 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "roll", "(II)V");
-			global::java.util.Calendar._roll13622 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "roll", "(IZ)V");
-			global::java.util.Calendar._setLenient13623 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setLenient", "(Z)V");
-			global::java.util.Calendar._isLenient13624 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "isLenient", "()Z");
-			global::java.util.Calendar._setFirstDayOfWeek13625 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setFirstDayOfWeek", "(I)V");
-			global::java.util.Calendar._getFirstDayOfWeek13626 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getFirstDayOfWeek", "()I");
-			global::java.util.Calendar._setMinimalDaysInFirstWeek13627 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setMinimalDaysInFirstWeek", "(I)V");
-			global::java.util.Calendar._getMinimalDaysInFirstWeek13628 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMinimalDaysInFirstWeek", "()I");
-			global::java.util.Calendar._getMinimum13629 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMinimum", "(I)I");
-			global::java.util.Calendar._getMaximum13630 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMaximum", "(I)I");
-			global::java.util.Calendar._getGreatestMinimum13631 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getGreatestMinimum", "(I)I");
-			global::java.util.Calendar._getLeastMaximum13632 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getLeastMaximum", "(I)I");
-			global::java.util.Calendar._getActualMinimum13633 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getActualMinimum", "(I)I");
-			global::java.util.Calendar._getActualMaximum13634 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getActualMaximum", "(I)I");
-			global::java.util.Calendar._Calendar13635 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "<init>", "(Ljava/util/TimeZone;Ljava/util/Locale;)V");
-			global::java.util.Calendar._Calendar13636 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Calendar.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Calendar"));
+			global::java.util.Calendar._add15275 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "add", "(II)V");
+			global::java.util.Calendar._get15276 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "get", "(I)I");
+			global::java.util.Calendar._equals15277 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.Calendar._toString15278 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Calendar._hashCode15279 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "hashCode", "()I");
+			global::java.util.Calendar._clone15280 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.util.Calendar._compareTo15281 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.util.Calendar._compareTo15282 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/util/Calendar;)I");
+			global::java.util.Calendar._clear15283 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "clear", "()V");
+			global::java.util.Calendar._clear15284 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "clear", "(I)V");
+			global::java.util.Calendar._getInstance15285 = @__env.GetStaticMethodIDNoThrow(global::java.util.Calendar.staticClass, "getInstance", "()Ljava/util/Calendar;");
+			global::java.util.Calendar._getInstance15286 = @__env.GetStaticMethodIDNoThrow(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;Ljava/util/Locale;)Ljava/util/Calendar;");
+			global::java.util.Calendar._getInstance15287 = @__env.GetStaticMethodIDNoThrow(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/util/Calendar;");
+			global::java.util.Calendar._getInstance15288 = @__env.GetStaticMethodIDNoThrow(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;)Ljava/util/Calendar;");
+			global::java.util.Calendar._isSet15289 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "isSet", "(I)Z");
+			global::java.util.Calendar._set15290 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "set", "(IIIIII)V");
+			global::java.util.Calendar._set15291 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "set", "(II)V");
+			global::java.util.Calendar._set15292 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "set", "(III)V");
+			global::java.util.Calendar._set15293 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "set", "(IIIII)V");
+			global::java.util.Calendar._after15294 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "after", "(Ljava/lang/Object;)Z");
+			global::java.util.Calendar._before15295 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "before", "(Ljava/lang/Object;)Z");
+			global::java.util.Calendar._complete15296 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "complete", "()V");
+			global::java.util.Calendar._getAvailableLocales15297 = @__env.GetStaticMethodIDNoThrow(global::java.util.Calendar.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;");
+			global::java.util.Calendar._getDisplayName15298 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getDisplayName", "(IILjava/util/Locale;)Ljava/lang/String;");
+			global::java.util.Calendar._setTime15299 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "setTime", "(Ljava/util/Date;)V");
+			global::java.util.Calendar._getTime15300 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getTime", "()Ljava/util/Date;");
+			global::java.util.Calendar._getTimeZone15301 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getTimeZone", "()Ljava/util/TimeZone;");
+			global::java.util.Calendar._setTimeZone15302 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V");
+			global::java.util.Calendar._getTimeInMillis15303 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getTimeInMillis", "()J");
+			global::java.util.Calendar._computeTime15304 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "computeTime", "()V");
+			global::java.util.Calendar._computeFields15305 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "computeFields", "()V");
+			global::java.util.Calendar._setTimeInMillis15306 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "setTimeInMillis", "(J)V");
+			global::java.util.Calendar._internalGet15307 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "internalGet", "(I)I");
+			global::java.util.Calendar._getDisplayNames15308 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getDisplayNames", "(IILjava/util/Locale;)Ljava/util/Map;");
+			global::java.util.Calendar._roll15309 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "roll", "(II)V");
+			global::java.util.Calendar._roll15310 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "roll", "(IZ)V");
+			global::java.util.Calendar._setLenient15311 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "setLenient", "(Z)V");
+			global::java.util.Calendar._isLenient15312 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "isLenient", "()Z");
+			global::java.util.Calendar._setFirstDayOfWeek15313 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "setFirstDayOfWeek", "(I)V");
+			global::java.util.Calendar._getFirstDayOfWeek15314 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getFirstDayOfWeek", "()I");
+			global::java.util.Calendar._setMinimalDaysInFirstWeek15315 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "setMinimalDaysInFirstWeek", "(I)V");
+			global::java.util.Calendar._getMinimalDaysInFirstWeek15316 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getMinimalDaysInFirstWeek", "()I");
+			global::java.util.Calendar._getMinimum15317 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getMinimum", "(I)I");
+			global::java.util.Calendar._getMaximum15318 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getMaximum", "(I)I");
+			global::java.util.Calendar._getGreatestMinimum15319 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getGreatestMinimum", "(I)I");
+			global::java.util.Calendar._getLeastMaximum15320 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getLeastMaximum", "(I)I");
+			global::java.util.Calendar._getActualMinimum15321 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getActualMinimum", "(I)I");
+			global::java.util.Calendar._getActualMaximum15322 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "getActualMaximum", "(I)I");
+			global::java.util.Calendar._Calendar15323 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "<init>", "(Ljava/util/TimeZone;Ljava/util/Locale;)V");
+			global::java.util.Calendar._Calendar15324 = @__env.GetMethodIDNoThrow(global::java.util.Calendar.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.Calendar))]
+	public sealed partial class Calendar_ : java.util.Calendar
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Calendar_()
+		{
+			InitJNI();
+		}
+		internal Calendar_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _add15325;
+		public override void add(int arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar_._add15325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._add15325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _computeTime15326;
+		protected override void computeTime() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar_._computeTime15326);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._computeTime15326);
+		}
+		internal static global::MonoJavaBridge.MethodId _computeFields15327;
+		protected override void computeFields() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar_._computeFields15327);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._computeFields15327);
+		}
+		internal static global::MonoJavaBridge.MethodId _roll15328;
+		public override void roll(int arg0, bool arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.Calendar_._roll15328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._roll15328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _getMinimum15329;
+		public override int getMinimum(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar_._getMinimum15329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._getMinimum15329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _getMaximum15330;
+		public override int getMaximum(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar_._getMaximum15330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._getMaximum15330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _getGreatestMinimum15331;
+		public override int getGreatestMinimum(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar_._getGreatestMinimum15331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._getGreatestMinimum15331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _getLeastMaximum15332;
+		public override int getLeastMaximum(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Calendar_._getLeastMaximum15332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Calendar_.staticClass, global::java.util.Calendar_._getLeastMaximum15332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Calendar_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Calendar"));
+			global::java.util.Calendar_._add15325 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "add", "(II)V");
+			global::java.util.Calendar_._computeTime15326 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "computeTime", "()V");
+			global::java.util.Calendar_._computeFields15327 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "computeFields", "()V");
+			global::java.util.Calendar_._roll15328 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "roll", "(IZ)V");
+			global::java.util.Calendar_._getMinimum15329 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getMinimum", "(I)I");
+			global::java.util.Calendar_._getMaximum15330 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getMaximum", "(I)I");
+			global::java.util.Calendar_._getGreatestMinimum15331 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getGreatestMinimum", "(I)I");
+			global::java.util.Calendar_._getLeastMaximum15332 = @__env.GetMethodIDNoThrow(global::java.util.Calendar_.staticClass, "getLeastMaximum", "(I)I");
 		}
 	}
 }

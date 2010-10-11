@@ -1,39 +1,25 @@
 namespace android.text.style
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.UpdateLayout_))]
 	public interface UpdateLayout : UpdateAppearance
 	{
 	}
 
-	public partial class UpdateLayout_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.UpdateLayout))]
+	public sealed partial class UpdateLayout_ : java.lang.Object, UpdateLayout
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static UpdateLayout_()
 		{
-			get { return __UpdateLayout.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __UpdateLayout : java.lang.Object, UpdateLayout
-	{
-		internal static global::java.lang.Class staticClass;
-		static __UpdateLayout()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__UpdateLayout), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.style.__UpdateLayout(@__env);
-			}
-		}
-		internal __UpdateLayout(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal UpdateLayout_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.style.__UpdateLayout.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.style.UpdateLayout_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/UpdateLayout"));
 		}
 	}
 }

@@ -1,43 +1,38 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class StringBuilderPrinter : java.lang.Object, Printer
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class StringBuilderPrinter : java.lang.Object, Printer
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static StringBuilderPrinter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.StringBuilderPrinter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.StringBuilderPrinter(@__env);
-			}
-		}
-		protected StringBuilderPrinter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected StringBuilderPrinter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _println8321;
+		internal static global::MonoJavaBridge.MethodId _println8625;
 		public virtual void println(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.StringBuilderPrinter._println8321, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.StringBuilderPrinter._println8625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.StringBuilderPrinter.staticClass, global::android.util.StringBuilderPrinter._println8321, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.StringBuilderPrinter.staticClass, global::android.util.StringBuilderPrinter._println8625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _StringBuilderPrinter8322;
-		public StringBuilderPrinter(java.lang.StringBuilder arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _StringBuilderPrinter8626;
+		public StringBuilderPrinter(java.lang.StringBuilder arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.StringBuilderPrinter.staticClass, global::android.util.StringBuilderPrinter._StringBuilderPrinter8322, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.StringBuilderPrinter.staticClass, global::android.util.StringBuilderPrinter._StringBuilderPrinter8626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.StringBuilderPrinter.staticClass = @__class;
-			global::android.util.StringBuilderPrinter._println8321 = @__env.GetMethodID(global::android.util.StringBuilderPrinter.staticClass, "println", "(Ljava/lang/String;)V");
-			global::android.util.StringBuilderPrinter._StringBuilderPrinter8322 = @__env.GetMethodID(global::android.util.StringBuilderPrinter.staticClass, "<init>", "(Ljava/lang/StringBuilder;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.StringBuilderPrinter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/StringBuilderPrinter"));
+			global::android.util.StringBuilderPrinter._println8625 = @__env.GetMethodIDNoThrow(global::android.util.StringBuilderPrinter.staticClass, "println", "(Ljava/lang/String;)V");
+			global::android.util.StringBuilderPrinter._StringBuilderPrinter8626 = @__env.GetMethodIDNoThrow(global::android.util.StringBuilderPrinter.staticClass, "<init>", "(Ljava/lang/StringBuilder;)V");
 		}
 	}
 }

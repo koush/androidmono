@@ -1,7 +1,7 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class IBinderConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class IBinderConstants 
 	{
 		public static int FIRST_CALL_TRANSACTION
 		{

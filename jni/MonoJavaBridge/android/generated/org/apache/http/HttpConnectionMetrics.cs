@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface HttpConnectionMetrics 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpConnectionMetrics_))]
+	public interface HttpConnectionMetrics  : global::MonoJavaBridge.IJavaObject 
 	{
 		void reset();
 		long getRequestCount();
@@ -11,95 +11,81 @@ namespace org.apache.http
 		global::java.lang.Object getMetric(java.lang.String arg0);
 	}
 
-	public partial class HttpConnectionMetrics_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.HttpConnectionMetrics))]
+	public sealed partial class HttpConnectionMetrics_ : java.lang.Object, HttpConnectionMetrics
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HttpConnectionMetrics_()
 		{
-			get { return __HttpConnectionMetrics.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HttpConnectionMetrics : java.lang.Object, HttpConnectionMetrics
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HttpConnectionMetrics()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.__HttpConnectionMetrics), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.__HttpConnectionMetrics(@__env);
-			}
-		}
-		internal __HttpConnectionMetrics(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HttpConnectionMetrics_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _reset14225;
+		internal static global::MonoJavaBridge.MethodId _reset16140;
 		 void org.apache.http.HttpConnectionMetrics.reset() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.__HttpConnectionMetrics._reset14225);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_._reset16140);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.__HttpConnectionMetrics.staticClass, global::org.apache.http.__HttpConnectionMetrics._reset14225);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._reset16140);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRequestCount14226;
+		internal static global::MonoJavaBridge.MethodId _getRequestCount16141;
 		 long org.apache.http.HttpConnectionMetrics.getRequestCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::org.apache.http.__HttpConnectionMetrics._getRequestCount14226);
+				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_._getRequestCount16141);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::org.apache.http.__HttpConnectionMetrics.staticClass, global::org.apache.http.__HttpConnectionMetrics._getRequestCount14226);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getRequestCount16141);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getResponseCount14227;
+		internal static global::MonoJavaBridge.MethodId _getResponseCount16142;
 		 long org.apache.http.HttpConnectionMetrics.getResponseCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::org.apache.http.__HttpConnectionMetrics._getResponseCount14227);
+				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_._getResponseCount16142);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::org.apache.http.__HttpConnectionMetrics.staticClass, global::org.apache.http.__HttpConnectionMetrics._getResponseCount14227);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getResponseCount16142);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSentBytesCount14228;
+		internal static global::MonoJavaBridge.MethodId _getSentBytesCount16143;
 		 long org.apache.http.HttpConnectionMetrics.getSentBytesCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::org.apache.http.__HttpConnectionMetrics._getSentBytesCount14228);
+				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_._getSentBytesCount16143);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::org.apache.http.__HttpConnectionMetrics.staticClass, global::org.apache.http.__HttpConnectionMetrics._getSentBytesCount14228);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getSentBytesCount16143);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getReceivedBytesCount14229;
+		internal static global::MonoJavaBridge.MethodId _getReceivedBytesCount16144;
 		 long org.apache.http.HttpConnectionMetrics.getReceivedBytesCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::org.apache.http.__HttpConnectionMetrics._getReceivedBytesCount14229);
+				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_._getReceivedBytesCount16144);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::org.apache.http.__HttpConnectionMetrics.staticClass, global::org.apache.http.__HttpConnectionMetrics._getReceivedBytesCount14229);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getReceivedBytesCount16144);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMetric14230;
+		internal static global::MonoJavaBridge.MethodId _getMetric16145;
 		 global::java.lang.Object org.apache.http.HttpConnectionMetrics.getMetric(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HttpConnectionMetrics._getMetric14230, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_._getMetric16145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HttpConnectionMetrics.staticClass, global::org.apache.http.__HttpConnectionMetrics._getMetric14230, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getMetric16145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.__HttpConnectionMetrics.staticClass = @__class;
-			global::org.apache.http.__HttpConnectionMetrics._reset14225 = @__env.GetMethodID(global::org.apache.http.__HttpConnectionMetrics.staticClass, "org.apache.http.HttpConnectionMetrics.reset", "()V");
-			global::org.apache.http.__HttpConnectionMetrics._getRequestCount14226 = @__env.GetMethodID(global::org.apache.http.__HttpConnectionMetrics.staticClass, "org.apache.http.HttpConnectionMetrics.getRequestCount", "()J");
-			global::org.apache.http.__HttpConnectionMetrics._getResponseCount14227 = @__env.GetMethodID(global::org.apache.http.__HttpConnectionMetrics.staticClass, "org.apache.http.HttpConnectionMetrics.getResponseCount", "()J");
-			global::org.apache.http.__HttpConnectionMetrics._getSentBytesCount14228 = @__env.GetMethodID(global::org.apache.http.__HttpConnectionMetrics.staticClass, "org.apache.http.HttpConnectionMetrics.getSentBytesCount", "()J");
-			global::org.apache.http.__HttpConnectionMetrics._getReceivedBytesCount14229 = @__env.GetMethodID(global::org.apache.http.__HttpConnectionMetrics.staticClass, "org.apache.http.HttpConnectionMetrics.getReceivedBytesCount", "()J");
-			global::org.apache.http.__HttpConnectionMetrics._getMetric14230 = @__env.GetMethodID(global::org.apache.http.__HttpConnectionMetrics.staticClass, "org.apache.http.HttpConnectionMetrics.getMetric", "(Ljava/lang/String;)Ljava/lang/Object;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.HttpConnectionMetrics_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HttpConnectionMetrics"));
+			global::org.apache.http.HttpConnectionMetrics_._reset16140 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "reset", "()V");
+			global::org.apache.http.HttpConnectionMetrics_._getRequestCount16141 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getRequestCount", "()J");
+			global::org.apache.http.HttpConnectionMetrics_._getResponseCount16142 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getResponseCount", "()J");
+			global::org.apache.http.HttpConnectionMetrics_._getSentBytesCount16143 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getSentBytesCount", "()J");
+			global::org.apache.http.HttpConnectionMetrics_._getReceivedBytesCount16144 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getReceivedBytesCount", "()J");
+			global::org.apache.http.HttpConnectionMetrics_._getMetric16145 = @__env.GetMethodIDNoThrow(global::org.apache.http.HttpConnectionMetrics_.staticClass, "getMetric", "(Ljava/lang/String;)Ljava/lang/Object;");
 		}
 	}
 }

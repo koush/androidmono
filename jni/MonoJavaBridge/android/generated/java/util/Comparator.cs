@@ -1,61 +1,47 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Comparator 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Comparator_))]
+	public interface Comparator  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		int compare(java.lang.Object arg0, java.lang.Object arg1);
 	}
 
-	public partial class Comparator_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.Comparator))]
+	public sealed partial class Comparator_ : java.lang.Object, Comparator
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Comparator_()
 		{
-			get { return __Comparator.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Comparator : java.lang.Object, Comparator
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Comparator()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__Comparator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.__Comparator(@__env);
-			}
-		}
-		internal __Comparator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Comparator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13637;
+		internal static global::MonoJavaBridge.MethodId _equals15349;
 		 bool java.util.Comparator.equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__Comparator._equals13637, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Comparator_._equals15349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._equals13637, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Comparator_.staticClass, global::java.util.Comparator_._equals15349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compare13638;
+		internal static global::MonoJavaBridge.MethodId _compare15350;
 		 int java.util.Comparator.compare(java.lang.Object arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.__Comparator._compare13638, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Comparator_._compare15350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._compare13638, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Comparator_.staticClass, global::java.util.Comparator_._compare15350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.__Comparator.staticClass = @__class;
-			global::java.util.__Comparator._equals13637 = @__env.GetMethodID(global::java.util.__Comparator.staticClass, "java.util.Comparator.equals", "(Ljava/lang/Object;)Z");
-			global::java.util.__Comparator._compare13638 = @__env.GetMethodID(global::java.util.__Comparator.staticClass, "java.util.Comparator.compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Comparator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Comparator"));
+			global::java.util.Comparator_._equals15349 = @__env.GetMethodIDNoThrow(global::java.util.Comparator_.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.Comparator_._compare15350 = @__env.GetMethodIDNoThrow(global::java.util.Comparator_.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
 		}
 	}
 }

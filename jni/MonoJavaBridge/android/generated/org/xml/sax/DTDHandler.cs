@@ -1,61 +1,47 @@
 namespace org.xml.sax
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DTDHandler 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.DTDHandler_))]
+	public interface DTDHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void unparsedEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3);
 		void notationDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2);
 	}
 
-	public partial class DTDHandler_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.xml.sax.DTDHandler))]
+	public sealed partial class DTDHandler_ : java.lang.Object, DTDHandler
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DTDHandler_()
 		{
-			get { return __DTDHandler.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DTDHandler : java.lang.Object, DTDHandler
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DTDHandler()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__DTDHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.xml.sax.__DTDHandler(@__env);
-			}
-		}
-		internal __DTDHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DTDHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unparsedEntityDecl14579;
+		internal static global::MonoJavaBridge.MethodId _unparsedEntityDecl16499;
 		 void org.xml.sax.DTDHandler.unparsedEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__DTDHandler._unparsedEntityDecl14579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_._unparsedEntityDecl16499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__DTDHandler.staticClass, global::org.xml.sax.__DTDHandler._unparsedEntityDecl14579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_.staticClass, global::org.xml.sax.DTDHandler_._unparsedEntityDecl16499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _notationDecl14580;
+		internal static global::MonoJavaBridge.MethodId _notationDecl16500;
 		 void org.xml.sax.DTDHandler.notationDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__DTDHandler._notationDecl14580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_._notationDecl16500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__DTDHandler.staticClass, global::org.xml.sax.__DTDHandler._notationDecl14580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.DTDHandler_.staticClass, global::org.xml.sax.DTDHandler_._notationDecl16500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.xml.sax.__DTDHandler.staticClass = @__class;
-			global::org.xml.sax.__DTDHandler._unparsedEntityDecl14579 = @__env.GetMethodID(global::org.xml.sax.__DTDHandler.staticClass, "org.xml.sax.DTDHandler.unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__DTDHandler._notationDecl14580 = @__env.GetMethodID(global::org.xml.sax.__DTDHandler.staticClass, "org.xml.sax.DTDHandler.notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.xml.sax.DTDHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/DTDHandler"));
+			global::org.xml.sax.DTDHandler_._unparsedEntityDecl16499 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DTDHandler_.staticClass, "unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.DTDHandler_._notationDecl16500 = @__env.GetMethodIDNoThrow(global::org.xml.sax.DTDHandler_.staticClass, "notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 		}
 	}
 }

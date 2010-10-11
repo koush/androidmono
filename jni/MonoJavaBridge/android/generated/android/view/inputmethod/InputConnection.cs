@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface InputConnection 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.inputmethod.InputConnection_))]
+	public interface InputConnection  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool setSelection(int arg0, int arg1);
 		bool beginBatchEdit();
@@ -23,215 +23,201 @@ namespace android.view.inputmethod
 		bool performPrivateCommand(java.lang.String arg0, android.os.Bundle arg1);
 	}
 
-	public partial class InputConnection_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.inputmethod.InputConnection))]
+	public sealed partial class InputConnection_ : java.lang.Object, InputConnection
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static InputConnection_()
 		{
-			get { return __InputConnection.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __InputConnection : java.lang.Object, InputConnection
-	{
-		internal static global::java.lang.Class staticClass;
-		static __InputConnection()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.inputmethod.__InputConnection), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.inputmethod.__InputConnection(@__env);
-			}
-		}
-		internal __InputConnection(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal InputConnection_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSelection9813;
+		internal static global::MonoJavaBridge.MethodId _setSelection10160;
 		 bool android.view.inputmethod.InputConnection.setSelection(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._setSelection9813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._setSelection10160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._setSelection9813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._setSelection10160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _beginBatchEdit9814;
+		internal static global::MonoJavaBridge.MethodId _beginBatchEdit10161;
 		 bool android.view.inputmethod.InputConnection.beginBatchEdit() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._beginBatchEdit9814);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._beginBatchEdit10161);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._beginBatchEdit9814);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._beginBatchEdit10161);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endBatchEdit9815;
+		internal static global::MonoJavaBridge.MethodId _endBatchEdit10162;
 		 bool android.view.inputmethod.InputConnection.endBatchEdit() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._endBatchEdit9815);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._endBatchEdit10162);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._endBatchEdit9815);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._endBatchEdit10162);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextBeforeCursor9816;
+		internal static global::MonoJavaBridge.MethodId _getTextBeforeCursor10163;
 		 global::java.lang.CharSequence android.view.inputmethod.InputConnection.getTextBeforeCursor(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection._getTextBeforeCursor9816, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._getTextBeforeCursor10163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getTextBeforeCursor9816, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._getTextBeforeCursor10163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextAfterCursor9817;
+		internal static global::MonoJavaBridge.MethodId _getTextAfterCursor10164;
 		 global::java.lang.CharSequence android.view.inputmethod.InputConnection.getTextAfterCursor(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection._getTextAfterCursor9817, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._getTextAfterCursor10164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getTextAfterCursor9817, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._getTextAfterCursor10164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCursorCapsMode9818;
+		internal static global::MonoJavaBridge.MethodId _getCursorCapsMode10165;
 		 int android.view.inputmethod.InputConnection.getCursorCapsMode(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.inputmethod.__InputConnection._getCursorCapsMode9818, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._getCursorCapsMode10165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getCursorCapsMode9818, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._getCursorCapsMode10165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getExtractedText9819;
+		internal static global::MonoJavaBridge.MethodId _getExtractedText10166;
 		 global::android.view.inputmethod.ExtractedText android.view.inputmethod.InputConnection.getExtractedText(android.view.inputmethod.ExtractedTextRequest arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.inputmethod.ExtractedText>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection._getExtractedText9819, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._getExtractedText10166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.inputmethod.ExtractedText;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.inputmethod.ExtractedText>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getExtractedText9819, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._getExtractedText10166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.inputmethod.ExtractedText;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deleteSurroundingText9820;
+		internal static global::MonoJavaBridge.MethodId _deleteSurroundingText10167;
 		 bool android.view.inputmethod.InputConnection.deleteSurroundingText(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._deleteSurroundingText9820, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._deleteSurroundingText10167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._deleteSurroundingText9820, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._deleteSurroundingText10167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setComposingText9821;
+		internal static global::MonoJavaBridge.MethodId _setComposingText10168;
 		 bool android.view.inputmethod.InputConnection.setComposingText(java.lang.CharSequence arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._setComposingText9821, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._setComposingText10168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._setComposingText9821, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._setComposingText10168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _finishComposingText9822;
+		internal static global::MonoJavaBridge.MethodId _finishComposingText10169;
 		 bool android.view.inputmethod.InputConnection.finishComposingText() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._finishComposingText9822);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._finishComposingText10169);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._finishComposingText9822);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._finishComposingText10169);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _commitText9823;
+		internal static global::MonoJavaBridge.MethodId _commitText10170;
 		 bool android.view.inputmethod.InputConnection.commitText(java.lang.CharSequence arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._commitText9823, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._commitText10170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._commitText9823, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._commitText10170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _commitCompletion9824;
+		internal static global::MonoJavaBridge.MethodId _commitCompletion10171;
 		 bool android.view.inputmethod.InputConnection.commitCompletion(android.view.inputmethod.CompletionInfo arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._commitCompletion9824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._commitCompletion10171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._commitCompletion9824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._commitCompletion10171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performEditorAction9825;
+		internal static global::MonoJavaBridge.MethodId _performEditorAction10172;
 		 bool android.view.inputmethod.InputConnection.performEditorAction(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._performEditorAction9825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._performEditorAction10172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._performEditorAction9825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._performEditorAction10172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performContextMenuAction9826;
+		internal static global::MonoJavaBridge.MethodId _performContextMenuAction10173;
 		 bool android.view.inputmethod.InputConnection.performContextMenuAction(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._performContextMenuAction9826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._performContextMenuAction10173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._performContextMenuAction9826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._performContextMenuAction10173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendKeyEvent9827;
+		internal static global::MonoJavaBridge.MethodId _sendKeyEvent10174;
 		 bool android.view.inputmethod.InputConnection.sendKeyEvent(android.view.KeyEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._sendKeyEvent9827, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._sendKeyEvent10174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._sendKeyEvent9827, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._sendKeyEvent10174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearMetaKeyStates9828;
+		internal static global::MonoJavaBridge.MethodId _clearMetaKeyStates10175;
 		 bool android.view.inputmethod.InputConnection.clearMetaKeyStates(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._clearMetaKeyStates9828, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._clearMetaKeyStates10175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._clearMetaKeyStates9828, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._clearMetaKeyStates10175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _reportFullscreenMode9829;
+		internal static global::MonoJavaBridge.MethodId _reportFullscreenMode10176;
 		 bool android.view.inputmethod.InputConnection.reportFullscreenMode(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._reportFullscreenMode9829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._reportFullscreenMode10176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._reportFullscreenMode9829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._reportFullscreenMode10176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performPrivateCommand9830;
+		internal static global::MonoJavaBridge.MethodId _performPrivateCommand10177;
 		 bool android.view.inputmethod.InputConnection.performPrivateCommand(java.lang.String arg0, android.os.Bundle arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._performPrivateCommand9830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_._performPrivateCommand10177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._performPrivateCommand9830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.inputmethod.InputConnection_.staticClass, global::android.view.inputmethod.InputConnection_._performPrivateCommand10177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.inputmethod.__InputConnection.staticClass = @__class;
-			global::android.view.inputmethod.__InputConnection._setSelection9813 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.setSelection", "(II)Z");
-			global::android.view.inputmethod.__InputConnection._beginBatchEdit9814 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.beginBatchEdit", "()Z");
-			global::android.view.inputmethod.__InputConnection._endBatchEdit9815 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.endBatchEdit", "()Z");
-			global::android.view.inputmethod.__InputConnection._getTextBeforeCursor9816 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.getTextBeforeCursor", "(II)Ljava/lang/CharSequence;");
-			global::android.view.inputmethod.__InputConnection._getTextAfterCursor9817 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.getTextAfterCursor", "(II)Ljava/lang/CharSequence;");
-			global::android.view.inputmethod.__InputConnection._getCursorCapsMode9818 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.getCursorCapsMode", "(I)I");
-			global::android.view.inputmethod.__InputConnection._getExtractedText9819 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.getExtractedText", "(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;");
-			global::android.view.inputmethod.__InputConnection._deleteSurroundingText9820 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.deleteSurroundingText", "(II)Z");
-			global::android.view.inputmethod.__InputConnection._setComposingText9821 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.setComposingText", "(Ljava/lang/CharSequence;I)Z");
-			global::android.view.inputmethod.__InputConnection._finishComposingText9822 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.finishComposingText", "()Z");
-			global::android.view.inputmethod.__InputConnection._commitText9823 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.commitText", "(Ljava/lang/CharSequence;I)Z");
-			global::android.view.inputmethod.__InputConnection._commitCompletion9824 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.commitCompletion", "(Landroid/view/inputmethod/CompletionInfo;)Z");
-			global::android.view.inputmethod.__InputConnection._performEditorAction9825 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.performEditorAction", "(I)Z");
-			global::android.view.inputmethod.__InputConnection._performContextMenuAction9826 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.performContextMenuAction", "(I)Z");
-			global::android.view.inputmethod.__InputConnection._sendKeyEvent9827 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.sendKeyEvent", "(Landroid/view/KeyEvent;)Z");
-			global::android.view.inputmethod.__InputConnection._clearMetaKeyStates9828 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.clearMetaKeyStates", "(I)Z");
-			global::android.view.inputmethod.__InputConnection._reportFullscreenMode9829 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.reportFullscreenMode", "(Z)Z");
-			global::android.view.inputmethod.__InputConnection._performPrivateCommand9830 = @__env.GetMethodID(global::android.view.inputmethod.__InputConnection.staticClass, "android.view.inputmethod.InputConnection.performPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.inputmethod.InputConnection_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/inputmethod/InputConnection"));
+			global::android.view.inputmethod.InputConnection_._setSelection10160 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "setSelection", "(II)Z");
+			global::android.view.inputmethod.InputConnection_._beginBatchEdit10161 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "beginBatchEdit", "()Z");
+			global::android.view.inputmethod.InputConnection_._endBatchEdit10162 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "endBatchEdit", "()Z");
+			global::android.view.inputmethod.InputConnection_._getTextBeforeCursor10163 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "getTextBeforeCursor", "(II)Ljava/lang/CharSequence;");
+			global::android.view.inputmethod.InputConnection_._getTextAfterCursor10164 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "getTextAfterCursor", "(II)Ljava/lang/CharSequence;");
+			global::android.view.inputmethod.InputConnection_._getCursorCapsMode10165 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "getCursorCapsMode", "(I)I");
+			global::android.view.inputmethod.InputConnection_._getExtractedText10166 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "getExtractedText", "(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;");
+			global::android.view.inputmethod.InputConnection_._deleteSurroundingText10167 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "deleteSurroundingText", "(II)Z");
+			global::android.view.inputmethod.InputConnection_._setComposingText10168 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "setComposingText", "(Ljava/lang/CharSequence;I)Z");
+			global::android.view.inputmethod.InputConnection_._finishComposingText10169 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "finishComposingText", "()Z");
+			global::android.view.inputmethod.InputConnection_._commitText10170 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "commitText", "(Ljava/lang/CharSequence;I)Z");
+			global::android.view.inputmethod.InputConnection_._commitCompletion10171 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "commitCompletion", "(Landroid/view/inputmethod/CompletionInfo;)Z");
+			global::android.view.inputmethod.InputConnection_._performEditorAction10172 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "performEditorAction", "(I)Z");
+			global::android.view.inputmethod.InputConnection_._performContextMenuAction10173 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "performContextMenuAction", "(I)Z");
+			global::android.view.inputmethod.InputConnection_._sendKeyEvent10174 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "sendKeyEvent", "(Landroid/view/KeyEvent;)Z");
+			global::android.view.inputmethod.InputConnection_._clearMetaKeyStates10175 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "clearMetaKeyStates", "(I)Z");
+			global::android.view.inputmethod.InputConnection_._reportFullscreenMode10176 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "reportFullscreenMode", "(Z)Z");
+			global::android.view.inputmethod.InputConnection_._performPrivateCommand10177 = @__env.GetMethodIDNoThrow(global::android.view.inputmethod.InputConnection_.staticClass, "performPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)Z");
 		}
 	}
 }

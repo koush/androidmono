@@ -1,48 +1,42 @@
 namespace java.io
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class FileDescriptor : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class FileDescriptor : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static FileDescriptor()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.io.FileDescriptor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.io.FileDescriptor(@__env);
-			}
-		}
-		internal FileDescriptor(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal FileDescriptor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _valid12107;
+		internal static global::MonoJavaBridge.MethodId _valid12549;
 		public bool valid() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.io.FileDescriptor._valid12107);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileDescriptor._valid12549);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid12107);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid12549);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sync12108;
+		internal static global::MonoJavaBridge.MethodId _sync12550;
 		public void sync() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.io.FileDescriptor._sync12108);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileDescriptor._sync12550);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync12108);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync12550);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _FileDescriptor12109;
-		public FileDescriptor()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _FileDescriptor12551;
+		public FileDescriptor()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._FileDescriptor12109, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._FileDescriptor12551);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _in12110;
+		internal static global::MonoJavaBridge.FieldId _in12552;
 		public static global::java.io.FileDescriptor @in
 		{
 			get
@@ -50,7 +44,7 @@ namespace java.io
 				return default(global::java.io.FileDescriptor);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _out12111;
+		internal static global::MonoJavaBridge.FieldId _out12553;
 		public static global::java.io.FileDescriptor @out
 		{
 			get
@@ -58,7 +52,7 @@ namespace java.io
 				return default(global::java.io.FileDescriptor);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _err12112;
+		internal static global::MonoJavaBridge.FieldId _err12554;
 		public static global::java.io.FileDescriptor err
 		{
 			get
@@ -66,12 +60,13 @@ namespace java.io
 				return default(global::java.io.FileDescriptor);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.io.FileDescriptor.staticClass = @__class;
-			global::java.io.FileDescriptor._valid12107 = @__env.GetMethodID(global::java.io.FileDescriptor.staticClass, "valid", "()Z");
-			global::java.io.FileDescriptor._sync12108 = @__env.GetMethodID(global::java.io.FileDescriptor.staticClass, "sync", "()V");
-			global::java.io.FileDescriptor._FileDescriptor12109 = @__env.GetMethodID(global::java.io.FileDescriptor.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.io.FileDescriptor.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileDescriptor"));
+			global::java.io.FileDescriptor._valid12549 = @__env.GetMethodIDNoThrow(global::java.io.FileDescriptor.staticClass, "valid", "()Z");
+			global::java.io.FileDescriptor._sync12550 = @__env.GetMethodIDNoThrow(global::java.io.FileDescriptor.staticClass, "sync", "()V");
+			global::java.io.FileDescriptor._FileDescriptor12551 = @__env.GetMethodIDNoThrow(global::java.io.FileDescriptor.staticClass, "<init>", "()V");
 		}
 	}
 }

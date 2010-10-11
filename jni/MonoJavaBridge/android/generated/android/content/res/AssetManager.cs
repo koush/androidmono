@@ -1,233 +1,222 @@
 namespace android.content.res
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class AssetManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class AssetManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AssetManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.res.AssetManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.res.AssetManager(@__env);
-			}
-		}
-		internal AssetManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal AssetManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class AssetInputStream : java.io.InputStream
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class AssetInputStream : java.io.InputStream
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static AssetInputStream()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.res.AssetManager.AssetInputStream), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.content.res.AssetManager.AssetInputStream(@__env);
-				}
-			}
-			internal AssetInputStream(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal AssetInputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _close2071;
+			internal static global::MonoJavaBridge.MethodId _close2225;
 			public sealed override void close() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.content.res.AssetManager.AssetInputStream._close2071);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._close2225);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._close2071);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._close2225);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _mark2072;
+			internal static global::MonoJavaBridge.MethodId _mark2226;
 			public sealed override void mark(int arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.content.res.AssetManager.AssetInputStream._mark2072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._mark2226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._mark2072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._mark2226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _reset2073;
+			internal static global::MonoJavaBridge.MethodId _reset2227;
 			public sealed override void reset() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.content.res.AssetManager.AssetInputStream._reset2073);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._reset2227);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._reset2073);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._reset2227);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _read2074;
+			internal static global::MonoJavaBridge.MethodId _read2228;
 			public sealed override int read() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.res.AssetManager.AssetInputStream._read2074);
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._read2228);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._read2074);
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._read2228);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _read2075;
+			internal static global::MonoJavaBridge.MethodId _read2229;
 			public sealed override int read(byte[] arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.res.AssetManager.AssetInputStream._read2075, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._read2229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._read2075, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._read2229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _read2076;
+			internal static global::MonoJavaBridge.MethodId _read2230;
 			public sealed override int read(byte[] arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.res.AssetManager.AssetInputStream._read2076, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._read2230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._read2076, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._read2230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _skip2077;
+			internal static global::MonoJavaBridge.MethodId _skip2231;
 			public sealed override long skip(long arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallLongMethod(this, global::android.content.res.AssetManager.AssetInputStream._skip2077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					return @__env.CallLongMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._skip2231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._skip2077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._skip2231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _available2078;
+			internal static global::MonoJavaBridge.MethodId _available2232;
 			public sealed override int available() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.res.AssetManager.AssetInputStream._available2078);
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._available2232);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._available2078);
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._available2232);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _markSupported2079;
+			internal static global::MonoJavaBridge.MethodId _markSupported2233;
 			public sealed override bool markSupported() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.content.res.AssetManager.AssetInputStream._markSupported2079);
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._markSupported2233);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._markSupported2079);
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._markSupported2233);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getAssetInt2080;
+			internal static global::MonoJavaBridge.MethodId _getAssetInt2234;
 			public int getAssetInt() 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.content.res.AssetManager.AssetInputStream._getAssetInt2080);
+					return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream._getAssetInt2234);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._getAssetInt2080);
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._getAssetInt2234);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.content.res.AssetManager.AssetInputStream.staticClass = @__class;
-				global::android.content.res.AssetManager.AssetInputStream._close2071 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "close", "()V");
-				global::android.content.res.AssetManager.AssetInputStream._mark2072 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "mark", "(I)V");
-				global::android.content.res.AssetManager.AssetInputStream._reset2073 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "reset", "()V");
-				global::android.content.res.AssetManager.AssetInputStream._read2074 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "read", "()I");
-				global::android.content.res.AssetManager.AssetInputStream._read2075 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "read", "([B)I");
-				global::android.content.res.AssetManager.AssetInputStream._read2076 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "read", "([BII)I");
-				global::android.content.res.AssetManager.AssetInputStream._skip2077 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "skip", "(J)J");
-				global::android.content.res.AssetManager.AssetInputStream._available2078 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "available", "()I");
-				global::android.content.res.AssetManager.AssetInputStream._markSupported2079 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "markSupported", "()Z");
-				global::android.content.res.AssetManager.AssetInputStream._getAssetInt2080 = @__env.GetMethodID(global::android.content.res.AssetManager.AssetInputStream.staticClass, "getAssetInt", "()I");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.content.res.AssetManager.AssetInputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetManager$AssetInputStream"));
+				global::android.content.res.AssetManager.AssetInputStream._close2225 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "close", "()V");
+				global::android.content.res.AssetManager.AssetInputStream._mark2226 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "mark", "(I)V");
+				global::android.content.res.AssetManager.AssetInputStream._reset2227 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "reset", "()V");
+				global::android.content.res.AssetManager.AssetInputStream._read2228 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "read", "()I");
+				global::android.content.res.AssetManager.AssetInputStream._read2229 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "read", "([B)I");
+				global::android.content.res.AssetManager.AssetInputStream._read2230 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "read", "([BII)I");
+				global::android.content.res.AssetManager.AssetInputStream._skip2231 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "skip", "(J)J");
+				global::android.content.res.AssetManager.AssetInputStream._available2232 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "available", "()I");
+				global::android.content.res.AssetManager.AssetInputStream._markSupported2233 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "markSupported", "()Z");
+				global::android.content.res.AssetManager.AssetInputStream._getAssetInt2234 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.AssetInputStream.staticClass, "getAssetInt", "()I");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _list2081;
+		internal static global::MonoJavaBridge.MethodId _list2235;
 		public global::java.lang.String[] list(java.lang.String arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._list2081, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._list2235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._list2081, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._list2235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close2082;
+		internal static global::MonoJavaBridge.MethodId _close2236;
 		public void close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.res.AssetManager._close2082);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.AssetManager._close2236);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._close2082);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._close2236);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _open2083;
+		internal static global::MonoJavaBridge.MethodId _open2237;
 		public global::java.io.InputStream open(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._open2083, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._open2237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._open2083, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._open2237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.InputStream;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _open2084;
+		internal static global::MonoJavaBridge.MethodId _open2238;
 		public global::java.io.InputStream open(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._open2084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._open2238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._open2084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._open2238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _openFd2085;
+		internal static global::MonoJavaBridge.MethodId _openFd2239;
 		public global::android.content.res.AssetFileDescriptor openFd(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._openFd2085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._openFd2239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.AssetFileDescriptor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openFd2085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openFd2239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.AssetFileDescriptor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _openNonAssetFd2086;
+		internal static global::MonoJavaBridge.MethodId _openNonAssetFd2240;
 		public global::android.content.res.AssetFileDescriptor openNonAssetFd(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._openNonAssetFd2086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._openNonAssetFd2240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.AssetFileDescriptor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openNonAssetFd2086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openNonAssetFd2240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.AssetFileDescriptor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _openNonAssetFd2087;
+		internal static global::MonoJavaBridge.MethodId _openNonAssetFd2241;
 		public global::android.content.res.AssetFileDescriptor openNonAssetFd(int arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._openNonAssetFd2087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._openNonAssetFd2241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.res.AssetFileDescriptor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openNonAssetFd2087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openNonAssetFd2241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.res.AssetFileDescriptor;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _openXmlResourceParser2088;
+		internal static global::MonoJavaBridge.MethodId _openXmlResourceParser2242;
 		public global::android.content.res.XmlResourceParser openXmlResourceParser(int arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.res.XmlResourceParser>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._openXmlResourceParser2088, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._openXmlResourceParser2242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.res.XmlResourceParser;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.res.XmlResourceParser>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openXmlResourceParser2088, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openXmlResourceParser2242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.res.XmlResourceParser;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _openXmlResourceParser2089;
+		internal static global::MonoJavaBridge.MethodId _openXmlResourceParser2243;
 		public global::android.content.res.XmlResourceParser openXmlResourceParser(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.res.XmlResourceParser>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._openXmlResourceParser2089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._openXmlResourceParser2243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.XmlResourceParser;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.res.XmlResourceParser>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openXmlResourceParser2089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openXmlResourceParser2243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.XmlResourceParser;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLocales2090;
+		internal static global::MonoJavaBridge.MethodId _getLocales2244;
 		public global::java.lang.String[] getLocales() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetManager._getLocales2090));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._getLocales2244)) as java.lang.String[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._getLocales2090));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._getLocales2244)) as java.lang.String[];
 		}
 		public static int ACCESS_UNKNOWN
 		{
@@ -257,19 +246,20 @@ namespace android.content.res
 				return 3;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.res.AssetManager.staticClass = @__class;
-			global::android.content.res.AssetManager._list2081 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "list", "(Ljava/lang/String;)[Ljava/lang/String;");
-			global::android.content.res.AssetManager._close2082 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "close", "()V");
-			global::android.content.res.AssetManager._open2083 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "open", "(Ljava/lang/String;I)Ljava/io/InputStream;");
-			global::android.content.res.AssetManager._open2084 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "open", "(Ljava/lang/String;)Ljava/io/InputStream;");
-			global::android.content.res.AssetManager._openFd2085 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "openFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
-			global::android.content.res.AssetManager._openNonAssetFd2086 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "openNonAssetFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
-			global::android.content.res.AssetManager._openNonAssetFd2087 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "openNonAssetFd", "(ILjava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
-			global::android.content.res.AssetManager._openXmlResourceParser2088 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "openXmlResourceParser", "(ILjava/lang/String;)Landroid/content/res/XmlResourceParser;");
-			global::android.content.res.AssetManager._openXmlResourceParser2089 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "openXmlResourceParser", "(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;");
-			global::android.content.res.AssetManager._getLocales2090 = @__env.GetMethodID(global::android.content.res.AssetManager.staticClass, "getLocales", "()[Ljava/lang/String;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.res.AssetManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/AssetManager"));
+			global::android.content.res.AssetManager._list2235 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "list", "(Ljava/lang/String;)[Ljava/lang/String;");
+			global::android.content.res.AssetManager._close2236 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "close", "()V");
+			global::android.content.res.AssetManager._open2237 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "open", "(Ljava/lang/String;I)Ljava/io/InputStream;");
+			global::android.content.res.AssetManager._open2238 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "open", "(Ljava/lang/String;)Ljava/io/InputStream;");
+			global::android.content.res.AssetManager._openFd2239 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
+			global::android.content.res.AssetManager._openNonAssetFd2240 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openNonAssetFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
+			global::android.content.res.AssetManager._openNonAssetFd2241 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openNonAssetFd", "(ILjava/lang/String;)Landroid/content/res/AssetFileDescriptor;");
+			global::android.content.res.AssetManager._openXmlResourceParser2242 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openXmlResourceParser", "(ILjava/lang/String;)Landroid/content/res/XmlResourceParser;");
+			global::android.content.res.AssetManager._openXmlResourceParser2243 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "openXmlResourceParser", "(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;");
+			global::android.content.res.AssetManager._getLocales2244 = @__env.GetMethodIDNoThrow(global::android.content.res.AssetManager.staticClass, "getLocales", "()[Ljava/lang/String;");
 		}
 	}
 }

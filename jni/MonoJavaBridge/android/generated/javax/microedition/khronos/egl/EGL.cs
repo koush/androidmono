@@ -1,39 +1,25 @@
 namespace javax.microedition.khronos.egl
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface EGL 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.egl.EGL_))]
+	public interface EGL  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 
-	public partial class EGL_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.microedition.khronos.egl.EGL))]
+	public sealed partial class EGL_ : java.lang.Object, EGL
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static EGL_()
 		{
-			get { return __EGL.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __EGL : java.lang.Object, EGL
-	{
-		internal static global::java.lang.Class staticClass;
-		static __EGL()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::javax.microedition.khronos.egl.__EGL), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::javax.microedition.khronos.egl.__EGL(@__env);
-			}
-		}
-		internal __EGL(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal EGL_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::javax.microedition.khronos.egl.__EGL.staticClass = @__class;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::javax.microedition.khronos.egl.EGL_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGL"));
 		}
 	}
 }

@@ -1,63 +1,58 @@
 namespace android.database
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ContentObservable : android.database.Observable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ContentObservable : android.database.Observable
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ContentObservable()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.ContentObservable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.database.ContentObservable(@__env);
-			}
-		}
-		protected ContentObservable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ContentObservable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _notifyChange2346;
+		internal static global::MonoJavaBridge.MethodId _notifyChange2512;
 		public virtual void notifyChange(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.ContentObservable._notifyChange2346, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.ContentObservable._notifyChange2512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._notifyChange2346, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._notifyChange2512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchChange2347;
+		internal static global::MonoJavaBridge.MethodId _dispatchChange2513;
 		public virtual void dispatchChange(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.ContentObservable._dispatchChange2347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.ContentObservable._dispatchChange2513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._dispatchChange2347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._dispatchChange2513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _registerObserver2348;
+		internal static global::MonoJavaBridge.MethodId _registerObserver2514;
 		public virtual void registerObserver(android.database.ContentObserver arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.ContentObservable._registerObserver2348, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.ContentObservable._registerObserver2514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._registerObserver2348, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._registerObserver2514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ContentObservable2349;
-		public ContentObservable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ContentObservable2515;
+		public ContentObservable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.ContentObservable.staticClass, global::android.database.ContentObservable._ContentObservable2349, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.ContentObservable.staticClass, global::android.database.ContentObservable._ContentObservable2515);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.database.ContentObservable.staticClass = @__class;
-			global::android.database.ContentObservable._notifyChange2346 = @__env.GetMethodID(global::android.database.ContentObservable.staticClass, "notifyChange", "(Z)V");
-			global::android.database.ContentObservable._dispatchChange2347 = @__env.GetMethodID(global::android.database.ContentObservable.staticClass, "dispatchChange", "(Z)V");
-			global::android.database.ContentObservable._registerObserver2348 = @__env.GetMethodID(global::android.database.ContentObservable.staticClass, "registerObserver", "(Landroid/database/ContentObserver;)V");
-			global::android.database.ContentObservable._ContentObservable2349 = @__env.GetMethodID(global::android.database.ContentObservable.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.database.ContentObservable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/ContentObservable"));
+			global::android.database.ContentObservable._notifyChange2512 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "notifyChange", "(Z)V");
+			global::android.database.ContentObservable._dispatchChange2513 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "dispatchChange", "(Z)V");
+			global::android.database.ContentObservable._registerObserver2514 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "registerObserver", "(Landroid/database/ContentObserver;)V");
+			global::android.database.ContentObservable._ContentObservable2515 = @__env.GetMethodIDNoThrow(global::android.database.ContentObservable.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -1,61 +1,47 @@
 namespace org.apache.http.conn
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface ClientConnectionRequest 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ClientConnectionRequest_))]
+	public interface ClientConnectionRequest  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.conn.ManagedClientConnection getConnection(long arg0, java.util.concurrent.TimeUnit arg1);
 		void abortRequest();
 	}
 
-	public partial class ClientConnectionRequest_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.conn.ClientConnectionRequest))]
+	public sealed partial class ClientConnectionRequest_ : java.lang.Object, ClientConnectionRequest
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static ClientConnectionRequest_()
 		{
-			get { return __ClientConnectionRequest.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __ClientConnectionRequest : java.lang.Object, ClientConnectionRequest
-	{
-		internal static global::java.lang.Class staticClass;
-		static __ClientConnectionRequest()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.conn.__ClientConnectionRequest), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.conn.__ClientConnectionRequest(@__env);
-			}
-		}
-		internal __ClientConnectionRequest(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ClientConnectionRequest_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConnection14407;
+		internal static global::MonoJavaBridge.MethodId _getConnection16322;
 		 global::org.apache.http.conn.ManagedClientConnection org.apache.http.conn.ClientConnectionRequest.getConnection(long arg0, java.util.concurrent.TimeUnit arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.conn.ManagedClientConnection>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.conn.__ClientConnectionRequest._getConnection14407, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ManagedClientConnection>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionRequest_._getConnection16322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ManagedClientConnection;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.conn.ManagedClientConnection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.conn.__ClientConnectionRequest.staticClass, global::org.apache.http.conn.__ClientConnectionRequest._getConnection14407, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ManagedClientConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, global::org.apache.http.conn.ClientConnectionRequest_._getConnection16322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ManagedClientConnection;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _abortRequest14408;
+		internal static global::MonoJavaBridge.MethodId _abortRequest16323;
 		 void org.apache.http.conn.ClientConnectionRequest.abortRequest() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.apache.http.conn.__ClientConnectionRequest._abortRequest14408);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionRequest_._abortRequest16323);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.apache.http.conn.__ClientConnectionRequest.staticClass, global::org.apache.http.conn.__ClientConnectionRequest._abortRequest14408);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, global::org.apache.http.conn.ClientConnectionRequest_._abortRequest16323);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.conn.__ClientConnectionRequest.staticClass = @__class;
-			global::org.apache.http.conn.__ClientConnectionRequest._getConnection14407 = @__env.GetMethodID(global::org.apache.http.conn.__ClientConnectionRequest.staticClass, "org.apache.http.conn.ClientConnectionRequest.getConnection", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/conn/ManagedClientConnection;");
-			global::org.apache.http.conn.__ClientConnectionRequest._abortRequest14408 = @__env.GetMethodID(global::org.apache.http.conn.__ClientConnectionRequest.staticClass, "org.apache.http.conn.ClientConnectionRequest.abortRequest", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.conn.ClientConnectionRequest_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ClientConnectionRequest"));
+			global::org.apache.http.conn.ClientConnectionRequest_._getConnection16322 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "getConnection", "(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/conn/ManagedClientConnection;");
+			global::org.apache.http.conn.ClientConnectionRequest_._abortRequest16323 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ClientConnectionRequest_.staticClass, "abortRequest", "()V");
 		}
 	}
 }

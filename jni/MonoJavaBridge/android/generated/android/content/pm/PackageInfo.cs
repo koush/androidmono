@@ -1,57 +1,51 @@
 namespace android.content.pm
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PackageInfo : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PackageInfo : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PackageInfo()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.PackageInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.pm.PackageInfo(@__env);
-			}
-		}
-		protected PackageInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PackageInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1846;
+		internal static global::MonoJavaBridge.MethodId _toString1940;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.PackageInfo._toString1846));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageInfo._toString1940)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString1846));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString1940)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1847;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel1941;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.PackageInfo._writeToParcel1847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageInfo._writeToParcel1941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel1847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel1941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1848;
+		internal static global::MonoJavaBridge.MethodId _describeContents1942;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.PackageInfo._describeContents1848);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageInfo._describeContents1942);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents1848);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents1942);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PackageInfo1849;
-		public PackageInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PackageInfo1943;
+		public PackageInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._PackageInfo1849, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._PackageInfo1943);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _packageName1850;
+		internal static global::MonoJavaBridge.FieldId _packageName1944;
 		public global::java.lang.String packageName
 		{
 			get
@@ -62,7 +56,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _versionCode1851;
+		internal static global::MonoJavaBridge.FieldId _versionCode1945;
 		public int versionCode
 		{
 			get
@@ -73,7 +67,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _versionName1852;
+		internal static global::MonoJavaBridge.FieldId _versionName1946;
 		public global::java.lang.String versionName
 		{
 			get
@@ -84,7 +78,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sharedUserId1853;
+		internal static global::MonoJavaBridge.FieldId _sharedUserId1947;
 		public global::java.lang.String sharedUserId
 		{
 			get
@@ -95,7 +89,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sharedUserLabel1854;
+		internal static global::MonoJavaBridge.FieldId _sharedUserLabel1948;
 		public int sharedUserLabel
 		{
 			get
@@ -106,7 +100,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _applicationInfo1855;
+		internal static global::MonoJavaBridge.FieldId _applicationInfo1949;
 		public global::android.content.pm.ApplicationInfo applicationInfo
 		{
 			get
@@ -117,7 +111,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _gids1856;
+		internal static global::MonoJavaBridge.FieldId _gids1950;
 		public int[] gids
 		{
 			get
@@ -128,7 +122,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _activities1857;
+		internal static global::MonoJavaBridge.FieldId _activities1951;
 		public global::android.content.pm.ActivityInfo[] activities
 		{
 			get
@@ -139,7 +133,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _receivers1858;
+		internal static global::MonoJavaBridge.FieldId _receivers1952;
 		public global::android.content.pm.ActivityInfo[] receivers
 		{
 			get
@@ -150,7 +144,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _services1859;
+		internal static global::MonoJavaBridge.FieldId _services1953;
 		public global::android.content.pm.ServiceInfo[] services
 		{
 			get
@@ -161,7 +155,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _providers1860;
+		internal static global::MonoJavaBridge.FieldId _providers1954;
 		public global::android.content.pm.ProviderInfo[] providers
 		{
 			get
@@ -172,7 +166,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _instrumentation1861;
+		internal static global::MonoJavaBridge.FieldId _instrumentation1955;
 		public global::android.content.pm.InstrumentationInfo[] instrumentation
 		{
 			get
@@ -183,7 +177,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _permissions1862;
+		internal static global::MonoJavaBridge.FieldId _permissions1956;
 		public global::android.content.pm.PermissionInfo[] permissions
 		{
 			get
@@ -194,7 +188,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _requestedPermissions1863;
+		internal static global::MonoJavaBridge.FieldId _requestedPermissions1957;
 		public global::java.lang.String[] requestedPermissions
 		{
 			get
@@ -205,7 +199,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _signatures1864;
+		internal static global::MonoJavaBridge.FieldId _signatures1958;
 		public global::android.content.pm.Signature[] signatures
 		{
 			get
@@ -216,7 +210,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _configPreferences1865;
+		internal static global::MonoJavaBridge.FieldId _configPreferences1959;
 		public global::android.content.pm.ConfigurationInfo[] configPreferences
 		{
 			get
@@ -227,7 +221,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _reqFeatures1866;
+		internal static global::MonoJavaBridge.FieldId _reqFeatures1960;
 		public global::android.content.pm.FeatureInfo[] reqFeatures
 		{
 			get
@@ -238,7 +232,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1867;
+		internal static global::MonoJavaBridge.FieldId _CREATOR1961;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -246,13 +240,14 @@ namespace android.content.pm
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.pm.PackageInfo.staticClass = @__class;
-			global::android.content.pm.PackageInfo._toString1846 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.PackageInfo._writeToParcel1847 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.PackageInfo._describeContents1848 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.PackageInfo._PackageInfo1849 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.pm.PackageInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageInfo"));
+			global::android.content.pm.PackageInfo._toString1940 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.pm.PackageInfo._writeToParcel1941 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.PackageInfo._describeContents1942 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
+			global::android.content.pm.PackageInfo._PackageInfo1943 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageInfo.staticClass, "<init>", "()V");
 		}
 	}
 }

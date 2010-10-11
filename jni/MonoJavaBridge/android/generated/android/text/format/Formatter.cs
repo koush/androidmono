@@ -1,54 +1,49 @@
 namespace android.text.format
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class Formatter : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class Formatter : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Formatter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.format.Formatter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.format.Formatter(@__env);
-			}
-		}
-		internal Formatter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Formatter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatFileSize7692;
+		internal static global::MonoJavaBridge.MethodId _formatFileSize7984;
 		public static global::java.lang.String formatFileSize(android.content.Context arg0, long arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._formatFileSize7692, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._formatFileSize7984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatShortFileSize7693;
+		internal static global::MonoJavaBridge.MethodId _formatShortFileSize7985;
 		public static global::java.lang.String formatShortFileSize(android.content.Context arg0, long arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._formatShortFileSize7693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._formatShortFileSize7985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatIpAddress7694;
+		internal static global::MonoJavaBridge.MethodId _formatIpAddress7986;
 		public static global::java.lang.String formatIpAddress(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._formatIpAddress7694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._formatIpAddress7986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Formatter7695;
-		public Formatter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Formatter7987;
+		public Formatter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._Formatter7695, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Formatter.staticClass, global::android.text.format.Formatter._Formatter7987);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.format.Formatter.staticClass = @__class;
-			global::android.text.format.Formatter._formatFileSize7692 = @__env.GetStaticMethodID(global::android.text.format.Formatter.staticClass, "formatFileSize", "(Landroid/content/Context;J)Ljava/lang/String;");
-			global::android.text.format.Formatter._formatShortFileSize7693 = @__env.GetStaticMethodID(global::android.text.format.Formatter.staticClass, "formatShortFileSize", "(Landroid/content/Context;J)Ljava/lang/String;");
-			global::android.text.format.Formatter._formatIpAddress7694 = @__env.GetStaticMethodID(global::android.text.format.Formatter.staticClass, "formatIpAddress", "(I)Ljava/lang/String;");
-			global::android.text.format.Formatter._Formatter7695 = @__env.GetMethodID(global::android.text.format.Formatter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.format.Formatter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/format/Formatter"));
+			global::android.text.format.Formatter._formatFileSize7984 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Formatter.staticClass, "formatFileSize", "(Landroid/content/Context;J)Ljava/lang/String;");
+			global::android.text.format.Formatter._formatShortFileSize7985 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Formatter.staticClass, "formatShortFileSize", "(Landroid/content/Context;J)Ljava/lang/String;");
+			global::android.text.format.Formatter._formatIpAddress7986 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Formatter.staticClass, "formatIpAddress", "(I)Ljava/lang/String;");
+			global::android.text.format.Formatter._Formatter7987 = @__env.GetMethodIDNoThrow(global::android.text.format.Formatter.staticClass, "<init>", "()V");
 		}
 	}
 }

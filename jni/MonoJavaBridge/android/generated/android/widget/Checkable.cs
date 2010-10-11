@@ -1,72 +1,58 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Checkable 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Checkable_))]
+	public interface Checkable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void toggle();
 		bool isChecked();
 		void setChecked(bool arg0);
 	}
 
-	public partial class Checkable_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.Checkable))]
+	public sealed partial class Checkable_ : java.lang.Object, Checkable
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Checkable_()
 		{
-			get { return __Checkable.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Checkable : java.lang.Object, Checkable
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Checkable()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__Checkable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.__Checkable(@__env);
-			}
-		}
-		internal __Checkable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Checkable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toggle10688;
+		internal static global::MonoJavaBridge.MethodId _toggle11058;
 		 void android.widget.Checkable.toggle() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.__Checkable._toggle10688);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Checkable_._toggle11058);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__Checkable.staticClass, global::android.widget.__Checkable._toggle10688);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Checkable_.staticClass, global::android.widget.Checkable_._toggle11058);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isChecked10689;
+		internal static global::MonoJavaBridge.MethodId _isChecked11059;
 		 bool android.widget.Checkable.isChecked() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.__Checkable._isChecked10689);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Checkable_._isChecked11059);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__Checkable.staticClass, global::android.widget.__Checkable._isChecked10689);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Checkable_.staticClass, global::android.widget.Checkable_._isChecked11059);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setChecked10690;
+		internal static global::MonoJavaBridge.MethodId _setChecked11060;
 		 void android.widget.Checkable.setChecked(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.__Checkable._setChecked10690, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Checkable_._setChecked11060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__Checkable.staticClass, global::android.widget.__Checkable._setChecked10690, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Checkable_.staticClass, global::android.widget.Checkable_._setChecked11060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.__Checkable.staticClass = @__class;
-			global::android.widget.__Checkable._toggle10688 = @__env.GetMethodID(global::android.widget.__Checkable.staticClass, "android.widget.Checkable.toggle", "()V");
-			global::android.widget.__Checkable._isChecked10689 = @__env.GetMethodID(global::android.widget.__Checkable.staticClass, "android.widget.Checkable.isChecked", "()Z");
-			global::android.widget.__Checkable._setChecked10690 = @__env.GetMethodID(global::android.widget.__Checkable.staticClass, "android.widget.Checkable.setChecked", "(Z)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.Checkable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Checkable"));
+			global::android.widget.Checkable_._toggle11058 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "toggle", "()V");
+			global::android.widget.Checkable_._isChecked11059 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "isChecked", "()Z");
+			global::android.widget.Checkable_._setChecked11060 = @__env.GetMethodIDNoThrow(global::android.widget.Checkable_.staticClass, "setChecked", "(Z)V");
 		}
 	}
 }

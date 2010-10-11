@@ -1,48 +1,35 @@
 namespace android.view.animation
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class LayoutAnimationController : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class LayoutAnimationController : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static LayoutAnimationController()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.LayoutAnimationController), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.animation.LayoutAnimationController(@__env);
-			}
-		}
-		protected LayoutAnimationController(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected LayoutAnimationController(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class AnimationParameters : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class AnimationParameters : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static AnimationParameters()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.LayoutAnimationController.AnimationParameters), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.view.animation.LayoutAnimationController.AnimationParameters(@__env);
-				}
-			}
-			protected AnimationParameters(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected AnimationParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _AnimationParameters9670;
-			public AnimationParameters()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _AnimationParameters10017;
+			public AnimationParameters()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, global::android.view.animation.LayoutAnimationController.AnimationParameters._AnimationParameters9670, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, global::android.view.animation.LayoutAnimationController.AnimationParameters._AnimationParameters10017);
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _count9671;
+			internal static global::MonoJavaBridge.FieldId _count10018;
 			public int count
 			{
 				get
@@ -53,7 +40,7 @@ namespace android.view.animation
 				{
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _index9672;
+			internal static global::MonoJavaBridge.FieldId _index10019;
 			public int index
 			{
 				get
@@ -64,173 +51,177 @@ namespace android.view.animation
 				{
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass = @__class;
-				global::android.view.animation.LayoutAnimationController.AnimationParameters._AnimationParameters9670 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LayoutAnimationController$AnimationParameters"));
+				global::android.view.animation.LayoutAnimationController.AnimationParameters._AnimationParameters10017 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _start9673;
+		internal static global::MonoJavaBridge.MethodId _start10020;
 		public virtual void start() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._start9673);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._start10020);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._start9673);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._start10020);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAnimation9674;
+		internal static global::MonoJavaBridge.MethodId _getAnimation10021;
 		public virtual global::android.view.animation.Animation getAnimation() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.LayoutAnimationController._getAnimation9674));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getAnimation10021)) as android.view.animation.Animation;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimation9674));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimation10021)) as android.view.animation.Animation;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAnimation9675;
+		internal static global::MonoJavaBridge.MethodId _setAnimation10022;
 		public virtual void setAnimation(android.content.Context arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._setAnimation9675, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._setAnimation10022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation9675, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation10022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAnimation9676;
+		internal static global::MonoJavaBridge.MethodId _setAnimation10023;
 		public virtual void setAnimation(android.view.animation.Animation arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._setAnimation9676, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._setAnimation10023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation9676, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation10023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOrder9677;
+		internal static global::MonoJavaBridge.MethodId _getOrder10024;
 		public virtual int getOrder() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.animation.LayoutAnimationController._getOrder9677);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getOrder10024);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getOrder9677);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getOrder10024);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isDone9678;
+		internal static global::MonoJavaBridge.MethodId _isDone10025;
 		public virtual bool isDone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.animation.LayoutAnimationController._isDone9678);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._isDone10025);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._isDone9678);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._isDone10025);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOrder9679;
+		internal static global::MonoJavaBridge.MethodId _setOrder10026;
 		public virtual void setOrder(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._setOrder9679, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._setOrder10026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setOrder9679, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setOrder10026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setInterpolator9680;
+		internal static global::MonoJavaBridge.MethodId _setInterpolator10027;
 		public virtual void setInterpolator(android.view.animation.Interpolator arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._setInterpolator9680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._setInterpolator10027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setInterpolator9680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setInterpolator10027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setInterpolator9681;
+		internal static global::MonoJavaBridge.MethodId _setInterpolator10028;
 		public virtual void setInterpolator(android.content.Context arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._setInterpolator9681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._setInterpolator10028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setInterpolator9681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setInterpolator10028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolator9682;
+		internal static global::MonoJavaBridge.MethodId _getInterpolator10029;
 		public virtual global::android.view.animation.Interpolator getInterpolator() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.LayoutAnimationController._getInterpolator9682));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.animation.Interpolator>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getInterpolator10029)) as android.view.animation.Interpolator;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getInterpolator9682));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.animation.Interpolator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getInterpolator10029)) as android.view.animation.Interpolator;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDelay9683;
+		internal static global::MonoJavaBridge.MethodId _getDelay10030;
 		public virtual float getDelay() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.LayoutAnimationController._getDelay9683);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getDelay10030);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelay9683);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelay10030);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDelay9684;
+		internal static global::MonoJavaBridge.MethodId _setDelay10031;
 		public virtual void setDelay(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.LayoutAnimationController._setDelay9684, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._setDelay10031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setDelay9684, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setDelay10031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _willOverlap9685;
+		internal static global::MonoJavaBridge.MethodId _willOverlap10032;
 		public virtual bool willOverlap() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.animation.LayoutAnimationController._willOverlap9685);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._willOverlap10032);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._willOverlap9685);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._willOverlap10032);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAnimationForView9686;
+		internal static global::MonoJavaBridge.MethodId _getAnimationForView10033;
 		public virtual global::android.view.animation.Animation getAnimationForView(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.LayoutAnimationController._getAnimationForView9686, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getAnimationForView10033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.animation.Animation;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimationForView9686, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimationForView10033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.animation.Animation;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDelayForView9687;
+		internal static global::MonoJavaBridge.MethodId _getDelayForView10034;
 		protected virtual long getDelayForView(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.view.animation.LayoutAnimationController._getDelayForView9687, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getDelayForView10034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelayForView9687, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelayForView10034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTransformedIndex9688;
+		internal static global::MonoJavaBridge.MethodId _getTransformedIndex10035;
 		protected virtual int getTransformedIndex(android.view.animation.LayoutAnimationController.AnimationParameters arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.animation.LayoutAnimationController._getTransformedIndex9688, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController._getTransformedIndex10035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getTransformedIndex9688, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getTransformedIndex10035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LayoutAnimationController9689;
-		public LayoutAnimationController(android.view.animation.Animation arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController10036;
+		public LayoutAnimationController(android.view.animation.Animation arg0, float arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController9689, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController10036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LayoutAnimationController9690;
-		public LayoutAnimationController(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController10037;
+		public LayoutAnimationController(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController9690, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController10037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LayoutAnimationController9691;
-		public LayoutAnimationController(android.view.animation.Animation arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController10038;
+		public LayoutAnimationController(android.view.animation.Animation arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController9691, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController10038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
 		public static int ORDER_NORMAL
 		{
@@ -253,28 +244,29 @@ namespace android.view.animation
 				return 2;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.animation.LayoutAnimationController.staticClass = @__class;
-			global::android.view.animation.LayoutAnimationController._start9673 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "start", "()V");
-			global::android.view.animation.LayoutAnimationController._getAnimation9674 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getAnimation", "()Landroid/view/animation/Animation;");
-			global::android.view.animation.LayoutAnimationController._setAnimation9675 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/content/Context;I)V");
-			global::android.view.animation.LayoutAnimationController._setAnimation9676 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/view/animation/Animation;)V");
-			global::android.view.animation.LayoutAnimationController._getOrder9677 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getOrder", "()I");
-			global::android.view.animation.LayoutAnimationController._isDone9678 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "isDone", "()Z");
-			global::android.view.animation.LayoutAnimationController._setOrder9679 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "setOrder", "(I)V");
-			global::android.view.animation.LayoutAnimationController._setInterpolator9680 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V");
-			global::android.view.animation.LayoutAnimationController._setInterpolator9681 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/content/Context;I)V");
-			global::android.view.animation.LayoutAnimationController._getInterpolator9682 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;");
-			global::android.view.animation.LayoutAnimationController._getDelay9683 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getDelay", "()F");
-			global::android.view.animation.LayoutAnimationController._setDelay9684 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "setDelay", "(F)V");
-			global::android.view.animation.LayoutAnimationController._willOverlap9685 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "willOverlap", "()Z");
-			global::android.view.animation.LayoutAnimationController._getAnimationForView9686 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getAnimationForView", "(Landroid/view/View;)Landroid/view/animation/Animation;");
-			global::android.view.animation.LayoutAnimationController._getDelayForView9687 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getDelayForView", "(Landroid/view/View;)J");
-			global::android.view.animation.LayoutAnimationController._getTransformedIndex9688 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "getTransformedIndex", "(Landroid/view/animation/LayoutAnimationController$AnimationParameters;)I");
-			global::android.view.animation.LayoutAnimationController._LayoutAnimationController9689 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;F)V");
-			global::android.view.animation.LayoutAnimationController._LayoutAnimationController9690 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.view.animation.LayoutAnimationController._LayoutAnimationController9691 = @__env.GetMethodID(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.animation.LayoutAnimationController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/LayoutAnimationController"));
+			global::android.view.animation.LayoutAnimationController._start10020 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "start", "()V");
+			global::android.view.animation.LayoutAnimationController._getAnimation10021 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getAnimation", "()Landroid/view/animation/Animation;");
+			global::android.view.animation.LayoutAnimationController._setAnimation10022 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/content/Context;I)V");
+			global::android.view.animation.LayoutAnimationController._setAnimation10023 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setAnimation", "(Landroid/view/animation/Animation;)V");
+			global::android.view.animation.LayoutAnimationController._getOrder10024 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getOrder", "()I");
+			global::android.view.animation.LayoutAnimationController._isDone10025 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "isDone", "()Z");
+			global::android.view.animation.LayoutAnimationController._setOrder10026 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setOrder", "(I)V");
+			global::android.view.animation.LayoutAnimationController._setInterpolator10027 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V");
+			global::android.view.animation.LayoutAnimationController._setInterpolator10028 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setInterpolator", "(Landroid/content/Context;I)V");
+			global::android.view.animation.LayoutAnimationController._getInterpolator10029 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;");
+			global::android.view.animation.LayoutAnimationController._getDelay10030 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getDelay", "()F");
+			global::android.view.animation.LayoutAnimationController._setDelay10031 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "setDelay", "(F)V");
+			global::android.view.animation.LayoutAnimationController._willOverlap10032 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "willOverlap", "()Z");
+			global::android.view.animation.LayoutAnimationController._getAnimationForView10033 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getAnimationForView", "(Landroid/view/View;)Landroid/view/animation/Animation;");
+			global::android.view.animation.LayoutAnimationController._getDelayForView10034 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getDelayForView", "(Landroid/view/View;)J");
+			global::android.view.animation.LayoutAnimationController._getTransformedIndex10035 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "getTransformedIndex", "(Landroid/view/animation/LayoutAnimationController$AnimationParameters;)I");
+			global::android.view.animation.LayoutAnimationController._LayoutAnimationController10036 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;F)V");
+			global::android.view.animation.LayoutAnimationController._LayoutAnimationController10037 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.animation.LayoutAnimationController._LayoutAnimationController10038 = @__env.GetMethodIDNoThrow(global::android.view.animation.LayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;)V");
 		}
 	}
 }

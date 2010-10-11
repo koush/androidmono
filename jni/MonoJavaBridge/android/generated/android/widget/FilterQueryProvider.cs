@@ -1,50 +1,36 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface FilterQueryProvider 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.FilterQueryProvider_))]
+	public interface FilterQueryProvider  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.database.Cursor runQuery(java.lang.CharSequence arg0);
 	}
 
-	public partial class FilterQueryProvider_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.FilterQueryProvider))]
+	public sealed partial class FilterQueryProvider_ : java.lang.Object, FilterQueryProvider
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static FilterQueryProvider_()
 		{
-			get { return __FilterQueryProvider.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __FilterQueryProvider : java.lang.Object, FilterQueryProvider
-	{
-		internal static global::java.lang.Class staticClass;
-		static __FilterQueryProvider()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__FilterQueryProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.__FilterQueryProvider(@__env);
-			}
-		}
-		internal __FilterQueryProvider(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal FilterQueryProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _runQuery10905;
+		internal static global::MonoJavaBridge.MethodId _runQuery11284;
 		 global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__FilterQueryProvider._runQuery10905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_._runQuery11284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__FilterQueryProvider.staticClass, global::android.widget.__FilterQueryProvider._runQuery10905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.FilterQueryProvider_.staticClass, global::android.widget.FilterQueryProvider_._runQuery11284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.__FilterQueryProvider.staticClass = @__class;
-			global::android.widget.__FilterQueryProvider._runQuery10905 = @__env.GetMethodID(global::android.widget.__FilterQueryProvider.staticClass, "android.widget.FilterQueryProvider.runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.FilterQueryProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/FilterQueryProvider"));
+			global::android.widget.FilterQueryProvider_._runQuery11284 = @__env.GetMethodIDNoThrow(global::android.widget.FilterQueryProvider_.staticClass, "runQuery", "(Ljava/lang/CharSequence;)Landroid/database/Cursor;");
 		}
 	}
 }

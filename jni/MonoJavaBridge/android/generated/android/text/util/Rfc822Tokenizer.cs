@@ -1,88 +1,84 @@
 namespace android.text.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Rfc822Tokenizer : java.lang.Object, android.widget.MultiAutoCompleteTextView.Tokenizer
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Rfc822Tokenizer : java.lang.Object, android.widget.MultiAutoCompleteTextView.Tokenizer
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Rfc822Tokenizer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.util.Rfc822Tokenizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.util.Rfc822Tokenizer(@__env);
-			}
-		}
-		protected Rfc822Tokenizer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Rfc822Tokenizer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _tokenize8127;
+		internal static global::MonoJavaBridge.MethodId _tokenize8431;
 		public static void tokenize(java.lang.CharSequence arg0, java.util.Collection arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._tokenize8127, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._tokenize8431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _tokenize8128;
+		internal static global::MonoJavaBridge.MethodId _tokenize8432;
 		public static global::android.text.util.Rfc822Token[] tokenize(java.lang.CharSequence arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._tokenize8128, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.util.Rfc822Token>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._tokenize8432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.util.Rfc822Token[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _findTokenStart8129;
+		internal static global::MonoJavaBridge.MethodId _findTokenStart8433;
 		public virtual int findTokenStart(java.lang.CharSequence arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.util.Rfc822Tokenizer._findTokenStart8129, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.util.Rfc822Tokenizer._findTokenStart8433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenStart8129, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenStart8433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public int findTokenStart(string arg0, int arg1)
 		{
 			return findTokenStart((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _findTokenEnd8130;
+		internal static global::MonoJavaBridge.MethodId _findTokenEnd8434;
 		public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.util.Rfc822Tokenizer._findTokenEnd8130, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.util.Rfc822Tokenizer._findTokenEnd8434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenEnd8130, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenEnd8434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public int findTokenEnd(string arg0, int arg1)
 		{
 			return findTokenEnd((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _terminateToken8131;
+		internal static global::MonoJavaBridge.MethodId _terminateToken8435;
 		public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Tokenizer._terminateToken8131, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.util.Rfc822Tokenizer._terminateToken8435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._terminateToken8131, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._terminateToken8435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		public java.lang.CharSequence terminateToken(string arg0)
 		{
 			return terminateToken((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Rfc822Tokenizer8132;
-		public Rfc822Tokenizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Rfc822Tokenizer8436;
+		public Rfc822Tokenizer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer8132, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer8436);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.util.Rfc822Tokenizer.staticClass = @__class;
-			global::android.text.util.Rfc822Tokenizer._tokenize8127 = @__env.GetStaticMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "tokenize", "(Ljava/lang/CharSequence;Ljava/util/Collection;)V");
-			global::android.text.util.Rfc822Tokenizer._tokenize8128 = @__env.GetStaticMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "tokenize", "(Ljava/lang/CharSequence;)[Landroid/text/util/Rfc822Token;");
-			global::android.text.util.Rfc822Tokenizer._findTokenStart8129 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenStart", "(Ljava/lang/CharSequence;I)I");
-			global::android.text.util.Rfc822Tokenizer._findTokenEnd8130 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
-			global::android.text.util.Rfc822Tokenizer._terminateToken8131 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
-			global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer8132 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.util.Rfc822Tokenizer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/util/Rfc822Tokenizer"));
+			global::android.text.util.Rfc822Tokenizer._tokenize8431 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "tokenize", "(Ljava/lang/CharSequence;Ljava/util/Collection;)V");
+			global::android.text.util.Rfc822Tokenizer._tokenize8432 = @__env.GetStaticMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "tokenize", "(Ljava/lang/CharSequence;)[Landroid/text/util/Rfc822Token;");
+			global::android.text.util.Rfc822Tokenizer._findTokenStart8433 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenStart", "(Ljava/lang/CharSequence;I)I");
+			global::android.text.util.Rfc822Tokenizer._findTokenEnd8434 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
+			global::android.text.util.Rfc822Tokenizer._terminateToken8435 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+			global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer8436 = @__env.GetMethodIDNoThrow(global::android.text.util.Rfc822Tokenizer.staticClass, "<init>", "()V");
 		}
 	}
 }

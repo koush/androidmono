@@ -1,105 +1,103 @@
 namespace android.content.pm
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Signature : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Signature : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Signature()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.Signature), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.pm.Signature(@__env);
-			}
-		}
-		protected Signature(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Signature(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals2034;
+		internal static global::MonoJavaBridge.MethodId _equals2188;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.pm.Signature._equals2034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.pm.Signature._equals2188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._equals2034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._equals2188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode2035;
+		internal static global::MonoJavaBridge.MethodId _hashCode2189;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.Signature._hashCode2035);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.Signature._hashCode2189);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._hashCode2035);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._hashCode2189);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toChars2036;
+		internal static global::MonoJavaBridge.MethodId _toChars2190;
 		public virtual char[] toChars() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toChars2036));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.Signature._toChars2190)) as char[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toChars2036));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toChars2190)) as char[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toChars2037;
+		internal static global::MonoJavaBridge.MethodId _toChars2191;
 		public virtual char[] toChars(char[] arg0, int[] arg1) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toChars2037, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.Signature._toChars2191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as char[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toChars2037, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toChars2191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as char[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toByteArray2038;
+		internal static global::MonoJavaBridge.MethodId _toByteArray2192;
 		public virtual byte[] toByteArray() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toByteArray2038));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.Signature._toByteArray2192)) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toByteArray2038));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toByteArray2192)) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel2039;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel2193;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.Signature._writeToParcel2039, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.Signature._writeToParcel2193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._writeToParcel2039, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._writeToParcel2193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents2040;
+		internal static global::MonoJavaBridge.MethodId _describeContents2194;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.Signature._describeContents2040);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.Signature._describeContents2194);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._describeContents2040);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._describeContents2194);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toCharsString2041;
+		internal static global::MonoJavaBridge.MethodId _toCharsString2195;
 		public virtual global::java.lang.String toCharsString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toCharsString2041));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.Signature._toCharsString2195)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toCharsString2041));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toCharsString2195)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Signature2042;
-		public Signature(byte[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Signature2196;
+		public Signature(byte[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.Signature.staticClass, global::android.content.pm.Signature._Signature2042, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.Signature.staticClass, global::android.content.pm.Signature._Signature2196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Signature2043;
-		public Signature(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Signature2197;
+		public Signature(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.Signature.staticClass, global::android.content.pm.Signature._Signature2043, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.Signature.staticClass, global::android.content.pm.Signature._Signature2197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR2044;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2198;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -107,19 +105,20 @@ namespace android.content.pm
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.pm.Signature.staticClass = @__class;
-			global::android.content.pm.Signature._equals2034 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.pm.Signature._hashCode2035 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "hashCode", "()I");
-			global::android.content.pm.Signature._toChars2036 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toChars", "()[C");
-			global::android.content.pm.Signature._toChars2037 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toChars", "([C[I)[C");
-			global::android.content.pm.Signature._toByteArray2038 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toByteArray", "()[B");
-			global::android.content.pm.Signature._writeToParcel2039 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.Signature._describeContents2040 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "describeContents", "()I");
-			global::android.content.pm.Signature._toCharsString2041 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toCharsString", "()Ljava/lang/String;");
-			global::android.content.pm.Signature._Signature2042 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "<init>", "([B)V");
-			global::android.content.pm.Signature._Signature2043 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.pm.Signature.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/Signature"));
+			global::android.content.pm.Signature._equals2188 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.pm.Signature._hashCode2189 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "hashCode", "()I");
+			global::android.content.pm.Signature._toChars2190 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "toChars", "()[C");
+			global::android.content.pm.Signature._toChars2191 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "toChars", "([C[I)[C");
+			global::android.content.pm.Signature._toByteArray2192 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "toByteArray", "()[B");
+			global::android.content.pm.Signature._writeToParcel2193 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.Signature._describeContents2194 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "describeContents", "()I");
+			global::android.content.pm.Signature._toCharsString2195 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "toCharsString", "()Ljava/lang/String;");
+			global::android.content.pm.Signature._Signature2196 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "<init>", "([B)V");
+			global::android.content.pm.Signature._Signature2197 = @__env.GetMethodIDNoThrow(global::android.content.pm.Signature.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

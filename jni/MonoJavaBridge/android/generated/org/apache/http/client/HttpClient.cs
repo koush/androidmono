@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface HttpClient 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.HttpClient_))]
+	public interface HttpClient  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.@params.HttpParams getParams();
 		global::org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest arg0);
@@ -15,135 +15,121 @@ namespace org.apache.http.client
 		global::org.apache.http.conn.ClientConnectionManager getConnectionManager();
 	}
 
-	public partial class HttpClient_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.client.HttpClient))]
+	public sealed partial class HttpClient_ : java.lang.Object, HttpClient
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HttpClient_()
 		{
-			get { return __HttpClient.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HttpClient : java.lang.Object, HttpClient
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HttpClient()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.client.__HttpClient), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.client.__HttpClient(@__env);
-			}
-		}
-		internal __HttpClient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HttpClient_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParams14368;
+		internal static global::MonoJavaBridge.MethodId _getParams16283;
 		 global::org.apache.http.@params.HttpParams org.apache.http.client.HttpClient.getParams() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.@params.HttpParams>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._getParams14368));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._getParams16283)) as org.apache.http.@params.HttpParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.@params.HttpParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._getParams14368));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._getParams16283)) as org.apache.http.@params.HttpParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14369;
+		internal static global::MonoJavaBridge.MethodId _execute16284;
 		 global::org.apache.http.HttpResponse org.apache.http.client.HttpClient.execute(org.apache.http.client.methods.HttpUriRequest arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14369, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpResponse;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14369, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpResponse;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14370;
+		internal static global::MonoJavaBridge.MethodId _execute16285;
 		 global::org.apache.http.HttpResponse org.apache.http.client.HttpClient.execute(org.apache.http.client.methods.HttpUriRequest arg0, org.apache.http.protocol.HttpContext arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14371;
+		internal static global::MonoJavaBridge.MethodId _execute16286;
 		 global::org.apache.http.HttpResponse org.apache.http.client.HttpClient.execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpResponse;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14372;
+		internal static global::MonoJavaBridge.MethodId _execute16287;
 		 global::org.apache.http.HttpResponse org.apache.http.client.HttpClient.execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.HttpResponse>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14373;
+		internal static global::MonoJavaBridge.MethodId _execute16288;
 		 global::java.lang.Object org.apache.http.client.HttpClient.execute(org.apache.http.client.methods.HttpUriRequest arg0, org.apache.http.client.ResponseHandler arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14373, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14373, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14374;
+		internal static global::MonoJavaBridge.MethodId _execute16289;
 		 global::java.lang.Object org.apache.http.client.HttpClient.execute(org.apache.http.client.methods.HttpUriRequest arg0, org.apache.http.client.ResponseHandler arg1, org.apache.http.protocol.HttpContext arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14374, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14374, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14375;
+		internal static global::MonoJavaBridge.MethodId _execute16290;
 		 global::java.lang.Object org.apache.http.client.HttpClient.execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.client.ResponseHandler arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _execute14376;
+		internal static global::MonoJavaBridge.MethodId _execute16291;
 		 global::java.lang.Object org.apache.http.client.HttpClient.execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.client.ResponseHandler arg2, org.apache.http.protocol.HttpContext arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._execute14376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._execute16291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._execute14376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._execute16291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConnectionManager14377;
+		internal static global::MonoJavaBridge.MethodId _getConnectionManager16292;
 		 global::org.apache.http.conn.ClientConnectionManager org.apache.http.client.HttpClient.getConnectionManager() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.conn.ClientConnectionManager>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.client.__HttpClient._getConnectionManager14377));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionManager>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_._getConnectionManager16292)) as org.apache.http.conn.ClientConnectionManager;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.conn.ClientConnectionManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.client.__HttpClient.staticClass, global::org.apache.http.client.__HttpClient._getConnectionManager14377));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.HttpClient_.staticClass, global::org.apache.http.client.HttpClient_._getConnectionManager16292)) as org.apache.http.conn.ClientConnectionManager;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.client.__HttpClient.staticClass = @__class;
-			global::org.apache.http.client.__HttpClient._getParams14368 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.getParams", "()Lorg/apache/http/@params/HttpParams;");
-			global::org.apache.http.client.__HttpClient._execute14369 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;");
-			global::org.apache.http.client.__HttpClient._execute14370 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
-			global::org.apache.http.client.__HttpClient._execute14371 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;");
-			global::org.apache.http.client.__HttpClient._execute14372 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
-			global::org.apache.http.client.__HttpClient._execute14373 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
-			global::org.apache.http.client.__HttpClient._execute14374 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
-			global::org.apache.http.client.__HttpClient._execute14375 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
-			global::org.apache.http.client.__HttpClient._execute14376 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
-			global::org.apache.http.client.__HttpClient._getConnectionManager14377 = @__env.GetMethodID(global::org.apache.http.client.__HttpClient.staticClass, "org.apache.http.client.HttpClient.getConnectionManager", "()Lorg/apache/http/conn/ClientConnectionManager;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.client.HttpClient_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/HttpClient"));
+			global::org.apache.http.client.HttpClient_._getParams16283 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "getParams", "()Lorg/apache/http/@params/HttpParams;");
+			global::org.apache.http.client.HttpClient_._execute16284 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.client.HttpClient_._execute16285 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.client.HttpClient_._execute16286 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.client.HttpClient_._execute16287 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.client.HttpClient_._execute16288 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
+			global::org.apache.http.client.HttpClient_._execute16289 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
+			global::org.apache.http.client.HttpClient_._execute16290 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;");
+			global::org.apache.http.client.HttpClient_._execute16291 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "execute", "(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;");
+			global::org.apache.http.client.HttpClient_._getConnectionManager16292 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.HttpClient_.staticClass, "getConnectionManager", "()Lorg/apache/http/conn/ClientConnectionManager;");
 		}
 	}
 }

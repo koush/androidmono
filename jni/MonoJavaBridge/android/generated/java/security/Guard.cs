@@ -1,50 +1,36 @@
 namespace java.security
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Guard 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Guard_))]
+	public interface Guard  : global::MonoJavaBridge.IJavaObject 
 	{
 		void checkGuard(java.lang.Object arg0);
 	}
 
-	public partial class Guard_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.Guard))]
+	public sealed partial class Guard_ : java.lang.Object, Guard
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Guard_()
 		{
-			get { return __Guard.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Guard : java.lang.Object, Guard
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Guard()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.__Guard), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.__Guard(@__env);
-			}
-		}
-		internal __Guard(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Guard_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _checkGuard13165;
+		internal static global::MonoJavaBridge.MethodId _checkGuard14777;
 		 void java.security.Guard.checkGuard(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.security.__Guard._checkGuard13165, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.security.Guard_._checkGuard14777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.security.__Guard.staticClass, global::java.security.__Guard._checkGuard13165, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Guard_.staticClass, global::java.security.Guard_._checkGuard14777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.__Guard.staticClass = @__class;
-			global::java.security.__Guard._checkGuard13165 = @__env.GetMethodID(global::java.security.__Guard.staticClass, "java.security.Guard.checkGuard", "(Ljava/lang/Object;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.Guard_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/Guard"));
+			global::java.security.Guard_._checkGuard14777 = @__env.GetMethodIDNoThrow(global::java.security.Guard_.staticClass, "checkGuard", "(Ljava/lang/Object;)V");
 		}
 	}
 }

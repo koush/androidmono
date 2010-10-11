@@ -1,25 +1,18 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class JetPlayer : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class JetPlayer : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static JetPlayer()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.JetPlayer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.JetPlayer(@__env);
-			}
-		}
-		protected JetPlayer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected JetPlayer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnJetEventListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.JetPlayer.OnJetEventListener_))]
+		public interface OnJetEventListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onJetEvent(android.media.JetPlayer arg0, short arg1, byte arg2, byte arg3, byte arg4, byte arg5);
 			void onJetUserIdUpdate(android.media.JetPlayer arg0, int arg1, int arg2);
@@ -27,254 +20,251 @@ namespace android.media
 			void onJetPauseUpdate(android.media.JetPlayer arg0, int arg1);
 		}
 
-		public partial class OnJetEventListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.JetPlayer.OnJetEventListener))]
+		public sealed partial class OnJetEventListener_ : java.lang.Object, OnJetEventListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnJetEventListener_()
 			{
-				get { return __OnJetEventListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnJetEventListener : java.lang.Object, OnJetEventListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnJetEventListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.JetPlayer.__OnJetEventListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.media.JetPlayer.__OnJetEventListener(@__env);
-				}
-			}
-			internal __OnJetEventListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnJetEventListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onJetEvent4724;
+			internal static global::MonoJavaBridge.MethodId _onJetEvent4958;
 			 void android.media.JetPlayer.OnJetEventListener.onJetEvent(android.media.JetPlayer arg0, short arg1, byte arg2, byte arg3, byte arg4, byte arg5) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetEvent4724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_._onJetEvent4958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetEvent4724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_.staticClass, global::android.media.JetPlayer.OnJetEventListener_._onJetEvent4958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onJetUserIdUpdate4725;
+			internal static global::MonoJavaBridge.MethodId _onJetUserIdUpdate4959;
 			 void android.media.JetPlayer.OnJetEventListener.onJetUserIdUpdate(android.media.JetPlayer arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetUserIdUpdate4725, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_._onJetUserIdUpdate4959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetUserIdUpdate4725, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_.staticClass, global::android.media.JetPlayer.OnJetEventListener_._onJetUserIdUpdate4959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onJetNumQueuedSegmentUpdate4726;
+			internal static global::MonoJavaBridge.MethodId _onJetNumQueuedSegmentUpdate4960;
 			 void android.media.JetPlayer.OnJetEventListener.onJetNumQueuedSegmentUpdate(android.media.JetPlayer arg0, int arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetNumQueuedSegmentUpdate4726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_._onJetNumQueuedSegmentUpdate4960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetNumQueuedSegmentUpdate4726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_.staticClass, global::android.media.JetPlayer.OnJetEventListener_._onJetNumQueuedSegmentUpdate4960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onJetPauseUpdate4727;
+			internal static global::MonoJavaBridge.MethodId _onJetPauseUpdate4961;
 			 void android.media.JetPlayer.OnJetEventListener.onJetPauseUpdate(android.media.JetPlayer arg0, int arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetPauseUpdate4727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_._onJetPauseUpdate4961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetPauseUpdate4727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.OnJetEventListener_.staticClass, global::android.media.JetPlayer.OnJetEventListener_._onJetPauseUpdate4961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.media.JetPlayer.__OnJetEventListener.staticClass = @__class;
-				global::android.media.JetPlayer.__OnJetEventListener._onJetEvent4724 = @__env.GetMethodID(global::android.media.JetPlayer.__OnJetEventListener.staticClass, "android.media.JetPlayer.OnJetEventListener.onJetEvent", "(Landroid/media/JetPlayer;SBBBB)V");
-				global::android.media.JetPlayer.__OnJetEventListener._onJetUserIdUpdate4725 = @__env.GetMethodID(global::android.media.JetPlayer.__OnJetEventListener.staticClass, "android.media.JetPlayer.OnJetEventListener.onJetUserIdUpdate", "(Landroid/media/JetPlayer;II)V");
-				global::android.media.JetPlayer.__OnJetEventListener._onJetNumQueuedSegmentUpdate4726 = @__env.GetMethodID(global::android.media.JetPlayer.__OnJetEventListener.staticClass, "android.media.JetPlayer.OnJetEventListener.onJetNumQueuedSegmentUpdate", "(Landroid/media/JetPlayer;I)V");
-				global::android.media.JetPlayer.__OnJetEventListener._onJetPauseUpdate4727 = @__env.GetMethodID(global::android.media.JetPlayer.__OnJetEventListener.staticClass, "android.media.JetPlayer.OnJetEventListener.onJetPauseUpdate", "(Landroid/media/JetPlayer;I)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.media.JetPlayer.OnJetEventListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/JetPlayer$OnJetEventListener"));
+				global::android.media.JetPlayer.OnJetEventListener_._onJetEvent4958 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetEvent", "(Landroid/media/JetPlayer;SBBBB)V");
+				global::android.media.JetPlayer.OnJetEventListener_._onJetUserIdUpdate4959 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetUserIdUpdate", "(Landroid/media/JetPlayer;II)V");
+				global::android.media.JetPlayer.OnJetEventListener_._onJetNumQueuedSegmentUpdate4960 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetNumQueuedSegmentUpdate", "(Landroid/media/JetPlayer;I)V");
+				global::android.media.JetPlayer.OnJetEventListener_._onJetPauseUpdate4961 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.OnJetEventListener_.staticClass, "onJetPauseUpdate", "(Landroid/media/JetPlayer;I)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone4728;
-		public virtual global::java.lang.Object clone() 
+		internal static global::MonoJavaBridge.MethodId _finalize4962;
+		protected override void finalize() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.JetPlayer._clone4728));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer._finalize4962);
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._clone4728));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._finalize4962);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _release4729;
+		internal static global::MonoJavaBridge.MethodId _clone4963;
+		public virtual new global::java.lang.Object clone() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.media.JetPlayer._clone4963)) as java.lang.Object;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._clone4963)) as java.lang.Object;
+		}
+		internal static global::MonoJavaBridge.MethodId _release4964;
 		public virtual void release() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.JetPlayer._release4729);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer._release4964);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._release4729);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._release4964);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _play4730;
+		internal static global::MonoJavaBridge.MethodId _play4965;
 		public virtual bool play() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._play4730);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._play4965);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._play4730);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._play4965);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _pause4731;
+		internal static global::MonoJavaBridge.MethodId _pause4966;
 		public virtual bool pause() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._pause4731);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._pause4966);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._pause4731);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._pause4966);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getJetPlayer4732;
+		internal static global::MonoJavaBridge.MethodId _getJetPlayer4967;
 		public static global::android.media.JetPlayer getJetPlayer() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.JetPlayer>(@__env, @__env.CallStaticObjectMethodPtr(android.media.JetPlayer.staticClass, global::android.media.JetPlayer._getJetPlayer4732));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.JetPlayer.staticClass, global::android.media.JetPlayer._getJetPlayer4967)) as android.media.JetPlayer;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMaxTracks4733;
+		internal static global::MonoJavaBridge.MethodId _getMaxTracks4968;
 		public static int getMaxTracks() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.media.JetPlayer.staticClass, global::android.media.JetPlayer._getMaxTracks4733);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticIntMethod(android.media.JetPlayer.staticClass, global::android.media.JetPlayer._getMaxTracks4968);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadJetFile4734;
+		internal static global::MonoJavaBridge.MethodId _loadJetFile4969;
 		public virtual bool loadJetFile(android.content.res.AssetFileDescriptor arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._loadJetFile4734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._loadJetFile4969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._loadJetFile4734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._loadJetFile4969, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _loadJetFile4735;
+		internal static global::MonoJavaBridge.MethodId _loadJetFile4970;
 		public virtual bool loadJetFile(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._loadJetFile4735, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._loadJetFile4970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._loadJetFile4735, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._loadJetFile4970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _closeJetFile4736;
+		internal static global::MonoJavaBridge.MethodId _closeJetFile4971;
 		public virtual bool closeJetFile() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._closeJetFile4736);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._closeJetFile4971);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._closeJetFile4736);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._closeJetFile4971);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _queueJetSegment4737;
+		internal static global::MonoJavaBridge.MethodId _queueJetSegment4972;
 		public virtual bool queueJetSegment(int arg0, int arg1, int arg2, int arg3, int arg4, byte arg5) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._queueJetSegment4737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._queueJetSegment4972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._queueJetSegment4737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._queueJetSegment4972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _queueJetSegmentMuteArray4738;
+		internal static global::MonoJavaBridge.MethodId _queueJetSegmentMuteArray4973;
 		public virtual bool queueJetSegmentMuteArray(int arg0, int arg1, int arg2, int arg3, bool[] arg4, byte arg5) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._queueJetSegmentMuteArray4738, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._queueJetSegmentMuteArray4973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._queueJetSegmentMuteArray4738, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._queueJetSegmentMuteArray4973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMuteFlags4739;
+		internal static global::MonoJavaBridge.MethodId _setMuteFlags4974;
 		public virtual bool setMuteFlags(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._setMuteFlags4739, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._setMuteFlags4974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteFlags4739, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteFlags4974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMuteArray4740;
+		internal static global::MonoJavaBridge.MethodId _setMuteArray4975;
 		public virtual bool setMuteArray(bool[] arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._setMuteArray4740, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._setMuteArray4975, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteArray4740, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteArray4975, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMuteFlag4741;
+		internal static global::MonoJavaBridge.MethodId _setMuteFlag4976;
 		public virtual bool setMuteFlag(int arg0, bool arg1, bool arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._setMuteFlag4741, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._setMuteFlag4976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteFlag4741, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteFlag4976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _triggerClip4742;
+		internal static global::MonoJavaBridge.MethodId _triggerClip4977;
 		public virtual bool triggerClip(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._triggerClip4742, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._triggerClip4977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._triggerClip4742, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._triggerClip4977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearQueue4743;
+		internal static global::MonoJavaBridge.MethodId _clearQueue4978;
 		public virtual bool clearQueue() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._clearQueue4743);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.JetPlayer._clearQueue4978);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._clearQueue4743);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._clearQueue4978);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEventListener4744;
+		internal static global::MonoJavaBridge.MethodId _setEventListener4979;
 		public virtual void setEventListener(android.media.JetPlayer.OnJetEventListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.JetPlayer._setEventListener4744, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer._setEventListener4979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener4744, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener4979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEventListener4745;
+		internal static global::MonoJavaBridge.MethodId _setEventListener4980;
 		public virtual void setEventListener(android.media.JetPlayer.OnJetEventListener arg0, android.os.Handler arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.media.JetPlayer._setEventListener4745, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.media.JetPlayer._setEventListener4980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener4745, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener4980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.JetPlayer.staticClass = @__class;
-			global::android.media.JetPlayer._clone4728 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "clone", "()Ljava/lang/Object;");
-			global::android.media.JetPlayer._release4729 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "release", "()V");
-			global::android.media.JetPlayer._play4730 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "play", "()Z");
-			global::android.media.JetPlayer._pause4731 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "pause", "()Z");
-			global::android.media.JetPlayer._getJetPlayer4732 = @__env.GetStaticMethodID(global::android.media.JetPlayer.staticClass, "getJetPlayer", "()Landroid/media/JetPlayer;");
-			global::android.media.JetPlayer._getMaxTracks4733 = @__env.GetStaticMethodID(global::android.media.JetPlayer.staticClass, "getMaxTracks", "()I");
-			global::android.media.JetPlayer._loadJetFile4734 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "loadJetFile", "(Landroid/content/res/AssetFileDescriptor;)Z");
-			global::android.media.JetPlayer._loadJetFile4735 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "loadJetFile", "(Ljava/lang/String;)Z");
-			global::android.media.JetPlayer._closeJetFile4736 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "closeJetFile", "()Z");
-			global::android.media.JetPlayer._queueJetSegment4737 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "queueJetSegment", "(IIIIIB)Z");
-			global::android.media.JetPlayer._queueJetSegmentMuteArray4738 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "queueJetSegmentMuteArray", "(IIII[ZB)Z");
-			global::android.media.JetPlayer._setMuteFlags4739 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "setMuteFlags", "(IZ)Z");
-			global::android.media.JetPlayer._setMuteArray4740 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "setMuteArray", "([ZZ)Z");
-			global::android.media.JetPlayer._setMuteFlag4741 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "setMuteFlag", "(IZZ)Z");
-			global::android.media.JetPlayer._triggerClip4742 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "triggerClip", "(I)Z");
-			global::android.media.JetPlayer._clearQueue4743 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "clearQueue", "()Z");
-			global::android.media.JetPlayer._setEventListener4744 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;)V");
-			global::android.media.JetPlayer._setEventListener4745 = @__env.GetMethodID(global::android.media.JetPlayer.staticClass, "setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;Landroid/os/Handler;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.JetPlayer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/JetPlayer"));
+			global::android.media.JetPlayer._finalize4962 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "finalize", "()V");
+			global::android.media.JetPlayer._clone4963 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "clone", "()Ljava/lang/Object;");
+			global::android.media.JetPlayer._release4964 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "release", "()V");
+			global::android.media.JetPlayer._play4965 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "play", "()Z");
+			global::android.media.JetPlayer._pause4966 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "pause", "()Z");
+			global::android.media.JetPlayer._getJetPlayer4967 = @__env.GetStaticMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "getJetPlayer", "()Landroid/media/JetPlayer;");
+			global::android.media.JetPlayer._getMaxTracks4968 = @__env.GetStaticMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "getMaxTracks", "()I");
+			global::android.media.JetPlayer._loadJetFile4969 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "loadJetFile", "(Landroid/content/res/AssetFileDescriptor;)Z");
+			global::android.media.JetPlayer._loadJetFile4970 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "loadJetFile", "(Ljava/lang/String;)Z");
+			global::android.media.JetPlayer._closeJetFile4971 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "closeJetFile", "()Z");
+			global::android.media.JetPlayer._queueJetSegment4972 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "queueJetSegment", "(IIIIIB)Z");
+			global::android.media.JetPlayer._queueJetSegmentMuteArray4973 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "queueJetSegmentMuteArray", "(IIII[ZB)Z");
+			global::android.media.JetPlayer._setMuteFlags4974 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setMuteFlags", "(IZ)Z");
+			global::android.media.JetPlayer._setMuteArray4975 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setMuteArray", "([ZZ)Z");
+			global::android.media.JetPlayer._setMuteFlag4976 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setMuteFlag", "(IZZ)Z");
+			global::android.media.JetPlayer._triggerClip4977 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "triggerClip", "(I)Z");
+			global::android.media.JetPlayer._clearQueue4978 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "clearQueue", "()Z");
+			global::android.media.JetPlayer._setEventListener4979 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;)V");
+			global::android.media.JetPlayer._setEventListener4980 = @__env.GetMethodIDNoThrow(global::android.media.JetPlayer.staticClass, "setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;Landroid/os/Handler;)V");
 		}
 	}
 }

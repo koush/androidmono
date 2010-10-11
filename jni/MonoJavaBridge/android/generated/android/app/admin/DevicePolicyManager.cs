@@ -1,175 +1,168 @@
 namespace android.app.admin
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class DevicePolicyManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DevicePolicyManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DevicePolicyManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.admin.DevicePolicyManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.app.admin.DevicePolicyManager(@__env);
-			}
-		}
-		protected DevicePolicyManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected DevicePolicyManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isAdminActive885;
+		internal static global::MonoJavaBridge.MethodId _isAdminActive897;
 		public virtual bool isAdminActive(android.content.ComponentName arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager._isAdminActive885, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._isAdminActive897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._isAdminActive885, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._isAdminActive897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getActiveAdmins886;
+		internal static global::MonoJavaBridge.MethodId _getActiveAdmins898;
 		public virtual global::java.util.List getActiveAdmins() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.admin.DevicePolicyManager._getActiveAdmins886));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getActiveAdmins898)) as java.util.List;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getActiveAdmins886));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getActiveAdmins898)) as java.util.List;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeActiveAdmin887;
+		internal static global::MonoJavaBridge.MethodId _removeActiveAdmin899;
 		public virtual void removeActiveAdmin(android.content.ComponentName arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._removeActiveAdmin887, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._removeActiveAdmin899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._removeActiveAdmin887, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._removeActiveAdmin899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPasswordQuality888;
+		internal static global::MonoJavaBridge.MethodId _setPasswordQuality900;
 		public virtual void setPasswordQuality(android.content.ComponentName arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._setPasswordQuality888, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._setPasswordQuality900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setPasswordQuality888, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setPasswordQuality900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPasswordQuality889;
+		internal static global::MonoJavaBridge.MethodId _getPasswordQuality901;
 		public virtual int getPasswordQuality(android.content.ComponentName arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.admin.DevicePolicyManager._getPasswordQuality889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getPasswordQuality901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordQuality889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordQuality901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPasswordMinimumLength890;
+		internal static global::MonoJavaBridge.MethodId _setPasswordMinimumLength902;
 		public virtual void setPasswordMinimumLength(android.content.ComponentName arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength890, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength890, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPasswordMinimumLength891;
+		internal static global::MonoJavaBridge.MethodId _getPasswordMinimumLength903;
 		public virtual int getPasswordMinimumLength(android.content.ComponentName arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength891, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength891, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPasswordMaximumLength892;
+		internal static global::MonoJavaBridge.MethodId _getPasswordMaximumLength904;
 		public virtual int getPasswordMaximumLength(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength892, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength892, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isActivePasswordSufficient893;
+		internal static global::MonoJavaBridge.MethodId _isActivePasswordSufficient905;
 		public virtual bool isActivePasswordSufficient() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient893);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient905);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient893);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient905);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCurrentFailedPasswordAttempts894;
+		internal static global::MonoJavaBridge.MethodId _getCurrentFailedPasswordAttempts906;
 		public virtual int getCurrentFailedPasswordAttempts() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts894);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts906);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts894);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts906);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMaximumFailedPasswordsForWipe895;
+		internal static global::MonoJavaBridge.MethodId _setMaximumFailedPasswordsForWipe907;
 		public virtual void setMaximumFailedPasswordsForWipe(android.content.ComponentName arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMaximumFailedPasswordsForWipe896;
+		internal static global::MonoJavaBridge.MethodId _getMaximumFailedPasswordsForWipe908;
 		public virtual int getMaximumFailedPasswordsForWipe(android.content.ComponentName arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe896, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe896, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _resetPassword897;
+		internal static global::MonoJavaBridge.MethodId _resetPassword909;
 		public virtual bool resetPassword(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.app.admin.DevicePolicyManager._resetPassword897, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._resetPassword909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._resetPassword897, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._resetPassword909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMaximumTimeToLock898;
+		internal static global::MonoJavaBridge.MethodId _setMaximumTimeToLock910;
 		public virtual void setMaximumTimeToLock(android.content.ComponentName arg0, long arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMaximumTimeToLock899;
+		internal static global::MonoJavaBridge.MethodId _getMaximumTimeToLock911;
 		public virtual long getMaximumTimeToLock(android.content.ComponentName arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock899, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock899, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _lockNow900;
+		internal static global::MonoJavaBridge.MethodId _lockNow912;
 		public virtual void lockNow() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._lockNow900);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._lockNow912);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._lockNow900);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._lockNow912);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _wipeData901;
+		internal static global::MonoJavaBridge.MethodId _wipeData913;
 		public virtual void wipeData(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.admin.DevicePolicyManager._wipeData901, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._wipeData913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._wipeData901, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._wipeData913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String ACTION_ADD_DEVICE_ADMIN
 		{
@@ -241,26 +234,27 @@ namespace android.app.admin
 				return 1;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.app.admin.DevicePolicyManager.staticClass = @__class;
-			global::android.app.admin.DevicePolicyManager._isAdminActive885 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "isAdminActive", "(Landroid/content/ComponentName;)Z");
-			global::android.app.admin.DevicePolicyManager._getActiveAdmins886 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getActiveAdmins", "()Ljava/util/List;");
-			global::android.app.admin.DevicePolicyManager._removeActiveAdmin887 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "removeActiveAdmin", "(Landroid/content/ComponentName;)V");
-			global::android.app.admin.DevicePolicyManager._setPasswordQuality888 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordQuality", "(Landroid/content/ComponentName;I)V");
-			global::android.app.admin.DevicePolicyManager._getPasswordQuality889 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordQuality", "(Landroid/content/ComponentName;)I");
-			global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength890 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordMinimumLength", "(Landroid/content/ComponentName;I)V");
-			global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength891 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMinimumLength", "(Landroid/content/ComponentName;)I");
-			global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength892 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMaximumLength", "(I)I");
-			global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient893 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "isActivePasswordSufficient", "()Z");
-			global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts894 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getCurrentFailedPasswordAttempts", "()I");
-			global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe895 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;I)V");
-			global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe896 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;)I");
-			global::android.app.admin.DevicePolicyManager._resetPassword897 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "resetPassword", "(Ljava/lang/String;I)Z");
-			global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock898 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumTimeToLock", "(Landroid/content/ComponentName;J)V");
-			global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock899 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumTimeToLock", "(Landroid/content/ComponentName;)J");
-			global::android.app.admin.DevicePolicyManager._lockNow900 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "lockNow", "()V");
-			global::android.app.admin.DevicePolicyManager._wipeData901 = @__env.GetMethodID(global::android.app.admin.DevicePolicyManager.staticClass, "wipeData", "(I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.app.admin.DevicePolicyManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/admin/DevicePolicyManager"));
+			global::android.app.admin.DevicePolicyManager._isAdminActive897 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "isAdminActive", "(Landroid/content/ComponentName;)Z");
+			global::android.app.admin.DevicePolicyManager._getActiveAdmins898 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getActiveAdmins", "()Ljava/util/List;");
+			global::android.app.admin.DevicePolicyManager._removeActiveAdmin899 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "removeActiveAdmin", "(Landroid/content/ComponentName;)V");
+			global::android.app.admin.DevicePolicyManager._setPasswordQuality900 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordQuality", "(Landroid/content/ComponentName;I)V");
+			global::android.app.admin.DevicePolicyManager._getPasswordQuality901 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordQuality", "(Landroid/content/ComponentName;)I");
+			global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength902 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "setPasswordMinimumLength", "(Landroid/content/ComponentName;I)V");
+			global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength903 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMinimumLength", "(Landroid/content/ComponentName;)I");
+			global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength904 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getPasswordMaximumLength", "(I)I");
+			global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient905 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "isActivePasswordSufficient", "()Z");
+			global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts906 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getCurrentFailedPasswordAttempts", "()I");
+			global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe907 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;I)V");
+			global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe908 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;)I");
+			global::android.app.admin.DevicePolicyManager._resetPassword909 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "resetPassword", "(Ljava/lang/String;I)Z");
+			global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock910 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "setMaximumTimeToLock", "(Landroid/content/ComponentName;J)V");
+			global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock911 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "getMaximumTimeToLock", "(Landroid/content/ComponentName;)J");
+			global::android.app.admin.DevicePolicyManager._lockNow912 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "lockNow", "()V");
+			global::android.app.admin.DevicePolicyManager._wipeData913 = @__env.GetMethodIDNoThrow(global::android.app.admin.DevicePolicyManager.staticClass, "wipeData", "(I)V");
 		}
 	}
 }

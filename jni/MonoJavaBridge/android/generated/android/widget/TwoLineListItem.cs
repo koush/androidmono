@@ -1,77 +1,74 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class TwoLineListItem : android.widget.RelativeLayout
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class TwoLineListItem : android.widget.RelativeLayout
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TwoLineListItem()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.TwoLineListItem), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.TwoLineListItem(@__env);
-			}
-		}
-		protected TwoLineListItem(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected TwoLineListItem(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate11975;
+		internal static global::MonoJavaBridge.MethodId _onFinishInflate12362;
 		protected override void onFinishInflate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.TwoLineListItem._onFinishInflate11975);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.TwoLineListItem._onFinishInflate12362);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._onFinishInflate11975);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._onFinishInflate12362);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getText111976;
+		internal static global::MonoJavaBridge.MethodId _getText112363;
 		public virtual global::android.widget.TextView getText1() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TwoLineListItem._getText111976));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem._getText112363)) as android.widget.TextView;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText111976));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText112363)) as android.widget.TextView;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getText211977;
+		internal static global::MonoJavaBridge.MethodId _getText212364;
 		public virtual global::android.widget.TextView getText2() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TwoLineListItem._getText211977));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem._getText212364)) as android.widget.TextView;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText211977));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText212364)) as android.widget.TextView;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TwoLineListItem11978;
-		public TwoLineListItem(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TwoLineListItem12365;
+		public TwoLineListItem(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem11978, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem12365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TwoLineListItem11979;
-		public TwoLineListItem(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TwoLineListItem12366;
+		public TwoLineListItem(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem11979, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem12366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TwoLineListItem11980;
-		public TwoLineListItem(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TwoLineListItem12367;
+		public TwoLineListItem(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem11980, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._TwoLineListItem12367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.TwoLineListItem.staticClass = @__class;
-			global::android.widget.TwoLineListItem._onFinishInflate11975 = @__env.GetMethodID(global::android.widget.TwoLineListItem.staticClass, "onFinishInflate", "()V");
-			global::android.widget.TwoLineListItem._getText111976 = @__env.GetMethodID(global::android.widget.TwoLineListItem.staticClass, "getText1", "()Landroid/widget/TextView;");
-			global::android.widget.TwoLineListItem._getText211977 = @__env.GetMethodID(global::android.widget.TwoLineListItem.staticClass, "getText2", "()Landroid/widget/TextView;");
-			global::android.widget.TwoLineListItem._TwoLineListItem11978 = @__env.GetMethodID(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.TwoLineListItem._TwoLineListItem11979 = @__env.GetMethodID(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.TwoLineListItem._TwoLineListItem11980 = @__env.GetMethodID(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.TwoLineListItem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/TwoLineListItem"));
+			global::android.widget.TwoLineListItem._onFinishInflate12362 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "onFinishInflate", "()V");
+			global::android.widget.TwoLineListItem._getText112363 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "getText1", "()Landroid/widget/TextView;");
+			global::android.widget.TwoLineListItem._getText212364 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "getText2", "()Landroid/widget/TextView;");
+			global::android.widget.TwoLineListItem._TwoLineListItem12365 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.TwoLineListItem._TwoLineListItem12366 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.TwoLineListItem._TwoLineListItem12367 = @__env.GetMethodIDNoThrow(global::android.widget.TwoLineListItem.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

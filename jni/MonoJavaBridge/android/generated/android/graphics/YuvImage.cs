@@ -1,91 +1,88 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class YuvImage : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class YuvImage : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static YuvImage()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.YuvImage), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.YuvImage(@__env);
-			}
-		}
-		protected YuvImage(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected YuvImage(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getWidth3631;
+		internal static global::MonoJavaBridge.MethodId _getWidth3823;
 		public virtual int getWidth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.YuvImage._getWidth3631);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getWidth3823);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getWidth3631);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getWidth3823);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHeight3632;
+		internal static global::MonoJavaBridge.MethodId _getHeight3824;
 		public virtual int getHeight() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.YuvImage._getHeight3632);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getHeight3824);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getHeight3632);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getHeight3824);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compressToJpeg3633;
+		internal static global::MonoJavaBridge.MethodId _compressToJpeg3825;
 		public virtual bool compressToJpeg(android.graphics.Rect arg0, int arg1, java.io.OutputStream arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.YuvImage._compressToJpeg3633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.YuvImage._compressToJpeg3825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._compressToJpeg3633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._compressToJpeg3825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYuvData3634;
+		internal static global::MonoJavaBridge.MethodId _getYuvData3826;
 		public virtual byte[] getYuvData() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.YuvImage._getYuvData3634));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.YuvImage._getYuvData3826)) as byte[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvData3634));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvData3826)) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYuvFormat3635;
+		internal static global::MonoJavaBridge.MethodId _getYuvFormat3827;
 		public virtual int getYuvFormat() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.YuvImage._getYuvFormat3635);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getYuvFormat3827);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvFormat3635);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvFormat3827);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getStrides3636;
+		internal static global::MonoJavaBridge.MethodId _getStrides3828;
 		public virtual int[] getStrides() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.YuvImage._getStrides3636));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.YuvImage._getStrides3828)) as int[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getStrides3636));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getStrides3828)) as int[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _YuvImage3637;
-		public YuvImage(byte[] arg0, int arg1, int arg2, int arg3, int[] arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _YuvImage3829;
+		public YuvImage(byte[] arg0, int arg1, int arg2, int arg3, int[] arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._YuvImage3637, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._YuvImage3829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.YuvImage.staticClass = @__class;
-			global::android.graphics.YuvImage._getWidth3631 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "getWidth", "()I");
-			global::android.graphics.YuvImage._getHeight3632 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "getHeight", "()I");
-			global::android.graphics.YuvImage._compressToJpeg3633 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "compressToJpeg", "(Landroid/graphics/Rect;ILjava/io/OutputStream;)Z");
-			global::android.graphics.YuvImage._getYuvData3634 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "getYuvData", "()[B");
-			global::android.graphics.YuvImage._getYuvFormat3635 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "getYuvFormat", "()I");
-			global::android.graphics.YuvImage._getStrides3636 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "getStrides", "()[I");
-			global::android.graphics.YuvImage._YuvImage3637 = @__env.GetMethodID(global::android.graphics.YuvImage.staticClass, "<init>", "([BIII[I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.YuvImage.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/YuvImage"));
+			global::android.graphics.YuvImage._getWidth3823 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "getWidth", "()I");
+			global::android.graphics.YuvImage._getHeight3824 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "getHeight", "()I");
+			global::android.graphics.YuvImage._compressToJpeg3825 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "compressToJpeg", "(Landroid/graphics/Rect;ILjava/io/OutputStream;)Z");
+			global::android.graphics.YuvImage._getYuvData3826 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "getYuvData", "()[B");
+			global::android.graphics.YuvImage._getYuvFormat3827 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "getYuvFormat", "()I");
+			global::android.graphics.YuvImage._getStrides3828 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "getStrides", "()[I");
+			global::android.graphics.YuvImage._YuvImage3829 = @__env.GetMethodIDNoThrow(global::android.graphics.YuvImage.staticClass, "<init>", "([BIII[I)V");
 		}
 	}
 }

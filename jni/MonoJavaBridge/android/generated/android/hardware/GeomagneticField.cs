@@ -1,103 +1,98 @@
 namespace android.hardware
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class GeomagneticField : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class GeomagneticField : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static GeomagneticField()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.GeomagneticField), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.hardware.GeomagneticField(@__env);
-			}
-		}
-		protected GeomagneticField(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected GeomagneticField(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getY4154;
+		internal static global::MonoJavaBridge.MethodId _getY4356;
 		public virtual float getY() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getY4154);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getY4356);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getY4154);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getY4356);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getX4155;
+		internal static global::MonoJavaBridge.MethodId _getX4357;
 		public virtual float getX() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getX4155);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getX4357);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getX4155);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getX4357);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getZ4156;
+		internal static global::MonoJavaBridge.MethodId _getZ4358;
 		public virtual float getZ() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getZ4156);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getZ4358);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getZ4156);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getZ4358);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDeclination4157;
+		internal static global::MonoJavaBridge.MethodId _getDeclination4359;
 		public virtual float getDeclination() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getDeclination4157);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getDeclination4359);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getDeclination4157);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getDeclination4359);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInclination4158;
+		internal static global::MonoJavaBridge.MethodId _getInclination4360;
 		public virtual float getInclination() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getInclination4158);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getInclination4360);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getInclination4158);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getInclination4360);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHorizontalStrength4159;
+		internal static global::MonoJavaBridge.MethodId _getHorizontalStrength4361;
 		public virtual float getHorizontalStrength() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getHorizontalStrength4159);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getHorizontalStrength4361);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getHorizontalStrength4159);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getHorizontalStrength4361);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFieldStrength4160;
+		internal static global::MonoJavaBridge.MethodId _getFieldStrength4362;
 		public virtual float getFieldStrength() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getFieldStrength4160);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getFieldStrength4362);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getFieldStrength4160);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getFieldStrength4362);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _GeomagneticField4161;
-		public GeomagneticField(float arg0, float arg1, float arg2, long arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _GeomagneticField4363;
+		public GeomagneticField(float arg0, float arg1, float arg2, long arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._GeomagneticField4161, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._GeomagneticField4363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.hardware.GeomagneticField.staticClass = @__class;
-			global::android.hardware.GeomagneticField._getY4154 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getY", "()F");
-			global::android.hardware.GeomagneticField._getX4155 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getX", "()F");
-			global::android.hardware.GeomagneticField._getZ4156 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getZ", "()F");
-			global::android.hardware.GeomagneticField._getDeclination4157 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getDeclination", "()F");
-			global::android.hardware.GeomagneticField._getInclination4158 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getInclination", "()F");
-			global::android.hardware.GeomagneticField._getHorizontalStrength4159 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getHorizontalStrength", "()F");
-			global::android.hardware.GeomagneticField._getFieldStrength4160 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "getFieldStrength", "()F");
-			global::android.hardware.GeomagneticField._GeomagneticField4161 = @__env.GetMethodID(global::android.hardware.GeomagneticField.staticClass, "<init>", "(FFFJ)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.hardware.GeomagneticField.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/GeomagneticField"));
+			global::android.hardware.GeomagneticField._getY4356 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getY", "()F");
+			global::android.hardware.GeomagneticField._getX4357 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getX", "()F");
+			global::android.hardware.GeomagneticField._getZ4358 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getZ", "()F");
+			global::android.hardware.GeomagneticField._getDeclination4359 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getDeclination", "()F");
+			global::android.hardware.GeomagneticField._getInclination4360 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getInclination", "()F");
+			global::android.hardware.GeomagneticField._getHorizontalStrength4361 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getHorizontalStrength", "()F");
+			global::android.hardware.GeomagneticField._getFieldStrength4362 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "getFieldStrength", "()F");
+			global::android.hardware.GeomagneticField._GeomagneticField4363 = @__env.GetMethodIDNoThrow(global::android.hardware.GeomagneticField.staticClass, "<init>", "(FFFJ)V");
 		}
 	}
 }

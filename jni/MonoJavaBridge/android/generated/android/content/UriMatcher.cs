@@ -1,46 +1,40 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class UriMatcher : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class UriMatcher : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static UriMatcher()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.UriMatcher), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.UriMatcher(@__env);
-			}
-		}
-		protected UriMatcher(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected UriMatcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _match1739;
+		internal static global::MonoJavaBridge.MethodId _match1833;
 		public virtual int match(android.net.Uri arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.UriMatcher._match1739, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.UriMatcher._match1833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.UriMatcher.staticClass, global::android.content.UriMatcher._match1739, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.UriMatcher.staticClass, global::android.content.UriMatcher._match1833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addURI1740;
+		internal static global::MonoJavaBridge.MethodId _addURI1834;
 		public virtual void addURI(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.UriMatcher._addURI1740, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.UriMatcher._addURI1834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.UriMatcher.staticClass, global::android.content.UriMatcher._addURI1740, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.UriMatcher.staticClass, global::android.content.UriMatcher._addURI1834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _UriMatcher1741;
-		public UriMatcher(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _UriMatcher1835;
+		public UriMatcher(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.UriMatcher.staticClass, global::android.content.UriMatcher._UriMatcher1741, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.UriMatcher.staticClass, global::android.content.UriMatcher._UriMatcher1835, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
 		public static int NO_MATCH
 		{
@@ -49,12 +43,13 @@ namespace android.content
 				return -1;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.UriMatcher.staticClass = @__class;
-			global::android.content.UriMatcher._match1739 = @__env.GetMethodID(global::android.content.UriMatcher.staticClass, "match", "(Landroid/net/Uri;)I");
-			global::android.content.UriMatcher._addURI1740 = @__env.GetMethodID(global::android.content.UriMatcher.staticClass, "addURI", "(Ljava/lang/String;Ljava/lang/String;I)V");
-			global::android.content.UriMatcher._UriMatcher1741 = @__env.GetMethodID(global::android.content.UriMatcher.staticClass, "<init>", "(I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.UriMatcher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/UriMatcher"));
+			global::android.content.UriMatcher._match1833 = @__env.GetMethodIDNoThrow(global::android.content.UriMatcher.staticClass, "match", "(Landroid/net/Uri;)I");
+			global::android.content.UriMatcher._addURI1834 = @__env.GetMethodIDNoThrow(global::android.content.UriMatcher.staticClass, "addURI", "(Ljava/lang/String;Ljava/lang/String;I)V");
+			global::android.content.UriMatcher._UriMatcher1835 = @__env.GetMethodIDNoThrow(global::android.content.UriMatcher.staticClass, "<init>", "(I)V");
 		}
 	}
 }

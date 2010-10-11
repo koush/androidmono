@@ -1,33 +1,28 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ReceiverCallNotAllowedException : android.util.AndroidRuntimeException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ReceiverCallNotAllowedException : android.util.AndroidRuntimeException
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ReceiverCallNotAllowedException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.ReceiverCallNotAllowedException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.ReceiverCallNotAllowedException(@__env);
-			}
-		}
-		protected ReceiverCallNotAllowedException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ReceiverCallNotAllowedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ReceiverCallNotAllowedException1652;
-		public ReceiverCallNotAllowedException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ReceiverCallNotAllowedException1746;
+		public ReceiverCallNotAllowedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.ReceiverCallNotAllowedException.staticClass, global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException1652, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ReceiverCallNotAllowedException.staticClass, global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException1746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.ReceiverCallNotAllowedException.staticClass = @__class;
-			global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException1652 = @__env.GetMethodID(global::android.content.ReceiverCallNotAllowedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.ReceiverCallNotAllowedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ReceiverCallNotAllowedException"));
+			global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException1746 = @__env.GetMethodIDNoThrow(global::android.content.ReceiverCallNotAllowedException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

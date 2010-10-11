@@ -1,40 +1,36 @@
 namespace android.database.sqlite
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SQLiteMisuseException : android.database.sqlite.SQLiteException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SQLiteMisuseException : android.database.sqlite.SQLiteException
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SQLiteMisuseException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.sqlite.SQLiteMisuseException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.database.sqlite.SQLiteMisuseException(@__env);
-			}
-		}
-		protected SQLiteMisuseException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SQLiteMisuseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteMisuseException2709;
-		public SQLiteMisuseException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SQLiteMisuseException2879;
+		public SQLiteMisuseException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.sqlite.SQLiteMisuseException.staticClass, global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2709, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteMisuseException.staticClass, global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2879);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteMisuseException2710;
-		public SQLiteMisuseException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SQLiteMisuseException2880;
+		public SQLiteMisuseException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.sqlite.SQLiteMisuseException.staticClass, global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2710, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteMisuseException.staticClass, global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.database.sqlite.SQLiteMisuseException.staticClass = @__class;
-			global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2709 = @__env.GetMethodID(global::android.database.sqlite.SQLiteMisuseException.staticClass, "<init>", "()V");
-			global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2710 = @__env.GetMethodID(global::android.database.sqlite.SQLiteMisuseException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.database.sqlite.SQLiteMisuseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteMisuseException"));
+			global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2879 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteMisuseException.staticClass, "<init>", "()V");
+			global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException2880 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteMisuseException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

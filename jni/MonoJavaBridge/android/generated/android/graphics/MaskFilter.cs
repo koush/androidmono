@@ -1,33 +1,38 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class MaskFilter : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MaskFilter : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static MaskFilter()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.MaskFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.MaskFilter(@__env);
-			}
-		}
-		protected MaskFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected MaskFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MaskFilter3157;
-		public MaskFilter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _finalize3336;
+		protected override void finalize() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._MaskFilter3157, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.MaskFilter._finalize3336);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._finalize3336);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		internal static global::MonoJavaBridge.MethodId _MaskFilter3337;
+		public MaskFilter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::android.graphics.MaskFilter.staticClass = @__class;
-			global::android.graphics.MaskFilter._MaskFilter3157 = @__env.GetMethodID(global::android.graphics.MaskFilter.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._MaskFilter3337);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.MaskFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/MaskFilter"));
+			global::android.graphics.MaskFilter._finalize3336 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "finalize", "()V");
+			global::android.graphics.MaskFilter._MaskFilter3337 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "<init>", "()V");
 		}
 	}
 }

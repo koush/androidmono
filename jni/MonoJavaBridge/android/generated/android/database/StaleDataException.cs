@@ -1,40 +1,36 @@
 namespace android.database
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class StaleDataException : java.lang.RuntimeException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class StaleDataException : java.lang.RuntimeException
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static StaleDataException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.StaleDataException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.database.StaleDataException(@__env);
-			}
-		}
-		protected StaleDataException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected StaleDataException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _StaleDataException2619;
-		public StaleDataException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _StaleDataException2786;
+		public StaleDataException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._StaleDataException2619, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._StaleDataException2786);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _StaleDataException2620;
-		public StaleDataException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _StaleDataException2787;
+		public StaleDataException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._StaleDataException2620, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.StaleDataException.staticClass, global::android.database.StaleDataException._StaleDataException2787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.database.StaleDataException.staticClass = @__class;
-			global::android.database.StaleDataException._StaleDataException2619 = @__env.GetMethodID(global::android.database.StaleDataException.staticClass, "<init>", "()V");
-			global::android.database.StaleDataException._StaleDataException2620 = @__env.GetMethodID(global::android.database.StaleDataException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.database.StaleDataException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/StaleDataException"));
+			global::android.database.StaleDataException._StaleDataException2786 = @__env.GetMethodIDNoThrow(global::android.database.StaleDataException.staticClass, "<init>", "()V");
+			global::android.database.StaleDataException._StaleDataException2787 = @__env.GetMethodIDNoThrow(global::android.database.StaleDataException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

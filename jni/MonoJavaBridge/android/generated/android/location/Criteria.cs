@@ -1,160 +1,155 @@
 namespace android.location
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Criteria : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Criteria : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Criteria()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.Criteria), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.location.Criteria(@__env);
-			}
-		}
-		protected Criteria(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Criteria(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel4472;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel4694;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._writeToParcel4472, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._writeToParcel4694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._writeToParcel4472, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._writeToParcel4694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents4473;
+		internal static global::MonoJavaBridge.MethodId _describeContents4695;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.location.Criteria._describeContents4473);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.location.Criteria._describeContents4695);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._describeContents4473);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._describeContents4695);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAccuracy4474;
+		internal static global::MonoJavaBridge.MethodId _setAccuracy4696;
 		public virtual void setAccuracy(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._setAccuracy4474, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setAccuracy4696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAccuracy4474, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAccuracy4696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAccuracy4475;
+		internal static global::MonoJavaBridge.MethodId _getAccuracy4697;
 		public virtual int getAccuracy() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.location.Criteria._getAccuracy4475);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.location.Criteria._getAccuracy4697);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._getAccuracy4475);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._getAccuracy4697);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPowerRequirement4476;
+		internal static global::MonoJavaBridge.MethodId _setPowerRequirement4698;
 		public virtual void setPowerRequirement(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._setPowerRequirement4476, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setPowerRequirement4698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setPowerRequirement4476, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setPowerRequirement4698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPowerRequirement4477;
+		internal static global::MonoJavaBridge.MethodId _getPowerRequirement4699;
 		public virtual int getPowerRequirement() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.location.Criteria._getPowerRequirement4477);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.location.Criteria._getPowerRequirement4699);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._getPowerRequirement4477);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._getPowerRequirement4699);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setCostAllowed4478;
+		internal static global::MonoJavaBridge.MethodId _setCostAllowed4700;
 		public virtual void setCostAllowed(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._setCostAllowed4478, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setCostAllowed4700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setCostAllowed4478, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setCostAllowed4700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isCostAllowed4479;
+		internal static global::MonoJavaBridge.MethodId _isCostAllowed4701;
 		public virtual bool isCostAllowed() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isCostAllowed4479);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.Criteria._isCostAllowed4701);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isCostAllowed4479);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._isCostAllowed4701);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAltitudeRequired4480;
+		internal static global::MonoJavaBridge.MethodId _setAltitudeRequired4702;
 		public virtual void setAltitudeRequired(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._setAltitudeRequired4480, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setAltitudeRequired4702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAltitudeRequired4480, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAltitudeRequired4702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isAltitudeRequired4481;
+		internal static global::MonoJavaBridge.MethodId _isAltitudeRequired4703;
 		public virtual bool isAltitudeRequired() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isAltitudeRequired4481);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.Criteria._isAltitudeRequired4703);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isAltitudeRequired4481);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._isAltitudeRequired4703);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSpeedRequired4482;
+		internal static global::MonoJavaBridge.MethodId _setSpeedRequired4704;
 		public virtual void setSpeedRequired(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._setSpeedRequired4482, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setSpeedRequired4704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setSpeedRequired4482, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setSpeedRequired4704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isSpeedRequired4483;
+		internal static global::MonoJavaBridge.MethodId _isSpeedRequired4705;
 		public virtual bool isSpeedRequired() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isSpeedRequired4483);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.Criteria._isSpeedRequired4705);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isSpeedRequired4483);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._isSpeedRequired4705);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setBearingRequired4484;
+		internal static global::MonoJavaBridge.MethodId _setBearingRequired4706;
 		public virtual void setBearingRequired(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.Criteria._setBearingRequired4484, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setBearingRequired4706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setBearingRequired4484, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setBearingRequired4706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isBearingRequired4485;
+		internal static global::MonoJavaBridge.MethodId _isBearingRequired4707;
 		public virtual bool isBearingRequired() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isBearingRequired4485);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.Criteria._isBearingRequired4707);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isBearingRequired4485);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._isBearingRequired4707);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Criteria4486;
-		public Criteria()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Criteria4708;
+		public Criteria()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._Criteria4486, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._Criteria4708);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Criteria4487;
-		public Criteria(android.location.Criteria arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Criteria4709;
+		public Criteria(android.location.Criteria arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._Criteria4487, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.Criteria.staticClass, global::android.location.Criteria._Criteria4709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
 		public static int NO_REQUIREMENT
 		{
@@ -198,7 +193,7 @@ namespace android.location
 				return 2;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR4488;
+		internal static global::MonoJavaBridge.FieldId _CREATOR4710;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -206,25 +201,26 @@ namespace android.location
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.location.Criteria.staticClass = @__class;
-			global::android.location.Criteria._writeToParcel4472 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.location.Criteria._describeContents4473 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "describeContents", "()I");
-			global::android.location.Criteria._setAccuracy4474 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "setAccuracy", "(I)V");
-			global::android.location.Criteria._getAccuracy4475 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "getAccuracy", "()I");
-			global::android.location.Criteria._setPowerRequirement4476 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "setPowerRequirement", "(I)V");
-			global::android.location.Criteria._getPowerRequirement4477 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "getPowerRequirement", "()I");
-			global::android.location.Criteria._setCostAllowed4478 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "setCostAllowed", "(Z)V");
-			global::android.location.Criteria._isCostAllowed4479 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "isCostAllowed", "()Z");
-			global::android.location.Criteria._setAltitudeRequired4480 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "setAltitudeRequired", "(Z)V");
-			global::android.location.Criteria._isAltitudeRequired4481 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "isAltitudeRequired", "()Z");
-			global::android.location.Criteria._setSpeedRequired4482 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "setSpeedRequired", "(Z)V");
-			global::android.location.Criteria._isSpeedRequired4483 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "isSpeedRequired", "()Z");
-			global::android.location.Criteria._setBearingRequired4484 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "setBearingRequired", "(Z)V");
-			global::android.location.Criteria._isBearingRequired4485 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "isBearingRequired", "()Z");
-			global::android.location.Criteria._Criteria4486 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "<init>", "()V");
-			global::android.location.Criteria._Criteria4487 = @__env.GetMethodID(global::android.location.Criteria.staticClass, "<init>", "(Landroid/location/Criteria;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.location.Criteria.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/Criteria"));
+			global::android.location.Criteria._writeToParcel4694 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.location.Criteria._describeContents4695 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "describeContents", "()I");
+			global::android.location.Criteria._setAccuracy4696 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "setAccuracy", "(I)V");
+			global::android.location.Criteria._getAccuracy4697 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "getAccuracy", "()I");
+			global::android.location.Criteria._setPowerRequirement4698 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "setPowerRequirement", "(I)V");
+			global::android.location.Criteria._getPowerRequirement4699 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "getPowerRequirement", "()I");
+			global::android.location.Criteria._setCostAllowed4700 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "setCostAllowed", "(Z)V");
+			global::android.location.Criteria._isCostAllowed4701 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "isCostAllowed", "()Z");
+			global::android.location.Criteria._setAltitudeRequired4702 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "setAltitudeRequired", "(Z)V");
+			global::android.location.Criteria._isAltitudeRequired4703 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "isAltitudeRequired", "()Z");
+			global::android.location.Criteria._setSpeedRequired4704 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "setSpeedRequired", "(Z)V");
+			global::android.location.Criteria._isSpeedRequired4705 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "isSpeedRequired", "()Z");
+			global::android.location.Criteria._setBearingRequired4706 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "setBearingRequired", "(Z)V");
+			global::android.location.Criteria._isBearingRequired4707 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "isBearingRequired", "()Z");
+			global::android.location.Criteria._Criteria4708 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "()V");
+			global::android.location.Criteria._Criteria4709 = @__env.GetMethodIDNoThrow(global::android.location.Criteria.staticClass, "<init>", "(Landroid/location/Criteria;)V");
 		}
 	}
 }

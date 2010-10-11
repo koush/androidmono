@@ -1,50 +1,36 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface MenuItem_OnMenuItemClickListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.MenuItem_OnMenuItemClickListener_))]
+	public interface MenuItem_OnMenuItemClickListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool onMenuItemClick(android.view.MenuItem arg0);
 	}
 
-	public partial class MenuItem_OnMenuItemClickListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.MenuItem_OnMenuItemClickListener))]
+	public sealed partial class MenuItem_OnMenuItemClickListener_ : java.lang.Object, MenuItem_OnMenuItemClickListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static MenuItem_OnMenuItemClickListener_()
 		{
-			get { return __MenuItem_OnMenuItemClickListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __MenuItem_OnMenuItemClickListener : java.lang.Object, MenuItem_OnMenuItemClickListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __MenuItem_OnMenuItemClickListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__MenuItem_OnMenuItemClickListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.__MenuItem_OnMenuItemClickListener(@__env);
-			}
-		}
-		internal __MenuItem_OnMenuItemClickListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal MenuItem_OnMenuItemClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onMenuItemClick8580;
+		internal static global::MonoJavaBridge.MethodId _onMenuItemClick8886;
 		 bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick8580, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick8886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick8580, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.MenuItem_OnMenuItemClickListener_.staticClass, global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick8886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.__MenuItem_OnMenuItemClickListener.staticClass = @__class;
-			global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick8580 = @__env.GetMethodID(global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, "android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick", "(Landroid/view/MenuItem;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.MenuItem_OnMenuItemClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/MenuItem_OnMenuItemClickListener"));
+			global::android.view.MenuItem_OnMenuItemClickListener_._onMenuItemClick8886 = @__env.GetMethodIDNoThrow(global::android.view.MenuItem_OnMenuItemClickListener_.staticClass, "onMenuItemClick", "(Landroid/view/MenuItem;)Z");
 		}
 	}
 }

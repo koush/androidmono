@@ -1,143 +1,108 @@
 namespace android.location
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class GpsStatus : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class GpsStatus : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static GpsStatus()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsStatus), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.location.GpsStatus(@__env);
-			}
-		}
-		internal GpsStatus(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal GpsStatus(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface Listener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.location.GpsStatus.Listener_))]
+		public interface Listener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGpsStatusChanged(int arg0);
 		}
 
-		public partial class Listener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.location.GpsStatus.Listener))]
+		public sealed partial class Listener_ : java.lang.Object, Listener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static Listener_()
 			{
-				get { return __Listener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __Listener : java.lang.Object, Listener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __Listener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsStatus.__Listener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.location.GpsStatus.__Listener(@__env);
-				}
-			}
-			internal __Listener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal Listener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onGpsStatusChanged4501;
+			internal static global::MonoJavaBridge.MethodId _onGpsStatusChanged4723;
 			 void android.location.GpsStatus.Listener.onGpsStatusChanged(int arg0) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.location.GpsStatus.__Listener._onGpsStatusChanged4501, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.location.GpsStatus.Listener_._onGpsStatusChanged4723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.location.GpsStatus.__Listener.staticClass, global::android.location.GpsStatus.__Listener._onGpsStatusChanged4501, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.GpsStatus.Listener_.staticClass, global::android.location.GpsStatus.Listener_._onGpsStatusChanged4723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.location.GpsStatus.__Listener.staticClass = @__class;
-				global::android.location.GpsStatus.__Listener._onGpsStatusChanged4501 = @__env.GetMethodID(global::android.location.GpsStatus.__Listener.staticClass, "android.location.GpsStatus.Listener.onGpsStatusChanged", "(I)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.location.GpsStatus.Listener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus$Listener"));
+				global::android.location.GpsStatus.Listener_._onGpsStatusChanged4723 = @__env.GetMethodIDNoThrow(global::android.location.GpsStatus.Listener_.staticClass, "onGpsStatusChanged", "(I)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface NmeaListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.location.GpsStatus.NmeaListener_))]
+		public interface NmeaListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onNmeaReceived(long arg0, java.lang.String arg1);
 		}
 
-		public partial class NmeaListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.location.GpsStatus.NmeaListener))]
+		public sealed partial class NmeaListener_ : java.lang.Object, NmeaListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static NmeaListener_()
 			{
-				get { return __NmeaListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __NmeaListener : java.lang.Object, NmeaListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __NmeaListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsStatus.__NmeaListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.location.GpsStatus.__NmeaListener(@__env);
-				}
-			}
-			internal __NmeaListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal NmeaListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onNmeaReceived4502;
+			internal static global::MonoJavaBridge.MethodId _onNmeaReceived4724;
 			 void android.location.GpsStatus.NmeaListener.onNmeaReceived(long arg0, java.lang.String arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4502, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.location.GpsStatus.NmeaListener_._onNmeaReceived4724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.location.GpsStatus.__NmeaListener.staticClass, global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4502, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.GpsStatus.NmeaListener_.staticClass, global::android.location.GpsStatus.NmeaListener_._onNmeaReceived4724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.location.GpsStatus.__NmeaListener.staticClass = @__class;
-				global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4502 = @__env.GetMethodID(global::android.location.GpsStatus.__NmeaListener.staticClass, "android.location.GpsStatus.NmeaListener.onNmeaReceived", "(JLjava/lang/String;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.location.GpsStatus.NmeaListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus$NmeaListener"));
+				global::android.location.GpsStatus.NmeaListener_._onNmeaReceived4724 = @__env.GetMethodIDNoThrow(global::android.location.GpsStatus.NmeaListener_.staticClass, "onNmeaReceived", "(JLjava/lang/String;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeToFirstFix4503;
+		internal static global::MonoJavaBridge.MethodId _getTimeToFirstFix4725;
 		public int getTimeToFirstFix() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.location.GpsStatus._getTimeToFirstFix4503);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.location.GpsStatus._getTimeToFirstFix4725);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getTimeToFirstFix4503);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getTimeToFirstFix4725);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSatellites4504;
+		internal static global::MonoJavaBridge.MethodId _getSatellites4726;
 		public global::java.lang.Iterable getSatellites() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.GpsStatus._getSatellites4504));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Iterable>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.GpsStatus._getSatellites4726)) as java.lang.Iterable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getSatellites4504));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Iterable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getSatellites4726)) as java.lang.Iterable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMaxSatellites4505;
+		internal static global::MonoJavaBridge.MethodId _getMaxSatellites4727;
 		public int getMaxSatellites() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.location.GpsStatus._getMaxSatellites4505);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.location.GpsStatus._getMaxSatellites4727);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getMaxSatellites4505);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getMaxSatellites4727);
 		}
 		public static int GPS_EVENT_STARTED
 		{
@@ -167,12 +132,13 @@ namespace android.location
 				return 4;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.location.GpsStatus.staticClass = @__class;
-			global::android.location.GpsStatus._getTimeToFirstFix4503 = @__env.GetMethodID(global::android.location.GpsStatus.staticClass, "getTimeToFirstFix", "()I");
-			global::android.location.GpsStatus._getSatellites4504 = @__env.GetMethodID(global::android.location.GpsStatus.staticClass, "getSatellites", "()Ljava/lang/Iterable;");
-			global::android.location.GpsStatus._getMaxSatellites4505 = @__env.GetMethodID(global::android.location.GpsStatus.staticClass, "getMaxSatellites", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.location.GpsStatus.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/location/GpsStatus"));
+			global::android.location.GpsStatus._getTimeToFirstFix4725 = @__env.GetMethodIDNoThrow(global::android.location.GpsStatus.staticClass, "getTimeToFirstFix", "()I");
+			global::android.location.GpsStatus._getSatellites4726 = @__env.GetMethodIDNoThrow(global::android.location.GpsStatus.staticClass, "getSatellites", "()Ljava/lang/Iterable;");
+			global::android.location.GpsStatus._getMaxSatellites4727 = @__env.GetMethodIDNoThrow(global::android.location.GpsStatus.staticClass, "getMaxSatellites", "()I");
 		}
 	}
 }

@@ -1,90 +1,84 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class Currency : java.lang.Object, java.io.Serializable
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class Currency : java.lang.Object, java.io.Serializable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Currency()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.Currency), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.Currency(@__env);
-			}
-		}
-		internal Currency(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Currency(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13639;
+		internal static global::MonoJavaBridge.MethodId _toString15351;
 		public sealed override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Currency._toString13639));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Currency._toString15351)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Currency.staticClass, global::java.util.Currency._toString13639));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._toString15351)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13640;
+		internal static global::MonoJavaBridge.MethodId _getInstance15352;
 		public static global::java.util.Currency getInstance(java.util.Locale arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Currency>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Currency.staticClass, global::java.util.Currency._getInstance13640, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.Currency.staticClass, global::java.util.Currency._getInstance15352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Currency;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance13641;
+		internal static global::MonoJavaBridge.MethodId _getInstance15353;
 		public static global::java.util.Currency getInstance(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Currency>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Currency.staticClass, global::java.util.Currency._getInstance13641, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.Currency.staticClass, global::java.util.Currency._getInstance15353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Currency;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCurrencyCode13642;
+		internal static global::MonoJavaBridge.MethodId _getCurrencyCode15354;
 		public global::java.lang.String getCurrencyCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Currency._getCurrencyCode13642));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Currency._getCurrencyCode15354)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Currency.staticClass, global::java.util.Currency._getCurrencyCode13642));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._getCurrencyCode15354)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSymbol13643;
+		internal static global::MonoJavaBridge.MethodId _getSymbol15355;
 		public global::java.lang.String getSymbol(java.util.Locale arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Currency._getSymbol13643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Currency._getSymbol15355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Currency.staticClass, global::java.util.Currency._getSymbol13643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._getSymbol15355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSymbol13644;
+		internal static global::MonoJavaBridge.MethodId _getSymbol15356;
 		public global::java.lang.String getSymbol() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Currency._getSymbol13644));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Currency._getSymbol15356)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Currency.staticClass, global::java.util.Currency._getSymbol13644));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._getSymbol15356)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultFractionDigits13645;
+		internal static global::MonoJavaBridge.MethodId _getDefaultFractionDigits15357;
 		public int getDefaultFractionDigits() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Currency._getDefaultFractionDigits13645);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Currency._getDefaultFractionDigits15357);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Currency.staticClass, global::java.util.Currency._getDefaultFractionDigits13645);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._getDefaultFractionDigits15357);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.Currency.staticClass = @__class;
-			global::java.util.Currency._toString13639 = @__env.GetMethodID(global::java.util.Currency.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.util.Currency._getInstance13640 = @__env.GetStaticMethodID(global::java.util.Currency.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/util/Currency;");
-			global::java.util.Currency._getInstance13641 = @__env.GetStaticMethodID(global::java.util.Currency.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/util/Currency;");
-			global::java.util.Currency._getCurrencyCode13642 = @__env.GetMethodID(global::java.util.Currency.staticClass, "getCurrencyCode", "()Ljava/lang/String;");
-			global::java.util.Currency._getSymbol13643 = @__env.GetMethodID(global::java.util.Currency.staticClass, "getSymbol", "(Ljava/util/Locale;)Ljava/lang/String;");
-			global::java.util.Currency._getSymbol13644 = @__env.GetMethodID(global::java.util.Currency.staticClass, "getSymbol", "()Ljava/lang/String;");
-			global::java.util.Currency._getDefaultFractionDigits13645 = @__env.GetMethodID(global::java.util.Currency.staticClass, "getDefaultFractionDigits", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.Currency.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Currency"));
+			global::java.util.Currency._toString15351 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Currency._getInstance15352 = @__env.GetStaticMethodIDNoThrow(global::java.util.Currency.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/util/Currency;");
+			global::java.util.Currency._getInstance15353 = @__env.GetStaticMethodIDNoThrow(global::java.util.Currency.staticClass, "getInstance", "(Ljava/lang/String;)Ljava/util/Currency;");
+			global::java.util.Currency._getCurrencyCode15354 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getCurrencyCode", "()Ljava/lang/String;");
+			global::java.util.Currency._getSymbol15355 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getSymbol", "(Ljava/util/Locale;)Ljava/lang/String;");
+			global::java.util.Currency._getSymbol15356 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getSymbol", "()Ljava/lang/String;");
+			global::java.util.Currency._getDefaultFractionDigits15357 = @__env.GetMethodIDNoThrow(global::java.util.Currency.staticClass, "getDefaultFractionDigits", "()I");
 		}
 	}
 }

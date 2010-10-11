@@ -1,105 +1,101 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Point : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Point : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Point()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Point), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.Point(@__env);
-			}
-		}
-		protected Point(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Point(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals3433;
+		internal static global::MonoJavaBridge.MethodId _equals3619;
 		public virtual bool equals(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.Point._equals3433, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Point._equals3619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals3433, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals3619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals3434;
+		internal static global::MonoJavaBridge.MethodId _equals3620;
 		public override bool equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.Point._equals3434, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Point._equals3620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals3434, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals3620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString3435;
+		internal static global::MonoJavaBridge.MethodId _toString3621;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Point._toString3435));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Point._toString3621)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._toString3435));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._toString3621)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode3436;
+		internal static global::MonoJavaBridge.MethodId _hashCode3622;
 		public override int hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.Point._hashCode3436);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Point._hashCode3622);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._hashCode3436);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._hashCode3622);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _offset3437;
+		internal static global::MonoJavaBridge.MethodId _offset3623;
 		public virtual void offset(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.Point._offset3437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Point._offset3623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._offset3437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._offset3623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set3438;
+		internal static global::MonoJavaBridge.MethodId _set3624;
 		public virtual void set(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.Point._set3438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Point._set3624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._set3438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._set3624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _negate3439;
+		internal static global::MonoJavaBridge.MethodId _negate3625;
 		public virtual void negate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.Point._negate3439);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Point._negate3625);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._negate3439);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Point.staticClass, global::android.graphics.Point._negate3625);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Point3440;
-		public Point(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Point3626;
+		public Point(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.Point.staticClass, global::android.graphics.Point._Point3440, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Point.staticClass, global::android.graphics.Point._Point3626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Point3441;
-		public Point(android.graphics.Point arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Point3627;
+		public Point(android.graphics.Point arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.Point.staticClass, global::android.graphics.Point._Point3441, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Point.staticClass, global::android.graphics.Point._Point3627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Point3442;
-		public Point()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Point3628;
+		public Point()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.Point.staticClass, global::android.graphics.Point._Point3442, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Point.staticClass, global::android.graphics.Point._Point3628);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _x3443;
+		internal static global::MonoJavaBridge.FieldId _x3629;
 		public int x
 		{
 			get
@@ -110,7 +106,7 @@ namespace android.graphics
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _y3444;
+		internal static global::MonoJavaBridge.FieldId _y3630;
 		public int y
 		{
 			get
@@ -121,19 +117,20 @@ namespace android.graphics
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.Point.staticClass = @__class;
-			global::android.graphics.Point._equals3433 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "equals", "(II)Z");
-			global::android.graphics.Point._equals3434 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.graphics.Point._toString3435 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.graphics.Point._hashCode3436 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "hashCode", "()I");
-			global::android.graphics.Point._offset3437 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "offset", "(II)V");
-			global::android.graphics.Point._set3438 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "set", "(II)V");
-			global::android.graphics.Point._negate3439 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "negate", "()V");
-			global::android.graphics.Point._Point3440 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "<init>", "(II)V");
-			global::android.graphics.Point._Point3441 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "<init>", "(Landroid/graphics/Point;)V");
-			global::android.graphics.Point._Point3442 = @__env.GetMethodID(global::android.graphics.Point.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.Point.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Point"));
+			global::android.graphics.Point._equals3619 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "equals", "(II)Z");
+			global::android.graphics.Point._equals3620 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.graphics.Point._toString3621 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.graphics.Point._hashCode3622 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "hashCode", "()I");
+			global::android.graphics.Point._offset3623 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "offset", "(II)V");
+			global::android.graphics.Point._set3624 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "set", "(II)V");
+			global::android.graphics.Point._negate3625 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "negate", "()V");
+			global::android.graphics.Point._Point3626 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "<init>", "(II)V");
+			global::android.graphics.Point._Point3627 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "<init>", "(Landroid/graphics/Point;)V");
+			global::android.graphics.Point._Point3628 = @__env.GetMethodIDNoThrow(global::android.graphics.Point.staticClass, "<init>", "()V");
 		}
 	}
 }

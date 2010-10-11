@@ -1,40 +1,36 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class RadialGradient : android.graphics.Shader
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class RadialGradient : android.graphics.Shader
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static RadialGradient()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.RadialGradient), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.RadialGradient(@__env);
-			}
-		}
-		protected RadialGradient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected RadialGradient(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RadialGradient3478;
-		public RadialGradient(float arg0, float arg1, float arg2, int[] arg3, float[] arg4, android.graphics.Shader.TileMode arg5)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RadialGradient3664;
+		public RadialGradient(float arg0, float arg1, float arg2, int[] arg3, float[] arg4, android.graphics.Shader.TileMode arg5)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.RadialGradient.staticClass, global::android.graphics.RadialGradient._RadialGradient3478, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.RadialGradient.staticClass, global::android.graphics.RadialGradient._RadialGradient3664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RadialGradient3479;
-		public RadialGradient(float arg0, float arg1, float arg2, int arg3, int arg4, android.graphics.Shader.TileMode arg5)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RadialGradient3665;
+		public RadialGradient(float arg0, float arg1, float arg2, int arg3, int arg4, android.graphics.Shader.TileMode arg5)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.RadialGradient.staticClass, global::android.graphics.RadialGradient._RadialGradient3479, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.RadialGradient.staticClass, global::android.graphics.RadialGradient._RadialGradient3665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.RadialGradient.staticClass = @__class;
-			global::android.graphics.RadialGradient._RadialGradient3478 = @__env.GetMethodID(global::android.graphics.RadialGradient.staticClass, "<init>", "(FFF[I[FLandroid/graphics/Shader$TileMode;)V");
-			global::android.graphics.RadialGradient._RadialGradient3479 = @__env.GetMethodID(global::android.graphics.RadialGradient.staticClass, "<init>", "(FFFIILandroid/graphics/Shader$TileMode;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.RadialGradient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/RadialGradient"));
+			global::android.graphics.RadialGradient._RadialGradient3664 = @__env.GetMethodIDNoThrow(global::android.graphics.RadialGradient.staticClass, "<init>", "(FFF[I[FLandroid/graphics/Shader$TileMode;)V");
+			global::android.graphics.RadialGradient._RadialGradient3665 = @__env.GetMethodIDNoThrow(global::android.graphics.RadialGradient.staticClass, "<init>", "(FFFIILandroid/graphics/Shader$TileMode;)V");
 		}
 	}
 }

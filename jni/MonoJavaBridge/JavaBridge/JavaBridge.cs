@@ -1,346 +1,553 @@
-using System;
-using System.Runtime.InteropServices;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-
-using net.sf.jni4net;
-using net.sf.jni4net.jni;
-using net.sf.jni4net.utils;
-
-using System.IO;
-using System.Text;
-
+﻿using System;
 using System.Collections.Generic;
-
-using Class = java.lang.Class;
-
-namespace com.koushikdutta.monojavabridge.test
-{
-	public class BridgeTest
-	{
-	}
-}
+using System.Linq;
+using System.Text;
+using System.Reflection;
 
 namespace MonoJavaBridge
 {
-	public class LogWriter : TextWriter
-	{
-		public override Encoding Encoding {
-			get {
-				return Encoding.ASCII;
-			}
-		}
+    public static partial class JavaBridge
+    {
+		private static bool mHasInitializedClassMethods = false;
+        private static MethodId mGetName;
+        private static MethodId mGetCanonicalName;
+		private static MethodId mGetSuperclass; 
 
-		StringBuilder buffer = new StringBuilder();
-		public override void Write (char value)
+		private static void InitializeClassMethods(JNIEnv env)
 		{
-			if (value == '\n')
-			{
-				JavaBridge.Log(buffer.ToString());
-				buffer = new StringBuilder();
-			}
-			else
-			{
-				buffer.Append(value);
-			}
-		}
-        
-        private LogWriter()
-        {
-        }
-        
-        static LogWriter myInstance = new LogWriter();
-        public static LogWriter Instance
-        {
-            get
-            {
-                return myInstance;
+            if (!mHasInitializedClassMethods) {
+                JniLocalHandle classClass = env.FindClass("java/lang/Class");
+                mGetName = env.GetMethodID(classClass, "getName", "()Ljava/lang/String;");
+                mGetCanonicalName = env.GetMethodID(classClass, "getCanonicalName", "()Ljava/lang/String;");
+                mGetSuperclass = env.GetMethodID(classClass, "getSuperclass", "()Ljava/lang/Class;");
+                mHasInitializedClassMethods = true;
             }
-        }
-	}
-	
-	public static class JavaBridge
-	{
-		public static void Log(string format, params object[] args)
-		{
-			string s = String.Format(format, args);
-			IntPtr p = Marshal.StringToHGlobalAnsi(s);
-			log(p);
-			Marshal.FreeHGlobal(p);
 		}
+
+		private static Dictionary<string, Wrapper> mWrappers = new Dictionary<string, Wrapper>();
 		
-		static JavaVM myVM;
-        static List<Type> myActions = new List<Type>();
-        static List<Type> myFuncs = new List<Type>();
-        static MethodInfo myStrongJ2CpUntyped = null;
-        static MethodInfo myCLRHandleToObject = null;
-        static MethodInfo myExpressionLambda = null;
-        
-        // this is to prevent an ambiguous method when searching for the wrapped method
-        // even with exact parameters provided, I was getting ambiguous method exceptions
-        public static Expression<TDelegate> LambdaPassthrough<TDelegate>(Expression body, params ParameterExpression[] parameters)
+		private class Wrapper
+		{
+			public Type Type;
+			public ConstructorInfo Constructor;
+		}
+
+        private static string GetClassName(JNIEnv env, JniHandle clazz)
         {
-            return Expression.Lambda<TDelegate>(body, parameters);
+            InitializeClassMethods(env);
+            JniLocalHandle nameHandle = env.CallObjectMethod(clazz, mGetName);
+            return env.ConvertToString(nameHandle);
         }
-        
-		static JavaBridge()
-		{
-            Console.SetOut(LogWriter.Instance);
-            Console.SetError(LogWriter.Instance);
-            Console.WriteLine("Mono initialized.");
 
-            myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
-            myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
-            myExpressionLambda = typeof(JavaBridge).GetMethod("LambdaPassthrough");
-            Console.WriteLine(myExpressionLambda);
-            
-            myActions.Add(typeof(JniAction));
-            myActions.Add(typeof(JniAction<int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myActions.Add(typeof(JniAction<int, int, int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-
-            myFuncs.Add(typeof(JniFunc<int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
-            myFuncs.Add(typeof(JniFunc<int, int, int, int, int, int, int, int, int, int, int>).GetGenericTypeDefinition());
+        private static string GetClassCanonicalName(JNIEnv env, JniHandle clazz)
+        {
+            InitializeClassMethods(env);
+            JniLocalHandle nameHandle = env.CallObjectMethod(clazz, mGetCanonicalName);
+            return env.ConvertToString(nameHandle);
         }
-		
-		static JNIEnv GetEnv() 
-		{
-			return JNIEnv.GetEnvForVm(myVM);
-		}
-		
-		static void Initialize(IntPtr vm)
-		{
-			myVM = new JavaVM(vm);
-			Log("Setting JVM");
-			Bridge.SetJVM(myVM);
-            Bridge.Setup.VeryVerbose = Bridge.Setup.Verbose = true;
-			var env = JNIEnv.GetEnvForVm(myVM);
-			Registry.Initialize();
-			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
-            
-            // add the jni4net assembly
-            myAssemblies.Add(typeof(java.lang.Object).Assembly.FullName);
-            
-            
-            myMonoProxyClass = env.FindClass("com/koushikdutta/monojavabridge/MonoProxy");
-            mySetGCHandle = env.GetMethodID(myMonoProxyClass, "setGCHandle", "(J)V"); 
-            myGetGCHandle = env.GetMethodID(myMonoProxyClass, "getGCHandle", "()J"); 
-		}
-		
-		static List<string> myAssemblies = new List<string>();
 
-		static void LoadAssembly(IntPtr assemblyNamePtr)
+		private static JniLocalHandle GetSuperclass(JNIEnv env, JniHandle clazz)
 		{
-			String assemblyName = GetEnv().ConvertToString(assemblyNamePtr);
-			Console.WriteLine("Loading Assembly: {0}", assemblyName);
-			var assembly = Assembly.LoadFile(assemblyName);
-			if (assembly != null)
-				myAssemblies.Add(assembly.FullName);
-            Console.WriteLine("Done loading assembly");
+            InitializeClassMethods(env);
+			return env.CallObjectMethod(clazz, mGetSuperclass);
 		}
 
-		[MethodImpl(MethodImplOptions.InternalCall)]
-		extern static void log(IntPtr p);
+        public static string GetObjectClassName(JniHandle handle)
+        {
+            if (JniHandle.IsNull(handle))
+                return null;
+            
+            JNIEnv env = JNIEnv.ThreadEnv;
+            var classHandle = env.GetObjectClass(handle);
+            return GetClassName(env, classHandle);
+        }
 
-		[MethodImpl(MethodImplOptions.InternalCall)]
-		extern static object mono_pointer_to_object(IntPtr ptr);
-		
-		[MethodImpl(MethodImplOptions.InternalCall)]
-		extern static IntPtr mono_object_to_pointer(Object o);
-        
         public static Type FindType(string typeName)
         {
-            foreach (string assembly in myAssemblies)
-            {
-                var type = Type.GetType(typeName + "," + assembly);
+            var type = Type.GetType(typeName);
+            if (type != null)
+                return type;
+            foreach (string assembly in myAssemblies) {
+                type = Type.GetType(typeName + "," + assembly);
                 if (type != null)
                     return type;
             }
             return null;
         }
 
-        delegate void JniAction(IntPtr env, IntPtr obj);
-        delegate void JniAction<T1>(IntPtr env, IntPtr obj, T1 t1);
-        delegate void JniAction<T1, T2>(IntPtr env, IntPtr obj, T1 t1, T2 t2);
-        delegate void JniAction<T1, T2, T3>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3);
-        delegate void JniAction<T1, T2, T3, T4>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4);
-        delegate void JniAction<T1, T2, T3, T4, T5>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5);
-        delegate void JniAction<T1, T2, T3, T4, T5, T6>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6);
-        delegate void JniAction<T1, T2, T3, T4, T5, T6, T7>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7);
-        delegate void JniAction<T1, T2, T3, T4, T5, T6, T7, T8>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8);
-        delegate void JniAction<T1, T2, T3, T4, T5, T6, T7, T8, T9>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9);
-        delegate void JniAction<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, T10 t10);
-
-        delegate TResult JniFunc<TResult>(IntPtr env, IntPtr obj, TResult tr);
-        delegate TResult JniFunc<T1, TResult>(IntPtr env, IntPtr obj, T1 t1, TResult tr);
-        delegate TResult JniFunc<T1, T2, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, T10 t10, TResult tr);
-
-        static Expression MarshalArgument(Type argumentType, ParameterExpression parameter)
+        public static T WrapJavaObjectSealedClass<T>(JniHandle handle) where T: class
         {
-            return Expression.Convert(Expression.Call(myStrongJ2CpUntyped, parameter), argumentType);
+			return WrapJavaObjectSealedClass(handle, typeof(T)) as T;
         }
-        
-        static Class myMonoProxyClass;
-        static MethodId myGetGCHandle;
-        static MethodId mySetGCHandle;
-        public static TRes CLRHandleToObject<TRes>(IntPtr obj)
+		
+        public static object WrapJavaObjectSealedClass(JniHandle handle, Type type)
         {
-            var env = JNIEnv.ThreadEnv;
-            long handleLong  = env.CallLongMethod(obj, myGetGCHandle);
-            TRes ret;
-            if (handleLong != 0)
-            {
-                ret = (TRes)GCHandle.FromIntPtr((IntPtr)handleLong).Target;
-            }
-            else
-            {
-                ret = net.sf.jni4net.utils.Convertor.StrongJ2CpTyped<TRes>(obj);
-                var handle = GCHandle.Alloc(ret, GCHandleType.Normal);
-                env.CallVoidMethod(obj, mySetGCHandle, Convertor.ParPrimC2J((long)GCHandle.ToIntPtr(handle)));
-            }
-            return ret;
+			if (JniHandle.IsNull(handle))
+				return null;
+			Wrapper wrapper = GetWrapper(type.FullName);
+			return wrapper.Constructor.Invoke(null);
         }
-        
-        static Expression MarshalCLRHandle(ParameterExpression obj, Type type)
-        {
-            MethodInfo clrHandleToObject = myCLRHandleToObject.MakeGenericMethod(type);
-            return Expression.Call(clrHandleToObject, obj);
-        }
-        
-        static Type GetJNITypeForClrType(Type type)
-        {
-            if (type.IsPrimitive)
-                return type;
-            return typeof(IntPtr);
-        }
-        
-        public static Delegate MakeWrapper(MethodInfo method)
-        {
-            // first lets figure out the delegate we need to implement, and the lambda expression that needs to be constructed
-            Type delegateType = null;
-            var clrParameters = (from par in method.GetParameters() select par.ParameterType).ToArray();
-            var jniParameters = (from par in clrParameters select GetJNITypeForClrType(par)).ToArray();
-            List<Type> genericArguments = new List<Type>();
-            genericArguments.AddRange(jniParameters);
-            if (method.ReturnType != typeof(void))
-            {
-                genericArguments.Add(method.ReturnType);
-                delegateType = myFuncs[genericArguments.Count];
-            }
-            else
-            {
-                delegateType = myActions[genericArguments.Count];
-            }
-            if (method.ReturnType != typeof(void) || genericArguments.Count > 0)
-                delegateType = delegateType.MakeGenericType(genericArguments.ToArray());
-            Console.WriteLine("Constructed delegate type: {0}", delegateType);
-            MethodInfo expressionMethodInfo = myExpressionLambda.MakeGenericMethod(delegateType);
-            Console.WriteLine("Constructed Expression.Lambda<T>: {0}", expressionMethodInfo);
-            
-            // now let's construct the parameter list to the expression lambda
-            var parameterExpressions = (from par in method.GetParameters() select Expression.Parameter(GetJNITypeForClrType(par.ParameterType), par.Name)).ToArray();
-            List<ParameterExpression> fullParameterList = new List<ParameterExpression>();
-            ParameterExpression env;
-            fullParameterList.Add(env = Expression.Parameter(typeof(IntPtr), "env"));
-            ParameterExpression obj;
-            fullParameterList.Add(obj = Expression.Parameter(typeof(IntPtr), "obj"));
-            // and now we have it
-            fullParameterList.AddRange(parameterExpressions);
-            
-            // we need to marshal the arguments in parameterExpressions to what the method expects.
-            var marshaledParameterExpressions = new Expression[clrParameters.Length];
-            for (int i = 0; i < clrParameters.Length; i++)
-            {
-                marshaledParameterExpressions[i] = MarshalArgument(clrParameters[i], parameterExpressions[i]);
-            }
-            
-            var methodExpression = Expression.Call(MarshalCLRHandle(obj, method.DeclaringType), method, marshaledParameterExpressions);
-            Console.WriteLine("Method Expression: {0}", methodExpression);
-            //var lambdaExpression = expressionMethodInfo.Invoke(null, new object[] { methodExpression, fullParameterList.ToArray() });
-            var lambdaExpression = Expression.Lambda(delegateType, methodExpression, fullParameterList.ToArray());
-            Console.WriteLine("Lambda Expression: {0}", lambdaExpression);
-            
-            //var del = (Delegate)lambdaExpressionCompileMethod.Invoke(lambdaExpression, null);
-            
-            return lambdaExpression.Compile();
-        }
-        
-		public static void Link(IntPtr classHandle, IntPtr methodNameHandle, IntPtr methodSignatureHandle, IntPtr methodParametersHandle)
+		
+		private static Wrapper GetWrapper(string className)
 		{
-			JNIEnv env = JNIEnv.GetEnvForVm(myVM);
+			Wrapper ret;
+			if (mWrappers.TryGetValue(className, out ret))
+				return ret;
+			// see if we can register a wrapper
+			Type type = FindType(className);
+			if (type != null)
+			{
+				ret = new Wrapper();
+				ret.Type = type;
+				ret.Constructor = type.GetConstructor(BindingFlags.Instance | BindingFlags.CreateInstance | BindingFlags.Public | BindingFlags.NonPublic, null, new Type[]{ typeof(JNIEnv) }, null);
+				return ret;
+			}
+			return null;
+		}
+		
+		private static Wrapper GetWrapper(JNIEnv env, JniHandle clazz)
+		{
+			// first see if we've already registered a wrapper
+			string className = GetClassName(env, clazz);
+			return GetWrapper(className);
+		}
+        
+        public static T[] WrapJavaArrayObject<T>(JniLocalHandle handle)
+        {
+            if (JniHandle.IsNull(handle))
+                return null;
             
-            var clazz = net.sf.jni4net.utils.Convertor.StrongJ2CpClass(env, classHandle);
-            var methodName = env.ConvertToString(methodNameHandle);
-            var methodSig = env.ConvertToString(methodSignatureHandle);
-            var methodPars = methodParametersHandle == IntPtr.Zero ? null : env.ConvertToString(methodParametersHandle);
-            Console.WriteLine("Linking java class method: {0}.{1}", clazz, methodName);
-            Type type = FindType(clazz.getCanonicalName());
-            if (type == null)
+            JNIEnv env = JNIEnv.ThreadEnv;
+            var length = env.GetArrayLength(handle);
+            T[] ret = new T[length];
+            
+            Type type = typeof(T).GetElementType();
+            if (type.IsPrimitive)
             {
-                Console.WriteLine("Could not find clr type.");
-                return;
-            }
-            
-            Console.WriteLine("Found clr type: {0}", type);
-            
-            Type[] parameterTypes = null;
-            if (!string.IsNullOrEmpty(methodPars))
-            {
-                var parameterTypeStrings = methodPars.Split(',');
-                parameterTypes = new Type[parameterTypeStrings.Length];
-                for (int i = 0; i < parameterTypeStrings.Length; i++)
+                if (type == typeof (int) || type == typeof (uint))
                 {
-                    parameterTypes[i] = FindType(parameterTypeStrings[i]);
-                    if (parameterTypes[i] == null)
-                        Console.WriteLine("Could not find {0}", parameterTypeStrings[i]);
-                    else 
-                        Console.WriteLine("Found type {0}", parameterTypes[i]);
+                    env.GetIntArrayRegion(handle, 0, length, ret as int[]);
+                    return ret;
+                }
+                if (type == typeof (long) || type == typeof (ulong))
+                {
+                    env.GetLongArrayRegion(handle, 0, length, ret as long[]);
+                    return ret;
+                }
+                if (type == typeof (bool))
+                {
+                    env.GetBooleanArrayRegion(handle, 0, length, ret as bool[]);
+                    return ret;
+                }
+                if (type == typeof (double))
+                {
+                    env.GetDoubleArrayRegion(handle, 0, length, ret as double[]);
+                    return ret;
+                }
+                if (type == typeof (byte) || type == typeof (sbyte))
+                {
+                    env.GetByteArrayRegion(handle, 0, length, ret as byte[]);
+                    return ret;
+                }
+                if (type == typeof (char))
+                {
+                    env.GetCharArrayRegion(handle, 0, length, ret as char[]);
+                    return ret;
+                }
+                if (type == typeof (short) || type == typeof (ushort))
+                {
+                    env.GetShortArrayRegion(handle, 0, length, ret as short[]);
+                    return ret;
+                }
+                if (type == typeof (float))
+                {
+                    env.GetFloatArrayRegion(handle, 0, length, ret as float[]);
+                    return ret;
                 }
             }
             
-            var method = type.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance, null, parameterTypes ?? new Type[] {}, null);
-            Console.WriteLine("Linking Method: {0} to {1}", method, methodSig);
-            var del = MakeWrapper(method);
-            myLinks.Add(del);
+            if (type.IsArray)
+            {
+                MethodInfo method = mWrapJavaArrayObject.MakeGenericMethod(type.GetElementType());
+                for (int i = 0; i < length; i++)
+                {
+                    ret[i] = (T)method.Invoke(null, new object[] { env.GetObjectArrayElement(handle, i) });
+                }
+            }
+            else if (type.IsInterface)
+            {
+                MethodInfo method = mWrapIJavaObject.MakeGenericMethod(type);
+                for (int i = 0; i < length; i++)
+                {
+                    ret[i] = (T)method.Invoke(null, new object[] { env.GetObjectArrayElement(handle, i) });
+                }
+            }
+            else if (type.IsSubclassOf(typeof(JavaException)))
+            {
+                JavaException[] exceptions = ret as JavaException[];
+                for (int i = 0; i < length; i++)
+                {
+                    exceptions[i] = WrapJavaException(env.GetObjectArrayElement(handle, i));
+                }
+            }            
+            else if (type.IsSubclassOf(typeof(JavaObject)))
+            {
+                JavaObject[] objects = ret as JavaObject[];
+                for (int i = 0; i < length; i++)
+                {
+                    objects[i] = WrapJavaObject(env.GetObjectArrayElement(handle, i));
+                }
+            }
+            else
+            {
+                throw new InvalidOperationException("Trying to convert unknown type.");
+            }
             
-            JNINativeMethod m = JNINativeMethod.Create(del, methodName, methodSig);
-            m.Register(clazz, env);
-            Console.WriteLine("Registration complete");
-		}
-        static List<Delegate> myLinks = new List<Delegate>();
-        
-        public static void Attach(java.lang.Object o, IJvmProxy obj)
-        {
-            Console.WriteLine("attaching {0}", o);
-            var env = JNIEnv.ThreadEnv;
-            var handle = GCHandle.Alloc(o, GCHandleType.WeakTrackResurrection);
-            env.CallVoidMethod(obj, mySetGCHandle, Convertor.ParPrimC2J((long)GCHandle.ToIntPtr(handle)));
+            return ret;
         }
-	}
+        
+        public static JavaObject WrapJavaObject(JniLocalHandle handle)
+        {
+            if (JniHandle.IsNull(handle))
+                return null;
+            JNIEnv env = JNIEnv.ThreadEnv;
+            JniLocalHandle clazz = env.GetObjectClass(handle);
+            Wrapper wrapper;
+            while (null == (wrapper = GetWrapper(env, clazz)))
+            {
+                clazz = GetSuperclass(env, clazz);
+            }
+            var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaObject;
+            ret.Init(env, handle);
+            return ret;
+        }
+        
+        public static JavaException WrapJavaException(JniLocalHandle handle)
+        {
+            if (JniHandle.IsNull(handle))
+                return null;
+            JNIEnv env = JNIEnv.ThreadEnv;
+            JniLocalHandle clazz = env.GetObjectClass(handle);
+            Wrapper wrapper;
+            while (null == (wrapper = GetWrapper(env, clazz)))
+            {
+                clazz = GetSuperclass(env, clazz);
+            }
+            var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaException;
+            ret.Init(env, handle);
+            return ret;
+        }        
+        
+        public static T WrapIJavaObject<T>(JniLocalHandle handle) where T: class, IJavaObject
+        {
+            if (JniHandle.IsNull(handle))
+                return null;
+            JNIEnv env = JNIEnv.ThreadEnv;
+            JniLocalHandle clazz = env.GetObjectClass(handle);
+            Wrapper wrapper;
+            while (null == (wrapper = GetWrapper(env, clazz)))
+            {
+                clazz = GetSuperclass(env, clazz);
+            }
+            if (!wrapper.Type.GetInterfaces().Contains(typeof(T)))
+            {
+                wrapper = GetWrapper(typeof(T).FullName + "_");
+            }
+            var ret = wrapper.Constructor.Invoke(new object[] { env }) as T;
+            ret.Init(env, handle);
+            return ret;
+        }
+
+        public static Value ConvertToValue(JavaObject o)
+        {
+			if (o == null)
+				return Value.Null;
+
+			Value ret = new Value();
+            ret._object = o.mJvmHandle;
+            return ret;
+        }
+
+        public static Value ConvertToValue(JavaException o)
+        {
+			if (o == null)
+				return Value.Null;
+
+			Value ret = new Value();
+            ret._object = o.mJvmHandle;
+            return ret;
+        }
+		
+        public static string GetSignature(string typeName)
+        {
+            string low = typeName.ToLowerInvariant();
+            int arr = low.LastIndexOf("[");
+            string array = "";
+            while (arr != -1)
+            {
+                array += "[";
+                low = low.Substring(0, arr);
+                arr = low.LastIndexOf("[");
+            }
+            switch (low)
+            {
+                case "bool":
+                case "boolean":
+                case "system.boolean":
+                    return array + "Z";
+                case "int":
+                case "int32":
+                case "system.int32":
+                    return array + "I";
+                case "double":
+                case "system.double":
+                    return array + "D";
+                case "float":
+                case "single":
+                case "system.single":
+                    return array + "F";
+                case "short":
+                case "int16":
+                case "system.int16":
+                    return array + "S";
+                case "long":
+                case "int64":
+                case "system.int64":
+                    return array + "J";
+                case "char":
+                case "system.char":
+                    return array + "C";
+                case "byte":
+                case "system.byte":
+                    return array + "B";
+                case "void":
+                case "system.void":
+                    return array + "V";
+                default:
+                    return array + "L" + typeName.Substring(0, low.Length).Replace('.', '/') + ";";
+            }
+        }
+
+        private static Value ConvertPrimitiveToValue(JNIEnv env, object obj, Type type)
+        {
+            if (type == typeof (int) || type == typeof (uint))
+            {
+                return ConvertToValue((int) obj);
+            }
+            if (type == typeof (long) || type == typeof (ulong))
+            {
+                return ConvertToValue((long) obj);
+            }
+            if (type == typeof (bool))
+            {
+                return ConvertToValue((bool) obj);
+            }
+            if (type == typeof (double))
+            {
+                return ConvertToValue((double) obj);
+            }
+            if (type == typeof (byte) || type == typeof (sbyte))
+            {
+                return ConvertToValue((byte) obj);
+            }
+            if (type == typeof (char))
+            {
+                return ConvertToValue((char) obj);
+            }
+            if (type == typeof (short) || type == typeof (ushort))
+            {
+                return ConvertToValue((short) obj);
+            }
+            if (type == typeof (float))
+            {
+                return ConvertToValue((float) obj);
+            }
+            throw new InvalidOperationException("Unknown simple type" + type);
+        }
+				
+        private static Value ConvertToValue(JNIEnv env, object o)
+        {
+			// check if this is a primitive
+			Type type = o.GetType();
+			if (type.IsPrimitive)
+			{
+				return ConvertPrimitiveToValue(env, o, type);
+			}
+			
+			// if it's not an array, cast to IJavaObject
+			Array array = o as Array;
+			if (array == null)
+				return ConvertToValue(o);
+			
+			// it's an array, so create the proper array type and convert the individual elements recursively
+			string classSignature = GetSignature(type.GetElementType().FullName);
+			JniLocalHandle clazzHandle = env.FindClass(classSignature);
+			JniLocalHandle arrayHandle = env.NewObjectArray(array.Length, clazzHandle, JniLocalHandle.Zero);
+			for (int i = 0; i < array.Length; i++)
+			{
+				JniHandle element = new JniHandle();
+				element.handle = ConvertToValue(env, array.GetValue(i))._object;
+				env.SetObjectArrayElement(arrayHandle, i, element);
+			}
+			Value ret = new Value();
+			ret._object = arrayHandle;
+			return ret;
+        }
+		
+		public static Value ConvertToValue(object o)
+		{
+			if (o == null)
+				return Value.Null;
+
+			IJavaObject i = o as IJavaObject;
+            Value ret = new Value();
+            ret._object = i.JvmHandle;
+            return ret;
+		}
+
+        public static Value ConvertToValue<T>(T[] o)
+        {
+			if (o == null)
+				return Value.Null;
+
+			JNIEnv env = JNIEnv.ThreadEnv;
+			return ConvertToValue(env, o);
+        }
+
+        public static Value ConvertToValue(int value)
+        {
+            var res = new Value { _int = value };
+            return res;
+        }
+
+        public static Value ConvertToValue(bool value)
+        {
+            var res = new Value { _bool = value ? (byte)1 : (byte)0 };
+            return res;
+        }
+
+        public static Value ConvertToValue(byte value)
+        {
+            var res = new Value { _byte = value };
+            return res;
+        }
+
+        public static Value ConvertToValue(char value)
+        {
+            var res = new Value { _char = (short)value };
+            return res;
+        }
+
+        public static Value ConvertToValue(short value)
+        {
+            var res = new Value { _short = value };
+            return res;
+        }
+
+        public static Value ConvertToValue(long value)
+        {
+            var res = new Value { _long = value };
+            return res;
+        }
+
+        public static Value ConvertToValue(float value)
+        {
+            var res = new Value { _float = value };
+            return res;
+        }
+
+        public static Value ConvertToValue(double value)
+        {
+            var res = new Value { _double = value };
+            return res;
+        }
+
+        public static Value ConvertToValue(JNIEnv env, int[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewIntArray(length);
+            env.SetIntArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, long[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewLongArray(length);
+            env.SetLongArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, short[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewShortArray(length);
+            env.SetShortArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, byte[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewByteArray(length);
+            env.SetByteArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, char[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewCharArray(length);
+            env.SetCharArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, double[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewDoubleArray(length);
+            env.SetDoubleArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, float[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewFloatArray(length);
+            env.SetFloatArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+
+        public static Value ConvertToValue(JNIEnv env, bool[] value)
+        {
+            if (value == null) {
+                return Value.Null;
+            }
+            int length = value.Length;
+            JniLocalHandle res = env.NewBooleanArray(length);
+            env.SetBooleanArrayRegion(res, 0, length, value);
+            return new Value { _object = res };
+        }
+    }
 }

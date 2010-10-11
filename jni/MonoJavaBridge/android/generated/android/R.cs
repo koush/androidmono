@@ -1,46 +1,33 @@
 namespace android
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class R : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class R : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static R()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.R(@__env);
-			}
-		}
-		internal R(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal R(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class anim : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class anim : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static anim()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.anim), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.anim(@__env);
-				}
-			}
-			internal anim(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal anim(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _anim3;
-			public anim()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _anim3;
+			public anim()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.anim.staticClass, global::android.R.anim._anim3, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.anim.staticClass, global::android.R.anim._anim3);
+				Init(@__env, handle);
 			}
 			public static int accelerate_decelerate_interpolator
 			{
@@ -133,35 +120,30 @@ namespace android
 					return 17432579;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.anim.staticClass = @__class;
-				global::android.R.anim._anim3 = @__env.GetMethodID(global::android.R.anim.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.anim.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$anim"));
+				global::android.R.anim._anim3 = @__env.GetMethodIDNoThrow(global::android.R.anim.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class array : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class array : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static array()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.array), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.array(@__env);
-				}
-			}
-			internal array(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal array(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _array4;
-			public array()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _array4;
+			public array()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.array.staticClass, global::android.R.array._array4, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.array.staticClass, global::android.R.array._array4);
+				Init(@__env, handle);
 			}
 			public static int emailAddressTypes
 			{
@@ -198,35 +180,30 @@ namespace android
 					return 17235972;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.array.staticClass = @__class;
-				global::android.R.array._array4 = @__env.GetMethodID(global::android.R.array.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.array.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$array"));
+				global::android.R.array._array4 = @__env.GetMethodIDNoThrow(global::android.R.array.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class attr : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class attr : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static attr()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.attr), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.attr(@__env);
-				}
-			}
-			internal attr(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal attr(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _attr5;
-			public attr()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _attr5;
+			public attr()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.attr.staticClass, global::android.R.attr._attr5, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.attr.staticClass, global::android.R.attr._attr5);
+				Init(@__env, handle);
 			}
 			public static int absListViewStyle
 			{
@@ -5135,65 +5112,55 @@ namespace android
 					return 16843201;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.attr.staticClass = @__class;
-				global::android.R.attr._attr5 = @__env.GetMethodID(global::android.R.attr.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.attr.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$attr"));
+				global::android.R.attr._attr5 = @__env.GetMethodIDNoThrow(global::android.R.attr.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class @bool : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class @bool : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static @bool()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.@bool), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.@bool(@__env);
-				}
-			}
-			internal @bool(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal @bool(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bool6;
-			public @bool()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _bool6;
+			public @bool()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.@bool.staticClass, global::android.R.@bool._bool6, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.@bool.staticClass, global::android.R.@bool._bool6);
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.@bool.staticClass = @__class;
-				global::android.R.@bool._bool6 = @__env.GetMethodID(global::android.R.@bool.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.@bool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$@bool"));
+				global::android.R.@bool._bool6 = @__env.GetMethodIDNoThrow(global::android.R.@bool.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class color : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class color : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static color()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.color), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.color(@__env);
-				}
-			}
-			internal color(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal color(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _color7;
-			public color()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _color7;
+			public color()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.color.staticClass, global::android.R.color._color7, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.color.staticClass, global::android.R.color._color7);
+				Init(@__env, handle);
 			}
 			public static int background_dark
 			{
@@ -5321,35 +5288,30 @@ namespace android
 					return 17170442;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.color.staticClass = @__class;
-				global::android.R.color._color7 = @__env.GetMethodID(global::android.R.color.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.color.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$color"));
+				global::android.R.color._color7 = @__env.GetMethodIDNoThrow(global::android.R.color.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class dimen : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class dimen : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static dimen()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.dimen), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.dimen(@__env);
-				}
-			}
-			internal dimen(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal dimen(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _dimen8;
-			public dimen()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _dimen8;
+			public dimen()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.dimen.staticClass, global::android.R.dimen._dimen8, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.dimen.staticClass, global::android.R.dimen._dimen8);
+				Init(@__env, handle);
 			}
 			public static int app_icon_size
 			{
@@ -5372,35 +5334,30 @@ namespace android
 					return 17104898;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.dimen.staticClass = @__class;
-				global::android.R.dimen._dimen8 = @__env.GetMethodID(global::android.R.dimen.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.dimen.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$dimen"));
+				global::android.R.dimen._dimen8 = @__env.GetMethodIDNoThrow(global::android.R.dimen.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class drawable : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class drawable : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static drawable()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.drawable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.drawable(@__env);
-				}
-			}
-			internal drawable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal drawable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _drawable9;
-			public drawable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _drawable9;
+			public drawable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.drawable.staticClass, global::android.R.drawable._drawable9, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.drawable.staticClass, global::android.R.drawable._drawable9);
+				Init(@__env, handle);
 			}
 			public static int alert_dark_frame
 			{
@@ -6564,35 +6521,30 @@ namespace android
 					return 17301655;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.drawable.staticClass = @__class;
-				global::android.R.drawable._drawable9 = @__env.GetMethodID(global::android.R.drawable.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.drawable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$drawable"));
+				global::android.R.drawable._drawable9 = @__env.GetMethodIDNoThrow(global::android.R.drawable.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class id : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class id : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static id()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.id), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.id(@__env);
-				}
-			}
-			internal id(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal id(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _id10;
-			public id()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _id10;
+			public id()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.id.staticClass, global::android.R.id._id10, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.id.staticClass, global::android.R.id._id10);
+				Init(@__env, handle);
 			}
 			public static int addToDictionary
 			{
@@ -6902,35 +6854,30 @@ namespace android
 					return 16908312;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.id.staticClass = @__class;
-				global::android.R.id._id10 = @__env.GetMethodID(global::android.R.id.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.id.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$id"));
+				global::android.R.id._id10 = @__env.GetMethodIDNoThrow(global::android.R.id.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class integer : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class integer : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static integer()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.integer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.integer(@__env);
-				}
-			}
-			internal integer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal integer(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _integer11;
-			public integer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _integer11;
+			public integer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.integer.staticClass, global::android.R.integer._integer11, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.integer.staticClass, global::android.R.integer._integer11);
+				Init(@__env, handle);
 			}
 			public static int config_longAnimTime
 			{
@@ -6953,35 +6900,30 @@ namespace android
 					return 17694720;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.integer.staticClass = @__class;
-				global::android.R.integer._integer11 = @__env.GetMethodID(global::android.R.integer.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.integer.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$integer"));
+				global::android.R.integer._integer11 = @__env.GetMethodIDNoThrow(global::android.R.integer.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class layout : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class layout : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static layout()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.layout), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.layout(@__env);
-				}
-			}
-			internal layout(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal layout(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _layout12;
-			public layout()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _layout12;
+			public layout()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.layout.staticClass, global::android.R.layout._layout12, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.layout.staticClass, global::android.R.layout._layout12);
+				Init(@__env, handle);
 			}
 			public static int activity_list_item
 			{
@@ -7123,95 +7065,80 @@ namespace android
 					return 17367053;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.layout.staticClass = @__class;
-				global::android.R.layout._layout12 = @__env.GetMethodID(global::android.R.layout.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.layout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$layout"));
+				global::android.R.layout._layout12 = @__env.GetMethodIDNoThrow(global::android.R.layout.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class plurals : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class plurals : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static plurals()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.plurals), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.plurals(@__env);
-				}
-			}
-			internal plurals(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal plurals(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _plurals13;
-			public plurals()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _plurals13;
+			public plurals()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.plurals.staticClass, global::android.R.plurals._plurals13, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.plurals.staticClass, global::android.R.plurals._plurals13);
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.plurals.staticClass = @__class;
-				global::android.R.plurals._plurals13 = @__env.GetMethodID(global::android.R.plurals.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.plurals.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$plurals"));
+				global::android.R.plurals._plurals13 = @__env.GetMethodIDNoThrow(global::android.R.plurals.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class raw : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class raw : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static raw()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.raw), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.raw(@__env);
-				}
-			}
-			internal raw(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal raw(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _raw14;
-			public raw()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _raw14;
+			public raw()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.raw.staticClass, global::android.R.raw._raw14, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.raw.staticClass, global::android.R.raw._raw14);
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.raw.staticClass = @__class;
-				global::android.R.raw._raw14 = @__env.GetMethodID(global::android.R.raw.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.raw.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$raw"));
+				global::android.R.raw._raw14 = @__env.GetMethodIDNoThrow(global::android.R.raw.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class @string : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class @string : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static @string()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.@string), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.@string(@__env);
-				}
-			}
-			internal @string(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal @string(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _string15;
-			public @string()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _string15;
+			public @string()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.@string.staticClass, global::android.R.@string._string15, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.@string.staticClass, global::android.R.@string._string15);
+				Init(@__env, handle);
 			}
 			public static int VideoView_error_button
 			{
@@ -7367,35 +7294,30 @@ namespace android
 					return 17039379;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.@string.staticClass = @__class;
-				global::android.R.@string._string15 = @__env.GetMethodID(global::android.R.@string.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.@string.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$@string"));
+				global::android.R.@string._string15 = @__env.GetMethodIDNoThrow(global::android.R.@string.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class style : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class style : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static style()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.style), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.style(@__env);
-				}
-			}
-			internal style(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal style(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _style16;
-			public style()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _style16;
+			public style()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.style.staticClass, global::android.R.style._style16, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.style.staticClass, global::android.R.style._style16);
+				Init(@__env, handle);
 			}
 			public static int Animation
 			{
@@ -8083,52 +8005,50 @@ namespace android
 					return 16973875;
 				}
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.style.staticClass = @__class;
-				global::android.R.style._style16 = @__env.GetMethodID(global::android.R.style.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.style.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$style"));
+				global::android.R.style._style16 = @__env.GetMethodIDNoThrow(global::android.R.style.staticClass, "<init>", "()V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class xml : java.lang.Object
+		[global::MonoJavaBridge.JavaClass()]
+		public sealed partial class xml : java.lang.Object
 		{
-			internal static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static xml()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.xml), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.R.xml(@__env);
-				}
-			}
-			internal xml(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal xml(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _xml17;
-			public xml()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _xml17;
+			public xml()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.R.xml.staticClass, global::android.R.xml._xml17, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.xml.staticClass, global::android.R.xml._xml17);
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.R.xml.staticClass = @__class;
-				global::android.R.xml._xml17 = @__env.GetMethodID(global::android.R.xml.staticClass, "<init>", "()V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.R.xml.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$xml"));
+				global::android.R.xml._xml17 = @__env.GetMethodIDNoThrow(global::android.R.xml.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _R18;
-		public R()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _R18;
+		public R()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.R.staticClass, global::android.R._R18, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.R.staticClass, global::android.R._R18);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.R.staticClass = @__class;
-			global::android.R._R18 = @__env.GetMethodID(global::android.R.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.R.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R"));
+			global::android.R._R18 = @__env.GetMethodIDNoThrow(global::android.R.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -1,28 +1,21 @@
 namespace android.media
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class CamcorderProfile : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class CamcorderProfile : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static CamcorderProfile()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.CamcorderProfile), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.media.CamcorderProfile(@__env);
-			}
-		}
-		protected CamcorderProfile(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected CamcorderProfile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get4694;
+		internal static global::MonoJavaBridge.MethodId _get4927;
 		public static global::android.media.CamcorderProfile get(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.CamcorderProfile>(@__env, @__env.CallStaticObjectMethodPtr(android.media.CamcorderProfile.staticClass, global::android.media.CamcorderProfile._get4694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.CamcorderProfile.staticClass, global::android.media.CamcorderProfile._get4927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.media.CamcorderProfile;
 		}
 		public static int QUALITY_LOW
 		{
@@ -38,7 +31,7 @@ namespace android.media
 				return 1;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _duration4695;
+		internal static global::MonoJavaBridge.FieldId _duration4928;
 		public int duration
 		{
 			get
@@ -49,7 +42,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _quality4696;
+		internal static global::MonoJavaBridge.FieldId _quality4929;
 		public int quality
 		{
 			get
@@ -60,7 +53,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _fileFormat4697;
+		internal static global::MonoJavaBridge.FieldId _fileFormat4930;
 		public int fileFormat
 		{
 			get
@@ -71,7 +64,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _videoCodec4698;
+		internal static global::MonoJavaBridge.FieldId _videoCodec4931;
 		public int videoCodec
 		{
 			get
@@ -82,7 +75,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _videoBitRate4699;
+		internal static global::MonoJavaBridge.FieldId _videoBitRate4932;
 		public int videoBitRate
 		{
 			get
@@ -93,7 +86,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _videoFrameRate4700;
+		internal static global::MonoJavaBridge.FieldId _videoFrameRate4933;
 		public int videoFrameRate
 		{
 			get
@@ -104,7 +97,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _videoFrameWidth4701;
+		internal static global::MonoJavaBridge.FieldId _videoFrameWidth4934;
 		public int videoFrameWidth
 		{
 			get
@@ -115,7 +108,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _videoFrameHeight4702;
+		internal static global::MonoJavaBridge.FieldId _videoFrameHeight4935;
 		public int videoFrameHeight
 		{
 			get
@@ -126,7 +119,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _audioCodec4703;
+		internal static global::MonoJavaBridge.FieldId _audioCodec4936;
 		public int audioCodec
 		{
 			get
@@ -137,7 +130,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _audioBitRate4704;
+		internal static global::MonoJavaBridge.FieldId _audioBitRate4937;
 		public int audioBitRate
 		{
 			get
@@ -148,7 +141,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _audioSampleRate4705;
+		internal static global::MonoJavaBridge.FieldId _audioSampleRate4938;
 		public int audioSampleRate
 		{
 			get
@@ -159,7 +152,7 @@ namespace android.media
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _audioChannels4706;
+		internal static global::MonoJavaBridge.FieldId _audioChannels4939;
 		public int audioChannels
 		{
 			get
@@ -170,10 +163,11 @@ namespace android.media
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.media.CamcorderProfile.staticClass = @__class;
-			global::android.media.CamcorderProfile._get4694 = @__env.GetStaticMethodID(global::android.media.CamcorderProfile.staticClass, "get", "(I)Landroid/media/CamcorderProfile;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.media.CamcorderProfile.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/CamcorderProfile"));
+			global::android.media.CamcorderProfile._get4927 = @__env.GetStaticMethodIDNoThrow(global::android.media.CamcorderProfile.staticClass, "get", "(I)Landroid/media/CamcorderProfile;");
 		}
 	}
 }

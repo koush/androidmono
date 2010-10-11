@@ -1,7 +1,7 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public static class AdapterConstants 
+	[global::MonoJavaBridge.JavaClass()]
+	public static partial class AdapterConstants 
 	{
 		public static int IGNORE_ITEM_VIEW_TYPE
 		{

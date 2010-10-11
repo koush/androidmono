@@ -1,54 +1,49 @@
 namespace android.text
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Editable_Factory : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Editable_Factory : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Editable_Factory()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.Editable_Factory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.text.Editable_Factory(@__env);
-			}
-		}
-		protected Editable_Factory(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Editable_Factory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance7371;
+		internal static global::MonoJavaBridge.MethodId _getInstance7651;
 		public static global::android.text.Editable_Factory getInstance() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Editable_Factory>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._getInstance7371));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._getInstance7651)) as android.text.Editable_Factory;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _newEditable7372;
+		internal static global::MonoJavaBridge.MethodId _newEditable7652;
 		public virtual global::android.text.Editable newEditable(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Editable_Factory._newEditable7372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Editable_Factory._newEditable7652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Editable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable7372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Editable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable7652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Editable;
 		}
 		public android.text.Editable newEditable(string arg0)
 		{
 			return newEditable((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Editable_Factory7373;
-		public Editable_Factory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _Editable_Factory7653;
+		public Editable_Factory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._Editable_Factory7373, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._Editable_Factory7653);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.text.Editable_Factory.staticClass = @__class;
-			global::android.text.Editable_Factory._getInstance7371 = @__env.GetStaticMethodID(global::android.text.Editable_Factory.staticClass, "getInstance", "()Landroid/text/Editable$Factory;");
-			global::android.text.Editable_Factory._newEditable7372 = @__env.GetMethodID(global::android.text.Editable_Factory.staticClass, "newEditable", "(Ljava/lang/CharSequence;)Landroid/text/Editable;");
-			global::android.text.Editable_Factory._Editable_Factory7373 = @__env.GetMethodID(global::android.text.Editable_Factory.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.text.Editable_Factory.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Editable_Factory"));
+			global::android.text.Editable_Factory._getInstance7651 = @__env.GetStaticMethodIDNoThrow(global::android.text.Editable_Factory.staticClass, "getInstance", "()Landroid/text/Editable$Factory;");
+			global::android.text.Editable_Factory._newEditable7652 = @__env.GetMethodIDNoThrow(global::android.text.Editable_Factory.staticClass, "newEditable", "(Ljava/lang/CharSequence;)Landroid/text/Editable;");
+			global::android.text.Editable_Factory._Editable_Factory7653 = @__env.GetMethodIDNoThrow(global::android.text.Editable_Factory.staticClass, "<init>", "()V");
 		}
 	}
 }

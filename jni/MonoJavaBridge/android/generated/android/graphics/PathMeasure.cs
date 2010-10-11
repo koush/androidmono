@@ -1,97 +1,101 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PathMeasure : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PathMeasure : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PathMeasure()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.PathMeasure), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.PathMeasure(@__env);
-			}
-		}
-		protected PathMeasure(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PathMeasure(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLength3409;
+		internal static global::MonoJavaBridge.MethodId _finalize3593;
+		protected override void finalize() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PathMeasure._finalize3593);
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._finalize3593);
+		}
+		internal static global::MonoJavaBridge.MethodId _getLength3594;
 		public virtual float getLength() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.graphics.PathMeasure._getLength3409);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.graphics.PathMeasure._getLength3594);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getLength3409);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getLength3594);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isClosed3410;
+		internal static global::MonoJavaBridge.MethodId _isClosed3595;
 		public virtual bool isClosed() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._isClosed3410);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure._isClosed3595);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._isClosed3410);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._isClosed3595);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMatrix3411;
+		internal static global::MonoJavaBridge.MethodId _getMatrix3596;
 		public virtual bool getMatrix(float arg0, android.graphics.Matrix arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._getMatrix3411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure._getMatrix3596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getMatrix3411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getMatrix3596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPath3412;
+		internal static global::MonoJavaBridge.MethodId _setPath3597;
 		public virtual void setPath(android.graphics.Path arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.PathMeasure._setPath3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.PathMeasure._setPath3597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._setPath3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._setPath3597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPosTan3413;
+		internal static global::MonoJavaBridge.MethodId _getPosTan3598;
 		public virtual bool getPosTan(float arg0, float[] arg1, float[] arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._getPosTan3413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure._getPosTan3598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getPosTan3413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getPosTan3598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSegment3414;
+		internal static global::MonoJavaBridge.MethodId _getSegment3599;
 		public virtual bool getSegment(float arg0, float arg1, android.graphics.Path arg2, bool arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._getSegment3414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure._getSegment3599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getSegment3414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getSegment3599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextContour3415;
+		internal static global::MonoJavaBridge.MethodId _nextContour3600;
 		public virtual bool nextContour() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._nextContour3415);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure._nextContour3600);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._nextContour3415);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._nextContour3600);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PathMeasure3416;
-		public PathMeasure()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PathMeasure3601;
+		public PathMeasure()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._PathMeasure3416, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._PathMeasure3601);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PathMeasure3417;
-		public PathMeasure(android.graphics.Path arg0, bool arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PathMeasure3602;
+		public PathMeasure(android.graphics.Path arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._PathMeasure3417, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._PathMeasure3602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
 		public static int POSITION_MATRIX_FLAG
 		{
@@ -107,18 +111,20 @@ namespace android.graphics
 				return 2;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.PathMeasure.staticClass = @__class;
-			global::android.graphics.PathMeasure._getLength3409 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "getLength", "()F");
-			global::android.graphics.PathMeasure._isClosed3410 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "isClosed", "()Z");
-			global::android.graphics.PathMeasure._getMatrix3411 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "getMatrix", "(FLandroid/graphics/Matrix;I)Z");
-			global::android.graphics.PathMeasure._setPath3412 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "setPath", "(Landroid/graphics/Path;Z)V");
-			global::android.graphics.PathMeasure._getPosTan3413 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "getPosTan", "(F[F[F)Z");
-			global::android.graphics.PathMeasure._getSegment3414 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "getSegment", "(FFLandroid/graphics/Path;Z)Z");
-			global::android.graphics.PathMeasure._nextContour3415 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "nextContour", "()Z");
-			global::android.graphics.PathMeasure._PathMeasure3416 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "<init>", "()V");
-			global::android.graphics.PathMeasure._PathMeasure3417 = @__env.GetMethodID(global::android.graphics.PathMeasure.staticClass, "<init>", "(Landroid/graphics/Path;Z)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.PathMeasure.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PathMeasure"));
+			global::android.graphics.PathMeasure._finalize3593 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "finalize", "()V");
+			global::android.graphics.PathMeasure._getLength3594 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "getLength", "()F");
+			global::android.graphics.PathMeasure._isClosed3595 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "isClosed", "()Z");
+			global::android.graphics.PathMeasure._getMatrix3596 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "getMatrix", "(FLandroid/graphics/Matrix;I)Z");
+			global::android.graphics.PathMeasure._setPath3597 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "setPath", "(Landroid/graphics/Path;Z)V");
+			global::android.graphics.PathMeasure._getPosTan3598 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "getPosTan", "(F[F[F)Z");
+			global::android.graphics.PathMeasure._getSegment3599 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "getSegment", "(FFLandroid/graphics/Path;Z)Z");
+			global::android.graphics.PathMeasure._nextContour3600 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "nextContour", "()Z");
+			global::android.graphics.PathMeasure._PathMeasure3601 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "<init>", "()V");
+			global::android.graphics.PathMeasure._PathMeasure3602 = @__env.GetMethodIDNoThrow(global::android.graphics.PathMeasure.staticClass, "<init>", "(Landroid/graphics/Path;Z)V");
 		}
 	}
 }

@@ -1,47 +1,42 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class TimeUtils : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class TimeUtils : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TimeUtils()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.TimeUtils), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.TimeUtils(@__env);
-			}
-		}
-		protected TimeUtils(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected TimeUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone8323;
+		internal static global::MonoJavaBridge.MethodId _getTimeZone8627;
 		public static global::java.util.TimeZone getTimeZone(int arg0, bool arg1, long arg2, java.lang.String arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallStaticObjectMethodPtr(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZone8323, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZone8627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.TimeZone;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeZoneDatabaseVersion8324;
+		internal static global::MonoJavaBridge.MethodId _getTimeZoneDatabaseVersion8628;
 		public static global::java.lang.String getTimeZoneDatabaseVersion() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZoneDatabaseVersion8324));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZoneDatabaseVersion8628)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TimeUtils8325;
-		public TimeUtils()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TimeUtils8629;
+		public TimeUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._TimeUtils8325, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._TimeUtils8629);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.TimeUtils.staticClass = @__class;
-			global::android.util.TimeUtils._getTimeZone8323 = @__env.GetStaticMethodID(global::android.util.TimeUtils.staticClass, "getTimeZone", "(IZJLjava/lang/String;)Ljava/util/TimeZone;");
-			global::android.util.TimeUtils._getTimeZoneDatabaseVersion8324 = @__env.GetStaticMethodID(global::android.util.TimeUtils.staticClass, "getTimeZoneDatabaseVersion", "()Ljava/lang/String;");
-			global::android.util.TimeUtils._TimeUtils8325 = @__env.GetMethodID(global::android.util.TimeUtils.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.TimeUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/TimeUtils"));
+			global::android.util.TimeUtils._getTimeZone8627 = @__env.GetStaticMethodIDNoThrow(global::android.util.TimeUtils.staticClass, "getTimeZone", "(IZJLjava/lang/String;)Ljava/util/TimeZone;");
+			global::android.util.TimeUtils._getTimeZoneDatabaseVersion8628 = @__env.GetStaticMethodIDNoThrow(global::android.util.TimeUtils.staticClass, "getTimeZoneDatabaseVersion", "()Ljava/lang/String;");
+			global::android.util.TimeUtils._TimeUtils8629 = @__env.GetMethodIDNoThrow(global::android.util.TimeUtils.staticClass, "<init>", "()V");
 		}
 	}
 }

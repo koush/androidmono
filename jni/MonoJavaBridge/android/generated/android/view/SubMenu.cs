@@ -1,6 +1,6 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.SubMenu_))]
 	public interface SubMenu : Menu
 	{
 		global::android.view.MenuItem getItem();
@@ -14,365 +14,351 @@ namespace android.view
 		void clearHeader();
 	}
 
-	public partial class SubMenu_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.SubMenu))]
+	public sealed partial class SubMenu_ : java.lang.Object, SubMenu
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static SubMenu_()
 		{
-			get { return __SubMenu.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __SubMenu : java.lang.Object, SubMenu
-	{
-		internal static global::java.lang.Class staticClass;
-		static __SubMenu()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__SubMenu), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.__SubMenu(@__env);
-			}
-		}
-		internal __SubMenu(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal SubMenu_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItem8690;
+		internal static global::MonoJavaBridge.MethodId _getItem8998;
 		 global::android.view.MenuItem android.view.SubMenu.getItem() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._getItem8690));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._getItem8998)) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._getItem8690));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._getItem8998)) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIcon8691;
+		internal static global::MonoJavaBridge.MethodId _setIcon8999;
 		 global::android.view.SubMenu android.view.SubMenu.setIcon(android.graphics.drawable.Drawable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setIcon8691, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setIcon8999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setIcon8691, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setIcon8999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIcon8692;
+		internal static global::MonoJavaBridge.MethodId _setIcon9000;
 		 global::android.view.SubMenu android.view.SubMenu.setIcon(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setIcon8692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setIcon9000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setIcon8692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setIcon9000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeaderTitle8693;
+		internal static global::MonoJavaBridge.MethodId _setHeaderTitle9001;
 		 global::android.view.SubMenu android.view.SubMenu.setHeaderTitle(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setHeaderTitle8693, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setHeaderTitle9001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setHeaderTitle8693, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setHeaderTitle9001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeaderTitle8694;
+		internal static global::MonoJavaBridge.MethodId _setHeaderTitle9002;
 		 global::android.view.SubMenu android.view.SubMenu.setHeaderTitle(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setHeaderTitle8694, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setHeaderTitle9002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setHeaderTitle8694, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setHeaderTitle9002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeaderIcon8695;
+		internal static global::MonoJavaBridge.MethodId _setHeaderIcon9003;
 		 global::android.view.SubMenu android.view.SubMenu.setHeaderIcon(android.graphics.drawable.Drawable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setHeaderIcon8695, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setHeaderIcon9003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setHeaderIcon8695, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setHeaderIcon9003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeaderIcon8696;
+		internal static global::MonoJavaBridge.MethodId _setHeaderIcon9004;
 		 global::android.view.SubMenu android.view.SubMenu.setHeaderIcon(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setHeaderIcon8696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setHeaderIcon9004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setHeaderIcon8696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setHeaderIcon9004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setHeaderView8697;
+		internal static global::MonoJavaBridge.MethodId _setHeaderView9005;
 		 global::android.view.SubMenu android.view.SubMenu.setHeaderView(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._setHeaderView8697, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._setHeaderView9005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setHeaderView8697, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setHeaderView9005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearHeader8698;
+		internal static global::MonoJavaBridge.MethodId _clearHeader9006;
 		 void android.view.SubMenu.clearHeader() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._clearHeader8698);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._clearHeader9006);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._clearHeader8698);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._clearHeader9006);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add8699;
+		internal static global::MonoJavaBridge.MethodId _add9007;
 		 global::android.view.MenuItem android.view.Menu.add(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._add8699, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._add9007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._add8699, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._add9007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add8700;
+		internal static global::MonoJavaBridge.MethodId _add9008;
 		 global::android.view.MenuItem android.view.Menu.add(int arg0, int arg1, int arg2, java.lang.CharSequence arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._add8700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._add9008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._add8700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._add9008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add8701;
+		internal static global::MonoJavaBridge.MethodId _add9009;
 		 global::android.view.MenuItem android.view.Menu.add(int arg0, int arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._add8701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._add9009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._add8701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._add9009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add8702;
+		internal static global::MonoJavaBridge.MethodId _add9010;
 		 global::android.view.MenuItem android.view.Menu.add(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._add8702, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._add9010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._add8702, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._add9010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear8703;
+		internal static global::MonoJavaBridge.MethodId _clear9011;
 		 void android.view.Menu.clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._clear8703);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._clear9011);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._clear8703);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._clear9011);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _size8704;
+		internal static global::MonoJavaBridge.MethodId _size9012;
 		 int android.view.Menu.size() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.__SubMenu._size8704);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.SubMenu_._size9012);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._size8704);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._size9012);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close8705;
+		internal static global::MonoJavaBridge.MethodId _close9013;
 		 void android.view.Menu.close() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._close8705);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._close9013);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._close8705);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._close9013);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isShortcutKey8706;
+		internal static global::MonoJavaBridge.MethodId _isShortcutKey9014;
 		 bool android.view.Menu.isShortcutKey(int arg0, android.view.KeyEvent arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__SubMenu._isShortcutKey8706, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.SubMenu_._isShortcutKey9014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._isShortcutKey8706, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._isShortcutKey9014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSubMenu8707;
+		internal static global::MonoJavaBridge.MethodId _addSubMenu9015;
 		 global::android.view.SubMenu android.view.Menu.addSubMenu(java.lang.CharSequence arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._addSubMenu8707, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._addSubMenu9015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._addSubMenu8707, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._addSubMenu9015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSubMenu8708;
+		internal static global::MonoJavaBridge.MethodId _addSubMenu9016;
 		 global::android.view.SubMenu android.view.Menu.addSubMenu(int arg0, int arg1, int arg2, java.lang.CharSequence arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._addSubMenu8708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._addSubMenu9016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._addSubMenu8708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._addSubMenu9016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSubMenu8709;
+		internal static global::MonoJavaBridge.MethodId _addSubMenu9017;
 		 global::android.view.SubMenu android.view.Menu.addSubMenu(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._addSubMenu8709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._addSubMenu9017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._addSubMenu8709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._addSubMenu9017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSubMenu8710;
+		internal static global::MonoJavaBridge.MethodId _addSubMenu9018;
 		 global::android.view.SubMenu android.view.Menu.addSubMenu(int arg0, int arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._addSubMenu8710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._addSubMenu9018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.SubMenu;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._addSubMenu8710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SubMenu>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._addSubMenu9018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.view.SubMenu;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addIntentOptions8711;
+		internal static global::MonoJavaBridge.MethodId _addIntentOptions9019;
 		 int android.view.Menu.addIntentOptions(int arg0, int arg1, int arg2, android.content.ComponentName arg3, android.content.Intent[] arg4, android.content.Intent arg5, int arg6, android.view.MenuItem[] arg7) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.__SubMenu._addIntentOptions8711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.view.MenuItem[], android.view.MenuItem>(@__env, arg7));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.SubMenu_._addIntentOptions9019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._addIntentOptions8711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.view.MenuItem[], android.view.MenuItem>(@__env, arg7));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._addIntentOptions9019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeItem8712;
+		internal static global::MonoJavaBridge.MethodId _removeItem9020;
 		 void android.view.Menu.removeItem(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._removeItem8712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._removeItem9020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._removeItem8712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._removeItem9020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeGroup8713;
+		internal static global::MonoJavaBridge.MethodId _removeGroup9021;
 		 void android.view.Menu.removeGroup(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._removeGroup8713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._removeGroup9021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._removeGroup8713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._removeGroup9021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setGroupCheckable8714;
+		internal static global::MonoJavaBridge.MethodId _setGroupCheckable9022;
 		 void android.view.Menu.setGroupCheckable(int arg0, bool arg1, bool arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._setGroupCheckable8714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._setGroupCheckable9022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setGroupCheckable8714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setGroupCheckable9022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setGroupVisible8715;
+		internal static global::MonoJavaBridge.MethodId _setGroupVisible9023;
 		 void android.view.Menu.setGroupVisible(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._setGroupVisible8715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._setGroupVisible9023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setGroupVisible8715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setGroupVisible9023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setGroupEnabled8716;
+		internal static global::MonoJavaBridge.MethodId _setGroupEnabled9024;
 		 void android.view.Menu.setGroupEnabled(int arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._setGroupEnabled8716, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._setGroupEnabled9024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setGroupEnabled8716, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setGroupEnabled9024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasVisibleItems8717;
+		internal static global::MonoJavaBridge.MethodId _hasVisibleItems9025;
 		 bool android.view.Menu.hasVisibleItems() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__SubMenu._hasVisibleItems8717);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.SubMenu_._hasVisibleItems9025);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._hasVisibleItems8717);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._hasVisibleItems9025);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _findItem8718;
+		internal static global::MonoJavaBridge.MethodId _findItem9026;
 		 global::android.view.MenuItem android.view.Menu.findItem(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._findItem8718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._findItem9026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._findItem8718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._findItem9026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItem8719;
+		internal static global::MonoJavaBridge.MethodId _getItem9027;
 		 global::android.view.MenuItem android.view.Menu.getItem(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SubMenu._getItem8719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SubMenu_._getItem9027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._getItem8719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.MenuItem>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._getItem9027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.MenuItem;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performShortcut8720;
+		internal static global::MonoJavaBridge.MethodId _performShortcut9028;
 		 bool android.view.Menu.performShortcut(int arg0, android.view.KeyEvent arg1, int arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__SubMenu._performShortcut8720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.SubMenu_._performShortcut9028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._performShortcut8720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._performShortcut9028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _performIdentifierAction8721;
+		internal static global::MonoJavaBridge.MethodId _performIdentifierAction9029;
 		 bool android.view.Menu.performIdentifierAction(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__SubMenu._performIdentifierAction8721, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.SubMenu_._performIdentifierAction9029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._performIdentifierAction8721, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._performIdentifierAction9029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setQwertyMode8722;
+		internal static global::MonoJavaBridge.MethodId _setQwertyMode9030;
 		 void android.view.Menu.setQwertyMode(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SubMenu._setQwertyMode8722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SubMenu_._setQwertyMode9030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SubMenu.staticClass, global::android.view.__SubMenu._setQwertyMode8722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SubMenu_.staticClass, global::android.view.SubMenu_._setQwertyMode9030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.__SubMenu.staticClass = @__class;
-			global::android.view.__SubMenu._getItem8690 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.getItem", "()Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._setIcon8691 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._setIcon8692 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setIcon", "(I)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._setHeaderTitle8693 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setHeaderTitle", "(I)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._setHeaderTitle8694 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setHeaderTitle", "(Ljava/lang/CharSequence;)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._setHeaderIcon8695 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setHeaderIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._setHeaderIcon8696 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setHeaderIcon", "(I)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._setHeaderView8697 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.setHeaderView", "(Landroid/view/View;)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._clearHeader8698 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.SubMenu.clearHeader", "()V");
-			global::android.view.__SubMenu._add8699 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.add", "(I)Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._add8700 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.add", "(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._add8701 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.add", "(IIII)Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._add8702 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.add", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._clear8703 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.clear", "()V");
-			global::android.view.__SubMenu._size8704 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.size", "()I");
-			global::android.view.__SubMenu._close8705 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.close", "()V");
-			global::android.view.__SubMenu._isShortcutKey8706 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.isShortcutKey", "(ILandroid/view/KeyEvent;)Z");
-			global::android.view.__SubMenu._addSubMenu8707 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.addSubMenu", "(Ljava/lang/CharSequence;)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._addSubMenu8708 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.addSubMenu", "(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._addSubMenu8709 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.addSubMenu", "(I)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._addSubMenu8710 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.addSubMenu", "(IIII)Landroid/view/SubMenu;");
-			global::android.view.__SubMenu._addIntentOptions8711 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.addIntentOptions", "(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I");
-			global::android.view.__SubMenu._removeItem8712 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.removeItem", "(I)V");
-			global::android.view.__SubMenu._removeGroup8713 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.removeGroup", "(I)V");
-			global::android.view.__SubMenu._setGroupCheckable8714 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.setGroupCheckable", "(IZZ)V");
-			global::android.view.__SubMenu._setGroupVisible8715 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.setGroupVisible", "(IZ)V");
-			global::android.view.__SubMenu._setGroupEnabled8716 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.setGroupEnabled", "(IZ)V");
-			global::android.view.__SubMenu._hasVisibleItems8717 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.hasVisibleItems", "()Z");
-			global::android.view.__SubMenu._findItem8718 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.findItem", "(I)Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._getItem8719 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.getItem", "(I)Landroid/view/MenuItem;");
-			global::android.view.__SubMenu._performShortcut8720 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.performShortcut", "(ILandroid/view/KeyEvent;I)Z");
-			global::android.view.__SubMenu._performIdentifierAction8721 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.performIdentifierAction", "(II)Z");
-			global::android.view.__SubMenu._setQwertyMode8722 = @__env.GetMethodID(global::android.view.__SubMenu.staticClass, "android.view.Menu.setQwertyMode", "(Z)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.SubMenu_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SubMenu"));
+			global::android.view.SubMenu_._getItem8998 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "getItem", "()Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._setIcon8999 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._setIcon9000 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setIcon", "(I)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._setHeaderTitle9001 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setHeaderTitle", "(I)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._setHeaderTitle9002 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setHeaderTitle", "(Ljava/lang/CharSequence;)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._setHeaderIcon9003 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setHeaderIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._setHeaderIcon9004 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setHeaderIcon", "(I)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._setHeaderView9005 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setHeaderView", "(Landroid/view/View;)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._clearHeader9006 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "clearHeader", "()V");
+			global::android.view.SubMenu_._add9007 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "add", "(I)Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._add9008 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "add", "(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._add9009 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "add", "(IIII)Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._add9010 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "add", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._clear9011 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "clear", "()V");
+			global::android.view.SubMenu_._size9012 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "size", "()I");
+			global::android.view.SubMenu_._close9013 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "close", "()V");
+			global::android.view.SubMenu_._isShortcutKey9014 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "isShortcutKey", "(ILandroid/view/KeyEvent;)Z");
+			global::android.view.SubMenu_._addSubMenu9015 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "addSubMenu", "(Ljava/lang/CharSequence;)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._addSubMenu9016 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "addSubMenu", "(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._addSubMenu9017 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "addSubMenu", "(I)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._addSubMenu9018 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "addSubMenu", "(IIII)Landroid/view/SubMenu;");
+			global::android.view.SubMenu_._addIntentOptions9019 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "addIntentOptions", "(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I");
+			global::android.view.SubMenu_._removeItem9020 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "removeItem", "(I)V");
+			global::android.view.SubMenu_._removeGroup9021 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "removeGroup", "(I)V");
+			global::android.view.SubMenu_._setGroupCheckable9022 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setGroupCheckable", "(IZZ)V");
+			global::android.view.SubMenu_._setGroupVisible9023 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setGroupVisible", "(IZ)V");
+			global::android.view.SubMenu_._setGroupEnabled9024 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setGroupEnabled", "(IZ)V");
+			global::android.view.SubMenu_._hasVisibleItems9025 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "hasVisibleItems", "()Z");
+			global::android.view.SubMenu_._findItem9026 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "findItem", "(I)Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._getItem9027 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "getItem", "(I)Landroid/view/MenuItem;");
+			global::android.view.SubMenu_._performShortcut9028 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "performShortcut", "(ILandroid/view/KeyEvent;I)Z");
+			global::android.view.SubMenu_._performIdentifierAction9029 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "performIdentifierAction", "(II)Z");
+			global::android.view.SubMenu_._setQwertyMode9030 = @__env.GetMethodIDNoThrow(global::android.view.SubMenu_.staticClass, "setQwertyMode", "(Z)V");
 		}
 	}
 }

@@ -1,7 +1,7 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface HeterogeneousExpandableList 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.HeterogeneousExpandableList_))]
+	public interface HeterogeneousExpandableList  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getChildType(int arg0, int arg1);
 		int getChildTypeCount();
@@ -9,75 +9,61 @@ namespace android.widget
 		int getGroupTypeCount();
 	}
 
-	public partial class HeterogeneousExpandableList_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.HeterogeneousExpandableList))]
+	public sealed partial class HeterogeneousExpandableList_ : java.lang.Object, HeterogeneousExpandableList
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HeterogeneousExpandableList_()
 		{
-			get { return __HeterogeneousExpandableList.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HeterogeneousExpandableList : java.lang.Object, HeterogeneousExpandableList
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HeterogeneousExpandableList()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__HeterogeneousExpandableList), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.__HeterogeneousExpandableList(@__env);
-			}
-		}
-		internal __HeterogeneousExpandableList(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HeterogeneousExpandableList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChildType11012;
+		internal static global::MonoJavaBridge.MethodId _getChildType11391;
 		 int android.widget.HeterogeneousExpandableList.getChildType(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__HeterogeneousExpandableList._getChildType11012, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getChildType11391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__HeterogeneousExpandableList.staticClass, global::android.widget.__HeterogeneousExpandableList._getChildType11012, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_.staticClass, global::android.widget.HeterogeneousExpandableList_._getChildType11391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChildTypeCount11013;
+		internal static global::MonoJavaBridge.MethodId _getChildTypeCount11392;
 		 int android.widget.HeterogeneousExpandableList.getChildTypeCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__HeterogeneousExpandableList._getChildTypeCount11013);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getChildTypeCount11392);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__HeterogeneousExpandableList.staticClass, global::android.widget.__HeterogeneousExpandableList._getChildTypeCount11013);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_.staticClass, global::android.widget.HeterogeneousExpandableList_._getChildTypeCount11392);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getGroupType11014;
+		internal static global::MonoJavaBridge.MethodId _getGroupType11393;
 		 int android.widget.HeterogeneousExpandableList.getGroupType(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__HeterogeneousExpandableList._getGroupType11014, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getGroupType11393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__HeterogeneousExpandableList.staticClass, global::android.widget.__HeterogeneousExpandableList._getGroupType11014, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_.staticClass, global::android.widget.HeterogeneousExpandableList_._getGroupType11393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getGroupTypeCount11015;
+		internal static global::MonoJavaBridge.MethodId _getGroupTypeCount11394;
 		 int android.widget.HeterogeneousExpandableList.getGroupTypeCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.__HeterogeneousExpandableList._getGroupTypeCount11015);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount11394);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__HeterogeneousExpandableList.staticClass, global::android.widget.__HeterogeneousExpandableList._getGroupTypeCount11015);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeterogeneousExpandableList_.staticClass, global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount11394);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.__HeterogeneousExpandableList.staticClass = @__class;
-			global::android.widget.__HeterogeneousExpandableList._getChildType11012 = @__env.GetMethodID(global::android.widget.__HeterogeneousExpandableList.staticClass, "android.widget.HeterogeneousExpandableList.getChildType", "(II)I");
-			global::android.widget.__HeterogeneousExpandableList._getChildTypeCount11013 = @__env.GetMethodID(global::android.widget.__HeterogeneousExpandableList.staticClass, "android.widget.HeterogeneousExpandableList.getChildTypeCount", "()I");
-			global::android.widget.__HeterogeneousExpandableList._getGroupType11014 = @__env.GetMethodID(global::android.widget.__HeterogeneousExpandableList.staticClass, "android.widget.HeterogeneousExpandableList.getGroupType", "(I)I");
-			global::android.widget.__HeterogeneousExpandableList._getGroupTypeCount11015 = @__env.GetMethodID(global::android.widget.__HeterogeneousExpandableList.staticClass, "android.widget.HeterogeneousExpandableList.getGroupTypeCount", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.HeterogeneousExpandableList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/HeterogeneousExpandableList"));
+			global::android.widget.HeterogeneousExpandableList_._getChildType11391 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildType", "(II)I");
+			global::android.widget.HeterogeneousExpandableList_._getChildTypeCount11392 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getChildTypeCount", "()I");
+			global::android.widget.HeterogeneousExpandableList_._getGroupType11393 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupType", "(I)I");
+			global::android.widget.HeterogeneousExpandableList_._getGroupTypeCount11394 = @__env.GetMethodIDNoThrow(global::android.widget.HeterogeneousExpandableList_.staticClass, "getGroupTypeCount", "()I");
 		}
 	}
 }

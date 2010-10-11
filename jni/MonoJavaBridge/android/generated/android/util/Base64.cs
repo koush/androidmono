@@ -1,59 +1,57 @@
 namespace android.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class Base64 : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class Base64 : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Base64()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.Base64), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.util.Base64(@__env);
-			}
-		}
-		protected Base64(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected Base64(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _decode8161;
+		internal static global::MonoJavaBridge.MethodId _decode8465;
 		public static byte[] decode(java.lang.String arg0, int arg1) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._decode8161, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._decode8465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _decode8162;
+		internal static global::MonoJavaBridge.MethodId _decode8466;
 		public static byte[] decode(byte[] arg0, int arg1) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._decode8162, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._decode8466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _decode8163;
+		internal static global::MonoJavaBridge.MethodId _decode8467;
 		public static byte[] decode(byte[] arg0, int arg1, int arg2, int arg3) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._decode8163, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._decode8467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _encode8164;
+		internal static global::MonoJavaBridge.MethodId _encode8468;
 		public static byte[] encode(byte[] arg0, int arg1, int arg2, int arg3) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._encode8164, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._encode8468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _encode8165;
+		internal static global::MonoJavaBridge.MethodId _encode8469;
 		public static byte[] encode(byte[] arg0, int arg1) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._encode8165, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._encode8469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _encodeToString8166;
+		internal static global::MonoJavaBridge.MethodId _encodeToString8470;
 		public static global::java.lang.String encodeToString(byte[] arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._encodeToString8166, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._encodeToString8470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _encodeToString8167;
+		internal static global::MonoJavaBridge.MethodId _encodeToString8471;
 		public static global::java.lang.String encodeToString(byte[] arg0, int arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.Base64.staticClass, global::android.util.Base64._encodeToString8167, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Base64.staticClass, global::android.util.Base64._encodeToString8471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
 		}
 		public static int DEFAULT
 		{
@@ -97,16 +95,17 @@ namespace android.util
 				return 16;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.util.Base64.staticClass = @__class;
-			global::android.util.Base64._decode8161 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "decode", "(Ljava/lang/String;I)[B");
-			global::android.util.Base64._decode8162 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "decode", "([BI)[B");
-			global::android.util.Base64._decode8163 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "decode", "([BIII)[B");
-			global::android.util.Base64._encode8164 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "encode", "([BIII)[B");
-			global::android.util.Base64._encode8165 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "encode", "([BI)[B");
-			global::android.util.Base64._encodeToString8166 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "encodeToString", "([BI)Ljava/lang/String;");
-			global::android.util.Base64._encodeToString8167 = @__env.GetStaticMethodID(global::android.util.Base64.staticClass, "encodeToString", "([BIII)Ljava/lang/String;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.util.Base64.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Base64"));
+			global::android.util.Base64._decode8465 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "decode", "(Ljava/lang/String;I)[B");
+			global::android.util.Base64._decode8466 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "decode", "([BI)[B");
+			global::android.util.Base64._decode8467 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "decode", "([BIII)[B");
+			global::android.util.Base64._encode8468 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "encode", "([BIII)[B");
+			global::android.util.Base64._encode8469 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "encode", "([BI)[B");
+			global::android.util.Base64._encodeToString8470 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "encodeToString", "([BI)Ljava/lang/String;");
+			global::android.util.Base64._encodeToString8471 = @__env.GetStaticMethodIDNoThrow(global::android.util.Base64.staticClass, "encodeToString", "([BIII)Ljava/lang/String;");
 		}
 	}
 }

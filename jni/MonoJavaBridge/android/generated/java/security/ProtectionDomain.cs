@@ -1,99 +1,96 @@
 namespace java.security
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ProtectionDomain : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ProtectionDomain : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ProtectionDomain()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.ProtectionDomain), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.security.ProtectionDomain(@__env);
-			}
-		}
-		protected ProtectionDomain(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ProtectionDomain(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13240;
+		internal static global::MonoJavaBridge.MethodId _toString14875;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._toString13240));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._toString14875)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._toString13240));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._toString14875)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getClassLoader13241;
+		internal static global::MonoJavaBridge.MethodId _getClassLoader14876;
 		public virtual global::java.lang.ClassLoader getClassLoader() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ClassLoader>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getClassLoader13241));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getClassLoader14876)) as java.lang.ClassLoader;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ClassLoader>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getClassLoader13241));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getClassLoader14876)) as java.lang.ClassLoader;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCodeSource13242;
+		internal static global::MonoJavaBridge.MethodId _getCodeSource14877;
 		public virtual global::java.security.CodeSource getCodeSource() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.CodeSource>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getCodeSource13242));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getCodeSource14877)) as java.security.CodeSource;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.CodeSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getCodeSource13242));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getCodeSource14877)) as java.security.CodeSource;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPrincipals13243;
+		internal static global::MonoJavaBridge.MethodId _getPrincipals14878;
 		public virtual global::java.security.Principal[] getPrincipals() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getPrincipals13243));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getPrincipals14878)) as java.security.Principal[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPrincipals13243));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPrincipals14878)) as java.security.Principal[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPermissions13244;
+		internal static global::MonoJavaBridge.MethodId _getPermissions14879;
 		public virtual global::java.security.PermissionCollection getPermissions() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getPermissions13244));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain._getPermissions14879)) as java.security.PermissionCollection;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPermissions13244));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPermissions14879)) as java.security.PermissionCollection;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _implies13245;
+		internal static global::MonoJavaBridge.MethodId _implies14880;
 		public virtual bool implies(java.security.Permission arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.ProtectionDomain._implies13245, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.ProtectionDomain._implies14880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._implies13245, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._implies14880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ProtectionDomain13246;
-		public ProtectionDomain(java.security.CodeSource arg0, java.security.PermissionCollection arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ProtectionDomain14881;
+		public ProtectionDomain(java.security.CodeSource arg0, java.security.PermissionCollection arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._ProtectionDomain13246, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._ProtectionDomain14881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ProtectionDomain13247;
-		public ProtectionDomain(java.security.CodeSource arg0, java.security.PermissionCollection arg1, java.lang.ClassLoader arg2, java.security.Principal[] arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ProtectionDomain14882;
+		public ProtectionDomain(java.security.CodeSource arg0, java.security.PermissionCollection arg1, java.lang.ClassLoader arg2, java.security.Principal[] arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._ProtectionDomain13247, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.security.Principal[], java.security.Principal>(@__env, arg3));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._ProtectionDomain14882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.security.ProtectionDomain.staticClass = @__class;
-			global::java.security.ProtectionDomain._toString13240 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.security.ProtectionDomain._getClassLoader13241 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "getClassLoader", "()Ljava/lang/ClassLoader;");
-			global::java.security.ProtectionDomain._getCodeSource13242 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "getCodeSource", "()Ljava/security/CodeSource;");
-			global::java.security.ProtectionDomain._getPrincipals13243 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "getPrincipals", "()[Ljava/security/Principal;");
-			global::java.security.ProtectionDomain._getPermissions13244 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "getPermissions", "()Ljava/security/PermissionCollection;");
-			global::java.security.ProtectionDomain._implies13245 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "implies", "(Ljava/security/Permission;)Z");
-			global::java.security.ProtectionDomain._ProtectionDomain13246 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "<init>", "(Ljava/security/CodeSource;Ljava/security/PermissionCollection;)V");
-			global::java.security.ProtectionDomain._ProtectionDomain13247 = @__env.GetMethodID(global::java.security.ProtectionDomain.staticClass, "<init>", "(Ljava/security/CodeSource;Ljava/security/PermissionCollection;Ljava/lang/ClassLoader;[Ljava/security/Principal;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.ProtectionDomain.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/ProtectionDomain"));
+			global::java.security.ProtectionDomain._toString14875 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.security.ProtectionDomain._getClassLoader14876 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "getClassLoader", "()Ljava/lang/ClassLoader;");
+			global::java.security.ProtectionDomain._getCodeSource14877 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "getCodeSource", "()Ljava/security/CodeSource;");
+			global::java.security.ProtectionDomain._getPrincipals14878 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "getPrincipals", "()[Ljava/security/Principal;");
+			global::java.security.ProtectionDomain._getPermissions14879 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "getPermissions", "()Ljava/security/PermissionCollection;");
+			global::java.security.ProtectionDomain._implies14880 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "implies", "(Ljava/security/Permission;)Z");
+			global::java.security.ProtectionDomain._ProtectionDomain14881 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "<init>", "(Ljava/security/CodeSource;Ljava/security/PermissionCollection;)V");
+			global::java.security.ProtectionDomain._ProtectionDomain14882 = @__env.GetMethodIDNoThrow(global::java.security.ProtectionDomain.staticClass, "<init>", "(Ljava/security/CodeSource;Ljava/security/PermissionCollection;Ljava/lang/ClassLoader;[Ljava/security/Principal;)V");
 		}
 	}
 }

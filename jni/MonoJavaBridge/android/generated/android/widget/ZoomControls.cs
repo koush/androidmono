@@ -1,130 +1,126 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ZoomControls : android.widget.LinearLayout
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ZoomControls : android.widget.LinearLayout
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ZoomControls()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.ZoomControls), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.ZoomControls(@__env);
-			}
-		}
-		protected ZoomControls(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ZoomControls(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent12085;
+		internal static global::MonoJavaBridge.MethodId _onTouchEvent12472;
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ZoomControls._onTouchEvent12085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ZoomControls._onTouchEvent12472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._onTouchEvent12085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._onTouchEvent12472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasFocus12086;
+		internal static global::MonoJavaBridge.MethodId _hasFocus12473;
 		public override bool hasFocus() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ZoomControls._hasFocus12086);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.ZoomControls._hasFocus12473);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hasFocus12086);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hasFocus12473);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _show12087;
+		internal static global::MonoJavaBridge.MethodId _show12474;
 		public virtual void show() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._show12087);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._show12474);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._show12087);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._show12474);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hide12088;
+		internal static global::MonoJavaBridge.MethodId _hide12475;
 		public virtual void hide() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._hide12088);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._hide12475);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hide12088);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hide12475);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setZoomSpeed12089;
+		internal static global::MonoJavaBridge.MethodId _setZoomSpeed12476;
 		public virtual void setZoomSpeed(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setZoomSpeed12089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._setZoomSpeed12476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setZoomSpeed12089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setZoomSpeed12476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnZoomInClickListener12090;
+		internal static global::MonoJavaBridge.MethodId _setOnZoomInClickListener12477;
 		public virtual void setOnZoomInClickListener(android.view.View.OnClickListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setOnZoomInClickListener12090, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._setOnZoomInClickListener12477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setOnZoomInClickListener12090, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setOnZoomInClickListener12477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnZoomOutClickListener12091;
+		internal static global::MonoJavaBridge.MethodId _setOnZoomOutClickListener12478;
 		public virtual void setOnZoomOutClickListener(android.view.View.OnClickListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setOnZoomOutClickListener12091, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._setOnZoomOutClickListener12478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setOnZoomOutClickListener12091, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setOnZoomOutClickListener12478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIsZoomInEnabled12092;
+		internal static global::MonoJavaBridge.MethodId _setIsZoomInEnabled12479;
 		public virtual void setIsZoomInEnabled(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setIsZoomInEnabled12092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._setIsZoomInEnabled12479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomInEnabled12092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomInEnabled12479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIsZoomOutEnabled12093;
+		internal static global::MonoJavaBridge.MethodId _setIsZoomOutEnabled12480;
 		public virtual void setIsZoomOutEnabled(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setIsZoomOutEnabled12093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.ZoomControls._setIsZoomOutEnabled12480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomOutEnabled12093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomOutEnabled12480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ZoomControls12094;
-		public ZoomControls(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ZoomControls12481;
+		public ZoomControls(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._ZoomControls12094, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._ZoomControls12481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ZoomControls12095;
-		public ZoomControls(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ZoomControls12482;
+		public ZoomControls(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._ZoomControls12095, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._ZoomControls12482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.ZoomControls.staticClass = @__class;
-			global::android.widget.ZoomControls._onTouchEvent12085 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.ZoomControls._hasFocus12086 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "hasFocus", "()Z");
-			global::android.widget.ZoomControls._show12087 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "show", "()V");
-			global::android.widget.ZoomControls._hide12088 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "hide", "()V");
-			global::android.widget.ZoomControls._setZoomSpeed12089 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "setZoomSpeed", "(J)V");
-			global::android.widget.ZoomControls._setOnZoomInClickListener12090 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "setOnZoomInClickListener", "(Landroid/view/View$OnClickListener;)V");
-			global::android.widget.ZoomControls._setOnZoomOutClickListener12091 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "setOnZoomOutClickListener", "(Landroid/view/View$OnClickListener;)V");
-			global::android.widget.ZoomControls._setIsZoomInEnabled12092 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "setIsZoomInEnabled", "(Z)V");
-			global::android.widget.ZoomControls._setIsZoomOutEnabled12093 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "setIsZoomOutEnabled", "(Z)V");
-			global::android.widget.ZoomControls._ZoomControls12094 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.ZoomControls._ZoomControls12095 = @__env.GetMethodID(global::android.widget.ZoomControls.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.ZoomControls.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/ZoomControls"));
+			global::android.widget.ZoomControls._onTouchEvent12472 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.ZoomControls._hasFocus12473 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "hasFocus", "()Z");
+			global::android.widget.ZoomControls._show12474 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "show", "()V");
+			global::android.widget.ZoomControls._hide12475 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "hide", "()V");
+			global::android.widget.ZoomControls._setZoomSpeed12476 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "setZoomSpeed", "(J)V");
+			global::android.widget.ZoomControls._setOnZoomInClickListener12477 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "setOnZoomInClickListener", "(Landroid/view/View$OnClickListener;)V");
+			global::android.widget.ZoomControls._setOnZoomOutClickListener12478 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "setOnZoomOutClickListener", "(Landroid/view/View$OnClickListener;)V");
+			global::android.widget.ZoomControls._setIsZoomInEnabled12479 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "setIsZoomInEnabled", "(Z)V");
+			global::android.widget.ZoomControls._setIsZoomOutEnabled12480 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "setIsZoomOutEnabled", "(Z)V");
+			global::android.widget.ZoomControls._ZoomControls12481 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.ZoomControls._ZoomControls12482 = @__env.GetMethodIDNoThrow(global::android.widget.ZoomControls.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

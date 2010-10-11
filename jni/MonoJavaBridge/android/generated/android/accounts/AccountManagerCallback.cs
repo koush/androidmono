@@ -1,50 +1,36 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface AccountManagerCallback 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.accounts.AccountManagerCallback_))]
+	public interface AccountManagerCallback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void run(android.accounts.AccountManagerFuture arg0);
 	}
 
-	public partial class AccountManagerCallback_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accounts.AccountManagerCallback))]
+	public sealed partial class AccountManagerCallback_ : java.lang.Object, AccountManagerCallback
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static AccountManagerCallback_()
 		{
-			get { return __AccountManagerCallback.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __AccountManagerCallback : java.lang.Object, AccountManagerCallback
-	{
-		internal static global::java.lang.Class staticClass;
-		static __AccountManagerCallback()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.__AccountManagerCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.__AccountManagerCallback(@__env);
-			}
-		}
-		internal __AccountManagerCallback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal AccountManagerCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _run91;
+		internal static global::MonoJavaBridge.MethodId _run100;
 		 void android.accounts.AccountManagerCallback.run(android.accounts.AccountManagerFuture arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.__AccountManagerCallback._run91, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountManagerCallback_._run100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.__AccountManagerCallback.staticClass, global::android.accounts.__AccountManagerCallback._run91, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountManagerCallback_.staticClass, global::android.accounts.AccountManagerCallback_._run100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.__AccountManagerCallback.staticClass = @__class;
-			global::android.accounts.__AccountManagerCallback._run91 = @__env.GetMethodID(global::android.accounts.__AccountManagerCallback.staticClass, "android.accounts.AccountManagerCallback.run", "(Landroid/accounts/AccountManagerFuture;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.AccountManagerCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountManagerCallback"));
+			global::android.accounts.AccountManagerCallback_._run100 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountManagerCallback_.staticClass, "run", "(Landroid/accounts/AccountManagerFuture;)V");
 		}
 	}
 }

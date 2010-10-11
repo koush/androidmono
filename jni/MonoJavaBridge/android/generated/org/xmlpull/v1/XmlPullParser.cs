@@ -1,7 +1,7 @@
 namespace org.xmlpull.v1
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface XmlPullParser 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xmlpull.v1.XmlPullParser_))]
+	public interface XmlPullParser  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setProperty(java.lang.String arg0, java.lang.Object arg1);
 		global::java.lang.Object getProperty(java.lang.String arg0);
@@ -42,404 +42,391 @@ namespace org.xmlpull.v1
 		int nextTag();
 	}
 
-	public partial class XmlPullParser_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.xmlpull.v1.XmlPullParser))]
+	public sealed partial class XmlPullParser_ : java.lang.Object, XmlPullParser
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static XmlPullParser_()
 		{
-			get { return __XmlPullParser.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __XmlPullParser : java.lang.Object, XmlPullParser
-	{
-		internal static global::java.lang.Class staticClass;
-		static __XmlPullParser()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xmlpull.v1.__XmlPullParser), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.xmlpull.v1.__XmlPullParser(@__env);
-			}
-		}
-		internal __XmlPullParser(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal XmlPullParser_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setProperty14633;
+		internal static global::MonoJavaBridge.MethodId _setProperty16553;
 		 void org.xmlpull.v1.XmlPullParser.setProperty(java.lang.String arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setProperty14633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._setProperty16553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setProperty14633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._setProperty16553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getProperty14634;
+		internal static global::MonoJavaBridge.MethodId _getProperty16554;
 		 global::java.lang.Object org.xmlpull.v1.XmlPullParser.getProperty(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getProperty14634, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getProperty16554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getProperty14634, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getProperty16554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getName14635;
+		internal static global::MonoJavaBridge.MethodId _getName16555;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getName14635));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getName16555)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getName14635));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getName16555)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _next14636;
+		internal static global::MonoJavaBridge.MethodId _next16556;
 		 int org.xmlpull.v1.XmlPullParser.next() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._next14636);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._next16556);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._next14636);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._next16556);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLineNumber14637;
+		internal static global::MonoJavaBridge.MethodId _getLineNumber16557;
 		 int org.xmlpull.v1.XmlPullParser.getLineNumber() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getLineNumber14637);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getLineNumber16557);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getLineNumber14637);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getLineNumber16557);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isWhitespace14638;
+		internal static global::MonoJavaBridge.MethodId _isWhitespace16558;
 		 bool org.xmlpull.v1.XmlPullParser.isWhitespace() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._isWhitespace14638);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._isWhitespace16558);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._isWhitespace14638);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._isWhitespace16558);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextToken14639;
+		internal static global::MonoJavaBridge.MethodId _nextToken16559;
 		 int org.xmlpull.v1.XmlPullParser.nextToken() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._nextToken14639);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._nextToken16559);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._nextToken14639);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._nextToken16559);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setInput14640;
+		internal static global::MonoJavaBridge.MethodId _setInput16560;
 		 void org.xmlpull.v1.XmlPullParser.setInput(java.io.InputStream arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setInput14640, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._setInput16560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setInput14640, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._setInput16560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setInput14641;
+		internal static global::MonoJavaBridge.MethodId _setInput16561;
 		 void org.xmlpull.v1.XmlPullParser.setInput(java.io.Reader arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setInput14641, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._setInput16561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setInput14641, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._setInput16561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPrefix14642;
+		internal static global::MonoJavaBridge.MethodId _getPrefix16562;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getPrefix() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getPrefix14642));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getPrefix16562)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getPrefix14642));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getPrefix16562)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue14643;
+		internal static global::MonoJavaBridge.MethodId _getAttributeValue16563;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue14643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributeValue16563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue14643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributeValue16563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue14644;
+		internal static global::MonoJavaBridge.MethodId _getAttributeValue16564;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue14644, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributeValue16564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue14644, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributeValue16564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getColumnNumber14645;
+		internal static global::MonoJavaBridge.MethodId _getColumnNumber16565;
 		 int org.xmlpull.v1.XmlPullParser.getColumnNumber() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getColumnNumber14645);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getColumnNumber16565);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getColumnNumber14645);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getColumnNumber16565);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getText14646;
+		internal static global::MonoJavaBridge.MethodId _getText16566;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getText() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getText14646));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getText16566)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getText14646));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getText16566)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEventType14647;
+		internal static global::MonoJavaBridge.MethodId _getEventType16567;
 		 int org.xmlpull.v1.XmlPullParser.getEventType() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getEventType14647);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getEventType16567);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getEventType14647);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getEventType16567);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeCount14648;
+		internal static global::MonoJavaBridge.MethodId _getAttributeCount16568;
 		 int org.xmlpull.v1.XmlPullParser.getAttributeCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeCount14648);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributeCount16568);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeCount14648);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributeCount16568);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeName14649;
+		internal static global::MonoJavaBridge.MethodId _getAttributeName16569;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeName(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeName14649, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributeName16569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeName14649, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributeName16569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPositionDescription14650;
+		internal static global::MonoJavaBridge.MethodId _getPositionDescription16570;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getPositionDescription() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getPositionDescription14650));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getPositionDescription16570)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getPositionDescription14650));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getPositionDescription16570)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setFeature14651;
+		internal static global::MonoJavaBridge.MethodId _setFeature16571;
 		 void org.xmlpull.v1.XmlPullParser.setFeature(java.lang.String arg0, bool arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setFeature14651, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._setFeature16571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setFeature14651, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._setFeature16571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFeature14652;
+		internal static global::MonoJavaBridge.MethodId _getFeature16572;
 		 bool org.xmlpull.v1.XmlPullParser.getFeature(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._getFeature14652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getFeature16572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getFeature14652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getFeature16572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInputEncoding14653;
+		internal static global::MonoJavaBridge.MethodId _getInputEncoding16573;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getInputEncoding() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getInputEncoding14653));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getInputEncoding16573)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getInputEncoding14653));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getInputEncoding16573)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _defineEntityReplacementText14654;
+		internal static global::MonoJavaBridge.MethodId _defineEntityReplacementText16574;
 		 void org.xmlpull.v1.XmlPullParser.defineEntityReplacementText(java.lang.String arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._defineEntityReplacementText14654, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._defineEntityReplacementText16574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._defineEntityReplacementText14654, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._defineEntityReplacementText16574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNamespaceCount14655;
+		internal static global::MonoJavaBridge.MethodId _getNamespaceCount16575;
 		 int org.xmlpull.v1.XmlPullParser.getNamespaceCount(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getNamespaceCount14655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getNamespaceCount16575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespaceCount14655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getNamespaceCount16575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNamespacePrefix14656;
+		internal static global::MonoJavaBridge.MethodId _getNamespacePrefix16576;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespacePrefix(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespacePrefix14656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getNamespacePrefix16576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespacePrefix14656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getNamespacePrefix16576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNamespaceUri14657;
+		internal static global::MonoJavaBridge.MethodId _getNamespaceUri16577;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespaceUri(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespaceUri14657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getNamespaceUri16577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespaceUri14657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getNamespaceUri16577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNamespace14658;
+		internal static global::MonoJavaBridge.MethodId _getNamespace16578;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespace14658));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getNamespace16578)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespace14658));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getNamespace16578)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNamespace14659;
+		internal static global::MonoJavaBridge.MethodId _getNamespace16579;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespace14659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getNamespace16579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespace14659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getNamespace16579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDepth14660;
+		internal static global::MonoJavaBridge.MethodId _getDepth16580;
 		 int org.xmlpull.v1.XmlPullParser.getDepth() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getDepth14660);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getDepth16580);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getDepth14660);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getDepth16580);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextCharacters14661;
+		internal static global::MonoJavaBridge.MethodId _getTextCharacters16581;
 		 char[] org.xmlpull.v1.XmlPullParser.getTextCharacters(int[] arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getTextCharacters14661, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getTextCharacters16581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as char[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getTextCharacters14661, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getTextCharacters16581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as char[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmptyElementTag14662;
+		internal static global::MonoJavaBridge.MethodId _isEmptyElementTag16582;
 		 bool org.xmlpull.v1.XmlPullParser.isEmptyElementTag() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._isEmptyElementTag14662);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._isEmptyElementTag16582);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._isEmptyElementTag14662);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._isEmptyElementTag16582);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeNamespace14663;
+		internal static global::MonoJavaBridge.MethodId _getAttributeNamespace16583;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeNamespace(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeNamespace14663, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributeNamespace16583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeNamespace14663, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributeNamespace16583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributePrefix14664;
+		internal static global::MonoJavaBridge.MethodId _getAttributePrefix16584;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributePrefix(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributePrefix14664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributePrefix16584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributePrefix14664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributePrefix16584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeType14665;
+		internal static global::MonoJavaBridge.MethodId _getAttributeType16585;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeType(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeType14665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._getAttributeType16585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeType14665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._getAttributeType16585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isAttributeDefault14666;
+		internal static global::MonoJavaBridge.MethodId _isAttributeDefault16586;
 		 bool org.xmlpull.v1.XmlPullParser.isAttributeDefault(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._isAttributeDefault14666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._isAttributeDefault16586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._isAttributeDefault14666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._isAttributeDefault16586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _require14667;
+		internal static global::MonoJavaBridge.MethodId _require16587;
 		 void org.xmlpull.v1.XmlPullParser.require(int arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._require14667, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._require16587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._require14667, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._require16587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextText14668;
+		internal static global::MonoJavaBridge.MethodId _nextText16588;
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.nextText() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._nextText14668));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._nextText16588)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._nextText14668));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._nextText16588)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextTag14669;
+		internal static global::MonoJavaBridge.MethodId _nextTag16589;
 		 int org.xmlpull.v1.XmlPullParser.nextTag() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._nextTag14669);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_._nextTag16589);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._nextTag14669);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParser_.staticClass, global::org.xmlpull.v1.XmlPullParser_._nextTag16589);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.xmlpull.v1.__XmlPullParser.staticClass = @__class;
-			global::org.xmlpull.v1.__XmlPullParser._setProperty14633 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V");
-			global::org.xmlpull.v1.__XmlPullParser._getProperty14634 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getProperty", "(Ljava/lang/String;)Ljava/lang/Object;");
-			global::org.xmlpull.v1.__XmlPullParser._getName14635 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getName", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._next14636 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.next", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._getLineNumber14637 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getLineNumber", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._isWhitespace14638 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.isWhitespace", "()Z");
-			global::org.xmlpull.v1.__XmlPullParser._nextToken14639 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.nextToken", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._setInput14640 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.setInput", "(Ljava/io/InputStream;Ljava/lang/String;)V");
-			global::org.xmlpull.v1.__XmlPullParser._setInput14641 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.setInput", "(Ljava/io/Reader;)V");
-			global::org.xmlpull.v1.__XmlPullParser._getPrefix14642 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getPrefix", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributeValue14643 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributeValue14644 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributeValue", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getColumnNumber14645 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getColumnNumber", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._getText14646 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getText", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getEventType14647 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getEventType", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributeCount14648 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributeCount", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributeName14649 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributeName", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getPositionDescription14650 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getPositionDescription", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._setFeature14651 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.setFeature", "(Ljava/lang/String;Z)V");
-			global::org.xmlpull.v1.__XmlPullParser._getFeature14652 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getFeature", "(Ljava/lang/String;)Z");
-			global::org.xmlpull.v1.__XmlPullParser._getInputEncoding14653 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getInputEncoding", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._defineEntityReplacementText14654 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.defineEntityReplacementText", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xmlpull.v1.__XmlPullParser._getNamespaceCount14655 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getNamespaceCount", "(I)I");
-			global::org.xmlpull.v1.__XmlPullParser._getNamespacePrefix14656 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getNamespacePrefix", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getNamespaceUri14657 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getNamespaceUri", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getNamespace14658 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getNamespace", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getNamespace14659 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getNamespace", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getDepth14660 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getDepth", "()I");
-			global::org.xmlpull.v1.__XmlPullParser._getTextCharacters14661 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getTextCharacters", "([I)[C");
-			global::org.xmlpull.v1.__XmlPullParser._isEmptyElementTag14662 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.isEmptyElementTag", "()Z");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributeNamespace14663 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributeNamespace", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributePrefix14664 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributePrefix", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._getAttributeType14665 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.getAttributeType", "(I)Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._isAttributeDefault14666 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.isAttributeDefault", "(I)Z");
-			global::org.xmlpull.v1.__XmlPullParser._require14667 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.require", "(ILjava/lang/String;Ljava/lang/String;)V");
-			global::org.xmlpull.v1.__XmlPullParser._nextText14668 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.nextText", "()Ljava/lang/String;");
-			global::org.xmlpull.v1.__XmlPullParser._nextTag14669 = @__env.GetMethodID(global::org.xmlpull.v1.__XmlPullParser.staticClass, "org.xmlpull.v1.XmlPullParser.nextTag", "()I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.xmlpull.v1.XmlPullParser_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xmlpull/v1/XmlPullParser"));
+			global::org.xmlpull.v1.XmlPullParser_._setProperty16553 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V");
+			global::org.xmlpull.v1.XmlPullParser_._getProperty16554 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;");
+			global::org.xmlpull.v1.XmlPullParser_._getName16555 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getName", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._next16556 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "next", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._getLineNumber16557 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getLineNumber", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._isWhitespace16558 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "isWhitespace", "()Z");
+			global::org.xmlpull.v1.XmlPullParser_._nextToken16559 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "nextToken", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._setInput16560 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "setInput", "(Ljava/io/InputStream;Ljava/lang/String;)V");
+			global::org.xmlpull.v1.XmlPullParser_._setInput16561 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "setInput", "(Ljava/io/Reader;)V");
+			global::org.xmlpull.v1.XmlPullParser_._getPrefix16562 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getPrefix", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributeValue16563 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributeValue16564 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributeValue", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getColumnNumber16565 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getColumnNumber", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._getText16566 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getText", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getEventType16567 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getEventType", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributeCount16568 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributeCount", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributeName16569 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributeName", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getPositionDescription16570 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getPositionDescription", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._setFeature16571 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "setFeature", "(Ljava/lang/String;Z)V");
+			global::org.xmlpull.v1.XmlPullParser_._getFeature16572 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getFeature", "(Ljava/lang/String;)Z");
+			global::org.xmlpull.v1.XmlPullParser_._getInputEncoding16573 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getInputEncoding", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._defineEntityReplacementText16574 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "defineEntityReplacementText", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xmlpull.v1.XmlPullParser_._getNamespaceCount16575 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getNamespaceCount", "(I)I");
+			global::org.xmlpull.v1.XmlPullParser_._getNamespacePrefix16576 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getNamespacePrefix", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getNamespaceUri16577 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getNamespaceUri", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getNamespace16578 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getNamespace", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getNamespace16579 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getNamespace", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getDepth16580 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getDepth", "()I");
+			global::org.xmlpull.v1.XmlPullParser_._getTextCharacters16581 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getTextCharacters", "([I)[C");
+			global::org.xmlpull.v1.XmlPullParser_._isEmptyElementTag16582 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "isEmptyElementTag", "()Z");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributeNamespace16583 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributeNamespace", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributePrefix16584 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributePrefix", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._getAttributeType16585 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "getAttributeType", "(I)Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._isAttributeDefault16586 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "isAttributeDefault", "(I)Z");
+			global::org.xmlpull.v1.XmlPullParser_._require16587 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "require", "(ILjava/lang/String;Ljava/lang/String;)V");
+			global::org.xmlpull.v1.XmlPullParser_._nextText16588 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "nextText", "()Ljava/lang/String;");
+			global::org.xmlpull.v1.XmlPullParser_._nextTag16589 = @__env.GetMethodIDNoThrow(global::org.xmlpull.v1.XmlPullParser_.staticClass, "nextTag", "()I");
 		}
 	}
 }

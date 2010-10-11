@@ -1,43 +1,38 @@
 namespace android.app
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AliasActivity : android.app.Activity
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AliasActivity : android.app.Activity
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AliasActivity()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.AliasActivity), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.app.AliasActivity(@__env);
-			}
-		}
-		protected AliasActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AliasActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCreate435;
+		internal static global::MonoJavaBridge.MethodId _onCreate444;
 		protected override void onCreate(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.AliasActivity._onCreate435, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.AliasActivity._onCreate444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.AliasActivity.staticClass, global::android.app.AliasActivity._onCreate435, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AliasActivity.staticClass, global::android.app.AliasActivity._onCreate444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AliasActivity436;
-		public AliasActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AliasActivity445;
+		public AliasActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.app.AliasActivity.staticClass, global::android.app.AliasActivity._AliasActivity436, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AliasActivity.staticClass, global::android.app.AliasActivity._AliasActivity445);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.app.AliasActivity.staticClass = @__class;
-			global::android.app.AliasActivity._onCreate435 = @__env.GetMethodID(global::android.app.AliasActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.app.AliasActivity._AliasActivity436 = @__env.GetMethodID(global::android.app.AliasActivity.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.app.AliasActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AliasActivity"));
+			global::android.app.AliasActivity._onCreate444 = @__env.GetMethodIDNoThrow(global::android.app.AliasActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
+			global::android.app.AliasActivity._AliasActivity445 = @__env.GetMethodIDNoThrow(global::android.app.AliasActivity.staticClass, "<init>", "()V");
 		}
 	}
 }

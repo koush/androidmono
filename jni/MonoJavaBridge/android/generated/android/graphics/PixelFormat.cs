@@ -1,40 +1,34 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class PixelFormat : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class PixelFormat : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PixelFormat()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.PixelFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.PixelFormat(@__env);
-			}
-		}
-		protected PixelFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PixelFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPixelFormatInfo3427;
+		internal static global::MonoJavaBridge.MethodId _getPixelFormatInfo3613;
 		public static void getPixelFormatInfo(int arg0, android.graphics.PixelFormat arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.graphics.PixelFormat.staticClass, global::android.graphics.PixelFormat._getPixelFormatInfo3427, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.graphics.PixelFormat.staticClass, global::android.graphics.PixelFormat._getPixelFormatInfo3613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _formatHasAlpha3428;
+		internal static global::MonoJavaBridge.MethodId _formatHasAlpha3614;
 		public static bool formatHasAlpha(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.graphics.PixelFormat.staticClass, global::android.graphics.PixelFormat._formatHasAlpha3428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return @__env.CallStaticBooleanMethod(android.graphics.PixelFormat.staticClass, global::android.graphics.PixelFormat._formatHasAlpha3614, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PixelFormat3429;
-		public PixelFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PixelFormat3615;
+		public PixelFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PixelFormat.staticClass, global::android.graphics.PixelFormat._PixelFormat3429, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PixelFormat.staticClass, global::android.graphics.PixelFormat._PixelFormat3615);
+			Init(@__env, handle);
 		}
 		public static int UNKNOWN
 		{
@@ -162,7 +156,7 @@ namespace android.graphics
 				return 256;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _bytesPerPixel3430;
+		internal static global::MonoJavaBridge.FieldId _bytesPerPixel3616;
 		public int bytesPerPixel
 		{
 			get
@@ -173,7 +167,7 @@ namespace android.graphics
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _bitsPerPixel3431;
+		internal static global::MonoJavaBridge.FieldId _bitsPerPixel3617;
 		public int bitsPerPixel
 		{
 			get
@@ -184,12 +178,13 @@ namespace android.graphics
 			{
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.PixelFormat.staticClass = @__class;
-			global::android.graphics.PixelFormat._getPixelFormatInfo3427 = @__env.GetStaticMethodID(global::android.graphics.PixelFormat.staticClass, "getPixelFormatInfo", "(ILandroid/graphics/PixelFormat;)V");
-			global::android.graphics.PixelFormat._formatHasAlpha3428 = @__env.GetStaticMethodID(global::android.graphics.PixelFormat.staticClass, "formatHasAlpha", "(I)Z");
-			global::android.graphics.PixelFormat._PixelFormat3429 = @__env.GetMethodID(global::android.graphics.PixelFormat.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.PixelFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/PixelFormat"));
+			global::android.graphics.PixelFormat._getPixelFormatInfo3613 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.PixelFormat.staticClass, "getPixelFormatInfo", "(ILandroid/graphics/PixelFormat;)V");
+			global::android.graphics.PixelFormat._formatHasAlpha3614 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.PixelFormat.staticClass, "formatHasAlpha", "(I)Z");
+			global::android.graphics.PixelFormat._PixelFormat3615 = @__env.GetMethodIDNoThrow(global::android.graphics.PixelFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

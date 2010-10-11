@@ -1,255 +1,236 @@
 namespace android.widget
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class RadioGroup : android.widget.LinearLayout
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class RadioGroup : android.widget.LinearLayout
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static RadioGroup()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.RadioGroup), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.widget.RadioGroup(@__env);
-			}
-		}
-		protected RadioGroup(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected RadioGroup(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public new class LayoutParams : android.widget.LinearLayout.LayoutParams
+		[global::MonoJavaBridge.JavaClass()]
+		public new partial class LayoutParams : android.widget.LinearLayout.LayoutParams
 		{
-			internal new static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static LayoutParams()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.RadioGroup.LayoutParams), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.widget.RadioGroup.LayoutParams(@__env);
-				}
-			}
-			protected LayoutParams(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _setBaseAttributes11338;
+			internal static global::MonoJavaBridge.MethodId _setBaseAttributes11717;
 			protected override void setBaseAttributes(android.content.res.TypedArray arg0, int arg1, int arg2) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.RadioGroup.LayoutParams._setBaseAttributes11338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.LayoutParams._setBaseAttributes11717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._setBaseAttributes11338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._setBaseAttributes11717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams11339;
-			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11718;
+			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11339, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams11340;
-			public LayoutParams(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11719;
+			public LayoutParams(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11340, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams11341;
-			public LayoutParams(int arg0, int arg1, float arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11720;
+			public LayoutParams(int arg0, int arg1, float arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11341, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams11342;
-			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11721;
+			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11342, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams11343;
-			public LayoutParams(android.view.ViewGroup.MarginLayoutParams arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _LayoutParams11722;
+			public LayoutParams(android.view.ViewGroup.MarginLayoutParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11343, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._LayoutParams11722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.widget.RadioGroup.LayoutParams.staticClass = @__class;
-				global::android.widget.RadioGroup.LayoutParams._setBaseAttributes11338 = @__env.GetMethodID(global::android.widget.RadioGroup.LayoutParams.staticClass, "setBaseAttributes", "(Landroid/content/res/TypedArray;II)V");
-				global::android.widget.RadioGroup.LayoutParams._LayoutParams11339 = @__env.GetMethodID(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-				global::android.widget.RadioGroup.LayoutParams._LayoutParams11340 = @__env.GetMethodID(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(II)V");
-				global::android.widget.RadioGroup.LayoutParams._LayoutParams11341 = @__env.GetMethodID(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(IIF)V");
-				global::android.widget.RadioGroup.LayoutParams._LayoutParams11342 = @__env.GetMethodID(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
-				global::android.widget.RadioGroup.LayoutParams._LayoutParams11343 = @__env.GetMethodID(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.RadioGroup.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RadioGroup$LayoutParams"));
+				global::android.widget.RadioGroup.LayoutParams._setBaseAttributes11717 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.LayoutParams.staticClass, "setBaseAttributes", "(Landroid/content/res/TypedArray;II)V");
+				global::android.widget.RadioGroup.LayoutParams._LayoutParams11718 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+				global::android.widget.RadioGroup.LayoutParams._LayoutParams11719 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(II)V");
+				global::android.widget.RadioGroup.LayoutParams._LayoutParams11720 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(IIF)V");
+				global::android.widget.RadioGroup.LayoutParams._LayoutParams11721 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
+				global::android.widget.RadioGroup.LayoutParams._LayoutParams11722 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
 			}
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnCheckedChangeListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.RadioGroup.OnCheckedChangeListener_))]
+		public interface OnCheckedChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCheckedChanged(android.widget.RadioGroup arg0, int arg1);
 		}
 
-		public partial class OnCheckedChangeListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.RadioGroup.OnCheckedChangeListener))]
+		public sealed partial class OnCheckedChangeListener_ : java.lang.Object, OnCheckedChangeListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnCheckedChangeListener_()
 			{
-				get { return __OnCheckedChangeListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnCheckedChangeListener : java.lang.Object, OnCheckedChangeListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnCheckedChangeListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.RadioGroup.__OnCheckedChangeListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.widget.RadioGroup.__OnCheckedChangeListener(@__env);
-				}
-			}
-			internal __OnCheckedChangeListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnCheckedChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onCheckedChanged11344;
+			internal static global::MonoJavaBridge.MethodId _onCheckedChanged11723;
 			 void android.widget.RadioGroup.OnCheckedChangeListener.onCheckedChanged(android.widget.RadioGroup arg0, int arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.RadioGroup.__OnCheckedChangeListener._onCheckedChanged11344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.OnCheckedChangeListener_._onCheckedChanged11723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.__OnCheckedChangeListener.staticClass, global::android.widget.RadioGroup.__OnCheckedChangeListener._onCheckedChanged11344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.OnCheckedChangeListener_.staticClass, global::android.widget.RadioGroup.OnCheckedChangeListener_._onCheckedChanged11723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.widget.RadioGroup.__OnCheckedChangeListener.staticClass = @__class;
-				global::android.widget.RadioGroup.__OnCheckedChangeListener._onCheckedChanged11344 = @__env.GetMethodID(global::android.widget.RadioGroup.__OnCheckedChangeListener.staticClass, "android.widget.RadioGroup.OnCheckedChangeListener.onCheckedChanged", "(Landroid/widget/RadioGroup;I)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.RadioGroup.OnCheckedChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RadioGroup$OnCheckedChangeListener"));
+				global::android.widget.RadioGroup.OnCheckedChangeListener_._onCheckedChanged11723 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.OnCheckedChangeListener_.staticClass, "onCheckedChanged", "(Landroid/widget/RadioGroup;I)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _check11345;
+		internal static global::MonoJavaBridge.MethodId _check11724;
 		public virtual void check(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._check11345, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup._check11724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._check11345, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._check11724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addView11346;
+		internal static global::MonoJavaBridge.MethodId _addView11725;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._addView11346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup._addView11725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._addView11346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._addView11725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate11347;
+		internal static global::MonoJavaBridge.MethodId _onFinishInflate11726;
 		protected override void onFinishInflate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._onFinishInflate11347);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup._onFinishInflate11726);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._onFinishInflate11347);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._onFinishInflate11726);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _checkLayoutParams11348;
+		internal static global::MonoJavaBridge.MethodId _checkLayoutParams11727;
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.RadioGroup._checkLayoutParams11348, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.RadioGroup._checkLayoutParams11727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._checkLayoutParams11348, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._checkLayoutParams11727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnHierarchyChangeListener11349;
+		internal static global::MonoJavaBridge.MethodId _setOnHierarchyChangeListener11728;
 		public override void setOnHierarchyChangeListener(android.view.ViewGroup.OnHierarchyChangeListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._setOnHierarchyChangeListener11349, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup._setOnHierarchyChangeListener11728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._setOnHierarchyChangeListener11349, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._setOnHierarchyChangeListener11728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams11350;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams11729;
 		public virtual new global::android.widget.RadioGroup.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.RadioGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RadioGroup._generateLayoutParams11350, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RadioGroup._generateLayoutParams11729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.RadioGroup.LayoutParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.RadioGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._generateLayoutParams11350, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._generateLayoutParams11729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.RadioGroup.LayoutParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _generateDefaultLayoutParams11351;
+		internal static global::MonoJavaBridge.MethodId _generateDefaultLayoutParams11730;
 		protected override global::android.widget.LinearLayout.LayoutParams generateDefaultLayoutParams() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RadioGroup._generateDefaultLayoutParams11351));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RadioGroup._generateDefaultLayoutParams11730)) as android.widget.LinearLayout.LayoutParams;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._generateDefaultLayoutParams11351));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._generateDefaultLayoutParams11730)) as android.widget.LinearLayout.LayoutParams;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnCheckedChangeListener11352;
+		internal static global::MonoJavaBridge.MethodId _setOnCheckedChangeListener11731;
 		public virtual void setOnCheckedChangeListener(android.widget.RadioGroup.OnCheckedChangeListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._setOnCheckedChangeListener11352, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup._setOnCheckedChangeListener11731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._setOnCheckedChangeListener11352, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._setOnCheckedChangeListener11731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCheckedRadioButtonId11353;
+		internal static global::MonoJavaBridge.MethodId _getCheckedRadioButtonId11732;
 		public virtual int getCheckedRadioButtonId() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.RadioGroup._getCheckedRadioButtonId11353);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.RadioGroup._getCheckedRadioButtonId11732);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._getCheckedRadioButtonId11353);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._getCheckedRadioButtonId11732);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearCheck11354;
+		internal static global::MonoJavaBridge.MethodId _clearCheck11733;
 		public virtual void clearCheck() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._clearCheck11354);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RadioGroup._clearCheck11733);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._clearCheck11354);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._clearCheck11733);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RadioGroup11355;
-		public RadioGroup(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RadioGroup11734;
+		public RadioGroup(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._RadioGroup11355, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._RadioGroup11734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RadioGroup11356;
-		public RadioGroup(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _RadioGroup11735;
+		public RadioGroup(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._RadioGroup11356, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._RadioGroup11735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.widget.RadioGroup.staticClass = @__class;
-			global::android.widget.RadioGroup._check11345 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "check", "(I)V");
-			global::android.widget.RadioGroup._addView11346 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
-			global::android.widget.RadioGroup._onFinishInflate11347 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "onFinishInflate", "()V");
-			global::android.widget.RadioGroup._checkLayoutParams11348 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
-			global::android.widget.RadioGroup._setOnHierarchyChangeListener11349 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "setOnHierarchyChangeListener", "(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V");
-			global::android.widget.RadioGroup._generateLayoutParams11350 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/RadioGroup$LayoutParams;");
-			global::android.widget.RadioGroup._generateDefaultLayoutParams11351 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "generateDefaultLayoutParams", "()Landroid/widget/LinearLayout$LayoutParams;");
-			global::android.widget.RadioGroup._setOnCheckedChangeListener11352 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "setOnCheckedChangeListener", "(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V");
-			global::android.widget.RadioGroup._getCheckedRadioButtonId11353 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "getCheckedRadioButtonId", "()I");
-			global::android.widget.RadioGroup._clearCheck11354 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "clearCheck", "()V");
-			global::android.widget.RadioGroup._RadioGroup11355 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.RadioGroup._RadioGroup11356 = @__env.GetMethodID(global::android.widget.RadioGroup.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.widget.RadioGroup.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RadioGroup"));
+			global::android.widget.RadioGroup._check11724 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "check", "(I)V");
+			global::android.widget.RadioGroup._addView11725 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
+			global::android.widget.RadioGroup._onFinishInflate11726 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "onFinishInflate", "()V");
+			global::android.widget.RadioGroup._checkLayoutParams11727 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
+			global::android.widget.RadioGroup._setOnHierarchyChangeListener11728 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "setOnHierarchyChangeListener", "(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V");
+			global::android.widget.RadioGroup._generateLayoutParams11729 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/RadioGroup$LayoutParams;");
+			global::android.widget.RadioGroup._generateDefaultLayoutParams11730 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "generateDefaultLayoutParams", "()Landroid/widget/LinearLayout$LayoutParams;");
+			global::android.widget.RadioGroup._setOnCheckedChangeListener11731 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "setOnCheckedChangeListener", "(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V");
+			global::android.widget.RadioGroup._getCheckedRadioButtonId11732 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "getCheckedRadioButtonId", "()I");
+			global::android.widget.RadioGroup._clearCheck11733 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "clearCheck", "()V");
+			global::android.widget.RadioGroup._RadioGroup11734 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.RadioGroup._RadioGroup11735 = @__env.GetMethodIDNoThrow(global::android.widget.RadioGroup.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

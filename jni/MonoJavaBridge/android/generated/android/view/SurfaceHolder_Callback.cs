@@ -1,72 +1,58 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface SurfaceHolder_Callback 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.SurfaceHolder_Callback_))]
+	public interface SurfaceHolder_Callback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void surfaceCreated(android.view.SurfaceHolder arg0);
 		void surfaceDestroyed(android.view.SurfaceHolder arg0);
 		void surfaceChanged(android.view.SurfaceHolder arg0, int arg1, int arg2, int arg3);
 	}
 
-	public partial class SurfaceHolder_Callback_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.SurfaceHolder_Callback))]
+	public sealed partial class SurfaceHolder_Callback_ : java.lang.Object, SurfaceHolder_Callback
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static SurfaceHolder_Callback_()
 		{
-			get { return __SurfaceHolder_Callback.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __SurfaceHolder_Callback : java.lang.Object, SurfaceHolder_Callback
-	{
-		internal static global::java.lang.Class staticClass;
-		static __SurfaceHolder_Callback()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__SurfaceHolder_Callback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.__SurfaceHolder_Callback(@__env);
-			}
-		}
-		internal __SurfaceHolder_Callback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal SurfaceHolder_Callback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _surfaceCreated8749;
+		internal static global::MonoJavaBridge.MethodId _surfaceCreated9058;
 		 void android.view.SurfaceHolder_Callback.surfaceCreated(android.view.SurfaceHolder arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder_Callback._surfaceCreated8749, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_._surfaceCreated9058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder_Callback.staticClass, global::android.view.__SurfaceHolder_Callback._surfaceCreated8749, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_.staticClass, global::android.view.SurfaceHolder_Callback_._surfaceCreated9058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _surfaceDestroyed8750;
+		internal static global::MonoJavaBridge.MethodId _surfaceDestroyed9059;
 		 void android.view.SurfaceHolder_Callback.surfaceDestroyed(android.view.SurfaceHolder arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder_Callback._surfaceDestroyed8750, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_._surfaceDestroyed9059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder_Callback.staticClass, global::android.view.__SurfaceHolder_Callback._surfaceDestroyed8750, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_.staticClass, global::android.view.SurfaceHolder_Callback_._surfaceDestroyed9059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _surfaceChanged8751;
+		internal static global::MonoJavaBridge.MethodId _surfaceChanged9060;
 		 void android.view.SurfaceHolder_Callback.surfaceChanged(android.view.SurfaceHolder arg0, int arg1, int arg2, int arg3) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder_Callback._surfaceChanged8751, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_._surfaceChanged9060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder_Callback.staticClass, global::android.view.__SurfaceHolder_Callback._surfaceChanged8751, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_.staticClass, global::android.view.SurfaceHolder_Callback_._surfaceChanged9060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.__SurfaceHolder_Callback.staticClass = @__class;
-			global::android.view.__SurfaceHolder_Callback._surfaceCreated8749 = @__env.GetMethodID(global::android.view.__SurfaceHolder_Callback.staticClass, "android.view.SurfaceHolder_Callback.surfaceCreated", "(Landroid/view/SurfaceHolder;)V");
-			global::android.view.__SurfaceHolder_Callback._surfaceDestroyed8750 = @__env.GetMethodID(global::android.view.__SurfaceHolder_Callback.staticClass, "android.view.SurfaceHolder_Callback.surfaceDestroyed", "(Landroid/view/SurfaceHolder;)V");
-			global::android.view.__SurfaceHolder_Callback._surfaceChanged8751 = @__env.GetMethodID(global::android.view.__SurfaceHolder_Callback.staticClass, "android.view.SurfaceHolder_Callback.surfaceChanged", "(Landroid/view/SurfaceHolder;III)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.SurfaceHolder_Callback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SurfaceHolder_Callback"));
+			global::android.view.SurfaceHolder_Callback_._surfaceCreated9058 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_Callback_.staticClass, "surfaceCreated", "(Landroid/view/SurfaceHolder;)V");
+			global::android.view.SurfaceHolder_Callback_._surfaceDestroyed9059 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_Callback_.staticClass, "surfaceDestroyed", "(Landroid/view/SurfaceHolder;)V");
+			global::android.view.SurfaceHolder_Callback_._surfaceChanged9060 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceHolder_Callback_.staticClass, "surfaceChanged", "(Landroid/view/SurfaceHolder;III)V");
 		}
 	}
 }

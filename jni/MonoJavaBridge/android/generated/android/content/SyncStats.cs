@@ -1,72 +1,67 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SyncStats : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SyncStats : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SyncStats()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.SyncStats), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.SyncStats(@__env);
-			}
-		}
-		protected SyncStats(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SyncStats(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1722;
+		internal static global::MonoJavaBridge.MethodId _toString1816;
 		public override global::java.lang.String toString() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncStats._toString1722));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncStats._toString1816)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._toString1722));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._toString1816)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear1723;
+		internal static global::MonoJavaBridge.MethodId _clear1817;
 		public virtual void clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.SyncStats._clear1723);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.SyncStats._clear1817);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._clear1723);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._clear1817);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1724;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel1818;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.SyncStats._writeToParcel1724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.SyncStats._writeToParcel1818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._writeToParcel1724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._writeToParcel1818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1725;
+		internal static global::MonoJavaBridge.MethodId _describeContents1819;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.SyncStats._describeContents1725);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.SyncStats._describeContents1819);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._describeContents1725);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._describeContents1819);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SyncStats1726;
-		public SyncStats()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SyncStats1820;
+		public SyncStats()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.SyncStats.staticClass, global::android.content.SyncStats._SyncStats1726, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.SyncStats.staticClass, global::android.content.SyncStats._SyncStats1820);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SyncStats1727;
-		public SyncStats(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SyncStats1821;
+		public SyncStats(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.SyncStats.staticClass, global::android.content.SyncStats._SyncStats1727, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.SyncStats.staticClass, global::android.content.SyncStats._SyncStats1821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numAuthExceptions1728;
+		internal static global::MonoJavaBridge.FieldId _numAuthExceptions1822;
 		public long numAuthExceptions
 		{
 			get
@@ -77,7 +72,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numIoExceptions1729;
+		internal static global::MonoJavaBridge.FieldId _numIoExceptions1823;
 		public long numIoExceptions
 		{
 			get
@@ -88,7 +83,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numParseExceptions1730;
+		internal static global::MonoJavaBridge.FieldId _numParseExceptions1824;
 		public long numParseExceptions
 		{
 			get
@@ -99,7 +94,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numConflictDetectedExceptions1731;
+		internal static global::MonoJavaBridge.FieldId _numConflictDetectedExceptions1825;
 		public long numConflictDetectedExceptions
 		{
 			get
@@ -110,7 +105,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numInserts1732;
+		internal static global::MonoJavaBridge.FieldId _numInserts1826;
 		public long numInserts
 		{
 			get
@@ -121,7 +116,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numUpdates1733;
+		internal static global::MonoJavaBridge.FieldId _numUpdates1827;
 		public long numUpdates
 		{
 			get
@@ -132,7 +127,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numDeletes1734;
+		internal static global::MonoJavaBridge.FieldId _numDeletes1828;
 		public long numDeletes
 		{
 			get
@@ -143,7 +138,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numEntries1735;
+		internal static global::MonoJavaBridge.FieldId _numEntries1829;
 		public long numEntries
 		{
 			get
@@ -154,7 +149,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _numSkippedEntries1736;
+		internal static global::MonoJavaBridge.FieldId _numSkippedEntries1830;
 		public long numSkippedEntries
 		{
 			get
@@ -165,7 +160,7 @@ namespace android.content
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1737;
+		internal static global::MonoJavaBridge.FieldId _CREATOR1831;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -173,15 +168,16 @@ namespace android.content
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.SyncStats.staticClass = @__class;
-			global::android.content.SyncStats._toString1722 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.SyncStats._clear1723 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "clear", "()V");
-			global::android.content.SyncStats._writeToParcel1724 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.SyncStats._describeContents1725 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "describeContents", "()I");
-			global::android.content.SyncStats._SyncStats1726 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "<init>", "()V");
-			global::android.content.SyncStats._SyncStats1727 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.SyncStats.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/SyncStats"));
+			global::android.content.SyncStats._toString1816 = @__env.GetMethodIDNoThrow(global::android.content.SyncStats.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.SyncStats._clear1817 = @__env.GetMethodIDNoThrow(global::android.content.SyncStats.staticClass, "clear", "()V");
+			global::android.content.SyncStats._writeToParcel1818 = @__env.GetMethodIDNoThrow(global::android.content.SyncStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.SyncStats._describeContents1819 = @__env.GetMethodIDNoThrow(global::android.content.SyncStats.staticClass, "describeContents", "()I");
+			global::android.content.SyncStats._SyncStats1820 = @__env.GetMethodIDNoThrow(global::android.content.SyncStats.staticClass, "<init>", "()V");
+			global::android.content.SyncStats._SyncStats1821 = @__env.GetMethodIDNoThrow(global::android.content.SyncStats.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

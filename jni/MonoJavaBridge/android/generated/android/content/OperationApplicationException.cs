@@ -1,78 +1,78 @@
 namespace android.content
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class OperationApplicationException : java.lang.Exception
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class OperationApplicationException : java.lang.Exception
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static OperationApplicationException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.OperationApplicationException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.content.OperationApplicationException(@__env);
-			}
-		}
-		protected OperationApplicationException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected OperationApplicationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNumSuccessfulYieldPoints1636;
+		internal static global::MonoJavaBridge.MethodId _getNumSuccessfulYieldPoints1730;
 		public virtual int getNumSuccessfulYieldPoints() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1636);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1730);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1636);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1730);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1637;
-		public OperationApplicationException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationApplicationException1731;
+		public OperationApplicationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1637, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1731);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1638;
-		public OperationApplicationException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationApplicationException1732;
+		public OperationApplicationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1638, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1639;
-		public OperationApplicationException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationApplicationException1733;
+		public OperationApplicationException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1639, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1640;
-		public OperationApplicationException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationApplicationException1734;
+		public OperationApplicationException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1640, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1641;
-		public OperationApplicationException(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationApplicationException1735;
+		public OperationApplicationException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1641, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1642;
-		public OperationApplicationException(java.lang.String arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OperationApplicationException1736;
+		public OperationApplicationException(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1642, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.OperationApplicationException.staticClass, global::android.content.OperationApplicationException._OperationApplicationException1736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.OperationApplicationException.staticClass = @__class;
-			global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1636 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I");
-			global::android.content.OperationApplicationException._OperationApplicationException1637 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "()V");
-			global::android.content.OperationApplicationException._OperationApplicationException1638 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.content.OperationApplicationException._OperationApplicationException1639 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::android.content.OperationApplicationException._OperationApplicationException1640 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::android.content.OperationApplicationException._OperationApplicationException1641 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(I)V");
-			global::android.content.OperationApplicationException._OperationApplicationException1642 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.OperationApplicationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/OperationApplicationException"));
+			global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1730 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I");
+			global::android.content.OperationApplicationException._OperationApplicationException1731 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "()V");
+			global::android.content.OperationApplicationException._OperationApplicationException1732 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.content.OperationApplicationException._OperationApplicationException1733 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::android.content.OperationApplicationException._OperationApplicationException1734 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::android.content.OperationApplicationException._OperationApplicationException1735 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(I)V");
+			global::android.content.OperationApplicationException._OperationApplicationException1736 = @__env.GetMethodIDNoThrow(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;I)V");
 		}
 	}
 }

@@ -1,76 +1,70 @@
 namespace android.app
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class NotificationManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class NotificationManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static NotificationManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.NotificationManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.app.NotificationManager(@__env);
-			}
-		}
-		protected NotificationManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected NotificationManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _notify692;
+		internal static global::MonoJavaBridge.MethodId _notify702;
 		public virtual void notify(int arg0, android.app.Notification arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.NotificationManager._notify692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.NotificationManager._notify702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._notify692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._notify702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _notify693;
+		internal static global::MonoJavaBridge.MethodId _notify703;
 		public virtual void notify(java.lang.String arg0, int arg1, android.app.Notification arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.NotificationManager._notify693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.NotificationManager._notify703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._notify693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._notify703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel694;
+		internal static global::MonoJavaBridge.MethodId _cancel704;
 		public virtual void cancel(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.NotificationManager._cancel694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.NotificationManager._cancel704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancel694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancel704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel695;
+		internal static global::MonoJavaBridge.MethodId _cancel705;
 		public virtual void cancel(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.NotificationManager._cancel695, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.NotificationManager._cancel705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancel695, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancel705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancelAll696;
+		internal static global::MonoJavaBridge.MethodId _cancelAll706;
 		public virtual void cancelAll() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.app.NotificationManager._cancelAll696);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.NotificationManager._cancelAll706);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancelAll696);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancelAll706);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.app.NotificationManager.staticClass = @__class;
-			global::android.app.NotificationManager._notify692 = @__env.GetMethodID(global::android.app.NotificationManager.staticClass, "notify", "(ILandroid/app/Notification;)V");
-			global::android.app.NotificationManager._notify693 = @__env.GetMethodID(global::android.app.NotificationManager.staticClass, "notify", "(Ljava/lang/String;ILandroid/app/Notification;)V");
-			global::android.app.NotificationManager._cancel694 = @__env.GetMethodID(global::android.app.NotificationManager.staticClass, "cancel", "(I)V");
-			global::android.app.NotificationManager._cancel695 = @__env.GetMethodID(global::android.app.NotificationManager.staticClass, "cancel", "(Ljava/lang/String;I)V");
-			global::android.app.NotificationManager._cancelAll696 = @__env.GetMethodID(global::android.app.NotificationManager.staticClass, "cancelAll", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.app.NotificationManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/NotificationManager"));
+			global::android.app.NotificationManager._notify702 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "notify", "(ILandroid/app/Notification;)V");
+			global::android.app.NotificationManager._notify703 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "notify", "(Ljava/lang/String;ILandroid/app/Notification;)V");
+			global::android.app.NotificationManager._cancel704 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "cancel", "(I)V");
+			global::android.app.NotificationManager._cancel705 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "cancel", "(Ljava/lang/String;I)V");
+			global::android.app.NotificationManager._cancelAll706 = @__env.GetMethodIDNoThrow(global::android.app.NotificationManager.staticClass, "cancelAll", "()V");
 		}
 	}
 }

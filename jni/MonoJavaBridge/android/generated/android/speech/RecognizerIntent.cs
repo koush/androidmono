@@ -1,28 +1,21 @@
 namespace android.speech
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class RecognizerIntent : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class RecognizerIntent : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static RecognizerIntent()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.speech.RecognizerIntent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.speech.RecognizerIntent(@__env);
-			}
-		}
-		protected RecognizerIntent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected RecognizerIntent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVoiceDetailsIntent7028;
+		internal static global::MonoJavaBridge.MethodId _getVoiceDetailsIntent7308;
 		public static global::android.content.Intent getVoiceDetailsIntent(android.content.Context arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallStaticObjectMethodPtr(android.speech.RecognizerIntent.staticClass, global::android.speech.RecognizerIntent._getVoiceDetailsIntent7028, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.RecognizerIntent.staticClass, global::android.speech.RecognizerIntent._getVoiceDetailsIntent7308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
 		}
 		public static global::java.lang.String EXTRA_CALLING_PACKAGE
 		{
@@ -206,10 +199,11 @@ namespace android.speech
 				return "android.speech.extra.SUPPORTED_LANGUAGES";
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.speech.RecognizerIntent.staticClass = @__class;
-			global::android.speech.RecognizerIntent._getVoiceDetailsIntent7028 = @__env.GetStaticMethodID(global::android.speech.RecognizerIntent.staticClass, "getVoiceDetailsIntent", "(Landroid/content/Context;)Landroid/content/Intent;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.speech.RecognizerIntent.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/speech/RecognizerIntent"));
+			global::android.speech.RecognizerIntent._getVoiceDetailsIntent7308 = @__env.GetStaticMethodIDNoThrow(global::android.speech.RecognizerIntent.staticClass, "getVoiceDetailsIntent", "(Landroid/content/Context;)Landroid/content/Intent;");
 		}
 	}
 }

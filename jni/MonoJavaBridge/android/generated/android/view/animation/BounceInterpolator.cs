@@ -1,50 +1,46 @@
 namespace android.view.animation
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class BounceInterpolator : java.lang.Object, Interpolator
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class BounceInterpolator : java.lang.Object, Interpolator
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static BounceInterpolator()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.BounceInterpolator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.animation.BounceInterpolator(@__env);
-			}
-		}
-		protected BounceInterpolator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected BounceInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation9641;
+		internal static global::MonoJavaBridge.MethodId _getInterpolation9988;
 		public virtual float getInterpolation(float arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.BounceInterpolator._getInterpolation9641, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.BounceInterpolator._getInterpolation9988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.BounceInterpolator.staticClass, global::android.view.animation.BounceInterpolator._getInterpolation9641, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.BounceInterpolator.staticClass, global::android.view.animation.BounceInterpolator._getInterpolation9988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BounceInterpolator9642;
-		public BounceInterpolator()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BounceInterpolator9989;
+		public BounceInterpolator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.BounceInterpolator.staticClass, global::android.view.animation.BounceInterpolator._BounceInterpolator9642, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.BounceInterpolator.staticClass, global::android.view.animation.BounceInterpolator._BounceInterpolator9989);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BounceInterpolator9643;
-		public BounceInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BounceInterpolator9990;
+		public BounceInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.BounceInterpolator.staticClass, global::android.view.animation.BounceInterpolator._BounceInterpolator9643, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.BounceInterpolator.staticClass, global::android.view.animation.BounceInterpolator._BounceInterpolator9990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.animation.BounceInterpolator.staticClass = @__class;
-			global::android.view.animation.BounceInterpolator._getInterpolation9641 = @__env.GetMethodID(global::android.view.animation.BounceInterpolator.staticClass, "getInterpolation", "(F)F");
-			global::android.view.animation.BounceInterpolator._BounceInterpolator9642 = @__env.GetMethodID(global::android.view.animation.BounceInterpolator.staticClass, "<init>", "()V");
-			global::android.view.animation.BounceInterpolator._BounceInterpolator9643 = @__env.GetMethodID(global::android.view.animation.BounceInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.animation.BounceInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/BounceInterpolator"));
+			global::android.view.animation.BounceInterpolator._getInterpolation9988 = @__env.GetMethodIDNoThrow(global::android.view.animation.BounceInterpolator.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.BounceInterpolator._BounceInterpolator9989 = @__env.GetMethodIDNoThrow(global::android.view.animation.BounceInterpolator.staticClass, "<init>", "()V");
+			global::android.view.animation.BounceInterpolator._BounceInterpolator9990 = @__env.GetMethodIDNoThrow(global::android.view.animation.BounceInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

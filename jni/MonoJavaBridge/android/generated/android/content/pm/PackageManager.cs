@@ -1,187 +1,184 @@
 namespace android.content.pm
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class PackageManager : java.lang.Object
+	[global::MonoJavaBridge.JavaClass(typeof(global::android.content.pm.PackageManager_))]
+	public abstract partial class PackageManager : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static PackageManager()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.PackageManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected PackageManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected PackageManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public class NameNotFoundException : android.util.AndroidException
+		[global::MonoJavaBridge.JavaClass()]
+		public partial class NameNotFoundException : android.util.AndroidException
 		{
-			internal new static global::java.lang.Class staticClass;
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static NameNotFoundException()
 			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.pm.PackageManager.NameNotFoundException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+				InitJNI();
 			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.content.pm.PackageManager.NameNotFoundException(@__env);
-				}
-			}
-			protected NameNotFoundException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			protected NameNotFoundException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _NameNotFoundException1886;
-			public NameNotFoundException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _NameNotFoundException1980;
+			public NameNotFoundException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1886, this);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1980);
+				Init(@__env, handle);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _NameNotFoundException1887;
-			public NameNotFoundException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+			internal static global::MonoJavaBridge.MethodId _NameNotFoundException1981;
+			public NameNotFoundException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1887, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.NameNotFoundException.staticClass, global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				Init(@__env, handle);
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.content.pm.PackageManager.NameNotFoundException.staticClass = @__class;
-				global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1886 = @__env.GetMethodID(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "()V");
-				global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1887 = @__env.GetMethodID(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.content.pm.PackageManager.NameNotFoundException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageManager$NameNotFoundException"));
+				global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1980 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "()V");
+				global::android.content.pm.PackageManager.NameNotFoundException._NameNotFoundException1981 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.NameNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _checkPermission1888;
+		internal static global::MonoJavaBridge.MethodId _checkPermission1982;
 		public abstract int checkPermission(java.lang.String arg0, java.lang.String arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getPackageInfo1889;
+		internal static global::MonoJavaBridge.MethodId _getPackageInfo1983;
 		public abstract global::android.content.pm.PackageInfo getPackageInfo(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getApplicationInfo1890;
+		internal static global::MonoJavaBridge.MethodId _getApplicationInfo1984;
 		public abstract global::android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getText1891;
+		internal static global::MonoJavaBridge.MethodId _getText1985;
 		public abstract global::java.lang.CharSequence getText(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _resolveActivity1892;
+		internal static global::MonoJavaBridge.MethodId _resolveActivity1986;
 		public abstract global::android.content.pm.ResolveInfo resolveActivity(android.content.Intent arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getDrawable1893;
+		internal static global::MonoJavaBridge.MethodId _getDrawable1987;
 		public abstract global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _getXml1894;
+		internal static global::MonoJavaBridge.MethodId _getXml1988;
 		public abstract global::android.content.res.XmlResourceParser getXml(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _currentToCanonicalPackageNames1895;
+		internal static global::MonoJavaBridge.MethodId _currentToCanonicalPackageNames1989;
 		public abstract global::java.lang.String[] currentToCanonicalPackageNames(java.lang.String[] arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _canonicalToCurrentPackageNames1896;
+		internal static global::MonoJavaBridge.MethodId _canonicalToCurrentPackageNames1990;
 		public abstract global::java.lang.String[] canonicalToCurrentPackageNames(java.lang.String[] arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getLaunchIntentForPackage1897;
+		internal static global::MonoJavaBridge.MethodId _getLaunchIntentForPackage1991;
 		public abstract global::android.content.Intent getLaunchIntentForPackage(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getPackageGids1898;
+		internal static global::MonoJavaBridge.MethodId _getPackageGids1992;
 		public abstract int[] getPackageGids(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getPermissionInfo1899;
+		internal static global::MonoJavaBridge.MethodId _getPermissionInfo1993;
 		public abstract global::android.content.pm.PermissionInfo getPermissionInfo(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _queryPermissionsByGroup1900;
+		internal static global::MonoJavaBridge.MethodId _queryPermissionsByGroup1994;
 		public abstract global::java.util.List queryPermissionsByGroup(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getPermissionGroupInfo1901;
+		internal static global::MonoJavaBridge.MethodId _getPermissionGroupInfo1995;
 		public abstract global::android.content.pm.PermissionGroupInfo getPermissionGroupInfo(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getAllPermissionGroups1902;
+		internal static global::MonoJavaBridge.MethodId _getAllPermissionGroups1996;
 		public abstract global::java.util.List getAllPermissionGroups(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getActivityInfo1903;
+		internal static global::MonoJavaBridge.MethodId _getActivityInfo1997;
 		public abstract global::android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getReceiverInfo1904;
+		internal static global::MonoJavaBridge.MethodId _getReceiverInfo1998;
 		public abstract global::android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getServiceInfo1905;
+		internal static global::MonoJavaBridge.MethodId _getServiceInfo1999;
 		public abstract global::android.content.pm.ServiceInfo getServiceInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getInstalledPackages1906;
+		internal static global::MonoJavaBridge.MethodId _getInstalledPackages2000;
 		public abstract global::java.util.List getInstalledPackages(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _addPermission1907;
+		internal static global::MonoJavaBridge.MethodId _addPermission2001;
 		public abstract bool addPermission(android.content.pm.PermissionInfo arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _addPermissionAsync1908;
+		internal static global::MonoJavaBridge.MethodId _addPermissionAsync2002;
 		public abstract bool addPermissionAsync(android.content.pm.PermissionInfo arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _removePermission1909;
+		internal static global::MonoJavaBridge.MethodId _removePermission2003;
 		public abstract void removePermission(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _checkSignatures1910;
+		internal static global::MonoJavaBridge.MethodId _checkSignatures2004;
 		public abstract int checkSignatures(java.lang.String arg0, java.lang.String arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _checkSignatures1911;
+		internal static global::MonoJavaBridge.MethodId _checkSignatures2005;
 		public abstract int checkSignatures(int arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getPackagesForUid1912;
+		internal static global::MonoJavaBridge.MethodId _getPackagesForUid2006;
 		public abstract global::java.lang.String[] getPackagesForUid(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getNameForUid1913;
+		internal static global::MonoJavaBridge.MethodId _getNameForUid2007;
 		public abstract global::java.lang.String getNameForUid(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getInstalledApplications1914;
+		internal static global::MonoJavaBridge.MethodId _getInstalledApplications2008;
 		public abstract global::java.util.List getInstalledApplications(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getSystemSharedLibraryNames1915;
+		internal static global::MonoJavaBridge.MethodId _getSystemSharedLibraryNames2009;
 		public abstract global::java.lang.String[] getSystemSharedLibraryNames();
-		internal static global::net.sf.jni4net.jni.MethodId _getSystemAvailableFeatures1916;
+		internal static global::MonoJavaBridge.MethodId _getSystemAvailableFeatures2010;
 		public abstract global::android.content.pm.FeatureInfo[] getSystemAvailableFeatures();
-		internal static global::net.sf.jni4net.jni.MethodId _hasSystemFeature1917;
+		internal static global::MonoJavaBridge.MethodId _hasSystemFeature2011;
 		public abstract bool hasSystemFeature(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _queryIntentActivities1918;
+		internal static global::MonoJavaBridge.MethodId _queryIntentActivities2012;
 		public abstract global::java.util.List queryIntentActivities(android.content.Intent arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _queryIntentActivityOptions1919;
+		internal static global::MonoJavaBridge.MethodId _queryIntentActivityOptions2013;
 		public abstract global::java.util.List queryIntentActivityOptions(android.content.ComponentName arg0, android.content.Intent[] arg1, android.content.Intent arg2, int arg3);
-		internal static global::net.sf.jni4net.jni.MethodId _queryBroadcastReceivers1920;
+		internal static global::MonoJavaBridge.MethodId _queryBroadcastReceivers2014;
 		public abstract global::java.util.List queryBroadcastReceivers(android.content.Intent arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _resolveService1921;
+		internal static global::MonoJavaBridge.MethodId _resolveService2015;
 		public abstract global::android.content.pm.ResolveInfo resolveService(android.content.Intent arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _queryIntentServices1922;
+		internal static global::MonoJavaBridge.MethodId _queryIntentServices2016;
 		public abstract global::java.util.List queryIntentServices(android.content.Intent arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _resolveContentProvider1923;
+		internal static global::MonoJavaBridge.MethodId _resolveContentProvider2017;
 		public abstract global::android.content.pm.ProviderInfo resolveContentProvider(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _queryContentProviders1924;
+		internal static global::MonoJavaBridge.MethodId _queryContentProviders2018;
 		public abstract global::java.util.List queryContentProviders(java.lang.String arg0, int arg1, int arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _getInstrumentationInfo1925;
+		internal static global::MonoJavaBridge.MethodId _getInstrumentationInfo2019;
 		public abstract global::android.content.pm.InstrumentationInfo getInstrumentationInfo(android.content.ComponentName arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _queryInstrumentation1926;
+		internal static global::MonoJavaBridge.MethodId _queryInstrumentation2020;
 		public abstract global::java.util.List queryInstrumentation(java.lang.String arg0, int arg1);
-		internal static global::net.sf.jni4net.jni.MethodId _getActivityIcon1927;
+		internal static global::MonoJavaBridge.MethodId _getActivityIcon2021;
 		public abstract global::android.graphics.drawable.Drawable getActivityIcon(android.content.Intent arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getActivityIcon1928;
+		internal static global::MonoJavaBridge.MethodId _getActivityIcon2022;
 		public abstract global::android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultActivityIcon1929;
+		internal static global::MonoJavaBridge.MethodId _getDefaultActivityIcon2023;
 		public abstract global::android.graphics.drawable.Drawable getDefaultActivityIcon();
-		internal static global::net.sf.jni4net.jni.MethodId _getApplicationIcon1930;
+		internal static global::MonoJavaBridge.MethodId _getApplicationIcon2024;
 		public abstract global::android.graphics.drawable.Drawable getApplicationIcon(android.content.pm.ApplicationInfo arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getApplicationIcon1931;
+		internal static global::MonoJavaBridge.MethodId _getApplicationIcon2025;
 		public abstract global::android.graphics.drawable.Drawable getApplicationIcon(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getApplicationLabel1932;
+		internal static global::MonoJavaBridge.MethodId _getApplicationLabel2026;
 		public abstract global::java.lang.CharSequence getApplicationLabel(android.content.pm.ApplicationInfo arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getResourcesForActivity1933;
+		internal static global::MonoJavaBridge.MethodId _getResourcesForActivity2027;
 		public abstract global::android.content.res.Resources getResourcesForActivity(android.content.ComponentName arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getResourcesForApplication1934;
+		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication2028;
 		public abstract global::android.content.res.Resources getResourcesForApplication(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getResourcesForApplication1935;
+		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication2029;
 		public abstract global::android.content.res.Resources getResourcesForApplication(android.content.pm.ApplicationInfo arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getPackageArchiveInfo1936;
+		internal static global::MonoJavaBridge.MethodId _getPackageArchiveInfo2030;
 		public virtual global::android.content.pm.PackageInfo getPackageArchiveInfo(java.lang.String arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.PackageInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.PackageManager._getPackageArchiveInfo1936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager._getPackageArchiveInfo2030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PackageInfo;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.PackageInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.PackageManager.staticClass, global::android.content.pm.PackageManager._getPackageArchiveInfo1936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager.staticClass, global::android.content.pm.PackageManager._getPackageArchiveInfo2030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PackageInfo;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInstallerPackageName1937;
+		internal static global::MonoJavaBridge.MethodId _getInstallerPackageName2031;
 		public abstract global::java.lang.String getInstallerPackageName(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _addPackageToPreferred1938;
+		internal static global::MonoJavaBridge.MethodId _addPackageToPreferred2032;
 		public abstract void addPackageToPreferred(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _removePackageFromPreferred1939;
+		internal static global::MonoJavaBridge.MethodId _removePackageFromPreferred2033;
 		public abstract void removePackageFromPreferred(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getPreferredPackages1940;
+		internal static global::MonoJavaBridge.MethodId _getPreferredPackages2034;
 		public abstract global::java.util.List getPreferredPackages(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _addPreferredActivity1941;
+		internal static global::MonoJavaBridge.MethodId _addPreferredActivity2035;
 		public abstract void addPreferredActivity(android.content.IntentFilter arg0, int arg1, android.content.ComponentName[] arg2, android.content.ComponentName arg3);
-		internal static global::net.sf.jni4net.jni.MethodId _clearPackagePreferredActivities1942;
+		internal static global::MonoJavaBridge.MethodId _clearPackagePreferredActivities2036;
 		public abstract void clearPackagePreferredActivities(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getPreferredActivities1943;
+		internal static global::MonoJavaBridge.MethodId _getPreferredActivities2037;
 		public abstract int getPreferredActivities(java.util.List arg0, java.util.List arg1, java.lang.String arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _setComponentEnabledSetting1944;
+		internal static global::MonoJavaBridge.MethodId _setComponentEnabledSetting2038;
 		public abstract void setComponentEnabledSetting(android.content.ComponentName arg0, int arg1, int arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _getComponentEnabledSetting1945;
+		internal static global::MonoJavaBridge.MethodId _getComponentEnabledSetting2039;
 		public abstract int getComponentEnabledSetting(android.content.ComponentName arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _setApplicationEnabledSetting1946;
+		internal static global::MonoJavaBridge.MethodId _setApplicationEnabledSetting2040;
 		public abstract void setApplicationEnabledSetting(java.lang.String arg0, int arg1, int arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _getApplicationEnabledSetting1947;
+		internal static global::MonoJavaBridge.MethodId _getApplicationEnabledSetting2041;
 		public abstract int getApplicationEnabledSetting(java.lang.String arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _isSafeMode1948;
+		internal static global::MonoJavaBridge.MethodId _isSafeMode2042;
 		public abstract bool isSafeMode();
-		internal static global::net.sf.jni4net.jni.MethodId _PackageManager1949;
-		public PackageManager()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _PackageManager2043;
+		public PackageManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.PackageManager.staticClass, global::android.content.pm.PackageManager._PackageManager1949, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageManager.staticClass, global::android.content.pm.PackageManager._PackageManager2043);
+			Init(@__env, handle);
 		}
 		public static int GET_ACTIVITIES
 		{
@@ -526,71 +523,690 @@ namespace android.content.pm
 				return "android.hardware.wifi";
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.content.pm.PackageManager.staticClass = @__class;
-			global::android.content.pm.PackageManager._checkPermission1888 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "checkPermission", "(Ljava/lang/String;Ljava/lang/String;)I");
-			global::android.content.pm.PackageManager._getPackageInfo1889 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
-			global::android.content.pm.PackageManager._getApplicationInfo1890 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getApplicationInfo", "(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;");
-			global::android.content.pm.PackageManager._getText1891 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getText", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;");
-			global::android.content.pm.PackageManager._resolveActivity1892 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "resolveActivity", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;");
-			global::android.content.pm.PackageManager._getDrawable1893 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getDrawable", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;");
-			global::android.content.pm.PackageManager._getXml1894 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getXml", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/content/res/XmlResourceParser;");
-			global::android.content.pm.PackageManager._currentToCanonicalPackageNames1895 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "currentToCanonicalPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;");
-			global::android.content.pm.PackageManager._canonicalToCurrentPackageNames1896 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "canonicalToCurrentPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;");
-			global::android.content.pm.PackageManager._getLaunchIntentForPackage1897 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getLaunchIntentForPackage", "(Ljava/lang/String;)Landroid/content/Intent;");
-			global::android.content.pm.PackageManager._getPackageGids1898 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPackageGids", "(Ljava/lang/String;)[I");
-			global::android.content.pm.PackageManager._getPermissionInfo1899 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPermissionInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;");
-			global::android.content.pm.PackageManager._queryPermissionsByGroup1900 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryPermissionsByGroup", "(Ljava/lang/String;I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._getPermissionGroupInfo1901 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPermissionGroupInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;");
-			global::android.content.pm.PackageManager._getAllPermissionGroups1902 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getAllPermissionGroups", "(I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._getActivityInfo1903 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getActivityInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;");
-			global::android.content.pm.PackageManager._getReceiverInfo1904 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getReceiverInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;");
-			global::android.content.pm.PackageManager._getServiceInfo1905 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getServiceInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ServiceInfo;");
-			global::android.content.pm.PackageManager._getInstalledPackages1906 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getInstalledPackages", "(I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._addPermission1907 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "addPermission", "(Landroid/content/pm/PermissionInfo;)Z");
-			global::android.content.pm.PackageManager._addPermissionAsync1908 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "addPermissionAsync", "(Landroid/content/pm/PermissionInfo;)Z");
-			global::android.content.pm.PackageManager._removePermission1909 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "removePermission", "(Ljava/lang/String;)V");
-			global::android.content.pm.PackageManager._checkSignatures1910 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "checkSignatures", "(Ljava/lang/String;Ljava/lang/String;)I");
-			global::android.content.pm.PackageManager._checkSignatures1911 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "checkSignatures", "(II)I");
-			global::android.content.pm.PackageManager._getPackagesForUid1912 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPackagesForUid", "(I)[Ljava/lang/String;");
-			global::android.content.pm.PackageManager._getNameForUid1913 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getNameForUid", "(I)Ljava/lang/String;");
-			global::android.content.pm.PackageManager._getInstalledApplications1914 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getInstalledApplications", "(I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._getSystemSharedLibraryNames1915 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getSystemSharedLibraryNames", "()[Ljava/lang/String;");
-			global::android.content.pm.PackageManager._getSystemAvailableFeatures1916 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;");
-			global::android.content.pm.PackageManager._hasSystemFeature1917 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "hasSystemFeature", "(Ljava/lang/String;)Z");
-			global::android.content.pm.PackageManager._queryIntentActivities1918 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryIntentActivities", "(Landroid/content/Intent;I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._queryIntentActivityOptions1919 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryIntentActivityOptions", "(Landroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._queryBroadcastReceivers1920 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryBroadcastReceivers", "(Landroid/content/Intent;I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._resolveService1921 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "resolveService", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;");
-			global::android.content.pm.PackageManager._queryIntentServices1922 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryIntentServices", "(Landroid/content/Intent;I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._resolveContentProvider1923 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "resolveContentProvider", "(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;");
-			global::android.content.pm.PackageManager._queryContentProviders1924 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryContentProviders", "(Ljava/lang/String;II)Ljava/util/List;");
-			global::android.content.pm.PackageManager._getInstrumentationInfo1925 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getInstrumentationInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;");
-			global::android.content.pm.PackageManager._queryInstrumentation1926 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "queryInstrumentation", "(Ljava/lang/String;I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._getActivityIcon1927 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getActivityIcon", "(Landroid/content/Intent;)Landroid/graphics/drawable/Drawable;");
-			global::android.content.pm.PackageManager._getActivityIcon1928 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getActivityIcon", "(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;");
-			global::android.content.pm.PackageManager._getDefaultActivityIcon1929 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;");
-			global::android.content.pm.PackageManager._getApplicationIcon1930 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getApplicationIcon", "(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;");
-			global::android.content.pm.PackageManager._getApplicationIcon1931 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getApplicationIcon", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
-			global::android.content.pm.PackageManager._getApplicationLabel1932 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getApplicationLabel", "(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;");
-			global::android.content.pm.PackageManager._getResourcesForActivity1933 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getResourcesForActivity", "(Landroid/content/ComponentName;)Landroid/content/res/Resources;");
-			global::android.content.pm.PackageManager._getResourcesForApplication1934 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getResourcesForApplication", "(Ljava/lang/String;)Landroid/content/res/Resources;");
-			global::android.content.pm.PackageManager._getResourcesForApplication1935 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getResourcesForApplication", "(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;");
-			global::android.content.pm.PackageManager._getPackageArchiveInfo1936 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPackageArchiveInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
-			global::android.content.pm.PackageManager._getInstallerPackageName1937 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.content.pm.PackageManager._addPackageToPreferred1938 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "addPackageToPreferred", "(Ljava/lang/String;)V");
-			global::android.content.pm.PackageManager._removePackageFromPreferred1939 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "removePackageFromPreferred", "(Ljava/lang/String;)V");
-			global::android.content.pm.PackageManager._getPreferredPackages1940 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPreferredPackages", "(I)Ljava/util/List;");
-			global::android.content.pm.PackageManager._addPreferredActivity1941 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "addPreferredActivity", "(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V");
-			global::android.content.pm.PackageManager._clearPackagePreferredActivities1942 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "clearPackagePreferredActivities", "(Ljava/lang/String;)V");
-			global::android.content.pm.PackageManager._getPreferredActivities1943 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getPreferredActivities", "(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I");
-			global::android.content.pm.PackageManager._setComponentEnabledSetting1944 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "setComponentEnabledSetting", "(Landroid/content/ComponentName;II)V");
-			global::android.content.pm.PackageManager._getComponentEnabledSetting1945 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getComponentEnabledSetting", "(Landroid/content/ComponentName;)I");
-			global::android.content.pm.PackageManager._setApplicationEnabledSetting1946 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "setApplicationEnabledSetting", "(Ljava/lang/String;II)V");
-			global::android.content.pm.PackageManager._getApplicationEnabledSetting1947 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I");
-			global::android.content.pm.PackageManager._isSafeMode1948 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "isSafeMode", "()Z");
-			global::android.content.pm.PackageManager._PackageManager1949 = @__env.GetMethodID(global::android.content.pm.PackageManager.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.pm.PackageManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageManager"));
+			global::android.content.pm.PackageManager._checkPermission1982 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "checkPermission", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager._getPackageInfo1983 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
+			global::android.content.pm.PackageManager._getApplicationInfo1984 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getApplicationInfo", "(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;");
+			global::android.content.pm.PackageManager._getText1985 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getText", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;");
+			global::android.content.pm.PackageManager._resolveActivity1986 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "resolveActivity", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;");
+			global::android.content.pm.PackageManager._getDrawable1987 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getDrawable", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager._getXml1988 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getXml", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/content/res/XmlResourceParser;");
+			global::android.content.pm.PackageManager._currentToCanonicalPackageNames1989 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "currentToCanonicalPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;");
+			global::android.content.pm.PackageManager._canonicalToCurrentPackageNames1990 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "canonicalToCurrentPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;");
+			global::android.content.pm.PackageManager._getLaunchIntentForPackage1991 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getLaunchIntentForPackage", "(Ljava/lang/String;)Landroid/content/Intent;");
+			global::android.content.pm.PackageManager._getPackageGids1992 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPackageGids", "(Ljava/lang/String;)[I");
+			global::android.content.pm.PackageManager._getPermissionInfo1993 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPermissionInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;");
+			global::android.content.pm.PackageManager._queryPermissionsByGroup1994 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryPermissionsByGroup", "(Ljava/lang/String;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._getPermissionGroupInfo1995 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPermissionGroupInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;");
+			global::android.content.pm.PackageManager._getAllPermissionGroups1996 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getAllPermissionGroups", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._getActivityInfo1997 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getActivityInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;");
+			global::android.content.pm.PackageManager._getReceiverInfo1998 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getReceiverInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;");
+			global::android.content.pm.PackageManager._getServiceInfo1999 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getServiceInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ServiceInfo;");
+			global::android.content.pm.PackageManager._getInstalledPackages2000 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getInstalledPackages", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._addPermission2001 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "addPermission", "(Landroid/content/pm/PermissionInfo;)Z");
+			global::android.content.pm.PackageManager._addPermissionAsync2002 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "addPermissionAsync", "(Landroid/content/pm/PermissionInfo;)Z");
+			global::android.content.pm.PackageManager._removePermission2003 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "removePermission", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager._checkSignatures2004 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "checkSignatures", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager._checkSignatures2005 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "checkSignatures", "(II)I");
+			global::android.content.pm.PackageManager._getPackagesForUid2006 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPackagesForUid", "(I)[Ljava/lang/String;");
+			global::android.content.pm.PackageManager._getNameForUid2007 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getNameForUid", "(I)Ljava/lang/String;");
+			global::android.content.pm.PackageManager._getInstalledApplications2008 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getInstalledApplications", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._getSystemSharedLibraryNames2009 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getSystemSharedLibraryNames", "()[Ljava/lang/String;");
+			global::android.content.pm.PackageManager._getSystemAvailableFeatures2010 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;");
+			global::android.content.pm.PackageManager._hasSystemFeature2011 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "hasSystemFeature", "(Ljava/lang/String;)Z");
+			global::android.content.pm.PackageManager._queryIntentActivities2012 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryIntentActivities", "(Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._queryIntentActivityOptions2013 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryIntentActivityOptions", "(Landroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._queryBroadcastReceivers2014 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryBroadcastReceivers", "(Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._resolveService2015 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "resolveService", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;");
+			global::android.content.pm.PackageManager._queryIntentServices2016 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryIntentServices", "(Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._resolveContentProvider2017 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "resolveContentProvider", "(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;");
+			global::android.content.pm.PackageManager._queryContentProviders2018 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryContentProviders", "(Ljava/lang/String;II)Ljava/util/List;");
+			global::android.content.pm.PackageManager._getInstrumentationInfo2019 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getInstrumentationInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;");
+			global::android.content.pm.PackageManager._queryInstrumentation2020 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "queryInstrumentation", "(Ljava/lang/String;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._getActivityIcon2021 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getActivityIcon", "(Landroid/content/Intent;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager._getActivityIcon2022 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getActivityIcon", "(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager._getDefaultActivityIcon2023 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager._getApplicationIcon2024 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getApplicationIcon", "(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager._getApplicationIcon2025 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getApplicationIcon", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager._getApplicationLabel2026 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getApplicationLabel", "(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;");
+			global::android.content.pm.PackageManager._getResourcesForActivity2027 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getResourcesForActivity", "(Landroid/content/ComponentName;)Landroid/content/res/Resources;");
+			global::android.content.pm.PackageManager._getResourcesForApplication2028 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getResourcesForApplication", "(Ljava/lang/String;)Landroid/content/res/Resources;");
+			global::android.content.pm.PackageManager._getResourcesForApplication2029 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getResourcesForApplication", "(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;");
+			global::android.content.pm.PackageManager._getPackageArchiveInfo2030 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPackageArchiveInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
+			global::android.content.pm.PackageManager._getInstallerPackageName2031 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.content.pm.PackageManager._addPackageToPreferred2032 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "addPackageToPreferred", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager._removePackageFromPreferred2033 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "removePackageFromPreferred", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager._getPreferredPackages2034 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPreferredPackages", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager._addPreferredActivity2035 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "addPreferredActivity", "(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V");
+			global::android.content.pm.PackageManager._clearPackagePreferredActivities2036 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "clearPackagePreferredActivities", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager._getPreferredActivities2037 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getPreferredActivities", "(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager._setComponentEnabledSetting2038 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "setComponentEnabledSetting", "(Landroid/content/ComponentName;II)V");
+			global::android.content.pm.PackageManager._getComponentEnabledSetting2039 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getComponentEnabledSetting", "(Landroid/content/ComponentName;)I");
+			global::android.content.pm.PackageManager._setApplicationEnabledSetting2040 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "setApplicationEnabledSetting", "(Ljava/lang/String;II)V");
+			global::android.content.pm.PackageManager._getApplicationEnabledSetting2041 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager._isSafeMode2042 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "isSafeMode", "()Z");
+			global::android.content.pm.PackageManager._PackageManager2043 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.pm.PackageManager))]
+	public sealed partial class PackageManager_ : android.content.pm.PackageManager
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static PackageManager_()
+		{
+			InitJNI();
+		}
+		internal PackageManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _checkPermission2044;
+		public override int checkPermission(java.lang.String arg0, java.lang.String arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_._checkPermission2044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._checkPermission2044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _getPackageInfo2045;
+		public override global::android.content.pm.PackageInfo getPackageInfo(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPackageInfo2045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PackageInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPackageInfo2045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PackageInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getApplicationInfo2046;
+		public override global::android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getApplicationInfo2046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ApplicationInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getApplicationInfo2046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ApplicationInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getText2047;
+		public override global::java.lang.CharSequence getText(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getText2047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getText2047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
+		}
+		internal static global::MonoJavaBridge.MethodId _resolveActivity2048;
+		public override global::android.content.pm.ResolveInfo resolveActivity(android.content.Intent arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._resolveActivity2048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ResolveInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._resolveActivity2048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ResolveInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getDrawable2049;
+		public override global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getDrawable2049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.drawable.Drawable;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getDrawable2049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.drawable.Drawable;
+		}
+		internal static global::MonoJavaBridge.MethodId _getXml2050;
+		public override global::android.content.res.XmlResourceParser getXml(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getXml2050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.content.res.XmlResourceParser;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getXml2050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.content.res.XmlResourceParser;
+		}
+		internal static global::MonoJavaBridge.MethodId _currentToCanonicalPackageNames2051;
+		public override global::java.lang.String[] currentToCanonicalPackageNames(java.lang.String[] arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._currentToCanonicalPackageNames2051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._currentToCanonicalPackageNames2051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
+		}
+		internal static global::MonoJavaBridge.MethodId _canonicalToCurrentPackageNames2052;
+		public override global::java.lang.String[] canonicalToCurrentPackageNames(java.lang.String[] arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._canonicalToCurrentPackageNames2052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._canonicalToCurrentPackageNames2052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
+		}
+		internal static global::MonoJavaBridge.MethodId _getLaunchIntentForPackage2053;
+		public override global::android.content.Intent getLaunchIntentForPackage(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getLaunchIntentForPackage2053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getLaunchIntentForPackage2053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
+		}
+		internal static global::MonoJavaBridge.MethodId _getPackageGids2054;
+		public override int[] getPackageGids(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPackageGids2054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPackageGids2054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
+		}
+		internal static global::MonoJavaBridge.MethodId _getPermissionInfo2055;
+		public override global::android.content.pm.PermissionInfo getPermissionInfo(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPermissionInfo2055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PermissionInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPermissionInfo2055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PermissionInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _queryPermissionsByGroup2056;
+		public override global::java.util.List queryPermissionsByGroup(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryPermissionsByGroup2056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryPermissionsByGroup2056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _getPermissionGroupInfo2057;
+		public override global::android.content.pm.PermissionGroupInfo getPermissionGroupInfo(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPermissionGroupInfo2057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PermissionGroupInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPermissionGroupInfo2057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PermissionGroupInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getAllPermissionGroups2058;
+		public override global::java.util.List getAllPermissionGroups(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getAllPermissionGroups2058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getAllPermissionGroups2058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _getActivityInfo2059;
+		public override global::android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getActivityInfo2059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ActivityInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getActivityInfo2059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ActivityInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getReceiverInfo2060;
+		public override global::android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getReceiverInfo2060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ActivityInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getReceiverInfo2060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ActivityInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getServiceInfo2061;
+		public override global::android.content.pm.ServiceInfo getServiceInfo(android.content.ComponentName arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getServiceInfo2061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ServiceInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getServiceInfo2061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ServiceInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _getInstalledPackages2062;
+		public override global::java.util.List getInstalledPackages(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getInstalledPackages2062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getInstalledPackages2062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _addPermission2063;
+		public override bool addPermission(android.content.pm.PermissionInfo arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_._addPermission2063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._addPermission2063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _addPermissionAsync2064;
+		public override bool addPermissionAsync(android.content.pm.PermissionInfo arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_._addPermissionAsync2064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._addPermissionAsync2064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _removePermission2065;
+		public override void removePermission(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._removePermission2065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._removePermission2065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _checkSignatures2066;
+		public override int checkSignatures(java.lang.String arg0, java.lang.String arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_._checkSignatures2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._checkSignatures2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _checkSignatures2067;
+		public override int checkSignatures(int arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_._checkSignatures2067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._checkSignatures2067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _getPackagesForUid2068;
+		public override global::java.lang.String[] getPackagesForUid(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPackagesForUid2068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPackagesForUid2068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
+		}
+		internal static global::MonoJavaBridge.MethodId _getNameForUid2069;
+		public override global::java.lang.String getNameForUid(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getNameForUid2069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getNameForUid2069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+		}
+		internal static global::MonoJavaBridge.MethodId _getInstalledApplications2070;
+		public override global::java.util.List getInstalledApplications(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getInstalledApplications2070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getInstalledApplications2070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _getSystemSharedLibraryNames2071;
+		public override global::java.lang.String[] getSystemSharedLibraryNames() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getSystemSharedLibraryNames2071)) as java.lang.String[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getSystemSharedLibraryNames2071)) as java.lang.String[];
+		}
+		internal static global::MonoJavaBridge.MethodId _getSystemAvailableFeatures2072;
+		public override global::android.content.pm.FeatureInfo[] getSystemAvailableFeatures() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.content.pm.FeatureInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getSystemAvailableFeatures2072)) as android.content.pm.FeatureInfo[];
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.content.pm.FeatureInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getSystemAvailableFeatures2072)) as android.content.pm.FeatureInfo[];
+		}
+		internal static global::MonoJavaBridge.MethodId _hasSystemFeature2073;
+		public override bool hasSystemFeature(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_._hasSystemFeature2073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._hasSystemFeature2073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _queryIntentActivities2074;
+		public override global::java.util.List queryIntentActivities(android.content.Intent arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryIntentActivities2074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryIntentActivities2074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _queryIntentActivityOptions2075;
+		public override global::java.util.List queryIntentActivityOptions(android.content.ComponentName arg0, android.content.Intent[] arg1, android.content.Intent arg2, int arg3) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryIntentActivityOptions2075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryIntentActivityOptions2075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _queryBroadcastReceivers2076;
+		public override global::java.util.List queryBroadcastReceivers(android.content.Intent arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryBroadcastReceivers2076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryBroadcastReceivers2076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _resolveService2077;
+		public override global::android.content.pm.ResolveInfo resolveService(android.content.Intent arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._resolveService2077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ResolveInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._resolveService2077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ResolveInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _queryIntentServices2078;
+		public override global::java.util.List queryIntentServices(android.content.Intent arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryIntentServices2078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryIntentServices2078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _resolveContentProvider2079;
+		public override global::android.content.pm.ProviderInfo resolveContentProvider(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._resolveContentProvider2079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ProviderInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._resolveContentProvider2079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ProviderInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _queryContentProviders2080;
+		public override global::java.util.List queryContentProviders(java.lang.String arg0, int arg1, int arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryContentProviders2080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryContentProviders2080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _getInstrumentationInfo2081;
+		public override global::android.content.pm.InstrumentationInfo getInstrumentationInfo(android.content.ComponentName arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getInstrumentationInfo2081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.InstrumentationInfo;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getInstrumentationInfo2081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.InstrumentationInfo;
+		}
+		internal static global::MonoJavaBridge.MethodId _queryInstrumentation2082;
+		public override global::java.util.List queryInstrumentation(java.lang.String arg0, int arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._queryInstrumentation2082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._queryInstrumentation2082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _getActivityIcon2083;
+		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.Intent arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getActivityIcon2083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getActivityIcon2083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+		}
+		internal static global::MonoJavaBridge.MethodId _getActivityIcon2084;
+		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getActivityIcon2084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getActivityIcon2084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+		}
+		internal static global::MonoJavaBridge.MethodId _getDefaultActivityIcon2085;
+		public override global::android.graphics.drawable.Drawable getDefaultActivityIcon() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getDefaultActivityIcon2085)) as android.graphics.drawable.Drawable;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getDefaultActivityIcon2085)) as android.graphics.drawable.Drawable;
+		}
+		internal static global::MonoJavaBridge.MethodId _getApplicationIcon2086;
+		public override global::android.graphics.drawable.Drawable getApplicationIcon(android.content.pm.ApplicationInfo arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getApplicationIcon2086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getApplicationIcon2086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+		}
+		internal static global::MonoJavaBridge.MethodId _getApplicationIcon2087;
+		public override global::android.graphics.drawable.Drawable getApplicationIcon(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getApplicationIcon2087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getApplicationIcon2087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
+		}
+		internal static global::MonoJavaBridge.MethodId _getApplicationLabel2088;
+		public override global::java.lang.CharSequence getApplicationLabel(android.content.pm.ApplicationInfo arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getApplicationLabel2088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getApplicationLabel2088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+		}
+		internal static global::MonoJavaBridge.MethodId _getResourcesForActivity2089;
+		public override global::android.content.res.Resources getResourcesForActivity(android.content.ComponentName arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getResourcesForActivity2089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getResourcesForActivity2089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
+		}
+		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication2090;
+		public override global::android.content.res.Resources getResourcesForApplication(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getResourcesForApplication2090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getResourcesForApplication2090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
+		}
+		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication2091;
+		public override global::android.content.res.Resources getResourcesForApplication(android.content.pm.ApplicationInfo arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getResourcesForApplication2091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getResourcesForApplication2091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
+		}
+		internal static global::MonoJavaBridge.MethodId _getInstallerPackageName2092;
+		public override global::java.lang.String getInstallerPackageName(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getInstallerPackageName2092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getInstallerPackageName2092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+		}
+		internal static global::MonoJavaBridge.MethodId _addPackageToPreferred2093;
+		public override void addPackageToPreferred(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._addPackageToPreferred2093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._addPackageToPreferred2093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _removePackageFromPreferred2094;
+		public override void removePackageFromPreferred(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._removePackageFromPreferred2094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._removePackageFromPreferred2094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _getPreferredPackages2095;
+		public override global::java.util.List getPreferredPackages(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPreferredPackages2095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPreferredPackages2095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
+		}
+		internal static global::MonoJavaBridge.MethodId _addPreferredActivity2096;
+		public override void addPreferredActivity(android.content.IntentFilter arg0, int arg1, android.content.ComponentName[] arg2, android.content.ComponentName arg3) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._addPreferredActivity2096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._addPreferredActivity2096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+		}
+		internal static global::MonoJavaBridge.MethodId _clearPackagePreferredActivities2097;
+		public override void clearPackagePreferredActivities(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._clearPackagePreferredActivities2097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._clearPackagePreferredActivities2097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _getPreferredActivities2098;
+		public override int getPreferredActivities(java.util.List arg0, java.util.List arg1, java.lang.String arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getPreferredActivities2098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getPreferredActivities2098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		internal static global::MonoJavaBridge.MethodId _setComponentEnabledSetting2099;
+		public override void setComponentEnabledSetting(android.content.ComponentName arg0, int arg1, int arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._setComponentEnabledSetting2099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._setComponentEnabledSetting2099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		internal static global::MonoJavaBridge.MethodId _getComponentEnabledSetting2100;
+		public override int getComponentEnabledSetting(android.content.ComponentName arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getComponentEnabledSetting2100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getComponentEnabledSetting2100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _setApplicationEnabledSetting2101;
+		public override void setApplicationEnabledSetting(java.lang.String arg0, int arg1, int arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_._setApplicationEnabledSetting2101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._setApplicationEnabledSetting2101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		internal static global::MonoJavaBridge.MethodId _getApplicationEnabledSetting2102;
+		public override int getApplicationEnabledSetting(java.lang.String arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_._getApplicationEnabledSetting2102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._getApplicationEnabledSetting2102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _isSafeMode2103;
+		public override bool isSafeMode() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_._isSafeMode2103);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.pm.PackageManager_.staticClass, global::android.content.pm.PackageManager_._isSafeMode2103);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.pm.PackageManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/pm/PackageManager"));
+			global::android.content.pm.PackageManager_._checkPermission2044 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "checkPermission", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager_._getPackageInfo2045 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPackageInfo", "(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;");
+			global::android.content.pm.PackageManager_._getApplicationInfo2046 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getApplicationInfo", "(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;");
+			global::android.content.pm.PackageManager_._getText2047 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getText", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;");
+			global::android.content.pm.PackageManager_._resolveActivity2048 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "resolveActivity", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;");
+			global::android.content.pm.PackageManager_._getDrawable2049 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getDrawable", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager_._getXml2050 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getXml", "(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/content/res/XmlResourceParser;");
+			global::android.content.pm.PackageManager_._currentToCanonicalPackageNames2051 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "currentToCanonicalPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;");
+			global::android.content.pm.PackageManager_._canonicalToCurrentPackageNames2052 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "canonicalToCurrentPackageNames", "([Ljava/lang/String;)[Ljava/lang/String;");
+			global::android.content.pm.PackageManager_._getLaunchIntentForPackage2053 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getLaunchIntentForPackage", "(Ljava/lang/String;)Landroid/content/Intent;");
+			global::android.content.pm.PackageManager_._getPackageGids2054 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPackageGids", "(Ljava/lang/String;)[I");
+			global::android.content.pm.PackageManager_._getPermissionInfo2055 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPermissionInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;");
+			global::android.content.pm.PackageManager_._queryPermissionsByGroup2056 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryPermissionsByGroup", "(Ljava/lang/String;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._getPermissionGroupInfo2057 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPermissionGroupInfo", "(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;");
+			global::android.content.pm.PackageManager_._getAllPermissionGroups2058 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getAllPermissionGroups", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._getActivityInfo2059 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getActivityInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;");
+			global::android.content.pm.PackageManager_._getReceiverInfo2060 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getReceiverInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;");
+			global::android.content.pm.PackageManager_._getServiceInfo2061 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getServiceInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/ServiceInfo;");
+			global::android.content.pm.PackageManager_._getInstalledPackages2062 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getInstalledPackages", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._addPermission2063 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "addPermission", "(Landroid/content/pm/PermissionInfo;)Z");
+			global::android.content.pm.PackageManager_._addPermissionAsync2064 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "addPermissionAsync", "(Landroid/content/pm/PermissionInfo;)Z");
+			global::android.content.pm.PackageManager_._removePermission2065 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "removePermission", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager_._checkSignatures2066 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "checkSignatures", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager_._checkSignatures2067 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "checkSignatures", "(II)I");
+			global::android.content.pm.PackageManager_._getPackagesForUid2068 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPackagesForUid", "(I)[Ljava/lang/String;");
+			global::android.content.pm.PackageManager_._getNameForUid2069 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getNameForUid", "(I)Ljava/lang/String;");
+			global::android.content.pm.PackageManager_._getInstalledApplications2070 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getInstalledApplications", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._getSystemSharedLibraryNames2071 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getSystemSharedLibraryNames", "()[Ljava/lang/String;");
+			global::android.content.pm.PackageManager_._getSystemAvailableFeatures2072 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getSystemAvailableFeatures", "()[Landroid/content/pm/FeatureInfo;");
+			global::android.content.pm.PackageManager_._hasSystemFeature2073 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "hasSystemFeature", "(Ljava/lang/String;)Z");
+			global::android.content.pm.PackageManager_._queryIntentActivities2074 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryIntentActivities", "(Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._queryIntentActivityOptions2075 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryIntentActivityOptions", "(Landroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._queryBroadcastReceivers2076 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryBroadcastReceivers", "(Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._resolveService2077 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "resolveService", "(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;");
+			global::android.content.pm.PackageManager_._queryIntentServices2078 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryIntentServices", "(Landroid/content/Intent;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._resolveContentProvider2079 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "resolveContentProvider", "(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;");
+			global::android.content.pm.PackageManager_._queryContentProviders2080 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryContentProviders", "(Ljava/lang/String;II)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._getInstrumentationInfo2081 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getInstrumentationInfo", "(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;");
+			global::android.content.pm.PackageManager_._queryInstrumentation2082 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "queryInstrumentation", "(Ljava/lang/String;I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._getActivityIcon2083 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getActivityIcon", "(Landroid/content/Intent;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager_._getActivityIcon2084 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getActivityIcon", "(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager_._getDefaultActivityIcon2085 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getDefaultActivityIcon", "()Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager_._getApplicationIcon2086 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getApplicationIcon", "(Landroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager_._getApplicationIcon2087 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getApplicationIcon", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
+			global::android.content.pm.PackageManager_._getApplicationLabel2088 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getApplicationLabel", "(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;");
+			global::android.content.pm.PackageManager_._getResourcesForActivity2089 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getResourcesForActivity", "(Landroid/content/ComponentName;)Landroid/content/res/Resources;");
+			global::android.content.pm.PackageManager_._getResourcesForApplication2090 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getResourcesForApplication", "(Ljava/lang/String;)Landroid/content/res/Resources;");
+			global::android.content.pm.PackageManager_._getResourcesForApplication2091 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getResourcesForApplication", "(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;");
+			global::android.content.pm.PackageManager_._getInstallerPackageName2092 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.content.pm.PackageManager_._addPackageToPreferred2093 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "addPackageToPreferred", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager_._removePackageFromPreferred2094 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "removePackageFromPreferred", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager_._getPreferredPackages2095 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPreferredPackages", "(I)Ljava/util/List;");
+			global::android.content.pm.PackageManager_._addPreferredActivity2096 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "addPreferredActivity", "(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V");
+			global::android.content.pm.PackageManager_._clearPackagePreferredActivities2097 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "clearPackagePreferredActivities", "(Ljava/lang/String;)V");
+			global::android.content.pm.PackageManager_._getPreferredActivities2098 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getPreferredActivities", "(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager_._setComponentEnabledSetting2099 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "setComponentEnabledSetting", "(Landroid/content/ComponentName;II)V");
+			global::android.content.pm.PackageManager_._getComponentEnabledSetting2100 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getComponentEnabledSetting", "(Landroid/content/ComponentName;)I");
+			global::android.content.pm.PackageManager_._setApplicationEnabledSetting2101 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "setApplicationEnabledSetting", "(Ljava/lang/String;II)V");
+			global::android.content.pm.PackageManager_._getApplicationEnabledSetting2102 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "getApplicationEnabledSetting", "(Ljava/lang/String;)I");
+			global::android.content.pm.PackageManager_._isSafeMode2103 = @__env.GetMethodIDNoThrow(global::android.content.pm.PackageManager_.staticClass, "isSafeMode", "()Z");
 		}
 	}
 }

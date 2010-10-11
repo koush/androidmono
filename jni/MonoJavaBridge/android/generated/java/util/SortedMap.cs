@@ -1,6 +1,6 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.SortedMap_))]
 	public interface SortedMap : Map
 	{
 		new global::java.util.Collection values();
@@ -14,265 +14,251 @@ namespace java.util
 		global::java.lang.Object lastKey();
 	}
 
-	public partial class SortedMap_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.SortedMap))]
+	public sealed partial class SortedMap_ : java.lang.Object, SortedMap
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static SortedMap_()
 		{
-			get { return __SortedMap.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __SortedMap : java.lang.Object, SortedMap
-	{
-		internal static global::java.lang.Class staticClass;
-		static __SortedMap()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__SortedMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.__SortedMap(@__env);
-			}
-		}
-		internal __SortedMap(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal SortedMap_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _values13804;
+		internal static global::MonoJavaBridge.MethodId _values15663;
 		 global::java.util.Collection java.util.SortedMap.values() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._values13804));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._values15663)) as java.util.Collection;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._values13804));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._values15663)) as java.util.Collection;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _entrySet13805;
+		internal static global::MonoJavaBridge.MethodId _entrySet15664;
 		 global::java.util.Set java.util.SortedMap.entrySet() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._entrySet13805));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._entrySet15664)) as java.util.Set;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._entrySet13805));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._entrySet15664)) as java.util.Set;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _keySet13806;
+		internal static global::MonoJavaBridge.MethodId _keySet15665;
 		 global::java.util.Set java.util.SortedMap.keySet() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._keySet13806));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._keySet15665)) as java.util.Set;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._keySet13806));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._keySet15665)) as java.util.Set;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _comparator13807;
+		internal static global::MonoJavaBridge.MethodId _comparator15666;
 		 global::java.util.Comparator java.util.SortedMap.comparator() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Comparator>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._comparator13807));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._comparator15666)) as java.util.Comparator;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Comparator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._comparator13807));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Comparator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._comparator15666)) as java.util.Comparator;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _subMap13808;
+		internal static global::MonoJavaBridge.MethodId _subMap15667;
 		 global::java.util.SortedMap java.util.SortedMap.subMap(java.lang.Object arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._subMap13808, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._subMap15667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.SortedMap;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._subMap13808, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._subMap15667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.SortedMap;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _headMap13809;
+		internal static global::MonoJavaBridge.MethodId _headMap15668;
 		 global::java.util.SortedMap java.util.SortedMap.headMap(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._headMap13809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._headMap15668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedMap;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._headMap13809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._headMap15668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedMap;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _tailMap13810;
+		internal static global::MonoJavaBridge.MethodId _tailMap15669;
 		 global::java.util.SortedMap java.util.SortedMap.tailMap(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._tailMap13810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._tailMap15669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedMap;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._tailMap13810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._tailMap15669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.SortedMap;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _firstKey13811;
+		internal static global::MonoJavaBridge.MethodId _firstKey15670;
 		 global::java.lang.Object java.util.SortedMap.firstKey() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._firstKey13811));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._firstKey15670)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._firstKey13811));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._firstKey15670)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _lastKey13812;
+		internal static global::MonoJavaBridge.MethodId _lastKey15671;
 		 global::java.lang.Object java.util.SortedMap.lastKey() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._lastKey13812));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._lastKey15671)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._lastKey13812));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._lastKey15671)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get13813;
+		internal static global::MonoJavaBridge.MethodId _get15672;
 		 global::java.lang.Object java.util.Map.get(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._get13813, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._get15672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._get13813, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._get15672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _put13814;
+		internal static global::MonoJavaBridge.MethodId _put15673;
 		 global::java.lang.Object java.util.Map.put(java.lang.Object arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._put13814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._put15673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._put13814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._put15673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13815;
+		internal static global::MonoJavaBridge.MethodId _equals15674;
 		 bool java.util.Map.equals(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._equals13815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.SortedMap_._equals15674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._equals13815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._equals15674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _values13816;
+		internal static global::MonoJavaBridge.MethodId _values15675;
 		 global::java.util.Collection java.util.Map.values() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._values13816));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._values15675)) as java.util.Collection;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._values13816));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._values15675)) as java.util.Collection;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13817;
+		internal static global::MonoJavaBridge.MethodId _hashCode15676;
 		 int java.util.Map.hashCode() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.__SortedMap._hashCode13817);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.SortedMap_._hashCode15676);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._hashCode13817);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._hashCode15676);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear13818;
+		internal static global::MonoJavaBridge.MethodId _clear15677;
 		 void java.util.Map.clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.__SortedMap._clear13818);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.SortedMap_._clear15677);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._clear13818);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._clear15677);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty13819;
+		internal static global::MonoJavaBridge.MethodId _isEmpty15678;
 		 bool java.util.Map.isEmpty() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._isEmpty13819);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.SortedMap_._isEmpty15678);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._isEmpty13819);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._isEmpty15678);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _size13820;
+		internal static global::MonoJavaBridge.MethodId _size15679;
 		 int java.util.Map.size() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.__SortedMap._size13820);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.SortedMap_._size15679);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._size13820);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._size15679);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _entrySet13821;
+		internal static global::MonoJavaBridge.MethodId _entrySet15680;
 		 global::java.util.Set java.util.Map.entrySet() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._entrySet13821));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._entrySet15680)) as java.util.Set;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._entrySet13821));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._entrySet15680)) as java.util.Set;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putAll13822;
+		internal static global::MonoJavaBridge.MethodId _putAll15681;
 		 void java.util.Map.putAll(java.util.Map arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.__SortedMap._putAll13822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.SortedMap_._putAll15681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._putAll13822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._putAll15681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _remove13823;
+		internal static global::MonoJavaBridge.MethodId _remove15682;
 		 global::java.lang.Object java.util.Map.remove(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._remove13823, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._remove15682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._remove13823, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._remove15682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _keySet13824;
+		internal static global::MonoJavaBridge.MethodId _keySet15683;
 		 global::java.util.Set java.util.Map.keySet() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._keySet13824));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.SortedMap_._keySet15683)) as java.util.Set;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._keySet13824));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._keySet15683)) as java.util.Set;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _containsValue13825;
+		internal static global::MonoJavaBridge.MethodId _containsValue15684;
 		 bool java.util.Map.containsValue(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._containsValue13825, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.SortedMap_._containsValue15684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._containsValue13825, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._containsValue15684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _containsKey13826;
+		internal static global::MonoJavaBridge.MethodId _containsKey15685;
 		 bool java.util.Map.containsKey(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._containsKey13826, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.SortedMap_._containsKey15685, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._containsKey13826, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.SortedMap_.staticClass, global::java.util.SortedMap_._containsKey15685, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.__SortedMap.staticClass = @__class;
-			global::java.util.__SortedMap._values13804 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.values", "()Ljava/util/Collection;");
-			global::java.util.__SortedMap._entrySet13805 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.entrySet", "()Ljava/util/Set;");
-			global::java.util.__SortedMap._keySet13806 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.keySet", "()Ljava/util/Set;");
-			global::java.util.__SortedMap._comparator13807 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.comparator", "()Ljava/util/Comparator;");
-			global::java.util.__SortedMap._subMap13808 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;");
-			global::java.util.__SortedMap._headMap13809 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;");
-			global::java.util.__SortedMap._tailMap13810 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;");
-			global::java.util.__SortedMap._firstKey13811 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.firstKey", "()Ljava/lang/Object;");
-			global::java.util.__SortedMap._lastKey13812 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.lastKey", "()Ljava/lang/Object;");
-			global::java.util.__SortedMap._get13813 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.get", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.__SortedMap._put13814 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.__SortedMap._equals13815 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.equals", "(Ljava/lang/Object;)Z");
-			global::java.util.__SortedMap._values13816 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.values", "()Ljava/util/Collection;");
-			global::java.util.__SortedMap._hashCode13817 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.hashCode", "()I");
-			global::java.util.__SortedMap._clear13818 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.clear", "()V");
-			global::java.util.__SortedMap._isEmpty13819 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.isEmpty", "()Z");
-			global::java.util.__SortedMap._size13820 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.size", "()I");
-			global::java.util.__SortedMap._entrySet13821 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.entrySet", "()Ljava/util/Set;");
-			global::java.util.__SortedMap._putAll13822 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.putAll", "(Ljava/util/Map;)V");
-			global::java.util.__SortedMap._remove13823 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.__SortedMap._keySet13824 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.keySet", "()Ljava/util/Set;");
-			global::java.util.__SortedMap._containsValue13825 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.containsValue", "(Ljava/lang/Object;)Z");
-			global::java.util.__SortedMap._containsKey13826 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.containsKey", "(Ljava/lang/Object;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.SortedMap_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/SortedMap"));
+			global::java.util.SortedMap_._values15663 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "values", "()Ljava/util/Collection;");
+			global::java.util.SortedMap_._entrySet15664 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "entrySet", "()Ljava/util/Set;");
+			global::java.util.SortedMap_._keySet15665 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "keySet", "()Ljava/util/Set;");
+			global::java.util.SortedMap_._comparator15666 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "comparator", "()Ljava/util/Comparator;");
+			global::java.util.SortedMap_._subMap15667 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;");
+			global::java.util.SortedMap_._headMap15668 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;");
+			global::java.util.SortedMap_._tailMap15669 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;");
+			global::java.util.SortedMap_._firstKey15670 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "firstKey", "()Ljava/lang/Object;");
+			global::java.util.SortedMap_._lastKey15671 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "lastKey", "()Ljava/lang/Object;");
+			global::java.util.SortedMap_._get15672 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			global::java.util.SortedMap_._put15673 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
+			global::java.util.SortedMap_._equals15674 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.SortedMap_._values15675 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "values", "()Ljava/util/Collection;");
+			global::java.util.SortedMap_._hashCode15676 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "hashCode", "()I");
+			global::java.util.SortedMap_._clear15677 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "clear", "()V");
+			global::java.util.SortedMap_._isEmpty15678 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "isEmpty", "()Z");
+			global::java.util.SortedMap_._size15679 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "size", "()I");
+			global::java.util.SortedMap_._entrySet15680 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "entrySet", "()Ljava/util/Set;");
+			global::java.util.SortedMap_._putAll15681 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "putAll", "(Ljava/util/Map;)V");
+			global::java.util.SortedMap_._remove15682 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			global::java.util.SortedMap_._keySet15683 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "keySet", "()Ljava/util/Set;");
+			global::java.util.SortedMap_._containsValue15684 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
+			global::java.util.SortedMap_._containsKey15685 = @__env.GetMethodIDNoThrow(global::java.util.SortedMap_.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
 		}
 	}
 }

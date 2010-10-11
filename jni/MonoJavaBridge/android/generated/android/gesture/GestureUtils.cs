@@ -1,58 +1,55 @@
 namespace android.gesture
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class GestureUtils : java.lang.Object
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class GestureUtils : java.lang.Object
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static GestureUtils()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.gesture.GestureUtils), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.gesture.GestureUtils(@__env);
-			}
-		}
-		internal GestureUtils(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal GestureUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _computeOrientedBoundingBox2884;
+		internal static global::MonoJavaBridge.MethodId _computeOrientedBoundingBox3058;
 		public static global::android.gesture.OrientedBoundingBox computeOrientedBoundingBox(java.util.ArrayList arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.OrientedBoundingBox>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._computeOrientedBoundingBox2884, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._computeOrientedBoundingBox3058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.gesture.OrientedBoundingBox;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _computeOrientedBoundingBox2885;
+		internal static global::MonoJavaBridge.MethodId _computeOrientedBoundingBox3059;
 		public static global::android.gesture.OrientedBoundingBox computeOrientedBoundingBox(float[] arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.OrientedBoundingBox>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._computeOrientedBoundingBox2885, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._computeOrientedBoundingBox3059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.gesture.OrientedBoundingBox;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _spatialSampling2886;
+		internal static global::MonoJavaBridge.MethodId _spatialSampling3060;
 		public static float[] spatialSampling(android.gesture.Gesture arg0, int arg1) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._spatialSampling2886, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<float>(@__env.CallStaticObjectMethod(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._spatialSampling3060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as float[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _spatialSampling2887;
+		internal static global::MonoJavaBridge.MethodId _spatialSampling3061;
 		public static float[] spatialSampling(android.gesture.Gesture arg0, int arg1, bool arg2) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._spatialSampling2887, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<float>(@__env.CallStaticObjectMethod(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._spatialSampling3061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as float[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _temporalSampling2888;
+		internal static global::MonoJavaBridge.MethodId _temporalSampling3062;
 		public static float[] temporalSampling(android.gesture.GestureStroke arg0, int arg1) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._temporalSampling2888, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<float>(@__env.CallStaticObjectMethod(android.gesture.GestureUtils.staticClass, global::android.gesture.GestureUtils._temporalSampling3062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as float[];
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.gesture.GestureUtils.staticClass = @__class;
-			global::android.gesture.GestureUtils._computeOrientedBoundingBox2884 = @__env.GetStaticMethodID(global::android.gesture.GestureUtils.staticClass, "computeOrientedBoundingBox", "(Ljava/util/ArrayList;)Landroid/gesture/OrientedBoundingBox;");
-			global::android.gesture.GestureUtils._computeOrientedBoundingBox2885 = @__env.GetStaticMethodID(global::android.gesture.GestureUtils.staticClass, "computeOrientedBoundingBox", "([F)Landroid/gesture/OrientedBoundingBox;");
-			global::android.gesture.GestureUtils._spatialSampling2886 = @__env.GetStaticMethodID(global::android.gesture.GestureUtils.staticClass, "spatialSampling", "(Landroid/gesture/Gesture;I)[F");
-			global::android.gesture.GestureUtils._spatialSampling2887 = @__env.GetStaticMethodID(global::android.gesture.GestureUtils.staticClass, "spatialSampling", "(Landroid/gesture/Gesture;IZ)[F");
-			global::android.gesture.GestureUtils._temporalSampling2888 = @__env.GetStaticMethodID(global::android.gesture.GestureUtils.staticClass, "temporalSampling", "(Landroid/gesture/GestureStroke;I)[F");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.gesture.GestureUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureUtils"));
+			global::android.gesture.GestureUtils._computeOrientedBoundingBox3058 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureUtils.staticClass, "computeOrientedBoundingBox", "(Ljava/util/ArrayList;)Landroid/gesture/OrientedBoundingBox;");
+			global::android.gesture.GestureUtils._computeOrientedBoundingBox3059 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureUtils.staticClass, "computeOrientedBoundingBox", "([F)Landroid/gesture/OrientedBoundingBox;");
+			global::android.gesture.GestureUtils._spatialSampling3060 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureUtils.staticClass, "spatialSampling", "(Landroid/gesture/Gesture;I)[F");
+			global::android.gesture.GestureUtils._spatialSampling3061 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureUtils.staticClass, "spatialSampling", "(Landroid/gesture/Gesture;IZ)[F");
+			global::android.gesture.GestureUtils._temporalSampling3062 = @__env.GetStaticMethodIDNoThrow(global::android.gesture.GestureUtils.staticClass, "temporalSampling", "(Landroid/gesture/GestureStroke;I)[F");
 		}
 	}
 }

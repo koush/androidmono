@@ -1,75 +1,69 @@
 namespace android.accounts
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class AccountAuthenticatorResponse : java.lang.Object, android.os.Parcelable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class AccountAuthenticatorResponse : java.lang.Object, android.os.Parcelable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccountAuthenticatorResponse()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accounts.AccountAuthenticatorResponse), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.accounts.AccountAuthenticatorResponse(@__env);
-			}
-		}
-		protected AccountAuthenticatorResponse(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected AccountAuthenticatorResponse(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel58;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel67;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._writeToParcel58, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse._writeToParcel67, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._writeToParcel58, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._writeToParcel67, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents59;
+		internal static global::MonoJavaBridge.MethodId _describeContents68;
 		public virtual int describeContents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.accounts.AccountAuthenticatorResponse._describeContents59);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse._describeContents68);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._describeContents59);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._describeContents68);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onResult60;
+		internal static global::MonoJavaBridge.MethodId _onResult69;
 		public virtual void onResult(android.os.Bundle arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._onResult60, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse._onResult69, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onResult60, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onResult69, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onRequestContinued61;
+		internal static global::MonoJavaBridge.MethodId _onRequestContinued70;
 		public virtual void onRequestContinued() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._onRequestContinued61);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse._onRequestContinued70);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onRequestContinued61);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onRequestContinued70);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onError62;
+		internal static global::MonoJavaBridge.MethodId _onError71;
 		public virtual void onError(int arg0, java.lang.String arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._onError62, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse._onError71, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onError62, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onError71, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccountAuthenticatorResponse63;
-		public AccountAuthenticatorResponse(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _AccountAuthenticatorResponse72;
+		public AccountAuthenticatorResponse(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._AccountAuthenticatorResponse63, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._AccountAuthenticatorResponse72, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR64;
+		internal static global::MonoJavaBridge.FieldId _CREATOR73;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -77,15 +71,16 @@ namespace android.accounts
 				return default(global::android.os.Parcelable_Creator);
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.accounts.AccountAuthenticatorResponse.staticClass = @__class;
-			global::android.accounts.AccountAuthenticatorResponse._writeToParcel58 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorResponse.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.accounts.AccountAuthenticatorResponse._describeContents59 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorResponse.staticClass, "describeContents", "()I");
-			global::android.accounts.AccountAuthenticatorResponse._onResult60 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onResult", "(Landroid/os/Bundle;)V");
-			global::android.accounts.AccountAuthenticatorResponse._onRequestContinued61 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onRequestContinued", "()V");
-			global::android.accounts.AccountAuthenticatorResponse._onError62 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onError", "(ILjava/lang/String;)V");
-			global::android.accounts.AccountAuthenticatorResponse._AccountAuthenticatorResponse63 = @__env.GetMethodID(global::android.accounts.AccountAuthenticatorResponse.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.accounts.AccountAuthenticatorResponse.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/accounts/AccountAuthenticatorResponse"));
+			global::android.accounts.AccountAuthenticatorResponse._writeToParcel67 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.accounts.AccountAuthenticatorResponse._describeContents68 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "describeContents", "()I");
+			global::android.accounts.AccountAuthenticatorResponse._onResult69 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onResult", "(Landroid/os/Bundle;)V");
+			global::android.accounts.AccountAuthenticatorResponse._onRequestContinued70 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onRequestContinued", "()V");
+			global::android.accounts.AccountAuthenticatorResponse._onError71 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "onError", "(ILjava/lang/String;)V");
+			global::android.accounts.AccountAuthenticatorResponse._AccountAuthenticatorResponse72 = @__env.GetMethodIDNoThrow(global::android.accounts.AccountAuthenticatorResponse.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

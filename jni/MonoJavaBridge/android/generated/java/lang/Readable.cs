@@ -1,50 +1,36 @@
 namespace java.lang
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface Readable 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Readable_))]
+	public interface Readable  : global::MonoJavaBridge.IJavaObject 
 	{
 		int read(java.nio.CharBuffer arg0);
 	}
 
-	public partial class Readable_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.Readable))]
+	public sealed partial class Readable_ : java.lang.Object, Readable
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static Readable_()
 		{
-			get { return __Readable.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __Readable : java.lang.Object, Readable
-	{
-		internal static global::java.lang.Class staticClass;
-		static __Readable()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.lang.__Readable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.lang.__Readable(@__env);
-			}
-		}
-		internal __Readable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal Readable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read12236;
+		internal static global::MonoJavaBridge.MethodId _read13105;
 		 int java.lang.Readable.read(java.nio.CharBuffer arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.lang.__Readable._read12236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Readable_._read13105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.lang.__Readable.staticClass, global::java.lang.__Readable._read12236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Readable_.staticClass, global::java.lang.Readable_._read13105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.lang.__Readable.staticClass = @__class;
-			global::java.lang.__Readable._read12236 = @__env.GetMethodID(global::java.lang.__Readable.staticClass, "java.lang.Readable.read", "(Ljava/nio/CharBuffer;)I");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.lang.Readable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Readable"));
+			global::java.lang.Readable_._read13105 = @__env.GetMethodIDNoThrow(global::java.lang.Readable_.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
 		}
 	}
 }

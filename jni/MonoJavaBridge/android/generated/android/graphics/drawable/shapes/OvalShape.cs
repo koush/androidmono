@@ -1,43 +1,38 @@
 namespace android.graphics.drawable.shapes
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class OvalShape : android.graphics.drawable.shapes.RectShape
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class OvalShape : android.graphics.drawable.shapes.RectShape
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static OvalShape()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.shapes.OvalShape), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.drawable.shapes.OvalShape(@__env);
-			}
-		}
-		protected OvalShape(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected OvalShape(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _draw4029;
+		internal static global::MonoJavaBridge.MethodId _draw4229;
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape._draw4029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.shapes.OvalShape._draw4229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._draw4029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._draw4229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OvalShape4030;
-		public OvalShape()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _OvalShape4230;
+		public OvalShape()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._OvalShape4030, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._OvalShape4230);
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.drawable.shapes.OvalShape.staticClass = @__class;
-			global::android.graphics.drawable.shapes.OvalShape._draw4029 = @__env.GetMethodID(global::android.graphics.drawable.shapes.OvalShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
-			global::android.graphics.drawable.shapes.OvalShape._OvalShape4030 = @__env.GetMethodID(global::android.graphics.drawable.shapes.OvalShape.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.drawable.shapes.OvalShape.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/drawable/shapes/OvalShape"));
+			global::android.graphics.drawable.shapes.OvalShape._draw4229 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.OvalShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
+			global::android.graphics.drawable.shapes.OvalShape._OvalShape4230 = @__env.GetMethodIDNoThrow(global::android.graphics.drawable.shapes.OvalShape.staticClass, "<init>", "()V");
 		}
 	}
 }

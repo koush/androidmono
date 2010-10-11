@@ -1,50 +1,36 @@
 namespace java.io
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface FileFilter 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.FileFilter_))]
+	public interface FileFilter  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool accept(java.io.File arg0);
 	}
 
-	public partial class FileFilter_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.FileFilter))]
+	public sealed partial class FileFilter_ : java.lang.Object, FileFilter
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static FileFilter_()
 		{
-			get { return __FileFilter.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __FileFilter : java.lang.Object, FileFilter
-	{
-		internal static global::java.lang.Class staticClass;
-		static __FileFilter()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.io.__FileFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.io.__FileFilter(@__env);
-			}
-		}
-		internal __FileFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal FileFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _accept12113;
+		internal static global::MonoJavaBridge.MethodId _accept12555;
 		 bool java.io.FileFilter.accept(java.io.File arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.io.__FileFilter._accept12113, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileFilter_._accept12555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.__FileFilter.staticClass, global::java.io.__FileFilter._accept12113, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileFilter_.staticClass, global::java.io.FileFilter_._accept12555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.io.__FileFilter.staticClass = @__class;
-			global::java.io.__FileFilter._accept12113 = @__env.GetMethodID(global::java.io.__FileFilter.staticClass, "java.io.FileFilter.accept", "(Ljava/io/File;)Z");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.io.FileFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileFilter"));
+			global::java.io.FileFilter_._accept12555 = @__env.GetMethodIDNoThrow(global::java.io.FileFilter_.staticClass, "accept", "(Ljava/io/File;)Z");
 		}
 	}
 }

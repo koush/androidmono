@@ -1,33 +1,28 @@
 namespace android.graphics
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class SumPathEffect : android.graphics.PathEffect
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class SumPathEffect : android.graphics.PathEffect
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SumPathEffect()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.SumPathEffect), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.graphics.SumPathEffect(@__env);
-			}
-		}
-		protected SumPathEffect(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected SumPathEffect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SumPathEffect3613;
-		public SumPathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _SumPathEffect3803;
+		public SumPathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.SumPathEffect.staticClass, global::android.graphics.SumPathEffect._SumPathEffect3613, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.SumPathEffect.staticClass, global::android.graphics.SumPathEffect._SumPathEffect3803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.graphics.SumPathEffect.staticClass = @__class;
-			global::android.graphics.SumPathEffect._SumPathEffect3613 = @__env.GetMethodID(global::android.graphics.SumPathEffect.staticClass, "<init>", "(Landroid/graphics/PathEffect;Landroid/graphics/PathEffect;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.graphics.SumPathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/SumPathEffect"));
+			global::android.graphics.SumPathEffect._SumPathEffect3803 = @__env.GetMethodIDNoThrow(global::android.graphics.SumPathEffect.staticClass, "<init>", "(Landroid/graphics/PathEffect;Landroid/graphics/PathEffect;)V");
 		}
 	}
 }

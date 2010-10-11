@@ -1,40 +1,36 @@
 namespace android.os
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class BadParcelableException : android.util.AndroidRuntimeException
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class BadParcelableException : android.util.AndroidRuntimeException
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static BadParcelableException()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.BadParcelableException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.os.BadParcelableException(@__env);
-			}
-		}
-		protected BadParcelableException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected BadParcelableException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BadParcelableException5879;
-		public BadParcelableException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BadParcelableException6144;
+		public BadParcelableException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.BadParcelableException.staticClass, global::android.os.BadParcelableException._BadParcelableException5879, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BadParcelableException.staticClass, global::android.os.BadParcelableException._BadParcelableException6144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BadParcelableException5880;
-		public BadParcelableException(java.lang.Exception arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _BadParcelableException6145;
+		public BadParcelableException(java.lang.Exception arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.BadParcelableException.staticClass, global::android.os.BadParcelableException._BadParcelableException5880, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BadParcelableException.staticClass, global::android.os.BadParcelableException._BadParcelableException6145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.os.BadParcelableException.staticClass = @__class;
-			global::android.os.BadParcelableException._BadParcelableException5879 = @__env.GetMethodID(global::android.os.BadParcelableException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.os.BadParcelableException._BadParcelableException5880 = @__env.GetMethodID(global::android.os.BadParcelableException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.BadParcelableException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/BadParcelableException"));
+			global::android.os.BadParcelableException._BadParcelableException6144 = @__env.GetMethodIDNoThrow(global::android.os.BadParcelableException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.os.BadParcelableException._BadParcelableException6145 = @__env.GetMethodIDNoThrow(global::android.os.BadParcelableException.staticClass, "<init>", "(Ljava/lang/Exception;)V");
 		}
 	}
 }

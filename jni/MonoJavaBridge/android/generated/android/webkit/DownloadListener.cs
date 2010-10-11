@@ -1,50 +1,36 @@
 namespace android.webkit
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface DownloadListener 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.DownloadListener_))]
+	public interface DownloadListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onDownloadStart(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, long arg4);
 	}
 
-	public partial class DownloadListener_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::android.webkit.DownloadListener))]
+	public sealed partial class DownloadListener_ : java.lang.Object, DownloadListener
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DownloadListener_()
 		{
-			get { return __DownloadListener.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __DownloadListener : java.lang.Object, DownloadListener
-	{
-		internal static global::java.lang.Class staticClass;
-		static __DownloadListener()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.__DownloadListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.webkit.__DownloadListener(@__env);
-			}
-		}
-		internal __DownloadListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal DownloadListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDownloadStart9964;
+		internal static global::MonoJavaBridge.MethodId _onDownloadStart10311;
 		 void android.webkit.DownloadListener.onDownloadStart(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, long arg4) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.__DownloadListener._onDownloadStart9964, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.DownloadListener_._onDownloadStart10311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.__DownloadListener.staticClass, global::android.webkit.__DownloadListener._onDownloadStart9964, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.DownloadListener_.staticClass, global::android.webkit.DownloadListener_._onDownloadStart10311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.webkit.__DownloadListener.staticClass = @__class;
-			global::android.webkit.__DownloadListener._onDownloadStart9964 = @__env.GetMethodID(global::android.webkit.__DownloadListener.staticClass, "android.webkit.DownloadListener.onDownloadStart", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.webkit.DownloadListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/DownloadListener"));
+			global::android.webkit.DownloadListener_._onDownloadStart10311 = @__env.GetMethodIDNoThrow(global::android.webkit.DownloadListener_.staticClass, "onDownloadStart", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V");
 		}
 	}
 }

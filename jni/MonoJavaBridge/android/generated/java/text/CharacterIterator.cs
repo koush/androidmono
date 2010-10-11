@@ -1,6 +1,6 @@
 namespace java.text
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
+	[global::MonoJavaBridge.JavaInterface(typeof(global::java.text.CharacterIterator_))]
 	public interface CharacterIterator : java.lang.Cloneable
 	{
 		global::java.lang.Object clone();
@@ -15,135 +15,121 @@ namespace java.text
 		char first();
 	}
 
-	public partial class CharacterIterator_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.text.CharacterIterator))]
+	public sealed partial class CharacterIterator_ : java.lang.Object, CharacterIterator
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static CharacterIterator_()
 		{
-			get { return __CharacterIterator.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __CharacterIterator : java.lang.Object, CharacterIterator
-	{
-		internal static global::java.lang.Class staticClass;
-		static __CharacterIterator()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.text.__CharacterIterator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.text.__CharacterIterator(@__env);
-			}
-		}
-		internal __CharacterIterator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal CharacterIterator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone13384;
+		internal static global::MonoJavaBridge.MethodId _clone15057;
 		 global::java.lang.Object java.text.CharacterIterator.clone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__CharacterIterator._clone13384));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.CharacterIterator_._clone15057)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._clone13384));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._clone15057)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _next13385;
+		internal static global::MonoJavaBridge.MethodId _next15058;
 		 char java.text.CharacterIterator.next() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._next13385);
+				return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._next15058);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._next13385);
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._next15058);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _previous13386;
+		internal static global::MonoJavaBridge.MethodId _previous15059;
 		 char java.text.CharacterIterator.previous() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._previous13386);
+				return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._previous15059);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._previous13386);
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._previous15059);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex13387;
+		internal static global::MonoJavaBridge.MethodId _getIndex15060;
 		 int java.text.CharacterIterator.getIndex() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getIndex13387);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.CharacterIterator_._getIndex15060);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getIndex13387);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._getIndex15060);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _current13388;
+		internal static global::MonoJavaBridge.MethodId _current15061;
 		 char java.text.CharacterIterator.current() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._current13388);
+				return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._current15061);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._current13388);
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._current15061);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIndex13389;
+		internal static global::MonoJavaBridge.MethodId _setIndex15062;
 		 char java.text.CharacterIterator.setIndex(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._setIndex13389, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._setIndex15062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._setIndex13389, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._setIndex15062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBeginIndex13390;
+		internal static global::MonoJavaBridge.MethodId _getBeginIndex15063;
 		 int java.text.CharacterIterator.getBeginIndex() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getBeginIndex13390);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.CharacterIterator_._getBeginIndex15063);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getBeginIndex13390);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._getBeginIndex15063);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEndIndex13391;
+		internal static global::MonoJavaBridge.MethodId _getEndIndex15064;
 		 int java.text.CharacterIterator.getEndIndex() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getEndIndex13391);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.CharacterIterator_._getEndIndex15064);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getEndIndex13391);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._getEndIndex15064);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _last13392;
+		internal static global::MonoJavaBridge.MethodId _last15065;
 		 char java.text.CharacterIterator.last() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._last13392);
+				return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._last15065);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._last13392);
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._last15065);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _first13393;
+		internal static global::MonoJavaBridge.MethodId _first15066;
 		 char java.text.CharacterIterator.first() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._first13393);
+				return @__env.CallCharMethod(this.JvmHandle, global::java.text.CharacterIterator_._first15066);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._first13393);
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.text.CharacterIterator_.staticClass, global::java.text.CharacterIterator_._first15066);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.text.__CharacterIterator.staticClass = @__class;
-			global::java.text.__CharacterIterator._clone13384 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.clone", "()Ljava/lang/Object;");
-			global::java.text.__CharacterIterator._next13385 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.next", "()C");
-			global::java.text.__CharacterIterator._previous13386 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.previous", "()C");
-			global::java.text.__CharacterIterator._getIndex13387 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getIndex", "()I");
-			global::java.text.__CharacterIterator._current13388 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.current", "()C");
-			global::java.text.__CharacterIterator._setIndex13389 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.setIndex", "(I)C");
-			global::java.text.__CharacterIterator._getBeginIndex13390 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getBeginIndex", "()I");
-			global::java.text.__CharacterIterator._getEndIndex13391 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getEndIndex", "()I");
-			global::java.text.__CharacterIterator._last13392 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.last", "()C");
-			global::java.text.__CharacterIterator._first13393 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.first", "()C");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.text.CharacterIterator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/CharacterIterator"));
+			global::java.text.CharacterIterator_._clone15057 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.text.CharacterIterator_._next15058 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "next", "()C");
+			global::java.text.CharacterIterator_._previous15059 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "previous", "()C");
+			global::java.text.CharacterIterator_._getIndex15060 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getIndex", "()I");
+			global::java.text.CharacterIterator_._current15061 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "current", "()C");
+			global::java.text.CharacterIterator_._setIndex15062 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "setIndex", "(I)C");
+			global::java.text.CharacterIterator_._getBeginIndex15063 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getBeginIndex", "()I");
+			global::java.text.CharacterIterator_._getEndIndex15064 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "getEndIndex", "()I");
+			global::java.text.CharacterIterator_._last15065 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "last", "()C");
+			global::java.text.CharacterIterator_._first15066 = @__env.GetMethodIDNoThrow(global::java.text.CharacterIterator_.staticClass, "first", "()C");
 		}
 	}
 }

@@ -1,157 +1,154 @@
 namespace android.preference
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class EditTextPreference : android.preference.DialogPreference
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class EditTextPreference : android.preference.DialogPreference
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EditTextPreference()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.preference.EditTextPreference), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.preference.EditTextPreference(@__env);
-			}
-		}
-		protected EditTextPreference(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected EditTextPreference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setText6521;
+		internal static global::MonoJavaBridge.MethodId _setText6797;
 		public virtual void setText(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.EditTextPreference._setText6521, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._setText6797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._setText6521, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._setText6797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getText6522;
+		internal static global::MonoJavaBridge.MethodId _getText6798;
 		public virtual global::java.lang.String getText() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.EditTextPreference._getText6522));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference._getText6798)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._getText6522));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._getText6798)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState6523;
+		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState6799;
 		protected override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.EditTextPreference._onRestoreInstanceState6523, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._onRestoreInstanceState6799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onRestoreInstanceState6523, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onRestoreInstanceState6799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState6524;
+		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState6800;
 		protected override global::android.os.Parcelable onSaveInstanceState() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.EditTextPreference._onSaveInstanceState6524));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference._onSaveInstanceState6800)) as android.os.Parcelable;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onSaveInstanceState6524));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onSaveInstanceState6800)) as android.os.Parcelable;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _shouldDisableDependents6525;
+		internal static global::MonoJavaBridge.MethodId _shouldDisableDependents6801;
 		public override bool shouldDisableDependents() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.preference.EditTextPreference._shouldDisableDependents6525);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.preference.EditTextPreference._shouldDisableDependents6801);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._shouldDisableDependents6525);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._shouldDisableDependents6801);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onGetDefaultValue6526;
+		internal static global::MonoJavaBridge.MethodId _onGetDefaultValue6802;
 		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.EditTextPreference._onGetDefaultValue6526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference._onGetDefaultValue6802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onGetDefaultValue6526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onGetDefaultValue6802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSetInitialValue6527;
+		internal static global::MonoJavaBridge.MethodId _onSetInitialValue6803;
 		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.EditTextPreference._onSetInitialValue6527, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._onSetInitialValue6803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onSetInitialValue6527, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onSetInitialValue6803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onBindDialogView6528;
+		internal static global::MonoJavaBridge.MethodId _onBindDialogView6804;
 		protected override void onBindDialogView(android.view.View arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.EditTextPreference._onBindDialogView6528, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._onBindDialogView6804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onBindDialogView6528, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onBindDialogView6804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDialogClosed6529;
+		internal static global::MonoJavaBridge.MethodId _onDialogClosed6805;
 		protected override void onDialogClosed(bool arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.EditTextPreference._onDialogClosed6529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._onDialogClosed6805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onDialogClosed6529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onDialogClosed6805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onAddEditTextToDialogView6530;
+		internal static global::MonoJavaBridge.MethodId _onAddEditTextToDialogView6806;
 		protected virtual void onAddEditTextToDialogView(android.view.View arg0, android.widget.EditText arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.EditTextPreference._onAddEditTextToDialogView6530, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._onAddEditTextToDialogView6806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onAddEditTextToDialogView6530, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onAddEditTextToDialogView6806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEditText6531;
+		internal static global::MonoJavaBridge.MethodId _getEditText6807;
 		public virtual global::android.widget.EditText getEditText() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.EditText>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.EditTextPreference._getEditText6531));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference._getEditText6807)) as android.widget.EditText;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.EditText>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._getEditText6531));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._getEditText6807)) as android.widget.EditText;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditTextPreference6532;
-		public EditTextPreference(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _EditTextPreference6808;
+		public EditTextPreference(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference6532, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference6808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditTextPreference6533;
-		public EditTextPreference(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _EditTextPreference6809;
+		public EditTextPreference(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference6533, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference6809, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditTextPreference6534;
-		public EditTextPreference(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _EditTextPreference6810;
+		public EditTextPreference(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference6534, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._EditTextPreference6810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.preference.EditTextPreference.staticClass = @__class;
-			global::android.preference.EditTextPreference._setText6521 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "setText", "(Ljava/lang/String;)V");
-			global::android.preference.EditTextPreference._getText6522 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "getText", "()Ljava/lang/String;");
-			global::android.preference.EditTextPreference._onRestoreInstanceState6523 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V");
-			global::android.preference.EditTextPreference._onSaveInstanceState6524 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;");
-			global::android.preference.EditTextPreference._shouldDisableDependents6525 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "shouldDisableDependents", "()Z");
-			global::android.preference.EditTextPreference._onGetDefaultValue6526 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onGetDefaultValue", "(Landroid/content/res/TypedArray;I)Ljava/lang/Object;");
-			global::android.preference.EditTextPreference._onSetInitialValue6527 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onSetInitialValue", "(ZLjava/lang/Object;)V");
-			global::android.preference.EditTextPreference._onBindDialogView6528 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onBindDialogView", "(Landroid/view/View;)V");
-			global::android.preference.EditTextPreference._onDialogClosed6529 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onDialogClosed", "(Z)V");
-			global::android.preference.EditTextPreference._onAddEditTextToDialogView6530 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "onAddEditTextToDialogView", "(Landroid/view/View;Landroid/widget/EditText;)V");
-			global::android.preference.EditTextPreference._getEditText6531 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "getEditText", "()Landroid/widget/EditText;");
-			global::android.preference.EditTextPreference._EditTextPreference6532 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::android.preference.EditTextPreference._EditTextPreference6533 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.preference.EditTextPreference._EditTextPreference6534 = @__env.GetMethodID(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.preference.EditTextPreference.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/preference/EditTextPreference"));
+			global::android.preference.EditTextPreference._setText6797 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "setText", "(Ljava/lang/String;)V");
+			global::android.preference.EditTextPreference._getText6798 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "getText", "()Ljava/lang/String;");
+			global::android.preference.EditTextPreference._onRestoreInstanceState6799 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V");
+			global::android.preference.EditTextPreference._onSaveInstanceState6800 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;");
+			global::android.preference.EditTextPreference._shouldDisableDependents6801 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "shouldDisableDependents", "()Z");
+			global::android.preference.EditTextPreference._onGetDefaultValue6802 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onGetDefaultValue", "(Landroid/content/res/TypedArray;I)Ljava/lang/Object;");
+			global::android.preference.EditTextPreference._onSetInitialValue6803 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onSetInitialValue", "(ZLjava/lang/Object;)V");
+			global::android.preference.EditTextPreference._onBindDialogView6804 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onBindDialogView", "(Landroid/view/View;)V");
+			global::android.preference.EditTextPreference._onDialogClosed6805 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onDialogClosed", "(Z)V");
+			global::android.preference.EditTextPreference._onAddEditTextToDialogView6806 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "onAddEditTextToDialogView", "(Landroid/view/View;Landroid/widget/EditText;)V");
+			global::android.preference.EditTextPreference._getEditText6807 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "getEditText", "()Landroid/widget/EditText;");
+			global::android.preference.EditTextPreference._EditTextPreference6808 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.preference.EditTextPreference._EditTextPreference6809 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.preference.EditTextPreference._EditTextPreference6810 = @__env.GetMethodIDNoThrow(global::android.preference.EditTextPreference.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

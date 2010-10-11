@@ -1,245 +1,244 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public class ArrayList : java.util.AbstractList, List, RandomAccess, java.lang.Cloneable, java.io.Serializable
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class ArrayList : java.util.AbstractList, List, RandomAccess, java.lang.Cloneable, java.io.Serializable
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ArrayList()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.ArrayList), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::java.util.ArrayList(@__env);
-			}
-		}
-		protected ArrayList(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected ArrayList(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add13536;
+		internal static global::MonoJavaBridge.MethodId _add15224;
 		public override void add(int arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.ArrayList._add13536, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.ArrayList._add15224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._add13536, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._add15224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _add13537;
+		internal static global::MonoJavaBridge.MethodId _add15225;
 		public override bool add(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._add13537, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.ArrayList._add15225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._add13537, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._add15225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _get13538;
+		internal static global::MonoJavaBridge.MethodId _get15226;
 		public override global::java.lang.Object get(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._get13538, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ArrayList._get15226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._get13538, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._get15226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone13539;
+		internal static global::MonoJavaBridge.MethodId _clone15227;
 		public virtual new global::java.lang.Object clone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._clone13539));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ArrayList._clone15227)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._clone13539));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._clone15227)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _indexOf13540;
+		internal static global::MonoJavaBridge.MethodId _indexOf15228;
 		public override int indexOf(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.ArrayList._indexOf13540, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.ArrayList._indexOf15228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._indexOf13540, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._indexOf15228, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear13541;
+		internal static global::MonoJavaBridge.MethodId _clear15229;
 		public override void clear() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.ArrayList._clear13541);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.ArrayList._clear15229);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._clear13541);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._clear15229);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty13542;
+		internal static global::MonoJavaBridge.MethodId _isEmpty15230;
 		public override bool isEmpty() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._isEmpty13542);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.ArrayList._isEmpty15230);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._isEmpty13542);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._isEmpty15230);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _lastIndexOf13543;
+		internal static global::MonoJavaBridge.MethodId _lastIndexOf15231;
 		public override int lastIndexOf(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.ArrayList._lastIndexOf13543, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.ArrayList._lastIndexOf15231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._lastIndexOf13543, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._lastIndexOf15231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _contains13544;
+		internal static global::MonoJavaBridge.MethodId _contains15232;
 		public override bool contains(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._contains13544, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.ArrayList._contains15232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._contains13544, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._contains15232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addAll13545;
+		internal static global::MonoJavaBridge.MethodId _addAll15233;
 		public override bool addAll(java.util.Collection arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._addAll13545, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.ArrayList._addAll15233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._addAll13545, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._addAll15233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addAll13546;
+		internal static global::MonoJavaBridge.MethodId _addAll15234;
 		public override bool addAll(int arg0, java.util.Collection arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._addAll13546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.ArrayList._addAll15234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._addAll13546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._addAll15234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _size13547;
+		internal static global::MonoJavaBridge.MethodId _size15235;
 		public override int size() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.ArrayList._size13547);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.ArrayList._size15235);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._size13547);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._size15235);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toArray13548;
+		internal static global::MonoJavaBridge.MethodId _toArray15236;
 		public override global::java.lang.Object[] toArray(java.lang.Object[] arg0) 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._toArray13548, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ArrayList._toArray15236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray13548, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray15236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toArray13549;
+		internal static global::MonoJavaBridge.MethodId _toArray15237;
 		public override global::java.lang.Object[] toArray() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._toArray13549));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ArrayList._toArray15237)) as java.lang.Object[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray13549));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray15237)) as java.lang.Object[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _remove13550;
+		internal static global::MonoJavaBridge.MethodId _remove15238;
 		public override global::java.lang.Object remove(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._remove13550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ArrayList._remove15238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove13550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove15238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _remove13551;
+		internal static global::MonoJavaBridge.MethodId _remove15239;
 		public override bool remove(java.lang.Object arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._remove13551, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.ArrayList._remove15239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove13551, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove15239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set13552;
+		internal static global::MonoJavaBridge.MethodId _set15240;
 		public override global::java.lang.Object set(int arg0, java.lang.Object arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._set13552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.ArrayList._set15240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._set13552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._set15240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _trimToSize13553;
+		internal static global::MonoJavaBridge.MethodId _trimToSize15241;
 		public virtual void trimToSize() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.ArrayList._trimToSize13553);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.ArrayList._trimToSize15241);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._trimToSize13553);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._trimToSize15241);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ensureCapacity13554;
+		internal static global::MonoJavaBridge.MethodId _ensureCapacity15242;
 		public virtual void ensureCapacity(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.ArrayList._ensureCapacity13554, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.ArrayList._ensureCapacity15242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._ensureCapacity13554, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._ensureCapacity15242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeRange13555;
+		internal static global::MonoJavaBridge.MethodId _removeRange15243;
 		protected override void removeRange(int arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.ArrayList._removeRange13555, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.ArrayList._removeRange15243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._removeRange13555, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._removeRange15243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ArrayList13556;
-		public ArrayList(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ArrayList15244;
+		public ArrayList(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList13556, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList15244, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ArrayList13557;
-		public ArrayList()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ArrayList15245;
+		public ArrayList()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList13557, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList15245);
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ArrayList13558;
-		public ArrayList(java.util.Collection arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ArrayList15246;
+		public ArrayList(java.util.Collection arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList13558, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ArrayList.staticClass, global::java.util.ArrayList._ArrayList15246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.ArrayList.staticClass = @__class;
-			global::java.util.ArrayList._add13536 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "add", "(ILjava/lang/Object;)V");
-			global::java.util.ArrayList._add13537 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "add", "(Ljava/lang/Object;)Z");
-			global::java.util.ArrayList._get13538 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "get", "(I)Ljava/lang/Object;");
-			global::java.util.ArrayList._clone13539 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.ArrayList._indexOf13540 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "indexOf", "(Ljava/lang/Object;)I");
-			global::java.util.ArrayList._clear13541 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "clear", "()V");
-			global::java.util.ArrayList._isEmpty13542 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "isEmpty", "()Z");
-			global::java.util.ArrayList._lastIndexOf13543 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "lastIndexOf", "(Ljava/lang/Object;)I");
-			global::java.util.ArrayList._contains13544 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "contains", "(Ljava/lang/Object;)Z");
-			global::java.util.ArrayList._addAll13545 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "addAll", "(Ljava/util/Collection;)Z");
-			global::java.util.ArrayList._addAll13546 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "addAll", "(ILjava/util/Collection;)Z");
-			global::java.util.ArrayList._size13547 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "size", "()I");
-			global::java.util.ArrayList._toArray13548 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;");
-			global::java.util.ArrayList._toArray13549 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "toArray", "()[Ljava/lang/Object;");
-			global::java.util.ArrayList._remove13550 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "remove", "(I)Ljava/lang/Object;");
-			global::java.util.ArrayList._remove13551 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "remove", "(Ljava/lang/Object;)Z");
-			global::java.util.ArrayList._set13552 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "set", "(ILjava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.ArrayList._trimToSize13553 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "trimToSize", "()V");
-			global::java.util.ArrayList._ensureCapacity13554 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "ensureCapacity", "(I)V");
-			global::java.util.ArrayList._removeRange13555 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "removeRange", "(II)V");
-			global::java.util.ArrayList._ArrayList13556 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "<init>", "(I)V");
-			global::java.util.ArrayList._ArrayList13557 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "<init>", "()V");
-			global::java.util.ArrayList._ArrayList13558 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "<init>", "(Ljava/util/Collection;)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.ArrayList.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ArrayList"));
+			global::java.util.ArrayList._add15224 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "add", "(ILjava/lang/Object;)V");
+			global::java.util.ArrayList._add15225 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "add", "(Ljava/lang/Object;)Z");
+			global::java.util.ArrayList._get15226 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "get", "(I)Ljava/lang/Object;");
+			global::java.util.ArrayList._clone15227 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.util.ArrayList._indexOf15228 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "indexOf", "(Ljava/lang/Object;)I");
+			global::java.util.ArrayList._clear15229 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "clear", "()V");
+			global::java.util.ArrayList._isEmpty15230 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "isEmpty", "()Z");
+			global::java.util.ArrayList._lastIndexOf15231 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "lastIndexOf", "(Ljava/lang/Object;)I");
+			global::java.util.ArrayList._contains15232 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "contains", "(Ljava/lang/Object;)Z");
+			global::java.util.ArrayList._addAll15233 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "addAll", "(Ljava/util/Collection;)Z");
+			global::java.util.ArrayList._addAll15234 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "addAll", "(ILjava/util/Collection;)Z");
+			global::java.util.ArrayList._size15235 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "size", "()I");
+			global::java.util.ArrayList._toArray15236 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;");
+			global::java.util.ArrayList._toArray15237 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "toArray", "()[Ljava/lang/Object;");
+			global::java.util.ArrayList._remove15238 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "remove", "(I)Ljava/lang/Object;");
+			global::java.util.ArrayList._remove15239 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "remove", "(Ljava/lang/Object;)Z");
+			global::java.util.ArrayList._set15240 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "set", "(ILjava/lang/Object;)Ljava/lang/Object;");
+			global::java.util.ArrayList._trimToSize15241 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "trimToSize", "()V");
+			global::java.util.ArrayList._ensureCapacity15242 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "ensureCapacity", "(I)V");
+			global::java.util.ArrayList._removeRange15243 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "removeRange", "(II)V");
+			global::java.util.ArrayList._ArrayList15244 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "<init>", "(I)V");
+			global::java.util.ArrayList._ArrayList15245 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "<init>", "()V");
+			global::java.util.ArrayList._ArrayList15246 = @__env.GetMethodIDNoThrow(global::java.util.ArrayList.staticClass, "<init>", "(Ljava/util/Collection;)V");
 		}
 	}
 }

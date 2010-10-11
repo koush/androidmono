@@ -1,149 +1,152 @@
 namespace java.util
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public abstract class TimeZone : java.lang.Object, java.io.Serializable, java.lang.Cloneable
+	[global::MonoJavaBridge.JavaClass(typeof(global::java.util.TimeZone_))]
+	public abstract partial class TimeZone : java.lang.Object, java.io.Serializable, java.lang.Cloneable
 	{
-		internal static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TimeZone()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.TimeZone), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		protected TimeZone(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		protected TimeZone(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone13827;
-		public virtual global::java.lang.Object clone() 
+		internal static global::MonoJavaBridge.MethodId _clone15686;
+		public virtual new global::java.lang.Object clone() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._clone13827));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TimeZone._clone15686)) as java.lang.Object;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._clone13827));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._clone15686)) as java.lang.Object;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDefault13828;
+		internal static global::MonoJavaBridge.MethodId _getDefault15687;
 		public static global::java.util.TimeZone getDefault() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallStaticObjectMethodPtr(java.util.TimeZone.staticClass, global::java.util.TimeZone._getDefault13828));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.TimeZone.staticClass, global::java.util.TimeZone._getDefault15687)) as java.util.TimeZone;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOffset13829;
+		internal static global::MonoJavaBridge.MethodId _getOffset15688;
 		public virtual int getOffset(long arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.TimeZone._getOffset13829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.TimeZone._getOffset15688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getOffset13829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getOffset15688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOffset13830;
+		internal static global::MonoJavaBridge.MethodId _getOffset15689;
 		public abstract int getOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
-		internal static global::net.sf.jni4net.jni.MethodId _setDefault13831;
+		internal static global::MonoJavaBridge.MethodId _setDefault15690;
 		public static void setDefault(java.util.TimeZone arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(java.util.TimeZone.staticClass, global::java.util.TimeZone._setDefault13831, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(java.util.TimeZone.staticClass, global::java.util.TimeZone._setDefault15690, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName13832;
+		internal static global::MonoJavaBridge.MethodId _getDisplayName15691;
 		public virtual global::java.lang.String getDisplayName(bool arg0, int arg1, java.util.Locale arg2) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TimeZone._getDisplayName15691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName15691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName13833;
+		internal static global::MonoJavaBridge.MethodId _getDisplayName15692;
 		public virtual global::java.lang.String getDisplayName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13833));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TimeZone._getDisplayName15692)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13833));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName15692)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName13834;
+		internal static global::MonoJavaBridge.MethodId _getDisplayName15693;
 		public virtual global::java.lang.String getDisplayName(java.util.Locale arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13834, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TimeZone._getDisplayName15693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13834, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName15693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName13835;
+		internal static global::MonoJavaBridge.MethodId _getDisplayName15694;
 		public virtual global::java.lang.String getDisplayName(bool arg0, int arg1) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TimeZone._getDisplayName15694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName15694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone13836;
+		internal static global::MonoJavaBridge.MethodId _getTimeZone15695;
 		public static global::java.util.TimeZone getTimeZone(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallStaticObjectMethodPtr(java.util.TimeZone.staticClass, global::java.util.TimeZone._getTimeZone13836, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.TimeZone.staticClass, global::java.util.TimeZone._getTimeZone15695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.TimeZone;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRawOffset13837;
+		internal static global::MonoJavaBridge.MethodId _getRawOffset15696;
 		public abstract int getRawOffset();
-		internal static global::net.sf.jni4net.jni.MethodId _getID13838;
+		internal static global::MonoJavaBridge.MethodId _getID15697;
 		public virtual global::java.lang.String getID() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getID13838));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.TimeZone._getID15697)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getID13838));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getID15697)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasSameRules13839;
+		internal static global::MonoJavaBridge.MethodId _hasSameRules15698;
 		public virtual bool hasSameRules(java.util.TimeZone arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.TimeZone._hasSameRules13839, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimeZone._hasSameRules15698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._hasSameRules13839, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._hasSameRules15698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setRawOffset13840;
+		internal static global::MonoJavaBridge.MethodId _setRawOffset15699;
 		public abstract void setRawOffset(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _setID13841;
+		internal static global::MonoJavaBridge.MethodId _setID15700;
 		public virtual void setID(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.TimeZone._setID13841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.TimeZone._setID15700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._setID13841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._setID15700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDSTSavings13842;
+		internal static global::MonoJavaBridge.MethodId _getDSTSavings15701;
 		public virtual int getDSTSavings() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.TimeZone._getDSTSavings13842);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.TimeZone._getDSTSavings15701);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDSTSavings13842);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDSTSavings15701);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _useDaylightTime13843;
+		internal static global::MonoJavaBridge.MethodId _useDaylightTime15702;
 		public abstract bool useDaylightTime();
-		internal static global::net.sf.jni4net.jni.MethodId _inDaylightTime13844;
+		internal static global::MonoJavaBridge.MethodId _inDaylightTime15703;
 		public abstract bool inDaylightTime(java.util.Date arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getAvailableIDs13845;
+		internal static global::MonoJavaBridge.MethodId _getAvailableIDs15704;
 		public static global::java.lang.String[] getAvailableIDs() 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.TimeZone.staticClass, global::java.util.TimeZone._getAvailableIDs13845));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(java.util.TimeZone.staticClass, global::java.util.TimeZone._getAvailableIDs15704)) as java.lang.String[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAvailableIDs13846;
+		internal static global::MonoJavaBridge.MethodId _getAvailableIDs15705;
 		public static global::java.lang.String[] getAvailableIDs(int arg0) 
 		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.TimeZone.staticClass, global::java.util.TimeZone._getAvailableIDs13846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(java.util.TimeZone.staticClass, global::java.util.TimeZone._getAvailableIDs15705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TimeZone13847;
-		public TimeZone()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _TimeZone15706;
+		public TimeZone()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.TimeZone.staticClass, global::java.util.TimeZone._TimeZone13847, this);
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TimeZone.staticClass, global::java.util.TimeZone._TimeZone15706);
+			Init(@__env, handle);
 		}
 		public static int SHORT
 		{
@@ -159,30 +162,99 @@ namespace java.util
 				return 1;
 			}
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::java.util.TimeZone.staticClass = @__class;
-			global::java.util.TimeZone._clone13827 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.TimeZone._getDefault13828 = @__env.GetStaticMethodID(global::java.util.TimeZone.staticClass, "getDefault", "()Ljava/util/TimeZone;");
-			global::java.util.TimeZone._getOffset13829 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getOffset", "(J)I");
-			global::java.util.TimeZone._getOffset13830 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getOffset", "(IIIIII)I");
-			global::java.util.TimeZone._setDefault13831 = @__env.GetStaticMethodID(global::java.util.TimeZone.staticClass, "setDefault", "(Ljava/util/TimeZone;)V");
-			global::java.util.TimeZone._getDisplayName13832 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getDisplayName", "(ZILjava/util/Locale;)Ljava/lang/String;");
-			global::java.util.TimeZone._getDisplayName13833 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getDisplayName", "()Ljava/lang/String;");
-			global::java.util.TimeZone._getDisplayName13834 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;");
-			global::java.util.TimeZone._getDisplayName13835 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getDisplayName", "(ZI)Ljava/lang/String;");
-			global::java.util.TimeZone._getTimeZone13836 = @__env.GetStaticMethodID(global::java.util.TimeZone.staticClass, "getTimeZone", "(Ljava/lang/String;)Ljava/util/TimeZone;");
-			global::java.util.TimeZone._getRawOffset13837 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getRawOffset", "()I");
-			global::java.util.TimeZone._getID13838 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getID", "()Ljava/lang/String;");
-			global::java.util.TimeZone._hasSameRules13839 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "hasSameRules", "(Ljava/util/TimeZone;)Z");
-			global::java.util.TimeZone._setRawOffset13840 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "setRawOffset", "(I)V");
-			global::java.util.TimeZone._setID13841 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "setID", "(Ljava/lang/String;)V");
-			global::java.util.TimeZone._getDSTSavings13842 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "getDSTSavings", "()I");
-			global::java.util.TimeZone._useDaylightTime13843 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "useDaylightTime", "()Z");
-			global::java.util.TimeZone._inDaylightTime13844 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "inDaylightTime", "(Ljava/util/Date;)Z");
-			global::java.util.TimeZone._getAvailableIDs13845 = @__env.GetStaticMethodID(global::java.util.TimeZone.staticClass, "getAvailableIDs", "()[Ljava/lang/String;");
-			global::java.util.TimeZone._getAvailableIDs13846 = @__env.GetStaticMethodID(global::java.util.TimeZone.staticClass, "getAvailableIDs", "(I)[Ljava/lang/String;");
-			global::java.util.TimeZone._TimeZone13847 = @__env.GetMethodID(global::java.util.TimeZone.staticClass, "<init>", "()V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.TimeZone.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimeZone"));
+			global::java.util.TimeZone._clone15686 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.util.TimeZone._getDefault15687 = @__env.GetStaticMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDefault", "()Ljava/util/TimeZone;");
+			global::java.util.TimeZone._getOffset15688 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getOffset", "(J)I");
+			global::java.util.TimeZone._getOffset15689 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getOffset", "(IIIIII)I");
+			global::java.util.TimeZone._setDefault15690 = @__env.GetStaticMethodIDNoThrow(global::java.util.TimeZone.staticClass, "setDefault", "(Ljava/util/TimeZone;)V");
+			global::java.util.TimeZone._getDisplayName15691 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "(ZILjava/util/Locale;)Ljava/lang/String;");
+			global::java.util.TimeZone._getDisplayName15692 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "()Ljava/lang/String;");
+			global::java.util.TimeZone._getDisplayName15693 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;");
+			global::java.util.TimeZone._getDisplayName15694 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDisplayName", "(ZI)Ljava/lang/String;");
+			global::java.util.TimeZone._getTimeZone15695 = @__env.GetStaticMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getTimeZone", "(Ljava/lang/String;)Ljava/util/TimeZone;");
+			global::java.util.TimeZone._getRawOffset15696 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getRawOffset", "()I");
+			global::java.util.TimeZone._getID15697 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getID", "()Ljava/lang/String;");
+			global::java.util.TimeZone._hasSameRules15698 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "hasSameRules", "(Ljava/util/TimeZone;)Z");
+			global::java.util.TimeZone._setRawOffset15699 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "setRawOffset", "(I)V");
+			global::java.util.TimeZone._setID15700 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "setID", "(Ljava/lang/String;)V");
+			global::java.util.TimeZone._getDSTSavings15701 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getDSTSavings", "()I");
+			global::java.util.TimeZone._useDaylightTime15702 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "useDaylightTime", "()Z");
+			global::java.util.TimeZone._inDaylightTime15703 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "inDaylightTime", "(Ljava/util/Date;)Z");
+			global::java.util.TimeZone._getAvailableIDs15704 = @__env.GetStaticMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getAvailableIDs", "()[Ljava/lang/String;");
+			global::java.util.TimeZone._getAvailableIDs15705 = @__env.GetStaticMethodIDNoThrow(global::java.util.TimeZone.staticClass, "getAvailableIDs", "(I)[Ljava/lang/String;");
+			global::java.util.TimeZone._TimeZone15706 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone.staticClass, "<init>", "()V");
+		}
+	}
+
+	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.TimeZone))]
+	public sealed partial class TimeZone_ : java.util.TimeZone
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static TimeZone_()
+		{
+			InitJNI();
+		}
+		internal TimeZone_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _getOffset15707;
+		public override int getOffset(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.TimeZone_._getOffset15707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.TimeZone_.staticClass, global::java.util.TimeZone_._getOffset15707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+		}
+		internal static global::MonoJavaBridge.MethodId _getRawOffset15708;
+		public override int getRawOffset() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.TimeZone_._getRawOffset15708);
+			else
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.TimeZone_.staticClass, global::java.util.TimeZone_._getRawOffset15708);
+		}
+		internal static global::MonoJavaBridge.MethodId _setRawOffset15709;
+		public override void setRawOffset(int arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.TimeZone_._setRawOffset15709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.TimeZone_.staticClass, global::java.util.TimeZone_._setRawOffset15709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		internal static global::MonoJavaBridge.MethodId _useDaylightTime15710;
+		public override bool useDaylightTime() 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimeZone_._useDaylightTime15710);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TimeZone_.staticClass, global::java.util.TimeZone_._useDaylightTime15710);
+		}
+		internal static global::MonoJavaBridge.MethodId _inDaylightTime15711;
+		public override bool inDaylightTime(java.util.Date arg0) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimeZone_._inDaylightTime15711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TimeZone_.staticClass, global::java.util.TimeZone_._inDaylightTime15711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.util.TimeZone_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimeZone"));
+			global::java.util.TimeZone_._getOffset15707 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "getOffset", "(IIIIII)I");
+			global::java.util.TimeZone_._getRawOffset15708 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "getRawOffset", "()I");
+			global::java.util.TimeZone_._setRawOffset15709 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "setRawOffset", "(I)V");
+			global::java.util.TimeZone_._useDaylightTime15710 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "useDaylightTime", "()Z");
+			global::java.util.TimeZone_._inDaylightTime15711 = @__env.GetMethodIDNoThrow(global::java.util.TimeZone_.staticClass, "inDaylightTime", "(Ljava/util/Date;)Z");
 		}
 	}
 }

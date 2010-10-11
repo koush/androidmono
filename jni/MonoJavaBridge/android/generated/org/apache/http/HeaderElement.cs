@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
-	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-	public interface HeaderElement 
+	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HeaderElement_))]
+	public interface HeaderElement  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getName();
 		global::java.lang.String getValue();
@@ -11,94 +11,81 @@ namespace org.apache.http
 		global::org.apache.http.NameValuePair getParameterByName(java.lang.String arg0);
 	}
 
-	public partial class HeaderElement_
+	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.HeaderElement))]
+	public sealed partial class HeaderElement_ : java.lang.Object, HeaderElement
 	{
-		public static global::java.lang.Class _class
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HeaderElement_()
 		{
-			get { return __HeaderElement.staticClass; }
+			InitJNI();
 		}
-	}
-
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class __HeaderElement : java.lang.Object, HeaderElement
-	{
-		internal static global::java.lang.Class staticClass;
-		static __HeaderElement()
-		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.apache.http.__HeaderElement), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::org.apache.http.__HeaderElement(@__env);
-			}
-		}
-		internal __HeaderElement(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal HeaderElement_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getName14194;
+		internal static global::MonoJavaBridge.MethodId _getName16109;
 		 global::java.lang.String org.apache.http.HeaderElement.getName() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HeaderElement._getName14194));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getName16109)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HeaderElement.staticClass, global::org.apache.http.__HeaderElement._getName14194));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_.staticClass, global::org.apache.http.HeaderElement_._getName16109)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getValue14195;
+		internal static global::MonoJavaBridge.MethodId _getValue16110;
 		 global::java.lang.String org.apache.http.HeaderElement.getValue() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HeaderElement._getValue14195));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getValue16110)) as java.lang.String;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HeaderElement.staticClass, global::org.apache.http.__HeaderElement._getValue14195));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_.staticClass, global::org.apache.http.HeaderElement_._getValue16110)) as java.lang.String;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParameters14196;
+		internal static global::MonoJavaBridge.MethodId _getParameters16111;
 		 global::org.apache.http.NameValuePair[] org.apache.http.HeaderElement.getParameters() 
 		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HeaderElement._getParameters14196));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameters16111)) as org.apache.http.NameValuePair[];
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HeaderElement.staticClass, global::org.apache.http.__HeaderElement._getParameters14196));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.NameValuePair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_.staticClass, global::org.apache.http.HeaderElement_._getParameters16111)) as org.apache.http.NameValuePair[];
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParameter14197;
+		internal static global::MonoJavaBridge.MethodId _getParameter16112;
 		 global::org.apache.http.NameValuePair org.apache.http.HeaderElement.getParameter(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.NameValuePair>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HeaderElement._getParameter14197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameter16112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.NameValuePair;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.NameValuePair>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HeaderElement.staticClass, global::org.apache.http.__HeaderElement._getParameter14197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_.staticClass, global::org.apache.http.HeaderElement_._getParameter16112, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.NameValuePair;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParameterCount14198;
+		internal static global::MonoJavaBridge.MethodId _getParameterCount16113;
 		 int org.apache.http.HeaderElement.getParameterCount() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.apache.http.__HeaderElement._getParameterCount14198);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameterCount16113);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.apache.http.__HeaderElement.staticClass, global::org.apache.http.__HeaderElement._getParameterCount14198);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.HeaderElement_.staticClass, global::org.apache.http.HeaderElement_._getParameterCount16113);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getParameterByName14199;
+		internal static global::MonoJavaBridge.MethodId _getParameterByName16114;
 		 global::org.apache.http.NameValuePair org.apache.http.HeaderElement.getParameterByName(java.lang.String arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.NameValuePair>(@__env, @__env.CallObjectMethodPtr(this, global::org.apache.http.__HeaderElement._getParameterByName14199, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_._getParameterByName16114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.NameValuePair;
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.apache.http.NameValuePair>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.apache.http.__HeaderElement.staticClass, global::org.apache.http.__HeaderElement._getParameterByName14199, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.NameValuePair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HeaderElement_.staticClass, global::org.apache.http.HeaderElement_._getParameterByName16114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.NameValuePair;
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::org.apache.http.__HeaderElement.staticClass = @__class;
-			global::org.apache.http.__HeaderElement._getName14194 = @__env.GetMethodID(global::org.apache.http.__HeaderElement.staticClass, "org.apache.http.HeaderElement.getName", "()Ljava/lang/String;");
-			global::org.apache.http.__HeaderElement._getValue14195 = @__env.GetMethodID(global::org.apache.http.__HeaderElement.staticClass, "org.apache.http.HeaderElement.getValue", "()Ljava/lang/String;");
-			global::org.apache.http.__HeaderElement._getParameters14196 = @__env.GetMethodID(global::org.apache.http.__HeaderElement.staticClass, "org.apache.http.HeaderElement.getParameters", "()[Lorg/apache/http/NameValuePair;");
-			global::org.apache.http.__HeaderElement._getParameter14197 = @__env.GetMethodID(global::org.apache.http.__HeaderElement.staticClass, "org.apache.http.HeaderElement.getParameter", "(I)Lorg/apache/http/NameValuePair;");
-			global::org.apache.http.__HeaderElement._getParameterCount14198 = @__env.GetMethodID(global::org.apache.http.__HeaderElement.staticClass, "org.apache.http.HeaderElement.getParameterCount", "()I");
-			global::org.apache.http.__HeaderElement._getParameterByName14199 = @__env.GetMethodID(global::org.apache.http.__HeaderElement.staticClass, "org.apache.http.HeaderElement.getParameterByName", "(Ljava/lang/String;)Lorg/apache/http/NameValuePair;");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.HeaderElement_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/HeaderElement"));
+			global::org.apache.http.HeaderElement_._getName16109 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getName", "()Ljava/lang/String;");
+			global::org.apache.http.HeaderElement_._getValue16110 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getValue", "()Ljava/lang/String;");
+			global::org.apache.http.HeaderElement_._getParameters16111 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameters", "()[Lorg/apache/http/NameValuePair;");
+			global::org.apache.http.HeaderElement_._getParameter16112 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameter", "(I)Lorg/apache/http/NameValuePair;");
+			global::org.apache.http.HeaderElement_._getParameterCount16113 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameterCount", "()I");
+			global::org.apache.http.HeaderElement_._getParameterByName16114 = @__env.GetMethodIDNoThrow(global::org.apache.http.HeaderElement_.staticClass, "getParameterByName", "(Ljava/lang/String;)Lorg/apache/http/NameValuePair;");
 		}
 	}
 }

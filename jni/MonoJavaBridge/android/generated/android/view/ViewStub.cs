@@ -1,181 +1,165 @@
 namespace android.view
 {
-	[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-	public sealed class ViewStub : android.view.View
+	[global::MonoJavaBridge.JavaClass()]
+	public sealed partial class ViewStub : android.view.View
 	{
-		internal new static global::java.lang.Class staticClass;
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ViewStub()
 		{
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.ViewStub), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
+			InitJNI();
 		}
-		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-		{
-			public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-			{
-				return new global::android.view.ViewStub(@__env);
-			}
-		}
-		internal ViewStub(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+		internal ViewStub(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
-		public interface OnInflateListener 
+		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewStub.OnInflateListener_))]
+		public interface OnInflateListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onInflate(android.view.ViewStub arg0, android.view.View arg1);
 		}
 
-		public partial class OnInflateListener_
+		[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ViewStub.OnInflateListener))]
+		public sealed partial class OnInflateListener_ : java.lang.Object, OnInflateListener
 		{
-			public static global::java.lang.Class _class
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnInflateListener_()
 			{
-				get { return __OnInflateListener.staticClass; }
+				InitJNI();
 			}
-		}
-
-		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
-		public sealed class __OnInflateListener : java.lang.Object, OnInflateListener
-		{
-			internal static global::java.lang.Class staticClass;
-			static __OnInflateListener()
-			{
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.ViewStub.__OnInflateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);
-			}
-			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper
-			{
-				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)
-				{
-					return new global::android.view.ViewStub.__OnInflateListener(@__env);
-				}
-			}
-			internal __OnInflateListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
+			internal OnInflateListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onInflate9336;
+			internal static global::MonoJavaBridge.MethodId _onInflate9646;
 			 void android.view.ViewStub.OnInflateListener.onInflate(android.view.ViewStub arg0, android.view.View arg1) 
 			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.view.ViewStub.__OnInflateListener._onInflate9336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub.OnInflateListener_._onInflate9646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.__OnInflateListener.staticClass, global::android.view.ViewStub.__OnInflateListener._onInflate9336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.OnInflateListener_.staticClass, global::android.view.ViewStub.OnInflateListener_._onInflate9646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+			private static void InitJNI()
 			{
-				global::android.view.ViewStub.__OnInflateListener.staticClass = @__class;
-				global::android.view.ViewStub.__OnInflateListener._onInflate9336 = @__env.GetMethodID(global::android.view.ViewStub.__OnInflateListener.staticClass, "android.view.ViewStub.OnInflateListener.onInflate", "(Landroid/view/ViewStub;Landroid/view/View;)V");
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.view.ViewStub.OnInflateListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewStub$OnInflateListener"));
+				global::android.view.ViewStub.OnInflateListener_._onInflate9646 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.OnInflateListener_.staticClass, "onInflate", "(Landroid/view/ViewStub;Landroid/view/View;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _inflate9337;
+		internal static global::MonoJavaBridge.MethodId _inflate9647;
 		public global::android.view.View inflate() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewStub._inflate9337));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewStub._inflate9647)) as android.view.View;
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._inflate9337));
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._inflate9647)) as android.view.View;
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _draw9338;
+		internal static global::MonoJavaBridge.MethodId _draw9648;
 		public sealed override void draw(android.graphics.Canvas arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.ViewStub._draw9338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub._draw9648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._draw9338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._draw9648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setVisibility9339;
+		internal static global::MonoJavaBridge.MethodId _setVisibility9649;
 		public sealed override void setVisibility(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.ViewStub._setVisibility9339, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub._setVisibility9649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setVisibility9339, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setVisibility9649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLayoutResource9340;
+		internal static global::MonoJavaBridge.MethodId _setLayoutResource9650;
 		public void setLayoutResource(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.ViewStub._setLayoutResource9340, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub._setLayoutResource9650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setLayoutResource9340, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setLayoutResource9650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLayoutResource9341;
+		internal static global::MonoJavaBridge.MethodId _getLayoutResource9651;
 		public int getLayoutResource() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.ViewStub._getLayoutResource9341);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewStub._getLayoutResource9651);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getLayoutResource9341);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getLayoutResource9651);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInflatedId9342;
+		internal static global::MonoJavaBridge.MethodId _getInflatedId9652;
 		public int getInflatedId() 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.ViewStub._getInflatedId9342);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewStub._getInflatedId9652);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getInflatedId9342);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getInflatedId9652);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setInflatedId9343;
+		internal static global::MonoJavaBridge.MethodId _setInflatedId9653;
 		public void setInflatedId(int arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.ViewStub._setInflatedId9343, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub._setInflatedId9653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setInflatedId9343, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setInflatedId9653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnInflateListener9344;
+		internal static global::MonoJavaBridge.MethodId _setOnInflateListener9654;
 		public void setOnInflateListener(android.view.ViewStub.OnInflateListener arg0) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.ViewStub._setOnInflateListener9344, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.ViewStub._setOnInflateListener9654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setOnInflateListener9344, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setOnInflateListener9654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ViewStub9345;
-		public ViewStub(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ViewStub9655;
+		public ViewStub(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9345, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9655, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ViewStub9346;
-		public ViewStub(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ViewStub9656;
+		public ViewStub(android.content.Context arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9346, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ViewStub9347;
-		public ViewStub(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ViewStub9657;
+		public ViewStub(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9347, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ViewStub9348;
-		public ViewStub(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		internal static global::MonoJavaBridge.MethodId _ViewStub9658;
+		public ViewStub(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9348, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub9658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			Init(@__env, handle);
 		}
-		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
+		private static void InitJNI()
 		{
-			global::android.view.ViewStub.staticClass = @__class;
-			global::android.view.ViewStub._inflate9337 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "inflate", "()Landroid/view/View;");
-			global::android.view.ViewStub._draw9338 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.view.ViewStub._setVisibility9339 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "setVisibility", "(I)V");
-			global::android.view.ViewStub._setLayoutResource9340 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "setLayoutResource", "(I)V");
-			global::android.view.ViewStub._getLayoutResource9341 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "getLayoutResource", "()I");
-			global::android.view.ViewStub._getInflatedId9342 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "getInflatedId", "()I");
-			global::android.view.ViewStub._setInflatedId9343 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "setInflatedId", "(I)V");
-			global::android.view.ViewStub._setOnInflateListener9344 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "setOnInflateListener", "(Landroid/view/ViewStub$OnInflateListener;)V");
-			global::android.view.ViewStub._ViewStub9345 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.view.ViewStub._ViewStub9346 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;I)V");
-			global::android.view.ViewStub._ViewStub9347 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.view.ViewStub._ViewStub9348 = @__env.GetMethodID(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.view.ViewStub.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewStub"));
+			global::android.view.ViewStub._inflate9647 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "inflate", "()Landroid/view/View;");
+			global::android.view.ViewStub._draw9648 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.view.ViewStub._setVisibility9649 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setVisibility", "(I)V");
+			global::android.view.ViewStub._setLayoutResource9650 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setLayoutResource", "(I)V");
+			global::android.view.ViewStub._getLayoutResource9651 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "getLayoutResource", "()I");
+			global::android.view.ViewStub._getInflatedId9652 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "getInflatedId", "()I");
+			global::android.view.ViewStub._setInflatedId9653 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setInflatedId", "(I)V");
+			global::android.view.ViewStub._setOnInflateListener9654 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "setOnInflateListener", "(Landroid/view/ViewStub$OnInflateListener;)V");
+			global::android.view.ViewStub._ViewStub9655 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.view.ViewStub._ViewStub9656 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;I)V");
+			global::android.view.ViewStub._ViewStub9657 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.ViewStub._ViewStub9658 = @__env.GetMethodIDNoThrow(global::android.view.ViewStub.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }
