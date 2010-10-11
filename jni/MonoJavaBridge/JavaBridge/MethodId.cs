@@ -26,6 +26,10 @@ namespace MonoJavaBridge
 {
     public struct MethodId
     {
+        public override string ToString()
+        {
+            return native.ToString();
+        }
         internal IntPtr native;
 
         internal MethodId(IntPtr ptr)

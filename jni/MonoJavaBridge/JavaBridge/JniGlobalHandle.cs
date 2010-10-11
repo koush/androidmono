@@ -49,6 +49,10 @@ namespace MonoJavaBridge
     [Serializable]
     public sealed class JniGlobalHandle : SafeHandle
     {
+        public override string ToString()
+        {
+            return handle.ToString();
+        }
         public static implicit operator JniGlobalHandle(IntPtr ptr)
         {
 			JniGlobalHandle ret = new JniGlobalHandle();

@@ -399,9 +399,12 @@ namespace MonoJavaBridge
 			if (o == null)
 				return Value.Null;
 
+            Console.WriteLine(o.ToString());
+
 			IJavaObject i = o as IJavaObject;
             Value ret = new Value();
             ret._object = i.JvmHandle;
+            Console.WriteLine(ret._object);
             return ret;
 		}
 
