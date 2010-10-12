@@ -109,12 +109,24 @@ namespace MonoJavaBridge
 			}
 			return null;
 		}
-		
-		private static Wrapper GetWrapper(JNIEnv env, JniHandle clazz)
+
+        private static Wrapper GetWrapper(JNIEnv env, JniHandle clazz)
 		{
-			// first see if we've already registered a wrapper
+			// First see if we've already registered a wrapper or can register one now.
 			string className = GetClassName(env, clazz);
-			return GetWrapper(className);
+			var ret = GetWrapper(className);
+            if (ret != null)
+                return ret;
+            
+            // We could not find an exact wrapper, so let's look up the type hierarchy.
+            // The first one we find will be registered for this type.
+            JniLocalHandle superclass = GetSuperclass(env, clazz);
+            ret = GetWrapper(env, superclass);
+            Wrapper thisWrapper = new Wrapper();
+            thisWrapper.Constructor = ret.Constructor;
+            thisWrapper.Type = ret.Type;
+            mWrappers.Add(className, thisWrapper);
+            return thisWrapper;
 		}
         
         public static T[] WrapJavaArrayObject<T>(JniLocalHandle handle)
@@ -217,13 +229,8 @@ namespace MonoJavaBridge
                 return null;
             JNIEnv env = JNIEnv.ThreadEnv;
             JniLocalHandle clazz = env.GetObjectClass(handle);
-            Wrapper wrapper;
-            while (null == (wrapper = GetWrapper(env, clazz)))
-            {
-                clazz = GetSuperclass(env, clazz);
-            }
+            Wrapper wrapper = GetWrapper(env, clazz);
             var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaObject;
-            Console.WriteLine(wrapper.Type.ToString());
             ret.Init(env, handle);
             return ret;
         }
@@ -234,11 +241,7 @@ namespace MonoJavaBridge
                 return null;
             JNIEnv env = JNIEnv.ThreadEnv;
             JniLocalHandle clazz = env.GetObjectClass(handle);
-            Wrapper wrapper;
-            while (null == (wrapper = GetWrapper(env, clazz)))
-            {
-                clazz = GetSuperclass(env, clazz);
-            }
+            Wrapper wrapper = GetWrapper(env, clazz);
             var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaException;
             ret.Init(env, handle);
             return ret;
@@ -248,17 +251,20 @@ namespace MonoJavaBridge
         {
             if (JniHandle.IsNull(handle))
                 return null;
+
+            // see if we can find the appropriate class instance
+            Type type = typeof(T);
+            string className = type.FullName;
             JNIEnv env = JNIEnv.ThreadEnv;
+            
             JniLocalHandle clazz = env.GetObjectClass(handle);
-            Wrapper wrapper;
-            while (null == (wrapper = GetWrapper(env, clazz)))
-            {
-                clazz = GetSuperclass(env, clazz);
-            }
+            Wrapper wrapper = GetWrapper(env, clazz);
             if (!wrapper.Type.GetInterfaces().Contains(typeof(T)))
             {
-                wrapper = GetWrapper(typeof(T).FullName + "_");
+                // failed to find the instance, so let's go with the interface wrapper
+                wrapper = GetWrapper(className + "_");
             }
+            
             var ret = wrapper.Constructor.Invoke(new object[] { env }) as T;
             ret.Init(env, handle);
             return ret;
@@ -405,12 +411,9 @@ namespace MonoJavaBridge
 			if (o == null)
 				return Value.Null;
 
-            Console.WriteLine(o.ToString());
-
 			IJavaObject i = o as IJavaObject;
             Value ret = new Value();
             ret._object = i.JvmHandle;
-            Console.WriteLine(ret._object);
             return ret;
 		}
 
