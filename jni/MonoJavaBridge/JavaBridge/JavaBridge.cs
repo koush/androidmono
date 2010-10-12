@@ -95,6 +95,11 @@ namespace MonoJavaBridge
 				return ret;
 			// see if we can register a wrapper
 			Type type = FindType(className);
+            if (type != null && type.IsAbstract)
+            {
+                Console.WriteLine("Wrapping abstract type: " + className);
+                type = FindType(className + "_");
+            }
 			if (type != null)
 			{
 				ret = new Wrapper();
@@ -218,6 +223,7 @@ namespace MonoJavaBridge
                 clazz = GetSuperclass(env, clazz);
             }
             var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaObject;
+            Console.WriteLine(wrapper.Type.ToString());
             ret.Init(env, handle);
             return ret;
         }

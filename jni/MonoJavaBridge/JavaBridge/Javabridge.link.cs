@@ -82,11 +82,11 @@ namespace MonoJavaBridge
 
             //myStrongJ2CpUntyped = null;//typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
             mWrapJavaObject = typeof(JavaBridge).GetMethod("WrapJavaObject", new Type[] { typeof(JniLocalHandle) });
-            mWrapJavaArrayObject = typeof(JavaBridge).GetMethod("WrapJavaArrayObject", new Type[] { typeof(JniHandle) });
-            mWrapIJavaObject = typeof(JavaBridge).GetMethod("WrapIJavaObject", new Type[] { typeof(JniHandle) });
+            mWrapJavaArrayObject = typeof(JavaBridge).GetMethod("WrapJavaArrayObject", new Type[] { typeof(JniLocalHandle) });
+            mWrapIJavaObject = typeof(JavaBridge).GetMethod("WrapIJavaObject", new Type[] { typeof(JniLocalHandle) });
             myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
             myExpressionLambda = typeof(JavaBridge).GetMethod("LambdaPassthrough");
-            Console.WriteLine(myExpressionLambda);
+            //Console.WriteLine(myExpressionLambda);
             
             myActions.Add(typeof(JniAction));
             myActions.Add(typeof(JniAction<int>).GetGenericTypeDefinition());
@@ -179,7 +179,10 @@ namespace MonoJavaBridge
             // marshal if necessary, ie intptr to object
             if (argumentType == parameter.Type)
                 return parameter;
-            return Expression.Convert(Expression.Call(mWrapJavaObject, Expression.Convert(parameter, typeof(JniLocalHandle))), argumentType);
+            if (!argumentType.IsInterface)
+                return Expression.Convert(Expression.Call(mWrapJavaObject, Expression.Convert(parameter, typeof(JniLocalHandle))), argumentType);
+            var wrapObject = mWrapIJavaObject.MakeGenericMethod(argumentType);
+            return Expression.Convert(Expression.Call(wrapObject, Expression.Convert(parameter, typeof(JniLocalHandle))), argumentType);
         }
         
         static JniGlobalHandle myMonoProxyClass;
@@ -275,7 +278,7 @@ namespace MonoJavaBridge
             var methodSig = env.ConvertToString(methodSignatureHandle);
             var methodPars = methodParametersHandle == IntPtr.Zero ? null : env.ConvertToString(methodParametersHandle);
             string classCanonicalName = GetClassCanonicalName(env, classHandle);
-            Console.WriteLine("Linking java class method: {0}.{1}", classCanonicalName, methodName);
+            //Console.WriteLine("Linking java class method: {0}.{1}", classCanonicalName, methodName);
             Type type = FindType(classCanonicalName);
             if (type == null)
             {
@@ -283,7 +286,7 @@ namespace MonoJavaBridge
                 return;
             }
             
-            Console.WriteLine("Found clr type: {0}", type);
+            //Console.WriteLine("Found clr type: {0}", type);
             
             Type[] parameterTypes = null;
             if (!string.IsNullOrEmpty(methodPars))
@@ -295,8 +298,8 @@ namespace MonoJavaBridge
                     parameterTypes[i] = FindType(parameterTypeStrings[i]);
                     if (parameterTypes[i] == null)
                         Console.WriteLine("Could not find {0}", parameterTypeStrings[i]);
-                    else 
-                        Console.WriteLine("Found type {0}", parameterTypes[i]);
+                    //else 
+                    //    Console.WriteLine("Found type {0}", parameterTypes[i]);
                 }
             }
             
