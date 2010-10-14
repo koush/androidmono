@@ -1,8 +1,8 @@
-Index: eglib/src/goutput.c
-===================================================================
---- eglib/src/goutput.c	(revision 158233)
-+++ eglib/src/goutput.c	(working copy)
-@@ -54,6 +54,7 @@
+diff --git a/eglib/src/goutput.c b/eglib/src/goutput.c
+index c4989c2..f659a7a 100644
+--- a/eglib/src/goutput.c
++++ b/eglib/src/goutput.c
+@@ -57,6 +57,7 @@ out_vfprintf (FILE *ignore, const gchar *format, va_list args)
  {
  	/* TODO: provide a proper app name */
  	__android_log_vprint (ANDROID_LOG_ERROR, "mono", format, args);
@@ -10,3 +10,32 @@ Index: eglib/src/goutput.c
  }
  #else
  static void 
+diff --git a/mono/metadata/threads-types.h b/mono/metadata/threads-types.h
+index 2a66599..1e3c502 100644
+--- a/mono/metadata/threads-types.h
++++ b/mono/metadata/threads-types.h
+@@ -61,6 +61,7 @@ gpointer mono_create_thread (WapiSecurityAttributes *security,
+ MonoInternalThread* mono_thread_create_internal (MonoDomain *domain, gpointer func, gpointer arg, gboolean threadpool_thread) MONO_INTERNAL;
+ 
+ void mono_threads_install_cleanup (MonoThreadCleanupFunc func) MONO_INTERNAL;
++MonoThreadCleanupFunc mono_threads_get_cleanup () MONO_INTERNAL;
+ 
+ void ves_icall_System_Threading_Thread_ConstructInternalThread (MonoThread *this) MONO_INTERNAL;
+ HANDLE ves_icall_System_Threading_Thread_Thread_internal(MonoThread *this_obj, MonoObject *start) MONO_INTERNAL;
+diff --git a/mono/metadata/threads.c b/mono/metadata/threads.c
+index 3f93465..ab31d26 100644
+--- a/mono/metadata/threads.c
++++ b/mono/metadata/threads.c
+@@ -2731,6 +2731,12 @@ mono_threads_install_cleanup (MonoThreadCleanupFunc func)
+ 	mono_thread_cleanup_fn = func;
+ }
+ 
++MonoThreadCleanupFunc
++mono_threads_get_cleanup()
++{
++    return mono_thread_cleanup_fn;
++}
++
+ void
+ mono_thread_set_manage_callback (MonoThread *thread, MonoThreadManageCallback func)
+ {

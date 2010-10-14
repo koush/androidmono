@@ -44,6 +44,8 @@ MonoMethod *g_Link;
 MonoMethod *g_LoadAssembly;
 JavaVM *g_JavaVM;
 
+static MonoThreadCleanupFunc g_OriginalCleanupFunc = NULL;
+
 typedef void* pointer;
 
 pointer *mono_objectpointer_conversion(pointer p)
@@ -63,6 +65,14 @@ void logcat_print(char* p)
 {
     LOGI(p);
 }
+
+static void JavaVMThreadCleanup(MonoInternalThread* thread)
+{
+    (*g_JavaVM)->DetachCurrentThread(g_JavaVM);
+    if (g_OriginalCleanupFunc != NULL)
+        g_OriginalCleanupFunc(thread);
+}
+
 
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
     (JNIEnv *env, jclass clazz, jclass cls, jstring methodName, jstring methodSignature, jstring methodParameters)
@@ -89,7 +99,6 @@ MonoDomain* g_Domain;
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
   (JNIEnv *env, jclass clazz, jstring debuggerAgentOptions)
 {
-   // setenv("HOME", "/data/data/com.koushikdutta.twitter/", 1);
 #ifdef PLATFORM_ANDROID
     if (debuggerAgentOptions != NULL)
     {
@@ -105,10 +114,6 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
         mono_debug_init (MONO_DEBUG_FORMAT_MONO);
     }
 #endif
-    
-    //guint32 opt = mono_parse_default_optimizations(NULL);
-	//mono_set_defaults (1, opt);
-    //mono_trace_parse_options ("");
     
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
 
@@ -130,6 +135,9 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
     mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_object_to_pointer(object)", mono_objectpointer_conversion);
     mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_pointer_to_object(intptr)", mono_objectpointer_conversion);
     mono_add_internal_call("MonoJavaBridge.JavaBridge::log(intptr)", logcat_print);
+    
+    g_OriginalCleanupFunc = mono_threads_get_cleanup();
+    mono_threads_install_cleanup(JavaVMThreadCleanup);
 
     MonoImage *image = mono_assembly_get_image(g_Assembly);
     MonoMethodDesc* desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Initialize(intptr)", 1);
