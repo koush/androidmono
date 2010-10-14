@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "JavaBridg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono2Jni", "Mono2Jni\Mono2Jni.csproj", "{1276BA20-A085-4D52-8239-220E76524771}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.poop.bar", "..\..\..\..\Projects\com.poop.bar\com.poop.bar\com.poop.bar.csproj", "{AD197F8F-8057-43A8-A6C3-3777A7A992B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.koushikdutta.test", "..\..\..\..\Projects\com.koushikdutta.test\com.koushikdutta.test\com.koushikdutta.test.csproj", "{466CD57E-2246-4BB6-A81E-28F3293C31DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,10 @@ Global
 		{1276BA20-A085-4D52-8239-220E76524771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1276BA20-A085-4D52-8239-220E76524771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1276BA20-A085-4D52-8239-220E76524771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{466CD57E-2246-4BB6-A81E-28F3293C31DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466CD57E-2246-4BB6-A81E-28F3293C31DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466CD57E-2246-4BB6-A81E-28F3293C31DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466CD57E-2246-4BB6-A81E-28F3293C31DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,13 +37,9 @@ Global
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD197F8F-8057-43A8-A6C3-3777A7A992B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD197F8F-8057-43A8-A6C3-3777A7A992B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD197F8F-8057-43A8-A6C3-3777A7A992B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD197F8F-8057-43A8-A6C3-3777A7A992B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ..\..\..\..\Projects\com.poop.bar\com.poop.bar\com.poop.bar.csproj
+		StartupItem = ..\..\..\..\Projects\com.koushikdutta.test\com.koushikdutta.test\com.koushikdutta.test.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None

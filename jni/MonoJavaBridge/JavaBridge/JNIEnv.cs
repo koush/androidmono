@@ -191,7 +191,7 @@ namespace MonoJavaBridge
             return new FieldId(res);
         }
 
-        public JNIResult RegisterNatives(JniHandle clazz, JNINativeMethod* methods, int nMethods)
+        public JNIResult RegisterNatives(JniHandle clazz, JNINativeMethod[] methods, int nMethods)
         {
             JNIResult natives = registerNatives.Invoke(envPtr, clazz, methods, nMethods);
             ExceptionTest();

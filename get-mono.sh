@@ -23,8 +23,9 @@ then
     echo =====USING SUPPORTED REVISION OF MONO: $MONO_GIT_CHECKOUT=====
 else
     echo =====USING LATEST REVISION OF MONO! THIS MAY NOT BE STABLE!=====
-    MONO_GIT_CHECKOUT=origin/mono-2-8
+    MONO_GIT_CHECKOUT=origin/master
 fi
+echo $MONO_GIT_CHECKOUT
 
 ROOT_DIR=$(basename $0)
 pushd $(dirname $0)/jni

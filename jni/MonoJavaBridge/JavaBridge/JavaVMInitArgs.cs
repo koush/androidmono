@@ -26,11 +26,11 @@ using System.Runtime.InteropServices;
 namespace MonoJavaBridge
 {
     [StructLayout(LayoutKind.Sequential), NativeCppClass]
-    public unsafe struct JavaVMInitArgs
+    public struct JavaVMInitArgs
     {
         public int version;
         public int nOptions;
-        public JavaVMOption* options;
+        public System.IntPtr options;
         public byte ignoreUnrecognized;
     }
 }

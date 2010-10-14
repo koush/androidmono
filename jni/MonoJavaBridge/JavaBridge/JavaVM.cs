@@ -40,11 +40,11 @@ namespace MonoJavaBridge
         {
             [UnmanagedFunctionPointer(CallingConvention.StdCall)]
             [SuppressUnmanagedCodeSecurity]
-            internal delegate JNIResult AttachCurrentThread(IntPtr thiz, out IntPtr penv, JavaVMInitArgs* args);
+            internal delegate JNIResult AttachCurrentThread(IntPtr thiz, out IntPtr penv, IntPtr args);
 
             [UnmanagedFunctionPointer(CallingConvention.StdCall)]
             [SuppressUnmanagedCodeSecurity]
-            internal delegate JNIResult AttachCurrentThreadAsDaemon(IntPtr thiz, out IntPtr penv, JavaVMInitArgs* args);
+            internal delegate JNIResult AttachCurrentThreadAsDaemon(IntPtr thiz, out IntPtr penv, IntPtr args);
 
             [UnmanagedFunctionPointer(CallingConvention.StdCall)]
             [SuppressUnmanagedCodeSecurity]
@@ -89,12 +89,13 @@ namespace MonoJavaBridge
             JNIResult result;
             if (args.HasValue)
             {
+                throw new Exception("AttachCurrentThread");
                 JavaVMInitArgs initArgs = args.Value;
-                result = attachCurrentThread.Invoke(native, out env, &initArgs);
+                result = attachCurrentThread.Invoke(native, out env, IntPtr.Zero);
             }
             else
             {
-                result = attachCurrentThread.Invoke(native, out env, null);
+                result = attachCurrentThread.Invoke(native, out env, IntPtr.Zero);
             }
             penv = new JNIEnv(env);
             return result;
@@ -108,12 +109,13 @@ namespace MonoJavaBridge
             JNIResult result;
             if (args.HasValue)
             {
+                throw new Exception("AttachCurrentThreadAsDaemon");
                 JavaVMInitArgs value = args.Value;
-                result = attachCurrentThreadAsDaemon.Invoke(native, out env, &value);
+                result = attachCurrentThreadAsDaemon.Invoke(native, out env, IntPtr.Zero);
             }
             else
             {
-                result = attachCurrentThreadAsDaemon.Invoke(native, out env, null);
+                result = attachCurrentThreadAsDaemon.Invoke(native, out env, IntPtr.Zero);
             }
             if (result == JNIResult.JNI_OK)
             {

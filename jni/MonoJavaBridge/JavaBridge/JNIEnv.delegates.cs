@@ -932,7 +932,7 @@ namespace MonoJavaBridge
 
             [UnmanagedFunctionPointer(CallingConvention.StdCall)]
             internal delegate JNIResult RegisterNatives(
-                IntPtr thiz, IntPtr clazz, JNINativeMethod* methods, int nMethods);
+                IntPtr thiz, IntPtr clazz, JNINativeMethod[] methods, int nMethods);
 
             #endregion
 

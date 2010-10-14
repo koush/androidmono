@@ -50,13 +50,10 @@ namespace MonoJavaBridge
         public static unsafe void Register(List<JNINativeMethod> registrations, JniHandle clazz, JNIEnv env)
         {
             JNINativeMethod[] methods = registrations.ToArray();
-            fixed (JNINativeMethod* m = &(methods[0]))
+            JNIResult res = env.RegisterNatives(clazz, methods, methods.Length);
+            if (res!=JNIResult.JNI_OK)
             {
-                JNIResult res = env.RegisterNatives(clazz, m, methods.Length);
-                if (res!=JNIResult.JNI_OK)
-                {
-                    throw new JNIException("Can't bind native methods to class. Is it in system classloader?");
-                }
+                throw new JNIException("Can't bind native methods to class. Is it in system classloader?");
             }
         }
 
