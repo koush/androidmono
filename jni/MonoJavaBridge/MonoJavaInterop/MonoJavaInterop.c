@@ -44,8 +44,6 @@ MonoMethod *g_Link;
 MonoMethod *g_LoadAssembly;
 JavaVM *g_JavaVM;
 
-static MonoThreadCleanupFunc g_OriginalCleanupFunc = NULL;
-
 typedef void* pointer;
 
 pointer *mono_objectpointer_conversion(pointer p)
@@ -66,11 +64,9 @@ void logcat_print(char* p)
     LOGI(p);
 }
 
-static void JavaVMThreadCleanup(MonoInternalThread* thread)
+void JavaVMThreadCleanup(MonoProfiler *prof, uintptr_t tid)
 {
     (*g_JavaVM)->DetachCurrentThread(g_JavaVM);
-    if (g_OriginalCleanupFunc != NULL)
-        g_OriginalCleanupFunc(thread);
 }
 
 
@@ -136,8 +132,9 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
     mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_pointer_to_object(intptr)", mono_objectpointer_conversion);
     mono_add_internal_call("MonoJavaBridge.JavaBridge::log(intptr)", logcat_print);
     
-    g_OriginalCleanupFunc = mono_threads_get_cleanup();
-    mono_threads_install_cleanup(JavaVMThreadCleanup);
+    mono_profiler_install(NULL, NULL);
+    mono_profiler_set_events(MONO_PROFILE_THREADS);
+    mono_profiler_install_thread(NULL, JavaVMThreadCleanup);
 
     MonoImage *image = mono_assembly_get_image(g_Assembly);
     MonoMethodDesc* desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Initialize(intptr)", 1);
