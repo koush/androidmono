@@ -334,6 +334,13 @@ namespace android.inputmethodservice
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._setTheme4489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.app.Dialog Window
+		{
+			get
+			{
+				return getWindow();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWindow4490;
 		public virtual global::android.app.Dialog getWindow() 
 		{
@@ -388,6 +395,13 @@ namespace android.inputmethodservice
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._onTrackballEvent4495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.view.LayoutInflater LayoutInflater
+		{
+			get
+			{
+				return getLayoutInflater();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLayoutInflater4496;
 		public virtual global::android.view.LayoutInflater getLayoutInflater() 
 		{
@@ -424,6 +438,13 @@ namespace android.inputmethodservice
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._onInitializeInterface4499);
 		}
+		public new int MaxWidth
+		{
+			get
+			{
+				return getMaxWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMaxWidth4500;
 		public virtual int getMaxWidth() 
 		{
@@ -432,6 +453,13 @@ namespace android.inputmethodservice
 				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService._getMaxWidth4500);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._getMaxWidth4500);
+		}
+		public new global::android.view.inputmethod.InputBinding CurrentInputBinding
+		{
+			get
+			{
+				return getCurrentInputBinding();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentInputBinding4501;
 		public virtual global::android.view.inputmethod.InputBinding getCurrentInputBinding() 
@@ -442,6 +470,13 @@ namespace android.inputmethodservice
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._getCurrentInputBinding4501)) as android.view.inputmethod.InputBinding;
 		}
+		public new global::android.view.inputmethod.InputConnection CurrentInputConnection
+		{
+			get
+			{
+				return getCurrentInputConnection();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentInputConnection4502;
 		public virtual global::android.view.inputmethod.InputConnection getCurrentInputConnection() 
 		{
@@ -451,6 +486,13 @@ namespace android.inputmethodservice
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._getCurrentInputConnection4502)) as android.view.inputmethod.InputConnection;
 		}
+		public new bool CurrentInputStarted
+		{
+			get
+			{
+				return getCurrentInputStarted();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentInputStarted4503;
 		public virtual bool getCurrentInputStarted() 
 		{
@@ -459,6 +501,13 @@ namespace android.inputmethodservice
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService._getCurrentInputStarted4503);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._getCurrentInputStarted4503);
+		}
+		public new global::android.view.inputmethod.EditorInfo CurrentInputEditorInfo
+		{
+			get
+			{
+				return getCurrentInputEditorInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentInputEditorInfo4504;
 		public virtual global::android.view.inputmethod.EditorInfo getCurrentInputEditorInfo() 
@@ -576,6 +625,13 @@ namespace android.inputmethodservice
 				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService._setCandidatesViewShown4516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._setCandidatesViewShown4516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int CandidatesHiddenVisibility
+		{
+			get
+			{
+				return getCandidatesHiddenVisibility();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCandidatesHiddenVisibility4517;
 		public virtual int getCandidatesHiddenVisibility() 

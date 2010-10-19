@@ -11,38 +11,38 @@ namespace android.util
 		protected DisplayMetrics(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString8488;
+		internal static global::MonoJavaBridge.MethodId _toString9034;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.util.DisplayMetrics._toString8488)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.util.DisplayMetrics._toString9034)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._toString8488)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._toString9034)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setTo8489;
+		internal static global::MonoJavaBridge.MethodId _setTo9035;
 		public virtual void setTo(android.util.DisplayMetrics arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics._setTo8489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics._setTo9035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setTo8489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setTo9035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setToDefaults8490;
+		internal static global::MonoJavaBridge.MethodId _setToDefaults9036;
 		public virtual void setToDefaults() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics._setToDefaults8490);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics._setToDefaults9036);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setToDefaults8490);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setToDefaults9036);
 		}
-		internal static global::MonoJavaBridge.MethodId _DisplayMetrics8491;
+		internal static global::MonoJavaBridge.MethodId _DisplayMetrics9037;
 		public DisplayMetrics()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._DisplayMetrics8491);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._DisplayMetrics9037);
 			Init(@__env, handle);
 		}
 		public static int DENSITY_LOW
@@ -73,7 +73,7 @@ namespace android.util
 				return 160;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _widthPixels8492;
+		internal static global::MonoJavaBridge.FieldId _widthPixels9038;
 		public int widthPixels
 		{
 			get
@@ -84,7 +84,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _heightPixels8493;
+		internal static global::MonoJavaBridge.FieldId _heightPixels9039;
 		public int heightPixels
 		{
 			get
@@ -95,7 +95,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _density8494;
+		internal static global::MonoJavaBridge.FieldId _density9040;
 		public float density
 		{
 			get
@@ -106,7 +106,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _densityDpi8495;
+		internal static global::MonoJavaBridge.FieldId _densityDpi9041;
 		public int densityDpi
 		{
 			get
@@ -117,7 +117,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _scaledDensity8496;
+		internal static global::MonoJavaBridge.FieldId _scaledDensity9042;
 		public float scaledDensity
 		{
 			get
@@ -128,7 +128,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _xdpi8497;
+		internal static global::MonoJavaBridge.FieldId _xdpi9043;
 		public float xdpi
 		{
 			get
@@ -139,7 +139,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _ydpi8498;
+		internal static global::MonoJavaBridge.FieldId _ydpi9044;
 		public float ydpi
 		{
 			get
@@ -154,10 +154,10 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.DisplayMetrics.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/DisplayMetrics"));
-			global::android.util.DisplayMetrics._toString8488 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.util.DisplayMetrics._setTo8489 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "setTo", "(Landroid/util/DisplayMetrics;)V");
-			global::android.util.DisplayMetrics._setToDefaults8490 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "setToDefaults", "()V");
-			global::android.util.DisplayMetrics._DisplayMetrics8491 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "<init>", "()V");
+			global::android.util.DisplayMetrics._toString9034 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.util.DisplayMetrics._setTo9035 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "setTo", "(Landroid/util/DisplayMetrics;)V");
+			global::android.util.DisplayMetrics._setToDefaults9036 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "setToDefaults", "()V");
+			global::android.util.DisplayMetrics._DisplayMetrics9037 = @__env.GetMethodIDNoThrow(global::android.util.DisplayMetrics.staticClass, "<init>", "()V");
 		}
 	}
 }

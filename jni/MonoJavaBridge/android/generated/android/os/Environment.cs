@@ -11,17 +11,38 @@ namespace android.os
 		protected Environment(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public static global::java.io.File RootDirectory
+		{
+			get
+			{
+				return getRootDirectory();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRootDirectory6397;
 		public static global::java.io.File getRootDirectory() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getRootDirectory6397)) as java.io.File;
 		}
+		public static global::java.io.File DataDirectory
+		{
+			get
+			{
+				return getDataDirectory();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDataDirectory6398;
 		public static global::java.io.File getDataDirectory() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getDataDirectory6398)) as java.io.File;
+		}
+		public static global::java.io.File ExternalStorageDirectory
+		{
+			get
+			{
+				return getExternalStorageDirectory();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExternalStorageDirectory6399;
 		public static global::java.io.File getExternalStorageDirectory() 
@@ -35,11 +56,25 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getExternalStoragePublicDirectory6400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
 		}
+		public static global::java.io.File DownloadCacheDirectory
+		{
+			get
+			{
+				return getDownloadCacheDirectory();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDownloadCacheDirectory6401;
 		public static global::java.io.File getDownloadCacheDirectory() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getDownloadCacheDirectory6401)) as java.io.File;
+		}
+		public static global::java.lang.String ExternalStorageState
+		{
+			get
+			{
+				return getExternalStorageState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExternalStorageState6402;
 		public static global::java.lang.String getExternalStorageState() 

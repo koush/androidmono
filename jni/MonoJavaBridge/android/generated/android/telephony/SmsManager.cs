@@ -11,6 +11,13 @@ namespace android.telephony
 		internal SmsManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public static global::android.telephony.SmsManager Default
+		{
+			get
+			{
+				return getDefault();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDefault7440;
 		public static global::android.telephony.SmsManager getDefault() 
 		{

@@ -29,6 +29,13 @@ namespace android.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._accept5149)) as android.net.LocalSocket;
 		}
+		public new global::java.io.FileDescriptor FileDescriptor
+		{
+			get
+			{
+				return getFileDescriptor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor5150;
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{
@@ -37,6 +44,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket._getFileDescriptor5150)) as java.io.FileDescriptor;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getFileDescriptor5150)) as java.io.FileDescriptor;
+		}
+		public new global::android.net.LocalSocketAddress LocalSocketAddress
+		{
+			get
+			{
+				return getLocalSocketAddress();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalSocketAddress5151;
 		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress() 

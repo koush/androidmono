@@ -85,6 +85,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._draw4189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations4190;
 		public override int getChangingConfigurations() 
 		{
@@ -121,6 +128,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._setColorFilter4193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity4194;
 		public override int getOpacity() 
 		{
@@ -139,6 +153,17 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._onBoundsChange4195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
+			set
+			{
+				setIntrinsicWidth(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth4196;
 		public override int getIntrinsicWidth() 
 		{
@@ -147,6 +172,17 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable._getIntrinsicWidth4196);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._getIntrinsicWidth4196);
+		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
+			set
+			{
+				setIntrinsicHeight(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight4197;
 		public override int getIntrinsicHeight() 
@@ -174,6 +210,13 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable._mutate4199)) as android.graphics.drawable.Drawable;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._mutate4199)) as android.graphics.drawable.Drawable;
+		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState4200;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
@@ -211,6 +254,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._setPadding4203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
+		public new global::android.graphics.Paint Paint
+		{
+			get
+			{
+				return getPaint();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPaint4204;
 		public virtual global::android.graphics.Paint getPaint() 
 		{
@@ -237,6 +287,17 @@ namespace android.graphics.drawable
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable._inflateTag4206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ShapeDrawable.staticClass, global::android.graphics.drawable.ShapeDrawable._inflateTag4206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+		}
+		public new global::android.graphics.drawable.shapes.Shape Shape
+		{
+			get
+			{
+				return getShape();
+			}
+			set
+			{
+				setShape(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShape4207;
 		public virtual global::android.graphics.drawable.shapes.Shape getShape() 

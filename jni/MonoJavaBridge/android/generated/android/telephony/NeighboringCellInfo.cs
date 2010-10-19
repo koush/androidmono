@@ -38,6 +38,17 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._describeContents7346);
 		}
+		public new int Rssi
+		{
+			get
+			{
+				return getRssi();
+			}
+			set
+			{
+				setRssi(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRssi7347;
 		public virtual int getRssi() 
 		{
@@ -46,6 +57,13 @@ namespace android.telephony
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getRssi7347);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getRssi7347);
+		}
+		public new int Lac
+		{
+			get
+			{
+				return getLac();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLac7348;
 		public virtual int getLac() 
@@ -56,6 +74,17 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getLac7348);
 		}
+		public new int Cid
+		{
+			get
+			{
+				return getCid();
+			}
+			set
+			{
+				setCid(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCid7349;
 		public virtual int getCid() 
 		{
@@ -65,6 +94,13 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getCid7349);
 		}
+		public new int Psc
+		{
+			get
+			{
+				return getPsc();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPsc7350;
 		public virtual int getPsc() 
 		{
@@ -73,6 +109,13 @@ namespace android.telephony
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo._getPsc7350);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getPsc7350);
+		}
+		public new int NetworkType
+		{
+			get
+			{
+				return getNetworkType();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkType7351;
 		public virtual int getNetworkType() 

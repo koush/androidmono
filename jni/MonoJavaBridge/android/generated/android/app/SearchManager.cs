@@ -149,6 +149,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._getSearchableInfo762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.SearchableInfo;
 		}
+		public new global::java.util.List SearchablesInGlobalSearch
+		{
+			get
+			{
+				return getSearchablesInGlobalSearch();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSearchablesInGlobalSearch763;
 		public virtual global::java.util.List getSearchablesInGlobalSearch() 
 		{

@@ -93,6 +93,13 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._reset3320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int KeyFrameCount
+		{
+			get
+			{
+				return getKeyFrameCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getKeyFrameCount3321;
 		public virtual int getKeyFrameCount() 
 		{
@@ -101,6 +108,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Interpolator._getKeyFrameCount3321);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._getKeyFrameCount3321);
+		}
+		public new int ValueCount
+		{
+			get
+			{
+				return getValueCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getValueCount3322;
 		public virtual int getValueCount() 

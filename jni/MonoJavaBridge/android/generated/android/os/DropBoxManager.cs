@@ -31,6 +31,13 @@ namespace android.os
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._close6377);
 			}
+			public new global::java.io.InputStream InputStream
+			{
+				get
+				{
+					return getInputStream();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getInputStream6378;
 			public virtual global::java.io.InputStream getInputStream() 
 			{
@@ -39,6 +46,13 @@ namespace android.os
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry._getInputStream6378)) as java.io.InputStream;
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._getInputStream6378)) as java.io.InputStream;
+			}
+			public new global::java.lang.String Tag
+			{
+				get
+				{
+					return getTag();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getTag6379;
 			public virtual global::java.lang.String getTag() 
@@ -76,6 +90,13 @@ namespace android.os
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._describeContents6382);
 			}
+			public new int Flags
+			{
+				get
+				{
+					return getFlags();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getFlags6383;
 			public virtual int getFlags() 
 			{
@@ -84,6 +105,13 @@ namespace android.os
 					return @__env.CallIntMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry._getFlags6383);
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._getFlags6383);
+			}
+			public new long TimeMillis
+			{
+				get
+				{
+					return getTimeMillis();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getTimeMillis6384;
 			public virtual long getTimeMillis() 

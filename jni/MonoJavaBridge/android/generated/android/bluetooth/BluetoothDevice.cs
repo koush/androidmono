@@ -38,6 +38,13 @@ namespace android.bluetooth
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.bluetooth.BluetoothDevice.staticClass, global::android.bluetooth.BluetoothDevice._hashCode1037);
 		}
+		public new global::java.lang.String Address
+		{
+			get
+			{
+				return getAddress();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAddress1038;
 		public global::java.lang.String getAddress() 
 		{
@@ -46,6 +53,13 @@ namespace android.bluetooth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothDevice._getAddress1038)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothDevice.staticClass, global::android.bluetooth.BluetoothDevice._getAddress1038)) as java.lang.String;
+		}
+		public new global::java.lang.String Name
+		{
+			get
+			{
+				return getName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName1039;
 		public global::java.lang.String getName() 
@@ -74,6 +88,13 @@ namespace android.bluetooth
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.bluetooth.BluetoothDevice.staticClass, global::android.bluetooth.BluetoothDevice._describeContents1041);
 		}
+		public new int BondState
+		{
+			get
+			{
+				return getBondState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBondState1042;
 		public int getBondState() 
 		{
@@ -82,6 +103,13 @@ namespace android.bluetooth
 				return @__env.CallIntMethod(this.JvmHandle, global::android.bluetooth.BluetoothDevice._getBondState1042);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.bluetooth.BluetoothDevice.staticClass, global::android.bluetooth.BluetoothDevice._getBondState1042);
+		}
+		public new global::android.bluetooth.BluetoothClass BluetoothClass
+		{
+			get
+			{
+				return getBluetoothClass();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBluetoothClass1043;
 		public global::android.bluetooth.BluetoothClass getBluetoothClass() 

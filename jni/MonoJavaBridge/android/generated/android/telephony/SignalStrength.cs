@@ -56,6 +56,13 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._describeContents7431);
 		}
+		public new int GsmSignalStrength
+		{
+			get
+			{
+				return getGsmSignalStrength();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getGsmSignalStrength7432;
 		public virtual int getGsmSignalStrength() 
 		{
@@ -64,6 +71,13 @@ namespace android.telephony
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.SignalStrength._getGsmSignalStrength7432);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._getGsmSignalStrength7432);
+		}
+		public new int GsmBitErrorRate
+		{
+			get
+			{
+				return getGsmBitErrorRate();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGsmBitErrorRate7433;
 		public virtual int getGsmBitErrorRate() 
@@ -74,6 +88,13 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._getGsmBitErrorRate7433);
 		}
+		public new int CdmaDbm
+		{
+			get
+			{
+				return getCdmaDbm();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCdmaDbm7434;
 		public virtual int getCdmaDbm() 
 		{
@@ -82,6 +103,13 @@ namespace android.telephony
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.SignalStrength._getCdmaDbm7434);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._getCdmaDbm7434);
+		}
+		public new int CdmaEcio
+		{
+			get
+			{
+				return getCdmaEcio();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCdmaEcio7435;
 		public virtual int getCdmaEcio() 
@@ -92,6 +120,13 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._getCdmaEcio7435);
 		}
+		public new int EvdoDbm
+		{
+			get
+			{
+				return getEvdoDbm();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getEvdoDbm7436;
 		public virtual int getEvdoDbm() 
 		{
@@ -101,6 +136,13 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._getEvdoDbm7436);
 		}
+		public new int EvdoEcio
+		{
+			get
+			{
+				return getEvdoEcio();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getEvdoEcio7437;
 		public virtual int getEvdoEcio() 
 		{
@@ -109,6 +151,13 @@ namespace android.telephony
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.SignalStrength._getEvdoEcio7437);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._getEvdoEcio7437);
+		}
+		public new int EvdoSnr
+		{
+			get
+			{
+				return getEvdoSnr();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEvdoSnr7438;
 		public virtual int getEvdoSnr() 

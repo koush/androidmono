@@ -107,6 +107,13 @@ namespace android.accounts
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AccountManager.staticClass, global::android.accounts.AccountManager._getUserData84, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
+		public new global::android.accounts.AuthenticatorDescription[] AuthenticatorTypes
+		{
+			get
+			{
+				return getAuthenticatorTypes();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAuthenticatorTypes85;
 		public virtual global::android.accounts.AuthenticatorDescription[] getAuthenticatorTypes() 
 		{
@@ -115,6 +122,13 @@ namespace android.accounts
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.accounts.AuthenticatorDescription>(@__env.CallObjectMethod(this.JvmHandle, global::android.accounts.AccountManager._getAuthenticatorTypes85)) as android.accounts.AuthenticatorDescription[];
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.accounts.AuthenticatorDescription>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AccountManager.staticClass, global::android.accounts.AccountManager._getAuthenticatorTypes85)) as android.accounts.AuthenticatorDescription[];
+		}
+		public new global::android.accounts.Account[] Accounts
+		{
+			get
+			{
+				return getAccounts();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAccounts86;
 		public virtual global::android.accounts.Account[] getAccounts() 

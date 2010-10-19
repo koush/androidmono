@@ -62,6 +62,17 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setMode4826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Mode
+		{
+			get
+			{
+				return getMode();
+			}
+			set
+			{
+				setMode(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMode4827;
 		public virtual int getMode() 
 		{
@@ -124,6 +135,17 @@ namespace android.media
 				@__env.CallVoidMethod(this.JvmHandle, global::android.media.AudioManager._adjustSuggestedStreamVolume4833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._adjustSuggestedStreamVolume4833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		public new int RingerMode
+		{
+			get
+			{
+				return getRingerMode();
+			}
+			set
+			{
+				setRingerMode(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRingerMode4834;
 		public virtual int getRingerMode() 

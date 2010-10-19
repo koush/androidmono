@@ -56,6 +56,13 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.Messenger.staticClass, global::android.os.Messenger._describeContents6527);
 		}
+		public new global::android.os.IBinder Binder
+		{
+			get
+			{
+				return getBinder();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBinder6528;
 		public global::android.os.IBinder getBinder() 
 		{

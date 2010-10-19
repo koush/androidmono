@@ -31,6 +31,13 @@ namespace android.net.http
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getDName5407)) as java.lang.String;
 			}
+			public new global::java.lang.String CName
+			{
+				get
+				{
+					return getCName();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getCName5408;
 			public virtual global::java.lang.String getCName() 
 			{
@@ -40,6 +47,13 @@ namespace android.net.http
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getCName5408)) as java.lang.String;
 			}
+			public new global::java.lang.String OName
+			{
+				get
+				{
+					return getOName();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getOName5409;
 			public virtual global::java.lang.String getOName() 
 			{
@@ -48,6 +62,13 @@ namespace android.net.http
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.DName._getOName5409)) as java.lang.String;
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getOName5409)) as java.lang.String;
+			}
+			public new global::java.lang.String UName
+			{
+				get
+				{
+					return getUName();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getUName5410;
 			public virtual global::java.lang.String getUName() 
@@ -97,6 +118,13 @@ namespace android.net.http
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._restoreState5414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.http.SslCertificate;
 		}
+		public new global::java.util.Date ValidNotBeforeDate
+		{
+			get
+			{
+				return getValidNotBeforeDate();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getValidNotBeforeDate5415;
 		public virtual global::java.util.Date getValidNotBeforeDate() 
 		{
@@ -105,6 +133,13 @@ namespace android.net.http
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate._getValidNotBeforeDate5415)) as java.util.Date;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getValidNotBeforeDate5415)) as java.util.Date;
+		}
+		public new global::java.lang.String ValidNotBefore
+		{
+			get
+			{
+				return getValidNotBefore();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getValidNotBefore5416;
 		public virtual global::java.lang.String getValidNotBefore() 
@@ -115,6 +150,13 @@ namespace android.net.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getValidNotBefore5416)) as java.lang.String;
 		}
+		public new global::java.util.Date ValidNotAfterDate
+		{
+			get
+			{
+				return getValidNotAfterDate();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getValidNotAfterDate5417;
 		public virtual global::java.util.Date getValidNotAfterDate() 
 		{
@@ -123,6 +165,13 @@ namespace android.net.http
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate._getValidNotAfterDate5417)) as java.util.Date;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getValidNotAfterDate5417)) as java.util.Date;
+		}
+		public new global::java.lang.String ValidNotAfter
+		{
+			get
+			{
+				return getValidNotAfter();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getValidNotAfter5418;
 		public virtual global::java.lang.String getValidNotAfter() 
@@ -133,6 +182,13 @@ namespace android.net.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getValidNotAfter5418)) as java.lang.String;
 		}
+		public new global::android.net.http.SslCertificate.DName IssuedTo
+		{
+			get
+			{
+				return getIssuedTo();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIssuedTo5419;
 		public virtual global::android.net.http.SslCertificate.DName getIssuedTo() 
 		{
@@ -141,6 +197,13 @@ namespace android.net.http
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate._getIssuedTo5419)) as android.net.http.SslCertificate.DName;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getIssuedTo5419)) as android.net.http.SslCertificate.DName;
+		}
+		public new global::android.net.http.SslCertificate.DName IssuedBy
+		{
+			get
+			{
+				return getIssuedBy();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIssuedBy5420;
 		public virtual global::android.net.http.SslCertificate.DName getIssuedBy() 

@@ -38,6 +38,17 @@ namespace android.telephony
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._hashCode7407);
 		}
+		public new int State
+		{
+			get
+			{
+				return getState();
+			}
+			set
+			{
+				setState(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getState7408;
 		public virtual int getState() 
 		{
@@ -83,6 +94,17 @@ namespace android.telephony
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._copyFrom7412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool Roaming
+		{
+			get
+			{
+				return getRoaming();
+			}
+			set
+			{
+				setRoaming(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRoaming7413;
 		public virtual bool getRoaming() 
 		{
@@ -91,6 +113,13 @@ namespace android.telephony
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState._getRoaming7413);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getRoaming7413);
+		}
+		public new global::java.lang.String OperatorAlphaLong
+		{
+			get
+			{
+				return getOperatorAlphaLong();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOperatorAlphaLong7414;
 		public virtual global::java.lang.String getOperatorAlphaLong() 
@@ -101,6 +130,13 @@ namespace android.telephony
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaLong7414)) as java.lang.String;
 		}
+		public new global::java.lang.String OperatorAlphaShort
+		{
+			get
+			{
+				return getOperatorAlphaShort();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOperatorAlphaShort7415;
 		public virtual global::java.lang.String getOperatorAlphaShort() 
 		{
@@ -110,6 +146,13 @@ namespace android.telephony
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaShort7415)) as java.lang.String;
 		}
+		public new global::java.lang.String OperatorNumeric
+		{
+			get
+			{
+				return getOperatorNumeric();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOperatorNumeric7416;
 		public virtual global::java.lang.String getOperatorNumeric() 
 		{
@@ -118,6 +161,17 @@ namespace android.telephony
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.telephony.ServiceState._getOperatorNumeric7416)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorNumeric7416)) as java.lang.String;
+		}
+		public new bool IsManualSelection
+		{
+			get
+			{
+				return getIsManualSelection();
+			}
+			set
+			{
+				setIsManualSelection(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIsManualSelection7417;
 		public virtual bool getIsManualSelection() 

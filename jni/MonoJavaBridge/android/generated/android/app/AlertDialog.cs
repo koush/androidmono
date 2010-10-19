@@ -492,6 +492,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._getButton431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.Button;
 		}
+		public new global::android.widget.ListView ListView
+		{
+			get
+			{
+				return getListView();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getListView432;
 		public virtual global::android.widget.ListView getListView() 
 		{

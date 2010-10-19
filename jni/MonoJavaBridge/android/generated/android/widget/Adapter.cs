@@ -26,110 +26,110 @@ namespace android.widget
 		internal Adapter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty10839;
+		internal static global::MonoJavaBridge.MethodId _isEmpty11385;
 		 bool android.widget.Adapter.isEmpty() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Adapter_._isEmpty10839);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Adapter_._isEmpty11385);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._isEmpty10839);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._isEmpty11385);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCount10840;
+		internal static global::MonoJavaBridge.MethodId _getCount11386;
 		 int android.widget.Adapter.getCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Adapter_._getCount10840);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Adapter_._getCount11386);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getCount10840);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getCount11386);
 		}
-		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver10841;
+		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver11387;
 		 void android.widget.Adapter.registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Adapter_._registerDataSetObserver10841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Adapter_._registerDataSetObserver11387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._registerDataSetObserver10841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._registerDataSetObserver11387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver10842;
+		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver11388;
 		 void android.widget.Adapter.unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Adapter_._unregisterDataSetObserver10842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.Adapter_._unregisterDataSetObserver11388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._unregisterDataSetObserver10842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._unregisterDataSetObserver11388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getItem10843;
+		internal static global::MonoJavaBridge.MethodId _getItem11389;
 		 global::java.lang.Object android.widget.Adapter.getItem(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Adapter_._getItem10843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Adapter_._getItem11389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getItem10843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getItem11389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemId10844;
+		internal static global::MonoJavaBridge.MethodId _getItemId11390;
 		 long android.widget.Adapter.getItemId(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.Adapter_._getItemId10844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.Adapter_._getItemId11390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getItemId10844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getItemId11390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hasStableIds10845;
+		internal static global::MonoJavaBridge.MethodId _hasStableIds11391;
 		 bool android.widget.Adapter.hasStableIds() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Adapter_._hasStableIds10845);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.Adapter_._hasStableIds11391);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._hasStableIds10845);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._hasStableIds11391);
 		}
-		internal static global::MonoJavaBridge.MethodId _getView10846;
+		internal static global::MonoJavaBridge.MethodId _getView11392;
 		 global::android.view.View android.widget.Adapter.getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Adapter_._getView10846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.Adapter_._getView11392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getView10846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getView11392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemViewType10847;
+		internal static global::MonoJavaBridge.MethodId _getItemViewType11393;
 		 int android.widget.Adapter.getItemViewType(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Adapter_._getItemViewType10847, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Adapter_._getItemViewType11393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getItemViewType10847, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getItemViewType11393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getViewTypeCount10848;
+		internal static global::MonoJavaBridge.MethodId _getViewTypeCount11394;
 		 int android.widget.Adapter.getViewTypeCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Adapter_._getViewTypeCount10848);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.Adapter_._getViewTypeCount11394);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getViewTypeCount10848);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.Adapter_.staticClass, global::android.widget.Adapter_._getViewTypeCount11394);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Adapter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Adapter"));
-			global::android.widget.Adapter_._isEmpty10839 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "isEmpty", "()Z");
-			global::android.widget.Adapter_._getCount10840 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getCount", "()I");
-			global::android.widget.Adapter_._registerDataSetObserver10841 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.widget.Adapter_._unregisterDataSetObserver10842 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.widget.Adapter_._getItem10843 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getItem", "(I)Ljava/lang/Object;");
-			global::android.widget.Adapter_._getItemId10844 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getItemId", "(I)J");
-			global::android.widget.Adapter_._hasStableIds10845 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "hasStableIds", "()Z");
-			global::android.widget.Adapter_._getView10846 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
-			global::android.widget.Adapter_._getItemViewType10847 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getItemViewType", "(I)I");
-			global::android.widget.Adapter_._getViewTypeCount10848 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getViewTypeCount", "()I");
+			global::android.widget.Adapter_._isEmpty11385 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "isEmpty", "()Z");
+			global::android.widget.Adapter_._getCount11386 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getCount", "()I");
+			global::android.widget.Adapter_._registerDataSetObserver11387 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.widget.Adapter_._unregisterDataSetObserver11388 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.widget.Adapter_._getItem11389 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getItem", "(I)Ljava/lang/Object;");
+			global::android.widget.Adapter_._getItemId11390 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getItemId", "(I)J");
+			global::android.widget.Adapter_._hasStableIds11391 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "hasStableIds", "()Z");
+			global::android.widget.Adapter_._getView11392 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+			global::android.widget.Adapter_._getItemViewType11393 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getItemViewType", "(I)I");
+			global::android.widget.Adapter_._getViewTypeCount11394 = @__env.GetMethodIDNoThrow(global::android.widget.Adapter_.staticClass, "getViewTypeCount", "()I");
 		}
 	}
 }

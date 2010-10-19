@@ -38,6 +38,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onContentChanged656);
 		}
+		public new global::android.widget.ListView ListView
+		{
+			get
+			{
+				return getListView();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getListView657;
 		public virtual global::android.widget.ListView getListView() 
 		{
@@ -47,6 +54,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getListView657)) as android.widget.ListView;
 		}
+		public new int SelectedItemPosition
+		{
+			get
+			{
+				return getSelectedItemPosition();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedItemPosition658;
 		public virtual int getSelectedItemPosition() 
 		{
@@ -55,6 +69,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.ListActivity._getSelectedItemPosition658);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getSelectedItemPosition658);
+		}
+		public new long SelectedItemId
+		{
+			get
+			{
+				return getSelectedItemId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedItemId659;
 		public virtual long getSelectedItemId() 
@@ -91,6 +112,17 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.ListActivity._onListItemClick662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onListItemClick662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+		}
+		public new global::android.widget.ListAdapter ListAdapter
+		{
+			get
+			{
+				return getListAdapter();
+			}
+			set
+			{
+				setListAdapter(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getListAdapter663;
 		public virtual global::android.widget.ListAdapter getListAdapter() 

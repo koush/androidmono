@@ -98,6 +98,13 @@ namespace android.database.sqlite
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._isReadOnly2823);
 		}
+		public new global::java.lang.String Path
+		{
+			get
+			{
+				return getPath();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPath2824;
 		public virtual global::java.lang.String getPath() 
 		{
@@ -157,6 +164,17 @@ namespace android.database.sqlite
 				return @__env.CallIntMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase._update2830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._update2830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+		}
+		public new int Version
+		{
+			get
+			{
+				return getVersion();
+			}
+			set
+			{
+				setVersion(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVersion2831;
 		public virtual int getVersion() 
@@ -311,6 +329,13 @@ namespace android.database.sqlite
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._yieldIfContendedSafely2848);
 		}
+		public new global::java.util.Map SyncedTables
+		{
+			get
+			{
+				return getSyncedTables();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSyncedTables2849;
 		public virtual global::java.util.Map getSyncedTables() 
 		{
@@ -325,6 +350,13 @@ namespace android.database.sqlite
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._openDatabase2850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.sqlite.SQLiteDatabase;
+		}
+		public new long MaximumSize
+		{
+			get
+			{
+				return getMaximumSize();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaximumSize2851;
 		public virtual long getMaximumSize() 
@@ -343,6 +375,17 @@ namespace android.database.sqlite
 				return @__env.CallLongMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase._setMaximumSize2852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.sqlite.SQLiteDatabase.staticClass, global::android.database.sqlite.SQLiteDatabase._setMaximumSize2852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new long PageSize
+		{
+			get
+			{
+				return getPageSize();
+			}
+			set
+			{
+				setPageSize(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPageSize2853;
 		public virtual long getPageSize() 

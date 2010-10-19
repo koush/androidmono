@@ -20,6 +20,13 @@ namespace android.net.http
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._toString5424)) as java.lang.String;
 		}
+		public new global::android.net.http.SslCertificate Certificate
+		{
+			get
+			{
+				return getCertificate();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCertificate5425;
 		public virtual global::android.net.http.SslCertificate getCertificate() 
 		{
@@ -46,6 +53,13 @@ namespace android.net.http
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.http.SslError._addError5427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.http.SslError.staticClass, global::android.net.http.SslError._addError5427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int PrimaryError
+		{
+			get
+			{
+				return getPrimaryError();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrimaryError5428;
 		public virtual int getPrimaryError() 

@@ -20,6 +20,13 @@ namespace android.app.backup
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupDataInputStream.staticClass, global::android.app.backup.BackupDataInputStream._size930);
 		}
+		public new global::java.lang.String Key
+		{
+			get
+			{
+				return getKey();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getKey931;
 		public virtual global::java.lang.String getKey() 
 		{

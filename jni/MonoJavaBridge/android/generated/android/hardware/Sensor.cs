@@ -11,6 +11,13 @@ namespace android.hardware
 		protected Sensor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::java.lang.String Name
+		{
+			get
+			{
+				return getName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getName4364;
 		public virtual global::java.lang.String getName() 
 		{
@@ -19,6 +26,13 @@ namespace android.hardware
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.hardware.Sensor._getName4364)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName4364)) as java.lang.String;
+		}
+		public new int Type
+		{
+			get
+			{
+				return getType();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType4365;
 		public virtual int getType() 
@@ -29,6 +43,13 @@ namespace android.hardware
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType4365);
 		}
+		public new int Version
+		{
+			get
+			{
+				return getVersion();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVersion4366;
 		public virtual int getVersion() 
 		{
@@ -37,6 +58,13 @@ namespace android.hardware
 				return @__env.CallIntMethod(this.JvmHandle, global::android.hardware.Sensor._getVersion4366);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion4366);
+		}
+		public new global::java.lang.String Vendor
+		{
+			get
+			{
+				return getVendor();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVendor4367;
 		public virtual global::java.lang.String getVendor() 
@@ -47,6 +75,13 @@ namespace android.hardware
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor4367)) as java.lang.String;
 		}
+		public new float MaximumRange
+		{
+			get
+			{
+				return getMaximumRange();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMaximumRange4368;
 		public virtual float getMaximumRange() 
 		{
@@ -56,6 +91,13 @@ namespace android.hardware
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange4368);
 		}
+		public new float Resolution
+		{
+			get
+			{
+				return getResolution();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getResolution4369;
 		public virtual float getResolution() 
 		{
@@ -64,6 +106,13 @@ namespace android.hardware
 				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getResolution4369);
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution4369);
+		}
+		public new float Power
+		{
+			get
+			{
+				return getPower();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPower4370;
 		public virtual float getPower() 

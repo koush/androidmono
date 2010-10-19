@@ -38,6 +38,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAccuracy4696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Accuracy
+		{
+			get
+			{
+				return getAccuracy();
+			}
+			set
+			{
+				setAccuracy(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAccuracy4697;
 		public virtual int getAccuracy() 
 		{
@@ -55,6 +66,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Criteria._setPowerRequirement4698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Criteria.staticClass, global::android.location.Criteria._setPowerRequirement4698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int PowerRequirement
+		{
+			get
+			{
+				return getPowerRequirement();
+			}
+			set
+			{
+				setPowerRequirement(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPowerRequirement4699;
 		public virtual int getPowerRequirement() 

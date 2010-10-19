@@ -225,6 +225,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._draw3988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations3989;
 		public override int getChangingConfigurations() 
 		{
@@ -270,6 +277,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._isStateful3993);
 		}
+		public new global::android.graphics.drawable.Drawable Current
+		{
+			get
+			{
+				return getCurrent();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCurrent3994;
 		public override global::android.graphics.drawable.Drawable getCurrent() 
 		{
@@ -287,6 +301,13 @@ namespace android.graphics.drawable
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer._setVisible3995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._setVisible3995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity3996;
 		public override int getOpacity() 
@@ -324,6 +345,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._onBoundsChange3999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth4000;
 		public override int getIntrinsicWidth() 
 		{
@@ -332,6 +360,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer._getIntrinsicWidth4000);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getIntrinsicWidth4000);
+		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight4001;
 		public override int getIntrinsicHeight() 
@@ -342,6 +377,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getIntrinsicHeight4001);
 		}
+		public new int MinimumWidth
+		{
+			get
+			{
+				return getMinimumWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMinimumWidth4002;
 		public override int getMinimumWidth() 
 		{
@@ -350,6 +392,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer._getMinimumWidth4002);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getMinimumWidth4002);
+		}
+		public new int MinimumHeight
+		{
+			get
+			{
+				return getMinimumHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinimumHeight4003;
 		public override int getMinimumHeight() 
@@ -377,6 +426,13 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer._mutate4005)) as android.graphics.drawable.Drawable;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._mutate4005)) as android.graphics.drawable.Drawable;
+		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState4006;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 

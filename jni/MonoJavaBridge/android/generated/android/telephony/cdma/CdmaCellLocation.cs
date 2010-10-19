@@ -38,6 +38,13 @@ namespace android.telephony.cdma
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._hashCode7516);
 		}
+		public new int SystemId
+		{
+			get
+			{
+				return getSystemId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId7517;
 		public virtual int getSystemId() 
 		{
@@ -46,6 +53,13 @@ namespace android.telephony.cdma
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation._getSystemId7517);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getSystemId7517);
+		}
+		public new int NetworkId
+		{
+			get
+			{
+				return getNetworkId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkId7518;
 		public virtual int getNetworkId() 
@@ -56,6 +70,13 @@ namespace android.telephony.cdma
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getNetworkId7518);
 		}
+		public new int BaseStationId
+		{
+			get
+			{
+				return getBaseStationId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBaseStationId7519;
 		public virtual int getBaseStationId() 
 		{
@@ -65,6 +86,13 @@ namespace android.telephony.cdma
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getBaseStationId7519);
 		}
+		public new int BaseStationLatitude
+		{
+			get
+			{
+				return getBaseStationLatitude();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBaseStationLatitude7520;
 		public virtual int getBaseStationLatitude() 
 		{
@@ -73,6 +101,13 @@ namespace android.telephony.cdma
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLatitude7520);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLatitude7520);
+		}
+		public new int BaseStationLongitude
+		{
+			get
+			{
+				return getBaseStationLongitude();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBaseStationLongitude7521;
 		public virtual int getBaseStationLongitude() 

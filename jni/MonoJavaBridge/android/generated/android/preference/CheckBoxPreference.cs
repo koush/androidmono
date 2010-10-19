@@ -96,6 +96,17 @@ namespace android.preference
 		{
 			setSummaryOn((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
+		public new string SummaryOn
+		{
+			get
+			{
+				return getSummaryOn().toString();
+			}
+			set
+			{
+				setSummaryOn((global::java.lang.CharSequence)(global::java.lang.String)value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSummaryOn6755;
 		public virtual global::java.lang.CharSequence getSummaryOn() 
 		{
@@ -127,6 +138,17 @@ namespace android.preference
 		{
 			setSummaryOff((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
+		public new string SummaryOff
+		{
+			get
+			{
+				return getSummaryOff().toString();
+			}
+			set
+			{
+				setSummaryOff((global::java.lang.CharSequence)(global::java.lang.String)value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSummaryOff6758;
 		public virtual global::java.lang.CharSequence getSummaryOff() 
 		{
@@ -135,6 +157,17 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.CheckBoxPreference._getSummaryOff6758)) as java.lang.CharSequence;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._getSummaryOff6758)) as java.lang.CharSequence;
+		}
+		public new bool DisableDependentsState
+		{
+			get
+			{
+				return getDisableDependentsState();
+			}
+			set
+			{
+				setDisableDependentsState(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisableDependentsState6759;
 		public virtual bool getDisableDependentsState() 

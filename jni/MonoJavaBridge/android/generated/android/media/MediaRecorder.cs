@@ -403,6 +403,13 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setAudioSource5037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public static int AudioSourceMax
+		{
+			get
+			{
+				return getAudioSourceMax();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAudioSourceMax5038;
 		public static int getAudioSourceMax() 
 		{
@@ -534,6 +541,13 @@ namespace android.media
 				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaRecorder._setOutputFile5052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setOutputFile5052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int MaxAmplitude
+		{
+			get
+			{
+				return getMaxAmplitude();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxAmplitude5053;
 		public virtual int getMaxAmplitude() 

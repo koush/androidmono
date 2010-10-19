@@ -38,6 +38,13 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._dump6149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.lang.String InterfaceDescriptor
+		{
+			get
+			{
+				return getInterfaceDescriptor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInterfaceDescriptor6150;
 		public virtual global::java.lang.String getInterfaceDescriptor() 
 		{
@@ -101,11 +108,25 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._unlinkToDeath6156, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public static int CallingPid
+		{
+			get
+			{
+				return getCallingPid();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCallingPid6157;
 		public static int getCallingPid() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Binder.staticClass, global::android.os.Binder._getCallingPid6157);
+		}
+		public static int CallingUid
+		{
+			get
+			{
+				return getCallingUid();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallingUid6158;
 		public static int getCallingUid() 

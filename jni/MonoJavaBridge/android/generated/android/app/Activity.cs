@@ -11,6 +11,13 @@ namespace android.app
 		protected Activity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::android.app.Activity Parent
+		{
+			get
+			{
+				return getParent();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getParent137;
 		public virtual global::android.app.Activity getParent() 
 		{
@@ -19,6 +26,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getParent137)) as android.app.Activity;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getParent137)) as android.app.Activity;
+		}
+		public new global::android.app.Application Application
+		{
+			get
+			{
+				return getApplication();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplication138;
 		public virtual global::android.app.Application getApplication() 
@@ -74,6 +88,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._onLowMemory143);
 		}
+		public new int WallpaperDesiredMinimumWidth
+		{
+			get
+			{
+				return getWallpaperDesiredMinimumWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaperDesiredMinimumWidth144;
 		public override int getWallpaperDesiredMinimumWidth() 
 		{
@@ -82,6 +103,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.Activity._getWallpaperDesiredMinimumWidth144);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getWallpaperDesiredMinimumWidth144);
+		}
+		public new int WallpaperDesiredMinimumHeight
+		{
+			get
+			{
+				return getWallpaperDesiredMinimumHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaperDesiredMinimumHeight145;
 		public override int getWallpaperDesiredMinimumHeight() 
@@ -119,6 +147,17 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getSystemService148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
+		public new global::android.content.Intent Intent
+		{
+			get
+			{
+				return getIntent();
+			}
+			set
+			{
+				setIntent(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntent149;
 		public virtual global::android.content.Intent getIntent() 
 		{
@@ -127,6 +166,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getIntent149)) as android.content.Intent;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getIntent149)) as android.content.Intent;
+		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations150;
 		public virtual int getChangingConfigurations() 
@@ -173,6 +219,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._finish154);
 		}
+		public static long InstanceCount
+		{
+			get
+			{
+				return getInstanceCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInstanceCount155;
 		public static long getInstanceCount() 
 		{
@@ -197,6 +250,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._isChild157);
 		}
+		public new global::android.view.WindowManager WindowManager
+		{
+			get
+			{
+				return getWindowManager();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWindowManager158;
 		public virtual global::android.view.WindowManager getWindowManager() 
 		{
@@ -206,6 +266,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.WindowManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getWindowManager158)) as android.view.WindowManager;
 		}
+		public new global::android.view.Window Window
+		{
+			get
+			{
+				return getWindow();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWindow159;
 		public virtual global::android.view.Window getWindow() 
 		{
@@ -214,6 +281,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getWindow159)) as android.view.Window;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getWindow159)) as android.view.Window;
+		}
+		public new global::android.view.View CurrentFocus
+		{
+			get
+			{
+				return getCurrentFocus();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentFocus160;
 		public virtual global::android.view.View getCurrentFocus() 
@@ -331,6 +405,13 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Activity._onStop172);
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._onStop172);
+		}
+		public new global::java.lang.Object LastNonConfigurationInstance
+		{
+			get
+			{
+				return getLastNonConfigurationInstance();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLastNonConfigurationInstance173;
 		public virtual global::java.lang.Object getLastNonConfigurationInstance() 
@@ -926,6 +1007,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._setFeatureDrawableAlpha238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::android.view.LayoutInflater LayoutInflater
+		{
+			get
+			{
+				return getLayoutInflater();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLayoutInflater239;
 		public virtual global::android.view.LayoutInflater getLayoutInflater() 
 		{
@@ -934,6 +1022,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getLayoutInflater239)) as android.view.LayoutInflater;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getLayoutInflater239)) as android.view.LayoutInflater;
+		}
+		public new global::android.view.MenuInflater MenuInflater
+		{
+			get
+			{
+				return getMenuInflater();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMenuInflater240;
 		public virtual global::android.view.MenuInflater getMenuInflater() 
@@ -1016,6 +1111,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._overridePendingTransition248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.lang.String CallingPackage
+		{
+			get
+			{
+				return getCallingPackage();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCallingPackage249;
 		public virtual global::java.lang.String getCallingPackage() 
 		{
@@ -1024,6 +1126,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getCallingPackage249)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getCallingPackage249)) as java.lang.String;
+		}
+		public new global::android.content.ComponentName CallingActivity
+		{
+			get
+			{
+				return getCallingActivity();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallingActivity250;
 		public virtual global::android.content.ComponentName getCallingActivity() 
@@ -1097,6 +1206,17 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._setRequestedOrientation257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int RequestedOrientation
+		{
+			get
+			{
+				return getRequestedOrientation();
+			}
+			set
+			{
+				setRequestedOrientation(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRequestedOrientation258;
 		public virtual int getRequestedOrientation() 
 		{
@@ -1105,6 +1225,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.Activity._getRequestedOrientation258);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getRequestedOrientation258);
+		}
+		public new int TaskId
+		{
+			get
+			{
+				return getTaskId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTaskId259;
 		public virtual int getTaskId() 
@@ -1133,6 +1260,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._moveTaskToBack261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String LocalClassName
+		{
+			get
+			{
+				return getLocalClassName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLocalClassName262;
 		public virtual global::java.lang.String getLocalClassName() 
 		{
@@ -1141,6 +1275,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getLocalClassName262)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getLocalClassName262)) as java.lang.String;
+		}
+		public new global::android.content.ComponentName ComponentName
+		{
+			get
+			{
+				return getComponentName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponentName263;
 		public virtual global::android.content.ComponentName getComponentName() 
@@ -1191,6 +1332,17 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._setTitleColor267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new string Title
+		{
+			get
+			{
+				return getTitle().toString();
+			}
+			set
+			{
+				setTitle((global::java.lang.CharSequence)(global::java.lang.String)value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTitle268;
 		public virtual global::java.lang.CharSequence getTitle() 
 		{
@@ -1199,6 +1351,17 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Activity._getTitle268)) as java.lang.CharSequence;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._getTitle268)) as java.lang.CharSequence;
+		}
+		public new int TitleColor
+		{
+			get
+			{
+				return getTitleColor();
+			}
+			set
+			{
+				setTitleColor(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTitleColor269;
 		public virtual int getTitleColor() 
@@ -1280,6 +1443,17 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Activity._setVolumeControlStream277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._setVolumeControlStream277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int VolumeControlStream
+		{
+			get
+			{
+				return getVolumeControlStream();
+			}
+			set
+			{
+				setVolumeControlStream(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVolumeControlStream278;
 		public virtual int getVolumeControlStream() 

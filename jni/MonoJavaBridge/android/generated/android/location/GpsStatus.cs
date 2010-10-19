@@ -77,6 +77,13 @@ namespace android.location
 				global::android.location.GpsStatus.NmeaListener_._onNmeaReceived4724 = @__env.GetMethodIDNoThrow(global::android.location.GpsStatus.NmeaListener_.staticClass, "onNmeaReceived", "(JLjava/lang/String;)V");
 			}
 		}
+		public new int TimeToFirstFix
+		{
+			get
+			{
+				return getTimeToFirstFix();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTimeToFirstFix4725;
 		public int getTimeToFirstFix() 
 		{
@@ -86,6 +93,13 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getTimeToFirstFix4725);
 		}
+		public new global::java.lang.Iterable Satellites
+		{
+			get
+			{
+				return getSatellites();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSatellites4726;
 		public global::java.lang.Iterable getSatellites() 
 		{
@@ -94,6 +108,13 @@ namespace android.location
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Iterable>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.GpsStatus._getSatellites4726)) as java.lang.Iterable;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Iterable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getSatellites4726)) as java.lang.Iterable;
+		}
+		public new int MaxSatellites
+		{
+			get
+			{
+				return getMaxSatellites();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxSatellites4727;
 		public int getMaxSatellites() 

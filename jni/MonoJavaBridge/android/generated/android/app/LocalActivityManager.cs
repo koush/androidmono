@@ -29,6 +29,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._getActivity666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.Activity;
 		}
+		public new global::android.app.Activity CurrentActivity
+		{
+			get
+			{
+				return getCurrentActivity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentActivity667;
 		public virtual global::android.app.Activity getCurrentActivity() 
 		{
@@ -46,6 +53,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager._destroyActivity668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.Window;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._destroyActivity668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.Window;
+		}
+		public new global::java.lang.String CurrentId
+		{
+			get
+			{
+				return getCurrentId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentId669;
 		public virtual global::java.lang.String getCurrentId() 

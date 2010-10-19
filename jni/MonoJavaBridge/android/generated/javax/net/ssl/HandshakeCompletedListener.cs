@@ -17,20 +17,20 @@ namespace javax.net.ssl
 		internal HandshakeCompletedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _handshakeCompleted15970;
+		internal static global::MonoJavaBridge.MethodId _handshakeCompleted23290;
 		 void javax.net.ssl.HandshakeCompletedListener.handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted15970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted23290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedListener_.staticClass, global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted15970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedListener_.staticClass, global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted23290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.HandshakeCompletedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/HandshakeCompletedListener"));
-			global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted15970 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedListener_.staticClass, "handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V");
+			global::javax.net.ssl.HandshakeCompletedListener_._handshakeCompleted23290 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.HandshakeCompletedListener_.staticClass, "handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V");
 		}
 	}
 }

@@ -56,6 +56,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._setColorFilter4136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity4137;
 		public override int getOpacity() 
 		{
@@ -64,6 +71,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.PictureDrawable._getOpacity4137);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getOpacity4137);
+		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth4138;
 		public override int getIntrinsicWidth() 
@@ -74,6 +88,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getIntrinsicWidth4138);
 		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight4139;
 		public override int getIntrinsicHeight() 
 		{
@@ -82,6 +103,17 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.PictureDrawable._getIntrinsicHeight4139);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getIntrinsicHeight4139);
+		}
+		public new global::android.graphics.Picture Picture
+		{
+			get
+			{
+				return getPicture();
+			}
+			set
+			{
+				setPicture(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPicture4140;
 		public virtual global::android.graphics.Picture getPicture() 

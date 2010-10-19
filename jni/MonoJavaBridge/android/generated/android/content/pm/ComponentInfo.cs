@@ -47,6 +47,13 @@ namespace android.content.pm
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.ComponentInfo.staticClass, global::android.content.pm.ComponentInfo._dumpBack1883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new int IconResource
+		{
+			get
+			{
+				return getIconResource();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIconResource1884;
 		public virtual int getIconResource() 
 		{

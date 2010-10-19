@@ -39,7 +39,7 @@ namespace android.content
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._hashCode1108);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone1109;
-		public new global::android.content.ComponentName clone() 
+		public global::android.content.ComponentName clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,6 +65,13 @@ namespace android.content
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo1111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String ClassName
+		{
+			get
+			{
+				return getClassName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getClassName1112;
 		public global::java.lang.String getClassName() 
 		{
@@ -73,6 +80,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ComponentName._getClassName1112)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getClassName1112)) as java.lang.String;
+		}
+		public new global::java.lang.String PackageName
+		{
+			get
+			{
+				return getPackageName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageName1113;
 		public global::java.lang.String getPackageName() 
@@ -112,6 +126,13 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.ComponentName.staticClass, global::android.content.ComponentName._readFromParcel1117, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ComponentName;
+		}
+		public new global::java.lang.String ShortClassName
+		{
+			get
+			{
+				return getShortClassName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShortClassName1118;
 		public global::java.lang.String getShortClassName() 

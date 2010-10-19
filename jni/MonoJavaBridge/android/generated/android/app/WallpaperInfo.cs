@@ -20,6 +20,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._toString838)) as java.lang.String;
 		}
+		public new global::java.lang.String PackageName
+		{
+			get
+			{
+				return getPackageName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPackageName839;
 		public global::java.lang.String getPackageName() 
 		{
@@ -28,6 +35,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo._getPackageName839)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._getPackageName839)) as java.lang.String;
+		}
+		public new global::android.content.ComponentName Component
+		{
+			get
+			{
+				return getComponent();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponent840;
 		public global::android.content.ComponentName getComponent() 
@@ -65,6 +79,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._describeContents843);
 		}
+		public new global::android.content.pm.ServiceInfo ServiceInfo
+		{
+			get
+			{
+				return getServiceInfo();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getServiceInfo844;
 		public global::android.content.pm.ServiceInfo getServiceInfo() 
 		{
@@ -101,6 +122,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._loadIcon847, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
+		public new global::java.lang.String ServiceName
+		{
+			get
+			{
+				return getServiceName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getServiceName848;
 		public global::java.lang.String getServiceName() 
 		{
@@ -127,6 +155,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo._loadAuthor850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._loadAuthor850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+		}
+		public new global::java.lang.String SettingsActivity
+		{
+			get
+			{
+				return getSettingsActivity();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSettingsActivity851;
 		public global::java.lang.String getSettingsActivity() 

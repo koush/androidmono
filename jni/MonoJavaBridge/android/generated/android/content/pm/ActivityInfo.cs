@@ -47,6 +47,13 @@ namespace android.content.pm
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._describeContents1839);
 		}
+		public new int ThemeResource
+		{
+			get
+			{
+				return getThemeResource();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getThemeResource1840;
 		public virtual int getThemeResource() 
 		{

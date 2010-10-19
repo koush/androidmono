@@ -101,6 +101,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._openAssetFile1166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.res.AssetFileDescriptor;
 		}
+		public new global::android.content.ContentProvider LocalContentProvider
+		{
+			get
+			{
+				return getLocalContentProvider();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLocalContentProvider1167;
 		public virtual global::android.content.ContentProvider getLocalContentProvider() 
 		{

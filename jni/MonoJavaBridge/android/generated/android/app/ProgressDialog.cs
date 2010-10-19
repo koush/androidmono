@@ -21,7 +21,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onCreate730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart731;
-		public virtual new void onStart() 
+		public virtual void onStart() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,6 +93,17 @@ namespace android.app
 		{
 			setMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
+		public new int Progress
+		{
+			get
+			{
+				return getProgress();
+			}
+			set
+			{
+				setProgress(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getProgress740;
 		public virtual int getProgress() 
 		{
@@ -102,6 +113,17 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getProgress740);
 		}
+		public new int SecondaryProgress
+		{
+			get
+			{
+				return getSecondaryProgress();
+			}
+			set
+			{
+				setSecondaryProgress(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSecondaryProgress741;
 		public virtual int getSecondaryProgress() 
 		{
@@ -110,6 +132,17 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.ProgressDialog._getSecondaryProgress741);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getSecondaryProgress741);
+		}
+		public new int Max
+		{
+			get
+			{
+				return getMax();
+			}
+			set
+			{
+				setMax(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMax742;
 		public virtual int getMax() 

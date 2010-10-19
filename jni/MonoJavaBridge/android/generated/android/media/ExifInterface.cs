@@ -65,6 +65,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._hasThumbnail4947);
 		}
+		public new byte[] Thumbnail
+		{
+			get
+			{
+				return getThumbnail();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getThumbnail4948;
 		public virtual byte[] getThumbnail() 
 		{

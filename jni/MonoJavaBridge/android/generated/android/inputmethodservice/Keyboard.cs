@@ -58,6 +58,13 @@ namespace android.inputmethodservice
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom4560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
+			public new int[] CurrentDrawableState
+			{
+				get
+				{
+					return getCurrentDrawableState();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getCurrentDrawableState4561;
 			public virtual int[] getCurrentDrawableState() 
 			{
@@ -391,6 +398,13 @@ namespace android.inputmethodservice
 				global::android.inputmethodservice.Keyboard.Row._Row4583 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "<init>", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard;Landroid/content/res/XmlResourceParser;)V");
 			}
 		}
+		public new int Height
+		{
+			get
+			{
+				return getHeight();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getHeight4590;
 		public virtual int getHeight() 
 		{
@@ -399,6 +413,13 @@ namespace android.inputmethodservice
 				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getHeight4590);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHeight4590);
+		}
+		public new global::java.util.List Keys
+		{
+			get
+			{
+				return getKeys();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeys4591;
 		public virtual global::java.util.List getKeys() 
@@ -409,6 +430,13 @@ namespace android.inputmethodservice
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeys4591)) as java.util.List;
 		}
+		public new global::java.util.List ModifierKeys
+		{
+			get
+			{
+				return getModifierKeys();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getModifierKeys4592;
 		public virtual global::java.util.List getModifierKeys() 
 		{
@@ -417,6 +445,17 @@ namespace android.inputmethodservice
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getModifierKeys4592)) as java.util.List;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getModifierKeys4592)) as java.util.List;
+		}
+		protected new int HorizontalGap
+		{
+			get
+			{
+				return getHorizontalGap();
+			}
+			set
+			{
+				setHorizontalGap(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHorizontalGap4593;
 		protected virtual int getHorizontalGap() 
@@ -436,6 +475,17 @@ namespace android.inputmethodservice
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setHorizontalGap4594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		protected new int VerticalGap
+		{
+			get
+			{
+				return getVerticalGap();
+			}
+			set
+			{
+				setVerticalGap(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVerticalGap4595;
 		protected virtual int getVerticalGap() 
 		{
@@ -453,6 +503,17 @@ namespace android.inputmethodservice
 				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setVerticalGap4596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setVerticalGap4596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		protected new int KeyHeight
+		{
+			get
+			{
+				return getKeyHeight();
+			}
+			set
+			{
+				setKeyHeight(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeyHeight4597;
 		protected virtual int getKeyHeight() 
@@ -472,6 +533,17 @@ namespace android.inputmethodservice
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyHeight4598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		protected new int KeyWidth
+		{
+			get
+			{
+				return getKeyWidth();
+			}
+			set
+			{
+				setKeyWidth(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getKeyWidth4599;
 		protected virtual int getKeyWidth() 
 		{
@@ -489,6 +561,13 @@ namespace android.inputmethodservice
 				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setKeyWidth4600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyWidth4600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int MinWidth
+		{
+			get
+			{
+				return getMinWidth();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinWidth4601;
 		public virtual int getMinWidth() 
@@ -516,6 +595,13 @@ namespace android.inputmethodservice
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._isShifted4603);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._isShifted4603);
+		}
+		public new int ShiftKeyIndex
+		{
+			get
+			{
+				return getShiftKeyIndex();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShiftKeyIndex4604;
 		public virtual int getShiftKeyIndex() 

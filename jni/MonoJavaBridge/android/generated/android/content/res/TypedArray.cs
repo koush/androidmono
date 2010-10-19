@@ -65,6 +65,13 @@ namespace android.content.res
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getValue2346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::android.content.res.Resources Resources
+		{
+			get
+			{
+				return getResources();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getResources2347;
 		public virtual global::android.content.res.Resources getResources() 
 		{
@@ -191,6 +198,13 @@ namespace android.content.res
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColorStateList2360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.ColorStateList;
 		}
+		public new global::java.lang.String PositionDescription
+		{
+			get
+			{
+				return getPositionDescription();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPositionDescription2361;
 		public virtual global::java.lang.String getPositionDescription() 
 		{
@@ -199,6 +213,13 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.TypedArray._getPositionDescription2361)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getPositionDescription2361)) as java.lang.String;
+		}
+		public new int IndexCount
+		{
+			get
+			{
+				return getIndexCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndexCount2362;
 		public virtual int getIndexCount() 

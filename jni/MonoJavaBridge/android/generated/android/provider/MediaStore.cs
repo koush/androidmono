@@ -1802,6 +1802,13 @@ namespace android.provider
 				global::android.provider.MediaStore.Video._Video7172 = @__env.GetMethodIDNoThrow(global::android.provider.MediaStore.Video.staticClass, "<init>", "()V");
 			}
 		}
+		public static global::android.net.Uri MediaScannerUri
+		{
+			get
+			{
+				return getMediaScannerUri();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMediaScannerUri7173;
 		public static global::android.net.Uri getMediaScannerUri() 
 		{

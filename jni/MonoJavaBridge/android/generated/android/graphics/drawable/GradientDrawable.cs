@@ -133,6 +133,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._draw4025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations4026;
 		public override int getChangingConfigurations() 
 		{
@@ -169,6 +176,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._setColorFilter4029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity4030;
 		public override int getOpacity() 
 		{
@@ -196,6 +210,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._onBoundsChange4032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth4033;
 		public override int getIntrinsicWidth() 
 		{
@@ -204,6 +225,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable._getIntrinsicWidth4033);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._getIntrinsicWidth4033);
+		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight4034;
 		public override int getIntrinsicHeight() 
@@ -231,6 +259,13 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable._mutate4036)) as android.graphics.drawable.Drawable;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.GradientDrawable.staticClass, global::android.graphics.drawable.GradientDrawable._mutate4036)) as android.graphics.drawable.Drawable;
+		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState4037;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 

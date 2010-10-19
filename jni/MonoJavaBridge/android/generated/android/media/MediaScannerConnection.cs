@@ -15,7 +15,7 @@ namespace android.media
 		public interface MediaScannerConnectionClient : OnScanCompletedListener
 		{
 			void onMediaScannerConnected();
-			new void onScanCompleted(java.lang.String arg0, android.net.Uri arg1);
+			void onScanCompleted(java.lang.String arg0, android.net.Uri arg1);
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.media.MediaScannerConnection.MediaScannerConnectionClient))]

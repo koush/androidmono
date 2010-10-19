@@ -296,6 +296,13 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._hasMessages6448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.os.Looper Looper
+		{
+			get
+			{
+				return getLooper();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLooper6449;
 		public virtual global::android.os.Looper getLooper() 
 		{

@@ -11,6 +11,13 @@ namespace android.graphics
 		protected ColorMatrix(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new float[] Array
+		{
+			get
+			{
+				return getArray();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getArray3285;
 		public virtual float[] getArray() 
 		{

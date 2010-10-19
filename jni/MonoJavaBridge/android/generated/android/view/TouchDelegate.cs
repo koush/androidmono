@@ -11,20 +11,20 @@ namespace android.view
 		protected TouchDelegate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent9089;
+		internal static global::MonoJavaBridge.MethodId _onTouchEvent9635;
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.TouchDelegate._onTouchEvent9089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.TouchDelegate._onTouchEvent9635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent9089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent9635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _TouchDelegate9090;
+		internal static global::MonoJavaBridge.MethodId _TouchDelegate9636;
 		public TouchDelegate(android.graphics.Rect arg0, android.view.View arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._TouchDelegate9090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._TouchDelegate9636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int ABOVE
@@ -59,8 +59,8 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.TouchDelegate.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/TouchDelegate"));
-			global::android.view.TouchDelegate._onTouchEvent9089 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.view.TouchDelegate._TouchDelegate9090 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V");
+			global::android.view.TouchDelegate._onTouchEvent9635 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.view.TouchDelegate._TouchDelegate9636 = @__env.GetMethodIDNoThrow(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V");
 		}
 	}
 }

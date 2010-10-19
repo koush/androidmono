@@ -53,6 +53,17 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._stopPreviousRingtone5077);
 		}
+		public new bool StopPreviousRingtone
+		{
+			get
+			{
+				return getStopPreviousRingtone();
+			}
+			set
+			{
+				setStopPreviousRingtone(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getStopPreviousRingtone5078;
 		public virtual bool getStopPreviousRingtone() 
 		{
@@ -61,6 +72,17 @@ namespace android.media
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.media.RingtoneManager._getStopPreviousRingtone5078);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getStopPreviousRingtone5078);
+		}
+		public new bool IncludeDrm
+		{
+			get
+			{
+				return getIncludeDrm();
+			}
+			set
+			{
+				setIncludeDrm(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIncludeDrm5079;
 		public virtual bool getIncludeDrm() 
@@ -79,6 +101,13 @@ namespace android.media
 				@__env.CallVoidMethod(this.JvmHandle, global::android.media.RingtoneManager._setIncludeDrm5080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setIncludeDrm5080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.database.Cursor Cursor
+		{
+			get
+			{
+				return getCursor();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCursor5081;
 		public virtual global::android.database.Cursor getCursor() 

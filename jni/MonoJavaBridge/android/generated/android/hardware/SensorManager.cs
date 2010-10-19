@@ -23,6 +23,13 @@ namespace android.hardware
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getInclination4380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Sensors
+		{
+			get
+			{
+				return getSensors();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSensors4381;
 		public virtual int getSensors() 
 		{

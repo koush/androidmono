@@ -11,6 +11,13 @@ namespace android.app.backup
 		protected BackupDataInput(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::java.lang.String Key
+		{
+			get
+			{
+				return getKey();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getKey925;
 		public virtual global::java.lang.String getKey() 
 		{
@@ -28,6 +35,13 @@ namespace android.app.backup
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.backup.BackupDataInput._readNextHeader926);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.backup.BackupDataInput.staticClass, global::android.app.backup.BackupDataInput._readNextHeader926);
+		}
+		public new int DataSize
+		{
+			get
+			{
+				return getDataSize();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDataSize927;
 		public virtual int getDataSize() 

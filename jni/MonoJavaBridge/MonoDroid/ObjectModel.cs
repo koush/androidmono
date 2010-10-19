@@ -107,14 +107,24 @@ namespace MonoDroid
 						//Console.WriteLine("{0}", method.OverrideMethod);
 					}
 					*/
-                    /*
 					if (method.Parameters.Count != 0)
 						continue;
+                    if (method.Type.IsInterface || method.Type.Abstract)
+                        continue;
 					if (method.PropertyType != null)
 						continue;
+                    if (method.IsConstructor)
+                        continue;
 					if (!method.Name.StartsWith("get") || method.Name == "get")
 						continue;
-					string setterName = "set" + method.Name.Substring(3);
+                    var propertyName = method.Name.Substring(3);
+                    if (FindType(method.Type.Name + "." + propertyName) != null)
+                        continue;
+                    if (propertyName == method.Type.SimpleName)
+                        continue;
+                    if (!char.IsLetter(propertyName[0]))
+                        continue;
+					string setterName = "set" + propertyName;
 					var matchedSetter = (from setter in type.Methods where setter.Name == setterName && setter.Parameters.Count == 1 && setter.Return == "void" && setter.Parameters[0] == method.Return select setter).FirstOrDefault();
 					if (matchedSetter != null)
 					{
@@ -126,7 +136,6 @@ namespace MonoDroid
 					{
 						method.PropertyType = PropertyType.ReadOnly;
 					}
-                    */               
 				}
 			}
 		}

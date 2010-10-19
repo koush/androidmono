@@ -11,11 +11,25 @@ namespace android.net
 		protected TrafficStats(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public static long MobileTxPackets
+		{
+			get
+			{
+				return getMobileTxPackets();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMobileTxPackets5255;
 		public static long getMobileTxPackets() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileTxPackets5255);
+		}
+		public static long MobileRxPackets
+		{
+			get
+			{
+				return getMobileRxPackets();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMobileRxPackets5256;
 		public static long getMobileRxPackets() 
@@ -23,11 +37,25 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileRxPackets5256);
 		}
+		public static long MobileTxBytes
+		{
+			get
+			{
+				return getMobileTxBytes();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMobileTxBytes5257;
 		public static long getMobileTxBytes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileTxBytes5257);
+		}
+		public static long MobileRxBytes
+		{
+			get
+			{
+				return getMobileRxBytes();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMobileRxBytes5258;
 		public static long getMobileRxBytes() 
@@ -35,11 +63,25 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileRxBytes5258);
 		}
+		public static long TotalTxPackets
+		{
+			get
+			{
+				return getTotalTxPackets();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTotalTxPackets5259;
 		public static long getTotalTxPackets() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalTxPackets5259);
+		}
+		public static long TotalRxPackets
+		{
+			get
+			{
+				return getTotalRxPackets();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTotalRxPackets5260;
 		public static long getTotalRxPackets() 
@@ -47,11 +89,25 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalRxPackets5260);
 		}
+		public static long TotalTxBytes
+		{
+			get
+			{
+				return getTotalTxBytes();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTotalTxBytes5261;
 		public static long getTotalTxBytes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalTxBytes5261);
+		}
+		public static long TotalRxBytes
+		{
+			get
+			{
+				return getTotalRxBytes();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTotalRxBytes5262;
 		public static long getTotalRxBytes() 

@@ -11,6 +11,13 @@ namespace android.content
 		protected OperationApplicationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int NumSuccessfulYieldPoints
+		{
+			get
+			{
+				return getNumSuccessfulYieldPoints();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNumSuccessfulYieldPoints1730;
 		public virtual int getNumSuccessfulYieldPoints() 
 		{

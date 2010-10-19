@@ -38,6 +38,13 @@ namespace android.location
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
+		public new global::java.util.List AllProviders
+		{
+			get
+			{
+				return getAllProviders();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAllProviders4775;
 		public virtual global::java.util.List getAllProviders() 
 		{

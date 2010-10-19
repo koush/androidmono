@@ -180,6 +180,13 @@ namespace android.content.res
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._toString2212)) as java.lang.String;
 		}
+		public new long Length
+		{
+			get
+			{
+				return getLength();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLength2213;
 		public virtual long getLength() 
 		{
@@ -216,6 +223,13 @@ namespace android.content.res
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._describeContents2216);
 		}
+		public new global::java.io.FileDescriptor FileDescriptor
+		{
+			get
+			{
+				return getFileDescriptor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor2217;
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{
@@ -224,6 +238,13 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor._getFileDescriptor2217)) as java.io.FileDescriptor;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getFileDescriptor2217)) as java.io.FileDescriptor;
+		}
+		public new long StartOffset
+		{
+			get
+			{
+				return getStartOffset();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStartOffset2218;
 		public virtual long getStartOffset() 
@@ -234,6 +255,13 @@ namespace android.content.res
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getStartOffset2218);
 		}
+		public new global::android.os.ParcelFileDescriptor ParcelFileDescriptor
+		{
+			get
+			{
+				return getParcelFileDescriptor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getParcelFileDescriptor2219;
 		public virtual global::android.os.ParcelFileDescriptor getParcelFileDescriptor() 
 		{
@@ -242,6 +270,13 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor2219)) as android.os.ParcelFileDescriptor;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor2219)) as android.os.ParcelFileDescriptor;
+		}
+		public new long DeclaredLength
+		{
+			get
+			{
+				return getDeclaredLength();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaredLength2220;
 		public virtual long getDeclaredLength() 

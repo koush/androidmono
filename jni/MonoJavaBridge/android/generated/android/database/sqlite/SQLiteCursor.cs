@@ -29,6 +29,13 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._close2800);
 		}
+		public new int Count
+		{
+			get
+			{
+				return getCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCount2801;
 		public override int getCount() 
 		{
@@ -46,6 +53,13 @@ namespace android.database.sqlite
 				return @__env.CallIntMethod(this.JvmHandle, global::android.database.sqlite.SQLiteCursor._getColumnIndex2802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._getColumnIndex2802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String[] ColumnNames
+		{
+			get
+			{
+				return getColumnNames();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNames2803;
 		public override global::java.lang.String[] getColumnNames() 
@@ -100,6 +114,13 @@ namespace android.database.sqlite
 				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteCursor._setWindow2808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._setWindow2808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.database.sqlite.SQLiteDatabase Database
+		{
+			get
+			{
+				return getDatabase();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDatabase2809;
 		public virtual global::android.database.sqlite.SQLiteDatabase getDatabase() 

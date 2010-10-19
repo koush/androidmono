@@ -20,6 +20,13 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SyncContext.staticClass, global::android.content.SyncContext._onFinished1790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.os.IBinder SyncContextBinder
+		{
+			get
+			{
+				return getSyncContextBinder();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSyncContextBinder1791;
 		public virtual global::android.os.IBinder getSyncContextBinder() 
 		{

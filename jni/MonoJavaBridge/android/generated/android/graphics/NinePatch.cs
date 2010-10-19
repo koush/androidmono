@@ -47,6 +47,13 @@ namespace android.graphics
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getTransparentRegion3407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region;
 		}
+		public new int Density
+		{
+			get
+			{
+				return getDensity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDensity3408;
 		public virtual int getDensity() 
 		{
@@ -56,6 +63,13 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getDensity3408);
 		}
+		public new int Width
+		{
+			get
+			{
+				return getWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWidth3409;
 		public virtual int getWidth() 
 		{
@@ -64,6 +78,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.NinePatch._getWidth3409);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getWidth3409);
+		}
+		public new int Height
+		{
+			get
+			{
+				return getHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeight3410;
 		public virtual int getHeight() 

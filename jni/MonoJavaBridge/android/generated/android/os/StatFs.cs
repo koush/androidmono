@@ -29,6 +29,13 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._restat6722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int BlockSize
+		{
+			get
+			{
+				return getBlockSize();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBlockSize6723;
 		public virtual int getBlockSize() 
 		{
@@ -37,6 +44,13 @@ namespace android.os
 				return @__env.CallIntMethod(this.JvmHandle, global::android.os.StatFs._getBlockSize6723);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockSize6723);
+		}
+		public new int BlockCount
+		{
+			get
+			{
+				return getBlockCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBlockCount6724;
 		public virtual int getBlockCount() 
@@ -47,6 +61,13 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockCount6724);
 		}
+		public new int FreeBlocks
+		{
+			get
+			{
+				return getFreeBlocks();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFreeBlocks6725;
 		public virtual int getFreeBlocks() 
 		{
@@ -55,6 +76,13 @@ namespace android.os
 				return @__env.CallIntMethod(this.JvmHandle, global::android.os.StatFs._getFreeBlocks6725);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.StatFs.staticClass, global::android.os.StatFs._getFreeBlocks6725);
+		}
+		public new int AvailableBlocks
+		{
+			get
+			{
+				return getAvailableBlocks();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAvailableBlocks6726;
 		public virtual int getAvailableBlocks() 

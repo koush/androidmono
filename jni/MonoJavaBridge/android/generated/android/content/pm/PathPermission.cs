@@ -20,6 +20,13 @@ namespace android.content.pm
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._writeToParcel2115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.lang.String ReadPermission
+		{
+			get
+			{
+				return getReadPermission();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getReadPermission2116;
 		public virtual global::java.lang.String getReadPermission() 
 		{
@@ -28,6 +35,13 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.pm.PathPermission._getReadPermission2116)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._getReadPermission2116)) as java.lang.String;
+		}
+		public new global::java.lang.String WritePermission
+		{
+			get
+			{
+				return getWritePermission();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWritePermission2117;
 		public virtual global::java.lang.String getWritePermission() 

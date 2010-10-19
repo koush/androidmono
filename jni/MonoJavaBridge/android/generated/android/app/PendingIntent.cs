@@ -202,6 +202,13 @@ namespace android.app
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.app.PendingIntent.staticClass, global::android.app.PendingIntent._getBroadcast724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.app.PendingIntent;
 		}
+		public new global::android.content.IntentSender IntentSender
+		{
+			get
+			{
+				return getIntentSender();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntentSender725;
 		public global::android.content.IntentSender getIntentSender() 
 		{
@@ -210,6 +217,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.PendingIntent._getIntentSender725)) as android.content.IntentSender;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._getIntentSender725)) as android.content.IntentSender;
+		}
+		public new global::java.lang.String TargetPackage
+		{
+			get
+			{
+				return getTargetPackage();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetPackage726;
 		public global::java.lang.String getTargetPackage() 

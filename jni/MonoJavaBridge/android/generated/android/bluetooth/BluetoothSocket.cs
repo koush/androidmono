@@ -20,6 +20,13 @@ namespace android.bluetooth
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket.staticClass, global::android.bluetooth.BluetoothSocket._close1049);
 		}
+		public new global::java.io.InputStream InputStream
+		{
+			get
+			{
+				return getInputStream();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream1050;
 		public global::java.io.InputStream getInputStream() 
 		{
@@ -38,6 +45,13 @@ namespace android.bluetooth
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket.staticClass, global::android.bluetooth.BluetoothSocket._connect1051);
 		}
+		public new global::java.io.OutputStream OutputStream
+		{
+			get
+			{
+				return getOutputStream();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOutputStream1052;
 		public global::java.io.OutputStream getOutputStream() 
 		{
@@ -46,6 +60,13 @@ namespace android.bluetooth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket._getOutputStream1052)) as java.io.OutputStream;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket.staticClass, global::android.bluetooth.BluetoothSocket._getOutputStream1052)) as java.io.OutputStream;
+		}
+		public new global::android.bluetooth.BluetoothDevice RemoteDevice
+		{
+			get
+			{
+				return getRemoteDevice();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemoteDevice1053;
 		public global::android.bluetooth.BluetoothDevice getRemoteDevice() 

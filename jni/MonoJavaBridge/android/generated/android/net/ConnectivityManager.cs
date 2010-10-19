@@ -26,6 +26,17 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._setNetworkPreference5124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int NetworkPreference
+		{
+			get
+			{
+				return getNetworkPreference();
+			}
+			set
+			{
+				setNetworkPreference(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkPreference5125;
 		public virtual int getNetworkPreference() 
 		{
@@ -34,6 +45,13 @@ namespace android.net
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._getNetworkPreference5125);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkPreference5125);
+		}
+		public new global::android.net.NetworkInfo ActiveNetworkInfo
+		{
+			get
+			{
+				return getActiveNetworkInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getActiveNetworkInfo5126;
 		public virtual global::android.net.NetworkInfo getActiveNetworkInfo() 
@@ -52,6 +70,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getNetworkInfo5127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkInfo5127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo;
+		}
+		public new global::android.net.NetworkInfo[] AllNetworkInfo
+		{
+			get
+			{
+				return getAllNetworkInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllNetworkInfo5128;
 		public virtual global::android.net.NetworkInfo[] getAllNetworkInfo() 
@@ -88,6 +113,13 @@ namespace android.net
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager._requestRouteToHost5131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._requestRouteToHost5131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public new bool BackgroundDataSetting
+		{
+			get
+			{
+				return getBackgroundDataSetting();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBackgroundDataSetting5132;
 		public virtual bool getBackgroundDataSetting() 

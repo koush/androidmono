@@ -29,6 +29,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._disableCarMode830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int CurrentModeType
+		{
+			get
+			{
+				return getCurrentModeType();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentModeType831;
 		public virtual int getCurrentModeType() 
 		{
@@ -46,6 +53,17 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.UiModeManager._setNightMode832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._setNightMode832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int NightMode
+		{
+			get
+			{
+				return getNightMode();
+			}
+			set
+			{
+				setNightMode(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNightMode833;
 		public virtual int getNightMode() 

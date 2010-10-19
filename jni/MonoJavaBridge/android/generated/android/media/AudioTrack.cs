@@ -91,6 +91,17 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._stop4895);
 		}
+		public new int State
+		{
+			get
+			{
+				return getState();
+			}
+			set
+			{
+				setState(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getState4896;
 		public virtual int getState() 
 		{
@@ -136,6 +147,13 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._play4900);
 		}
+		public new int SampleRate
+		{
+			get
+			{
+				return getSampleRate();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSampleRate4901;
 		public virtual int getSampleRate() 
 		{
@@ -144,6 +162,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioTrack._getSampleRate4901);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getSampleRate4901);
+		}
+		public new int AudioFormat
+		{
+			get
+			{
+				return getAudioFormat();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAudioFormat4902;
 		public virtual int getAudioFormat() 
@@ -154,6 +179,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getAudioFormat4902);
 		}
+		public new int ChannelConfiguration
+		{
+			get
+			{
+				return getChannelConfiguration();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChannelConfiguration4903;
 		public virtual int getChannelConfiguration() 
 		{
@@ -162,6 +194,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioTrack._getChannelConfiguration4903);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getChannelConfiguration4903);
+		}
+		public new int ChannelCount
+		{
+			get
+			{
+				return getChannelCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChannelCount4904;
 		public virtual int getChannelCount() 
@@ -172,6 +211,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getChannelCount4904);
 		}
+		public new int NotificationMarkerPosition
+		{
+			get
+			{
+				return getNotificationMarkerPosition();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNotificationMarkerPosition4905;
 		public virtual int getNotificationMarkerPosition() 
 		{
@@ -180,6 +226,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioTrack._getNotificationMarkerPosition4905);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getNotificationMarkerPosition4905);
+		}
+		public new int PositionNotificationPeriod
+		{
+			get
+			{
+				return getPositionNotificationPeriod();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPositionNotificationPeriod4906;
 		public virtual int getPositionNotificationPeriod() 
@@ -214,17 +267,38 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setPositionNotificationPeriod4909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public static float MinVolume
+		{
+			get
+			{
+				return getMinVolume();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMinVolume4910;
 		public static float getMinVolume() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getMinVolume4910);
 		}
+		public static float MaxVolume
+		{
+			get
+			{
+				return getMaxVolume();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMaxVolume4911;
 		public static float getMaxVolume() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getMaxVolume4911);
+		}
+		public new int PlaybackRate
+		{
+			get
+			{
+				return getPlaybackRate();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlaybackRate4912;
 		public virtual int getPlaybackRate() 
@@ -235,6 +309,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getPlaybackRate4912);
 		}
+		public new int StreamType
+		{
+			get
+			{
+				return getStreamType();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getStreamType4913;
 		public virtual int getStreamType() 
 		{
@@ -243,6 +324,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioTrack._getStreamType4913);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getStreamType4913);
+		}
+		public new int PlayState
+		{
+			get
+			{
+				return getPlayState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlayState4914;
 		public virtual int getPlayState() 
@@ -253,6 +341,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getPlayState4914);
 		}
+		protected new int NativeFrameCount
+		{
+			get
+			{
+				return getNativeFrameCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNativeFrameCount4915;
 		protected virtual int getNativeFrameCount() 
 		{
@@ -261,6 +356,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioTrack._getNativeFrameCount4915);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getNativeFrameCount4915);
+		}
+		public new int PlaybackHeadPosition
+		{
+			get
+			{
+				return getPlaybackHeadPosition();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlaybackHeadPosition4916;
 		public virtual int getPlaybackHeadPosition() 

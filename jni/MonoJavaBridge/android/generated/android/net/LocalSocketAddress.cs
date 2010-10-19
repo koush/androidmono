@@ -66,6 +66,13 @@ namespace android.net
 				global::android.net.LocalSocketAddress.Namespace._valueOf5182 = @__env.GetStaticMethodIDNoThrow(global::android.net.LocalSocketAddress.Namespace.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/net/LocalSocketAddress$Namespace;");
 			}
 		}
+		public new global::java.lang.String Name
+		{
+			get
+			{
+				return getName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getName5186;
 		public virtual global::java.lang.String getName() 
 		{

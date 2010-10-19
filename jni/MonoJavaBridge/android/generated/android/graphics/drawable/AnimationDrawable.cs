@@ -92,6 +92,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.AnimationDrawable.staticClass, global::android.graphics.drawable.AnimationDrawable._isRunning3841);
 		}
+		public new int NumberOfFrames
+		{
+			get
+			{
+				return getNumberOfFrames();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNumberOfFrames3842;
 		public virtual int getNumberOfFrames() 
 		{

@@ -29,6 +29,13 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._close5155);
 		}
+		public new global::java.io.InputStream InputStream
+		{
+			get
+			{
+				return getInputStream();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream5156;
 		public virtual global::java.io.InputStream getInputStream() 
 		{
@@ -65,6 +72,13 @@ namespace android.net
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isClosed5159);
 		}
+		public new global::java.io.OutputStream OutputStream
+		{
+			get
+			{
+				return getOutputStream();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOutputStream5160;
 		public virtual global::java.io.OutputStream getOutputStream() 
 		{
@@ -73,6 +87,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocket._getOutputStream5160)) as java.io.OutputStream;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getOutputStream5160)) as java.io.OutputStream;
+		}
+		public new global::java.io.FileDescriptor FileDescriptor
+		{
+			get
+			{
+				return getFileDescriptor();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor5161;
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
@@ -100,6 +121,13 @@ namespace android.net
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.LocalSocket._isConnected5163);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isConnected5163);
+		}
+		public new global::android.net.LocalSocketAddress LocalSocketAddress
+		{
+			get
+			{
+				return getLocalSocketAddress();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalSocketAddress5164;
 		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress() 
@@ -137,6 +165,17 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setReceiveBufferSize5167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ReceiveBufferSize
+		{
+			get
+			{
+				return getReceiveBufferSize();
+			}
+			set
+			{
+				setReceiveBufferSize(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getReceiveBufferSize5168;
 		public virtual int getReceiveBufferSize() 
 		{
@@ -154,6 +193,17 @@ namespace android.net
 				@__env.CallVoidMethod(this.JvmHandle, global::android.net.LocalSocket._setSoTimeout5169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setSoTimeout5169, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int SoTimeout
+		{
+			get
+			{
+				return getSoTimeout();
+			}
+			set
+			{
+				setSoTimeout(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSoTimeout5170;
 		public virtual int getSoTimeout() 
@@ -173,6 +223,17 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setSendBufferSize5171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int SendBufferSize
+		{
+			get
+			{
+				return getSendBufferSize();
+			}
+			set
+			{
+				setSendBufferSize(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSendBufferSize5172;
 		public virtual int getSendBufferSize() 
 		{
@@ -181,6 +242,13 @@ namespace android.net
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.LocalSocket._getSendBufferSize5172);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getSendBufferSize5172);
+		}
+		public new global::android.net.LocalSocketAddress RemoteSocketAddress
+		{
+			get
+			{
+				return getRemoteSocketAddress();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemoteSocketAddress5173;
 		public virtual global::android.net.LocalSocketAddress getRemoteSocketAddress() 
@@ -227,6 +295,13 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setFileDescriptorsForSend5177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.io.FileDescriptor[] AncillaryFileDescriptors
+		{
+			get
+			{
+				return getAncillaryFileDescriptors();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAncillaryFileDescriptors5178;
 		public virtual global::java.io.FileDescriptor[] getAncillaryFileDescriptors() 
 		{
@@ -235,6 +310,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.io.FileDescriptor>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocket._getAncillaryFileDescriptors5178)) as java.io.FileDescriptor[];
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.io.FileDescriptor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getAncillaryFileDescriptors5178)) as java.io.FileDescriptor[];
+		}
+		public new global::android.net.Credentials PeerCredentials
+		{
+			get
+			{
+				return getPeerCredentials();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPeerCredentials5179;
 		public virtual global::android.net.Credentials getPeerCredentials() 

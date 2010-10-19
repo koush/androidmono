@@ -17,20 +17,20 @@ namespace android.text.style
 		internal AlignmentSpan_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlignment8216;
+		internal static global::MonoJavaBridge.MethodId _getAlignment8762;
 		 global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_._getAlignment8216)) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_._getAlignment8762)) as android.text.Layout.Alignment;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_.staticClass, global::android.text.style.AlignmentSpan_._getAlignment8216)) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.AlignmentSpan_.staticClass, global::android.text.style.AlignmentSpan_._getAlignment8762)) as android.text.Layout.Alignment;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.AlignmentSpan_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/AlignmentSpan"));
-			global::android.text.style.AlignmentSpan_._getAlignment8216 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;");
+			global::android.text.style.AlignmentSpan_._getAlignment8762 = @__env.GetMethodIDNoThrow(global::android.text.style.AlignmentSpan_.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;");
 		}
 	}
 }

@@ -29,6 +29,13 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._bind6962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.app.Dialog Dialog
+		{
+			get
+			{
+				return getDialog();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDialog6963;
 		public global::android.app.Dialog getDialog() 
 		{
@@ -37,6 +44,13 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceScreen._getDialog6963)) as android.app.Dialog;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._getDialog6963)) as android.app.Dialog;
+		}
+		public new global::android.widget.ListAdapter RootAdapter
+		{
+			get
+			{
+				return getRootAdapter();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRootAdapter6964;
 		public global::android.widget.ListAdapter getRootAdapter() 

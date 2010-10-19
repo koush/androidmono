@@ -219,6 +219,13 @@ namespace android.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getState5219)) as android.net.NetworkInfo.State;
 		}
+		public new int Type
+		{
+			get
+			{
+				return getType();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getType5220;
 		public virtual int getType() 
 		{
@@ -227,6 +234,13 @@ namespace android.net
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.NetworkInfo._getType5220);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getType5220);
+		}
+		public new global::java.lang.String TypeName
+		{
+			get
+			{
+				return getTypeName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeName5221;
 		public virtual global::java.lang.String getTypeName() 
@@ -264,6 +278,13 @@ namespace android.net
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._describeContents5224);
 		}
+		public new global::java.lang.String Reason
+		{
+			get
+			{
+				return getReason();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getReason5225;
 		public virtual global::java.lang.String getReason() 
 		{
@@ -291,6 +312,13 @@ namespace android.net
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isFailover5227);
 		}
+		public new int Subtype
+		{
+			get
+			{
+				return getSubtype();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSubtype5228;
 		public virtual int getSubtype() 
 		{
@@ -299,6 +327,13 @@ namespace android.net
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.NetworkInfo._getSubtype5228);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtype5228);
+		}
+		public new global::java.lang.String SubtypeName
+		{
+			get
+			{
+				return getSubtypeName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubtypeName5229;
 		public virtual global::java.lang.String getSubtypeName() 
@@ -335,6 +370,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.NetworkInfo._getDetailedState5232)) as android.net.NetworkInfo.DetailedState;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getDetailedState5232)) as android.net.NetworkInfo.DetailedState;
+		}
+		public new global::java.lang.String ExtraInfo
+		{
+			get
+			{
+				return getExtraInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtraInfo5233;
 		public virtual global::java.lang.String getExtraInfo() 

@@ -29,6 +29,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable.staticClass, global::android.graphics.drawable.ClipDrawable._draw3883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations3884;
 		public override int getChangingConfigurations() 
 		{
@@ -74,6 +81,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable.staticClass, global::android.graphics.drawable.ClipDrawable._setVisible3888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity3889;
 		public override int getOpacity() 
 		{
@@ -110,6 +124,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable.staticClass, global::android.graphics.drawable.ClipDrawable._onBoundsChange3892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth3893;
 		public override int getIntrinsicWidth() 
 		{
@@ -118,6 +139,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable._getIntrinsicWidth3893);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable.staticClass, global::android.graphics.drawable.ClipDrawable._getIntrinsicWidth3893);
+		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight3894;
 		public override int getIntrinsicHeight() 
@@ -136,6 +164,13 @@ namespace android.graphics.drawable
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable._getPadding3895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ClipDrawable.staticClass, global::android.graphics.drawable.ClipDrawable._getPadding3895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState3896;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 

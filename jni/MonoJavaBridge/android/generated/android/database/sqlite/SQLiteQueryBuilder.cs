@@ -38,6 +38,17 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._setDistinct2916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String Tables
+		{
+			get
+			{
+				return getTables();
+			}
+			set
+			{
+				setTables(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTables2917;
 		public virtual global::java.lang.String getTables() 
 		{

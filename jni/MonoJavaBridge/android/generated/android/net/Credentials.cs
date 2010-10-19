@@ -11,6 +11,13 @@ namespace android.net
 		protected Credentials(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int Uid
+		{
+			get
+			{
+				return getUid();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getUid5133;
 		public virtual int getUid() 
 		{
@@ -20,6 +27,13 @@ namespace android.net
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.Credentials.staticClass, global::android.net.Credentials._getUid5133);
 		}
+		public new int Pid
+		{
+			get
+			{
+				return getPid();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPid5134;
 		public virtual int getPid() 
 		{
@@ -28,6 +42,13 @@ namespace android.net
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.Credentials._getPid5134);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.Credentials.staticClass, global::android.net.Credentials._getPid5134);
+		}
+		public new int Gid
+		{
+			get
+			{
+				return getGid();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGid5135;
 		public virtual int getGid() 

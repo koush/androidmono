@@ -11,6 +11,13 @@ namespace android.hardware
 		protected GeomagneticField(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new float Y
+		{
+			get
+			{
+				return getY();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getY4356;
 		public virtual float getY() 
 		{
@@ -19,6 +26,13 @@ namespace android.hardware
 				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getY4356);
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getY4356);
+		}
+		public new float X
+		{
+			get
+			{
+				return getX();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getX4357;
 		public virtual float getX() 
@@ -29,6 +43,13 @@ namespace android.hardware
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getX4357);
 		}
+		public new float Z
+		{
+			get
+			{
+				return getZ();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getZ4358;
 		public virtual float getZ() 
 		{
@@ -37,6 +58,13 @@ namespace android.hardware
 				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getZ4358);
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getZ4358);
+		}
+		public new float Declination
+		{
+			get
+			{
+				return getDeclination();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclination4359;
 		public virtual float getDeclination() 
@@ -47,6 +75,13 @@ namespace android.hardware
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getDeclination4359);
 		}
+		public new float Inclination
+		{
+			get
+			{
+				return getInclination();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInclination4360;
 		public virtual float getInclination() 
 		{
@@ -56,6 +91,13 @@ namespace android.hardware
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getInclination4360);
 		}
+		public new float HorizontalStrength
+		{
+			get
+			{
+				return getHorizontalStrength();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getHorizontalStrength4361;
 		public virtual float getHorizontalStrength() 
 		{
@@ -64,6 +106,13 @@ namespace android.hardware
 				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField._getHorizontalStrength4361);
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getHorizontalStrength4361);
+		}
+		public new float FieldStrength
+		{
+			get
+			{
+				return getFieldStrength();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFieldStrength4362;
 		public virtual float getFieldStrength() 

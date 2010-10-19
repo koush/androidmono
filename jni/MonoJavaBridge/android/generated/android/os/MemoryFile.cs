@@ -38,6 +38,13 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._close6484);
 		}
+		public new global::java.io.InputStream InputStream
+		{
+			get
+			{
+				return getInputStream();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream6485;
 		public virtual global::java.io.InputStream getInputStream() 
 		{
@@ -64,6 +71,13 @@ namespace android.os
 				@__env.CallVoidMethod(this.JvmHandle, global::android.os.MemoryFile._writeBytes6487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._writeBytes6487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+		}
+		public new global::java.io.OutputStream OutputStream
+		{
+			get
+			{
+				return getOutputStream();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOutputStream6488;
 		public virtual global::java.io.OutputStream getOutputStream() 

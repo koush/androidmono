@@ -20,6 +20,17 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._setText6797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String Text
+		{
+			get
+			{
+				return getText();
+			}
+			set
+			{
+				setText(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getText6798;
 		public virtual global::java.lang.String getText() 
 		{
@@ -100,6 +111,13 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference._onAddEditTextToDialogView6806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.EditTextPreference.staticClass, global::android.preference.EditTextPreference._onAddEditTextToDialogView6806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public new global::android.widget.EditText EditText
+		{
+			get
+			{
+				return getEditText();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEditText6807;
 		public virtual global::android.widget.EditText getEditText() 

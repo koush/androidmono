@@ -103,6 +103,13 @@ namespace android.content.res
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.AssetManager.AssetInputStream.staticClass, global::android.content.res.AssetManager.AssetInputStream._markSupported2233);
 			}
+			public new int AssetInt
+			{
+				get
+				{
+					return getAssetInt();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getAssetInt2234;
 			public int getAssetInt() 
 			{
@@ -208,6 +215,13 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.AssetManager._openXmlResourceParser2243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.XmlResourceParser;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.AssetManager.staticClass, global::android.content.res.AssetManager._openXmlResourceParser2243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.XmlResourceParser;
+		}
+		public new global::java.lang.String[] Locales
+		{
+			get
+			{
+				return getLocales();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocales2244;
 		public global::java.lang.String[] getLocales() 

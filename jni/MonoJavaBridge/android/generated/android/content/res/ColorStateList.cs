@@ -77,6 +77,13 @@ namespace android.content.res
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._getColorForState2252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new int DefaultColor
+		{
+			get
+			{
+				return getDefaultColor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultColor2253;
 		public virtual int getDefaultColor() 
 		{

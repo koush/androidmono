@@ -56,6 +56,13 @@ namespace android.appwidget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHostView.staticClass, global::android.appwidget.AppWidgetHostView._setAppWidget970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new int AppWidgetId
+		{
+			get
+			{
+				return getAppWidgetId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAppWidgetId971;
 		public virtual int getAppWidgetId() 
 		{
@@ -64,6 +71,13 @@ namespace android.appwidget
 				return @__env.CallIntMethod(this.JvmHandle, global::android.appwidget.AppWidgetHostView._getAppWidgetId971);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.appwidget.AppWidgetHostView.staticClass, global::android.appwidget.AppWidgetHostView._getAppWidgetId971);
+		}
+		public new global::android.appwidget.AppWidgetProviderInfo AppWidgetInfo
+		{
+			get
+			{
+				return getAppWidgetInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAppWidgetInfo972;
 		public virtual global::android.appwidget.AppWidgetProviderInfo getAppWidgetInfo() 
@@ -92,6 +106,13 @@ namespace android.appwidget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetHostView.staticClass, global::android.appwidget.AppWidgetHostView._prepareView974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		protected new global::android.view.View DefaultView
+		{
+			get
+			{
+				return getDefaultView();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultView975;
 		protected virtual global::android.view.View getDefaultView() 
 		{
@@ -100,6 +121,13 @@ namespace android.appwidget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetHostView._getDefaultView975)) as android.view.View;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetHostView.staticClass, global::android.appwidget.AppWidgetHostView._getDefaultView975)) as android.view.View;
+		}
+		protected new global::android.view.View ErrorView
+		{
+			get
+			{
+				return getErrorView();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorView976;
 		protected virtual global::android.view.View getErrorView() 

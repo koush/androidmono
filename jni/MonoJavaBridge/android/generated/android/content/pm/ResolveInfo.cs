@@ -110,6 +110,13 @@ namespace android.content.pm
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.ResolveInfo.staticClass, global::android.content.pm.ResolveInfo._loadIcon2164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
+		public new int IconResource
+		{
+			get
+			{
+				return getIconResource();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIconResource2165;
 		public virtual int getIconResource() 
 		{

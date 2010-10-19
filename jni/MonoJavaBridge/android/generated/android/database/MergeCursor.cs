@@ -92,6 +92,13 @@ namespace android.database
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._unregisterContentObserver2769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Count
+		{
+			get
+			{
+				return getCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCount2770;
 		public override int getCount() 
 		{
@@ -100,6 +107,13 @@ namespace android.database
 				return @__env.CallIntMethod(this.JvmHandle, global::android.database.MergeCursor._getCount2770);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getCount2770);
+		}
+		public new global::java.lang.String[] ColumnNames
+		{
+			get
+			{
+				return getColumnNames();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNames2771;
 		public override global::java.lang.String[] getColumnNames() 

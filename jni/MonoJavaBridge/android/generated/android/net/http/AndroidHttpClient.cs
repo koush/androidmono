@@ -32,6 +32,13 @@ namespace android.net.http
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._close5388);
 		}
+		public new global::org.apache.http.@params.HttpParams Params
+		{
+			get
+			{
+				return getParams();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getParams5389;
 		public global::org.apache.http.@params.HttpParams getParams() 
 		{
@@ -124,6 +131,13 @@ namespace android.net.http
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.http.AndroidHttpClient.staticClass, global::android.net.http.AndroidHttpClient._getUngzippedContent5399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
+		}
+		public new global::org.apache.http.conn.ClientConnectionManager ConnectionManager
+		{
+			get
+			{
+				return getConnectionManager();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnectionManager5400;
 		public global::org.apache.http.conn.ClientConnectionManager getConnectionManager() 

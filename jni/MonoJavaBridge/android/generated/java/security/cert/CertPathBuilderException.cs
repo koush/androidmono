@@ -1,3 +1,52 @@
 namespace java.security.cert
 {
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class CertPathBuilderException : java.security.GeneralSecurityException
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static CertPathBuilderException()
+		{
+			InitJNI();
+		}
+		protected CertPathBuilderException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _CertPathBuilderException17783;
+		public CertPathBuilderException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathBuilderException.staticClass, global::java.security.cert.CertPathBuilderException._CertPathBuilderException17783);
+			Init(@__env, handle);
+		}
+		internal static global::MonoJavaBridge.MethodId _CertPathBuilderException17784;
+		public CertPathBuilderException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathBuilderException.staticClass, global::java.security.cert.CertPathBuilderException._CertPathBuilderException17784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
+		}
+		internal static global::MonoJavaBridge.MethodId _CertPathBuilderException17785;
+		public CertPathBuilderException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathBuilderException.staticClass, global::java.security.cert.CertPathBuilderException._CertPathBuilderException17785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
+		}
+		internal static global::MonoJavaBridge.MethodId _CertPathBuilderException17786;
+		public CertPathBuilderException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathBuilderException.staticClass, global::java.security.cert.CertPathBuilderException._CertPathBuilderException17786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::java.security.cert.CertPathBuilderException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/CertPathBuilderException"));
+			global::java.security.cert.CertPathBuilderException._CertPathBuilderException17783 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderException.staticClass, "<init>", "()V");
+			global::java.security.cert.CertPathBuilderException._CertPathBuilderException17784 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.security.cert.CertPathBuilderException._CertPathBuilderException17785 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::java.security.cert.CertPathBuilderException._CertPathBuilderException17786 = @__env.GetMethodIDNoThrow(global::java.security.cert.CertPathBuilderException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+		}
+	}
 }

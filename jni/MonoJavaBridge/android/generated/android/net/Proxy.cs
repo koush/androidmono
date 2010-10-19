@@ -17,6 +17,13 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getPort5235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public static int DefaultPort
+		{
+			get
+			{
+				return getDefaultPort();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultPort5236;
 		public static int getDefaultPort() 
 		{
@@ -28,6 +35,13 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getHost5237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+		}
+		public static global::java.lang.String DefaultHost
+		{
+			get
+			{
+				return getDefaultHost();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultHost5238;
 		public static global::java.lang.String getDefaultHost() 

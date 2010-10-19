@@ -11,6 +11,13 @@ namespace android.graphics
 		protected YuvImage(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int Width
+		{
+			get
+			{
+				return getWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWidth3823;
 		public virtual int getWidth() 
 		{
@@ -19,6 +26,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getWidth3823);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getWidth3823);
+		}
+		public new int Height
+		{
+			get
+			{
+				return getHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeight3824;
 		public virtual int getHeight() 
@@ -38,6 +52,13 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._compressToJpeg3825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new byte[] YuvData
+		{
+			get
+			{
+				return getYuvData();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getYuvData3826;
 		public virtual byte[] getYuvData() 
 		{
@@ -47,6 +68,13 @@ namespace android.graphics
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvData3826)) as byte[];
 		}
+		public new int YuvFormat
+		{
+			get
+			{
+				return getYuvFormat();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getYuvFormat3827;
 		public virtual int getYuvFormat() 
 		{
@@ -55,6 +83,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.YuvImage._getYuvFormat3827);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.YuvImage.staticClass, global::android.graphics.YuvImage._getYuvFormat3827);
+		}
+		public new int[] Strides
+		{
+			get
+			{
+				return getStrides();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrides3828;
 		public virtual int[] getStrides() 

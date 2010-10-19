@@ -89,6 +89,13 @@ namespace android.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket5249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.net.Socket;
 		}
+		public new global::java.lang.String[] DefaultCipherSuites
+		{
+			get
+			{
+				return getDefaultCipherSuites();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultCipherSuites5250;
 		public override global::java.lang.String[] getDefaultCipherSuites() 
 		{
@@ -97,6 +104,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites5250)) as java.lang.String[];
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites5250)) as java.lang.String[];
+		}
+		public new global::java.lang.String[] SupportedCipherSuites
+		{
+			get
+			{
+				return getSupportedCipherSuites();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites5251;
 		public override global::java.lang.String[] getSupportedCipherSuites() 

@@ -127,6 +127,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentProviderOperation.staticClass, global::android.content.ContentProviderOperation._toString1177)) as java.lang.String;
 		}
+		public new global::android.net.Uri Uri
+		{
+			get
+			{
+				return getUri();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getUri1178;
 		public virtual global::android.net.Uri getUri() 
 		{

@@ -183,6 +183,13 @@ namespace android.net.wifi
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._disconnect5505);
 		}
+		public new global::java.util.List ConfiguredNetworks
+		{
+			get
+			{
+				return getConfiguredNetworks();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getConfiguredNetworks5506;
 		public virtual global::java.util.List getConfiguredNetworks() 
 		{
@@ -264,6 +271,13 @@ namespace android.net.wifi
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._startScan5514);
 		}
+		public new global::android.net.wifi.WifiInfo ConnectionInfo
+		{
+			get
+			{
+				return getConnectionInfo();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getConnectionInfo5515;
 		public virtual global::android.net.wifi.WifiInfo getConnectionInfo() 
 		{
@@ -272,6 +286,13 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager._getConnectionInfo5515)) as android.net.wifi.WifiInfo;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getConnectionInfo5515)) as android.net.wifi.WifiInfo;
+		}
+		public new global::java.util.List ScanResults
+		{
+			get
+			{
+				return getScanResults();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getScanResults5516;
 		public virtual global::java.util.List getScanResults() 
@@ -291,6 +312,13 @@ namespace android.net.wifi
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._saveConfiguration5517);
 		}
+		public new global::android.net.DhcpInfo DhcpInfo
+		{
+			get
+			{
+				return getDhcpInfo();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDhcpInfo5518;
 		public virtual global::android.net.DhcpInfo getDhcpInfo() 
 		{
@@ -308,6 +336,13 @@ namespace android.net.wifi
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager._setWifiEnabled5519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._setWifiEnabled5519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int WifiState
+		{
+			get
+			{
+				return getWifiState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWifiState5520;
 		public virtual int getWifiState() 

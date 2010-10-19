@@ -26,6 +26,13 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.MailTo.staticClass, global::android.net.MailTo._parse5191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.MailTo;
 		}
+		public new global::java.util.Map Headers
+		{
+			get
+			{
+				return getHeaders();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getHeaders5192;
 		public virtual global::java.util.Map getHeaders() 
 		{
@@ -41,6 +48,13 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.net.MailTo.staticClass, global::android.net.MailTo._isMailTo5193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String To
+		{
+			get
+			{
+				return getTo();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTo5194;
 		public virtual global::java.lang.String getTo() 
 		{
@@ -49,6 +63,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.MailTo._getTo5194)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.MailTo.staticClass, global::android.net.MailTo._getTo5194)) as java.lang.String;
+		}
+		public new global::java.lang.String Cc
+		{
+			get
+			{
+				return getCc();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCc5195;
 		public virtual global::java.lang.String getCc() 
@@ -59,6 +80,13 @@ namespace android.net
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.MailTo.staticClass, global::android.net.MailTo._getCc5195)) as java.lang.String;
 		}
+		public new global::java.lang.String Subject
+		{
+			get
+			{
+				return getSubject();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSubject5196;
 		public virtual global::java.lang.String getSubject() 
 		{
@@ -67,6 +95,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.MailTo._getSubject5196)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.MailTo.staticClass, global::android.net.MailTo._getSubject5196)) as java.lang.String;
+		}
+		public new global::java.lang.String Body
+		{
+			get
+			{
+				return getBody();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBody5197;
 		public virtual global::java.lang.String getBody() 

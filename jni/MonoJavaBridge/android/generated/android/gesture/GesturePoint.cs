@@ -12,7 +12,7 @@ namespace android.gesture
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone3028;
-		public virtual new global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

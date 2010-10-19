@@ -32,6 +32,13 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Typeface.staticClass, global::android.graphics.Typeface._create3808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Typeface;
 		}
+		public new int Style
+		{
+			get
+			{
+				return getStyle();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getStyle3809;
 		public virtual int getStyle() 
 		{

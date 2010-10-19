@@ -22,6 +22,13 @@ namespace android.content
 			internal AuthorityEntry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
+			public new int Port
+			{
+				get
+				{
+					return getPort();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getPort1660;
 			public int getPort() 
 			{
@@ -30,6 +37,13 @@ namespace android.content
 					return @__env.CallIntMethod(this.JvmHandle, global::android.content.IntentFilter.AuthorityEntry._getPort1660);
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.IntentFilter.AuthorityEntry.staticClass, global::android.content.IntentFilter.AuthorityEntry._getPort1660);
+			}
+			public new global::java.lang.String Host
+			{
+				get
+				{
+					return getHost();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getHost1661;
 			public global::java.lang.String getHost() 
@@ -107,6 +121,17 @@ namespace android.content
 				@__env.CallVoidMethod(this.JvmHandle, global::android.content.IntentFilter._setPriority1666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._setPriority1666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int Priority
+		{
+			get
+			{
+				return getPriority();
+			}
+			set
+			{
+				setPriority(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPriority1667;
 		public virtual int getPriority() 

@@ -65,6 +65,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onStop287);
 		}
+		public new global::android.app.Activity CurrentActivity
+		{
+			get
+			{
+				return getCurrentActivity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentActivity288;
 		public virtual global::android.app.Activity getCurrentActivity() 
 		{
@@ -73,6 +80,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.ActivityGroup._getCurrentActivity288)) as android.app.Activity;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._getCurrentActivity288)) as android.app.Activity;
+		}
+		public new global::android.app.LocalActivityManager LocalActivityManager
+		{
+			get
+			{
+				return getLocalActivityManager();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalActivityManager289;
 		public virtual global::android.app.LocalActivityManager getLocalActivityManager() 

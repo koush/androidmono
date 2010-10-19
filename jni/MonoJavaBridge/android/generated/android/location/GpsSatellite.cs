@@ -11,6 +11,13 @@ namespace android.location
 		internal GpsSatellite(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int Prn
+		{
+			get
+			{
+				return getPrn();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPrn4716;
 		public int getPrn() 
 		{
@@ -19,6 +26,13 @@ namespace android.location
 				return @__env.CallIntMethod(this.JvmHandle, global::android.location.GpsSatellite._getPrn4716);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getPrn4716);
+		}
+		public new float Snr
+		{
+			get
+			{
+				return getSnr();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSnr4717;
 		public float getSnr() 
@@ -29,6 +43,13 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getSnr4717);
 		}
+		public new float Elevation
+		{
+			get
+			{
+				return getElevation();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getElevation4718;
 		public float getElevation() 
 		{
@@ -37,6 +58,13 @@ namespace android.location
 				return @__env.CallFloatMethod(this.JvmHandle, global::android.location.GpsSatellite._getElevation4718);
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getElevation4718);
+		}
+		public new float Azimuth
+		{
+			get
+			{
+				return getAzimuth();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAzimuth4719;
 		public float getAzimuth() 

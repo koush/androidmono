@@ -17,20 +17,20 @@ namespace java.io
 		internal FileFilter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _accept12555;
+		internal static global::MonoJavaBridge.MethodId _accept13423;
 		 bool java.io.FileFilter.accept(java.io.File arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileFilter_._accept12555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.FileFilter_._accept13423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileFilter_.staticClass, global::java.io.FileFilter_._accept12555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FileFilter_.staticClass, global::java.io.FileFilter_._accept13423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FileFilter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileFilter"));
-			global::java.io.FileFilter_._accept12555 = @__env.GetMethodIDNoThrow(global::java.io.FileFilter_.staticClass, "accept", "(Ljava/io/File;)Z");
+			global::java.io.FileFilter_._accept13423 = @__env.GetMethodIDNoThrow(global::java.io.FileFilter_.staticClass, "accept", "(Ljava/io/File;)Z");
 		}
 	}
 }

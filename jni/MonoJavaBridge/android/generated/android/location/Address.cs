@@ -20,6 +20,17 @@ namespace android.location
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._toString4649)) as java.lang.String;
 		}
+		public new global::java.lang.String Locality
+		{
+			get
+			{
+				return getLocality();
+			}
+			set
+			{
+				setLocality(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLocality4650;
 		public virtual global::java.lang.String getLocality() 
 		{
@@ -47,6 +58,17 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._describeContents4652);
 		}
+		public new global::android.os.Bundle Extras
+		{
+			get
+			{
+				return getExtras();
+			}
+			set
+			{
+				setExtras(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getExtras4653;
 		public virtual global::android.os.Bundle getExtras() 
 		{
@@ -56,6 +78,13 @@ namespace android.location
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._getExtras4653)) as android.os.Bundle;
 		}
+		public new global::java.util.Locale Locale
+		{
+			get
+			{
+				return getLocale();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLocale4654;
 		public virtual global::java.util.Locale getLocale() 
 		{
@@ -64,6 +93,13 @@ namespace android.location
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.Address._getLocale4654)) as java.util.Locale;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._getLocale4654)) as java.util.Locale;
+		}
+		public new int MaxAddressLineIndex
+		{
+			get
+			{
+				return getMaxAddressLineIndex();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxAddressLineIndex4655;
 		public virtual int getMaxAddressLineIndex() 
@@ -92,6 +128,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setAddressLine4657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.lang.String FeatureName
+		{
+			get
+			{
+				return getFeatureName();
+			}
+			set
+			{
+				setFeatureName(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFeatureName4658;
 		public virtual global::java.lang.String getFeatureName() 
 		{
@@ -110,6 +157,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setFeatureName4659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String AdminArea
+		{
+			get
+			{
+				return getAdminArea();
+			}
+			set
+			{
+				setAdminArea(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAdminArea4660;
 		public virtual global::java.lang.String getAdminArea() 
 		{
@@ -127,6 +185,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Address._setAdminArea4661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setAdminArea4661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String SubAdminArea
+		{
+			get
+			{
+				return getSubAdminArea();
+			}
+			set
+			{
+				setSubAdminArea(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubAdminArea4662;
 		public virtual global::java.lang.String getSubAdminArea() 
@@ -155,6 +224,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setLocality4664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String SubLocality
+		{
+			get
+			{
+				return getSubLocality();
+			}
+			set
+			{
+				setSubLocality(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSubLocality4665;
 		public virtual global::java.lang.String getSubLocality() 
 		{
@@ -172,6 +252,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Address._setSubLocality4666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setSubLocality4666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String Thoroughfare
+		{
+			get
+			{
+				return getThoroughfare();
+			}
+			set
+			{
+				setThoroughfare(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getThoroughfare4667;
 		public virtual global::java.lang.String getThoroughfare() 
@@ -191,6 +282,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setThoroughfare4668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String SubThoroughfare
+		{
+			get
+			{
+				return getSubThoroughfare();
+			}
+			set
+			{
+				setSubThoroughfare(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSubThoroughfare4669;
 		public virtual global::java.lang.String getSubThoroughfare() 
 		{
@@ -208,6 +310,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Address._setSubThoroughfare4670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setSubThoroughfare4670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String Premises
+		{
+			get
+			{
+				return getPremises();
+			}
+			set
+			{
+				setPremises(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPremises4671;
 		public virtual global::java.lang.String getPremises() 
@@ -227,6 +340,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setPremises4672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String PostalCode
+		{
+			get
+			{
+				return getPostalCode();
+			}
+			set
+			{
+				setPostalCode(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPostalCode4673;
 		public virtual global::java.lang.String getPostalCode() 
 		{
@@ -245,6 +369,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setPostalCode4674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String CountryCode
+		{
+			get
+			{
+				return getCountryCode();
+			}
+			set
+			{
+				setCountryCode(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCountryCode4675;
 		public virtual global::java.lang.String getCountryCode() 
 		{
@@ -262,6 +397,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Address._setCountryCode4676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setCountryCode4676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String CountryName
+		{
+			get
+			{
+				return getCountryName();
+			}
+			set
+			{
+				setCountryName(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCountryName4677;
 		public virtual global::java.lang.String getCountryName() 
@@ -289,6 +435,17 @@ namespace android.location
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.Address._hasLatitude4679);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._hasLatitude4679);
+		}
+		public new double Latitude
+		{
+			get
+			{
+				return getLatitude();
+			}
+			set
+			{
+				setLatitude(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLatitude4680;
 		public virtual double getLatitude() 
@@ -326,6 +483,17 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._hasLongitude4683);
 		}
+		public new double Longitude
+		{
+			get
+			{
+				return getLongitude();
+			}
+			set
+			{
+				setLongitude(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLongitude4684;
 		public virtual double getLongitude() 
 		{
@@ -353,6 +521,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._clearLongitude4686);
 		}
+		public new global::java.lang.String Phone
+		{
+			get
+			{
+				return getPhone();
+			}
+			set
+			{
+				setPhone(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPhone4687;
 		public virtual global::java.lang.String getPhone() 
 		{
@@ -370,6 +549,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Address._setPhone4688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Address.staticClass, global::android.location.Address._setPhone4688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String Url
+		{
+			get
+			{
+				return getUrl();
+			}
+			set
+			{
+				setUrl(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUrl4689;
 		public virtual global::java.lang.String getUrl() 

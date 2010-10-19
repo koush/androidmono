@@ -314,6 +314,13 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepare4996);
 		}
+		public new int Duration
+		{
+			get
+			{
+				return getDuration();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDuration4997;
 		public virtual int getDuration() 
 		{
@@ -404,6 +411,13 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setScreenOnWhilePlaying5006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int VideoWidth
+		{
+			get
+			{
+				return getVideoWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVideoWidth5007;
 		public virtual int getVideoWidth() 
 		{
@@ -412,6 +426,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.MediaPlayer._getVideoWidth5007);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoWidth5007);
+		}
+		public new int VideoHeight
+		{
+			get
+			{
+				return getVideoHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVideoHeight5008;
 		public virtual int getVideoHeight() 
@@ -439,6 +460,13 @@ namespace android.media
 				@__env.CallVoidMethod(this.JvmHandle, global::android.media.MediaPlayer._seekTo5010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._seekTo5010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int CurrentPosition
+		{
+			get
+			{
+				return getCurrentPosition();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentPosition5011;
 		public virtual int getCurrentPosition() 

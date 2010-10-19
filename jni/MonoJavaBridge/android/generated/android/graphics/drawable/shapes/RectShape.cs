@@ -12,7 +12,7 @@ namespace android.graphics.drawable.shapes
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone4235;
-		public virtual new global::android.graphics.drawable.shapes.RectShape clone() 
+		public virtual global::android.graphics.drawable.shapes.RectShape clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

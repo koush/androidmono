@@ -11,36 +11,36 @@ namespace android.view.animation
 		protected CycleInterpolator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getInterpolation9991;
+		internal static global::MonoJavaBridge.MethodId _getInterpolation10537;
 		public virtual float getInterpolation(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.CycleInterpolator._getInterpolation9991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.CycleInterpolator._getInterpolation10537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._getInterpolation9991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._getInterpolation10537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _CycleInterpolator9992;
+		internal static global::MonoJavaBridge.MethodId _CycleInterpolator10538;
 		public CycleInterpolator(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._CycleInterpolator9992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._CycleInterpolator10538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _CycleInterpolator9993;
+		internal static global::MonoJavaBridge.MethodId _CycleInterpolator10539;
 		public CycleInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._CycleInterpolator9993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._CycleInterpolator10539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.CycleInterpolator.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/CycleInterpolator"));
-			global::android.view.animation.CycleInterpolator._getInterpolation9991 = @__env.GetMethodIDNoThrow(global::android.view.animation.CycleInterpolator.staticClass, "getInterpolation", "(F)F");
-			global::android.view.animation.CycleInterpolator._CycleInterpolator9992 = @__env.GetMethodIDNoThrow(global::android.view.animation.CycleInterpolator.staticClass, "<init>", "(F)V");
-			global::android.view.animation.CycleInterpolator._CycleInterpolator9993 = @__env.GetMethodIDNoThrow(global::android.view.animation.CycleInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.animation.CycleInterpolator._getInterpolation10537 = @__env.GetMethodIDNoThrow(global::android.view.animation.CycleInterpolator.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.CycleInterpolator._CycleInterpolator10538 = @__env.GetMethodIDNoThrow(global::android.view.animation.CycleInterpolator.staticClass, "<init>", "(F)V");
+			global::android.view.animation.CycleInterpolator._CycleInterpolator10539 = @__env.GetMethodIDNoThrow(global::android.view.animation.CycleInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

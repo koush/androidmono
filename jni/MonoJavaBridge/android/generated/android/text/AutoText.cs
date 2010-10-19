@@ -11,24 +11,24 @@ namespace android.text
 		protected AutoText(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get7604;
+		internal static global::MonoJavaBridge.MethodId _get8150;
 		public static global::java.lang.String get(java.lang.CharSequence arg0, int arg1, int arg2, android.view.View arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.AutoText.staticClass, global::android.text.AutoText._get7604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.AutoText.staticClass, global::android.text.AutoText._get8150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSize7605;
+		internal static global::MonoJavaBridge.MethodId _getSize8151;
 		public static int getSize(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.text.AutoText.staticClass, global::android.text.AutoText._getSize7605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticIntMethod(android.text.AutoText.staticClass, global::android.text.AutoText._getSize8151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.AutoText.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/AutoText"));
-			global::android.text.AutoText._get7604 = @__env.GetStaticMethodIDNoThrow(global::android.text.AutoText.staticClass, "get", "(Ljava/lang/CharSequence;IILandroid/view/View;)Ljava/lang/String;");
-			global::android.text.AutoText._getSize7605 = @__env.GetStaticMethodIDNoThrow(global::android.text.AutoText.staticClass, "getSize", "(Landroid/view/View;)I");
+			global::android.text.AutoText._get8150 = @__env.GetStaticMethodIDNoThrow(global::android.text.AutoText.staticClass, "get", "(Ljava/lang/CharSequence;IILandroid/view/View;)Ljava/lang/String;");
+			global::android.text.AutoText._getSize8151 = @__env.GetStaticMethodIDNoThrow(global::android.text.AutoText.staticClass, "getSize", "(Landroid/view/View;)I");
 		}
 	}
 }

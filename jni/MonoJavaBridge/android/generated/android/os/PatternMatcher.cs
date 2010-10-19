@@ -20,6 +20,13 @@ namespace android.os
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._toString6664)) as java.lang.String;
 		}
+		public new int Type
+		{
+			get
+			{
+				return getType();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getType6665;
 		public virtual int getType() 
 		{
@@ -28,6 +35,13 @@ namespace android.os
 				return @__env.CallIntMethod(this.JvmHandle, global::android.os.PatternMatcher._getType6665);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getType6665);
+		}
+		public new global::java.lang.String Path
+		{
+			get
+			{
+				return getPath();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath6666;
 		public virtual global::java.lang.String getPath() 

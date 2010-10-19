@@ -18,30 +18,30 @@ namespace android.webkit
 		internal PluginStub_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEmbeddedView10358;
+		internal static global::MonoJavaBridge.MethodId _getEmbeddedView10904;
 		 global::android.view.View android.webkit.PluginStub.getEmbeddedView(int arg0, android.content.Context arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_._getEmbeddedView10358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_._getEmbeddedView10904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_.staticClass, global::android.webkit.PluginStub_._getEmbeddedView10358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_.staticClass, global::android.webkit.PluginStub_._getEmbeddedView10904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _getFullScreenView10359;
+		internal static global::MonoJavaBridge.MethodId _getFullScreenView10905;
 		 global::android.view.View android.webkit.PluginStub.getFullScreenView(int arg0, android.content.Context arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_._getFullScreenView10359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_._getFullScreenView10905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_.staticClass, global::android.webkit.PluginStub_._getFullScreenView10359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.PluginStub_.staticClass, global::android.webkit.PluginStub_._getFullScreenView10905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.PluginStub_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/PluginStub"));
-			global::android.webkit.PluginStub_._getEmbeddedView10358 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginStub_.staticClass, "getEmbeddedView", "(ILandroid/content/Context;)Landroid/view/View;");
-			global::android.webkit.PluginStub_._getFullScreenView10359 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginStub_.staticClass, "getFullScreenView", "(ILandroid/content/Context;)Landroid/view/View;");
+			global::android.webkit.PluginStub_._getEmbeddedView10904 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginStub_.staticClass, "getEmbeddedView", "(ILandroid/content/Context;)Landroid/view/View;");
+			global::android.webkit.PluginStub_._getFullScreenView10905 = @__env.GetMethodIDNoThrow(global::android.webkit.PluginStub_.staticClass, "getFullScreenView", "(ILandroid/content/Context;)Landroid/view/View;");
 		}
 	}
 }

@@ -29,6 +29,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._draw3849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations3850;
 		public override int getChangingConfigurations() 
 		{
@@ -74,6 +81,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setColorFilter3854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity3855;
 		public override int getOpacity() 
 		{
@@ -92,6 +106,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._onBoundsChange3856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth3857;
 		public override int getIntrinsicWidth() 
 		{
@@ -100,6 +121,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getIntrinsicWidth3857);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getIntrinsicWidth3857);
+		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight3858;
 		public override int getIntrinsicHeight() 
@@ -119,6 +147,13 @@ namespace android.graphics.drawable
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._mutate3859)) as android.graphics.drawable.Drawable;
 		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState3860;
 		public sealed override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{
@@ -137,6 +172,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setGravity3861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.Paint Paint
+		{
+			get
+			{
+				return getPaint();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPaint3862;
 		public virtual global::android.graphics.Paint getPaint() 
 		{
@@ -145,6 +187,17 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getPaint3862)) as android.graphics.Paint;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getPaint3862)) as android.graphics.Paint;
+		}
+		public new int Gravity
+		{
+			get
+			{
+				return getGravity();
+			}
+			set
+			{
+				setGravity(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGravity3863;
 		public virtual int getGravity() 
@@ -163,6 +216,13 @@ namespace android.graphics.drawable
 				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._setAntiAlias3864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setAntiAlias3864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.graphics.Bitmap Bitmap
+		{
+			get
+			{
+				return getBitmap();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBitmap3865;
 		public virtual global::android.graphics.Bitmap getBitmap() 
@@ -200,6 +260,17 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTargetDensity3868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.Shader.TileMode TileModeX
+		{
+			get
+			{
+				return getTileModeX();
+			}
+			set
+			{
+				setTileModeX(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTileModeX3869;
 		public virtual global::android.graphics.Shader.TileMode getTileModeX() 
 		{
@@ -208,6 +279,17 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getTileModeX3869)) as android.graphics.Shader.TileMode;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeX3869)) as android.graphics.Shader.TileMode;
+		}
+		public new global::android.graphics.Shader.TileMode TileModeY
+		{
+			get
+			{
+				return getTileModeY();
+			}
+			set
+			{
+				setTileModeY(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTileModeY3870;
 		public virtual global::android.graphics.Shader.TileMode getTileModeY() 

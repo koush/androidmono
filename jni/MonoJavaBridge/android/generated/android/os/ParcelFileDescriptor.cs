@@ -138,6 +138,13 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._fromSocket6644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.ParcelFileDescriptor;
 		}
+		public new global::java.io.FileDescriptor FileDescriptor
+		{
+			get
+			{
+				return getFileDescriptor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor6645;
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{
@@ -146,6 +153,13 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.ParcelFileDescriptor._getFileDescriptor6645)) as java.io.FileDescriptor;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._getFileDescriptor6645)) as java.io.FileDescriptor;
+		}
+		public new long StatSize
+		{
+			get
+			{
+				return getStatSize();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatSize6646;
 		public virtual long getStatSize() 

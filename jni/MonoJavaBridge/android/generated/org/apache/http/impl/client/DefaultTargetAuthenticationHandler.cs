@@ -1,3 +1,48 @@
 namespace org.apache.http.impl.client
 {
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class DefaultTargetAuthenticationHandler : org.apache.http.impl.client.AbstractAuthenticationHandler
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DefaultTargetAuthenticationHandler()
+		{
+			InitJNI();
+		}
+		protected DefaultTargetAuthenticationHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _isAuthenticationRequested26182;
+		public override bool isAuthenticationRequested(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._isAuthenticationRequested26182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._isAuthenticationRequested26182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _getChallenges26183;
+		public override global::java.util.Map getChallenges(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._getChallenges26183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Map;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._getChallenges26183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Map;
+		}
+		internal static global::MonoJavaBridge.MethodId _DefaultTargetAuthenticationHandler26184;
+		public DefaultTargetAuthenticationHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass, global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._DefaultTargetAuthenticationHandler26184);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/DefaultTargetAuthenticationHandler"));
+			global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._isAuthenticationRequested26182 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass, "isAuthenticationRequested", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z");
+			global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._getChallenges26183 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass, "getChallenges", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/util/Map;");
+			global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler._DefaultTargetAuthenticationHandler26184 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultTargetAuthenticationHandler.staticClass, "<init>", "()V");
+		}
+	}
 }

@@ -630,6 +630,13 @@ namespace android.bluetooth
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.bluetooth.BluetoothClass.staticClass, global::android.bluetooth.BluetoothClass._hasService1031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int MajorDeviceClass
+		{
+			get
+			{
+				return getMajorDeviceClass();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMajorDeviceClass1032;
 		public int getMajorDeviceClass() 
 		{
@@ -638,6 +645,13 @@ namespace android.bluetooth
 				return @__env.CallIntMethod(this.JvmHandle, global::android.bluetooth.BluetoothClass._getMajorDeviceClass1032);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.bluetooth.BluetoothClass.staticClass, global::android.bluetooth.BluetoothClass._getMajorDeviceClass1032);
+		}
+		public new int DeviceClass
+		{
+			get
+			{
+				return getDeviceClass();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeviceClass1033;
 		public int getDeviceClass() 

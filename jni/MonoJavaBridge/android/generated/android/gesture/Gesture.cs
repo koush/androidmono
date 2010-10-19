@@ -12,13 +12,20 @@ namespace android.gesture
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone2936;
-		public virtual new global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.Gesture._clone2936)) as java.lang.Object;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.Gesture.staticClass, global::android.gesture.Gesture._clone2936)) as java.lang.Object;
+		}
+		public new float Length
+		{
+			get
+			{
+				return getLength();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLength2937;
 		public virtual float getLength() 
@@ -47,6 +54,13 @@ namespace android.gesture
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.Gesture.staticClass, global::android.gesture.Gesture._describeContents2939);
 		}
+		public new global::java.util.ArrayList Strokes
+		{
+			get
+			{
+				return getStrokes();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getStrokes2940;
 		public virtual global::java.util.ArrayList getStrokes() 
 		{
@@ -55,6 +69,13 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.Gesture._getStrokes2940)) as java.util.ArrayList;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.Gesture.staticClass, global::android.gesture.Gesture._getStrokes2940)) as java.util.ArrayList;
+		}
+		public new int StrokesCount
+		{
+			get
+			{
+				return getStrokesCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrokesCount2941;
 		public virtual int getStrokesCount() 
@@ -73,6 +94,13 @@ namespace android.gesture
 				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.Gesture._addStroke2942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.Gesture.staticClass, global::android.gesture.Gesture._addStroke2942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.graphics.RectF BoundingBox
+		{
+			get
+			{
+				return getBoundingBox();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoundingBox2943;
 		public virtual global::android.graphics.RectF getBoundingBox() 
@@ -118,6 +146,13 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.Gesture._toPath2947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Path;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.Gesture.staticClass, global::android.gesture.Gesture._toPath2947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Path;
+		}
+		public new long ID
+		{
+			get
+			{
+				return getID();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getID2948;
 		public virtual long getID() 

@@ -182,6 +182,17 @@ namespace android.database
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.CursorWindow.staticClass, global::android.database.CursorWindow._isNull2629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new int StartPosition
+		{
+			get
+			{
+				return getStartPosition();
+			}
+			set
+			{
+				setStartPosition(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getStartPosition2630;
 		public virtual int getStartPosition() 
 		{
@@ -199,6 +210,13 @@ namespace android.database
 				@__env.CallVoidMethod(this.JvmHandle, global::android.database.CursorWindow._setStartPosition2631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.CursorWindow.staticClass, global::android.database.CursorWindow._setStartPosition2631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int NumRows
+		{
+			get
+			{
+				return getNumRows();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNumRows2632;
 		public virtual int getNumRows() 

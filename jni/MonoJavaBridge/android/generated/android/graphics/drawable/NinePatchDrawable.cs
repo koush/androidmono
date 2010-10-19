@@ -29,6 +29,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._draw4104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations4105;
 		public override int getChangingConfigurations() 
 		{
@@ -74,6 +81,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setColorFilter4109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity4110;
 		public override int getOpacity() 
 		{
@@ -82,6 +96,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable._getOpacity4110);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getOpacity4110);
+		}
+		public new global::android.graphics.Region TransparentRegion
+		{
+			get
+			{
+				return getTransparentRegion();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTransparentRegion4111;
 		public override global::android.graphics.Region getTransparentRegion() 
@@ -92,6 +113,13 @@ namespace android.graphics.drawable
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getTransparentRegion4111)) as android.graphics.Region;
 		}
+		public new int IntrinsicWidth
+		{
+			get
+			{
+				return getIntrinsicWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth4112;
 		public override int getIntrinsicWidth() 
 		{
@@ -100,6 +128,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicWidth4112);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicWidth4112);
+		}
+		public new int IntrinsicHeight
+		{
+			get
+			{
+				return getIntrinsicHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight4113;
 		public override int getIntrinsicHeight() 
@@ -110,6 +145,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicHeight4113);
 		}
+		public new int MinimumWidth
+		{
+			get
+			{
+				return getMinimumWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMinimumWidth4114;
 		public override int getMinimumWidth() 
 		{
@@ -118,6 +160,13 @@ namespace android.graphics.drawable
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable._getMinimumWidth4114);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getMinimumWidth4114);
+		}
+		public new int MinimumHeight
+		{
+			get
+			{
+				return getMinimumHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinimumHeight4115;
 		public override int getMinimumHeight() 
@@ -146,6 +195,13 @@ namespace android.graphics.drawable
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._mutate4117)) as android.graphics.drawable.Drawable;
 		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState4118;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{
@@ -154,6 +210,13 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable._getConstantState4118)) as android.graphics.drawable.Drawable.ConstantState;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getConstantState4118)) as android.graphics.drawable.Drawable.ConstantState;
+		}
+		public new global::android.graphics.Paint Paint
+		{
+			get
+			{
+				return getPaint();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPaint4119;
 		public virtual global::android.graphics.Paint getPaint() 

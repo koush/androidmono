@@ -199,6 +199,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setOrientation2984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Orientation
+		{
+			get
+			{
+				return getOrientation();
+			}
+			set
+			{
+				setOrientation(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOrientation2985;
 		public virtual int getOrientation() 
 		{
@@ -207,6 +218,13 @@ namespace android.gesture
 				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getOrientation2985);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getOrientation2985);
+		}
+		public new global::java.util.ArrayList CurrentStroke
+		{
+			get
+			{
+				return getCurrentStroke();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentStroke2986;
 		public virtual global::java.util.ArrayList getCurrentStroke() 
@@ -235,6 +253,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setUncertainGestureColor2988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int UncertainGestureColor
+		{
+			get
+			{
+				return getUncertainGestureColor();
+			}
+			set
+			{
+				setUncertainGestureColor(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getUncertainGestureColor2989;
 		public virtual int getUncertainGestureColor() 
 		{
@@ -244,6 +273,17 @@ namespace android.gesture
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getUncertainGestureColor2989);
 		}
+		public new int GestureColor
+		{
+			get
+			{
+				return getGestureColor();
+			}
+			set
+			{
+				setGestureColor(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getGestureColor2990;
 		public virtual int getGestureColor() 
 		{
@@ -252,6 +292,17 @@ namespace android.gesture
 				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureColor2990);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureColor2990);
+		}
+		public new float GestureStrokeWidth
+		{
+			get
+			{
+				return getGestureStrokeWidth();
+			}
+			set
+			{
+				setGestureStrokeWidth(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGestureStrokeWidth2991;
 		public virtual float getGestureStrokeWidth() 
@@ -271,6 +322,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeWidth2992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int GestureStrokeType
+		{
+			get
+			{
+				return getGestureStrokeType();
+			}
+			set
+			{
+				setGestureStrokeType(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getGestureStrokeType2993;
 		public virtual int getGestureStrokeType() 
 		{
@@ -288,6 +350,17 @@ namespace android.gesture
 				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeType2994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeType2994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new float GestureStrokeLengthThreshold
+		{
+			get
+			{
+				return getGestureStrokeLengthThreshold();
+			}
+			set
+			{
+				setGestureStrokeLengthThreshold(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGestureStrokeLengthThreshold2995;
 		public virtual float getGestureStrokeLengthThreshold() 
@@ -307,6 +380,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold2996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new float GestureStrokeSquarenessTreshold
+		{
+			get
+			{
+				return getGestureStrokeSquarenessTreshold();
+			}
+			set
+			{
+				setGestureStrokeSquarenessTreshold(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getGestureStrokeSquarenessTreshold2997;
 		public virtual float getGestureStrokeSquarenessTreshold() 
 		{
@@ -324,6 +408,17 @@ namespace android.gesture
 				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold2998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold2998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new float GestureStrokeAngleThreshold
+		{
+			get
+			{
+				return getGestureStrokeAngleThreshold();
+			}
+			set
+			{
+				setGestureStrokeAngleThreshold(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGestureStrokeAngleThreshold2999;
 		public virtual float getGestureStrokeAngleThreshold() 
@@ -379,6 +474,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setFadeEnabled3004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.gesture.Gesture Gesture
+		{
+			get
+			{
+				return getGesture();
+			}
+			set
+			{
+				setGesture(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getGesture3005;
 		public virtual global::android.gesture.Gesture getGesture() 
 		{
@@ -396,6 +502,13 @@ namespace android.gesture
 				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGesture3006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGesture3006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.graphics.Path GesturePath
+		{
+			get
+			{
+				return getGesturePath();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGesturePath3007;
 		public virtual global::android.graphics.Path getGesturePath() 
@@ -432,6 +545,17 @@ namespace android.gesture
 				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureVisible3010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureVisible3010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new long FadeOffset
+		{
+			get
+			{
+				return getFadeOffset();
+			}
+			set
+			{
+				setFadeOffset(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFadeOffset3011;
 		public virtual long getFadeOffset() 

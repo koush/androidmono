@@ -38,6 +38,17 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._play5069);
 		}
+		public new int StreamType
+		{
+			get
+			{
+				return getStreamType();
+			}
+			set
+			{
+				setStreamType(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getStreamType5070;
 		public virtual int getStreamType() 
 		{

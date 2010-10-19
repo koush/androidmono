@@ -22,6 +22,13 @@ namespace android.app
 			protected ActivityMonitor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
+			public new global::android.content.IntentFilter Filter
+			{
+				get
+				{
+					return getFilter();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getFilter551;
 			public virtual global::android.content.IntentFilter getFilter() 
 			{
@@ -30,6 +37,13 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor._getFilter551)) as android.content.IntentFilter;
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor.staticClass, global::android.app.Instrumentation.ActivityMonitor._getFilter551)) as android.content.IntentFilter;
+			}
+			public new global::android.app.Instrumentation.ActivityResult Result
+			{
+				get
+				{
+					return getResult();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getResult552;
 			public virtual global::android.app.Instrumentation.ActivityResult getResult() 
@@ -49,6 +63,13 @@ namespace android.app
 				else
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor.staticClass, global::android.app.Instrumentation.ActivityMonitor._isBlocking553);
 			}
+			public new int Hits
+			{
+				get
+				{
+					return getHits();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getHits554;
 			public virtual int getHits() 
 			{
@@ -57,6 +78,13 @@ namespace android.app
 					return @__env.CallIntMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor._getHits554);
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor.staticClass, global::android.app.Instrumentation.ActivityMonitor._getHits554);
+			}
+			public new global::android.app.Activity LastActivity
+			{
+				get
+				{
+					return getLastActivity();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getLastActivity555;
 			public virtual global::android.app.Activity getLastActivity() 
@@ -125,6 +153,13 @@ namespace android.app
 			internal ActivityResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
+			public new int ResultCode
+			{
+				get
+				{
+					return getResultCode();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getResultCode560;
 			public int getResultCode() 
 			{
@@ -133,6 +168,13 @@ namespace android.app
 					return @__env.CallIntMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityResult._getResultCode560);
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityResult.staticClass, global::android.app.Instrumentation.ActivityResult._getResultCode560);
+			}
+			public new global::android.content.Intent ResultData
+			{
+				get
+				{
+					return getResultData();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getResultData561;
 			public global::android.content.Intent getResultData() 
@@ -167,6 +209,13 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Instrumentation._start563);
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._start563);
+		}
+		public new global::android.content.Context Context
+		{
+			get
+			{
+				return getContext();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContext564;
 		public virtual global::android.content.Context getContext() 
@@ -212,6 +261,13 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Instrumentation._finish568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._finish568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public new global::android.content.ComponentName ComponentName
+		{
+			get
+			{
+				return getComponentName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponentName569;
 		public virtual global::android.content.ComponentName getComponentName() 
@@ -284,6 +340,13 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Instrumentation._endPerformanceSnapshot576);
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._endPerformanceSnapshot576);
+		}
+		public new global::android.content.Context TargetContext
+		{
+			get
+			{
+				return getTargetContext();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetContext577;
 		public virtual global::android.content.Context getTargetContext() 
@@ -655,6 +718,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._callActivityOnUserLeaving617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.os.Bundle AllocCounts
+		{
+			get
+			{
+				return getAllocCounts();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAllocCounts618;
 		public virtual global::android.os.Bundle getAllocCounts() 
 		{
@@ -663,6 +733,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getAllocCounts618)) as android.os.Bundle;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getAllocCounts618)) as android.os.Bundle;
+		}
+		public new global::android.os.Bundle BinderCounts
+		{
+			get
+			{
+				return getBinderCounts();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBinderCounts619;
 		public virtual global::android.os.Bundle getBinderCounts() 

@@ -11,19 +11,19 @@ namespace org.apache.http.conn.routing
 		internal RouteInfo_TunnelType(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _values16381;
+		internal static global::MonoJavaBridge.MethodId _values25535;
 		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType[] values() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.conn.routing.RouteInfo_TunnelType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, global::org.apache.http.conn.routing.RouteInfo_TunnelType._values16381)) as org.apache.http.conn.routing.RouteInfo_TunnelType[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.conn.routing.RouteInfo_TunnelType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, global::org.apache.http.conn.routing.RouteInfo_TunnelType._values25535)) as org.apache.http.conn.routing.RouteInfo_TunnelType[];
 		}
-		internal static global::MonoJavaBridge.MethodId _valueOf16382;
+		internal static global::MonoJavaBridge.MethodId _valueOf25536;
 		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, global::org.apache.http.conn.routing.RouteInfo_TunnelType._valueOf16382, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.RouteInfo_TunnelType;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, global::org.apache.http.conn.routing.RouteInfo_TunnelType._valueOf25536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.RouteInfo_TunnelType;
 		}
-		internal static global::MonoJavaBridge.FieldId _PLAIN16383;
+		internal static global::MonoJavaBridge.FieldId _PLAIN25537;
 		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType PLAIN
 		{
 			get
@@ -31,7 +31,7 @@ namespace org.apache.http.conn.routing
 				return default(global::org.apache.http.conn.routing.RouteInfo_TunnelType);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TUNNELLED16384;
+		internal static global::MonoJavaBridge.FieldId _TUNNELLED25538;
 		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType TUNNELLED
 		{
 			get
@@ -43,8 +43,8 @@ namespace org.apache.http.conn.routing
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/routing/RouteInfo_TunnelType"));
-			global::org.apache.http.conn.routing.RouteInfo_TunnelType._values16381 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "values", "()[Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
-			global::org.apache.http.conn.routing.RouteInfo_TunnelType._valueOf16382 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "valueOf", "(Ljava/lang/String;)Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
+			global::org.apache.http.conn.routing.RouteInfo_TunnelType._values25535 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "values", "()[Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
+			global::org.apache.http.conn.routing.RouteInfo_TunnelType._valueOf25536 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, "valueOf", "(Ljava/lang/String;)Lorg/apache/http/conn/routing/RouteInfo$TunnelType;");
 		}
 	}
 }

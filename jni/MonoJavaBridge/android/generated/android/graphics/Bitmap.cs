@@ -157,6 +157,17 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._describeContents3090);
 		}
+		public new int Density
+		{
+			get
+			{
+				return getDensity();
+			}
+			set
+			{
+				setDensity(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDensity3091;
 		public int getDensity() 
 		{
@@ -253,6 +264,13 @@ namespace android.graphics
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._createBitmap3103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Bitmap;
 		}
+		public new byte[] NinePatchChunk
+		{
+			get
+			{
+				return getNinePatchChunk();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNinePatchChunk3104;
 		public byte[] getNinePatchChunk() 
 		{
@@ -271,6 +289,13 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._compress3105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new int Width
+		{
+			get
+			{
+				return getWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWidth3106;
 		public int getWidth() 
 		{
@@ -279,6 +304,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Bitmap._getWidth3106);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getWidth3106);
+		}
+		public new int Height
+		{
+			get
+			{
+				return getHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeight3107;
 		public int getHeight() 
@@ -342,6 +374,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Bitmap._getScaledHeight3113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight3113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int RowBytes
+		{
+			get
+			{
+				return getRowBytes();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRowBytes3114;
 		public int getRowBytes() 

@@ -194,6 +194,17 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._scale3191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new int Density
+		{
+			get
+			{
+				return getDensity();
+			}
+			set
+			{
+				setDensity(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDensity3192;
 		public virtual int getDensity() 
 		{
@@ -212,6 +223,13 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._setDensity3193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Width
+		{
+			get
+			{
+				return getWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWidth3194;
 		public virtual int getWidth() 
 		{
@@ -221,6 +239,13 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._getWidth3194);
 		}
+		public new int Height
+		{
+			get
+			{
+				return getHeight();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getHeight3195;
 		public virtual int getHeight() 
 		{
@@ -229,6 +254,13 @@ namespace android.graphics
 				return @__env.CallIntMethod(this.JvmHandle, global::android.graphics.Canvas._getHeight3195);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._getHeight3195);
+		}
+		public new global::javax.microedition.khronos.opengles.GL GL
+		{
+			get
+			{
+				return getGL();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGL3196;
 		public virtual global::javax.microedition.khronos.opengles.GL getGL() 
@@ -308,6 +340,13 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._restore3204);
 		}
+		public new int SaveCount
+		{
+			get
+			{
+				return getSaveCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSaveCount3205;
 		public virtual int getSaveCount() 
 		{
@@ -352,6 +391,17 @@ namespace android.graphics
 				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Canvas._setMatrix3209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._setMatrix3209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.graphics.Matrix Matrix
+		{
+			get
+			{
+				return getMatrix();
+			}
+			set
+			{
+				setMatrix(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMatrix3210;
 		public virtual global::android.graphics.Matrix getMatrix() 
@@ -470,6 +520,17 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._clipRegion3222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.DrawFilter DrawFilter
+		{
+			get
+			{
+				return getDrawFilter();
+			}
+			set
+			{
+				setDrawFilter(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDrawFilter3223;
 		public virtual global::android.graphics.DrawFilter getDrawFilter() 
 		{
@@ -514,6 +575,13 @@ namespace android.graphics
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Canvas._quickReject3227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._quickReject3227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+		}
+		public new global::android.graphics.Rect ClipBounds
+		{
+			get
+			{
+				return getClipBounds();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getClipBounds3228;
 		public virtual global::android.graphics.Rect getClipBounds() 

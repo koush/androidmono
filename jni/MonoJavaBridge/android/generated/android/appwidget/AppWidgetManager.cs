@@ -53,6 +53,13 @@ namespace android.appwidget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.util.List InstalledProviders
+		{
+			get
+			{
+				return getInstalledProviders();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInstalledProviders984;
 		public virtual global::java.util.List getInstalledProviders() 
 		{

@@ -74,6 +74,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._setDefaultTab817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.widget.TabHost TabHost
+		{
+			get
+			{
+				return getTabHost();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTabHost818;
 		public virtual global::android.widget.TabHost getTabHost() 
 		{
@@ -82,6 +89,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.TabActivity._getTabHost818)) as android.widget.TabHost;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._getTabHost818)) as android.widget.TabHost;
+		}
+		public new global::android.widget.TabWidget TabWidget
+		{
+			get
+			{
+				return getTabWidget();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTabWidget819;
 		public virtual global::android.widget.TabWidget getTabWidget() 

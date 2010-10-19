@@ -56,6 +56,17 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onAttachedToHierarchy6970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int RingtoneType
+		{
+			get
+			{
+				return getRingtoneType();
+			}
+			set
+			{
+				setRingtoneType(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRingtoneType6971;
 		public virtual int getRingtoneType() 
 		{
@@ -74,6 +85,17 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._setRingtoneType6972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool ShowDefault
+		{
+			get
+			{
+				return getShowDefault();
+			}
+			set
+			{
+				setShowDefault(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getShowDefault6973;
 		public virtual bool getShowDefault() 
 		{
@@ -91,6 +113,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference._setShowDefault6974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._setShowDefault6974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new bool ShowSilent
+		{
+			get
+			{
+				return getShowSilent();
+			}
+			set
+			{
+				setShowSilent(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShowSilent6975;
 		public virtual bool getShowSilent() 

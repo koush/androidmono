@@ -62,6 +62,13 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._fromString6656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.ParcelUuid;
 		}
+		public new global::java.util.UUID Uuid
+		{
+			get
+			{
+				return getUuid();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getUuid6657;
 		public global::java.util.UUID getUuid() 
 		{

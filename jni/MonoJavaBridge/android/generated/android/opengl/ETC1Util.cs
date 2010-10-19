@@ -22,6 +22,13 @@ namespace android.opengl
 			protected ETC1Texture(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
+			public new global::java.nio.ByteBuffer Data
+			{
+				get
+				{
+					return getData();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getData5537;
 			public virtual global::java.nio.ByteBuffer getData() 
 			{
@@ -31,6 +38,13 @@ namespace android.opengl
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getData5537)) as java.nio.ByteBuffer;
 			}
+			public new int Width
+			{
+				get
+				{
+					return getWidth();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getWidth5538;
 			public virtual int getWidth() 
 			{
@@ -39,6 +53,13 @@ namespace android.opengl
 					return @__env.CallIntMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture._getWidth5538);
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.opengl.ETC1Util.ETC1Texture.staticClass, global::android.opengl.ETC1Util.ETC1Texture._getWidth5538);
+			}
+			public new int Height
+			{
+				get
+				{
+					return getHeight();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getHeight5539;
 			public virtual int getHeight() 

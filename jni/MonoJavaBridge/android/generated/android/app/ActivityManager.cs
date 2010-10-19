@@ -997,6 +997,13 @@ namespace android.app
 				global::android.app.ActivityManager.RunningTaskInfo._RunningTaskInfo359 = @__env.GetMethodIDNoThrow(global::android.app.ActivityManager.RunningTaskInfo.staticClass, "<init>", "()V");
 			}
 		}
+		public new int MemoryClass
+		{
+			get
+			{
+				return getMemoryClass();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMemoryClass368;
 		public virtual int getMemoryClass() 
 		{
@@ -1051,6 +1058,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getMemoryInfo373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.List ProcessesInErrorState
+		{
+			get
+			{
+				return getProcessesInErrorState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getProcessesInErrorState374;
 		public virtual global::java.util.List getProcessesInErrorState() 
 		{
@@ -1059,6 +1073,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.ActivityManager._getProcessesInErrorState374)) as java.util.List;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessesInErrorState374)) as java.util.List;
+		}
+		public new global::java.util.List RunningAppProcesses
+		{
+			get
+			{
+				return getRunningAppProcesses();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRunningAppProcesses375;
 		public virtual global::java.util.List getRunningAppProcesses() 
@@ -1095,6 +1116,13 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.ActivityManager._killBackgroundProcesses378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._killBackgroundProcesses378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.content.pm.ConfigurationInfo DeviceConfigurationInfo
+		{
+			get
+			{
+				return getDeviceConfigurationInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeviceConfigurationInfo379;
 		public virtual global::android.content.pm.ConfigurationInfo getDeviceConfigurationInfo() 

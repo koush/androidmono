@@ -12,13 +12,20 @@ namespace android.gesture
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone3049;
-		public virtual new global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke._clone3049)) as java.lang.Object;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clone3049)) as java.lang.Object;
+		}
+		public new global::android.graphics.Path Path
+		{
+			get
+			{
+				return getPath();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath3050;
 		public virtual global::android.graphics.Path getPath() 

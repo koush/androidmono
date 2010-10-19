@@ -47,6 +47,13 @@ namespace android.content.pm
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.LabeledIntent.staticClass, global::android.content.pm.LabeledIntent._loadIcon1930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
+		public new int IconResource
+		{
+			get
+			{
+				return getIconResource();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIconResource1931;
 		public virtual int getIconResource() 
 		{
@@ -55,6 +62,13 @@ namespace android.content.pm
 				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.LabeledIntent._getIconResource1931);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.LabeledIntent.staticClass, global::android.content.pm.LabeledIntent._getIconResource1931);
+		}
+		public new global::java.lang.String SourcePackage
+		{
+			get
+			{
+				return getSourcePackage();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSourcePackage1932;
 		public virtual global::java.lang.String getSourcePackage() 
@@ -65,6 +79,13 @@ namespace android.content.pm
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.LabeledIntent.staticClass, global::android.content.pm.LabeledIntent._getSourcePackage1932)) as java.lang.String;
 		}
+		public new int LabelResource
+		{
+			get
+			{
+				return getLabelResource();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLabelResource1933;
 		public virtual int getLabelResource() 
 		{
@@ -73,6 +94,13 @@ namespace android.content.pm
 				return @__env.CallIntMethod(this.JvmHandle, global::android.content.pm.LabeledIntent._getLabelResource1933);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.LabeledIntent.staticClass, global::android.content.pm.LabeledIntent._getLabelResource1933);
+		}
+		public new string NonLocalizedLabel
+		{
+			get
+			{
+				return getNonLocalizedLabel().toString();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNonLocalizedLabel1934;
 		public virtual global::java.lang.CharSequence getNonLocalizedLabel() 

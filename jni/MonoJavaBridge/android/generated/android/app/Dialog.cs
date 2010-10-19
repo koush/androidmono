@@ -11,6 +11,13 @@ namespace android.app
 		protected Dialog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::android.content.Context Context
+		{
+			get
+			{
+				return getContext();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getContext460;
 		public virtual global::android.content.Context getContext() 
 		{
@@ -47,6 +54,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._onStart463);
 		}
+		public new global::android.view.Window Window
+		{
+			get
+			{
+				return getWindow();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWindow464;
 		public virtual global::android.view.Window getWindow() 
 		{
@@ -55,6 +69,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Dialog._getWindow464)) as android.view.Window;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._getWindow464)) as android.view.Window;
+		}
+		public new global::android.view.View CurrentFocus
+		{
+			get
+			{
+				return getCurrentFocus();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentFocus465;
 		public virtual global::android.view.View getCurrentFocus() 
@@ -506,6 +527,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setFeatureDrawableAlpha514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::android.view.LayoutInflater LayoutInflater
+		{
+			get
+			{
+				return getLayoutInflater();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLayoutInflater515;
 		public virtual global::android.view.LayoutInflater getLayoutInflater() 
 		{
@@ -546,6 +574,17 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setVolumeControlStream518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int VolumeControlStream
+		{
+			get
+			{
+				return getVolumeControlStream();
+			}
+			set
+			{
+				setVolumeControlStream(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVolumeControlStream519;
 		public virtual int getVolumeControlStream() 
 		{
@@ -572,6 +611,17 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Dialog._setOwnerActivity521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Dialog.staticClass, global::android.app.Dialog._setOwnerActivity521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.app.Activity OwnerActivity
+		{
+			get
+			{
+				return getOwnerActivity();
+			}
+			set
+			{
+				setOwnerActivity(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOwnerActivity522;
 		public virtual global::android.app.Activity getOwnerActivity() 

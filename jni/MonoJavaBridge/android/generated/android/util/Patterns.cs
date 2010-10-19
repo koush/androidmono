@@ -11,17 +11,17 @@ namespace android.util
 		protected Patterns(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _concatGroups8563;
+		internal static global::MonoJavaBridge.MethodId _concatGroups9109;
 		public static global::java.lang.String concatGroups(java.util.regex.Matcher arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._concatGroups8563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._concatGroups9109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _digitsAndPlusOnly8564;
+		internal static global::MonoJavaBridge.MethodId _digitsAndPlusOnly9110;
 		public static global::java.lang.String digitsAndPlusOnly(java.util.regex.Matcher arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._digitsAndPlusOnly8564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._digitsAndPlusOnly9110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public static global::java.lang.String TOP_LEVEL_DOMAIN_STR
 		{
@@ -30,7 +30,7 @@ namespace android.util
 				return "((aero|arpa|asia|a[cdefgilmnoqrstuwxz])|(biz|b[abdefghijmnorstvwyz])|(cat|com|coop|c[acdfghiklmnoruvxyz])|d[ejkmoz]|(edu|e[cegrstu])|f[ijkmor]|(gov|g[abdefghilmnpqrstuwy])|h[kmnrtu]|(info|int|i[delmnoqrst])|(jobs|j[emop])|k[eghimnprwyz]|l[abcikrstuvy]|(mil|mobi|museum|m[acdeghklmnopqrstuvwxyz])|(name|net|n[acefgilopruz])|(org|om)|(pro|p[aefghklmnrstwy])|qa|r[eosuw]|s[abcdeghijklmnortuvyz]|(tel|travel|t[cdfghjklmnoprtvwz])|u[agksyz]|v[aceginu]|w[fs]|(xn\\-\\-0zwm56d|xn\\-\\-11b5bs3a9aj6g|xn\\-\\-80akhbyknj4f|xn\\-\\-9t4b11yi5a|xn\\-\\-deba0ad|xn\\-\\-g6w251d|xn\\-\\-hgbk6aj7f53bba|xn\\-\\-hlcj6aya9esc7a|xn\\-\\-jxalpdlp|xn\\-\\-kgbechtv|xn\\-\\-zckzah)|y[etu]|z[amw])";
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TOP_LEVEL_DOMAIN8565;
+		internal static global::MonoJavaBridge.FieldId _TOP_LEVEL_DOMAIN9111;
 		public static global::java.util.regex.Pattern TOP_LEVEL_DOMAIN
 		{
 			get
@@ -52,7 +52,7 @@ namespace android.util
 				return "a-zA-Z0-9 -퟿豈-﷏ﷰ-￯";
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _WEB_URL8566;
+		internal static global::MonoJavaBridge.FieldId _WEB_URL9112;
 		public static global::java.util.regex.Pattern WEB_URL
 		{
 			get
@@ -60,7 +60,7 @@ namespace android.util
 				return default(global::java.util.regex.Pattern);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _IP_ADDRESS8567;
+		internal static global::MonoJavaBridge.FieldId _IP_ADDRESS9113;
 		public static global::java.util.regex.Pattern IP_ADDRESS
 		{
 			get
@@ -68,7 +68,7 @@ namespace android.util
 				return default(global::java.util.regex.Pattern);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DOMAIN_NAME8568;
+		internal static global::MonoJavaBridge.FieldId _DOMAIN_NAME9114;
 		public static global::java.util.regex.Pattern DOMAIN_NAME
 		{
 			get
@@ -76,7 +76,7 @@ namespace android.util
 				return default(global::java.util.regex.Pattern);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _EMAIL_ADDRESS8569;
+		internal static global::MonoJavaBridge.FieldId _EMAIL_ADDRESS9115;
 		public static global::java.util.regex.Pattern EMAIL_ADDRESS
 		{
 			get
@@ -84,7 +84,7 @@ namespace android.util
 				return default(global::java.util.regex.Pattern);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _PHONE8570;
+		internal static global::MonoJavaBridge.FieldId _PHONE9116;
 		public static global::java.util.regex.Pattern PHONE
 		{
 			get
@@ -96,8 +96,8 @@ namespace android.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.util.Patterns.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/util/Patterns"));
-			global::android.util.Patterns._concatGroups8563 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "concatGroups", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
-			global::android.util.Patterns._digitsAndPlusOnly8564 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "digitsAndPlusOnly", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
+			global::android.util.Patterns._concatGroups9109 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "concatGroups", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
+			global::android.util.Patterns._digitsAndPlusOnly9110 = @__env.GetStaticMethodIDNoThrow(global::android.util.Patterns.staticClass, "digitsAndPlusOnly", "(Ljava/util/regex/Matcher;)Ljava/lang/String;");
 		}
 	}
 }

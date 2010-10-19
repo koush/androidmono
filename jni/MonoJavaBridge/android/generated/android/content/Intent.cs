@@ -40,6 +40,13 @@ namespace android.content
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.Intent.FilterComparison.staticClass, global::android.content.Intent.FilterComparison._hashCode1531);
 			}
+			public new global::android.content.Intent Intent
+			{
+				get
+				{
+					return getIntent();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getIntent1532;
 			public global::android.content.Intent getIntent() 
 			{
@@ -168,13 +175,20 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._toString1542)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone1543;
-		public virtual new global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.Intent._clone1543)) as java.lang.Object;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._clone1543)) as java.lang.Object;
+		}
+		public new global::java.lang.String Package
+		{
+			get
+			{
+				return getPackage();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackage1544;
 		public virtual global::java.lang.String getPackage() 
@@ -184,6 +198,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.Intent._getPackage1544)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getPackage1544)) as java.lang.String;
+		}
+		public new global::java.lang.String Type
+		{
+			get
+			{
+				return getType();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType1545;
 		public virtual global::java.lang.String getType() 
@@ -203,6 +224,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._toURI1546)) as java.lang.String;
 		}
+		public new global::java.lang.String Scheme
+		{
+			get
+			{
+				return getScheme();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getScheme1547;
 		public virtual global::java.lang.String getScheme() 
 		{
@@ -212,6 +240,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getScheme1547)) as java.lang.String;
 		}
+		public new global::android.net.Uri Data
+		{
+			get
+			{
+				return getData();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getData1548;
 		public virtual global::android.net.Uri getData() 
 		{
@@ -220,6 +255,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.Intent._getData1548)) as android.net.Uri;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getData1548)) as android.net.Uri;
+		}
+		public new global::android.content.ComponentName Component
+		{
+			get
+			{
+				return getComponent();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponent1549;
 		public virtual global::android.content.ComponentName getComponent() 
@@ -299,6 +341,13 @@ namespace android.content
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.Intent.staticClass, global::android.content.Intent._getIntentOld1558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
 		}
+		public new global::java.lang.String Action
+		{
+			get
+			{
+				return getAction();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAction1559;
 		public virtual global::java.lang.String getAction() 
 		{
@@ -307,6 +356,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.Intent._getAction1559)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getAction1559)) as java.lang.String;
+		}
+		public new global::java.lang.String DataString
+		{
+			get
+			{
+				return getDataString();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDataString1560;
 		public virtual global::java.lang.String getDataString() 
@@ -352,6 +408,13 @@ namespace android.content
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.Intent._hasCategory1564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._hasCategory1564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.util.Set Categories
+		{
+			get
+			{
+				return getCategories();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCategories1565;
 		public virtual global::java.util.Set getCategories() 
@@ -641,6 +704,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getBundleExtra1596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
+		public new global::android.os.Bundle Extras
+		{
+			get
+			{
+				return getExtras();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getExtras1597;
 		public virtual global::android.os.Bundle getExtras() 
 		{
@@ -650,6 +720,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getExtras1597)) as android.os.Bundle;
 		}
+		public new int Flags
+		{
+			get
+			{
+				return getFlags();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFlags1598;
 		public virtual int getFlags() 
 		{
@@ -658,6 +735,17 @@ namespace android.content
 				return @__env.CallIntMethod(this.JvmHandle, global::android.content.Intent._getFlags1598);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.Intent.staticClass, global::android.content.Intent._getFlags1598);
+		}
+		public new global::android.graphics.Rect SourceBounds
+		{
+			get
+			{
+				return getSourceBounds();
+			}
+			set
+			{
+				setSourceBounds(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSourceBounds1599;
 		public virtual global::android.graphics.Rect getSourceBounds() 

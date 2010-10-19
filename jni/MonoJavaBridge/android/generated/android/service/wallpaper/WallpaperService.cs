@@ -67,6 +67,13 @@ namespace android.service.wallpaper
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onVisibilityChanged7263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
+			public new int DesiredMinimumWidth
+			{
+				get
+				{
+					return getDesiredMinimumWidth();
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _getDesiredMinimumWidth7264;
 			public virtual int getDesiredMinimumWidth() 
 			{
@@ -75,6 +82,13 @@ namespace android.service.wallpaper
 					return @__env.CallIntMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth7264);
 				else
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._getDesiredMinimumWidth7264);
+			}
+			public new int DesiredMinimumHeight
+			{
+				get
+				{
+					return getDesiredMinimumHeight();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getDesiredMinimumHeight7265;
 			public virtual int getDesiredMinimumHeight() 
@@ -102,6 +116,13 @@ namespace android.service.wallpaper
 					@__env.CallVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged7267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.service.wallpaper.WallpaperService.Engine.staticClass, global::android.service.wallpaper.WallpaperService.Engine._onSurfaceChanged7267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			}
+			public new global::android.view.SurfaceHolder SurfaceHolder
+			{
+				get
+				{
+					return getSurfaceHolder();
+				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getSurfaceHolder7268;
 			public virtual global::android.view.SurfaceHolder getSurfaceHolder() 

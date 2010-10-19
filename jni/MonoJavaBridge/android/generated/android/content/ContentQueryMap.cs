@@ -56,6 +56,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getValues1205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.ContentValues;
 		}
+		public new global::java.util.Map Rows
+		{
+			get
+			{
+				return getRows();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRows1206;
 		public virtual global::java.util.Map getRows() 
 		{

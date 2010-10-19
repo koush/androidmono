@@ -265,6 +265,17 @@ namespace android.opengl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setDebugFlags6071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int DebugFlags
+		{
+			get
+			{
+				return getDebugFlags();
+			}
+			set
+			{
+				setDebugFlags(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDebugFlags6072;
 		public virtual int getDebugFlags() 
 		{
@@ -345,6 +356,17 @@ namespace android.opengl
 				@__env.CallVoidMethod(this.JvmHandle, global::android.opengl.GLSurfaceView._setRenderMode6080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setRenderMode6080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int RenderMode
+		{
+			get
+			{
+				return getRenderMode();
+			}
+			set
+			{
+				setRenderMode(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRenderMode6081;
 		public virtual int getRenderMode() 

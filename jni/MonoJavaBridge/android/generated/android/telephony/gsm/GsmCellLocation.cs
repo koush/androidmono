@@ -38,6 +38,13 @@ namespace android.telephony.gsm
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._hashCode7530);
 		}
+		public new int Lac
+		{
+			get
+			{
+				return getLac();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLac7531;
 		public virtual int getLac() 
 		{
@@ -46,6 +53,13 @@ namespace android.telephony.gsm
 				return @__env.CallIntMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation._getLac7531);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._getLac7531);
+		}
+		public new int Cid
+		{
+			get
+			{
+				return getCid();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCid7532;
 		public virtual int getCid() 

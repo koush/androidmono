@@ -11,6 +11,13 @@ namespace android.os
 		protected Process(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public static long ElapsedCpuTime
+		{
+			get
+			{
+				return getElapsedCpuTime();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getElapsedCpuTime6685;
 		public static long getElapsedCpuTime() 
 		{

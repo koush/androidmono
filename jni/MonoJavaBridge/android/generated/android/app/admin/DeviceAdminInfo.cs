@@ -20,6 +20,13 @@ namespace android.app.admin
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._toString871)) as java.lang.String;
 		}
+		public new global::java.lang.String PackageName
+		{
+			get
+			{
+				return getPackageName();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPackageName872;
 		public global::java.lang.String getPackageName() 
 		{
@@ -28,6 +35,13 @@ namespace android.app.admin
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._getPackageName872)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._getPackageName872)) as java.lang.String;
+		}
+		public new global::android.content.ComponentName Component
+		{
+			get
+			{
+				return getComponent();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponent873;
 		public global::android.content.ComponentName getComponent() 
@@ -64,6 +78,13 @@ namespace android.app.admin
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._describeContents876);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._describeContents876);
+		}
+		public new global::android.content.pm.ActivityInfo ActivityInfo
+		{
+			get
+			{
+				return getActivityInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivityInfo877;
 		public global::android.content.pm.ActivityInfo getActivityInfo() 
@@ -109,6 +130,13 @@ namespace android.app.admin
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo._isVisible881);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DeviceAdminInfo.staticClass, global::android.app.admin.DeviceAdminInfo._isVisible881);
+		}
+		public new global::java.lang.String ReceiverName
+		{
+			get
+			{
+				return getReceiverName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getReceiverName882;
 		public global::java.lang.String getReceiverName() 

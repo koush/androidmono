@@ -1,3 +1,88 @@
 namespace org.apache.http.protocol
 {
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class HttpRequestExecutor : java.lang.Object
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static HttpRequestExecutor()
+		{
+			InitJNI();
+		}
+		protected HttpRequestExecutor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _execute27093;
+		public virtual global::org.apache.http.HttpResponse execute(org.apache.http.HttpRequest arg0, org.apache.http.HttpClientConnection arg1, org.apache.http.protocol.HttpContext arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor._execute27093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._execute27093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+		}
+		internal static global::MonoJavaBridge.MethodId _canResponseHaveBody27094;
+		protected virtual bool canResponseHaveBody(org.apache.http.HttpRequest arg0, org.apache.http.HttpResponse arg1) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor._canResponseHaveBody27094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._canResponseHaveBody27094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		internal static global::MonoJavaBridge.MethodId _preProcess27095;
+		public virtual void preProcess(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpProcessor arg1, org.apache.http.protocol.HttpContext arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor._preProcess27095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._preProcess27095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		internal static global::MonoJavaBridge.MethodId _doSendRequest27096;
+		protected virtual global::org.apache.http.HttpResponse doSendRequest(org.apache.http.HttpRequest arg0, org.apache.http.HttpClientConnection arg1, org.apache.http.protocol.HttpContext arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor._doSendRequest27096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._doSendRequest27096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+		}
+		internal static global::MonoJavaBridge.MethodId _doReceiveResponse27097;
+		protected virtual global::org.apache.http.HttpResponse doReceiveResponse(org.apache.http.HttpRequest arg0, org.apache.http.HttpClientConnection arg1, org.apache.http.protocol.HttpContext arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor._doReceiveResponse27097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpResponse>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._doReceiveResponse27097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpResponse;
+		}
+		internal static global::MonoJavaBridge.MethodId _postProcess27098;
+		public virtual void postProcess(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpProcessor arg1, org.apache.http.protocol.HttpContext arg2) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor._postProcess27098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			else
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._postProcess27098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		internal static global::MonoJavaBridge.MethodId _HttpRequestExecutor27099;
+		public HttpRequestExecutor()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpRequestExecutor.staticClass, global::org.apache.http.protocol.HttpRequestExecutor._HttpRequestExecutor27099);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.protocol.HttpRequestExecutor.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpRequestExecutor"));
+			global::org.apache.http.protocol.HttpRequestExecutor._execute27093 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "execute", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpClientConnection;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.protocol.HttpRequestExecutor._canResponseHaveBody27094 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "canResponseHaveBody", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;)Z");
+			global::org.apache.http.protocol.HttpRequestExecutor._preProcess27095 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "preProcess", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/protocol/HttpContext;)V");
+			global::org.apache.http.protocol.HttpRequestExecutor._doSendRequest27096 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "doSendRequest", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpClientConnection;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.protocol.HttpRequestExecutor._doReceiveResponse27097 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "doReceiveResponse", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpClientConnection;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;");
+			global::org.apache.http.protocol.HttpRequestExecutor._postProcess27098 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "postProcess", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/protocol/HttpContext;)V");
+			global::org.apache.http.protocol.HttpRequestExecutor._HttpRequestExecutor27099 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpRequestExecutor.staticClass, "<init>", "()V");
+		}
+	}
 }

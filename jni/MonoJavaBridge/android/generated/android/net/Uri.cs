@@ -210,7 +210,7 @@ namespace android.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.Uri.staticClass, global::android.net.Uri._equals5285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString5286;
-		public abstract new global::java.lang.String toString();
+		public abstract global::java.lang.String toString();
 		internal static global::MonoJavaBridge.MethodId _hashCode5287;
 		public override int hashCode() 
 		{

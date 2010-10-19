@@ -29,6 +29,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._draw3902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ChangingConfigurations
+		{
+			get
+			{
+				return getChangingConfigurations();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations3903;
 		public override int getChangingConfigurations() 
 		{
@@ -56,6 +63,13 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._setColorFilter3905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Opacity
+		{
+			get
+			{
+				return getOpacity();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity3906;
 		public override int getOpacity() 
 		{
@@ -65,6 +79,13 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getOpacity3906);
 		}
+		public new global::android.graphics.drawable.Drawable.ConstantState ConstantState
+		{
+			get
+			{
+				return getConstantState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState3907;
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{
@@ -73,6 +94,17 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable._getConstantState3907)) as android.graphics.drawable.Drawable.ConstantState;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.ColorDrawable.staticClass, global::android.graphics.drawable.ColorDrawable._getConstantState3907)) as android.graphics.drawable.Drawable.ConstantState;
+		}
+		public new int Alpha
+		{
+			get
+			{
+				return getAlpha();
+			}
+			set
+			{
+				setAlpha(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlpha3908;
 		public virtual int getAlpha() 

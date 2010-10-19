@@ -11,6 +11,13 @@ namespace android.content
 		protected ContextWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::java.lang.ClassLoader ClassLoader
+		{
+			get
+			{
+				return getClassLoader();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getClassLoader1435;
 		public override global::java.lang.ClassLoader getClassLoader() 
 		{
@@ -29,6 +36,13 @@ namespace android.content
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._checkPermission1436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new global::android.content.res.Resources Resources
+		{
+			get
+			{
+				return getResources();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getResources1437;
 		public override global::android.content.res.Resources getResources() 
 		{
@@ -37,6 +51,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getResources1437)) as android.content.res.Resources;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getResources1437)) as android.content.res.Resources;
+		}
+		public new global::java.lang.String PackageName
+		{
+			get
+			{
+				return getPackageName();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageName1438;
 		public override global::java.lang.String getPackageName() 
@@ -56,6 +77,13 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._attachBaseContext1439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.content.Context BaseContext
+		{
+			get
+			{
+				return getBaseContext();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBaseContext1440;
 		public virtual global::android.content.Context getBaseContext() 
 		{
@@ -64,6 +92,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getBaseContext1440)) as android.content.Context;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getBaseContext1440)) as android.content.Context;
+		}
+		public new global::android.content.res.AssetManager Assets
+		{
+			get
+			{
+				return getAssets();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAssets1441;
 		public override global::android.content.res.AssetManager getAssets() 
@@ -74,6 +109,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getAssets1441)) as android.content.res.AssetManager;
 		}
+		public new global::android.content.pm.PackageManager PackageManager
+		{
+			get
+			{
+				return getPackageManager();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPackageManager1442;
 		public override global::android.content.pm.PackageManager getPackageManager() 
 		{
@@ -82,6 +124,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getPackageManager1442)) as android.content.pm.PackageManager;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getPackageManager1442)) as android.content.pm.PackageManager;
+		}
+		public new global::android.content.ContentResolver ContentResolver
+		{
+			get
+			{
+				return getContentResolver();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentResolver1443;
 		public override global::android.content.ContentResolver getContentResolver() 
@@ -92,6 +141,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getContentResolver1443)) as android.content.ContentResolver;
 		}
+		public new global::android.os.Looper MainLooper
+		{
+			get
+			{
+				return getMainLooper();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMainLooper1444;
 		public override global::android.os.Looper getMainLooper() 
 		{
@@ -100,6 +156,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getMainLooper1444)) as android.os.Looper;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getMainLooper1444)) as android.os.Looper;
+		}
+		public new global::android.content.Context ApplicationContext
+		{
+			get
+			{
+				return getApplicationContext();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationContext1445;
 		public override global::android.content.Context getApplicationContext() 
@@ -119,6 +182,13 @@ namespace android.content
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._setTheme1446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.content.res.Resources.Theme Theme
+		{
+			get
+			{
+				return getTheme();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTheme1447;
 		public override global::android.content.res.Resources.Theme getTheme() 
 		{
@@ -127,6 +197,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getTheme1447)) as android.content.res.Resources.Theme;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getTheme1447)) as android.content.res.Resources.Theme;
+		}
+		public new global::android.content.pm.ApplicationInfo ApplicationInfo
+		{
+			get
+			{
+				return getApplicationInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationInfo1448;
 		public override global::android.content.pm.ApplicationInfo getApplicationInfo() 
@@ -137,6 +214,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getApplicationInfo1448)) as android.content.pm.ApplicationInfo;
 		}
+		public new global::java.lang.String PackageResourcePath
+		{
+			get
+			{
+				return getPackageResourcePath();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPackageResourcePath1449;
 		public override global::java.lang.String getPackageResourcePath() 
 		{
@@ -145,6 +229,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getPackageResourcePath1449)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getPackageResourcePath1449)) as java.lang.String;
+		}
+		public new global::java.lang.String PackageCodePath
+		{
+			get
+			{
+				return getPackageCodePath();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageCodePath1450;
 		public override global::java.lang.String getPackageCodePath() 
@@ -209,6 +300,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._fileList1456)) as java.lang.String[];
 		}
+		public new global::java.io.File FilesDir
+		{
+			get
+			{
+				return getFilesDir();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFilesDir1457;
 		public override global::java.io.File getFilesDir() 
 		{
@@ -227,6 +325,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getExternalFilesDir1458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.File;
 		}
+		public new global::java.io.File CacheDir
+		{
+			get
+			{
+				return getCacheDir();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCacheDir1459;
 		public override global::java.io.File getCacheDir() 
 		{
@@ -235,6 +340,13 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContextWrapper._getCacheDir1459)) as java.io.File;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getCacheDir1459)) as java.io.File;
+		}
+		public new global::java.io.File ExternalCacheDir
+		{
+			get
+			{
+				return getExternalCacheDir();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExternalCacheDir1460;
 		public override global::java.io.File getExternalCacheDir() 
@@ -290,6 +402,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._databaseList1465)) as java.lang.String[];
 		}
+		public new global::android.graphics.drawable.Drawable Wallpaper
+		{
+			get
+			{
+				return getWallpaper();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaper1466;
 		public override global::android.graphics.drawable.Drawable getWallpaper() 
 		{
@@ -308,6 +427,13 @@ namespace android.content
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._peekWallpaper1467)) as android.graphics.drawable.Drawable;
 		}
+		public new int WallpaperDesiredMinimumWidth
+		{
+			get
+			{
+				return getWallpaperDesiredMinimumWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaperDesiredMinimumWidth1468;
 		public override int getWallpaperDesiredMinimumWidth() 
 		{
@@ -316,6 +442,13 @@ namespace android.content
 				return @__env.CallIntMethod(this.JvmHandle, global::android.content.ContextWrapper._getWallpaperDesiredMinimumWidth1468);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.ContextWrapper.staticClass, global::android.content.ContextWrapper._getWallpaperDesiredMinimumWidth1468);
+		}
+		public new int WallpaperDesiredMinimumHeight
+		{
+			get
+			{
+				return getWallpaperDesiredMinimumHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaperDesiredMinimumHeight1469;
 		public override int getWallpaperDesiredMinimumHeight() 

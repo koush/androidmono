@@ -1,3 +1,36 @@
 namespace org.apache.http
 {
+	[global::MonoJavaBridge.JavaClass()]
+	public partial class MethodNotSupportedException : org.apache.http.HttpException
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static MethodNotSupportedException()
+		{
+			InitJNI();
+		}
+		protected MethodNotSupportedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _MethodNotSupportedException25078;
+		public MethodNotSupportedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MethodNotSupportedException.staticClass, global::org.apache.http.MethodNotSupportedException._MethodNotSupportedException25078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			Init(@__env, handle);
+		}
+		internal static global::MonoJavaBridge.MethodId _MethodNotSupportedException25079;
+		public MethodNotSupportedException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MethodNotSupportedException.staticClass, global::org.apache.http.MethodNotSupportedException._MethodNotSupportedException25079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::org.apache.http.MethodNotSupportedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/MethodNotSupportedException"));
+			global::org.apache.http.MethodNotSupportedException._MethodNotSupportedException25078 = @__env.GetMethodIDNoThrow(global::org.apache.http.MethodNotSupportedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::org.apache.http.MethodNotSupportedException._MethodNotSupportedException25079 = @__env.GetMethodIDNoThrow(global::org.apache.http.MethodNotSupportedException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+		}
+	}
 }

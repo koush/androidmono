@@ -145,6 +145,17 @@ namespace android.preference
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._compareTo6837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.String Key
+		{
+			get
+			{
+				return getKey();
+			}
+			set
+			{
+				setKey(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getKey6838;
 		public virtual global::java.lang.String getKey() 
 		{
@@ -153,6 +164,13 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.Preference._getKey6838)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._getKey6838)) as java.lang.String;
+		}
+		public new global::android.content.Context Context
+		{
+			get
+			{
+				return getContext();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContext6839;
 		public virtual global::android.content.Context getContext() 
@@ -181,6 +199,13 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._onClick6841);
 		}
+		public new global::android.content.SharedPreferences SharedPreferences
+		{
+			get
+			{
+				return getSharedPreferences();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSharedPreferences6842;
 		public virtual global::android.content.SharedPreferences getSharedPreferences() 
 		{
@@ -207,6 +232,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.Preference._setEnabled6844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._setEnabled6844, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.content.Intent Intent
+		{
+			get
+			{
+				return getIntent();
+			}
+			set
+			{
+				setIntent(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntent6845;
 		public virtual global::android.content.Intent getIntent() 
@@ -284,6 +320,17 @@ namespace android.preference
 		{
 			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
+		public new string Title
+		{
+			get
+			{
+				return getTitle().toString();
+			}
+			set
+			{
+				setTitle((global::java.lang.CharSequence)(global::java.lang.String)value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTitle6853;
 		public virtual global::java.lang.CharSequence getTitle() 
 		{
@@ -319,6 +366,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.Preference._restoreHierarchyState6856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._restoreHierarchyState6856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int Order
+		{
+			get
+			{
+				return getOrder();
+			}
+			set
+			{
+				setOrder(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOrder6857;
 		public virtual int getOrder() 
@@ -410,6 +468,17 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._setLayoutResource6866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int LayoutResource
+		{
+			get
+			{
+				return getLayoutResource();
+			}
+			set
+			{
+				setLayoutResource(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLayoutResource6867;
 		public virtual int getLayoutResource() 
 		{
@@ -428,6 +497,17 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._setWidgetLayoutResource6868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int WidgetLayoutResource
+		{
+			get
+			{
+				return getWidgetLayoutResource();
+			}
+			set
+			{
+				setWidgetLayoutResource(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWidgetLayoutResource6869;
 		public virtual int getWidgetLayoutResource() 
 		{
@@ -436,6 +516,17 @@ namespace android.preference
 				return @__env.CallIntMethod(this.JvmHandle, global::android.preference.Preference._getWidgetLayoutResource6869);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._getWidgetLayoutResource6869);
+		}
+		public new string Summary
+		{
+			get
+			{
+				return getSummary().toString();
+			}
+			set
+			{
+				setSummary((global::java.lang.CharSequence)(global::java.lang.String)value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSummary6870;
 		public virtual global::java.lang.CharSequence getSummary() 
@@ -485,6 +576,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.Preference._setShouldDisableView6874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._setShouldDisableView6874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new bool ShouldDisableView
+		{
+			get
+			{
+				return getShouldDisableView();
+			}
+			set
+			{
+				setShouldDisableView(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShouldDisableView6875;
 		public virtual bool getShouldDisableView() 
@@ -558,6 +660,13 @@ namespace android.preference
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.preference.Preference.OnPreferenceClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._getOnPreferenceClickListener6882)) as android.preference.Preference.OnPreferenceClickListener;
 		}
+		public new global::android.content.SharedPreferences_Editor Editor
+		{
+			get
+			{
+				return getEditor();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getEditor6883;
 		public virtual global::android.content.SharedPreferences_Editor getEditor() 
 		{
@@ -584,6 +693,13 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.Preference._notifyHierarchyChanged6885);
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._notifyHierarchyChanged6885);
+		}
+		public new global::android.preference.PreferenceManager PreferenceManager
+		{
+			get
+			{
+				return getPreferenceManager();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPreferenceManager6886;
 		public virtual global::android.preference.PreferenceManager getPreferenceManager() 
@@ -647,6 +763,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.Preference._setDependency6892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.Preference.staticClass, global::android.preference.Preference._setDependency6892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String Dependency
+		{
+			get
+			{
+				return getDependency();
+			}
+			set
+			{
+				setDependency(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDependency6893;
 		public virtual global::java.lang.String getDependency() 

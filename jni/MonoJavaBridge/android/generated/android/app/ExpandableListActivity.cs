@@ -74,6 +74,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._setListAdapter543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.widget.ExpandableListView ExpandableListView
+		{
+			get
+			{
+				return getExpandableListView();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getExpandableListView544;
 		public virtual global::android.widget.ExpandableListView getExpandableListView() 
 		{
@@ -82,6 +89,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.ExpandableListActivity._getExpandableListView544)) as android.widget.ExpandableListView;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._getExpandableListView544)) as android.widget.ExpandableListView;
+		}
+		public new global::android.widget.ExpandableListAdapter ExpandableListAdapter
+		{
+			get
+			{
+				return getExpandableListAdapter();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExpandableListAdapter545;
 		public virtual global::android.widget.ExpandableListAdapter getExpandableListAdapter() 
@@ -92,6 +106,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ExpandableListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._getExpandableListAdapter545)) as android.widget.ExpandableListAdapter;
 		}
+		public new long SelectedId
+		{
+			get
+			{
+				return getSelectedId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedId546;
 		public virtual long getSelectedId() 
 		{
@@ -100,6 +121,13 @@ namespace android.app
 				return @__env.CallLongMethod(this.JvmHandle, global::android.app.ExpandableListActivity._getSelectedId546);
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._getSelectedId546);
+		}
+		public new long SelectedPosition
+		{
+			get
+			{
+				return getSelectedPosition();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedPosition547;
 		public virtual long getSelectedPosition() 

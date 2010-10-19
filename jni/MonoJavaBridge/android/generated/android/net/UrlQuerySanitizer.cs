@@ -316,6 +316,17 @@ namespace android.net
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._isHexDigit5356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.net.UrlQuerySanitizer.ValueSanitizer UnregisteredParameterValueSanitizer
+		{
+			get
+			{
+				return getUnregisteredParameterValueSanitizer();
+			}
+			set
+			{
+				setUnregisteredParameterValueSanitizer(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getUnregisteredParameterValueSanitizer5357;
 		public virtual global::android.net.UrlQuerySanitizer.ValueSanitizer getUnregisteredParameterValueSanitizer() 
 		{
@@ -334,11 +345,25 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._setUnregisteredParameterValueSanitizer5358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer AllIllegal
+		{
+			get
+			{
+				return getAllIllegal();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAllIllegal5359;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getAllIllegal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getAllIllegal5359)) as android.net.UrlQuerySanitizer.ValueSanitizer;
+		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer AllButNulLegal
+		{
+			get
+			{
+				return getAllButNulLegal();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllButNulLegal5360;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getAllButNulLegal() 
@@ -346,11 +371,25 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getAllButNulLegal5360)) as android.net.UrlQuerySanitizer.ValueSanitizer;
 		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer AllButWhitespaceLegal
+		{
+			get
+			{
+				return getAllButWhitespaceLegal();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAllButWhitespaceLegal5361;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getAllButWhitespaceLegal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getAllButWhitespaceLegal5361)) as android.net.UrlQuerySanitizer.ValueSanitizer;
+		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer UrlLegal
+		{
+			get
+			{
+				return getUrlLegal();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUrlLegal5362;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getUrlLegal() 
@@ -358,11 +397,25 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getUrlLegal5362)) as android.net.UrlQuerySanitizer.ValueSanitizer;
 		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer UrlAndSpaceLegal
+		{
+			get
+			{
+				return getUrlAndSpaceLegal();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getUrlAndSpaceLegal5363;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getUrlAndSpaceLegal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getUrlAndSpaceLegal5363)) as android.net.UrlQuerySanitizer.ValueSanitizer;
+		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer AmpLegal
+		{
+			get
+			{
+				return getAmpLegal();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAmpLegal5364;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getAmpLegal() 
@@ -370,17 +423,38 @@ namespace android.net
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getAmpLegal5364)) as android.net.UrlQuerySanitizer.ValueSanitizer;
 		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer AmpAndSpaceLegal
+		{
+			get
+			{
+				return getAmpAndSpaceLegal();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAmpAndSpaceLegal5365;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getAmpAndSpaceLegal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getAmpAndSpaceLegal5365)) as android.net.UrlQuerySanitizer.ValueSanitizer;
 		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer SpaceLegal
+		{
+			get
+			{
+				return getSpaceLegal();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSpaceLegal5366;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getSpaceLegal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.net.UrlQuerySanitizer.ValueSanitizer>(@__env.CallStaticObjectMethod(android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getSpaceLegal5366)) as android.net.UrlQuerySanitizer.ValueSanitizer;
+		}
+		public static global::android.net.UrlQuerySanitizer.ValueSanitizer AllButNulAndAngleBracketsLegal
+		{
+			get
+			{
+				return getAllButNulAndAngleBracketsLegal();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllButNulAndAngleBracketsLegal5367;
 		public static global::android.net.UrlQuerySanitizer.ValueSanitizer getAllButNulAndAngleBracketsLegal() 
@@ -406,6 +480,13 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._parseQuery5369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.Set ParameterSet
+		{
+			get
+			{
+				return getParameterSet();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getParameterSet5370;
 		public virtual global::java.util.Set getParameterSet() 
 		{
@@ -414,6 +495,13 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer._getParameterSet5370)) as java.util.Set;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._getParameterSet5370)) as java.util.Set;
+		}
+		public new global::java.util.List ParameterList
+		{
+			get
+			{
+				return getParameterList();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterList5371;
 		public virtual global::java.util.List getParameterList() 
@@ -460,6 +548,17 @@ namespace android.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._setAllowUnregisteredParamaters5375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool AllowUnregisteredParamaters
+		{
+			get
+			{
+				return getAllowUnregisteredParamaters();
+			}
+			set
+			{
+				setAllowUnregisteredParamaters(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAllowUnregisteredParamaters5376;
 		public virtual bool getAllowUnregisteredParamaters() 
 		{
@@ -477,6 +576,17 @@ namespace android.net
 				@__env.CallVoidMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer._setPreferFirstRepeatedParameter5377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.UrlQuerySanitizer.staticClass, global::android.net.UrlQuerySanitizer._setPreferFirstRepeatedParameter5377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new bool PreferFirstRepeatedParameter
+		{
+			get
+			{
+				return getPreferFirstRepeatedParameter();
+			}
+			set
+			{
+				setPreferFirstRepeatedParameter(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPreferFirstRepeatedParameter5378;
 		public virtual bool getPreferFirstRepeatedParameter() 

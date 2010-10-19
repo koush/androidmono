@@ -11,6 +11,17 @@ namespace android.preference
 		protected ListPreference(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::java.lang.String Value
+		{
+			get
+			{
+				return getValue();
+			}
+			set
+			{
+				setValue(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getValue6811;
 		public virtual global::java.lang.String getValue() 
 		{
@@ -19,6 +30,13 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.ListPreference._getValue6811)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.ListPreference.staticClass, global::android.preference.ListPreference._getValue6811)) as java.lang.String;
+		}
+		public new string Entry
+		{
+			get
+			{
+				return getEntry().toString();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntry6812;
 		public virtual global::java.lang.CharSequence getEntry() 
@@ -37,6 +55,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.ListPreference._setValue6813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.ListPreference.staticClass, global::android.preference.ListPreference._setValue6813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.CharSequence[] Entries
+		{
+			get
+			{
+				return getEntries();
+			}
+			set
+			{
+				setEntries(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntries6814;
 		public virtual global::java.lang.CharSequence[] getEntries() 
@@ -136,6 +165,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.ListPreference._setEntryValues6824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.ListPreference.staticClass, global::android.preference.ListPreference._setEntryValues6824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.CharSequence[] EntryValues
+		{
+			get
+			{
+				return getEntryValues();
+			}
+			set
+			{
+				setEntryValues(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntryValues6825;
 		public virtual global::java.lang.CharSequence[] getEntryValues() 

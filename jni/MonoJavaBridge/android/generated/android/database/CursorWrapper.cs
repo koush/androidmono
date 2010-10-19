@@ -92,6 +92,13 @@ namespace android.database
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._isClosed2652);
 		}
+		public new int Position
+		{
+			get
+			{
+				return getPosition();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getPosition2653;
 		public virtual int getPosition() 
 		{
@@ -100,6 +107,13 @@ namespace android.database
 				return @__env.CallIntMethod(this.JvmHandle, global::android.database.CursorWrapper._getPosition2653);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._getPosition2653);
+		}
+		public new global::android.os.Bundle Extras
+		{
+			get
+			{
+				return getExtras();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtras2654;
 		public virtual global::android.os.Bundle getExtras() 
@@ -127,6 +141,13 @@ namespace android.database
 				@__env.CallVoidMethod(this.JvmHandle, global::android.database.CursorWrapper._unregisterContentObserver2656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._unregisterContentObserver2656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int Count
+		{
+			get
+			{
+				return getCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCount2657;
 		public virtual int getCount() 
@@ -245,6 +266,13 @@ namespace android.database
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._getColumnName2669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
+		public new global::java.lang.String[] ColumnNames
+		{
+			get
+			{
+				return getColumnNames();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNames2670;
 		public virtual global::java.lang.String[] getColumnNames() 
 		{
@@ -253,6 +281,13 @@ namespace android.database
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.database.CursorWrapper._getColumnNames2670)) as java.lang.String[];
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._getColumnNames2670)) as java.lang.String[];
+		}
+		public new int ColumnCount
+		{
+			get
+			{
+				return getColumnCount();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnCount2671;
 		public virtual int getColumnCount() 
@@ -334,6 +369,13 @@ namespace android.database
 				@__env.CallVoidMethod(this.JvmHandle, global::android.database.CursorWrapper._setNotificationUri2679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.CursorWrapper.staticClass, global::android.database.CursorWrapper._setNotificationUri2679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public new bool WantsAllOnMoveCalls
+		{
+			get
+			{
+				return getWantsAllOnMoveCalls();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWantsAllOnMoveCalls2680;
 		public virtual bool getWantsAllOnMoveCalls() 

@@ -11,6 +11,13 @@ namespace android.sax
 		protected RootElement(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::org.xml.sax.ContentHandler ContentHandler
+		{
+			get
+			{
+				return getContentHandler();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getContentHandler7253;
 		public virtual global::org.xml.sax.ContentHandler getContentHandler() 
 		{

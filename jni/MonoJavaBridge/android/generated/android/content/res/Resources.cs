@@ -194,6 +194,13 @@ namespace android.content.res
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Resources.staticClass, global::android.content.res.Resources._getIdentifier2301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new global::android.content.res.AssetManager Assets
+		{
+			get
+			{
+				return getAssets();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAssets2302;
 		public virtual global::android.content.res.AssetManager getAssets() 
 		{
@@ -224,6 +231,13 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.Resources._getText2304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.Resources.staticClass, global::android.content.res.Resources._getText2304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+		}
+		public static global::android.content.res.Resources System
+		{
+			get
+			{
+				return getSystem();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystem2305;
 		public static global::android.content.res.Resources getSystem() 
@@ -447,6 +461,13 @@ namespace android.content.res
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Resources.staticClass, global::android.content.res.Resources._updateConfiguration2329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::android.util.DisplayMetrics DisplayMetrics
+		{
+			get
+			{
+				return getDisplayMetrics();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayMetrics2330;
 		public virtual global::android.util.DisplayMetrics getDisplayMetrics() 
 		{
@@ -455,6 +476,13 @@ namespace android.content.res
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.Resources._getDisplayMetrics2330)) as android.util.DisplayMetrics;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.Resources.staticClass, global::android.content.res.Resources._getDisplayMetrics2330)) as android.util.DisplayMetrics;
+		}
+		public new global::android.content.res.Configuration Configuration
+		{
+			get
+			{
+				return getConfiguration();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConfiguration2331;
 		public virtual global::android.content.res.Configuration getConfiguration() 

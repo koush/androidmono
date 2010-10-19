@@ -20,6 +20,17 @@ namespace android.os
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._toString6492)) as java.lang.String;
 		}
+		public new global::android.os.Bundle Data
+		{
+			get
+			{
+				return getData();
+			}
+			set
+			{
+				setData(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getData6493;
 		public global::android.os.Bundle getData() 
 		{
@@ -113,6 +124,13 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._setData6505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.Runnable Callback
+		{
+			get
+			{
+				return getCallback();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getCallback6506;
 		public global::java.lang.Runnable getCallback() 
 		{
@@ -131,6 +149,13 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._copyFrom6507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new long When
+		{
+			get
+			{
+				return getWhen();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getWhen6508;
 		public long getWhen() 
 		{
@@ -148,6 +173,17 @@ namespace android.os
 				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Message._setTarget6509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._setTarget6509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::android.os.Handler Target
+		{
+			get
+			{
+				return getTarget();
+			}
+			set
+			{
+				setTarget(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTarget6510;
 		public global::android.os.Handler getTarget() 

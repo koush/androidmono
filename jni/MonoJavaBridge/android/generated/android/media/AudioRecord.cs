@@ -73,6 +73,13 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._stop4869);
 		}
+		public new int State
+		{
+			get
+			{
+				return getState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getState4870;
 		public virtual int getState() 
 		{
@@ -118,6 +125,13 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._release4874);
 		}
+		public new int SampleRate
+		{
+			get
+			{
+				return getSampleRate();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSampleRate4875;
 		public virtual int getSampleRate() 
 		{
@@ -126,6 +140,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioRecord._getSampleRate4875);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getSampleRate4875);
+		}
+		public new int AudioSource
+		{
+			get
+			{
+				return getAudioSource();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAudioSource4876;
 		public virtual int getAudioSource() 
@@ -136,6 +157,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getAudioSource4876);
 		}
+		public new int AudioFormat
+		{
+			get
+			{
+				return getAudioFormat();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAudioFormat4877;
 		public virtual int getAudioFormat() 
 		{
@@ -144,6 +172,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioRecord._getAudioFormat4877);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getAudioFormat4877);
+		}
+		public new int ChannelConfiguration
+		{
+			get
+			{
+				return getChannelConfiguration();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChannelConfiguration4878;
 		public virtual int getChannelConfiguration() 
@@ -154,6 +189,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getChannelConfiguration4878);
 		}
+		public new int ChannelCount
+		{
+			get
+			{
+				return getChannelCount();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getChannelCount4879;
 		public virtual int getChannelCount() 
 		{
@@ -162,6 +204,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioRecord._getChannelCount4879);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getChannelCount4879);
+		}
+		public new int RecordingState
+		{
+			get
+			{
+				return getRecordingState();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRecordingState4880;
 		public virtual int getRecordingState() 
@@ -172,6 +221,13 @@ namespace android.media
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getRecordingState4880);
 		}
+		public new int NotificationMarkerPosition
+		{
+			get
+			{
+				return getNotificationMarkerPosition();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getNotificationMarkerPosition4881;
 		public virtual int getNotificationMarkerPosition() 
 		{
@@ -180,6 +236,13 @@ namespace android.media
 				return @__env.CallIntMethod(this.JvmHandle, global::android.media.AudioRecord._getNotificationMarkerPosition4881);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getNotificationMarkerPosition4881);
+		}
+		public new int PositionNotificationPeriod
+		{
+			get
+			{
+				return getPositionNotificationPeriod();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPositionNotificationPeriod4882;
 		public virtual int getPositionNotificationPeriod() 

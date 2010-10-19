@@ -237,6 +237,13 @@ namespace android.speech.tts
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._shutdown7320);
 		}
+		public new global::java.util.Locale Language
+		{
+			get
+			{
+				return getLanguage();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLanguage7321;
 		public virtual global::java.util.Locale getLanguage() 
 		{
@@ -389,6 +396,13 @@ namespace android.speech.tts
 				return @__env.CallIntMethod(this.JvmHandle, global::android.speech.tts.TextToSpeech._setEngineByPackageName7337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setEngineByPackageName7337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new global::java.lang.String DefaultEngine
+		{
+			get
+			{
+				return getDefaultEngine();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultEngine7338;
 		public virtual global::java.lang.String getDefaultEngine() 

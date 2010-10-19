@@ -11,85 +11,99 @@ namespace java.lang.reflect
 		protected AccessibleObject(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getAnnotation13424;
+		internal static global::MonoJavaBridge.MethodId _getAnnotation15358;
 		public virtual global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._getAnnotation13424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._getAnnotation15358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getAnnotation13424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getAnnotation15358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 		}
-		internal static global::MonoJavaBridge.MethodId _isAnnotationPresent13425;
+		internal static global::MonoJavaBridge.MethodId _isAnnotationPresent15359;
 		public virtual bool isAnnotationPresent(java.lang.Class arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._isAnnotationPresent13425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._isAnnotationPresent15359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._isAnnotationPresent13425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._isAnnotationPresent15359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAnnotations13426;
+		public new global::java.lang.annotation.Annotation[] Annotations
+		{
+			get
+			{
+				return getAnnotations();
+			}
+		}
+		internal static global::MonoJavaBridge.MethodId _getAnnotations15360;
 		public virtual global::java.lang.annotation.Annotation[] getAnnotations() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._getAnnotations13426)) as java.lang.annotation.Annotation[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._getAnnotations15360)) as java.lang.annotation.Annotation[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getAnnotations13426)) as java.lang.annotation.Annotation[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getAnnotations15360)) as java.lang.annotation.Annotation[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations13427;
+		public new global::java.lang.annotation.Annotation[] DeclaredAnnotations
+		{
+			get
+			{
+				return getDeclaredAnnotations();
+			}
+		}
+		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations15361;
 		public virtual global::java.lang.annotation.Annotation[] getDeclaredAnnotations() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations13427)) as java.lang.annotation.Annotation[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations15361)) as java.lang.annotation.Annotation[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations13427)) as java.lang.annotation.Annotation[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations15361)) as java.lang.annotation.Annotation[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setAccessible13428;
+		internal static global::MonoJavaBridge.MethodId _setAccessible15362;
 		public static void setAccessible(java.lang.reflect.AccessibleObject[] arg0, bool arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._setAccessible13428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._setAccessible15362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setAccessible13429;
+		internal static global::MonoJavaBridge.MethodId _setAccessible15363;
 		public virtual void setAccessible(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._setAccessible13429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._setAccessible15363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._setAccessible13429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._setAccessible15363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isAccessible13430;
+		internal static global::MonoJavaBridge.MethodId _isAccessible15364;
 		public virtual bool isAccessible() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._isAccessible13430);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject._isAccessible15364);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._isAccessible13430);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._isAccessible15364);
 		}
-		internal static global::MonoJavaBridge.MethodId _AccessibleObject13431;
+		internal static global::MonoJavaBridge.MethodId _AccessibleObject15365;
 		protected AccessibleObject()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._AccessibleObject13431);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._AccessibleObject15365);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.AccessibleObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/AccessibleObject"));
-			global::java.lang.reflect.AccessibleObject._getAnnotation13424 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.AccessibleObject._isAnnotationPresent13425 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z");
-			global::java.lang.reflect.AccessibleObject._getAnnotations13426 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations13427 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.AccessibleObject._setAccessible13428 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "setAccessible", "([Ljava/lang/reflect/AccessibleObject;Z)V");
-			global::java.lang.reflect.AccessibleObject._setAccessible13429 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "setAccessible", "(Z)V");
-			global::java.lang.reflect.AccessibleObject._isAccessible13430 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "isAccessible", "()Z");
-			global::java.lang.reflect.AccessibleObject._AccessibleObject13431 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "<init>", "()V");
+			global::java.lang.reflect.AccessibleObject._getAnnotation15358 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
+			global::java.lang.reflect.AccessibleObject._isAnnotationPresent15359 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "isAnnotationPresent", "(Ljava/lang/Class;)Z");
+			global::java.lang.reflect.AccessibleObject._getAnnotations15360 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+			global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations15361 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+			global::java.lang.reflect.AccessibleObject._setAccessible15362 = @__env.GetStaticMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "setAccessible", "([Ljava/lang/reflect/AccessibleObject;Z)V");
+			global::java.lang.reflect.AccessibleObject._setAccessible15363 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "setAccessible", "(Z)V");
+			global::java.lang.reflect.AccessibleObject._isAccessible15364 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "isAccessible", "()Z");
+			global::java.lang.reflect.AccessibleObject._AccessibleObject15365 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.AccessibleObject.staticClass, "<init>", "()V");
 		}
 	}
 }

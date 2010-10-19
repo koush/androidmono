@@ -65,6 +65,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureStore.staticClass, global::android.gesture.GestureStore._setOrientationStyle3038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int OrientationStyle
+		{
+			get
+			{
+				return getOrientationStyle();
+			}
+			set
+			{
+				setOrientationStyle(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getOrientationStyle3039;
 		public virtual int getOrientationStyle() 
 		{
@@ -83,6 +94,17 @@ namespace android.gesture
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureStore.staticClass, global::android.gesture.GestureStore._setSequenceType3040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int SequenceType
+		{
+			get
+			{
+				return getSequenceType();
+			}
+			set
+			{
+				setSequenceType(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSequenceType3041;
 		public virtual int getSequenceType() 
 		{
@@ -91,6 +113,13 @@ namespace android.gesture
 				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureStore._getSequenceType3041);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureStore.staticClass, global::android.gesture.GestureStore._getSequenceType3041);
+		}
+		public new global::java.util.Set GestureEntries
+		{
+			get
+			{
+				return getGestureEntries();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGestureEntries3042;
 		public virtual global::java.util.Set getGestureEntries() 

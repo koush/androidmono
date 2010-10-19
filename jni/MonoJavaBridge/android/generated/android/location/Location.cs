@@ -47,6 +47,17 @@ namespace android.location
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._setTime4731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new long Time
+		{
+			get
+			{
+				return getTime();
+			}
+			set
+			{
+				setTime(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getTime4732;
 		public virtual long getTime() 
 		{
@@ -55,6 +66,17 @@ namespace android.location
 				return @__env.CallLongMethod(this.JvmHandle, global::android.location.Location._getTime4732);
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._getTime4732);
+		}
+		public new global::java.lang.String Provider
+		{
+			get
+			{
+				return getProvider();
+			}
+			set
+			{
+				setProvider(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider4733;
 		public virtual global::java.lang.String getProvider() 
@@ -104,6 +126,17 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._describeContents4738);
 		}
+		public new global::android.os.Bundle Extras
+		{
+			get
+			{
+				return getExtras();
+			}
+			set
+			{
+				setExtras(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getExtras4739;
 		public virtual global::android.os.Bundle getExtras() 
 		{
@@ -112,6 +145,17 @@ namespace android.location
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.Location._getExtras4739)) as android.os.Bundle;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._getExtras4739)) as android.os.Bundle;
+		}
+		public new double Latitude
+		{
+			get
+			{
+				return getLatitude();
+			}
+			set
+			{
+				setLatitude(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLatitude4740;
 		public virtual double getLatitude() 
@@ -130,6 +174,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Location._setLatitude4741, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._setLatitude4741, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new double Longitude
+		{
+			get
+			{
+				return getLongitude();
+			}
+			set
+			{
+				setLongitude(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLongitude4742;
 		public virtual double getLongitude() 
@@ -166,6 +221,17 @@ namespace android.location
 				@__env.CallVoidMethod(this.JvmHandle, global::android.location.Location._setAccuracy4745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._setAccuracy4745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new float Accuracy
+		{
+			get
+			{
+				return getAccuracy();
+			}
+			set
+			{
+				setAccuracy(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAccuracy4746;
 		public virtual float getAccuracy() 
@@ -218,6 +284,17 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._hasAltitude4751);
 		}
+		public new double Altitude
+		{
+			get
+			{
+				return getAltitude();
+			}
+			set
+			{
+				setAltitude(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getAltitude4752;
 		public virtual double getAltitude() 
 		{
@@ -254,6 +331,17 @@ namespace android.location
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._hasSpeed4755);
 		}
+		public new float Speed
+		{
+			get
+			{
+				return getSpeed();
+			}
+			set
+			{
+				setSpeed(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSpeed4756;
 		public virtual float getSpeed() 
 		{
@@ -289,6 +377,17 @@ namespace android.location
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.location.Location._hasBearing4759);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.Location.staticClass, global::android.location.Location._hasBearing4759);
+		}
+		public new float Bearing
+		{
+			get
+			{
+				return getBearing();
+			}
+			set
+			{
+				setBearing(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBearing4760;
 		public virtual float getBearing() 

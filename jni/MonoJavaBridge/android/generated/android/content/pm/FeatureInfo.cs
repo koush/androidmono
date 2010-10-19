@@ -38,6 +38,13 @@ namespace android.content.pm
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.FeatureInfo.staticClass, global::android.content.pm.FeatureInfo._describeContents1907);
 		}
+		public new global::java.lang.String GlEsVersion
+		{
+			get
+			{
+				return getGlEsVersion();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getGlEsVersion1908;
 		public virtual global::java.lang.String getGlEsVersion() 
 		{

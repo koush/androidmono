@@ -180,6 +180,13 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Region.staticClass, global::android.graphics.Region._describeContents3765);
 		}
+		public new global::android.graphics.Rect Bounds
+		{
+			get
+			{
+				return getBounds();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getBounds3766;
 		public virtual global::android.graphics.Rect getBounds() 
 		{
@@ -323,6 +330,13 @@ namespace android.graphics
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.graphics.Region._isComplex3781);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Region.staticClass, global::android.graphics.Region._isComplex3781);
+		}
+		public new global::android.graphics.Path BoundaryPath
+		{
+			get
+			{
+				return getBoundaryPath();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoundaryPath3782;
 		public virtual global::android.graphics.Path getBoundaryPath() 

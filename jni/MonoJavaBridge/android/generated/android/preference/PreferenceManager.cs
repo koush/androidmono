@@ -110,6 +110,13 @@ namespace android.preference
 				global::android.preference.PreferenceManager.OnActivityStopListener_._onActivityStop6950 = @__env.GetMethodIDNoThrow(global::android.preference.PreferenceManager.OnActivityStopListener_.staticClass, "onActivityStop", "()V");
 			}
 		}
+		public new global::android.content.SharedPreferences SharedPreferences
+		{
+			get
+			{
+				return getSharedPreferences();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSharedPreferences6951;
 		public virtual global::android.content.SharedPreferences getSharedPreferences() 
 		{
@@ -128,6 +135,17 @@ namespace android.preference
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._createPreferenceScreen6952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.preference.PreferenceScreen;
 		}
+		public new global::java.lang.String SharedPreferencesName
+		{
+			get
+			{
+				return getSharedPreferencesName();
+			}
+			set
+			{
+				setSharedPreferencesName(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSharedPreferencesName6953;
 		public virtual global::java.lang.String getSharedPreferencesName() 
 		{
@@ -145,6 +163,17 @@ namespace android.preference
 				@__env.CallVoidMethod(this.JvmHandle, global::android.preference.PreferenceManager._setSharedPreferencesName6954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._setSharedPreferencesName6954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public new int SharedPreferencesMode
+		{
+			get
+			{
+				return getSharedPreferencesMode();
+			}
+			set
+			{
+				setSharedPreferencesMode(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSharedPreferencesMode6955;
 		public virtual int getSharedPreferencesMode() 

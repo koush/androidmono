@@ -20,6 +20,13 @@ namespace android.app.admin
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._isAdminActive897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.List ActiveAdmins
+		{
+			get
+			{
+				return getActiveAdmins();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getActiveAdmins898;
 		public virtual global::java.util.List getActiveAdmins() 
 		{
@@ -91,6 +98,13 @@ namespace android.app.admin
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient905);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._isActivePasswordSufficient905);
+		}
+		public new int CurrentFailedPasswordAttempts
+		{
+			get
+			{
+				return getCurrentFailedPasswordAttempts();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentFailedPasswordAttempts906;
 		public virtual int getCurrentFailedPasswordAttempts() 

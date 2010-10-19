@@ -87,7 +87,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._finalize4962);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone4963;
-		public virtual new global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,6 +127,13 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.JetPlayer.staticClass, global::android.media.JetPlayer._getJetPlayer4967)) as android.media.JetPlayer;
+		}
+		public static int MaxTracks
+		{
+			get
+			{
+				return getMaxTracks();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxTracks4968;
 		public static int getMaxTracks() 

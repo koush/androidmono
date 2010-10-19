@@ -26,6 +26,13 @@ namespace android.app
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getInstance855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.WallpaperManager;
 		}
+		public new global::android.graphics.drawable.Drawable Drawable
+		{
+			get
+			{
+				return getDrawable();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDrawable856;
 		public virtual global::android.graphics.drawable.Drawable getDrawable() 
 		{
@@ -53,6 +60,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekDrawable858)) as android.graphics.drawable.Drawable;
 		}
+		public new global::android.graphics.drawable.Drawable FastDrawable
+		{
+			get
+			{
+				return getFastDrawable();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getFastDrawable859;
 		public virtual global::android.graphics.drawable.Drawable getFastDrawable() 
 		{
@@ -70,6 +84,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.WallpaperManager._peekFastDrawable860)) as android.graphics.drawable.Drawable;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekFastDrawable860)) as android.graphics.drawable.Drawable;
+		}
+		public new global::android.app.WallpaperInfo WallpaperInfo
+		{
+			get
+			{
+				return getWallpaperInfo();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaperInfo861;
 		public virtual global::android.app.WallpaperInfo getWallpaperInfo() 
@@ -98,6 +119,13 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setStream863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int DesiredMinimumWidth
+		{
+			get
+			{
+				return getDesiredMinimumWidth();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getDesiredMinimumWidth864;
 		public virtual int getDesiredMinimumWidth() 
 		{
@@ -106,6 +134,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.WallpaperManager._getDesiredMinimumWidth864);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDesiredMinimumWidth864);
+		}
+		public new int DesiredMinimumHeight
+		{
+			get
+			{
+				return getDesiredMinimumHeight();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDesiredMinimumHeight865;
 		public virtual int getDesiredMinimumHeight() 

@@ -47,6 +47,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._describeContents767);
 		}
+		public new int InputType
+		{
+			get
+			{
+				return getInputType();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getInputType768;
 		public int getInputType() 
 		{
@@ -55,6 +62,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getInputType768);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getInputType768);
+		}
+		public new int ImeOptions
+		{
+			get
+			{
+				return getImeOptions();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getImeOptions769;
 		public int getImeOptions() 
@@ -65,6 +79,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getImeOptions769);
 		}
+		public new global::java.lang.String SuggestAuthority
+		{
+			get
+			{
+				return getSuggestAuthority();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestAuthority770;
 		public global::java.lang.String getSuggestAuthority() 
 		{
@@ -74,6 +95,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestAuthority770)) as java.lang.String;
 		}
+		public new global::java.lang.String SuggestPackage
+		{
+			get
+			{
+				return getSuggestPackage();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestPackage771;
 		public global::java.lang.String getSuggestPackage() 
 		{
@@ -82,6 +110,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestPackage771)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestPackage771)) as java.lang.String;
+		}
+		public new global::android.content.ComponentName SearchActivity
+		{
+			get
+			{
+				return getSearchActivity();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSearchActivity772;
 		public global::android.content.ComponentName getSearchActivity() 
@@ -110,6 +145,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldRewriteQueryFromText774);
 		}
+		public new int SettingsDescriptionId
+		{
+			get
+			{
+				return getSettingsDescriptionId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSettingsDescriptionId775;
 		public int getSettingsDescriptionId() 
 		{
@@ -118,6 +160,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getSettingsDescriptionId775);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSettingsDescriptionId775);
+		}
+		public new global::java.lang.String SuggestPath
+		{
+			get
+			{
+				return getSuggestPath();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestPath776;
 		public global::java.lang.String getSuggestPath() 
@@ -128,6 +177,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestPath776)) as java.lang.String;
 		}
+		public new global::java.lang.String SuggestSelection
+		{
+			get
+			{
+				return getSuggestSelection();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestSelection777;
 		public global::java.lang.String getSuggestSelection() 
 		{
@@ -136,6 +192,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestSelection777)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestSelection777)) as java.lang.String;
+		}
+		public new global::java.lang.String SuggestIntentAction
+		{
+			get
+			{
+				return getSuggestIntentAction();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestIntentAction778;
 		public global::java.lang.String getSuggestIntentAction() 
@@ -146,6 +209,13 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestIntentAction778)) as java.lang.String;
 		}
+		public new global::java.lang.String SuggestIntentData
+		{
+			get
+			{
+				return getSuggestIntentData();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestIntentData779;
 		public global::java.lang.String getSuggestIntentData() 
 		{
@@ -154,6 +224,13 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestIntentData779)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestIntentData779)) as java.lang.String;
+		}
+		public new int SuggestThreshold
+		{
+			get
+			{
+				return getSuggestThreshold();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestThreshold780;
 		public int getSuggestThreshold() 
@@ -164,6 +241,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestThreshold780);
 		}
+		public new int HintId
+		{
+			get
+			{
+				return getHintId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getHintId781;
 		public int getHintId() 
 		{
@@ -172,6 +256,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getHintId781);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getHintId781);
+		}
+		public new bool VoiceSearchEnabled
+		{
+			get
+			{
+				return getVoiceSearchEnabled();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceSearchEnabled782;
 		public bool getVoiceSearchEnabled() 
@@ -182,6 +273,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchEnabled782);
 		}
+		public new bool VoiceSearchLaunchWebSearch
+		{
+			get
+			{
+				return getVoiceSearchLaunchWebSearch();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchWebSearch783;
 		public bool getVoiceSearchLaunchWebSearch() 
 		{
@@ -190,6 +288,13 @@ namespace android.app
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch783);
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch783);
+		}
+		public new bool VoiceSearchLaunchRecognizer
+		{
+			get
+			{
+				return getVoiceSearchLaunchRecognizer();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchRecognizer784;
 		public bool getVoiceSearchLaunchRecognizer() 
@@ -200,6 +305,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer784);
 		}
+		public new int VoiceLanguageModeId
+		{
+			get
+			{
+				return getVoiceLanguageModeId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageModeId785;
 		public int getVoiceLanguageModeId() 
 		{
@@ -208,6 +320,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceLanguageModeId785);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceLanguageModeId785);
+		}
+		public new int VoicePromptTextId
+		{
+			get
+			{
+				return getVoicePromptTextId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoicePromptTextId786;
 		public int getVoicePromptTextId() 
@@ -218,6 +337,13 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoicePromptTextId786);
 		}
+		public new int VoiceLanguageId
+		{
+			get
+			{
+				return getVoiceLanguageId();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageId787;
 		public int getVoiceLanguageId() 
 		{
@@ -226,6 +352,13 @@ namespace android.app
 				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceLanguageId787);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceLanguageId787);
+		}
+		public new int VoiceMaxResults
+		{
+			get
+			{
+				return getVoiceMaxResults();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceMaxResults788;
 		public int getVoiceMaxResults() 

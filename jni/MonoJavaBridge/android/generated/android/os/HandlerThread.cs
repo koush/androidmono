@@ -29,6 +29,13 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._quit6455);
 		}
+		public new global::android.os.Looper Looper
+		{
+			get
+			{
+				return getLooper();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLooper6456;
 		public virtual global::android.os.Looper getLooper() 
 		{
@@ -46,6 +53,13 @@ namespace android.os
 				@__env.CallVoidMethod(this.JvmHandle, global::android.os.HandlerThread._onLooperPrepared6457);
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._onLooperPrepared6457);
+		}
+		public new int ThreadId
+		{
+			get
+			{
+				return getThreadId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getThreadId6458;
 		public virtual int getThreadId() 

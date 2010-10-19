@@ -38,6 +38,13 @@ namespace android.net.wifi
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._describeContents5481);
 		}
+		public new global::java.lang.String SSID
+		{
+			get
+			{
+				return getSSID();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSSID5482;
 		public virtual global::java.lang.String getSSID() 
 		{
@@ -46,6 +53,13 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.wifi.WifiInfo._getSSID5482)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getSSID5482)) as java.lang.String;
+		}
+		public new global::java.lang.String BSSID
+		{
+			get
+			{
+				return getBSSID();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBSSID5483;
 		public virtual global::java.lang.String getBSSID() 
@@ -56,6 +70,13 @@ namespace android.net.wifi
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getBSSID5483)) as java.lang.String;
 		}
+		public new int Rssi
+		{
+			get
+			{
+				return getRssi();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getRssi5484;
 		public virtual int getRssi() 
 		{
@@ -64,6 +85,13 @@ namespace android.net.wifi
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo._getRssi5484);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getRssi5484);
+		}
+		public new int LinkSpeed
+		{
+			get
+			{
+				return getLinkSpeed();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLinkSpeed5485;
 		public virtual int getLinkSpeed() 
@@ -74,6 +102,13 @@ namespace android.net.wifi
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getLinkSpeed5485);
 		}
+		public new global::java.lang.String MacAddress
+		{
+			get
+			{
+				return getMacAddress();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getMacAddress5486;
 		public virtual global::java.lang.String getMacAddress() 
 		{
@@ -82,6 +117,13 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.wifi.WifiInfo._getMacAddress5486)) as java.lang.String;
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getMacAddress5486)) as java.lang.String;
+		}
+		public new int NetworkId
+		{
+			get
+			{
+				return getNetworkId();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkId5487;
 		public virtual int getNetworkId() 
@@ -92,6 +134,13 @@ namespace android.net.wifi
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getNetworkId5487);
 		}
+		public new global::android.net.wifi.SupplicantState SupplicantState
+		{
+			get
+			{
+				return getSupplicantState();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getSupplicantState5488;
 		public virtual global::android.net.wifi.SupplicantState getSupplicantState() 
 		{
@@ -101,6 +150,13 @@ namespace android.net.wifi
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getSupplicantState5488)) as android.net.wifi.SupplicantState;
 		}
+		public new int IpAddress
+		{
+			get
+			{
+				return getIpAddress();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getIpAddress5489;
 		public virtual int getIpAddress() 
 		{
@@ -109,6 +165,13 @@ namespace android.net.wifi
 				return @__env.CallIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo._getIpAddress5489);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiInfo.staticClass, global::android.net.wifi.WifiInfo._getIpAddress5489);
+		}
+		public new bool HiddenSSID
+		{
+			get
+			{
+				return getHiddenSSID();
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHiddenSSID5490;
 		public virtual bool getHiddenSSID() 

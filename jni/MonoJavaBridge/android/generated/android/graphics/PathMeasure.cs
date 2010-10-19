@@ -20,6 +20,13 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._finalize3593);
 		}
+		public new float Length
+		{
+			get
+			{
+				return getLength();
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _getLength3594;
 		public virtual float getLength() 
 		{
