@@ -162,17 +162,17 @@ namespace MonoJavaBridge
         delegate void JniAction<T1, T2, T3, T4, T5, T6, T7, T8, T9>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9);
         delegate void JniAction<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, T10 t10);
 
-        delegate TResult JniFunc<TResult>(IntPtr env, IntPtr obj, TResult tr);
-        delegate TResult JniFunc<T1, TResult>(IntPtr env, IntPtr obj, T1 t1, TResult tr);
-        delegate TResult JniFunc<T1, T2, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, TResult tr);
-        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, T10 t10, TResult tr);
+        delegate TResult JniFunc<TResult>(IntPtr env, IntPtr obj);
+        delegate TResult JniFunc<T1, TResult>(IntPtr env, IntPtr obj, T1 t1);
+        delegate TResult JniFunc<T1, T2, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2);
+        delegate TResult JniFunc<T1, T2, T3, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3);
+        delegate TResult JniFunc<T1, T2, T3, T4, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4);
+        delegate TResult JniFunc<T1, T2, T3, T4, T5, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5);
+        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6);
+        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7);
+        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8);
+        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9);
+        delegate TResult JniFunc<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>(IntPtr env, IntPtr obj, T1 t1, T2 t2, T3 t3, T4 t4, T5 t5, T6 t6, T7 t7, T8 t8, T9 t9, T10 t10);
 
         static Expression MarshalArgument(Type argumentType, ParameterExpression parameter)
         {
@@ -230,7 +230,7 @@ namespace MonoJavaBridge
             if (method.ReturnType != typeof(void))
             {
                 genericArguments.Add(method.ReturnType);
-                delegateType = myFuncs[genericArguments.Count];
+                delegateType = myFuncs[genericArguments.Count - 1];
             }
             else
             {
