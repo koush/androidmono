@@ -11,34 +11,34 @@ namespace org.apache.http
 		protected ProtocolException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ProtocolException25085;
+		internal static global::MonoJavaBridge.MethodId _ProtocolException31624;
 		public ProtocolException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException25085);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31624);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ProtocolException25086;
+		internal static global::MonoJavaBridge.MethodId _ProtocolException31625;
 		public ProtocolException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException25086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ProtocolException25087;
+		internal static global::MonoJavaBridge.MethodId _ProtocolException31626;
 		public ProtocolException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException25087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ProtocolException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ProtocolException"));
-			global::org.apache.http.ProtocolException._ProtocolException25085 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "()V");
-			global::org.apache.http.ProtocolException._ProtocolException25086 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::org.apache.http.ProtocolException._ProtocolException25087 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::org.apache.http.ProtocolException._ProtocolException31624 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "()V");
+			global::org.apache.http.ProtocolException._ProtocolException31625 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::org.apache.http.ProtocolException._ProtocolException31626 = @__env.GetMethodIDNoThrow(global::org.apache.http.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 		}
 	}
 }

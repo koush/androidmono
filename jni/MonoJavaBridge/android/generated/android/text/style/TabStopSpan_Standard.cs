@@ -18,28 +18,28 @@ namespace android.text.style
 				return getTabStop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTabStop8914;
+		internal static global::MonoJavaBridge.MethodId _getTabStop13534;
 		public virtual int getTabStop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard._getTabStop8914);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard._getTabStop13534);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._getTabStop8914);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._getTabStop13534);
 		}
-		internal static global::MonoJavaBridge.MethodId _TabStopSpan_Standard8915;
+		internal static global::MonoJavaBridge.MethodId _TabStopSpan_Standard13535;
 		public TabStopSpan_Standard(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard8915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard13535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.style.TabStopSpan_Standard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/style/TabStopSpan_Standard"));
-			global::android.text.style.TabStopSpan_Standard._getTabStop8914 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_Standard.staticClass, "getTabStop", "()I");
-			global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard8915 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_Standard.staticClass, "<init>", "(I)V");
+			global::android.text.style.TabStopSpan_Standard._getTabStop13534 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_Standard.staticClass, "getTabStop", "()I");
+			global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard13535 = @__env.GetMethodIDNoThrow(global::android.text.style.TabStopSpan_Standard.staticClass, "<init>", "(I)V");
 		}
 	}
 }

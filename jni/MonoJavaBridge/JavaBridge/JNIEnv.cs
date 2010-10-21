@@ -144,6 +144,15 @@ namespace MonoJavaBridge
             return new FieldId(res);
         }
 
+        public FieldId GetFieldIDNoThrow(JniHandle clazz, string name, string sig)
+        {
+            IntPtr res = getFieldID.Invoke(envPtr, clazz, name, sig);
+            if (ExceptionRead())
+            {
+                return new FieldId(IntPtr.Zero);
+            }
+            return new FieldId(res);
+        }
 #if !JNI4NET_MINI
 
         public JniLocalHandle ToReflectedField(JniHandle cls, FieldId fieldID, bool isStatic)
@@ -178,19 +187,23 @@ namespace MonoJavaBridge
 
 #endif
 
-        public IntPtr GetStaticFieldIDPtr(JniHandle clazz, string name, string sig)
+        public FieldId GetStaticFieldID(JniHandle clazz, string name, string sig)
         {
             IntPtr res = getStaticFieldID.Invoke(envPtr, clazz, name, sig);
             ExceptionTest();
-            return res;
-        }
-
-        public FieldId GetStaticFieldID(JniHandle clazz, string name, string sig)
-        {
-            IntPtr res = GetStaticFieldIDPtr(clazz, name, sig);
             return new FieldId(res);
         }
 
+        public FieldId GetStaticFieldIDNoThrow(JniHandle clazz, string name, string sig)
+        {
+            IntPtr res = getStaticFieldID.Invoke(envPtr, clazz, name, sig);
+            if (ExceptionRead())
+            {
+                return new FieldId(IntPtr.Zero);
+            }
+            return new FieldId(res);
+        }
+        
         public JNIResult RegisterNatives(JniHandle clazz, JNINativeMethod[] methods, int nMethods)
         {
             JNIResult natives = registerNatives.Invoke(envPtr, clazz, methods, nMethods);
@@ -534,37 +547,32 @@ namespace MonoJavaBridge
 
         #region getters instance
 
-        public bool GetBooleanField(JavaObject obj, FieldId fieldID)
+        public bool GetBooleanField(JniHandle obj, FieldId fieldID)
         {
-            bool res = getBooleanField(envPtr, obj.JvmHandle, fieldID.native) != 0;
+            bool res = getBooleanField(envPtr, obj, fieldID.native) != 0;
             ExceptionTest();
             return res;
         }
 
-        public byte GetByteField(JavaObject obj, FieldId fieldID)
+        public byte GetByteField(JniHandle obj, FieldId fieldID)
         {
-            byte res = getByteField(envPtr, obj.JvmHandle, fieldID.native);
+            byte res = getByteField(envPtr, obj, fieldID.native);
             ExceptionTest();
             return res;
         }
 
-        public short GetShortField(JavaObject obj, FieldId fieldID)
+        public short GetShortField(JniHandle obj, FieldId fieldID)
         {
-            short res = getShortField(envPtr, obj.JvmHandle, fieldID.native);
+            short res = getShortField(envPtr, obj, fieldID.native);
             ExceptionTest();
             return res;
         }
 
-        public long GetLongField(JavaObject obj, FieldId fieldID)
+        public long GetLongField(JniHandle obj, FieldId fieldID)
         {
-            long res = getLongField(envPtr, obj.JvmHandle, fieldID.native);
+            long res = getLongField(envPtr, obj, fieldID.native);
             ExceptionTest();
             return res;
-        }
-
-        public int GetIntField(JavaObject obj, FieldId fieldID)
-        {
-            return GetIntField(obj.JvmHandle, fieldID);
         }
 
         public int GetIntField(JniHandle obj, FieldId fieldID)
@@ -574,23 +582,23 @@ namespace MonoJavaBridge
             return res;
         }
 
-        public double GetDoubleField(JavaObject obj, FieldId fieldID)
+        public double GetDoubleField(JniHandle obj, FieldId fieldID)
         {
-            double res = getDoubleField(envPtr, obj.JvmHandle, fieldID.native);
+            double res = getDoubleField(envPtr, obj, fieldID.native);
             ExceptionTest();
             return res;
         }
 
-        public float GetFloatField(JavaObject obj, FieldId fieldID)
+        public float GetFloatField(JniHandle obj, FieldId fieldID)
         {
-            float res = getFloatField(envPtr, obj.JvmHandle, fieldID.native);
+            float res = getFloatField(envPtr, obj, fieldID.native);
             ExceptionTest();
             return res;
         }
 
-        public char GetCharField(JavaObject obj, FieldId fieldID)
+        public char GetCharField(JniHandle obj, FieldId fieldID)
         {
-            var res = (char) getCharField(envPtr, obj.JvmHandle, fieldID.native);
+            var res = (char) getCharField(envPtr, obj, fieldID.native);
             ExceptionTest();
             return res;
         }
@@ -599,63 +607,57 @@ namespace MonoJavaBridge
 
         #region setters instance
 
-        internal void SetObjectFieldPtr(JniLocalHandle obj, FieldId fieldID, JniHandle value)
+        internal void SetObjectField(JniHandle obj, FieldId fieldID, JniHandle value)
         {
             setObjectField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetObjectField(JavaObject obj, FieldId fieldID, JavaObject value)
+        internal void SetIntField(JniHandle obj, FieldId fieldID, int value)
         {
-            setObjectField(envPtr, obj.JvmHandle, fieldID.native, value.JvmHandle);
+            setIntField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetIntField(JavaObject obj, FieldId fieldID, int value)
+        internal void SetBooleanField(JniHandle obj, FieldId fieldID, bool value)
         {
-            setIntField(envPtr, obj.JvmHandle, fieldID.native, value);
+            setBooleanField(envPtr, obj, fieldID.native, value ? (byte) 1 : (byte) 0);
             ExceptionTest();
         }
 
-        internal void SetBooleanField(JavaObject obj, FieldId fieldID, bool value)
+        internal void SetByteField(JniHandle obj, FieldId fieldID, byte value)
         {
-            setBooleanField(envPtr, obj.JvmHandle, fieldID.native, value ? (byte) 1 : (byte) 0);
+            setByteField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetByteField(JavaObject obj, FieldId fieldID, byte value)
+        internal void SetCharField(JniHandle obj, FieldId fieldID, char value)
         {
-            setByteField(envPtr, obj.JvmHandle, fieldID.native, value);
+            setCharField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetCharField(JavaObject obj, FieldId fieldID, char value)
+        internal void SetShortField(JniHandle obj, FieldId fieldID, short value)
         {
-            setCharField(envPtr, obj.JvmHandle, fieldID.native, value);
+            setShortField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetShortField(JavaObject obj, FieldId fieldID, short value)
+        internal void SetLongField(JniHandle obj, FieldId fieldID, long value)
         {
-            setShortField(envPtr, obj.JvmHandle, fieldID.native, value);
+            setLongField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetLongField(JavaObject obj, FieldId fieldID, long value)
+        internal void SetFloatField(JniHandle obj, FieldId fieldID, float value)
         {
-            setLongField(envPtr, obj.JvmHandle, fieldID.native, value);
+            setFloatField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 
-        internal void SetFloatField(JavaObject obj, FieldId fieldID, float value)
+        internal void SetDoubleField(JniHandle obj, FieldId fieldID, double value)
         {
-            setFloatField(envPtr, obj.JvmHandle, fieldID.native, value);
-            ExceptionTest();
-        }
-
-        internal void SetDoubleField(JavaObject obj, FieldId fieldID, double value)
-        {
-            setDoubleField(envPtr, obj.JvmHandle, fieldID.native, value);
+            setDoubleField(envPtr, obj, fieldID.native, value);
             ExceptionTest();
         }
 

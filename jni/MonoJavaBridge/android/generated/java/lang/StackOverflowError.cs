@@ -11,26 +11,26 @@ namespace java.lang
 		protected StackOverflowError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _StackOverflowError14895;
+		internal static global::MonoJavaBridge.MethodId _StackOverflowError20412;
 		public StackOverflowError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StackOverflowError.staticClass, global::java.lang.StackOverflowError._StackOverflowError14895);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StackOverflowError.staticClass, global::java.lang.StackOverflowError._StackOverflowError20412);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StackOverflowError14896;
+		internal static global::MonoJavaBridge.MethodId _StackOverflowError20413;
 		public StackOverflowError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StackOverflowError.staticClass, global::java.lang.StackOverflowError._StackOverflowError14896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StackOverflowError.staticClass, global::java.lang.StackOverflowError._StackOverflowError20413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.StackOverflowError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/StackOverflowError"));
-			global::java.lang.StackOverflowError._StackOverflowError14895 = @__env.GetMethodIDNoThrow(global::java.lang.StackOverflowError.staticClass, "<init>", "()V");
-			global::java.lang.StackOverflowError._StackOverflowError14896 = @__env.GetMethodIDNoThrow(global::java.lang.StackOverflowError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.StackOverflowError._StackOverflowError20412 = @__env.GetMethodIDNoThrow(global::java.lang.StackOverflowError.staticClass, "<init>", "()V");
+			global::java.lang.StackOverflowError._StackOverflowError20413 = @__env.GetMethodIDNoThrow(global::java.lang.StackOverflowError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

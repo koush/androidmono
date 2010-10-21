@@ -11,11 +11,11 @@ namespace android.os
 		protected BatteryManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _BatteryManager6146;
+		internal static global::MonoJavaBridge.MethodId _BatteryManager9473;
 		public BatteryManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager6146);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager9473);
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String EXTRA_STATUS
@@ -183,7 +183,7 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.BatteryManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/BatteryManager"));
-			global::android.os.BatteryManager._BatteryManager6146 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
+			global::android.os.BatteryManager._BatteryManager9473 = @__env.GetMethodIDNoThrow(global::android.os.BatteryManager.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -19,40 +19,40 @@ namespace javax.sql
 		internal RowSetListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _rowSetChanged24027;
+		internal static global::MonoJavaBridge.MethodId _rowSetChanged30461;
 		 void javax.sql.RowSetListener.rowSetChanged(javax.sql.RowSetEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowSetChanged24027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowSetChanged30461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowSetChanged24027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowSetChanged30461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _rowChanged24028;
+		internal static global::MonoJavaBridge.MethodId _rowChanged30462;
 		 void javax.sql.RowSetListener.rowChanged(javax.sql.RowSetEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowChanged24028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._rowChanged30462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowChanged24028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowChanged30462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _cursorMoved24029;
+		internal static global::MonoJavaBridge.MethodId _cursorMoved30463;
 		 void javax.sql.RowSetListener.cursorMoved(javax.sql.RowSetEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._cursorMoved24029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_._cursorMoved30463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._cursorMoved24029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._cursorMoved30463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetListener"));
-			global::javax.sql.RowSetListener_._rowSetChanged24027 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V");
-			global::javax.sql.RowSetListener_._rowChanged24028 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "rowChanged", "(Ljavax/sql/RowSetEvent;)V");
-			global::javax.sql.RowSetListener_._cursorMoved24029 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V");
+			global::javax.sql.RowSetListener_._rowSetChanged30461 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V");
+			global::javax.sql.RowSetListener_._rowChanged30462 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "rowChanged", "(Ljavax/sql/RowSetEvent;)V");
+			global::javax.sql.RowSetListener_._cursorMoved30463 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetListener_.staticClass, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V");
 		}
 	}
 }

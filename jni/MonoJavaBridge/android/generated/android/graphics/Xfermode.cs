@@ -11,28 +11,28 @@ namespace android.graphics
 		protected Xfermode(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize3821;
+		internal static global::MonoJavaBridge.MethodId _finalize5806;
 		protected override void finalize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Xfermode._finalize3821);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.Xfermode._finalize5806);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._finalize3821);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._finalize5806);
 		}
-		internal static global::MonoJavaBridge.MethodId _Xfermode3822;
+		internal static global::MonoJavaBridge.MethodId _Xfermode5807;
 		public Xfermode()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._Xfermode3822);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._Xfermode5807);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.Xfermode.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/Xfermode"));
-			global::android.graphics.Xfermode._finalize3821 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "finalize", "()V");
-			global::android.graphics.Xfermode._Xfermode3822 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "<init>", "()V");
+			global::android.graphics.Xfermode._finalize5806 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "finalize", "()V");
+			global::android.graphics.Xfermode._Xfermode5807 = @__env.GetMethodIDNoThrow(global::android.graphics.Xfermode.staticClass, "<init>", "()V");
 		}
 	}
 }

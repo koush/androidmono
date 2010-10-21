@@ -18,30 +18,30 @@ namespace javax.xml.transform
 		internal Result_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId24353;
+		internal static global::MonoJavaBridge.MethodId _getSystemId30828;
 		 global::java.lang.String javax.xml.transform.Result.getSystemId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Result_._getSystemId24353)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Result_._getSystemId30828)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Result_.staticClass, global::javax.xml.transform.Result_._getSystemId24353)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Result_.staticClass, global::javax.xml.transform.Result_._getSystemId30828)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setSystemId24354;
+		internal static global::MonoJavaBridge.MethodId _setSystemId30829;
 		 void javax.xml.transform.Result.setSystemId(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.Result_._setSystemId24354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.xml.transform.Result_._setSystemId30829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.Result_.staticClass, global::javax.xml.transform.Result_._setSystemId24354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.Result_.staticClass, global::javax.xml.transform.Result_._setSystemId30829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.Result_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/Result"));
-			global::javax.xml.transform.Result_._getSystemId24353 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Result_.staticClass, "getSystemId", "()Ljava/lang/String;");
-			global::javax.xml.transform.Result_._setSystemId24354 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Result_.staticClass, "setSystemId", "(Ljava/lang/String;)V");
+			global::javax.xml.transform.Result_._getSystemId30828 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Result_.staticClass, "getSystemId", "()Ljava/lang/String;");
+			global::javax.xml.transform.Result_._setSystemId30829 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Result_.staticClass, "setSystemId", "(Ljava/lang/String;)V");
 		}
 	}
 }

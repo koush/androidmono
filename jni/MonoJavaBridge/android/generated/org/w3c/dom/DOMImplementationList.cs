@@ -18,30 +18,30 @@ namespace org.w3c.dom
 		internal DOMImplementationList_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLength27543;
+		internal static global::MonoJavaBridge.MethodId _getLength34254;
 		 int org.w3c.dom.DOMImplementationList.getLength() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_._getLength27543);
+				return @__env.CallIntMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_._getLength34254);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_.staticClass, global::org.w3c.dom.DOMImplementationList_._getLength27543);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_.staticClass, global::org.w3c.dom.DOMImplementationList_._getLength34254);
 		}
-		internal static global::MonoJavaBridge.MethodId _item27544;
+		internal static global::MonoJavaBridge.MethodId _item34255;
 		 global::org.w3c.dom.DOMImplementation org.w3c.dom.DOMImplementationList.item(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_._item27544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.DOMImplementation;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_._item34255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.DOMImplementation;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_.staticClass, global::org.w3c.dom.DOMImplementationList_._item27544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.DOMImplementation;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_.staticClass, global::org.w3c.dom.DOMImplementationList_._item34255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.DOMImplementation;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMImplementationList_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMImplementationList"));
-			global::org.w3c.dom.DOMImplementationList_._getLength27543 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementationList_.staticClass, "getLength", "()I");
-			global::org.w3c.dom.DOMImplementationList_._item27544 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementationList_.staticClass, "item", "(I)Lorg/w3c/dom/DOMImplementation;");
+			global::org.w3c.dom.DOMImplementationList_._getLength34254 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementationList_.staticClass, "getLength", "()I");
+			global::org.w3c.dom.DOMImplementationList_._item34255 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMImplementationList_.staticClass, "item", "(I)Lorg/w3c/dom/DOMImplementation;");
 		}
 	}
 }

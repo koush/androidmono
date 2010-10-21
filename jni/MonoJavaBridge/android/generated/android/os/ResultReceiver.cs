@@ -11,66 +11,68 @@ namespace android.os
 		protected ResultReceiver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _send6715;
+		internal static global::MonoJavaBridge.MethodId _send10149;
 		public virtual void send(int arg0, android.os.Bundle arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ResultReceiver._send6715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ResultReceiver._send10149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._send6715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._send10149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel6716;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel10150;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ResultReceiver._writeToParcel6716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ResultReceiver._writeToParcel10150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._writeToParcel6716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._writeToParcel10150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents6717;
+		internal static global::MonoJavaBridge.MethodId _describeContents10151;
 		public virtual int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.os.ResultReceiver._describeContents6717);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.os.ResultReceiver._describeContents10151);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._describeContents6717);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._describeContents10151);
 		}
-		internal static global::MonoJavaBridge.MethodId _onReceiveResult6718;
+		internal static global::MonoJavaBridge.MethodId _onReceiveResult10152;
 		protected virtual void onReceiveResult(int arg0, android.os.Bundle arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ResultReceiver._onReceiveResult6718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.ResultReceiver._onReceiveResult10152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._onReceiveResult6718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._onReceiveResult10152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _ResultReceiver6719;
+		internal static global::MonoJavaBridge.MethodId _ResultReceiver10153;
 		public ResultReceiver(android.os.Handler arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._ResultReceiver6719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ResultReceiver.staticClass, global::android.os.ResultReceiver._ResultReceiver10153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR6720;
+		internal static global::MonoJavaBridge.FieldId _CREATOR10154;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
-				return default(global::android.os.Parcelable_Creator);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.os.ResultReceiver.staticClass, _CREATOR10154)) as android.os.Parcelable_Creator;
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.ResultReceiver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/ResultReceiver"));
-			global::android.os.ResultReceiver._send6715 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "send", "(ILandroid/os/Bundle;)V");
-			global::android.os.ResultReceiver._writeToParcel6716 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.os.ResultReceiver._describeContents6717 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "describeContents", "()I");
-			global::android.os.ResultReceiver._onReceiveResult6718 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "onReceiveResult", "(ILandroid/os/Bundle;)V");
-			global::android.os.ResultReceiver._ResultReceiver6719 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "<init>", "(Landroid/os/Handler;)V");
+			global::android.os.ResultReceiver._send10149 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "send", "(ILandroid/os/Bundle;)V");
+			global::android.os.ResultReceiver._writeToParcel10150 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.os.ResultReceiver._describeContents10151 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "describeContents", "()I");
+			global::android.os.ResultReceiver._onReceiveResult10152 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "onReceiveResult", "(ILandroid/os/Bundle;)V");
+			global::android.os.ResultReceiver._ResultReceiver10153 = @__env.GetMethodIDNoThrow(global::android.os.ResultReceiver.staticClass, "<init>", "(Landroid/os/Handler;)V");
+			global::android.os.ResultReceiver._CREATOR10154 = @__env.GetStaticFieldIDNoThrow(global::android.os.ResultReceiver.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 	}
 }

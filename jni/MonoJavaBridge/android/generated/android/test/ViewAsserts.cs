@@ -11,136 +11,136 @@ namespace android.test
 		protected ViewAsserts(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _assertOnScreen7825;
+		internal static global::MonoJavaBridge.MethodId _assertOnScreen12303;
 		public static void assertOnScreen(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertOnScreen7825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertOnScreen12303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertOffScreenBelow7826;
+		internal static global::MonoJavaBridge.MethodId _assertOffScreenBelow12304;
 		public static void assertOffScreenBelow(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertOffScreenBelow7826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertOffScreenBelow12304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertOffScreenAbove7827;
+		internal static global::MonoJavaBridge.MethodId _assertOffScreenAbove12305;
 		public static void assertOffScreenAbove(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertOffScreenAbove7827, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertOffScreenAbove12305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertHasScreenCoordinates7828;
+		internal static global::MonoJavaBridge.MethodId _assertHasScreenCoordinates12306;
 		public static void assertHasScreenCoordinates(android.view.View arg0, android.view.View arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertHasScreenCoordinates7828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertHasScreenCoordinates12306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertBaselineAligned7829;
+		internal static global::MonoJavaBridge.MethodId _assertBaselineAligned12307;
 		public static void assertBaselineAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertBaselineAligned7829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertBaselineAligned12307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertRightAligned7830;
+		internal static global::MonoJavaBridge.MethodId _assertRightAligned12308;
 		public static void assertRightAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertRightAligned7830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertRightAligned12308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertRightAligned7831;
+		internal static global::MonoJavaBridge.MethodId _assertRightAligned12309;
 		public static void assertRightAligned(android.view.View arg0, android.view.View arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertRightAligned7831, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertRightAligned12309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertLeftAligned7832;
+		internal static global::MonoJavaBridge.MethodId _assertLeftAligned12310;
 		public static void assertLeftAligned(android.view.View arg0, android.view.View arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertLeftAligned7832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertLeftAligned12310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertLeftAligned7833;
+		internal static global::MonoJavaBridge.MethodId _assertLeftAligned12311;
 		public static void assertLeftAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertLeftAligned7833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertLeftAligned12311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertBottomAligned7834;
+		internal static global::MonoJavaBridge.MethodId _assertBottomAligned12312;
 		public static void assertBottomAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertBottomAligned7834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertBottomAligned12312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertBottomAligned7835;
+		internal static global::MonoJavaBridge.MethodId _assertBottomAligned12313;
 		public static void assertBottomAligned(android.view.View arg0, android.view.View arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertBottomAligned7835, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertBottomAligned12313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertTopAligned7836;
+		internal static global::MonoJavaBridge.MethodId _assertTopAligned12314;
 		public static void assertTopAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertTopAligned7836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertTopAligned12314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertTopAligned7837;
+		internal static global::MonoJavaBridge.MethodId _assertTopAligned12315;
 		public static void assertTopAligned(android.view.View arg0, android.view.View arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertTopAligned7837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertTopAligned12315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertHorizontalCenterAligned7838;
+		internal static global::MonoJavaBridge.MethodId _assertHorizontalCenterAligned12316;
 		public static void assertHorizontalCenterAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertHorizontalCenterAligned7838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertHorizontalCenterAligned12316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertVerticalCenterAligned7839;
+		internal static global::MonoJavaBridge.MethodId _assertVerticalCenterAligned12317;
 		public static void assertVerticalCenterAligned(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertVerticalCenterAligned7839, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertVerticalCenterAligned12317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertGroupIntegrity7840;
+		internal static global::MonoJavaBridge.MethodId _assertGroupIntegrity12318;
 		public static void assertGroupIntegrity(android.view.ViewGroup arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupIntegrity7840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupIntegrity12318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertGroupContains7841;
+		internal static global::MonoJavaBridge.MethodId _assertGroupContains12319;
 		public static void assertGroupContains(android.view.ViewGroup arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupContains7841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupContains12319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _assertGroupNotContains7842;
+		internal static global::MonoJavaBridge.MethodId _assertGroupNotContains12320;
 		public static void assertGroupNotContains(android.view.ViewGroup arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupNotContains7842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.test.ViewAsserts.staticClass, global::android.test.ViewAsserts._assertGroupNotContains12320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.ViewAsserts.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/ViewAsserts"));
-			global::android.test.ViewAsserts._assertOnScreen7825 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertOnScreen", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertOffScreenBelow7826 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertOffScreenBelow", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertOffScreenAbove7827 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertOffScreenAbove", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertHasScreenCoordinates7828 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertHasScreenCoordinates", "(Landroid/view/View;Landroid/view/View;II)V");
-			global::android.test.ViewAsserts._assertBaselineAligned7829 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertBaselineAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertRightAligned7830 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertRightAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertRightAligned7831 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertRightAligned", "(Landroid/view/View;Landroid/view/View;I)V");
-			global::android.test.ViewAsserts._assertLeftAligned7832 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertLeftAligned", "(Landroid/view/View;Landroid/view/View;I)V");
-			global::android.test.ViewAsserts._assertLeftAligned7833 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertLeftAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertBottomAligned7834 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertBottomAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertBottomAligned7835 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertBottomAligned", "(Landroid/view/View;Landroid/view/View;I)V");
-			global::android.test.ViewAsserts._assertTopAligned7836 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertTopAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertTopAligned7837 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertTopAligned", "(Landroid/view/View;Landroid/view/View;I)V");
-			global::android.test.ViewAsserts._assertHorizontalCenterAligned7838 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertHorizontalCenterAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertVerticalCenterAligned7839 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertVerticalCenterAligned", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertGroupIntegrity7840 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupIntegrity", "(Landroid/view/ViewGroup;)V");
-			global::android.test.ViewAsserts._assertGroupContains7841 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupContains", "(Landroid/view/ViewGroup;Landroid/view/View;)V");
-			global::android.test.ViewAsserts._assertGroupNotContains7842 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupNotContains", "(Landroid/view/ViewGroup;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertOnScreen12303 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertOnScreen", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertOffScreenBelow12304 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertOffScreenBelow", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertOffScreenAbove12305 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertOffScreenAbove", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertHasScreenCoordinates12306 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertHasScreenCoordinates", "(Landroid/view/View;Landroid/view/View;II)V");
+			global::android.test.ViewAsserts._assertBaselineAligned12307 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertBaselineAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertRightAligned12308 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertRightAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertRightAligned12309 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertRightAligned", "(Landroid/view/View;Landroid/view/View;I)V");
+			global::android.test.ViewAsserts._assertLeftAligned12310 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertLeftAligned", "(Landroid/view/View;Landroid/view/View;I)V");
+			global::android.test.ViewAsserts._assertLeftAligned12311 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertLeftAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertBottomAligned12312 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertBottomAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertBottomAligned12313 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertBottomAligned", "(Landroid/view/View;Landroid/view/View;I)V");
+			global::android.test.ViewAsserts._assertTopAligned12314 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertTopAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertTopAligned12315 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertTopAligned", "(Landroid/view/View;Landroid/view/View;I)V");
+			global::android.test.ViewAsserts._assertHorizontalCenterAligned12316 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertHorizontalCenterAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertVerticalCenterAligned12317 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertVerticalCenterAligned", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertGroupIntegrity12318 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupIntegrity", "(Landroid/view/ViewGroup;)V");
+			global::android.test.ViewAsserts._assertGroupContains12319 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupContains", "(Landroid/view/ViewGroup;Landroid/view/View;)V");
+			global::android.test.ViewAsserts._assertGroupNotContains12320 = @__env.GetStaticMethodIDNoThrow(global::android.test.ViewAsserts.staticClass, "assertGroupNotContains", "(Landroid/view/ViewGroup;Landroid/view/View;)V");
 		}
 	}
 }

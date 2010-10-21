@@ -22,48 +22,54 @@ namespace android.text
 			internal Alignment(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _values8242;
+			internal static global::MonoJavaBridge.MethodId _values12760;
 			public static global::android.text.Layout.Alignment[] values() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.Layout.Alignment>(@__env.CallStaticObjectMethod(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._values8242)) as android.text.Layout.Alignment[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.Layout.Alignment>(@__env.CallStaticObjectMethod(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._values12760)) as android.text.Layout.Alignment[];
 			}
-			internal static global::MonoJavaBridge.MethodId _valueOf8243;
+			internal static global::MonoJavaBridge.MethodId _valueOf12761;
 			public static global::android.text.Layout.Alignment valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._valueOf8243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._valueOf12761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
 			}
-			internal static global::MonoJavaBridge.FieldId _ALIGN_CENTER8244;
+			internal static global::MonoJavaBridge.FieldId _ALIGN_CENTER12762;
 			public static global::android.text.Layout.Alignment ALIGN_CENTER
 			{
 				get
 				{
-					return default(global::android.text.Layout.Alignment);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_CENTER12762)) as android.text.Layout.Alignment;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _ALIGN_NORMAL8245;
+			internal static global::MonoJavaBridge.FieldId _ALIGN_NORMAL12763;
 			public static global::android.text.Layout.Alignment ALIGN_NORMAL
 			{
 				get
 				{
-					return default(global::android.text.Layout.Alignment);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_NORMAL12763)) as android.text.Layout.Alignment;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _ALIGN_OPPOSITE8246;
+			internal static global::MonoJavaBridge.FieldId _ALIGN_OPPOSITE12764;
 			public static global::android.text.Layout.Alignment ALIGN_OPPOSITE
 			{
 				get
 				{
-					return default(global::android.text.Layout.Alignment);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_OPPOSITE12764)) as android.text.Layout.Alignment;
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.text.Layout.Alignment.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout$Alignment"));
-				global::android.text.Layout.Alignment._values8242 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.Alignment.staticClass, "values", "()[Landroid/text/Layout/Alignment;");
-				global::android.text.Layout.Alignment._valueOf8243 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.Alignment.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/Layout$Alignment;");
+				global::android.text.Layout.Alignment._values12760 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.Alignment.staticClass, "values", "()[Landroid/text/Layout/Alignment;");
+				global::android.text.Layout.Alignment._valueOf12761 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.Alignment.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/Layout$Alignment;");
+				global::android.text.Layout.Alignment._ALIGN_CENTER12762 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_CENTER", "Landroid/text/Layout$Alignment;");
+				global::android.text.Layout.Alignment._ALIGN_NORMAL12763 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_NORMAL", "Landroid/text/Layout$Alignment;");
+				global::android.text.Layout.Alignment._ALIGN_OPPOSITE12764 = @__env.GetStaticFieldIDNoThrow(global::android.text.Layout.Alignment.staticClass, "ALIGN_OPPOSITE", "Landroid/text/Layout$Alignment;");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -83,355 +89,355 @@ namespace android.text
 				global::android.text.Layout.Directions.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout$Directions"));
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineWidth8247;
+		internal static global::MonoJavaBridge.MethodId _getLineWidth12765;
 		public virtual float getLineWidth(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineWidth8247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineWidth12765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineWidth8247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineWidth12765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getText8248;
+		internal static global::MonoJavaBridge.MethodId _getText12766;
 		public virtual global::java.lang.CharSequence getText() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getText8248)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getText12766)) as java.lang.CharSequence;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getText8248)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getText12766)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _draw8249;
+		internal static global::MonoJavaBridge.MethodId _draw12767;
 		public virtual void draw(android.graphics.Canvas arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._draw8249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._draw12767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._draw8249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._draw12767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _draw8250;
+		internal static global::MonoJavaBridge.MethodId _draw12768;
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.Path arg1, android.graphics.Paint arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._draw8250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._draw12768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._draw8250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._draw12768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _getWidth8251;
+		internal static global::MonoJavaBridge.MethodId _getWidth12769;
 		public virtual int getWidth() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getWidth8251);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getWidth12769);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getWidth8251);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getWidth12769);
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeight8252;
+		internal static global::MonoJavaBridge.MethodId _getHeight12770;
 		public virtual int getHeight() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getHeight8252);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getHeight12770);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getHeight8252);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getHeight12770);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPaint8253;
+		internal static global::MonoJavaBridge.MethodId _getPaint12771;
 		public virtual global::android.text.TextPaint getPaint() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getPaint8253)) as android.text.TextPaint;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getPaint12771)) as android.text.TextPaint;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getPaint8253)) as android.text.TextPaint;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getPaint12771)) as android.text.TextPaint;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineCount8254;
+		internal static global::MonoJavaBridge.MethodId _getLineCount12772;
 		public abstract int getLineCount();
-		internal static global::MonoJavaBridge.MethodId _getLineBounds8255;
+		internal static global::MonoJavaBridge.MethodId _getLineBounds12773;
 		public virtual int getLineBounds(int arg0, android.graphics.Rect arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineBounds8255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineBounds12773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBounds8255, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBounds12773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getDesiredWidth8256;
+		internal static global::MonoJavaBridge.MethodId _getDesiredWidth12774;
 		public static float getDesiredWidth(java.lang.CharSequence arg0, int arg1, int arg2, android.text.TextPaint arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.text.Layout.staticClass, global::android.text.Layout._getDesiredWidth8256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return @__env.CallStaticFloatMethod(android.text.Layout.staticClass, global::android.text.Layout._getDesiredWidth12774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _getDesiredWidth8257;
+		internal static global::MonoJavaBridge.MethodId _getDesiredWidth12775;
 		public static float getDesiredWidth(java.lang.CharSequence arg0, android.text.TextPaint arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.text.Layout.staticClass, global::android.text.Layout._getDesiredWidth8257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallStaticFloatMethod(android.text.Layout.staticClass, global::android.text.Layout._getDesiredWidth12775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsizedWidth8258;
+		internal static global::MonoJavaBridge.MethodId _getEllipsizedWidth12776;
 		public virtual int getEllipsizedWidth() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getEllipsizedWidth8258);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getEllipsizedWidth12776);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getEllipsizedWidth8258);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getEllipsizedWidth12776);
 		}
-		internal static global::MonoJavaBridge.MethodId _increaseWidthTo8259;
+		internal static global::MonoJavaBridge.MethodId _increaseWidthTo12777;
 		public virtual void increaseWidthTo(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._increaseWidthTo8259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._increaseWidthTo12777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._increaseWidthTo8259, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._increaseWidthTo12777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlignment8260;
+		internal static global::MonoJavaBridge.MethodId _getAlignment12778;
 		public virtual global::android.text.Layout.Alignment getAlignment() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getAlignment8260)) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getAlignment12778)) as android.text.Layout.Alignment;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getAlignment8260)) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getAlignment12778)) as android.text.Layout.Alignment;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpacingMultiplier8261;
+		internal static global::MonoJavaBridge.MethodId _getSpacingMultiplier12779;
 		public virtual float getSpacingMultiplier() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getSpacingMultiplier8261);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getSpacingMultiplier12779);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSpacingMultiplier8261);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSpacingMultiplier12779);
 		}
-		internal static global::MonoJavaBridge.MethodId _getSpacingAdd8262;
+		internal static global::MonoJavaBridge.MethodId _getSpacingAdd12780;
 		public virtual float getSpacingAdd() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getSpacingAdd8262);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getSpacingAdd12780);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSpacingAdd8262);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSpacingAdd12780);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineTop8263;
+		internal static global::MonoJavaBridge.MethodId _getLineTop12781;
 		public abstract int getLineTop(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getLineDescent8264;
+		internal static global::MonoJavaBridge.MethodId _getLineDescent12782;
 		public abstract int getLineDescent(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getLineStart8265;
+		internal static global::MonoJavaBridge.MethodId _getLineStart12783;
 		public abstract int getLineStart(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getParagraphDirection8266;
+		internal static global::MonoJavaBridge.MethodId _getParagraphDirection12784;
 		public abstract int getParagraphDirection(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getLineContainsTab8267;
+		internal static global::MonoJavaBridge.MethodId _getLineContainsTab12785;
 		public abstract bool getLineContainsTab(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getLineDirections8268;
+		internal static global::MonoJavaBridge.MethodId _getLineDirections12786;
 		public abstract global::android.text.Layout.Directions getLineDirections(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getTopPadding8269;
+		internal static global::MonoJavaBridge.MethodId _getTopPadding12787;
 		public abstract int getTopPadding();
-		internal static global::MonoJavaBridge.MethodId _getBottomPadding8270;
+		internal static global::MonoJavaBridge.MethodId _getBottomPadding12788;
 		public abstract int getBottomPadding();
-		internal static global::MonoJavaBridge.MethodId _getPrimaryHorizontal8271;
+		internal static global::MonoJavaBridge.MethodId _getPrimaryHorizontal12789;
 		public virtual float getPrimaryHorizontal(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getPrimaryHorizontal8271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getPrimaryHorizontal12789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getPrimaryHorizontal8271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getPrimaryHorizontal12789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSecondaryHorizontal8272;
+		internal static global::MonoJavaBridge.MethodId _getSecondaryHorizontal12790;
 		public virtual float getSecondaryHorizontal(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getSecondaryHorizontal8272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getSecondaryHorizontal12790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSecondaryHorizontal8272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSecondaryHorizontal12790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineLeft8273;
+		internal static global::MonoJavaBridge.MethodId _getLineLeft12791;
 		public virtual float getLineLeft(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineLeft8273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineLeft12791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineLeft8273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineLeft12791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineRight8274;
+		internal static global::MonoJavaBridge.MethodId _getLineRight12792;
 		public virtual float getLineRight(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineRight8274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineRight12792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineRight8274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineRight12792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineMax8275;
+		internal static global::MonoJavaBridge.MethodId _getLineMax12793;
 		public virtual float getLineMax(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineMax8275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.text.Layout._getLineMax12793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineMax8275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineMax12793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineForVertical8276;
+		internal static global::MonoJavaBridge.MethodId _getLineForVertical12794;
 		public virtual int getLineForVertical(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineForVertical8276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineForVertical12794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineForVertical8276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineForVertical12794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineForOffset8277;
+		internal static global::MonoJavaBridge.MethodId _getLineForOffset12795;
 		public virtual int getLineForOffset(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineForOffset8277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineForOffset12795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineForOffset8277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineForOffset12795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getOffsetForHorizontal8278;
+		internal static global::MonoJavaBridge.MethodId _getOffsetForHorizontal12796;
 		public virtual int getOffsetForHorizontal(int arg0, float arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getOffsetForHorizontal8278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getOffsetForHorizontal12796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetForHorizontal8278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetForHorizontal12796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineEnd8279;
+		internal static global::MonoJavaBridge.MethodId _getLineEnd12797;
 		public virtual int getLineEnd(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineEnd8279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineEnd12797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineEnd8279, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineEnd12797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineVisibleEnd8280;
+		internal static global::MonoJavaBridge.MethodId _getLineVisibleEnd12798;
 		public virtual int getLineVisibleEnd(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineVisibleEnd8280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineVisibleEnd12798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineVisibleEnd8280, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineVisibleEnd12798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineBottom8281;
+		internal static global::MonoJavaBridge.MethodId _getLineBottom12799;
 		public virtual int getLineBottom(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineBottom8281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineBottom12799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBottom8281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBottom12799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineBaseline8282;
+		internal static global::MonoJavaBridge.MethodId _getLineBaseline12800;
 		public virtual int getLineBaseline(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineBaseline8282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineBaseline12800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBaseline8282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBaseline12800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineAscent8283;
+		internal static global::MonoJavaBridge.MethodId _getLineAscent12801;
 		public virtual int getLineAscent(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineAscent8283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getLineAscent12801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineAscent8283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getLineAscent12801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getOffsetToLeftOf8284;
+		internal static global::MonoJavaBridge.MethodId _getOffsetToLeftOf12802;
 		public virtual int getOffsetToLeftOf(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getOffsetToLeftOf8284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getOffsetToLeftOf12802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetToLeftOf8284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetToLeftOf12802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getOffsetToRightOf8285;
+		internal static global::MonoJavaBridge.MethodId _getOffsetToRightOf12803;
 		public virtual int getOffsetToRightOf(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getOffsetToRightOf8285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getOffsetToRightOf12803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetToRightOf8285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetToRightOf12803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getCursorPath8286;
+		internal static global::MonoJavaBridge.MethodId _getCursorPath12804;
 		public virtual void getCursorPath(int arg0, android.graphics.Path arg1, java.lang.CharSequence arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._getCursorPath8286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._getCursorPath12804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getCursorPath8286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getCursorPath12804, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		public void getCursorPath(int arg0, android.graphics.Path arg1, string arg2)
 		{
 			getCursorPath(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _getSelectionPath8287;
+		internal static global::MonoJavaBridge.MethodId _getSelectionPath12805;
 		public virtual void getSelectionPath(int arg0, int arg1, android.graphics.Path arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._getSelectionPath8287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.Layout._getSelectionPath12805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSelectionPath8287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getSelectionPath12805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParagraphAlignment8288;
+		internal static global::MonoJavaBridge.MethodId _getParagraphAlignment12806;
 		public virtual global::android.text.Layout.Alignment getParagraphAlignment(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getParagraphAlignment8288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getParagraphAlignment12806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphAlignment8288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphAlignment12806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
 		}
-		internal static global::MonoJavaBridge.MethodId _getParagraphLeft8289;
+		internal static global::MonoJavaBridge.MethodId _getParagraphLeft12807;
 		public virtual int getParagraphLeft(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getParagraphLeft8289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getParagraphLeft12807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphLeft8289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphLeft12807, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParagraphRight8290;
+		internal static global::MonoJavaBridge.MethodId _getParagraphRight12808;
 		public virtual int getParagraphRight(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getParagraphRight8290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout._getParagraphRight12808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphRight8290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphRight12808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSpanned8291;
+		internal static global::MonoJavaBridge.MethodId _isSpanned12809;
 		protected virtual bool isSpanned() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.Layout._isSpanned8291);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.Layout._isSpanned12809);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._isSpanned8291);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._isSpanned12809);
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisStart8292;
+		internal static global::MonoJavaBridge.MethodId _getEllipsisStart12810;
 		public abstract int getEllipsisStart(int arg0);
-		internal static global::MonoJavaBridge.MethodId _getEllipsisCount8293;
+		internal static global::MonoJavaBridge.MethodId _getEllipsisCount12811;
 		public abstract int getEllipsisCount(int arg0);
-		internal static global::MonoJavaBridge.MethodId _Layout8294;
+		internal static global::MonoJavaBridge.MethodId _Layout12812;
 		protected Layout(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Layout.staticClass, global::android.text.Layout._Layout8294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Layout.staticClass, global::android.text.Layout._Layout12812, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
 		public static int DIR_LEFT_TO_RIGHT
@@ -452,54 +458,54 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Layout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout"));
-			global::android.text.Layout._getLineWidth8247 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineWidth", "(I)F");
-			global::android.text.Layout._getText8248 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getText", "()Ljava/lang/CharSequence;");
-			global::android.text.Layout._draw8249 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.text.Layout._draw8250 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V");
-			global::android.text.Layout._getWidth8251 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getWidth", "()I");
-			global::android.text.Layout._getHeight8252 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getHeight", "()I");
-			global::android.text.Layout._getPaint8253 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getPaint", "()Landroid/text/TextPaint;");
-			global::android.text.Layout._getLineCount8254 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineCount", "()I");
-			global::android.text.Layout._getLineBounds8255 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineBounds", "(ILandroid/graphics/Rect;)I");
-			global::android.text.Layout._getDesiredWidth8256 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.staticClass, "getDesiredWidth", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;)F");
-			global::android.text.Layout._getDesiredWidth8257 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.staticClass, "getDesiredWidth", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;)F");
-			global::android.text.Layout._getEllipsizedWidth8258 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsizedWidth", "()I");
-			global::android.text.Layout._increaseWidthTo8259 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "increaseWidthTo", "(I)V");
-			global::android.text.Layout._getAlignment8260 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;");
-			global::android.text.Layout._getSpacingMultiplier8261 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSpacingMultiplier", "()F");
-			global::android.text.Layout._getSpacingAdd8262 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSpacingAdd", "()F");
-			global::android.text.Layout._getLineTop8263 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineTop", "(I)I");
-			global::android.text.Layout._getLineDescent8264 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineDescent", "(I)I");
-			global::android.text.Layout._getLineStart8265 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineStart", "(I)I");
-			global::android.text.Layout._getParagraphDirection8266 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphDirection", "(I)I");
-			global::android.text.Layout._getLineContainsTab8267 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineContainsTab", "(I)Z");
-			global::android.text.Layout._getLineDirections8268 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;");
-			global::android.text.Layout._getTopPadding8269 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getTopPadding", "()I");
-			global::android.text.Layout._getBottomPadding8270 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getBottomPadding", "()I");
-			global::android.text.Layout._getPrimaryHorizontal8271 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getPrimaryHorizontal", "(I)F");
-			global::android.text.Layout._getSecondaryHorizontal8272 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSecondaryHorizontal", "(I)F");
-			global::android.text.Layout._getLineLeft8273 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineLeft", "(I)F");
-			global::android.text.Layout._getLineRight8274 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineRight", "(I)F");
-			global::android.text.Layout._getLineMax8275 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineMax", "(I)F");
-			global::android.text.Layout._getLineForVertical8276 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineForVertical", "(I)I");
-			global::android.text.Layout._getLineForOffset8277 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineForOffset", "(I)I");
-			global::android.text.Layout._getOffsetForHorizontal8278 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getOffsetForHorizontal", "(IF)I");
-			global::android.text.Layout._getLineEnd8279 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineEnd", "(I)I");
-			global::android.text.Layout._getLineVisibleEnd8280 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineVisibleEnd", "(I)I");
-			global::android.text.Layout._getLineBottom8281 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineBottom", "(I)I");
-			global::android.text.Layout._getLineBaseline8282 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineBaseline", "(I)I");
-			global::android.text.Layout._getLineAscent8283 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineAscent", "(I)I");
-			global::android.text.Layout._getOffsetToLeftOf8284 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getOffsetToLeftOf", "(I)I");
-			global::android.text.Layout._getOffsetToRightOf8285 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getOffsetToRightOf", "(I)I");
-			global::android.text.Layout._getCursorPath8286 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getCursorPath", "(ILandroid/graphics/Path;Ljava/lang/CharSequence;)V");
-			global::android.text.Layout._getSelectionPath8287 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSelectionPath", "(IILandroid/graphics/Path;)V");
-			global::android.text.Layout._getParagraphAlignment8288 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphAlignment", "(I)Landroid/text/Layout$Alignment;");
-			global::android.text.Layout._getParagraphLeft8289 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphLeft", "(I)I");
-			global::android.text.Layout._getParagraphRight8290 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphRight", "(I)I");
-			global::android.text.Layout._isSpanned8291 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "isSpanned", "()Z");
-			global::android.text.Layout._getEllipsisStart8292 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsisStart", "(I)I");
-			global::android.text.Layout._getEllipsisCount8293 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsisCount", "(I)I");
-			global::android.text.Layout._Layout8294 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V");
+			global::android.text.Layout._getLineWidth12765 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineWidth", "(I)F");
+			global::android.text.Layout._getText12766 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getText", "()Ljava/lang/CharSequence;");
+			global::android.text.Layout._draw12767 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.text.Layout._draw12768 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V");
+			global::android.text.Layout._getWidth12769 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getWidth", "()I");
+			global::android.text.Layout._getHeight12770 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getHeight", "()I");
+			global::android.text.Layout._getPaint12771 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getPaint", "()Landroid/text/TextPaint;");
+			global::android.text.Layout._getLineCount12772 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineCount", "()I");
+			global::android.text.Layout._getLineBounds12773 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineBounds", "(ILandroid/graphics/Rect;)I");
+			global::android.text.Layout._getDesiredWidth12774 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.staticClass, "getDesiredWidth", "(Ljava/lang/CharSequence;IILandroid/text/TextPaint;)F");
+			global::android.text.Layout._getDesiredWidth12775 = @__env.GetStaticMethodIDNoThrow(global::android.text.Layout.staticClass, "getDesiredWidth", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;)F");
+			global::android.text.Layout._getEllipsizedWidth12776 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsizedWidth", "()I");
+			global::android.text.Layout._increaseWidthTo12777 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "increaseWidthTo", "(I)V");
+			global::android.text.Layout._getAlignment12778 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getAlignment", "()Landroid/text/Layout$Alignment;");
+			global::android.text.Layout._getSpacingMultiplier12779 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSpacingMultiplier", "()F");
+			global::android.text.Layout._getSpacingAdd12780 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSpacingAdd", "()F");
+			global::android.text.Layout._getLineTop12781 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineTop", "(I)I");
+			global::android.text.Layout._getLineDescent12782 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineDescent", "(I)I");
+			global::android.text.Layout._getLineStart12783 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineStart", "(I)I");
+			global::android.text.Layout._getParagraphDirection12784 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphDirection", "(I)I");
+			global::android.text.Layout._getLineContainsTab12785 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineContainsTab", "(I)Z");
+			global::android.text.Layout._getLineDirections12786 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;");
+			global::android.text.Layout._getTopPadding12787 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getTopPadding", "()I");
+			global::android.text.Layout._getBottomPadding12788 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getBottomPadding", "()I");
+			global::android.text.Layout._getPrimaryHorizontal12789 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getPrimaryHorizontal", "(I)F");
+			global::android.text.Layout._getSecondaryHorizontal12790 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSecondaryHorizontal", "(I)F");
+			global::android.text.Layout._getLineLeft12791 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineLeft", "(I)F");
+			global::android.text.Layout._getLineRight12792 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineRight", "(I)F");
+			global::android.text.Layout._getLineMax12793 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineMax", "(I)F");
+			global::android.text.Layout._getLineForVertical12794 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineForVertical", "(I)I");
+			global::android.text.Layout._getLineForOffset12795 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineForOffset", "(I)I");
+			global::android.text.Layout._getOffsetForHorizontal12796 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getOffsetForHorizontal", "(IF)I");
+			global::android.text.Layout._getLineEnd12797 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineEnd", "(I)I");
+			global::android.text.Layout._getLineVisibleEnd12798 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineVisibleEnd", "(I)I");
+			global::android.text.Layout._getLineBottom12799 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineBottom", "(I)I");
+			global::android.text.Layout._getLineBaseline12800 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineBaseline", "(I)I");
+			global::android.text.Layout._getLineAscent12801 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getLineAscent", "(I)I");
+			global::android.text.Layout._getOffsetToLeftOf12802 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getOffsetToLeftOf", "(I)I");
+			global::android.text.Layout._getOffsetToRightOf12803 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getOffsetToRightOf", "(I)I");
+			global::android.text.Layout._getCursorPath12804 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getCursorPath", "(ILandroid/graphics/Path;Ljava/lang/CharSequence;)V");
+			global::android.text.Layout._getSelectionPath12805 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getSelectionPath", "(IILandroid/graphics/Path;)V");
+			global::android.text.Layout._getParagraphAlignment12806 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphAlignment", "(I)Landroid/text/Layout$Alignment;");
+			global::android.text.Layout._getParagraphLeft12807 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphLeft", "(I)I");
+			global::android.text.Layout._getParagraphRight12808 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getParagraphRight", "(I)I");
+			global::android.text.Layout._isSpanned12809 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "isSpanned", "()Z");
+			global::android.text.Layout._getEllipsisStart12810 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsisStart", "(I)I");
+			global::android.text.Layout._getEllipsisCount12811 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "getEllipsisCount", "(I)I");
+			global::android.text.Layout._Layout12812 = @__env.GetMethodIDNoThrow(global::android.text.Layout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V");
 		}
 	}
 
@@ -514,120 +520,120 @@ namespace android.text
 		internal Layout_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineCount8295;
+		internal static global::MonoJavaBridge.MethodId _getLineCount12815;
 		public override int getLineCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineCount8295);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineCount12815);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineCount8295);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineCount12815);
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineTop8296;
+		internal static global::MonoJavaBridge.MethodId _getLineTop12816;
 		public override int getLineTop(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineTop8296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineTop12816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineTop8296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineTop12816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineDescent8297;
+		internal static global::MonoJavaBridge.MethodId _getLineDescent12817;
 		public override int getLineDescent(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineDescent8297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineDescent12817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineDescent8297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineDescent12817, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineStart8298;
+		internal static global::MonoJavaBridge.MethodId _getLineStart12818;
 		public override int getLineStart(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineStart8298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getLineStart12818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineStart8298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineStart12818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getParagraphDirection8299;
+		internal static global::MonoJavaBridge.MethodId _getParagraphDirection12819;
 		public override int getParagraphDirection(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getParagraphDirection8299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getParagraphDirection12819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getParagraphDirection8299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getParagraphDirection12819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineContainsTab8300;
+		internal static global::MonoJavaBridge.MethodId _getLineContainsTab12820;
 		public override bool getLineContainsTab(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.Layout_._getLineContainsTab8300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.Layout_._getLineContainsTab12820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineContainsTab8300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineContainsTab12820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineDirections8301;
+		internal static global::MonoJavaBridge.MethodId _getLineDirections12821;
 		public override global::android.text.Layout.Directions getLineDirections(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout_._getLineDirections8301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout_._getLineDirections12821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineDirections8301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getLineDirections12821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Directions;
 		}
-		internal static global::MonoJavaBridge.MethodId _getTopPadding8302;
+		internal static global::MonoJavaBridge.MethodId _getTopPadding12822;
 		public override int getTopPadding() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getTopPadding8302);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getTopPadding12822);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getTopPadding8302);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getTopPadding12822);
 		}
-		internal static global::MonoJavaBridge.MethodId _getBottomPadding8303;
+		internal static global::MonoJavaBridge.MethodId _getBottomPadding12823;
 		public override int getBottomPadding() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getBottomPadding8303);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getBottomPadding12823);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getBottomPadding8303);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getBottomPadding12823);
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisStart8304;
+		internal static global::MonoJavaBridge.MethodId _getEllipsisStart12824;
 		public override int getEllipsisStart(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getEllipsisStart8304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getEllipsisStart12824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getEllipsisStart8304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getEllipsisStart12824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getEllipsisCount8305;
+		internal static global::MonoJavaBridge.MethodId _getEllipsisCount12825;
 		public override int getEllipsisCount(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getEllipsisCount8305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.Layout_._getEllipsisCount12825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getEllipsisCount8305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.Layout_.staticClass, global::android.text.Layout_._getEllipsisCount12825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.Layout_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/Layout"));
-			global::android.text.Layout_._getLineCount8295 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineCount", "()I");
-			global::android.text.Layout_._getLineTop8296 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineTop", "(I)I");
-			global::android.text.Layout_._getLineDescent8297 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineDescent", "(I)I");
-			global::android.text.Layout_._getLineStart8298 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineStart", "(I)I");
-			global::android.text.Layout_._getParagraphDirection8299 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getParagraphDirection", "(I)I");
-			global::android.text.Layout_._getLineContainsTab8300 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineContainsTab", "(I)Z");
-			global::android.text.Layout_._getLineDirections8301 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;");
-			global::android.text.Layout_._getTopPadding8302 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getTopPadding", "()I");
-			global::android.text.Layout_._getBottomPadding8303 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getBottomPadding", "()I");
-			global::android.text.Layout_._getEllipsisStart8304 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getEllipsisStart", "(I)I");
-			global::android.text.Layout_._getEllipsisCount8305 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getEllipsisCount", "(I)I");
+			global::android.text.Layout_._getLineCount12815 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineCount", "()I");
+			global::android.text.Layout_._getLineTop12816 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineTop", "(I)I");
+			global::android.text.Layout_._getLineDescent12817 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineDescent", "(I)I");
+			global::android.text.Layout_._getLineStart12818 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineStart", "(I)I");
+			global::android.text.Layout_._getParagraphDirection12819 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getParagraphDirection", "(I)I");
+			global::android.text.Layout_._getLineContainsTab12820 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineContainsTab", "(I)Z");
+			global::android.text.Layout_._getLineDirections12821 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getLineDirections", "(I)Landroid/text/Layout$Directions;");
+			global::android.text.Layout_._getTopPadding12822 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getTopPadding", "()I");
+			global::android.text.Layout_._getBottomPadding12823 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getBottomPadding", "()I");
+			global::android.text.Layout_._getEllipsisStart12824 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getEllipsisStart", "(I)I");
+			global::android.text.Layout_._getEllipsisCount12825 = @__env.GetMethodIDNoThrow(global::android.text.Layout_.staticClass, "getEllipsisCount", "(I)I");
 		}
 	}
 }

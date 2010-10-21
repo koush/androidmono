@@ -11,18 +11,18 @@ namespace javax.net.ssl
 		protected SSLKeyException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _SSLKeyException23441;
+		internal static global::MonoJavaBridge.MethodId _SSLKeyException29872;
 		public SSLKeyException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLKeyException.staticClass, global::javax.net.ssl.SSLKeyException._SSLKeyException23441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLKeyException.staticClass, global::javax.net.ssl.SSLKeyException._SSLKeyException29872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.SSLKeyException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/SSLKeyException"));
-			global::javax.net.ssl.SSLKeyException._SSLKeyException23441 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLKeyException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::javax.net.ssl.SSLKeyException._SSLKeyException29872 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.SSLKeyException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

@@ -18,14 +18,14 @@ namespace java.security
 				return getObject();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getObject17678;
+		internal static global::MonoJavaBridge.MethodId _getObject23279;
 		public global::java.lang.Object getObject() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SignedObject._getObject17678)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SignedObject._getObject23279)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getObject17678)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getObject23279)) as java.lang.Object;
 		}
 		public new byte[] Signature
 		{
@@ -34,23 +34,23 @@ namespace java.security
 				return getSignature();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSignature17679;
+		internal static global::MonoJavaBridge.MethodId _getSignature23280;
 		public byte[] getSignature() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SignedObject._getSignature17679)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SignedObject._getSignature23280)) as byte[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getSignature17679)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getSignature23280)) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _verify17680;
+		internal static global::MonoJavaBridge.MethodId _verify23281;
 		public bool verify(java.security.PublicKey arg0, java.security.Signature arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.SignedObject._verify17680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.SignedObject._verify23281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._verify17680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._verify23281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new global::java.lang.String Algorithm
 		{
@@ -59,31 +59,31 @@ namespace java.security
 				return getAlgorithm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAlgorithm17681;
+		internal static global::MonoJavaBridge.MethodId _getAlgorithm23282;
 		public global::java.lang.String getAlgorithm() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SignedObject._getAlgorithm17681)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.SignedObject._getAlgorithm23282)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getAlgorithm17681)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getAlgorithm23282)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _SignedObject17682;
+		internal static global::MonoJavaBridge.MethodId _SignedObject23283;
 		public SignedObject(java.io.Serializable arg0, java.security.PrivateKey arg1, java.security.Signature arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SignedObject.staticClass, global::java.security.SignedObject._SignedObject17682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SignedObject.staticClass, global::java.security.SignedObject._SignedObject23283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.SignedObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/SignedObject"));
-			global::java.security.SignedObject._getObject17678 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getObject", "()Ljava/lang/Object;");
-			global::java.security.SignedObject._getSignature17679 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getSignature", "()[B");
-			global::java.security.SignedObject._verify17680 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/security/Signature;)Z");
-			global::java.security.SignedObject._getAlgorithm17681 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.SignedObject._SignedObject17682 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "<init>", "(Ljava/io/Serializable;Ljava/security/PrivateKey;Ljava/security/Signature;)V");
+			global::java.security.SignedObject._getObject23279 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getObject", "()Ljava/lang/Object;");
+			global::java.security.SignedObject._getSignature23280 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getSignature", "()[B");
+			global::java.security.SignedObject._verify23281 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "verify", "(Ljava/security/PublicKey;Ljava/security/Signature;)Z");
+			global::java.security.SignedObject._getAlgorithm23282 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "getAlgorithm", "()Ljava/lang/String;");
+			global::java.security.SignedObject._SignedObject23283 = @__env.GetMethodIDNoThrow(global::java.security.SignedObject.staticClass, "<init>", "(Ljava/io/Serializable;Ljava/security/PrivateKey;Ljava/security/Signature;)V");
 		}
 	}
 }

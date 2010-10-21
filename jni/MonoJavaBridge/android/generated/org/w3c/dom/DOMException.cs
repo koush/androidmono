@@ -11,19 +11,20 @@ namespace org.w3c.dom
 		protected DOMException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DOMException27537;
+		internal static global::MonoJavaBridge.MethodId _DOMException34231;
 		public DOMException(short arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.w3c.dom.DOMException.staticClass, global::org.w3c.dom.DOMException._DOMException27537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.w3c.dom.DOMException.staticClass, global::org.w3c.dom.DOMException._DOMException34231, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _code27538;
+		internal static global::MonoJavaBridge.FieldId _code34232;
 		public short code
 		{
 			get
 			{
-				return default(short);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetShortField(this.JvmHandle, _code34232);
 			}
 			set
 			{
@@ -152,7 +153,8 @@ namespace org.w3c.dom
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.w3c.dom.DOMException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/w3c/dom/DOMException"));
-			global::org.w3c.dom.DOMException._DOMException27537 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMException.staticClass, "<init>", "(SLjava/lang/String;)V");
+			global::org.w3c.dom.DOMException._DOMException34231 = @__env.GetMethodIDNoThrow(global::org.w3c.dom.DOMException.staticClass, "<init>", "(SLjava/lang/String;)V");
+			global::org.w3c.dom.DOMException._code34232 = @__env.GetFieldIDNoThrow(global::org.w3c.dom.DOMException.staticClass, "code", "S");
 		}
 	}
 }

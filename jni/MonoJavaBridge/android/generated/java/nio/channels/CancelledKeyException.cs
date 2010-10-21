@@ -11,18 +11,18 @@ namespace java.nio.channels
 		protected CancelledKeyException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _CancelledKeyException16692;
+		internal static global::MonoJavaBridge.MethodId _CancelledKeyException22286;
 		public CancelledKeyException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.CancelledKeyException.staticClass, global::java.nio.channels.CancelledKeyException._CancelledKeyException16692);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.CancelledKeyException.staticClass, global::java.nio.channels.CancelledKeyException._CancelledKeyException22286);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.CancelledKeyException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/CancelledKeyException"));
-			global::java.nio.channels.CancelledKeyException._CancelledKeyException16692 = @__env.GetMethodIDNoThrow(global::java.nio.channels.CancelledKeyException.staticClass, "<init>", "()V");
+			global::java.nio.channels.CancelledKeyException._CancelledKeyException22286 = @__env.GetMethodIDNoThrow(global::java.nio.channels.CancelledKeyException.staticClass, "<init>", "()V");
 		}
 	}
 }

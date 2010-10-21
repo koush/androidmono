@@ -374,6 +374,45 @@ namespace MonoDroid
             if (type.Abstract)
                 GenerateInterfaceStubs(type);
         }
+        
+        public static string GetFieldStatement(string typeName, Type type)
+        {
+            if (typeName == "void")
+                return "@__env.Call{0}VoidMethod({1});";
+            
+            switch (typeName)
+            {
+                case "bool":
+                    return "return @__env.Get{0}BooleanField({1});";
+                case "int":
+                    return "return @__env.Get{0}IntField({1});";
+                case "double":
+                    return "return @__env.Get{0}DoubleField({1});";
+                case "float":
+                    return "return @__env.Get{0}FloatField({1});";
+                case "short":
+                    return "return @__env.Get{0}ShortField({1});";
+                case "long":
+                    return "return @__env.Get{0}LongField({1});";
+                case "char":
+                    return "return @__env.Get{0}CharField({1});";
+                case "byte":
+                    return "return @__env.Get{0}ByteField({1});";
+            }
+            
+            StringBuilder ret = new StringBuilder();
+            if (typeName.EndsWith("[]"))
+                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", typeName.Substring(0, typeName.Length - 2));
+            else if (type.IsInterface)
+                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::{0}>", typeName);
+            else
+                ret.Append("return global::MonoJavaBridge.JavaBridge.WrapJavaObject");
+            ret.Append("(@__env.Get{0}ObjectField({1}))");
+            ret.AppendFormat(" as {0};", typeName);
+            
+            return ret.ToString();
+        }
+        
 
         List<string> myInitJni = new List<string>();
         int myMemberCounter = 0;
@@ -384,8 +423,18 @@ namespace MonoDroid
             
             bool hasValue = !string.IsNullOrEmpty(field.Value);
             
+            var containingType = field.ContainingType;
+            if (containingType.Static)
+                containingType = FindType(containingType.Name.Substring(0, containingType.Name.Length - "Constants".Length).Replace("@", string.Empty));
+
+            var fieldId = string.Format("_{0}{1}", field.Name.Replace("@",""), myMemberCounter++);
+            var signature = GetSignature(field.FieldType, field.Type);
+            string initJni = string.Format("global::{0}.{1} = @__env.Get{4}FieldIDNoThrow(global::{0}.staticClass, \"{2}\", \"{3}\");", containingType.Name, fieldId, field.Name, signature, field.Static ? "Static" : string.Empty);
             if (!hasValue)
-                WriteLine("internal static global::MonoJavaBridge.FieldId _{0}{1};", field.Name.Replace("@",""), myMemberCounter++);
+            {
+                WriteLine("internal static global::MonoJavaBridge.FieldId {0};", fieldId);
+                myInitJni.Add(initJni);
+            }
             
             Write(field.Scope);
             if (field.Static)
@@ -430,7 +479,21 @@ namespace MonoDroid
             else
             {
                 myIndent++;
-                WriteLine("return default({0}{1});", ObjectModel.IsSystemType(field.Type) ? string.Empty : "global::", field.Type);
+                
+                WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");
+                string fieldStatement = GetFieldStatement(field.Type, field.FieldType);
+                if (field.Static)
+                {
+                    var contents = string.Format("global::{0}{2}.staticClass, {1}", containingType.Name, fieldId, containingType.IsInterface ? "_" : string.Empty);
+                    WriteLine(fieldStatement, "Static", contents);
+                }
+                else
+                {
+                    var contents = string.Format("this.JvmHandle, {0}", fieldId);
+                    WriteLine(fieldStatement, string.Empty, contents);
+                }
+                
+                //WriteLine("return default({0}{1});", ObjectModel.IsSystemType(field.Type) ? string.Empty : "global::", field.Type);
                 myIndent--;
             }
             WriteLine("}");
@@ -550,24 +613,6 @@ namespace MonoDroid
             }
             
             StringBuilder ret = new StringBuilder();
-            /*
-            if (typeName.EndsWith("[]"))
-            {
-                // TODO: Actually return something
-                ret.Append("return null;//");
-            }
-            else
-            {
-                if (typeName == "java.lang.Object" || (type != null && type.IsInterface))
-                {
-                    ret.AppendFormat("return global::net.sf.jni4net.utils.Convertor.FullJ2C<{0}>", typeName);
-                }
-                else
-                {
-                    ret.AppendFormat("return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<{0}>", typeName);
-                }
-            }
-            */
             if (method.Return == null)
                 Console.WriteLine(method.ToString() + "::" + method.Type);
             if (method.Return.EndsWith("[]"))
@@ -601,9 +646,6 @@ namespace MonoDroid
                     parent = parent.ParentType;
                 }
             }
-            
-            //if (method.PropertyType != null && method.Name.StartsWith("set"))
-            //    return;
             
             if (method.PropertyType.HasValue && method.Name.StartsWith("get"))
             {

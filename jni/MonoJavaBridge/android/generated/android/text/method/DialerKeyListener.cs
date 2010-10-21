@@ -18,20 +18,20 @@ namespace android.text.method
 				return getInstance();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInstance8603;
+		internal static global::MonoJavaBridge.MethodId _getInstance13214;
 		public static global::android.text.method.DialerKeyListener getInstance() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInstance8603)) as android.text.method.DialerKeyListener;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInstance13214)) as android.text.method.DialerKeyListener;
 		}
-		internal static global::MonoJavaBridge.MethodId _lookup8604;
+		internal static global::MonoJavaBridge.MethodId _lookup13215;
 		protected override int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener._lookup8604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener._lookup13215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._lookup8604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._lookup13215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new int InputType
 		{
@@ -40,14 +40,14 @@ namespace android.text.method
 				return getInputType();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputType8605;
+		internal static global::MonoJavaBridge.MethodId _getInputType13216;
 		public override int getInputType() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener._getInputType8605);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener._getInputType13216);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInputType8605);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInputType13216);
 		}
 		protected new char[] AcceptedChars
 		{
@@ -56,39 +56,41 @@ namespace android.text.method
 				return getAcceptedChars();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAcceptedChars8606;
+		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13217;
 		protected override char[] getAcceptedChars() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.DialerKeyListener._getAcceptedChars8606)) as char[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.method.DialerKeyListener._getAcceptedChars13217)) as char[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getAcceptedChars8606)) as char[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getAcceptedChars13217)) as char[];
 		}
-		internal static global::MonoJavaBridge.MethodId _DialerKeyListener8607;
+		internal static global::MonoJavaBridge.MethodId _DialerKeyListener13218;
 		public DialerKeyListener()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._DialerKeyListener8607);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._DialerKeyListener13218);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _CHARACTERS8608;
+		internal static global::MonoJavaBridge.FieldId _CHARACTERS13219;
 		public static char[] CHARACTERS
 		{
 			get
 			{
-				return default(char[]);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.GetStaticObjectField(global::android.text.method.DialerKeyListener.staticClass, _CHARACTERS13219)) as char[];
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.DialerKeyListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/DialerKeyListener"));
-			global::android.text.method.DialerKeyListener._getInstance8603 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getInstance", "()Landroid/text/method/DialerKeyListener;");
-			global::android.text.method.DialerKeyListener._lookup8604 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "lookup", "(Landroid/view/KeyEvent;Landroid/text/Spannable;)I");
-			global::android.text.method.DialerKeyListener._getInputType8605 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getInputType", "()I");
-			global::android.text.method.DialerKeyListener._getAcceptedChars8606 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getAcceptedChars", "()[C");
-			global::android.text.method.DialerKeyListener._DialerKeyListener8607 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "<init>", "()V");
+			global::android.text.method.DialerKeyListener._getInstance13214 = @__env.GetStaticMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getInstance", "()Landroid/text/method/DialerKeyListener;");
+			global::android.text.method.DialerKeyListener._lookup13215 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "lookup", "(Landroid/view/KeyEvent;Landroid/text/Spannable;)I");
+			global::android.text.method.DialerKeyListener._getInputType13216 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getInputType", "()I");
+			global::android.text.method.DialerKeyListener._getAcceptedChars13217 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "getAcceptedChars", "()[C");
+			global::android.text.method.DialerKeyListener._DialerKeyListener13218 = @__env.GetMethodIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "<init>", "()V");
+			global::android.text.method.DialerKeyListener._CHARACTERS13219 = @__env.GetStaticFieldIDNoThrow(global::android.text.method.DialerKeyListener.staticClass, "CHARACTERS", "[C");
 		}
 	}
 }

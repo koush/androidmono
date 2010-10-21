@@ -138,7 +138,7 @@ namespace MonoJavaBridge
             var length = env.GetArrayLength(handle);
             T[] ret = new T[length];
             
-            Type type = typeof(T).GetElementType();
+            Type type = typeof(T);
             if (type.IsPrimitive)
             {
                 if (type == typeof (int) || type == typeof (uint))

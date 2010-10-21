@@ -11,146 +11,146 @@ namespace android.text.format
 		protected Time(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString8534;
+		internal static global::MonoJavaBridge.MethodId _toString13127;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._toString8534)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._toString13127)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._toString8534)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._toString13127)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _clear8535;
+		internal static global::MonoJavaBridge.MethodId _clear13128;
 		public virtual void clear(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._clear8535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._clear13128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._clear8535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._clear13128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _format8536;
+		internal static global::MonoJavaBridge.MethodId _format13129;
 		public virtual global::java.lang.String format(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._format8536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._format13129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._format8536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._format13129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _compare8537;
+		internal static global::MonoJavaBridge.MethodId _compare13130;
 		public static int compare(android.text.format.Time arg0, android.text.format.Time arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, global::android.text.format.Time._compare8537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, global::android.text.format.Time._compare13130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _set8538;
+		internal static global::MonoJavaBridge.MethodId _set13131;
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set8538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set13131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set8538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set13131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _set8539;
+		internal static global::MonoJavaBridge.MethodId _set13132;
 		public virtual void set(int arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set8539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set13132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set8539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set13132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _set8540;
+		internal static global::MonoJavaBridge.MethodId _set13133;
 		public virtual void set(android.text.format.Time arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set8540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set13133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set8540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set13133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _set8541;
+		internal static global::MonoJavaBridge.MethodId _set13134;
 		public virtual void set(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set8541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._set13134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set8541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._set13134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _normalize8542;
+		internal static global::MonoJavaBridge.MethodId _normalize13135;
 		public virtual long normalize(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.text.format.Time._normalize8542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.text.format.Time._normalize13135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._normalize8542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._normalize13135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _after8543;
+		internal static global::MonoJavaBridge.MethodId _after13136;
 		public virtual bool after(android.text.format.Time arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._after8543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._after13136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._after8543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._after13136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _before8544;
+		internal static global::MonoJavaBridge.MethodId _before13137;
 		public virtual bool before(android.text.format.Time arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._before8544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._before13137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._before8544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._before13137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse8545;
+		internal static global::MonoJavaBridge.MethodId _parse13138;
 		public virtual bool parse(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._parse8545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._parse13138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._parse8545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._parse13138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toMillis8546;
+		internal static global::MonoJavaBridge.MethodId _toMillis13139;
 		public virtual long toMillis(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.text.format.Time._toMillis8546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.text.format.Time._toMillis13139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._toMillis8546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._toMillis13139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getActualMaximum8547;
+		internal static global::MonoJavaBridge.MethodId _getActualMaximum13140;
 		public virtual int getActualMaximum(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.format.Time._getActualMaximum8547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.format.Time._getActualMaximum13140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._getActualMaximum8547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._getActualMaximum13140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _switchTimezone8548;
+		internal static global::MonoJavaBridge.MethodId _switchTimezone13141;
 		public virtual void switchTimezone(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._switchTimezone8548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._switchTimezone13141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._switchTimezone8548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._switchTimezone13141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _parse33398549;
+		internal static global::MonoJavaBridge.MethodId _parse333913142;
 		public virtual bool parse3339(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._parse33398549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.format.Time._parse333913142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._parse33398549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._parse333913142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static global::java.lang.String CurrentTimezone
 		{
@@ -159,29 +159,29 @@ namespace android.text.format
 				return getCurrentTimezone();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentTimezone8550;
+		internal static global::MonoJavaBridge.MethodId _getCurrentTimezone13143;
 		public static global::java.lang.String getCurrentTimezone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.Time.staticClass, global::android.text.format.Time._getCurrentTimezone8550)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.Time.staticClass, global::android.text.format.Time._getCurrentTimezone13143)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setToNow8551;
+		internal static global::MonoJavaBridge.MethodId _setToNow13144;
 		public virtual void setToNow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._setToNow8551);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.format.Time._setToNow13144);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._setToNow8551);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._setToNow13144);
 		}
-		internal static global::MonoJavaBridge.MethodId _format24458552;
+		internal static global::MonoJavaBridge.MethodId _format244513145;
 		public virtual global::java.lang.String format2445() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._format24458552)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._format244513145)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._format24458552)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._format244513145)) as java.lang.String;
 		}
 		public new int WeekNumber
 		{
@@ -190,64 +190,64 @@ namespace android.text.format
 				return getWeekNumber();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWeekNumber8553;
+		internal static global::MonoJavaBridge.MethodId _getWeekNumber13146;
 		public virtual int getWeekNumber() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.text.format.Time._getWeekNumber8553);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.text.format.Time._getWeekNumber13146);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._getWeekNumber8553);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._getWeekNumber13146);
 		}
-		internal static global::MonoJavaBridge.MethodId _format33398554;
+		internal static global::MonoJavaBridge.MethodId _format333913147;
 		public virtual global::java.lang.String format3339(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._format33398554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.format.Time._format333913147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._format33398554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._format333913147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _isEpoch8555;
+		internal static global::MonoJavaBridge.MethodId _isEpoch13148;
 		public static bool isEpoch(android.text.format.Time arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.text.format.Time.staticClass, global::android.text.format.Time._isEpoch8555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(android.text.format.Time.staticClass, global::android.text.format.Time._isEpoch13148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getJulianDay8556;
+		internal static global::MonoJavaBridge.MethodId _getJulianDay13149;
 		public static int getJulianDay(long arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, global::android.text.format.Time._getJulianDay8556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, global::android.text.format.Time._getJulianDay13149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setJulianDay8557;
+		internal static global::MonoJavaBridge.MethodId _setJulianDay13150;
 		public virtual long setJulianDay(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.text.format.Time._setJulianDay8557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.text.format.Time._setJulianDay13150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._setJulianDay8557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.text.format.Time.staticClass, global::android.text.format.Time._setJulianDay13150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _Time8558;
+		internal static global::MonoJavaBridge.MethodId _Time13151;
 		public Time(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Time.staticClass, global::android.text.format.Time._Time8558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Time.staticClass, global::android.text.format.Time._Time13151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Time8559;
+		internal static global::MonoJavaBridge.MethodId _Time13152;
 		public Time()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Time.staticClass, global::android.text.format.Time._Time8559);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Time.staticClass, global::android.text.format.Time._Time13152);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Time8560;
+		internal static global::MonoJavaBridge.MethodId _Time13153;
 		public Time(android.text.format.Time arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Time.staticClass, global::android.text.format.Time._Time8560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.Time.staticClass, global::android.text.format.Time._Time13153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String TIMEZONE_UTC
@@ -264,133 +264,145 @@ namespace android.text.format
 				return 2440588;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _allDay8561;
+		internal static global::MonoJavaBridge.FieldId _allDay13156;
 		public bool allDay
 		{
 			get
 			{
-				return default(bool);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetBooleanField(this.JvmHandle, _allDay13156);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _second8562;
+		internal static global::MonoJavaBridge.FieldId _second13157;
 		public int second
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _second13157);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _minute8563;
+		internal static global::MonoJavaBridge.FieldId _minute13158;
 		public int minute
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _minute13158);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _hour8564;
+		internal static global::MonoJavaBridge.FieldId _hour13159;
 		public int hour
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _hour13159);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _monthDay8565;
+		internal static global::MonoJavaBridge.FieldId _monthDay13160;
 		public int monthDay
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _monthDay13160);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _month8566;
+		internal static global::MonoJavaBridge.FieldId _month13161;
 		public int month
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _month13161);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _year8567;
+		internal static global::MonoJavaBridge.FieldId _year13162;
 		public int year
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _year13162);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _weekDay8568;
+		internal static global::MonoJavaBridge.FieldId _weekDay13163;
 		public int weekDay
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _weekDay13163);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _yearDay8569;
+		internal static global::MonoJavaBridge.FieldId _yearDay13164;
 		public int yearDay
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _yearDay13164);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _isDst8570;
+		internal static global::MonoJavaBridge.FieldId _isDst13165;
 		public int isDst
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _isDst13165);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _gmtoff8571;
+		internal static global::MonoJavaBridge.FieldId _gmtoff13166;
 		public long gmtoff
 		{
 			get
 			{
-				return default(long);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetLongField(this.JvmHandle, _gmtoff13166);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _timezone8572;
+		internal static global::MonoJavaBridge.FieldId _timezone13167;
 		public global::java.lang.String timezone
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _timezone13167)) as java.lang.String;
 			}
 			set
 			{
@@ -512,33 +524,45 @@ namespace android.text.format
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.format.Time.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/format/Time"));
-			global::android.text.format.Time._toString8534 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.text.format.Time._clear8535 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "clear", "(Ljava/lang/String;)V");
-			global::android.text.format.Time._format8536 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "format", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.text.format.Time._compare8537 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "compare", "(Landroid/text/format/Time;Landroid/text/format/Time;)I");
-			global::android.text.format.Time._set8538 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(IIIIII)V");
-			global::android.text.format.Time._set8539 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(III)V");
-			global::android.text.format.Time._set8540 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(Landroid/text/format/Time;)V");
-			global::android.text.format.Time._set8541 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(J)V");
-			global::android.text.format.Time._normalize8542 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "normalize", "(Z)J");
-			global::android.text.format.Time._after8543 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "after", "(Landroid/text/format/Time;)Z");
-			global::android.text.format.Time._before8544 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "before", "(Landroid/text/format/Time;)Z");
-			global::android.text.format.Time._parse8545 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "parse", "(Ljava/lang/String;)Z");
-			global::android.text.format.Time._toMillis8546 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "toMillis", "(Z)J");
-			global::android.text.format.Time._getActualMaximum8547 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "getActualMaximum", "(I)I");
-			global::android.text.format.Time._switchTimezone8548 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "switchTimezone", "(Ljava/lang/String;)V");
-			global::android.text.format.Time._parse33398549 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "parse3339", "(Ljava/lang/String;)Z");
-			global::android.text.format.Time._getCurrentTimezone8550 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "getCurrentTimezone", "()Ljava/lang/String;");
-			global::android.text.format.Time._setToNow8551 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "setToNow", "()V");
-			global::android.text.format.Time._format24458552 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "format2445", "()Ljava/lang/String;");
-			global::android.text.format.Time._getWeekNumber8553 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "getWeekNumber", "()I");
-			global::android.text.format.Time._format33398554 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "format3339", "(Z)Ljava/lang/String;");
-			global::android.text.format.Time._isEpoch8555 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "isEpoch", "(Landroid/text/format/Time;)Z");
-			global::android.text.format.Time._getJulianDay8556 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "getJulianDay", "(JJ)I");
-			global::android.text.format.Time._setJulianDay8557 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "setJulianDay", "(I)J");
-			global::android.text.format.Time._Time8558 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.text.format.Time._Time8559 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "<init>", "()V");
-			global::android.text.format.Time._Time8560 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "<init>", "(Landroid/text/format/Time;)V");
+			global::android.text.format.Time._toString13127 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.format.Time._clear13128 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "clear", "(Ljava/lang/String;)V");
+			global::android.text.format.Time._format13129 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "format", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.text.format.Time._compare13130 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "compare", "(Landroid/text/format/Time;Landroid/text/format/Time;)I");
+			global::android.text.format.Time._set13131 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(IIIIII)V");
+			global::android.text.format.Time._set13132 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(III)V");
+			global::android.text.format.Time._set13133 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(Landroid/text/format/Time;)V");
+			global::android.text.format.Time._set13134 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "set", "(J)V");
+			global::android.text.format.Time._normalize13135 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "normalize", "(Z)J");
+			global::android.text.format.Time._after13136 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "after", "(Landroid/text/format/Time;)Z");
+			global::android.text.format.Time._before13137 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "before", "(Landroid/text/format/Time;)Z");
+			global::android.text.format.Time._parse13138 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "parse", "(Ljava/lang/String;)Z");
+			global::android.text.format.Time._toMillis13139 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "toMillis", "(Z)J");
+			global::android.text.format.Time._getActualMaximum13140 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "getActualMaximum", "(I)I");
+			global::android.text.format.Time._switchTimezone13141 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "switchTimezone", "(Ljava/lang/String;)V");
+			global::android.text.format.Time._parse333913142 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "parse3339", "(Ljava/lang/String;)Z");
+			global::android.text.format.Time._getCurrentTimezone13143 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "getCurrentTimezone", "()Ljava/lang/String;");
+			global::android.text.format.Time._setToNow13144 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "setToNow", "()V");
+			global::android.text.format.Time._format244513145 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "format2445", "()Ljava/lang/String;");
+			global::android.text.format.Time._getWeekNumber13146 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "getWeekNumber", "()I");
+			global::android.text.format.Time._format333913147 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "format3339", "(Z)Ljava/lang/String;");
+			global::android.text.format.Time._isEpoch13148 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "isEpoch", "(Landroid/text/format/Time;)Z");
+			global::android.text.format.Time._getJulianDay13149 = @__env.GetStaticMethodIDNoThrow(global::android.text.format.Time.staticClass, "getJulianDay", "(JJ)I");
+			global::android.text.format.Time._setJulianDay13150 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "setJulianDay", "(I)J");
+			global::android.text.format.Time._Time13151 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.text.format.Time._Time13152 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "<init>", "()V");
+			global::android.text.format.Time._Time13153 = @__env.GetMethodIDNoThrow(global::android.text.format.Time.staticClass, "<init>", "(Landroid/text/format/Time;)V");
+			global::android.text.format.Time._allDay13156 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "allDay", "Z");
+			global::android.text.format.Time._second13157 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "second", "I");
+			global::android.text.format.Time._minute13158 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "minute", "I");
+			global::android.text.format.Time._hour13159 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "hour", "I");
+			global::android.text.format.Time._monthDay13160 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "monthDay", "I");
+			global::android.text.format.Time._month13161 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "month", "I");
+			global::android.text.format.Time._year13162 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "year", "I");
+			global::android.text.format.Time._weekDay13163 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "weekDay", "I");
+			global::android.text.format.Time._yearDay13164 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "yearDay", "I");
+			global::android.text.format.Time._isDst13165 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "isDst", "I");
+			global::android.text.format.Time._gmtoff13166 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "gmtoff", "J");
+			global::android.text.format.Time._timezone13167 = @__env.GetFieldIDNoThrow(global::android.text.format.Time.staticClass, "timezone", "Ljava/lang/String;");
 		}
 	}
 }

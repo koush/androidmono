@@ -18,30 +18,30 @@ namespace java.lang.reflect
 		internal WildcardType_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getUpperBounds15507;
+		internal static global::MonoJavaBridge.MethodId _getUpperBounds21043;
 		 global::java.lang.reflect.Type[] java.lang.reflect.WildcardType.getUpperBounds() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_._getUpperBounds15507)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_._getUpperBounds21043)) as java.lang.reflect.Type[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_.staticClass, global::java.lang.reflect.WildcardType_._getUpperBounds15507)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_.staticClass, global::java.lang.reflect.WildcardType_._getUpperBounds21043)) as java.lang.reflect.Type[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getLowerBounds15508;
+		internal static global::MonoJavaBridge.MethodId _getLowerBounds21044;
 		 global::java.lang.reflect.Type[] java.lang.reflect.WildcardType.getLowerBounds() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_._getLowerBounds15508)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_._getLowerBounds21044)) as java.lang.reflect.Type[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_.staticClass, global::java.lang.reflect.WildcardType_._getLowerBounds15508)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.WildcardType_.staticClass, global::java.lang.reflect.WildcardType_._getLowerBounds21044)) as java.lang.reflect.Type[];
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.WildcardType_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/WildcardType"));
-			global::java.lang.reflect.WildcardType_._getUpperBounds15507 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.WildcardType_.staticClass, "getUpperBounds", "()[Ljava/lang/reflect/Type;");
-			global::java.lang.reflect.WildcardType_._getLowerBounds15508 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.WildcardType_.staticClass, "getLowerBounds", "()[Ljava/lang/reflect/Type;");
+			global::java.lang.reflect.WildcardType_._getUpperBounds21043 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.WildcardType_.staticClass, "getUpperBounds", "()[Ljava/lang/reflect/Type;");
+			global::java.lang.reflect.WildcardType_._getLowerBounds21044 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.WildcardType_.staticClass, "getLowerBounds", "()[Ljava/lang/reflect/Type;");
 		}
 	}
 }

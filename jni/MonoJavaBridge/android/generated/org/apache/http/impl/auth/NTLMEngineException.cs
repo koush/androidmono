@@ -11,34 +11,34 @@ namespace org.apache.http.impl.auth
 		protected NTLMEngineException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NTLMEngineException25997;
+		internal static global::MonoJavaBridge.MethodId _NTLMEngineException32620;
 		public NTLMEngineException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMEngineException.staticClass, global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException25997);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMEngineException.staticClass, global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException32620);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _NTLMEngineException25998;
+		internal static global::MonoJavaBridge.MethodId _NTLMEngineException32621;
 		public NTLMEngineException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMEngineException.staticClass, global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException25998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMEngineException.staticClass, global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException32621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _NTLMEngineException25999;
+		internal static global::MonoJavaBridge.MethodId _NTLMEngineException32622;
 		public NTLMEngineException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMEngineException.staticClass, global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException25999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.NTLMEngineException.staticClass, global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException32622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.auth.NTLMEngineException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/auth/NTLMEngineException"));
-			global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException25997 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngineException.staticClass, "<init>", "()V");
-			global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException25998 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngineException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException25999 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngineException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException32620 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngineException.staticClass, "<init>", "()V");
+			global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException32621 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngineException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::org.apache.http.impl.auth.NTLMEngineException._NTLMEngineException32622 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.auth.NTLMEngineException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
 		}
 	}
 }

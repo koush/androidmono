@@ -11,26 +11,26 @@ namespace org.apache.http.conn
 		protected ConnectionPoolTimeoutException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ConnectionPoolTimeoutException25390;
+		internal static global::MonoJavaBridge.MethodId _ConnectionPoolTimeoutException31972;
 		public ConnectionPoolTimeoutException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException25390);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException31972);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ConnectionPoolTimeoutException25391;
+		internal static global::MonoJavaBridge.MethodId _ConnectionPoolTimeoutException31973;
 		public ConnectionPoolTimeoutException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException25391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException31973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.ConnectionPoolTimeoutException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/ConnectionPoolTimeoutException"));
-			global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException25390 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, "<init>", "()V");
-			global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException25391 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException31972 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, "<init>", "()V");
+			global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException31973 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

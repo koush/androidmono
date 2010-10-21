@@ -11,26 +11,26 @@ namespace java.lang
 		protected NoClassDefFoundError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NoClassDefFoundError14710;
+		internal static global::MonoJavaBridge.MethodId _NoClassDefFoundError20224;
 		public NoClassDefFoundError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError14710);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError20224);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _NoClassDefFoundError14711;
+		internal static global::MonoJavaBridge.MethodId _NoClassDefFoundError20225;
 		public NoClassDefFoundError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError14711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError20225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.NoClassDefFoundError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/NoClassDefFoundError"));
-			global::java.lang.NoClassDefFoundError._NoClassDefFoundError14710 = @__env.GetMethodIDNoThrow(global::java.lang.NoClassDefFoundError.staticClass, "<init>", "()V");
-			global::java.lang.NoClassDefFoundError._NoClassDefFoundError14711 = @__env.GetMethodIDNoThrow(global::java.lang.NoClassDefFoundError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.NoClassDefFoundError._NoClassDefFoundError20224 = @__env.GetMethodIDNoThrow(global::java.lang.NoClassDefFoundError.staticClass, "<init>", "()V");
+			global::java.lang.NoClassDefFoundError._NoClassDefFoundError20225 = @__env.GetMethodIDNoThrow(global::java.lang.NoClassDefFoundError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

@@ -50,18 +50,20 @@ namespace android.net.wifi
 					return "auth_alg";
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _strings5455;
+			internal static global::MonoJavaBridge.FieldId _strings7961;
 			public static global::java.lang.String[] strings
 			{
 				get
 				{
-					return default(global::java.lang.String[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass, _strings7961)) as java.lang.String[];
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$AuthAlgorithm"));
+				global::android.net.wifi.WifiConfiguration.AuthAlgorithm._strings7961 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.AuthAlgorithm.staticClass, "strings", "[Ljava/lang/String;");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -110,18 +112,20 @@ namespace android.net.wifi
 					return "group";
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _strings5456;
+			internal static global::MonoJavaBridge.FieldId _strings7967;
 			public static global::java.lang.String[] strings
 			{
 				get
 				{
-					return default(global::java.lang.String[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass, _strings7967)) as java.lang.String[];
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$GroupCipher"));
+				global::android.net.wifi.WifiConfiguration.GroupCipher._strings7967 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.GroupCipher.staticClass, "strings", "[Ljava/lang/String;");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -170,18 +174,20 @@ namespace android.net.wifi
 					return "key_mgmt";
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _strings5457;
+			internal static global::MonoJavaBridge.FieldId _strings7973;
 			public static global::java.lang.String[] strings
 			{
 				get
 				{
-					return default(global::java.lang.String[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass, _strings7973)) as java.lang.String[];
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$KeyMgmt"));
+				global::android.net.wifi.WifiConfiguration.KeyMgmt._strings7973 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.KeyMgmt.staticClass, "strings", "[Ljava/lang/String;");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -223,18 +229,20 @@ namespace android.net.wifi
 					return "pairwise";
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _strings5458;
+			internal static global::MonoJavaBridge.FieldId _strings7978;
 			public static global::java.lang.String[] strings
 			{
 				get
 				{
-					return default(global::java.lang.String[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass, _strings7978)) as java.lang.String[];
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$PairwiseCipher"));
+				global::android.net.wifi.WifiConfiguration.PairwiseCipher._strings7978 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.PairwiseCipher.staticClass, "strings", "[Ljava/lang/String;");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -269,18 +277,20 @@ namespace android.net.wifi
 					return "proto";
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _strings5459;
+			internal static global::MonoJavaBridge.FieldId _strings7982;
 			public static global::java.lang.String[] strings
 			{
 				get
 				{
-					return default(global::java.lang.String[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.Protocol.staticClass, _strings7982)) as java.lang.String[];
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.Protocol.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$Protocol"));
+				global::android.net.wifi.WifiConfiguration.Protocol._strings7982 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.Protocol.staticClass, "strings", "[Ljava/lang/String;");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -315,203 +325,219 @@ namespace android.net.wifi
 					return 2;
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _strings5460;
+			internal static global::MonoJavaBridge.FieldId _strings7986;
 			public static global::java.lang.String[] strings
 			{
 				get
 				{
-					return default(global::java.lang.String[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::android.net.wifi.WifiConfiguration.Status.staticClass, _strings7986)) as java.lang.String[];
 				}
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.net.wifi.WifiConfiguration.Status.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration$Status"));
+				global::android.net.wifi.WifiConfiguration.Status._strings7986 = @__env.GetStaticFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.Status.staticClass, "strings", "[Ljava/lang/String;");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _toString5461;
+		internal static global::MonoJavaBridge.MethodId _toString7987;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration._toString5461)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration._toString7987)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._toString5461)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._toString7987)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel5462;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel7988;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration._writeToParcel5462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration._writeToParcel7988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._writeToParcel5462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._writeToParcel7988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents5463;
+		internal static global::MonoJavaBridge.MethodId _describeContents7989;
 		public virtual int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration._describeContents5463);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration._describeContents7989);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._describeContents5463);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._describeContents7989);
 		}
-		internal static global::MonoJavaBridge.MethodId _WifiConfiguration5464;
+		internal static global::MonoJavaBridge.MethodId _WifiConfiguration7990;
 		public WifiConfiguration()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._WifiConfiguration5464);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.wifi.WifiConfiguration.staticClass, global::android.net.wifi.WifiConfiguration._WifiConfiguration7990);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _networkId5465;
+		internal static global::MonoJavaBridge.FieldId _networkId7991;
 		public int networkId
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _networkId7991);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _status5466;
+		internal static global::MonoJavaBridge.FieldId _status7992;
 		public int status
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _status7992);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SSID5467;
+		internal static global::MonoJavaBridge.FieldId _SSID7993;
 		public global::java.lang.String SSID
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _SSID7993)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _BSSID5468;
+		internal static global::MonoJavaBridge.FieldId _BSSID7994;
 		public global::java.lang.String BSSID
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _BSSID7994)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _preSharedKey5469;
+		internal static global::MonoJavaBridge.FieldId _preSharedKey7995;
 		public global::java.lang.String preSharedKey
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _preSharedKey7995)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _wepKeys5470;
+		internal static global::MonoJavaBridge.FieldId _wepKeys7996;
 		public global::java.lang.String[] wepKeys
 		{
 			get
 			{
-				return default(global::java.lang.String[]);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _wepKeys7996)) as java.lang.String[];
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _wepTxKeyIndex5471;
+		internal static global::MonoJavaBridge.FieldId _wepTxKeyIndex7997;
 		public int wepTxKeyIndex
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _wepTxKeyIndex7997);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _priority5472;
+		internal static global::MonoJavaBridge.FieldId _priority7998;
 		public int priority
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _priority7998);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _hiddenSSID5473;
+		internal static global::MonoJavaBridge.FieldId _hiddenSSID7999;
 		public bool hiddenSSID
 		{
 			get
 			{
-				return default(bool);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetBooleanField(this.JvmHandle, _hiddenSSID7999);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _allowedKeyManagement5474;
+		internal static global::MonoJavaBridge.FieldId _allowedKeyManagement8000;
 		public global::java.util.BitSet allowedKeyManagement
 		{
 			get
 			{
-				return default(global::java.util.BitSet);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _allowedKeyManagement8000)) as java.util.BitSet;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _allowedProtocols5475;
+		internal static global::MonoJavaBridge.FieldId _allowedProtocols8001;
 		public global::java.util.BitSet allowedProtocols
 		{
 			get
 			{
-				return default(global::java.util.BitSet);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _allowedProtocols8001)) as java.util.BitSet;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _allowedAuthAlgorithms5476;
+		internal static global::MonoJavaBridge.FieldId _allowedAuthAlgorithms8002;
 		public global::java.util.BitSet allowedAuthAlgorithms
 		{
 			get
 			{
-				return default(global::java.util.BitSet);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _allowedAuthAlgorithms8002)) as java.util.BitSet;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _allowedPairwiseCiphers5477;
+		internal static global::MonoJavaBridge.FieldId _allowedPairwiseCiphers8003;
 		public global::java.util.BitSet allowedPairwiseCiphers
 		{
 			get
 			{
-				return default(global::java.util.BitSet);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _allowedPairwiseCiphers8003)) as java.util.BitSet;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _allowedGroupCiphers5478;
+		internal static global::MonoJavaBridge.FieldId _allowedGroupCiphers8004;
 		public global::java.util.BitSet allowedGroupCiphers
 		{
 			get
 			{
-				return default(global::java.util.BitSet);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _allowedGroupCiphers8004)) as java.util.BitSet;
 			}
 			set
 			{
@@ -521,10 +547,24 @@ namespace android.net.wifi
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.wifi.WifiConfiguration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/wifi/WifiConfiguration"));
-			global::android.net.wifi.WifiConfiguration._toString5461 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.net.wifi.WifiConfiguration._writeToParcel5462 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.net.wifi.WifiConfiguration._describeContents5463 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "describeContents", "()I");
-			global::android.net.wifi.WifiConfiguration._WifiConfiguration5464 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "<init>", "()V");
+			global::android.net.wifi.WifiConfiguration._toString7987 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.net.wifi.WifiConfiguration._writeToParcel7988 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.net.wifi.WifiConfiguration._describeContents7989 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "describeContents", "()I");
+			global::android.net.wifi.WifiConfiguration._WifiConfiguration7990 = @__env.GetMethodIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "<init>", "()V");
+			global::android.net.wifi.WifiConfiguration._networkId7991 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "networkId", "I");
+			global::android.net.wifi.WifiConfiguration._status7992 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "status", "I");
+			global::android.net.wifi.WifiConfiguration._SSID7993 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "SSID", "Ljava/lang/String;");
+			global::android.net.wifi.WifiConfiguration._BSSID7994 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "BSSID", "Ljava/lang/String;");
+			global::android.net.wifi.WifiConfiguration._preSharedKey7995 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "preSharedKey", "Ljava/lang/String;");
+			global::android.net.wifi.WifiConfiguration._wepKeys7996 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "wepKeys", "[Ljava/lang/String;");
+			global::android.net.wifi.WifiConfiguration._wepTxKeyIndex7997 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "wepTxKeyIndex", "I");
+			global::android.net.wifi.WifiConfiguration._priority7998 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "priority", "I");
+			global::android.net.wifi.WifiConfiguration._hiddenSSID7999 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "hiddenSSID", "Z");
+			global::android.net.wifi.WifiConfiguration._allowedKeyManagement8000 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedKeyManagement", "Ljava/util/BitSet;");
+			global::android.net.wifi.WifiConfiguration._allowedProtocols8001 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedProtocols", "Ljava/util/BitSet;");
+			global::android.net.wifi.WifiConfiguration._allowedAuthAlgorithms8002 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedAuthAlgorithms", "Ljava/util/BitSet;");
+			global::android.net.wifi.WifiConfiguration._allowedPairwiseCiphers8003 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedPairwiseCiphers", "Ljava/util/BitSet;");
+			global::android.net.wifi.WifiConfiguration._allowedGroupCiphers8004 = @__env.GetFieldIDNoThrow(global::android.net.wifi.WifiConfiguration.staticClass, "allowedGroupCiphers", "Ljava/util/BitSet;");
 		}
 	}
 }

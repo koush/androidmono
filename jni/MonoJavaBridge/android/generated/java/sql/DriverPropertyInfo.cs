@@ -11,63 +11,68 @@ namespace java.sql
 		protected DriverPropertyInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DriverPropertyInfo18846;
+		internal static global::MonoJavaBridge.MethodId _DriverPropertyInfo24521;
 		public DriverPropertyInfo(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DriverPropertyInfo.staticClass, global::java.sql.DriverPropertyInfo._DriverPropertyInfo18846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DriverPropertyInfo.staticClass, global::java.sql.DriverPropertyInfo._DriverPropertyInfo24521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _name18847;
+		internal static global::MonoJavaBridge.FieldId _name24522;
 		public global::java.lang.String name
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _name24522)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _description18848;
+		internal static global::MonoJavaBridge.FieldId _description24523;
 		public global::java.lang.String description
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _description24523)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _required18849;
+		internal static global::MonoJavaBridge.FieldId _required24524;
 		public bool required
 		{
 			get
 			{
-				return default(bool);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetBooleanField(this.JvmHandle, _required24524);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _value18850;
+		internal static global::MonoJavaBridge.FieldId _value24525;
 		public global::java.lang.String value
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _value24525)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _choices18851;
+		internal static global::MonoJavaBridge.FieldId _choices24526;
 		public global::java.lang.String[] choices
 		{
 			get
 			{
-				return default(global::java.lang.String[]);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _choices24526)) as java.lang.String[];
 			}
 			set
 			{
@@ -77,7 +82,12 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DriverPropertyInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DriverPropertyInfo"));
-			global::java.sql.DriverPropertyInfo._DriverPropertyInfo18846 = @__env.GetMethodIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::java.sql.DriverPropertyInfo._DriverPropertyInfo24521 = @__env.GetMethodIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::java.sql.DriverPropertyInfo._name24522 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "name", "Ljava/lang/String;");
+			global::java.sql.DriverPropertyInfo._description24523 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "description", "Ljava/lang/String;");
+			global::java.sql.DriverPropertyInfo._required24524 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "required", "Z");
+			global::java.sql.DriverPropertyInfo._value24525 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "value", "Ljava/lang/String;");
+			global::java.sql.DriverPropertyInfo._choices24526 = @__env.GetFieldIDNoThrow(global::java.sql.DriverPropertyInfo.staticClass, "choices", "[Ljava/lang/String;");
 		}
 	}
 }

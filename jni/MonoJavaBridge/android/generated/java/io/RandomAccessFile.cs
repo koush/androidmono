@@ -11,131 +11,131 @@ namespace java.io
 		protected RandomAccessFile(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _length13892;
+		internal static global::MonoJavaBridge.MethodId _length19394;
 		public virtual long length() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.io.RandomAccessFile._length13892);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.io.RandomAccessFile._length19394);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._length13892);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._length19394);
 		}
-		internal static global::MonoJavaBridge.MethodId _write13893;
+		internal static global::MonoJavaBridge.MethodId _write19395;
 		public virtual void write(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._write13893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._write19395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write13893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write19395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write13894;
+		internal static global::MonoJavaBridge.MethodId _write19396;
 		public virtual void write(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._write13894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._write19396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write13894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write19396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write13895;
+		internal static global::MonoJavaBridge.MethodId _write19397;
 		public virtual void write(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._write13895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._write19397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write13895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write19397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _readLine13896;
+		internal static global::MonoJavaBridge.MethodId _readLine19398;
 		public virtual global::java.lang.String readLine() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._readLine13896)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._readLine19398)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readLine13896)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readLine19398)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _close13897;
+		internal static global::MonoJavaBridge.MethodId _close19399;
 		public virtual void close() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._close13897);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._close19399);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._close13897);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._close19399);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeInt13898;
+		internal static global::MonoJavaBridge.MethodId _writeInt19400;
 		public virtual void writeInt(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeInt13898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeInt19400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeInt13898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeInt19400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readInt13899;
+		internal static global::MonoJavaBridge.MethodId _readInt19401;
 		public virtual int readInt() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._readInt13899);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._readInt19401);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readInt13899);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readInt19401);
 		}
-		internal static global::MonoJavaBridge.MethodId _setLength13900;
+		internal static global::MonoJavaBridge.MethodId _setLength19402;
 		public virtual void setLength(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._setLength13900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._setLength19402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._setLength13900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._setLength19402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeChar13901;
+		internal static global::MonoJavaBridge.MethodId _writeChar19403;
 		public virtual void writeChar(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeChar13901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeChar19403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeChar13901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeChar19403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readChar13902;
+		internal static global::MonoJavaBridge.MethodId _readChar19404;
 		public virtual char readChar() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this.JvmHandle, global::java.io.RandomAccessFile._readChar13902);
+				return @__env.CallCharMethod(this.JvmHandle, global::java.io.RandomAccessFile._readChar19404);
 			else
-				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readChar13902);
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readChar19404);
 		}
-		internal static global::MonoJavaBridge.MethodId _read13903;
+		internal static global::MonoJavaBridge.MethodId _read19405;
 		public virtual int read() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._read13903);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._read19405);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read13903);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read19405);
 		}
-		internal static global::MonoJavaBridge.MethodId _read13904;
+		internal static global::MonoJavaBridge.MethodId _read19406;
 		public virtual int read(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._read13904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._read19406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read13904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read19406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _read13905;
+		internal static global::MonoJavaBridge.MethodId _read19407;
 		public virtual int read(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._read13905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._read19407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read13905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read19407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.io.FileDescriptor FD
 		{
@@ -144,14 +144,14 @@ namespace java.io
 				return getFD();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFD13906;
+		internal static global::MonoJavaBridge.MethodId _getFD19408;
 		public virtual global::java.io.FileDescriptor getFD() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._getFD13906)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._getFD19408)) as java.io.FileDescriptor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getFD13906)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getFD19408)) as java.io.FileDescriptor;
 		}
 		public new global::java.nio.channels.FileChannel Channel
 		{
@@ -160,203 +160,203 @@ namespace java.io
 				return getChannel();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getChannel13907;
+		internal static global::MonoJavaBridge.MethodId _getChannel19409;
 		public virtual global::java.nio.channels.FileChannel getChannel() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._getChannel13907)) as java.nio.channels.FileChannel;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._getChannel19409)) as java.nio.channels.FileChannel;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getChannel13907)) as java.nio.channels.FileChannel;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getChannel19409)) as java.nio.channels.FileChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeBytes13908;
+		internal static global::MonoJavaBridge.MethodId _writeBytes19410;
 		public virtual void writeBytes(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeBytes13908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeBytes19410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeBytes13908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeBytes19410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeUTF13909;
+		internal static global::MonoJavaBridge.MethodId _writeUTF19411;
 		public virtual void writeUTF(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeUTF13909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeUTF19411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeUTF13909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeUTF19411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readUTF13910;
+		internal static global::MonoJavaBridge.MethodId _readUTF19412;
 		public virtual global::java.lang.String readUTF() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._readUTF13910)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile._readUTF19412)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUTF13910)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUTF19412)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _readFully13911;
+		internal static global::MonoJavaBridge.MethodId _readFully19413;
 		public virtual void readFully(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._readFully13911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._readFully19413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFully13911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFully19413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _readFully13912;
+		internal static global::MonoJavaBridge.MethodId _readFully19414;
 		public virtual void readFully(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._readFully13912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._readFully19414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFully13912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFully19414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readLong13913;
+		internal static global::MonoJavaBridge.MethodId _readLong19415;
 		public virtual long readLong() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.io.RandomAccessFile._readLong13913);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.io.RandomAccessFile._readLong19415);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readLong13913);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readLong19415);
 		}
-		internal static global::MonoJavaBridge.MethodId _readByte13914;
+		internal static global::MonoJavaBridge.MethodId _readByte19416;
 		public virtual byte readByte() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallByteMethod(this.JvmHandle, global::java.io.RandomAccessFile._readByte13914);
+				return @__env.CallByteMethod(this.JvmHandle, global::java.io.RandomAccessFile._readByte19416);
 			else
-				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readByte13914);
+				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readByte19416);
 		}
-		internal static global::MonoJavaBridge.MethodId _readShort13915;
+		internal static global::MonoJavaBridge.MethodId _readShort19417;
 		public virtual short readShort() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallShortMethod(this.JvmHandle, global::java.io.RandomAccessFile._readShort13915);
+				return @__env.CallShortMethod(this.JvmHandle, global::java.io.RandomAccessFile._readShort19417);
 			else
-				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readShort13915);
+				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readShort19417);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeLong13916;
+		internal static global::MonoJavaBridge.MethodId _writeLong19418;
 		public virtual void writeLong(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeLong13916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeLong19418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeLong13916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeLong19418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeByte13917;
+		internal static global::MonoJavaBridge.MethodId _writeByte19419;
 		public virtual void writeByte(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeByte13917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeByte19419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeByte13917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeByte19419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeShort13918;
+		internal static global::MonoJavaBridge.MethodId _writeShort19420;
 		public virtual void writeShort(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeShort13918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeShort19420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeShort13918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeShort19420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeFloat13919;
+		internal static global::MonoJavaBridge.MethodId _writeFloat19421;
 		public virtual void writeFloat(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeFloat13919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeFloat19421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeFloat13919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeFloat19421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readFloat13920;
+		internal static global::MonoJavaBridge.MethodId _readFloat19422;
 		public virtual float readFloat() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::java.io.RandomAccessFile._readFloat13920);
+				return @__env.CallFloatMethod(this.JvmHandle, global::java.io.RandomAccessFile._readFloat19422);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFloat13920);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFloat19422);
 		}
-		internal static global::MonoJavaBridge.MethodId _skipBytes13921;
+		internal static global::MonoJavaBridge.MethodId _skipBytes19423;
 		public virtual int skipBytes(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._skipBytes13921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._skipBytes19423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._skipBytes13921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._skipBytes19423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _readBoolean13922;
+		internal static global::MonoJavaBridge.MethodId _readBoolean19424;
 		public virtual bool readBoolean() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.RandomAccessFile._readBoolean13922);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.RandomAccessFile._readBoolean19424);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readBoolean13922);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readBoolean19424);
 		}
-		internal static global::MonoJavaBridge.MethodId _readUnsignedByte13923;
+		internal static global::MonoJavaBridge.MethodId _readUnsignedByte19425;
 		public virtual int readUnsignedByte() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._readUnsignedByte13923);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._readUnsignedByte19425);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUnsignedByte13923);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUnsignedByte19425);
 		}
-		internal static global::MonoJavaBridge.MethodId _readUnsignedShort13924;
+		internal static global::MonoJavaBridge.MethodId _readUnsignedShort19426;
 		public virtual int readUnsignedShort() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._readUnsignedShort13924);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.RandomAccessFile._readUnsignedShort19426);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUnsignedShort13924);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUnsignedShort19426);
 		}
-		internal static global::MonoJavaBridge.MethodId _readDouble13925;
+		internal static global::MonoJavaBridge.MethodId _readDouble19427;
 		public virtual double readDouble() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this.JvmHandle, global::java.io.RandomAccessFile._readDouble13925);
+				return @__env.CallDoubleMethod(this.JvmHandle, global::java.io.RandomAccessFile._readDouble19427);
 			else
-				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readDouble13925);
+				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readDouble19427);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeDouble13926;
+		internal static global::MonoJavaBridge.MethodId _writeDouble19428;
 		public virtual void writeDouble(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeDouble13926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeDouble19428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeDouble13926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeDouble19428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeBoolean13927;
+		internal static global::MonoJavaBridge.MethodId _writeBoolean19429;
 		public virtual void writeBoolean(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeBoolean13927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeBoolean19429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeBoolean13927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeBoolean19429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeChars13928;
+		internal static global::MonoJavaBridge.MethodId _writeChars19430;
 		public virtual void writeChars(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeChars13928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._writeChars19430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeChars13928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeChars19430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long FilePointer
 		{
@@ -365,83 +365,83 @@ namespace java.io
 				return getFilePointer();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilePointer13929;
+		internal static global::MonoJavaBridge.MethodId _getFilePointer19431;
 		public virtual long getFilePointer() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.io.RandomAccessFile._getFilePointer13929);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.io.RandomAccessFile._getFilePointer19431);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getFilePointer13929);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getFilePointer19431);
 		}
-		internal static global::MonoJavaBridge.MethodId _seek13930;
+		internal static global::MonoJavaBridge.MethodId _seek19432;
 		public virtual void seek(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._seek13930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile._seek19432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._seek13930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._seek19432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _RandomAccessFile13931;
+		internal static global::MonoJavaBridge.MethodId _RandomAccessFile19433;
 		public RandomAccessFile(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile13931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile19433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RandomAccessFile13932;
+		internal static global::MonoJavaBridge.MethodId _RandomAccessFile19434;
 		public RandomAccessFile(java.io.File arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile13932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile19434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.RandomAccessFile.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/RandomAccessFile"));
-			global::java.io.RandomAccessFile._length13892 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "length", "()J");
-			global::java.io.RandomAccessFile._write13893 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "write", "([B)V");
-			global::java.io.RandomAccessFile._write13894 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "write", "(I)V");
-			global::java.io.RandomAccessFile._write13895 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "write", "([BII)V");
-			global::java.io.RandomAccessFile._readLine13896 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readLine", "()Ljava/lang/String;");
-			global::java.io.RandomAccessFile._close13897 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "close", "()V");
-			global::java.io.RandomAccessFile._writeInt13898 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeInt", "(I)V");
-			global::java.io.RandomAccessFile._readInt13899 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readInt", "()I");
-			global::java.io.RandomAccessFile._setLength13900 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "setLength", "(J)V");
-			global::java.io.RandomAccessFile._writeChar13901 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeChar", "(I)V");
-			global::java.io.RandomAccessFile._readChar13902 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readChar", "()C");
-			global::java.io.RandomAccessFile._read13903 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "read", "()I");
-			global::java.io.RandomAccessFile._read13904 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "read", "([BII)I");
-			global::java.io.RandomAccessFile._read13905 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "read", "([B)I");
-			global::java.io.RandomAccessFile._getFD13906 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "getFD", "()Ljava/io/FileDescriptor;");
-			global::java.io.RandomAccessFile._getChannel13907 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "getChannel", "()Ljava/nio/channels/FileChannel;");
-			global::java.io.RandomAccessFile._writeBytes13908 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeBytes", "(Ljava/lang/String;)V");
-			global::java.io.RandomAccessFile._writeUTF13909 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeUTF", "(Ljava/lang/String;)V");
-			global::java.io.RandomAccessFile._readUTF13910 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readUTF", "()Ljava/lang/String;");
-			global::java.io.RandomAccessFile._readFully13911 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readFully", "([BII)V");
-			global::java.io.RandomAccessFile._readFully13912 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readFully", "([B)V");
-			global::java.io.RandomAccessFile._readLong13913 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readLong", "()J");
-			global::java.io.RandomAccessFile._readByte13914 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readByte", "()B");
-			global::java.io.RandomAccessFile._readShort13915 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readShort", "()S");
-			global::java.io.RandomAccessFile._writeLong13916 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeLong", "(J)V");
-			global::java.io.RandomAccessFile._writeByte13917 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeByte", "(I)V");
-			global::java.io.RandomAccessFile._writeShort13918 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeShort", "(I)V");
-			global::java.io.RandomAccessFile._writeFloat13919 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeFloat", "(F)V");
-			global::java.io.RandomAccessFile._readFloat13920 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readFloat", "()F");
-			global::java.io.RandomAccessFile._skipBytes13921 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "skipBytes", "(I)I");
-			global::java.io.RandomAccessFile._readBoolean13922 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readBoolean", "()Z");
-			global::java.io.RandomAccessFile._readUnsignedByte13923 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readUnsignedByte", "()I");
-			global::java.io.RandomAccessFile._readUnsignedShort13924 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readUnsignedShort", "()I");
-			global::java.io.RandomAccessFile._readDouble13925 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readDouble", "()D");
-			global::java.io.RandomAccessFile._writeDouble13926 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeDouble", "(D)V");
-			global::java.io.RandomAccessFile._writeBoolean13927 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeBoolean", "(Z)V");
-			global::java.io.RandomAccessFile._writeChars13928 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeChars", "(Ljava/lang/String;)V");
-			global::java.io.RandomAccessFile._getFilePointer13929 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "getFilePointer", "()J");
-			global::java.io.RandomAccessFile._seek13930 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "seek", "(J)V");
-			global::java.io.RandomAccessFile._RandomAccessFile13931 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::java.io.RandomAccessFile._RandomAccessFile13932 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
+			global::java.io.RandomAccessFile._length19394 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "length", "()J");
+			global::java.io.RandomAccessFile._write19395 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "write", "([B)V");
+			global::java.io.RandomAccessFile._write19396 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "write", "(I)V");
+			global::java.io.RandomAccessFile._write19397 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "write", "([BII)V");
+			global::java.io.RandomAccessFile._readLine19398 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readLine", "()Ljava/lang/String;");
+			global::java.io.RandomAccessFile._close19399 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "close", "()V");
+			global::java.io.RandomAccessFile._writeInt19400 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeInt", "(I)V");
+			global::java.io.RandomAccessFile._readInt19401 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readInt", "()I");
+			global::java.io.RandomAccessFile._setLength19402 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "setLength", "(J)V");
+			global::java.io.RandomAccessFile._writeChar19403 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeChar", "(I)V");
+			global::java.io.RandomAccessFile._readChar19404 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readChar", "()C");
+			global::java.io.RandomAccessFile._read19405 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "read", "()I");
+			global::java.io.RandomAccessFile._read19406 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "read", "([BII)I");
+			global::java.io.RandomAccessFile._read19407 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "read", "([B)I");
+			global::java.io.RandomAccessFile._getFD19408 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "getFD", "()Ljava/io/FileDescriptor;");
+			global::java.io.RandomAccessFile._getChannel19409 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "getChannel", "()Ljava/nio/channels/FileChannel;");
+			global::java.io.RandomAccessFile._writeBytes19410 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeBytes", "(Ljava/lang/String;)V");
+			global::java.io.RandomAccessFile._writeUTF19411 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeUTF", "(Ljava/lang/String;)V");
+			global::java.io.RandomAccessFile._readUTF19412 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readUTF", "()Ljava/lang/String;");
+			global::java.io.RandomAccessFile._readFully19413 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readFully", "([BII)V");
+			global::java.io.RandomAccessFile._readFully19414 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readFully", "([B)V");
+			global::java.io.RandomAccessFile._readLong19415 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readLong", "()J");
+			global::java.io.RandomAccessFile._readByte19416 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readByte", "()B");
+			global::java.io.RandomAccessFile._readShort19417 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readShort", "()S");
+			global::java.io.RandomAccessFile._writeLong19418 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeLong", "(J)V");
+			global::java.io.RandomAccessFile._writeByte19419 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeByte", "(I)V");
+			global::java.io.RandomAccessFile._writeShort19420 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeShort", "(I)V");
+			global::java.io.RandomAccessFile._writeFloat19421 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeFloat", "(F)V");
+			global::java.io.RandomAccessFile._readFloat19422 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readFloat", "()F");
+			global::java.io.RandomAccessFile._skipBytes19423 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "skipBytes", "(I)I");
+			global::java.io.RandomAccessFile._readBoolean19424 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readBoolean", "()Z");
+			global::java.io.RandomAccessFile._readUnsignedByte19425 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readUnsignedByte", "()I");
+			global::java.io.RandomAccessFile._readUnsignedShort19426 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readUnsignedShort", "()I");
+			global::java.io.RandomAccessFile._readDouble19427 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "readDouble", "()D");
+			global::java.io.RandomAccessFile._writeDouble19428 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeDouble", "(D)V");
+			global::java.io.RandomAccessFile._writeBoolean19429 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeBoolean", "(Z)V");
+			global::java.io.RandomAccessFile._writeChars19430 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "writeChars", "(Ljava/lang/String;)V");
+			global::java.io.RandomAccessFile._getFilePointer19431 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "getFilePointer", "()J");
+			global::java.io.RandomAccessFile._seek19432 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "seek", "(J)V");
+			global::java.io.RandomAccessFile._RandomAccessFile19433 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::java.io.RandomAccessFile._RandomAccessFile19434 = @__env.GetMethodIDNoThrow(global::java.io.RandomAccessFile.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
 		}
 	}
 }

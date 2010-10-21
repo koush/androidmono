@@ -11,28 +11,28 @@ namespace org.apache.http.protocol
 		protected RequestDate(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _process27137;
+		internal static global::MonoJavaBridge.MethodId _process33821;
 		public virtual void process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.RequestDate._process27137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.RequestDate._process33821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.RequestDate.staticClass, global::org.apache.http.protocol.RequestDate._process27137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.RequestDate.staticClass, global::org.apache.http.protocol.RequestDate._process33821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _RequestDate27138;
+		internal static global::MonoJavaBridge.MethodId _RequestDate33822;
 		public RequestDate()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.RequestDate.staticClass, global::org.apache.http.protocol.RequestDate._RequestDate27138);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.RequestDate.staticClass, global::org.apache.http.protocol.RequestDate._RequestDate33822);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.RequestDate.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/RequestDate"));
-			global::org.apache.http.protocol.RequestDate._process27137 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestDate.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
-			global::org.apache.http.protocol.RequestDate._RequestDate27138 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestDate.staticClass, "<init>", "()V");
+			global::org.apache.http.protocol.RequestDate._process33821 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestDate.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
+			global::org.apache.http.protocol.RequestDate._RequestDate33822 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.RequestDate.staticClass, "<init>", "()V");
 		}
 	}
 }

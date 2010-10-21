@@ -11,38 +11,38 @@ namespace org.apache.http.cookie
 		protected CookieIdentityComparator(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _compare25677;
+		internal static global::MonoJavaBridge.MethodId _compare32288;
 		public virtual int compare(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.Cookie arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator._compare25677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator._compare32288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._compare25677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._compare32288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _compare25678;
+		internal static global::MonoJavaBridge.MethodId _compare32289;
 		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator._compare25678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator._compare32289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._compare25678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._compare32289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _CookieIdentityComparator25679;
+		internal static global::MonoJavaBridge.MethodId _CookieIdentityComparator32290;
 		public CookieIdentityComparator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator25679);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieIdentityComparator.staticClass, global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator32290);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.cookie.CookieIdentityComparator.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/cookie/CookieIdentityComparator"));
-			global::org.apache.http.cookie.CookieIdentityComparator._compare25677 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I");
-			global::org.apache.http.cookie.CookieIdentityComparator._compare25678 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
-			global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator25679 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "<init>", "()V");
+			global::org.apache.http.cookie.CookieIdentityComparator._compare32288 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I");
+			global::org.apache.http.cookie.CookieIdentityComparator._compare32289 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
+			global::org.apache.http.cookie.CookieIdentityComparator._CookieIdentityComparator32290 = @__env.GetMethodIDNoThrow(global::org.apache.http.cookie.CookieIdentityComparator.staticClass, "<init>", "()V");
 		}
 	}
 }

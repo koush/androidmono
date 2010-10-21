@@ -11,190 +11,204 @@ namespace java.util.concurrent
 		protected TimeUnit(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _values21552;
+		internal static global::MonoJavaBridge.MethodId _values27382;
 		public static global::java.util.concurrent.TimeUnit[] values() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.concurrent.TimeUnit>(@__env.CallStaticObjectMethod(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._values21552)) as java.util.concurrent.TimeUnit[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.concurrent.TimeUnit>(@__env.CallStaticObjectMethod(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._values27382)) as java.util.concurrent.TimeUnit[];
 		}
-		internal static global::MonoJavaBridge.MethodId _valueOf21553;
+		internal static global::MonoJavaBridge.MethodId _valueOf27383;
 		public static global::java.util.concurrent.TimeUnit valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._valueOf21553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.concurrent.TimeUnit;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._valueOf27383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.concurrent.TimeUnit;
 		}
-		internal static global::MonoJavaBridge.MethodId _sleep21554;
+		internal static global::MonoJavaBridge.MethodId _sleep27384;
 		public virtual void sleep(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._sleep21554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._sleep27384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._sleep21554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._sleep27384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toNanos21555;
+		internal static global::MonoJavaBridge.MethodId _toNanos27385;
 		public virtual long toNanos(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toNanos21555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toNanos27385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toNanos21555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toNanos27385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _convert21556;
+		internal static global::MonoJavaBridge.MethodId _convert27386;
 		public virtual long convert(long arg0, java.util.concurrent.TimeUnit arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._convert21556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._convert27386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._convert21556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._convert27386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _toMicros21557;
+		internal static global::MonoJavaBridge.MethodId _toMicros27387;
 		public virtual long toMicros(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toMicros21557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toMicros27387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMicros21557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMicros27387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toMillis21558;
+		internal static global::MonoJavaBridge.MethodId _toMillis27388;
 		public virtual long toMillis(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toMillis21558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toMillis27388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMillis21558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMillis27388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toSeconds21559;
+		internal static global::MonoJavaBridge.MethodId _toSeconds27389;
 		public virtual long toSeconds(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toSeconds21559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toSeconds27389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toSeconds21559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toSeconds27389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toMinutes21560;
+		internal static global::MonoJavaBridge.MethodId _toMinutes27390;
 		public virtual long toMinutes(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toMinutes21560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toMinutes27390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMinutes21560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMinutes27390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toHours21561;
+		internal static global::MonoJavaBridge.MethodId _toHours27391;
 		public virtual long toHours(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toHours21561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toHours27391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toHours21561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toHours27391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toDays21562;
+		internal static global::MonoJavaBridge.MethodId _toDays27392;
 		public virtual long toDays(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toDays21562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._toDays27392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toDays21562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toDays27392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _timedWait21563;
+		internal static global::MonoJavaBridge.MethodId _timedWait27393;
 		public virtual void timedWait(java.lang.Object arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._timedWait21563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._timedWait27393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._timedWait21563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._timedWait27393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _timedJoin21564;
+		internal static global::MonoJavaBridge.MethodId _timedJoin27394;
 		public virtual void timedJoin(java.lang.Thread arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._timedJoin21564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit._timedJoin27394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._timedJoin21564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._timedJoin27394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.FieldId _NANOSECONDS21565;
+		internal static global::MonoJavaBridge.FieldId _NANOSECONDS27395;
 		public static global::java.util.concurrent.TimeUnit NANOSECONDS
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _NANOSECONDS27395)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _MICROSECONDS21566;
+		internal static global::MonoJavaBridge.FieldId _MICROSECONDS27396;
 		public static global::java.util.concurrent.TimeUnit MICROSECONDS
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MICROSECONDS27396)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _MILLISECONDS21567;
+		internal static global::MonoJavaBridge.FieldId _MILLISECONDS27397;
 		public static global::java.util.concurrent.TimeUnit MILLISECONDS
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MILLISECONDS27397)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SECONDS21568;
+		internal static global::MonoJavaBridge.FieldId _SECONDS27398;
 		public static global::java.util.concurrent.TimeUnit SECONDS
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _SECONDS27398)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _MINUTES21569;
+		internal static global::MonoJavaBridge.FieldId _MINUTES27399;
 		public static global::java.util.concurrent.TimeUnit MINUTES
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _MINUTES27399)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _HOURS21570;
+		internal static global::MonoJavaBridge.FieldId _HOURS27400;
 		public static global::java.util.concurrent.TimeUnit HOURS
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _HOURS27400)) as java.util.concurrent.TimeUnit;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DAYS21571;
+		internal static global::MonoJavaBridge.FieldId _DAYS27401;
 		public static global::java.util.concurrent.TimeUnit DAYS
 		{
 			get
 			{
-				return default(global::java.util.concurrent.TimeUnit);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.util.concurrent.TimeUnit.staticClass, _DAYS27401)) as java.util.concurrent.TimeUnit;
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.TimeUnit.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/TimeUnit"));
-			global::java.util.concurrent.TimeUnit._values21552 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "values", "()[Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._valueOf21553 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._sleep21554 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "sleep", "(J)V");
-			global::java.util.concurrent.TimeUnit._toNanos21555 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toNanos", "(J)J");
-			global::java.util.concurrent.TimeUnit._convert21556 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "convert", "(JLjava/util/concurrent/TimeUnit;)J");
-			global::java.util.concurrent.TimeUnit._toMicros21557 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toMicros", "(J)J");
-			global::java.util.concurrent.TimeUnit._toMillis21558 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toMillis", "(J)J");
-			global::java.util.concurrent.TimeUnit._toSeconds21559 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toSeconds", "(J)J");
-			global::java.util.concurrent.TimeUnit._toMinutes21560 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toMinutes", "(J)J");
-			global::java.util.concurrent.TimeUnit._toHours21561 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toHours", "(J)J");
-			global::java.util.concurrent.TimeUnit._toDays21562 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toDays", "(J)J");
-			global::java.util.concurrent.TimeUnit._timedWait21563 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "timedWait", "(Ljava/lang/Object;J)V");
-			global::java.util.concurrent.TimeUnit._timedJoin21564 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "timedJoin", "(Ljava/lang/Thread;J)V");
+			global::java.util.concurrent.TimeUnit._values27382 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "values", "()[Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._valueOf27383 = @__env.GetStaticMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._sleep27384 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "sleep", "(J)V");
+			global::java.util.concurrent.TimeUnit._toNanos27385 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toNanos", "(J)J");
+			global::java.util.concurrent.TimeUnit._convert27386 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "convert", "(JLjava/util/concurrent/TimeUnit;)J");
+			global::java.util.concurrent.TimeUnit._toMicros27387 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toMicros", "(J)J");
+			global::java.util.concurrent.TimeUnit._toMillis27388 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toMillis", "(J)J");
+			global::java.util.concurrent.TimeUnit._toSeconds27389 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toSeconds", "(J)J");
+			global::java.util.concurrent.TimeUnit._toMinutes27390 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toMinutes", "(J)J");
+			global::java.util.concurrent.TimeUnit._toHours27391 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toHours", "(J)J");
+			global::java.util.concurrent.TimeUnit._toDays27392 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "toDays", "(J)J");
+			global::java.util.concurrent.TimeUnit._timedWait27393 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "timedWait", "(Ljava/lang/Object;J)V");
+			global::java.util.concurrent.TimeUnit._timedJoin27394 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "timedJoin", "(Ljava/lang/Thread;J)V");
+			global::java.util.concurrent.TimeUnit._NANOSECONDS27395 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "NANOSECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._MICROSECONDS27396 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MICROSECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._MILLISECONDS27397 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MILLISECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._SECONDS27398 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "SECONDS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._MINUTES27399 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "MINUTES", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._HOURS27400 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "HOURS", "Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._DAYS27401 = @__env.GetStaticFieldIDNoThrow(global::java.util.concurrent.TimeUnit.staticClass, "DAYS", "Ljava/util/concurrent/TimeUnit;");
 		}
 	}
 

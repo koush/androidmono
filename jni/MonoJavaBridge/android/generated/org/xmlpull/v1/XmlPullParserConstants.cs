@@ -3,12 +3,13 @@ namespace org.xmlpull.v1
 	[global::MonoJavaBridge.JavaClass()]
 	public static partial class XmlPullParserConstants 
 	{
-		internal static global::MonoJavaBridge.FieldId _NO_NAMESPACE28476;
+		internal static global::MonoJavaBridge.FieldId _NO_NAMESPACE35229;
 		public static global::java.lang.String NO_NAMESPACE
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.xmlpull.v1.XmlPullParser_.staticClass, _NO_NAMESPACE35229)) as java.lang.String;
 			}
 		}
 		public static int START_DOCUMENT
@@ -88,12 +89,13 @@ namespace org.xmlpull.v1
 				return 10;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _TYPES28477;
+		internal static global::MonoJavaBridge.FieldId _TYPES35241;
 		public static global::java.lang.String[] TYPES
 		{
 			get
 			{
-				return default(global::java.lang.String[]);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.GetStaticObjectField(global::org.xmlpull.v1.XmlPullParser_.staticClass, _TYPES35241)) as java.lang.String[];
 			}
 		}
 		public static global::java.lang.String FEATURE_PROCESS_NAMESPACES

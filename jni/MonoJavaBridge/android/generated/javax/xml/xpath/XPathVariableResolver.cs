@@ -17,20 +17,20 @@ namespace javax.xml.xpath
 		internal XPathVariableResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveVariable24727;
+		internal static global::MonoJavaBridge.MethodId _resolveVariable31215;
 		 global::java.lang.Object javax.xml.xpath.XPathVariableResolver.resolveVariable(javax.xml.@namespace.QName arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathVariableResolver_._resolveVariable24727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathVariableResolver_._resolveVariable31215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathVariableResolver_.staticClass, global::javax.xml.xpath.XPathVariableResolver_._resolveVariable24727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathVariableResolver_.staticClass, global::javax.xml.xpath.XPathVariableResolver_._resolveVariable31215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathVariableResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathVariableResolver"));
-			global::javax.xml.xpath.XPathVariableResolver_._resolveVariable24727 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathVariableResolver_.staticClass, "resolveVariable", "(Ljavax/xml/@namespace/QName;)Ljava/lang/Object;");
+			global::javax.xml.xpath.XPathVariableResolver_._resolveVariable31215 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathVariableResolver_.staticClass, "resolveVariable", "(Ljavax/xml/@namespace/QName;)Ljava/lang/Object;");
 		}
 	}
 }

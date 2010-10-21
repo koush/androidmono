@@ -11,47 +11,47 @@ namespace android.os
 		protected FileObserver(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize6413;
+		internal static global::MonoJavaBridge.MethodId _finalize9791;
 		protected override void finalize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver._finalize6413);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver._finalize9791);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._finalize6413);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._finalize9791);
 		}
-		internal static global::MonoJavaBridge.MethodId _startWatching6414;
+		internal static global::MonoJavaBridge.MethodId _startWatching9792;
 		public virtual void startWatching() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver._startWatching6414);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver._startWatching9792);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._startWatching6414);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._startWatching9792);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopWatching6415;
+		internal static global::MonoJavaBridge.MethodId _stopWatching9793;
 		public virtual void stopWatching() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver._stopWatching6415);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver._stopWatching9793);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._stopWatching6415);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._stopWatching9793);
 		}
-		internal static global::MonoJavaBridge.MethodId _onEvent6416;
+		internal static global::MonoJavaBridge.MethodId _onEvent9794;
 		public abstract void onEvent(int arg0, java.lang.String arg1);
-		internal static global::MonoJavaBridge.MethodId _FileObserver6417;
+		internal static global::MonoJavaBridge.MethodId _FileObserver9795;
 		public FileObserver(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.FileObserver.staticClass, global::android.os.FileObserver._FileObserver6417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.FileObserver.staticClass, global::android.os.FileObserver._FileObserver9795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FileObserver6418;
+		internal static global::MonoJavaBridge.MethodId _FileObserver9796;
 		public FileObserver(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.FileObserver.staticClass, global::android.os.FileObserver._FileObserver6418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.FileObserver.staticClass, global::android.os.FileObserver._FileObserver9796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int ACCESS
@@ -149,12 +149,12 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.FileObserver.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/FileObserver"));
-			global::android.os.FileObserver._finalize6413 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "finalize", "()V");
-			global::android.os.FileObserver._startWatching6414 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "startWatching", "()V");
-			global::android.os.FileObserver._stopWatching6415 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "stopWatching", "()V");
-			global::android.os.FileObserver._onEvent6416 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "onEvent", "(ILjava/lang/String;)V");
-			global::android.os.FileObserver._FileObserver6417 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.os.FileObserver._FileObserver6418 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "<init>", "(Ljava/lang/String;I)V");
+			global::android.os.FileObserver._finalize9791 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "finalize", "()V");
+			global::android.os.FileObserver._startWatching9792 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "startWatching", "()V");
+			global::android.os.FileObserver._stopWatching9793 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "stopWatching", "()V");
+			global::android.os.FileObserver._onEvent9794 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "onEvent", "(ILjava/lang/String;)V");
+			global::android.os.FileObserver._FileObserver9795 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.os.FileObserver._FileObserver9796 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver.staticClass, "<init>", "(Ljava/lang/String;I)V");
 		}
 	}
 
@@ -169,20 +169,20 @@ namespace android.os
 		internal FileObserver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onEvent6419;
+		internal static global::MonoJavaBridge.MethodId _onEvent9810;
 		public override void onEvent(int arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver_._onEvent6419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.FileObserver_._onEvent9810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver_.staticClass, global::android.os.FileObserver_._onEvent6419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver_.staticClass, global::android.os.FileObserver_._onEvent9810, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.FileObserver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/FileObserver"));
-			global::android.os.FileObserver_._onEvent6419 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver_.staticClass, "onEvent", "(ILjava/lang/String;)V");
+			global::android.os.FileObserver_._onEvent9810 = @__env.GetMethodIDNoThrow(global::android.os.FileObserver_.staticClass, "onEvent", "(ILjava/lang/String;)V");
 		}
 	}
 }

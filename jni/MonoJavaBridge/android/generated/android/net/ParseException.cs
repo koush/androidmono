@@ -11,12 +11,13 @@ namespace android.net
 		protected ParseException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.FieldId _response5234;
+		internal static global::MonoJavaBridge.FieldId _response7707;
 		public global::java.lang.String response
 		{
 			get
 			{
-				return default(global::java.lang.String);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _response7707)) as java.lang.String;
 			}
 			set
 			{
@@ -26,6 +27,7 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.ParseException.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/ParseException"));
+			global::android.net.ParseException._response7707 = @__env.GetFieldIDNoThrow(global::android.net.ParseException.staticClass, "response", "Ljava/lang/String;");
 		}
 	}
 }

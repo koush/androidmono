@@ -17,20 +17,20 @@ namespace android.view.animation
 		internal Interpolator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getInterpolation10562;
+		internal static global::MonoJavaBridge.MethodId _getInterpolation15630;
 		 float android.view.animation.Interpolator.getInterpolation(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_._getInterpolation10562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_._getInterpolation15630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_.staticClass, global::android.view.animation.Interpolator_._getInterpolation10562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.Interpolator_.staticClass, global::android.view.animation.Interpolator_._getInterpolation15630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.Interpolator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/Interpolator"));
-			global::android.view.animation.Interpolator_._getInterpolation10562 = @__env.GetMethodIDNoThrow(global::android.view.animation.Interpolator_.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.Interpolator_._getInterpolation15630 = @__env.GetMethodIDNoThrow(global::android.view.animation.Interpolator_.staticClass, "getInterpolation", "(F)F");
 		}
 	}
 }

@@ -11,20 +11,20 @@ namespace android.net
 		protected ConnectivityManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isNetworkTypeValid5123;
+		internal static global::MonoJavaBridge.MethodId _isNetworkTypeValid7579;
 		public static bool isNetworkTypeValid(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._isNetworkTypeValid5123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._isNetworkTypeValid7579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setNetworkPreference5124;
+		internal static global::MonoJavaBridge.MethodId _setNetworkPreference7580;
 		public virtual void setNetworkPreference(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.net.ConnectivityManager._setNetworkPreference5124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.net.ConnectivityManager._setNetworkPreference7580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._setNetworkPreference5124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._setNetworkPreference7580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int NetworkPreference
 		{
@@ -37,14 +37,14 @@ namespace android.net
 				setNetworkPreference(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getNetworkPreference5125;
+		internal static global::MonoJavaBridge.MethodId _getNetworkPreference7581;
 		public virtual int getNetworkPreference() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._getNetworkPreference5125);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._getNetworkPreference7581);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkPreference5125);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkPreference7581);
 		}
 		public new global::android.net.NetworkInfo ActiveNetworkInfo
 		{
@@ -53,23 +53,23 @@ namespace android.net
 				return getActiveNetworkInfo();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getActiveNetworkInfo5126;
+		internal static global::MonoJavaBridge.MethodId _getActiveNetworkInfo7582;
 		public virtual global::android.net.NetworkInfo getActiveNetworkInfo() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getActiveNetworkInfo5126)) as android.net.NetworkInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getActiveNetworkInfo7582)) as android.net.NetworkInfo;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getActiveNetworkInfo5126)) as android.net.NetworkInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getActiveNetworkInfo7582)) as android.net.NetworkInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _getNetworkInfo5127;
+		internal static global::MonoJavaBridge.MethodId _getNetworkInfo7583;
 		public virtual global::android.net.NetworkInfo getNetworkInfo(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getNetworkInfo5127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getNetworkInfo7583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkInfo5127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkInfo7583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo;
 		}
 		public new global::android.net.NetworkInfo[] AllNetworkInfo
 		{
@@ -78,41 +78,41 @@ namespace android.net
 				return getAllNetworkInfo();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAllNetworkInfo5128;
+		internal static global::MonoJavaBridge.MethodId _getAllNetworkInfo7584;
 		public virtual global::android.net.NetworkInfo[] getAllNetworkInfo() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getAllNetworkInfo5128)) as android.net.NetworkInfo[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager._getAllNetworkInfo7584)) as android.net.NetworkInfo[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getAllNetworkInfo5128)) as android.net.NetworkInfo[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getAllNetworkInfo7584)) as android.net.NetworkInfo[];
 		}
-		internal static global::MonoJavaBridge.MethodId _startUsingNetworkFeature5129;
+		internal static global::MonoJavaBridge.MethodId _startUsingNetworkFeature7585;
 		public virtual int startUsingNetworkFeature(int arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._startUsingNetworkFeature5129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._startUsingNetworkFeature7585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._startUsingNetworkFeature5129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._startUsingNetworkFeature7585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _stopUsingNetworkFeature5130;
+		internal static global::MonoJavaBridge.MethodId _stopUsingNetworkFeature7586;
 		public virtual int stopUsingNetworkFeature(int arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._stopUsingNetworkFeature5130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.net.ConnectivityManager._stopUsingNetworkFeature7586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._stopUsingNetworkFeature5130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._stopUsingNetworkFeature7586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _requestRouteToHost5131;
+		internal static global::MonoJavaBridge.MethodId _requestRouteToHost7587;
 		public virtual bool requestRouteToHost(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager._requestRouteToHost5131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager._requestRouteToHost7587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._requestRouteToHost5131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._requestRouteToHost7587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		public new bool BackgroundDataSetting
 		{
@@ -121,14 +121,14 @@ namespace android.net
 				return getBackgroundDataSetting();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBackgroundDataSetting5132;
+		internal static global::MonoJavaBridge.MethodId _getBackgroundDataSetting7588;
 		public virtual bool getBackgroundDataSetting() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager._getBackgroundDataSetting5132);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager._getBackgroundDataSetting7588);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getBackgroundDataSetting5132);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getBackgroundDataSetting7588);
 		}
 		public static global::java.lang.String CONNECTIVITY_ACTION
 		{
@@ -246,16 +246,16 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.ConnectivityManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/ConnectivityManager"));
-			global::android.net.ConnectivityManager._isNetworkTypeValid5123 = @__env.GetStaticMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "isNetworkTypeValid", "(I)Z");
-			global::android.net.ConnectivityManager._setNetworkPreference5124 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "setNetworkPreference", "(I)V");
-			global::android.net.ConnectivityManager._getNetworkPreference5125 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getNetworkPreference", "()I");
-			global::android.net.ConnectivityManager._getActiveNetworkInfo5126 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getActiveNetworkInfo", "()Landroid/net/NetworkInfo;");
-			global::android.net.ConnectivityManager._getNetworkInfo5127 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getNetworkInfo", "(I)Landroid/net/NetworkInfo;");
-			global::android.net.ConnectivityManager._getAllNetworkInfo5128 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getAllNetworkInfo", "()[Landroid/net/NetworkInfo;");
-			global::android.net.ConnectivityManager._startUsingNetworkFeature5129 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "startUsingNetworkFeature", "(ILjava/lang/String;)I");
-			global::android.net.ConnectivityManager._stopUsingNetworkFeature5130 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "stopUsingNetworkFeature", "(ILjava/lang/String;)I");
-			global::android.net.ConnectivityManager._requestRouteToHost5131 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "requestRouteToHost", "(II)Z");
-			global::android.net.ConnectivityManager._getBackgroundDataSetting5132 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getBackgroundDataSetting", "()Z");
+			global::android.net.ConnectivityManager._isNetworkTypeValid7579 = @__env.GetStaticMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "isNetworkTypeValid", "(I)Z");
+			global::android.net.ConnectivityManager._setNetworkPreference7580 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "setNetworkPreference", "(I)V");
+			global::android.net.ConnectivityManager._getNetworkPreference7581 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getNetworkPreference", "()I");
+			global::android.net.ConnectivityManager._getActiveNetworkInfo7582 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getActiveNetworkInfo", "()Landroid/net/NetworkInfo;");
+			global::android.net.ConnectivityManager._getNetworkInfo7583 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getNetworkInfo", "(I)Landroid/net/NetworkInfo;");
+			global::android.net.ConnectivityManager._getAllNetworkInfo7584 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getAllNetworkInfo", "()[Landroid/net/NetworkInfo;");
+			global::android.net.ConnectivityManager._startUsingNetworkFeature7585 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "startUsingNetworkFeature", "(ILjava/lang/String;)I");
+			global::android.net.ConnectivityManager._stopUsingNetworkFeature7586 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "stopUsingNetworkFeature", "(ILjava/lang/String;)I");
+			global::android.net.ConnectivityManager._requestRouteToHost7587 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "requestRouteToHost", "(II)Z");
+			global::android.net.ConnectivityManager._getBackgroundDataSetting7588 = @__env.GetMethodIDNoThrow(global::android.net.ConnectivityManager.staticClass, "getBackgroundDataSetting", "()Z");
 		}
 	}
 }

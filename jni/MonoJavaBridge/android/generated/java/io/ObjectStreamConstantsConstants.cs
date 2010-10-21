@@ -178,20 +178,22 @@ namespace java.io
 				return 16;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SUBSTITUTION_PERMISSION13714;
+		internal static global::MonoJavaBridge.FieldId _SUBSTITUTION_PERMISSION19214;
 		public static global::java.io.SerializablePermission SUBSTITUTION_PERMISSION
 		{
 			get
 			{
-				return default(global::java.io.SerializablePermission);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.io.ObjectStreamConstants_.staticClass, _SUBSTITUTION_PERMISSION19214)) as java.io.SerializablePermission;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SUBCLASS_IMPLEMENTATION_PERMISSION13715;
+		internal static global::MonoJavaBridge.FieldId _SUBCLASS_IMPLEMENTATION_PERMISSION19215;
 		public static global::java.io.SerializablePermission SUBCLASS_IMPLEMENTATION_PERMISSION
 		{
 			get
 			{
-				return default(global::java.io.SerializablePermission);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.io.ObjectStreamConstants_.staticClass, _SUBCLASS_IMPLEMENTATION_PERMISSION19215)) as java.io.SerializablePermission;
 			}
 		}
 		public static int PROTOCOL_VERSION_1

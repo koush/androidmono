@@ -11,11 +11,11 @@ namespace android.media
 		protected AudioFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _AudioFormat4823;
+		internal static global::MonoJavaBridge.MethodId _AudioFormat6967;
 		public AudioFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat4823);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat6967);
 			Init(@__env, handle);
 		}
 		public static int ENCODING_INVALID
@@ -316,7 +316,7 @@ namespace android.media
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.media.AudioFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/media/AudioFormat"));
-			global::android.media.AudioFormat._AudioFormat4823 = @__env.GetMethodIDNoThrow(global::android.media.AudioFormat.staticClass, "<init>", "()V");
+			global::android.media.AudioFormat._AudioFormat6967 = @__env.GetMethodIDNoThrow(global::android.media.AudioFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

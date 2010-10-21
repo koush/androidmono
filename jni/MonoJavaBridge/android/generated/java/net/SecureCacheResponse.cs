@@ -11,33 +11,33 @@ namespace java.net
 		protected SecureCacheResponse(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getCipherSuite15986;
+		internal static global::MonoJavaBridge.MethodId _getCipherSuite21566;
 		public abstract global::java.lang.String getCipherSuite();
-		internal static global::MonoJavaBridge.MethodId _getLocalCertificateChain15987;
+		internal static global::MonoJavaBridge.MethodId _getLocalCertificateChain21567;
 		public abstract global::java.util.List getLocalCertificateChain();
-		internal static global::MonoJavaBridge.MethodId _getServerCertificateChain15988;
+		internal static global::MonoJavaBridge.MethodId _getServerCertificateChain21568;
 		public abstract global::java.util.List getServerCertificateChain();
-		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal15989;
+		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal21569;
 		public abstract global::java.security.Principal getPeerPrincipal();
-		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal15990;
+		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal21570;
 		public abstract global::java.security.Principal getLocalPrincipal();
-		internal static global::MonoJavaBridge.MethodId _SecureCacheResponse15991;
+		internal static global::MonoJavaBridge.MethodId _SecureCacheResponse21571;
 		public SecureCacheResponse()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SecureCacheResponse.staticClass, global::java.net.SecureCacheResponse._SecureCacheResponse15991);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SecureCacheResponse.staticClass, global::java.net.SecureCacheResponse._SecureCacheResponse21571);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SecureCacheResponse.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SecureCacheResponse"));
-			global::java.net.SecureCacheResponse._getCipherSuite15986 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getCipherSuite", "()Ljava/lang/String;");
-			global::java.net.SecureCacheResponse._getLocalCertificateChain15987 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getLocalCertificateChain", "()Ljava/util/List;");
-			global::java.net.SecureCacheResponse._getServerCertificateChain15988 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getServerCertificateChain", "()Ljava/util/List;");
-			global::java.net.SecureCacheResponse._getPeerPrincipal15989 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getPeerPrincipal", "()Ljava/security/Principal;");
-			global::java.net.SecureCacheResponse._getLocalPrincipal15990 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;");
-			global::java.net.SecureCacheResponse._SecureCacheResponse15991 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "<init>", "()V");
+			global::java.net.SecureCacheResponse._getCipherSuite21566 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getCipherSuite", "()Ljava/lang/String;");
+			global::java.net.SecureCacheResponse._getLocalCertificateChain21567 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getLocalCertificateChain", "()Ljava/util/List;");
+			global::java.net.SecureCacheResponse._getServerCertificateChain21568 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getServerCertificateChain", "()Ljava/util/List;");
+			global::java.net.SecureCacheResponse._getPeerPrincipal21569 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getPeerPrincipal", "()Ljava/security/Principal;");
+			global::java.net.SecureCacheResponse._getLocalPrincipal21570 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;");
+			global::java.net.SecureCacheResponse._SecureCacheResponse21571 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse.staticClass, "<init>", "()V");
 		}
 	}
 
@@ -52,80 +52,80 @@ namespace java.net
 		internal SecureCacheResponse_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getCipherSuite15992;
+		internal static global::MonoJavaBridge.MethodId _getCipherSuite21572;
 		public override global::java.lang.String getCipherSuite() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getCipherSuite15992)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getCipherSuite21572)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getCipherSuite15992)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getCipherSuite21572)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalCertificateChain15993;
+		internal static global::MonoJavaBridge.MethodId _getLocalCertificateChain21573;
 		public override global::java.util.List getLocalCertificateChain() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getLocalCertificateChain15993)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getLocalCertificateChain21573)) as java.util.List;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getLocalCertificateChain15993)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getLocalCertificateChain21573)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getServerCertificateChain15994;
+		internal static global::MonoJavaBridge.MethodId _getServerCertificateChain21574;
 		public override global::java.util.List getServerCertificateChain() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getServerCertificateChain15994)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getServerCertificateChain21574)) as java.util.List;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getServerCertificateChain15994)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getServerCertificateChain21574)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal15995;
+		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal21575;
 		public override global::java.security.Principal getPeerPrincipal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getPeerPrincipal15995)) as java.security.Principal;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getPeerPrincipal21575)) as java.security.Principal;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getPeerPrincipal15995)) as java.security.Principal;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getPeerPrincipal21575)) as java.security.Principal;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal15996;
+		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal21576;
 		public override global::java.security.Principal getLocalPrincipal() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getLocalPrincipal15996)) as java.security.Principal;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getLocalPrincipal21576)) as java.security.Principal;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getLocalPrincipal15996)) as java.security.Principal;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getLocalPrincipal21576)) as java.security.Principal;
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeaders15997;
+		internal static global::MonoJavaBridge.MethodId _getHeaders21577;
 		public override global::java.util.Map getHeaders() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getHeaders15997)) as java.util.Map;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getHeaders21577)) as java.util.Map;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getHeaders15997)) as java.util.Map;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getHeaders21577)) as java.util.Map;
 		}
-		internal static global::MonoJavaBridge.MethodId _getBody15998;
+		internal static global::MonoJavaBridge.MethodId _getBody21578;
 		public override global::java.io.InputStream getBody() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getBody15998)) as java.io.InputStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_._getBody21578)) as java.io.InputStream;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getBody15998)) as java.io.InputStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getBody21578)) as java.io.InputStream;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.SecureCacheResponse_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/SecureCacheResponse"));
-			global::java.net.SecureCacheResponse_._getCipherSuite15992 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getCipherSuite", "()Ljava/lang/String;");
-			global::java.net.SecureCacheResponse_._getLocalCertificateChain15993 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getLocalCertificateChain", "()Ljava/util/List;");
-			global::java.net.SecureCacheResponse_._getServerCertificateChain15994 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getServerCertificateChain", "()Ljava/util/List;");
-			global::java.net.SecureCacheResponse_._getPeerPrincipal15995 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getPeerPrincipal", "()Ljava/security/Principal;");
-			global::java.net.SecureCacheResponse_._getLocalPrincipal15996 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;");
-			global::java.net.SecureCacheResponse_._getHeaders15997 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getHeaders", "()Ljava/util/Map;");
-			global::java.net.SecureCacheResponse_._getBody15998 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getBody", "()Ljava/io/InputStream;");
+			global::java.net.SecureCacheResponse_._getCipherSuite21572 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getCipherSuite", "()Ljava/lang/String;");
+			global::java.net.SecureCacheResponse_._getLocalCertificateChain21573 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getLocalCertificateChain", "()Ljava/util/List;");
+			global::java.net.SecureCacheResponse_._getServerCertificateChain21574 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getServerCertificateChain", "()Ljava/util/List;");
+			global::java.net.SecureCacheResponse_._getPeerPrincipal21575 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getPeerPrincipal", "()Ljava/security/Principal;");
+			global::java.net.SecureCacheResponse_._getLocalPrincipal21576 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getLocalPrincipal", "()Ljava/security/Principal;");
+			global::java.net.SecureCacheResponse_._getHeaders21577 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getHeaders", "()Ljava/util/Map;");
+			global::java.net.SecureCacheResponse_._getBody21578 = @__env.GetMethodIDNoThrow(global::java.net.SecureCacheResponse_.staticClass, "getBody", "()Ljava/io/InputStream;");
 		}
 	}
 }

@@ -11,28 +11,28 @@ namespace android.graphics
 		protected MaskFilter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize3336;
+		internal static global::MonoJavaBridge.MethodId _finalize5279;
 		protected override void finalize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.MaskFilter._finalize3336);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.MaskFilter._finalize5279);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._finalize3336);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._finalize5279);
 		}
-		internal static global::MonoJavaBridge.MethodId _MaskFilter3337;
+		internal static global::MonoJavaBridge.MethodId _MaskFilter5280;
 		public MaskFilter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._MaskFilter3337);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.MaskFilter.staticClass, global::android.graphics.MaskFilter._MaskFilter5280);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.MaskFilter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/MaskFilter"));
-			global::android.graphics.MaskFilter._finalize3336 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "finalize", "()V");
-			global::android.graphics.MaskFilter._MaskFilter3337 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "<init>", "()V");
+			global::android.graphics.MaskFilter._finalize5279 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "finalize", "()V");
+			global::android.graphics.MaskFilter._MaskFilter5280 = @__env.GetMethodIDNoThrow(global::android.graphics.MaskFilter.staticClass, "<init>", "()V");
 		}
 	}
 }

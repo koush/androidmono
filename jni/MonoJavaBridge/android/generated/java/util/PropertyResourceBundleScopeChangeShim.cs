@@ -11,20 +11,20 @@ namespace java.util
 		protected PropertyResourceBundleScopeChangeShim(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _handleGetObject20640;
+		internal static global::MonoJavaBridge.MethodId _handleGetObject26465;
 		protected override global::java.lang.Object handleGetObject(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject20640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject26465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject20640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject26465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.PropertyResourceBundleScopeChangeShim.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/PropertyResourceBundleScopeChangeShim"));
-			global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject20640 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundleScopeChangeShim.staticClass, "handleGetObject", "(Ljava/lang/String;)Ljava/lang/Object;");
+			global::java.util.PropertyResourceBundleScopeChangeShim._handleGetObject26465 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundleScopeChangeShim.staticClass, "handleGetObject", "(Ljava/lang/String;)Ljava/lang/Object;");
 		}
 	}
 
@@ -39,20 +39,20 @@ namespace java.util
 		internal PropertyResourceBundleScopeChangeShim_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeys20641;
+		internal static global::MonoJavaBridge.MethodId _getKeys26466;
 		public override global::java.util.Enumeration getKeys() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys20641)) as java.util.Enumeration;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys26466)) as java.util.Enumeration;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys20641)) as java.util.Enumeration;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundleScopeChangeShim_.staticClass, global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys26466)) as java.util.Enumeration;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.PropertyResourceBundleScopeChangeShim_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/PropertyResourceBundleScopeChangeShim"));
-			global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys20641 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundleScopeChangeShim_.staticClass, "getKeys", "()Ljava/util/Enumeration;");
+			global::java.util.PropertyResourceBundleScopeChangeShim_._getKeys26466 = @__env.GetMethodIDNoThrow(global::java.util.PropertyResourceBundleScopeChangeShim_.staticClass, "getKeys", "()Ljava/util/Enumeration;");
 		}
 	}
 }

@@ -18,14 +18,14 @@ namespace java.util
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage20575;
+		internal static global::MonoJavaBridge.MethodId _getMessage26400;
 		public override global::java.lang.String getMessage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException._getMessage20575)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException._getMessage26400)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._getMessage20575)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._getMessage26400)) as java.lang.String;
 		}
 		public new global::java.lang.String FormatSpecifier
 		{
@@ -34,29 +34,29 @@ namespace java.util
 				return getFormatSpecifier();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormatSpecifier20576;
+		internal static global::MonoJavaBridge.MethodId _getFormatSpecifier26401;
 		public virtual global::java.lang.String getFormatSpecifier() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException._getFormatSpecifier20576)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException._getFormatSpecifier26401)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._getFormatSpecifier20576)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._getFormatSpecifier26401)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _MissingFormatWidthException20577;
+		internal static global::MonoJavaBridge.MethodId _MissingFormatWidthException26402;
 		public MissingFormatWidthException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._MissingFormatWidthException20577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.MissingFormatWidthException.staticClass, global::java.util.MissingFormatWidthException._MissingFormatWidthException26402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.MissingFormatWidthException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/MissingFormatWidthException"));
-			global::java.util.MissingFormatWidthException._getMessage20575 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.util.MissingFormatWidthException._getFormatSpecifier20576 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "getFormatSpecifier", "()Ljava/lang/String;");
-			global::java.util.MissingFormatWidthException._MissingFormatWidthException20577 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.util.MissingFormatWidthException._getMessage26400 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::java.util.MissingFormatWidthException._getFormatSpecifier26401 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "getFormatSpecifier", "()Ljava/lang/String;");
+			global::java.util.MissingFormatWidthException._MissingFormatWidthException26402 = @__env.GetMethodIDNoThrow(global::java.util.MissingFormatWidthException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

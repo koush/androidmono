@@ -472,36 +472,40 @@ namespace javax.microedition.khronos.egl
 				return 4;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _EGL_DEFAULT_DISPLAY22834;
+		internal static global::MonoJavaBridge.FieldId _EGL_DEFAULT_DISPLAY28803;
 		public static global::java.lang.Object EGL_DEFAULT_DISPLAY
 		{
 			get
 			{
-				return default(global::java.lang.Object);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.microedition.khronos.egl.EGL10_.staticClass, _EGL_DEFAULT_DISPLAY28803)) as java.lang.Object;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _EGL_NO_DISPLAY22835;
+		internal static global::MonoJavaBridge.FieldId _EGL_NO_DISPLAY28804;
 		public static global::javax.microedition.khronos.egl.EGLDisplay EGL_NO_DISPLAY
 		{
 			get
 			{
-				return default(global::javax.microedition.khronos.egl.EGLDisplay);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.microedition.khronos.egl.EGL10_.staticClass, _EGL_NO_DISPLAY28804)) as javax.microedition.khronos.egl.EGLDisplay;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _EGL_NO_CONTEXT22836;
+		internal static global::MonoJavaBridge.FieldId _EGL_NO_CONTEXT28805;
 		public static global::javax.microedition.khronos.egl.EGLContext EGL_NO_CONTEXT
 		{
 			get
 			{
-				return default(global::javax.microedition.khronos.egl.EGLContext);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.microedition.khronos.egl.EGL10_.staticClass, _EGL_NO_CONTEXT28805)) as javax.microedition.khronos.egl.EGLContext;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _EGL_NO_SURFACE22837;
+		internal static global::MonoJavaBridge.FieldId _EGL_NO_SURFACE28806;
 		public static global::javax.microedition.khronos.egl.EGLSurface EGL_NO_SURFACE
 		{
 			get
 			{
-				return default(global::javax.microedition.khronos.egl.EGLSurface);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.microedition.khronos.egl.EGL10_.staticClass, _EGL_NO_SURFACE28806)) as javax.microedition.khronos.egl.EGLSurface;
 			}
 		}
 	}

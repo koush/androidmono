@@ -18,14 +18,14 @@ namespace java.nio.charset
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage17098;
+		internal static global::MonoJavaBridge.MethodId _getMessage22696;
 		public override global::java.lang.String getMessage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException._getMessage17098)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException._getMessage22696)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getMessage17098)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getMessage22696)) as java.lang.String;
 		}
 		public new int InputLength
 		{
@@ -34,29 +34,29 @@ namespace java.nio.charset
 				return getInputLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputLength17099;
+		internal static global::MonoJavaBridge.MethodId _getInputLength22697;
 		public virtual int getInputLength() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException._getInputLength17099);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException._getInputLength22697);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getInputLength17099);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._getInputLength22697);
 		}
-		internal static global::MonoJavaBridge.MethodId _MalformedInputException17100;
+		internal static global::MonoJavaBridge.MethodId _MalformedInputException22698;
 		public MalformedInputException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._MalformedInputException17100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.MalformedInputException.staticClass, global::java.nio.charset.MalformedInputException._MalformedInputException22698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.MalformedInputException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/MalformedInputException"));
-			global::java.nio.charset.MalformedInputException._getMessage17098 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.nio.charset.MalformedInputException._getInputLength17099 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "getInputLength", "()I");
-			global::java.nio.charset.MalformedInputException._MalformedInputException17100 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "<init>", "(I)V");
+			global::java.nio.charset.MalformedInputException._getMessage22696 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::java.nio.charset.MalformedInputException._getInputLength22697 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "getInputLength", "()I");
+			global::java.nio.charset.MalformedInputException._MalformedInputException22698 = @__env.GetMethodIDNoThrow(global::java.nio.charset.MalformedInputException.staticClass, "<init>", "(I)V");
 		}
 	}
 }

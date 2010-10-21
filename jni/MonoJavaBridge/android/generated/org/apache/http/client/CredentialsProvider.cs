@@ -19,40 +19,40 @@ namespace org.apache.http.client
 		internal CredentialsProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _clear25214;
+		internal static global::MonoJavaBridge.MethodId _clear31759;
 		 void org.apache.http.client.CredentialsProvider.clear() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_._clear25214);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_._clear31759);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._clear25214);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._clear31759);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCredentials25215;
+		internal static global::MonoJavaBridge.MethodId _getCredentials31760;
 		 global::org.apache.http.auth.Credentials org.apache.http.client.CredentialsProvider.getCredentials(org.apache.http.auth.AuthScope arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.auth.Credentials>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_._getCredentials25215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.auth.Credentials;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.auth.Credentials>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_._getCredentials31760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.auth.Credentials;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.auth.Credentials>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._getCredentials25215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.auth.Credentials;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.auth.Credentials>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._getCredentials31760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.auth.Credentials;
 		}
-		internal static global::MonoJavaBridge.MethodId _setCredentials25216;
+		internal static global::MonoJavaBridge.MethodId _setCredentials31761;
 		 void org.apache.http.client.CredentialsProvider.setCredentials(org.apache.http.auth.AuthScope arg0, org.apache.http.auth.Credentials arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_._setCredentials25216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_._setCredentials31761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._setCredentials25216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CredentialsProvider_.staticClass, global::org.apache.http.client.CredentialsProvider_._setCredentials31761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.client.CredentialsProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/CredentialsProvider"));
-			global::org.apache.http.client.CredentialsProvider_._clear25214 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "clear", "()V");
-			global::org.apache.http.client.CredentialsProvider_._getCredentials25215 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "getCredentials", "(Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;");
-			global::org.apache.http.client.CredentialsProvider_._setCredentials25216 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "setCredentials", "(Lorg/apache/http/auth/AuthScope;Lorg/apache/http/auth/Credentials;)V");
+			global::org.apache.http.client.CredentialsProvider_._clear31759 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "clear", "()V");
+			global::org.apache.http.client.CredentialsProvider_._getCredentials31760 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "getCredentials", "(Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;");
+			global::org.apache.http.client.CredentialsProvider_._setCredentials31761 = @__env.GetMethodIDNoThrow(global::org.apache.http.client.CredentialsProvider_.staticClass, "setCredentials", "(Lorg/apache/http/auth/AuthScope;Lorg/apache/http/auth/Credentials;)V");
 		}
 	}
 }

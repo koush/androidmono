@@ -11,26 +11,26 @@ namespace javax.security.auth
 		protected DestroyFailedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _DestroyFailedException23615;
+		internal static global::MonoJavaBridge.MethodId _DestroyFailedException30046;
 		public DestroyFailedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.DestroyFailedException.staticClass, global::javax.security.auth.DestroyFailedException._DestroyFailedException23615);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.DestroyFailedException.staticClass, global::javax.security.auth.DestroyFailedException._DestroyFailedException30046);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DestroyFailedException23616;
+		internal static global::MonoJavaBridge.MethodId _DestroyFailedException30047;
 		public DestroyFailedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.DestroyFailedException.staticClass, global::javax.security.auth.DestroyFailedException._DestroyFailedException23616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.DestroyFailedException.staticClass, global::javax.security.auth.DestroyFailedException._DestroyFailedException30047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.DestroyFailedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/DestroyFailedException"));
-			global::javax.security.auth.DestroyFailedException._DestroyFailedException23615 = @__env.GetMethodIDNoThrow(global::javax.security.auth.DestroyFailedException.staticClass, "<init>", "()V");
-			global::javax.security.auth.DestroyFailedException._DestroyFailedException23616 = @__env.GetMethodIDNoThrow(global::javax.security.auth.DestroyFailedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::javax.security.auth.DestroyFailedException._DestroyFailedException30046 = @__env.GetMethodIDNoThrow(global::javax.security.auth.DestroyFailedException.staticClass, "<init>", "()V");
+			global::javax.security.auth.DestroyFailedException._DestroyFailedException30047 = @__env.GetMethodIDNoThrow(global::javax.security.auth.DestroyFailedException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

@@ -11,26 +11,26 @@ namespace java.io
 		protected ObjectStreamException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ObjectStreamException13716;
+		internal static global::MonoJavaBridge.MethodId _ObjectStreamException19218;
 		protected ObjectStreamException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamException.staticClass, global::java.io.ObjectStreamException._ObjectStreamException13716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamException.staticClass, global::java.io.ObjectStreamException._ObjectStreamException19218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ObjectStreamException13717;
+		internal static global::MonoJavaBridge.MethodId _ObjectStreamException19219;
 		protected ObjectStreamException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamException.staticClass, global::java.io.ObjectStreamException._ObjectStreamException13717);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamException.staticClass, global::java.io.ObjectStreamException._ObjectStreamException19219);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.ObjectStreamException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/ObjectStreamException"));
-			global::java.io.ObjectStreamException._ObjectStreamException13716 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.ObjectStreamException._ObjectStreamException13717 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamException.staticClass, "<init>", "()V");
+			global::java.io.ObjectStreamException._ObjectStreamException19218 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.io.ObjectStreamException._ObjectStreamException19219 = @__env.GetMethodIDNoThrow(global::java.io.ObjectStreamException.staticClass, "<init>", "()V");
 		}
 	}
 

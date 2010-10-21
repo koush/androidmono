@@ -18,14 +18,14 @@ namespace java.sql
 				return getIndex();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIndex18637;
+		internal static global::MonoJavaBridge.MethodId _getIndex24251;
 		public virtual int getIndex() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.DataTruncation._getIndex18637);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.DataTruncation._getIndex24251);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getIndex18637);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getIndex24251);
 		}
 		public new bool Parameter
 		{
@@ -34,14 +34,14 @@ namespace java.sql
 				return getParameter();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameter18638;
+		internal static global::MonoJavaBridge.MethodId _getParameter24252;
 		public virtual bool getParameter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation._getParameter18638);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation._getParameter24252);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getParameter18638);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getParameter24252);
 		}
 		public new int DataSize
 		{
@@ -50,14 +50,14 @@ namespace java.sql
 				return getDataSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDataSize18639;
+		internal static global::MonoJavaBridge.MethodId _getDataSize24253;
 		public virtual int getDataSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.DataTruncation._getDataSize18639);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.DataTruncation._getDataSize24253);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getDataSize18639);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getDataSize24253);
 		}
 		public new bool Read
 		{
@@ -66,14 +66,14 @@ namespace java.sql
 				return getRead();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRead18640;
+		internal static global::MonoJavaBridge.MethodId _getRead24254;
 		public virtual bool getRead() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation._getRead18640);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation._getRead24254);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getRead18640);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getRead24254);
 		}
 		public new int TransferSize
 		{
@@ -82,40 +82,40 @@ namespace java.sql
 				return getTransferSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTransferSize18641;
+		internal static global::MonoJavaBridge.MethodId _getTransferSize24255;
 		public virtual int getTransferSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.DataTruncation._getTransferSize18641);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.sql.DataTruncation._getTransferSize24255);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getTransferSize18641);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._getTransferSize24255);
 		}
-		internal static global::MonoJavaBridge.MethodId _DataTruncation18642;
+		internal static global::MonoJavaBridge.MethodId _DataTruncation24256;
 		public DataTruncation(int arg0, bool arg1, bool arg2, int arg3, int arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._DataTruncation18642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._DataTruncation24256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _DataTruncation18643;
+		internal static global::MonoJavaBridge.MethodId _DataTruncation24257;
 		public DataTruncation(int arg0, bool arg1, bool arg2, int arg3, int arg4, java.lang.Throwable arg5)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._DataTruncation18643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.DataTruncation.staticClass, global::java.sql.DataTruncation._DataTruncation24257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.DataTruncation.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/DataTruncation"));
-			global::java.sql.DataTruncation._getIndex18637 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getIndex", "()I");
-			global::java.sql.DataTruncation._getParameter18638 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getParameter", "()Z");
-			global::java.sql.DataTruncation._getDataSize18639 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getDataSize", "()I");
-			global::java.sql.DataTruncation._getRead18640 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getRead", "()Z");
-			global::java.sql.DataTruncation._getTransferSize18641 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getTransferSize", "()I");
-			global::java.sql.DataTruncation._DataTruncation18642 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "<init>", "(IZZII)V");
-			global::java.sql.DataTruncation._DataTruncation18643 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "<init>", "(IZZIILjava/lang/Throwable;)V");
+			global::java.sql.DataTruncation._getIndex24251 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getIndex", "()I");
+			global::java.sql.DataTruncation._getParameter24252 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getParameter", "()Z");
+			global::java.sql.DataTruncation._getDataSize24253 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getDataSize", "()I");
+			global::java.sql.DataTruncation._getRead24254 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getRead", "()Z");
+			global::java.sql.DataTruncation._getTransferSize24255 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "getTransferSize", "()I");
+			global::java.sql.DataTruncation._DataTruncation24256 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "<init>", "(IZZII)V");
+			global::java.sql.DataTruncation._DataTruncation24257 = @__env.GetMethodIDNoThrow(global::java.sql.DataTruncation.staticClass, "<init>", "(IZZIILjava/lang/Throwable;)V");
 		}
 	}
 }

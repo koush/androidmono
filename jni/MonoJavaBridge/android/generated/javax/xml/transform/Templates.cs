@@ -18,30 +18,30 @@ namespace javax.xml.transform
 		internal Templates_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _newTransformer24361;
+		internal static global::MonoJavaBridge.MethodId _newTransformer30838;
 		 global::javax.xml.transform.Transformer javax.xml.transform.Templates.newTransformer() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_._newTransformer24361)) as javax.xml.transform.Transformer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_._newTransformer30838)) as javax.xml.transform.Transformer;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_.staticClass, global::javax.xml.transform.Templates_._newTransformer24361)) as javax.xml.transform.Transformer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_.staticClass, global::javax.xml.transform.Templates_._newTransformer30838)) as javax.xml.transform.Transformer;
 		}
-		internal static global::MonoJavaBridge.MethodId _getOutputProperties24362;
+		internal static global::MonoJavaBridge.MethodId _getOutputProperties30839;
 		 global::java.util.Properties javax.xml.transform.Templates.getOutputProperties() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_._getOutputProperties24362)) as java.util.Properties;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_._getOutputProperties30839)) as java.util.Properties;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_.staticClass, global::javax.xml.transform.Templates_._getOutputProperties24362)) as java.util.Properties;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_.staticClass, global::javax.xml.transform.Templates_._getOutputProperties30839)) as java.util.Properties;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.Templates_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/Templates"));
-			global::javax.xml.transform.Templates_._newTransformer24361 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Templates_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;");
-			global::javax.xml.transform.Templates_._getOutputProperties24362 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Templates_.staticClass, "getOutputProperties", "()Ljava/util/Properties;");
+			global::javax.xml.transform.Templates_._newTransformer30838 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Templates_.staticClass, "newTransformer", "()Ljavax/xml/transform/Transformer;");
+			global::javax.xml.transform.Templates_._getOutputProperties30839 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.Templates_.staticClass, "getOutputProperties", "()Ljava/util/Properties;");
 		}
 	}
 }

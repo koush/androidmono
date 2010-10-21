@@ -18,28 +18,28 @@ namespace java.security
 				return getObject();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getObject17241;
+		internal static global::MonoJavaBridge.MethodId _getObject22839;
 		public virtual global::java.lang.Object getObject() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.GuardedObject._getObject17241)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.GuardedObject._getObject22839)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.GuardedObject.staticClass, global::java.security.GuardedObject._getObject17241)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.GuardedObject.staticClass, global::java.security.GuardedObject._getObject22839)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _GuardedObject17242;
+		internal static global::MonoJavaBridge.MethodId _GuardedObject22840;
 		public GuardedObject(java.lang.Object arg0, java.security.Guard arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GuardedObject.staticClass, global::java.security.GuardedObject._GuardedObject17242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GuardedObject.staticClass, global::java.security.GuardedObject._GuardedObject22840, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.GuardedObject.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/GuardedObject"));
-			global::java.security.GuardedObject._getObject17241 = @__env.GetMethodIDNoThrow(global::java.security.GuardedObject.staticClass, "getObject", "()Ljava/lang/Object;");
-			global::java.security.GuardedObject._GuardedObject17242 = @__env.GetMethodIDNoThrow(global::java.security.GuardedObject.staticClass, "<init>", "(Ljava/lang/Object;Ljava/security/Guard;)V");
+			global::java.security.GuardedObject._getObject22839 = @__env.GetMethodIDNoThrow(global::java.security.GuardedObject.staticClass, "getObject", "()Ljava/lang/Object;");
+			global::java.security.GuardedObject._GuardedObject22840 = @__env.GetMethodIDNoThrow(global::java.security.GuardedObject.staticClass, "<init>", "(Ljava/lang/Object;Ljava/security/Guard;)V");
 		}
 	}
 }

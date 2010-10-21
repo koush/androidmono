@@ -17,60 +17,60 @@ namespace javax.xml.transform.dom
 		internal DOMLocator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getOriginatingNode24444;
+		internal static global::MonoJavaBridge.MethodId _getOriginatingNode30921;
 		 global::org.w3c.dom.Node javax.xml.transform.dom.DOMLocator.getOriginatingNode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getOriginatingNode24444)) as org.w3c.dom.Node;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getOriginatingNode30921)) as org.w3c.dom.Node;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getOriginatingNode24444)) as org.w3c.dom.Node;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getOriginatingNode30921)) as org.w3c.dom.Node;
 		}
-		internal static global::MonoJavaBridge.MethodId _getLineNumber24445;
+		internal static global::MonoJavaBridge.MethodId _getLineNumber30922;
 		 int javax.xml.transform.SourceLocator.getLineNumber() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getLineNumber24445);
+				return @__env.CallIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getLineNumber30922);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getLineNumber24445);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getLineNumber30922);
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicId24446;
+		internal static global::MonoJavaBridge.MethodId _getPublicId30923;
 		 global::java.lang.String javax.xml.transform.SourceLocator.getPublicId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getPublicId24446)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getPublicId30923)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getPublicId24446)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getPublicId30923)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSystemId24447;
+		internal static global::MonoJavaBridge.MethodId _getSystemId30924;
 		 global::java.lang.String javax.xml.transform.SourceLocator.getSystemId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getSystemId24447)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getSystemId30924)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getSystemId24447)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getSystemId30924)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnNumber24448;
+		internal static global::MonoJavaBridge.MethodId _getColumnNumber30925;
 		 int javax.xml.transform.SourceLocator.getColumnNumber() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getColumnNumber24448);
+				return @__env.CallIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_._getColumnNumber30925);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getColumnNumber24448);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.dom.DOMLocator_.staticClass, global::javax.xml.transform.dom.DOMLocator_._getColumnNumber30925);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.transform.dom.DOMLocator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/transform/dom/DOMLocator"));
-			global::javax.xml.transform.dom.DOMLocator_._getOriginatingNode24444 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getOriginatingNode", "()Lorg/w3c/dom/Node;");
-			global::javax.xml.transform.dom.DOMLocator_._getLineNumber24445 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getLineNumber", "()I");
-			global::javax.xml.transform.dom.DOMLocator_._getPublicId24446 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getPublicId", "()Ljava/lang/String;");
-			global::javax.xml.transform.dom.DOMLocator_._getSystemId24447 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getSystemId", "()Ljava/lang/String;");
-			global::javax.xml.transform.dom.DOMLocator_._getColumnNumber24448 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getColumnNumber", "()I");
+			global::javax.xml.transform.dom.DOMLocator_._getOriginatingNode30921 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getOriginatingNode", "()Lorg/w3c/dom/Node;");
+			global::javax.xml.transform.dom.DOMLocator_._getLineNumber30922 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getLineNumber", "()I");
+			global::javax.xml.transform.dom.DOMLocator_._getPublicId30923 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getPublicId", "()Ljava/lang/String;");
+			global::javax.xml.transform.dom.DOMLocator_._getSystemId30924 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getSystemId", "()Ljava/lang/String;");
+			global::javax.xml.transform.dom.DOMLocator_._getColumnNumber30925 = @__env.GetMethodIDNoThrow(global::javax.xml.transform.dom.DOMLocator_.staticClass, "getColumnNumber", "()I");
 		}
 	}
 }

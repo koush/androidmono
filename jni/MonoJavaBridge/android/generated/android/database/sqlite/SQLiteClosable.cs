@@ -11,61 +11,61 @@ namespace android.database.sqlite
 		protected SQLiteClosable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased2790;
+		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased4689;
 		protected abstract void onAllReferencesReleased();
-		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleasedFromContainer2791;
+		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleasedFromContainer4690;
 		protected virtual void onAllReferencesReleasedFromContainer() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer2791);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer4690);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer2791);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer4690);
 		}
-		internal static global::MonoJavaBridge.MethodId _acquireReference2792;
+		internal static global::MonoJavaBridge.MethodId _acquireReference4691;
 		public virtual void acquireReference() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._acquireReference2792);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._acquireReference4691);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._acquireReference2792);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._acquireReference4691);
 		}
-		internal static global::MonoJavaBridge.MethodId _releaseReference2793;
+		internal static global::MonoJavaBridge.MethodId _releaseReference4692;
 		public virtual void releaseReference() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._releaseReference2793);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._releaseReference4692);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._releaseReference2793);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._releaseReference4692);
 		}
-		internal static global::MonoJavaBridge.MethodId _releaseReferenceFromContainer2794;
+		internal static global::MonoJavaBridge.MethodId _releaseReferenceFromContainer4693;
 		public virtual void releaseReferenceFromContainer() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer2794);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer4693);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer2794);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer4693);
 		}
-		internal static global::MonoJavaBridge.MethodId _SQLiteClosable2795;
+		internal static global::MonoJavaBridge.MethodId _SQLiteClosable4694;
 		public SQLiteClosable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._SQLiteClosable2795);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._SQLiteClosable4694);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteClosable.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteClosable"));
-			global::android.database.sqlite.SQLiteClosable._onAllReferencesReleased2790 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "onAllReferencesReleased", "()V");
-			global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer2791 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "onAllReferencesReleasedFromContainer", "()V");
-			global::android.database.sqlite.SQLiteClosable._acquireReference2792 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "acquireReference", "()V");
-			global::android.database.sqlite.SQLiteClosable._releaseReference2793 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "releaseReference", "()V");
-			global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer2794 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "releaseReferenceFromContainer", "()V");
-			global::android.database.sqlite.SQLiteClosable._SQLiteClosable2795 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "<init>", "()V");
+			global::android.database.sqlite.SQLiteClosable._onAllReferencesReleased4689 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "onAllReferencesReleased", "()V");
+			global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer4690 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "onAllReferencesReleasedFromContainer", "()V");
+			global::android.database.sqlite.SQLiteClosable._acquireReference4691 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "acquireReference", "()V");
+			global::android.database.sqlite.SQLiteClosable._releaseReference4692 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "releaseReference", "()V");
+			global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer4693 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "releaseReferenceFromContainer", "()V");
+			global::android.database.sqlite.SQLiteClosable._SQLiteClosable4694 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable.staticClass, "<init>", "()V");
 		}
 	}
 
@@ -80,20 +80,20 @@ namespace android.database.sqlite
 		internal SQLiteClosable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased2796;
+		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased4695;
 		protected override void onAllReferencesReleased() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable_._onAllReferencesReleased2796);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable_._onAllReferencesReleased4695);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable_.staticClass, global::android.database.sqlite.SQLiteClosable_._onAllReferencesReleased2796);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable_.staticClass, global::android.database.sqlite.SQLiteClosable_._onAllReferencesReleased4695);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.database.sqlite.SQLiteClosable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/database/sqlite/SQLiteClosable"));
-			global::android.database.sqlite.SQLiteClosable_._onAllReferencesReleased2796 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable_.staticClass, "onAllReferencesReleased", "()V");
+			global::android.database.sqlite.SQLiteClosable_._onAllReferencesReleased4695 = @__env.GetMethodIDNoThrow(global::android.database.sqlite.SQLiteClosable_.staticClass, "onAllReferencesReleased", "()V");
 		}
 	}
 }

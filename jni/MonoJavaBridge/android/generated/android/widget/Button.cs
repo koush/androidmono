@@ -11,34 +11,34 @@ namespace android.widget
 		protected Button(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _Button11598;
+		internal static global::MonoJavaBridge.MethodId _Button16743;
 		public Button(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button11598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button16743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Button11599;
+		internal static global::MonoJavaBridge.MethodId _Button16744;
 		public Button(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button11599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button16744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Button11600;
+		internal static global::MonoJavaBridge.MethodId _Button16745;
 		public Button(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button11600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button16745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.Button.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/Button"));
-			global::android.widget.Button._Button11598 = @__env.GetMethodIDNoThrow(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.Button._Button11599 = @__env.GetMethodIDNoThrow(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.Button._Button11600 = @__env.GetMethodIDNoThrow(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.Button._Button16743 = @__env.GetMethodIDNoThrow(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.Button._Button16744 = @__env.GetMethodIDNoThrow(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.Button._Button16745 = @__env.GetMethodIDNoThrow(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

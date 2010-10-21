@@ -18,14 +18,14 @@ namespace java.security.spec
 				return getParams();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParams18281;
+		internal static global::MonoJavaBridge.MethodId _getParams23890;
 		public virtual global::java.security.spec.ECParameterSpec getParams() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec._getParams18281)) as java.security.spec.ECParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec._getParams23890)) as java.security.spec.ECParameterSpec;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getParams18281)) as java.security.spec.ECParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getParams23890)) as java.security.spec.ECParameterSpec;
 		}
 		public new global::java.security.spec.ECPoint W
 		{
@@ -34,29 +34,29 @@ namespace java.security.spec
 				return getW();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getW18282;
+		internal static global::MonoJavaBridge.MethodId _getW23891;
 		public virtual global::java.security.spec.ECPoint getW() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec._getW18282)) as java.security.spec.ECPoint;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec._getW23891)) as java.security.spec.ECPoint;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getW18282)) as java.security.spec.ECPoint;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._getW23891)) as java.security.spec.ECPoint;
 		}
-		internal static global::MonoJavaBridge.MethodId _ECPublicKeySpec18283;
+		internal static global::MonoJavaBridge.MethodId _ECPublicKeySpec23892;
 		public ECPublicKeySpec(java.security.spec.ECPoint arg0, java.security.spec.ECParameterSpec arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._ECPublicKeySpec18283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECPublicKeySpec.staticClass, global::java.security.spec.ECPublicKeySpec._ECPublicKeySpec23892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECPublicKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECPublicKeySpec"));
-			global::java.security.spec.ECPublicKeySpec._getParams18281 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPublicKeySpec.staticClass, "getParams", "()Ljava/security/spec/ECParameterSpec;");
-			global::java.security.spec.ECPublicKeySpec._getW18282 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPublicKeySpec.staticClass, "getW", "()Ljava/security/spec/ECPoint;");
-			global::java.security.spec.ECPublicKeySpec._ECPublicKeySpec18283 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPublicKeySpec.staticClass, "<init>", "(Ljava/security/spec/ECPoint;Ljava/security/spec/ECParameterSpec;)V");
+			global::java.security.spec.ECPublicKeySpec._getParams23890 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPublicKeySpec.staticClass, "getParams", "()Ljava/security/spec/ECParameterSpec;");
+			global::java.security.spec.ECPublicKeySpec._getW23891 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPublicKeySpec.staticClass, "getW", "()Ljava/security/spec/ECPoint;");
+			global::java.security.spec.ECPublicKeySpec._ECPublicKeySpec23892 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECPublicKeySpec.staticClass, "<init>", "(Ljava/security/spec/ECPoint;Ljava/security/spec/ECParameterSpec;)V");
 		}
 	}
 }

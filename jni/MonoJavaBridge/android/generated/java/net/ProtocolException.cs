@@ -11,26 +11,26 @@ namespace java.net
 		protected ProtocolException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ProtocolException15958;
+		internal static global::MonoJavaBridge.MethodId _ProtocolException21538;
 		public ProtocolException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProtocolException.staticClass, global::java.net.ProtocolException._ProtocolException15958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProtocolException.staticClass, global::java.net.ProtocolException._ProtocolException21538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ProtocolException15959;
+		internal static global::MonoJavaBridge.MethodId _ProtocolException21539;
 		public ProtocolException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProtocolException.staticClass, global::java.net.ProtocolException._ProtocolException15959);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProtocolException.staticClass, global::java.net.ProtocolException._ProtocolException21539);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ProtocolException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ProtocolException"));
-			global::java.net.ProtocolException._ProtocolException15958 = @__env.GetMethodIDNoThrow(global::java.net.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.net.ProtocolException._ProtocolException15959 = @__env.GetMethodIDNoThrow(global::java.net.ProtocolException.staticClass, "<init>", "()V");
+			global::java.net.ProtocolException._ProtocolException21538 = @__env.GetMethodIDNoThrow(global::java.net.ProtocolException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.net.ProtocolException._ProtocolException21539 = @__env.GetMethodIDNoThrow(global::java.net.ProtocolException.staticClass, "<init>", "()V");
 		}
 	}
 }

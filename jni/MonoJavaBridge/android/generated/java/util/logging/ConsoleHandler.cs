@@ -11,38 +11,38 @@ namespace java.util.logging
 		protected ConsoleHandler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close21960;
+		internal static global::MonoJavaBridge.MethodId _close27815;
 		public override void close() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler._close21960);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler._close27815);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._close21960);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._close27815);
 		}
-		internal static global::MonoJavaBridge.MethodId _publish21961;
+		internal static global::MonoJavaBridge.MethodId _publish27816;
 		public override void publish(java.util.logging.LogRecord arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler._publish21961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler._publish27816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._publish21961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._publish27816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ConsoleHandler21962;
+		internal static global::MonoJavaBridge.MethodId _ConsoleHandler27817;
 		public ConsoleHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._ConsoleHandler21962);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._ConsoleHandler27817);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.ConsoleHandler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/ConsoleHandler"));
-			global::java.util.logging.ConsoleHandler._close21960 = @__env.GetMethodIDNoThrow(global::java.util.logging.ConsoleHandler.staticClass, "close", "()V");
-			global::java.util.logging.ConsoleHandler._publish21961 = @__env.GetMethodIDNoThrow(global::java.util.logging.ConsoleHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V");
-			global::java.util.logging.ConsoleHandler._ConsoleHandler21962 = @__env.GetMethodIDNoThrow(global::java.util.logging.ConsoleHandler.staticClass, "<init>", "()V");
+			global::java.util.logging.ConsoleHandler._close27815 = @__env.GetMethodIDNoThrow(global::java.util.logging.ConsoleHandler.staticClass, "close", "()V");
+			global::java.util.logging.ConsoleHandler._publish27816 = @__env.GetMethodIDNoThrow(global::java.util.logging.ConsoleHandler.staticClass, "publish", "(Ljava/util/logging/LogRecord;)V");
+			global::java.util.logging.ConsoleHandler._ConsoleHandler27817 = @__env.GetMethodIDNoThrow(global::java.util.logging.ConsoleHandler.staticClass, "<init>", "()V");
 		}
 	}
 }

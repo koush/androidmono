@@ -18,30 +18,30 @@ namespace android.test
 		internal PerformanceTestCase_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _startPerformance7737;
+		internal static global::MonoJavaBridge.MethodId _startPerformance12215;
 		 int android.test.PerformanceTestCase.startPerformance(android.test.PerformanceTestCase_Intermediates arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._startPerformance7737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._startPerformance12215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._startPerformance7737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._startPerformance12215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isPerformanceOnly7738;
+		internal static global::MonoJavaBridge.MethodId _isPerformanceOnly12216;
 		 bool android.test.PerformanceTestCase.isPerformanceOnly() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._isPerformanceOnly7738);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_._isPerformanceOnly12216);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._isPerformanceOnly7738);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._isPerformanceOnly12216);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.PerformanceTestCase_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/PerformanceTestCase"));
-			global::android.test.PerformanceTestCase_._startPerformance7737 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "startPerformance", "(Landroid/test/PerformanceTestCase$Intermediates;)I");
-			global::android.test.PerformanceTestCase_._isPerformanceOnly7738 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "isPerformanceOnly", "()Z");
+			global::android.test.PerformanceTestCase_._startPerformance12215 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "startPerformance", "(Landroid/test/PerformanceTestCase$Intermediates;)I");
+			global::android.test.PerformanceTestCase_._isPerformanceOnly12216 = @__env.GetMethodIDNoThrow(global::android.test.PerformanceTestCase_.staticClass, "isPerformanceOnly", "()Z");
 		}
 	}
 }

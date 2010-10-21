@@ -11,24 +11,24 @@ namespace org.xml.sax.helpers
 		internal XMLReaderFactory(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createXMLReader28437;
+		internal static global::MonoJavaBridge.MethodId _createXMLReader35190;
 		public static global::org.xml.sax.XMLReader createXMLReader() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLReader>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.XMLReaderFactory.staticClass, global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader28437)) as org.xml.sax.XMLReader;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLReader>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.XMLReaderFactory.staticClass, global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader35190)) as org.xml.sax.XMLReader;
 		}
-		internal static global::MonoJavaBridge.MethodId _createXMLReader28438;
+		internal static global::MonoJavaBridge.MethodId _createXMLReader35191;
 		public static global::org.xml.sax.XMLReader createXMLReader(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLReader>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.XMLReaderFactory.staticClass, global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader28438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.XMLReader;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLReader>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.XMLReaderFactory.staticClass, global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader35191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.XMLReader;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.helpers.XMLReaderFactory.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/helpers/XMLReaderFactory"));
-			global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader28437 = @__env.GetStaticMethodIDNoThrow(global::org.xml.sax.helpers.XMLReaderFactory.staticClass, "createXMLReader", "()Lorg/xml/sax/XMLReader;");
-			global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader28438 = @__env.GetStaticMethodIDNoThrow(global::org.xml.sax.helpers.XMLReaderFactory.staticClass, "createXMLReader", "(Ljava/lang/String;)Lorg/xml/sax/XMLReader;");
+			global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader35190 = @__env.GetStaticMethodIDNoThrow(global::org.xml.sax.helpers.XMLReaderFactory.staticClass, "createXMLReader", "()Lorg/xml/sax/XMLReader;");
+			global::org.xml.sax.helpers.XMLReaderFactory._createXMLReader35191 = @__env.GetStaticMethodIDNoThrow(global::org.xml.sax.helpers.XMLReaderFactory.staticClass, "createXMLReader", "(Ljava/lang/String;)Lorg/xml/sax/XMLReader;");
 		}
 	}
 }

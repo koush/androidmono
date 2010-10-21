@@ -11,26 +11,26 @@ namespace java.lang
 		protected ClassFormatError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ClassFormatError14414;
+		internal static global::MonoJavaBridge.MethodId _ClassFormatError19920;
 		public ClassFormatError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassFormatError.staticClass, global::java.lang.ClassFormatError._ClassFormatError14414);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassFormatError.staticClass, global::java.lang.ClassFormatError._ClassFormatError19920);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ClassFormatError14415;
+		internal static global::MonoJavaBridge.MethodId _ClassFormatError19921;
 		public ClassFormatError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassFormatError.staticClass, global::java.lang.ClassFormatError._ClassFormatError14415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassFormatError.staticClass, global::java.lang.ClassFormatError._ClassFormatError19921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ClassFormatError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ClassFormatError"));
-			global::java.lang.ClassFormatError._ClassFormatError14414 = @__env.GetMethodIDNoThrow(global::java.lang.ClassFormatError.staticClass, "<init>", "()V");
-			global::java.lang.ClassFormatError._ClassFormatError14415 = @__env.GetMethodIDNoThrow(global::java.lang.ClassFormatError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.ClassFormatError._ClassFormatError19920 = @__env.GetMethodIDNoThrow(global::java.lang.ClassFormatError.staticClass, "<init>", "()V");
+			global::java.lang.ClassFormatError._ClassFormatError19921 = @__env.GetMethodIDNoThrow(global::java.lang.ClassFormatError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

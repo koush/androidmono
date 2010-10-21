@@ -11,18 +11,18 @@ namespace android.graphics
 		protected ComposePathEffect(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ComposePathEffect3302;
+		internal static global::MonoJavaBridge.MethodId _ComposePathEffect5239;
 		public ComposePathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ComposePathEffect.staticClass, global::android.graphics.ComposePathEffect._ComposePathEffect3302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ComposePathEffect.staticClass, global::android.graphics.ComposePathEffect._ComposePathEffect5239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ComposePathEffect.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ComposePathEffect"));
-			global::android.graphics.ComposePathEffect._ComposePathEffect3302 = @__env.GetMethodIDNoThrow(global::android.graphics.ComposePathEffect.staticClass, "<init>", "(Landroid/graphics/PathEffect;Landroid/graphics/PathEffect;)V");
+			global::android.graphics.ComposePathEffect._ComposePathEffect5239 = @__env.GetMethodIDNoThrow(global::android.graphics.ComposePathEffect.staticClass, "<init>", "(Landroid/graphics/PathEffect;Landroid/graphics/PathEffect;)V");
 		}
 	}
 }

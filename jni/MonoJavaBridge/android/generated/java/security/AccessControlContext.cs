@@ -11,32 +11,32 @@ namespace java.security
 		internal AccessControlContext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals17111;
+		internal static global::MonoJavaBridge.MethodId _equals22709;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.AccessControlContext._equals17111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.AccessControlContext._equals22709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._equals17111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._equals22709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode17112;
+		internal static global::MonoJavaBridge.MethodId _hashCode22710;
 		public sealed override int hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.AccessControlContext._hashCode17112);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.AccessControlContext._hashCode22710);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._hashCode17112);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._hashCode22710);
 		}
-		internal static global::MonoJavaBridge.MethodId _checkPermission17113;
+		internal static global::MonoJavaBridge.MethodId _checkPermission22711;
 		public void checkPermission(java.security.Permission arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.security.AccessControlContext._checkPermission17113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.security.AccessControlContext._checkPermission22711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._checkPermission17113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._checkPermission22711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.security.DomainCombiner DomainCombiner
 		{
@@ -45,39 +45,39 @@ namespace java.security
 				return getDomainCombiner();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDomainCombiner17114;
+		internal static global::MonoJavaBridge.MethodId _getDomainCombiner22712;
 		public global::java.security.DomainCombiner getDomainCombiner() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.DomainCombiner>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.AccessControlContext._getDomainCombiner17114)) as java.security.DomainCombiner;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.DomainCombiner>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.AccessControlContext._getDomainCombiner22712)) as java.security.DomainCombiner;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.DomainCombiner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._getDomainCombiner17114)) as java.security.DomainCombiner;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.DomainCombiner>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._getDomainCombiner22712)) as java.security.DomainCombiner;
 		}
-		internal static global::MonoJavaBridge.MethodId _AccessControlContext17115;
+		internal static global::MonoJavaBridge.MethodId _AccessControlContext22713;
 		public AccessControlContext(java.security.ProtectionDomain[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._AccessControlContext17115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._AccessControlContext22713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AccessControlContext17116;
+		internal static global::MonoJavaBridge.MethodId _AccessControlContext22714;
 		public AccessControlContext(java.security.AccessControlContext arg0, java.security.DomainCombiner arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._AccessControlContext17116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlContext.staticClass, global::java.security.AccessControlContext._AccessControlContext22714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.AccessControlContext.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/AccessControlContext"));
-			global::java.security.AccessControlContext._equals17111 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.security.AccessControlContext._hashCode17112 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "hashCode", "()I");
-			global::java.security.AccessControlContext._checkPermission17113 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "checkPermission", "(Ljava/security/Permission;)V");
-			global::java.security.AccessControlContext._getDomainCombiner17114 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "getDomainCombiner", "()Ljava/security/DomainCombiner;");
-			global::java.security.AccessControlContext._AccessControlContext17115 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "<init>", "([Ljava/security/ProtectionDomain;)V");
-			global::java.security.AccessControlContext._AccessControlContext17116 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "<init>", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;)V");
+			global::java.security.AccessControlContext._equals22709 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.security.AccessControlContext._hashCode22710 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "hashCode", "()I");
+			global::java.security.AccessControlContext._checkPermission22711 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "checkPermission", "(Ljava/security/Permission;)V");
+			global::java.security.AccessControlContext._getDomainCombiner22712 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "getDomainCombiner", "()Ljava/security/DomainCombiner;");
+			global::java.security.AccessControlContext._AccessControlContext22713 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "<init>", "([Ljava/security/ProtectionDomain;)V");
+			global::java.security.AccessControlContext._AccessControlContext22714 = @__env.GetMethodIDNoThrow(global::java.security.AccessControlContext.staticClass, "<init>", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;)V");
 		}
 	}
 }

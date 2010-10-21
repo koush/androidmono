@@ -18,11 +18,11 @@ namespace android.net
 				return getMobileTxPackets();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMobileTxPackets5255;
+		internal static global::MonoJavaBridge.MethodId _getMobileTxPackets7729;
 		public static long getMobileTxPackets() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileTxPackets5255);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileTxPackets7729);
 		}
 		public static long MobileRxPackets
 		{
@@ -31,11 +31,11 @@ namespace android.net
 				return getMobileRxPackets();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMobileRxPackets5256;
+		internal static global::MonoJavaBridge.MethodId _getMobileRxPackets7730;
 		public static long getMobileRxPackets() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileRxPackets5256);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileRxPackets7730);
 		}
 		public static long MobileTxBytes
 		{
@@ -44,11 +44,11 @@ namespace android.net
 				return getMobileTxBytes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMobileTxBytes5257;
+		internal static global::MonoJavaBridge.MethodId _getMobileTxBytes7731;
 		public static long getMobileTxBytes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileTxBytes5257);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileTxBytes7731);
 		}
 		public static long MobileRxBytes
 		{
@@ -57,11 +57,11 @@ namespace android.net
 				return getMobileRxBytes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMobileRxBytes5258;
+		internal static global::MonoJavaBridge.MethodId _getMobileRxBytes7732;
 		public static long getMobileRxBytes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileRxBytes5258);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getMobileRxBytes7732);
 		}
 		public static long TotalTxPackets
 		{
@@ -70,11 +70,11 @@ namespace android.net
 				return getTotalTxPackets();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTotalTxPackets5259;
+		internal static global::MonoJavaBridge.MethodId _getTotalTxPackets7733;
 		public static long getTotalTxPackets() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalTxPackets5259);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalTxPackets7733);
 		}
 		public static long TotalRxPackets
 		{
@@ -83,11 +83,11 @@ namespace android.net
 				return getTotalRxPackets();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTotalRxPackets5260;
+		internal static global::MonoJavaBridge.MethodId _getTotalRxPackets7734;
 		public static long getTotalRxPackets() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalRxPackets5260);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalRxPackets7734);
 		}
 		public static long TotalTxBytes
 		{
@@ -96,11 +96,11 @@ namespace android.net
 				return getTotalTxBytes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTotalTxBytes5261;
+		internal static global::MonoJavaBridge.MethodId _getTotalTxBytes7735;
 		public static long getTotalTxBytes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalTxBytes5261);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalTxBytes7735);
 		}
 		public static long TotalRxBytes
 		{
@@ -109,29 +109,29 @@ namespace android.net
 				return getTotalRxBytes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTotalRxBytes5262;
+		internal static global::MonoJavaBridge.MethodId _getTotalRxBytes7736;
 		public static long getTotalRxBytes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalRxBytes5262);
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getTotalRxBytes7736);
 		}
-		internal static global::MonoJavaBridge.MethodId _getUidTxBytes5263;
+		internal static global::MonoJavaBridge.MethodId _getUidTxBytes7737;
 		public static long getUidTxBytes(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getUidTxBytes5263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getUidTxBytes7737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getUidRxBytes5264;
+		internal static global::MonoJavaBridge.MethodId _getUidRxBytes7738;
 		public static long getUidRxBytes(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getUidRxBytes5264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticLongMethod(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._getUidRxBytes7738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _TrafficStats5265;
+		internal static global::MonoJavaBridge.MethodId _TrafficStats7739;
 		public TrafficStats()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._TrafficStats5265);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.TrafficStats.staticClass, global::android.net.TrafficStats._TrafficStats7739);
 			Init(@__env, handle);
 		}
 		public static int UNSUPPORTED
@@ -145,17 +145,17 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.TrafficStats.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/TrafficStats"));
-			global::android.net.TrafficStats._getMobileTxPackets5255 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileTxPackets", "()J");
-			global::android.net.TrafficStats._getMobileRxPackets5256 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileRxPackets", "()J");
-			global::android.net.TrafficStats._getMobileTxBytes5257 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileTxBytes", "()J");
-			global::android.net.TrafficStats._getMobileRxBytes5258 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileRxBytes", "()J");
-			global::android.net.TrafficStats._getTotalTxPackets5259 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalTxPackets", "()J");
-			global::android.net.TrafficStats._getTotalRxPackets5260 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalRxPackets", "()J");
-			global::android.net.TrafficStats._getTotalTxBytes5261 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalTxBytes", "()J");
-			global::android.net.TrafficStats._getTotalRxBytes5262 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalRxBytes", "()J");
-			global::android.net.TrafficStats._getUidTxBytes5263 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getUidTxBytes", "(I)J");
-			global::android.net.TrafficStats._getUidRxBytes5264 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getUidRxBytes", "(I)J");
-			global::android.net.TrafficStats._TrafficStats5265 = @__env.GetMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "<init>", "()V");
+			global::android.net.TrafficStats._getMobileTxPackets7729 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileTxPackets", "()J");
+			global::android.net.TrafficStats._getMobileRxPackets7730 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileRxPackets", "()J");
+			global::android.net.TrafficStats._getMobileTxBytes7731 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileTxBytes", "()J");
+			global::android.net.TrafficStats._getMobileRxBytes7732 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getMobileRxBytes", "()J");
+			global::android.net.TrafficStats._getTotalTxPackets7733 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalTxPackets", "()J");
+			global::android.net.TrafficStats._getTotalRxPackets7734 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalRxPackets", "()J");
+			global::android.net.TrafficStats._getTotalTxBytes7735 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalTxBytes", "()J");
+			global::android.net.TrafficStats._getTotalRxBytes7736 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getTotalRxBytes", "()J");
+			global::android.net.TrafficStats._getUidTxBytes7737 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getUidTxBytes", "(I)J");
+			global::android.net.TrafficStats._getUidRxBytes7738 = @__env.GetStaticMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "getUidRxBytes", "(I)J");
+			global::android.net.TrafficStats._TrafficStats7739 = @__env.GetMethodIDNoThrow(global::android.net.TrafficStats.staticClass, "<init>", "()V");
 		}
 	}
 }

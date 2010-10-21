@@ -11,86 +11,86 @@ namespace android.view
 		protected SurfaceView(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _draw9620;
+		internal static global::MonoJavaBridge.MethodId _draw14519;
 		public override void draw(android.graphics.Canvas arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._draw9620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._draw14519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._draw9620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._draw14519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow9621;
+		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow14520;
 		protected override void onAttachedToWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onAttachedToWindow9621);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onAttachedToWindow14520);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onAttachedToWindow9621);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onAttachedToWindow14520);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow9622;
+		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow14521;
 		protected override void onDetachedFromWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onDetachedFromWindow9622);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onDetachedFromWindow14521);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onDetachedFromWindow9622);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onDetachedFromWindow14521);
 		}
-		internal static global::MonoJavaBridge.MethodId _setVisibility9623;
+		internal static global::MonoJavaBridge.MethodId _setVisibility14522;
 		public override void setVisibility(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._setVisibility9623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._setVisibility14522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._setVisibility9623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._setVisibility14522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onWindowVisibilityChanged9624;
+		internal static global::MonoJavaBridge.MethodId _onWindowVisibilityChanged14523;
 		protected override void onWindowVisibilityChanged(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onWindowVisibilityChanged9624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onWindowVisibilityChanged14523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onWindowVisibilityChanged9624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onWindowVisibilityChanged14523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSizeChanged9625;
+		internal static global::MonoJavaBridge.MethodId _onSizeChanged14524;
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onSizeChanged9625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onSizeChanged14524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onSizeChanged9625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onSizeChanged14524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchDraw9626;
+		internal static global::MonoJavaBridge.MethodId _dispatchDraw14525;
 		protected override void dispatchDraw(android.graphics.Canvas arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._dispatchDraw9626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._dispatchDraw14525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._dispatchDraw9626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._dispatchDraw14525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure9627;
+		internal static global::MonoJavaBridge.MethodId _onMeasure14526;
 		protected override void onMeasure(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onMeasure9627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._onMeasure14526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onMeasure9627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._onMeasure14526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _gatherTransparentRegion9628;
+		internal static global::MonoJavaBridge.MethodId _gatherTransparentRegion14527;
 		public virtual bool gatherTransparentRegion(android.graphics.Region arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.SurfaceView._gatherTransparentRegion9628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.SurfaceView._gatherTransparentRegion14527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._gatherTransparentRegion9628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._gatherTransparentRegion14527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.view.SurfaceHolder Holder
 		{
@@ -99,73 +99,73 @@ namespace android.view
 				return getHolder();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHolder9629;
+		internal static global::MonoJavaBridge.MethodId _getHolder14528;
 		public virtual global::android.view.SurfaceHolder getHolder() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SurfaceHolder>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SurfaceView._getHolder9629)) as android.view.SurfaceHolder;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SurfaceHolder>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SurfaceView._getHolder14528)) as android.view.SurfaceHolder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SurfaceHolder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._getHolder9629)) as android.view.SurfaceHolder;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.SurfaceHolder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._getHolder14528)) as android.view.SurfaceHolder;
 		}
-		internal static global::MonoJavaBridge.MethodId _setZOrderMediaOverlay9630;
+		internal static global::MonoJavaBridge.MethodId _setZOrderMediaOverlay14529;
 		public virtual void setZOrderMediaOverlay(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._setZOrderMediaOverlay9630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._setZOrderMediaOverlay14529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._setZOrderMediaOverlay9630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._setZOrderMediaOverlay14529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setZOrderOnTop9631;
+		internal static global::MonoJavaBridge.MethodId _setZOrderOnTop14530;
 		public virtual void setZOrderOnTop(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._setZOrderOnTop9631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.SurfaceView._setZOrderOnTop14530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._setZOrderOnTop9631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceView.staticClass, global::android.view.SurfaceView._setZOrderOnTop14530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _SurfaceView9632;
+		internal static global::MonoJavaBridge.MethodId _SurfaceView14531;
 		public SurfaceView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView9632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView14531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SurfaceView9633;
+		internal static global::MonoJavaBridge.MethodId _SurfaceView14532;
 		public SurfaceView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView9633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView14532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _SurfaceView9634;
+		internal static global::MonoJavaBridge.MethodId _SurfaceView14533;
 		public SurfaceView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView9634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceView.staticClass, global::android.view.SurfaceView._SurfaceView14533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.SurfaceView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/SurfaceView"));
-			global::android.view.SurfaceView._draw9620 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.view.SurfaceView._onAttachedToWindow9621 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onAttachedToWindow", "()V");
-			global::android.view.SurfaceView._onDetachedFromWindow9622 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onDetachedFromWindow", "()V");
-			global::android.view.SurfaceView._setVisibility9623 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "setVisibility", "(I)V");
-			global::android.view.SurfaceView._onWindowVisibilityChanged9624 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onWindowVisibilityChanged", "(I)V");
-			global::android.view.SurfaceView._onSizeChanged9625 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onSizeChanged", "(IIII)V");
-			global::android.view.SurfaceView._dispatchDraw9626 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "dispatchDraw", "(Landroid/graphics/Canvas;)V");
-			global::android.view.SurfaceView._onMeasure9627 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onMeasure", "(II)V");
-			global::android.view.SurfaceView._gatherTransparentRegion9628 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "gatherTransparentRegion", "(Landroid/graphics/Region;)Z");
-			global::android.view.SurfaceView._getHolder9629 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "getHolder", "()Landroid/view/SurfaceHolder;");
-			global::android.view.SurfaceView._setZOrderMediaOverlay9630 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "setZOrderMediaOverlay", "(Z)V");
-			global::android.view.SurfaceView._setZOrderOnTop9631 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "setZOrderOnTop", "(Z)V");
-			global::android.view.SurfaceView._SurfaceView9632 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.view.SurfaceView._SurfaceView9633 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.view.SurfaceView._SurfaceView9634 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.view.SurfaceView._draw14519 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.view.SurfaceView._onAttachedToWindow14520 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onAttachedToWindow", "()V");
+			global::android.view.SurfaceView._onDetachedFromWindow14521 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onDetachedFromWindow", "()V");
+			global::android.view.SurfaceView._setVisibility14522 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "setVisibility", "(I)V");
+			global::android.view.SurfaceView._onWindowVisibilityChanged14523 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onWindowVisibilityChanged", "(I)V");
+			global::android.view.SurfaceView._onSizeChanged14524 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onSizeChanged", "(IIII)V");
+			global::android.view.SurfaceView._dispatchDraw14525 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "dispatchDraw", "(Landroid/graphics/Canvas;)V");
+			global::android.view.SurfaceView._onMeasure14526 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "onMeasure", "(II)V");
+			global::android.view.SurfaceView._gatherTransparentRegion14527 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "gatherTransparentRegion", "(Landroid/graphics/Region;)Z");
+			global::android.view.SurfaceView._getHolder14528 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "getHolder", "()Landroid/view/SurfaceHolder;");
+			global::android.view.SurfaceView._setZOrderMediaOverlay14529 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "setZOrderMediaOverlay", "(Z)V");
+			global::android.view.SurfaceView._setZOrderOnTop14530 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "setZOrderOnTop", "(Z)V");
+			global::android.view.SurfaceView._SurfaceView14531 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.view.SurfaceView._SurfaceView14532 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.SurfaceView._SurfaceView14533 = @__env.GetMethodIDNoThrow(global::android.view.SurfaceView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

@@ -18,32 +18,32 @@ namespace android.test
 				return getLoader();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLoader7673;
+		internal static global::MonoJavaBridge.MethodId _getLoader12141;
 		public virtual global::java.lang.ClassLoader getLoader() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getLoader7673)) as java.lang.ClassLoader;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getLoader12141)) as java.lang.ClassLoader;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getLoader7673)) as java.lang.ClassLoader;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getLoader12141)) as java.lang.ClassLoader;
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreate7674;
+		internal static global::MonoJavaBridge.MethodId _onCreate12142;
 		public override void onCreate(android.os.Bundle arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._onCreate7674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._onCreate12142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onCreate7674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onCreate12142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onStart7675;
+		internal static global::MonoJavaBridge.MethodId _onStart12143;
 		public override void onStart() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._onStart7675);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._onStart12143);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onStart7675);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onStart12143);
 		}
 		protected new global::android.test.AndroidTestRunner AndroidTestRunner
 		{
@@ -52,14 +52,14 @@ namespace android.test
 				return getAndroidTestRunner();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAndroidTestRunner7676;
+		internal static global::MonoJavaBridge.MethodId _getAndroidTestRunner12144;
 		protected virtual global::android.test.AndroidTestRunner getAndroidTestRunner() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getAndroidTestRunner7676)) as android.test.AndroidTestRunner;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getAndroidTestRunner12144)) as android.test.AndroidTestRunner;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAndroidTestRunner7676)) as android.test.AndroidTestRunner;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAndroidTestRunner12144)) as android.test.AndroidTestRunner;
 		}
 		public new global::junit.framework.TestSuite TestSuite
 		{
@@ -68,14 +68,14 @@ namespace android.test
 				return getTestSuite();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTestSuite7677;
+		internal static global::MonoJavaBridge.MethodId _getTestSuite12145;
 		public virtual global::junit.framework.TestSuite getTestSuite() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getTestSuite7677)) as junit.framework.TestSuite;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getTestSuite12145)) as junit.framework.TestSuite;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getTestSuite7677)) as junit.framework.TestSuite;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getTestSuite12145)) as junit.framework.TestSuite;
 		}
 		public new global::junit.framework.TestSuite AllTests
 		{
@@ -84,20 +84,20 @@ namespace android.test
 				return getAllTests();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAllTests7678;
+		internal static global::MonoJavaBridge.MethodId _getAllTests12146;
 		public virtual global::junit.framework.TestSuite getAllTests() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getAllTests7678)) as junit.framework.TestSuite;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner._getAllTests12146)) as junit.framework.TestSuite;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAllTests7678)) as junit.framework.TestSuite;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAllTests12146)) as junit.framework.TestSuite;
 		}
-		internal static global::MonoJavaBridge.MethodId _InstrumentationTestRunner7679;
+		internal static global::MonoJavaBridge.MethodId _InstrumentationTestRunner12147;
 		public InstrumentationTestRunner()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._InstrumentationTestRunner7679);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._InstrumentationTestRunner12147);
 			Init(@__env, handle);
 		}
 		public static global::java.lang.String REPORT_VALUE_ID
@@ -174,13 +174,13 @@ namespace android.test
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.InstrumentationTestRunner.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/InstrumentationTestRunner"));
-			global::android.test.InstrumentationTestRunner._getLoader7673 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getLoader", "()Ljava/lang/ClassLoader;");
-			global::android.test.InstrumentationTestRunner._onCreate7674 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.test.InstrumentationTestRunner._onStart7675 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "onStart", "()V");
-			global::android.test.InstrumentationTestRunner._getAndroidTestRunner7676 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAndroidTestRunner", "()Landroid/test/AndroidTestRunner;");
-			global::android.test.InstrumentationTestRunner._getTestSuite7677 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
-			global::android.test.InstrumentationTestRunner._getAllTests7678 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAllTests", "()Ljunit/framework/TestSuite;");
-			global::android.test.InstrumentationTestRunner._InstrumentationTestRunner7679 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "<init>", "()V");
+			global::android.test.InstrumentationTestRunner._getLoader12141 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getLoader", "()Ljava/lang/ClassLoader;");
+			global::android.test.InstrumentationTestRunner._onCreate12142 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
+			global::android.test.InstrumentationTestRunner._onStart12143 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "onStart", "()V");
+			global::android.test.InstrumentationTestRunner._getAndroidTestRunner12144 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAndroidTestRunner", "()Landroid/test/AndroidTestRunner;");
+			global::android.test.InstrumentationTestRunner._getTestSuite12145 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
+			global::android.test.InstrumentationTestRunner._getAllTests12146 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "getAllTests", "()Ljunit/framework/TestSuite;");
+			global::android.test.InstrumentationTestRunner._InstrumentationTestRunner12147 = @__env.GetMethodIDNoThrow(global::android.test.InstrumentationTestRunner.staticClass, "<init>", "()V");
 		}
 	}
 }

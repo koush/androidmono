@@ -17,20 +17,20 @@ namespace javax.security.auth.callback
 		internal CallbackHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _handle23648;
+		internal static global::MonoJavaBridge.MethodId _handle30079;
 		 void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_._handle23648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_._handle30079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_.staticClass, global::javax.security.auth.callback.CallbackHandler_._handle23648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.callback.CallbackHandler_.staticClass, global::javax.security.auth.callback.CallbackHandler_._handle30079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.callback.CallbackHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/callback/CallbackHandler"));
-			global::javax.security.auth.callback.CallbackHandler_._handle23648 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V");
+			global::javax.security.auth.callback.CallbackHandler_._handle30079 = @__env.GetMethodIDNoThrow(global::javax.security.auth.callback.CallbackHandler_.staticClass, "handle", "([Ljavax/security/auth/callback/Callback;)V");
 		}
 	}
 }

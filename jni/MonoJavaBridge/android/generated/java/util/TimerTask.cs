@@ -11,41 +11,41 @@ namespace java.util
 		protected TimerTask(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run20925;
+		internal static global::MonoJavaBridge.MethodId _run26755;
 		public abstract void run();
-		internal static global::MonoJavaBridge.MethodId _cancel20926;
+		internal static global::MonoJavaBridge.MethodId _cancel26756;
 		public virtual bool cancel() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimerTask._cancel20926);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.TimerTask._cancel26756);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TimerTask.staticClass, global::java.util.TimerTask._cancel20926);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.TimerTask.staticClass, global::java.util.TimerTask._cancel26756);
 		}
-		internal static global::MonoJavaBridge.MethodId _scheduledExecutionTime20927;
+		internal static global::MonoJavaBridge.MethodId _scheduledExecutionTime26757;
 		public virtual long scheduledExecutionTime() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.TimerTask._scheduledExecutionTime20927);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.TimerTask._scheduledExecutionTime26757);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.TimerTask.staticClass, global::java.util.TimerTask._scheduledExecutionTime20927);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.TimerTask.staticClass, global::java.util.TimerTask._scheduledExecutionTime26757);
 		}
-		internal static global::MonoJavaBridge.MethodId _TimerTask20928;
+		internal static global::MonoJavaBridge.MethodId _TimerTask26758;
 		protected TimerTask()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TimerTask.staticClass, global::java.util.TimerTask._TimerTask20928);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TimerTask.staticClass, global::java.util.TimerTask._TimerTask26758);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TimerTask.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimerTask"));
-			global::java.util.TimerTask._run20925 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "run", "()V");
-			global::java.util.TimerTask._cancel20926 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "cancel", "()Z");
-			global::java.util.TimerTask._scheduledExecutionTime20927 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "scheduledExecutionTime", "()J");
-			global::java.util.TimerTask._TimerTask20928 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "<init>", "()V");
+			global::java.util.TimerTask._run26755 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "run", "()V");
+			global::java.util.TimerTask._cancel26756 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "cancel", "()Z");
+			global::java.util.TimerTask._scheduledExecutionTime26757 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "scheduledExecutionTime", "()J");
+			global::java.util.TimerTask._TimerTask26758 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask.staticClass, "<init>", "()V");
 		}
 	}
 
@@ -60,20 +60,20 @@ namespace java.util
 		internal TimerTask_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run20929;
+		internal static global::MonoJavaBridge.MethodId _run26759;
 		public override void run() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.TimerTask_._run20929);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.TimerTask_._run26759);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.TimerTask_.staticClass, global::java.util.TimerTask_._run20929);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.TimerTask_.staticClass, global::java.util.TimerTask_._run26759);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.TimerTask_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/TimerTask"));
-			global::java.util.TimerTask_._run20929 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask_.staticClass, "run", "()V");
+			global::java.util.TimerTask_._run26759 = @__env.GetMethodIDNoThrow(global::java.util.TimerTask_.staticClass, "run", "()V");
 		}
 	}
 }

@@ -11,47 +11,47 @@ namespace org.apache.http.conn.@params
 		internal ConnManagerParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setTimeout25478;
+		internal static global::MonoJavaBridge.MethodId _setTimeout32064;
 		public static void setTimeout(org.apache.http.@params.HttpParams arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._setTimeout25478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._setTimeout32064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxTotalConnections25479;
+		internal static global::MonoJavaBridge.MethodId _setMaxTotalConnections32065;
 		public static void setMaxTotalConnections(org.apache.http.@params.HttpParams arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._setMaxTotalConnections25479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._setMaxTotalConnections32065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTimeout25480;
+		internal static global::MonoJavaBridge.MethodId _getTimeout32066;
 		public static long getTimeout(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._getTimeout25480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticLongMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._getTimeout32066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaxConnectionsPerRoute25481;
+		internal static global::MonoJavaBridge.MethodId _setMaxConnectionsPerRoute32067;
 		public static void setMaxConnectionsPerRoute(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.@params.ConnPerRoute arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._setMaxConnectionsPerRoute25481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._setMaxConnectionsPerRoute32067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxConnectionsPerRoute25482;
+		internal static global::MonoJavaBridge.MethodId _getMaxConnectionsPerRoute32068;
 		public static global::org.apache.http.conn.@params.ConnPerRoute getMaxConnectionsPerRoute(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.@params.ConnPerRoute>(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._getMaxConnectionsPerRoute25482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.@params.ConnPerRoute;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.@params.ConnPerRoute>(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._getMaxConnectionsPerRoute32068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.@params.ConnPerRoute;
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaxTotalConnections25483;
+		internal static global::MonoJavaBridge.MethodId _getMaxTotalConnections32069;
 		public static int getMaxTotalConnections(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._getMaxTotalConnections25483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticIntMethod(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._getMaxTotalConnections32069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ConnManagerParams25484;
+		internal static global::MonoJavaBridge.MethodId _ConnManagerParams32070;
 		public ConnManagerParams()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._ConnManagerParams25484);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnManagerParams.staticClass, global::org.apache.http.conn.@params.ConnManagerParams._ConnManagerParams32070);
 			Init(@__env, handle);
 		}
 		public static int DEFAULT_MAX_TOTAL_CONNECTIONS
@@ -65,13 +65,13 @@ namespace org.apache.http.conn.@params
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.@params.ConnManagerParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/@params/ConnManagerParams"));
-			global::org.apache.http.conn.@params.ConnManagerParams._setTimeout25478 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "setTimeout", "(Lorg/apache/http/@params/HttpParams;J)V");
-			global::org.apache.http.conn.@params.ConnManagerParams._setMaxTotalConnections25479 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "setMaxTotalConnections", "(Lorg/apache/http/@params/HttpParams;I)V");
-			global::org.apache.http.conn.@params.ConnManagerParams._getTimeout25480 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getTimeout", "(Lorg/apache/http/@params/HttpParams;)J");
-			global::org.apache.http.conn.@params.ConnManagerParams._setMaxConnectionsPerRoute25481 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "setMaxConnectionsPerRoute", "(Lorg/apache/http/@params/HttpParams;Lorg/apache/http/conn/@params/ConnPerRoute;)V");
-			global::org.apache.http.conn.@params.ConnManagerParams._getMaxConnectionsPerRoute25482 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getMaxConnectionsPerRoute", "(Lorg/apache/http/@params/HttpParams;)Lorg/apache/http/conn/@params/ConnPerRoute;");
-			global::org.apache.http.conn.@params.ConnManagerParams._getMaxTotalConnections25483 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getMaxTotalConnections", "(Lorg/apache/http/@params/HttpParams;)I");
-			global::org.apache.http.conn.@params.ConnManagerParams._ConnManagerParams25484 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "<init>", "()V");
+			global::org.apache.http.conn.@params.ConnManagerParams._setTimeout32064 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "setTimeout", "(Lorg/apache/http/@params/HttpParams;J)V");
+			global::org.apache.http.conn.@params.ConnManagerParams._setMaxTotalConnections32065 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "setMaxTotalConnections", "(Lorg/apache/http/@params/HttpParams;I)V");
+			global::org.apache.http.conn.@params.ConnManagerParams._getTimeout32066 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getTimeout", "(Lorg/apache/http/@params/HttpParams;)J");
+			global::org.apache.http.conn.@params.ConnManagerParams._setMaxConnectionsPerRoute32067 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "setMaxConnectionsPerRoute", "(Lorg/apache/http/@params/HttpParams;Lorg/apache/http/conn/@params/ConnPerRoute;)V");
+			global::org.apache.http.conn.@params.ConnManagerParams._getMaxConnectionsPerRoute32068 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getMaxConnectionsPerRoute", "(Lorg/apache/http/@params/HttpParams;)Lorg/apache/http/conn/@params/ConnPerRoute;");
+			global::org.apache.http.conn.@params.ConnManagerParams._getMaxTotalConnections32069 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "getMaxTotalConnections", "(Lorg/apache/http/@params/HttpParams;)I");
+			global::org.apache.http.conn.@params.ConnManagerParams._ConnManagerParams32070 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.@params.ConnManagerParams.staticClass, "<init>", "()V");
 		}
 	}
 }

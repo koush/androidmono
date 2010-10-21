@@ -18,28 +18,28 @@ namespace java.beans
 				return getIndex();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIndex13184;
+		internal static global::MonoJavaBridge.MethodId _getIndex18655;
 		public virtual int getIndex() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent._getIndex13184);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent._getIndex18655);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._getIndex13184);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._getIndex18655);
 		}
-		internal static global::MonoJavaBridge.MethodId _IndexedPropertyChangeEvent13185;
+		internal static global::MonoJavaBridge.MethodId _IndexedPropertyChangeEvent18656;
 		public IndexedPropertyChangeEvent(java.lang.Object arg0, java.lang.String arg1, java.lang.Object arg2, java.lang.Object arg3, int arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._IndexedPropertyChangeEvent13185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._IndexedPropertyChangeEvent18656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.beans.IndexedPropertyChangeEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/beans/IndexedPropertyChangeEvent"));
-			global::java.beans.IndexedPropertyChangeEvent._getIndex13184 = @__env.GetMethodIDNoThrow(global::java.beans.IndexedPropertyChangeEvent.staticClass, "getIndex", "()I");
-			global::java.beans.IndexedPropertyChangeEvent._IndexedPropertyChangeEvent13185 = @__env.GetMethodIDNoThrow(global::java.beans.IndexedPropertyChangeEvent.staticClass, "<init>", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;I)V");
+			global::java.beans.IndexedPropertyChangeEvent._getIndex18655 = @__env.GetMethodIDNoThrow(global::java.beans.IndexedPropertyChangeEvent.staticClass, "getIndex", "()I");
+			global::java.beans.IndexedPropertyChangeEvent._IndexedPropertyChangeEvent18656 = @__env.GetMethodIDNoThrow(global::java.beans.IndexedPropertyChangeEvent.staticClass, "<init>", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;I)V");
 		}
 	}
 }

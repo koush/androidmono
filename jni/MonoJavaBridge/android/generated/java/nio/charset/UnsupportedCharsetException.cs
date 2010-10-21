@@ -18,28 +18,28 @@ namespace java.nio.charset
 				return getCharsetName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCharsetName17104;
+		internal static global::MonoJavaBridge.MethodId _getCharsetName22702;
 		public virtual global::java.lang.String getCharsetName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.UnsupportedCharsetException._getCharsetName17104)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.charset.UnsupportedCharsetException._getCharsetName22702)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.UnsupportedCharsetException.staticClass, global::java.nio.charset.UnsupportedCharsetException._getCharsetName17104)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.UnsupportedCharsetException.staticClass, global::java.nio.charset.UnsupportedCharsetException._getCharsetName22702)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _UnsupportedCharsetException17105;
+		internal static global::MonoJavaBridge.MethodId _UnsupportedCharsetException22703;
 		public UnsupportedCharsetException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.UnsupportedCharsetException.staticClass, global::java.nio.charset.UnsupportedCharsetException._UnsupportedCharsetException17105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.UnsupportedCharsetException.staticClass, global::java.nio.charset.UnsupportedCharsetException._UnsupportedCharsetException22703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.UnsupportedCharsetException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/UnsupportedCharsetException"));
-			global::java.nio.charset.UnsupportedCharsetException._getCharsetName17104 = @__env.GetMethodIDNoThrow(global::java.nio.charset.UnsupportedCharsetException.staticClass, "getCharsetName", "()Ljava/lang/String;");
-			global::java.nio.charset.UnsupportedCharsetException._UnsupportedCharsetException17105 = @__env.GetMethodIDNoThrow(global::java.nio.charset.UnsupportedCharsetException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.nio.charset.UnsupportedCharsetException._getCharsetName22702 = @__env.GetMethodIDNoThrow(global::java.nio.charset.UnsupportedCharsetException.staticClass, "getCharsetName", "()Ljava/lang/String;");
+			global::java.nio.charset.UnsupportedCharsetException._UnsupportedCharsetException22703 = @__env.GetMethodIDNoThrow(global::java.nio.charset.UnsupportedCharsetException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

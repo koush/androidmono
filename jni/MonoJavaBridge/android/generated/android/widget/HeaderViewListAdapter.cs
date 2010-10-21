@@ -11,23 +11,23 @@ namespace android.widget
 		protected HeaderViewListAdapter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isEmpty11918;
+		internal static global::MonoJavaBridge.MethodId _isEmpty17078;
 		public virtual bool isEmpty() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._isEmpty11918);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._isEmpty17078);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._isEmpty11918);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._isEmpty17078);
 		}
-		internal static global::MonoJavaBridge.MethodId _isEnabled11919;
+		internal static global::MonoJavaBridge.MethodId _isEnabled17079;
 		public virtual bool isEnabled(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._isEnabled11919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._isEnabled17079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._isEnabled11919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._isEnabled17079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Count
 		{
@@ -36,50 +36,50 @@ namespace android.widget
 				return getCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCount11920;
+		internal static global::MonoJavaBridge.MethodId _getCount17080;
 		public virtual int getCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getCount11920);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getCount17080);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getCount11920);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getCount17080);
 		}
-		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver11921;
+		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver17081;
 		public virtual void registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._registerDataSetObserver11921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._registerDataSetObserver17081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._registerDataSetObserver11921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._registerDataSetObserver17081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver11922;
+		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver17082;
 		public virtual void unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._unregisterDataSetObserver11922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._unregisterDataSetObserver17082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._unregisterDataSetObserver11922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._unregisterDataSetObserver17082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getItem11923;
+		internal static global::MonoJavaBridge.MethodId _getItem17083;
 		public virtual global::java.lang.Object getItem(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getItem11923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getItem17083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getItem11923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getItem17083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemId11924;
+		internal static global::MonoJavaBridge.MethodId _getItemId17084;
 		public virtual long getItemId(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getItemId11924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getItemId17084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getItemId11924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getItemId17084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.Filter Filter
 		{
@@ -88,50 +88,50 @@ namespace android.widget
 				return getFilter();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilter11925;
+		internal static global::MonoJavaBridge.MethodId _getFilter17085;
 		public virtual global::android.widget.Filter getFilter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getFilter11925)) as android.widget.Filter;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getFilter17085)) as android.widget.Filter;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getFilter11925)) as android.widget.Filter;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getFilter17085)) as android.widget.Filter;
 		}
-		internal static global::MonoJavaBridge.MethodId _areAllItemsEnabled11926;
+		internal static global::MonoJavaBridge.MethodId _areAllItemsEnabled17086;
 		public virtual bool areAllItemsEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._areAllItemsEnabled11926);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._areAllItemsEnabled17086);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._areAllItemsEnabled11926);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._areAllItemsEnabled17086);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasStableIds11927;
+		internal static global::MonoJavaBridge.MethodId _hasStableIds17087;
 		public virtual bool hasStableIds() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._hasStableIds11927);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._hasStableIds17087);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._hasStableIds11927);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._hasStableIds17087);
 		}
-		internal static global::MonoJavaBridge.MethodId _getView11928;
+		internal static global::MonoJavaBridge.MethodId _getView17088;
 		public virtual global::android.view.View getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getView11928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getView17088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getView11928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getView17088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemViewType11929;
+		internal static global::MonoJavaBridge.MethodId _getItemViewType17089;
 		public virtual int getItemViewType(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getItemViewType11929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getItemViewType17089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getItemViewType11929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getItemViewType17089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ViewTypeCount
 		{
@@ -140,23 +140,23 @@ namespace android.widget
 				return getViewTypeCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getViewTypeCount11930;
+		internal static global::MonoJavaBridge.MethodId _getViewTypeCount17090;
 		public virtual int getViewTypeCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getViewTypeCount11930);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getViewTypeCount17090);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getViewTypeCount11930);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getViewTypeCount17090);
 		}
-		internal static global::MonoJavaBridge.MethodId _removeHeader11931;
+		internal static global::MonoJavaBridge.MethodId _removeHeader17091;
 		public virtual bool removeHeader(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._removeHeader11931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._removeHeader17091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._removeHeader11931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._removeHeader17091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int HeadersCount
 		{
@@ -165,14 +165,14 @@ namespace android.widget
 				return getHeadersCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeadersCount11932;
+		internal static global::MonoJavaBridge.MethodId _getHeadersCount17092;
 		public virtual int getHeadersCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getHeadersCount11932);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getHeadersCount17092);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getHeadersCount11932);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getHeadersCount17092);
 		}
 		public new int FootersCount
 		{
@@ -181,23 +181,23 @@ namespace android.widget
 				return getFootersCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFootersCount11933;
+		internal static global::MonoJavaBridge.MethodId _getFootersCount17093;
 		public virtual int getFootersCount() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getFootersCount11933);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getFootersCount17093);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getFootersCount11933);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getFootersCount17093);
 		}
-		internal static global::MonoJavaBridge.MethodId _removeFooter11934;
+		internal static global::MonoJavaBridge.MethodId _removeFooter17094;
 		public virtual bool removeFooter(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._removeFooter11934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._removeFooter17094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._removeFooter11934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._removeFooter17094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.widget.ListAdapter WrappedAdapter
 		{
@@ -206,45 +206,45 @@ namespace android.widget
 				return getWrappedAdapter();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWrappedAdapter11935;
+		internal static global::MonoJavaBridge.MethodId _getWrappedAdapter17095;
 		public virtual global::android.widget.ListAdapter getWrappedAdapter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getWrappedAdapter11935)) as android.widget.ListAdapter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter._getWrappedAdapter17095)) as android.widget.ListAdapter;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getWrappedAdapter11935)) as android.widget.ListAdapter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._getWrappedAdapter17095)) as android.widget.ListAdapter;
 		}
-		internal static global::MonoJavaBridge.MethodId _HeaderViewListAdapter11936;
+		internal static global::MonoJavaBridge.MethodId _HeaderViewListAdapter17096;
 		public HeaderViewListAdapter(java.util.ArrayList arg0, java.util.ArrayList arg1, android.widget.ListAdapter arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._HeaderViewListAdapter11936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.HeaderViewListAdapter.staticClass, global::android.widget.HeaderViewListAdapter._HeaderViewListAdapter17096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.HeaderViewListAdapter.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/HeaderViewListAdapter"));
-			global::android.widget.HeaderViewListAdapter._isEmpty11918 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "isEmpty", "()Z");
-			global::android.widget.HeaderViewListAdapter._isEnabled11919 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "isEnabled", "(I)Z");
-			global::android.widget.HeaderViewListAdapter._getCount11920 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getCount", "()I");
-			global::android.widget.HeaderViewListAdapter._registerDataSetObserver11921 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.widget.HeaderViewListAdapter._unregisterDataSetObserver11922 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
-			global::android.widget.HeaderViewListAdapter._getItem11923 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getItem", "(I)Ljava/lang/Object;");
-			global::android.widget.HeaderViewListAdapter._getItemId11924 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getItemId", "(I)J");
-			global::android.widget.HeaderViewListAdapter._getFilter11925 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getFilter", "()Landroid/widget/Filter;");
-			global::android.widget.HeaderViewListAdapter._areAllItemsEnabled11926 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "areAllItemsEnabled", "()Z");
-			global::android.widget.HeaderViewListAdapter._hasStableIds11927 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "hasStableIds", "()Z");
-			global::android.widget.HeaderViewListAdapter._getView11928 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
-			global::android.widget.HeaderViewListAdapter._getItemViewType11929 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getItemViewType", "(I)I");
-			global::android.widget.HeaderViewListAdapter._getViewTypeCount11930 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getViewTypeCount", "()I");
-			global::android.widget.HeaderViewListAdapter._removeHeader11931 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "removeHeader", "(Landroid/view/View;)Z");
-			global::android.widget.HeaderViewListAdapter._getHeadersCount11932 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getHeadersCount", "()I");
-			global::android.widget.HeaderViewListAdapter._getFootersCount11933 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getFootersCount", "()I");
-			global::android.widget.HeaderViewListAdapter._removeFooter11934 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "removeFooter", "(Landroid/view/View;)Z");
-			global::android.widget.HeaderViewListAdapter._getWrappedAdapter11935 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getWrappedAdapter", "()Landroid/widget/ListAdapter;");
-			global::android.widget.HeaderViewListAdapter._HeaderViewListAdapter11936 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "<init>", "(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/widget/ListAdapter;)V");
+			global::android.widget.HeaderViewListAdapter._isEmpty17078 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "isEmpty", "()Z");
+			global::android.widget.HeaderViewListAdapter._isEnabled17079 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "isEnabled", "(I)Z");
+			global::android.widget.HeaderViewListAdapter._getCount17080 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getCount", "()I");
+			global::android.widget.HeaderViewListAdapter._registerDataSetObserver17081 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "registerDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.widget.HeaderViewListAdapter._unregisterDataSetObserver17082 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V");
+			global::android.widget.HeaderViewListAdapter._getItem17083 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getItem", "(I)Ljava/lang/Object;");
+			global::android.widget.HeaderViewListAdapter._getItemId17084 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getItemId", "(I)J");
+			global::android.widget.HeaderViewListAdapter._getFilter17085 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getFilter", "()Landroid/widget/Filter;");
+			global::android.widget.HeaderViewListAdapter._areAllItemsEnabled17086 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "areAllItemsEnabled", "()Z");
+			global::android.widget.HeaderViewListAdapter._hasStableIds17087 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "hasStableIds", "()Z");
+			global::android.widget.HeaderViewListAdapter._getView17088 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+			global::android.widget.HeaderViewListAdapter._getItemViewType17089 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getItemViewType", "(I)I");
+			global::android.widget.HeaderViewListAdapter._getViewTypeCount17090 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getViewTypeCount", "()I");
+			global::android.widget.HeaderViewListAdapter._removeHeader17091 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "removeHeader", "(Landroid/view/View;)Z");
+			global::android.widget.HeaderViewListAdapter._getHeadersCount17092 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getHeadersCount", "()I");
+			global::android.widget.HeaderViewListAdapter._getFootersCount17093 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getFootersCount", "()I");
+			global::android.widget.HeaderViewListAdapter._removeFooter17094 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "removeFooter", "(Landroid/view/View;)Z");
+			global::android.widget.HeaderViewListAdapter._getWrappedAdapter17095 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "getWrappedAdapter", "()Landroid/widget/ListAdapter;");
+			global::android.widget.HeaderViewListAdapter._HeaderViewListAdapter17096 = @__env.GetMethodIDNoThrow(global::android.widget.HeaderViewListAdapter.staticClass, "<init>", "(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/widget/ListAdapter;)V");
 		}
 	}
 }

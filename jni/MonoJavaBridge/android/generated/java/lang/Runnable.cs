@@ -17,20 +17,20 @@ namespace java.lang
 		internal Runnable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run14796;
+		internal static global::MonoJavaBridge.MethodId _run20310;
 		 void java.lang.Runnable.run() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Runnable_._run14796);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Runnable_._run20310);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Runnable_.staticClass, global::java.lang.Runnable_._run14796);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Runnable_.staticClass, global::java.lang.Runnable_._run20310);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Runnable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Runnable"));
-			global::java.lang.Runnable_._run14796 = @__env.GetMethodIDNoThrow(global::java.lang.Runnable_.staticClass, "run", "()V");
+			global::java.lang.Runnable_._run20310 = @__env.GetMethodIDNoThrow(global::java.lang.Runnable_.staticClass, "run", "()V");
 		}
 	}
 }

@@ -17,20 +17,20 @@ namespace java.lang
 		internal Readable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _read14795;
+		internal static global::MonoJavaBridge.MethodId _read20309;
 		 int java.lang.Readable.read(java.nio.CharBuffer arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Readable_._read14795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.Readable_._read20309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Readable_.staticClass, global::java.lang.Readable_._read14795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Readable_.staticClass, global::java.lang.Readable_._read20309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Readable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Readable"));
-			global::java.lang.Readable_._read14795 = @__env.GetMethodIDNoThrow(global::java.lang.Readable_.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
+			global::java.lang.Readable_._read20309 = @__env.GetMethodIDNoThrow(global::java.lang.Readable_.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
 		}
 	}
 }

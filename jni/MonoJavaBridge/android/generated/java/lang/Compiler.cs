@@ -11,45 +11,45 @@ namespace java.lang
 		internal Compiler(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _compileClass14455;
+		internal static global::MonoJavaBridge.MethodId _compileClass19961;
 		public static bool compileClass(java.lang.Class arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._compileClass14455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._compileClass19961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compileClasses14456;
+		internal static global::MonoJavaBridge.MethodId _compileClasses19962;
 		public static bool compileClasses(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._compileClasses14456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._compileClasses19962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _command14457;
+		internal static global::MonoJavaBridge.MethodId _command19963;
 		public static global::java.lang.Object command(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._command14457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._command19963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _enable14458;
+		internal static global::MonoJavaBridge.MethodId _enable19964;
 		public static void enable() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._enable14458);
+			@__env.CallStaticVoidMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._enable19964);
 		}
-		internal static global::MonoJavaBridge.MethodId _disable14459;
+		internal static global::MonoJavaBridge.MethodId _disable19965;
 		public static void disable() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._disable14459);
+			@__env.CallStaticVoidMethod(java.lang.Compiler.staticClass, global::java.lang.Compiler._disable19965);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Compiler.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Compiler"));
-			global::java.lang.Compiler._compileClass14455 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "compileClass", "(Ljava/lang/Class;)Z");
-			global::java.lang.Compiler._compileClasses14456 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "compileClasses", "(Ljava/lang/String;)Z");
-			global::java.lang.Compiler._command14457 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "command", "(Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.lang.Compiler._enable14458 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "enable", "()V");
-			global::java.lang.Compiler._disable14459 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "disable", "()V");
+			global::java.lang.Compiler._compileClass19961 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "compileClass", "(Ljava/lang/Class;)Z");
+			global::java.lang.Compiler._compileClasses19962 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "compileClasses", "(Ljava/lang/String;)Z");
+			global::java.lang.Compiler._command19963 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "command", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			global::java.lang.Compiler._enable19964 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "enable", "()V");
+			global::java.lang.Compiler._disable19965 = @__env.GetStaticMethodIDNoThrow(global::java.lang.Compiler.staticClass, "disable", "()V");
 		}
 	}
 }

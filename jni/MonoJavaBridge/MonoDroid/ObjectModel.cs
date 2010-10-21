@@ -89,7 +89,10 @@ namespace MonoDroid
 				type.InterfaceTypes.AddRange(from itype in type.Interfaces select FindType(itype));
                 
                 foreach (var field in type.Fields)
+                {
                     field.FieldType = FindType(field.Type);
+                    field.ContainingType = type;
+                }
 				
 				foreach (var method in type.Methods)
 				{
@@ -196,6 +199,11 @@ namespace MonoDroid
 	
 	public class Field : Accessible
 	{
+        public Type ContainingType
+        {
+            get;set;
+        }
+        
         public Type FieldType
         {
             get;set;

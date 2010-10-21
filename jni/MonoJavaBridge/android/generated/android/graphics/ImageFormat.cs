@@ -11,17 +11,17 @@ namespace android.graphics
 		protected ImageFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getBitsPerPixel3311;
+		internal static global::MonoJavaBridge.MethodId _getBitsPerPixel5248;
 		public static int getBitsPerPixel(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel3311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel5248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _ImageFormat3312;
+		internal static global::MonoJavaBridge.MethodId _ImageFormat5249;
 		public ImageFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat3312);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat5249);
 			Init(@__env, handle);
 		}
 		public static int UNKNOWN
@@ -70,8 +70,8 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.graphics.ImageFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/graphics/ImageFormat"));
-			global::android.graphics.ImageFormat._getBitsPerPixel3311 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
-			global::android.graphics.ImageFormat._ImageFormat3312 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
+			global::android.graphics.ImageFormat._getBitsPerPixel5248 = @__env.GetStaticMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "getBitsPerPixel", "(I)I");
+			global::android.graphics.ImageFormat._ImageFormat5249 = @__env.GetMethodIDNoThrow(global::android.graphics.ImageFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

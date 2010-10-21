@@ -11,26 +11,26 @@ namespace java.util.concurrent
 		protected BrokenBarrierException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _BrokenBarrierException21151;
+		internal static global::MonoJavaBridge.MethodId _BrokenBarrierException26981;
 		public BrokenBarrierException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.BrokenBarrierException.staticClass, global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException21151);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.BrokenBarrierException.staticClass, global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException26981);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BrokenBarrierException21152;
+		internal static global::MonoJavaBridge.MethodId _BrokenBarrierException26982;
 		public BrokenBarrierException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.BrokenBarrierException.staticClass, global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException21152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.BrokenBarrierException.staticClass, global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException26982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.BrokenBarrierException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/BrokenBarrierException"));
-			global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException21151 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BrokenBarrierException.staticClass, "<init>", "()V");
-			global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException21152 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BrokenBarrierException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException26981 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BrokenBarrierException.staticClass, "<init>", "()V");
+			global::java.util.concurrent.BrokenBarrierException._BrokenBarrierException26982 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.BrokenBarrierException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

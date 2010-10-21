@@ -11,26 +11,26 @@ namespace java.util
 		protected ConcurrentModificationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ConcurrentModificationException20139;
+		internal static global::MonoJavaBridge.MethodId _ConcurrentModificationException25959;
 		public ConcurrentModificationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ConcurrentModificationException.staticClass, global::java.util.ConcurrentModificationException._ConcurrentModificationException20139);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ConcurrentModificationException.staticClass, global::java.util.ConcurrentModificationException._ConcurrentModificationException25959);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ConcurrentModificationException20140;
+		internal static global::MonoJavaBridge.MethodId _ConcurrentModificationException25960;
 		public ConcurrentModificationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ConcurrentModificationException.staticClass, global::java.util.ConcurrentModificationException._ConcurrentModificationException20140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.ConcurrentModificationException.staticClass, global::java.util.ConcurrentModificationException._ConcurrentModificationException25960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.ConcurrentModificationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/ConcurrentModificationException"));
-			global::java.util.ConcurrentModificationException._ConcurrentModificationException20139 = @__env.GetMethodIDNoThrow(global::java.util.ConcurrentModificationException.staticClass, "<init>", "()V");
-			global::java.util.ConcurrentModificationException._ConcurrentModificationException20140 = @__env.GetMethodIDNoThrow(global::java.util.ConcurrentModificationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.util.ConcurrentModificationException._ConcurrentModificationException25959 = @__env.GetMethodIDNoThrow(global::java.util.ConcurrentModificationException.staticClass, "<init>", "()V");
+			global::java.util.ConcurrentModificationException._ConcurrentModificationException25960 = @__env.GetMethodIDNoThrow(global::java.util.ConcurrentModificationException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

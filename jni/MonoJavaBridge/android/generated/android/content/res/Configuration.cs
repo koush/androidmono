@@ -11,182 +11,186 @@ namespace android.content.res
 		internal Configuration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals2256;
+		internal static global::MonoJavaBridge.MethodId _equals4110;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.Configuration._equals2256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.Configuration._equals4110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals2256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals4110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _equals2257;
+		internal static global::MonoJavaBridge.MethodId _equals4111;
 		public bool equals(android.content.res.Configuration arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.Configuration._equals2257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.res.Configuration._equals4111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals2257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals4111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString2258;
+		internal static global::MonoJavaBridge.MethodId _toString4112;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.Configuration._toString2258)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.res.Configuration._toString4112)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._toString2258)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._toString4112)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode2259;
+		internal static global::MonoJavaBridge.MethodId _hashCode4113;
 		public sealed override int hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._hashCode2259);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._hashCode4113);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._hashCode2259);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._hashCode4113);
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo2260;
+		internal static global::MonoJavaBridge.MethodId _compareTo4114;
 		public int compareTo(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._compareTo2260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._compareTo4114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo2260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo4114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo2261;
+		internal static global::MonoJavaBridge.MethodId _compareTo4115;
 		public int compareTo(android.content.res.Configuration arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._compareTo2261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._compareTo4115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo2261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo4115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel2262;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel4116;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._writeToParcel2262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._writeToParcel4116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._writeToParcel2262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._writeToParcel4116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents2263;
+		internal static global::MonoJavaBridge.MethodId _describeContents4117;
 		public int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._describeContents2263);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._describeContents4117);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._describeContents2263);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._describeContents4117);
 		}
-		internal static global::MonoJavaBridge.MethodId _readFromParcel2264;
+		internal static global::MonoJavaBridge.MethodId _readFromParcel4118;
 		public void readFromParcel(android.os.Parcel arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._readFromParcel2264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._readFromParcel4118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._readFromParcel2264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._readFromParcel4118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setTo2265;
+		internal static global::MonoJavaBridge.MethodId _setTo4119;
 		public void setTo(android.content.res.Configuration arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._setTo2265, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._setTo4119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setTo2265, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setTo4119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setToDefaults2266;
+		internal static global::MonoJavaBridge.MethodId _setToDefaults4120;
 		public void setToDefaults() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._setToDefaults2266);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.res.Configuration._setToDefaults4120);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setToDefaults2266);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setToDefaults4120);
 		}
-		internal static global::MonoJavaBridge.MethodId _updateFrom2267;
+		internal static global::MonoJavaBridge.MethodId _updateFrom4121;
 		public int updateFrom(android.content.res.Configuration arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._updateFrom2267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._updateFrom4121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._updateFrom2267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._updateFrom4121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _diff2268;
+		internal static global::MonoJavaBridge.MethodId _diff4122;
 		public int diff(android.content.res.Configuration arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._diff2268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.res.Configuration._diff4122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._diff2268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._diff4122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _needNewResources2269;
+		internal static global::MonoJavaBridge.MethodId _needNewResources4123;
 		public static bool needNewResources(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._needNewResources2269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallStaticBooleanMethod(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._needNewResources4123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _Configuration2270;
+		internal static global::MonoJavaBridge.MethodId _Configuration4124;
 		public Configuration()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._Configuration2270);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._Configuration4124);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Configuration2271;
+		internal static global::MonoJavaBridge.MethodId _Configuration4125;
 		public Configuration(android.content.res.Configuration arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._Configuration2271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.res.Configuration.staticClass, global::android.content.res.Configuration._Configuration4125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _fontScale2272;
+		internal static global::MonoJavaBridge.FieldId _fontScale4126;
 		public float fontScale
 		{
 			get
 			{
-				return default(float);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetFloatField(this.JvmHandle, _fontScale4126);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _mcc2273;
+		internal static global::MonoJavaBridge.FieldId _mcc4127;
 		public int mcc
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _mcc4127);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _mnc2274;
+		internal static global::MonoJavaBridge.FieldId _mnc4128;
 		public int mnc
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _mnc4128);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _locale2275;
+		internal static global::MonoJavaBridge.FieldId _locale4129;
 		public global::java.util.Locale locale
 		{
 			get
 			{
-				return default(global::java.util.Locale);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _locale4129)) as java.util.Locale;
 			}
 			set
 			{
@@ -255,12 +259,13 @@ namespace android.content.res
 				return 32;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _screenLayout2276;
+		internal static global::MonoJavaBridge.FieldId _screenLayout4139;
 		public int screenLayout
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _screenLayout4139);
 			}
 			set
 			{
@@ -294,12 +299,13 @@ namespace android.content.res
 				return 3;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _touchscreen2277;
+		internal static global::MonoJavaBridge.FieldId _touchscreen4144;
 		public int touchscreen
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _touchscreen4144);
 			}
 			set
 			{
@@ -333,12 +339,13 @@ namespace android.content.res
 				return 3;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _keyboard2278;
+		internal static global::MonoJavaBridge.FieldId _keyboard4149;
 		public int keyboard
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _keyboard4149);
 			}
 			set
 			{
@@ -365,12 +372,13 @@ namespace android.content.res
 				return 2;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _keyboardHidden2279;
+		internal static global::MonoJavaBridge.FieldId _keyboardHidden4153;
 		public int keyboardHidden
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _keyboardHidden4153);
 			}
 			set
 			{
@@ -397,12 +405,13 @@ namespace android.content.res
 				return 2;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _hardKeyboardHidden2280;
+		internal static global::MonoJavaBridge.FieldId _hardKeyboardHidden4157;
 		public int hardKeyboardHidden
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _hardKeyboardHidden4157);
 			}
 			set
 			{
@@ -443,12 +452,13 @@ namespace android.content.res
 				return 4;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _navigation2281;
+		internal static global::MonoJavaBridge.FieldId _navigation4163;
 		public int navigation
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _navigation4163);
 			}
 			set
 			{
@@ -475,12 +485,13 @@ namespace android.content.res
 				return 2;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _navigationHidden2282;
+		internal static global::MonoJavaBridge.FieldId _navigationHidden4167;
 		public int navigationHidden
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _navigationHidden4167);
 			}
 			set
 			{
@@ -514,12 +525,13 @@ namespace android.content.res
 				return 3;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _orientation2283;
+		internal static global::MonoJavaBridge.FieldId _orientation4172;
 		public int orientation
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _orientation4172);
 			}
 			set
 			{
@@ -588,45 +600,61 @@ namespace android.content.res
 				return 32;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _uiMode2284;
+		internal static global::MonoJavaBridge.FieldId _uiMode4182;
 		public int uiMode
 		{
 			get
 			{
-				return default(int);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return @__env.GetIntField(this.JvmHandle, _uiMode4182);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR2285;
+		internal static global::MonoJavaBridge.FieldId _CREATOR4183;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
-				return default(global::android.os.Parcelable_Creator);
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.res.Configuration.staticClass, _CREATOR4183)) as android.os.Parcelable_Creator;
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.res.Configuration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/res/Configuration"));
-			global::android.content.res.Configuration._equals2256 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.res.Configuration._equals2257 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Landroid/content/res/Configuration;)Z");
-			global::android.content.res.Configuration._toString2258 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.res.Configuration._hashCode2259 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "hashCode", "()I");
-			global::android.content.res.Configuration._compareTo2260 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::android.content.res.Configuration._compareTo2261 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Landroid/content/res/Configuration;)I");
-			global::android.content.res.Configuration._writeToParcel2262 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.res.Configuration._describeContents2263 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "describeContents", "()I");
-			global::android.content.res.Configuration._readFromParcel2264 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
-			global::android.content.res.Configuration._setTo2265 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setTo", "(Landroid/content/res/Configuration;)V");
-			global::android.content.res.Configuration._setToDefaults2266 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setToDefaults", "()V");
-			global::android.content.res.Configuration._updateFrom2267 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "updateFrom", "(Landroid/content/res/Configuration;)I");
-			global::android.content.res.Configuration._diff2268 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "diff", "(Landroid/content/res/Configuration;)I");
-			global::android.content.res.Configuration._needNewResources2269 = @__env.GetStaticMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "needNewResources", "(II)Z");
-			global::android.content.res.Configuration._Configuration2270 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "()V");
-			global::android.content.res.Configuration._Configuration2271 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "(Landroid/content/res/Configuration;)V");
+			global::android.content.res.Configuration._equals4110 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.res.Configuration._equals4111 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "equals", "(Landroid/content/res/Configuration;)Z");
+			global::android.content.res.Configuration._toString4112 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.res.Configuration._hashCode4113 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "hashCode", "()I");
+			global::android.content.res.Configuration._compareTo4114 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::android.content.res.Configuration._compareTo4115 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "compareTo", "(Landroid/content/res/Configuration;)I");
+			global::android.content.res.Configuration._writeToParcel4116 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.res.Configuration._describeContents4117 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "describeContents", "()I");
+			global::android.content.res.Configuration._readFromParcel4118 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "readFromParcel", "(Landroid/os/Parcel;)V");
+			global::android.content.res.Configuration._setTo4119 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setTo", "(Landroid/content/res/Configuration;)V");
+			global::android.content.res.Configuration._setToDefaults4120 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "setToDefaults", "()V");
+			global::android.content.res.Configuration._updateFrom4121 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "updateFrom", "(Landroid/content/res/Configuration;)I");
+			global::android.content.res.Configuration._diff4122 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "diff", "(Landroid/content/res/Configuration;)I");
+			global::android.content.res.Configuration._needNewResources4123 = @__env.GetStaticMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "needNewResources", "(II)Z");
+			global::android.content.res.Configuration._Configuration4124 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "()V");
+			global::android.content.res.Configuration._Configuration4125 = @__env.GetMethodIDNoThrow(global::android.content.res.Configuration.staticClass, "<init>", "(Landroid/content/res/Configuration;)V");
+			global::android.content.res.Configuration._fontScale4126 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "fontScale", "F");
+			global::android.content.res.Configuration._mcc4127 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "mcc", "I");
+			global::android.content.res.Configuration._mnc4128 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "mnc", "I");
+			global::android.content.res.Configuration._locale4129 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "locale", "Ljava/util/Locale;");
+			global::android.content.res.Configuration._screenLayout4139 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "screenLayout", "I");
+			global::android.content.res.Configuration._touchscreen4144 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "touchscreen", "I");
+			global::android.content.res.Configuration._keyboard4149 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "keyboard", "I");
+			global::android.content.res.Configuration._keyboardHidden4153 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "keyboardHidden", "I");
+			global::android.content.res.Configuration._hardKeyboardHidden4157 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "hardKeyboardHidden", "I");
+			global::android.content.res.Configuration._navigation4163 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "navigation", "I");
+			global::android.content.res.Configuration._navigationHidden4167 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "navigationHidden", "I");
+			global::android.content.res.Configuration._orientation4172 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "orientation", "I");
+			global::android.content.res.Configuration._uiMode4182 = @__env.GetFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "uiMode", "I");
+			global::android.content.res.Configuration._CREATOR4183 = @__env.GetStaticFieldIDNoThrow(global::android.content.res.Configuration.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 	}
 }

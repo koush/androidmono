@@ -11,23 +11,23 @@ namespace java.security.spec
 		protected ECFieldFp(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals18260;
+		internal static global::MonoJavaBridge.MethodId _equals23869;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._equals18260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._equals23869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._equals18260, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._equals23869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode18261;
+		internal static global::MonoJavaBridge.MethodId _hashCode23870;
 		public override int hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._hashCode18261);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._hashCode23870);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._hashCode18261);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._hashCode23870);
 		}
 		public new global::java.math.BigInteger P
 		{
@@ -36,14 +36,14 @@ namespace java.security.spec
 				return getP();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getP18262;
+		internal static global::MonoJavaBridge.MethodId _getP23871;
 		public virtual global::java.math.BigInteger getP() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._getP18262)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._getP23871)) as java.math.BigInteger;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._getP18262)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._getP23871)) as java.math.BigInteger;
 		}
 		public new int FieldSize
 		{
@@ -52,31 +52,31 @@ namespace java.security.spec
 				return getFieldSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFieldSize18263;
+		internal static global::MonoJavaBridge.MethodId _getFieldSize23872;
 		public virtual int getFieldSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._getFieldSize18263);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp._getFieldSize23872);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._getFieldSize18263);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._getFieldSize23872);
 		}
-		internal static global::MonoJavaBridge.MethodId _ECFieldFp18264;
+		internal static global::MonoJavaBridge.MethodId _ECFieldFp23873;
 		public ECFieldFp(java.math.BigInteger arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._ECFieldFp18264, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._ECFieldFp23873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECFieldFp.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECFieldFp"));
-			global::java.security.spec.ECFieldFp._equals18260 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.security.spec.ECFieldFp._hashCode18261 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "hashCode", "()I");
-			global::java.security.spec.ECFieldFp._getP18262 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "getP", "()Ljava/math/BigInteger;");
-			global::java.security.spec.ECFieldFp._getFieldSize18263 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "getFieldSize", "()I");
-			global::java.security.spec.ECFieldFp._ECFieldFp18264 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "<init>", "(Ljava/math/BigInteger;)V");
+			global::java.security.spec.ECFieldFp._equals23869 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.security.spec.ECFieldFp._hashCode23870 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "hashCode", "()I");
+			global::java.security.spec.ECFieldFp._getP23871 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "getP", "()Ljava/math/BigInteger;");
+			global::java.security.spec.ECFieldFp._getFieldSize23872 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "getFieldSize", "()I");
+			global::java.security.spec.ECFieldFp._ECFieldFp23873 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECFieldFp.staticClass, "<init>", "(Ljava/math/BigInteger;)V");
 		}
 	}
 }

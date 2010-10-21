@@ -11,128 +11,128 @@ namespace org.apache.http.impl.conn
 		protected Wire(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _input26351;
+		internal static global::MonoJavaBridge.MethodId _input32975;
 		public virtual void input(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input26351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input32975, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input26351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input32975, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _input26352;
+		internal static global::MonoJavaBridge.MethodId _input32976;
 		public virtual void input(java.io.InputStream arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input26352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input32976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input26352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input32976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _input26353;
+		internal static global::MonoJavaBridge.MethodId _input32977;
 		public virtual void input(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input26353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input32977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input26353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input32977, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _input26354;
+		internal static global::MonoJavaBridge.MethodId _input32978;
 		public virtual void input(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input26354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input32978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input26354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input32978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _input26355;
+		internal static global::MonoJavaBridge.MethodId _input32979;
 		public virtual void input(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input26355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._input32979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input26355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._input32979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _output26356;
+		internal static global::MonoJavaBridge.MethodId _output32980;
 		public virtual void output(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output26356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output32980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output26356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output32980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _output26357;
+		internal static global::MonoJavaBridge.MethodId _output32981;
 		public virtual void output(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output26357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output32981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output26357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output32981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _output26358;
+		internal static global::MonoJavaBridge.MethodId _output32982;
 		public virtual void output(java.io.InputStream arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output26358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output32982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output26358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output32982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _output26359;
+		internal static global::MonoJavaBridge.MethodId _output32983;
 		public virtual void output(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output26359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output32983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output26359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output32983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _output26360;
+		internal static global::MonoJavaBridge.MethodId _output32984;
 		public virtual void output(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output26360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._output32984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output26360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._output32984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _enabled26361;
+		internal static global::MonoJavaBridge.MethodId _enabled32985;
 		public virtual bool enabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._enabled26361);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire._enabled32985);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._enabled26361);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._enabled32985);
 		}
-		internal static global::MonoJavaBridge.MethodId _Wire26362;
+		internal static global::MonoJavaBridge.MethodId _Wire32986;
 		public Wire(org.apache.commons.logging.Log arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._Wire26362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.Wire.staticClass, global::org.apache.http.impl.conn.Wire._Wire32986, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.conn.Wire.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/conn/Wire"));
-			global::org.apache.http.impl.conn.Wire._input26351 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "(Ljava/lang/String;)V");
-			global::org.apache.http.impl.conn.Wire._input26352 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "(Ljava/io/InputStream;)V");
-			global::org.apache.http.impl.conn.Wire._input26353 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "([BII)V");
-			global::org.apache.http.impl.conn.Wire._input26354 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "([B)V");
-			global::org.apache.http.impl.conn.Wire._input26355 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "(I)V");
-			global::org.apache.http.impl.conn.Wire._output26356 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "([B)V");
-			global::org.apache.http.impl.conn.Wire._output26357 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "(Ljava/lang/String;)V");
-			global::org.apache.http.impl.conn.Wire._output26358 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "(Ljava/io/InputStream;)V");
-			global::org.apache.http.impl.conn.Wire._output26359 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "(I)V");
-			global::org.apache.http.impl.conn.Wire._output26360 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "([BII)V");
-			global::org.apache.http.impl.conn.Wire._enabled26361 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "enabled", "()Z");
-			global::org.apache.http.impl.conn.Wire._Wire26362 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "<init>", "(Lorg/apache/commons/logging/Log;)V");
+			global::org.apache.http.impl.conn.Wire._input32975 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "(Ljava/lang/String;)V");
+			global::org.apache.http.impl.conn.Wire._input32976 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "(Ljava/io/InputStream;)V");
+			global::org.apache.http.impl.conn.Wire._input32977 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "([BII)V");
+			global::org.apache.http.impl.conn.Wire._input32978 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "([B)V");
+			global::org.apache.http.impl.conn.Wire._input32979 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "input", "(I)V");
+			global::org.apache.http.impl.conn.Wire._output32980 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "([B)V");
+			global::org.apache.http.impl.conn.Wire._output32981 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "(Ljava/lang/String;)V");
+			global::org.apache.http.impl.conn.Wire._output32982 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "(Ljava/io/InputStream;)V");
+			global::org.apache.http.impl.conn.Wire._output32983 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "(I)V");
+			global::org.apache.http.impl.conn.Wire._output32984 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "output", "([BII)V");
+			global::org.apache.http.impl.conn.Wire._enabled32985 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "enabled", "()Z");
+			global::org.apache.http.impl.conn.Wire._Wire32986 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.conn.Wire.staticClass, "<init>", "(Lorg/apache/commons/logging/Log;)V");
 		}
 	}
 }

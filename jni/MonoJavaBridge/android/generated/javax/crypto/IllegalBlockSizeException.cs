@@ -11,26 +11,26 @@ namespace javax.crypto
 		protected IllegalBlockSizeException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _IllegalBlockSizeException22607;
+		internal static global::MonoJavaBridge.MethodId _IllegalBlockSizeException28503;
 		public IllegalBlockSizeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException22607);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28503);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _IllegalBlockSizeException22608;
+		internal static global::MonoJavaBridge.MethodId _IllegalBlockSizeException28504;
 		public IllegalBlockSizeException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException22608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.IllegalBlockSizeException.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/IllegalBlockSizeException"));
-			global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException22607 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "()V");
-			global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException22608 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28503 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "()V");
+			global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28504 = @__env.GetMethodIDNoThrow(global::javax.crypto.IllegalBlockSizeException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

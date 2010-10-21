@@ -18,14 +18,14 @@ namespace android.hardware
 				return getName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName4364;
+		internal static global::MonoJavaBridge.MethodId _getName6407;
 		public virtual global::java.lang.String getName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.hardware.Sensor._getName4364)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.hardware.Sensor._getName6407)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName4364)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName6407)) as java.lang.String;
 		}
 		public new int Type
 		{
@@ -34,14 +34,14 @@ namespace android.hardware
 				return getType();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getType4365;
+		internal static global::MonoJavaBridge.MethodId _getType6408;
 		public virtual int getType() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.hardware.Sensor._getType4365);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.hardware.Sensor._getType6408);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType4365);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType6408);
 		}
 		public new int Version
 		{
@@ -50,14 +50,14 @@ namespace android.hardware
 				return getVersion();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVersion4366;
+		internal static global::MonoJavaBridge.MethodId _getVersion6409;
 		public virtual int getVersion() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.hardware.Sensor._getVersion4366);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.hardware.Sensor._getVersion6409);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion4366);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion6409);
 		}
 		public new global::java.lang.String Vendor
 		{
@@ -66,14 +66,14 @@ namespace android.hardware
 				return getVendor();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVendor4367;
+		internal static global::MonoJavaBridge.MethodId _getVendor6410;
 		public virtual global::java.lang.String getVendor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.hardware.Sensor._getVendor4367)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.hardware.Sensor._getVendor6410)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor4367)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor6410)) as java.lang.String;
 		}
 		public new float MaximumRange
 		{
@@ -82,14 +82,14 @@ namespace android.hardware
 				return getMaximumRange();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumRange4368;
+		internal static global::MonoJavaBridge.MethodId _getMaximumRange6411;
 		public virtual float getMaximumRange() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getMaximumRange4368);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getMaximumRange6411);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange4368);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange6411);
 		}
 		public new float Resolution
 		{
@@ -98,14 +98,14 @@ namespace android.hardware
 				return getResolution();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getResolution4369;
+		internal static global::MonoJavaBridge.MethodId _getResolution6412;
 		public virtual float getResolution() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getResolution4369);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getResolution6412);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution4369);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution6412);
 		}
 		public new float Power
 		{
@@ -114,14 +114,14 @@ namespace android.hardware
 				return getPower();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPower4370;
+		internal static global::MonoJavaBridge.MethodId _getPower6413;
 		public virtual float getPower() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getPower4370);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.hardware.Sensor._getPower6413);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getPower4370);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getPower6413);
 		}
 		public static int TYPE_ACCELEROMETER
 		{
@@ -190,13 +190,13 @@ namespace android.hardware
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.hardware.Sensor.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/hardware/Sensor"));
-			global::android.hardware.Sensor._getName4364 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getName", "()Ljava/lang/String;");
-			global::android.hardware.Sensor._getType4365 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getType", "()I");
-			global::android.hardware.Sensor._getVersion4366 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getVersion", "()I");
-			global::android.hardware.Sensor._getVendor4367 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getVendor", "()Ljava/lang/String;");
-			global::android.hardware.Sensor._getMaximumRange4368 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getMaximumRange", "()F");
-			global::android.hardware.Sensor._getResolution4369 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getResolution", "()F");
-			global::android.hardware.Sensor._getPower4370 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getPower", "()F");
+			global::android.hardware.Sensor._getName6407 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getName", "()Ljava/lang/String;");
+			global::android.hardware.Sensor._getType6408 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getType", "()I");
+			global::android.hardware.Sensor._getVersion6409 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getVersion", "()I");
+			global::android.hardware.Sensor._getVendor6410 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getVendor", "()Ljava/lang/String;");
+			global::android.hardware.Sensor._getMaximumRange6411 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getMaximumRange", "()F");
+			global::android.hardware.Sensor._getResolution6412 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getResolution", "()F");
+			global::android.hardware.Sensor._getPower6413 = @__env.GetMethodIDNoThrow(global::android.hardware.Sensor.staticClass, "getPower", "()F");
 		}
 	}
 }

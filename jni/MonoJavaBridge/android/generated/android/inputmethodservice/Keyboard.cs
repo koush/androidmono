@@ -22,41 +22,41 @@ namespace android.inputmethodservice
 			protected Key(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onPressed4557;
+			internal static global::MonoJavaBridge.MethodId _onPressed6668;
 			public virtual void onPressed() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._onPressed4557);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._onPressed6668);
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._onPressed4557);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._onPressed6668);
 			}
-			internal static global::MonoJavaBridge.MethodId _onReleased4558;
+			internal static global::MonoJavaBridge.MethodId _onReleased6669;
 			public virtual void onReleased(bool arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._onReleased4558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._onReleased6669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._onReleased4558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._onReleased6669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _isInside4559;
+			internal static global::MonoJavaBridge.MethodId _isInside6670;
 			public virtual bool isInside(int arg0, int arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._isInside4559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._isInside6670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._isInside4559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._isInside6670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _squaredDistanceFrom4560;
+			internal static global::MonoJavaBridge.MethodId _squaredDistanceFrom6671;
 			public virtual int squaredDistanceFrom(int arg0, int arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom4560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom6671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom4560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom6671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public new int[] CurrentDrawableState
 			{
@@ -65,222 +65,240 @@ namespace android.inputmethodservice
 					return getCurrentDrawableState();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getCurrentDrawableState4561;
+			internal static global::MonoJavaBridge.MethodId _getCurrentDrawableState6672;
 			public virtual int[] getCurrentDrawableState() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState4561)) as int[];
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState6672)) as int[];
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState4561)) as int[];
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState6672)) as int[];
 			}
-			internal static global::MonoJavaBridge.MethodId _Key4562;
+			internal static global::MonoJavaBridge.MethodId _Key6673;
 			public Key(android.inputmethodservice.Keyboard.Row arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._Key4562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._Key6673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _Key4563;
+			internal static global::MonoJavaBridge.MethodId _Key6674;
 			public Key(android.content.res.Resources arg0, android.inputmethodservice.Keyboard.Row arg1, int arg2, int arg3, android.content.res.XmlResourceParser arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._Key4563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._Key6674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _codes4564;
+			internal static global::MonoJavaBridge.FieldId _codes6675;
 			public int[] codes
 			{
 				get
 				{
-					return default(int[]);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.GetObjectField(this.JvmHandle, _codes6675)) as int[];
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _label4565;
+			internal static global::MonoJavaBridge.FieldId _label6676;
 			public global::java.lang.CharSequence label
 			{
 				get
 				{
-					return default(global::java.lang.CharSequence);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _label6676)) as java.lang.CharSequence;
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _icon4566;
+			internal static global::MonoJavaBridge.FieldId _icon6677;
 			public global::android.graphics.drawable.Drawable icon
 			{
 				get
 				{
-					return default(global::android.graphics.drawable.Drawable);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _icon6677)) as android.graphics.drawable.Drawable;
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _iconPreview4567;
+			internal static global::MonoJavaBridge.FieldId _iconPreview6678;
 			public global::android.graphics.drawable.Drawable iconPreview
 			{
 				get
 				{
-					return default(global::android.graphics.drawable.Drawable);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _iconPreview6678)) as android.graphics.drawable.Drawable;
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _width4568;
+			internal static global::MonoJavaBridge.FieldId _width6679;
 			public int width
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _width6679);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _height4569;
+			internal static global::MonoJavaBridge.FieldId _height6680;
 			public int height
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _height6680);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _gap4570;
+			internal static global::MonoJavaBridge.FieldId _gap6681;
 			public int gap
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _gap6681);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _sticky4571;
+			internal static global::MonoJavaBridge.FieldId _sticky6682;
 			public bool sticky
 			{
 				get
 				{
-					return default(bool);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetBooleanField(this.JvmHandle, _sticky6682);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _x4572;
+			internal static global::MonoJavaBridge.FieldId _x6683;
 			public int x
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _x6683);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _y4573;
+			internal static global::MonoJavaBridge.FieldId _y6684;
 			public int y
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _y6684);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _pressed4574;
+			internal static global::MonoJavaBridge.FieldId _pressed6685;
 			public bool pressed
 			{
 				get
 				{
-					return default(bool);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetBooleanField(this.JvmHandle, _pressed6685);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _on4575;
+			internal static global::MonoJavaBridge.FieldId _on6686;
 			public bool on
 			{
 				get
 				{
-					return default(bool);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetBooleanField(this.JvmHandle, _on6686);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _text4576;
+			internal static global::MonoJavaBridge.FieldId _text6687;
 			public global::java.lang.CharSequence text
 			{
 				get
 				{
-					return default(global::java.lang.CharSequence);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _text6687)) as java.lang.CharSequence;
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _popupCharacters4577;
+			internal static global::MonoJavaBridge.FieldId _popupCharacters6688;
 			public global::java.lang.CharSequence popupCharacters
 			{
 				get
 				{
-					return default(global::java.lang.CharSequence);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.GetObjectField(this.JvmHandle, _popupCharacters6688)) as java.lang.CharSequence;
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _edgeFlags4578;
+			internal static global::MonoJavaBridge.FieldId _edgeFlags6689;
 			public int edgeFlags
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _edgeFlags6689);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _modifier4579;
+			internal static global::MonoJavaBridge.FieldId _modifier6690;
 			public bool modifier
 			{
 				get
 				{
-					return default(bool);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetBooleanField(this.JvmHandle, _modifier6690);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _popupResId4580;
+			internal static global::MonoJavaBridge.FieldId _popupResId6691;
 			public int popupResId
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _popupResId6691);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _repeatable4581;
+			internal static global::MonoJavaBridge.FieldId _repeatable6692;
 			public bool repeatable
 			{
 				get
 				{
-					return default(bool);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetBooleanField(this.JvmHandle, _repeatable6692);
 				}
 				set
 				{
@@ -290,13 +308,31 @@ namespace android.inputmethodservice
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.Keyboard.Key.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/Keyboard$Key"));
-				global::android.inputmethodservice.Keyboard.Key._onPressed4557 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "onPressed", "()V");
-				global::android.inputmethodservice.Keyboard.Key._onReleased4558 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "onReleased", "(Z)V");
-				global::android.inputmethodservice.Keyboard.Key._isInside4559 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "isInside", "(II)Z");
-				global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom4560 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "squaredDistanceFrom", "(II)I");
-				global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState4561 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "getCurrentDrawableState", "()[I");
-				global::android.inputmethodservice.Keyboard.Key._Key4562 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "<init>", "(Landroid/inputmethodservice/Keyboard$Row;)V");
-				global::android.inputmethodservice.Keyboard.Key._Key4563 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "<init>", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)V");
+				global::android.inputmethodservice.Keyboard.Key._onPressed6668 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "onPressed", "()V");
+				global::android.inputmethodservice.Keyboard.Key._onReleased6669 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "onReleased", "(Z)V");
+				global::android.inputmethodservice.Keyboard.Key._isInside6670 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "isInside", "(II)Z");
+				global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom6671 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "squaredDistanceFrom", "(II)I");
+				global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState6672 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "getCurrentDrawableState", "()[I");
+				global::android.inputmethodservice.Keyboard.Key._Key6673 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "<init>", "(Landroid/inputmethodservice/Keyboard$Row;)V");
+				global::android.inputmethodservice.Keyboard.Key._Key6674 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "<init>", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)V");
+				global::android.inputmethodservice.Keyboard.Key._codes6675 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "codes", "[I");
+				global::android.inputmethodservice.Keyboard.Key._label6676 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "label", "Ljava/lang/CharSequence;");
+				global::android.inputmethodservice.Keyboard.Key._icon6677 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "icon", "Landroid/graphics/drawable/Drawable;");
+				global::android.inputmethodservice.Keyboard.Key._iconPreview6678 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "iconPreview", "Landroid/graphics/drawable/Drawable;");
+				global::android.inputmethodservice.Keyboard.Key._width6679 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "width", "I");
+				global::android.inputmethodservice.Keyboard.Key._height6680 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "height", "I");
+				global::android.inputmethodservice.Keyboard.Key._gap6681 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "gap", "I");
+				global::android.inputmethodservice.Keyboard.Key._sticky6682 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "sticky", "Z");
+				global::android.inputmethodservice.Keyboard.Key._x6683 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "x", "I");
+				global::android.inputmethodservice.Keyboard.Key._y6684 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "y", "I");
+				global::android.inputmethodservice.Keyboard.Key._pressed6685 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "pressed", "Z");
+				global::android.inputmethodservice.Keyboard.Key._on6686 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "on", "Z");
+				global::android.inputmethodservice.Keyboard.Key._text6687 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "text", "Ljava/lang/CharSequence;");
+				global::android.inputmethodservice.Keyboard.Key._popupCharacters6688 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "popupCharacters", "Ljava/lang/CharSequence;");
+				global::android.inputmethodservice.Keyboard.Key._edgeFlags6689 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "edgeFlags", "I");
+				global::android.inputmethodservice.Keyboard.Key._modifier6690 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "modifier", "Z");
+				global::android.inputmethodservice.Keyboard.Key._popupResId6691 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "popupResId", "I");
+				global::android.inputmethodservice.Keyboard.Key._repeatable6692 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Key.staticClass, "repeatable", "Z");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -310,81 +346,87 @@ namespace android.inputmethodservice
 			protected Row(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _Row4582;
+			internal static global::MonoJavaBridge.MethodId _Row6693;
 			public Row(android.inputmethodservice.Keyboard arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, global::android.inputmethodservice.Keyboard.Row._Row4582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, global::android.inputmethodservice.Keyboard.Row._Row6693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _Row4583;
+			internal static global::MonoJavaBridge.MethodId _Row6694;
 			public Row(android.content.res.Resources arg0, android.inputmethodservice.Keyboard arg1, android.content.res.XmlResourceParser arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, global::android.inputmethodservice.Keyboard.Row._Row4583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, global::android.inputmethodservice.Keyboard.Row._Row6694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _defaultWidth4584;
+			internal static global::MonoJavaBridge.FieldId _defaultWidth6695;
 			public int defaultWidth
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _defaultWidth6695);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _defaultHeight4585;
+			internal static global::MonoJavaBridge.FieldId _defaultHeight6696;
 			public int defaultHeight
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _defaultHeight6696);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _defaultHorizontalGap4586;
+			internal static global::MonoJavaBridge.FieldId _defaultHorizontalGap6697;
 			public int defaultHorizontalGap
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _defaultHorizontalGap6697);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _verticalGap4587;
+			internal static global::MonoJavaBridge.FieldId _verticalGap6698;
 			public int verticalGap
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _verticalGap6698);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _rowEdgeFlags4588;
+			internal static global::MonoJavaBridge.FieldId _rowEdgeFlags6699;
 			public int rowEdgeFlags
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _rowEdgeFlags6699);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _mode4589;
+			internal static global::MonoJavaBridge.FieldId _mode6700;
 			public int mode
 			{
 				get
 				{
-					return default(int);
+					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+					return @__env.GetIntField(this.JvmHandle, _mode6700);
 				}
 				set
 				{
@@ -394,8 +436,14 @@ namespace android.inputmethodservice
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.inputmethodservice.Keyboard.Row.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/Keyboard$Row"));
-				global::android.inputmethodservice.Keyboard.Row._Row4582 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "<init>", "(Landroid/inputmethodservice/Keyboard;)V");
-				global::android.inputmethodservice.Keyboard.Row._Row4583 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "<init>", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard;Landroid/content/res/XmlResourceParser;)V");
+				global::android.inputmethodservice.Keyboard.Row._Row6693 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "<init>", "(Landroid/inputmethodservice/Keyboard;)V");
+				global::android.inputmethodservice.Keyboard.Row._Row6694 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "<init>", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard;Landroid/content/res/XmlResourceParser;)V");
+				global::android.inputmethodservice.Keyboard.Row._defaultWidth6695 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "defaultWidth", "I");
+				global::android.inputmethodservice.Keyboard.Row._defaultHeight6696 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "defaultHeight", "I");
+				global::android.inputmethodservice.Keyboard.Row._defaultHorizontalGap6697 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "defaultHorizontalGap", "I");
+				global::android.inputmethodservice.Keyboard.Row._verticalGap6698 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "verticalGap", "I");
+				global::android.inputmethodservice.Keyboard.Row._rowEdgeFlags6699 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "rowEdgeFlags", "I");
+				global::android.inputmethodservice.Keyboard.Row._mode6700 = @__env.GetFieldIDNoThrow(global::android.inputmethodservice.Keyboard.Row.staticClass, "mode", "I");
 			}
 		}
 		public new int Height
@@ -405,14 +453,14 @@ namespace android.inputmethodservice
 				return getHeight();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHeight4590;
+		internal static global::MonoJavaBridge.MethodId _getHeight6701;
 		public virtual int getHeight() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getHeight4590);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getHeight6701);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHeight4590);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHeight6701);
 		}
 		public new global::java.util.List Keys
 		{
@@ -421,14 +469,14 @@ namespace android.inputmethodservice
 				return getKeys();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeys4591;
+		internal static global::MonoJavaBridge.MethodId _getKeys6702;
 		public virtual global::java.util.List getKeys() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getKeys4591)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getKeys6702)) as java.util.List;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeys4591)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeys6702)) as java.util.List;
 		}
 		public new global::java.util.List ModifierKeys
 		{
@@ -437,14 +485,14 @@ namespace android.inputmethodservice
 				return getModifierKeys();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getModifierKeys4592;
+		internal static global::MonoJavaBridge.MethodId _getModifierKeys6703;
 		public virtual global::java.util.List getModifierKeys() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getModifierKeys4592)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getModifierKeys6703)) as java.util.List;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getModifierKeys4592)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getModifierKeys6703)) as java.util.List;
 		}
 		protected new int HorizontalGap
 		{
@@ -457,23 +505,23 @@ namespace android.inputmethodservice
 				setHorizontalGap(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHorizontalGap4593;
+		internal static global::MonoJavaBridge.MethodId _getHorizontalGap6704;
 		protected virtual int getHorizontalGap() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getHorizontalGap4593);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getHorizontalGap6704);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHorizontalGap4593);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHorizontalGap6704);
 		}
-		internal static global::MonoJavaBridge.MethodId _setHorizontalGap4594;
+		internal static global::MonoJavaBridge.MethodId _setHorizontalGap6705;
 		protected virtual void setHorizontalGap(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setHorizontalGap4594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setHorizontalGap6705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setHorizontalGap4594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setHorizontalGap6705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		protected new int VerticalGap
 		{
@@ -486,23 +534,23 @@ namespace android.inputmethodservice
 				setVerticalGap(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVerticalGap4595;
+		internal static global::MonoJavaBridge.MethodId _getVerticalGap6706;
 		protected virtual int getVerticalGap() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getVerticalGap4595);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getVerticalGap6706);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getVerticalGap4595);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getVerticalGap6706);
 		}
-		internal static global::MonoJavaBridge.MethodId _setVerticalGap4596;
+		internal static global::MonoJavaBridge.MethodId _setVerticalGap6707;
 		protected virtual void setVerticalGap(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setVerticalGap4596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setVerticalGap6707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setVerticalGap4596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setVerticalGap6707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		protected new int KeyHeight
 		{
@@ -515,23 +563,23 @@ namespace android.inputmethodservice
 				setKeyHeight(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeyHeight4597;
+		internal static global::MonoJavaBridge.MethodId _getKeyHeight6708;
 		protected virtual int getKeyHeight() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getKeyHeight4597);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getKeyHeight6708);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeyHeight4597);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeyHeight6708);
 		}
-		internal static global::MonoJavaBridge.MethodId _setKeyHeight4598;
+		internal static global::MonoJavaBridge.MethodId _setKeyHeight6709;
 		protected virtual void setKeyHeight(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setKeyHeight4598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setKeyHeight6709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyHeight4598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyHeight6709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		protected new int KeyWidth
 		{
@@ -544,23 +592,23 @@ namespace android.inputmethodservice
 				setKeyWidth(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeyWidth4599;
+		internal static global::MonoJavaBridge.MethodId _getKeyWidth6710;
 		protected virtual int getKeyWidth() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getKeyWidth4599);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getKeyWidth6710);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeyWidth4599);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeyWidth6710);
 		}
-		internal static global::MonoJavaBridge.MethodId _setKeyWidth4600;
+		internal static global::MonoJavaBridge.MethodId _setKeyWidth6711;
 		protected virtual void setKeyWidth(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setKeyWidth4600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setKeyWidth6711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyWidth4600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyWidth6711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MinWidth
 		{
@@ -569,32 +617,32 @@ namespace android.inputmethodservice
 				return getMinWidth();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinWidth4601;
+		internal static global::MonoJavaBridge.MethodId _getMinWidth6712;
 		public virtual int getMinWidth() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getMinWidth4601);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getMinWidth6712);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getMinWidth4601);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getMinWidth6712);
 		}
-		internal static global::MonoJavaBridge.MethodId _setShifted4602;
+		internal static global::MonoJavaBridge.MethodId _setShifted6713;
 		public virtual bool setShifted(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setShifted4602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._setShifted6713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setShifted4602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setShifted6713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isShifted4603;
+		internal static global::MonoJavaBridge.MethodId _isShifted6714;
 		public virtual bool isShifted() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._isShifted4603);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._isShifted6714);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._isShifted4603);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._isShifted6714);
 		}
 		public new int ShiftKeyIndex
 		{
@@ -603,61 +651,61 @@ namespace android.inputmethodservice
 				return getShiftKeyIndex();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getShiftKeyIndex4604;
+		internal static global::MonoJavaBridge.MethodId _getShiftKeyIndex6715;
 		public virtual int getShiftKeyIndex() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getShiftKeyIndex4604);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getShiftKeyIndex6715);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getShiftKeyIndex4604);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getShiftKeyIndex6715);
 		}
-		internal static global::MonoJavaBridge.MethodId _getNearestKeys4605;
+		internal static global::MonoJavaBridge.MethodId _getNearestKeys6716;
 		public virtual int[] getNearestKeys(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getNearestKeys4605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._getNearestKeys6716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getNearestKeys4605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getNearestKeys6716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _createRowFromXml4606;
+		internal static global::MonoJavaBridge.MethodId _createRowFromXml6717;
 		protected virtual global::android.inputmethodservice.Keyboard.Row createRowFromXml(android.content.res.Resources arg0, android.content.res.XmlResourceParser arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._createRowFromXml4606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.inputmethodservice.Keyboard.Row;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._createRowFromXml6717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.inputmethodservice.Keyboard.Row;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._createRowFromXml4606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.inputmethodservice.Keyboard.Row;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._createRowFromXml6717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.inputmethodservice.Keyboard.Row;
 		}
-		internal static global::MonoJavaBridge.MethodId _createKeyFromXml4607;
+		internal static global::MonoJavaBridge.MethodId _createKeyFromXml6718;
 		protected virtual global::android.inputmethodservice.Keyboard.Key createKeyFromXml(android.content.res.Resources arg0, android.inputmethodservice.Keyboard.Row arg1, int arg2, int arg3, android.content.res.XmlResourceParser arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._createKeyFromXml4607, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.inputmethodservice.Keyboard.Key;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard._createKeyFromXml6718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.inputmethodservice.Keyboard.Key;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._createKeyFromXml4607, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.inputmethodservice.Keyboard.Key;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._createKeyFromXml6718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.inputmethodservice.Keyboard.Key;
 		}
-		internal static global::MonoJavaBridge.MethodId _Keyboard4608;
+		internal static global::MonoJavaBridge.MethodId _Keyboard6719;
 		public Keyboard(android.content.Context arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard4608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard6719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Keyboard4609;
+		internal static global::MonoJavaBridge.MethodId _Keyboard6720;
 		public Keyboard(android.content.Context arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard4609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard6720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Keyboard4610;
+		internal static global::MonoJavaBridge.MethodId _Keyboard6721;
 		public Keyboard(android.content.Context arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard4610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard6721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
 		public static int EDGE_LEFT
@@ -734,27 +782,27 @@ namespace android.inputmethodservice
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.inputmethodservice.Keyboard.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/inputmethodservice/Keyboard"));
-			global::android.inputmethodservice.Keyboard._getHeight4590 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getHeight", "()I");
-			global::android.inputmethodservice.Keyboard._getKeys4591 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getKeys", "()Ljava/util/List;");
-			global::android.inputmethodservice.Keyboard._getModifierKeys4592 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getModifierKeys", "()Ljava/util/List;");
-			global::android.inputmethodservice.Keyboard._getHorizontalGap4593 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getHorizontalGap", "()I");
-			global::android.inputmethodservice.Keyboard._setHorizontalGap4594 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setHorizontalGap", "(I)V");
-			global::android.inputmethodservice.Keyboard._getVerticalGap4595 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getVerticalGap", "()I");
-			global::android.inputmethodservice.Keyboard._setVerticalGap4596 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setVerticalGap", "(I)V");
-			global::android.inputmethodservice.Keyboard._getKeyHeight4597 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getKeyHeight", "()I");
-			global::android.inputmethodservice.Keyboard._setKeyHeight4598 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setKeyHeight", "(I)V");
-			global::android.inputmethodservice.Keyboard._getKeyWidth4599 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getKeyWidth", "()I");
-			global::android.inputmethodservice.Keyboard._setKeyWidth4600 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setKeyWidth", "(I)V");
-			global::android.inputmethodservice.Keyboard._getMinWidth4601 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getMinWidth", "()I");
-			global::android.inputmethodservice.Keyboard._setShifted4602 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setShifted", "(Z)Z");
-			global::android.inputmethodservice.Keyboard._isShifted4603 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "isShifted", "()Z");
-			global::android.inputmethodservice.Keyboard._getShiftKeyIndex4604 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getShiftKeyIndex", "()I");
-			global::android.inputmethodservice.Keyboard._getNearestKeys4605 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getNearestKeys", "(II)[I");
-			global::android.inputmethodservice.Keyboard._createRowFromXml4606 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "createRowFromXml", "(Landroid/content/res/Resources;Landroid/content/res/XmlResourceParser;)Landroid/inputmethodservice/Keyboard$Row;");
-			global::android.inputmethodservice.Keyboard._createKeyFromXml4607 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "createKeyFromXml", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)Landroid/inputmethodservice/Keyboard$Key;");
-			global::android.inputmethodservice.Keyboard._Keyboard4608 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;I)V");
-			global::android.inputmethodservice.Keyboard._Keyboard4609 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;II)V");
-			global::android.inputmethodservice.Keyboard._Keyboard4610 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;ILjava/lang/CharSequence;II)V");
+			global::android.inputmethodservice.Keyboard._getHeight6701 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getHeight", "()I");
+			global::android.inputmethodservice.Keyboard._getKeys6702 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getKeys", "()Ljava/util/List;");
+			global::android.inputmethodservice.Keyboard._getModifierKeys6703 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getModifierKeys", "()Ljava/util/List;");
+			global::android.inputmethodservice.Keyboard._getHorizontalGap6704 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getHorizontalGap", "()I");
+			global::android.inputmethodservice.Keyboard._setHorizontalGap6705 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setHorizontalGap", "(I)V");
+			global::android.inputmethodservice.Keyboard._getVerticalGap6706 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getVerticalGap", "()I");
+			global::android.inputmethodservice.Keyboard._setVerticalGap6707 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setVerticalGap", "(I)V");
+			global::android.inputmethodservice.Keyboard._getKeyHeight6708 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getKeyHeight", "()I");
+			global::android.inputmethodservice.Keyboard._setKeyHeight6709 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setKeyHeight", "(I)V");
+			global::android.inputmethodservice.Keyboard._getKeyWidth6710 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getKeyWidth", "()I");
+			global::android.inputmethodservice.Keyboard._setKeyWidth6711 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setKeyWidth", "(I)V");
+			global::android.inputmethodservice.Keyboard._getMinWidth6712 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getMinWidth", "()I");
+			global::android.inputmethodservice.Keyboard._setShifted6713 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "setShifted", "(Z)Z");
+			global::android.inputmethodservice.Keyboard._isShifted6714 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "isShifted", "()Z");
+			global::android.inputmethodservice.Keyboard._getShiftKeyIndex6715 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getShiftKeyIndex", "()I");
+			global::android.inputmethodservice.Keyboard._getNearestKeys6716 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "getNearestKeys", "(II)[I");
+			global::android.inputmethodservice.Keyboard._createRowFromXml6717 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "createRowFromXml", "(Landroid/content/res/Resources;Landroid/content/res/XmlResourceParser;)Landroid/inputmethodservice/Keyboard$Row;");
+			global::android.inputmethodservice.Keyboard._createKeyFromXml6718 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "createKeyFromXml", "(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)Landroid/inputmethodservice/Keyboard$Key;");
+			global::android.inputmethodservice.Keyboard._Keyboard6719 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;I)V");
+			global::android.inputmethodservice.Keyboard._Keyboard6720 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;II)V");
+			global::android.inputmethodservice.Keyboard._Keyboard6721 = @__env.GetMethodIDNoThrow(global::android.inputmethodservice.Keyboard.staticClass, "<init>", "(Landroid/content/Context;ILjava/lang/CharSequence;II)V");
 		}
 	}
 }

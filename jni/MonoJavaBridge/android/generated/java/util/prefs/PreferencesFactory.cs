@@ -18,30 +18,30 @@ namespace java.util.prefs
 		internal PreferencesFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _userRoot22279;
+		internal static global::MonoJavaBridge.MethodId _userRoot28145;
 		 global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.userRoot() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_._userRoot22279)) as java.util.prefs.Preferences;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_._userRoot28145)) as java.util.prefs.Preferences;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_.staticClass, global::java.util.prefs.PreferencesFactory_._userRoot22279)) as java.util.prefs.Preferences;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_.staticClass, global::java.util.prefs.PreferencesFactory_._userRoot28145)) as java.util.prefs.Preferences;
 		}
-		internal static global::MonoJavaBridge.MethodId _systemRoot22280;
+		internal static global::MonoJavaBridge.MethodId _systemRoot28146;
 		 global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.systemRoot() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_._systemRoot22280)) as java.util.prefs.Preferences;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_._systemRoot28146)) as java.util.prefs.Preferences;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_.staticClass, global::java.util.prefs.PreferencesFactory_._systemRoot22280)) as java.util.prefs.Preferences;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_.staticClass, global::java.util.prefs.PreferencesFactory_._systemRoot28146)) as java.util.prefs.Preferences;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.PreferencesFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/PreferencesFactory"));
-			global::java.util.prefs.PreferencesFactory_._userRoot22279 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferencesFactory_.staticClass, "userRoot", "()Ljava/util/prefs/Preferences;");
-			global::java.util.prefs.PreferencesFactory_._systemRoot22280 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferencesFactory_.staticClass, "systemRoot", "()Ljava/util/prefs/Preferences;");
+			global::java.util.prefs.PreferencesFactory_._userRoot28145 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferencesFactory_.staticClass, "userRoot", "()Ljava/util/prefs/Preferences;");
+			global::java.util.prefs.PreferencesFactory_._systemRoot28146 = @__env.GetMethodIDNoThrow(global::java.util.prefs.PreferencesFactory_.staticClass, "systemRoot", "()Ljava/util/prefs/Preferences;");
 		}
 	}
 }

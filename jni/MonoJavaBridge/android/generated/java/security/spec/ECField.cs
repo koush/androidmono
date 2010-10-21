@@ -17,20 +17,20 @@ namespace java.security.spec
 		internal ECField_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getFieldSize18250;
+		internal static global::MonoJavaBridge.MethodId _getFieldSize23859;
 		 int java.security.spec.ECField.getFieldSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECField_._getFieldSize18250);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECField_._getFieldSize23859);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECField_.staticClass, global::java.security.spec.ECField_._getFieldSize18250);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECField_.staticClass, global::java.security.spec.ECField_._getFieldSize23859);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECField_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECField"));
-			global::java.security.spec.ECField_._getFieldSize18250 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECField_.staticClass, "getFieldSize", "()I");
+			global::java.security.spec.ECField_._getFieldSize23859 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECField_.staticClass, "getFieldSize", "()I");
 		}
 	}
 }

@@ -11,48 +11,48 @@ namespace android.text.method
 		protected CharacterPickerDialog(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onClick8589;
+		internal static global::MonoJavaBridge.MethodId _onClick13200;
 		public virtual void onClick(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog._onClick8589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog._onClick13200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._onClick8589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._onClick13200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreate8590;
+		internal static global::MonoJavaBridge.MethodId _onCreate13201;
 		protected override void onCreate(android.os.Bundle arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog._onCreate8590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog._onCreate13201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._onCreate8590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._onCreate13201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onItemClick8591;
+		internal static global::MonoJavaBridge.MethodId _onItemClick13202;
 		public virtual void onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog._onItemClick8591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog._onItemClick13202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._onItemClick8591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._onItemClick13202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _CharacterPickerDialog8592;
+		internal static global::MonoJavaBridge.MethodId _CharacterPickerDialog13203;
 		public CharacterPickerDialog(android.content.Context arg0, android.view.View arg1, android.text.Editable arg2, java.lang.String arg3, bool arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._CharacterPickerDialog8592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.CharacterPickerDialog.staticClass, global::android.text.method.CharacterPickerDialog._CharacterPickerDialog13203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.method.CharacterPickerDialog.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/method/CharacterPickerDialog"));
-			global::android.text.method.CharacterPickerDialog._onClick8589 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "onClick", "(Landroid/view/View;)V");
-			global::android.text.method.CharacterPickerDialog._onCreate8590 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.text.method.CharacterPickerDialog._onItemClick8591 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "onItemClick", "(Landroid/widget/AdapterView;Landroid/view/View;IJ)V");
-			global::android.text.method.CharacterPickerDialog._CharacterPickerDialog8592 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "<init>", "(Landroid/content/Context;Landroid/view/View;Landroid/text/Editable;Ljava/lang/String;Z)V");
+			global::android.text.method.CharacterPickerDialog._onClick13200 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "onClick", "(Landroid/view/View;)V");
+			global::android.text.method.CharacterPickerDialog._onCreate13201 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
+			global::android.text.method.CharacterPickerDialog._onItemClick13202 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "onItemClick", "(Landroid/widget/AdapterView;Landroid/view/View;IJ)V");
+			global::android.text.method.CharacterPickerDialog._CharacterPickerDialog13203 = @__env.GetMethodIDNoThrow(global::android.text.method.CharacterPickerDialog.staticClass, "<init>", "(Landroid/content/Context;Landroid/view/View;Landroid/text/Editable;Ljava/lang/String;Z)V");
 		}
 	}
 }

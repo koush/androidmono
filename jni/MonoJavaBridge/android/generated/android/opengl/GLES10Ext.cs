@@ -11,32 +11,32 @@ namespace android.opengl
 		protected GLES10Ext(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES5675;
+		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES8471;
 		public static int glQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._glQueryMatrixxOES5675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._glQueryMatrixxOES8471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES5676;
+		internal static global::MonoJavaBridge.MethodId _glQueryMatrixxOES8472;
 		public static int glQueryMatrixxOES(java.nio.IntBuffer arg0, java.nio.IntBuffer arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._glQueryMatrixxOES5676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._glQueryMatrixxOES8472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _GLES10Ext5677;
+		internal static global::MonoJavaBridge.MethodId _GLES10Ext8473;
 		public GLES10Ext()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._GLES10Ext5677);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.opengl.GLES10Ext.staticClass, global::android.opengl.GLES10Ext._GLES10Ext8473);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.opengl.GLES10Ext.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/opengl/GLES10Ext"));
-			global::android.opengl.GLES10Ext._glQueryMatrixxOES5675 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "([II[II)I");
-			global::android.opengl.GLES10Ext._glQueryMatrixxOES5676 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I");
-			global::android.opengl.GLES10Ext._GLES10Ext5677 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "<init>", "()V");
+			global::android.opengl.GLES10Ext._glQueryMatrixxOES8471 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "([II[II)I");
+			global::android.opengl.GLES10Ext._glQueryMatrixxOES8472 = @__env.GetStaticMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I");
+			global::android.opengl.GLES10Ext._GLES10Ext8473 = @__env.GetMethodIDNoThrow(global::android.opengl.GLES10Ext.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -11,88 +11,88 @@ namespace android.webkit
 		protected WebSyncManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _run11101;
+		internal static global::MonoJavaBridge.MethodId _run16206;
 		public virtual void run() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._run11101);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._run16206);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._run11101);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._run16206);
 		}
-		internal static global::MonoJavaBridge.MethodId _clone11102;
+		internal static global::MonoJavaBridge.MethodId _clone16207;
 		protected override global::java.lang.Object clone() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSyncManager._clone11102)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSyncManager._clone16207)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._clone11102)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._clone16207)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _sync11103;
+		internal static global::MonoJavaBridge.MethodId _sync16208;
 		public virtual void sync() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._sync11103);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._sync16208);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._sync11103);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._sync16208);
 		}
-		internal static global::MonoJavaBridge.MethodId _startSync11104;
+		internal static global::MonoJavaBridge.MethodId _startSync16209;
 		public virtual void startSync() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._startSync11104);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._startSync16209);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._startSync11104);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._startSync16209);
 		}
-		internal static global::MonoJavaBridge.MethodId _resetSync11105;
+		internal static global::MonoJavaBridge.MethodId _resetSync16210;
 		public virtual void resetSync() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._resetSync11105);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._resetSync16210);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._resetSync11105);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._resetSync16210);
 		}
-		internal static global::MonoJavaBridge.MethodId _stopSync11106;
+		internal static global::MonoJavaBridge.MethodId _stopSync16211;
 		public virtual void stopSync() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._stopSync11106);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._stopSync16211);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._stopSync11106);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._stopSync16211);
 		}
-		internal static global::MonoJavaBridge.MethodId _onSyncInit11107;
+		internal static global::MonoJavaBridge.MethodId _onSyncInit16212;
 		protected virtual void onSyncInit() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._onSyncInit11107);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager._onSyncInit16212);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._onSyncInit11107);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._onSyncInit16212);
 		}
-		internal static global::MonoJavaBridge.MethodId _WebSyncManager11108;
+		internal static global::MonoJavaBridge.MethodId _WebSyncManager16213;
 		protected WebSyncManager(android.content.Context arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._WebSyncManager11108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._WebSyncManager16213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebSyncManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebSyncManager"));
-			global::android.webkit.WebSyncManager._run11101 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "run", "()V");
-			global::android.webkit.WebSyncManager._clone11102 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "clone", "()Ljava/lang/Object;");
-			global::android.webkit.WebSyncManager._sync11103 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "sync", "()V");
-			global::android.webkit.WebSyncManager._startSync11104 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "startSync", "()V");
-			global::android.webkit.WebSyncManager._resetSync11105 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "resetSync", "()V");
-			global::android.webkit.WebSyncManager._stopSync11106 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "stopSync", "()V");
-			global::android.webkit.WebSyncManager._onSyncInit11107 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "onSyncInit", "()V");
-			global::android.webkit.WebSyncManager._WebSyncManager11108 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;)V");
+			global::android.webkit.WebSyncManager._run16206 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "run", "()V");
+			global::android.webkit.WebSyncManager._clone16207 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "clone", "()Ljava/lang/Object;");
+			global::android.webkit.WebSyncManager._sync16208 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "sync", "()V");
+			global::android.webkit.WebSyncManager._startSync16209 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "startSync", "()V");
+			global::android.webkit.WebSyncManager._resetSync16210 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "resetSync", "()V");
+			global::android.webkit.WebSyncManager._stopSync16211 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "stopSync", "()V");
+			global::android.webkit.WebSyncManager._onSyncInit16212 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "onSyncInit", "()V");
+			global::android.webkit.WebSyncManager._WebSyncManager16213 = @__env.GetMethodIDNoThrow(global::android.webkit.WebSyncManager.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/String;)V");
 		}
 	}
 

@@ -17,20 +17,20 @@ namespace junit.framework
 		internal Protectable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _protect24767;
+		internal static global::MonoJavaBridge.MethodId _protect31255;
 		 void junit.framework.Protectable.protect() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Protectable_._protect24767);
+				@__env.CallVoidMethod(this.JvmHandle, global::junit.framework.Protectable_._protect31255);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.Protectable_.staticClass, global::junit.framework.Protectable_._protect24767);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.Protectable_.staticClass, global::junit.framework.Protectable_._protect31255);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::junit.framework.Protectable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("junit/framework/Protectable"));
-			global::junit.framework.Protectable_._protect24767 = @__env.GetMethodIDNoThrow(global::junit.framework.Protectable_.staticClass, "protect", "()V");
+			global::junit.framework.Protectable_._protect31255 = @__env.GetMethodIDNoThrow(global::junit.framework.Protectable_.staticClass, "protect", "()V");
 		}
 	}
 }

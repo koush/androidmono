@@ -16,50 +16,50 @@ namespace android.test.suitebuilder.annotation
 		internal Smoke_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals8123;
+		internal static global::MonoJavaBridge.MethodId _equals12601;
 		 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._equals8123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._equals12601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._equals8123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._equals12601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString8124;
+		internal static global::MonoJavaBridge.MethodId _toString12602;
 		 global::java.lang.String java.lang.annotation.Annotation.toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._toString8124)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._toString12602)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._toString8124)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._toString12602)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode8125;
+		internal static global::MonoJavaBridge.MethodId _hashCode12603;
 		 int java.lang.annotation.Annotation.hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._hashCode8125);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._hashCode12603);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._hashCode8125);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._hashCode12603);
 		}
-		internal static global::MonoJavaBridge.MethodId _annotationType8126;
+		internal static global::MonoJavaBridge.MethodId _annotationType12604;
 		 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._annotationType8126)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_._annotationType12604)) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._annotationType8126)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.Smoke_.staticClass, global::android.test.suitebuilder.annotation.Smoke_._annotationType12604)) as java.lang.Class;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.suitebuilder.annotation.Smoke_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/suitebuilder/annotation/Smoke"));
-			global::android.test.suitebuilder.annotation.Smoke_._equals8123 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.test.suitebuilder.annotation.Smoke_._toString8124 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.test.suitebuilder.annotation.Smoke_._hashCode8125 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "hashCode", "()I");
-			global::android.test.suitebuilder.annotation.Smoke_._annotationType8126 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "annotationType", "()Ljava/lang/Class;");
+			global::android.test.suitebuilder.annotation.Smoke_._equals12601 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.test.suitebuilder.annotation.Smoke_._toString12602 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.test.suitebuilder.annotation.Smoke_._hashCode12603 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "hashCode", "()I");
+			global::android.test.suitebuilder.annotation.Smoke_._annotationType12604 = @__env.GetMethodIDNoThrow(global::android.test.suitebuilder.annotation.Smoke_.staticClass, "annotationType", "()Ljava/lang/Class;");
 		}
 	}
 }

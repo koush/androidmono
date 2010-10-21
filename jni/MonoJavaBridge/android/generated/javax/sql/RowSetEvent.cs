@@ -11,18 +11,18 @@ namespace javax.sql
 		protected RowSetEvent(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _RowSetEvent24021;
+		internal static global::MonoJavaBridge.MethodId _RowSetEvent30455;
 		public RowSetEvent(javax.sql.RowSet arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.RowSetEvent.staticClass, global::javax.sql.RowSetEvent._RowSetEvent24021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.RowSetEvent.staticClass, global::javax.sql.RowSetEvent._RowSetEvent30455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.sql.RowSetEvent.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/sql/RowSetEvent"));
-			global::javax.sql.RowSetEvent._RowSetEvent24021 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetEvent.staticClass, "<init>", "(Ljavax/sql/RowSet;)V");
+			global::javax.sql.RowSetEvent._RowSetEvent30455 = @__env.GetMethodIDNoThrow(global::javax.sql.RowSetEvent.staticClass, "<init>", "(Ljavax/sql/RowSet;)V");
 		}
 	}
 }

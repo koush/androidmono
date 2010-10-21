@@ -20,50 +20,50 @@ namespace java.sql
 		internal Ref_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getObject18953;
+		internal static global::MonoJavaBridge.MethodId _getObject24635;
 		 global::java.lang.Object java.sql.Ref.getObject(java.util.Map arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Ref_._getObject18953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Ref_._getObject24635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getObject18953, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getObject24635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getObject18954;
+		internal static global::MonoJavaBridge.MethodId _getObject24636;
 		 global::java.lang.Object java.sql.Ref.getObject() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Ref_._getObject18954)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Ref_._getObject24636)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getObject18954)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getObject24636)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _setObject18955;
+		internal static global::MonoJavaBridge.MethodId _setObject24637;
 		 void java.sql.Ref.setObject(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Ref_._setObject18955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.Ref_._setObject24637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._setObject18955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._setObject24637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getBaseTypeName18956;
+		internal static global::MonoJavaBridge.MethodId _getBaseTypeName24638;
 		 global::java.lang.String java.sql.Ref.getBaseTypeName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Ref_._getBaseTypeName18956)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.Ref_._getBaseTypeName24638)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getBaseTypeName18956)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Ref_.staticClass, global::java.sql.Ref_._getBaseTypeName24638)) as java.lang.String;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.Ref_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/Ref"));
-			global::java.sql.Ref_._getObject18953 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getObject", "(Ljava/util/Map;)Ljava/lang/Object;");
-			global::java.sql.Ref_._getObject18954 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getObject", "()Ljava/lang/Object;");
-			global::java.sql.Ref_._setObject18955 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "setObject", "(Ljava/lang/Object;)V");
-			global::java.sql.Ref_._getBaseTypeName18956 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getBaseTypeName", "()Ljava/lang/String;");
+			global::java.sql.Ref_._getObject24635 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getObject", "(Ljava/util/Map;)Ljava/lang/Object;");
+			global::java.sql.Ref_._getObject24636 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getObject", "()Ljava/lang/Object;");
+			global::java.sql.Ref_._setObject24637 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "setObject", "(Ljava/lang/Object;)V");
+			global::java.sql.Ref_._getBaseTypeName24638 = @__env.GetMethodIDNoThrow(global::java.sql.Ref_.staticClass, "getBaseTypeName", "()Ljava/lang/String;");
 		}
 	}
 }
