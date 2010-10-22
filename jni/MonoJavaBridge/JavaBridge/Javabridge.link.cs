@@ -50,12 +50,17 @@ namespace MonoJavaBridge
     
     public static partial class JavaBridge
     {
-        public static void Log(string format, params object[] args)
+        public static void Log(String s)
         {
-            string s = String.Format(format, args);
             IntPtr p = Marshal.StringToHGlobalAnsi(s);
             log(p);
             Marshal.FreeHGlobal(p);
+        }
+        
+        public static void Log(string format, params object[] args)
+        {
+            string s = String.Format(format, args);
+            Log(s);
         }
         
         static JavaVM myVM;
@@ -66,6 +71,8 @@ namespace MonoJavaBridge
         static MethodInfo myExpressionLambda = null;
         static MethodInfo mWrapJavaArrayObject = null;
         static MethodInfo mWrapIJavaObject = null;
+        static MethodInfo myReportException = null;
+        static MethodInfo myReportExceptionNoResult = null;
         
         // this is to prevent an ambiguous method when searching for the wrapped method
         // even with exact parameters provided, I was getting ambiguous method exceptions
@@ -86,6 +93,8 @@ namespace MonoJavaBridge
             mWrapIJavaObject = typeof(JavaBridge).GetMethod("WrapIJavaObject", new Type[] { typeof(JniLocalHandle) });
             myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
             myExpressionLambda = typeof(JavaBridge).GetMethod("LambdaPassthrough");
+            myReportException = typeof(JavaBridge).GetMethod("ReportException");
+            myReportExceptionNoResult = typeof(JavaBridge).GetMethod("ReportExceptionNoResult");
             //Console.WriteLine(myExpressionLambda);
             
             myActions.Add(typeof(JniAction));
@@ -125,6 +134,7 @@ namespace MonoJavaBridge
             var env = JNIEnv.GetEnvForVm(myVM);
 
             myMonoProxyClass = env.NewGlobalRef(env.FindClass("com/koushikdutta/monojavabridge/MonoProxy"));
+            myJavaExceptionClass = env.NewGlobalRef(env.FindClass("java/lang/Exception"));
             mySetGCHandle = env.GetMethodID(myMonoProxyClass, "setGCHandle", "(J)V");
             myGetGCHandle = env.GetMethodID(myMonoProxyClass, "getGCHandle", "()J");
         }
@@ -185,6 +195,7 @@ namespace MonoJavaBridge
             return Expression.Convert(Expression.Call(wrapObject, Expression.Convert(parameter, typeof(JniLocalHandle))), argumentType);
         }
         
+        static JniGlobalHandle myJavaExceptionClass;
         static JniGlobalHandle myMonoProxyClass;
         static MethodId myGetGCHandle;
         static MethodId mySetGCHandle;
@@ -217,6 +228,36 @@ namespace MonoJavaBridge
             if (type.IsPrimitive)
                 return type;
             return typeof(IntPtr);
+        }
+        
+        public static T ReportException<T>(Exception ex)
+        {
+            ReportExceptionNoResult(ex);
+            return default(T);
+        }
+        
+        public static void ReportExceptionNoResult(Exception ex)
+        {
+            JavaException jex = ex as JavaException;
+            if (jex != null)
+                JNIEnv.ThreadEnv.Throw(jex);
+            else
+                JNIEnv.ThreadEnv.ThrowNew(myJavaExceptionClass, ex.Message);
+        }
+
+        static Expression MakeTryCatchWrapper(MethodCallExpression methodCallExpr)
+        {
+            var parExpr = Expression.Parameter(typeof(Exception), "ex");
+            MethodInfo reportCall = null;
+            if (methodCallExpr.Type != typeof(void))
+                reportCall = myReportException.MakeGenericMethod(methodCallExpr.Type);
+            else
+                reportCall = myReportExceptionNoResult;
+            return Expression.TryCatch(
+                methodCallExpr,
+                Expression.Catch(
+                    parExpr,
+                    Expression.Call(reportCall, parExpr)));
         }
         
         public static Delegate MakeWrapper(MethodInfo method)
@@ -262,7 +303,9 @@ namespace MonoJavaBridge
             var methodExpression = Expression.Call(MarshalCLRHandle(obj, method.DeclaringType), method, marshaledParameterExpressions);
             Console.WriteLine("Method Expression: {0}", methodExpression);
             //var lambdaExpression = expressionMethodInfo.Invoke(null, new object[] { methodExpression, fullParameterList.ToArray() });
-            var lambdaExpression = Expression.Lambda(delegateType, methodExpression, fullParameterList.ToArray());
+            var tryWrapped = MakeTryCatchWrapper(methodExpression);
+//            var lambdaExpression = Expression.Lambda(delegateType, methodExpression, fullParameterList.ToArray());
+            var lambdaExpression = Expression.Lambda(delegateType, tryWrapped, fullParameterList.ToArray());
             Console.WriteLine("Lambda Expression: {0}", lambdaExpression);
             
             //var del = (Delegate)lambdaExpressionCompileMethod.Invoke(lambdaExpression, null);

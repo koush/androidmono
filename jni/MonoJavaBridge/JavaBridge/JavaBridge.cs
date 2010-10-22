@@ -97,7 +97,6 @@ namespace MonoJavaBridge
 			Type type = FindType(className);
             if (type != null && type.IsAbstract)
             {
-                Console.WriteLine("Wrapping abstract type: " + className);
                 type = FindType(className + "_");
             }
 			if (type != null)

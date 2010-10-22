@@ -952,7 +952,7 @@ namespace MonoJavaBridge
 
         public void ThrowNew(JniHandle clazz, string message)
         {
-            IntPtr uni = Marshal.StringToHGlobalUni(message);
+            IntPtr uni = Marshal.StringToHGlobalAnsi(message);
             if (throwNew(envPtr, clazz, uni) != JNIResult.JNI_OK)
             {
                 throw new JNIException("Can't throw");
