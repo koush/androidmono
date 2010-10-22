@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.MediaController.MediaPlayerControl_))]
-		public interface MediaPlayerControl  : global::MonoJavaBridge.IJavaObject 
+		public partial interface MediaPlayerControl  : global::MonoJavaBridge.IJavaObject 
 		{
 			void start();
 			int getDuration();

@@ -1,7 +1,7 @@
 namespace android.webkit
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.UrlInterceptHandler_))]
-	public interface UrlInterceptHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface UrlInterceptHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.webkit.CacheManager.CacheResult service(java.lang.String arg0, java.util.Map arg1);
 		global::android.webkit.PluginData getPluginData(java.lang.String arg0, java.util.Map arg1);

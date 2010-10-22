@@ -1,7 +1,7 @@
 namespace android.os
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.IBinder_DeathRecipient_))]
-	public interface IBinder_DeathRecipient  : global::MonoJavaBridge.IJavaObject 
+	public partial interface IBinder_DeathRecipient  : global::MonoJavaBridge.IJavaObject 
 	{
 		void binderDied();
 	}

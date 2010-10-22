@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Adapter_))]
-	public interface Adapter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Adapter  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isEmpty();
 		int getCount();

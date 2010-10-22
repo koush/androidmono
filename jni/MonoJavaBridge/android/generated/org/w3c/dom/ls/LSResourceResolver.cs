@@ -1,7 +1,7 @@
 namespace org.w3c.dom.ls
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.ls.LSResourceResolver_))]
-	public interface LSResourceResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LSResourceResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.w3c.dom.ls.LSInput resolveResource(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4);
 	}

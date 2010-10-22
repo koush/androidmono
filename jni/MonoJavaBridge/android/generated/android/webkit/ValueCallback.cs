@@ -1,7 +1,7 @@
 namespace android.webkit
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.ValueCallback_))]
-	public interface ValueCallback  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ValueCallback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onReceiveValue(java.lang.Object arg0);
 	}

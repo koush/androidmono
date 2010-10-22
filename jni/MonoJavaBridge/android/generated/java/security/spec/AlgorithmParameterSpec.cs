@@ -1,7 +1,7 @@
 namespace java.security.spec
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.spec.AlgorithmParameterSpec_))]
-	public interface AlgorithmParameterSpec  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AlgorithmParameterSpec  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

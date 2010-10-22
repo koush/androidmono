@@ -85,6 +85,10 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toArray25553)) as java.lang.Object[];
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator25554;
 		public abstract global::java.util.Iterator iterator();
 		internal static global::MonoJavaBridge.MethodId _remove25555;
@@ -171,6 +175,10 @@ namespace java.util
 				return @__env.CallIntMethod(this.JvmHandle, global::java.util.AbstractCollection_._size25560);
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.AbstractCollection_.staticClass, global::java.util.AbstractCollection_._size25560);
+		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator25561;
 		public override global::java.util.Iterator iterator() 

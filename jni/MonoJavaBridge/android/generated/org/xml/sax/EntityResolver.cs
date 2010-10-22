@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.EntityResolver_))]
-	public interface EntityResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface EntityResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1);
 	}

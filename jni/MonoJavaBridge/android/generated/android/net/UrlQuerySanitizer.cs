@@ -252,7 +252,7 @@ namespace android.net
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.net.UrlQuerySanitizer.ValueSanitizer_))]
-		public interface ValueSanitizer  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ValueSanitizer  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::java.lang.String sanitize(java.lang.String arg0);
 		}

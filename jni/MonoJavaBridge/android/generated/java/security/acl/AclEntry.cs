@@ -1,7 +1,7 @@
 namespace java.security.acl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.acl.AclEntry_))]
-	public interface AclEntry : java.lang.Cloneable
+	public partial interface AclEntry : java.lang.Cloneable
 	{
 		global::java.lang.String toString();
 		global::java.lang.Object clone();

@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.WildcardType_))]
-	public interface WildcardType : Type
+	public partial interface WildcardType : Type
 	{
 		global::java.lang.reflect.Type[] getUpperBounds();
 		global::java.lang.reflect.Type[] getLowerBounds();

@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.@params
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.@params.ConnPerRoute_))]
-	public interface ConnPerRoute  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ConnPerRoute  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0);
 	}

@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Checkable_))]
-	public interface Checkable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Checkable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void toggle();
 		bool isChecked();

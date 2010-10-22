@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.egl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.egl.EGL_))]
-	public interface EGL  : global::MonoJavaBridge.IJavaObject 
+	public partial interface EGL  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

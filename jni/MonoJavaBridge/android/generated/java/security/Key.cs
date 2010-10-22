@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Key_))]
-	public interface Key : java.io.Serializable
+	public partial interface Key : java.io.Serializable
 	{
 		byte[] getEncoded();
 		global::java.lang.String getAlgorithm();

@@ -1,7 +1,7 @@
 namespace java.nio.channels
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.nio.channels.WritableByteChannel_))]
-	public interface WritableByteChannel : Channel
+	public partial interface WritableByteChannel : Channel
 	{
 		int write(java.nio.ByteBuffer arg0);
 	}

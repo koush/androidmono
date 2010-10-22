@@ -1,7 +1,7 @@
 namespace org.w3c.dom.ls
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.ls.LSOutput_))]
-	public interface LSOutput  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LSOutput  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getEncoding();
 		void setEncoding(java.lang.String arg0);

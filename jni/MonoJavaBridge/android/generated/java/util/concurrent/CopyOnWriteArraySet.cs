@@ -92,6 +92,10 @@ namespace java.util.concurrent
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.CopyOnWriteArraySet.staticClass, global::java.util.concurrent.CopyOnWriteArraySet._toArray27088)) as java.lang.Object[];
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator27089;
 		public override global::java.util.Iterator iterator() 
 		{

@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Connection_))]
-	public interface Connection  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Connection  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setReadOnly(bool arg0);
 		void close();

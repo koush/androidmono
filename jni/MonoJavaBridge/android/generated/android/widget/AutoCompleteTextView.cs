@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AutoCompleteTextView.Validator_))]
-		public interface Validator  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Validator  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool isValid(java.lang.CharSequence arg0);
 			global::java.lang.CharSequence fixText(java.lang.CharSequence arg0);

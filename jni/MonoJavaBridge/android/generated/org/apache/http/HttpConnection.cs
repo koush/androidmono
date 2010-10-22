@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpConnection_))]
-	public interface HttpConnection  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpConnection  : global::MonoJavaBridge.IJavaObject 
 	{
 		void shutdown();
 		void close();

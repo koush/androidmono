@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ClientConnectionManagerFactory_))]
-	public interface ClientConnectionManagerFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ClientConnectionManagerFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.conn.ClientConnectionManager newInstance(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.scheme.SchemeRegistry arg1);
 	}

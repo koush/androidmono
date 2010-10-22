@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpConnectionMetrics_))]
-	public interface HttpConnectionMetrics  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpConnectionMetrics  : global::MonoJavaBridge.IJavaObject 
 	{
 		void reset();
 		long getRequestCount();

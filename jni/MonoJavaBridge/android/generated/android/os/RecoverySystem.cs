@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.RecoverySystem.ProgressListener_))]
-		public interface ProgressListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ProgressListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onProgress(int arg0);
 		}

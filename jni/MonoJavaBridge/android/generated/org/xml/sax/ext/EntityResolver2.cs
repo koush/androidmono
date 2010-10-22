@@ -1,7 +1,7 @@
 namespace org.xml.sax.ext
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ext.EntityResolver2_))]
-	public interface EntityResolver2 : EntityResolver
+	public partial interface EntityResolver2 : EntityResolver
 	{
 		global::org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3);
 		global::org.xml.sax.InputSource getExternalSubset(java.lang.String arg0, java.lang.String arg1);

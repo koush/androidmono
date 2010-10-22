@@ -1,7 +1,7 @@
 namespace org.apache.http.cookie
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.cookie.CookieSpecFactory_))]
-	public interface CookieSpecFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface CookieSpecFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.cookie.CookieSpec newInstance(org.apache.http.@params.HttpParams arg0);
 	}

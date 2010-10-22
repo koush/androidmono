@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.ECKey_))]
-	public interface ECKey  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ECKey  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.security.spec.ECParameterSpec getParams();
 	}

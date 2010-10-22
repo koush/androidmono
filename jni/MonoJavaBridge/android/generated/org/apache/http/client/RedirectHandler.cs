@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.RedirectHandler_))]
-	public interface RedirectHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RedirectHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isRedirectRequested(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1);
 		global::java.net.URI getLocationURI(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1);

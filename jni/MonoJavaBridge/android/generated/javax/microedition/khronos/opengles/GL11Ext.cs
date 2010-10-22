@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.opengles
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.opengles.GL11Ext_))]
-	public interface GL11Ext : GL
+	public partial interface GL11Ext : GL
 	{
 		void glEnable(int arg0);
 		void glEnableClientState(int arg0);

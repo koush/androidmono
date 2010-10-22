@@ -1,7 +1,7 @@
 namespace javax.xml.transform
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.SourceLocator_))]
-	public interface SourceLocator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SourceLocator  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getLineNumber();
 		global::java.lang.String getPublicId();

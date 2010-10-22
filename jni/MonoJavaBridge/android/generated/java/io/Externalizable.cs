@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.Externalizable_))]
-	public interface Externalizable : Serializable
+	public partial interface Externalizable : Serializable
 	{
 		void writeExternal(java.io.ObjectOutput arg0);
 		void readExternal(java.io.ObjectInput arg0);

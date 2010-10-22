@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.GetChars_))]
-	public interface GetChars : java.lang.CharSequence
+	public partial interface GetChars : java.lang.CharSequence
 	{
 		void getChars(int arg0, int arg1, char[] arg2, int arg3);
 	}

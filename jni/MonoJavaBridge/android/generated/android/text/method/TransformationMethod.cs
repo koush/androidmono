@@ -1,7 +1,7 @@
 namespace android.text.method
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.method.TransformationMethod_))]
-	public interface TransformationMethod  : global::MonoJavaBridge.IJavaObject 
+	public partial interface TransformationMethod  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onFocusChanged(android.view.View arg0, java.lang.CharSequence arg1, bool arg2, int arg3, android.graphics.Rect arg4);
 		global::java.lang.CharSequence getTransformation(java.lang.CharSequence arg0, android.view.View arg1);

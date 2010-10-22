@@ -1,7 +1,7 @@
 namespace org.xml.sax.ext
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ext.Locator2_))]
-	public interface Locator2 : Locator
+	public partial interface Locator2 : Locator
 	{
 		global::java.lang.String getEncoding();
 		global::java.lang.String getXMLVersion();

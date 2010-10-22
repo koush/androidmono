@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ViewSwitcher.ViewFactory_))]
-		public interface ViewFactory  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ViewFactory  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::android.view.View makeView();
 		}

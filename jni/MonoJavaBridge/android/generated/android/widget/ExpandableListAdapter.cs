@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ExpandableListAdapter_))]
-	public interface ExpandableListAdapter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ExpandableListAdapter  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isEmpty();
 		void registerDataSetObserver(android.database.DataSetObserver arg0);

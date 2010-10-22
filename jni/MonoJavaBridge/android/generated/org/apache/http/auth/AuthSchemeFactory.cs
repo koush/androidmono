@@ -1,7 +1,7 @@
 namespace org.apache.http.auth
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.auth.AuthSchemeFactory_))]
-	public interface AuthSchemeFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AuthSchemeFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.auth.AuthScheme newInstance(org.apache.http.@params.HttpParams arg0);
 	}

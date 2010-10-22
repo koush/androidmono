@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaScannerConnection.MediaScannerConnectionClient_))]
-		public interface MediaScannerConnectionClient : OnScanCompletedListener
+		public partial interface MediaScannerConnectionClient : OnScanCompletedListener
 		{
 			void onMediaScannerConnected();
 			void onScanCompleted(java.lang.String arg0, android.net.Uri arg1);
@@ -66,7 +66,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaScannerConnection.OnScanCompletedListener_))]
-		public interface OnScanCompletedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnScanCompletedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onScanCompleted(java.lang.String arg0, android.net.Uri arg1);
 		}

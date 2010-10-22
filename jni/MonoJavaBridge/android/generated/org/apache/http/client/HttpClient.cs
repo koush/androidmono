@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.HttpClient_))]
-	public interface HttpClient  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpClient  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.@params.HttpParams getParams();
 		global::org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest arg0);

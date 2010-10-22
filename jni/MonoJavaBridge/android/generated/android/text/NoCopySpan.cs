@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.NoCopySpan_))]
-	public interface NoCopySpan  : global::MonoJavaBridge.IJavaObject 
+	public partial interface NoCopySpan  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

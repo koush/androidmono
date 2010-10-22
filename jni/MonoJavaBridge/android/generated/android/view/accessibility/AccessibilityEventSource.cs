@@ -1,7 +1,7 @@
 namespace android.view.accessibility
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.accessibility.AccessibilityEventSource_))]
-	public interface AccessibilityEventSource  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AccessibilityEventSource  : global::MonoJavaBridge.IJavaObject 
 	{
 		void sendAccessibilityEvent(int arg0);
 		void sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent arg0);

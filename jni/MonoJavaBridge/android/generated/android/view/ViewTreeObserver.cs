@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewTreeObserver.OnGlobalFocusChangeListener_))]
-		public interface OnGlobalFocusChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGlobalFocusChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGlobalFocusChanged(android.view.View arg0, android.view.View arg1);
 		}
@@ -45,7 +45,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewTreeObserver.OnGlobalLayoutListener_))]
-		public interface OnGlobalLayoutListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGlobalLayoutListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGlobalLayout();
 		}
@@ -78,7 +78,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewTreeObserver.OnPreDrawListener_))]
-		public interface OnPreDrawListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnPreDrawListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onPreDraw();
 		}
@@ -111,7 +111,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewTreeObserver.OnScrollChangedListener_))]
-		public interface OnScrollChangedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnScrollChangedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onScrollChanged();
 		}
@@ -144,7 +144,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewTreeObserver.OnTouchModeChangeListener_))]
-		public interface OnTouchModeChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnTouchModeChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onTouchModeChanged(bool arg0);
 		}

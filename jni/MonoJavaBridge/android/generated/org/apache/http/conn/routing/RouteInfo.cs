@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.routing
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.routing.RouteInfo_))]
-	public interface RouteInfo  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RouteInfo  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isSecure();
 		global::java.net.InetAddress getLocalAddress();

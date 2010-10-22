@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.Element_))]
-	public interface Element : Node
+	public partial interface Element : Node
 	{
 		global::java.lang.String getAttribute(java.lang.String arg0);
 		global::java.lang.String getTagName();

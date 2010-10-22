@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.ConnectionReuseStrategy_))]
-	public interface ConnectionReuseStrategy  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ConnectionReuseStrategy  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool keepAlive(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1);
 	}

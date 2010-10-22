@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ZoomButtonsController.OnZoomListener_))]
-		public interface OnZoomListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnZoomListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onVisibilityChanged(bool arg0);
 			void onZoom(bool arg0);

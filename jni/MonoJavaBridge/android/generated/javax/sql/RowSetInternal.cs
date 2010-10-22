@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.RowSetInternal_))]
-	public interface RowSetInternal  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RowSetInternal  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object[] getParams();
 		global::java.sql.Connection getConnection();

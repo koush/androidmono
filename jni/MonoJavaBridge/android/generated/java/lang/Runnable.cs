@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Runnable_))]
-	public interface Runnable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Runnable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void run();
 	}

@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.ManagerFactoryParameters_))]
-	public interface ManagerFactoryParameters  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ManagerFactoryParameters  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

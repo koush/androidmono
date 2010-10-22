@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Certificate_))]
-	public interface Certificate  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Certificate  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String toString(bool arg0);
 		void decode(java.io.InputStream arg0);

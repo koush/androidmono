@@ -1,7 +1,7 @@
 namespace junit.framework
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::junit.framework.Test_))]
-	public interface Test  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Test  : global::MonoJavaBridge.IJavaObject 
 	{
 		void run(junit.framework.TestResult arg0);
 		int countTestCases();

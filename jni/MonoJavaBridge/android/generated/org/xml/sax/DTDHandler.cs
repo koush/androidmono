@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.DTDHandler_))]
-	public interface DTDHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DTDHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void unparsedEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3);
 		void notationDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2);

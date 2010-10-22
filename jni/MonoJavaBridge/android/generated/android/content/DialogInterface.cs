@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_))]
-	public interface DialogInterface  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DialogInterface  : global::MonoJavaBridge.IJavaObject 
 	{
 		void cancel();
 		void dismiss();

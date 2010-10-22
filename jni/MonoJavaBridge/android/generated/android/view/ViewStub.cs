@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewStub.OnInflateListener_))]
-		public interface OnInflateListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnInflateListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onInflate(android.view.ViewStub arg0, android.view.View arg1);
 		}

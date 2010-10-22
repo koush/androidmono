@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.HandshakeCompletedListener_))]
-	public interface HandshakeCompletedListener : java.util.EventListener
+	public partial interface HandshakeCompletedListener : java.util.EventListener
 	{
 		void handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent arg0);
 	}

@@ -1,7 +1,7 @@
 namespace android.os
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.IBinder_))]
-	public interface IBinder  : global::MonoJavaBridge.IJavaObject 
+	public partial interface IBinder  : global::MonoJavaBridge.IJavaObject 
 	{
 		void dump(java.io.FileDescriptor arg0, java.lang.String[] arg1);
 		global::java.lang.String getInterfaceDescriptor();

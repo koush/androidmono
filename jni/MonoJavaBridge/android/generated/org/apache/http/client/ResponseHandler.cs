@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.ResponseHandler_))]
-	public interface ResponseHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ResponseHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object handleResponse(org.apache.http.HttpResponse arg0);
 	}

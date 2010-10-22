@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.Html.ImageGetter_))]
-		public interface ImageGetter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ImageGetter  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0);
 		}
@@ -45,7 +45,7 @@ namespace android.text
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.Html.TagHandler_))]
-		public interface TagHandler  : global::MonoJavaBridge.IJavaObject 
+		public partial interface TagHandler  : global::MonoJavaBridge.IJavaObject 
 		{
 			void handleTag(bool arg0, java.lang.String arg1, android.text.Editable arg2, org.xml.sax.XMLReader arg3);
 		}

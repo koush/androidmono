@@ -1,7 +1,7 @@
 namespace android.location
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.location.LocationListener_))]
-	public interface LocationListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LocationListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onStatusChanged(java.lang.String arg0, int arg1, android.os.Bundle arg2);
 		void onLocationChanged(android.location.Location arg0);

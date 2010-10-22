@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.Locator_))]
-	public interface Locator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Locator  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getLineNumber();
 		global::java.lang.String getPublicId();

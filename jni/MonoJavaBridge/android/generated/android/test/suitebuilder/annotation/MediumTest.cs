@@ -1,7 +1,7 @@
 namespace android.test.suitebuilder.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.suitebuilder.annotation.MediumTest_))]
-	public interface MediumTest : java.lang.annotation.Annotation
+	public partial interface MediumTest : java.lang.annotation.Annotation
 	{
 	}
 

@@ -1,7 +1,7 @@
 namespace java.util.prefs
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.prefs.PreferencesFactory_))]
-	public interface PreferencesFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PreferencesFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.util.prefs.Preferences userRoot();
 		global::java.util.prefs.Preferences systemRoot();

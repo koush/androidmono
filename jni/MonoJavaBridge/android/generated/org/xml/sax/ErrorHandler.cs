@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ErrorHandler_))]
-	public interface ErrorHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ErrorHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void fatalError(org.xml.sax.SAXParseException arg0);
 		void error(org.xml.sax.SAXParseException arg0);

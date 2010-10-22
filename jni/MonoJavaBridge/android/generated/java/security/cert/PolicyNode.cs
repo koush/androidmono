@@ -1,7 +1,7 @@
 namespace java.security.cert
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.cert.PolicyNode_))]
-	public interface PolicyNode  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PolicyNode  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.security.cert.PolicyNode getParent();
 		bool isCritical();

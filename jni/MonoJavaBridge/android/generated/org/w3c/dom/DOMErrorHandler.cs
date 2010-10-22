@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.DOMErrorHandler_))]
-	public interface DOMErrorHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DOMErrorHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool handleError(org.w3c.dom.DOMError arg0);
 	}

@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.RowSetListener_))]
-	public interface RowSetListener : java.util.EventListener
+	public partial interface RowSetListener : java.util.EventListener
 	{
 		void rowSetChanged(javax.sql.RowSetEvent arg0);
 		void rowChanged(javax.sql.RowSetEvent arg0);

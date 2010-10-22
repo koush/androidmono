@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Observer_))]
-	public interface Observer  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Observer  : global::MonoJavaBridge.IJavaObject 
 	{
 		void update(java.util.Observable arg0, java.lang.Object arg1);
 	}

@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpInetConnection_))]
-	public interface HttpInetConnection : HttpConnection
+	public partial interface HttpInetConnection : HttpConnection
 	{
 		global::java.net.InetAddress getLocalAddress();
 		int getLocalPort();

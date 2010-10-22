@@ -1,7 +1,7 @@
 namespace android.database
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.database.Cursor_))]
-	public interface Cursor  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Cursor  : global::MonoJavaBridge.IJavaObject 
 	{
 		short getShort(int arg0);
 		int getInt(int arg0);

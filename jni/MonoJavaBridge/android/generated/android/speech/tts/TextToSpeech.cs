@@ -163,7 +163,7 @@ namespace android.speech.tts
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.speech.tts.TextToSpeech.OnInitListener_))]
-		public interface OnInitListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnInitListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onInit(int arg0);
 		}
@@ -196,7 +196,7 @@ namespace android.speech.tts
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.speech.tts.TextToSpeech.OnUtteranceCompletedListener_))]
-		public interface OnUtteranceCompletedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnUtteranceCompletedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onUtteranceCompleted(java.lang.String arg0);
 		}

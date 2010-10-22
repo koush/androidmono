@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.Type_))]
-	public interface Type  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Type  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

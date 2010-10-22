@@ -76,7 +76,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AdapterView.OnItemClickListener_))]
-		public interface OnItemClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnItemClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3);
 		}
@@ -109,7 +109,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AdapterView.OnItemLongClickListener_))]
-		public interface OnItemLongClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnItemLongClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onItemLongClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3);
 		}
@@ -142,7 +142,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AdapterView.OnItemSelectedListener_))]
-		public interface OnItemSelectedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnItemSelectedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onItemSelected(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3);
 			void onNothingSelected(android.widget.AdapterView arg0);

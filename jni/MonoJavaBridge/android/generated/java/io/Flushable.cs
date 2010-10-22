@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.Flushable_))]
-	public interface Flushable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Flushable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void flush();
 	}

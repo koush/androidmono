@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewManager_))]
-	public interface ViewManager  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ViewManager  : global::MonoJavaBridge.IJavaObject 
 	{
 		void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1);
 		void updateViewLayout(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1);

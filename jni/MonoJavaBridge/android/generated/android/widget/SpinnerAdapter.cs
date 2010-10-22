@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SpinnerAdapter_))]
-	public interface SpinnerAdapter : Adapter
+	public partial interface SpinnerAdapter : Adapter
 	{
 		global::android.view.View getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2);
 	}

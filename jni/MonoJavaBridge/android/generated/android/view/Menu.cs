@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.Menu_))]
-	public interface Menu  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Menu  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.view.MenuItem add(int arg0);
 		global::android.view.MenuItem add(int arg0, int arg1, int arg2, java.lang.CharSequence arg3);

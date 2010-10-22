@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.ConnectionPoolDataSource_))]
-	public interface ConnectionPoolDataSource  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ConnectionPoolDataSource  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.sql.PooledConnection getPooledConnection();
 		global::javax.sql.PooledConnection getPooledConnection(java.lang.String arg0, java.lang.String arg1);

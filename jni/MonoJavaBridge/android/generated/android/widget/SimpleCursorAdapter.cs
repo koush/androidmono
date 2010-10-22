@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SimpleCursorAdapter.CursorToStringConverter_))]
-		public interface CursorToStringConverter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface CursorToStringConverter  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::java.lang.CharSequence convertToString(android.database.Cursor arg0);
 		}
@@ -45,7 +45,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SimpleCursorAdapter.ViewBinder_))]
-		public interface ViewBinder  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ViewBinder  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool setViewValue(android.view.View arg0, android.database.Cursor arg1, int arg2);
 		}

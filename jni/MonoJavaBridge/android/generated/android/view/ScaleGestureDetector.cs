@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ScaleGestureDetector.OnScaleGestureListener_))]
-		public interface OnScaleGestureListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnScaleGestureListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onScale(android.view.ScaleGestureDetector arg0);
 			bool onScaleBegin(android.view.ScaleGestureDetector arg0);

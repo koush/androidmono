@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.Editable_))]
-	public interface Editable : java.lang.CharSequence, GetChars, Spannable, java.lang.Appendable
+	public partial interface Editable : java.lang.CharSequence, GetChars, Spannable, java.lang.Appendable
 	{
 		global::android.text.Editable append(java.lang.CharSequence arg0, int arg1, int arg2);
 		global::android.text.Editable append(java.lang.CharSequence arg0);

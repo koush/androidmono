@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.SQLInput_))]
-	public interface SQLInput  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SQLInput  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object readObject();
 		int readInt();

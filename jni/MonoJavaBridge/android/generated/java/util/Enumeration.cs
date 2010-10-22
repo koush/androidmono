@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Enumeration_))]
-	public interface Enumeration  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Enumeration  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool hasMoreElements();
 		global::java.lang.Object nextElement();

@@ -1,7 +1,7 @@
 namespace java.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.text.AttributedCharacterIterator_))]
-	public interface AttributedCharacterIterator : CharacterIterator
+	public partial interface AttributedCharacterIterator : CharacterIterator
 	{
 		global::java.util.Map getAttributes();
 		global::java.lang.Object getAttribute(java.text.AttributedCharacterIterator_Attribute arg0);

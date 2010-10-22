@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.AnnotatedElement_))]
-	public interface AnnotatedElement  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AnnotatedElement  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0);
 		bool isAnnotationPresent(java.lang.Class arg0);

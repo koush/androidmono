@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Override_))]
-	public interface Override : java.lang.annotation.Annotation
+	public partial interface Override : java.lang.annotation.Annotation
 	{
 	}
 

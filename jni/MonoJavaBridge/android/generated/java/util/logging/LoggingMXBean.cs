@@ -1,7 +1,7 @@
 namespace java.util.logging
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.logging.LoggingMXBean_))]
-	public interface LoggingMXBean  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LoggingMXBean  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.util.List getLoggerNames();
 		global::java.lang.String getLoggerLevel(java.lang.String arg0);

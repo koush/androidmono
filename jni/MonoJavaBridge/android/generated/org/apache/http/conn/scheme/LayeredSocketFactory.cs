@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.scheme
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.scheme.LayeredSocketFactory_))]
-	public interface LayeredSocketFactory : SocketFactory
+	public partial interface LayeredSocketFactory : SocketFactory
 	{
 		global::java.net.Socket createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3);
 	}

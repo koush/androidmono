@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.SoundPool.OnLoadCompleteListener_))]
-		public interface OnLoadCompleteListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnLoadCompleteListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onLoadComplete(android.media.SoundPool arg0, int arg1, int arg2);
 		}

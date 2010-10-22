@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.PopupWindow.OnDismissListener_))]
-		public interface OnDismissListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDismissListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onDismiss();
 		}

@@ -1,7 +1,7 @@
 namespace android.accounts
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.accounts.AccountManagerCallback_))]
-	public interface AccountManagerCallback  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AccountManagerCallback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void run(android.accounts.AccountManagerFuture arg0);
 	}

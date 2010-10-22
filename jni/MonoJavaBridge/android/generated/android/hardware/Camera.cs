@@ -12,7 +12,7 @@ namespace android.hardware
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.AutoFocusCallback_))]
-		public interface AutoFocusCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface AutoFocusCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onAutoFocus(bool arg0, android.hardware.Camera arg1);
 		}
@@ -45,7 +45,7 @@ namespace android.hardware
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.ErrorCallback_))]
-		public interface ErrorCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ErrorCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onError(int arg0, android.hardware.Camera arg1);
 		}
@@ -78,7 +78,7 @@ namespace android.hardware
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.OnZoomChangeListener_))]
-		public interface OnZoomChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnZoomChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onZoomChange(int arg0, bool arg1, android.hardware.Camera arg2);
 		}
@@ -1441,7 +1441,7 @@ namespace android.hardware
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.PictureCallback_))]
-		public interface PictureCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PictureCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onPictureTaken(byte[] arg0, android.hardware.Camera arg1);
 		}
@@ -1474,7 +1474,7 @@ namespace android.hardware
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.PreviewCallback_))]
-		public interface PreviewCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PreviewCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onPreviewFrame(byte[] arg0, android.hardware.Camera arg1);
 		}
@@ -1507,7 +1507,7 @@ namespace android.hardware
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.Camera.ShutterCallback_))]
-		public interface ShutterCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ShutterCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onShutter();
 		}

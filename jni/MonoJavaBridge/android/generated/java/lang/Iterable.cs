@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Iterable_))]
-	public interface Iterable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Iterable  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.util.Iterator iterator();
 	}
@@ -16,6 +16,10 @@ namespace java.lang
 		}
 		internal Iterable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
+		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator20122;
 		 global::java.util.Iterator java.lang.Iterable.iterator() 

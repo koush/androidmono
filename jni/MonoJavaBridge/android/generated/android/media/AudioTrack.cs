@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_))]
-		public interface OnPlaybackPositionUpdateListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnPlaybackPositionUpdateListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onMarkerReached(android.media.AudioTrack arg0);
 			void onPeriodicNotification(android.media.AudioTrack arg0);

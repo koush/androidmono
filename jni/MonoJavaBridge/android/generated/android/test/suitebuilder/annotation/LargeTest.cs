@@ -1,7 +1,7 @@
 namespace android.test.suitebuilder.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.suitebuilder.annotation.LargeTest_))]
-	public interface LargeTest : java.lang.annotation.Annotation
+	public partial interface LargeTest : java.lang.annotation.Annotation
 	{
 	}
 

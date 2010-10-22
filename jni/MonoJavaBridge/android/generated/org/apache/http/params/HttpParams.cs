@@ -1,7 +1,7 @@
 namespace org.apache.http.@params
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.@params.HttpParams_))]
-	public interface HttpParams  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpParams  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.@params.HttpParams copy();
 		global::org.apache.http.@params.HttpParams setParameter(java.lang.String arg0, java.lang.Object arg1);

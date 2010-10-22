@@ -1,7 +1,7 @@
 namespace java.util.regex
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.regex.MatchResult_))]
-	public interface MatchResult  : global::MonoJavaBridge.IJavaObject 
+	public partial interface MatchResult  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String group();
 		global::java.lang.String group(int arg0);

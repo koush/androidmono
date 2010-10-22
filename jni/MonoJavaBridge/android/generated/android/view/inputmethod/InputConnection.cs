@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.inputmethod.InputConnection_))]
-	public interface InputConnection  : global::MonoJavaBridge.IJavaObject 
+	public partial interface InputConnection  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool setSelection(int arg0, int arg1);
 		bool beginBatchEdit();

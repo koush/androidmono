@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.InputType_))]
-	public interface InputType  : global::MonoJavaBridge.IJavaObject 
+	public partial interface InputType  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

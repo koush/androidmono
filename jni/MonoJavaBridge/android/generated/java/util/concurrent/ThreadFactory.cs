@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.ThreadFactory_))]
-	public interface ThreadFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ThreadFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Thread newThread(java.lang.Runnable arg0);
 	}

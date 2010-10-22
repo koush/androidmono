@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.GestureDetector.OnDoubleTapListener_))]
-		public interface OnDoubleTapListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDoubleTapListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onSingleTapConfirmed(android.view.MotionEvent arg0);
 			bool onDoubleTap(android.view.MotionEvent arg0);
@@ -67,7 +67,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.GestureDetector.OnGestureListener_))]
-		public interface OnGestureListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGestureListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onLongPress(android.view.MotionEvent arg0);
 			bool onSingleTapUp(android.view.MotionEvent arg0);

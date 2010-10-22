@@ -1,7 +1,7 @@
 namespace org.apache.http.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.io.HttpMessageWriter_))]
-	public interface HttpMessageWriter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpMessageWriter  : global::MonoJavaBridge.IJavaObject 
 	{
 		void write(org.apache.http.HttpMessage arg0);
 	}

@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.SSLSessionContext_))]
-	public interface SSLSessionContext  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SSLSessionContext  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.net.ssl.SSLSession getSession(byte[] arg0);
 		global::java.util.Enumeration getIds();

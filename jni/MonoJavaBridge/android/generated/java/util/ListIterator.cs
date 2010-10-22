@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.ListIterator_))]
-	public interface ListIterator : Iterator
+	public partial interface ListIterator : Iterator
 	{
 		void add(java.lang.Object arg0);
 		bool hasNext();

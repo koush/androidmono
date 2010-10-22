@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.RandomAccess_))]
-	public interface RandomAccess  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RandomAccess  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

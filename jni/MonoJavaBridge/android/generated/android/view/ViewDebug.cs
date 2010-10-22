@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.CapturedViewProperty_))]
-		public interface CapturedViewProperty : java.lang.annotation.Annotation
+		public partial interface CapturedViewProperty : java.lang.annotation.Annotation
 		{
 			bool retrieveReturn();
 		}
@@ -85,7 +85,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.ExportedProperty_))]
-		public interface ExportedProperty : java.lang.annotation.Annotation
+		public partial interface ExportedProperty : java.lang.annotation.Annotation
 		{
 			global::java.lang.String prefix();
 			bool resolveId();
@@ -213,7 +213,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.FlagToString_))]
-		public interface FlagToString : java.lang.annotation.Annotation
+		public partial interface FlagToString : java.lang.annotation.Annotation
 		{
 			global::java.lang.String name();
 			int equals();
@@ -430,7 +430,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewDebug.IntToString_))]
-		public interface IntToString : java.lang.annotation.Annotation
+		public partial interface IntToString : java.lang.annotation.Annotation
 		{
 			int from();
 			global::java.lang.String to();

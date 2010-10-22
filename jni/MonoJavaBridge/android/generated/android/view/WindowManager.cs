@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.WindowManager_))]
-	public interface WindowManager : ViewManager
+	public partial interface WindowManager : ViewManager
 	{
 		global::android.view.Display getDefaultDisplay();
 		void removeViewImmediate(android.view.View arg0);

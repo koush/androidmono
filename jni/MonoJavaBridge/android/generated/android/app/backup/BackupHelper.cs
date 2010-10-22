@@ -1,7 +1,7 @@
 namespace android.app.backup
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.backup.BackupHelper_))]
-	public interface BackupHelper  : global::MonoJavaBridge.IJavaObject 
+	public partial interface BackupHelper  : global::MonoJavaBridge.IJavaObject 
 	{
 		void performBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2);
 		void restoreEntity(android.app.backup.BackupDataInputStream arg0);

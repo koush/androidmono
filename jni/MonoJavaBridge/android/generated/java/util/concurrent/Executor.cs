@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.Executor_))]
-	public interface Executor  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Executor  : global::MonoJavaBridge.IJavaObject 
 	{
 		void execute(java.lang.Runnable arg0);
 	}

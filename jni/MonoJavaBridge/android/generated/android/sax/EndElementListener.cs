@@ -1,7 +1,7 @@
 namespace android.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.sax.EndElementListener_))]
-	public interface EndElementListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface EndElementListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void end();
 	}

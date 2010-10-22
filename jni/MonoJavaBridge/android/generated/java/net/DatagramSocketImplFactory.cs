@@ -1,7 +1,7 @@
 namespace java.net
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.net.DatagramSocketImplFactory_))]
-	public interface DatagramSocketImplFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DatagramSocketImplFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.DatagramSocketImpl createDatagramSocketImpl();
 	}

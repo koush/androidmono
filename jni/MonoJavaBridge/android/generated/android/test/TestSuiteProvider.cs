@@ -1,7 +1,7 @@
 namespace android.test
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.TestSuiteProvider_))]
-	public interface TestSuiteProvider  : global::MonoJavaBridge.IJavaObject 
+	public partial interface TestSuiteProvider  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::junit.framework.TestSuite getTestSuite();
 	}

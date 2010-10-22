@@ -12,7 +12,7 @@ namespace android.inputmethodservice
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.inputmethodservice.KeyboardView.OnKeyboardActionListener_))]
-		public interface OnKeyboardActionListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnKeyboardActionListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onKey(int arg0, int[] arg1);
 			void onPress(int arg0);

@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.Parser_))]
-	public interface Parser  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Parser  : global::MonoJavaBridge.IJavaObject 
 	{
 		void parse(org.xml.sax.InputSource arg0);
 		void parse(java.lang.String arg0);

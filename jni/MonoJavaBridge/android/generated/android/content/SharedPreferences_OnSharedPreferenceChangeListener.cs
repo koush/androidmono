@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.SharedPreferences_OnSharedPreferenceChangeListener_))]
-	public interface SharedPreferences_OnSharedPreferenceChangeListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SharedPreferences_OnSharedPreferenceChangeListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onSharedPreferenceChanged(android.content.SharedPreferences arg0, java.lang.String arg1);
 	}

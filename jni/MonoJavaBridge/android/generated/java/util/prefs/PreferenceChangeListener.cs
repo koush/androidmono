@@ -1,7 +1,7 @@
 namespace java.util.prefs
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.prefs.PreferenceChangeListener_))]
-	public interface PreferenceChangeListener : EventListener
+	public partial interface PreferenceChangeListener : EventListener
 	{
 		void preferenceChange(java.util.prefs.PreferenceChangeEvent arg0);
 	}

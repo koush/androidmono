@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.KeyManager_))]
-	public interface KeyManager  : global::MonoJavaBridge.IJavaObject 
+	public partial interface KeyManager  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

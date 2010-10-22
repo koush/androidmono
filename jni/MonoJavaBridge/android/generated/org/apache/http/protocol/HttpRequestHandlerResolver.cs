@@ -1,7 +1,7 @@
 namespace org.apache.http.protocol
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.protocol.HttpRequestHandlerResolver_))]
-	public interface HttpRequestHandlerResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpRequestHandlerResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.protocol.HttpRequestHandler lookup(java.lang.String arg0);
 	}

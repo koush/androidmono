@@ -1,7 +1,7 @@
 namespace org.xmlpull.v1
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xmlpull.v1.XmlPullParser_))]
-	public interface XmlPullParser  : global::MonoJavaBridge.IJavaObject 
+	public partial interface XmlPullParser  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setProperty(java.lang.String arg0, java.lang.Object arg1);
 		global::java.lang.Object getProperty(java.lang.String arg0);

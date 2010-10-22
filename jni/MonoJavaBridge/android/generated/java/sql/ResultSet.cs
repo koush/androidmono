@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.ResultSet_))]
-	public interface ResultSet  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ResultSet  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object getObject(java.lang.String arg0);
 		global::java.lang.Object getObject(int arg0, java.util.Map arg1);

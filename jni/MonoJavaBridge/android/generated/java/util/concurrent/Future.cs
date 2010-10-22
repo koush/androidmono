@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.Future_))]
-	public interface Future  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Future  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object get();
 		global::java.lang.Object get(long arg0, java.util.concurrent.TimeUnit arg1);

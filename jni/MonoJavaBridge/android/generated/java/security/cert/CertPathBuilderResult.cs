@@ -1,7 +1,7 @@
 namespace java.security.cert
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.cert.CertPathBuilderResult_))]
-	public interface CertPathBuilderResult : java.lang.Cloneable
+	public partial interface CertPathBuilderResult : java.lang.Cloneable
 	{
 		global::java.lang.Object clone();
 		global::java.security.cert.CertPath getCertPath();

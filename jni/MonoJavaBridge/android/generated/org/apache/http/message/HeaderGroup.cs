@@ -38,6 +38,10 @@ namespace org.apache.http.message
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderGroup.staticClass, global::org.apache.http.message.HeaderGroup._iterator33557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HeaderIterator;
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator33558;
 		public virtual global::org.apache.http.HeaderIterator iterator() 
 		{

@@ -11,6 +11,10 @@ namespace java.sql
 		protected SQLException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator24851;
 		public virtual global::java.util.Iterator iterator() 
 		{

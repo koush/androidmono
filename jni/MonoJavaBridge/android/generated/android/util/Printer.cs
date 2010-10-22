@@ -1,7 +1,7 @@
 namespace android.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.util.Printer_))]
-	public interface Printer  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Printer  : global::MonoJavaBridge.IJavaObject 
 	{
 		void println(java.lang.String arg0);
 	}

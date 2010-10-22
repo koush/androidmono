@@ -1,7 +1,7 @@
 namespace org.apache.http.message
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.message.HeaderValueParser_))]
-	public interface HeaderValueParser  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HeaderValueParser  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.HeaderElement[] parseElements(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1);
 		global::org.apache.http.HeaderElement parseHeaderElement(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1);

@@ -12,7 +12,7 @@ namespace android.preference
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.PreferenceManager.OnActivityDestroyListener_))]
-		public interface OnActivityDestroyListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnActivityDestroyListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onActivityDestroy();
 		}
@@ -45,7 +45,7 @@ namespace android.preference
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.PreferenceManager.OnActivityResultListener_))]
-		public interface OnActivityResultListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnActivityResultListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onActivityResult(int arg0, int arg1, android.content.Intent arg2);
 		}
@@ -78,7 +78,7 @@ namespace android.preference
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.PreferenceManager.OnActivityStopListener_))]
-		public interface OnActivityStopListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnActivityStopListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onActivityStop();
 		}

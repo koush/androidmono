@@ -1,7 +1,7 @@
 namespace org.w3c.dom.ls
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.ls.LSParser_))]
-	public interface LSParser  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LSParser  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.w3c.dom.Document parse(org.w3c.dom.ls.LSInput arg0);
 		global::org.w3c.dom.ls.LSParserFilter getFilter();

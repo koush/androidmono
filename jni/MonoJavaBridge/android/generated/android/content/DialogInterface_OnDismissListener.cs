@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnDismissListener_))]
-	public interface DialogInterface_OnDismissListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DialogInterface_OnDismissListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onDismiss(android.content.DialogInterface arg0);
 	}

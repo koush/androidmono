@@ -1,7 +1,7 @@
 namespace java.util.prefs
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.prefs.NodeChangeListener_))]
-	public interface NodeChangeListener : EventListener
+	public partial interface NodeChangeListener : EventListener
 	{
 		void childAdded(java.util.prefs.NodeChangeEvent arg0);
 		void childRemoved(java.util.prefs.NodeChangeEvent arg0);

@@ -1,7 +1,7 @@
 namespace android.test
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.PerformanceTestCase_))]
-	public interface PerformanceTestCase  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PerformanceTestCase  : global::MonoJavaBridge.IJavaObject 
 	{
 		int startPerformance(android.test.PerformanceTestCase_Intermediates arg0);
 		bool isPerformanceOnly();

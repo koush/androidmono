@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.CredentialsProvider_))]
-	public interface CredentialsProvider  : global::MonoJavaBridge.IJavaObject 
+	public partial interface CredentialsProvider  : global::MonoJavaBridge.IJavaObject 
 	{
 		void clear();
 		global::org.apache.http.auth.Credentials getCredentials(org.apache.http.auth.AuthScope arg0);

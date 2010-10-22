@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.ComponentCallbacks_))]
-	public interface ComponentCallbacks  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ComponentCallbacks  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onConfigurationChanged(android.content.res.Configuration arg0);
 		void onLowMemory();

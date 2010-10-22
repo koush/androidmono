@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ClientConnectionOperator_))]
-	public interface ClientConnectionOperator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ClientConnectionOperator  : global::MonoJavaBridge.IJavaObject 
 	{
 		void openConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, java.net.InetAddress arg2, org.apache.http.protocol.HttpContext arg3, org.apache.http.@params.HttpParams arg4);
 		global::org.apache.http.conn.OperatedClientConnection createConnection();

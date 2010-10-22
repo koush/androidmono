@@ -1,7 +1,7 @@
 namespace org.apache.http.message
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.message.HeaderValueFormatter_))]
-	public interface HeaderValueFormatter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HeaderValueFormatter  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.util.CharArrayBuffer formatElements(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.HeaderElement[] arg1, bool arg2);
 		global::org.apache.http.util.CharArrayBuffer formatHeaderElement(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.HeaderElement arg1, bool arg2);

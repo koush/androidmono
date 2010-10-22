@@ -109,7 +109,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaRecorder.OnErrorListener_))]
-		public interface OnErrorListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnErrorListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onError(android.media.MediaRecorder arg0, int arg1, int arg2);
 		}
@@ -142,7 +142,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaRecorder.OnInfoListener_))]
-		public interface OnInfoListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnInfoListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onInfo(android.media.MediaRecorder arg0, int arg1, int arg2);
 		}

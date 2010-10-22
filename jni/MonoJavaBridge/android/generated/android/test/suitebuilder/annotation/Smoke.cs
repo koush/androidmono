@@ -1,7 +1,7 @@
 namespace android.test.suitebuilder.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.suitebuilder.annotation.Smoke_))]
-	public interface Smoke : java.lang.annotation.Annotation
+	public partial interface Smoke : java.lang.annotation.Annotation
 	{
 	}
 

@@ -1,7 +1,7 @@
 namespace java.net
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.net.ContentHandlerFactory_))]
-	public interface ContentHandlerFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ContentHandlerFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.ContentHandler createContentHandler(java.lang.String arg0);
 	}

@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.LayoutInflater.Factory_))]
-		public interface Factory  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Factory  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::android.view.View onCreateView(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2);
 		}
@@ -45,7 +45,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.LayoutInflater.Filter_))]
-		public interface Filter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Filter  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onLoadClass(java.lang.Class arg0);
 		}

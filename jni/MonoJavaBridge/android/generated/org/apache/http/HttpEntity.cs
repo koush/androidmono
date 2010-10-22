@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpEntity_))]
-	public interface HttpEntity  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpEntity  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.io.InputStream getContent();
 		void writeTo(java.io.OutputStream arg0);

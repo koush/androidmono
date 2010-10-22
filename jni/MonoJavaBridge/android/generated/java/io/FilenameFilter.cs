@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.FilenameFilter_))]
-	public interface FilenameFilter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface FilenameFilter  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool accept(java.io.File arg0, java.lang.String arg1);
 	}

@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.ParameterMetaData_))]
-	public interface ParameterMetaData  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ParameterMetaData  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getScale(int arg0);
 		int getPrecision(int arg0);

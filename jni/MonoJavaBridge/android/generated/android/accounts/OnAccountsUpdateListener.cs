@@ -1,7 +1,7 @@
 namespace android.accounts
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.accounts.OnAccountsUpdateListener_))]
-	public interface OnAccountsUpdateListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface OnAccountsUpdateListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onAccountsUpdated(android.accounts.Account[] arg0);
 	}

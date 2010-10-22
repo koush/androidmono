@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.GenericArrayType_))]
-	public interface GenericArrayType : Type
+	public partial interface GenericArrayType : Type
 	{
 		global::java.lang.reflect.Type getGenericComponentType();
 	}

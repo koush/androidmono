@@ -1,7 +1,7 @@
 namespace android.text.method
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.method.MovementMethod_))]
-	public interface MovementMethod  : global::MonoJavaBridge.IJavaObject 
+	public partial interface MovementMethod  : global::MonoJavaBridge.IJavaObject 
 	{
 		void initialize(android.widget.TextView arg0, android.text.Spannable arg1);
 		bool onKeyDown(android.widget.TextView arg0, android.text.Spannable arg1, int arg2, android.view.KeyEvent arg3);

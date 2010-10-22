@@ -12,7 +12,7 @@ namespace android.text.util
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.util.Linkify.MatchFilter_))]
-		public interface MatchFilter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface MatchFilter  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool acceptMatch(java.lang.CharSequence arg0, int arg1, int arg2);
 		}
@@ -45,7 +45,7 @@ namespace android.text.util
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.util.Linkify.TransformFilter_))]
-		public interface TransformFilter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface TransformFilter  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::java.lang.String transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1);
 		}

@@ -1,7 +1,7 @@
 namespace javax.xml.@namespace
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.@namespace.NamespaceContext_))]
-	public interface NamespaceContext  : global::MonoJavaBridge.IJavaObject 
+	public partial interface NamespaceContext  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getPrefix(java.lang.String arg0);
 		global::java.lang.String getNamespaceURI(java.lang.String arg0);

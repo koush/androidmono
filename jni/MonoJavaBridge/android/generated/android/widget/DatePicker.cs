@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.DatePicker.OnDateChangedListener_))]
-		public interface OnDateChangedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDateChangedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onDateChanged(android.widget.DatePicker arg0, int arg1, int arg2, int arg3);
 		}

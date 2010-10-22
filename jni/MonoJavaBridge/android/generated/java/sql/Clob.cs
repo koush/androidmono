@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Clob_))]
-	public interface Clob  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Clob  : global::MonoJavaBridge.IJavaObject 
 	{
 		long length();
 		long position(java.lang.String arg0, long arg1);

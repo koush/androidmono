@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.SharedPreferences_Editor_))]
-	public interface SharedPreferences_Editor  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SharedPreferences_Editor  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.content.SharedPreferences_Editor putBoolean(java.lang.String arg0, bool arg1);
 		global::android.content.SharedPreferences_Editor putInt(java.lang.String arg0, int arg1);

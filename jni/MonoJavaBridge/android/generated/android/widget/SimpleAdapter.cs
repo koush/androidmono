@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SimpleAdapter.ViewBinder_))]
-		public interface ViewBinder  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ViewBinder  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool setViewValue(android.view.View arg0, java.lang.Object arg1, java.lang.String arg2);
 		}

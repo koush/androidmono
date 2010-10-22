@@ -1,7 +1,7 @@
 namespace javax.security.auth.callback
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.security.auth.callback.Callback_))]
-	public interface Callback  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Callback  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

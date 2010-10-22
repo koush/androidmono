@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.TrustManager_))]
-	public interface TrustManager  : global::MonoJavaBridge.IJavaObject 
+	public partial interface TrustManager  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

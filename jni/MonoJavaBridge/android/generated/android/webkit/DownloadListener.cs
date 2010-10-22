@@ -1,7 +1,7 @@
 namespace android.webkit
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.DownloadListener_))]
-	public interface DownloadListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DownloadListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onDownloadStart(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, long arg4);
 	}

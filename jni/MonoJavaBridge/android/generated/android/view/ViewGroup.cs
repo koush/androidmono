@@ -234,7 +234,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewGroup.OnHierarchyChangeListener_))]
-		public interface OnHierarchyChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnHierarchyChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onChildViewAdded(android.view.View arg0, android.view.View arg1);
 			void onChildViewRemoved(android.view.View arg0, android.view.View arg1);

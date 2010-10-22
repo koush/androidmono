@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpRequestFactory_))]
-	public interface HttpRequestFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpRequestFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.HttpRequest newHttpRequest(org.apache.http.RequestLine arg0);
 		global::org.apache.http.HttpRequest newHttpRequest(java.lang.String arg0, java.lang.String arg1);

@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnCancelListener_))]
-	public interface DialogInterface_OnCancelListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DialogInterface_OnCancelListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onCancel(android.content.DialogInterface arg0);
 	}

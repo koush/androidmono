@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.ScheduledFuture_))]
-	public interface ScheduledFuture : Delayed, Future
+	public partial interface ScheduledFuture : Delayed, Future
 	{
 	}
 

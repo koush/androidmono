@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.DSAPrivateKey_))]
-	public interface DSAPrivateKey : DSAKey, PrivateKey
+	public partial interface DSAPrivateKey : DSAKey, PrivateKey
 	{
 		global::java.math.BigInteger getX();
 	}

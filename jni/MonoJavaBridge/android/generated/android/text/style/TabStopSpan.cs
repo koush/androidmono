@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.TabStopSpan_))]
-	public interface TabStopSpan : ParagraphStyle
+	public partial interface TabStopSpan : ParagraphStyle
 	{
 		int getTabStop();
 	}

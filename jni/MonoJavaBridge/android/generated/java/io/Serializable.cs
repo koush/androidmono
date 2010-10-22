@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.Serializable_))]
-	public interface Serializable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Serializable  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

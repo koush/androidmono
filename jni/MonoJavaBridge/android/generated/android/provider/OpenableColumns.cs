@@ -1,7 +1,7 @@
 namespace android.provider
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.OpenableColumns_))]
-	public interface OpenableColumns  : global::MonoJavaBridge.IJavaObject 
+	public partial interface OpenableColumns  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

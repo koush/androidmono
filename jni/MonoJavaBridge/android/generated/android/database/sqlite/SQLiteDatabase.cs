@@ -12,7 +12,7 @@ namespace android.database.sqlite
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.database.sqlite.SQLiteDatabase.CursorFactory_))]
-		public interface CursorFactory  : global::MonoJavaBridge.IJavaObject 
+		public partial interface CursorFactory  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::android.database.Cursor newCursor(android.database.sqlite.SQLiteDatabase arg0, android.database.sqlite.SQLiteCursorDriver arg1, java.lang.String arg2, android.database.sqlite.SQLiteQuery arg3);
 		}

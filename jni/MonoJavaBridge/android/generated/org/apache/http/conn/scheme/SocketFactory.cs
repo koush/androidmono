@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.scheme
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.scheme.SocketFactory_))]
-	public interface SocketFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SocketFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.Socket createSocket();
 		global::java.net.Socket connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5);

@@ -1,7 +1,7 @@
 namespace java.net
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.net.SocketOptions_))]
-	public interface SocketOptions  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SocketOptions  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object getOption(int arg0);
 		void setOption(int arg0, java.lang.Object arg1);

@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.Spanned_))]
-	public interface Spanned : java.lang.CharSequence
+	public partial interface Spanned : java.lang.CharSequence
 	{
 		global::java.lang.Object[] getSpans(int arg0, int arg1, java.lang.Class arg2);
 		int getSpanStart(java.lang.Object arg0);

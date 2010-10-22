@@ -1,7 +1,7 @@
 namespace java.security.cert
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.cert.X509Extension_))]
-	public interface X509Extension  : global::MonoJavaBridge.IJavaObject 
+	public partial interface X509Extension  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool hasUnsupportedCriticalExtension();
 		global::java.util.Set getCriticalExtensionOIDs();

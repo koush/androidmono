@@ -1,7 +1,7 @@
 namespace org.apache.http.protocol
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.protocol.ExecutionContext_))]
-	public interface ExecutionContext  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ExecutionContext  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

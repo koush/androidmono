@@ -1,7 +1,7 @@
 namespace java.security.spec
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.spec.KeySpec_))]
-	public interface KeySpec  : global::MonoJavaBridge.IJavaObject 
+	public partial interface KeySpec  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

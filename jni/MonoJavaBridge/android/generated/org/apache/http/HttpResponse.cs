@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpResponse_))]
-	public interface HttpResponse : HttpMessage
+	public partial interface HttpResponse : HttpMessage
 	{
 		void setLocale(java.util.Locale arg0);
 		global::java.util.Locale getLocale();

@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Driver_))]
-	public interface Driver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Driver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.sql.Connection connect(java.lang.String arg0, java.util.Properties arg1);
 		bool acceptsURL(java.lang.String arg0);

@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.XMLFilter_))]
-	public interface XMLFilter : XMLReader
+	public partial interface XMLFilter : XMLReader
 	{
 		global::org.xml.sax.XMLReader getParent();
 		void setParent(org.xml.sax.XMLReader arg0);

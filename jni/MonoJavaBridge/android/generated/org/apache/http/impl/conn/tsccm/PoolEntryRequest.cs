@@ -1,7 +1,7 @@
 namespace org.apache.http.impl.conn.tsccm
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_))]
-	public interface PoolEntryRequest  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PoolEntryRequest  : global::MonoJavaBridge.IJavaObject 
 	{
 		void abortRequest();
 		global::org.apache.http.impl.conn.tsccm.BasicPoolEntry getPoolEntry(long arg0, java.util.concurrent.TimeUnit arg1);

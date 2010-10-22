@@ -1,7 +1,7 @@
 namespace org.apache.http.auth.@params
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.auth.@params.AuthPNames_))]
-	public interface AuthPNames  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AuthPNames  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

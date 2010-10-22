@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.Member_))]
-	public interface Member  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Member  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getModifiers();
 		global::java.lang.String getName();

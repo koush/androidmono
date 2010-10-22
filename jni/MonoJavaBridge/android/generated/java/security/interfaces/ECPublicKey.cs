@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.ECPublicKey_))]
-	public interface ECPublicKey : PublicKey, ECKey
+	public partial interface ECPublicKey : PublicKey, ECKey
 	{
 		global::java.security.spec.ECPoint getW();
 	}

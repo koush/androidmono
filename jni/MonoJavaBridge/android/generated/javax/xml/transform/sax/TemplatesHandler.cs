@@ -1,7 +1,7 @@
 namespace javax.xml.transform.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.sax.TemplatesHandler_))]
-	public interface TemplatesHandler : org.xml.sax.ContentHandler
+	public partial interface TemplatesHandler : org.xml.sax.ContentHandler
 	{
 		global::java.lang.String getSystemId();
 		void setSystemId(java.lang.String arg0);

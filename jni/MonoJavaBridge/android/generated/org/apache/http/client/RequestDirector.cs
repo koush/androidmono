@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.RequestDirector_))]
-	public interface RequestDirector  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RequestDirector  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.HttpResponse execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2);
 	}

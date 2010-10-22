@@ -1,7 +1,7 @@
 namespace org.apache.commons.logging
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.commons.logging.Log_))]
-	public interface Log  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Log  : global::MonoJavaBridge.IJavaObject 
 	{
 		void debug(java.lang.Object arg0);
 		void debug(java.lang.Object arg0, java.lang.Throwable arg1);

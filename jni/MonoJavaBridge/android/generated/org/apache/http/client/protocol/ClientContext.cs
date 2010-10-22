@@ -1,7 +1,7 @@
 namespace org.apache.http.client.protocol
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.protocol.ClientContext_))]
-	public interface ClientContext  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ClientContext  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

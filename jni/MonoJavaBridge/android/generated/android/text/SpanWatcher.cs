@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.SpanWatcher_))]
-	public interface SpanWatcher : NoCopySpan
+	public partial interface SpanWatcher : NoCopySpan
 	{
 		void onSpanAdded(android.text.Spannable arg0, java.lang.Object arg1, int arg2, int arg3);
 		void onSpanRemoved(android.text.Spannable arg0, java.lang.Object arg1, int arg2, int arg3);

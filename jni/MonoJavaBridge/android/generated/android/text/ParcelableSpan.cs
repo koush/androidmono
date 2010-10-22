@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.ParcelableSpan_))]
-	public interface ParcelableSpan : android.os.Parcelable
+	public partial interface ParcelableSpan : android.os.Parcelable
 	{
 		int getSpanTypeId();
 	}

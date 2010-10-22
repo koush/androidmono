@@ -1,7 +1,7 @@
 namespace javax.xml.transform
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.URIResolver_))]
-	public interface URIResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface URIResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.xml.transform.Source resolve(java.lang.String arg0, java.lang.String arg1);
 	}

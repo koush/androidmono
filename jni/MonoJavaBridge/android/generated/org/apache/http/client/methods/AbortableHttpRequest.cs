@@ -1,7 +1,7 @@
 namespace org.apache.http.client.methods
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.methods.AbortableHttpRequest_))]
-	public interface AbortableHttpRequest  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AbortableHttpRequest  : global::MonoJavaBridge.IJavaObject 
 	{
 		void abort();
 		void setConnectionRequest(org.apache.http.conn.ClientConnectionRequest arg0);

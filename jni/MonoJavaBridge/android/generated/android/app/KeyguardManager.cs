@@ -49,7 +49,7 @@ namespace android.app
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.KeyguardManager.OnKeyguardExitResult_))]
-		public interface OnKeyguardExitResult  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnKeyguardExitResult  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onKeyguardExitResult(bool arg0);
 		}

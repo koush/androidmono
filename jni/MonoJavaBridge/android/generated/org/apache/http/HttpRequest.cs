@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpRequest_))]
-	public interface HttpRequest : HttpMessage
+	public partial interface HttpRequest : HttpMessage
 	{
 		global::org.apache.http.RequestLine getRequestLine();
 	}

@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.opengles
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.opengles.GL11ExtensionPack_))]
-	public interface GL11ExtensionPack : GL
+	public partial interface GL11ExtensionPack : GL
 	{
 		void glBindTexture(int arg0, int arg1);
 		void glCompressedTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.nio.Buffer arg7);

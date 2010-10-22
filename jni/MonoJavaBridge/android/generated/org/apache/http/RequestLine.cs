@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.RequestLine_))]
-	public interface RequestLine  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RequestLine  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getMethod();
 		global::org.apache.http.ProtocolVersion getProtocolVersion();

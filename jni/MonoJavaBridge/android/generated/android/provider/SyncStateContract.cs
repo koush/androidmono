@@ -12,7 +12,7 @@ namespace android.provider
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.SyncStateContract.Columns_))]
-		public interface Columns : BaseColumns
+		public partial interface Columns : BaseColumns
 		{
 		}
 

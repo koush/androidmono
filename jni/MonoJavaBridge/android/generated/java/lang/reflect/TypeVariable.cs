@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.TypeVariable_))]
-	public interface TypeVariable : Type
+	public partial interface TypeVariable : Type
 	{
 		global::java.lang.String getName();
 		global::java.lang.reflect.Type[] getBounds();

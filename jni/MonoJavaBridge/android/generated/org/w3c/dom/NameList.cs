@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.NameList_))]
-	public interface NameList  : global::MonoJavaBridge.IJavaObject 
+	public partial interface NameList  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getLength();
 		global::java.lang.String getName(int arg0);

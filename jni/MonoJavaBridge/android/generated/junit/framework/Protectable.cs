@@ -1,7 +1,7 @@
 namespace junit.framework
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::junit.framework.Protectable_))]
-	public interface Protectable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Protectable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void protect();
 	}

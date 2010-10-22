@@ -1,7 +1,7 @@
 namespace android.test.suitebuilder.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.suitebuilder.annotation.Suppress_))]
-	public interface Suppress : java.lang.annotation.Annotation
+	public partial interface Suppress : java.lang.annotation.Annotation
 	{
 	}
 

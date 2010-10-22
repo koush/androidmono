@@ -1,7 +1,7 @@
 namespace android.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.util.AttributeSet_))]
-	public interface AttributeSet  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AttributeSet  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getAttributeValue(int arg0);
 		global::java.lang.String getAttributeValue(java.lang.String arg0, java.lang.String arg1);

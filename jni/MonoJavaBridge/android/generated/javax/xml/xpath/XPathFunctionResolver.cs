@@ -1,7 +1,7 @@
 namespace javax.xml.xpath
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.xpath.XPathFunctionResolver_))]
-	public interface XPathFunctionResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface XPathFunctionResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.xml.xpath.XPathFunction resolveFunction(javax.xml.@namespace.QName arg0, int arg1);
 	}

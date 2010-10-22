@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.EofSensorWatcher_))]
-	public interface EofSensorWatcher  : global::MonoJavaBridge.IJavaObject 
+	public partial interface EofSensorWatcher  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool eofDetected(java.io.InputStream arg0);
 		bool streamClosed(java.io.InputStream arg0);

@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.UpdateLayout_))]
-	public interface UpdateLayout : UpdateAppearance
+	public partial interface UpdateLayout : UpdateAppearance
 	{
 	}
 

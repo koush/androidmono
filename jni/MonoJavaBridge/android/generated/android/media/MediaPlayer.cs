@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnBufferingUpdateListener_))]
-		public interface OnBufferingUpdateListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnBufferingUpdateListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onBufferingUpdate(android.media.MediaPlayer arg0, int arg1);
 		}
@@ -45,7 +45,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnCompletionListener_))]
-		public interface OnCompletionListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnCompletionListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCompletion(android.media.MediaPlayer arg0);
 		}
@@ -78,7 +78,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnErrorListener_))]
-		public interface OnErrorListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnErrorListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onError(android.media.MediaPlayer arg0, int arg1, int arg2);
 		}
@@ -111,7 +111,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnInfoListener_))]
-		public interface OnInfoListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnInfoListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onInfo(android.media.MediaPlayer arg0, int arg1, int arg2);
 		}
@@ -144,7 +144,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnPreparedListener_))]
-		public interface OnPreparedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnPreparedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onPrepared(android.media.MediaPlayer arg0);
 		}
@@ -177,7 +177,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnSeekCompleteListener_))]
-		public interface OnSeekCompleteListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnSeekCompleteListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onSeekComplete(android.media.MediaPlayer arg0);
 		}
@@ -210,7 +210,7 @@ namespace android.media
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.MediaPlayer.OnVideoSizeChangedListener_))]
-		public interface OnVideoSizeChangedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnVideoSizeChangedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onVideoSizeChanged(android.media.MediaPlayer arg0, int arg1, int arg2);
 		}

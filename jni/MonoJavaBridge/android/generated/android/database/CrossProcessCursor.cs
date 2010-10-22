@@ -1,7 +1,7 @@
 namespace android.database
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.database.CrossProcessCursor_))]
-	public interface CrossProcessCursor : Cursor
+	public partial interface CrossProcessCursor : Cursor
 	{
 		global::android.database.CursorWindow getWindow();
 		bool onMove(int arg0, int arg1);

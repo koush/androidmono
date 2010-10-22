@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.inputmethod.InputMethodSession_))]
-	public interface InputMethodSession  : global::MonoJavaBridge.IJavaObject 
+	public partial interface InputMethodSession  : global::MonoJavaBridge.IJavaObject 
 	{
 		void dispatchKeyEvent(int arg0, android.view.KeyEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2);
 		void dispatchTrackballEvent(int arg0, android.view.MotionEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2);

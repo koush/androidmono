@@ -12,7 +12,7 @@ namespace android.opengl
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.EGLConfigChooser_))]
-		public interface EGLConfigChooser  : global::MonoJavaBridge.IJavaObject 
+		public partial interface EGLConfigChooser  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::javax.microedition.khronos.egl.EGLConfig chooseConfig(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1);
 		}
@@ -45,7 +45,7 @@ namespace android.opengl
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.EGLContextFactory_))]
-		public interface EGLContextFactory  : global::MonoJavaBridge.IJavaObject 
+		public partial interface EGLContextFactory  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::javax.microedition.khronos.egl.EGLContext createContext(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLConfig arg2);
 			void destroyContext(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLContext arg2);
@@ -89,7 +89,7 @@ namespace android.opengl
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.EGLWindowSurfaceFactory_))]
-		public interface EGLWindowSurfaceFactory  : global::MonoJavaBridge.IJavaObject 
+		public partial interface EGLWindowSurfaceFactory  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::javax.microedition.khronos.egl.EGLSurface createWindowSurface(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLConfig arg2, java.lang.Object arg3);
 			void destroySurface(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLSurface arg2);
@@ -133,7 +133,7 @@ namespace android.opengl
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.GLWrapper_))]
-		public interface GLWrapper  : global::MonoJavaBridge.IJavaObject 
+		public partial interface GLWrapper  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::javax.microedition.khronos.opengles.GL wrap(javax.microedition.khronos.opengles.GL arg0);
 		}
@@ -166,7 +166,7 @@ namespace android.opengl
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.opengl.GLSurfaceView.Renderer_))]
-		public interface Renderer  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Renderer  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onSurfaceCreated(javax.microedition.khronos.opengles.GL10 arg0, javax.microedition.khronos.egl.EGLConfig arg1);
 			void onSurfaceChanged(javax.microedition.khronos.opengles.GL10 arg0, int arg1, int arg2);

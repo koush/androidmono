@@ -95,7 +95,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.BaseSyncColumns_))]
-		protected interface BaseSyncColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface BaseSyncColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -160,7 +160,7 @@ namespace android.provider
 			{
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.CommonDataKinds.BaseTypes_))]
-			public interface BaseTypes  : global::MonoJavaBridge.IJavaObject 
+			public partial interface BaseTypes  : global::MonoJavaBridge.IJavaObject 
 			{
 			}
 
@@ -193,7 +193,7 @@ namespace android.provider
 				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.CommonDataKinds.CommonColumns_))]
-			protected interface CommonColumns : BaseTypes
+			protected partial interface CommonColumns : BaseTypes
 			{
 			}
 
@@ -1479,7 +1479,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.ContactOptionsColumns_))]
-		protected interface ContactOptionsColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface ContactOptionsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1540,7 +1540,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.ContactStatusColumns_))]
-		protected interface ContactStatusColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface ContactStatusColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1823,7 +1823,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.ContactsColumns_))]
-		protected interface ContactsColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface ContactsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1925,7 +1925,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.DataColumns_))]
-		protected interface DataColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface DataColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -2119,7 +2119,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.DataColumnsWithJoins_))]
-		protected interface DataColumnsWithJoins : BaseColumns, DataColumns, StatusColumns, RawContactsColumns, ContactsColumns, ContactOptionsColumns, ContactStatusColumns
+		protected partial interface DataColumnsWithJoins : BaseColumns, DataColumns, StatusColumns, RawContactsColumns, ContactsColumns, ContactOptionsColumns, ContactStatusColumns
 		{
 		}
 
@@ -2199,7 +2199,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.GroupsColumns_))]
-		protected interface GroupsColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface GroupsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -2596,7 +2596,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.PhoneLookupColumns_))]
-		protected interface PhoneLookupColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface PhoneLookupColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -2668,7 +2668,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.PresenceColumns_))]
-		protected interface PresenceColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface PresenceColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -2927,7 +2927,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.RawContactsColumns_))]
-		protected interface RawContactsColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface RawContactsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -3056,7 +3056,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.SettingsColumns_))]
-		protected interface SettingsColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface SettingsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -3131,7 +3131,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.StatusColumns_))]
-		protected interface StatusColumns  : global::MonoJavaBridge.IJavaObject 
+		protected partial interface StatusColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -3310,7 +3310,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.ContactsContract.SyncColumns_))]
-		protected interface SyncColumns : BaseSyncColumns
+		protected partial interface SyncColumns : BaseSyncColumns
 		{
 		}
 

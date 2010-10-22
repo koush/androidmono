@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.Node_))]
-	public interface Node  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Node  : global::MonoJavaBridge.IJavaObject 
 	{
 		void normalize();
 		bool isSupported(java.lang.String arg0, java.lang.String arg1);

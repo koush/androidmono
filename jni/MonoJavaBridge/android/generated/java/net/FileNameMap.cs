@@ -1,7 +1,7 @@
 namespace java.net
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.net.FileNameMap_))]
-	public interface FileNameMap  : global::MonoJavaBridge.IJavaObject 
+	public partial interface FileNameMap  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getContentTypeFor(java.lang.String arg0);
 	}

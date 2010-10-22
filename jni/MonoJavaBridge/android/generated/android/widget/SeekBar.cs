@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SeekBar.OnSeekBarChangeListener_))]
-		public interface OnSeekBarChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnSeekBarChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onProgressChanged(android.widget.SeekBar arg0, int arg1, bool arg2);
 			void onStartTrackingTouch(android.widget.SeekBar arg0);

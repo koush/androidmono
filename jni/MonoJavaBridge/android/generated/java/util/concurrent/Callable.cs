@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.Callable_))]
-	public interface Callable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Callable  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object call();
 	}

@@ -1,7 +1,7 @@
 namespace org.xml.sax.ext
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ext.LexicalHandler_))]
-	public interface LexicalHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LexicalHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void comment(char[] arg0, int arg1, int arg2);
 		void startCDATA();

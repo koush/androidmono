@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ConnectionReleaseTrigger_))]
-	public interface ConnectionReleaseTrigger  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ConnectionReleaseTrigger  : global::MonoJavaBridge.IJavaObject 
 	{
 		void releaseConnection();
 		void abortConnection();

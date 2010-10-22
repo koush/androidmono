@@ -1,7 +1,7 @@
 namespace java.security.acl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.acl.Group_))]
-	public interface Group : Principal
+	public partial interface Group : Principal
 	{
 		global::java.util.Enumeration members();
 		bool addMember(java.security.Principal arg0);

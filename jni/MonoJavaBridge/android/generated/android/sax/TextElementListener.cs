@@ -1,7 +1,7 @@
 namespace android.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.sax.TextElementListener_))]
-	public interface TextElementListener : StartElementListener, EndTextElementListener
+	public partial interface TextElementListener : StartElementListener, EndTextElementListener
 	{
 	}
 

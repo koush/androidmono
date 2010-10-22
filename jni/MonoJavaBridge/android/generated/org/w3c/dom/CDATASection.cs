@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.CDATASection_))]
-	public interface CDATASection : Text
+	public partial interface CDATASection : Text
 	{
 	}
 

@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.Spannable_))]
-	public interface Spannable : Spanned
+	public partial interface Spannable : Spanned
 	{
 		void setSpan(java.lang.Object arg0, int arg1, int arg2, int arg3);
 		void removeSpan(java.lang.Object arg0);

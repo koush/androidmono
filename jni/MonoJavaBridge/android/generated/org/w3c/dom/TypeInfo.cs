@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.TypeInfo_))]
-	public interface TypeInfo  : global::MonoJavaBridge.IJavaObject 
+	public partial interface TypeInfo  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getTypeName();
 		global::java.lang.String getTypeNamespace();

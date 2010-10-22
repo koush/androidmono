@@ -1,7 +1,7 @@
 namespace javax.xml.xpath
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.xpath.XPath_))]
-	public interface XPath  : global::MonoJavaBridge.IJavaObject 
+	public partial interface XPath  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.xml.xpath.XPathExpression compile(java.lang.String arg0);
 		void reset();

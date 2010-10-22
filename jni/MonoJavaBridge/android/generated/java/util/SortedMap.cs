@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.SortedMap_))]
-	public interface SortedMap : Map
+	public partial interface SortedMap : Map
 	{
 		global::java.util.Collection values();
 		global::java.util.Set entrySet();

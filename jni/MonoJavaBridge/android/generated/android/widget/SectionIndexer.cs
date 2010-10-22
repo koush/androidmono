@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SectionIndexer_))]
-	public interface SectionIndexer  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SectionIndexer  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object[] getSections();
 		int getPositionForSection(int arg0);

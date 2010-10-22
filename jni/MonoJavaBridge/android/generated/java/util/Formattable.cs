@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Formattable_))]
-	public interface Formattable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Formattable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void formatTo(java.util.Formatter arg0, int arg1, int arg2, int arg3);
 	}

@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.MenuItem_OnMenuItemClickListener_))]
-	public interface MenuItem_OnMenuItemClickListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface MenuItem_OnMenuItemClickListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool onMenuItemClick(android.view.MenuItem arg0);
 	}

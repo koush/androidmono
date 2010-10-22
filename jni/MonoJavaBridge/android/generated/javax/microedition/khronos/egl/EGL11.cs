@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.egl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.egl.EGL11_))]
-	public interface EGL11 : EGL10
+	public partial interface EGL11 : EGL10
 	{
 	}
 

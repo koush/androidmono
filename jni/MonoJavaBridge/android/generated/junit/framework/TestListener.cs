@@ -1,7 +1,7 @@
 namespace junit.framework
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::junit.framework.TestListener_))]
-	public interface TestListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface TestListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void addError(junit.framework.Test arg0, java.lang.Throwable arg1);
 		void addFailure(junit.framework.Test arg0, junit.framework.AssertionFailedError arg1);

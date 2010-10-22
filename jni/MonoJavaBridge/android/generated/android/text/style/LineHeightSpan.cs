@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.LineHeightSpan_))]
-	public interface LineHeightSpan : ParagraphStyle, WrapTogetherSpan
+	public partial interface LineHeightSpan : ParagraphStyle, WrapTogetherSpan
 	{
 		void chooseHeight(java.lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5);
 	}

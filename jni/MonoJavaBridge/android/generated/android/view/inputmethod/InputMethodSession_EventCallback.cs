@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.inputmethod.InputMethodSession_EventCallback_))]
-	public interface InputMethodSession_EventCallback  : global::MonoJavaBridge.IJavaObject 
+	public partial interface InputMethodSession_EventCallback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void finishedEvent(int arg0, bool arg1);
 	}

@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.Entity_))]
-	public interface Entity : Node
+	public partial interface Entity : Node
 	{
 		global::java.lang.String getPublicId();
 		global::java.lang.String getSystemId();

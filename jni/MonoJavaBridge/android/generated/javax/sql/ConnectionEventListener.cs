@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.ConnectionEventListener_))]
-	public interface ConnectionEventListener : java.util.EventListener
+	public partial interface ConnectionEventListener : java.util.EventListener
 	{
 		void connectionClosed(javax.sql.ConnectionEvent arg0);
 		void connectionErrorOccurred(javax.sql.ConnectionEvent arg0);

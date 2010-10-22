@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Comparator_))]
-	public interface Comparator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Comparator  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		int compare(java.lang.Object arg0, java.lang.Object arg1);

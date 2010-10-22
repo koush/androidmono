@@ -103,7 +103,7 @@ namespace java.lang
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Thread.UncaughtExceptionHandler_))]
-		public interface UncaughtExceptionHandler  : global::MonoJavaBridge.IJavaObject 
+		public partial interface UncaughtExceptionHandler  : global::MonoJavaBridge.IJavaObject 
 		{
 			void uncaughtException(java.lang.Thread arg0, java.lang.Throwable arg1);
 		}

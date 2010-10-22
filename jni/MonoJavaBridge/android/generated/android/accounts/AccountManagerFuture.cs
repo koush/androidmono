@@ -1,7 +1,7 @@
 namespace android.accounts
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.accounts.AccountManagerFuture_))]
-	public interface AccountManagerFuture  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AccountManagerFuture  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool cancel(bool arg0);
 		bool isCancelled();

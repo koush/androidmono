@@ -1,7 +1,7 @@
 namespace java.security.cert
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.cert.CertPathParameters_))]
-	public interface CertPathParameters : java.lang.Cloneable
+	public partial interface CertPathParameters : java.lang.Cloneable
 	{
 		global::java.lang.Object clone();
 	}

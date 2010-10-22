@@ -213,7 +213,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.ContactMethodsColumns_))]
-		public interface ContactMethodsColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ContactMethodsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -364,7 +364,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.ExtensionsColumns_))]
-		public interface ExtensionsColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ExtensionsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -576,7 +576,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.GroupsColumns_))]
-		public interface GroupsColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface GroupsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1020,7 +1020,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.OrganizationColumns_))]
-		public interface OrganizationColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OrganizationColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1409,7 +1409,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.PeopleColumns_))]
-		public interface PeopleColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PeopleColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1584,7 +1584,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.PhonesColumns_))]
-		public interface PhonesColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PhonesColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1742,7 +1742,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.PhotosColumns_))]
-		public interface PhotosColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PhotosColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1810,7 +1810,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.PresenceColumns_))]
-		public interface PresenceColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PresenceColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -1982,7 +1982,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.Contacts.SettingsColumns_))]
-		public interface SettingsColumns  : global::MonoJavaBridge.IJavaObject 
+		public partial interface SettingsColumns  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 

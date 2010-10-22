@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.Delayed_))]
-	public interface Delayed : java.lang.Comparable
+	public partial interface Delayed : java.lang.Comparable
 	{
 		long getDelay(java.util.concurrent.TimeUnit arg0);
 	}

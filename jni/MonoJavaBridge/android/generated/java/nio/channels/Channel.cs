@@ -1,7 +1,7 @@
 namespace java.nio.channels
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.nio.channels.Channel_))]
-	public interface Channel : java.io.Closeable
+	public partial interface Channel : java.io.Closeable
 	{
 		void close();
 		bool isOpen();

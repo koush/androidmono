@@ -1,7 +1,7 @@
 namespace javax.xml.transform.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.dom.DOMLocator_))]
-	public interface DOMLocator : SourceLocator
+	public partial interface DOMLocator : SourceLocator
 	{
 		global::org.w3c.dom.Node getOriginatingNode();
 	}

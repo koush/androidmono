@@ -1,7 +1,7 @@
 namespace org.apache.http.cookie
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.cookie.CookieSpec_))]
-	public interface CookieSpec  : global::MonoJavaBridge.IJavaObject 
+	public partial interface CookieSpec  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.util.List parse(org.apache.http.Header arg0, org.apache.http.cookie.CookieOrigin arg1);
 		bool match(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1);

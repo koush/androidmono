@@ -133,7 +133,7 @@ namespace android.webkit
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.WebView.PictureListener_))]
-		public interface PictureListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PictureListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onNewPicture(android.webkit.WebView arg0, android.graphics.Picture arg1);
 		}

@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.DatabaseMetaData_))]
-	public interface DatabaseMetaData  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DatabaseMetaData  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getURL();
 		bool isReadOnly();

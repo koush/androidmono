@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.TokenIterator_))]
-	public interface TokenIterator : java.util.Iterator
+	public partial interface TokenIterator : java.util.Iterator
 	{
 		bool hasNext();
 		global::java.lang.String nextToken();

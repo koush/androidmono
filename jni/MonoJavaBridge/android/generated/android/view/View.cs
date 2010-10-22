@@ -129,7 +129,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnClickListener_))]
-		public interface OnClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onClick(android.view.View arg0);
 		}
@@ -162,7 +162,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnCreateContextMenuListener_))]
-		public interface OnCreateContextMenuListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnCreateContextMenuListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCreateContextMenu(android.view.ContextMenu arg0, android.view.View arg1, android.view.ContextMenu_ContextMenuInfo arg2);
 		}
@@ -195,7 +195,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnFocusChangeListener_))]
-		public interface OnFocusChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnFocusChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onFocusChange(android.view.View arg0, bool arg1);
 		}
@@ -228,7 +228,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnKeyListener_))]
-		public interface OnKeyListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnKeyListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onKey(android.view.View arg0, int arg1, android.view.KeyEvent arg2);
 		}
@@ -261,7 +261,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnLongClickListener_))]
-		public interface OnLongClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnLongClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onLongClick(android.view.View arg0);
 		}
@@ -294,7 +294,7 @@ namespace android.view
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.View.OnTouchListener_))]
-		public interface OnTouchListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnTouchListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onTouch(android.view.View arg0, android.view.MotionEvent arg1);
 		}

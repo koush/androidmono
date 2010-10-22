@@ -1,7 +1,7 @@
 namespace android.test
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.FlakyTest_))]
-	public interface FlakyTest : java.lang.annotation.Annotation
+	public partial interface FlakyTest : java.lang.annotation.Annotation
 	{
 		int tolerance();
 	}

@@ -1,7 +1,7 @@
 namespace java.nio.channels
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.nio.channels.GatheringByteChannel_))]
-	public interface GatheringByteChannel : WritableByteChannel
+	public partial interface GatheringByteChannel : WritableByteChannel
 	{
 		long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
 		long write(java.nio.ByteBuffer[] arg0);

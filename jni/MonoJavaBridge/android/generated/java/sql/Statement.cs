@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Statement_))]
-	public interface Statement  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Statement  : global::MonoJavaBridge.IJavaObject 
 	{
 		void close();
 		bool isClosed();

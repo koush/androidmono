@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.CharSequence_))]
-	public interface CharSequence  : global::MonoJavaBridge.IJavaObject 
+	public partial interface CharSequence  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String toString();
 		int length();

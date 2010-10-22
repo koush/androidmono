@@ -1,7 +1,7 @@
 namespace android.graphics.drawable
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.graphics.drawable.Animatable_))]
-	public interface Animatable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Animatable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void start();
 		void stop();

@@ -53,7 +53,7 @@ namespace android.app
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.PendingIntent.OnFinished_))]
-		public interface OnFinished  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnFinished  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onSendFinished(android.app.PendingIntent arg0, android.content.Intent arg1, int arg2, java.lang.String arg3, android.os.Bundle arg4);
 		}

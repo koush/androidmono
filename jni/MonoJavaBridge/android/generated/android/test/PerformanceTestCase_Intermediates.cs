@@ -1,7 +1,7 @@
 namespace android.test
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.PerformanceTestCase_Intermediates_))]
-	public interface PerformanceTestCase_Intermediates  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PerformanceTestCase_Intermediates  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setInternalIterations(int arg0);
 		void startTiming(bool arg0);

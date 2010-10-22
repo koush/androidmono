@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.SurfaceHolder_))]
-	public interface SurfaceHolder  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SurfaceHolder  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setType(int arg0);
 		void setFormat(int arg0);

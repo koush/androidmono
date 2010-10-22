@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.ResultSetMetaData_))]
-	public interface ResultSetMetaData  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ResultSetMetaData  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isReadOnly(int arg0);
 		global::java.lang.String getColumnName(int arg0);

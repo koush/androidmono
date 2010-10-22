@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.opengles
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.opengles.GL_))]
-	public interface GL  : global::MonoJavaBridge.IJavaObject 
+	public partial interface GL  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

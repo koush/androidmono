@@ -1,7 +1,7 @@
 namespace org.apache.http.cookie
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.cookie.SetCookie_))]
-	public interface SetCookie : Cookie
+	public partial interface SetCookie : Cookie
 	{
 		void setValue(java.lang.String arg0);
 		void setComment(java.lang.String arg0);

@@ -76,7 +76,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ExpandableListView.OnChildClickListener_))]
-		public interface OnChildClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnChildClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onChildClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, int arg3, long arg4);
 		}
@@ -109,7 +109,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ExpandableListView.OnGroupClickListener_))]
-		public interface OnGroupClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGroupClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onGroupClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, long arg3);
 		}
@@ -142,7 +142,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ExpandableListView.OnGroupCollapseListener_))]
-		public interface OnGroupCollapseListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGroupCollapseListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGroupCollapse(int arg0);
 		}
@@ -175,7 +175,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ExpandableListView.OnGroupExpandListener_))]
-		public interface OnGroupExpandListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGroupExpandListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGroupExpand(int arg0);
 		}

@@ -5,7 +5,7 @@ namespace java.lang
 {
     public partial class String
     {
-        public static implicit operator String(string str)
+        public static implicit operator global::java.lang.String(string str)
         {
             JNIEnv env = JNIEnv.ThreadEnv;
             JniLocalHandle handle = env.NewString(str);
@@ -14,9 +14,9 @@ namespace java.lang
             return ret;
         }
 
-        public static implicit operator string(String str)
+        public static implicit operator string(global::java.lang.String str)
         {
-            if (str == (String) null)
+            if (str == null)
             {
                 return null;
             }

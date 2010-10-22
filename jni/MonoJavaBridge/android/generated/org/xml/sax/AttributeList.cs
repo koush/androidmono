@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.AttributeList_))]
-	public interface AttributeList  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AttributeList  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getLength();
 		global::java.lang.String getName(int arg0);

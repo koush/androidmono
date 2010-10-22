@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.InvocationHandler_))]
-	public interface InvocationHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface InvocationHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object invoke(java.lang.Object arg0, java.lang.reflect.Method arg1, java.lang.Object[] arg2);
 	}

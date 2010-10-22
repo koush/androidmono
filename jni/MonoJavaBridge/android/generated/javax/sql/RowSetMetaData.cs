@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.RowSetMetaData_))]
-	public interface RowSetMetaData : java.sql.ResultSetMetaData
+	public partial interface RowSetMetaData : java.sql.ResultSetMetaData
 	{
 		void setScale(int arg0, int arg1);
 		void setCurrency(int arg0, bool arg1);

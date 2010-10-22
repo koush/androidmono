@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Filterable_))]
-	public interface Filterable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Filterable  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.widget.Filter getFilter();
 	}

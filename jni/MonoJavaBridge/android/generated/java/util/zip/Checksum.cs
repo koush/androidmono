@@ -1,7 +1,7 @@
 namespace java.util.zip
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.zip.Checksum_))]
-	public interface Checksum  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Checksum  : global::MonoJavaBridge.IJavaObject 
 	{
 		long getValue();
 		void reset();

@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.DSAKeyPairGenerator_))]
-	public interface DSAKeyPairGenerator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DSAKeyPairGenerator  : global::MonoJavaBridge.IJavaObject 
 	{
 		void initialize(java.security.interfaces.DSAParams arg0, java.security.SecureRandom arg1);
 		void initialize(int arg0, bool arg1, java.security.SecureRandom arg2);

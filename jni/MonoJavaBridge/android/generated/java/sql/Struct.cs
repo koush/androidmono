@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Struct_))]
-	public interface Struct  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Struct  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object[] getAttributes();
 		global::java.lang.Object[] getAttributes(java.util.Map arg0);

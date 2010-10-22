@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.GeolocationPermissions.Callback_))]
-		public interface Callback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Callback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void invoke(java.lang.String arg0, bool arg1, bool arg2);
 		}

@@ -1,7 +1,7 @@
 namespace org.apache.http.impl.auth
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.impl.auth.NTLMEngine_))]
-	public interface NTLMEngine  : global::MonoJavaBridge.IJavaObject 
+	public partial interface NTLMEngine  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String generateType1Msg(java.lang.String arg0, java.lang.String arg1);
 		global::java.lang.String generateType3Msg(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4);

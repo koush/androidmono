@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Chronometer.OnChronometerTickListener_))]
-		public interface OnChronometerTickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnChronometerTickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onChronometerTick(android.widget.Chronometer arg0);
 		}

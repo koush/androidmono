@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.AudioManager.OnAudioFocusChangeListener_))]
-		public interface OnAudioFocusChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnAudioFocusChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onAudioFocusChange(int arg0);
 		}

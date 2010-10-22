@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpResponseFactory_))]
-	public interface HttpResponseFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpResponseFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.HttpResponse newHttpResponse(org.apache.http.ProtocolVersion arg0, int arg1, org.apache.http.protocol.HttpContext arg2);
 		global::org.apache.http.HttpResponse newHttpResponse(org.apache.http.StatusLine arg0, org.apache.http.protocol.HttpContext arg1);

@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HeaderIterator_))]
-	public interface HeaderIterator : java.util.Iterator
+	public partial interface HeaderIterator : java.util.Iterator
 	{
 		bool hasNext();
 		global::org.apache.http.Header nextHeader();

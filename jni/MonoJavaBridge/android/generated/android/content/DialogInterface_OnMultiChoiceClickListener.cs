@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnMultiChoiceClickListener_))]
-	public interface DialogInterface_OnMultiChoiceClickListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DialogInterface_OnMultiChoiceClickListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onClick(android.content.DialogInterface arg0, int arg1, bool arg2);
 	}

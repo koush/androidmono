@@ -1,7 +1,7 @@
 namespace org.apache.http.client.@params
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.@params.AllClientPNames_))]
-	public interface AllClientPNames : org.apache.http.@params.CoreConnectionPNames, org.apache.http.@params.CoreProtocolPNames, ClientPNames, org.apache.http.auth.@params.AuthPNames, org.apache.http.cookie.@params.CookieSpecPNames, org.apache.http.conn.@params.ConnConnectionPNames, org.apache.http.conn.@params.ConnManagerPNames, org.apache.http.conn.@params.ConnRoutePNames
+	public partial interface AllClientPNames : org.apache.http.@params.CoreConnectionPNames, org.apache.http.@params.CoreProtocolPNames, ClientPNames, org.apache.http.auth.@params.AuthPNames, org.apache.http.cookie.@params.CookieSpecPNames, org.apache.http.conn.@params.ConnConnectionPNames, org.apache.http.conn.@params.ConnManagerPNames, org.apache.http.conn.@params.ConnRoutePNames
 	{
 	}
 

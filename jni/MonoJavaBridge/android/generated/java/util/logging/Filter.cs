@@ -1,7 +1,7 @@
 namespace java.util.logging
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.logging.Filter_))]
-	public interface Filter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Filter  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isLoggable(java.util.logging.LogRecord arg0);
 	}

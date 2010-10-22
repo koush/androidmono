@@ -73,7 +73,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.TextView.OnEditorActionListener_))]
-		public interface OnEditorActionListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnEditorActionListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onEditorAction(android.widget.TextView arg0, int arg1, android.view.KeyEvent arg2);
 		}

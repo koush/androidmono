@@ -1,7 +1,7 @@
 namespace android.database.sqlite
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.database.sqlite.SQLiteCursorDriver_))]
-	public interface SQLiteCursorDriver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SQLiteCursorDriver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.database.Cursor query(android.database.sqlite.SQLiteDatabase.CursorFactory arg0, java.lang.String[] arg1);
 		void cursorDeactivated();

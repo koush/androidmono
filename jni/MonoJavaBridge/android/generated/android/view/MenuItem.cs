@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.MenuItem_))]
-	public interface MenuItem  : global::MonoJavaBridge.IJavaObject 
+	public partial interface MenuItem  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isChecked();
 		global::android.view.MenuItem setChecked(bool arg0);

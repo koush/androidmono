@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Iterator_))]
-	public interface Iterator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Iterator  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool hasNext();
 		global::java.lang.Object next();

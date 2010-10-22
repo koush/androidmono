@@ -1,7 +1,7 @@
 namespace org.w3c.dom.ls
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.ls.LSParserFilter_))]
-	public interface LSParserFilter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LSParserFilter  : global::MonoJavaBridge.IJavaObject 
 	{
 		short startElement(org.w3c.dom.Element arg0);
 		int getWhatToShow();

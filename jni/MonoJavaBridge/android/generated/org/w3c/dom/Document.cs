@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.Document_))]
-	public interface Document : Node
+	public partial interface Document : Node
 	{
 		global::org.w3c.dom.DocumentType getDoctype();
 		global::org.w3c.dom.DOMImplementation getImplementation();

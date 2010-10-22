@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpClientConnection_))]
-	public interface HttpClientConnection : HttpConnection
+	public partial interface HttpClientConnection : HttpConnection
 	{
 		void flush();
 		bool isResponseAvailable(int arg0);

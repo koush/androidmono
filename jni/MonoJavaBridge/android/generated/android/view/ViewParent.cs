@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ViewParent_))]
-	public interface ViewParent  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ViewParent  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.view.ViewParent getParent();
 		global::android.view.View focusSearch(android.view.View arg0, int arg1);

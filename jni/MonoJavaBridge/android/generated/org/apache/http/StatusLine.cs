@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.StatusLine_))]
-	public interface StatusLine  : global::MonoJavaBridge.IJavaObject 
+	public partial interface StatusLine  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.ProtocolVersion getProtocolVersion();
 		int getStatusCode();

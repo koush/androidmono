@@ -1,7 +1,7 @@
 namespace javax.xml.xpath
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.xpath.XPathFunction_))]
-	public interface XPathFunction  : global::MonoJavaBridge.IJavaObject 
+	public partial interface XPathFunction  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object evaluate(java.util.List arg0);
 	}

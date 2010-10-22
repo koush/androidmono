@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.media.JetPlayer.OnJetEventListener_))]
-		public interface OnJetEventListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnJetEventListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onJetEvent(android.media.JetPlayer arg0, short arg1, byte arg2, byte arg3, byte arg4, byte arg5);
 			void onJetUserIdUpdate(android.media.JetPlayer arg0, int arg1, int arg2);

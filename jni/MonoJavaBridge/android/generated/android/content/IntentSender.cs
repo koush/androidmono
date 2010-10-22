@@ -12,7 +12,7 @@ namespace android.content
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.IntentSender.OnFinished_))]
-		public interface OnFinished  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnFinished  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onSendFinished(android.content.IntentSender arg0, android.content.Intent arg1, int arg2, java.lang.String arg3, android.os.Bundle arg4);
 		}

@@ -1,7 +1,7 @@
 namespace javax.crypto.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.crypto.interfaces.DHPrivateKey_))]
-	public interface DHPrivateKey : DHKey, java.security.PrivateKey
+	public partial interface DHPrivateKey : DHKey, java.security.PrivateKey
 	{
 		global::java.math.BigInteger getX();
 	}

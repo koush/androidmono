@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.HttpRequestRetryHandler_))]
-	public interface HttpRequestRetryHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpRequestRetryHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool retryRequest(java.io.IOException arg0, int arg1, org.apache.http.protocol.HttpContext arg2);
 	}

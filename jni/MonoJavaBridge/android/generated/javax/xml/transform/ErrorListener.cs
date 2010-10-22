@@ -1,7 +1,7 @@
 namespace javax.xml.transform
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.ErrorListener_))]
-	public interface ErrorListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ErrorListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void fatalError(javax.xml.transform.TransformerException arg0);
 		void error(javax.xml.transform.TransformerException arg0);

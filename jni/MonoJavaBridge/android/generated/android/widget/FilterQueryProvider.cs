@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.FilterQueryProvider_))]
-	public interface FilterQueryProvider  : global::MonoJavaBridge.IJavaObject 
+	public partial interface FilterQueryProvider  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.database.Cursor runQuery(java.lang.CharSequence arg0);
 	}

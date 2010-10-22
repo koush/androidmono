@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.Attr_))]
-	public interface Attr : Node
+	public partial interface Attr : Node
 	{
 		global::java.lang.String getName();
 		global::java.lang.String getValue();

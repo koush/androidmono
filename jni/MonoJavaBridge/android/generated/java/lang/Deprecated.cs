@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Deprecated_))]
-	public interface Deprecated : java.lang.annotation.Annotation
+	public partial interface Deprecated : java.lang.annotation.Annotation
 	{
 	}
 

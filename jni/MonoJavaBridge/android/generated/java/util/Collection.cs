@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Collection_))]
-	public interface Collection : java.lang.Iterable
+	public partial interface Collection : java.lang.Iterable
 	{
 		bool add(java.lang.Object arg0);
 		bool equals(java.lang.Object arg0);
@@ -165,6 +165,10 @@ namespace java.util
 				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Collection_._retainAll25901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Collection_.staticClass, global::java.util.Collection_._retainAll25901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator25902;
 		 global::java.util.Iterator java.lang.Iterable.iterator() 

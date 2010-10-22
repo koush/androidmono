@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.ParagraphStyle_))]
-	public interface ParagraphStyle  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ParagraphStyle  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

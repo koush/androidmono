@@ -12,7 +12,7 @@ namespace java.util.jar
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.jar.Pack200.Packer_))]
-		public interface Packer  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Packer  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::java.util.SortedMap properties();
 			void addPropertyChangeListener(java.beans.PropertyChangeListener arg0);
@@ -226,7 +226,7 @@ namespace java.util.jar
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.jar.Pack200.Unpacker_))]
-		public interface Unpacker  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Unpacker  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::java.util.SortedMap properties();
 			void addPropertyChangeListener(java.beans.PropertyChangeListener arg0);

@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.LeadingMarginSpan_LeadingMarginSpan2_))]
-	public interface LeadingMarginSpan_LeadingMarginSpan2 : LeadingMarginSpan, WrapTogetherSpan
+	public partial interface LeadingMarginSpan_LeadingMarginSpan2 : LeadingMarginSpan, WrapTogetherSpan
 	{
 		int getLeadingMarginLineCount();
 	}

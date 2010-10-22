@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.Window.Callback_))]
-		public interface Callback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Callback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onWindowAttributesChanged(android.view.WindowManager_LayoutParams arg0);
 			void onContentChanged();

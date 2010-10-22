@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.TextUtils.EllipsizeCallback_))]
-		public interface EllipsizeCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface EllipsizeCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void ellipsized(int arg0, int arg1);
 		}
@@ -54,6 +54,10 @@ namespace android.text
 			}
 			protected SimpleStringSplitter(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
+			}
+			public global::System.Collections.IEnumerator GetEnumerator()
+			{
+				return global::java.lang.IterableHelper.WrapIterator(iterator());
 			}
 			internal static global::MonoJavaBridge.MethodId _iterator12982;
 			public virtual global::java.util.Iterator iterator() 
@@ -120,7 +124,7 @@ namespace android.text
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.TextUtils.StringSplitter_))]
-		public interface StringSplitter : java.lang.Iterable
+		public partial interface StringSplitter : java.lang.Iterable
 		{
 			void setString(java.lang.String arg0);
 		}
@@ -144,6 +148,10 @@ namespace android.text
 					@__env.CallVoidMethod(this.JvmHandle, global::android.text.TextUtils.StringSplitter_._setString12988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextUtils.StringSplitter_.staticClass, global::android.text.TextUtils.StringSplitter_._setString12988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			}
+			public global::System.Collections.IEnumerator GetEnumerator()
+			{
+				return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 			}
 			internal static global::MonoJavaBridge.MethodId _iterator12989;
 			 global::java.util.Iterator java.lang.Iterable.iterator() 

@@ -1,7 +1,7 @@
 namespace dalvik.bytecode
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::dalvik.bytecode.Opcodes_))]
-	public interface Opcodes  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Opcodes  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

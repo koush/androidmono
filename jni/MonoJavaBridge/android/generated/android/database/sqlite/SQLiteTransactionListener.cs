@@ -1,7 +1,7 @@
 namespace android.database.sqlite
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.database.sqlite.SQLiteTransactionListener_))]
-	public interface SQLiteTransactionListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SQLiteTransactionListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onBegin();
 		void onCommit();

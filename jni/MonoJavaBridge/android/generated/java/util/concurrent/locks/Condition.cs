@@ -1,7 +1,7 @@
 namespace java.util.concurrent.locks
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.locks.Condition_))]
-	public interface Condition  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Condition  : global::MonoJavaBridge.IJavaObject 
 	{
 		void await();
 		bool await(long arg0, java.util.concurrent.TimeUnit arg1);

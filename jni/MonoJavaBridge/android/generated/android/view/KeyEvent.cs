@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.KeyEvent.Callback_))]
-		public interface Callback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Callback  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onKeyDown(int arg0, android.view.KeyEvent arg1);
 			bool onKeyLongPress(int arg0, android.view.KeyEvent arg1);

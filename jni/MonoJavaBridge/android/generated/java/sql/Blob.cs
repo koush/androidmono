@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Blob_))]
-	public interface Blob  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Blob  : global::MonoJavaBridge.IJavaObject 
 	{
 		long length();
 		byte[] getBytes(long arg0, int arg1);

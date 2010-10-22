@@ -1,7 +1,7 @@
 namespace javax.xml.xpath
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.xpath.XPathVariableResolver_))]
-	public interface XPathVariableResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface XPathVariableResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object resolveVariable(javax.xml.@namespace.QName arg0);
 	}

@@ -1,7 +1,7 @@
 namespace org.xml.sax.ext
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ext.Attributes2_))]
-	public interface Attributes2 : Attributes
+	public partial interface Attributes2 : Attributes
 	{
 		bool isSpecified(int arg0);
 		bool isSpecified(java.lang.String arg0, java.lang.String arg1);

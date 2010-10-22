@@ -1,7 +1,7 @@
 namespace org.apache.http.cookie
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.cookie.ClientCookie_))]
-	public interface ClientCookie : Cookie
+	public partial interface ClientCookie : Cookie
 	{
 		global::java.lang.String getAttribute(java.lang.String arg0);
 		bool containsAttribute(java.lang.String arg0);

@@ -1,7 +1,7 @@
 namespace javax.security.auth
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.security.auth.Destroyable_))]
-	public interface Destroyable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Destroyable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void destroy();
 		bool isDestroyed();

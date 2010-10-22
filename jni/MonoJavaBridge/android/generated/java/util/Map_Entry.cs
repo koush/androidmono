@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Map_Entry_))]
-	public interface Map_Entry  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Map_Entry  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		int hashCode();

@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Principal_))]
-	public interface Principal  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Principal  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		global::java.lang.String toString();

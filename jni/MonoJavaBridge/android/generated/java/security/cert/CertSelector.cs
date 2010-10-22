@@ -1,7 +1,7 @@
 namespace java.security.cert
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.cert.CertSelector_))]
-	public interface CertSelector : java.lang.Cloneable
+	public partial interface CertSelector : java.lang.Cloneable
 	{
 		global::java.lang.Object clone();
 		bool match(java.security.cert.Certificate arg0);

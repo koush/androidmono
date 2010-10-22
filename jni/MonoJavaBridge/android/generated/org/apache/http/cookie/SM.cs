@@ -1,7 +1,7 @@
 namespace org.apache.http.cookie
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.cookie.SM_))]
-	public interface SM  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SM  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ContextMenu_ContextMenuInfo_))]
-	public interface ContextMenu_ContextMenuInfo  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ContextMenu_ContextMenuInfo  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

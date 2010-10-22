@@ -132,6 +132,10 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.EnumSet_.staticClass, global::java.util.EnumSet_._size26050);
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator26051;
 		public override global::java.util.Iterator iterator() 
 		{

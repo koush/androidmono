@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ContentHandler_))]
-	public interface ContentHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ContentHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, org.xml.sax.Attributes arg3);
 		void characters(char[] arg0, int arg1, int arg2);

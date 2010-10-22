@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.SyncStatusObserver_))]
-	public interface SyncStatusObserver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SyncStatusObserver  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onStatusChanged(int arg0);
 	}

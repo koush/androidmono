@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.ExecutorService_))]
-	public interface ExecutorService : Executor
+	public partial interface ExecutorService : Executor
 	{
 		void shutdown();
 		bool awaitTermination(long arg0, java.util.concurrent.TimeUnit arg1);

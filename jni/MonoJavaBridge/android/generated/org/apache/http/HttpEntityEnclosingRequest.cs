@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpEntityEnclosingRequest_))]
-	public interface HttpEntityEnclosingRequest : HttpRequest
+	public partial interface HttpEntityEnclosingRequest : HttpRequest
 	{
 		global::org.apache.http.HttpEntity getEntity();
 		void setEntity(org.apache.http.HttpEntity arg0);

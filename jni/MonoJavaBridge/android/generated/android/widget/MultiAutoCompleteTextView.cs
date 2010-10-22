@@ -79,7 +79,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.MultiAutoCompleteTextView.Tokenizer_))]
-		public interface Tokenizer  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Tokenizer  : global::MonoJavaBridge.IJavaObject 
 		{
 			int findTokenStart(java.lang.CharSequence arg0, int arg1);
 			int findTokenEnd(java.lang.CharSequence arg0, int arg1);

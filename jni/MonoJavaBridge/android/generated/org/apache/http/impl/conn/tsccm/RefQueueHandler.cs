@@ -1,7 +1,7 @@
 namespace org.apache.http.impl.conn.tsccm
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.impl.conn.tsccm.RefQueueHandler_))]
-	public interface RefQueueHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RefQueueHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void handleReference(java.lang.@ref.Reference arg0);
 	}

@@ -1,7 +1,7 @@
 namespace android.view.animation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.animation.Interpolator_))]
-	public interface Interpolator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Interpolator  : global::MonoJavaBridge.IJavaObject 
 	{
 		float getInterpolation(float arg0);
 	}

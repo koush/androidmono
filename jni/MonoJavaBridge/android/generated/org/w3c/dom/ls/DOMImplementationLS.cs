@@ -1,7 +1,7 @@
 namespace org.w3c.dom.ls
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.ls.DOMImplementationLS_))]
-	public interface DOMImplementationLS  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DOMImplementationLS  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.w3c.dom.ls.LSParser createLSParser(short arg0, java.lang.String arg1);
 		global::org.w3c.dom.ls.LSSerializer createLSSerializer();

@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.DOMLocator_))]
-	public interface DOMLocator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DOMLocator  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getLineNumber();
 		int getColumnNumber();

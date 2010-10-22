@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.WrapTogetherSpan_))]
-	public interface WrapTogetherSpan : ParagraphStyle
+	public partial interface WrapTogetherSpan : ParagraphStyle
 	{
 	}
 

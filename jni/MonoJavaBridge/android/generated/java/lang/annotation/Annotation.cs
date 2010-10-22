@@ -1,7 +1,7 @@
 namespace java.lang.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.annotation.Annotation_))]
-	public interface Annotation  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Annotation  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		global::java.lang.String toString();

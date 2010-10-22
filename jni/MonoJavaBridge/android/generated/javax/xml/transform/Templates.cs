@@ -1,7 +1,7 @@
 namespace javax.xml.transform
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.Templates_))]
-	public interface Templates  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Templates  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.xml.transform.Transformer newTransformer();
 		global::java.util.Properties getOutputProperties();

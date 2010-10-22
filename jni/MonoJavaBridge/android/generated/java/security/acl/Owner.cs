@@ -1,7 +1,7 @@
 namespace java.security.acl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.acl.Owner_))]
-	public interface Owner  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Owner  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool addOwner(java.security.Principal arg0, java.security.Principal arg1);
 		bool deleteOwner(java.security.Principal arg0, java.security.Principal arg1);

@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Appendable_))]
-	public interface Appendable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Appendable  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Appendable append(java.lang.CharSequence arg0);
 		global::java.lang.Appendable append(java.lang.CharSequence arg0, int arg1, int arg2);

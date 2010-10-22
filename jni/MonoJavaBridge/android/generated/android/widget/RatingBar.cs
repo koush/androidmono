@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.RatingBar.OnRatingBarChangeListener_))]
-		public interface OnRatingBarChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnRatingBarChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onRatingChanged(android.widget.RatingBar arg0, float arg1, bool arg2);
 		}

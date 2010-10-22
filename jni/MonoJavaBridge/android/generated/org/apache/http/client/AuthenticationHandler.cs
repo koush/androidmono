@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.AuthenticationHandler_))]
-	public interface AuthenticationHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface AuthenticationHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool isAuthenticationRequested(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1);
 		global::java.util.Map getChallenges(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1);

@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Savepoint_))]
-	public interface Savepoint  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Savepoint  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getSavepointId();
 		global::java.lang.String getSavepointName();

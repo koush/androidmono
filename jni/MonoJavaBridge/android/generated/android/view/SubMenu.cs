@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.SubMenu_))]
-	public interface SubMenu : Menu
+	public partial interface SubMenu : Menu
 	{
 		global::android.view.MenuItem getItem();
 		global::android.view.SubMenu setIcon(android.graphics.drawable.Drawable arg0);

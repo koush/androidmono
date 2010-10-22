@@ -1,7 +1,7 @@
 namespace java.net
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.net.URLStreamHandlerFactory_))]
-	public interface URLStreamHandlerFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface URLStreamHandlerFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.URLStreamHandler createURLStreamHandler(java.lang.String arg0);
 	}

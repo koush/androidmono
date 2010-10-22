@@ -12,7 +12,7 @@ namespace android.gesture
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.gesture.GestureOverlayView.OnGestureListener_))]
-		public interface OnGestureListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGestureListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGestureStarted(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1);
 			void onGesture(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1);
@@ -78,7 +78,7 @@ namespace android.gesture
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.gesture.GestureOverlayView.OnGesturePerformedListener_))]
-		public interface OnGesturePerformedListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGesturePerformedListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGesturePerformed(android.gesture.GestureOverlayView arg0, android.gesture.Gesture arg1);
 		}
@@ -111,7 +111,7 @@ namespace android.gesture
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.gesture.GestureOverlayView.OnGesturingListener_))]
-		public interface OnGesturingListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnGesturingListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGesturingStarted(android.gesture.GestureOverlayView arg0);
 			void onGesturingEnded(android.gesture.GestureOverlayView arg0);

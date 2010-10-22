@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.Plugin.PreferencesClickHandler_))]
-		public interface PreferencesClickHandler  : global::MonoJavaBridge.IJavaObject 
+		public partial interface PreferencesClickHandler  : global::MonoJavaBridge.IJavaObject 
 		{
 			void handleClickEvent(android.content.Context arg0);
 		}

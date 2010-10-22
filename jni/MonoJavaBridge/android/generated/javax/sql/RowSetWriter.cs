@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.RowSetWriter_))]
-	public interface RowSetWriter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RowSetWriter  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool writeData(javax.sql.RowSetInternal arg0);
 	}

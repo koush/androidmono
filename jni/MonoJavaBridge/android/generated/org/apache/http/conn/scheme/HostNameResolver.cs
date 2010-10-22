@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.scheme
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.scheme.HostNameResolver_))]
-	public interface HostNameResolver  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HostNameResolver  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.InetAddress resolve(java.lang.String arg0);
 	}

@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnShowListener_))]
-	public interface DialogInterface_OnShowListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DialogInterface_OnShowListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onShow(android.content.DialogInterface arg0);
 	}

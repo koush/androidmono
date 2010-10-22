@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.GenericDeclaration_))]
-	public interface GenericDeclaration  : global::MonoJavaBridge.IJavaObject 
+	public partial interface GenericDeclaration  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.reflect.TypeVariable[] getTypeParameters();
 	}

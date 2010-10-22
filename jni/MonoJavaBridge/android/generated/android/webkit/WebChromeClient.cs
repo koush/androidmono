@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.WebChromeClient.CustomViewCallback_))]
-		public interface CustomViewCallback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface CustomViewCallback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCustomViewHidden();
 		}

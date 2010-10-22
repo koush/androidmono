@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.ContextMenu_))]
-	public interface ContextMenu : Menu
+	public partial interface ContextMenu : Menu
 	{
 		global::android.view.ContextMenu setHeaderTitle(int arg0);
 		global::android.view.ContextMenu setHeaderTitle(java.lang.CharSequence arg0);

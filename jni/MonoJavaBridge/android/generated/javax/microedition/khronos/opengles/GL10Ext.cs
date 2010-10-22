@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.opengles
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.opengles.GL10Ext_))]
-	public interface GL10Ext : GL
+	public partial interface GL10Ext : GL
 	{
 		int glQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3);
 		int glQueryMatrixxOES(java.nio.IntBuffer arg0, java.nio.IntBuffer arg1);

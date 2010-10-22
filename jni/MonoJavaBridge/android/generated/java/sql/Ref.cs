@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Ref_))]
-	public interface Ref  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Ref  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object getObject(java.util.Map arg0);
 		global::java.lang.Object getObject();

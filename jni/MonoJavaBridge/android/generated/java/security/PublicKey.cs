@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.PublicKey_))]
-	public interface PublicKey : Key
+	public partial interface PublicKey : Key
 	{
 	}
 

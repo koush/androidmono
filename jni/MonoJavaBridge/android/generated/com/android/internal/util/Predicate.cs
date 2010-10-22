@@ -1,7 +1,7 @@
 namespace com.android.@internal.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::com.android.@internal.util.Predicate_))]
-	public interface Predicate  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Predicate  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool apply(java.lang.Object arg0);
 	}

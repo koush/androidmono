@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.ObjectStreamConstants_))]
-	public interface ObjectStreamConstants  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ObjectStreamConstants  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

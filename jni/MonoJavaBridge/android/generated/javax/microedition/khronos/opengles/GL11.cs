@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.opengles
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.opengles.GL11_))]
-	public interface GL11 : GL10
+	public partial interface GL11 : GL10
 	{
 		void glColorPointer(int arg0, int arg1, int arg2, int arg3);
 		void glDrawElements(int arg0, int arg1, int arg2, int arg3);

@@ -38,6 +38,10 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.AbstractSequentialList.staticClass, global::java.util.AbstractSequentialList._addAll25615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator25616;
 		public override global::java.util.Iterator iterator() 
 		{

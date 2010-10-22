@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpMessage_))]
-	public interface HttpMessage  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpMessage  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.ProtocolVersion getProtocolVersion();
 		global::org.apache.http.@params.HttpParams getParams();

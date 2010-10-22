@@ -1,7 +1,7 @@
 namespace org.apache.http.client.@params
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.@params.ClientPNames_))]
-	public interface ClientPNames  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ClientPNames  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

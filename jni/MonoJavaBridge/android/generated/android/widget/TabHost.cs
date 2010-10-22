@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.TabHost.OnTabChangeListener_))]
-		public interface OnTabChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnTabChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onTabChanged(java.lang.String arg0);
 		}
@@ -45,7 +45,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.TabHost.TabContentFactory_))]
-		public interface TabContentFactory  : global::MonoJavaBridge.IJavaObject 
+		public partial interface TabContentFactory  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::android.view.View createTabContent(java.lang.String arg0);
 		}

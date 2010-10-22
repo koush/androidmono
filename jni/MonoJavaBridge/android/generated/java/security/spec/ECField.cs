@@ -1,7 +1,7 @@
 namespace java.security.spec
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.spec.ECField_))]
-	public interface ECField  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ECField  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getFieldSize();
 	}

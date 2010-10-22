@@ -1,7 +1,7 @@
 namespace java.util.concurrent.locks
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.locks.Lock_))]
-	public interface Lock  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Lock  : global::MonoJavaBridge.IJavaObject 
 	{
 		void @lock();
 		void unlock();

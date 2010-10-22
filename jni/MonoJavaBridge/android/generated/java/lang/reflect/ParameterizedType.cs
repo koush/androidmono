@@ -1,7 +1,7 @@
 namespace java.lang.reflect
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.reflect.ParameterizedType_))]
-	public interface ParameterizedType : Type
+	public partial interface ParameterizedType : Type
 	{
 		global::java.lang.reflect.Type[] getActualTypeArguments();
 		global::java.lang.reflect.Type getRawType();

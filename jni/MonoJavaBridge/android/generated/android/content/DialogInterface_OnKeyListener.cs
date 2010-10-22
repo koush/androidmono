@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.DialogInterface_OnKeyListener_))]
-	public interface DialogInterface_OnKeyListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DialogInterface_OnKeyListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2);
 	}

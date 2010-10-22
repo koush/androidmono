@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.CookieStore_))]
-	public interface CookieStore  : global::MonoJavaBridge.IJavaObject 
+	public partial interface CookieStore  : global::MonoJavaBridge.IJavaObject 
 	{
 		void clear();
 		void addCookie(org.apache.http.cookie.Cookie arg0);

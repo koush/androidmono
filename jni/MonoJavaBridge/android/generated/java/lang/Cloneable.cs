@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Cloneable_))]
-	public interface Cloneable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Cloneable  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

@@ -1,7 +1,7 @@
 namespace java.beans
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.beans.PropertyChangeListener_))]
-	public interface PropertyChangeListener : java.util.EventListener
+	public partial interface PropertyChangeListener : java.util.EventListener
 	{
 		void propertyChange(java.beans.PropertyChangeEvent arg0);
 	}

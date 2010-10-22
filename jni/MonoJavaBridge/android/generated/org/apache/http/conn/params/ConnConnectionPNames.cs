@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.@params
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.@params.ConnConnectionPNames_))]
-	public interface ConnConnectionPNames  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ConnConnectionPNames  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

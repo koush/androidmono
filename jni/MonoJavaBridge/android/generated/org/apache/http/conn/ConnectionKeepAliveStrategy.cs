@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ConnectionKeepAliveStrategy_))]
-	public interface ConnectionKeepAliveStrategy  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ConnectionKeepAliveStrategy  : global::MonoJavaBridge.IJavaObject 
 	{
 		long getKeepAliveDuration(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1);
 	}

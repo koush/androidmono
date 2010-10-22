@@ -1,7 +1,7 @@
 namespace java.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.text.CharacterIterator_))]
-	public interface CharacterIterator : java.lang.Cloneable
+	public partial interface CharacterIterator : java.lang.Cloneable
 	{
 		global::java.lang.Object clone();
 		char next();

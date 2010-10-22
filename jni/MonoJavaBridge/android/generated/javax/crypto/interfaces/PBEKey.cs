@@ -1,7 +1,7 @@
 namespace javax.crypto.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.crypto.interfaces.PBEKey_))]
-	public interface PBEKey : SecretKey
+	public partial interface PBEKey : SecretKey
 	{
 		char[] getPassword();
 		int getIterationCount();

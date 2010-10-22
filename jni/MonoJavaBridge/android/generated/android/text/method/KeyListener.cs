@@ -1,7 +1,7 @@
 namespace android.text.method
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.method.KeyListener_))]
-	public interface KeyListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface KeyListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3);
 		bool onKeyUp(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3);

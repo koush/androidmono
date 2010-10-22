@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.EventListener_))]
-	public interface EventListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface EventListener  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

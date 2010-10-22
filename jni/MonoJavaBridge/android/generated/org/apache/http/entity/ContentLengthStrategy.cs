@@ -1,7 +1,7 @@
 namespace org.apache.http.entity
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.entity.ContentLengthStrategy_))]
-	public interface ContentLengthStrategy  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ContentLengthStrategy  : global::MonoJavaBridge.IJavaObject 
 	{
 		long determineLength(org.apache.http.HttpMessage arg0);
 	}

@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.HeterogeneousExpandableList_))]
-	public interface HeterogeneousExpandableList  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HeterogeneousExpandableList  : global::MonoJavaBridge.IJavaObject 
 	{
 		int getChildType(int arg0, int arg1);
 		int getChildTypeCount();

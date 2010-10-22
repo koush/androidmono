@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.WebIconDatabase.IconListener_))]
-		public interface IconListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface IconListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onReceivedIcon(java.lang.String arg0, android.graphics.Bitmap arg1);
 		}

@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.ObjectInput_))]
-	public interface ObjectInput : DataInput
+	public partial interface ObjectInput : DataInput
 	{
 		void close();
 		global::java.lang.Object readObject();

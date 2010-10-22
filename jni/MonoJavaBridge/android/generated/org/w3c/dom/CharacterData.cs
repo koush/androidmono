@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.CharacterData_))]
-	public interface CharacterData : Node
+	public partial interface CharacterData : Node
 	{
 		int getLength();
 		global::java.lang.String getData();

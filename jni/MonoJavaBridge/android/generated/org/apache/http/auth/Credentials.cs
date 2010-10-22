@@ -1,7 +1,7 @@
 namespace org.apache.http.auth
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.auth.Credentials_))]
-	public interface Credentials  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Credentials  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getPassword();
 		global::java.security.Principal getUserPrincipal();

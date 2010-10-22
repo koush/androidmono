@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.ConcurrentMap_))]
-	public interface ConcurrentMap : Map
+	public partial interface ConcurrentMap : Map
 	{
 		bool replace(java.lang.Object arg0, java.lang.Object arg1, java.lang.Object arg2);
 		global::java.lang.Object replace(java.lang.Object arg0, java.lang.Object arg1);

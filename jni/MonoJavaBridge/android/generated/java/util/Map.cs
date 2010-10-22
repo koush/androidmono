@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Map_))]
-	public interface Map  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Map  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object get(java.lang.Object arg0);
 		global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1);

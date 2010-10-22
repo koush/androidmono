@@ -1,7 +1,7 @@
 namespace android.view
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.SurfaceHolder_Callback_))]
-	public interface SurfaceHolder_Callback  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SurfaceHolder_Callback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void surfaceCreated(android.view.SurfaceHolder arg0);
 		void surfaceDestroyed(android.view.SurfaceHolder arg0);

@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.UserDataHandler_))]
-	public interface UserDataHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface UserDataHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void handle(short arg0, java.lang.String arg1, java.lang.Object arg2, org.w3c.dom.Node arg3, org.w3c.dom.Node arg4);
 	}

@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.RowSetReader_))]
-	public interface RowSetReader  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RowSetReader  : global::MonoJavaBridge.IJavaObject 
 	{
 		void readData(javax.sql.RowSetInternal arg0);
 	}

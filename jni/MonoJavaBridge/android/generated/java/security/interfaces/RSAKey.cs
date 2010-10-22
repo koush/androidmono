@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.RSAKey_))]
-	public interface RSAKey  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RSAKey  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.math.BigInteger getModulus();
 	}

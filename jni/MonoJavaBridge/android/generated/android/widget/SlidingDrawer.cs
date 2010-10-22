@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SlidingDrawer.OnDrawerCloseListener_))]
-		public interface OnDrawerCloseListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDrawerCloseListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onDrawerClosed();
 		}
@@ -45,7 +45,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SlidingDrawer.OnDrawerOpenListener_))]
-		public interface OnDrawerOpenListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDrawerOpenListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onDrawerOpened();
 		}
@@ -78,7 +78,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SlidingDrawer.OnDrawerScrollListener_))]
-		public interface OnDrawerScrollListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDrawerScrollListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onScrollStarted();
 			void onScrollEnded();

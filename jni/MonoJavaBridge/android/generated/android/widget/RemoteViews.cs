@@ -45,7 +45,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.RemoteViews.RemoteView_))]
-		public interface RemoteView : java.lang.annotation.Annotation
+		public partial interface RemoteView : java.lang.annotation.Annotation
 		{
 		}
 

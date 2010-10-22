@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.WrapperListAdapter_))]
-	public interface WrapperListAdapter : ListAdapter
+	public partial interface WrapperListAdapter : ListAdapter
 	{
 		global::android.widget.ListAdapter getWrappedAdapter();
 	}

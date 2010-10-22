@@ -1,7 +1,7 @@
 namespace javax.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.sql.RowSet_))]
-	public interface RowSet : java.sql.ResultSet
+	public partial interface RowSet : java.sql.ResultSet
 	{
 		void setReadOnly(bool arg0);
 		void setBoolean(java.lang.String arg0, bool arg1);

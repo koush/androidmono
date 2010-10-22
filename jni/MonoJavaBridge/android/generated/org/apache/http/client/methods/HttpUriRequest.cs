@@ -1,7 +1,7 @@
 namespace org.apache.http.client.methods
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.methods.HttpUriRequest_))]
-	public interface HttpUriRequest : HttpRequest
+	public partial interface HttpUriRequest : HttpRequest
 	{
 		global::java.lang.String getMethod();
 		global::java.net.URI getURI();

@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpStatus_))]
-	public interface HttpStatus  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpStatus  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

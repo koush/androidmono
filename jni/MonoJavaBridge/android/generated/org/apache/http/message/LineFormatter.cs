@@ -1,7 +1,7 @@
 namespace org.apache.http.message
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.message.LineFormatter_))]
-	public interface LineFormatter  : global::MonoJavaBridge.IJavaObject 
+	public partial interface LineFormatter  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.util.CharArrayBuffer formatHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.Header arg1);
 		global::org.apache.http.util.CharArrayBuffer appendProtocolVersion(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.ProtocolVersion arg1);

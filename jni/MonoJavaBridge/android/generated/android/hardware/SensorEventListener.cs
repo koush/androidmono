@@ -1,7 +1,7 @@
 namespace android.hardware
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.hardware.SensorEventListener_))]
-	public interface SensorEventListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SensorEventListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onSensorChanged(android.hardware.SensorEvent arg0);
 		void onAccuracyChanged(android.hardware.Sensor arg0, int arg1);

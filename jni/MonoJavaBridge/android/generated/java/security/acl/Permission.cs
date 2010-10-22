@@ -1,7 +1,7 @@
 namespace java.security.acl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.acl.Permission_))]
-	public interface Permission  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Permission  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool equals(java.lang.Object arg0);
 		global::java.lang.String toString();

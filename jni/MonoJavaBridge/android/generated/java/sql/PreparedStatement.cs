@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.PreparedStatement_))]
-	public interface PreparedStatement : Statement
+	public partial interface PreparedStatement : Statement
 	{
 		void setBoolean(int arg0, bool arg1);
 		void setByte(int arg0, byte arg1);

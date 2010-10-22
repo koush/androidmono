@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.X509KeyManager_))]
-	public interface X509KeyManager : KeyManager
+	public partial interface X509KeyManager : KeyManager
 	{
 		global::java.security.cert.X509Certificate[] getCertificateChain(java.lang.String arg0);
 		global::java.security.PrivateKey getPrivateKey(java.lang.String arg0);

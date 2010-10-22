@@ -1,7 +1,7 @@
 namespace javax.crypto.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.crypto.interfaces.DHKey_))]
-	public interface DHKey  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DHKey  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::javax.crypto.spec.DHParameterSpec getParams();
 	}

@@ -1,7 +1,7 @@
 namespace org.apache.http.cookie
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.cookie.Cookie_))]
-	public interface Cookie  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Cookie  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getName();
 		global::java.lang.String getValue();

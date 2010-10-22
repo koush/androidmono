@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.X509TrustManager_))]
-	public interface X509TrustManager : TrustManager
+	public partial interface X509TrustManager : TrustManager
 	{
 		void checkClientTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1);
 		void checkServerTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1);

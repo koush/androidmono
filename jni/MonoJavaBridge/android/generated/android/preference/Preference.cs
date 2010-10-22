@@ -55,7 +55,7 @@ namespace android.preference
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.Preference.OnPreferenceChangeListener_))]
-		public interface OnPreferenceChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnPreferenceChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onPreferenceChange(android.preference.Preference arg0, java.lang.Object arg1);
 		}
@@ -88,7 +88,7 @@ namespace android.preference
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.preference.Preference.OnPreferenceClickListener_))]
-		public interface OnPreferenceClickListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnPreferenceClickListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool onPreferenceClick(android.preference.Preference arg0);
 		}

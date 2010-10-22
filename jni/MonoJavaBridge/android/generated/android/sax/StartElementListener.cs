@@ -1,7 +1,7 @@
 namespace android.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.sax.StartElementListener_))]
-	public interface StartElementListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface StartElementListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void start(org.xml.sax.Attributes arg0);
 	}

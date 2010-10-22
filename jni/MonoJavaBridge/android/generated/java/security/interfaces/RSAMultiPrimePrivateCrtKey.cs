@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.RSAMultiPrimePrivateCrtKey_))]
-	public interface RSAMultiPrimePrivateCrtKey : RSAPrivateKey
+	public partial interface RSAMultiPrimePrivateCrtKey : RSAPrivateKey
 	{
 		global::java.math.BigInteger getPublicExponent();
 		global::java.math.BigInteger getPrimeP();

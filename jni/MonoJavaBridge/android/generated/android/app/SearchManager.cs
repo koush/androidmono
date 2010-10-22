@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.SearchManager.OnCancelListener_))]
-		public interface OnCancelListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnCancelListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCancel();
 		}
@@ -45,7 +45,7 @@ namespace android.app
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.SearchManager.OnDismissListener_))]
-		public interface OnDismissListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnDismissListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onDismiss();
 		}

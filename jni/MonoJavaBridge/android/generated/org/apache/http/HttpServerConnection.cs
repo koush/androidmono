@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.HttpServerConnection_))]
-	public interface HttpServerConnection : HttpConnection
+	public partial interface HttpServerConnection : HttpConnection
 	{
 		void flush();
 		global::org.apache.http.HttpRequest receiveRequestHeader();

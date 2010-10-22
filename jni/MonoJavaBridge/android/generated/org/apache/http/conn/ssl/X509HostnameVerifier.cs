@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ssl.X509HostnameVerifier_))]
-	public interface X509HostnameVerifier : javax.net.ssl.HostnameVerifier
+	public partial interface X509HostnameVerifier : javax.net.ssl.HostnameVerifier
 	{
 		bool verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1);
 		void verify(java.lang.String arg0, javax.net.ssl.SSLSocket arg1);

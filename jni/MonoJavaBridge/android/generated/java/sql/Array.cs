@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.Array_))]
-	public interface Array  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Array  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object getArray(long arg0, int arg1);
 		global::java.lang.Object getArray(long arg0, int arg1, java.util.Map arg2);

@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.app.TimePickerDialog.OnTimeSetListener_))]
-		public interface OnTimeSetListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnTimeSetListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onTimeSet(android.widget.TimePicker arg0, int arg1, int arg2);
 		}

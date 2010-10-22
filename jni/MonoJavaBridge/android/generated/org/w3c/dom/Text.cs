@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.Text_))]
-	public interface Text : CharacterData
+	public partial interface Text : CharacterData
 	{
 		global::org.w3c.dom.Text splitText(int arg0);
 		bool isElementContentWhitespace();

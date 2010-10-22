@@ -1,7 +1,7 @@
 namespace java.security.acl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.acl.Acl_))]
-	public interface Acl : Owner
+	public partial interface Acl : Owner
 	{
 		global::java.lang.String toString();
 		global::java.lang.String getName();

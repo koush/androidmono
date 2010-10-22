@@ -12,7 +12,7 @@ namespace android.view.animation
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.animation.Animation.AnimationListener_))]
-		public interface AnimationListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface AnimationListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onAnimationStart(android.view.animation.Animation arg0);
 			void onAnimationEnd(android.view.animation.Animation arg0);

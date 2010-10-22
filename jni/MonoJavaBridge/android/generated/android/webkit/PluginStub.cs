@@ -1,7 +1,7 @@
 namespace android.webkit
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.PluginStub_))]
-	public interface PluginStub  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PluginStub  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.view.View getEmbeddedView(int arg0, android.content.Context arg1);
 		global::android.view.View getFullScreenView(int arg0, android.content.Context arg1);

@@ -1,7 +1,7 @@
 namespace android.os
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.IInterface_))]
-	public interface IInterface  : global::MonoJavaBridge.IJavaObject 
+	public partial interface IInterface  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::android.os.IBinder asBinder();
 	}

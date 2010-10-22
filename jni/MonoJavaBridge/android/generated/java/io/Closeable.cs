@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.Closeable_))]
-	public interface Closeable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Closeable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void close();
 	}

@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.SortedSet_))]
-	public interface SortedSet : Set
+	public partial interface SortedSet : Set
 	{
 		global::java.lang.Object last();
 		global::java.lang.Object first();
@@ -345,6 +345,10 @@ namespace java.util
 				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.SortedSet_._retainAll26698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.SortedSet_.staticClass, global::java.util.SortedSet_._retainAll26698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator26699;
 		 global::java.util.Iterator java.lang.Iterable.iterator() 

@@ -1,7 +1,7 @@
 namespace java.lang.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.annotation.Target_))]
-	public interface Target : Annotation
+	public partial interface Target : Annotation
 	{
 		global::java.lang.annotation.ElementType[] value();
 	}

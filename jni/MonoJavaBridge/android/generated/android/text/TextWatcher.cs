@@ -1,7 +1,7 @@
 namespace android.text
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.TextWatcher_))]
-	public interface TextWatcher : NoCopySpan
+	public partial interface TextWatcher : NoCopySpan
 	{
 		void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3);
 		void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3);

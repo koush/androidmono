@@ -1,7 +1,7 @@
 namespace org.apache.http.client
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.client.UserTokenHandler_))]
-	public interface UserTokenHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface UserTokenHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object getUserToken(org.apache.http.protocol.HttpContext arg0);
 	}

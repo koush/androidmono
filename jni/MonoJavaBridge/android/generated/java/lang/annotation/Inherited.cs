@@ -1,7 +1,7 @@
 namespace java.lang.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.annotation.Inherited_))]
-	public interface Inherited : Annotation
+	public partial interface Inherited : Annotation
 	{
 	}
 

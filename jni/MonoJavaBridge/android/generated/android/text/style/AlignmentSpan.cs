@@ -1,7 +1,7 @@
 namespace android.text.style
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.text.style.AlignmentSpan_))]
-	public interface AlignmentSpan : ParagraphStyle
+	public partial interface AlignmentSpan : ParagraphStyle
 	{
 		global::android.text.Layout.Alignment getAlignment();
 	}

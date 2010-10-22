@@ -1,7 +1,7 @@
 namespace org.apache.http.conn.routing
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.routing.HttpRoutePlanner_))]
-	public interface HttpRoutePlanner  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpRoutePlanner  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.conn.routing.HttpRoute determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2);
 	}

@@ -12,7 +12,7 @@ namespace android.location
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.location.GpsStatus.Listener_))]
-		public interface Listener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Listener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onGpsStatusChanged(int arg0);
 		}
@@ -45,7 +45,7 @@ namespace android.location
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.location.GpsStatus.NmeaListener_))]
-		public interface NmeaListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface NmeaListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onNmeaReceived(long arg0, java.lang.String arg1);
 		}

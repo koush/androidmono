@@ -79,7 +79,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.RadioGroup.OnCheckedChangeListener_))]
-		public interface OnCheckedChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnCheckedChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCheckedChanged(android.widget.RadioGroup arg0, int arg1);
 		}

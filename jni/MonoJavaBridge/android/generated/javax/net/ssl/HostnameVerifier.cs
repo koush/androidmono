@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.HostnameVerifier_))]
-	public interface HostnameVerifier  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HostnameVerifier  : global::MonoJavaBridge.IJavaObject 
 	{
 		bool verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1);
 	}

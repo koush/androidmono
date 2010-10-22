@@ -1,7 +1,7 @@
 namespace javax.xml.xpath
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.xpath.XPathExpression_))]
-	public interface XPathExpression  : global::MonoJavaBridge.IJavaObject 
+	public partial interface XPathExpression  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object evaluate(java.lang.Object arg0, javax.xml.@namespace.QName arg1);
 		global::java.lang.String evaluate(java.lang.Object arg0);

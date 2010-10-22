@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.SimpleCursorTreeAdapter.ViewBinder_))]
-		public interface ViewBinder  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ViewBinder  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool setViewValue(android.view.View arg0, android.database.Cursor arg1, int arg2);
 		}

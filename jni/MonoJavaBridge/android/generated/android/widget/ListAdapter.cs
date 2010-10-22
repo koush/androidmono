@@ -1,7 +1,7 @@
 namespace android.widget
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.ListAdapter_))]
-	public interface ListAdapter : Adapter
+	public partial interface ListAdapter : Adapter
 	{
 		bool isEnabled(int arg0);
 		bool areAllItemsEnabled();

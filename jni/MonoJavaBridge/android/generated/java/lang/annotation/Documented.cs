@@ -1,7 +1,7 @@
 namespace java.lang.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.annotation.Documented_))]
-	public interface Documented : Annotation
+	public partial interface Documented : Annotation
 	{
 	}
 

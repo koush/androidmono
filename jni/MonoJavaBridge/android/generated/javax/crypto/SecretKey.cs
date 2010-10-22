@@ -1,7 +1,7 @@
 namespace javax.crypto
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.crypto.SecretKey_))]
-	public interface SecretKey : java.security.Key
+	public partial interface SecretKey : java.security.Key
 	{
 	}
 

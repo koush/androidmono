@@ -1,7 +1,7 @@
 namespace junit.runner
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::junit.runner.TestSuiteLoader_))]
-	public interface TestSuiteLoader  : global::MonoJavaBridge.IJavaObject 
+	public partial interface TestSuiteLoader  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Class load(java.lang.String arg0);
 		global::java.lang.Class reload(java.lang.Class arg0);

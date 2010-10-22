@@ -1,7 +1,7 @@
 namespace java.net
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.net.SocketImplFactory_))]
-	public interface SocketImplFactory  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SocketImplFactory  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.net.SocketImpl createSocketImpl();
 	}

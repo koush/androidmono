@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.DataOutput_))]
-	public interface DataOutput  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DataOutput  : global::MonoJavaBridge.IJavaObject 
 	{
 		void write(int arg0);
 		void write(byte[] arg0);

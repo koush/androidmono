@@ -1,7 +1,7 @@
 namespace org.xml.sax.ext
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.ext.DeclHandler_))]
-	public interface DeclHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DeclHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void elementDecl(java.lang.String arg0, java.lang.String arg1);
 		void attributeDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4);

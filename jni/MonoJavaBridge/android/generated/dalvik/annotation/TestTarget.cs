@@ -1,7 +1,7 @@
 namespace dalvik.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::dalvik.annotation.TestTarget_))]
-	public interface TestTarget : java.lang.annotation.Annotation
+	public partial interface TestTarget : java.lang.annotation.Annotation
 	{
 		global::java.lang.String methodName();
 		global::java.lang.String conceptName();

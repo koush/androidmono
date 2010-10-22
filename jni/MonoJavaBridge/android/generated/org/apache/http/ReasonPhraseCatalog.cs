@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.ReasonPhraseCatalog_))]
-	public interface ReasonPhraseCatalog  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ReasonPhraseCatalog  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getReason(int arg0, java.util.Locale arg1);
 	}

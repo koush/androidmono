@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.DOMImplementationSource_))]
-	public interface DOMImplementationSource  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DOMImplementationSource  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.w3c.dom.DOMImplementation getDOMImplementation(java.lang.String arg0);
 		global::org.w3c.dom.DOMImplementationList getDOMImplementationList(java.lang.String arg0);

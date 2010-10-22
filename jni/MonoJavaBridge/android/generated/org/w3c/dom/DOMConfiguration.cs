@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.DOMConfiguration_))]
-	public interface DOMConfiguration  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DOMConfiguration  : global::MonoJavaBridge.IJavaObject 
 	{
 		void setParameter(java.lang.String arg0, java.lang.Object arg1);
 		global::java.lang.Object getParameter(java.lang.String arg0);

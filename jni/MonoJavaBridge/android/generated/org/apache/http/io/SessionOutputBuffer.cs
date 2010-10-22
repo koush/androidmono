@@ -1,7 +1,7 @@
 namespace org.apache.http.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.io.SessionOutputBuffer_))]
-	public interface SessionOutputBuffer  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SessionOutputBuffer  : global::MonoJavaBridge.IJavaObject 
 	{
 		void write(byte[] arg0, int arg1, int arg2);
 		void write(byte[] arg0);

@@ -65,6 +65,10 @@ namespace java.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PriorityQueue.staticClass, global::java.util.PriorityQueue._toArray26424)) as java.lang.Object[];
 		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(iterator());
+		}
 		internal static global::MonoJavaBridge.MethodId _iterator26425;
 		public override global::java.util.Iterator iterator() 
 		{

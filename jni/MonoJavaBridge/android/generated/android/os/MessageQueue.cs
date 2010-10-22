@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.MessageQueue.IdleHandler_))]
-		public interface IdleHandler  : global::MonoJavaBridge.IJavaObject 
+		public partial interface IdleHandler  : global::MonoJavaBridge.IJavaObject 
 		{
 			bool queueIdle();
 		}

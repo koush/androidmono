@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.SQLOutput_))]
-	public interface SQLOutput  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SQLOutput  : global::MonoJavaBridge.IJavaObject 
 	{
 		void writeObject(java.sql.SQLData arg0);
 		void writeInt(int arg0);

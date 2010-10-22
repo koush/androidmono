@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.DSAKey_))]
-	public interface DSAKey  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DSAKey  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.security.interfaces.DSAParams getParams();
 	}

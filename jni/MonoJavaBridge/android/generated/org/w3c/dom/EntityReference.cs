@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.EntityReference_))]
-	public interface EntityReference : Node
+	public partial interface EntityReference : Node
 	{
 	}
 

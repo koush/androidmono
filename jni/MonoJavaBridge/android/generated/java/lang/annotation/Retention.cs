@@ -1,7 +1,7 @@
 namespace java.lang.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.annotation.Retention_))]
-	public interface Retention : Annotation
+	public partial interface Retention : Annotation
 	{
 		global::java.lang.annotation.RetentionPolicy value();
 	}

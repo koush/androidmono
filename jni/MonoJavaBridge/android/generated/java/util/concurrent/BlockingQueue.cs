@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.BlockingQueue_))]
-	public interface BlockingQueue : Queue
+	public partial interface BlockingQueue : Queue
 	{
 		bool add(java.lang.Object arg0);
 		void put(java.lang.Object arg0);
@@ -314,6 +314,10 @@ namespace java.util.concurrent
 				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.concurrent.BlockingQueue_._retainAll26979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.BlockingQueue_.staticClass, global::java.util.concurrent.BlockingQueue_._retainAll26979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator26980;
 		 global::java.util.Iterator java.lang.Iterable.iterator() 

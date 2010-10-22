@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ManagedClientConnection_))]
-	public interface ManagedClientConnection : HttpClientConnection, HttpInetConnection, ConnectionReleaseTrigger
+	public partial interface ManagedClientConnection : HttpClientConnection, HttpInetConnection, ConnectionReleaseTrigger
 	{
 		global::java.lang.Object getState();
 		void setState(java.lang.Object arg0);

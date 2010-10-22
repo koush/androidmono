@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.FormattedHeader_))]
-	public interface FormattedHeader : Header
+	public partial interface FormattedHeader : Header
 	{
 		global::org.apache.http.util.CharArrayBuffer getBuffer();
 		int getValuePos();

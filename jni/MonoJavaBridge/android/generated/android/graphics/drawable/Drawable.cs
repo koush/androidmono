@@ -12,7 +12,7 @@ namespace android.graphics.drawable
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.graphics.drawable.Drawable.Callback_))]
-		public interface Callback  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Callback  : global::MonoJavaBridge.IJavaObject 
 		{
 			void invalidateDrawable(android.graphics.drawable.Drawable arg0);
 			void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2);

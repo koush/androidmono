@@ -7,5 +7,10 @@ namespace java.lang
         {
             Init(global::MonoJavaBridge.JNIEnv.ThreadEnv, handle);
         }
+        
+        public override string ToString()
+        {
+            return toString();
+        }
     }
 }

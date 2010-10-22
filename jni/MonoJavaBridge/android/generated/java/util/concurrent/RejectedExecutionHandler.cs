@@ -1,7 +1,7 @@
 namespace java.util.concurrent
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.concurrent.RejectedExecutionHandler_))]
-	public interface RejectedExecutionHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RejectedExecutionHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1);
 	}

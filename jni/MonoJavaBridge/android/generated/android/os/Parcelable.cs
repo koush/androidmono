@@ -1,7 +1,7 @@
 namespace android.os
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.Parcelable_))]
-	public interface Parcelable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Parcelable  : global::MonoJavaBridge.IJavaObject 
 	{
 		void writeToParcel(android.os.Parcel arg0, int arg1);
 		int describeContents();

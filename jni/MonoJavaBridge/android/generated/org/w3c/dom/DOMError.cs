@@ -1,7 +1,7 @@
 namespace org.w3c.dom
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.w3c.dom.DOMError_))]
-	public interface DOMError  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DOMError  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.w3c.dom.DOMLocator getLocation();
 		global::java.lang.String getMessage();

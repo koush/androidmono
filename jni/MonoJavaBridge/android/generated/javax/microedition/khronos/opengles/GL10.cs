@@ -1,7 +1,7 @@
 namespace javax.microedition.khronos.opengles
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.microedition.khronos.opengles.GL10_))]
-	public interface GL10 : GL
+	public partial interface GL10 : GL
 	{
 		void glActiveTexture(int arg0);
 		void glAlphaFunc(int arg0, float arg1);

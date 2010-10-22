@@ -23,7 +23,7 @@ namespace android.provider
 			{
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.AlbumColumns_))]
-			public interface AlbumColumns  : global::MonoJavaBridge.IJavaObject 
+			public partial interface AlbumColumns  : global::MonoJavaBridge.IJavaObject 
 			{
 			}
 
@@ -185,7 +185,7 @@ namespace android.provider
 				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.ArtistColumns_))]
-			public interface ArtistColumns  : global::MonoJavaBridge.IJavaObject 
+			public partial interface ArtistColumns  : global::MonoJavaBridge.IJavaObject 
 			{
 			}
 
@@ -344,7 +344,7 @@ namespace android.provider
 				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.AudioColumns_))]
-			public interface AudioColumns : MediaColumns
+			public partial interface AudioColumns : MediaColumns
 			{
 			}
 
@@ -629,7 +629,7 @@ namespace android.provider
 				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.GenresColumns_))]
-			public interface GenresColumns  : global::MonoJavaBridge.IJavaObject 
+			public partial interface GenresColumns  : global::MonoJavaBridge.IJavaObject 
 			{
 			}
 
@@ -903,7 +903,7 @@ namespace android.provider
 				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Audio.PlaylistsColumns_))]
-			public interface PlaylistsColumns  : global::MonoJavaBridge.IJavaObject 
+			public partial interface PlaylistsColumns  : global::MonoJavaBridge.IJavaObject 
 			{
 			}
 
@@ -989,7 +989,7 @@ namespace android.provider
 			{
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Images.ImageColumns_))]
-			public interface ImageColumns : MediaColumns
+			public partial interface ImageColumns : MediaColumns
 			{
 			}
 
@@ -1378,7 +1378,7 @@ namespace android.provider
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.MediaColumns_))]
-		public interface MediaColumns : BaseColumns
+		public partial interface MediaColumns : BaseColumns
 		{
 		}
 
@@ -1673,7 +1673,7 @@ namespace android.provider
 				}
 			}
 			[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.MediaStore.Video.VideoColumns_))]
-			public interface VideoColumns : MediaColumns
+			public partial interface VideoColumns : MediaColumns
 			{
 			}
 

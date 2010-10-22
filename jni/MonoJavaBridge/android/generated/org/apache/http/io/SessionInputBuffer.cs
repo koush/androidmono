@@ -1,7 +1,7 @@
 namespace org.apache.http.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.io.SessionInputBuffer_))]
-	public interface SessionInputBuffer  : global::MonoJavaBridge.IJavaObject 
+	public partial interface SessionInputBuffer  : global::MonoJavaBridge.IJavaObject 
 	{
 		int readLine(org.apache.http.util.CharArrayBuffer arg0);
 		global::java.lang.String readLine();

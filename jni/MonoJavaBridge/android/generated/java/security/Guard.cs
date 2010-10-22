@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.Guard_))]
-	public interface Guard  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Guard  : global::MonoJavaBridge.IJavaObject 
 	{
 		void checkGuard(java.lang.Object arg0);
 	}

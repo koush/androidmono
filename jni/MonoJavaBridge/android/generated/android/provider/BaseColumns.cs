@@ -1,7 +1,7 @@
 namespace android.provider
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.provider.BaseColumns_))]
-	public interface BaseColumns  : global::MonoJavaBridge.IJavaObject 
+	public partial interface BaseColumns  : global::MonoJavaBridge.IJavaObject 
 	{
 	}
 

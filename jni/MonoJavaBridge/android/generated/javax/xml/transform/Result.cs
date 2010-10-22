@@ -1,7 +1,7 @@
 namespace javax.xml.transform
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.Result_))]
-	public interface Result  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Result  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getSystemId();
 		void setSystemId(java.lang.String arg0);

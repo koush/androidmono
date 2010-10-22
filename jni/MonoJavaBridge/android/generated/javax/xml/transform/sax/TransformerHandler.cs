@@ -1,7 +1,7 @@
 namespace javax.xml.transform.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.xml.transform.sax.TransformerHandler_))]
-	public interface TransformerHandler : org.xml.sax.ContentHandler, org.xml.sax.ext.LexicalHandler, org.xml.sax.DTDHandler
+	public partial interface TransformerHandler : org.xml.sax.ContentHandler, org.xml.sax.ext.LexicalHandler, org.xml.sax.DTDHandler
 	{
 		global::java.lang.String getSystemId();
 		void setResult(javax.xml.transform.Result arg0);

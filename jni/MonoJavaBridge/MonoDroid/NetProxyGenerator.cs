@@ -205,7 +205,7 @@ namespace MonoDroid
             if (type.Static)
                 Write("static");
             if (type.IsInterface)
-                Write("interface {0}", type.SimpleName);
+                Write("partial interface {0}", type.SimpleName);
             else
                 Write("partial class {0}", type.SimpleName);
             
@@ -252,12 +252,56 @@ namespace MonoDroid
                 WriteLine("{1} {0}(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
                 WriteLine("{");
                 WriteLine("}");
+    
+                /*
+                HashSet<Type> allTypes = new HashSet<Type>();
+                AddAllTypes(type, allTypes);
+                if (allTypes.Contains(FindType("java.lang.Iterable")))
+                {
+                    bool found = false;
+                    var curType = type;
+                    var allImplementedMethods = new Methods();
+                    while (curType != null)
+                    {
+                        foreach (var m in curType.Methods)
+                        {
+                            if (allImplementedMethods.Contains(m))
+                                continue;
+                            if (m.Abstract)
+                                continue;
+                            allImplementedMethods.Add(m);
+                        }
+                    }
+                    WriteLine("public global::System.Collections.IEnumerator GetEnumerator()");
+                    WriteLine("{");
+                    myIndent++;
+                    WriteLine("return global::java.lang.IterableHelper.WrapIterable(this);");
+                    myIndent--;
+                    WriteLine("}");
+                }   
+                */
                 
                 myIndent--;
             }
 
             return true;
         }
+        
+        /*
+        void AddAllTypes(Type type, HashSet<Type> types)
+        {
+            if (type == null)
+                return;
+            if (types.Contains(type))
+                return;
+            types.Add(type, types);
+            AddAllTypes(type.ParentType);
+            foreach (var i in type.Interfaces)
+            {
+                AddAllTypes(i, types);
+            }
+        }
+        */
         
         void AddAllInterfaces(Type interfaceType, HashSet<Type> interfaces)
         {
@@ -704,6 +748,19 @@ namespace MonoDroid
             string methodId = null;
             if (!method.Type.IsInterface)
             {
+                if (!method.Static && method.Parameters.Count == 0 && ((method.Name == "iterator" && method.Scope == "public") || method.Name == "java.lang.Iterable.iterator"))
+                {
+                    WriteLine("public global::System.Collections.IEnumerator GetEnumerator()");
+                    WriteLine("{");
+                    myIndent++;
+                    if (method.Name == "iterator")
+                        WriteLine("return global::java.lang.IterableHelper.WrapIterator(iterator());");
+                    else
+                        WriteLine("return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());");
+                    myIndent--;
+                    WriteLine("}");
+                }
+                
                 string signature = GetMethodSignature(method);
                 if (method.Name.LastIndexOf('.') == -1)
                     methodId = method.Name;

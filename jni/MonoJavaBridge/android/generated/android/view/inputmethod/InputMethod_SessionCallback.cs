@@ -1,7 +1,7 @@
 namespace android.view.inputmethod
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.view.inputmethod.InputMethod_SessionCallback_))]
-	public interface InputMethod_SessionCallback  : global::MonoJavaBridge.IJavaObject 
+	public partial interface InputMethod_SessionCallback  : global::MonoJavaBridge.IJavaObject 
 	{
 		void sessionCreated(android.view.inputmethod.InputMethodSession arg0);
 	}

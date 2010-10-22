@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.PrivilegedAction_))]
-	public interface PrivilegedAction  : global::MonoJavaBridge.IJavaObject 
+	public partial interface PrivilegedAction  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object run();
 	}

@@ -1,7 +1,7 @@
 namespace android.content.res
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.res.XmlResourceParser_))]
-	public interface XmlResourceParser : org.xmlpull.v1.XmlPullParser, android.util.AttributeSet
+	public partial interface XmlResourceParser : org.xmlpull.v1.XmlPullParser, android.util.AttributeSet
 	{
 		void close();
 	}

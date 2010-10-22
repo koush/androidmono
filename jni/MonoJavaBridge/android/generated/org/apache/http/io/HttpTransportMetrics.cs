@@ -1,7 +1,7 @@
 namespace org.apache.http.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.io.HttpTransportMetrics_))]
-	public interface HttpTransportMetrics  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpTransportMetrics  : global::MonoJavaBridge.IJavaObject 
 	{
 		void reset();
 		long getBytesTransferred();

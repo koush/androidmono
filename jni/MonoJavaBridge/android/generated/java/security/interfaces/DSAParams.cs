@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.DSAParams_))]
-	public interface DSAParams  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DSAParams  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.math.BigInteger getP();
 		global::java.math.BigInteger getQ();

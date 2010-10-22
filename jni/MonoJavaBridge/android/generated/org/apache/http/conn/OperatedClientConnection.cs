@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.OperatedClientConnection_))]
-	public interface OperatedClientConnection : HttpClientConnection, HttpInetConnection
+	public partial interface OperatedClientConnection : HttpClientConnection, HttpInetConnection
 	{
 		void update(java.net.Socket arg0, org.apache.http.HttpHost arg1, bool arg2, org.apache.http.@params.HttpParams arg3);
 		bool isSecure();

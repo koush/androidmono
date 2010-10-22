@@ -144,7 +144,7 @@ namespace java.security
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.KeyStore.Entry_))]
-		public interface Entry  : global::MonoJavaBridge.IJavaObject 
+		public partial interface Entry  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 
@@ -166,7 +166,7 @@ namespace java.security
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.KeyStore.LoadStoreParameter_))]
-		public interface LoadStoreParameter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface LoadStoreParameter  : global::MonoJavaBridge.IJavaObject 
 		{
 			global::java.security.KeyStore.ProtectionParameter getProtectionParameter();
 		}
@@ -347,7 +347,7 @@ namespace java.security
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.KeyStore.ProtectionParameter_))]
-		public interface ProtectionParameter  : global::MonoJavaBridge.IJavaObject 
+		public partial interface ProtectionParameter  : global::MonoJavaBridge.IJavaObject 
 		{
 		}
 

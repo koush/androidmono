@@ -1,7 +1,7 @@
 namespace android.os
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.os.Parcelable_Creator_))]
-	public interface Parcelable_Creator  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Parcelable_Creator  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object[] newArray(int arg0);
 		global::java.lang.Object createFromParcel(android.os.Parcel arg0);

@@ -1,7 +1,7 @@
 namespace javax.net.ssl
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::javax.net.ssl.SSLSessionBindingListener_))]
-	public interface SSLSessionBindingListener : java.util.EventListener
+	public partial interface SSLSessionBindingListener : java.util.EventListener
 	{
 		void valueBound(javax.net.ssl.SSLSessionBindingEvent arg0);
 		void valueUnbound(javax.net.ssl.SSLSessionBindingEvent arg0);

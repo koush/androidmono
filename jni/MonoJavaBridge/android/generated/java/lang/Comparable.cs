@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Comparable_))]
-	public interface Comparable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Comparable  : global::MonoJavaBridge.IJavaObject 
 	{
 		int compareTo(java.lang.Object arg0);
 	}

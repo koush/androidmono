@@ -1,7 +1,7 @@
 namespace org.apache.http.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.io.HttpMessageParser_))]
-	public interface HttpMessageParser  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpMessageParser  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.HttpMessage parse();
 	}

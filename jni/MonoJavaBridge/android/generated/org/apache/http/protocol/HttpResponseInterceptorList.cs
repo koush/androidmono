@@ -1,7 +1,7 @@
 namespace org.apache.http.protocol
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.protocol.HttpResponseInterceptorList_))]
-	public interface HttpResponseInterceptorList  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpResponseInterceptorList  : global::MonoJavaBridge.IJavaObject 
 	{
 		void addResponseInterceptor(org.apache.http.HttpResponseInterceptor arg0);
 		void addResponseInterceptor(org.apache.http.HttpResponseInterceptor arg0, int arg1);

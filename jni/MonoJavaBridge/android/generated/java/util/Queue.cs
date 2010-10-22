@@ -1,7 +1,7 @@
 namespace java.util
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.util.Queue_))]
-	public interface Queue : Collection
+	public partial interface Queue : Collection
 	{
 		bool add(java.lang.Object arg0);
 		global::java.lang.Object remove();
@@ -210,6 +210,10 @@ namespace java.util
 				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Queue_._retainAll26487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Queue_.staticClass, global::java.util.Queue_._retainAll26487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public global::System.Collections.IEnumerator GetEnumerator()
+		{
+			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator26488;
 		 global::java.util.Iterator java.lang.Iterable.iterator() 

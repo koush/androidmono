@@ -1,7 +1,7 @@
 namespace java.security.interfaces
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.interfaces.ECPrivateKey_))]
-	public interface ECPrivateKey : PrivateKey, ECKey
+	public partial interface ECPrivateKey : PrivateKey, ECKey
 	{
 		global::java.math.BigInteger getS();
 	}

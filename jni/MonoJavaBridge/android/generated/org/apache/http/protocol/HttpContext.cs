@@ -1,7 +1,7 @@
 namespace org.apache.http.protocol
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.protocol.HttpContext_))]
-	public interface HttpContext  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpContext  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.Object getAttribute(java.lang.String arg0);
 		global::java.lang.Object removeAttribute(java.lang.String arg0);

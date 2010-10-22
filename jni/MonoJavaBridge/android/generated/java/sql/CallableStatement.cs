@@ -1,7 +1,7 @@
 namespace java.sql
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.sql.CallableStatement_))]
-	public interface CallableStatement : PreparedStatement
+	public partial interface CallableStatement : PreparedStatement
 	{
 		global::java.lang.Object getObject(int arg0, java.util.Map arg1);
 		global::java.lang.Object getObject(java.lang.String arg0);

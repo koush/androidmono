@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.webkit.WebStorage.QuotaUpdater_))]
-		public interface QuotaUpdater  : global::MonoJavaBridge.IJavaObject 
+		public partial interface QuotaUpdater  : global::MonoJavaBridge.IJavaObject 
 		{
 			void updateQuota(long arg0);
 		}

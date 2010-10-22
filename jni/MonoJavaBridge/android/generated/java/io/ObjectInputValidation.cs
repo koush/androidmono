@@ -1,7 +1,7 @@
 namespace java.io
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.io.ObjectInputValidation_))]
-	public interface ObjectInputValidation  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ObjectInputValidation  : global::MonoJavaBridge.IJavaObject 
 	{
 		void validateObject();
 	}

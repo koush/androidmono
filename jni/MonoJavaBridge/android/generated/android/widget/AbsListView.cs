@@ -61,7 +61,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AbsListView.OnScrollListener_))]
-		public interface OnScrollListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnScrollListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onScroll(android.widget.AbsListView arg0, int arg1, int arg2, int arg3);
 			void onScrollStateChanged(android.widget.AbsListView arg0, int arg1);
@@ -130,7 +130,7 @@ namespace android.widget
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AbsListView.RecyclerListener_))]
-		public interface RecyclerListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface RecyclerListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onMovedToScrapHeap(android.view.View arg0);
 		}

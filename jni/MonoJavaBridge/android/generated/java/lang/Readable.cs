@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.Readable_))]
-	public interface Readable  : global::MonoJavaBridge.IJavaObject 
+	public partial interface Readable  : global::MonoJavaBridge.IJavaObject 
 	{
 		int read(java.nio.CharBuffer arg0);
 	}

@@ -1,7 +1,7 @@
 namespace java.nio.channels
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.nio.channels.InterruptibleChannel_))]
-	public interface InterruptibleChannel : Channel
+	public partial interface InterruptibleChannel : Channel
 	{
 		void close();
 	}

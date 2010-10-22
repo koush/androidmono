@@ -1,7 +1,7 @@
 namespace android.test
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.test.UiThreadTest_))]
-	public interface UiThreadTest : java.lang.annotation.Annotation
+	public partial interface UiThreadTest : java.lang.annotation.Annotation
 	{
 	}
 

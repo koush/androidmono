@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.Filter.FilterListener_))]
-		public interface FilterListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface FilterListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onFilterComplete(int arg0);
 		}

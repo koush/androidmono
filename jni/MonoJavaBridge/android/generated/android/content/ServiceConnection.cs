@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.ServiceConnection_))]
-	public interface ServiceConnection  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ServiceConnection  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onServiceConnected(android.content.ComponentName arg0, android.os.IBinder arg1);
 		void onServiceDisconnected(android.content.ComponentName arg0);

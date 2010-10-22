@@ -1,7 +1,7 @@
 namespace java.security
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.security.DomainCombiner_))]
-	public interface DomainCombiner  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DomainCombiner  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1);
 	}

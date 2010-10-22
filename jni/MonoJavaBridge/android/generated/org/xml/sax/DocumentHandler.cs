@@ -1,7 +1,7 @@
 namespace org.xml.sax
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.xml.sax.DocumentHandler_))]
-	public interface DocumentHandler  : global::MonoJavaBridge.IJavaObject 
+	public partial interface DocumentHandler  : global::MonoJavaBridge.IJavaObject 
 	{
 		void startElement(java.lang.String arg0, org.xml.sax.AttributeList arg1);
 		void characters(char[] arg0, int arg1, int arg2);

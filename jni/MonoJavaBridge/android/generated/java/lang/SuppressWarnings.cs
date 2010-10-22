@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.lang.SuppressWarnings_))]
-	public interface SuppressWarnings : java.lang.annotation.Annotation
+	public partial interface SuppressWarnings : java.lang.annotation.Annotation
 	{
 		global::java.lang.String[] value();
 	}

@@ -1,7 +1,7 @@
 namespace android.speech
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.speech.RecognitionListener_))]
-	public interface RecognitionListener  : global::MonoJavaBridge.IJavaObject 
+	public partial interface RecognitionListener  : global::MonoJavaBridge.IJavaObject 
 	{
 		void onError(int arg0);
 		void onEvent(int arg0, android.os.Bundle arg1);

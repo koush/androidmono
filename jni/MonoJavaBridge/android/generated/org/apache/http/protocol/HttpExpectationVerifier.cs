@@ -1,7 +1,7 @@
 namespace org.apache.http.protocol
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.protocol.HttpExpectationVerifier_))]
-	public interface HttpExpectationVerifier  : global::MonoJavaBridge.IJavaObject 
+	public partial interface HttpExpectationVerifier  : global::MonoJavaBridge.IJavaObject 
 	{
 		void verify(org.apache.http.HttpRequest arg0, org.apache.http.HttpResponse arg1, org.apache.http.protocol.HttpContext arg2);
 	}

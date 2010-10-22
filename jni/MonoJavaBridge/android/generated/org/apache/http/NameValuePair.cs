@@ -1,7 +1,7 @@
 namespace org.apache.http
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.NameValuePair_))]
-	public interface NameValuePair  : global::MonoJavaBridge.IJavaObject 
+	public partial interface NameValuePair  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::java.lang.String getName();
 		global::java.lang.String getValue();

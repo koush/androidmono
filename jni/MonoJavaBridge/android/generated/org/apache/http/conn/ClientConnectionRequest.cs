@@ -1,7 +1,7 @@
 namespace org.apache.http.conn
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::org.apache.http.conn.ClientConnectionRequest_))]
-	public interface ClientConnectionRequest  : global::MonoJavaBridge.IJavaObject 
+	public partial interface ClientConnectionRequest  : global::MonoJavaBridge.IJavaObject 
 	{
 		global::org.apache.http.conn.ManagedClientConnection getConnection(long arg0, java.util.concurrent.TimeUnit arg1);
 		void abortRequest();

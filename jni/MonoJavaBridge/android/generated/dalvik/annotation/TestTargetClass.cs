@@ -1,7 +1,7 @@
 namespace dalvik.annotation
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::dalvik.annotation.TestTargetClass_))]
-	public interface TestTargetClass : java.lang.annotation.Annotation
+	public partial interface TestTargetClass : java.lang.annotation.Annotation
 	{
 		global::java.lang.Class value();
 	}

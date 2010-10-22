@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.CompoundButton.OnCheckedChangeListener_))]
-		public interface OnCheckedChangeListener  : global::MonoJavaBridge.IJavaObject 
+		public partial interface OnCheckedChangeListener  : global::MonoJavaBridge.IJavaObject 
 		{
 			void onCheckedChanged(android.widget.CompoundButton arg0, bool arg1);
 		}

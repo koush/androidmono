@@ -1,7 +1,7 @@
 namespace java.nio.channels
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::java.nio.channels.ScatteringByteChannel_))]
-	public interface ScatteringByteChannel : ReadableByteChannel
+	public partial interface ScatteringByteChannel : ReadableByteChannel
 	{
 		long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2);
 		long read(java.nio.ByteBuffer[] arg0);

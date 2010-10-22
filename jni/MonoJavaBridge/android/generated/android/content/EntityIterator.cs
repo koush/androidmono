@@ -1,7 +1,7 @@
 namespace android.content
 {
 	[global::MonoJavaBridge.JavaInterface(typeof(global::android.content.EntityIterator_))]
-	public interface EntityIterator : java.util.Iterator
+	public partial interface EntityIterator : java.util.Iterator
 	{
 		void close();
 		void reset();
