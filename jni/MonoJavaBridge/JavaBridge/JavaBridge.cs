@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Reflection;
+using System.Linq.Expressions;
 
 namespace MonoJavaBridge
 {
@@ -198,24 +199,12 @@ namespace MonoJavaBridge
                     ret[i] = (T)method.Invoke(null, new object[] { env.GetObjectArrayElement(handle, i) });
                 }
             }
-            else if (type.IsSubclassOf(typeof(JavaException)))
-            {
-                JavaException[] exceptions = ret as JavaException[];
-                for (int i = 0; i < length; i++)
-                {
-                    exceptions[i] = WrapJavaException(env.GetObjectArrayElement(handle, i));
-                }
-            }            
-            else if (type.IsSubclassOf(typeof(JavaObject)))
+            else
             {
                 for (int i = 0; i < length; i++)
                 {
                     ret.SetValue(WrapJavaObject(env.GetObjectArrayElement(handle, i)), i);
                 }
-            }
-            else
-            {
-                throw new InvalidOperationException("Trying to convert unknown type.");
             }
             
             return ret;
@@ -228,23 +217,11 @@ namespace MonoJavaBridge
             JNIEnv env = JNIEnv.ThreadEnv;
             JniLocalHandle clazz = env.GetObjectClass(handle);
             Wrapper wrapper = GetWrapper(env, clazz);
-            var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaObject;
+            var ret = wrapper.Constructor.Invoke(new object[] { env }) as IJavaObject;
             ret.Init(env, handle);
             return ret;
         }
-        
-        public static JavaException WrapJavaException(JniLocalHandle handle)
-        {
-            if (JniHandle.IsNull(handle))
-                return null;
-            JNIEnv env = JNIEnv.ThreadEnv;
-            JniLocalHandle clazz = env.GetObjectClass(handle);
-            Wrapper wrapper = GetWrapper(env, clazz);
-            var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaException;
-            ret.Init(env, handle);
-            return ret;
-        }        
-        
+
         public static T WrapIJavaObject<T>(JniLocalHandle handle) where T: class, IJavaObject
         {
             if (JniHandle.IsNull(handle))
@@ -268,23 +245,13 @@ namespace MonoJavaBridge
             return ret;
         }
 
-        public static Value ConvertToValue(JavaObject o)
+        public static Value ConvertToValue(IJavaObject o)
         {
 			if (o == null)
 				return Value.Null;
 
 			Value ret = new Value();
-            ret._object = o.mJvmHandle;
-            return ret;
-        }
-
-        public static Value ConvertToValue(JavaException o)
-        {
-			if (o == null)
-				return Value.Null;
-
-			Value ret = new Value();
-            ret._object = o.mJvmHandle;
+            ret._object = o.JvmHandle;
             return ret;
         }
 		

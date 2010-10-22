@@ -987,9 +987,8 @@ namespace MonoJavaBridge
             {
                 ExceptionDescribe();
                 ExceptionClear();
-                throw new Exception("fail in exception test. need to use typed exception");
-                //Exception exception = Convertor.FullJ2C<Exception>(this, occurred);
-                //throw exception;
+                Exception ex = JavaBridge.WrapJavaObject(occurred) as Exception;
+                throw ex;
             }
         }
 

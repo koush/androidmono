@@ -2315,6 +2315,7 @@
     <Compile Include="generated\org\xmlpull\v1\XmlSerializer.cs" />
     <Compile Include="java\lang\Object.cs" />
     <Compile Include="java\lang\String.cs" />
+    <Compile Include="java\lang\Throwable.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
