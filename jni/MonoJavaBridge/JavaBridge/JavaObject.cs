@@ -33,5 +33,10 @@ namespace MonoJavaBridge
         {
             mJvmHandle = env.NewGlobalRef(handle);
         }
+        
+        public void Init(JNIEnv env, JniGlobalHandle handle)
+        {
+            mJvmHandle = handle;
+        }
     }
 }

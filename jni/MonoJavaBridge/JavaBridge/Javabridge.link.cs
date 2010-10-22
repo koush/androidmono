@@ -240,7 +240,7 @@ namespace MonoJavaBridge
         {
             JavaException jex = ex as JavaException;
             if (jex != null)
-                JNIEnv.ThreadEnv.Throw(jex.mHandle);
+                JNIEnv.ThreadEnv.Throw(jex);
             else
                 JNIEnv.ThreadEnv.ThrowNew(myJavaExceptionClass, ex.Message);
         }

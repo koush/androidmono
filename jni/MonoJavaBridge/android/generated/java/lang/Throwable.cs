@@ -1,7 +1,7 @@
 namespace java.lang
 {
 	[global::MonoJavaBridge.JavaClass()]
-	public partial class Throwable : java.lang.Object, java.io.Serializable
+	public partial class Throwable : global::MonoJavaBridge.JavaException, java.io.Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Throwable()
@@ -73,7 +73,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._initCause20792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20793;
-		public override global::java.lang.String toString() 
+		public virtual global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

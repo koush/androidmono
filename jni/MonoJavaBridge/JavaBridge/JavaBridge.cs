@@ -198,7 +198,6 @@ namespace MonoJavaBridge
                     ret[i] = (T)method.Invoke(null, new object[] { env.GetObjectArrayElement(handle, i) });
                 }
             }
-            /*
             else if (type.IsSubclassOf(typeof(JavaException)))
             {
                 JavaException[] exceptions = ret as JavaException[];
@@ -206,14 +205,12 @@ namespace MonoJavaBridge
                 {
                     exceptions[i] = WrapJavaException(env.GetObjectArrayElement(handle, i));
                 }
-            }
-            */           
+            }            
             else if (type.IsSubclassOf(typeof(JavaObject)))
             {
-                JavaObject[] objects = ret as JavaObject[];
                 for (int i = 0; i < length; i++)
                 {
-                    objects[i] = WrapJavaObject(env.GetObjectArrayElement(handle, i));
+                    ret.SetValue(WrapJavaObject(env.GetObjectArrayElement(handle, i)), i);
                 }
             }
             else
@@ -224,7 +221,7 @@ namespace MonoJavaBridge
             return ret;
         }
         
-        public static JavaObject WrapJavaObject(JniLocalHandle handle)
+        public static IJavaObject WrapJavaObject(JniLocalHandle handle)
         {
             if (JniHandle.IsNull(handle))
                 return null;
@@ -236,7 +233,6 @@ namespace MonoJavaBridge
             return ret;
         }
         
-        /*
         public static JavaException WrapJavaException(JniLocalHandle handle)
         {
             if (JniHandle.IsNull(handle))
@@ -247,8 +243,7 @@ namespace MonoJavaBridge
             var ret = wrapper.Constructor.Invoke(new object[] { env }) as JavaException;
             ret.Init(env, handle);
             return ret;
-        }
-        */       
+        }        
         
         public static T WrapIJavaObject<T>(JniLocalHandle handle) where T: class, IJavaObject
         {
@@ -282,8 +277,7 @@ namespace MonoJavaBridge
             ret._object = o.mJvmHandle;
             return ret;
         }
-  
-        /*
+
         public static Value ConvertToValue(JavaException o)
         {
 			if (o == null)
@@ -293,7 +287,6 @@ namespace MonoJavaBridge
             ret._object = o.mJvmHandle;
             return ret;
         }
-        */
 		
         public static string GetSignature(string typeName)
         {

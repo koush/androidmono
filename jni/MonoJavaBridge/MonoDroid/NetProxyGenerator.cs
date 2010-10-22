@@ -215,7 +215,12 @@ namespace MonoDroid
                 Write(" : global::MonoJavaBridge.IJavaObject");
             
             if (type.Parent != null)
-                Write(type.Parent, false);
+            {
+                if (type.Name != "java.lang.Throwable")
+                    Write(type.Parent, false);
+                else
+                    Write("global::MonoJavaBridge.JavaException", false);
+            }
             
             if (!type.IsInterface && type.Interfaces.Count > 0)
             {
@@ -717,7 +722,7 @@ namespace MonoDroid
                     }
                     else if (!method.IsConstructor)
                     {
-                        if (method.IsOverride)
+                        if (method.IsOverride && method.Type.Name != "java.lang.Throwable")
                         {
                             if (method.IsSealed)
                                 Write("sealed");
