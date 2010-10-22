@@ -35,7 +35,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _INCREMENTAL9517)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _INCREMENTAL9517)) as java.lang.String;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RELEASE9518;
@@ -44,7 +44,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _RELEASE9518)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _RELEASE9518)) as java.lang.String;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SDK9519;
@@ -53,7 +53,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _SDK9519)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _SDK9519)) as java.lang.String;
 				}
 			}
 			public static int SDK_INT
@@ -69,7 +69,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _CODENAME9521)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.VERSION.staticClass, _CODENAME9521)) as java.lang.String;
 				}
 			}
 			private static void InitJNI()
@@ -191,7 +191,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _ID9534)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _ID9534)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DISPLAY9535;
@@ -200,7 +200,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _DISPLAY9535)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _DISPLAY9535)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _PRODUCT9536;
@@ -209,7 +209,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _PRODUCT9536)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _PRODUCT9536)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DEVICE9537;
@@ -218,7 +218,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _DEVICE9537)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _DEVICE9537)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _BOARD9538;
@@ -227,7 +227,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _BOARD9538)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _BOARD9538)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CPU_ABI9539;
@@ -236,7 +236,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _CPU_ABI9539)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _CPU_ABI9539)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CPU_ABI29540;
@@ -245,7 +245,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _CPU_ABI29540)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _CPU_ABI29540)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _MANUFACTURER9541;
@@ -254,7 +254,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _MANUFACTURER9541)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _MANUFACTURER9541)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _BRAND9542;
@@ -263,7 +263,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _BRAND9542)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _BRAND9542)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _MODEL9543;
@@ -272,7 +272,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _MODEL9543)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _MODEL9543)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _BOOTLOADER9544;
@@ -281,7 +281,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _BOOTLOADER9544)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _BOOTLOADER9544)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _RADIO9545;
@@ -290,7 +290,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _RADIO9545)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _RADIO9545)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _HARDWARE9546;
@@ -299,7 +299,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _HARDWARE9546)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _HARDWARE9546)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _TYPE9547;
@@ -308,7 +308,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _TYPE9547)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _TYPE9547)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _TAGS9548;
@@ -317,7 +317,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _TAGS9548)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _TAGS9548)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _FINGERPRINT9549;
@@ -326,7 +326,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _FINGERPRINT9549)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _FINGERPRINT9549)) as java.lang.String;
 			}
 		}
 		public static long TIME
@@ -342,7 +342,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _USER9551)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _USER9551)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _HOST9552;
@@ -351,7 +351,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _HOST9552)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Build.staticClass, _HOST9552)) as java.lang.String;
 			}
 		}
 		private static void InitJNI()

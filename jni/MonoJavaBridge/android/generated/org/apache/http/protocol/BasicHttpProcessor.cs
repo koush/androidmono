@@ -25,9 +25,9 @@ namespace org.apache.http.protocol
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.BasicHttpProcessor._copy33702)) as org.apache.http.protocol.BasicHttpProcessor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.protocol.BasicHttpProcessor>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.protocol.BasicHttpProcessor._copy33702)) as org.apache.http.protocol.BasicHttpProcessor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.BasicHttpProcessor.staticClass, global::org.apache.http.protocol.BasicHttpProcessor._copy33702)) as org.apache.http.protocol.BasicHttpProcessor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.protocol.BasicHttpProcessor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.BasicHttpProcessor.staticClass, global::org.apache.http.protocol.BasicHttpProcessor._copy33702)) as org.apache.http.protocol.BasicHttpProcessor;
 		}
 		internal static global::MonoJavaBridge.MethodId _process33703;
 		public void process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1) 

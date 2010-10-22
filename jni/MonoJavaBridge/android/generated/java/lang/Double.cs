@@ -24,16 +24,16 @@ namespace java.lang
 		public static global::java.lang.String toString(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._toString19971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._toString19971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19972;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Double._toString19972)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Double._toString19972)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._toString19972)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Double.staticClass, global::java.lang.Double._toString19972)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode19973;
 		public sealed override int hashCode() 
@@ -84,19 +84,19 @@ namespace java.lang
 		public static global::java.lang.String toHexString(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._toHexString19979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._toHexString19979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf19980;
 		public static global::java.lang.Double valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._valueOf19980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Double>(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._valueOf19980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf19981;
 		public static global::java.lang.Double valueOf(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._valueOf19981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Double>(@__env.CallStaticObjectMethod(java.lang.Double.staticClass, global::java.lang.Double._valueOf19981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
 		}
 		internal static global::MonoJavaBridge.MethodId _compare19982;
 		public static int compare(double arg0, double arg1) 

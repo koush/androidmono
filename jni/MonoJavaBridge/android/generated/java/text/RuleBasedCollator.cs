@@ -68,27 +68,27 @@ namespace java.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator._getRules25507)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator._getRules25507)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator.staticClass, global::java.text.RuleBasedCollator._getRules25507)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator.staticClass, global::java.text.RuleBasedCollator._getRules25507)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCollationElementIterator25508;
 		public virtual global::java.text.CollationElementIterator getCollationElementIterator(java.text.CharacterIterator arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator._getCollationElementIterator25508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.text.CollationElementIterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator._getCollationElementIterator25508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator.staticClass, global::java.text.RuleBasedCollator._getCollationElementIterator25508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.text.CollationElementIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator.staticClass, global::java.text.RuleBasedCollator._getCollationElementIterator25508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCollationElementIterator25509;
 		public virtual global::java.text.CollationElementIterator getCollationElementIterator(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator._getCollationElementIterator25509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.text.CollationElementIterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator._getCollationElementIterator25509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator.staticClass, global::java.text.RuleBasedCollator._getCollationElementIterator25509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.text.CollationElementIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.RuleBasedCollator.staticClass, global::java.text.RuleBasedCollator._getCollationElementIterator25509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.CollationElementIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _RuleBasedCollator25510;
 		public RuleBasedCollator(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

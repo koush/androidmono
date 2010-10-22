@@ -43,21 +43,21 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Long._toString20129)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Long._toString20129)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Long.staticClass, global::java.lang.Long._toString20129)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Long.staticClass, global::java.lang.Long._toString20129)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20130;
 		public static global::java.lang.String toString(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toString20130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toString20130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20131;
 		public static global::java.lang.String toString(long arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toString20131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toString20131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20132;
 		public sealed override int hashCode() 
@@ -96,49 +96,49 @@ namespace java.lang
 		public static global::java.lang.Long getLong(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._getLong20136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._getLong20136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong20137;
 		public static global::java.lang.Long getLong(java.lang.String arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._getLong20137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._getLong20137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong20138;
 		public static global::java.lang.Long getLong(java.lang.String arg0, java.lang.Long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._getLong20138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._getLong20138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _toHexString20139;
 		public static global::java.lang.String toHexString(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toHexString20139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toHexString20139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20140;
 		public static global::java.lang.Long valueOf(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._valueOf20140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._valueOf20140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20141;
 		public static global::java.lang.Long valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._valueOf20141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._valueOf20141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20142;
 		public static global::java.lang.Long valueOf(java.lang.String arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._valueOf20142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._valueOf20142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _decode20143;
 		public static global::java.lang.Long decode(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._decode20143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._decode20143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _reverse20144;
 		public static long reverse(long arg0) 
@@ -204,13 +204,13 @@ namespace java.lang
 		public static global::java.lang.String toOctalString(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toOctalString20151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toOctalString20151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toBinaryString20152;
 		public static global::java.lang.String toBinaryString(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toBinaryString20152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Long.staticClass, global::java.lang.Long._toBinaryString20152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _highestOneBit20153;
 		public static long highestOneBit(long arg0) 
@@ -288,7 +288,7 @@ namespace java.lang
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Long.staticClass, _TYPE20164)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Long.staticClass, _TYPE20164)) as java.lang.Class;
 			}
 		}
 		public static int SIZE

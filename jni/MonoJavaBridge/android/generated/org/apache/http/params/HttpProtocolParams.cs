@@ -33,7 +33,7 @@ namespace org.apache.http.@params
 		public static global::java.lang.String getUserAgent(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getUserAgent33689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getUserAgent33689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setHttpElementCharset33690;
 		public static void setHttpElementCharset(org.apache.http.@params.HttpParams arg0, java.lang.String arg1) 
@@ -63,13 +63,13 @@ namespace org.apache.http.@params
 		public static global::java.lang.String getHttpElementCharset(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getHttpElementCharset33694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getHttpElementCharset33694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentCharset33695;
 		public static global::java.lang.String getContentCharset(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getContentCharset33695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.@params.HttpProtocolParams.staticClass, global::org.apache.http.@params.HttpProtocolParams._getContentCharset33695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		private static void InitJNI()
 		{

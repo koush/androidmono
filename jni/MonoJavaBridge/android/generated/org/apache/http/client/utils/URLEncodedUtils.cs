@@ -15,7 +15,7 @@ namespace org.apache.http.client.utils
 		public static global::java.lang.String format(java.util.List arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URLEncodedUtils.staticClass, global::org.apache.http.client.utils.URLEncodedUtils._format31935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.client.utils.URLEncodedUtils.staticClass, global::org.apache.http.client.utils.URLEncodedUtils._format31935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse31936;
 		public static global::java.util.List parse(java.net.URI arg0, java.lang.String arg1) 

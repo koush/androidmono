@@ -115,9 +115,9 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._toString2778)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._toString2778)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._toString2778)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._toString2778)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode2779;
 		public sealed override int hashCode() 
@@ -178,9 +178,9 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsString2785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsString2785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsString2785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsString2785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _putNull2786;
 		public void putNull(java.lang.String arg0) 
@@ -214,63 +214,63 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsLong2789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsLong2789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsLong2789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Long>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsLong2789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Long;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsInteger2790;
 		public global::java.lang.Integer getAsInteger(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsInteger2790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsInteger2790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Integer;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsInteger2790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsInteger2790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Integer;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsShort2791;
 		public global::java.lang.Short getAsShort(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsShort2791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Short>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsShort2791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsShort2791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Short>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsShort2791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsByte2792;
 		public global::java.lang.Byte getAsByte(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsByte2792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Byte;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Byte>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsByte2792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Byte;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsByte2792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Byte;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsByte2792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Byte;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsDouble2793;
 		public global::java.lang.Double getAsDouble(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsDouble2793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Double>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsDouble2793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsDouble2793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Double>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsDouble2793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Double;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsFloat2794;
 		public global::java.lang.Float getAsFloat(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsFloat2794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsFloat2794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsFloat2794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsFloat2794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsBoolean2795;
 		public global::java.lang.Boolean getAsBoolean(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsBoolean2795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentValues._getAsBoolean2795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Boolean;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsBoolean2795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._getAsBoolean2795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Boolean;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsByteArray2796;
 		public byte[] getAsByteArray(java.lang.String arg0) 

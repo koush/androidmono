@@ -32,7 +32,7 @@ namespace android.widget
 			public static global::android.widget.ImageView.ScaleType valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._valueOf17149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.ImageView.ScaleType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.CallStaticObjectMethod(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._valueOf17149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.ImageView.ScaleType;
 			}
 			internal static global::MonoJavaBridge.FieldId _CENTER17150;
 			public static global::android.widget.ImageView.ScaleType CENTER
@@ -40,7 +40,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER17150)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER17150)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CENTER_CROP17151;
@@ -49,7 +49,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_CROP17151)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_CROP17151)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CENTER_INSIDE17152;
@@ -58,7 +58,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_INSIDE17152)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _CENTER_INSIDE17152)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FIT_CENTER17153;
@@ -67,7 +67,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_CENTER17153)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_CENTER17153)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FIT_END17154;
@@ -76,7 +76,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_END17154)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_END17154)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FIT_START17155;
@@ -85,7 +85,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_START17155)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_START17155)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FIT_XY17156;
@@ -94,7 +94,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_XY17156)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _FIT_XY17156)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MATRIX17157;
@@ -103,7 +103,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _MATRIX17157)) as android.widget.ImageView.ScaleType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.GetStaticObjectField(global::android.widget.ImageView.ScaleType.staticClass, _MATRIX17157)) as android.widget.ImageView.ScaleType;
 				}
 			}
 			private static void InitJNI()
@@ -375,9 +375,9 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ImageView._getScaleType17184)) as android.widget.ImageView.ScaleType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.ImageView._getScaleType17184)) as android.widget.ImageView.ScaleType;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._getScaleType17184)) as android.widget.ImageView.ScaleType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.ImageView.ScaleType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._getScaleType17184)) as android.widget.ImageView.ScaleType;
 		}
 		public new global::android.graphics.Matrix ImageMatrix
 		{

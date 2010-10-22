@@ -133,9 +133,9 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SurfaceHolder_._getSurfaceFrame14513)) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Rect>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.SurfaceHolder_._getSurfaceFrame14513)) as android.graphics.Rect;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SurfaceHolder_.staticClass, global::android.view.SurfaceHolder_._getSurfaceFrame14513)) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Rect>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.SurfaceHolder_.staticClass, global::android.view.SurfaceHolder_._getSurfaceFrame14513)) as android.graphics.Rect;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSurface14514;
 		 global::android.view.Surface android.view.SurfaceHolder.getSurface() 

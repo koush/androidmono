@@ -39,13 +39,13 @@ namespace org.apache.http.conn.@params
 		public static global::org.apache.http.HttpHost getDefaultProxy(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getDefaultProxy32092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpHost;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getDefaultProxy32092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpHost;
 		}
 		internal static global::MonoJavaBridge.MethodId _getForcedRoute32093;
 		public static global::org.apache.http.conn.routing.HttpRoute getForcedRoute(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getForcedRoute32093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.HttpRoute;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getForcedRoute32093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.HttpRoute;
 		}
 		internal static global::MonoJavaBridge.FieldId _NO_HOST32094;
 		public static global::org.apache.http.HttpHost NO_HOST
@@ -53,7 +53,7 @@ namespace org.apache.http.conn.@params
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, _NO_HOST32094)) as org.apache.http.HttpHost;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.GetStaticObjectField(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, _NO_HOST32094)) as org.apache.http.HttpHost;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _NO_ROUTE32095;
@@ -62,7 +62,7 @@ namespace org.apache.http.conn.@params
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, _NO_ROUTE32095)) as org.apache.http.conn.routing.HttpRoute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.GetStaticObjectField(global::org.apache.http.conn.@params.ConnRouteParams.staticClass, _NO_ROUTE32095)) as org.apache.http.conn.routing.HttpRoute;
 			}
 		}
 		private static void InitJNI()

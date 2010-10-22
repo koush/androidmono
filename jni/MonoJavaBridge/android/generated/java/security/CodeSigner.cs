@@ -25,9 +25,9 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSigner._toString22801)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSigner._toString22801)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._toString22801)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._toString22801)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22802;
 		public sealed override int hashCode() 
@@ -66,9 +66,9 @@ namespace java.security
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSigner._getTimestamp22804)) as java.security.Timestamp;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.Timestamp>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.CodeSigner._getTimestamp22804)) as java.security.Timestamp;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._getTimestamp22804)) as java.security.Timestamp;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.Timestamp>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._getTimestamp22804)) as java.security.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _CodeSigner22805;
 		public CodeSigner(java.security.cert.CertPath arg0, java.security.Timestamp arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

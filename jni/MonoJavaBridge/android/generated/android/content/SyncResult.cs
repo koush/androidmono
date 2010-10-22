@@ -16,9 +16,9 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncResult._toString3535)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncResult._toString3535)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toString3535)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toString3535)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear3536;
 		public void clear() 
@@ -88,9 +88,9 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncResult._toDebugString3543)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.SyncResult._toDebugString3543)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toDebugString3543)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toDebugString3543)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncResult3544;
 		public SyncResult()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
@@ -207,7 +207,7 @@ namespace android.content
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.content.SyncResult.staticClass, _ALREADY_IN_PROGRESS3554)) as android.content.SyncResult;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.SyncResult>(@__env.GetStaticObjectField(global::android.content.SyncResult.staticClass, _ALREADY_IN_PROGRESS3554)) as android.content.SyncResult;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CREATOR3555;

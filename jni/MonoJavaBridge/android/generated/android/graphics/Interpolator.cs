@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Interpolator.Result valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Interpolator.Result.staticClass, global::android.graphics.Interpolator.Result._valueOf5257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Interpolator.Result;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.CallStaticObjectMethod(android.graphics.Interpolator.Result.staticClass, global::android.graphics.Interpolator.Result._valueOf5257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Interpolator.Result;
 			}
 			internal static global::MonoJavaBridge.FieldId _FREEZE_END5258;
 			public static global::android.graphics.Interpolator.Result FREEZE_END
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _FREEZE_END5258)) as android.graphics.Interpolator.Result;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _FREEZE_END5258)) as android.graphics.Interpolator.Result;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FREEZE_START5259;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _FREEZE_START5259)) as android.graphics.Interpolator.Result;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _FREEZE_START5259)) as android.graphics.Interpolator.Result;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NORMAL5260;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _NORMAL5260)) as android.graphics.Interpolator.Result;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.GetStaticObjectField(global::android.graphics.Interpolator.Result.staticClass, _NORMAL5260)) as android.graphics.Interpolator.Result;
 				}
 			}
 			private static void InitJNI()
@@ -163,18 +163,18 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Interpolator._timeToValues5269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Interpolator.Result;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Interpolator._timeToValues5269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Interpolator.Result;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues5269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Interpolator.Result;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues5269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Interpolator.Result;
 		}
 		internal static global::MonoJavaBridge.MethodId _timeToValues5270;
 		public virtual global::android.graphics.Interpolator.Result timeToValues(float[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Interpolator._timeToValues5270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Interpolator.Result;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Interpolator._timeToValues5270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Interpolator.Result;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues5270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Interpolator.Result;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Interpolator.Result>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues5270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Interpolator.Result;
 		}
 		internal static global::MonoJavaBridge.MethodId _Interpolator5271;
 		public Interpolator(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

@@ -82,7 +82,7 @@ namespace android.os
 		public static global::android.os.Messenger readMessengerOrNullFromParcel(android.os.Parcel arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Messenger.staticClass, global::android.os.Messenger._readMessengerOrNullFromParcel9927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Messenger;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Messenger>(@__env.CallStaticObjectMethod(android.os.Messenger.staticClass, global::android.os.Messenger._readMessengerOrNullFromParcel9927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Messenger;
 		}
 		internal static global::MonoJavaBridge.MethodId _Messenger9928;
 		public Messenger(android.os.Handler arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

@@ -32,7 +32,7 @@ namespace android.graphics.drawable
 			public static global::android.graphics.drawable.GradientDrawable.Orientation valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._valueOf6001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.GradientDrawable.Orientation;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.CallStaticObjectMethod(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._valueOf6001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.GradientDrawable.Orientation;
 			}
 			internal static global::MonoJavaBridge.FieldId _BL_TR6002;
 			public static global::android.graphics.drawable.GradientDrawable.Orientation BL_TR
@@ -40,7 +40,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _BL_TR6002)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _BL_TR6002)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BOTTOM_TOP6003;
@@ -49,7 +49,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _BOTTOM_TOP6003)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _BOTTOM_TOP6003)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BR_TL6004;
@@ -58,7 +58,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _BR_TL6004)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _BR_TL6004)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LEFT_RIGHT6005;
@@ -67,7 +67,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _LEFT_RIGHT6005)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _LEFT_RIGHT6005)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RIGHT_LEFT6006;
@@ -76,7 +76,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _RIGHT_LEFT6006)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _RIGHT_LEFT6006)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TL_BR6007;
@@ -85,7 +85,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TL_BR6007)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TL_BR6007)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TOP_BOTTOM6008;
@@ -94,7 +94,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TOP_BOTTOM6008)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TOP_BOTTOM6008)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TR_BL6009;
@@ -103,7 +103,7 @@ namespace android.graphics.drawable
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TR_BL6009)) as android.graphics.drawable.GradientDrawable.Orientation;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.drawable.GradientDrawable.Orientation>(@__env.GetStaticObjectField(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, _TR_BL6009)) as android.graphics.drawable.GradientDrawable.Orientation;
 				}
 			}
 			private static void InitJNI()

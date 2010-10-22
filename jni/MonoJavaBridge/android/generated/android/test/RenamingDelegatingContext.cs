@@ -141,9 +141,9 @@ namespace android.test
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._getDatabasePrefix12242)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext._getDatabasePrefix12242)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getDatabasePrefix12242)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.RenamingDelegatingContext.staticClass, global::android.test.RenamingDelegatingContext._getDatabasePrefix12242)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _RenamingDelegatingContext12243;
 		public RenamingDelegatingContext(android.content.Context arg0, android.content.Context arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

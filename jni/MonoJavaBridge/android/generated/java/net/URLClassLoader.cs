@@ -28,18 +28,18 @@ namespace java.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLClassLoader._findClass21791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLClassLoader._findClass21791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findClass21791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findClass21791, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResource21792;
 		public virtual global::java.net.URL findResource(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLClassLoader._findResource21792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallObjectMethod(this.JvmHandle, global::java.net.URLClassLoader._findResource21792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findResource21792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findResource21792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResources21793;
 		public virtual global::java.util.Enumeration findResources(java.lang.String arg0) 

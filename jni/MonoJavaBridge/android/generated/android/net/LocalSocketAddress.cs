@@ -32,7 +32,7 @@ namespace android.net
 			public static global::android.net.LocalSocketAddress.Namespace valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.LocalSocketAddress.Namespace.staticClass, global::android.net.LocalSocketAddress.Namespace._valueOf7654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.LocalSocketAddress.Namespace;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.CallStaticObjectMethod(android.net.LocalSocketAddress.Namespace.staticClass, global::android.net.LocalSocketAddress.Namespace._valueOf7654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.LocalSocketAddress.Namespace;
 			}
 			internal static global::MonoJavaBridge.FieldId _ABSTRACT7655;
 			public static global::android.net.LocalSocketAddress.Namespace ABSTRACT
@@ -40,7 +40,7 @@ namespace android.net
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _ABSTRACT7655)) as android.net.LocalSocketAddress.Namespace;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _ABSTRACT7655)) as android.net.LocalSocketAddress.Namespace;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FILESYSTEM7656;
@@ -49,7 +49,7 @@ namespace android.net
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _FILESYSTEM7656)) as android.net.LocalSocketAddress.Namespace;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _FILESYSTEM7656)) as android.net.LocalSocketAddress.Namespace;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RESERVED7657;
@@ -58,7 +58,7 @@ namespace android.net
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _RESERVED7657)) as android.net.LocalSocketAddress.Namespace;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.GetStaticObjectField(global::android.net.LocalSocketAddress.Namespace.staticClass, _RESERVED7657)) as android.net.LocalSocketAddress.Namespace;
 				}
 			}
 			private static void InitJNI()
@@ -84,18 +84,18 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress._getName7658)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress._getName7658)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getName7658)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getName7658)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNamespace7659;
 		public virtual global::android.net.LocalSocketAddress.Namespace getNamespace() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress._getNamespace7659)) as android.net.LocalSocketAddress.Namespace;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress._getNamespace7659)) as android.net.LocalSocketAddress.Namespace;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getNamespace7659)) as android.net.LocalSocketAddress.Namespace;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getNamespace7659)) as android.net.LocalSocketAddress.Namespace;
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalSocketAddress7660;
 		public LocalSocketAddress(java.lang.String arg0, android.net.LocalSocketAddress.Namespace arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

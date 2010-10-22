@@ -32,7 +32,7 @@ namespace android.widget
 			public static global::android.widget.TextView.BufferType valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.widget.TextView.BufferType.staticClass, global::android.widget.TextView.BufferType._valueOf17853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.TextView.BufferType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.TextView.BufferType>(@__env.CallStaticObjectMethod(android.widget.TextView.BufferType.staticClass, global::android.widget.TextView.BufferType._valueOf17853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.TextView.BufferType;
 			}
 			internal static global::MonoJavaBridge.FieldId _EDITABLE17854;
 			public static global::android.widget.TextView.BufferType EDITABLE
@@ -40,7 +40,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _EDITABLE17854)) as android.widget.TextView.BufferType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.TextView.BufferType>(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _EDITABLE17854)) as android.widget.TextView.BufferType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NORMAL17855;
@@ -49,7 +49,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _NORMAL17855)) as android.widget.TextView.BufferType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.TextView.BufferType>(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _NORMAL17855)) as android.widget.TextView.BufferType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SPANNABLE17856;
@@ -58,7 +58,7 @@ namespace android.widget
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _SPANNABLE17856)) as android.widget.TextView.BufferType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.widget.TextView.BufferType>(@__env.GetStaticObjectField(global::android.widget.TextView.BufferType.staticClass, _SPANNABLE17856)) as android.widget.TextView.BufferType;
 				}
 			}
 			private static void InitJNI()
@@ -121,9 +121,9 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView.SavedState._toString17858)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView.SavedState._toString17858)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.SavedState.staticClass, global::android.widget.TextView.SavedState._toString17858)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.SavedState.staticClass, global::android.widget.TextView.SavedState._toString17858)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _writeToParcel17859;
 			public override void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -1919,9 +1919,9 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView._getPrivateImeOptions18007)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView._getPrivateImeOptions18007)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.staticClass, global::android.widget.TextView._getPrivateImeOptions18007)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.staticClass, global::android.widget.TextView._getPrivateImeOptions18007)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setInputExtras18008;
 		public virtual void setInputExtras(int arg0) 
@@ -1937,9 +1937,9 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView._getInputExtras18009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView._getInputExtras18009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.staticClass, global::android.widget.TextView._getInputExtras18009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.staticClass, global::android.widget.TextView._getInputExtras18009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Bundle;
 		}
 		public new string Error
 		{
@@ -2225,9 +2225,9 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView._getEllipsize18035)) as android.text.TextUtils.TruncateAt;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TextView._getEllipsize18035)) as android.text.TextUtils.TruncateAt;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.staticClass, global::android.widget.TextView._getEllipsize18035)) as android.text.TextUtils.TruncateAt;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TextView.staticClass, global::android.widget.TextView._getEllipsize18035)) as android.text.TextUtils.TruncateAt;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelectAllOnFocus18036;
 		public virtual void setSelectAllOnFocus(bool arg0) 

@@ -32,7 +32,7 @@ namespace android.os
 			public static global::android.os.AsyncTask.Status valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._valueOf9453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.AsyncTask.Status;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.CallStaticObjectMethod(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._valueOf9453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.AsyncTask.Status;
 			}
 			internal static global::MonoJavaBridge.FieldId _FINISHED9454;
 			public static global::android.os.AsyncTask.Status FINISHED
@@ -40,7 +40,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.AsyncTask.Status.staticClass, _FINISHED9454)) as android.os.AsyncTask.Status;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.GetStaticObjectField(global::android.os.AsyncTask.Status.staticClass, _FINISHED9454)) as android.os.AsyncTask.Status;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _PENDING9455;
@@ -49,7 +49,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.AsyncTask.Status.staticClass, _PENDING9455)) as android.os.AsyncTask.Status;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.GetStaticObjectField(global::android.os.AsyncTask.Status.staticClass, _PENDING9455)) as android.os.AsyncTask.Status;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RUNNING9456;
@@ -58,7 +58,7 @@ namespace android.os
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.AsyncTask.Status.staticClass, _RUNNING9456)) as android.os.AsyncTask.Status;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.GetStaticObjectField(global::android.os.AsyncTask.Status.staticClass, _RUNNING9456)) as android.os.AsyncTask.Status;
 				}
 			}
 			private static void InitJNI()
@@ -122,9 +122,9 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.AsyncTask._getStatus9462)) as android.os.AsyncTask.Status;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.AsyncTask._getStatus9462)) as android.os.AsyncTask.Status;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._getStatus9462)) as android.os.AsyncTask.Status;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._getStatus9462)) as android.os.AsyncTask.Status;
 		}
 		internal static global::MonoJavaBridge.MethodId _doInBackground9463;
 		protected abstract global::java.lang.Object doInBackground(java.lang.Object[] arg0);

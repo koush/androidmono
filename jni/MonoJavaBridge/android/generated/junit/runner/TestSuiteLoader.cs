@@ -23,18 +23,18 @@ namespace junit.runner
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_._load31350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_._load31350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_.staticClass, global::junit.runner.TestSuiteLoader_._load31350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_.staticClass, global::junit.runner.TestSuiteLoader_._load31350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _reload31351;
 		 global::java.lang.Class junit.runner.TestSuiteLoader.reload(java.lang.Class arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_._reload31351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_._reload31351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_.staticClass, global::junit.runner.TestSuiteLoader_._reload31351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_.staticClass, global::junit.runner.TestSuiteLoader_._reload31351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		private static void InitJNI()
 		{

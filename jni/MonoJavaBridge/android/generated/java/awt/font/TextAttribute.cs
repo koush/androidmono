@@ -17,7 +17,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _FAMILY18596)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _FAMILY18596)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT18597;
@@ -26,7 +26,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT18597)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT18597)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_EXTRA_LIGHT18598;
@@ -35,7 +35,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_EXTRA_LIGHT18598)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_EXTRA_LIGHT18598)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_LIGHT18599;
@@ -44,7 +44,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_LIGHT18599)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_LIGHT18599)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_DEMILIGHT18600;
@@ -53,7 +53,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_DEMILIGHT18600)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_DEMILIGHT18600)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_REGULAR18601;
@@ -62,7 +62,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_REGULAR18601)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_REGULAR18601)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_SEMIBOLD18602;
@@ -71,7 +71,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_SEMIBOLD18602)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_SEMIBOLD18602)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_MEDIUM18603;
@@ -80,7 +80,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_MEDIUM18603)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_MEDIUM18603)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_DEMIBOLD18604;
@@ -89,7 +89,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_DEMIBOLD18604)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_DEMIBOLD18604)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_BOLD18605;
@@ -98,7 +98,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_BOLD18605)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_BOLD18605)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_HEAVY18606;
@@ -107,7 +107,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_HEAVY18606)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_HEAVY18606)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_EXTRABOLD18607;
@@ -116,7 +116,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_EXTRABOLD18607)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_EXTRABOLD18607)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WEIGHT_ULTRABOLD18608;
@@ -125,7 +125,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_ULTRABOLD18608)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WEIGHT_ULTRABOLD18608)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WIDTH18609;
@@ -134,7 +134,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH18609)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH18609)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WIDTH_CONDENSED18610;
@@ -143,7 +143,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_CONDENSED18610)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_CONDENSED18610)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WIDTH_SEMI_CONDENSED18611;
@@ -152,7 +152,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_SEMI_CONDENSED18611)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_SEMI_CONDENSED18611)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WIDTH_REGULAR18612;
@@ -161,7 +161,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_REGULAR18612)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_REGULAR18612)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WIDTH_SEMI_EXTENDED18613;
@@ -170,7 +170,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_SEMI_EXTENDED18613)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_SEMI_EXTENDED18613)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _WIDTH_EXTENDED18614;
@@ -179,7 +179,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_EXTENDED18614)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _WIDTH_EXTENDED18614)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _POSTURE18615;
@@ -188,7 +188,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _POSTURE18615)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _POSTURE18615)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _POSTURE_REGULAR18616;
@@ -197,7 +197,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _POSTURE_REGULAR18616)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _POSTURE_REGULAR18616)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _POSTURE_OBLIQUE18617;
@@ -206,7 +206,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _POSTURE_OBLIQUE18617)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _POSTURE_OBLIQUE18617)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SIZE18618;
@@ -215,7 +215,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SIZE18618)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SIZE18618)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _TRANSFORM18619;
@@ -224,7 +224,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRANSFORM18619)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRANSFORM18619)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SUPERSCRIPT18620;
@@ -233,7 +233,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SUPERSCRIPT18620)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SUPERSCRIPT18620)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SUPERSCRIPT_SUPER18621;
@@ -242,7 +242,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SUPERSCRIPT_SUPER18621)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SUPERSCRIPT_SUPER18621)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SUPERSCRIPT_SUB18622;
@@ -251,7 +251,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SUPERSCRIPT_SUB18622)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SUPERSCRIPT_SUB18622)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _FONT18623;
@@ -260,7 +260,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _FONT18623)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _FONT18623)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CHAR_REPLACEMENT18624;
@@ -269,7 +269,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _CHAR_REPLACEMENT18624)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _CHAR_REPLACEMENT18624)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _FOREGROUND18625;
@@ -278,7 +278,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _FOREGROUND18625)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _FOREGROUND18625)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _BACKGROUND18626;
@@ -287,7 +287,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _BACKGROUND18626)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _BACKGROUND18626)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE18627;
@@ -296,7 +296,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE18627)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE18627)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE_ON18628;
@@ -305,7 +305,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_ON18628)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_ON18628)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _STRIKETHROUGH18629;
@@ -314,7 +314,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _STRIKETHROUGH18629)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _STRIKETHROUGH18629)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _STRIKETHROUGH_ON18630;
@@ -323,7 +323,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _STRIKETHROUGH_ON18630)) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _STRIKETHROUGH_ON18630)) as java.lang.Boolean;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _RUN_DIRECTION18631;
@@ -332,7 +332,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _RUN_DIRECTION18631)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _RUN_DIRECTION18631)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _RUN_DIRECTION_LTR18632;
@@ -341,7 +341,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _RUN_DIRECTION_LTR18632)) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _RUN_DIRECTION_LTR18632)) as java.lang.Boolean;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _RUN_DIRECTION_RTL18633;
@@ -350,7 +350,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _RUN_DIRECTION_RTL18633)) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _RUN_DIRECTION_RTL18633)) as java.lang.Boolean;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _BIDI_EMBEDDING18634;
@@ -359,7 +359,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _BIDI_EMBEDDING18634)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _BIDI_EMBEDDING18634)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _JUSTIFICATION18635;
@@ -368,7 +368,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _JUSTIFICATION18635)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _JUSTIFICATION18635)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _JUSTIFICATION_FULL18636;
@@ -377,7 +377,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _JUSTIFICATION_FULL18636)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _JUSTIFICATION_FULL18636)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _JUSTIFICATION_NONE18637;
@@ -386,7 +386,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _JUSTIFICATION_NONE18637)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _JUSTIFICATION_NONE18637)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _INPUT_METHOD_HIGHLIGHT18638;
@@ -395,7 +395,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _INPUT_METHOD_HIGHLIGHT18638)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _INPUT_METHOD_HIGHLIGHT18638)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _INPUT_METHOD_UNDERLINE18639;
@@ -404,7 +404,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _INPUT_METHOD_UNDERLINE18639)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _INPUT_METHOD_UNDERLINE18639)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE_LOW_ONE_PIXEL18640;
@@ -413,7 +413,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_ONE_PIXEL18640)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_ONE_PIXEL18640)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE_LOW_TWO_PIXEL18641;
@@ -422,7 +422,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_TWO_PIXEL18641)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_TWO_PIXEL18641)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE_LOW_DOTTED18642;
@@ -431,7 +431,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_DOTTED18642)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_DOTTED18642)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE_LOW_GRAY18643;
@@ -440,7 +440,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_GRAY18643)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_GRAY18643)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNDERLINE_LOW_DASHED18644;
@@ -449,7 +449,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_DASHED18644)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _UNDERLINE_LOW_DASHED18644)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SWAP_COLORS18645;
@@ -458,7 +458,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SWAP_COLORS18645)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SWAP_COLORS18645)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SWAP_COLORS_ON18646;
@@ -467,7 +467,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SWAP_COLORS_ON18646)) as java.lang.Boolean;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Boolean>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _SWAP_COLORS_ON18646)) as java.lang.Boolean;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _NUMERIC_SHAPING18647;
@@ -476,7 +476,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _NUMERIC_SHAPING18647)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _NUMERIC_SHAPING18647)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _KERNING18648;
@@ -485,7 +485,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _KERNING18648)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _KERNING18648)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _KERNING_ON18649;
@@ -494,7 +494,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _KERNING_ON18649)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _KERNING_ON18649)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _LIGATURES18650;
@@ -503,7 +503,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _LIGATURES18650)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _LIGATURES18650)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _LIGATURES_ON18651;
@@ -512,7 +512,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _LIGATURES_ON18651)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _LIGATURES_ON18651)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _TRACKING18652;
@@ -521,7 +521,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING18652)) as java.awt.font.TextAttribute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.TextAttribute>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING18652)) as java.awt.font.TextAttribute;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _TRACKING_TIGHT18653;
@@ -530,7 +530,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING_TIGHT18653)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING_TIGHT18653)) as java.lang.Float;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _TRACKING_LOOSE18654;
@@ -539,7 +539,7 @@ namespace java.awt.font
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING_LOOSE18654)) as java.lang.Float;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.GetStaticObjectField(global::java.awt.font.TextAttribute.staticClass, _TRACKING_LOOSE18654)) as java.lang.Float;
 			}
 		}
 		private static void InitJNI()

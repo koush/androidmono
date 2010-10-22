@@ -202,18 +202,18 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._resolveClass19072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._resolveClass19072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._resolveClass19072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._resolveClass19072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _readLine19073;
 		public virtual global::java.lang.String readLine() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._readLine19073)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._readLine19073)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._readLine19073)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._readLine19073)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _close19074;
 		public override void close() 
@@ -301,9 +301,9 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._readUTF19083)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._readUTF19083)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._readUTF19083)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._readUTF19083)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readFully19084;
 		public virtual void readFully(byte[] arg0, int arg1, int arg2) 
@@ -436,9 +436,9 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._resolveProxyClass19098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream._resolveProxyClass19098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._resolveProxyClass19098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectInputStream.staticClass, global::java.io.ObjectInputStream._resolveProxyClass19098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveObject19099;
 		protected virtual global::java.lang.Object resolveObject(java.lang.Object arg0) 

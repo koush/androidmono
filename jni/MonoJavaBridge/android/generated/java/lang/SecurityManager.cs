@@ -271,9 +271,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.SecurityManager._currentLoadedClass20371)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.SecurityManager._currentLoadedClass20371)) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.SecurityManager.staticClass, global::java.lang.SecurityManager._currentLoadedClass20371)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.SecurityManager.staticClass, global::java.lang.SecurityManager._currentLoadedClass20371)) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _classDepth20372;
 		protected virtual int classDepth(java.lang.String arg0) 

@@ -32,9 +32,9 @@ namespace javax.security.auth
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.auth.SubjectDomainCombiner._getSubject30077)) as javax.security.auth.Subject;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.Subject>(@__env.CallObjectMethod(this.JvmHandle, global::javax.security.auth.SubjectDomainCombiner._getSubject30077)) as javax.security.auth.Subject;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._getSubject30077)) as javax.security.auth.Subject;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.Subject>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._getSubject30077)) as javax.security.auth.Subject;
 		}
 		internal static global::MonoJavaBridge.MethodId _SubjectDomainCombiner30078;
 		public SubjectDomainCombiner(javax.security.auth.Subject arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

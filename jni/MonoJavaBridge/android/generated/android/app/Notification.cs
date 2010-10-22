@@ -16,9 +16,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Notification._toString1964)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Notification._toString1964)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Notification.staticClass, global::android.app.Notification._toString1964)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Notification.staticClass, global::android.app.Notification._toString1964)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel1965;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -142,7 +142,7 @@ namespace android.app
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _contentIntent1978)) as android.app.PendingIntent;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.PendingIntent>(@__env.GetObjectField(this.JvmHandle, _contentIntent1978)) as android.app.PendingIntent;
 			}
 			set
 			{
@@ -154,7 +154,7 @@ namespace android.app
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _deleteIntent1979)) as android.app.PendingIntent;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.PendingIntent>(@__env.GetObjectField(this.JvmHandle, _deleteIntent1979)) as android.app.PendingIntent;
 			}
 			set
 			{

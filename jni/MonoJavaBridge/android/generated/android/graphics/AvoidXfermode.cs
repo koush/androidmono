@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf4991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.AvoidXfermode.Mode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.AvoidXfermode.Mode>(@__env.CallStaticObjectMethod(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf4991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.AvoidXfermode.Mode;
 			}
 			internal static global::MonoJavaBridge.FieldId _AVOID4992;
 			public static global::android.graphics.AvoidXfermode.Mode AVOID
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.AvoidXfermode.Mode.staticClass, _AVOID4992)) as android.graphics.AvoidXfermode.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.AvoidXfermode.Mode>(@__env.GetStaticObjectField(global::android.graphics.AvoidXfermode.Mode.staticClass, _AVOID4992)) as android.graphics.AvoidXfermode.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TARGET4993;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.AvoidXfermode.Mode.staticClass, _TARGET4993)) as android.graphics.AvoidXfermode.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.AvoidXfermode.Mode>(@__env.GetStaticObjectField(global::android.graphics.AvoidXfermode.Mode.staticClass, _TARGET4993)) as android.graphics.AvoidXfermode.Mode;
 				}
 			}
 			private static void InitJNI()

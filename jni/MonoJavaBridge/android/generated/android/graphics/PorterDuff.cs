@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.PorterDuff.Mode valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._valueOf5625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.PorterDuff.Mode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.CallStaticObjectMethod(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._valueOf5625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.PorterDuff.Mode;
 			}
 			internal static global::MonoJavaBridge.FieldId _CLEAR5626;
 			public static global::android.graphics.PorterDuff.Mode CLEAR
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _CLEAR5626)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _CLEAR5626)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DARKEN5627;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DARKEN5627)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DARKEN5627)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DST5628;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST5628)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST5628)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DST_ATOP5629;
@@ -67,7 +67,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_ATOP5629)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_ATOP5629)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DST_IN5630;
@@ -76,7 +76,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_IN5630)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_IN5630)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DST_OUT5631;
@@ -85,7 +85,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_OUT5631)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_OUT5631)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DST_OVER5632;
@@ -94,7 +94,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_OVER5632)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _DST_OVER5632)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LIGHTEN5633;
@@ -103,7 +103,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _LIGHTEN5633)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _LIGHTEN5633)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MULTIPLY5634;
@@ -112,7 +112,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _MULTIPLY5634)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _MULTIPLY5634)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SCREEN5635;
@@ -121,7 +121,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SCREEN5635)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SCREEN5635)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SRC5636;
@@ -130,7 +130,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC5636)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC5636)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SRC_ATOP5637;
@@ -139,7 +139,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_ATOP5637)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_ATOP5637)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SRC_IN5638;
@@ -148,7 +148,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_IN5638)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_IN5638)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SRC_OUT5639;
@@ -157,7 +157,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_OUT5639)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_OUT5639)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SRC_OVER5640;
@@ -166,7 +166,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_OVER5640)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _SRC_OVER5640)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _XOR5641;
@@ -175,7 +175,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _XOR5641)) as android.graphics.PorterDuff.Mode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PorterDuff.Mode>(@__env.GetStaticObjectField(global::android.graphics.PorterDuff.Mode.staticClass, _XOR5641)) as android.graphics.PorterDuff.Mode;
 				}
 			}
 			private static void InitJNI()

@@ -22,7 +22,7 @@ namespace android.telephony.gsm
 		public static global::android.telephony.gsm.SmsManager getDefault() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsManager.staticClass, global::android.telephony.gsm.SmsManager._getDefault11990)) as android.telephony.gsm.SmsManager;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.telephony.gsm.SmsManager>(@__env.CallStaticObjectMethod(android.telephony.gsm.SmsManager.staticClass, global::android.telephony.gsm.SmsManager._getDefault11990)) as android.telephony.gsm.SmsManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _sendTextMessage11991;
 		public void sendTextMessage(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, android.app.PendingIntent arg3, android.app.PendingIntent arg4) 

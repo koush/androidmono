@@ -16,9 +16,9 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Message._toString9889)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Message._toString9889)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._toString9889)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._toString9889)) as java.lang.String;
 		}
 		public new global::android.os.Bundle Data
 		{
@@ -36,57 +36,57 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Message._getData9890)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Message._getData9890)) as android.os.Bundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._getData9890)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._getData9890)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9891;
 		public static global::android.os.Message obtain(android.os.Handler arg0, java.lang.Runnable arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9892;
 		public static global::android.os.Message obtain(android.os.Handler arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9893;
 		public static global::android.os.Message obtain(android.os.Handler arg0, int arg1, java.lang.Object arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9894;
 		public static global::android.os.Message obtain(android.os.Handler arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9895;
 		public static global::android.os.Message obtain(android.os.Handler arg0, int arg1, int arg2, int arg3, java.lang.Object arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9896;
 		public static global::android.os.Message obtain(android.os.Message arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9897;
 		public static global::android.os.Message obtain(android.os.Handler arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain9898;
 		public static global::android.os.Message obtain() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9898)) as android.os.Message;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9898)) as android.os.Message;
 		}
 		internal static global::MonoJavaBridge.MethodId _recycle9899;
 		public void recycle() 
@@ -199,9 +199,9 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Message._peekData9908)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Message._peekData9908)) as android.os.Bundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._peekData9908)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._peekData9908)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _sendToTarget9909;
 		public void sendToTarget() 
@@ -273,7 +273,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _replyTo9915)) as android.os.Messenger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Messenger>(@__env.GetObjectField(this.JvmHandle, _replyTo9915)) as android.os.Messenger;
 			}
 			set
 			{

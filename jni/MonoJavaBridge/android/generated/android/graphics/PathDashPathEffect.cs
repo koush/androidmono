@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.PathDashPathEffect.Style valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.PathDashPathEffect.Style.staticClass, global::android.graphics.PathDashPathEffect.Style._valueOf5547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.PathDashPathEffect.Style;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PathDashPathEffect.Style>(@__env.CallStaticObjectMethod(android.graphics.PathDashPathEffect.Style.staticClass, global::android.graphics.PathDashPathEffect.Style._valueOf5547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.PathDashPathEffect.Style;
 			}
 			internal static global::MonoJavaBridge.FieldId _MORPH5548;
 			public static global::android.graphics.PathDashPathEffect.Style MORPH
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _MORPH5548)) as android.graphics.PathDashPathEffect.Style;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PathDashPathEffect.Style>(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _MORPH5548)) as android.graphics.PathDashPathEffect.Style;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ROTATE5549;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _ROTATE5549)) as android.graphics.PathDashPathEffect.Style;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PathDashPathEffect.Style>(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _ROTATE5549)) as android.graphics.PathDashPathEffect.Style;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TRANSLATE5550;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _TRANSLATE5550)) as android.graphics.PathDashPathEffect.Style;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.PathDashPathEffect.Style>(@__env.GetStaticObjectField(global::android.graphics.PathDashPathEffect.Style.staticClass, _TRANSLATE5550)) as android.graphics.PathDashPathEffect.Style;
 				}
 			}
 			private static void InitJNI()

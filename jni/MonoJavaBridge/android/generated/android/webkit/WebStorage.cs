@@ -55,7 +55,7 @@ namespace android.webkit
 		public static global::android.webkit.WebStorage getInstance() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._getInstance16198)) as android.webkit.WebStorage;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebStorage>(@__env.CallStaticObjectMethod(android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._getInstance16198)) as android.webkit.WebStorage;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOrigins16199;
 		public void getOrigins(android.webkit.ValueCallback arg0) 

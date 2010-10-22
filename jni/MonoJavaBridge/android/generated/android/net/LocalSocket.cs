@@ -16,9 +16,9 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocket._toString7626)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocket._toString7626)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._toString7626)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._toString7626)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _close7627;
 		public virtual void close() 
@@ -100,9 +100,9 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocket._getFileDescriptor7633)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalSocket._getFileDescriptor7633)) as java.io.FileDescriptor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getFileDescriptor7633)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getFileDescriptor7633)) as java.io.FileDescriptor;
 		}
 		internal static global::MonoJavaBridge.MethodId _bind7634;
 		public virtual void bind(android.net.LocalSocketAddress arg0) 

@@ -32,7 +32,7 @@ namespace android.database
 			public static global::android.database.CursorJoiner.Result valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.database.CursorJoiner.Result.staticClass, global::android.database.CursorJoiner.Result._valueOf4500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.CursorJoiner.Result;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.database.CursorJoiner.Result>(@__env.CallStaticObjectMethod(android.database.CursorJoiner.Result.staticClass, global::android.database.CursorJoiner.Result._valueOf4500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.CursorJoiner.Result;
 			}
 			internal static global::MonoJavaBridge.FieldId _BOTH4501;
 			public static global::android.database.CursorJoiner.Result BOTH
@@ -40,7 +40,7 @@ namespace android.database
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _BOTH4501)) as android.database.CursorJoiner.Result;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.database.CursorJoiner.Result>(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _BOTH4501)) as android.database.CursorJoiner.Result;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LEFT4502;
@@ -49,7 +49,7 @@ namespace android.database
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _LEFT4502)) as android.database.CursorJoiner.Result;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.database.CursorJoiner.Result>(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _LEFT4502)) as android.database.CursorJoiner.Result;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RIGHT4503;
@@ -58,7 +58,7 @@ namespace android.database
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _RIGHT4503)) as android.database.CursorJoiner.Result;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.database.CursorJoiner.Result>(@__env.GetStaticObjectField(global::android.database.CursorJoiner.Result.staticClass, _RIGHT4503)) as android.database.CursorJoiner.Result;
 				}
 			}
 			private static void InitJNI()

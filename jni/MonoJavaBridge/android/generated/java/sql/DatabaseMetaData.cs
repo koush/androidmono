@@ -192,9 +192,9 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getURL24258)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getURL24258)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getURL24258)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getURL24258)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadOnly24259;
 		 bool java.sql.DatabaseMetaData.isReadOnly() 
@@ -237,9 +237,9 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getUserName24263)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getUserName24263)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getUserName24263)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getUserName24263)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getResultSetHoldability24264;
 		 int java.sql.DatabaseMetaData.getResultSetHoldability() 
@@ -309,36 +309,36 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDatabaseProductName24271)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDatabaseProductName24271)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDatabaseProductName24271)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDatabaseProductName24271)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDatabaseProductVersion24272;
 		 global::java.lang.String java.sql.DatabaseMetaData.getDatabaseProductVersion() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDatabaseProductVersion24272)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDatabaseProductVersion24272)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDatabaseProductVersion24272)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDatabaseProductVersion24272)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDriverName24273;
 		 global::java.lang.String java.sql.DatabaseMetaData.getDriverName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDriverName24273)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDriverName24273)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDriverName24273)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDriverName24273)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDriverVersion24274;
 		 global::java.lang.String java.sql.DatabaseMetaData.getDriverVersion() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDriverVersion24274)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getDriverVersion24274)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDriverVersion24274)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getDriverVersion24274)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDriverMajorVersion24275;
 		 int java.sql.DatabaseMetaData.getDriverMajorVersion() 
@@ -453,72 +453,72 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getIdentifierQuoteString24287)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getIdentifierQuoteString24287)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getIdentifierQuoteString24287)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getIdentifierQuoteString24287)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSQLKeywords24288;
 		 global::java.lang.String java.sql.DatabaseMetaData.getSQLKeywords() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSQLKeywords24288)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSQLKeywords24288)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSQLKeywords24288)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSQLKeywords24288)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNumericFunctions24289;
 		 global::java.lang.String java.sql.DatabaseMetaData.getNumericFunctions() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getNumericFunctions24289)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getNumericFunctions24289)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getNumericFunctions24289)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getNumericFunctions24289)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getStringFunctions24290;
 		 global::java.lang.String java.sql.DatabaseMetaData.getStringFunctions() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getStringFunctions24290)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getStringFunctions24290)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getStringFunctions24290)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getStringFunctions24290)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemFunctions24291;
 		 global::java.lang.String java.sql.DatabaseMetaData.getSystemFunctions() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSystemFunctions24291)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSystemFunctions24291)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSystemFunctions24291)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSystemFunctions24291)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeDateFunctions24292;
 		 global::java.lang.String java.sql.DatabaseMetaData.getTimeDateFunctions() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getTimeDateFunctions24292)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getTimeDateFunctions24292)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getTimeDateFunctions24292)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getTimeDateFunctions24292)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSearchStringEscape24293;
 		 global::java.lang.String java.sql.DatabaseMetaData.getSearchStringEscape() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSearchStringEscape24293)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSearchStringEscape24293)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSearchStringEscape24293)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSearchStringEscape24293)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtraNameCharacters24294;
 		 global::java.lang.String java.sql.DatabaseMetaData.getExtraNameCharacters() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getExtraNameCharacters24294)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getExtraNameCharacters24294)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getExtraNameCharacters24294)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getExtraNameCharacters24294)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsAlterTableWithAddColumn24295;
 		 bool java.sql.DatabaseMetaData.supportsAlterTableWithAddColumn() 
@@ -768,27 +768,27 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSchemaTerm24322)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getSchemaTerm24322)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSchemaTerm24322)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getSchemaTerm24322)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getProcedureTerm24323;
 		 global::java.lang.String java.sql.DatabaseMetaData.getProcedureTerm() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getProcedureTerm24323)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getProcedureTerm24323)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getProcedureTerm24323)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getProcedureTerm24323)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCatalogTerm24324;
 		 global::java.lang.String java.sql.DatabaseMetaData.getCatalogTerm() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getCatalogTerm24324)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getCatalogTerm24324)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getCatalogTerm24324)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getCatalogTerm24324)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isCatalogAtStart24325;
 		 bool java.sql.DatabaseMetaData.isCatalogAtStart() 
@@ -804,9 +804,9 @@ namespace java.sql
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getCatalogSeparator24326)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_._getCatalogSeparator24326)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getCatalogSeparator24326)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.DatabaseMetaData_.staticClass, global::java.sql.DatabaseMetaData_._getCatalogSeparator24326)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsSchemasInDataManipulation24327;
 		 bool java.sql.DatabaseMetaData.supportsSchemasInDataManipulation() 

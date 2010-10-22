@@ -64,7 +64,7 @@ namespace android.webkit
 		public static global::android.webkit.GeolocationPermissions getInstance() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._getInstance15960)) as android.webkit.GeolocationPermissions;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.GeolocationPermissions>(@__env.CallStaticObjectMethod(android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._getInstance15960)) as android.webkit.GeolocationPermissions;
 		}
 		internal static global::MonoJavaBridge.MethodId _allow15961;
 		public void allow(java.lang.String arg0) 

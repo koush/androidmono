@@ -80,7 +80,7 @@ namespace android.app
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_ENTER_CAR_MODE2179)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_ENTER_CAR_MODE2179)) as java.lang.String;
 			}
 			set
 			{
@@ -92,7 +92,7 @@ namespace android.app
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_EXIT_CAR_MODE2180)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_EXIT_CAR_MODE2180)) as java.lang.String;
 			}
 			set
 			{
@@ -104,7 +104,7 @@ namespace android.app
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_ENTER_DESK_MODE2181)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_ENTER_DESK_MODE2181)) as java.lang.String;
 			}
 			set
 			{
@@ -116,7 +116,7 @@ namespace android.app
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_EXIT_DESK_MODE2182)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.app.UiModeManager.staticClass, _ACTION_EXIT_DESK_MODE2182)) as java.lang.String;
 			}
 			set
 			{

@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Shader.TileMode valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf5776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Shader.TileMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallStaticObjectMethod(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf5776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Shader.TileMode;
 			}
 			internal static global::MonoJavaBridge.FieldId _CLAMP5777;
 			public static global::android.graphics.Shader.TileMode CLAMP
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _CLAMP5777)) as android.graphics.Shader.TileMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _CLAMP5777)) as android.graphics.Shader.TileMode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MIRROR5778;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _MIRROR5778)) as android.graphics.Shader.TileMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _MIRROR5778)) as android.graphics.Shader.TileMode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _REPEAT5779;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _REPEAT5779)) as android.graphics.Shader.TileMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.GetStaticObjectField(global::android.graphics.Shader.TileMode.staticClass, _REPEAT5779)) as android.graphics.Shader.TileMode;
 				}
 			}
 			private static void InitJNI()

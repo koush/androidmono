@@ -36,9 +36,9 @@ namespace org.apache.http.conn
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry31958)) as org.apache.http.conn.scheme.SchemeRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.SchemeRegistry>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry31958)) as org.apache.http.conn.scheme.SchemeRegistry;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_.staticClass, global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry31958)) as org.apache.http.conn.scheme.SchemeRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.SchemeRegistry>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionManager_.staticClass, global::org.apache.http.conn.ClientConnectionManager_._getSchemeRegistry31958)) as org.apache.http.conn.scheme.SchemeRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _requestConnection31959;
 		 global::org.apache.http.conn.ClientConnectionRequest org.apache.http.conn.ClientConnectionManager.requestConnection(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1) 

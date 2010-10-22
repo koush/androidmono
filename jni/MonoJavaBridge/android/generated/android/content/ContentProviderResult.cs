@@ -16,9 +16,9 @@ namespace android.content
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentProviderResult._toString2689)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.content.ContentProviderResult._toString2689)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._toString2689)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._toString2689)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2690;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -74,7 +74,7 @@ namespace android.content
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _count2696)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.GetObjectField(this.JvmHandle, _count2696)) as java.lang.Integer;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CREATOR2697;

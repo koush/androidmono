@@ -50,9 +50,9 @@ namespace android.app
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor._getResult1836)) as android.app.Instrumentation.ActivityResult;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.Instrumentation.ActivityResult>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor._getResult1836)) as android.app.Instrumentation.ActivityResult;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor.staticClass, global::android.app.Instrumentation.ActivityMonitor._getResult1836)) as android.app.Instrumentation.ActivityResult;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.Instrumentation.ActivityResult>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.ActivityMonitor.staticClass, global::android.app.Instrumentation.ActivityMonitor._getResult1836)) as android.app.Instrumentation.ActivityResult;
 			}
 			internal static global::MonoJavaBridge.MethodId _isBlocking1837;
 			public virtual bool isBlocking() 
@@ -274,9 +274,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getComponentName1853)) as android.content.ComponentName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getComponentName1853)) as android.content.ComponentName;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getComponentName1853)) as android.content.ComponentName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getComponentName1853)) as android.content.ComponentName;
 		}
 		internal static global::MonoJavaBridge.MethodId _startAllocCounting1854;
 		public virtual void startAllocCounting() 
@@ -730,9 +730,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getAllocCounts1902)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getAllocCounts1902)) as android.os.Bundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getAllocCounts1902)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getAllocCounts1902)) as android.os.Bundle;
 		}
 		public new global::android.os.Bundle BinderCounts
 		{
@@ -746,9 +746,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getBinderCounts1903)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.Instrumentation._getBinderCounts1903)) as android.os.Bundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getBinderCounts1903)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._getBinderCounts1903)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _Instrumentation1904;
 		public Instrumentation()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

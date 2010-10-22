@@ -21,7 +21,7 @@ namespace java.lang.reflect
 		public static global::java.lang.Class getProxyClass(java.lang.ClassLoader arg0, java.lang.Class[] arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._getProxyClass21030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Class;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallStaticObjectMethod(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._getProxyClass21030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _newProxyInstance21031;
 		public static global::java.lang.Object newProxyInstance(java.lang.ClassLoader arg0, java.lang.Class[] arg1, java.lang.reflect.InvocationHandler arg2) 

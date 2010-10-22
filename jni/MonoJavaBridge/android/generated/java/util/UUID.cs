@@ -25,9 +25,9 @@ namespace java.util
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.UUID._toString26823)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.UUID._toString26823)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._toString26823)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._toString26823)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26824;
 		public sealed override int hashCode() 
@@ -96,19 +96,19 @@ namespace java.util
 		public static global::java.util.UUID randomUUID() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._randomUUID26831)) as java.util.UUID;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._randomUUID26831)) as java.util.UUID;
 		}
 		internal static global::MonoJavaBridge.MethodId _nameUUIDFromBytes26832;
 		public static global::java.util.UUID nameUUIDFromBytes(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._nameUUIDFromBytes26832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._nameUUIDFromBytes26832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
 		}
 		internal static global::MonoJavaBridge.MethodId _fromString26833;
 		public static global::java.util.UUID fromString(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._fromString26833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._fromString26833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
 		}
 		public new long LeastSignificantBits
 		{

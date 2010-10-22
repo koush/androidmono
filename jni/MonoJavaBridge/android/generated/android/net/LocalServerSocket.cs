@@ -41,9 +41,9 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket._getFileDescriptor7622)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket._getFileDescriptor7622)) as java.io.FileDescriptor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getFileDescriptor7622)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getFileDescriptor7622)) as java.io.FileDescriptor;
 		}
 		public new global::android.net.LocalSocketAddress LocalSocketAddress
 		{

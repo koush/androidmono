@@ -119,9 +119,9 @@ namespace android.preference
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceActivity._getPreferenceScreen10355)) as android.preference.PreferenceScreen;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.preference.PreferenceScreen>(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceActivity._getPreferenceScreen10355)) as android.preference.PreferenceScreen;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._getPreferenceScreen10355)) as android.preference.PreferenceScreen;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.preference.PreferenceScreen>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._getPreferenceScreen10355)) as android.preference.PreferenceScreen;
 		}
 		internal static global::MonoJavaBridge.MethodId _addPreferencesFromIntent10356;
 		public virtual void addPreferencesFromIntent(android.content.Intent arg0) 

@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Matrix.ScaleToFit valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Matrix.ScaleToFit.staticClass, global::android.graphics.Matrix.ScaleToFit._valueOf5282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Matrix.ScaleToFit;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Matrix.ScaleToFit>(@__env.CallStaticObjectMethod(android.graphics.Matrix.ScaleToFit.staticClass, global::android.graphics.Matrix.ScaleToFit._valueOf5282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Matrix.ScaleToFit;
 			}
 			internal static global::MonoJavaBridge.FieldId _CENTER5283;
 			public static global::android.graphics.Matrix.ScaleToFit CENTER
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _CENTER5283)) as android.graphics.Matrix.ScaleToFit;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Matrix.ScaleToFit>(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _CENTER5283)) as android.graphics.Matrix.ScaleToFit;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _END5284;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _END5284)) as android.graphics.Matrix.ScaleToFit;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Matrix.ScaleToFit>(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _END5284)) as android.graphics.Matrix.ScaleToFit;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FILL5285;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _FILL5285)) as android.graphics.Matrix.ScaleToFit;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Matrix.ScaleToFit>(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _FILL5285)) as android.graphics.Matrix.ScaleToFit;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _START5286;
@@ -67,7 +67,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _START5286)) as android.graphics.Matrix.ScaleToFit;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Matrix.ScaleToFit>(@__env.GetStaticObjectField(global::android.graphics.Matrix.ScaleToFit.staticClass, _START5286)) as android.graphics.Matrix.ScaleToFit;
 				}
 			}
 			private static void InitJNI()
@@ -105,9 +105,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Matrix._toString5289)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Matrix._toString5289)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Matrix.staticClass, global::android.graphics.Matrix._toString5289)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Matrix.staticClass, global::android.graphics.Matrix._toString5289)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _set5290;
 		public virtual void set(android.graphics.Matrix arg0) 
@@ -132,9 +132,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Matrix._toShortString5292)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Matrix._toShortString5292)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Matrix.staticClass, global::android.graphics.Matrix._toShortString5292)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Matrix.staticClass, global::android.graphics.Matrix._toShortString5292)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValues5293;
 		public virtual void getValues(float[] arg0) 

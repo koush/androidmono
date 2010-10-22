@@ -69,7 +69,7 @@ namespace android.view
 			public static global::java.lang.String toString(int arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.View.MeasureSpec.staticClass, global::android.view.View.MeasureSpec._toString14553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.view.View.MeasureSpec.staticClass, global::android.view.View.MeasureSpec._toString14553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _getSize14554;
 			public static int getSize(int arg0) 
@@ -2622,9 +2622,9 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.View._getDrawingCache14781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.View._getDrawingCache14781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Bitmap;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._getDrawingCache14781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._getDrawingCache14781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Bitmap;
 		}
 		public new global::android.graphics.Bitmap DrawingCache
 		{
@@ -2638,9 +2638,9 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.View._getDrawingCache14782)) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.View._getDrawingCache14782)) as android.graphics.Bitmap;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._getDrawingCache14782)) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._getDrawingCache14782)) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _destroyDrawingCache14783;
 		public virtual void destroyDrawingCache() 
@@ -3063,9 +3063,9 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.View._getViewTreeObserver14819)) as android.view.ViewTreeObserver;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewTreeObserver>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.View._getViewTreeObserver14819)) as android.view.ViewTreeObserver;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._getViewTreeObserver14819)) as android.view.ViewTreeObserver;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewTreeObserver>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._getViewTreeObserver14819)) as android.view.ViewTreeObserver;
 		}
 		public new global::android.view.View RootView
 		{

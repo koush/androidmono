@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Paint.Align valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._valueOf5368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Align;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.CallStaticObjectMethod(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._valueOf5368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Align;
 			}
 			internal static global::MonoJavaBridge.FieldId _CENTER5369;
 			public static global::android.graphics.Paint.Align CENTER
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _CENTER5369)) as android.graphics.Paint.Align;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _CENTER5369)) as android.graphics.Paint.Align;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LEFT5370;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _LEFT5370)) as android.graphics.Paint.Align;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _LEFT5370)) as android.graphics.Paint.Align;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RIGHT5371;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _RIGHT5371)) as android.graphics.Paint.Align;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.GetStaticObjectField(global::android.graphics.Paint.Align.staticClass, _RIGHT5371)) as android.graphics.Paint.Align;
 				}
 			}
 			private static void InitJNI()
@@ -93,7 +93,7 @@ namespace android.graphics
 			public static global::android.graphics.Paint.Cap valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._valueOf5373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Cap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.CallStaticObjectMethod(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._valueOf5373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Cap;
 			}
 			internal static global::MonoJavaBridge.FieldId _BUTT5374;
 			public static global::android.graphics.Paint.Cap BUTT
@@ -101,7 +101,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _BUTT5374)) as android.graphics.Paint.Cap;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _BUTT5374)) as android.graphics.Paint.Cap;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ROUND5375;
@@ -110,7 +110,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _ROUND5375)) as android.graphics.Paint.Cap;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _ROUND5375)) as android.graphics.Paint.Cap;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SQUARE5376;
@@ -119,7 +119,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _SQUARE5376)) as android.graphics.Paint.Cap;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.GetStaticObjectField(global::android.graphics.Paint.Cap.staticClass, _SQUARE5376)) as android.graphics.Paint.Cap;
 				}
 			}
 			private static void InitJNI()
@@ -239,9 +239,9 @@ namespace android.graphics
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint.FontMetricsInt._toString5383)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint.FontMetricsInt._toString5383)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.FontMetricsInt.staticClass, global::android.graphics.Paint.FontMetricsInt._toString5383)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.FontMetricsInt.staticClass, global::android.graphics.Paint.FontMetricsInt._toString5383)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _FontMetricsInt5384;
 			public FontMetricsInt()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
@@ -344,7 +344,7 @@ namespace android.graphics
 			public static global::android.graphics.Paint.Join valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._valueOf5391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Join;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.CallStaticObjectMethod(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._valueOf5391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Join;
 			}
 			internal static global::MonoJavaBridge.FieldId _BEVEL5392;
 			public static global::android.graphics.Paint.Join BEVEL
@@ -352,7 +352,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _BEVEL5392)) as android.graphics.Paint.Join;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _BEVEL5392)) as android.graphics.Paint.Join;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MITER5393;
@@ -361,7 +361,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _MITER5393)) as android.graphics.Paint.Join;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _MITER5393)) as android.graphics.Paint.Join;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ROUND5394;
@@ -370,7 +370,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _ROUND5394)) as android.graphics.Paint.Join;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.GetStaticObjectField(global::android.graphics.Paint.Join.staticClass, _ROUND5394)) as android.graphics.Paint.Join;
 				}
 			}
 			private static void InitJNI()
@@ -405,7 +405,7 @@ namespace android.graphics
 			public static global::android.graphics.Paint.Style valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._valueOf5396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Style;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.CallStaticObjectMethod(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._valueOf5396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Style;
 			}
 			internal static global::MonoJavaBridge.FieldId _FILL5397;
 			public static global::android.graphics.Paint.Style FILL
@@ -413,7 +413,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _FILL5397)) as android.graphics.Paint.Style;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _FILL5397)) as android.graphics.Paint.Style;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FILL_AND_STROKE5398;
@@ -422,7 +422,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _FILL_AND_STROKE5398)) as android.graphics.Paint.Style;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _FILL_AND_STROKE5398)) as android.graphics.Paint.Style;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _STROKE5399;
@@ -431,7 +431,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _STROKE5399)) as android.graphics.Paint.Style;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.GetStaticObjectField(global::android.graphics.Paint.Style.staticClass, _STROKE5399)) as android.graphics.Paint.Style;
 				}
 			}
 			private static void InitJNI()
@@ -800,9 +800,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getStyle5432)) as android.graphics.Paint.Style;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getStyle5432)) as android.graphics.Paint.Style;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStyle5432)) as android.graphics.Paint.Style;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStyle5432)) as android.graphics.Paint.Style;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStyle5433;
 		public virtual void setStyle(android.graphics.Paint.Style arg0) 
@@ -905,9 +905,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getStrokeCap5440)) as android.graphics.Paint.Cap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getStrokeCap5440)) as android.graphics.Paint.Cap;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeCap5440)) as android.graphics.Paint.Cap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeCap5440)) as android.graphics.Paint.Cap;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrokeCap5441;
 		public virtual void setStrokeCap(android.graphics.Paint.Cap arg0) 
@@ -934,9 +934,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getStrokeJoin5442)) as android.graphics.Paint.Join;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getStrokeJoin5442)) as android.graphics.Paint.Join;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeJoin5442)) as android.graphics.Paint.Join;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeJoin5442)) as android.graphics.Paint.Join;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrokeJoin5443;
 		public virtual void setStrokeJoin(android.graphics.Paint.Join arg0) 
@@ -1122,9 +1122,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getTextAlign5457)) as android.graphics.Paint.Align;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Paint._getTextAlign5457)) as android.graphics.Paint.Align;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextAlign5457)) as android.graphics.Paint.Align;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextAlign5457)) as android.graphics.Paint.Align;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextAlign5458;
 		public virtual void setTextAlign(android.graphics.Paint.Align arg0) 

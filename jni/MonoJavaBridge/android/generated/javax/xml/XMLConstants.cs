@@ -17,7 +17,7 @@ namespace javax.xml
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _NULL_NS_URI30504)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _NULL_NS_URI30504)) as java.lang.String;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DEFAULT_NS_PREFIX30505;
@@ -26,7 +26,7 @@ namespace javax.xml
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _DEFAULT_NS_PREFIX30505)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _DEFAULT_NS_PREFIX30505)) as java.lang.String;
 			}
 		}
 		public static global::java.lang.String XML_NS_URI

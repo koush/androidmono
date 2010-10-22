@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Canvas.EdgeType valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Canvas.EdgeType.staticClass, global::android.graphics.Canvas.EdgeType._valueOf5094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Canvas.EdgeType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.EdgeType>(@__env.CallStaticObjectMethod(android.graphics.Canvas.EdgeType.staticClass, global::android.graphics.Canvas.EdgeType._valueOf5094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Canvas.EdgeType;
 			}
 			internal static global::MonoJavaBridge.FieldId _AA5095;
 			public static global::android.graphics.Canvas.EdgeType AA
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Canvas.EdgeType.staticClass, _AA5095)) as android.graphics.Canvas.EdgeType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.EdgeType>(@__env.GetStaticObjectField(global::android.graphics.Canvas.EdgeType.staticClass, _AA5095)) as android.graphics.Canvas.EdgeType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BW5096;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Canvas.EdgeType.staticClass, _BW5096)) as android.graphics.Canvas.EdgeType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.EdgeType>(@__env.GetStaticObjectField(global::android.graphics.Canvas.EdgeType.staticClass, _BW5096)) as android.graphics.Canvas.EdgeType;
 				}
 			}
 			private static void InitJNI()
@@ -83,7 +83,7 @@ namespace android.graphics
 			public static global::android.graphics.Canvas.VertexMode valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Canvas.VertexMode.staticClass, global::android.graphics.Canvas.VertexMode._valueOf5098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Canvas.VertexMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.VertexMode>(@__env.CallStaticObjectMethod(android.graphics.Canvas.VertexMode.staticClass, global::android.graphics.Canvas.VertexMode._valueOf5098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Canvas.VertexMode;
 			}
 			internal static global::MonoJavaBridge.FieldId _TRIANGLES5099;
 			public static global::android.graphics.Canvas.VertexMode TRIANGLES
@@ -91,7 +91,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLES5099)) as android.graphics.Canvas.VertexMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.VertexMode>(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLES5099)) as android.graphics.Canvas.VertexMode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TRIANGLE_FAN5100;
@@ -100,7 +100,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLE_FAN5100)) as android.graphics.Canvas.VertexMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.VertexMode>(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLE_FAN5100)) as android.graphics.Canvas.VertexMode;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TRIANGLE_STRIP5101;
@@ -109,7 +109,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLE_STRIP5101)) as android.graphics.Canvas.VertexMode;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Canvas.VertexMode>(@__env.GetStaticObjectField(global::android.graphics.Canvas.VertexMode.staticClass, _TRIANGLE_STRIP5101)) as android.graphics.Canvas.VertexMode;
 				}
 			}
 			private static void InitJNI()
@@ -598,9 +598,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Canvas._getClipBounds5147)) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Rect>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Canvas._getClipBounds5147)) as android.graphics.Rect;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._getClipBounds5147)) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Rect>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._getClipBounds5147)) as android.graphics.Rect;
 		}
 		internal static global::MonoJavaBridge.MethodId _getClipBounds5148;
 		public virtual bool getClipBounds(android.graphics.Rect arg0) 

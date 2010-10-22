@@ -42,7 +42,7 @@ namespace java.io
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.io.FileDescriptor.staticClass, _in18895)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.GetStaticObjectField(global::java.io.FileDescriptor.staticClass, _in18895)) as java.io.FileDescriptor;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _out18896;
@@ -51,7 +51,7 @@ namespace java.io
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.io.FileDescriptor.staticClass, _out18896)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.GetStaticObjectField(global::java.io.FileDescriptor.staticClass, _out18896)) as java.io.FileDescriptor;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _err18897;
@@ -60,7 +60,7 @@ namespace java.io
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.io.FileDescriptor.staticClass, _err18897)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.GetStaticObjectField(global::java.io.FileDescriptor.staticClass, _err18897)) as java.io.FileDescriptor;
 			}
 		}
 		private static void InitJNI()

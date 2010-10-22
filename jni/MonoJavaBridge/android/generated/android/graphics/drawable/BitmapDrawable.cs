@@ -229,9 +229,9 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getBitmap5850)) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getBitmap5850)) as android.graphics.Bitmap;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getBitmap5850)) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getBitmap5850)) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5851;
 		public virtual void setTargetDensity(android.graphics.Canvas arg0) 
@@ -276,9 +276,9 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getTileModeX5854)) as android.graphics.Shader.TileMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getTileModeX5854)) as android.graphics.Shader.TileMode;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeX5854)) as android.graphics.Shader.TileMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeX5854)) as android.graphics.Shader.TileMode;
 		}
 		public new global::android.graphics.Shader.TileMode TileModeY
 		{
@@ -296,9 +296,9 @@ namespace android.graphics.drawable
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getTileModeY5855)) as android.graphics.Shader.TileMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable._getTileModeY5855)) as android.graphics.Shader.TileMode;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeY5855)) as android.graphics.Shader.TileMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeY5855)) as android.graphics.Shader.TileMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeX5856;
 		public virtual void setTileModeX(android.graphics.Shader.TileMode arg0) 

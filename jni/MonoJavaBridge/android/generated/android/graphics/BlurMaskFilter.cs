@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.BlurMaskFilter.Blur valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._valueOf5076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.BlurMaskFilter.Blur;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.CallStaticObjectMethod(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._valueOf5076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.BlurMaskFilter.Blur;
 			}
 			internal static global::MonoJavaBridge.FieldId _INNER5077;
 			public static global::android.graphics.BlurMaskFilter.Blur INNER
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _INNER5077)) as android.graphics.BlurMaskFilter.Blur;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _INNER5077)) as android.graphics.BlurMaskFilter.Blur;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NORMAL5078;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _NORMAL5078)) as android.graphics.BlurMaskFilter.Blur;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _NORMAL5078)) as android.graphics.BlurMaskFilter.Blur;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _OUTER5079;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _OUTER5079)) as android.graphics.BlurMaskFilter.Blur;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _OUTER5079)) as android.graphics.BlurMaskFilter.Blur;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SOLID5080;
@@ -67,7 +67,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _SOLID5080)) as android.graphics.BlurMaskFilter.Blur;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.GetStaticObjectField(global::android.graphics.BlurMaskFilter.Blur.staticClass, _SOLID5080)) as android.graphics.BlurMaskFilter.Blur;
 				}
 			}
 			private static void InitJNI()

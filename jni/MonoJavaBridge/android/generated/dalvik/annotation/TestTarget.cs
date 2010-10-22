@@ -24,18 +24,18 @@ namespace dalvik.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._methodName18219)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._methodName18219)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._methodName18219)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._methodName18219)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _conceptName18220;
 		 global::java.lang.String dalvik.annotation.TestTarget.conceptName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._conceptName18220)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._conceptName18220)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._conceptName18220)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._conceptName18220)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _methodArgs18221;
 		 global::java.lang.Class[] dalvik.annotation.TestTarget.methodArgs() 
@@ -60,9 +60,9 @@ namespace dalvik.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._toString18223)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._toString18223)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._toString18223)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._toString18223)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode18224;
 		 int java.lang.annotation.Annotation.hashCode() 
@@ -78,9 +78,9 @@ namespace dalvik.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._annotationType18225)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_._annotationType18225)) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._annotationType18225)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTarget_.staticClass, global::dalvik.annotation.TestTarget_._annotationType18225)) as java.lang.Class;
 		}
 		private static void InitJNI()
 		{

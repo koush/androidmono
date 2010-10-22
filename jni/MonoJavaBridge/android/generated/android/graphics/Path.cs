@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Path.Direction valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Path.Direction.staticClass, global::android.graphics.Path.Direction._valueOf5497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path.Direction;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.Direction>(@__env.CallStaticObjectMethod(android.graphics.Path.Direction.staticClass, global::android.graphics.Path.Direction._valueOf5497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path.Direction;
 			}
 			internal static global::MonoJavaBridge.FieldId _CCW5498;
 			public static global::android.graphics.Path.Direction CCW
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Path.Direction.staticClass, _CCW5498)) as android.graphics.Path.Direction;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.Direction>(@__env.GetStaticObjectField(global::android.graphics.Path.Direction.staticClass, _CCW5498)) as android.graphics.Path.Direction;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CW5499;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Path.Direction.staticClass, _CW5499)) as android.graphics.Path.Direction;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.Direction>(@__env.GetStaticObjectField(global::android.graphics.Path.Direction.staticClass, _CW5499)) as android.graphics.Path.Direction;
 				}
 			}
 			private static void InitJNI()
@@ -83,7 +83,7 @@ namespace android.graphics
 			public static global::android.graphics.Path.FillType valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Path.FillType.staticClass, global::android.graphics.Path.FillType._valueOf5501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path.FillType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.CallStaticObjectMethod(android.graphics.Path.FillType.staticClass, global::android.graphics.Path.FillType._valueOf5501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path.FillType;
 			}
 			internal static global::MonoJavaBridge.FieldId _EVEN_ODD5502;
 			public static global::android.graphics.Path.FillType EVEN_ODD
@@ -91,7 +91,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _EVEN_ODD5502)) as android.graphics.Path.FillType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _EVEN_ODD5502)) as android.graphics.Path.FillType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _INVERSE_EVEN_ODD5503;
@@ -100,7 +100,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _INVERSE_EVEN_ODD5503)) as android.graphics.Path.FillType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _INVERSE_EVEN_ODD5503)) as android.graphics.Path.FillType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _INVERSE_WINDING5504;
@@ -109,7 +109,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _INVERSE_WINDING5504)) as android.graphics.Path.FillType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _INVERSE_WINDING5504)) as android.graphics.Path.FillType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _WINDING5505;
@@ -118,7 +118,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _WINDING5505)) as android.graphics.Path.FillType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.GetStaticObjectField(global::android.graphics.Path.FillType.staticClass, _WINDING5505)) as android.graphics.Path.FillType;
 				}
 			}
 			private static void InitJNI()
@@ -237,9 +237,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Path._getFillType5517)) as android.graphics.Path.FillType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Path._getFillType5517)) as android.graphics.Path.FillType;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Path.staticClass, global::android.graphics.Path._getFillType5517)) as android.graphics.Path.FillType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Path.FillType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Path.staticClass, global::android.graphics.Path._getFillType5517)) as android.graphics.Path.FillType;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFillType5518;
 		public virtual void setFillType(android.graphics.Path.FillType arg0) 

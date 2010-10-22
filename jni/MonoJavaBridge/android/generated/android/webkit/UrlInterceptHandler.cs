@@ -32,9 +32,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_._getPluginData16027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.PluginData;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.PluginData>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_._getPluginData16027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.PluginData;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_.staticClass, global::android.webkit.UrlInterceptHandler_._getPluginData16027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.PluginData;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.PluginData>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.UrlInterceptHandler_.staticClass, global::android.webkit.UrlInterceptHandler_._getPluginData16027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.PluginData;
 		}
 		private static void InitJNI()
 		{

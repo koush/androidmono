@@ -15,7 +15,7 @@ namespace junit.runner
 		public static global::java.lang.String id() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(junit.runner.Version.staticClass, global::junit.runner.Version._id31352)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(junit.runner.Version.staticClass, global::junit.runner.Version._id31352)) as java.lang.String;
 		}
 		private static void InitJNI()
 		{

@@ -97,9 +97,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.WallpaperManager._getWallpaperInfo2211)) as android.app.WallpaperInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.WallpaperInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.WallpaperManager._getWallpaperInfo2211)) as android.app.WallpaperInfo;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getWallpaperInfo2211)) as android.app.WallpaperInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.WallpaperInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getWallpaperInfo2211)) as android.app.WallpaperInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResource2212;
 		public virtual void setResource(int arg0) 

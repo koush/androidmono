@@ -25,18 +25,18 @@ namespace org.apache.http.client.methods
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_._getMethod31844)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_._getMethod31844)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_.staticClass, global::org.apache.http.client.methods.HttpUriRequest_._getMethod31844)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_.staticClass, global::org.apache.http.client.methods.HttpUriRequest_._getMethod31844)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getURI31845;
 		 global::java.net.URI org.apache.http.client.methods.HttpUriRequest.getURI() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_._getURI31845)) as java.net.URI;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_._getURI31845)) as java.net.URI;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_.staticClass, global::org.apache.http.client.methods.HttpUriRequest_._getURI31845)) as java.net.URI;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URI>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpUriRequest_.staticClass, global::org.apache.http.client.methods.HttpUriRequest_._getURI31845)) as java.net.URI;
 		}
 		internal static global::MonoJavaBridge.MethodId _abort31846;
 		 void org.apache.http.client.methods.HttpUriRequest.abort() 

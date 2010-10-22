@@ -9,7 +9,7 @@ namespace org.xmlpull.v1
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.xmlpull.v1.XmlPullParser_.staticClass, _NO_NAMESPACE35229)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::org.xmlpull.v1.XmlPullParser_.staticClass, _NO_NAMESPACE35229)) as java.lang.String;
 			}
 		}
 		public static int START_DOCUMENT

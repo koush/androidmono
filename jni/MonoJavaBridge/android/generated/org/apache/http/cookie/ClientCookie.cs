@@ -23,9 +23,9 @@ namespace org.apache.http.cookie
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getAttribute32249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getAttribute32249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getAttribute32249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getAttribute32249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _containsAttribute32250;
 		 bool org.apache.http.cookie.ClientCookie.containsAttribute(java.lang.String arg0) 
@@ -41,36 +41,36 @@ namespace org.apache.http.cookie
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getName32251)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getName32251)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getName32251)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getName32251)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue32252;
 		 global::java.lang.String org.apache.http.cookie.Cookie.getValue() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getValue32252)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getValue32252)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getValue32252)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getValue32252)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath32253;
 		 global::java.lang.String org.apache.http.cookie.Cookie.getPath() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getPath32253)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getPath32253)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getPath32253)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getPath32253)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getComment32254;
 		 global::java.lang.String org.apache.http.cookie.Cookie.getComment() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getComment32254)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getComment32254)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getComment32254)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getComment32254)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getVersion32255;
 		 int org.apache.http.cookie.Cookie.getVersion() 
@@ -86,9 +86,9 @@ namespace org.apache.http.cookie
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getDomain32256)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getDomain32256)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getDomain32256)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getDomain32256)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isPersistent32257;
 		 bool org.apache.http.cookie.Cookie.isPersistent() 
@@ -113,9 +113,9 @@ namespace org.apache.http.cookie
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getCommentURL32259)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_._getCommentURL32259)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getCommentURL32259)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.ClientCookie_.staticClass, global::org.apache.http.cookie.ClientCookie_._getCommentURL32259)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExpiryDate32260;
 		 global::java.util.Date org.apache.http.cookie.Cookie.getExpiryDate() 

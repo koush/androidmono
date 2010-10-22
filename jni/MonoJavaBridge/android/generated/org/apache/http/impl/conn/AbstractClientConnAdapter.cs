@@ -376,9 +376,9 @@ namespace org.apache.http.impl.conn
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.AbstractClientConnAdapter_._getRoute32880)) as org.apache.http.conn.routing.HttpRoute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.AbstractClientConnAdapter_._getRoute32880)) as org.apache.http.conn.routing.HttpRoute;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.AbstractClientConnAdapter_.staticClass, global::org.apache.http.impl.conn.AbstractClientConnAdapter_._getRoute32880)) as org.apache.http.conn.routing.HttpRoute;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.AbstractClientConnAdapter_.staticClass, global::org.apache.http.impl.conn.AbstractClientConnAdapter_._getRoute32880)) as org.apache.http.conn.routing.HttpRoute;
 		}
 		internal static global::MonoJavaBridge.MethodId _tunnelTarget32881;
 		public override void tunnelTarget(bool arg0, org.apache.http.@params.HttpParams arg1) 

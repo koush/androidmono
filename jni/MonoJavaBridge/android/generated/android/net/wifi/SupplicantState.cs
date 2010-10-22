@@ -21,7 +21,7 @@ namespace android.net.wifi
 		public static global::android.net.wifi.SupplicantState valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._valueOf7942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.wifi.SupplicantState;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.CallStaticObjectMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._valueOf7942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.wifi.SupplicantState;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7943;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -53,7 +53,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _ASSOCIATED7946)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _ASSOCIATED7946)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _ASSOCIATING7947;
@@ -62,7 +62,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _ASSOCIATING7947)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _ASSOCIATING7947)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _COMPLETED7948;
@@ -71,7 +71,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _COMPLETED7948)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _COMPLETED7948)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DISCONNECTED7949;
@@ -80,7 +80,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _DISCONNECTED7949)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _DISCONNECTED7949)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DORMANT7950;
@@ -89,7 +89,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _DORMANT7950)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _DORMANT7950)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _FOUR_WAY_HANDSHAKE7951;
@@ -98,7 +98,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _FOUR_WAY_HANDSHAKE7951)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _FOUR_WAY_HANDSHAKE7951)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _GROUP_HANDSHAKE7952;
@@ -107,7 +107,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _GROUP_HANDSHAKE7952)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _GROUP_HANDSHAKE7952)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _INACTIVE7953;
@@ -116,7 +116,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _INACTIVE7953)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _INACTIVE7953)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _INVALID7954;
@@ -125,7 +125,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _INVALID7954)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _INVALID7954)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SCANNING7955;
@@ -134,7 +134,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _SCANNING7955)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _SCANNING7955)) as android.net.wifi.SupplicantState;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _UNINITIALIZED7956;
@@ -143,7 +143,7 @@ namespace android.net.wifi
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _UNINITIALIZED7956)) as android.net.wifi.SupplicantState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.GetStaticObjectField(global::android.net.wifi.SupplicantState.staticClass, _UNINITIALIZED7956)) as android.net.wifi.SupplicantState;
 			}
 		}
 		private static void InitJNI()

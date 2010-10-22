@@ -15,13 +15,13 @@ namespace android.util
 		public static global::java.lang.String concatGroups(java.util.regex.Matcher arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._concatGroups13755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._concatGroups13755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _digitsAndPlusOnly13756;
 		public static global::java.lang.String digitsAndPlusOnly(java.util.regex.Matcher arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._digitsAndPlusOnly13756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._digitsAndPlusOnly13756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		public static global::java.lang.String TOP_LEVEL_DOMAIN_STR
 		{
@@ -36,7 +36,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _TOP_LEVEL_DOMAIN13758)) as java.util.regex.Pattern;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _TOP_LEVEL_DOMAIN13758)) as java.util.regex.Pattern;
 			}
 		}
 		public static global::java.lang.String TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL
@@ -59,7 +59,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _WEB_URL13761)) as java.util.regex.Pattern;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _WEB_URL13761)) as java.util.regex.Pattern;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _IP_ADDRESS13762;
@@ -68,7 +68,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _IP_ADDRESS13762)) as java.util.regex.Pattern;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _IP_ADDRESS13762)) as java.util.regex.Pattern;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DOMAIN_NAME13763;
@@ -77,7 +77,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _DOMAIN_NAME13763)) as java.util.regex.Pattern;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _DOMAIN_NAME13763)) as java.util.regex.Pattern;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _EMAIL_ADDRESS13764;
@@ -86,7 +86,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _EMAIL_ADDRESS13764)) as java.util.regex.Pattern;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _EMAIL_ADDRESS13764)) as java.util.regex.Pattern;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _PHONE13765;
@@ -95,7 +95,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _PHONE13765)) as java.util.regex.Pattern;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.GetStaticObjectField(global::android.util.Patterns.staticClass, _PHONE13765)) as java.util.regex.Pattern;
 			}
 		}
 		private static void InitJNI()

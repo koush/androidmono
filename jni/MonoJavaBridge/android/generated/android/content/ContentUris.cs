@@ -21,7 +21,7 @@ namespace android.content
 		public static global::android.net.Uri.Builder appendId(android.net.Uri.Builder arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.content.ContentUris.staticClass, global::android.content.ContentUris._appendId2764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri.Builder;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.Uri.Builder>(@__env.CallStaticObjectMethod(android.content.ContentUris.staticClass, global::android.content.ContentUris._appendId2764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri.Builder;
 		}
 		internal static global::MonoJavaBridge.MethodId _withAppendedId2765;
 		public static global::android.net.Uri withAppendedId(android.net.Uri arg0, long arg1) 

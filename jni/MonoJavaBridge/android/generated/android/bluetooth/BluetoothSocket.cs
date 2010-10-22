@@ -73,9 +73,9 @@ namespace android.bluetooth
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket._getRemoteDevice2549)) as android.bluetooth.BluetoothDevice;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.bluetooth.BluetoothDevice>(@__env.CallObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket._getRemoteDevice2549)) as android.bluetooth.BluetoothDevice;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket.staticClass, global::android.bluetooth.BluetoothSocket._getRemoteDevice2549)) as android.bluetooth.BluetoothDevice;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.bluetooth.BluetoothDevice>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothSocket.staticClass, global::android.bluetooth.BluetoothSocket._getRemoteDevice2549)) as android.bluetooth.BluetoothDevice;
 		}
 		private static void InitJNI()
 		{

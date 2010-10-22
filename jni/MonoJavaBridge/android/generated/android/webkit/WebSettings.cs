@@ -32,7 +32,7 @@ namespace android.webkit
 			public static global::android.webkit.WebSettings.LayoutAlgorithm valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebSettings.LayoutAlgorithm.staticClass, global::android.webkit.WebSettings.LayoutAlgorithm._valueOf16081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.LayoutAlgorithm;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.LayoutAlgorithm>(@__env.CallStaticObjectMethod(android.webkit.WebSettings.LayoutAlgorithm.staticClass, global::android.webkit.WebSettings.LayoutAlgorithm._valueOf16081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.LayoutAlgorithm;
 			}
 			internal static global::MonoJavaBridge.FieldId _NARROW_COLUMNS16082;
 			public static global::android.webkit.WebSettings.LayoutAlgorithm NARROW_COLUMNS
@@ -40,7 +40,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, _NARROW_COLUMNS16082)) as android.webkit.WebSettings.LayoutAlgorithm;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.LayoutAlgorithm>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, _NARROW_COLUMNS16082)) as android.webkit.WebSettings.LayoutAlgorithm;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NORMAL16083;
@@ -49,7 +49,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, _NORMAL16083)) as android.webkit.WebSettings.LayoutAlgorithm;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.LayoutAlgorithm>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, _NORMAL16083)) as android.webkit.WebSettings.LayoutAlgorithm;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SINGLE_COLUMN16084;
@@ -58,7 +58,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, _SINGLE_COLUMN16084)) as android.webkit.WebSettings.LayoutAlgorithm;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.LayoutAlgorithm>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, _SINGLE_COLUMN16084)) as android.webkit.WebSettings.LayoutAlgorithm;
 				}
 			}
 			private static void InitJNI()
@@ -93,7 +93,7 @@ namespace android.webkit
 			public static global::android.webkit.WebSettings.PluginState valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebSettings.PluginState.staticClass, global::android.webkit.WebSettings.PluginState._valueOf16086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.PluginState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.PluginState>(@__env.CallStaticObjectMethod(android.webkit.WebSettings.PluginState.staticClass, global::android.webkit.WebSettings.PluginState._valueOf16086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.PluginState;
 			}
 			internal static global::MonoJavaBridge.FieldId _OFF16087;
 			public static global::android.webkit.WebSettings.PluginState OFF
@@ -101,7 +101,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.PluginState.staticClass, _OFF16087)) as android.webkit.WebSettings.PluginState;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.PluginState>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.PluginState.staticClass, _OFF16087)) as android.webkit.WebSettings.PluginState;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ON16088;
@@ -110,7 +110,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.PluginState.staticClass, _ON16088)) as android.webkit.WebSettings.PluginState;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.PluginState>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.PluginState.staticClass, _ON16088)) as android.webkit.WebSettings.PluginState;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ON_DEMAND16089;
@@ -119,7 +119,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.PluginState.staticClass, _ON_DEMAND16089)) as android.webkit.WebSettings.PluginState;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.PluginState>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.PluginState.staticClass, _ON_DEMAND16089)) as android.webkit.WebSettings.PluginState;
 				}
 			}
 			private static void InitJNI()
@@ -154,7 +154,7 @@ namespace android.webkit
 			public static global::android.webkit.WebSettings.RenderPriority valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebSettings.RenderPriority.staticClass, global::android.webkit.WebSettings.RenderPriority._valueOf16091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.RenderPriority;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.RenderPriority>(@__env.CallStaticObjectMethod(android.webkit.WebSettings.RenderPriority.staticClass, global::android.webkit.WebSettings.RenderPriority._valueOf16091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.RenderPriority;
 			}
 			internal static global::MonoJavaBridge.FieldId _HIGH16092;
 			public static global::android.webkit.WebSettings.RenderPriority HIGH
@@ -162,7 +162,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.RenderPriority.staticClass, _HIGH16092)) as android.webkit.WebSettings.RenderPriority;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.RenderPriority>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.RenderPriority.staticClass, _HIGH16092)) as android.webkit.WebSettings.RenderPriority;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LOW16093;
@@ -171,7 +171,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.RenderPriority.staticClass, _LOW16093)) as android.webkit.WebSettings.RenderPriority;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.RenderPriority>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.RenderPriority.staticClass, _LOW16093)) as android.webkit.WebSettings.RenderPriority;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NORMAL16094;
@@ -180,7 +180,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.RenderPriority.staticClass, _NORMAL16094)) as android.webkit.WebSettings.RenderPriority;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.RenderPriority>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.RenderPriority.staticClass, _NORMAL16094)) as android.webkit.WebSettings.RenderPriority;
 				}
 			}
 			private static void InitJNI()
@@ -215,7 +215,7 @@ namespace android.webkit
 			public static global::android.webkit.WebSettings.TextSize valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebSettings.TextSize.staticClass, global::android.webkit.WebSettings.TextSize._valueOf16096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.TextSize;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.CallStaticObjectMethod(android.webkit.WebSettings.TextSize.staticClass, global::android.webkit.WebSettings.TextSize._valueOf16096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.TextSize;
 			}
 			internal static global::MonoJavaBridge.FieldId _LARGER16097;
 			public static global::android.webkit.WebSettings.TextSize LARGER
@@ -223,7 +223,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _LARGER16097)) as android.webkit.WebSettings.TextSize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _LARGER16097)) as android.webkit.WebSettings.TextSize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LARGEST16098;
@@ -232,7 +232,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _LARGEST16098)) as android.webkit.WebSettings.TextSize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _LARGEST16098)) as android.webkit.WebSettings.TextSize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NORMAL16099;
@@ -241,7 +241,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _NORMAL16099)) as android.webkit.WebSettings.TextSize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _NORMAL16099)) as android.webkit.WebSettings.TextSize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SMALLER16100;
@@ -250,7 +250,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _SMALLER16100)) as android.webkit.WebSettings.TextSize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _SMALLER16100)) as android.webkit.WebSettings.TextSize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SMALLEST16101;
@@ -259,7 +259,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _SMALLEST16101)) as android.webkit.WebSettings.TextSize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.TextSize.staticClass, _SMALLEST16101)) as android.webkit.WebSettings.TextSize;
 				}
 			}
 			private static void InitJNI()
@@ -296,7 +296,7 @@ namespace android.webkit
 			public static global::android.webkit.WebSettings.ZoomDensity valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebSettings.ZoomDensity.staticClass, global::android.webkit.WebSettings.ZoomDensity._valueOf16103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.ZoomDensity;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.ZoomDensity>(@__env.CallStaticObjectMethod(android.webkit.WebSettings.ZoomDensity.staticClass, global::android.webkit.WebSettings.ZoomDensity._valueOf16103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.WebSettings.ZoomDensity;
 			}
 			internal static global::MonoJavaBridge.FieldId _CLOSE16104;
 			public static global::android.webkit.WebSettings.ZoomDensity CLOSE
@@ -304,7 +304,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.ZoomDensity.staticClass, _CLOSE16104)) as android.webkit.WebSettings.ZoomDensity;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.ZoomDensity>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.ZoomDensity.staticClass, _CLOSE16104)) as android.webkit.WebSettings.ZoomDensity;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _FAR16105;
@@ -313,7 +313,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.ZoomDensity.staticClass, _FAR16105)) as android.webkit.WebSettings.ZoomDensity;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.ZoomDensity>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.ZoomDensity.staticClass, _FAR16105)) as android.webkit.WebSettings.ZoomDensity;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MEDIUM16106;
@@ -322,7 +322,7 @@ namespace android.webkit
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.webkit.WebSettings.ZoomDensity.staticClass, _MEDIUM16106)) as android.webkit.WebSettings.ZoomDensity;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.ZoomDensity>(@__env.GetStaticObjectField(global::android.webkit.WebSettings.ZoomDensity.staticClass, _MEDIUM16106)) as android.webkit.WebSettings.ZoomDensity;
 				}
 			}
 			private static void InitJNI()
@@ -352,18 +352,18 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getDatabasePath16107)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getDatabasePath16107)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDatabasePath16107)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDatabasePath16107)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextSize16108;
 		public virtual global::android.webkit.WebSettings.TextSize getTextSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getTextSize16108)) as android.webkit.WebSettings.TextSize;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getTextSize16108)) as android.webkit.WebSettings.TextSize;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getTextSize16108)) as android.webkit.WebSettings.TextSize;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.TextSize>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getTextSize16108)) as android.webkit.WebSettings.TextSize;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextSize16109;
 		public virtual void setTextSize(android.webkit.WebSettings.TextSize arg0) 
@@ -591,9 +591,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getDefaultZoom16125)) as android.webkit.WebSettings.ZoomDensity;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.ZoomDensity>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getDefaultZoom16125)) as android.webkit.WebSettings.ZoomDensity;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultZoom16125)) as android.webkit.WebSettings.ZoomDensity;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.ZoomDensity>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultZoom16125)) as android.webkit.WebSettings.ZoomDensity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLightTouchEnabled16126;
 		public virtual void setLightTouchEnabled(bool arg0) 
@@ -743,9 +743,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getLayoutAlgorithm16137)) as android.webkit.WebSettings.LayoutAlgorithm;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.LayoutAlgorithm>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getLayoutAlgorithm16137)) as android.webkit.WebSettings.LayoutAlgorithm;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLayoutAlgorithm16137)) as android.webkit.WebSettings.LayoutAlgorithm;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.LayoutAlgorithm>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLayoutAlgorithm16137)) as android.webkit.WebSettings.LayoutAlgorithm;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStandardFontFamily16138;
 		public virtual void setStandardFontFamily(java.lang.String arg0) 
@@ -772,9 +772,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getStandardFontFamily16139)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getStandardFontFamily16139)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getStandardFontFamily16139)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getStandardFontFamily16139)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFixedFontFamily16140;
 		public virtual void setFixedFontFamily(java.lang.String arg0) 
@@ -801,9 +801,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getFixedFontFamily16141)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getFixedFontFamily16141)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFixedFontFamily16141)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFixedFontFamily16141)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSansSerifFontFamily16142;
 		public virtual void setSansSerifFontFamily(java.lang.String arg0) 
@@ -830,9 +830,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getSansSerifFontFamily16143)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getSansSerifFontFamily16143)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSansSerifFontFamily16143)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSansSerifFontFamily16143)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSerifFontFamily16144;
 		public virtual void setSerifFontFamily(java.lang.String arg0) 
@@ -859,9 +859,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getSerifFontFamily16145)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getSerifFontFamily16145)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSerifFontFamily16145)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSerifFontFamily16145)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCursiveFontFamily16146;
 		public virtual void setCursiveFontFamily(java.lang.String arg0) 
@@ -888,9 +888,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getCursiveFontFamily16147)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getCursiveFontFamily16147)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getCursiveFontFamily16147)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getCursiveFontFamily16147)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFantasyFontFamily16148;
 		public virtual void setFantasyFontFamily(java.lang.String arg0) 
@@ -917,9 +917,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getFantasyFontFamily16149)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getFantasyFontFamily16149)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFantasyFontFamily16149)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFantasyFontFamily16149)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setMinimumFontSize16150;
 		public virtual void setMinimumFontSize(int arg0) 
@@ -1317,9 +1317,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getPluginState16180)) as android.webkit.WebSettings.PluginState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.PluginState>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getPluginState16180)) as android.webkit.WebSettings.PluginState;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginState16180)) as android.webkit.WebSettings.PluginState;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebSettings.PluginState>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginState16180)) as android.webkit.WebSettings.PluginState;
 		}
 		public new global::java.lang.String PluginsPath
 		{
@@ -1337,9 +1337,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getPluginsPath16181)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getPluginsPath16181)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginsPath16181)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginsPath16181)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setJavaScriptCanOpenWindowsAutomatically16182;
 		public virtual void setJavaScriptCanOpenWindowsAutomatically(bool arg0) 
@@ -1395,9 +1395,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getDefaultTextEncodingName16185)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getDefaultTextEncodingName16185)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultTextEncodingName16185)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultTextEncodingName16185)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUserAgentString16186;
 		public virtual void setUserAgentString(java.lang.String arg0) 
@@ -1424,9 +1424,9 @@ namespace android.webkit
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getUserAgentString16187)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebSettings._getUserAgentString16187)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUserAgentString16187)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUserAgentString16187)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setNeedInitialFocus16188;
 		public virtual void setNeedInitialFocus(bool arg0) 

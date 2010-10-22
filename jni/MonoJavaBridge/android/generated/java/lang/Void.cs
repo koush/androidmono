@@ -17,7 +17,7 @@ namespace java.lang
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Void.staticClass, _TYPE20818)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.GetStaticObjectField(global::java.lang.Void.staticClass, _TYPE20818)) as java.lang.Class;
 			}
 		}
 		private static void InitJNI()

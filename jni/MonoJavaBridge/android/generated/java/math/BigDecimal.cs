@@ -43,9 +43,9 @@ namespace java.math
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.math.BigDecimal._toString21048)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.math.BigDecimal._toString21048)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.BigDecimal.staticClass, global::java.math.BigDecimal._toString21048)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.BigDecimal.staticClass, global::java.math.BigDecimal._toString21048)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21049;
 		public override int hashCode() 
@@ -493,18 +493,18 @@ namespace java.math
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.math.BigDecimal._toEngineeringString21099)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.math.BigDecimal._toEngineeringString21099)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.BigDecimal.staticClass, global::java.math.BigDecimal._toEngineeringString21099)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.BigDecimal.staticClass, global::java.math.BigDecimal._toEngineeringString21099)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toPlainString21100;
 		public virtual global::java.lang.String toPlainString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.math.BigDecimal._toPlainString21100)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.math.BigDecimal._toPlainString21100)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.BigDecimal.staticClass, global::java.math.BigDecimal._toPlainString21100)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.BigDecimal.staticClass, global::java.math.BigDecimal._toPlainString21100)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toBigIntegerExact21101;
 		public virtual global::java.math.BigInteger toBigIntegerExact() 

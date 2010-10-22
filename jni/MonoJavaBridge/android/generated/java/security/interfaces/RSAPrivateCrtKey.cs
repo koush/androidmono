@@ -99,18 +99,18 @@ namespace java.security.interfaces
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_._getAlgorithm23829)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_._getAlgorithm23829)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_.staticClass, global::java.security.interfaces.RSAPrivateCrtKey_._getAlgorithm23829)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_.staticClass, global::java.security.interfaces.RSAPrivateCrtKey_._getAlgorithm23829)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat23830;
 		 global::java.lang.String java.security.Key.getFormat() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_._getFormat23830)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_._getFormat23830)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_.staticClass, global::java.security.interfaces.RSAPrivateCrtKey_._getFormat23830)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPrivateCrtKey_.staticClass, global::java.security.interfaces.RSAPrivateCrtKey_._getFormat23830)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getModulus23831;
 		 global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus() 

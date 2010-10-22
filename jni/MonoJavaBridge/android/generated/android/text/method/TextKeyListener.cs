@@ -32,7 +32,7 @@ namespace android.text.method
 			public static global::android.text.method.TextKeyListener.Capitalize valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.TextKeyListener.Capitalize.staticClass, global::android.text.method.TextKeyListener.Capitalize._valueOf13334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.method.TextKeyListener.Capitalize;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.method.TextKeyListener.Capitalize>(@__env.CallStaticObjectMethod(android.text.method.TextKeyListener.Capitalize.staticClass, global::android.text.method.TextKeyListener.Capitalize._valueOf13334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.method.TextKeyListener.Capitalize;
 			}
 			internal static global::MonoJavaBridge.FieldId _CHARACTERS13335;
 			public static global::android.text.method.TextKeyListener.Capitalize CHARACTERS
@@ -40,7 +40,7 @@ namespace android.text.method
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _CHARACTERS13335)) as android.text.method.TextKeyListener.Capitalize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.method.TextKeyListener.Capitalize>(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _CHARACTERS13335)) as android.text.method.TextKeyListener.Capitalize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NONE13336;
@@ -49,7 +49,7 @@ namespace android.text.method
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _NONE13336)) as android.text.method.TextKeyListener.Capitalize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.method.TextKeyListener.Capitalize>(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _NONE13336)) as android.text.method.TextKeyListener.Capitalize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SENTENCES13337;
@@ -58,7 +58,7 @@ namespace android.text.method
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _SENTENCES13337)) as android.text.method.TextKeyListener.Capitalize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.method.TextKeyListener.Capitalize>(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _SENTENCES13337)) as android.text.method.TextKeyListener.Capitalize;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _WORDS13338;
@@ -67,7 +67,7 @@ namespace android.text.method
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _WORDS13338)) as android.text.method.TextKeyListener.Capitalize;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.method.TextKeyListener.Capitalize>(@__env.GetStaticObjectField(global::android.text.method.TextKeyListener.Capitalize.staticClass, _WORDS13338)) as android.text.method.TextKeyListener.Capitalize;
 				}
 			}
 			private static void InitJNI()

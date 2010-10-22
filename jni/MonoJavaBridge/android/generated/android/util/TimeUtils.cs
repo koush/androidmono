@@ -28,7 +28,7 @@ namespace android.util
 		public static global::java.lang.String getTimeZoneDatabaseVersion() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZoneDatabaseVersion13823)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZoneDatabaseVersion13823)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TimeUtils13824;
 		public TimeUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

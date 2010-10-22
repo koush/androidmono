@@ -54,9 +54,9 @@ namespace java.security.cert
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL._getIssuerX500Principal23594)) as javax.security.auth.x500.X500Principal;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.x500.X500Principal>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL._getIssuerX500Principal23594)) as javax.security.auth.x500.X500Principal;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL.staticClass, global::java.security.cert.X509CRL._getIssuerX500Principal23594)) as javax.security.auth.x500.X500Principal;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.x500.X500Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL.staticClass, global::java.security.cert.X509CRL._getIssuerX500Principal23594)) as javax.security.auth.x500.X500Principal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSigAlgName23595;
 		public abstract global::java.lang.String getSigAlgName();
@@ -226,18 +226,18 @@ namespace java.security.cert
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_._getSigAlgName23615)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_._getSigAlgName23615)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgName23615)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgName23615)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSigAlgOID23616;
 		public override global::java.lang.String getSigAlgOID() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_._getSigAlgOID23616)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_._getSigAlgOID23616)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgOID23616)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgOID23616)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSigAlgParams23617;
 		public override byte[] getSigAlgParams() 
@@ -298,9 +298,9 @@ namespace java.security.cert
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_._toString23623)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_._toString23623)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._toString23623)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._toString23623)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isRevoked23624;
 		public override bool isRevoked(java.security.cert.Certificate arg0) 

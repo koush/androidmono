@@ -55,7 +55,7 @@ namespace android.webkit
 		public static global::android.webkit.WebIconDatabase getInstance() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._getInstance16073)) as android.webkit.WebIconDatabase;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebIconDatabase>(@__env.CallStaticObjectMethod(android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._getInstance16073)) as android.webkit.WebIconDatabase;
 		}
 		internal static global::MonoJavaBridge.MethodId _close16074;
 		public void close() 

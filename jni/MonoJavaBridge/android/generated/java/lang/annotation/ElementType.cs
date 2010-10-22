@@ -21,7 +21,7 @@ namespace java.lang.annotation
 		public static global::java.lang.annotation.ElementType valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.annotation.ElementType.staticClass, global::java.lang.annotation.ElementType._valueOf20834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.ElementType;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.CallStaticObjectMethod(java.lang.annotation.ElementType.staticClass, global::java.lang.annotation.ElementType._valueOf20834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.ElementType;
 		}
 		internal static global::MonoJavaBridge.FieldId _TYPE20835;
 		public static global::java.lang.annotation.ElementType TYPE
@@ -29,7 +29,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _TYPE20835)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _TYPE20835)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _FIELD20836;
@@ -38,7 +38,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _FIELD20836)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _FIELD20836)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _METHOD20837;
@@ -47,7 +47,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _METHOD20837)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _METHOD20837)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _PARAMETER20838;
@@ -56,7 +56,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _PARAMETER20838)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _PARAMETER20838)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CONSTRUCTOR20839;
@@ -65,7 +65,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _CONSTRUCTOR20839)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _CONSTRUCTOR20839)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _LOCAL_VARIABLE20840;
@@ -74,7 +74,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _LOCAL_VARIABLE20840)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _LOCAL_VARIABLE20840)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _ANNOTATION_TYPE20841;
@@ -83,7 +83,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _ANNOTATION_TYPE20841)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _ANNOTATION_TYPE20841)) as java.lang.annotation.ElementType;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _PACKAGE20842;
@@ -92,7 +92,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _PACKAGE20842)) as java.lang.annotation.ElementType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.GetStaticObjectField(global::java.lang.annotation.ElementType.staticClass, _PACKAGE20842)) as java.lang.annotation.ElementType;
 			}
 		}
 		private static void InitJNI()

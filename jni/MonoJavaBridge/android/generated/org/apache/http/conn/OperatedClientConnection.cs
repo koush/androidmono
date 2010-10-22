@@ -54,9 +54,9 @@ namespace org.apache.http.conn
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.OperatedClientConnection_._getTargetHost32034)) as org.apache.http.HttpHost;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.OperatedClientConnection_._getTargetHost32034)) as org.apache.http.HttpHost;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.OperatedClientConnection_.staticClass, global::org.apache.http.conn.OperatedClientConnection_._getTargetHost32034)) as org.apache.http.HttpHost;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.OperatedClientConnection_.staticClass, global::org.apache.http.conn.OperatedClientConnection_._getTargetHost32034)) as org.apache.http.HttpHost;
 		}
 		internal static global::MonoJavaBridge.MethodId _opening32035;
 		 void org.apache.http.conn.OperatedClientConnection.opening(java.net.Socket arg0, org.apache.http.HttpHost arg1) 

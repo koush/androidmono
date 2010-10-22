@@ -24,16 +24,16 @@ namespace java.lang
 		public static global::java.lang.String toString(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._toString20025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._toString20025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20026;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Float._toString20026)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Float._toString20026)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Float.staticClass, global::java.lang.Float._toString20026)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Float.staticClass, global::java.lang.Float._toString20026)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20027;
 		public sealed override int hashCode() 
@@ -84,19 +84,19 @@ namespace java.lang
 		public static global::java.lang.String toHexString(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._toHexString20033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._toHexString20033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20034;
 		public static global::java.lang.Float valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._valueOf20034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._valueOf20034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20035;
 		public static global::java.lang.Float valueOf(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._valueOf20035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Float>(@__env.CallStaticObjectMethod(java.lang.Float.staticClass, global::java.lang.Float._valueOf20035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Float;
 		}
 		internal static global::MonoJavaBridge.MethodId _compare20036;
 		public static int compare(float arg0, float arg1) 

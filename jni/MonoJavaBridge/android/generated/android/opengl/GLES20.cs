@@ -195,7 +195,7 @@ namespace android.opengl
 		public static global::java.lang.String glGetString(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.opengl.GLES20.staticClass, global::android.opengl.GLES20._glGetString8920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.opengl.GLES20.staticClass, global::android.opengl.GLES20._glGetString8920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _glHint8921;
 		public static void glHint(int arg0, int arg1) 
@@ -669,7 +669,7 @@ namespace android.opengl
 		public static global::java.lang.String glGetProgramInfoLog(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.opengl.GLES20.staticClass, global::android.opengl.GLES20._glGetProgramInfoLog8999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.opengl.GLES20.staticClass, global::android.opengl.GLES20._glGetProgramInfoLog8999, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _glGetRenderbufferParameteriv9000;
 		public static void glGetRenderbufferParameteriv(int arg0, int arg1, int[] arg2, int arg3) 
@@ -699,7 +699,7 @@ namespace android.opengl
 		public static global::java.lang.String glGetShaderInfoLog(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.opengl.GLES20.staticClass, global::android.opengl.GLES20._glGetShaderInfoLog9004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.opengl.GLES20.staticClass, global::android.opengl.GLES20._glGetShaderInfoLog9004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _glGetShaderPrecisionFormat9005;
 		public static void glGetShaderPrecisionFormat(int arg0, int arg1, java.nio.IntBuffer arg2, java.nio.IntBuffer arg3) 

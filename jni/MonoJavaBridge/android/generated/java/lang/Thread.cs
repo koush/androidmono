@@ -32,7 +32,7 @@ namespace java.lang
 			public static global::java.lang.Thread.State valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._valueOf20694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread.State;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.CallStaticObjectMethod(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._valueOf20694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Thread.State;
 			}
 			internal static global::MonoJavaBridge.FieldId _NEW20695;
 			public static global::java.lang.Thread.State NEW
@@ -40,7 +40,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _NEW20695)) as java.lang.Thread.State;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _NEW20695)) as java.lang.Thread.State;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RUNNABLE20696;
@@ -49,7 +49,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _RUNNABLE20696)) as java.lang.Thread.State;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _RUNNABLE20696)) as java.lang.Thread.State;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BLOCKED20697;
@@ -58,7 +58,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _BLOCKED20697)) as java.lang.Thread.State;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _BLOCKED20697)) as java.lang.Thread.State;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _WAITING20698;
@@ -67,7 +67,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _WAITING20698)) as java.lang.Thread.State;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _WAITING20698)) as java.lang.Thread.State;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TIMED_WAITING20699;
@@ -76,7 +76,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _TIMED_WAITING20699)) as java.lang.Thread.State;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _TIMED_WAITING20699)) as java.lang.Thread.State;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TERMINATED20700;
@@ -85,7 +85,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _TERMINATED20700)) as java.lang.Thread.State;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.GetStaticObjectField(global::java.lang.Thread.State.staticClass, _TERMINATED20700)) as java.lang.Thread.State;
 				}
 			}
 			private static void InitJNI()
@@ -149,9 +149,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Thread._toString20703)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Thread._toString20703)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString20703)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString20703)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isInterrupted20704;
 		public virtual bool isInterrupted() 
@@ -184,9 +184,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Thread._getName20706)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Thread._getName20706)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Thread.staticClass, global::java.lang.Thread._getName20706)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Thread.staticClass, global::java.lang.Thread._getName20706)) as java.lang.String;
 		}
 		public new global::java.lang.ThreadGroup ThreadGroup
 		{
@@ -504,9 +504,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Thread._getState20739)) as java.lang.Thread.State;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Thread._getState20739)) as java.lang.Thread.State;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Thread.staticClass, global::java.lang.Thread._getState20739)) as java.lang.Thread.State;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Thread.State>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Thread.staticClass, global::java.lang.Thread._getState20739)) as java.lang.Thread.State;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultUncaughtExceptionHandler20740;
 		public static void setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler arg0) 

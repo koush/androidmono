@@ -41,9 +41,9 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ContextThemeWrapper._getTheme13944)) as android.content.res.Resources.Theme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.res.Resources.Theme>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ContextThemeWrapper._getTheme13944)) as android.content.res.Resources.Theme;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._getTheme13944)) as android.content.res.Resources.Theme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.res.Resources.Theme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ContextThemeWrapper.staticClass, global::android.view.ContextThemeWrapper._getTheme13944)) as android.content.res.Resources.Theme;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemService13945;
 		public override global::java.lang.Object getSystemService(java.lang.String arg0) 

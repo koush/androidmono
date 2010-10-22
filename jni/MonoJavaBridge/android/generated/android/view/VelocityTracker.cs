@@ -24,7 +24,7 @@ namespace android.view
 		public static global::android.view.VelocityTracker obtain() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._obtain14541)) as android.view.VelocityTracker;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.VelocityTracker>(@__env.CallStaticObjectMethod(android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._obtain14541)) as android.view.VelocityTracker;
 		}
 		internal static global::MonoJavaBridge.MethodId _recycle14542;
 		public void recycle() 

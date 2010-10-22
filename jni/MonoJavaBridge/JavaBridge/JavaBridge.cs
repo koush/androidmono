@@ -75,18 +75,18 @@ namespace MonoJavaBridge
             }
             return null;
         }
-
-        public static T WrapJavaObjectSealedClass<T>(JniHandle handle) where T: class
+  
+        // Convert a JavaObject or JavaException that is gauranteed to be a "final" class.
+        // This does not introspect on the actual type of the returned value and search for a better match.
+        public static T WrapJavaObjectSealedClass<T>(JniLocalHandle handle) where T: class, IJavaObject
         {
-			return WrapJavaObjectSealedClass(handle, typeof(T)) as T;
-        }
-		
-        public static object WrapJavaObjectSealedClass(JniHandle handle, Type type)
-        {
-			if (JniHandle.IsNull(handle))
-				return null;
-			Wrapper wrapper = GetWrapper(type.FullName);
-			return wrapper.Constructor.Invoke(null);
+            if (JniHandle.IsNull(handle))
+                return null;
+            Wrapper wrapper = GetWrapper(typeof(T).FullName);
+            var env = JNIEnv.ThreadEnv;
+            var ret = wrapper.Constructor.Invoke(new object[] { env }) as T;
+            ret.Init(env, handle);
+            return ret;
         }
 		
 		private static Wrapper GetWrapper(string className)

@@ -16,9 +16,9 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._toString19499)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._toString19499)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._toString19499)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._toString19499)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _append19500;
 		public virtual global::java.io.StringWriter append(java.lang.CharSequence arg0, int arg1, int arg2) 
@@ -121,9 +121,9 @@ namespace java.io
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._getBuffer19509)) as java.lang.StringBuffer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.StringWriter._getBuffer19509)) as java.lang.StringBuffer;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._getBuffer19509)) as java.lang.StringBuffer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StringWriter.staticClass, global::java.io.StringWriter._getBuffer19509)) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _StringWriter19510;
 		public StringWriter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

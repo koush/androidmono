@@ -21,7 +21,7 @@ namespace java.lang.annotation
 		public static global::java.lang.annotation.RetentionPolicy valueOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.annotation.RetentionPolicy.staticClass, global::java.lang.annotation.RetentionPolicy._valueOf20856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.RetentionPolicy;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.CallStaticObjectMethod(java.lang.annotation.RetentionPolicy.staticClass, global::java.lang.annotation.RetentionPolicy._valueOf20856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.RetentionPolicy;
 		}
 		internal static global::MonoJavaBridge.FieldId _SOURCE20857;
 		public static global::java.lang.annotation.RetentionPolicy SOURCE
@@ -29,7 +29,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _SOURCE20857)) as java.lang.annotation.RetentionPolicy;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _SOURCE20857)) as java.lang.annotation.RetentionPolicy;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _CLASS20858;
@@ -38,7 +38,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _CLASS20858)) as java.lang.annotation.RetentionPolicy;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _CLASS20858)) as java.lang.annotation.RetentionPolicy;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _RUNTIME20859;
@@ -47,7 +47,7 @@ namespace java.lang.annotation
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _RUNTIME20859)) as java.lang.annotation.RetentionPolicy;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.GetStaticObjectField(global::java.lang.annotation.RetentionPolicy.staticClass, _RUNTIME20859)) as java.lang.annotation.RetentionPolicy;
 			}
 		}
 		private static void InitJNI()

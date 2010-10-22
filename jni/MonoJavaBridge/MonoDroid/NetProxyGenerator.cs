@@ -410,8 +410,10 @@ namespace MonoDroid
                 ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", typeName.Substring(0, typeName.Length - 2));
             else if (type.IsInterface)
                 ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::{0}>", typeName);
-            else
+            else if (!type.IsSealed)
                 ret.Append("return global::MonoJavaBridge.JavaBridge.WrapJavaObject");
+            else
+                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<{0}>", typeName);
             ret.Append("(@__env.Get{0}ObjectField({1}))");
             ret.AppendFormat(" as {0};", typeName);
             
@@ -624,8 +626,10 @@ namespace MonoDroid
                 ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<{0}>", method.Return.Substring(0, method.Return.Length - 2));
             else if (method.ReturnType.IsInterface)
                 ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::{0}>", method.Return);
-            else
+            else if (!type.IsSealed)
                 ret.Append("return global::MonoJavaBridge.JavaBridge.WrapJavaObject");
+            else
+                ret.AppendFormat("return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<{0}>", typeName);
             //ret.AppendFormat("(typeof({0}), ", method.Return);            
             ret.Append("(@__env.Call{0}ObjectMethod({1}))");
             ret.AppendFormat(" as {0};", method.Return);

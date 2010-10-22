@@ -34,9 +34,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._directory20300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._directory20300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._directory20300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._directory20300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _directory20301;
 		public global::java.io.File directory() 
@@ -52,9 +52,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._command20302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._command20302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._command20302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._command20302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _command20303;
 		public global::java.util.List command() 
@@ -70,9 +70,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._command20304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._command20304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._command20304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._command20304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _redirectErrorStream20305;
 		public bool redirectErrorStream() 
@@ -88,9 +88,9 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._redirectErrorStream20306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder._redirectErrorStream20306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._redirectErrorStream20306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.ProcessBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ProcessBuilder.staticClass, global::java.lang.ProcessBuilder._redirectErrorStream20306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.ProcessBuilder;
 		}
 		internal static global::MonoJavaBridge.MethodId _ProcessBuilder20307;
 		public ProcessBuilder(java.util.List arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

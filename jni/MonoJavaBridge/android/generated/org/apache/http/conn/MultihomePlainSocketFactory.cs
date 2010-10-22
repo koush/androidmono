@@ -49,7 +49,7 @@ namespace org.apache.http.conn
 		public static global::org.apache.http.conn.MultihomePlainSocketFactory getSocketFactory() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.conn.MultihomePlainSocketFactory.staticClass, global::org.apache.http.conn.MultihomePlainSocketFactory._getSocketFactory32028)) as org.apache.http.conn.MultihomePlainSocketFactory;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.MultihomePlainSocketFactory>(@__env.CallStaticObjectMethod(org.apache.http.conn.MultihomePlainSocketFactory.staticClass, global::org.apache.http.conn.MultihomePlainSocketFactory._getSocketFactory32028)) as org.apache.http.conn.MultihomePlainSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _connectSocket32029;
 		public global::java.net.Socket connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5) 

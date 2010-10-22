@@ -32,7 +32,7 @@ namespace android.graphics
 			public static global::android.graphics.Region.Op valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._valueOf5730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region.Op;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.CallStaticObjectMethod(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._valueOf5730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Region.Op;
 			}
 			internal static global::MonoJavaBridge.FieldId _DIFFERENCE5731;
 			public static global::android.graphics.Region.Op DIFFERENCE
@@ -40,7 +40,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _DIFFERENCE5731)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _DIFFERENCE5731)) as android.graphics.Region.Op;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _INTERSECT5732;
@@ -49,7 +49,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _INTERSECT5732)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _INTERSECT5732)) as android.graphics.Region.Op;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _REPLACE5733;
@@ -58,7 +58,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REPLACE5733)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REPLACE5733)) as android.graphics.Region.Op;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _REVERSE_DIFFERENCE5734;
@@ -67,7 +67,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REVERSE_DIFFERENCE5734)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _REVERSE_DIFFERENCE5734)) as android.graphics.Region.Op;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _UNION5735;
@@ -76,7 +76,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _UNION5735)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _UNION5735)) as android.graphics.Region.Op;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _XOR5736;
@@ -85,7 +85,7 @@ namespace android.graphics
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _XOR5736)) as android.graphics.Region.Op;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Region.Op>(@__env.GetStaticObjectField(global::android.graphics.Region.Op.staticClass, _XOR5736)) as android.graphics.Region.Op;
 				}
 			}
 			private static void InitJNI()
@@ -204,9 +204,9 @@ namespace android.graphics
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Region._getBounds5747)) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Rect>(@__env.CallObjectMethod(this.JvmHandle, global::android.graphics.Region._getBounds5747)) as android.graphics.Rect;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Region.staticClass, global::android.graphics.Region._getBounds5747)) as android.graphics.Rect;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Rect>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Region.staticClass, global::android.graphics.Region._getBounds5747)) as android.graphics.Rect;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBounds5748;
 		public virtual bool getBounds(android.graphics.Rect arg0) 

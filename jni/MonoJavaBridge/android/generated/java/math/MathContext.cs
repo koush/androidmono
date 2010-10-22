@@ -25,9 +25,9 @@ namespace java.math
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.math.MathContext._toString21188)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.math.MathContext._toString21188)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._toString21188)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._toString21188)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21189;
 		public sealed override int hashCode() 
@@ -66,9 +66,9 @@ namespace java.math
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.math.MathContext._getRoundingMode21191)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallObjectMethod(this.JvmHandle, global::java.math.MathContext._getRoundingMode21191)) as java.math.RoundingMode;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._getRoundingMode21191)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.math.MathContext.staticClass, global::java.math.MathContext._getRoundingMode21191)) as java.math.RoundingMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _MathContext21192;
 		public MathContext(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
@@ -97,7 +97,7 @@ namespace java.math
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _UNLIMITED21195)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _UNLIMITED21195)) as java.math.MathContext;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DECIMAL3221196;
@@ -106,7 +106,7 @@ namespace java.math
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL3221196)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL3221196)) as java.math.MathContext;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DECIMAL6421197;
@@ -115,7 +115,7 @@ namespace java.math
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL6421197)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL6421197)) as java.math.MathContext;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DECIMAL12821198;
@@ -124,7 +124,7 @@ namespace java.math
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL12821198)) as java.math.MathContext;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.MathContext>(@__env.GetStaticObjectField(global::java.math.MathContext.staticClass, _DECIMAL12821198)) as java.math.MathContext;
 			}
 		}
 		private static void InitJNI()

@@ -52,7 +52,7 @@ namespace java.security
 		public static global::java.security.AccessControlContext getContext() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.AccessController.staticClass, global::java.security.AccessController._getContext22723)) as java.security.AccessControlContext;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.AccessControlContext>(@__env.CallStaticObjectMethod(java.security.AccessController.staticClass, global::java.security.AccessController._getContext22723)) as java.security.AccessControlContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _doPrivilegedWithCombiner22724;
 		public static global::java.lang.Object doPrivilegedWithCombiner(java.security.PrivilegedAction arg0) 

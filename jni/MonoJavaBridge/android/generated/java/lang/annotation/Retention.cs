@@ -22,9 +22,9 @@ namespace java.lang.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_._value20850)) as java.lang.annotation.RetentionPolicy;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_._value20850)) as java.lang.annotation.RetentionPolicy;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._value20850)) as java.lang.annotation.RetentionPolicy;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._value20850)) as java.lang.annotation.RetentionPolicy;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals20851;
 		 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
@@ -40,9 +40,9 @@ namespace java.lang.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_._toString20852)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_._toString20852)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._toString20852)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._toString20852)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20853;
 		 int java.lang.annotation.Annotation.hashCode() 
@@ -58,9 +58,9 @@ namespace java.lang.annotation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_._annotationType20854)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_._annotationType20854)) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._annotationType20854)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Retention_.staticClass, global::java.lang.annotation.Retention_._annotationType20854)) as java.lang.Class;
 		}
 		private static void InitJNI()
 		{

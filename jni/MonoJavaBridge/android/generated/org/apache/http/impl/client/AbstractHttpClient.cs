@@ -176,9 +176,9 @@ namespace org.apache.http.impl.client
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient._getAuthSchemes32682)) as org.apache.http.auth.AuthSchemeRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.auth.AuthSchemeRegistry>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient._getAuthSchemes32682)) as org.apache.http.auth.AuthSchemeRegistry;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._getAuthSchemes32682)) as org.apache.http.auth.AuthSchemeRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.auth.AuthSchemeRegistry>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._getAuthSchemes32682)) as org.apache.http.auth.AuthSchemeRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAuthSchemes32683;
 		public virtual void setAuthSchemes(org.apache.http.auth.AuthSchemeRegistry arg0) 
@@ -194,9 +194,9 @@ namespace org.apache.http.impl.client
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient._getCookieSpecs32684)) as org.apache.http.cookie.CookieSpecRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.cookie.CookieSpecRegistry>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient._getCookieSpecs32684)) as org.apache.http.cookie.CookieSpecRegistry;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._getCookieSpecs32684)) as org.apache.http.cookie.CookieSpecRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.cookie.CookieSpecRegistry>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._getCookieSpecs32684)) as org.apache.http.cookie.CookieSpecRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCookieSpecs32685;
 		public virtual void setCookieSpecs(org.apache.http.cookie.CookieSpecRegistry arg0) 
@@ -374,9 +374,9 @@ namespace org.apache.http.impl.client
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient._getHttpProcessor32704)) as org.apache.http.protocol.BasicHttpProcessor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.protocol.BasicHttpProcessor>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient._getHttpProcessor32704)) as org.apache.http.protocol.BasicHttpProcessor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._getHttpProcessor32704)) as org.apache.http.protocol.BasicHttpProcessor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.protocol.BasicHttpProcessor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient.staticClass, global::org.apache.http.impl.client.AbstractHttpClient._getHttpProcessor32704)) as org.apache.http.protocol.BasicHttpProcessor;
 		}
 		internal static global::MonoJavaBridge.MethodId _addResponseInterceptor32705;
 		public virtual void addResponseInterceptor(org.apache.http.HttpResponseInterceptor arg0) 
@@ -639,18 +639,18 @@ namespace org.apache.http.impl.client
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_._createAuthSchemeRegistry32724)) as org.apache.http.auth.AuthSchemeRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.auth.AuthSchemeRegistry>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_._createAuthSchemeRegistry32724)) as org.apache.http.auth.AuthSchemeRegistry;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createAuthSchemeRegistry32724)) as org.apache.http.auth.AuthSchemeRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.auth.AuthSchemeRegistry>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createAuthSchemeRegistry32724)) as org.apache.http.auth.AuthSchemeRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _createCookieSpecRegistry32725;
 		protected override global::org.apache.http.cookie.CookieSpecRegistry createCookieSpecRegistry() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_._createCookieSpecRegistry32725)) as org.apache.http.cookie.CookieSpecRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.cookie.CookieSpecRegistry>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_._createCookieSpecRegistry32725)) as org.apache.http.cookie.CookieSpecRegistry;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createCookieSpecRegistry32725)) as org.apache.http.cookie.CookieSpecRegistry;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.cookie.CookieSpecRegistry>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createCookieSpecRegistry32725)) as org.apache.http.cookie.CookieSpecRegistry;
 		}
 		internal static global::MonoJavaBridge.MethodId _createConnectionReuseStrategy32726;
 		protected override global::org.apache.http.ConnectionReuseStrategy createConnectionReuseStrategy() 
@@ -675,9 +675,9 @@ namespace org.apache.http.impl.client
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_._createHttpProcessor32728)) as org.apache.http.protocol.BasicHttpProcessor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.protocol.BasicHttpProcessor>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_._createHttpProcessor32728)) as org.apache.http.protocol.BasicHttpProcessor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createHttpProcessor32728)) as org.apache.http.protocol.BasicHttpProcessor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.protocol.BasicHttpProcessor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.AbstractHttpClient_.staticClass, global::org.apache.http.impl.client.AbstractHttpClient_._createHttpProcessor32728)) as org.apache.http.protocol.BasicHttpProcessor;
 		}
 		internal static global::MonoJavaBridge.MethodId _createHttpRequestRetryHandler32729;
 		protected override global::org.apache.http.client.HttpRequestRetryHandler createHttpRequestRetryHandler() 

@@ -59,9 +59,9 @@ namespace android.location
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getBestProvider6910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getBestProvider6910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getBestProvider6910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getBestProvider6910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _requestLocationUpdates6911;
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.location.LocationListener arg3) 
@@ -257,9 +257,9 @@ namespace android.location
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getGpsStatus6932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.GpsStatus;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.location.GpsStatus>(@__env.CallObjectMethod(this.JvmHandle, global::android.location.LocationManager._getGpsStatus6932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.GpsStatus;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getGpsStatus6932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.GpsStatus;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.location.GpsStatus>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getGpsStatus6932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.location.GpsStatus;
 		}
 		internal static global::MonoJavaBridge.MethodId _sendExtraCommand6933;
 		public virtual bool sendExtraCommand(java.lang.String arg0, java.lang.String arg1, android.os.Bundle arg2) 

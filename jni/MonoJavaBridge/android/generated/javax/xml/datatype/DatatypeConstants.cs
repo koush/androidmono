@@ -27,9 +27,9 @@ namespace javax.xml.datatype
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field._toString30520)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field._toString30520)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, global::javax.xml.datatype.DatatypeConstants.Field._toString30520)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.DatatypeConstants.Field.staticClass, global::javax.xml.datatype.DatatypeConstants.Field._toString30520)) as java.lang.String;
 			}
 			public new int Id
 			{
@@ -180,7 +180,7 @@ namespace javax.xml.datatype
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _YEARS30539)) as javax.xml.datatype.DatatypeConstants.Field;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.xml.datatype.DatatypeConstants.Field>(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _YEARS30539)) as javax.xml.datatype.DatatypeConstants.Field;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _MONTHS30540;
@@ -189,7 +189,7 @@ namespace javax.xml.datatype
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _MONTHS30540)) as javax.xml.datatype.DatatypeConstants.Field;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.xml.datatype.DatatypeConstants.Field>(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _MONTHS30540)) as javax.xml.datatype.DatatypeConstants.Field;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DAYS30541;
@@ -198,7 +198,7 @@ namespace javax.xml.datatype
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _DAYS30541)) as javax.xml.datatype.DatatypeConstants.Field;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.xml.datatype.DatatypeConstants.Field>(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _DAYS30541)) as javax.xml.datatype.DatatypeConstants.Field;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _HOURS30542;
@@ -207,7 +207,7 @@ namespace javax.xml.datatype
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _HOURS30542)) as javax.xml.datatype.DatatypeConstants.Field;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.xml.datatype.DatatypeConstants.Field>(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _HOURS30542)) as javax.xml.datatype.DatatypeConstants.Field;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _MINUTES30543;
@@ -216,7 +216,7 @@ namespace javax.xml.datatype
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _MINUTES30543)) as javax.xml.datatype.DatatypeConstants.Field;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.xml.datatype.DatatypeConstants.Field>(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _MINUTES30543)) as javax.xml.datatype.DatatypeConstants.Field;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _SECONDS30544;
@@ -225,7 +225,7 @@ namespace javax.xml.datatype
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _SECONDS30544)) as javax.xml.datatype.DatatypeConstants.Field;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.xml.datatype.DatatypeConstants.Field>(@__env.GetStaticObjectField(global::javax.xml.datatype.DatatypeConstants.staticClass, _SECONDS30544)) as javax.xml.datatype.DatatypeConstants.Field;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _DATETIME30545;

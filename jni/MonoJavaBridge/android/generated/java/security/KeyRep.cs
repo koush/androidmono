@@ -32,7 +32,7 @@ namespace java.security
 			public static global::java.security.KeyRep.Type valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.KeyRep.Type.staticClass, global::java.security.KeyRep.Type._valueOf22940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyRep.Type;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyRep.Type>(@__env.CallStaticObjectMethod(java.security.KeyRep.Type.staticClass, global::java.security.KeyRep.Type._valueOf22940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyRep.Type;
 			}
 			internal static global::MonoJavaBridge.FieldId _SECRET22941;
 			public static global::java.security.KeyRep.Type SECRET
@@ -40,7 +40,7 @@ namespace java.security
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _SECRET22941)) as java.security.KeyRep.Type;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyRep.Type>(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _SECRET22941)) as java.security.KeyRep.Type;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _PUBLIC22942;
@@ -49,7 +49,7 @@ namespace java.security
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _PUBLIC22942)) as java.security.KeyRep.Type;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyRep.Type>(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _PUBLIC22942)) as java.security.KeyRep.Type;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _PRIVATE22943;
@@ -58,7 +58,7 @@ namespace java.security
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _PRIVATE22943)) as java.security.KeyRep.Type;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyRep.Type>(@__env.GetStaticObjectField(global::java.security.KeyRep.Type.staticClass, _PRIVATE22943)) as java.security.KeyRep.Type;
 				}
 			}
 			private static void InitJNI()

@@ -24,18 +24,18 @@ namespace org.w3c.dom
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_._getTypeName34750)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_._getTypeName34750)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_.staticClass, global::org.w3c.dom.TypeInfo_._getTypeName34750)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_.staticClass, global::org.w3c.dom.TypeInfo_._getTypeName34750)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeNamespace34751;
 		 global::java.lang.String org.w3c.dom.TypeInfo.getTypeNamespace() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_._getTypeNamespace34751)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_._getTypeNamespace34751)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_.staticClass, global::org.w3c.dom.TypeInfo_._getTypeNamespace34751)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_.staticClass, global::org.w3c.dom.TypeInfo_._getTypeNamespace34751)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDerivedFrom34752;
 		 bool org.w3c.dom.TypeInfo.isDerivedFrom(java.lang.String arg0, java.lang.String arg1, int arg2) 

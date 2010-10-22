@@ -80,7 +80,7 @@ namespace android.os
 		public static global::java.lang.String getExternalStorageState() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getExternalStorageState9771)) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.os.Environment.staticClass, global::android.os.Environment._getExternalStorageState9771)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Environment9772;
 		public Environment()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
@@ -95,7 +95,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_MUSIC9773)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_MUSIC9773)) as java.lang.String;
 			}
 			set
 			{
@@ -107,7 +107,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_PODCASTS9774)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_PODCASTS9774)) as java.lang.String;
 			}
 			set
 			{
@@ -119,7 +119,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_RINGTONES9775)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_RINGTONES9775)) as java.lang.String;
 			}
 			set
 			{
@@ -131,7 +131,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_ALARMS9776)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_ALARMS9776)) as java.lang.String;
 			}
 			set
 			{
@@ -143,7 +143,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_NOTIFICATIONS9777)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_NOTIFICATIONS9777)) as java.lang.String;
 			}
 			set
 			{
@@ -155,7 +155,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_PICTURES9778)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_PICTURES9778)) as java.lang.String;
 			}
 			set
 			{
@@ -167,7 +167,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_MOVIES9779)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_MOVIES9779)) as java.lang.String;
 			}
 			set
 			{
@@ -179,7 +179,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_DOWNLOADS9780)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_DOWNLOADS9780)) as java.lang.String;
 			}
 			set
 			{
@@ -191,7 +191,7 @@ namespace android.os
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_DCIM9781)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.os.Environment.staticClass, _DIRECTORY_DCIM9781)) as java.lang.String;
 			}
 			set
 			{

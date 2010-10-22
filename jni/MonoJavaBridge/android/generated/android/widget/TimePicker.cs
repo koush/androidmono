@@ -121,9 +121,9 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TimePicker._getCurrentHour18058)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TimePicker._getCurrentHour18058)) as java.lang.Integer;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getCurrentHour18058)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getCurrentHour18058)) as java.lang.Integer;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCurrentHour18059;
 		public virtual void setCurrentHour(java.lang.Integer arg0) 
@@ -159,9 +159,9 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TimePicker._getCurrentMinute18061)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.TimePicker._getCurrentMinute18061)) as java.lang.Integer;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getCurrentMinute18061)) as java.lang.Integer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Integer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getCurrentMinute18061)) as java.lang.Integer;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCurrentMinute18062;
 		public virtual void setCurrentMinute(java.lang.Integer arg0) 

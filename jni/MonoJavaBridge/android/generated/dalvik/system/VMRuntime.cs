@@ -22,7 +22,7 @@ namespace dalvik.system
 		public static global::dalvik.system.VMRuntime getRuntime() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._getRuntime18544)) as dalvik.system.VMRuntime;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<dalvik.system.VMRuntime>(@__env.CallStaticObjectMethod(dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._getRuntime18544)) as dalvik.system.VMRuntime;
 		}
 		public new float TargetHeapUtilization
 		{

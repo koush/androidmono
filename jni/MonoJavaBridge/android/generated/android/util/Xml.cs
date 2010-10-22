@@ -32,7 +32,7 @@ namespace android.util
 			public static global::android.util.Xml.Encoding valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._valueOf13891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.Xml.Encoding;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.CallStaticObjectMethod(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._valueOf13891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.Xml.Encoding;
 			}
 			internal static global::MonoJavaBridge.FieldId _ISO_8859_113892;
 			public static global::android.util.Xml.Encoding ISO_8859_1
@@ -40,7 +40,7 @@ namespace android.util
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _ISO_8859_113892)) as android.util.Xml.Encoding;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _ISO_8859_113892)) as android.util.Xml.Encoding;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _US_ASCII13893;
@@ -49,7 +49,7 @@ namespace android.util
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _US_ASCII13893)) as android.util.Xml.Encoding;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _US_ASCII13893)) as android.util.Xml.Encoding;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _UTF_1613894;
@@ -58,7 +58,7 @@ namespace android.util
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _UTF_1613894)) as android.util.Xml.Encoding;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _UTF_1613894)) as android.util.Xml.Encoding;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _UTF_813895;
@@ -67,7 +67,7 @@ namespace android.util
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _UTF_813895)) as android.util.Xml.Encoding;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.GetStaticObjectField(global::android.util.Xml.Encoding.staticClass, _UTF_813895)) as android.util.Xml.Encoding;
 				}
 			}
 			private static void InitJNI()
@@ -116,7 +116,7 @@ namespace android.util
 		public static global::android.util.Xml.Encoding findEncodingByName(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.Xml.staticClass, global::android.util.Xml._findEncodingByName13901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.Xml.Encoding;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.util.Xml.Encoding>(@__env.CallStaticObjectMethod(android.util.Xml.staticClass, global::android.util.Xml._findEncodingByName13901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.Xml.Encoding;
 		}
 		internal static global::MonoJavaBridge.MethodId _asAttributeSet13902;
 		public static global::android.util.AttributeSet asAttributeSet(org.xmlpull.v1.XmlPullParser arg0) 
@@ -137,7 +137,7 @@ namespace android.util
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.util.Xml.staticClass, _FEATURE_RELAXED13904)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::android.util.Xml.staticClass, _FEATURE_RELAXED13904)) as java.lang.String;
 			}
 			set
 			{

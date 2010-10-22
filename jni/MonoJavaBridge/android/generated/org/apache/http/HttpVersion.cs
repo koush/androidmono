@@ -40,7 +40,7 @@ namespace org.apache.http
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_0_931612)) as org.apache.http.HttpVersion;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpVersion>(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_0_931612)) as org.apache.http.HttpVersion;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _HTTP_1_031613;
@@ -49,7 +49,7 @@ namespace org.apache.http
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_1_031613)) as org.apache.http.HttpVersion;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpVersion>(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_1_031613)) as org.apache.http.HttpVersion;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _HTTP_1_131614;
@@ -58,7 +58,7 @@ namespace org.apache.http
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_1_131614)) as org.apache.http.HttpVersion;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpVersion>(@__env.GetStaticObjectField(global::org.apache.http.HttpVersion.staticClass, _HTTP_1_131614)) as org.apache.http.HttpVersion;
 			}
 		}
 		private static void InitJNI()

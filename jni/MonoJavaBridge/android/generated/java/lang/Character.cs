@@ -36,9 +36,9 @@ namespace java.lang
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Character.Subset._toString19648)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Character.Subset._toString19648)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._toString19648)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Character.Subset.staticClass, global::java.lang.Character.Subset._toString19648)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode19649;
 			public sealed override int hashCode() 
@@ -81,19 +81,19 @@ namespace java.lang
 			public static global::java.lang.Character.UnicodeBlock forName(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._forName19651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._forName19651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
 			}
 			internal static global::MonoJavaBridge.MethodId _of19652;
 			public static global::java.lang.Character.UnicodeBlock of(char arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._of19652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._of19652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
 			}
 			internal static global::MonoJavaBridge.MethodId _of19653;
 			public static global::java.lang.Character.UnicodeBlock of(int arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._of19653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.CallStaticObjectMethod(java.lang.Character.UnicodeBlock.staticClass, global::java.lang.Character.UnicodeBlock._of19653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character.UnicodeBlock;
 			}
 			internal static global::MonoJavaBridge.FieldId _BASIC_LATIN19654;
 			public static global::java.lang.Character.UnicodeBlock BASIC_LATIN
@@ -101,7 +101,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BASIC_LATIN19654)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BASIC_LATIN19654)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LATIN_1_SUPPLEMENT19655;
@@ -110,7 +110,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_1_SUPPLEMENT19655)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_1_SUPPLEMENT19655)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LATIN_EXTENDED_A19656;
@@ -119,7 +119,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_EXTENDED_A19656)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_EXTENDED_A19656)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LATIN_EXTENDED_B19657;
@@ -128,7 +128,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_EXTENDED_B19657)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_EXTENDED_B19657)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _IPA_EXTENSIONS19658;
@@ -137,7 +137,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _IPA_EXTENSIONS19658)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _IPA_EXTENSIONS19658)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SPACING_MODIFIER_LETTERS19659;
@@ -146,7 +146,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SPACING_MODIFIER_LETTERS19659)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SPACING_MODIFIER_LETTERS19659)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _COMBINING_DIACRITICAL_MARKS19660;
@@ -155,7 +155,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _COMBINING_DIACRITICAL_MARKS19660)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _COMBINING_DIACRITICAL_MARKS19660)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GREEK19661;
@@ -164,7 +164,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GREEK19661)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GREEK19661)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CYRILLIC19662;
@@ -173,7 +173,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CYRILLIC19662)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CYRILLIC19662)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ARMENIAN19663;
@@ -182,7 +182,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARMENIAN19663)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARMENIAN19663)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HEBREW19664;
@@ -191,7 +191,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HEBREW19664)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HEBREW19664)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ARABIC19665;
@@ -200,7 +200,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARABIC19665)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARABIC19665)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DEVANAGARI19666;
@@ -209,7 +209,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _DEVANAGARI19666)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _DEVANAGARI19666)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BENGALI19667;
@@ -218,7 +218,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BENGALI19667)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BENGALI19667)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GURMUKHI19668;
@@ -227,7 +227,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GURMUKHI19668)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GURMUKHI19668)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GUJARATI19669;
@@ -236,7 +236,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GUJARATI19669)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GUJARATI19669)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ORIYA19670;
@@ -245,7 +245,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ORIYA19670)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ORIYA19670)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TAMIL19671;
@@ -254,7 +254,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAMIL19671)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAMIL19671)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TELUGU19672;
@@ -263,7 +263,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TELUGU19672)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TELUGU19672)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KANNADA19673;
@@ -272,7 +272,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KANNADA19673)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KANNADA19673)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MALAYALAM19674;
@@ -281,7 +281,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MALAYALAM19674)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MALAYALAM19674)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _THAI19675;
@@ -290,7 +290,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _THAI19675)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _THAI19675)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LAO19676;
@@ -299,7 +299,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LAO19676)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LAO19676)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TIBETAN19677;
@@ -308,7 +308,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TIBETAN19677)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TIBETAN19677)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GEORGIAN19678;
@@ -317,7 +317,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GEORGIAN19678)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GEORGIAN19678)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HANGUL_JAMO19679;
@@ -326,7 +326,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANGUL_JAMO19679)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANGUL_JAMO19679)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LATIN_EXTENDED_ADDITIONAL19680;
@@ -335,7 +335,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_EXTENDED_ADDITIONAL19680)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LATIN_EXTENDED_ADDITIONAL19680)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GREEK_EXTENDED19681;
@@ -344,7 +344,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GREEK_EXTENDED19681)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GREEK_EXTENDED19681)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GENERAL_PUNCTUATION19682;
@@ -353,7 +353,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GENERAL_PUNCTUATION19682)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GENERAL_PUNCTUATION19682)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SUPERSCRIPTS_AND_SUBSCRIPTS19683;
@@ -362,7 +362,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPERSCRIPTS_AND_SUBSCRIPTS19683)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPERSCRIPTS_AND_SUBSCRIPTS19683)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CURRENCY_SYMBOLS19684;
@@ -371,7 +371,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CURRENCY_SYMBOLS19684)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CURRENCY_SYMBOLS19684)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _COMBINING_MARKS_FOR_SYMBOLS19685;
@@ -380,7 +380,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _COMBINING_MARKS_FOR_SYMBOLS19685)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _COMBINING_MARKS_FOR_SYMBOLS19685)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LETTERLIKE_SYMBOLS19686;
@@ -389,7 +389,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LETTERLIKE_SYMBOLS19686)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LETTERLIKE_SYMBOLS19686)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NUMBER_FORMS19687;
@@ -398,7 +398,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _NUMBER_FORMS19687)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _NUMBER_FORMS19687)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ARROWS19688;
@@ -407,7 +407,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARROWS19688)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARROWS19688)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MATHEMATICAL_OPERATORS19689;
@@ -416,7 +416,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MATHEMATICAL_OPERATORS19689)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MATHEMATICAL_OPERATORS19689)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MISCELLANEOUS_TECHNICAL19690;
@@ -425,7 +425,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_TECHNICAL19690)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_TECHNICAL19690)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CONTROL_PICTURES19691;
@@ -434,7 +434,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CONTROL_PICTURES19691)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CONTROL_PICTURES19691)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _OPTICAL_CHARACTER_RECOGNITION19692;
@@ -443,7 +443,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OPTICAL_CHARACTER_RECOGNITION19692)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OPTICAL_CHARACTER_RECOGNITION19692)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ENCLOSED_ALPHANUMERICS19693;
@@ -452,7 +452,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ENCLOSED_ALPHANUMERICS19693)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ENCLOSED_ALPHANUMERICS19693)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BOX_DRAWING19694;
@@ -461,7 +461,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BOX_DRAWING19694)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BOX_DRAWING19694)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BLOCK_ELEMENTS19695;
@@ -470,7 +470,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BLOCK_ELEMENTS19695)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BLOCK_ELEMENTS19695)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GEOMETRIC_SHAPES19696;
@@ -479,7 +479,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GEOMETRIC_SHAPES19696)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GEOMETRIC_SHAPES19696)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MISCELLANEOUS_SYMBOLS19697;
@@ -488,7 +488,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_SYMBOLS19697)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_SYMBOLS19697)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DINGBATS19698;
@@ -497,7 +497,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _DINGBATS19698)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _DINGBATS19698)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_SYMBOLS_AND_PUNCTUATION19699;
@@ -506,7 +506,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_SYMBOLS_AND_PUNCTUATION19699)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_SYMBOLS_AND_PUNCTUATION19699)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HIRAGANA19700;
@@ -515,7 +515,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HIRAGANA19700)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HIRAGANA19700)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KATAKANA19701;
@@ -524,7 +524,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KATAKANA19701)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KATAKANA19701)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BOPOMOFO19702;
@@ -533,7 +533,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BOPOMOFO19702)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BOPOMOFO19702)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HANGUL_COMPATIBILITY_JAMO19703;
@@ -542,7 +542,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANGUL_COMPATIBILITY_JAMO19703)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANGUL_COMPATIBILITY_JAMO19703)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KANBUN19704;
@@ -551,7 +551,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KANBUN19704)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KANBUN19704)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ENCLOSED_CJK_LETTERS_AND_MONTHS19705;
@@ -560,7 +560,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ENCLOSED_CJK_LETTERS_AND_MONTHS19705)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ENCLOSED_CJK_LETTERS_AND_MONTHS19705)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_COMPATIBILITY19706;
@@ -569,7 +569,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY19706)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY19706)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_UNIFIED_IDEOGRAPHS19707;
@@ -578,7 +578,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_UNIFIED_IDEOGRAPHS19707)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_UNIFIED_IDEOGRAPHS19707)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HANGUL_SYLLABLES19708;
@@ -587,7 +587,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANGUL_SYLLABLES19708)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANGUL_SYLLABLES19708)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _PRIVATE_USE_AREA19709;
@@ -596,7 +596,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _PRIVATE_USE_AREA19709)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _PRIVATE_USE_AREA19709)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_COMPATIBILITY_IDEOGRAPHS19710;
@@ -605,7 +605,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY_IDEOGRAPHS19710)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY_IDEOGRAPHS19710)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ALPHABETIC_PRESENTATION_FORMS19711;
@@ -614,7 +614,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ALPHABETIC_PRESENTATION_FORMS19711)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ALPHABETIC_PRESENTATION_FORMS19711)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ARABIC_PRESENTATION_FORMS_A19712;
@@ -623,7 +623,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARABIC_PRESENTATION_FORMS_A19712)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARABIC_PRESENTATION_FORMS_A19712)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _COMBINING_HALF_MARKS19713;
@@ -632,7 +632,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _COMBINING_HALF_MARKS19713)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _COMBINING_HALF_MARKS19713)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_COMPATIBILITY_FORMS19714;
@@ -641,7 +641,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY_FORMS19714)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY_FORMS19714)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SMALL_FORM_VARIANTS19715;
@@ -650,7 +650,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SMALL_FORM_VARIANTS19715)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SMALL_FORM_VARIANTS19715)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ARABIC_PRESENTATION_FORMS_B19716;
@@ -659,7 +659,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARABIC_PRESENTATION_FORMS_B19716)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ARABIC_PRESENTATION_FORMS_B19716)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HALFWIDTH_AND_FULLWIDTH_FORMS19717;
@@ -668,7 +668,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HALFWIDTH_AND_FULLWIDTH_FORMS19717)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HALFWIDTH_AND_FULLWIDTH_FORMS19717)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SPECIALS19718;
@@ -677,7 +677,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SPECIALS19718)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SPECIALS19718)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SURROGATES_AREA19719;
@@ -686,7 +686,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SURROGATES_AREA19719)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SURROGATES_AREA19719)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SYRIAC19720;
@@ -695,7 +695,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SYRIAC19720)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SYRIAC19720)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _THAANA19721;
@@ -704,7 +704,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _THAANA19721)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _THAANA19721)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SINHALA19722;
@@ -713,7 +713,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SINHALA19722)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SINHALA19722)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MYANMAR19723;
@@ -722,7 +722,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MYANMAR19723)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MYANMAR19723)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ETHIOPIC19724;
@@ -731,7 +731,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ETHIOPIC19724)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _ETHIOPIC19724)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CHEROKEE19725;
@@ -740,7 +740,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CHEROKEE19725)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CHEROKEE19725)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS19726;
@@ -749,7 +749,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS19726)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS19726)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _OGHAM19727;
@@ -758,7 +758,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OGHAM19727)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OGHAM19727)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RUNIC19728;
@@ -767,7 +767,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _RUNIC19728)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _RUNIC19728)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KHMER19729;
@@ -776,7 +776,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KHMER19729)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KHMER19729)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MONGOLIAN19730;
@@ -785,7 +785,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MONGOLIAN19730)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MONGOLIAN19730)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BRAILLE_PATTERNS19731;
@@ -794,7 +794,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BRAILLE_PATTERNS19731)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BRAILLE_PATTERNS19731)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_RADICALS_SUPPLEMENT19732;
@@ -803,7 +803,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_RADICALS_SUPPLEMENT19732)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_RADICALS_SUPPLEMENT19732)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KANGXI_RADICALS19733;
@@ -812,7 +812,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KANGXI_RADICALS19733)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KANGXI_RADICALS19733)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _IDEOGRAPHIC_DESCRIPTION_CHARACTERS19734;
@@ -821,7 +821,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _IDEOGRAPHIC_DESCRIPTION_CHARACTERS19734)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _IDEOGRAPHIC_DESCRIPTION_CHARACTERS19734)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BOPOMOFO_EXTENDED19735;
@@ -830,7 +830,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BOPOMOFO_EXTENDED19735)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BOPOMOFO_EXTENDED19735)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A19736;
@@ -839,7 +839,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A19736)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A19736)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _YI_SYLLABLES19737;
@@ -848,7 +848,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _YI_SYLLABLES19737)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _YI_SYLLABLES19737)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _YI_RADICALS19738;
@@ -857,7 +857,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _YI_RADICALS19738)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _YI_RADICALS19738)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CYRILLIC_SUPPLEMENTARY19739;
@@ -866,7 +866,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CYRILLIC_SUPPLEMENTARY19739)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CYRILLIC_SUPPLEMENTARY19739)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TAGALOG19740;
@@ -875,7 +875,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAGALOG19740)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAGALOG19740)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HANUNOO19741;
@@ -884,7 +884,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANUNOO19741)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HANUNOO19741)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BUHID19742;
@@ -893,7 +893,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BUHID19742)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BUHID19742)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TAGBANWA19743;
@@ -902,7 +902,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAGBANWA19743)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAGBANWA19743)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LIMBU19744;
@@ -911,7 +911,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LIMBU19744)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LIMBU19744)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TAI_LE19745;
@@ -920,7 +920,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAI_LE19745)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAI_LE19745)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KHMER_SYMBOLS19746;
@@ -929,7 +929,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KHMER_SYMBOLS19746)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KHMER_SYMBOLS19746)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _PHONETIC_EXTENSIONS19747;
@@ -938,7 +938,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _PHONETIC_EXTENSIONS19747)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _PHONETIC_EXTENSIONS19747)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A19748;
@@ -947,7 +947,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A19748)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A19748)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SUPPLEMENTAL_ARROWS_A19749;
@@ -956,7 +956,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTAL_ARROWS_A19749)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTAL_ARROWS_A19749)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SUPPLEMENTAL_ARROWS_B19750;
@@ -965,7 +965,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTAL_ARROWS_B19750)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTAL_ARROWS_B19750)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B19751;
@@ -974,7 +974,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B19751)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B19751)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SUPPLEMENTAL_MATHEMATICAL_OPERATORS19752;
@@ -983,7 +983,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTAL_MATHEMATICAL_OPERATORS19752)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTAL_MATHEMATICAL_OPERATORS19752)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MISCELLANEOUS_SYMBOLS_AND_ARROWS19753;
@@ -992,7 +992,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_SYMBOLS_AND_ARROWS19753)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MISCELLANEOUS_SYMBOLS_AND_ARROWS19753)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _KATAKANA_PHONETIC_EXTENSIONS19754;
@@ -1001,7 +1001,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KATAKANA_PHONETIC_EXTENSIONS19754)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _KATAKANA_PHONETIC_EXTENSIONS19754)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _YIJING_HEXAGRAM_SYMBOLS19755;
@@ -1010,7 +1010,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _YIJING_HEXAGRAM_SYMBOLS19755)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _YIJING_HEXAGRAM_SYMBOLS19755)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _VARIATION_SELECTORS19756;
@@ -1019,7 +1019,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _VARIATION_SELECTORS19756)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _VARIATION_SELECTORS19756)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LINEAR_B_SYLLABARY19757;
@@ -1028,7 +1028,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LINEAR_B_SYLLABARY19757)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LINEAR_B_SYLLABARY19757)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LINEAR_B_IDEOGRAMS19758;
@@ -1037,7 +1037,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LINEAR_B_IDEOGRAMS19758)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LINEAR_B_IDEOGRAMS19758)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _AEGEAN_NUMBERS19759;
@@ -1046,7 +1046,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _AEGEAN_NUMBERS19759)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _AEGEAN_NUMBERS19759)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _OLD_ITALIC19760;
@@ -1055,7 +1055,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OLD_ITALIC19760)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OLD_ITALIC19760)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _GOTHIC19761;
@@ -1064,7 +1064,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GOTHIC19761)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _GOTHIC19761)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _UGARITIC19762;
@@ -1073,7 +1073,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _UGARITIC19762)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _UGARITIC19762)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DESERET19763;
@@ -1082,7 +1082,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _DESERET19763)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _DESERET19763)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SHAVIAN19764;
@@ -1091,7 +1091,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SHAVIAN19764)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SHAVIAN19764)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _OSMANYA19765;
@@ -1100,7 +1100,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OSMANYA19765)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _OSMANYA19765)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CYPRIOT_SYLLABARY19766;
@@ -1109,7 +1109,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CYPRIOT_SYLLABARY19766)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CYPRIOT_SYLLABARY19766)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _BYZANTINE_MUSICAL_SYMBOLS19767;
@@ -1118,7 +1118,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BYZANTINE_MUSICAL_SYMBOLS19767)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _BYZANTINE_MUSICAL_SYMBOLS19767)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MUSICAL_SYMBOLS19768;
@@ -1127,7 +1127,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MUSICAL_SYMBOLS19768)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MUSICAL_SYMBOLS19768)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TAI_XUAN_JING_SYMBOLS19769;
@@ -1136,7 +1136,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAI_XUAN_JING_SYMBOLS19769)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAI_XUAN_JING_SYMBOLS19769)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MATHEMATICAL_ALPHANUMERIC_SYMBOLS19770;
@@ -1145,7 +1145,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MATHEMATICAL_ALPHANUMERIC_SYMBOLS19770)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _MATHEMATICAL_ALPHANUMERIC_SYMBOLS19770)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B19771;
@@ -1154,7 +1154,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B19771)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B19771)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT19772;
@@ -1163,7 +1163,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT19772)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT19772)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _TAGS19773;
@@ -1172,7 +1172,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAGS19773)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _TAGS19773)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _VARIATION_SELECTORS_SUPPLEMENT19774;
@@ -1181,7 +1181,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _VARIATION_SELECTORS_SUPPLEMENT19774)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _VARIATION_SELECTORS_SUPPLEMENT19774)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SUPPLEMENTARY_PRIVATE_USE_AREA_A19775;
@@ -1190,7 +1190,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTARY_PRIVATE_USE_AREA_A19775)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTARY_PRIVATE_USE_AREA_A19775)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _SUPPLEMENTARY_PRIVATE_USE_AREA_B19776;
@@ -1199,7 +1199,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTARY_PRIVATE_USE_AREA_B19776)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _SUPPLEMENTARY_PRIVATE_USE_AREA_B19776)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HIGH_SURROGATES19777;
@@ -1208,7 +1208,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HIGH_SURROGATES19777)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HIGH_SURROGATES19777)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _HIGH_PRIVATE_USE_SURROGATES19778;
@@ -1217,7 +1217,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HIGH_PRIVATE_USE_SURROGATES19778)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _HIGH_PRIVATE_USE_SURROGATES19778)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _LOW_SURROGATES19779;
@@ -1226,7 +1226,7 @@ namespace java.lang
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LOW_SURROGATES19779)) as java.lang.Character.UnicodeBlock;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character.UnicodeBlock>(@__env.GetStaticObjectField(global::java.lang.Character.UnicodeBlock.staticClass, _LOW_SURROGATES19779)) as java.lang.Character.UnicodeBlock;
 				}
 			}
 			private static void InitJNI()
@@ -1402,15 +1402,15 @@ namespace java.lang
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Character._toString19785)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Character._toString19785)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._toString19785)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Character.staticClass, global::java.lang.Character._toString19785)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19786;
 		public static global::java.lang.String toString(char arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._toString19786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._toString19786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode19787;
 		public sealed override int hashCode() 
@@ -1533,7 +1533,7 @@ namespace java.lang
 		public static global::java.lang.Character valueOf(char arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._valueOf19805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Character>(@__env.CallStaticObjectMethod(java.lang.Character.staticClass, global::java.lang.Character._valueOf19805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Character;
 		}
 		internal static global::MonoJavaBridge.MethodId _toChars19806;
 		public static char[] toChars(int arg0) 

@@ -472,9 +472,9 @@ namespace android.inputmethodservice
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService._getCurrentInputBinding6612)) as android.view.inputmethod.InputBinding;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.inputmethod.InputBinding>(@__env.CallObjectMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService._getCurrentInputBinding6612)) as android.view.inputmethod.InputBinding;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._getCurrentInputBinding6612)) as android.view.inputmethod.InputBinding;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.inputmethod.InputBinding>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.InputMethodService.staticClass, global::android.inputmethodservice.InputMethodService._getCurrentInputBinding6612)) as android.view.inputmethod.InputBinding;
 		}
 		public new global::android.view.inputmethod.InputConnection CurrentInputConnection
 		{

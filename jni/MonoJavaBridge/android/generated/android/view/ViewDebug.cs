@@ -51,9 +51,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._toString14905)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._toString14905)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._toString14905)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._toString14905)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14906;
 			 int java.lang.annotation.Annotation.hashCode() 
@@ -69,9 +69,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._annotationType14907)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_._annotationType14907)) as java.lang.Class;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._annotationType14907)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._annotationType14907)) as java.lang.Class;
 			}
 			private static void InitJNI()
 			{
@@ -111,9 +111,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._prefix14908)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._prefix14908)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._prefix14908)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._prefix14908)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _resolveId14909;
 			 bool android.view.ViewDebug.ExportedProperty.resolveId() 
@@ -174,9 +174,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._toString14915)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._toString14915)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._toString14915)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._toString14915)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14916;
 			 int java.lang.annotation.Annotation.hashCode() 
@@ -192,9 +192,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._annotationType14917)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_._annotationType14917)) as java.lang.Class;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._annotationType14917)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._annotationType14917)) as java.lang.Class;
 			}
 			private static void InitJNI()
 			{
@@ -237,9 +237,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._name14918)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._name14918)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._name14918)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._name14918)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14919;
 			 int android.view.ViewDebug.FlagToString.equals() 
@@ -282,9 +282,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._toString14923)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._toString14923)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._toString14923)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._toString14923)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14924;
 			 int java.lang.annotation.Annotation.hashCode() 
@@ -300,9 +300,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._annotationType14925)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_._annotationType14925)) as java.lang.Class;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._annotationType14925)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._annotationType14925)) as java.lang.Class;
 			}
 			private static void InitJNI()
 			{
@@ -339,7 +339,7 @@ namespace android.view
 			public static global::android.view.ViewDebug.HierarchyTraceType valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._valueOf14927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewDebug.HierarchyTraceType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.CallStaticObjectMethod(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._valueOf14927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewDebug.HierarchyTraceType;
 			}
 			internal static global::MonoJavaBridge.FieldId _BUILD_CACHE14928;
 			public static global::android.view.ViewDebug.HierarchyTraceType BUILD_CACHE
@@ -347,7 +347,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _BUILD_CACHE14928)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _BUILD_CACHE14928)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _DRAW14929;
@@ -356,7 +356,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _DRAW14929)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _DRAW14929)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _INVALIDATE14930;
@@ -365,7 +365,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _INVALIDATE14930)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _INVALIDATE14930)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _INVALIDATE_CHILD14931;
@@ -374,7 +374,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _INVALIDATE_CHILD14931)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _INVALIDATE_CHILD14931)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _INVALIDATE_CHILD_IN_PARENT14932;
@@ -383,7 +383,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _INVALIDATE_CHILD_IN_PARENT14932)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _INVALIDATE_CHILD_IN_PARENT14932)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ON_LAYOUT14933;
@@ -392,7 +392,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _ON_LAYOUT14933)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _ON_LAYOUT14933)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ON_MEASURE14934;
@@ -401,7 +401,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _ON_MEASURE14934)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _ON_MEASURE14934)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _REQUEST_LAYOUT14935;
@@ -410,7 +410,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _REQUEST_LAYOUT14935)) as android.view.ViewDebug.HierarchyTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.HierarchyTraceType.staticClass, _REQUEST_LAYOUT14935)) as android.view.ViewDebug.HierarchyTraceType;
 				}
 			}
 			private static void InitJNI()
@@ -461,9 +461,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._to14937)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._to14937)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._to14937)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._to14937)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14938;
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
@@ -479,9 +479,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._toString14939)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._toString14939)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._toString14939)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._toString14939)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14940;
 			 int java.lang.annotation.Annotation.hashCode() 
@@ -497,9 +497,9 @@ namespace android.view
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._annotationType14941)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_._annotationType14941)) as java.lang.Class;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._annotationType14941)) as java.lang.Class;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._annotationType14941)) as java.lang.Class;
 			}
 			private static void InitJNI()
 			{
@@ -534,7 +534,7 @@ namespace android.view
 			public static global::android.view.ViewDebug.RecyclerTraceType valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._valueOf14943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewDebug.RecyclerTraceType;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.CallStaticObjectMethod(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._valueOf14943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewDebug.RecyclerTraceType;
 			}
 			internal static global::MonoJavaBridge.FieldId _BIND_VIEW14944;
 			public static global::android.view.ViewDebug.RecyclerTraceType BIND_VIEW
@@ -542,7 +542,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _BIND_VIEW14944)) as android.view.ViewDebug.RecyclerTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _BIND_VIEW14944)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MOVE_FROM_ACTIVE_TO_SCRAP_HEAP14945;
@@ -551,7 +551,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _MOVE_FROM_ACTIVE_TO_SCRAP_HEAP14945)) as android.view.ViewDebug.RecyclerTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _MOVE_FROM_ACTIVE_TO_SCRAP_HEAP14945)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _MOVE_TO_SCRAP_HEAP14946;
@@ -560,7 +560,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _MOVE_TO_SCRAP_HEAP14946)) as android.view.ViewDebug.RecyclerTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _MOVE_TO_SCRAP_HEAP14946)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _NEW_VIEW14947;
@@ -569,7 +569,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _NEW_VIEW14947)) as android.view.ViewDebug.RecyclerTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _NEW_VIEW14947)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RECYCLE_FROM_ACTIVE_HEAP14948;
@@ -578,7 +578,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _RECYCLE_FROM_ACTIVE_HEAP14948)) as android.view.ViewDebug.RecyclerTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _RECYCLE_FROM_ACTIVE_HEAP14948)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _RECYCLE_FROM_SCRAP_HEAP14949;
@@ -587,7 +587,7 @@ namespace android.view
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _RECYCLE_FROM_SCRAP_HEAP14949)) as android.view.ViewDebug.RecyclerTraceType;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.GetStaticObjectField(global::android.view.ViewDebug.RecyclerTraceType.staticClass, _RECYCLE_FROM_SCRAP_HEAP14949)) as android.view.ViewDebug.RecyclerTraceType;
 				}
 			}
 			private static void InitJNI()

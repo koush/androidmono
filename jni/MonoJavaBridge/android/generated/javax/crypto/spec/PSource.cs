@@ -51,7 +51,7 @@ namespace javax.crypto.spec
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.crypto.spec.PSource.PSpecified.staticClass, _DEFAULT28686)) as javax.crypto.spec.PSource.PSpecified;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.crypto.spec.PSource.PSpecified>(@__env.GetStaticObjectField(global::javax.crypto.spec.PSource.PSpecified.staticClass, _DEFAULT28686)) as javax.crypto.spec.PSource.PSpecified;
 				}
 			}
 			private static void InitJNI()
@@ -75,9 +75,9 @@ namespace javax.crypto.spec
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource._getAlgorithm28687)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource._getAlgorithm28687)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._getAlgorithm28687)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._getAlgorithm28687)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PSource28688;
 		protected PSource(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 

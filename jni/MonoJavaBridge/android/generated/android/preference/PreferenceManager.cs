@@ -131,9 +131,9 @@ namespace android.preference
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager._createPreferenceScreen10387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.preference.PreferenceScreen;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.preference.PreferenceScreen>(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager._createPreferenceScreen10387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.preference.PreferenceScreen;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._createPreferenceScreen10387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.preference.PreferenceScreen;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.preference.PreferenceScreen>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._createPreferenceScreen10387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.preference.PreferenceScreen;
 		}
 		public new global::java.lang.String SharedPreferencesName
 		{
@@ -151,9 +151,9 @@ namespace android.preference
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager._getSharedPreferencesName10388)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager._getSharedPreferencesName10388)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._getSharedPreferencesName10388)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._getSharedPreferencesName10388)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSharedPreferencesName10389;
 		public virtual void setSharedPreferencesName(java.lang.String arg0) 

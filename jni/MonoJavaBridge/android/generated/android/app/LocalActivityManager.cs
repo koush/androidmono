@@ -66,9 +66,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager._getCurrentId1955)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager._getCurrentId1955)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._getCurrentId1955)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._getCurrentId1955)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchCreate1956;
 		public virtual void dispatchCreate(android.os.Bundle arg0) 
@@ -84,9 +84,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager._saveInstanceState1957)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager._saveInstanceState1957)) as android.os.Bundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._saveInstanceState1957)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._saveInstanceState1957)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchResume1958;
 		public virtual void dispatchResume() 

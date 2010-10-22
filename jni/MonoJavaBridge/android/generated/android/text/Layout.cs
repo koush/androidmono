@@ -32,7 +32,7 @@ namespace android.text
 			public static global::android.text.Layout.Alignment valueOf(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._valueOf12761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallStaticObjectMethod(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._valueOf12761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
 			}
 			internal static global::MonoJavaBridge.FieldId _ALIGN_CENTER12762;
 			public static global::android.text.Layout.Alignment ALIGN_CENTER
@@ -40,7 +40,7 @@ namespace android.text
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_CENTER12762)) as android.text.Layout.Alignment;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_CENTER12762)) as android.text.Layout.Alignment;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ALIGN_NORMAL12763;
@@ -49,7 +49,7 @@ namespace android.text
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_NORMAL12763)) as android.text.Layout.Alignment;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_NORMAL12763)) as android.text.Layout.Alignment;
 				}
 			}
 			internal static global::MonoJavaBridge.FieldId _ALIGN_OPPOSITE12764;
@@ -58,7 +58,7 @@ namespace android.text
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_OPPOSITE12764)) as android.text.Layout.Alignment;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.GetStaticObjectField(global::android.text.Layout.Alignment.staticClass, _ALIGN_OPPOSITE12764)) as android.text.Layout.Alignment;
 				}
 			}
 			private static void InitJNI()
@@ -198,9 +198,9 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getAlignment12778)) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getAlignment12778)) as android.text.Layout.Alignment;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getAlignment12778)) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getAlignment12778)) as android.text.Layout.Alignment;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSpacingMultiplier12779;
 		public virtual float getSpacingMultiplier() 
@@ -398,9 +398,9 @@ namespace android.text
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getParagraphAlignment12806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.Layout._getParagraphAlignment12806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphAlignment12806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.Layout.Alignment>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphAlignment12806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Layout.Alignment;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParagraphLeft12807;
 		public virtual int getParagraphLeft(int arg0) 

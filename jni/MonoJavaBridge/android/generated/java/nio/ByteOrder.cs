@@ -16,15 +16,15 @@ namespace java.nio
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.ByteOrder._toString21996)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.nio.ByteOrder._toString21996)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._toString21996)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._toString21996)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nativeOrder21997;
 		public static global::java.nio.ByteOrder nativeOrder() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._nativeOrder21997)) as java.nio.ByteOrder;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.CallStaticObjectMethod(java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._nativeOrder21997)) as java.nio.ByteOrder;
 		}
 		internal static global::MonoJavaBridge.FieldId _BIG_ENDIAN21998;
 		public static global::java.nio.ByteOrder BIG_ENDIAN
@@ -32,7 +32,7 @@ namespace java.nio
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.ByteOrder.staticClass, _BIG_ENDIAN21998)) as java.nio.ByteOrder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.GetStaticObjectField(global::java.nio.ByteOrder.staticClass, _BIG_ENDIAN21998)) as java.nio.ByteOrder;
 			}
 		}
 		internal static global::MonoJavaBridge.FieldId _LITTLE_ENDIAN21999;
@@ -41,7 +41,7 @@ namespace java.nio
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::java.nio.ByteOrder.staticClass, _LITTLE_ENDIAN21999)) as java.nio.ByteOrder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.GetStaticObjectField(global::java.nio.ByteOrder.staticClass, _LITTLE_ENDIAN21999)) as java.nio.ByteOrder;
 			}
 		}
 		private static void InitJNI()

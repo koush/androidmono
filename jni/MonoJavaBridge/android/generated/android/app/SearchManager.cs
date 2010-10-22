@@ -145,9 +145,9 @@ namespace android.app
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchManager._getSearchableInfo2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.SearchableInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.SearchableInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchManager._getSearchableInfo2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.SearchableInfo;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._getSearchableInfo2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.SearchableInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.SearchableInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._getSearchableInfo2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.SearchableInfo;
 		}
 		public new global::java.util.List SearchablesInGlobalSearch
 		{
