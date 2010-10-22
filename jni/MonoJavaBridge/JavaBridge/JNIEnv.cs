@@ -935,12 +935,13 @@ namespace MonoJavaBridge
         #endregion
 
         #region exceptions
-
+        /*
         public void Throw(JavaException ex)
         {
             JniHandle ptr = ex.mJvmHandle;
             Throw(ptr);
         }
+        */
 
         internal void Throw(JniHandle ptr)
         {
