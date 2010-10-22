@@ -230,6 +230,7 @@ namespace MonoJavaBridge
             return typeof(IntPtr);
         }
         
+#if NET_4_0
         public static T ReportException<T>(Exception ex)
         {
             ReportExceptionNoResult(ex);
@@ -259,7 +260,41 @@ namespace MonoJavaBridge
                     parExpr,
                     Expression.Call(reportCall, parExpr)));
         }
-        
+#else        
+        public static T ReportException<T>(MethodInfo methodInfo, object o, object[] parameters)
+        {
+            try
+            {
+                return (T)methodInfo.Invoke(o, parameters);
+            }
+            catch (JavaException jex)
+            {
+                JNIEnv.ThreadEnv.Throw(jex);
+            }
+            catch (Exception ex)
+            {
+                JNIEnv.ThreadEnv.ThrowNew(myJavaExceptionClass, ex.Message);
+            }
+            return default(T);
+        }
+
+        public static void ReportExceptionNoResult(MethodInfo methodInfo, object o, object[] parameters)
+        {
+            ReportException<object>(methodInfo, o, parameters);
+        }
+
+        static Expression MakeTryCatchWrapper(MethodInfo methodInfo, Expression obj, Expression[] args)
+        {
+            //var parExpr = Expression.Parameter(typeof(Exception), "ex");
+            MethodInfo reportCall = null;
+            if (methodInfo.ReturnType != typeof(void))
+                reportCall = myReportException.MakeGenericMethod(methodInfo.ReturnType);
+            else
+                reportCall = myReportExceptionNoResult;
+            return Expression.Call(reportCall, Expression.Constant(methodInfo, typeof(MethodInfo)), obj, Expression.NewArrayInit(typeof(object), from arg in args select Expression.Convert(arg, typeof(object))));
+        }
+#endif
+
         public static Delegate MakeWrapper(MethodInfo method)
         {
             // first lets figure out the delegate we need to implement, and the lambda expression that needs to be constructed
@@ -300,11 +335,13 @@ namespace MonoJavaBridge
                 marshaledParameterExpressions[i] = MarshalArgument(clrParameters[i], parameterExpressions[i]);
             }
             
-            var methodExpression = Expression.Call(MarshalCLRHandle(obj, method.DeclaringType), method, marshaledParameterExpressions);
-            Console.WriteLine("Method Expression: {0}", methodExpression);
-            //var lambdaExpression = expressionMethodInfo.Invoke(null, new object[] { methodExpression, fullParameterList.ToArray() });
+            Expression marshaledObj = MarshalCLRHandle(obj, method.DeclaringType);
+#if NET_4_0
+            var methodExpression = Expression.Call(marshaledObj, method, marshaledParameterExpressions);
             var tryWrapped = MakeTryCatchWrapper(methodExpression);
-//            var lambdaExpression = Expression.Lambda(delegateType, methodExpression, fullParameterList.ToArray());
+#else
+            var tryWrapped = MakeTryCatchWrapper(method, marshaledObj, marshaledParameterExpressions);
+#endif
             var lambdaExpression = Expression.Lambda(delegateType, tryWrapped, fullParameterList.ToArray());
             Console.WriteLine("Lambda Expression: {0}", lambdaExpression);
             
