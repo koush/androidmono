@@ -209,7 +209,8 @@ namespace MonoJavaBridge
             
             return ret;
         }
-        
+
+        // Convert a JavaObject or JavaException to an instance.
         public static IJavaObject WrapJavaObject(JniLocalHandle handle)
         {
             if (JniHandle.IsNull(handle))
@@ -222,6 +223,7 @@ namespace MonoJavaBridge
             return ret;
         }
 
+        // Convert an interface type, T, to a JavaObject instance (if found). Otherwise, use an interface wrapper.
         public static T WrapIJavaObject<T>(JniLocalHandle handle) where T: class, IJavaObject
         {
             if (JniHandle.IsNull(handle))
