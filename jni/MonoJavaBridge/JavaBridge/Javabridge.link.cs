@@ -314,9 +314,9 @@ namespace MonoJavaBridge
             }
             if (method.ReturnType != typeof(void) || genericArguments.Count > 0)
                 delegateType = delegateType.MakeGenericType(genericArguments.ToArray());
-            Console.WriteLine("Constructed delegate type: {0}", delegateType);
+            //Console.WriteLine("Constructed delegate type: {0}", delegateType);
             MethodInfo expressionMethodInfo = myExpressionLambda.MakeGenericMethod(delegateType);
-            Console.WriteLine("Constructed Expression.Lambda<T>: {0}", expressionMethodInfo);
+            //Console.WriteLine("Constructed Expression.Lambda<T>: {0}", expressionMethodInfo);
             
             // now let's construct the parameter list to the expression lambda
             var parameterExpressions = (from par in method.GetParameters() select Expression.Parameter(GetJNITypeForClrType(par.ParameterType), par.Name)).ToArray();
@@ -340,10 +340,12 @@ namespace MonoJavaBridge
             var methodExpression = Expression.Call(marshaledObj, method, marshaledParameterExpressions);
             var tryWrapped = MakeTryCatchWrapper(methodExpression);
 #else
+            // I can maybe create a expanded list of N functions that can do the wrapping?
+            // This may be faster? Could spam though.
             var tryWrapped = MakeTryCatchWrapper(method, marshaledObj, marshaledParameterExpressions);
 #endif
             var lambdaExpression = Expression.Lambda(delegateType, tryWrapped, fullParameterList.ToArray());
-            Console.WriteLine("Lambda Expression: {0}", lambdaExpression);
+            //Console.WriteLine("Lambda Expression: {0}", lambdaExpression);
             
             //var del = (Delegate)lambdaExpressionCompileMethod.Invoke(lambdaExpression, null);
             

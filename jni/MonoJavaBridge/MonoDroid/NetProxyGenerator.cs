@@ -386,6 +386,15 @@ namespace MonoDroid
             myIndent--;
             GenerateType(wrapperType);
             myIndent++;
+            
+            if (interfaceType.IsDelegate)
+            {
+                myIndent++;
+                var delegateMethod = interfaceType.Methods.First();
+                Write("public delegate global::{0} {1}Delegate", false, delegateMethod.Return, interfaceType.Name);
+                WriteDelimited(delegateMethod.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
+                myIndent--;
+            }
         }
         
         protected override void EndType (Type type)

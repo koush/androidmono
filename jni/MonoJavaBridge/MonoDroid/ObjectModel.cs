@@ -93,6 +93,8 @@ namespace MonoDroid
                     field.FieldType = FindType(field.Type);
                     field.ContainingType = type;
                 }
+                
+                type.IsDelegate = type.IsInterface && type.Methods.Count == 1 && type.Interfaces.Count == 0;
 				
 				foreach (var method in type.Methods)
 				{
@@ -232,6 +234,11 @@ namespace MonoDroid
 	
 	public class Type : Overridable
 	{
+        public bool IsDelegate
+        {
+            get;set;
+        }
+        
         public bool HasEmptyConstructor
         {
             get;set;
