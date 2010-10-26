@@ -15,12 +15,18 @@ public class InterpolatorDelegateWrapper extends java.lang.Object implements Mon
 	public native float getInterpolation(float arg0);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

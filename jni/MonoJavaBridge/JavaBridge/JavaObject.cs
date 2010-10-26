@@ -31,12 +31,20 @@ namespace MonoJavaBridge
         
         public void Init(JNIEnv env, JniLocalHandle handle)
         {
-            mJvmHandle = env.NewGlobalRef(handle);
+            if (JniLocalHandle.IsNull(handle))
+                mJvmHandle = null;
+            else
+                mJvmHandle = env.NewGlobalRef(handle);
         }
         
         public void Init(JNIEnv env, JniGlobalHandle handle)
         {
             mJvmHandle = handle;
+        }
+        
+        ~JavaObject()
+        {
+            MonoJavaBridge.JavaBridge.AddToMortuary(this);
         }
     }
 }

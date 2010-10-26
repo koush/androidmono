@@ -15,12 +15,18 @@ public class DownloadListenerDelegateWrapper extends java.lang.Object implements
 	public native void onDownloadStart(java.lang.String arg0,java.lang.String arg1,java.lang.String arg2,java.lang.String arg3,long arg4);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

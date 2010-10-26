@@ -15,12 +15,18 @@ public class TimePicker_OnTimeChangedListenerDelegateWrapper extends java.lang.O
 	public native void onTimeChanged(android.widget.TimePicker arg0,int arg1,int arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

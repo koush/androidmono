@@ -15,12 +15,18 @@ public class SimpleAdapter_ViewBinderDelegateWrapper extends java.lang.Object im
 	public native boolean setViewValue(android.view.View arg0,java.lang.Object arg1,java.lang.String arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

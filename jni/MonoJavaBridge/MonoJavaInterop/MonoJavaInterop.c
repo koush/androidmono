@@ -42,6 +42,7 @@ MonoAssembly *g_Assembly;
 MonoImage *g_Image;
 MonoMethod *g_Link;
 MonoMethod *g_LoadAssembly;
+MonoMethod *g_ReleaseGCHandle;
 JavaVM *g_JavaVM;
 
 typedef void* pointer;
@@ -69,6 +70,14 @@ void JavaVMThreadCleanup(MonoProfiler *prof, uintptr_t tid)
     (*g_JavaVM)->DetachCurrentThread(g_JavaVM);
 }
 
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_releaseGCHandle
+  (JNIEnv *env, jclass clazz, jlong handle)
+{
+    void *args[2];
+    args[0] = &clazz;
+    args[1] = &handle;
+    mono_runtime_invoke(g_ReleaseGCHandle, NULL, args, NULL);
+}
 
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
     (JNIEnv *env, jclass clazz, jclass cls, jstring methodName, jstring methodSignature, jstring methodParameters)
@@ -150,6 +159,10 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
 
     desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:LoadAssembly(intptr)", 1);
     g_LoadAssembly = mono_method_desc_search_in_image (desc, image);
+    mono_method_desc_free(desc);
+
+    desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:ReleaseGCHandle(long)", 1);
+    g_ReleaseGCHandle = mono_method_desc_search_in_image (desc, image);
     mono_method_desc_free(desc);
     
     return TRUE;

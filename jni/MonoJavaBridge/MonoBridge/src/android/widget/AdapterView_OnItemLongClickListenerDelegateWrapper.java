@@ -15,12 +15,18 @@ public class AdapterView_OnItemLongClickListenerDelegateWrapper extends java.lan
 	public native boolean onItemLongClick(android.widget.AdapterView arg0,android.view.View arg1,int arg2,long arg3);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

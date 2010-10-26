@@ -15,12 +15,18 @@ public class PendingIntent_OnFinishedDelegateWrapper extends java.lang.Object im
 	public native void onSendFinished(android.app.PendingIntent arg0,android.content.Intent arg1,int arg2,java.lang.String arg3,android.os.Bundle arg4);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

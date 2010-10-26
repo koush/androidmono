@@ -15,12 +15,18 @@ public class SimpleCursorTreeAdapter_ViewBinderDelegateWrapper extends java.lang
 	public native boolean setViewValue(android.view.View arg0,android.database.Cursor arg1,int arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

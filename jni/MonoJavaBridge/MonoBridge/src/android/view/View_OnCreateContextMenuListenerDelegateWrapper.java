@@ -15,12 +15,18 @@ public class View_OnCreateContextMenuListenerDelegateWrapper extends java.lang.O
 	public native void onCreateContextMenu(android.view.ContextMenu arg0,android.view.View arg1,android.view.ContextMenu.ContextMenuInfo arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

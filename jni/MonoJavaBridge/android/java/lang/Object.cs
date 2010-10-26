@@ -12,5 +12,10 @@ namespace java.lang
         {
             return toString();
         }
+        
+        public override bool Equals (object obj)
+        {
+            return equals(obj as java.lang.Object);
+        }
     }
 }

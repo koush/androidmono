@@ -15,12 +15,18 @@ public class InputFilterDelegateWrapper extends java.lang.Object implements Mono
 	public native java.lang.CharSequence filter(java.lang.CharSequence arg0,int arg1,int arg2,android.text.Spanned arg3,int arg4,int arg5);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

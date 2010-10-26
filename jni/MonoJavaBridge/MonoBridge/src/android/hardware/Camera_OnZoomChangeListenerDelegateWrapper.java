@@ -15,12 +15,18 @@ public class Camera_OnZoomChangeListenerDelegateWrapper extends java.lang.Object
 	public native void onZoomChange(int arg0,boolean arg1,android.hardware.Camera arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

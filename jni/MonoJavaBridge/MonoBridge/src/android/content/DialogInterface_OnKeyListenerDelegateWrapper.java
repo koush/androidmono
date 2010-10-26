@@ -15,12 +15,18 @@ public class DialogInterface_OnKeyListenerDelegateWrapper extends java.lang.Obje
 	public native boolean onKey(android.content.DialogInterface arg0,int arg1,android.view.KeyEvent arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

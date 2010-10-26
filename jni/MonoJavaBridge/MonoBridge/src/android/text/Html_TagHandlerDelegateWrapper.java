@@ -15,12 +15,18 @@ public class Html_TagHandlerDelegateWrapper extends java.lang.Object implements 
 	public native void handleTag(boolean arg0,java.lang.String arg1,android.text.Editable arg2,org.xml.sax.XMLReader arg3);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

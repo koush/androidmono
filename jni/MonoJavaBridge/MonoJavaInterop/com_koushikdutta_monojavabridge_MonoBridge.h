@@ -31,6 +31,14 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssembly
   (JNIEnv *, jclass, jstring);
 
+/*
+ * Class:     com_koushikdutta_monojavabridge_MonoBridge
+ * Method:    releaseGCHandle
+ * Signature: (J)V
+ */
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_releaseGCHandle
+  (JNIEnv *, jclass, jlong);
+
 #ifdef __cplusplus
 }
 #endif

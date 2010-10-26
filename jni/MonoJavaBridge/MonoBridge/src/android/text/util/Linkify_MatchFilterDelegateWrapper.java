@@ -15,12 +15,18 @@ public class Linkify_MatchFilterDelegateWrapper extends java.lang.Object impleme
 	public native boolean acceptMatch(java.lang.CharSequence arg0,int arg1,int arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

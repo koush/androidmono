@@ -15,12 +15,18 @@ public class Camera_AutoFocusCallbackDelegateWrapper extends java.lang.Object im
 	public native void onAutoFocus(boolean arg0,android.hardware.Camera arg1);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

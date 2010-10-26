@@ -15,12 +15,18 @@ public class RatingBar_OnRatingBarChangeListenerDelegateWrapper extends java.lan
 	public native void onRatingChanged(android.widget.RatingBar arg0,float arg1,boolean arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

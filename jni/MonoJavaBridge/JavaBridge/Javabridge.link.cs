@@ -207,11 +207,12 @@ namespace MonoJavaBridge
             if (handleLong != 0)
             {
                 ret = (TRes)GCHandle.FromIntPtr((IntPtr)handleLong).Target;
+                ResurrectObjectIfNeeded(ret, obj);
             }
             else
             {
                 ret = (TRes)WrapJavaObject(obj);
-                var handle = GCHandle.Alloc(ret, GCHandleType.Normal);
+                var handle = GCHandle.Alloc(ret, GCHandleType.WeakTrackResurrection);
                 env.CallVoidMethod(obj, mySetGCHandle, ConvertToValue((long)GCHandle.ToIntPtr(handle)));
             }
             return ret;
@@ -356,6 +357,38 @@ namespace MonoJavaBridge
             //var del = (Delegate)lambdaExpressionCompileMethod.Invoke(lambdaExpression, null);
             
             return lambdaExpression.Compile();
+        }
+        
+        public static void ReleaseGCHandle(long handle)
+        {
+            if (handle == 0)
+            {
+                Console.WriteLine("Request to release a null handle?");
+                return;
+            }
+            var ret = GCHandle.FromIntPtr((IntPtr)handle).Target;
+            myMortuary.Remove(ret);
+        }
+        
+        internal static void ResurrectObjectIfNeeded(IJavaObject o, JniLocalHandle obj)
+        {
+            if (o.JvmHandle != null)
+                return;
+            Console.WriteLine("Resurrecting Object: " + o.GetType());
+            myMortuary.Remove(o);
+            o.Init(JNIEnv.ThreadEnv, obj);
+        }
+
+        static HashSet<object> myMortuary = new HashSet<object>();
+        internal static void AddToMortuary(IJavaObject o)
+        {
+            // When a CLR object is destructor is called, we need to release the reference to its JVM twin.
+            // Then add the CLR object to the mortuary to keep it "alive".
+            // Once the JVM cleans up the twin Java object, we remove it from the mortuary.
+            Console.WriteLine("Adding object to mortuary: " + o.GetType());
+            JNIEnv.ThreadEnv.DeleteGlobalRef(o.JvmHandle);
+            o.Init(JNIEnv.ThreadEnv, JniLocalHandle.Zero);
+            myMortuary.Add(o);
         }
 
         public static void Link(IntPtr classHandle, IntPtr methodNameHandle, IntPtr methodSignatureHandle, IntPtr methodParametersHandle)

@@ -252,34 +252,6 @@ namespace MonoDroid
                 WriteLine("{1} {0}(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
                 WriteLine("{");
                 WriteLine("}");
-    
-                /*
-                HashSet<Type> allTypes = new HashSet<Type>();
-                AddAllTypes(type, allTypes);
-                if (allTypes.Contains(FindType("java.lang.Iterable")))
-                {
-                    bool found = false;
-                    var curType = type;
-                    var allImplementedMethods = new Methods();
-                    while (curType != null)
-                    {
-                        foreach (var m in curType.Methods)
-                        {
-                            if (allImplementedMethods.Contains(m))
-                                continue;
-                            if (m.Abstract)
-                                continue;
-                            allImplementedMethods.Add(m);
-                        }
-                    }
-                    WriteLine("public global::System.Collections.IEnumerator GetEnumerator()");
-                    WriteLine("{");
-                    myIndent++;
-                    WriteLine("return global::java.lang.IterableHelper.WrapIterable(this);");
-                    myIndent--;
-                    WriteLine("}");
-                }   
-                */
                 
                 myIndent--;
             }
@@ -417,7 +389,7 @@ namespace MonoDroid
                 GenerateType(delegateWrapper);
                 myIndent++;
 
-                
+                //WriteLine("[global::MonoJavaBridge.JavaDelegateProxy]");
                 WriteLine("internal partial class {0}", delegateWrapper.SimpleName);
                 WriteLine("{");
                 myIndent++;
@@ -444,16 +416,6 @@ namespace MonoDroid
                 WriteLine("return ret;");
                 myIndent--;
                 WriteLine("}");
-                /*
-                WriteLine("public static implicit operator {0}Delegate({1} d)", interfaceType.SimpleName, delegateWrapper.SimpleName);
-                WriteLine("{");
-                myIndent++;
-                WriteLine("global::{0} ret = new global::{0}();", delegateWrapper.Name);
-                WriteLine("ret.myDelegate = d;");
-                WriteLine("return ret;");
-                myIndent--;
-                WriteLine("}");
-                */
                 myIndent--;
                 WriteLine("}");
             }

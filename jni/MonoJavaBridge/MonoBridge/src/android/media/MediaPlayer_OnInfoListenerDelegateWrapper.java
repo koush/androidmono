@@ -15,12 +15,18 @@ public class MediaPlayer_OnInfoListenerDelegateWrapper extends java.lang.Object 
 	public native boolean onInfo(android.media.MediaPlayer arg0,int arg1,int arg2);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

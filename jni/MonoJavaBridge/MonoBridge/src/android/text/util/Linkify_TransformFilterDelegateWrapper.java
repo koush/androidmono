@@ -15,12 +15,18 @@ public class Linkify_TransformFilterDelegateWrapper extends java.lang.Object imp
 	public native java.lang.String transformUrl(java.util.regex.Matcher arg0,java.lang.String arg1);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }

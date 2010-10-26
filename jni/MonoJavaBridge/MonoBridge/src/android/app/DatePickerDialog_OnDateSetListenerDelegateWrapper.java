@@ -15,12 +15,18 @@ public class DatePickerDialog_OnDateSetListenerDelegateWrapper extends java.lang
 	public native void onDateSet(android.widget.DatePicker arg0,int arg1,int arg2,int arg3);
 
 
-	long myGcHandle;
+	long myGCHandle;
 	public long getGCHandle() {
-		return myGcHandle;
+		return myGCHandle;
 	}
 
 	public void setGCHandle(long gcHandle) {
-		myGcHandle = gcHandle;
+		myGCHandle = gcHandle;
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+	    super.finalize();
+	    MonoBridge.releaseGCHandle(myGCHandle);
 	}
 }
