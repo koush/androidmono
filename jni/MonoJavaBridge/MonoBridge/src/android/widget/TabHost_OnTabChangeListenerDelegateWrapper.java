@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class TabHost_OnTabChangeListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.TabHost.OnTabChangeListener
+public class TabHost_OnTabChangeListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.TabHost.OnTabChangeListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class TabHost_OnTabChangeListenerDelegateWrapper extends java.lang.Object
 	public native void onTabChanged(java.lang.String arg0);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

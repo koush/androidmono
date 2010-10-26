@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class PopupWindow_OnDismissListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.PopupWindow.OnDismissListener
+public class PopupWindow_OnDismissListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.PopupWindow.OnDismissListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class PopupWindow_OnDismissListenerDelegateWrapper extends java.lang.Obje
 	public native void onDismiss();
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

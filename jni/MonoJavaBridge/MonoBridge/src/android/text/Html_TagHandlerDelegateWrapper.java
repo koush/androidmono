@@ -3,7 +3,7 @@ package android.text;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class Html_TagHandlerDelegateWrapper extends java.lang.Object implements MonoProxy, android.text.Html.TagHandler
+public class Html_TagHandlerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.text.Html.TagHandler
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class Html_TagHandlerDelegateWrapper extends java.lang.Object implements 
 	public native void handleTag(boolean arg0,java.lang.String arg1,android.text.Editable arg2,org.xml.sax.XMLReader arg3);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

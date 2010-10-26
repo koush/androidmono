@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class SimpleAdapter_ViewBinderDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.SimpleAdapter.ViewBinder
+public class SimpleAdapter_ViewBinderDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.SimpleAdapter.ViewBinder
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class SimpleAdapter_ViewBinderDelegateWrapper extends java.lang.Object im
 	public native boolean setViewValue(android.view.View arg0,java.lang.Object arg1,java.lang.String arg2);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

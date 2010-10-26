@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class Chronometer_OnChronometerTickListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.Chronometer.OnChronometerTickListener
+public class Chronometer_OnChronometerTickListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.Chronometer.OnChronometerTickListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class Chronometer_OnChronometerTickListenerDelegateWrapper extends java.l
 	public native void onChronometerTick(android.widget.Chronometer arg0);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

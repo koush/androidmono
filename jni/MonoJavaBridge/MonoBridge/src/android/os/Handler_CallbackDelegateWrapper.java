@@ -3,7 +3,7 @@ package android.os;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class Handler_CallbackDelegateWrapper extends java.lang.Object implements MonoProxy, android.os.Handler.Callback
+public class Handler_CallbackDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.os.Handler.Callback
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class Handler_CallbackDelegateWrapper extends java.lang.Object implements
 	public native boolean handleMessage(android.os.Message arg0);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

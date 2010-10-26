@@ -3,7 +3,7 @@ package android.content;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class DialogInterface_OnClickListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.content.DialogInterface.OnClickListener
+public class DialogInterface_OnClickListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.content.DialogInterface.OnClickListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class DialogInterface_OnClickListenerDelegateWrapper extends java.lang.Ob
 	public native void onClick(android.content.DialogInterface arg0,int arg1);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

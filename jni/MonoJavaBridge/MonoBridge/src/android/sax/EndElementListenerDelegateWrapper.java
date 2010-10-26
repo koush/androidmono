@@ -3,7 +3,7 @@ package android.sax;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class EndElementListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.sax.EndElementListener
+public class EndElementListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.sax.EndElementListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class EndElementListenerDelegateWrapper extends java.lang.Object implemen
 	public native void end();
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

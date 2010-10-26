@@ -3,7 +3,7 @@ package android.view;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class MenuItem_OnMenuItemClickListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.view.MenuItem.OnMenuItemClickListener
+public class MenuItem_OnMenuItemClickListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.view.MenuItem.OnMenuItemClickListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class MenuItem_OnMenuItemClickListenerDelegateWrapper extends java.lang.O
 	public native boolean onMenuItemClick(android.view.MenuItem arg0);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

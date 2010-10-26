@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class ExpandableListView_OnGroupClickListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.ExpandableListView.OnGroupClickListener
+public class ExpandableListView_OnGroupClickListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.ExpandableListView.OnGroupClickListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class ExpandableListView_OnGroupClickListenerDelegateWrapper extends java
 	public native boolean onGroupClick(android.widget.ExpandableListView arg0,android.view.View arg1,int arg2,long arg3);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

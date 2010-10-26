@@ -3,7 +3,7 @@ package android.accounts;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class AccountManagerCallbackDelegateWrapper extends java.lang.Object implements MonoProxy, android.accounts.AccountManagerCallback
+public class AccountManagerCallbackDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.accounts.AccountManagerCallback
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class AccountManagerCallbackDelegateWrapper extends java.lang.Object impl
 	public native void run(android.accounts.AccountManagerFuture arg0);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

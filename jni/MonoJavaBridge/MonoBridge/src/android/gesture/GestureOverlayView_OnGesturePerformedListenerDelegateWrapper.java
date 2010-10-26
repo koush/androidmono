@@ -3,7 +3,7 @@ package android.gesture;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class GestureOverlayView_OnGesturePerformedListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.gesture.GestureOverlayView.OnGesturePerformedListener
+public class GestureOverlayView_OnGesturePerformedListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.gesture.GestureOverlayView.OnGesturePerformedListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class GestureOverlayView_OnGesturePerformedListenerDelegateWrapper extend
 	public native void onGesturePerformed(android.gesture.GestureOverlayView arg0,android.gesture.Gesture arg1);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

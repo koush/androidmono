@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class RatingBar_OnRatingBarChangeListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.RatingBar.OnRatingBarChangeListener
+public class RatingBar_OnRatingBarChangeListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.RatingBar.OnRatingBarChangeListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class RatingBar_OnRatingBarChangeListenerDelegateWrapper extends java.lan
 	public native void onRatingChanged(android.widget.RatingBar arg0,float arg1,boolean arg2);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class SimpleCursorTreeAdapter_ViewBinderDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.SimpleCursorTreeAdapter.ViewBinder
+public class SimpleCursorTreeAdapter_ViewBinderDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.SimpleCursorTreeAdapter.ViewBinder
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class SimpleCursorTreeAdapter_ViewBinderDelegateWrapper extends java.lang
 	public native boolean setViewValue(android.view.View arg0,android.database.Cursor arg1,int arg2);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

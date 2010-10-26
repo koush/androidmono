@@ -3,7 +3,7 @@ package android.text;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class Html_ImageGetterDelegateWrapper extends java.lang.Object implements MonoProxy, android.text.Html.ImageGetter
+public class Html_ImageGetterDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.text.Html.ImageGetter
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class Html_ImageGetterDelegateWrapper extends java.lang.Object implements
 	public native android.graphics.drawable.Drawable getDrawable(java.lang.String arg0);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

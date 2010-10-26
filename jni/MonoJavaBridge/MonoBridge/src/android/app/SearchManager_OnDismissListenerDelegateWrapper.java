@@ -3,7 +3,7 @@ package android.app;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class SearchManager_OnDismissListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.app.SearchManager.OnDismissListener
+public class SearchManager_OnDismissListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.app.SearchManager.OnDismissListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class SearchManager_OnDismissListenerDelegateWrapper extends java.lang.Ob
 	public native void onDismiss();
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

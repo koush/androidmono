@@ -3,7 +3,7 @@ package android.database.sqlite;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class SQLiteDatabase_CursorFactoryDelegateWrapper extends java.lang.Object implements MonoProxy, android.database.sqlite.SQLiteDatabase.CursorFactory
+public class SQLiteDatabase_CursorFactoryDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.database.sqlite.SQLiteDatabase.CursorFactory
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class SQLiteDatabase_CursorFactoryDelegateWrapper extends java.lang.Objec
 	public native android.database.Cursor newCursor(android.database.sqlite.SQLiteDatabase arg0,android.database.sqlite.SQLiteCursorDriver arg1,java.lang.String arg2,android.database.sqlite.SQLiteQuery arg3);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

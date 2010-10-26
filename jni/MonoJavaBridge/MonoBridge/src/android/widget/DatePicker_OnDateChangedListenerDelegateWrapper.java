@@ -3,7 +3,7 @@ package android.widget;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class DatePicker_OnDateChangedListenerDelegateWrapper extends java.lang.Object implements MonoProxy, android.widget.DatePicker.OnDateChangedListener
+public class DatePicker_OnDateChangedListenerDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.widget.DatePicker.OnDateChangedListener
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class DatePicker_OnDateChangedListenerDelegateWrapper extends java.lang.O
 	public native void onDateChanged(android.widget.DatePicker arg0,int arg1,int arg2,int arg3);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }

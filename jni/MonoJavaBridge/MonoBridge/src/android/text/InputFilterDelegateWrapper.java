@@ -3,7 +3,7 @@ package android.text;
 import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.monojavabridge.MonoProxy;
 
-public class InputFilterDelegateWrapper extends java.lang.Object implements MonoProxy, android.text.InputFilter
+public class InputFilterDelegateWrapper extends com.koushikdutta.monojavabridge.MonoProxyBase implements MonoProxy, android.text.InputFilter
 {
 	static
 	{
@@ -15,18 +15,5 @@ public class InputFilterDelegateWrapper extends java.lang.Object implements Mono
 	public native java.lang.CharSequence filter(java.lang.CharSequence arg0,int arg1,int arg2,android.text.Spanned arg3,int arg4,int arg5);
 
 
-	long myGCHandle;
-	public long getGCHandle() {
-		return myGCHandle;
-	}
 
-	public void setGCHandle(long gcHandle) {
-		myGCHandle = gcHandle;
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-	    super.finalize();
-	    MonoBridge.releaseGCHandle(myGCHandle);
-	}
 }
