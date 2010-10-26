@@ -75,6 +75,7 @@ LOCAL_MODULE := monoruntime
 LOCAL_ARM_MODE := arm
 LOCAL_PATH := $(BASE_PATH)/mono/mono/metadata/
 LOCAL_SRC_FILES := \
+    profiler-default.c \
     runtime.c \
     mono-basic-block.c \
     mono-wsq.c \
