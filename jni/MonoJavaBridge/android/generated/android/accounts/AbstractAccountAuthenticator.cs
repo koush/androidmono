@@ -68,7 +68,7 @@ namespace android.accounts
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accounts.AbstractAccountAuthenticator))]
-	public sealed partial class AbstractAccountAuthenticator_ : android.accounts.AbstractAccountAuthenticator
+	internal sealed partial class AbstractAccountAuthenticator_ : android.accounts.AbstractAccountAuthenticator
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AbstractAccountAuthenticator_()

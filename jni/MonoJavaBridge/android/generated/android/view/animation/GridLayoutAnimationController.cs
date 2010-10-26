@@ -22,56 +22,56 @@ namespace android.view.animation
 			protected AnimationParameters(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _AnimationParameters15603;
+			internal static global::MonoJavaBridge.MethodId _AnimationParameters15683;
 			public AnimationParameters()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, global::android.view.animation.GridLayoutAnimationController.AnimationParameters._AnimationParameters15603);
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, global::android.view.animation.GridLayoutAnimationController.AnimationParameters._AnimationParameters15683);
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _column15604;
+			internal static global::MonoJavaBridge.FieldId _column15684;
 			public int column
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _column15604);
+					return @__env.GetIntField(this.JvmHandle, _column15684);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _row15605;
+			internal static global::MonoJavaBridge.FieldId _row15685;
 			public int row
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _row15605);
+					return @__env.GetIntField(this.JvmHandle, _row15685);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _columnsCount15606;
+			internal static global::MonoJavaBridge.FieldId _columnsCount15686;
 			public int columnsCount
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _columnsCount15606);
+					return @__env.GetIntField(this.JvmHandle, _columnsCount15686);
 				}
 				set
 				{
 				}
 			}
-			internal static global::MonoJavaBridge.FieldId _rowsCount15607;
+			internal static global::MonoJavaBridge.FieldId _rowsCount15687;
 			public int rowsCount
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetIntField(this.JvmHandle, _rowsCount15607);
+					return @__env.GetIntField(this.JvmHandle, _rowsCount15687);
 				}
 				set
 				{
@@ -81,30 +81,30 @@ namespace android.view.animation
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/GridLayoutAnimationController$AnimationParameters"));
-				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._AnimationParameters15603 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "<init>", "()V");
-				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._column15604 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "column", "I");
-				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._row15605 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "row", "I");
-				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._columnsCount15606 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "columnsCount", "I");
-				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._rowsCount15607 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "rowsCount", "I");
+				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._AnimationParameters15683 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "<init>", "()V");
+				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._column15684 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "column", "I");
+				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._row15685 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "row", "I");
+				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._columnsCount15686 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "columnsCount", "I");
+				global::android.view.animation.GridLayoutAnimationController.AnimationParameters._rowsCount15687 = @__env.GetFieldIDNoThrow(global::android.view.animation.GridLayoutAnimationController.AnimationParameters.staticClass, "rowsCount", "I");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _willOverlap15608;
+		internal static global::MonoJavaBridge.MethodId _willOverlap15688;
 		public override bool willOverlap() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._willOverlap15608);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._willOverlap15688);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._willOverlap15608);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._willOverlap15688);
 		}
-		internal static global::MonoJavaBridge.MethodId _getDelayForView15609;
+		internal static global::MonoJavaBridge.MethodId _getDelayForView15689;
 		protected override long getDelayForView(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getDelayForView15609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getDelayForView15689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDelayForView15609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDelayForView15689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float ColumnDelay
 		{
@@ -117,23 +117,23 @@ namespace android.view.animation
 				setColumnDelay(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getColumnDelay15610;
+		internal static global::MonoJavaBridge.MethodId _getColumnDelay15690;
 		public virtual float getColumnDelay() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getColumnDelay15610);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getColumnDelay15690);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getColumnDelay15610);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getColumnDelay15690);
 		}
-		internal static global::MonoJavaBridge.MethodId _setColumnDelay15611;
+		internal static global::MonoJavaBridge.MethodId _setColumnDelay15691;
 		public virtual void setColumnDelay(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setColumnDelay15611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setColumnDelay15691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setColumnDelay15611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setColumnDelay15691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float RowDelay
 		{
@@ -146,23 +146,23 @@ namespace android.view.animation
 				setRowDelay(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRowDelay15612;
+		internal static global::MonoJavaBridge.MethodId _getRowDelay15692;
 		public virtual float getRowDelay() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getRowDelay15612);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getRowDelay15692);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getRowDelay15612);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getRowDelay15692);
 		}
-		internal static global::MonoJavaBridge.MethodId _setRowDelay15613;
+		internal static global::MonoJavaBridge.MethodId _setRowDelay15693;
 		public virtual void setRowDelay(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setRowDelay15613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setRowDelay15693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setRowDelay15613, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setRowDelay15693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Direction
 		{
@@ -175,23 +175,23 @@ namespace android.view.animation
 				setDirection(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDirection15614;
+		internal static global::MonoJavaBridge.MethodId _getDirection15694;
 		public virtual int getDirection() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getDirection15614);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getDirection15694);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDirection15614);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDirection15694);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDirection15615;
+		internal static global::MonoJavaBridge.MethodId _setDirection15695;
 		public virtual void setDirection(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setDirection15615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setDirection15695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setDirection15615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setDirection15695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DirectionPriority
 		{
@@ -204,43 +204,43 @@ namespace android.view.animation
 				setDirectionPriority(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDirectionPriority15616;
+		internal static global::MonoJavaBridge.MethodId _getDirectionPriority15696;
 		public virtual int getDirectionPriority() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getDirectionPriority15616);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._getDirectionPriority15696);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDirectionPriority15616);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDirectionPriority15696);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDirectionPriority15617;
+		internal static global::MonoJavaBridge.MethodId _setDirectionPriority15697;
 		public virtual void setDirectionPriority(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setDirectionPriority15617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController._setDirectionPriority15697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setDirectionPriority15617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setDirectionPriority15697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _GridLayoutAnimationController15618;
+		internal static global::MonoJavaBridge.MethodId _GridLayoutAnimationController15698;
 		public GridLayoutAnimationController(android.view.animation.Animation arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _GridLayoutAnimationController15619;
+		internal static global::MonoJavaBridge.MethodId _GridLayoutAnimationController15699;
 		public GridLayoutAnimationController(android.view.animation.Animation arg0, float arg1, float arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _GridLayoutAnimationController15620;
+		internal static global::MonoJavaBridge.MethodId _GridLayoutAnimationController15700;
 		public GridLayoutAnimationController(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		public static int DIRECTION_LEFT_TO_RIGHT
@@ -310,19 +310,19 @@ namespace android.view.animation
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.animation.GridLayoutAnimationController.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/animation/GridLayoutAnimationController"));
-			global::android.view.animation.GridLayoutAnimationController._willOverlap15608 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "willOverlap", "()Z");
-			global::android.view.animation.GridLayoutAnimationController._getDelayForView15609 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getDelayForView", "(Landroid/view/View;)J");
-			global::android.view.animation.GridLayoutAnimationController._getColumnDelay15610 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getColumnDelay", "()F");
-			global::android.view.animation.GridLayoutAnimationController._setColumnDelay15611 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setColumnDelay", "(F)V");
-			global::android.view.animation.GridLayoutAnimationController._getRowDelay15612 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getRowDelay", "()F");
-			global::android.view.animation.GridLayoutAnimationController._setRowDelay15613 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setRowDelay", "(F)V");
-			global::android.view.animation.GridLayoutAnimationController._getDirection15614 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getDirection", "()I");
-			global::android.view.animation.GridLayoutAnimationController._setDirection15615 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setDirection", "(I)V");
-			global::android.view.animation.GridLayoutAnimationController._getDirectionPriority15616 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getDirectionPriority", "()I");
-			global::android.view.animation.GridLayoutAnimationController._setDirectionPriority15617 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setDirectionPriority", "(I)V");
-			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15618 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;)V");
-			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15619 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;FF)V");
-			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15620 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.animation.GridLayoutAnimationController._willOverlap15688 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "willOverlap", "()Z");
+			global::android.view.animation.GridLayoutAnimationController._getDelayForView15689 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getDelayForView", "(Landroid/view/View;)J");
+			global::android.view.animation.GridLayoutAnimationController._getColumnDelay15690 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getColumnDelay", "()F");
+			global::android.view.animation.GridLayoutAnimationController._setColumnDelay15691 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setColumnDelay", "(F)V");
+			global::android.view.animation.GridLayoutAnimationController._getRowDelay15692 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getRowDelay", "()F");
+			global::android.view.animation.GridLayoutAnimationController._setRowDelay15693 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setRowDelay", "(F)V");
+			global::android.view.animation.GridLayoutAnimationController._getDirection15694 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getDirection", "()I");
+			global::android.view.animation.GridLayoutAnimationController._setDirection15695 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setDirection", "(I)V");
+			global::android.view.animation.GridLayoutAnimationController._getDirectionPriority15696 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "getDirectionPriority", "()I");
+			global::android.view.animation.GridLayoutAnimationController._setDirectionPriority15697 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "setDirectionPriority", "(I)V");
+			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15698 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;)V");
+			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15699 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/view/animation/Animation;FF)V");
+			global::android.view.animation.GridLayoutAnimationController._GridLayoutAnimationController15700 = @__env.GetMethodIDNoThrow(global::android.view.animation.GridLayoutAnimationController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

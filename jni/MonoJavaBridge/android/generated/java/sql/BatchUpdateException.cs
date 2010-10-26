@@ -18,100 +18,100 @@ namespace java.sql
 				return getUpdateCounts();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUpdateCounts23972;
+		internal static global::MonoJavaBridge.MethodId _getUpdateCounts24090;
 		public virtual int[] getUpdateCounts() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.BatchUpdateException._getUpdateCounts23972)) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.BatchUpdateException._getUpdateCounts24090)) as int[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._getUpdateCounts23972)) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._getUpdateCounts24090)) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23973;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24091;
 		public BatchUpdateException(java.lang.String arg0, java.lang.String arg1, int arg2, int[] arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23974;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24092;
 		public BatchUpdateException(java.lang.String arg0, java.lang.String arg1, int[] arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23975;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24093;
 		public BatchUpdateException(java.lang.String arg0, int[] arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23975, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23976;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24094;
 		public BatchUpdateException(int[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23977;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24095;
 		public BatchUpdateException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23977);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24095);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23978;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24096;
 		public BatchUpdateException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23979;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24097;
 		public BatchUpdateException(int[] arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23980;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24098;
 		public BatchUpdateException(java.lang.String arg0, int[] arg1, java.lang.Throwable arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23981;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24099;
 		public BatchUpdateException(java.lang.String arg0, java.lang.String arg1, int[] arg2, java.lang.Throwable arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _BatchUpdateException23982;
+		internal static global::MonoJavaBridge.MethodId _BatchUpdateException24100;
 		public BatchUpdateException(java.lang.String arg0, java.lang.String arg1, int arg2, int[] arg3, java.lang.Throwable arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException23982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.BatchUpdateException.staticClass, global::java.sql.BatchUpdateException._BatchUpdateException24100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.BatchUpdateException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/BatchUpdateException"));
-			global::java.sql.BatchUpdateException._getUpdateCounts23972 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "getUpdateCounts", "()[I");
-			global::java.sql.BatchUpdateException._BatchUpdateException23973 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;I[I)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23974 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;[I)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23975 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;[I)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23976 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "([I)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23977 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "()V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23978 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23979 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "([ILjava/lang/Throwable;)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23980 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;[ILjava/lang/Throwable;)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23981 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;[ILjava/lang/Throwable;)V");
-			global::java.sql.BatchUpdateException._BatchUpdateException23982 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;I[ILjava/lang/Throwable;)V");
+			global::java.sql.BatchUpdateException._getUpdateCounts24090 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "getUpdateCounts", "()[I");
+			global::java.sql.BatchUpdateException._BatchUpdateException24091 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;I[I)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24092 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;[I)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24093 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;[I)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24094 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "([I)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24095 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "()V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24096 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24097 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "([ILjava/lang/Throwable;)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24098 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;[ILjava/lang/Throwable;)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24099 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;[ILjava/lang/Throwable;)V");
+			global::java.sql.BatchUpdateException._BatchUpdateException24100 = @__env.GetMethodIDNoThrow(global::java.sql.BatchUpdateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;I[ILjava/lang/Throwable;)V");
 		}
 	}
 }

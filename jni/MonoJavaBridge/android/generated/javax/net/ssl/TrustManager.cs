@@ -6,7 +6,7 @@ namespace javax.net.ssl
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.TrustManager))]
-	public sealed partial class TrustManager_ : java.lang.Object, TrustManager
+	internal sealed partial class TrustManager_ : java.lang.Object, TrustManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TrustManager_()

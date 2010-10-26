@@ -11,158 +11,158 @@ namespace org.xml.sax.ext
 		protected DefaultHandler2(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _comment34993;
+		internal static global::MonoJavaBridge.MethodId _comment35111;
 		public virtual void comment(char[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._comment34993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._comment35111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._comment34993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._comment35111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _startCDATA34994;
+		internal static global::MonoJavaBridge.MethodId _startCDATA35112;
 		public virtual void startCDATA() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._startCDATA34994);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._startCDATA35112);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._startCDATA34994);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._startCDATA35112);
 		}
-		internal static global::MonoJavaBridge.MethodId _endCDATA34995;
+		internal static global::MonoJavaBridge.MethodId _endCDATA35113;
 		public virtual void endCDATA() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._endCDATA34995);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._endCDATA35113);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._endCDATA34995);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._endCDATA35113);
 		}
-		internal static global::MonoJavaBridge.MethodId _startEntity34996;
+		internal static global::MonoJavaBridge.MethodId _startEntity35114;
 		public virtual void startEntity(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._startEntity34996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._startEntity35114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._startEntity34996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._startEntity35114, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _endEntity34997;
+		internal static global::MonoJavaBridge.MethodId _endEntity35115;
 		public virtual void endEntity(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._endEntity34997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._endEntity35115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._endEntity34997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._endEntity35115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _startDTD34998;
+		internal static global::MonoJavaBridge.MethodId _startDTD35116;
 		public virtual void startDTD(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._startDTD34998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._startDTD35116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._startDTD34998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._startDTD35116, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _endDTD34999;
+		internal static global::MonoJavaBridge.MethodId _endDTD35117;
 		public virtual void endDTD() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._endDTD34999);
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._endDTD35117);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._endDTD34999);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._endDTD35117);
 		}
-		internal static global::MonoJavaBridge.MethodId _elementDecl35000;
+		internal static global::MonoJavaBridge.MethodId _elementDecl35118;
 		public virtual void elementDecl(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._elementDecl35000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._elementDecl35118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._elementDecl35000, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._elementDecl35118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _attributeDecl35001;
+		internal static global::MonoJavaBridge.MethodId _attributeDecl35119;
 		public virtual void attributeDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._attributeDecl35001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._attributeDecl35119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._attributeDecl35001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._attributeDecl35119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _internalEntityDecl35002;
+		internal static global::MonoJavaBridge.MethodId _internalEntityDecl35120;
 		public virtual void internalEntityDecl(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._internalEntityDecl35002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._internalEntityDecl35120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._internalEntityDecl35002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._internalEntityDecl35120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _externalEntityDecl35003;
+		internal static global::MonoJavaBridge.MethodId _externalEntityDecl35121;
 		public virtual void externalEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._externalEntityDecl35003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._externalEntityDecl35121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._externalEntityDecl35003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._externalEntityDecl35121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveEntity35004;
+		internal static global::MonoJavaBridge.MethodId _resolveEntity35122;
 		public virtual global::org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as org.xml.sax.InputSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as org.xml.sax.InputSource;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as org.xml.sax.InputSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35122, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveEntity35005;
+		internal static global::MonoJavaBridge.MethodId _resolveEntity35123;
 		public override global::org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._resolveEntity35123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _getExternalSubset35006;
+		internal static global::MonoJavaBridge.MethodId _getExternalSubset35124;
 		public virtual global::org.xml.sax.InputSource getExternalSubset(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xml.sax.InputSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _DefaultHandler235007;
+		internal static global::MonoJavaBridge.MethodId _DefaultHandler235125;
 		public DefaultHandler2()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._DefaultHandler235007);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.ext.DefaultHandler2.staticClass, global::org.xml.sax.ext.DefaultHandler2._DefaultHandler235125);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.xml.sax.ext.DefaultHandler2.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/xml/sax/ext/DefaultHandler2"));
-			global::org.xml.sax.ext.DefaultHandler2._comment34993 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "comment", "([CII)V");
-			global::org.xml.sax.ext.DefaultHandler2._startCDATA34994 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "startCDATA", "()V");
-			global::org.xml.sax.ext.DefaultHandler2._endCDATA34995 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "endCDATA", "()V");
-			global::org.xml.sax.ext.DefaultHandler2._startEntity34996 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "startEntity", "(Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._endEntity34997 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "endEntity", "(Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._startDTD34998 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._endDTD34999 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "endDTD", "()V");
-			global::org.xml.sax.ext.DefaultHandler2._elementDecl35000 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._attributeDecl35001 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._internalEntityDecl35002 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._externalEntityDecl35003 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.ext.DefaultHandler2._resolveEntity35004 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
-			global::org.xml.sax.ext.DefaultHandler2._resolveEntity35005 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
-			global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35006 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
-			global::org.xml.sax.ext.DefaultHandler2._DefaultHandler235007 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "<init>", "()V");
+			global::org.xml.sax.ext.DefaultHandler2._comment35111 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "comment", "([CII)V");
+			global::org.xml.sax.ext.DefaultHandler2._startCDATA35112 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "startCDATA", "()V");
+			global::org.xml.sax.ext.DefaultHandler2._endCDATA35113 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "endCDATA", "()V");
+			global::org.xml.sax.ext.DefaultHandler2._startEntity35114 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "startEntity", "(Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._endEntity35115 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "endEntity", "(Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._startDTD35116 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._endDTD35117 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "endDTD", "()V");
+			global::org.xml.sax.ext.DefaultHandler2._elementDecl35118 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._attributeDecl35119 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._internalEntityDecl35120 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._externalEntityDecl35121 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.ext.DefaultHandler2._resolveEntity35122 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+			global::org.xml.sax.ext.DefaultHandler2._resolveEntity35123 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+			global::org.xml.sax.ext.DefaultHandler2._getExternalSubset35124 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+			global::org.xml.sax.ext.DefaultHandler2._DefaultHandler235125 = @__env.GetMethodIDNoThrow(global::org.xml.sax.ext.DefaultHandler2.staticClass, "<init>", "()V");
 		}
 	}
 }

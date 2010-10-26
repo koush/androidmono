@@ -303,7 +303,7 @@ namespace MonoJavaBridge
                 case "system.void":
                     return array + "V";
                 default:
-                    return array + "L" + typeName.Substring(0, low.Length).Replace('.', '/') + ";";
+                    return array + "L" + typeName.Substring(0, low.Length).Replace('.', '/').Replace('+', '$') + ";";
             }
         }
 

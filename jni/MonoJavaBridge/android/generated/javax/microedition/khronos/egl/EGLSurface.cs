@@ -11,23 +11,23 @@ namespace javax.microedition.khronos.egl
 		protected EGLSurface(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _EGLSurface28838;
+		internal static global::MonoJavaBridge.MethodId _EGLSurface28956;
 		public EGLSurface()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLSurface.staticClass, global::javax.microedition.khronos.egl.EGLSurface._EGLSurface28838);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLSurface.staticClass, global::javax.microedition.khronos.egl.EGLSurface._EGLSurface28956);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.egl.EGLSurface.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGLSurface"));
-			global::javax.microedition.khronos.egl.EGLSurface._EGLSurface28838 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGLSurface.staticClass, "<init>", "()V");
+			global::javax.microedition.khronos.egl.EGLSurface._EGLSurface28956 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGLSurface.staticClass, "<init>", "()V");
 		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.microedition.khronos.egl.EGLSurface))]
-	public sealed partial class EGLSurface_ : javax.microedition.khronos.egl.EGLSurface
+	internal sealed partial class EGLSurface_ : javax.microedition.khronos.egl.EGLSurface
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EGLSurface_()

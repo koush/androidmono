@@ -7,7 +7,7 @@ namespace android.content
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.DialogInterface_OnClickListener))]
-	public sealed partial class DialogInterface_OnClickListener_ : java.lang.Object, DialogInterface_OnClickListener
+	internal sealed partial class DialogInterface_OnClickListener_ : java.lang.Object, DialogInterface_OnClickListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static DialogInterface_OnClickListener_()
@@ -17,20 +17,62 @@ namespace android.content
 		internal DialogInterface_OnClickListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onClick3060;
+		internal static global::MonoJavaBridge.MethodId _onClick3069;
 		 void android.content.DialogInterface_OnClickListener.onClick(android.content.DialogInterface arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnClickListener_._onClick3060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnClickListener_._onClick3069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnClickListener_.staticClass, global::android.content.DialogInterface_OnClickListener_._onClick3060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_OnClickListener_.staticClass, global::android.content.DialogInterface_OnClickListener_._onClick3069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::android.content.DialogInterface_OnClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnClickListener"));
-			global::android.content.DialogInterface_OnClickListener_._onClick3060 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V");
+			global::android.content.DialogInterface_OnClickListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface$OnClickListener"));
+			global::android.content.DialogInterface_OnClickListener_._onClick3069 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnClickListener_.staticClass, "onClick", "(Landroid/content/DialogInterface;I)V");
+		}
+	}
+
+	public delegate void DialogInterface_OnClickListenerDelegate(android.content.DialogInterface arg0, int arg1);
+
+	internal partial class DialogInterface_OnClickListenerDelegateWrapper : java.lang.Object, DialogInterface_OnClickListener
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static DialogInterface_OnClickListenerDelegateWrapper()
+		{
+			InitJNI();
+		}
+		protected DialogInterface_OnClickListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnClickListenerDelegateWrapper3070;
+		public DialogInterface_OnClickListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnClickListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnClickListenerDelegateWrapper._DialogInterface_OnClickListenerDelegateWrapper3070);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.content.DialogInterface_OnClickListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/DialogInterface_OnClickListenerDelegateWrapper"));
+			global::android.content.DialogInterface_OnClickListenerDelegateWrapper._DialogInterface_OnClickListenerDelegateWrapper3070 = @__env.GetMethodIDNoThrow(global::android.content.DialogInterface_OnClickListenerDelegateWrapper.staticClass, "<init>", "()V");
+		}
+	}
+	internal partial class DialogInterface_OnClickListenerDelegateWrapper
+	{
+		private DialogInterface_OnClickListenerDelegate myDelegate;
+		public void onClick(android.content.DialogInterface arg0, int arg1)
+		{
+			myDelegate(arg0, arg1);
+		}
+		public static implicit operator DialogInterface_OnClickListenerDelegateWrapper(DialogInterface_OnClickListenerDelegate d)
+		{
+			global::android.content.DialogInterface_OnClickListenerDelegateWrapper ret = new global::android.content.DialogInterface_OnClickListenerDelegateWrapper();
+			ret.myDelegate = d;
+			global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+			return ret;
 		}
 	}
 }

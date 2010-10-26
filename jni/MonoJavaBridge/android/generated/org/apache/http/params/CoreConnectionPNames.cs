@@ -6,7 +6,7 @@ namespace org.apache.http.@params
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.@params.CoreConnectionPNames))]
-	public sealed partial class CoreConnectionPNames_ : java.lang.Object, CoreConnectionPNames
+	internal sealed partial class CoreConnectionPNames_ : java.lang.Object, CoreConnectionPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static CoreConnectionPNames_()
@@ -19,7 +19,7 @@ namespace org.apache.http.@params
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::org.apache.http.@params.CoreConnectionPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/@params/CoreConnectionPNames"));
+			global::org.apache.http.@params.CoreConnectionPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/params/CoreConnectionPNames"));
 		}
 	}
 }

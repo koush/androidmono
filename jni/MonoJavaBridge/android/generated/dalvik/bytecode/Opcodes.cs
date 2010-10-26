@@ -6,7 +6,7 @@ namespace dalvik.bytecode
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::dalvik.bytecode.Opcodes))]
-	public sealed partial class Opcodes_ : java.lang.Object, Opcodes
+	internal sealed partial class Opcodes_ : java.lang.Object, Opcodes
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Opcodes_()

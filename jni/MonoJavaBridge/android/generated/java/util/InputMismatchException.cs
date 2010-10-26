@@ -11,26 +11,26 @@ namespace java.util
 		protected InputMismatchException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _InputMismatchException26209;
+		internal static global::MonoJavaBridge.MethodId _InputMismatchException26327;
 		public InputMismatchException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26209);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26327);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _InputMismatchException26210;
+		internal static global::MonoJavaBridge.MethodId _InputMismatchException26328;
 		public InputMismatchException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.InputMismatchException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/InputMismatchException"));
-			global::java.util.InputMismatchException._InputMismatchException26209 = @__env.GetMethodIDNoThrow(global::java.util.InputMismatchException.staticClass, "<init>", "()V");
-			global::java.util.InputMismatchException._InputMismatchException26210 = @__env.GetMethodIDNoThrow(global::java.util.InputMismatchException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.util.InputMismatchException._InputMismatchException26327 = @__env.GetMethodIDNoThrow(global::java.util.InputMismatchException.staticClass, "<init>", "()V");
+			global::java.util.InputMismatchException._InputMismatchException26328 = @__env.GetMethodIDNoThrow(global::java.util.InputMismatchException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

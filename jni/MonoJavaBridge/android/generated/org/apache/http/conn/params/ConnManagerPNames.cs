@@ -6,7 +6,7 @@ namespace org.apache.http.conn.@params
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.conn.@params.ConnManagerPNames))]
-	public sealed partial class ConnManagerPNames_ : java.lang.Object, ConnManagerPNames
+	internal sealed partial class ConnManagerPNames_ : java.lang.Object, ConnManagerPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ConnManagerPNames_()
@@ -19,7 +19,7 @@ namespace org.apache.http.conn.@params
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::org.apache.http.conn.@params.ConnManagerPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/@params/ConnManagerPNames"));
+			global::org.apache.http.conn.@params.ConnManagerPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/params/ConnManagerPNames"));
 		}
 	}
 }

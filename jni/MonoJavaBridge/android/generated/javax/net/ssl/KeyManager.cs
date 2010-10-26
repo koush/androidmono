@@ -6,7 +6,7 @@ namespace javax.net.ssl
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.KeyManager))]
-	public sealed partial class KeyManager_ : java.lang.Object, KeyManager
+	internal sealed partial class KeyManager_ : java.lang.Object, KeyManager
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static KeyManager_()

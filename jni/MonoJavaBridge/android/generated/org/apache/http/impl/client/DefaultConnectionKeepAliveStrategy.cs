@@ -11,28 +11,28 @@ namespace org.apache.http.impl.client
 		protected DefaultConnectionKeepAliveStrategy(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getKeepAliveDuration32762;
+		internal static global::MonoJavaBridge.MethodId _getKeepAliveDuration32880;
 		public virtual long getKeepAliveDuration(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallLongMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _DefaultConnectionKeepAliveStrategy32763;
+		internal static global::MonoJavaBridge.MethodId _DefaultConnectionKeepAliveStrategy32881;
 		public DefaultConnectionKeepAliveStrategy()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._DefaultConnectionKeepAliveStrategy32763);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._DefaultConnectionKeepAliveStrategy32881);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/client/DefaultConnectionKeepAliveStrategy"));
-			global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32762 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, "getKeepAliveDuration", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)J");
-			global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._DefaultConnectionKeepAliveStrategy32763 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, "<init>", "()V");
+			global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._getKeepAliveDuration32880 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, "getKeepAliveDuration", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)J");
+			global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy._DefaultConnectionKeepAliveStrategy32881 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -11,24 +11,24 @@ namespace org.apache.http.auth.@params
 		internal AuthParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setCredentialCharset31743;
+		internal static global::MonoJavaBridge.MethodId _setCredentialCharset31861;
 		public static void setCredentialCharset(org.apache.http.@params.HttpParams arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(org.apache.http.auth.@params.AuthParams.staticClass, global::org.apache.http.auth.@params.AuthParams._setCredentialCharset31743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(org.apache.http.auth.@params.AuthParams.staticClass, global::org.apache.http.auth.@params.AuthParams._setCredentialCharset31861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getCredentialCharset31744;
+		internal static global::MonoJavaBridge.MethodId _getCredentialCharset31862;
 		public static global::java.lang.String getCredentialCharset(org.apache.http.@params.HttpParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.auth.@params.AuthParams.staticClass, global::org.apache.http.auth.@params.AuthParams._getCredentialCharset31744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.auth.@params.AuthParams.staticClass, global::org.apache.http.auth.@params.AuthParams._getCredentialCharset31862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::org.apache.http.auth.@params.AuthParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/@params/AuthParams"));
-			global::org.apache.http.auth.@params.AuthParams._setCredentialCharset31743 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.auth.@params.AuthParams.staticClass, "setCredentialCharset", "(Lorg/apache/http/@params/HttpParams;Ljava/lang/String;)V");
-			global::org.apache.http.auth.@params.AuthParams._getCredentialCharset31744 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.auth.@params.AuthParams.staticClass, "getCredentialCharset", "(Lorg/apache/http/@params/HttpParams;)Ljava/lang/String;");
+			global::org.apache.http.auth.@params.AuthParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/params/AuthParams"));
+			global::org.apache.http.auth.@params.AuthParams._setCredentialCharset31861 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.auth.@params.AuthParams.staticClass, "setCredentialCharset", "(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V");
+			global::org.apache.http.auth.@params.AuthParams._getCredentialCharset31862 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.auth.@params.AuthParams.staticClass, "getCredentialCharset", "(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;");
 		}
 	}
 }

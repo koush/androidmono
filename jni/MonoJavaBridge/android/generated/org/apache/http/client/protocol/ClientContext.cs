@@ -6,7 +6,7 @@ namespace org.apache.http.client.protocol
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.client.protocol.ClientContext))]
-	public sealed partial class ClientContext_ : java.lang.Object, ClientContext
+	internal sealed partial class ClientContext_ : java.lang.Object, ClientContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ClientContext_()

@@ -11,26 +11,26 @@ namespace java.lang.reflect
 		internal ReflectPermission(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ReflectPermission21034;
+		internal static global::MonoJavaBridge.MethodId _ReflectPermission21152;
 		public ReflectPermission(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.ReflectPermission.staticClass, global::java.lang.reflect.ReflectPermission._ReflectPermission21034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.ReflectPermission.staticClass, global::java.lang.reflect.ReflectPermission._ReflectPermission21152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ReflectPermission21035;
+		internal static global::MonoJavaBridge.MethodId _ReflectPermission21153;
 		public ReflectPermission(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.ReflectPermission.staticClass, global::java.lang.reflect.ReflectPermission._ReflectPermission21035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.ReflectPermission.staticClass, global::java.lang.reflect.ReflectPermission._ReflectPermission21153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.ReflectPermission.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/ReflectPermission"));
-			global::java.lang.reflect.ReflectPermission._ReflectPermission21034 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ReflectPermission.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.lang.reflect.ReflectPermission._ReflectPermission21035 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ReflectPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::java.lang.reflect.ReflectPermission._ReflectPermission21152 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ReflectPermission.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.reflect.ReflectPermission._ReflectPermission21153 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.ReflectPermission.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 		}
 	}
 }

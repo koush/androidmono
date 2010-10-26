@@ -18,14 +18,14 @@ namespace java.security.spec
 				return getOrder();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrder23876;
+		internal static global::MonoJavaBridge.MethodId _getOrder23994;
 		public virtual global::java.math.BigInteger getOrder() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getOrder23876)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getOrder23994)) as java.math.BigInteger;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getOrder23876)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getOrder23994)) as java.math.BigInteger;
 		}
 		public new global::java.security.spec.EllipticCurve Curve
 		{
@@ -34,14 +34,14 @@ namespace java.security.spec
 				return getCurve();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurve23877;
+		internal static global::MonoJavaBridge.MethodId _getCurve23995;
 		public virtual global::java.security.spec.EllipticCurve getCurve() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getCurve23877)) as java.security.spec.EllipticCurve;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getCurve23995)) as java.security.spec.EllipticCurve;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getCurve23877)) as java.security.spec.EllipticCurve;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getCurve23995)) as java.security.spec.EllipticCurve;
 		}
 		public new global::java.security.spec.ECPoint Generator
 		{
@@ -50,14 +50,14 @@ namespace java.security.spec
 				return getGenerator();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGenerator23878;
+		internal static global::MonoJavaBridge.MethodId _getGenerator23996;
 		public virtual global::java.security.spec.ECPoint getGenerator() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getGenerator23878)) as java.security.spec.ECPoint;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getGenerator23996)) as java.security.spec.ECPoint;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getGenerator23878)) as java.security.spec.ECPoint;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getGenerator23996)) as java.security.spec.ECPoint;
 		}
 		public new int Cofactor
 		{
@@ -66,31 +66,31 @@ namespace java.security.spec
 				return getCofactor();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCofactor23879;
+		internal static global::MonoJavaBridge.MethodId _getCofactor23997;
 		public virtual int getCofactor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getCofactor23879);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec._getCofactor23997);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getCofactor23879);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getCofactor23997);
 		}
-		internal static global::MonoJavaBridge.MethodId _ECParameterSpec23880;
+		internal static global::MonoJavaBridge.MethodId _ECParameterSpec23998;
 		public ECParameterSpec(java.security.spec.EllipticCurve arg0, java.security.spec.ECPoint arg1, java.math.BigInteger arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._ECParameterSpec23880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._ECParameterSpec23998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.ECParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/ECParameterSpec"));
-			global::java.security.spec.ECParameterSpec._getOrder23876 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getOrder", "()Ljava/math/BigInteger;");
-			global::java.security.spec.ECParameterSpec._getCurve23877 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getCurve", "()Ljava/security/spec/EllipticCurve;");
-			global::java.security.spec.ECParameterSpec._getGenerator23878 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getGenerator", "()Ljava/security/spec/ECPoint;");
-			global::java.security.spec.ECParameterSpec._getCofactor23879 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getCofactor", "()I");
-			global::java.security.spec.ECParameterSpec._ECParameterSpec23880 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "<init>", "(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V");
+			global::java.security.spec.ECParameterSpec._getOrder23994 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getOrder", "()Ljava/math/BigInteger;");
+			global::java.security.spec.ECParameterSpec._getCurve23995 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getCurve", "()Ljava/security/spec/EllipticCurve;");
+			global::java.security.spec.ECParameterSpec._getGenerator23996 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getGenerator", "()Ljava/security/spec/ECPoint;");
+			global::java.security.spec.ECParameterSpec._getCofactor23997 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "getCofactor", "()I");
+			global::java.security.spec.ECParameterSpec._ECParameterSpec23998 = @__env.GetMethodIDNoThrow(global::java.security.spec.ECParameterSpec.staticClass, "<init>", "(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V");
 		}
 	}
 }

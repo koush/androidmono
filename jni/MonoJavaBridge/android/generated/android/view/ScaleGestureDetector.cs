@@ -20,7 +20,7 @@ namespace android.view
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ScaleGestureDetector.OnScaleGestureListener))]
-		public sealed partial class OnScaleGestureListener_ : java.lang.Object, OnScaleGestureListener
+		internal sealed partial class OnScaleGestureListener_ : java.lang.Object, OnScaleGestureListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static OnScaleGestureListener_()
@@ -30,40 +30,40 @@ namespace android.view
 			internal OnScaleGestureListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onScale14397;
+			internal static global::MonoJavaBridge.MethodId _onScale14465;
 			 bool android.view.ScaleGestureDetector.OnScaleGestureListener.onScale(android.view.ScaleGestureDetector arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScale14397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScale14465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScale14397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScale14465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onScaleBegin14398;
+			internal static global::MonoJavaBridge.MethodId _onScaleBegin14466;
 			 bool android.view.ScaleGestureDetector.OnScaleGestureListener.onScaleBegin(android.view.ScaleGestureDetector arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleBegin14398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleBegin14466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleBegin14398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleBegin14466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onScaleEnd14399;
+			internal static global::MonoJavaBridge.MethodId _onScaleEnd14467;
 			 void android.view.ScaleGestureDetector.OnScaleGestureListener.onScaleEnd(android.view.ScaleGestureDetector arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleEnd14399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleEnd14467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleEnd14399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleEnd14467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ScaleGestureDetector$OnScaleGestureListener"));
-				global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScale14397 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, "onScale", "(Landroid/view/ScaleGestureDetector;)Z");
-				global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleBegin14398 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, "onScaleBegin", "(Landroid/view/ScaleGestureDetector;)Z");
-				global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleEnd14399 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, "onScaleEnd", "(Landroid/view/ScaleGestureDetector;)V");
+				global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScale14465 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, "onScale", "(Landroid/view/ScaleGestureDetector;)Z");
+				global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleBegin14466 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, "onScaleBegin", "(Landroid/view/ScaleGestureDetector;)Z");
+				global::android.view.ScaleGestureDetector.OnScaleGestureListener_._onScaleEnd14467 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.OnScaleGestureListener_.staticClass, "onScaleEnd", "(Landroid/view/ScaleGestureDetector;)V");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -77,48 +77,48 @@ namespace android.view
 			protected SimpleOnScaleGestureListener(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onScale14400;
+			internal static global::MonoJavaBridge.MethodId _onScale14468;
 			public virtual bool onScale(android.view.ScaleGestureDetector arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScale14400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScale14468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScale14400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScale14468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onScaleBegin14401;
+			internal static global::MonoJavaBridge.MethodId _onScaleBegin14469;
 			public virtual bool onScaleBegin(android.view.ScaleGestureDetector arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleBegin14401, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleBegin14469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleBegin14401, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleBegin14469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onScaleEnd14402;
+			internal static global::MonoJavaBridge.MethodId _onScaleEnd14470;
 			public virtual void onScaleEnd(android.view.ScaleGestureDetector arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleEnd14402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleEnd14470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleEnd14402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleEnd14470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _SimpleOnScaleGestureListener14403;
+			internal static global::MonoJavaBridge.MethodId _SimpleOnScaleGestureListener14471;
 			public SimpleOnScaleGestureListener()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._SimpleOnScaleGestureListener14403);
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._SimpleOnScaleGestureListener14471);
 				Init(@__env, handle);
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ScaleGestureDetector$SimpleOnScaleGestureListener"));
-				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScale14400 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "onScale", "(Landroid/view/ScaleGestureDetector;)Z");
-				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleBegin14401 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "onScaleBegin", "(Landroid/view/ScaleGestureDetector;)Z");
-				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleEnd14402 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "onScaleEnd", "(Landroid/view/ScaleGestureDetector;)V");
-				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._SimpleOnScaleGestureListener14403 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "<init>", "()V");
+				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScale14468 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "onScale", "(Landroid/view/ScaleGestureDetector;)Z");
+				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleBegin14469 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "onScaleBegin", "(Landroid/view/ScaleGestureDetector;)Z");
+				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._onScaleEnd14470 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "onScaleEnd", "(Landroid/view/ScaleGestureDetector;)V");
+				global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener._SimpleOnScaleGestureListener14471 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.SimpleOnScaleGestureListener.staticClass, "<init>", "()V");
 			}
 		}
 		public new long EventTime
@@ -128,32 +128,32 @@ namespace android.view
 				return getEventTime();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEventTime14404;
+		internal static global::MonoJavaBridge.MethodId _getEventTime14472;
 		public virtual long getEventTime() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getEventTime14404);
+				return @__env.CallLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getEventTime14472);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getEventTime14404);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getEventTime14472);
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent14405;
+		internal static global::MonoJavaBridge.MethodId _onTouchEvent14473;
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._onTouchEvent14405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._onTouchEvent14473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._onTouchEvent14405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._onTouchEvent14473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isInProgress14406;
+		internal static global::MonoJavaBridge.MethodId _isInProgress14474;
 		public virtual bool isInProgress() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._isInProgress14406);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._isInProgress14474);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._isInProgress14406);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._isInProgress14474);
 		}
 		public new float FocusX
 		{
@@ -162,14 +162,14 @@ namespace android.view
 				return getFocusX();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFocusX14407;
+		internal static global::MonoJavaBridge.MethodId _getFocusX14475;
 		public virtual float getFocusX() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getFocusX14407);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getFocusX14475);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getFocusX14407);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getFocusX14475);
 		}
 		public new float FocusY
 		{
@@ -178,14 +178,14 @@ namespace android.view
 				return getFocusY();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFocusY14408;
+		internal static global::MonoJavaBridge.MethodId _getFocusY14476;
 		public virtual float getFocusY() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getFocusY14408);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getFocusY14476);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getFocusY14408);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getFocusY14476);
 		}
 		public new float CurrentSpan
 		{
@@ -194,14 +194,14 @@ namespace android.view
 				return getCurrentSpan();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentSpan14409;
+		internal static global::MonoJavaBridge.MethodId _getCurrentSpan14477;
 		public virtual float getCurrentSpan() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getCurrentSpan14409);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getCurrentSpan14477);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getCurrentSpan14409);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getCurrentSpan14477);
 		}
 		public new float PreviousSpan
 		{
@@ -210,14 +210,14 @@ namespace android.view
 				return getPreviousSpan();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPreviousSpan14410;
+		internal static global::MonoJavaBridge.MethodId _getPreviousSpan14478;
 		public virtual float getPreviousSpan() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getPreviousSpan14410);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getPreviousSpan14478);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getPreviousSpan14410);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getPreviousSpan14478);
 		}
 		public new float ScaleFactor
 		{
@@ -226,14 +226,14 @@ namespace android.view
 				return getScaleFactor();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaleFactor14411;
+		internal static global::MonoJavaBridge.MethodId _getScaleFactor14479;
 		public virtual float getScaleFactor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getScaleFactor14411);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getScaleFactor14479);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getScaleFactor14411);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getScaleFactor14479);
 		}
 		public new long TimeDelta
 		{
@@ -242,36 +242,36 @@ namespace android.view
 				return getTimeDelta();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTimeDelta14412;
+		internal static global::MonoJavaBridge.MethodId _getTimeDelta14480;
 		public virtual long getTimeDelta() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getTimeDelta14412);
+				return @__env.CallLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector._getTimeDelta14480);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getTimeDelta14412);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._getTimeDelta14480);
 		}
-		internal static global::MonoJavaBridge.MethodId _ScaleGestureDetector14413;
+		internal static global::MonoJavaBridge.MethodId _ScaleGestureDetector14481;
 		public ScaleGestureDetector(android.content.Context arg0, android.view.ScaleGestureDetector.OnScaleGestureListener arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._ScaleGestureDetector14413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ScaleGestureDetector.staticClass, global::android.view.ScaleGestureDetector._ScaleGestureDetector14481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ScaleGestureDetector.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ScaleGestureDetector"));
-			global::android.view.ScaleGestureDetector._getEventTime14404 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getEventTime", "()J");
-			global::android.view.ScaleGestureDetector._onTouchEvent14405 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.view.ScaleGestureDetector._isInProgress14406 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "isInProgress", "()Z");
-			global::android.view.ScaleGestureDetector._getFocusX14407 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getFocusX", "()F");
-			global::android.view.ScaleGestureDetector._getFocusY14408 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getFocusY", "()F");
-			global::android.view.ScaleGestureDetector._getCurrentSpan14409 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getCurrentSpan", "()F");
-			global::android.view.ScaleGestureDetector._getPreviousSpan14410 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getPreviousSpan", "()F");
-			global::android.view.ScaleGestureDetector._getScaleFactor14411 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getScaleFactor", "()F");
-			global::android.view.ScaleGestureDetector._getTimeDelta14412 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getTimeDelta", "()J");
-			global::android.view.ScaleGestureDetector._ScaleGestureDetector14413 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "<init>", "(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V");
+			global::android.view.ScaleGestureDetector._getEventTime14472 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getEventTime", "()J");
+			global::android.view.ScaleGestureDetector._onTouchEvent14473 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.view.ScaleGestureDetector._isInProgress14474 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "isInProgress", "()Z");
+			global::android.view.ScaleGestureDetector._getFocusX14475 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getFocusX", "()F");
+			global::android.view.ScaleGestureDetector._getFocusY14476 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getFocusY", "()F");
+			global::android.view.ScaleGestureDetector._getCurrentSpan14477 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getCurrentSpan", "()F");
+			global::android.view.ScaleGestureDetector._getPreviousSpan14478 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getPreviousSpan", "()F");
+			global::android.view.ScaleGestureDetector._getScaleFactor14479 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getScaleFactor", "()F");
+			global::android.view.ScaleGestureDetector._getTimeDelta14480 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "getTimeDelta", "()J");
+			global::android.view.ScaleGestureDetector._ScaleGestureDetector14481 = @__env.GetMethodIDNoThrow(global::android.view.ScaleGestureDetector.staticClass, "<init>", "(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V");
 		}
 	}
 }

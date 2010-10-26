@@ -6,7 +6,7 @@ namespace android.provider
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.provider.OpenableColumns))]
-	public sealed partial class OpenableColumns_ : java.lang.Object, OpenableColumns
+	internal sealed partial class OpenableColumns_ : java.lang.Object, OpenableColumns
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static OpenableColumns_()

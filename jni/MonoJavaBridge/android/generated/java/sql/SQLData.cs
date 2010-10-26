@@ -9,7 +9,7 @@ namespace java.sql
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.sql.SQLData))]
-	public sealed partial class SQLData_ : java.lang.Object, SQLData
+	internal sealed partial class SQLData_ : java.lang.Object, SQLData
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SQLData_()
@@ -19,40 +19,40 @@ namespace java.sql
 		internal SQLData_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getSQLTypeName24848;
+		internal static global::MonoJavaBridge.MethodId _getSQLTypeName24966;
 		 global::java.lang.String java.sql.SQLData.getSQLTypeName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLData_._getSQLTypeName24848)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.sql.SQLData_._getSQLTypeName24966)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._getSQLTypeName24848)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._getSQLTypeName24966)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _readSQL24849;
+		internal static global::MonoJavaBridge.MethodId _readSQL24967;
 		 void java.sql.SQLData.readSQL(java.sql.SQLInput arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLData_._readSQL24849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLData_._readSQL24967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._readSQL24849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._readSQL24967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeSQL24850;
+		internal static global::MonoJavaBridge.MethodId _writeSQL24968;
 		 void java.sql.SQLData.writeSQL(java.sql.SQLOutput arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLData_._writeSQL24850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.sql.SQLData_._writeSQL24968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._writeSQL24850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._writeSQL24968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.sql.SQLData_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/sql/SQLData"));
-			global::java.sql.SQLData_._getSQLTypeName24848 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "getSQLTypeName", "()Ljava/lang/String;");
-			global::java.sql.SQLData_._readSQL24849 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V");
-			global::java.sql.SQLData_._writeSQL24850 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "writeSQL", "(Ljava/sql/SQLOutput;)V");
+			global::java.sql.SQLData_._getSQLTypeName24966 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "getSQLTypeName", "()Ljava/lang/String;");
+			global::java.sql.SQLData_._readSQL24967 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V");
+			global::java.sql.SQLData_._writeSQL24968 = @__env.GetMethodIDNoThrow(global::java.sql.SQLData_.staticClass, "writeSQL", "(Ljava/sql/SQLOutput;)V");
 		}
 	}
 }

@@ -11,41 +11,41 @@ namespace android.view
 		protected Gravity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _apply13990;
+		internal static global::MonoJavaBridge.MethodId _apply14055;
 		public static void apply(int arg0, int arg1, int arg2, android.graphics.Rect arg3, android.graphics.Rect arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply13990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply14055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _apply13991;
+		internal static global::MonoJavaBridge.MethodId _apply14056;
 		public static void apply(int arg0, int arg1, int arg2, android.graphics.Rect arg3, int arg4, int arg5, android.graphics.Rect arg6) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply13991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply14056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 		}
-		internal static global::MonoJavaBridge.MethodId _applyDisplay13992;
+		internal static global::MonoJavaBridge.MethodId _applyDisplay14057;
 		public static void applyDisplay(int arg0, android.graphics.Rect arg1, android.graphics.Rect arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._applyDisplay13992, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._applyDisplay14057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _isVertical13993;
+		internal static global::MonoJavaBridge.MethodId _isVertical14058;
 		public static bool isVertical(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isVertical13993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isVertical14058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isHorizontal13994;
+		internal static global::MonoJavaBridge.MethodId _isHorizontal14059;
 		public static bool isHorizontal(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isHorizontal13994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isHorizontal14059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _Gravity13995;
+		internal static global::MonoJavaBridge.MethodId _Gravity14060;
 		public Gravity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Gravity.staticClass, global::android.view.Gravity._Gravity13995);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.Gravity.staticClass, global::android.view.Gravity._Gravity14060);
 			Init(@__env, handle);
 		}
 		public static int NO_GRAVITY
@@ -213,12 +213,12 @@ namespace android.view
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.Gravity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/Gravity"));
-			global::android.view.Gravity._apply13990 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
-			global::android.view.Gravity._apply13991 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V");
-			global::android.view.Gravity._applyDisplay13992 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "applyDisplay", "(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
-			global::android.view.Gravity._isVertical13993 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "isVertical", "(I)Z");
-			global::android.view.Gravity._isHorizontal13994 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "isHorizontal", "(I)Z");
-			global::android.view.Gravity._Gravity13995 = @__env.GetMethodIDNoThrow(global::android.view.Gravity.staticClass, "<init>", "()V");
+			global::android.view.Gravity._apply14055 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
+			global::android.view.Gravity._apply14056 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V");
+			global::android.view.Gravity._applyDisplay14057 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "applyDisplay", "(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
+			global::android.view.Gravity._isVertical14058 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "isVertical", "(I)Z");
+			global::android.view.Gravity._isHorizontal14059 = @__env.GetStaticMethodIDNoThrow(global::android.view.Gravity.staticClass, "isHorizontal", "(I)Z");
+			global::android.view.Gravity._Gravity14060 = @__env.GetMethodIDNoThrow(global::android.view.Gravity.staticClass, "<init>", "()V");
 		}
 	}
 }

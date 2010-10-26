@@ -6,7 +6,7 @@ namespace java.security.spec
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.spec.KeySpec))]
-	public sealed partial class KeySpec_ : java.lang.Object, KeySpec
+	internal sealed partial class KeySpec_ : java.lang.Object, KeySpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static KeySpec_()

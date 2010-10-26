@@ -6,7 +6,7 @@ namespace android.view
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.ContextMenu_ContextMenuInfo))]
-	public sealed partial class ContextMenu_ContextMenuInfo_ : java.lang.Object, ContextMenu_ContextMenuInfo
+	internal sealed partial class ContextMenu_ContextMenuInfo_ : java.lang.Object, ContextMenu_ContextMenuInfo
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ContextMenu_ContextMenuInfo_()
@@ -19,7 +19,7 @@ namespace android.view
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::android.view.ContextMenu_ContextMenuInfo_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ContextMenu_ContextMenuInfo"));
+			global::android.view.ContextMenu_ContextMenuInfo_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ContextMenu$ContextMenuInfo"));
 		}
 	}
 }

@@ -6,7 +6,7 @@ namespace java.util
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.EventListener))]
-	public sealed partial class EventListener_ : java.lang.Object, EventListener
+	internal sealed partial class EventListener_ : java.lang.Object, EventListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EventListener_()

@@ -11,77 +11,77 @@ namespace java.awt.font
 		internal NumericShaper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals18566;
+		internal static global::MonoJavaBridge.MethodId _equals18684;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper._equals18566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper._equals18684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._equals18566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._equals18684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString18567;
+		internal static global::MonoJavaBridge.MethodId _toString18685;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.awt.font.NumericShaper._toString18567)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.awt.font.NumericShaper._toString18685)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._toString18567)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._toString18685)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode18568;
+		internal static global::MonoJavaBridge.MethodId _hashCode18686;
 		public sealed override int hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper._hashCode18568);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper._hashCode18686);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._hashCode18568);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._hashCode18686);
 		}
-		internal static global::MonoJavaBridge.MethodId _shape18569;
+		internal static global::MonoJavaBridge.MethodId _shape18687;
 		public void shape(char[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper._shape18569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper._shape18687, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._shape18569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._shape18687, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _shape18570;
+		internal static global::MonoJavaBridge.MethodId _shape18688;
 		public void shape(char[] arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper._shape18570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper._shape18688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._shape18570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._shape18688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _getShaper18571;
+		internal static global::MonoJavaBridge.MethodId _getShaper18689;
 		public static global::java.awt.font.NumericShaper getShaper(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.NumericShaper>(@__env.CallStaticObjectMethod(java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getShaper18571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.awt.font.NumericShaper;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.NumericShaper>(@__env.CallStaticObjectMethod(java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getShaper18689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.awt.font.NumericShaper;
 		}
-		internal static global::MonoJavaBridge.MethodId _getContextualShaper18572;
+		internal static global::MonoJavaBridge.MethodId _getContextualShaper18690;
 		public static global::java.awt.font.NumericShaper getContextualShaper(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.NumericShaper>(@__env.CallStaticObjectMethod(java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getContextualShaper18572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.awt.font.NumericShaper;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.NumericShaper>(@__env.CallStaticObjectMethod(java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getContextualShaper18690, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.awt.font.NumericShaper;
 		}
-		internal static global::MonoJavaBridge.MethodId _getContextualShaper18573;
+		internal static global::MonoJavaBridge.MethodId _getContextualShaper18691;
 		public static global::java.awt.font.NumericShaper getContextualShaper(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.NumericShaper>(@__env.CallStaticObjectMethod(java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getContextualShaper18573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.awt.font.NumericShaper;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.awt.font.NumericShaper>(@__env.CallStaticObjectMethod(java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getContextualShaper18691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.awt.font.NumericShaper;
 		}
-		internal static global::MonoJavaBridge.MethodId _isContextual18574;
+		internal static global::MonoJavaBridge.MethodId _isContextual18692;
 		public bool isContextual() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper._isContextual18574);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper._isContextual18692);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._isContextual18574);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._isContextual18692);
 		}
 		public new int Ranges
 		{
@@ -90,14 +90,14 @@ namespace java.awt.font
 				return getRanges();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRanges18575;
+		internal static global::MonoJavaBridge.MethodId _getRanges18693;
 		public int getRanges() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper._getRanges18575);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper._getRanges18693);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getRanges18575);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.awt.font.NumericShaper.staticClass, global::java.awt.font.NumericShaper._getRanges18693);
 		}
 		public static int EUROPEAN
 		{
@@ -243,16 +243,16 @@ namespace java.awt.font
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.awt.font.NumericShaper.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/awt/font/NumericShaper"));
-			global::java.awt.font.NumericShaper._equals18566 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.awt.font.NumericShaper._toString18567 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.awt.font.NumericShaper._hashCode18568 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "hashCode", "()I");
-			global::java.awt.font.NumericShaper._shape18569 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "shape", "([CII)V");
-			global::java.awt.font.NumericShaper._shape18570 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "shape", "([CIII)V");
-			global::java.awt.font.NumericShaper._getShaper18571 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getShaper", "(I)Ljava/awt/font/NumericShaper;");
-			global::java.awt.font.NumericShaper._getContextualShaper18572 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getContextualShaper", "(I)Ljava/awt/font/NumericShaper;");
-			global::java.awt.font.NumericShaper._getContextualShaper18573 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getContextualShaper", "(II)Ljava/awt/font/NumericShaper;");
-			global::java.awt.font.NumericShaper._isContextual18574 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "isContextual", "()Z");
-			global::java.awt.font.NumericShaper._getRanges18575 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getRanges", "()I");
+			global::java.awt.font.NumericShaper._equals18684 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.awt.font.NumericShaper._toString18685 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.awt.font.NumericShaper._hashCode18686 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "hashCode", "()I");
+			global::java.awt.font.NumericShaper._shape18687 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "shape", "([CII)V");
+			global::java.awt.font.NumericShaper._shape18688 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "shape", "([CIII)V");
+			global::java.awt.font.NumericShaper._getShaper18689 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getShaper", "(I)Ljava/awt/font/NumericShaper;");
+			global::java.awt.font.NumericShaper._getContextualShaper18690 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getContextualShaper", "(I)Ljava/awt/font/NumericShaper;");
+			global::java.awt.font.NumericShaper._getContextualShaper18691 = @__env.GetStaticMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getContextualShaper", "(II)Ljava/awt/font/NumericShaper;");
+			global::java.awt.font.NumericShaper._isContextual18692 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "isContextual", "()Z");
+			global::java.awt.font.NumericShaper._getRanges18693 = @__env.GetMethodIDNoThrow(global::java.awt.font.NumericShaper.staticClass, "getRanges", "()I");
 		}
 	}
 }

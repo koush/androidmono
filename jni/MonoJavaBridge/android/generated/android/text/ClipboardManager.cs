@@ -11,14 +11,14 @@ namespace android.text
 		protected ClipboardManager(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setText12663;
+		internal static global::MonoJavaBridge.MethodId _setText12721;
 		public virtual void setText(java.lang.CharSequence arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.text.ClipboardManager._setText12663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.text.ClipboardManager._setText12721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._setText12663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._setText12721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setText(string arg0)
 		{
@@ -35,31 +35,31 @@ namespace android.text
 				setText((global::java.lang.CharSequence)(global::java.lang.String)value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getText12664;
+		internal static global::MonoJavaBridge.MethodId _getText12722;
 		public virtual global::java.lang.CharSequence getText() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.ClipboardManager._getText12664)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.text.ClipboardManager._getText12722)) as java.lang.CharSequence;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._getText12664)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._getText12722)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _hasText12665;
+		internal static global::MonoJavaBridge.MethodId _hasText12723;
 		public virtual bool hasText() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager._hasText12665);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager._hasText12723);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._hasText12665);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._hasText12723);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.text.ClipboardManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/text/ClipboardManager"));
-			global::android.text.ClipboardManager._setText12663 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
-			global::android.text.ClipboardManager._getText12664 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "getText", "()Ljava/lang/CharSequence;");
-			global::android.text.ClipboardManager._hasText12665 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "hasText", "()Z");
+			global::android.text.ClipboardManager._setText12721 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
+			global::android.text.ClipboardManager._getText12722 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "getText", "()Ljava/lang/CharSequence;");
+			global::android.text.ClipboardManager._hasText12723 = @__env.GetMethodIDNoThrow(global::android.text.ClipboardManager.staticClass, "hasText", "()Z");
 		}
 	}
 }

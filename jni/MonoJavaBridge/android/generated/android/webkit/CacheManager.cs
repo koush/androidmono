@@ -29,14 +29,14 @@ namespace android.webkit
 					return getLocation();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getLocation15906;
+			internal static global::MonoJavaBridge.MethodId _getLocation15989;
 			public virtual global::java.lang.String getLocation() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getLocation15906)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getLocation15989)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLocation15906)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLocation15989)) as java.lang.String;
 			}
 			public new global::java.lang.String LocalPath
 			{
@@ -45,14 +45,14 @@ namespace android.webkit
 					return getLocalPath();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getLocalPath15907;
+			internal static global::MonoJavaBridge.MethodId _getLocalPath15990;
 			public virtual global::java.lang.String getLocalPath() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getLocalPath15907)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getLocalPath15990)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLocalPath15907)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLocalPath15990)) as java.lang.String;
 			}
 			public new global::java.io.InputStream InputStream
 			{
@@ -65,14 +65,14 @@ namespace android.webkit
 					setInputStream(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getInputStream15908;
+			internal static global::MonoJavaBridge.MethodId _getInputStream15991;
 			public virtual global::java.io.InputStream getInputStream() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getInputStream15908)) as java.io.InputStream;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getInputStream15991)) as java.io.InputStream;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getInputStream15908)) as java.io.InputStream;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getInputStream15991)) as java.io.InputStream;
 			}
 			public new global::java.lang.String Encoding
 			{
@@ -85,14 +85,14 @@ namespace android.webkit
 					setEncoding(value);
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getEncoding15909;
+			internal static global::MonoJavaBridge.MethodId _getEncoding15992;
 			public virtual global::java.lang.String getEncoding() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getEncoding15909)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getEncoding15992)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getEncoding15909)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getEncoding15992)) as java.lang.String;
 			}
 			public new long ContentLength
 			{
@@ -101,14 +101,14 @@ namespace android.webkit
 					return getContentLength();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getContentLength15910;
+			internal static global::MonoJavaBridge.MethodId _getContentLength15993;
 			public virtual long getContentLength() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getContentLength15910);
+					return @__env.CallLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getContentLength15993);
 				else
-					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getContentLength15910);
+					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getContentLength15993);
 			}
 			public new global::java.lang.String LastModified
 			{
@@ -117,14 +117,14 @@ namespace android.webkit
 					return getLastModified();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getLastModified15911;
+			internal static global::MonoJavaBridge.MethodId _getLastModified15994;
 			public virtual global::java.lang.String getLastModified() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getLastModified15911)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getLastModified15994)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLastModified15911)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLastModified15994)) as java.lang.String;
 			}
 			public new global::java.io.OutputStream OutputStream
 			{
@@ -133,23 +133,23 @@ namespace android.webkit
 					return getOutputStream();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getOutputStream15912;
+			internal static global::MonoJavaBridge.MethodId _getOutputStream15995;
 			public virtual global::java.io.OutputStream getOutputStream() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getOutputStream15912)) as java.io.OutputStream;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getOutputStream15995)) as java.io.OutputStream;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getOutputStream15912)) as java.io.OutputStream;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getOutputStream15995)) as java.io.OutputStream;
 			}
-			internal static global::MonoJavaBridge.MethodId _setEncoding15913;
+			internal static global::MonoJavaBridge.MethodId _setEncoding15996;
 			public virtual void setEncoding(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._setEncoding15913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._setEncoding15996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._setEncoding15913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._setEncoding15996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			public new int HttpStatusCode
 			{
@@ -158,14 +158,14 @@ namespace android.webkit
 					return getHttpStatusCode();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getHttpStatusCode15914;
+			internal static global::MonoJavaBridge.MethodId _getHttpStatusCode15997;
 			public virtual int getHttpStatusCode() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getHttpStatusCode15914);
+					return @__env.CallIntMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getHttpStatusCode15997);
 				else
-					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getHttpStatusCode15914);
+					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getHttpStatusCode15997);
 			}
 			public new long Expires
 			{
@@ -174,14 +174,14 @@ namespace android.webkit
 					return getExpires();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getExpires15915;
+			internal static global::MonoJavaBridge.MethodId _getExpires15998;
 			public virtual long getExpires() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getExpires15915);
+					return @__env.CallLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getExpires15998);
 				else
-					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getExpires15915);
+					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getExpires15998);
 			}
 			public new global::java.lang.String ExpiresString
 			{
@@ -190,14 +190,14 @@ namespace android.webkit
 					return getExpiresString();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getExpiresString15916;
+			internal static global::MonoJavaBridge.MethodId _getExpiresString15999;
 			public virtual global::java.lang.String getExpiresString() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getExpiresString15916)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getExpiresString15999)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getExpiresString15916)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getExpiresString15999)) as java.lang.String;
 			}
 			public new global::java.lang.String ETag
 			{
@@ -206,14 +206,14 @@ namespace android.webkit
 					return getETag();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getETag15917;
+			internal static global::MonoJavaBridge.MethodId _getETag16000;
 			public virtual global::java.lang.String getETag() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getETag15917)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getETag16000)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getETag15917)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getETag16000)) as java.lang.String;
 			}
 			public new global::java.lang.String MimeType
 			{
@@ -222,14 +222,14 @@ namespace android.webkit
 					return getMimeType();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getMimeType15918;
+			internal static global::MonoJavaBridge.MethodId _getMimeType16001;
 			public virtual global::java.lang.String getMimeType() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getMimeType15918)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getMimeType16001)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getMimeType15918)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getMimeType16001)) as java.lang.String;
 			}
 			public new global::java.lang.String ContentDisposition
 			{
@@ -238,51 +238,51 @@ namespace android.webkit
 					return getContentDisposition();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getContentDisposition15919;
+			internal static global::MonoJavaBridge.MethodId _getContentDisposition16002;
 			public virtual global::java.lang.String getContentDisposition() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getContentDisposition15919)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._getContentDisposition16002)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getContentDisposition15919)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getContentDisposition16002)) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _setInputStream15920;
+			internal static global::MonoJavaBridge.MethodId _setInputStream16003;
 			public virtual void setInputStream(java.io.InputStream arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._setInputStream15920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult._setInputStream16003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._setInputStream15920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._setInputStream16003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _CacheResult15921;
+			internal static global::MonoJavaBridge.MethodId _CacheResult16004;
 			public CacheResult()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._CacheResult15921);
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._CacheResult16004);
 				Init(@__env, handle);
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.CacheManager.CacheResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CacheManager$CacheResult"));
-				global::android.webkit.CacheManager.CacheResult._getLocation15906 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getLocation", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getLocalPath15907 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getLocalPath", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getInputStream15908 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getInputStream", "()Ljava/io/InputStream;");
-				global::android.webkit.CacheManager.CacheResult._getEncoding15909 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getEncoding", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getContentLength15910 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getContentLength", "()J");
-				global::android.webkit.CacheManager.CacheResult._getLastModified15911 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getLastModified", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getOutputStream15912 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getOutputStream", "()Ljava/io/OutputStream;");
-				global::android.webkit.CacheManager.CacheResult._setEncoding15913 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "setEncoding", "(Ljava/lang/String;)V");
-				global::android.webkit.CacheManager.CacheResult._getHttpStatusCode15914 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getHttpStatusCode", "()I");
-				global::android.webkit.CacheManager.CacheResult._getExpires15915 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getExpires", "()J");
-				global::android.webkit.CacheManager.CacheResult._getExpiresString15916 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getExpiresString", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getETag15917 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getETag", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getMimeType15918 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getMimeType", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getContentDisposition15919 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getContentDisposition", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._setInputStream15920 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "setInputStream", "(Ljava/io/InputStream;)V");
-				global::android.webkit.CacheManager.CacheResult._CacheResult15921 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "<init>", "()V");
+				global::android.webkit.CacheManager.CacheResult._getLocation15989 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getLocation", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getLocalPath15990 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getLocalPath", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getInputStream15991 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getInputStream", "()Ljava/io/InputStream;");
+				global::android.webkit.CacheManager.CacheResult._getEncoding15992 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getEncoding", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getContentLength15993 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getContentLength", "()J");
+				global::android.webkit.CacheManager.CacheResult._getLastModified15994 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getLastModified", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getOutputStream15995 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getOutputStream", "()Ljava/io/OutputStream;");
+				global::android.webkit.CacheManager.CacheResult._setEncoding15996 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "setEncoding", "(Ljava/lang/String;)V");
+				global::android.webkit.CacheManager.CacheResult._getHttpStatusCode15997 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getHttpStatusCode", "()I");
+				global::android.webkit.CacheManager.CacheResult._getExpires15998 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getExpires", "()J");
+				global::android.webkit.CacheManager.CacheResult._getExpiresString15999 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getExpiresString", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getETag16000 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getETag", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getMimeType16001 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getMimeType", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._getContentDisposition16002 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "getContentDisposition", "()Ljava/lang/String;");
+				global::android.webkit.CacheManager.CacheResult._setInputStream16003 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "setInputStream", "(Ljava/io/InputStream;)V");
+				global::android.webkit.CacheManager.CacheResult._CacheResult16004 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.CacheResult.staticClass, "<init>", "()V");
 			}
 		}
 		public static global::java.io.File CacheFileBaseDir
@@ -292,60 +292,60 @@ namespace android.webkit
 				return getCacheFileBaseDir();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCacheFileBaseDir15922;
+		internal static global::MonoJavaBridge.MethodId _getCacheFileBaseDir16005;
 		public static global::java.io.File getCacheFileBaseDir() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._getCacheFileBaseDir15922)) as java.io.File;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._getCacheFileBaseDir16005)) as java.io.File;
 		}
-		internal static global::MonoJavaBridge.MethodId _cacheDisabled15923;
+		internal static global::MonoJavaBridge.MethodId _cacheDisabled16006;
 		public static bool cacheDisabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._cacheDisabled15923);
+			return @__env.CallStaticBooleanMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._cacheDisabled16006);
 		}
-		internal static global::MonoJavaBridge.MethodId _startCacheTransaction15924;
+		internal static global::MonoJavaBridge.MethodId _startCacheTransaction16007;
 		public static bool startCacheTransaction() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._startCacheTransaction15924);
+			return @__env.CallStaticBooleanMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._startCacheTransaction16007);
 		}
-		internal static global::MonoJavaBridge.MethodId _endCacheTransaction15925;
+		internal static global::MonoJavaBridge.MethodId _endCacheTransaction16008;
 		public static bool endCacheTransaction() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._endCacheTransaction15925);
+			return @__env.CallStaticBooleanMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._endCacheTransaction16008);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCacheFile15926;
+		internal static global::MonoJavaBridge.MethodId _getCacheFile16009;
 		public static global::android.webkit.CacheManager.CacheResult getCacheFile(java.lang.String arg0, java.util.Map arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._getCacheFile15926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.CacheManager.CacheResult;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._getCacheFile16009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.webkit.CacheManager.CacheResult;
 		}
-		internal static global::MonoJavaBridge.MethodId _saveCacheFile15927;
+		internal static global::MonoJavaBridge.MethodId _saveCacheFile16010;
 		public static void saveCacheFile(java.lang.String arg0, android.webkit.CacheManager.CacheResult arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._saveCacheFile15927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._saveCacheFile16010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _CacheManager15928;
+		internal static global::MonoJavaBridge.MethodId _CacheManager16011;
 		public CacheManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._CacheManager15928);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.CacheManager.staticClass, global::android.webkit.CacheManager._CacheManager16011);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.CacheManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/CacheManager"));
-			global::android.webkit.CacheManager._getCacheFileBaseDir15922 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "getCacheFileBaseDir", "()Ljava/io/File;");
-			global::android.webkit.CacheManager._cacheDisabled15923 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "cacheDisabled", "()Z");
-			global::android.webkit.CacheManager._startCacheTransaction15924 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "startCacheTransaction", "()Z");
-			global::android.webkit.CacheManager._endCacheTransaction15925 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "endCacheTransaction", "()Z");
-			global::android.webkit.CacheManager._getCacheFile15926 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "getCacheFile", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
-			global::android.webkit.CacheManager._saveCacheFile15927 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "saveCacheFile", "(Ljava/lang/String;Landroid/webkit/CacheManager$CacheResult;)V");
-			global::android.webkit.CacheManager._CacheManager15928 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "<init>", "()V");
+			global::android.webkit.CacheManager._getCacheFileBaseDir16005 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "getCacheFileBaseDir", "()Ljava/io/File;");
+			global::android.webkit.CacheManager._cacheDisabled16006 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "cacheDisabled", "()Z");
+			global::android.webkit.CacheManager._startCacheTransaction16007 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "startCacheTransaction", "()Z");
+			global::android.webkit.CacheManager._endCacheTransaction16008 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "endCacheTransaction", "()Z");
+			global::android.webkit.CacheManager._getCacheFile16009 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "getCacheFile", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
+			global::android.webkit.CacheManager._saveCacheFile16010 = @__env.GetStaticMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "saveCacheFile", "(Ljava/lang/String;Landroid/webkit/CacheManager$CacheResult;)V");
+			global::android.webkit.CacheManager._CacheManager16011 = @__env.GetMethodIDNoThrow(global::android.webkit.CacheManager.staticClass, "<init>", "()V");
 		}
 	}
 }

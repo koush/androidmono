@@ -11,49 +11,49 @@ namespace javax.xml.xpath
 		protected XPathConstants(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.FieldId _NUMBER31173;
+		internal static global::MonoJavaBridge.FieldId _NUMBER31291;
 		public static global::javax.xml.@namespace.QName NUMBER
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _NUMBER31173)) as javax.xml.@namespace.QName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _NUMBER31291)) as javax.xml.@namespace.QName;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _STRING31174;
+		internal static global::MonoJavaBridge.FieldId _STRING31292;
 		public static global::javax.xml.@namespace.QName STRING
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _STRING31174)) as javax.xml.@namespace.QName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _STRING31292)) as javax.xml.@namespace.QName;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _BOOLEAN31175;
+		internal static global::MonoJavaBridge.FieldId _BOOLEAN31293;
 		public static global::javax.xml.@namespace.QName BOOLEAN
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _BOOLEAN31175)) as javax.xml.@namespace.QName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _BOOLEAN31293)) as javax.xml.@namespace.QName;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _NODESET31176;
+		internal static global::MonoJavaBridge.FieldId _NODESET31294;
 		public static global::javax.xml.@namespace.QName NODESET
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _NODESET31176)) as javax.xml.@namespace.QName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _NODESET31294)) as javax.xml.@namespace.QName;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _NODE31177;
+		internal static global::MonoJavaBridge.FieldId _NODE31295;
 		public static global::javax.xml.@namespace.QName NODE
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _NODE31177)) as javax.xml.@namespace.QName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.xml.xpath.XPathConstants.staticClass, _NODE31295)) as javax.xml.@namespace.QName;
 			}
 		}
 		public static global::java.lang.String DOM_OBJECT_MODEL
@@ -67,11 +67,11 @@ namespace javax.xml.xpath
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathConstants.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathConstants"));
-			global::javax.xml.xpath.XPathConstants._NUMBER31173 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NUMBER", "Ljavax/xml/@namespace/QName;");
-			global::javax.xml.xpath.XPathConstants._STRING31174 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "STRING", "Ljavax/xml/@namespace/QName;");
-			global::javax.xml.xpath.XPathConstants._BOOLEAN31175 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "BOOLEAN", "Ljavax/xml/@namespace/QName;");
-			global::javax.xml.xpath.XPathConstants._NODESET31176 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODESET", "Ljavax/xml/@namespace/QName;");
-			global::javax.xml.xpath.XPathConstants._NODE31177 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODE", "Ljavax/xml/@namespace/QName;");
+			global::javax.xml.xpath.XPathConstants._NUMBER31291 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NUMBER", "Ljavax/xml/namespace/QName;");
+			global::javax.xml.xpath.XPathConstants._STRING31292 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "STRING", "Ljavax/xml/namespace/QName;");
+			global::javax.xml.xpath.XPathConstants._BOOLEAN31293 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "BOOLEAN", "Ljavax/xml/namespace/QName;");
+			global::javax.xml.xpath.XPathConstants._NODESET31294 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODESET", "Ljavax/xml/namespace/QName;");
+			global::javax.xml.xpath.XPathConstants._NODE31295 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.xpath.XPathConstants.staticClass, "NODE", "Ljavax/xml/namespace/QName;");
 		}
 	}
 }

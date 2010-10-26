@@ -6,7 +6,7 @@ namespace java.util
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.RandomAccess))]
-	public sealed partial class RandomAccess_ : java.lang.Object, RandomAccess
+	internal sealed partial class RandomAccess_ : java.lang.Object, RandomAccess
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static RandomAccess_()

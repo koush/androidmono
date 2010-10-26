@@ -178,22 +178,22 @@ namespace java.io
 				return 16;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SUBSTITUTION_PERMISSION19214;
+		internal static global::MonoJavaBridge.FieldId _SUBSTITUTION_PERMISSION19332;
 		public static global::java.io.SerializablePermission SUBSTITUTION_PERMISSION
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.SerializablePermission>(@__env.GetStaticObjectField(global::java.io.ObjectStreamConstants_.staticClass, _SUBSTITUTION_PERMISSION19214)) as java.io.SerializablePermission;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.SerializablePermission>(@__env.GetStaticObjectField(global::java.io.ObjectStreamConstants_.staticClass, _SUBSTITUTION_PERMISSION19332)) as java.io.SerializablePermission;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _SUBCLASS_IMPLEMENTATION_PERMISSION19215;
+		internal static global::MonoJavaBridge.FieldId _SUBCLASS_IMPLEMENTATION_PERMISSION19333;
 		public static global::java.io.SerializablePermission SUBCLASS_IMPLEMENTATION_PERMISSION
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.SerializablePermission>(@__env.GetStaticObjectField(global::java.io.ObjectStreamConstants_.staticClass, _SUBCLASS_IMPLEMENTATION_PERMISSION19215)) as java.io.SerializablePermission;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.SerializablePermission>(@__env.GetStaticObjectField(global::java.io.ObjectStreamConstants_.staticClass, _SUBCLASS_IMPLEMENTATION_PERMISSION19333)) as java.io.SerializablePermission;
 			}
 		}
 		public static int PROTOCOL_VERSION_1

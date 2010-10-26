@@ -6,7 +6,7 @@ namespace java.io
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.ObjectStreamConstants))]
-	public sealed partial class ObjectStreamConstants_ : java.lang.Object, ObjectStreamConstants
+	internal sealed partial class ObjectStreamConstants_ : java.lang.Object, ObjectStreamConstants
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ObjectStreamConstants_()

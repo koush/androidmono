@@ -11,117 +11,117 @@ namespace java.io
 		protected Reader(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close19435;
+		internal static global::MonoJavaBridge.MethodId _close19553;
 		public abstract void close();
-		internal static global::MonoJavaBridge.MethodId _mark19436;
+		internal static global::MonoJavaBridge.MethodId _mark19554;
 		public virtual void mark(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Reader._mark19436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Reader._mark19554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._mark19436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._mark19554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _reset19437;
+		internal static global::MonoJavaBridge.MethodId _reset19555;
 		public virtual void reset() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Reader._reset19437);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Reader._reset19555);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._reset19437);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._reset19555);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19438;
+		internal static global::MonoJavaBridge.MethodId _read19556;
 		public abstract int read(char[] arg0, int arg1, int arg2);
-		internal static global::MonoJavaBridge.MethodId _read19439;
+		internal static global::MonoJavaBridge.MethodId _read19557;
 		public virtual int read() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader._read19439);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader._read19557);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._read19439);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._read19557);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19440;
+		internal static global::MonoJavaBridge.MethodId _read19558;
 		public virtual int read(char[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader._read19440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader._read19558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._read19440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._read19558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _read19441;
+		internal static global::MonoJavaBridge.MethodId _read19559;
 		public virtual int read(java.nio.CharBuffer arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader._read19441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader._read19559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._read19441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._read19559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _skip19442;
+		internal static global::MonoJavaBridge.MethodId _skip19560;
 		public virtual long skip(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.io.Reader._skip19442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.io.Reader._skip19560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._skip19442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._skip19560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _markSupported19443;
+		internal static global::MonoJavaBridge.MethodId _markSupported19561;
 		public virtual bool markSupported() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.Reader._markSupported19443);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.Reader._markSupported19561);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._markSupported19443);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._markSupported19561);
 		}
-		internal static global::MonoJavaBridge.MethodId _ready19444;
+		internal static global::MonoJavaBridge.MethodId _ready19562;
 		public virtual bool ready() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.Reader._ready19444);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.Reader._ready19562);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._ready19444);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.Reader.staticClass, global::java.io.Reader._ready19562);
 		}
-		internal static global::MonoJavaBridge.MethodId _Reader19445;
+		internal static global::MonoJavaBridge.MethodId _Reader19563;
 		protected Reader()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19445);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19563);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Reader19446;
+		internal static global::MonoJavaBridge.MethodId _Reader19564;
 		protected Reader(java.lang.Object arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader19564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Reader.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Reader"));
-			global::java.io.Reader._close19435 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "close", "()V");
-			global::java.io.Reader._mark19436 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "mark", "(I)V");
-			global::java.io.Reader._reset19437 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "reset", "()V");
-			global::java.io.Reader._read19438 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "([CII)I");
-			global::java.io.Reader._read19439 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "()I");
-			global::java.io.Reader._read19440 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "([C)I");
-			global::java.io.Reader._read19441 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
-			global::java.io.Reader._skip19442 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "skip", "(J)J");
-			global::java.io.Reader._markSupported19443 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "markSupported", "()Z");
-			global::java.io.Reader._ready19444 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "ready", "()Z");
-			global::java.io.Reader._Reader19445 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "()V");
-			global::java.io.Reader._Reader19446 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "(Ljava/lang/Object;)V");
+			global::java.io.Reader._close19553 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "close", "()V");
+			global::java.io.Reader._mark19554 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "mark", "(I)V");
+			global::java.io.Reader._reset19555 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "reset", "()V");
+			global::java.io.Reader._read19556 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "([CII)I");
+			global::java.io.Reader._read19557 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "()I");
+			global::java.io.Reader._read19558 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "([C)I");
+			global::java.io.Reader._read19559 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "read", "(Ljava/nio/CharBuffer;)I");
+			global::java.io.Reader._skip19560 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "skip", "(J)J");
+			global::java.io.Reader._markSupported19561 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "markSupported", "()Z");
+			global::java.io.Reader._ready19562 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "ready", "()Z");
+			global::java.io.Reader._Reader19563 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "()V");
+			global::java.io.Reader._Reader19564 = @__env.GetMethodIDNoThrow(global::java.io.Reader.staticClass, "<init>", "(Ljava/lang/Object;)V");
 		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.Reader))]
-	public sealed partial class Reader_ : java.io.Reader
+	internal sealed partial class Reader_ : java.io.Reader
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Reader_()
@@ -131,30 +131,30 @@ namespace java.io
 		internal Reader_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _close19447;
+		internal static global::MonoJavaBridge.MethodId _close19565;
 		public override void close() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Reader_._close19447);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.Reader_._close19565);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Reader_.staticClass, global::java.io.Reader_._close19447);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Reader_.staticClass, global::java.io.Reader_._close19565);
 		}
-		internal static global::MonoJavaBridge.MethodId _read19448;
+		internal static global::MonoJavaBridge.MethodId _read19566;
 		public override int read(char[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader_._read19448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.io.Reader_._read19566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader_.staticClass, global::java.io.Reader_._read19448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.Reader_.staticClass, global::java.io.Reader_._read19566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.Reader_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/Reader"));
-			global::java.io.Reader_._close19447 = @__env.GetMethodIDNoThrow(global::java.io.Reader_.staticClass, "close", "()V");
-			global::java.io.Reader_._read19448 = @__env.GetMethodIDNoThrow(global::java.io.Reader_.staticClass, "read", "([CII)I");
+			global::java.io.Reader_._close19565 = @__env.GetMethodIDNoThrow(global::java.io.Reader_.staticClass, "close", "()V");
+			global::java.io.Reader_._read19566 = @__env.GetMethodIDNoThrow(global::java.io.Reader_.staticClass, "read", "([CII)I");
 		}
 	}
 }

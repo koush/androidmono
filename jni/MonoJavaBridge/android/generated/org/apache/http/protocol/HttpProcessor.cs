@@ -6,7 +6,7 @@ namespace org.apache.http.protocol
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.protocol.HttpProcessor))]
-	public sealed partial class HttpProcessor_ : java.lang.Object, HttpProcessor
+	internal sealed partial class HttpProcessor_ : java.lang.Object, HttpProcessor
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static HttpProcessor_()
@@ -16,30 +16,30 @@ namespace org.apache.http.protocol
 		internal HttpProcessor_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _process33775;
+		internal static global::MonoJavaBridge.MethodId _process33893;
 		 void org.apache.http.HttpRequestInterceptor.process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_._process33775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_._process33893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_.staticClass, global::org.apache.http.protocol.HttpProcessor_._process33775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_.staticClass, global::org.apache.http.protocol.HttpProcessor_._process33893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _process33776;
+		internal static global::MonoJavaBridge.MethodId _process33894;
 		 void org.apache.http.HttpResponseInterceptor.process(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_._process33776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_._process33894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_.staticClass, global::org.apache.http.protocol.HttpProcessor_._process33776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpProcessor_.staticClass, global::org.apache.http.protocol.HttpProcessor_._process33894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.protocol.HttpProcessor_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/protocol/HttpProcessor"));
-			global::org.apache.http.protocol.HttpProcessor_._process33775 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpProcessor_.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
-			global::org.apache.http.protocol.HttpProcessor_._process33776 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpProcessor_.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
+			global::org.apache.http.protocol.HttpProcessor_._process33893 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpProcessor_.staticClass, "process", "(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V");
+			global::org.apache.http.protocol.HttpProcessor_._process33894 = @__env.GetMethodIDNoThrow(global::org.apache.http.protocol.HttpProcessor_.staticClass, "process", "(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V");
 		}
 	}
 }

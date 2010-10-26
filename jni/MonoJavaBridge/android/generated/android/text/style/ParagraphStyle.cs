@@ -6,7 +6,7 @@ namespace android.text.style
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.ParagraphStyle))]
-	public sealed partial class ParagraphStyle_ : java.lang.Object, ParagraphStyle
+	internal sealed partial class ParagraphStyle_ : java.lang.Object, ParagraphStyle
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ParagraphStyle_()

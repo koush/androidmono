@@ -94,7 +94,7 @@ namespace MonoDroid
                     field.ContainingType = type;
                 }
                 
-                type.IsDelegate = type.IsInterface && type.Methods.Count == 1 && type.Interfaces.Count == 0;
+                type.IsDelegate = type.IsInterface && type.Methods.Count == 1 && type.Interfaces.Count == 0 && type.Name.StartsWith("android.");
 				
 				foreach (var method in type.Methods)
 				{
@@ -234,6 +234,11 @@ namespace MonoDroid
 	
 	public class Type : Overridable
 	{
+        public bool NoAttributes
+        {
+            get;set;
+        }
+        
         public bool IsDelegate
         {
             get;set;

@@ -11,14 +11,14 @@ namespace java.security.cert
 		protected PKIXCertPathBuilderResult(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString23512;
+		internal static global::MonoJavaBridge.MethodId _toString23630;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult._toString23512)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult._toString23630)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._toString23512)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._toString23630)) as java.lang.String;
 		}
 		public new global::java.security.cert.CertPath CertPath
 		{
@@ -27,29 +27,29 @@ namespace java.security.cert
 				return getCertPath();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCertPath23513;
+		internal static global::MonoJavaBridge.MethodId _getCertPath23631;
 		public virtual global::java.security.cert.CertPath getCertPath() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23513)) as java.security.cert.CertPath;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23631)) as java.security.cert.CertPath;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23513)) as java.security.cert.CertPath;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23631)) as java.security.cert.CertPath;
 		}
-		internal static global::MonoJavaBridge.MethodId _PKIXCertPathBuilderResult23514;
+		internal static global::MonoJavaBridge.MethodId _PKIXCertPathBuilderResult23632;
 		public PKIXCertPathBuilderResult(java.security.cert.CertPath arg0, java.security.cert.TrustAnchor arg1, java.security.cert.PolicyNode arg2, java.security.PublicKey arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._PKIXCertPathBuilderResult23514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXCertPathBuilderResult.staticClass, global::java.security.cert.PKIXCertPathBuilderResult._PKIXCertPathBuilderResult23632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.cert.PKIXCertPathBuilderResult.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/cert/PKIXCertPathBuilderResult"));
-			global::java.security.cert.PKIXCertPathBuilderResult._toString23512 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23513 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
-			global::java.security.cert.PKIXCertPathBuilderResult._PKIXCertPathBuilderResult23514 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "<init>", "(Ljava/security/cert/CertPath;Ljava/security/cert/TrustAnchor;Ljava/security/cert/PolicyNode;Ljava/security/PublicKey;)V");
+			global::java.security.cert.PKIXCertPathBuilderResult._toString23630 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.security.cert.PKIXCertPathBuilderResult._getCertPath23631 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "getCertPath", "()Ljava/security/cert/CertPath;");
+			global::java.security.cert.PKIXCertPathBuilderResult._PKIXCertPathBuilderResult23632 = @__env.GetMethodIDNoThrow(global::java.security.cert.PKIXCertPathBuilderResult.staticClass, "<init>", "(Ljava/security/cert/CertPath;Ljava/security/cert/TrustAnchor;Ljava/security/cert/PolicyNode;Ljava/security/PublicKey;)V");
 		}
 	}
 }

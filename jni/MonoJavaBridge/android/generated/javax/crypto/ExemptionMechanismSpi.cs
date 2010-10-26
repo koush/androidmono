@@ -11,41 +11,41 @@ namespace javax.crypto
 		protected ExemptionMechanismSpi(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit28490;
+		internal static global::MonoJavaBridge.MethodId _engineInit28608;
 		protected abstract void engineInit(java.security.Key arg0);
-		internal static global::MonoJavaBridge.MethodId _engineInit28491;
+		internal static global::MonoJavaBridge.MethodId _engineInit28609;
 		protected abstract void engineInit(java.security.Key arg0, java.security.spec.AlgorithmParameterSpec arg1);
-		internal static global::MonoJavaBridge.MethodId _engineInit28492;
+		internal static global::MonoJavaBridge.MethodId _engineInit28610;
 		protected abstract void engineInit(java.security.Key arg0, java.security.AlgorithmParameters arg1);
-		internal static global::MonoJavaBridge.MethodId _engineGetOutputSize28493;
+		internal static global::MonoJavaBridge.MethodId _engineGetOutputSize28611;
 		protected abstract int engineGetOutputSize(int arg0);
-		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28494;
+		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28612;
 		protected abstract byte[] engineGenExemptionBlob();
-		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28495;
+		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28613;
 		protected abstract int engineGenExemptionBlob(byte[] arg0, int arg1);
-		internal static global::MonoJavaBridge.MethodId _ExemptionMechanismSpi28496;
+		internal static global::MonoJavaBridge.MethodId _ExemptionMechanismSpi28614;
 		public ExemptionMechanismSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanismSpi.staticClass, global::javax.crypto.ExemptionMechanismSpi._ExemptionMechanismSpi28496);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanismSpi.staticClass, global::javax.crypto.ExemptionMechanismSpi._ExemptionMechanismSpi28614);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.ExemptionMechanismSpi.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/ExemptionMechanismSpi"));
-			global::javax.crypto.ExemptionMechanismSpi._engineInit28490 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineInit", "(Ljava/security/Key;)V");
-			global::javax.crypto.ExemptionMechanismSpi._engineInit28491 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V");
-			global::javax.crypto.ExemptionMechanismSpi._engineInit28492 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/AlgorithmParameters;)V");
-			global::javax.crypto.ExemptionMechanismSpi._engineGetOutputSize28493 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineGetOutputSize", "(I)I");
-			global::javax.crypto.ExemptionMechanismSpi._engineGenExemptionBlob28494 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineGenExemptionBlob", "()[B");
-			global::javax.crypto.ExemptionMechanismSpi._engineGenExemptionBlob28495 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineGenExemptionBlob", "([BI)I");
-			global::javax.crypto.ExemptionMechanismSpi._ExemptionMechanismSpi28496 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "<init>", "()V");
+			global::javax.crypto.ExemptionMechanismSpi._engineInit28608 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineInit", "(Ljava/security/Key;)V");
+			global::javax.crypto.ExemptionMechanismSpi._engineInit28609 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V");
+			global::javax.crypto.ExemptionMechanismSpi._engineInit28610 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/AlgorithmParameters;)V");
+			global::javax.crypto.ExemptionMechanismSpi._engineGetOutputSize28611 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineGetOutputSize", "(I)I");
+			global::javax.crypto.ExemptionMechanismSpi._engineGenExemptionBlob28612 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineGenExemptionBlob", "()[B");
+			global::javax.crypto.ExemptionMechanismSpi._engineGenExemptionBlob28613 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "engineGenExemptionBlob", "([BI)I");
+			global::javax.crypto.ExemptionMechanismSpi._ExemptionMechanismSpi28614 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi.staticClass, "<init>", "()V");
 		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.crypto.ExemptionMechanismSpi))]
-	public sealed partial class ExemptionMechanismSpi_ : javax.crypto.ExemptionMechanismSpi
+	internal sealed partial class ExemptionMechanismSpi_ : javax.crypto.ExemptionMechanismSpi
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ExemptionMechanismSpi_()
@@ -55,70 +55,70 @@ namespace javax.crypto
 		internal ExemptionMechanismSpi_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit28497;
+		internal static global::MonoJavaBridge.MethodId _engineInit28615;
 		protected override void engineInit(java.security.Key arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineInit28497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineInit28615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineInit28497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineInit28615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit28498;
+		internal static global::MonoJavaBridge.MethodId _engineInit28616;
 		protected override void engineInit(java.security.Key arg0, java.security.spec.AlgorithmParameterSpec arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineInit28498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineInit28616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineInit28498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineInit28616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineInit28499;
+		internal static global::MonoJavaBridge.MethodId _engineInit28617;
 		protected override void engineInit(java.security.Key arg0, java.security.AlgorithmParameters arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineInit28499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineInit28617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineInit28499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineInit28617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGetOutputSize28500;
+		internal static global::MonoJavaBridge.MethodId _engineGetOutputSize28618;
 		protected override int engineGetOutputSize(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineGetOutputSize28500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineGetOutputSize28618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineGetOutputSize28500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineGetOutputSize28618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28501;
+		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28619;
 		protected override byte[] engineGenExemptionBlob() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28501)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28619)) as byte[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28501)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28619)) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28502;
+		internal static global::MonoJavaBridge.MethodId _engineGenExemptionBlob28620;
 		protected override int engineGenExemptionBlob(byte[] arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.ExemptionMechanismSpi_.staticClass, global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.ExemptionMechanismSpi_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/ExemptionMechanismSpi"));
-			global::javax.crypto.ExemptionMechanismSpi_._engineInit28497 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineInit", "(Ljava/security/Key;)V");
-			global::javax.crypto.ExemptionMechanismSpi_._engineInit28498 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V");
-			global::javax.crypto.ExemptionMechanismSpi_._engineInit28499 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/AlgorithmParameters;)V");
-			global::javax.crypto.ExemptionMechanismSpi_._engineGetOutputSize28500 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineGetOutputSize", "(I)I");
-			global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28501 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineGenExemptionBlob", "()[B");
-			global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28502 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineGenExemptionBlob", "([BI)I");
+			global::javax.crypto.ExemptionMechanismSpi_._engineInit28615 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineInit", "(Ljava/security/Key;)V");
+			global::javax.crypto.ExemptionMechanismSpi_._engineInit28616 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V");
+			global::javax.crypto.ExemptionMechanismSpi_._engineInit28617 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineInit", "(Ljava/security/Key;Ljava/security/AlgorithmParameters;)V");
+			global::javax.crypto.ExemptionMechanismSpi_._engineGetOutputSize28618 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineGetOutputSize", "(I)I");
+			global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28619 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineGenExemptionBlob", "()[B");
+			global::javax.crypto.ExemptionMechanismSpi_._engineGenExemptionBlob28620 = @__env.GetMethodIDNoThrow(global::javax.crypto.ExemptionMechanismSpi_.staticClass, "engineGenExemptionBlob", "([BI)I");
 		}
 	}
 }

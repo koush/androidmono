@@ -11,32 +11,32 @@ namespace java.lang.reflect
 		internal Constructor(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals20913;
+		internal static global::MonoJavaBridge.MethodId _equals21031;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor._equals20913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor._equals21031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._equals20913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._equals21031, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString20914;
+		internal static global::MonoJavaBridge.MethodId _toString21032;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._toString20914)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._toString21032)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._toString20914)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._toString21032)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode20915;
+		internal static global::MonoJavaBridge.MethodId _hashCode21033;
 		public sealed override int hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor._hashCode20915);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor._hashCode21033);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._hashCode20915);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._hashCode21033);
 		}
 		public new int Modifiers
 		{
@@ -45,14 +45,14 @@ namespace java.lang.reflect
 				return getModifiers();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getModifiers20916;
+		internal static global::MonoJavaBridge.MethodId _getModifiers21034;
 		public int getModifiers() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getModifiers20916);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getModifiers21034);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getModifiers20916);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getModifiers21034);
 		}
 		public new global::java.lang.String Name
 		{
@@ -61,32 +61,32 @@ namespace java.lang.reflect
 				return getName();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getName20917;
+		internal static global::MonoJavaBridge.MethodId _getName21035;
 		public global::java.lang.String getName() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getName20917)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getName21035)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getName20917)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getName21035)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _newInstance20918;
+		internal static global::MonoJavaBridge.MethodId _newInstance21036;
 		public global::java.lang.Object newInstance(java.lang.Object[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._newInstance20918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._newInstance21036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._newInstance20918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._newInstance21036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _isSynthetic20919;
+		internal static global::MonoJavaBridge.MethodId _isSynthetic21037;
 		public bool isSynthetic() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor._isSynthetic20919);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor._isSynthetic21037);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._isSynthetic20919);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._isSynthetic21037);
 		}
 		public new global::java.lang.reflect.TypeVariable[] TypeParameters
 		{
@@ -95,14 +95,14 @@ namespace java.lang.reflect
 				return getTypeParameters();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTypeParameters20920;
+		internal static global::MonoJavaBridge.MethodId _getTypeParameters21038;
 		public global::java.lang.reflect.TypeVariable[] getTypeParameters() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getTypeParameters20920)) as java.lang.reflect.TypeVariable[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getTypeParameters21038)) as java.lang.reflect.TypeVariable[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getTypeParameters20920)) as java.lang.reflect.TypeVariable[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.TypeVariable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getTypeParameters21038)) as java.lang.reflect.TypeVariable[];
 		}
 		public new global::java.lang.Class DeclaringClass
 		{
@@ -111,23 +111,23 @@ namespace java.lang.reflect
 				return getDeclaringClass();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaringClass20921;
+		internal static global::MonoJavaBridge.MethodId _getDeclaringClass21039;
 		public global::java.lang.Class getDeclaringClass() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getDeclaringClass20921)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getDeclaringClass21039)) as java.lang.Class;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getDeclaringClass20921)) as java.lang.Class;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getDeclaringClass21039)) as java.lang.Class;
 		}
-		internal static global::MonoJavaBridge.MethodId _getAnnotation20922;
+		internal static global::MonoJavaBridge.MethodId _getAnnotation21040;
 		public sealed override global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getAnnotation20922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getAnnotation21040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getAnnotation20922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getAnnotation21040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 		}
 		public new global::java.lang.annotation.Annotation[] DeclaredAnnotations
 		{
@@ -136,14 +136,14 @@ namespace java.lang.reflect
 				return getDeclaredAnnotations();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations20923;
+		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations21041;
 		public sealed override global::java.lang.annotation.Annotation[] getDeclaredAnnotations() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getDeclaredAnnotations20923)) as java.lang.annotation.Annotation[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getDeclaredAnnotations21041)) as java.lang.annotation.Annotation[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getDeclaredAnnotations20923)) as java.lang.annotation.Annotation[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getDeclaredAnnotations21041)) as java.lang.annotation.Annotation[];
 		}
 		public new global::java.lang.Class[] ParameterTypes
 		{
@@ -152,23 +152,23 @@ namespace java.lang.reflect
 				return getParameterTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterTypes20924;
+		internal static global::MonoJavaBridge.MethodId _getParameterTypes21042;
 		public global::java.lang.Class[] getParameterTypes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getParameterTypes20924)) as java.lang.Class[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getParameterTypes21042)) as java.lang.Class[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getParameterTypes20924)) as java.lang.Class[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getParameterTypes21042)) as java.lang.Class[];
 		}
-		internal static global::MonoJavaBridge.MethodId _toGenericString20925;
+		internal static global::MonoJavaBridge.MethodId _toGenericString21043;
 		public global::java.lang.String toGenericString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._toGenericString20925)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._toGenericString21043)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._toGenericString20925)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._toGenericString21043)) as java.lang.String;
 		}
 		public new global::java.lang.reflect.Type[] GenericParameterTypes
 		{
@@ -177,14 +177,14 @@ namespace java.lang.reflect
 				return getGenericParameterTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGenericParameterTypes20926;
+		internal static global::MonoJavaBridge.MethodId _getGenericParameterTypes21044;
 		public global::java.lang.reflect.Type[] getGenericParameterTypes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getGenericParameterTypes20926)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getGenericParameterTypes21044)) as java.lang.reflect.Type[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getGenericParameterTypes20926)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getGenericParameterTypes21044)) as java.lang.reflect.Type[];
 		}
 		public new global::java.lang.Class[] ExceptionTypes
 		{
@@ -193,14 +193,14 @@ namespace java.lang.reflect
 				return getExceptionTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getExceptionTypes20927;
+		internal static global::MonoJavaBridge.MethodId _getExceptionTypes21045;
 		public global::java.lang.Class[] getExceptionTypes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getExceptionTypes20927)) as java.lang.Class[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getExceptionTypes21045)) as java.lang.Class[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getExceptionTypes20927)) as java.lang.Class[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getExceptionTypes21045)) as java.lang.Class[];
 		}
 		public new global::java.lang.reflect.Type[] GenericExceptionTypes
 		{
@@ -209,23 +209,23 @@ namespace java.lang.reflect
 				return getGenericExceptionTypes();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGenericExceptionTypes20928;
+		internal static global::MonoJavaBridge.MethodId _getGenericExceptionTypes21046;
 		public global::java.lang.reflect.Type[] getGenericExceptionTypes() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getGenericExceptionTypes20928)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getGenericExceptionTypes21046)) as java.lang.reflect.Type[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getGenericExceptionTypes20928)) as java.lang.reflect.Type[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getGenericExceptionTypes21046)) as java.lang.reflect.Type[];
 		}
-		internal static global::MonoJavaBridge.MethodId _isVarArgs20929;
+		internal static global::MonoJavaBridge.MethodId _isVarArgs21047;
 		public bool isVarArgs() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor._isVarArgs20929);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor._isVarArgs21047);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._isVarArgs20929);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._isVarArgs21047);
 		}
 		public new global::java.lang.annotation.Annotation[][] ParameterAnnotations
 		{
@@ -234,37 +234,37 @@ namespace java.lang.reflect
 				return getParameterAnnotations();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameterAnnotations20930;
+		internal static global::MonoJavaBridge.MethodId _getParameterAnnotations21048;
 		public global::java.lang.annotation.Annotation[][] getParameterAnnotations() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation[]>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getParameterAnnotations20930)) as java.lang.annotation.Annotation[][];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation[]>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor._getParameterAnnotations21048)) as java.lang.annotation.Annotation[][];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getParameterAnnotations20930)) as java.lang.annotation.Annotation[][];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation[]>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Constructor.staticClass, global::java.lang.reflect.Constructor._getParameterAnnotations21048)) as java.lang.annotation.Annotation[][];
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.reflect.Constructor.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/reflect/Constructor"));
-			global::java.lang.reflect.Constructor._equals20913 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.lang.reflect.Constructor._toString20914 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.lang.reflect.Constructor._hashCode20915 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "hashCode", "()I");
-			global::java.lang.reflect.Constructor._getModifiers20916 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getModifiers", "()I");
-			global::java.lang.reflect.Constructor._getName20917 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getName", "()Ljava/lang/String;");
-			global::java.lang.reflect.Constructor._newInstance20918 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.lang.reflect.Constructor._isSynthetic20919 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "isSynthetic", "()Z");
-			global::java.lang.reflect.Constructor._getTypeParameters20920 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
-			global::java.lang.reflect.Constructor._getDeclaringClass20921 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getDeclaringClass", "()Ljava/lang/Class;");
-			global::java.lang.reflect.Constructor._getAnnotation20922 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.Constructor._getDeclaredAnnotations20923 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
-			global::java.lang.reflect.Constructor._getParameterTypes20924 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getParameterTypes", "()[Ljava/lang/Class;");
-			global::java.lang.reflect.Constructor._toGenericString20925 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "toGenericString", "()Ljava/lang/String;");
-			global::java.lang.reflect.Constructor._getGenericParameterTypes20926 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getGenericParameterTypes", "()[Ljava/lang/reflect/Type;");
-			global::java.lang.reflect.Constructor._getExceptionTypes20927 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getExceptionTypes", "()[Ljava/lang/Class;");
-			global::java.lang.reflect.Constructor._getGenericExceptionTypes20928 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;");
-			global::java.lang.reflect.Constructor._isVarArgs20929 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "isVarArgs", "()Z");
-			global::java.lang.reflect.Constructor._getParameterAnnotations20930 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;");
+			global::java.lang.reflect.Constructor._equals21031 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.lang.reflect.Constructor._toString21032 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.reflect.Constructor._hashCode21033 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "hashCode", "()I");
+			global::java.lang.reflect.Constructor._getModifiers21034 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getModifiers", "()I");
+			global::java.lang.reflect.Constructor._getName21035 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getName", "()Ljava/lang/String;");
+			global::java.lang.reflect.Constructor._newInstance21036 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;");
+			global::java.lang.reflect.Constructor._isSynthetic21037 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "isSynthetic", "()Z");
+			global::java.lang.reflect.Constructor._getTypeParameters21038 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
+			global::java.lang.reflect.Constructor._getDeclaringClass21039 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getDeclaringClass", "()Ljava/lang/Class;");
+			global::java.lang.reflect.Constructor._getAnnotation21040 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
+			global::java.lang.reflect.Constructor._getDeclaredAnnotations21041 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+			global::java.lang.reflect.Constructor._getParameterTypes21042 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getParameterTypes", "()[Ljava/lang/Class;");
+			global::java.lang.reflect.Constructor._toGenericString21043 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "toGenericString", "()Ljava/lang/String;");
+			global::java.lang.reflect.Constructor._getGenericParameterTypes21044 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getGenericParameterTypes", "()[Ljava/lang/reflect/Type;");
+			global::java.lang.reflect.Constructor._getExceptionTypes21045 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getExceptionTypes", "()[Ljava/lang/Class;");
+			global::java.lang.reflect.Constructor._getGenericExceptionTypes21046 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getGenericExceptionTypes", "()[Ljava/lang/reflect/Type;");
+			global::java.lang.reflect.Constructor._isVarArgs21047 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "isVarArgs", "()Z");
+			global::java.lang.reflect.Constructor._getParameterAnnotations21048 = @__env.GetMethodIDNoThrow(global::java.lang.reflect.Constructor.staticClass, "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;");
 		}
 	}
 }

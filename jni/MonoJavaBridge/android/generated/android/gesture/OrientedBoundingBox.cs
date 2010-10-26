@@ -11,70 +11,70 @@ namespace android.gesture
 		protected OrientedBoundingBox(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.FieldId _squareness4981;
+		internal static global::MonoJavaBridge.FieldId _squareness5000;
 		public float squareness
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _squareness4981);
+				return @__env.GetFloatField(this.JvmHandle, _squareness5000);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _width4982;
+		internal static global::MonoJavaBridge.FieldId _width5001;
 		public float width
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _width4982);
+				return @__env.GetFloatField(this.JvmHandle, _width5001);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _height4983;
+		internal static global::MonoJavaBridge.FieldId _height5002;
 		public float height
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _height4983);
+				return @__env.GetFloatField(this.JvmHandle, _height5002);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _orientation4984;
+		internal static global::MonoJavaBridge.FieldId _orientation5003;
 		public float orientation
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _orientation4984);
+				return @__env.GetFloatField(this.JvmHandle, _orientation5003);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _centerX4985;
+		internal static global::MonoJavaBridge.FieldId _centerX5004;
 		public float centerX
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _centerX4985);
+				return @__env.GetFloatField(this.JvmHandle, _centerX5004);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _centerY4986;
+		internal static global::MonoJavaBridge.FieldId _centerY5005;
 		public float centerY
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _centerY4986);
+				return @__env.GetFloatField(this.JvmHandle, _centerY5005);
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.OrientedBoundingBox.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/OrientedBoundingBox"));
-			global::android.gesture.OrientedBoundingBox._squareness4981 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "squareness", "F");
-			global::android.gesture.OrientedBoundingBox._width4982 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "width", "F");
-			global::android.gesture.OrientedBoundingBox._height4983 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "height", "F");
-			global::android.gesture.OrientedBoundingBox._orientation4984 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "orientation", "F");
-			global::android.gesture.OrientedBoundingBox._centerX4985 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerX", "F");
-			global::android.gesture.OrientedBoundingBox._centerY4986 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerY", "F");
+			global::android.gesture.OrientedBoundingBox._squareness5000 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "squareness", "F");
+			global::android.gesture.OrientedBoundingBox._width5001 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "width", "F");
+			global::android.gesture.OrientedBoundingBox._height5002 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "height", "F");
+			global::android.gesture.OrientedBoundingBox._orientation5003 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "orientation", "F");
+			global::android.gesture.OrientedBoundingBox._centerX5004 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerX", "F");
+			global::android.gesture.OrientedBoundingBox._centerY5005 = @__env.GetFieldIDNoThrow(global::android.gesture.OrientedBoundingBox.staticClass, "centerY", "F");
 		}
 	}
 }

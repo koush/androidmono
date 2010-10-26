@@ -11,59 +11,59 @@ namespace org.apache.http.conn.scheme
 		internal SchemeRegistry(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get32192;
+		internal static global::MonoJavaBridge.MethodId _get32310;
 		public global::org.apache.http.conn.scheme.Scheme get(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._get32192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._get32310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._get32192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._get32310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
-		internal static global::MonoJavaBridge.MethodId _register32193;
+		internal static global::MonoJavaBridge.MethodId _register32311;
 		public global::org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._register32193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._register32311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._register32193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._register32311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
-		internal static global::MonoJavaBridge.MethodId _getScheme32194;
+		internal static global::MonoJavaBridge.MethodId _getScheme32312;
 		public global::org.apache.http.conn.scheme.Scheme getScheme(org.apache.http.HttpHost arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
-		internal static global::MonoJavaBridge.MethodId _getScheme32195;
+		internal static global::MonoJavaBridge.MethodId _getScheme32313;
 		public global::org.apache.http.conn.scheme.Scheme getScheme(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
-		internal static global::MonoJavaBridge.MethodId _setItems32196;
+		internal static global::MonoJavaBridge.MethodId _setItems32314;
 		public void setItems(java.util.Map arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._setItems32196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._setItems32314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._setItems32196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._setItems32314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _unregister32197;
+		internal static global::MonoJavaBridge.MethodId _unregister32315;
 		public global::org.apache.http.conn.scheme.Scheme unregister(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._unregister32197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._unregister32315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._unregister32197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._unregister32315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
 		public new global::java.util.List SchemeNames
 		{
@@ -72,34 +72,34 @@ namespace org.apache.http.conn.scheme
 				return getSchemeNames();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSchemeNames32198;
+		internal static global::MonoJavaBridge.MethodId _getSchemeNames32316;
 		public global::java.util.List getSchemeNames() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32198)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32316)) as java.util.List;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32198)) as java.util.List;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32316)) as java.util.List;
 		}
-		internal static global::MonoJavaBridge.MethodId _SchemeRegistry32199;
+		internal static global::MonoJavaBridge.MethodId _SchemeRegistry32317;
 		public SchemeRegistry()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32199);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32317);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.conn.scheme.SchemeRegistry.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/conn/scheme/SchemeRegistry"));
-			global::org.apache.http.conn.scheme.SchemeRegistry._get32192 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "get", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
-			global::org.apache.http.conn.scheme.SchemeRegistry._register32193 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "register", "(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;");
-			global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32194 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getScheme", "(Lorg/apache/http/HttpHost;)Lorg/apache/http/conn/scheme/Scheme;");
-			global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32195 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getScheme", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
-			global::org.apache.http.conn.scheme.SchemeRegistry._setItems32196 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "setItems", "(Ljava/util/Map;)V");
-			global::org.apache.http.conn.scheme.SchemeRegistry._unregister32197 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "unregister", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
-			global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32198 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getSchemeNames", "()Ljava/util/List;");
-			global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32199 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "<init>", "()V");
+			global::org.apache.http.conn.scheme.SchemeRegistry._get32310 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "get", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
+			global::org.apache.http.conn.scheme.SchemeRegistry._register32311 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "register", "(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;");
+			global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32312 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getScheme", "(Lorg/apache/http/HttpHost;)Lorg/apache/http/conn/scheme/Scheme;");
+			global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32313 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getScheme", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
+			global::org.apache.http.conn.scheme.SchemeRegistry._setItems32314 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "setItems", "(Ljava/util/Map;)V");
+			global::org.apache.http.conn.scheme.SchemeRegistry._unregister32315 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "unregister", "(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;");
+			global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32316 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "getSchemeNames", "()Ljava/util/List;");
+			global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32317 = @__env.GetMethodIDNoThrow(global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, "<init>", "()V");
 		}
 	}
 }

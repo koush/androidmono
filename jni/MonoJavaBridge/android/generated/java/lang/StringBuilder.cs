@@ -11,438 +11,438 @@ namespace java.lang
 		internal StringBuilder(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString20615;
+		internal static global::MonoJavaBridge.MethodId _toString20733;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._toString20615)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._toString20733)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._toString20615)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._toString20733)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20616;
+		internal static global::MonoJavaBridge.MethodId _append20734;
 		public global::java.lang.StringBuilder append(java.lang.CharSequence arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
 		public java.lang.StringBuilder append(string arg0)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _append20617;
+		internal static global::MonoJavaBridge.MethodId _append20735;
 		public global::java.lang.StringBuilder append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20617, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
 		}
 		public java.lang.StringBuilder append(string arg0, int arg1, int arg2)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _append20618;
+		internal static global::MonoJavaBridge.MethodId _append20736;
 		public global::java.lang.StringBuilder append(char[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20619;
+		internal static global::MonoJavaBridge.MethodId _append20737;
 		public global::java.lang.StringBuilder append(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20737, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20620;
+		internal static global::MonoJavaBridge.MethodId _append20738;
 		public global::java.lang.StringBuilder append(char arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20620, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20621;
+		internal static global::MonoJavaBridge.MethodId _append20739;
 		public global::java.lang.StringBuilder append(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20621, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20622;
+		internal static global::MonoJavaBridge.MethodId _append20740;
 		public global::java.lang.StringBuilder append(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20623;
+		internal static global::MonoJavaBridge.MethodId _append20741;
 		public global::java.lang.StringBuilder append(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20741, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20741, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20624;
+		internal static global::MonoJavaBridge.MethodId _append20742;
 		public global::java.lang.StringBuilder append(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20624, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20625;
+		internal static global::MonoJavaBridge.MethodId _append20743;
 		public global::java.lang.StringBuilder append(char[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20625, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20626;
+		internal static global::MonoJavaBridge.MethodId _append20744;
 		public global::java.lang.StringBuilder append(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20626, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20627;
+		internal static global::MonoJavaBridge.MethodId _append20745;
 		public global::java.lang.StringBuilder append(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20627, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _append20628;
+		internal static global::MonoJavaBridge.MethodId _append20746;
 		public global::java.lang.StringBuilder append(java.lang.StringBuffer arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._append20746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._append20746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf20629;
+		internal static global::MonoJavaBridge.MethodId _indexOf20747;
 		public sealed override int indexOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._indexOf20629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._indexOf20747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._indexOf20629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._indexOf20747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _indexOf20630;
+		internal static global::MonoJavaBridge.MethodId _indexOf20748;
 		public sealed override int indexOf(java.lang.String arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._indexOf20630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._indexOf20748, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._indexOf20630, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._indexOf20748, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _length20631;
+		internal static global::MonoJavaBridge.MethodId _length20749;
 		public sealed override int length() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._length20631);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._length20749);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._length20631);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._length20749);
 		}
-		internal static global::MonoJavaBridge.MethodId _charAt20632;
+		internal static global::MonoJavaBridge.MethodId _charAt20750;
 		public sealed override char charAt(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this.JvmHandle, global::java.lang.StringBuilder._charAt20632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallCharMethod(this.JvmHandle, global::java.lang.StringBuilder._charAt20750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._charAt20632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._charAt20750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _lastIndexOf20633;
+		internal static global::MonoJavaBridge.MethodId _lastIndexOf20751;
 		public sealed override int lastIndexOf(java.lang.String arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._lastIndexOf20633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._lastIndexOf20751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._lastIndexOf20633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._lastIndexOf20751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _lastIndexOf20634;
+		internal static global::MonoJavaBridge.MethodId _lastIndexOf20752;
 		public sealed override int lastIndexOf(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._lastIndexOf20634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.lang.StringBuilder._lastIndexOf20752, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._lastIndexOf20634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._lastIndexOf20752, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _subSequence20635;
+		internal static global::MonoJavaBridge.MethodId _subSequence20753;
 		public sealed override global::java.lang.CharSequence subSequence(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._subSequence20635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._subSequence20753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._subSequence20635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._subSequence20753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _replace20636;
+		internal static global::MonoJavaBridge.MethodId _replace20754;
 		public global::java.lang.StringBuilder replace(int arg0, int arg1, java.lang.String arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._replace20636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._replace20754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._replace20636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._replace20754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _appendCodePoint20637;
+		internal static global::MonoJavaBridge.MethodId _appendCodePoint20755;
 		public global::java.lang.StringBuilder appendCodePoint(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._appendCodePoint20637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._appendCodePoint20755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._appendCodePoint20637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._appendCodePoint20755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _delete20638;
+		internal static global::MonoJavaBridge.MethodId _delete20756;
 		public global::java.lang.StringBuilder delete(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._delete20638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._delete20756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._delete20638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._delete20756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _deleteCharAt20639;
+		internal static global::MonoJavaBridge.MethodId _deleteCharAt20757;
 		public global::java.lang.StringBuilder deleteCharAt(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._deleteCharAt20639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._deleteCharAt20757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._deleteCharAt20639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._deleteCharAt20757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20640;
+		internal static global::MonoJavaBridge.MethodId _insert20758;
 		public global::java.lang.StringBuilder insert(int arg0, double arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20641;
+		internal static global::MonoJavaBridge.MethodId _insert20759;
 		public global::java.lang.StringBuilder insert(int arg0, java.lang.Object arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20642;
+		internal static global::MonoJavaBridge.MethodId _insert20760;
 		public global::java.lang.StringBuilder insert(int arg0, char[] arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20643;
+		internal static global::MonoJavaBridge.MethodId _insert20761;
 		public global::java.lang.StringBuilder insert(int arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20644;
+		internal static global::MonoJavaBridge.MethodId _insert20762;
 		public global::java.lang.StringBuilder insert(int arg0, char[] arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20762, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20645;
+		internal static global::MonoJavaBridge.MethodId _insert20763;
 		public global::java.lang.StringBuilder insert(int arg0, java.lang.CharSequence arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
 		public java.lang.StringBuilder insert(int arg0, string arg1)
 		{
 			return insert(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20646;
+		internal static global::MonoJavaBridge.MethodId _insert20764;
 		public global::java.lang.StringBuilder insert(int arg0, java.lang.CharSequence arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.StringBuilder;
 		}
 		public java.lang.StringBuilder insert(int arg0, string arg1, int arg2, int arg3)
 		{
 			return insert(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20647;
+		internal static global::MonoJavaBridge.MethodId _insert20765;
 		public global::java.lang.StringBuilder insert(int arg0, bool arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20648;
+		internal static global::MonoJavaBridge.MethodId _insert20766;
 		public global::java.lang.StringBuilder insert(int arg0, char arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20649;
+		internal static global::MonoJavaBridge.MethodId _insert20767;
 		public global::java.lang.StringBuilder insert(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20650;
+		internal static global::MonoJavaBridge.MethodId _insert20768;
 		public global::java.lang.StringBuilder insert(int arg0, long arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _insert20651;
+		internal static global::MonoJavaBridge.MethodId _insert20769;
 		public global::java.lang.StringBuilder insert(int arg0, float arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._insert20769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._insert20769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _reverse20652;
+		internal static global::MonoJavaBridge.MethodId _reverse20770;
 		public global::java.lang.StringBuilder reverse() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._reverse20652)) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.StringBuilder._reverse20770)) as java.lang.StringBuilder;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._reverse20652)) as java.lang.StringBuilder;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuilder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._reverse20770)) as java.lang.StringBuilder;
 		}
-		internal static global::MonoJavaBridge.MethodId _StringBuilder20653;
+		internal static global::MonoJavaBridge.MethodId _StringBuilder20771;
 		public StringBuilder(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StringBuilder20654;
+		internal static global::MonoJavaBridge.MethodId _StringBuilder20772;
 		public StringBuilder()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20654);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20772);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StringBuilder20655;
+		internal static global::MonoJavaBridge.MethodId _StringBuilder20773;
 		public StringBuilder(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20655, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _StringBuilder20656;
+		internal static global::MonoJavaBridge.MethodId _StringBuilder20774;
 		public StringBuilder(java.lang.CharSequence arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringBuilder.staticClass, global::java.lang.StringBuilder._StringBuilder20774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.StringBuilder.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/StringBuilder"));
-			global::java.lang.StringBuilder._toString20615 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.lang.StringBuilder._append20616 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20617 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20618 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "([C)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20619 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Z)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20620 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(C)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20621 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(I)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20622 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(J)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20623 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(F)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20624 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(D)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20625 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "([CII)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20626 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20627 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._append20628 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/StringBuffer;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._indexOf20629 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "indexOf", "(Ljava/lang/String;)I");
-			global::java.lang.StringBuilder._indexOf20630 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "indexOf", "(Ljava/lang/String;I)I");
-			global::java.lang.StringBuilder._length20631 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "length", "()I");
-			global::java.lang.StringBuilder._charAt20632 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "charAt", "(I)C");
-			global::java.lang.StringBuilder._lastIndexOf20633 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "lastIndexOf", "(Ljava/lang/String;I)I");
-			global::java.lang.StringBuilder._lastIndexOf20634 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "lastIndexOf", "(Ljava/lang/String;)I");
-			global::java.lang.StringBuilder._subSequence20635 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
-			global::java.lang.StringBuilder._replace20636 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "replace", "(IILjava/lang/String;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._appendCodePoint20637 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "appendCodePoint", "(I)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._delete20638 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "delete", "(II)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._deleteCharAt20639 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "deleteCharAt", "(I)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20640 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ID)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20641 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/Object;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20642 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(I[CII)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20643 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/String;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20644 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(I[C)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20645 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/CharSequence;)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20646 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/CharSequence;II)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20647 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IZ)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20648 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IC)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20649 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(II)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20650 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IJ)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._insert20651 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IF)Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._reverse20652 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "reverse", "()Ljava/lang/StringBuilder;");
-			global::java.lang.StringBuilder._StringBuilder20653 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(I)V");
-			global::java.lang.StringBuilder._StringBuilder20654 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "()V");
-			global::java.lang.StringBuilder._StringBuilder20655 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.lang.StringBuilder._StringBuilder20656 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(Ljava/lang/CharSequence;)V");
+			global::java.lang.StringBuilder._toString20733 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.StringBuilder._append20734 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20735 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20736 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "([C)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20737 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Z)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20738 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(C)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20739 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(I)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20740 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(J)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20741 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(F)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20742 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(D)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20743 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "([CII)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20744 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20745 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._append20746 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "append", "(Ljava/lang/StringBuffer;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._indexOf20747 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "indexOf", "(Ljava/lang/String;)I");
+			global::java.lang.StringBuilder._indexOf20748 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "indexOf", "(Ljava/lang/String;I)I");
+			global::java.lang.StringBuilder._length20749 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "length", "()I");
+			global::java.lang.StringBuilder._charAt20750 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "charAt", "(I)C");
+			global::java.lang.StringBuilder._lastIndexOf20751 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "lastIndexOf", "(Ljava/lang/String;I)I");
+			global::java.lang.StringBuilder._lastIndexOf20752 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "lastIndexOf", "(Ljava/lang/String;)I");
+			global::java.lang.StringBuilder._subSequence20753 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");
+			global::java.lang.StringBuilder._replace20754 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "replace", "(IILjava/lang/String;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._appendCodePoint20755 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "appendCodePoint", "(I)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._delete20756 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "delete", "(II)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._deleteCharAt20757 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "deleteCharAt", "(I)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20758 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ID)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20759 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/Object;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20760 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(I[CII)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20761 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/String;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20762 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(I[C)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20763 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/CharSequence;)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20764 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(ILjava/lang/CharSequence;II)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20765 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IZ)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20766 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IC)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20767 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(II)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20768 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IJ)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._insert20769 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "insert", "(IF)Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._reverse20770 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "reverse", "()Ljava/lang/StringBuilder;");
+			global::java.lang.StringBuilder._StringBuilder20771 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(I)V");
+			global::java.lang.StringBuilder._StringBuilder20772 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "()V");
+			global::java.lang.StringBuilder._StringBuilder20773 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.StringBuilder._StringBuilder20774 = @__env.GetMethodIDNoThrow(global::java.lang.StringBuilder.staticClass, "<init>", "(Ljava/lang/CharSequence;)V");
 		}
 	}
 }

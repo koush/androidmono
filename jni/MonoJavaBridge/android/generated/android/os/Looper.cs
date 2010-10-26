@@ -11,35 +11,39 @@ namespace android.os
 		protected Looper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString9868;
+		internal static global::MonoJavaBridge.MethodId _toString9913;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Looper._toString9868)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Looper._toString9913)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._toString9868)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._toString9913)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _loop9869;
+		internal static global::MonoJavaBridge.MethodId _loop9914;
 		public static void loop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._loop9869);
+			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._loop9914);
 		}
-		internal static global::MonoJavaBridge.MethodId _prepare9870;
+		internal static global::MonoJavaBridge.MethodId _prepare9915;
 		public static void prepare() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepare9870);
+			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepare9915);
 		}
-		internal static global::MonoJavaBridge.MethodId _dump9871;
+		internal static global::MonoJavaBridge.MethodId _dump9916;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Looper._dump9871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Looper._dump9916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._dump9871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._dump9916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public void dump(global::android.util.PrinterDelegate arg0, java.lang.String arg1)
+		{
+			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
 		public static global::android.os.Looper MainLooper
 		{
@@ -48,47 +52,51 @@ namespace android.os
 				return getMainLooper();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMainLooper9872;
+		internal static global::MonoJavaBridge.MethodId _getMainLooper9917;
 		public static global::android.os.Looper getMainLooper() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._getMainLooper9872)) as android.os.Looper;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._getMainLooper9917)) as android.os.Looper;
 		}
-		internal static global::MonoJavaBridge.MethodId _prepareMainLooper9873;
+		internal static global::MonoJavaBridge.MethodId _prepareMainLooper9918;
 		public static void prepareMainLooper() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepareMainLooper9873);
+			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepareMainLooper9918);
 		}
-		internal static global::MonoJavaBridge.MethodId _myLooper9874;
+		internal static global::MonoJavaBridge.MethodId _myLooper9919;
 		public static global::android.os.Looper myLooper() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._myLooper9874)) as android.os.Looper;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._myLooper9919)) as android.os.Looper;
 		}
-		internal static global::MonoJavaBridge.MethodId _setMessageLogging9875;
+		internal static global::MonoJavaBridge.MethodId _setMessageLogging9920;
 		public virtual void setMessageLogging(android.util.Printer arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Looper._setMessageLogging9875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Looper._setMessageLogging9920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._setMessageLogging9875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._setMessageLogging9920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _myQueue9876;
+		public void setMessageLogging(global::android.util.PrinterDelegate arg0)
+		{
+			setMessageLogging((global::android.util.PrinterDelegateWrapper)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _myQueue9921;
 		public static global::android.os.MessageQueue myQueue() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._myQueue9876)) as android.os.MessageQueue;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._myQueue9921)) as android.os.MessageQueue;
 		}
-		internal static global::MonoJavaBridge.MethodId _quit9877;
+		internal static global::MonoJavaBridge.MethodId _quit9922;
 		public virtual void quit() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Looper._quit9877);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Looper._quit9922);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._quit9877);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._quit9922);
 		}
 		public new global::java.lang.Thread Thread
 		{
@@ -97,30 +105,30 @@ namespace android.os
 				return getThread();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getThread9878;
+		internal static global::MonoJavaBridge.MethodId _getThread9923;
 		public virtual global::java.lang.Thread getThread() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Looper._getThread9878)) as java.lang.Thread;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.Looper._getThread9923)) as java.lang.Thread;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._getThread9878)) as java.lang.Thread;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._getThread9923)) as java.lang.Thread;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.Looper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/Looper"));
-			global::android.os.Looper._toString9868 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.os.Looper._loop9869 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "loop", "()V");
-			global::android.os.Looper._prepare9870 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "prepare", "()V");
-			global::android.os.Looper._dump9871 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::android.os.Looper._getMainLooper9872 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "getMainLooper", "()Landroid/os/Looper;");
-			global::android.os.Looper._prepareMainLooper9873 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "prepareMainLooper", "()V");
-			global::android.os.Looper._myLooper9874 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "myLooper", "()Landroid/os/Looper;");
-			global::android.os.Looper._setMessageLogging9875 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "setMessageLogging", "(Landroid/util/Printer;)V");
-			global::android.os.Looper._myQueue9876 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "myQueue", "()Landroid/os/MessageQueue;");
-			global::android.os.Looper._quit9877 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "quit", "()V");
-			global::android.os.Looper._getThread9878 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "getThread", "()Ljava/lang/Thread;");
+			global::android.os.Looper._toString9913 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.os.Looper._loop9914 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "loop", "()V");
+			global::android.os.Looper._prepare9915 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "prepare", "()V");
+			global::android.os.Looper._dump9916 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
+			global::android.os.Looper._getMainLooper9917 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "getMainLooper", "()Landroid/os/Looper;");
+			global::android.os.Looper._prepareMainLooper9918 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "prepareMainLooper", "()V");
+			global::android.os.Looper._myLooper9919 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "myLooper", "()Landroid/os/Looper;");
+			global::android.os.Looper._setMessageLogging9920 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "setMessageLogging", "(Landroid/util/Printer;)V");
+			global::android.os.Looper._myQueue9921 = @__env.GetStaticMethodIDNoThrow(global::android.os.Looper.staticClass, "myQueue", "()Landroid/os/MessageQueue;");
+			global::android.os.Looper._quit9922 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "quit", "()V");
+			global::android.os.Looper._getThread9923 = @__env.GetMethodIDNoThrow(global::android.os.Looper.staticClass, "getThread", "()Ljava/lang/Thread;");
 		}
 	}
 }

@@ -11,38 +11,38 @@ namespace org.apache.http.util
 		internal EntityUtils(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString33891;
+		internal static global::MonoJavaBridge.MethodId _toString34009;
 		public static global::java.lang.String toString(org.apache.http.HttpEntity arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._toString33891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._toString34009, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _toString33892;
+		internal static global::MonoJavaBridge.MethodId _toString34010;
 		public static global::java.lang.String toString(org.apache.http.HttpEntity arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._toString33892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._toString34010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _toByteArray33893;
+		internal static global::MonoJavaBridge.MethodId _toByteArray34011;
 		public static byte[] toByteArray(org.apache.http.HttpEntity arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._toByteArray33893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
+			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._toByteArray34011, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getContentCharSet33894;
+		internal static global::MonoJavaBridge.MethodId _getContentCharSet34012;
 		public static global::java.lang.String getContentCharSet(org.apache.http.HttpEntity arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._getContentCharSet33894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EntityUtils.staticClass, global::org.apache.http.util.EntityUtils._getContentCharSet34012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.util.EntityUtils.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/util/EntityUtils"));
-			global::org.apache.http.util.EntityUtils._toString33891 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "toString", "(Lorg/apache/http/HttpEntity;Ljava/lang/String;)Ljava/lang/String;");
-			global::org.apache.http.util.EntityUtils._toString33892 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "toString", "(Lorg/apache/http/HttpEntity;)Ljava/lang/String;");
-			global::org.apache.http.util.EntityUtils._toByteArray33893 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "toByteArray", "(Lorg/apache/http/HttpEntity;)[B");
-			global::org.apache.http.util.EntityUtils._getContentCharSet33894 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "getContentCharSet", "(Lorg/apache/http/HttpEntity;)Ljava/lang/String;");
+			global::org.apache.http.util.EntityUtils._toString34009 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "toString", "(Lorg/apache/http/HttpEntity;Ljava/lang/String;)Ljava/lang/String;");
+			global::org.apache.http.util.EntityUtils._toString34010 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "toString", "(Lorg/apache/http/HttpEntity;)Ljava/lang/String;");
+			global::org.apache.http.util.EntityUtils._toByteArray34011 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "toByteArray", "(Lorg/apache/http/HttpEntity;)[B");
+			global::org.apache.http.util.EntityUtils._getContentCharSet34012 = @__env.GetStaticMethodIDNoThrow(global::org.apache.http.util.EntityUtils.staticClass, "getContentCharSet", "(Lorg/apache/http/HttpEntity;)Ljava/lang/String;");
 		}
 	}
 }

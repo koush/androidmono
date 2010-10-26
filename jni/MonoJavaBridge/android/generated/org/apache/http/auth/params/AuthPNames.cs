@@ -6,7 +6,7 @@ namespace org.apache.http.auth.@params
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.auth.@params.AuthPNames))]
-	public sealed partial class AuthPNames_ : java.lang.Object, AuthPNames
+	internal sealed partial class AuthPNames_ : java.lang.Object, AuthPNames
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AuthPNames_()
@@ -19,7 +19,7 @@ namespace org.apache.http.auth.@params
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::org.apache.http.auth.@params.AuthPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/@params/AuthPNames"));
+			global::org.apache.http.auth.@params.AuthPNames_.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/auth/params/AuthPNames"));
 		}
 	}
 }

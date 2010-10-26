@@ -22,42 +22,42 @@ namespace android.widget
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams16376;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams16467;
 			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams16377;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams16468;
 			public LayoutParams(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams16378;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams16469;
 			public LayoutParams(int arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams16379;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams16470;
 			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams16470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView$LayoutParams"));
-				global::android.widget.AbsListView.LayoutParams._LayoutParams16376 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-				global::android.widget.AbsListView.LayoutParams._LayoutParams16377 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(II)V");
-				global::android.widget.AbsListView.LayoutParams._LayoutParams16378 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(III)V");
-				global::android.widget.AbsListView.LayoutParams._LayoutParams16379 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
+				global::android.widget.AbsListView.LayoutParams._LayoutParams16467 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+				global::android.widget.AbsListView.LayoutParams._LayoutParams16468 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(II)V");
+				global::android.widget.AbsListView.LayoutParams._LayoutParams16469 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(III)V");
+				global::android.widget.AbsListView.LayoutParams._LayoutParams16470 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.widget.AbsListView.OnScrollListener_))]
@@ -68,7 +68,7 @@ namespace android.widget
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AbsListView.OnScrollListener))]
-		public sealed partial class OnScrollListener_ : java.lang.Object, OnScrollListener
+		internal sealed partial class OnScrollListener_ : java.lang.Object, OnScrollListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static OnScrollListener_()
@@ -78,30 +78,30 @@ namespace android.widget
 			internal OnScrollListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onScroll16380;
+			internal static global::MonoJavaBridge.MethodId _onScroll16471;
 			 void android.widget.AbsListView.OnScrollListener.onScroll(android.widget.AbsListView arg0, int arg1, int arg2, int arg3) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_._onScroll16380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_._onScroll16471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_.staticClass, global::android.widget.AbsListView.OnScrollListener_._onScroll16380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_.staticClass, global::android.widget.AbsListView.OnScrollListener_._onScroll16471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
-			internal static global::MonoJavaBridge.MethodId _onScrollStateChanged16381;
+			internal static global::MonoJavaBridge.MethodId _onScrollStateChanged16472;
 			 void android.widget.AbsListView.OnScrollListener.onScrollStateChanged(android.widget.AbsListView arg0, int arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_.staticClass, global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.OnScrollListener_.staticClass, global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.OnScrollListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView$OnScrollListener"));
-				global::android.widget.AbsListView.OnScrollListener_._onScroll16380 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.OnScrollListener_.staticClass, "onScroll", "(Landroid/widget/AbsListView;III)V");
-				global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16381 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.OnScrollListener_.staticClass, "onScrollStateChanged", "(Landroid/widget/AbsListView;I)V");
+				global::android.widget.AbsListView.OnScrollListener_._onScroll16471 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.OnScrollListener_.staticClass, "onScroll", "(Landroid/widget/AbsListView;III)V");
+				global::android.widget.AbsListView.OnScrollListener_._onScrollStateChanged16472 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.OnScrollListener_.staticClass, "onScrollStateChanged", "(Landroid/widget/AbsListView;I)V");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -136,7 +136,7 @@ namespace android.widget
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AbsListView.RecyclerListener))]
-		public sealed partial class RecyclerListener_ : java.lang.Object, RecyclerListener
+		internal sealed partial class RecyclerListener_ : java.lang.Object, RecyclerListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static RecyclerListener_()
@@ -146,787 +146,833 @@ namespace android.widget
 			internal RecyclerListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onMovedToScrapHeap16385;
+			internal static global::MonoJavaBridge.MethodId _onMovedToScrapHeap16476;
 			 void android.widget.AbsListView.RecyclerListener.onMovedToScrapHeap(android.view.View arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.RecyclerListener_.staticClass, global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.RecyclerListener_.staticClass, global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AbsListView.RecyclerListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView$RecyclerListener"));
-				global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16385 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.RecyclerListener_.staticClass, "onMovedToScrapHeap", "(Landroid/view/View;)V");
+				global::android.widget.AbsListView.RecyclerListener_._onMovedToScrapHeap16476 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.RecyclerListener_.staticClass, "onMovedToScrapHeap", "(Landroid/view/View;)V");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _draw16386;
+
+		public delegate void RecyclerListenerDelegate(android.view.View arg0);
+
+		internal partial class RecyclerListenerDelegateWrapper : java.lang.Object, RecyclerListener
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static RecyclerListenerDelegateWrapper()
+			{
+				InitJNI();
+			}
+			protected RecyclerListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			internal static global::MonoJavaBridge.MethodId _RecyclerListenerDelegateWrapper16477;
+			public RecyclerListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.RecyclerListenerDelegateWrapper.staticClass, global::android.widget.AbsListView.RecyclerListenerDelegateWrapper._RecyclerListenerDelegateWrapper16477);
+				Init(@__env, handle);
+			}
+			private static void InitJNI()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.widget.AbsListView.RecyclerListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView_RecyclerListenerDelegateWrapper"));
+				global::android.widget.AbsListView.RecyclerListenerDelegateWrapper._RecyclerListenerDelegateWrapper16477 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.RecyclerListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+		}
+		internal partial class RecyclerListenerDelegateWrapper
+		{
+			private RecyclerListenerDelegate myDelegate;
+			public void onMovedToScrapHeap(android.view.View arg0)
+			{
+				myDelegate(arg0);
+			}
+			public static implicit operator RecyclerListenerDelegateWrapper(RecyclerListenerDelegate d)
+			{
+				global::android.widget.AbsListView.RecyclerListenerDelegateWrapper ret = new global::android.widget.AbsListView.RecyclerListenerDelegateWrapper();
+				ret.myDelegate = d;
+				global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+				return ret;
+			}
+		}
+		internal static global::MonoJavaBridge.MethodId _draw16478;
 		public override void draw(android.graphics.Canvas arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._draw16386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._draw16478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._draw16386, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._draw16478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState16387;
+		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState16479;
 		public virtual void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onRestoreInstanceState16387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onRestoreInstanceState16479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onRestoreInstanceState16387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onRestoreInstanceState16479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState16388;
+		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState16480;
 		public virtual global::android.os.Parcelable onSaveInstanceState() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._onSaveInstanceState16388)) as android.os.Parcelable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._onSaveInstanceState16480)) as android.os.Parcelable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onSaveInstanceState16388)) as android.os.Parcelable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onSaveInstanceState16480)) as android.os.Parcelable;
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyDown16389;
+		internal static global::MonoJavaBridge.MethodId _onKeyDown16481;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onKeyDown16389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onKeyDown16481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onKeyDown16389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onKeyDown16481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyUp16390;
+		internal static global::MonoJavaBridge.MethodId _onKeyUp16482;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onKeyUp16390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onKeyUp16482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onKeyUp16390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onKeyUp16482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchEvent16391;
+		internal static global::MonoJavaBridge.MethodId _onTouchEvent16483;
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onTouchEvent16391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onTouchEvent16483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTouchEvent16391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTouchEvent16483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onWindowFocusChanged16392;
+		internal static global::MonoJavaBridge.MethodId _onWindowFocusChanged16484;
 		public override void onWindowFocusChanged(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onWindowFocusChanged16392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onWindowFocusChanged16484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onWindowFocusChanged16392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onWindowFocusChanged16484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16393;
+		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16485;
 		protected override void onAttachedToWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onAttachedToWindow16393);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onAttachedToWindow16485);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onAttachedToWindow16393);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onAttachedToWindow16485);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16394;
+		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16486;
 		protected override void onDetachedFromWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onDetachedFromWindow16394);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onDetachedFromWindow16486);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onDetachedFromWindow16394);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onDetachedFromWindow16486);
 		}
-		internal static global::MonoJavaBridge.MethodId _onFocusChanged16395;
+		internal static global::MonoJavaBridge.MethodId _onFocusChanged16487;
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onFocusChanged16395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onFocusChanged16487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onFocusChanged16395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onFocusChanged16487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchSetPressed16396;
+		internal static global::MonoJavaBridge.MethodId _dispatchSetPressed16488;
 		protected override void dispatchSetPressed(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._dispatchSetPressed16396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._dispatchSetPressed16488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._dispatchSetPressed16396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._dispatchSetPressed16488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addTouchables16397;
+		internal static global::MonoJavaBridge.MethodId _addTouchables16489;
 		public override void addTouchables(java.util.ArrayList arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._addTouchables16397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._addTouchables16489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._addTouchables16397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._addTouchables16489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDisplayHint16398;
+		internal static global::MonoJavaBridge.MethodId _onDisplayHint16490;
 		protected override void onDisplayHint(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onDisplayHint16398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onDisplayHint16490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onDisplayHint16398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onDisplayHint16490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateInputConnection16399;
+		internal static global::MonoJavaBridge.MethodId _onCreateInputConnection16491;
 		public override global::android.view.inputmethod.InputConnection onCreateInputConnection(android.view.inputmethod.EditorInfo arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._onCreateInputConnection16399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._onCreateInputConnection16491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onCreateInputConnection16399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.inputmethod.InputConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onCreateInputConnection16491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.inputmethod.InputConnection;
 		}
-		internal static global::MonoJavaBridge.MethodId _checkInputConnectionProxy16400;
+		internal static global::MonoJavaBridge.MethodId _checkInputConnectionProxy16492;
 		public override bool checkInputConnectionProxy(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._checkInputConnectionProxy16400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._checkInputConnectionProxy16492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._checkInputConnectionProxy16400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._checkInputConnectionProxy16492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getContextMenuInfo16401;
+		internal static global::MonoJavaBridge.MethodId _getContextMenuInfo16493;
 		protected override global::android.view.ContextMenu_ContextMenuInfo getContextMenuInfo() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getContextMenuInfo16401)) as android.view.ContextMenu_ContextMenuInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getContextMenuInfo16493)) as android.view.ContextMenu_ContextMenuInfo;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getContextMenuInfo16401)) as android.view.ContextMenu_ContextMenuInfo;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.ContextMenu_ContextMenuInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getContextMenuInfo16493)) as android.view.ContextMenu_ContextMenuInfo;
 		}
-		internal static global::MonoJavaBridge.MethodId _onSizeChanged16402;
+		internal static global::MonoJavaBridge.MethodId _onSizeChanged16494;
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onSizeChanged16402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onSizeChanged16494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onSizeChanged16402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onSizeChanged16494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchDraw16403;
+		internal static global::MonoJavaBridge.MethodId _dispatchDraw16495;
 		protected override void dispatchDraw(android.graphics.Canvas arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._dispatchDraw16403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._dispatchDraw16495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._dispatchDraw16403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._dispatchDraw16495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getFocusedRect16404;
+		internal static global::MonoJavaBridge.MethodId _getFocusedRect16496;
 		public override void getFocusedRect(android.graphics.Rect arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._getFocusedRect16404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._getFocusedRect16496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getFocusedRect16404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getFocusedRect16496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTopFadingEdgeStrength16405;
+		internal static global::MonoJavaBridge.MethodId _getTopFadingEdgeStrength16497;
 		protected override float getTopFadingEdgeStrength() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.widget.AbsListView._getTopFadingEdgeStrength16405);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.widget.AbsListView._getTopFadingEdgeStrength16497);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTopFadingEdgeStrength16405);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTopFadingEdgeStrength16497);
 		}
-		internal static global::MonoJavaBridge.MethodId _getBottomFadingEdgeStrength16406;
+		internal static global::MonoJavaBridge.MethodId _getBottomFadingEdgeStrength16498;
 		protected override float getBottomFadingEdgeStrength() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.widget.AbsListView._getBottomFadingEdgeStrength16406);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.widget.AbsListView._getBottomFadingEdgeStrength16498);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getBottomFadingEdgeStrength16406);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getBottomFadingEdgeStrength16498);
 		}
-		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollRange16407;
+		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollRange16499;
 		protected override int computeVerticalScrollRange() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._computeVerticalScrollRange16407);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._computeVerticalScrollRange16499);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollRange16407);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollRange16499);
 		}
-		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollOffset16408;
+		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollOffset16500;
 		protected override int computeVerticalScrollOffset() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._computeVerticalScrollOffset16408);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._computeVerticalScrollOffset16500);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollOffset16408);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollOffset16500);
 		}
-		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollExtent16409;
+		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollExtent16501;
 		protected override int computeVerticalScrollExtent() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._computeVerticalScrollExtent16409);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._computeVerticalScrollExtent16501);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollExtent16409);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollExtent16501);
 		}
-		internal static global::MonoJavaBridge.MethodId _getSolidColor16410;
+		internal static global::MonoJavaBridge.MethodId _getSolidColor16502;
 		public override int getSolidColor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getSolidColor16410);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getSolidColor16502);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSolidColor16410);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSolidColor16502);
 		}
-		internal static global::MonoJavaBridge.MethodId _onLayout16411;
+		internal static global::MonoJavaBridge.MethodId _onLayout16503;
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onLayout16411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onLayout16503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onLayout16411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onLayout16503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _verifyDrawable16412;
+		internal static global::MonoJavaBridge.MethodId _verifyDrawable16504;
 		public virtual bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._verifyDrawable16412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._verifyDrawable16504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._verifyDrawable16412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._verifyDrawable16504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _drawableStateChanged16413;
+		internal static global::MonoJavaBridge.MethodId _drawableStateChanged16505;
 		protected override void drawableStateChanged() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._drawableStateChanged16413);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._drawableStateChanged16505);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._drawableStateChanged16413);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._drawableStateChanged16505);
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateDrawableState16414;
+		internal static global::MonoJavaBridge.MethodId _onCreateDrawableState16506;
 		protected override int[] onCreateDrawableState(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._onCreateDrawableState16414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._onCreateDrawableState16506, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onCreateDrawableState16414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onCreateDrawableState16506, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
 		}
-		internal static global::MonoJavaBridge.MethodId _requestLayout16415;
+		internal static global::MonoJavaBridge.MethodId _requestLayout16507;
 		public override void requestLayout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._requestLayout16415);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._requestLayout16507);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._requestLayout16415);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._requestLayout16507);
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure16416;
+		internal static global::MonoJavaBridge.MethodId _onMeasure16508;
 		protected override void onMeasure(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onMeasure16416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onMeasure16508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onMeasure16416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onMeasure16508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _showContextMenuForChild16417;
+		internal static global::MonoJavaBridge.MethodId _showContextMenuForChild16509;
 		public override bool showContextMenuForChild(android.view.View arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._showContextMenuForChild16417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._showContextMenuForChild16509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._showContextMenuForChild16417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._showContextMenuForChild16509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onInterceptTouchEvent16418;
+		internal static global::MonoJavaBridge.MethodId _onInterceptTouchEvent16510;
 		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onInterceptTouchEvent16418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._onInterceptTouchEvent16510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onInterceptTouchEvent16418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onInterceptTouchEvent16510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _checkLayoutParams16419;
+		internal static global::MonoJavaBridge.MethodId _checkLayoutParams16511;
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._checkLayoutParams16419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._checkLayoutParams16511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._checkLayoutParams16419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._checkLayoutParams16511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _generateLayoutParams16420;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams16512;
 		public virtual global::android.widget.AbsListView.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._generateLayoutParams16420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.AbsListView.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._generateLayoutParams16512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.AbsListView.LayoutParams;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._generateLayoutParams16420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.AbsListView.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._generateLayoutParams16512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.AbsListView.LayoutParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _generateLayoutParams16421;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams16513;
 		protected override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._generateLayoutParams16421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._generateLayoutParams16513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._generateLayoutParams16421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._generateLayoutParams16513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _getSelectedView16422;
+		internal static global::MonoJavaBridge.MethodId _getSelectedView16514;
 		public override global::android.view.View getSelectedView() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getSelectedView16422)) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getSelectedView16514)) as android.view.View;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSelectedView16422)) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSelectedView16514)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _onTextChanged16423;
+		internal static global::MonoJavaBridge.MethodId _onTextChanged16515;
 		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onTextChanged16423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onTextChanged16515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTextChanged16423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTextChanged16515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void onTextChanged(string arg0, int arg1, int arg2, int arg3)
 		{
 			onTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _layoutChildren16424;
+		internal static global::MonoJavaBridge.MethodId _layoutChildren16516;
 		protected virtual void layoutChildren() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._layoutChildren16424);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._layoutChildren16516);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._layoutChildren16424);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._layoutChildren16516);
 		}
-		internal static global::MonoJavaBridge.MethodId _setCacheColorHint16425;
+		internal static global::MonoJavaBridge.MethodId _setCacheColorHint16517;
 		public virtual void setCacheColorHint(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setCacheColorHint16425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setCacheColorHint16517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setCacheColorHint16425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setCacheColorHint16517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setFastScrollEnabled16426;
+		internal static global::MonoJavaBridge.MethodId _setFastScrollEnabled16518;
 		public virtual void setFastScrollEnabled(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setFastScrollEnabled16426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setFastScrollEnabled16518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setFastScrollEnabled16426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setFastScrollEnabled16518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isFastScrollEnabled16427;
+		internal static global::MonoJavaBridge.MethodId _isFastScrollEnabled16519;
 		public virtual bool isFastScrollEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isFastScrollEnabled16427);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isFastScrollEnabled16519);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isFastScrollEnabled16427);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isFastScrollEnabled16519);
 		}
-		internal static global::MonoJavaBridge.MethodId _setSmoothScrollbarEnabled16428;
+		internal static global::MonoJavaBridge.MethodId _setSmoothScrollbarEnabled16520;
 		public virtual void setSmoothScrollbarEnabled(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setSmoothScrollbarEnabled16428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setSmoothScrollbarEnabled16520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSmoothScrollbarEnabled16428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSmoothScrollbarEnabled16520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isSmoothScrollbarEnabled16429;
+		internal static global::MonoJavaBridge.MethodId _isSmoothScrollbarEnabled16521;
 		public virtual bool isSmoothScrollbarEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isSmoothScrollbarEnabled16429);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isSmoothScrollbarEnabled16521);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isSmoothScrollbarEnabled16429);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isSmoothScrollbarEnabled16521);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnScrollListener16430;
+		internal static global::MonoJavaBridge.MethodId _setOnScrollListener16522;
 		public virtual void setOnScrollListener(android.widget.AbsListView.OnScrollListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setOnScrollListener16430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setOnScrollListener16522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setOnScrollListener16430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setOnScrollListener16522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isScrollingCacheEnabled16431;
+		internal static global::MonoJavaBridge.MethodId _isScrollingCacheEnabled16523;
 		public virtual bool isScrollingCacheEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isScrollingCacheEnabled16431);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isScrollingCacheEnabled16523);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isScrollingCacheEnabled16431);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isScrollingCacheEnabled16523);
 		}
-		internal static global::MonoJavaBridge.MethodId _setScrollingCacheEnabled16432;
+		internal static global::MonoJavaBridge.MethodId _setScrollingCacheEnabled16524;
 		public virtual void setScrollingCacheEnabled(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setScrollingCacheEnabled16432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setScrollingCacheEnabled16524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setScrollingCacheEnabled16432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setScrollingCacheEnabled16524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setTextFilterEnabled16433;
+		internal static global::MonoJavaBridge.MethodId _setTextFilterEnabled16525;
 		public virtual void setTextFilterEnabled(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setTextFilterEnabled16433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setTextFilterEnabled16525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setTextFilterEnabled16433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setTextFilterEnabled16525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isTextFilterEnabled16434;
+		internal static global::MonoJavaBridge.MethodId _isTextFilterEnabled16526;
 		public virtual bool isTextFilterEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isTextFilterEnabled16434);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isTextFilterEnabled16526);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isTextFilterEnabled16434);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isTextFilterEnabled16526);
 		}
-		internal static global::MonoJavaBridge.MethodId _isStackFromBottom16435;
+		internal static global::MonoJavaBridge.MethodId _isStackFromBottom16527;
 		public virtual bool isStackFromBottom() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isStackFromBottom16435);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isStackFromBottom16527);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isStackFromBottom16435);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isStackFromBottom16527);
 		}
-		internal static global::MonoJavaBridge.MethodId _setStackFromBottom16436;
+		internal static global::MonoJavaBridge.MethodId _setStackFromBottom16528;
 		public virtual void setStackFromBottom(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setStackFromBottom16436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setStackFromBottom16528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setStackFromBottom16436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setStackFromBottom16528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setFilterText16437;
+		internal static global::MonoJavaBridge.MethodId _setFilterText16529;
 		public virtual void setFilterText(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setFilterText16437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setFilterText16529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setFilterText16437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setFilterText16529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTextFilter16438;
+		internal static global::MonoJavaBridge.MethodId _getTextFilter16530;
 		public virtual global::java.lang.CharSequence getTextFilter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getTextFilter16438)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getTextFilter16530)) as java.lang.CharSequence;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTextFilter16438)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTextFilter16530)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _getListPaddingTop16439;
+		internal static global::MonoJavaBridge.MethodId _getListPaddingTop16531;
 		public virtual int getListPaddingTop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingTop16439);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingTop16531);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingTop16439);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingTop16531);
 		}
-		internal static global::MonoJavaBridge.MethodId _getListPaddingBottom16440;
+		internal static global::MonoJavaBridge.MethodId _getListPaddingBottom16532;
 		public virtual int getListPaddingBottom() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingBottom16440);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingBottom16532);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingBottom16440);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingBottom16532);
 		}
-		internal static global::MonoJavaBridge.MethodId _getListPaddingLeft16441;
+		internal static global::MonoJavaBridge.MethodId _getListPaddingLeft16533;
 		public virtual int getListPaddingLeft() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingLeft16441);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingLeft16533);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingLeft16441);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingLeft16533);
 		}
-		internal static global::MonoJavaBridge.MethodId _getListPaddingRight16442;
+		internal static global::MonoJavaBridge.MethodId _getListPaddingRight16534;
 		public virtual int getListPaddingRight() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingRight16442);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getListPaddingRight16534);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingRight16442);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingRight16534);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDrawSelectorOnTop16443;
+		internal static global::MonoJavaBridge.MethodId _setDrawSelectorOnTop16535;
 		public virtual void setDrawSelectorOnTop(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setDrawSelectorOnTop16443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setDrawSelectorOnTop16535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setDrawSelectorOnTop16443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setDrawSelectorOnTop16535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelector16444;
+		internal static global::MonoJavaBridge.MethodId _setSelector16536;
 		public virtual void setSelector(android.graphics.drawable.Drawable arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setSelector16444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setSelector16536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSelector16444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSelector16536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelector16445;
+		internal static global::MonoJavaBridge.MethodId _setSelector16537;
 		public virtual void setSelector(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setSelector16445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setSelector16537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSelector16445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSelector16537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getSelector16446;
+		internal static global::MonoJavaBridge.MethodId _getSelector16538;
 		public virtual global::android.graphics.drawable.Drawable getSelector() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getSelector16446)) as android.graphics.drawable.Drawable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView._getSelector16538)) as android.graphics.drawable.Drawable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSelector16446)) as android.graphics.drawable.Drawable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSelector16538)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _setScrollIndicators16447;
+		internal static global::MonoJavaBridge.MethodId _setScrollIndicators16539;
 		public virtual void setScrollIndicators(android.view.View arg0, android.view.View arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setScrollIndicators16447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setScrollIndicators16539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setScrollIndicators16447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setScrollIndicators16539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _pointToPosition16448;
+		internal static global::MonoJavaBridge.MethodId _pointToPosition16540;
 		public virtual int pointToPosition(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._pointToPosition16448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._pointToPosition16540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._pointToPosition16448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._pointToPosition16540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _pointToRowId16449;
+		internal static global::MonoJavaBridge.MethodId _pointToRowId16541;
 		public virtual long pointToRowId(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.AbsListView._pointToRowId16449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallLongMethod(this.JvmHandle, global::android.widget.AbsListView._pointToRowId16541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._pointToRowId16449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._pointToRowId16541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onTouchModeChanged16450;
+		internal static global::MonoJavaBridge.MethodId _onTouchModeChanged16542;
 		public virtual void onTouchModeChanged(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onTouchModeChanged16450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onTouchModeChanged16542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTouchModeChanged16450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTouchModeChanged16542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _smoothScrollToPosition16451;
+		internal static global::MonoJavaBridge.MethodId _smoothScrollToPosition16543;
 		public virtual void smoothScrollToPosition(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._smoothScrollToPosition16451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._smoothScrollToPosition16543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._smoothScrollToPosition16451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._smoothScrollToPosition16543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _smoothScrollToPosition16452;
+		internal static global::MonoJavaBridge.MethodId _smoothScrollToPosition16544;
 		public virtual void smoothScrollToPosition(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._smoothScrollToPosition16452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._smoothScrollToPosition16544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._smoothScrollToPosition16452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._smoothScrollToPosition16544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _smoothScrollBy16453;
+		internal static global::MonoJavaBridge.MethodId _smoothScrollBy16545;
 		public virtual void smoothScrollBy(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._smoothScrollBy16453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._smoothScrollBy16545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._smoothScrollBy16453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._smoothScrollBy16545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _invalidateViews16454;
+		internal static global::MonoJavaBridge.MethodId _invalidateViews16546;
 		public virtual void invalidateViews() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._invalidateViews16454);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._invalidateViews16546);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._invalidateViews16454);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._invalidateViews16546);
 		}
-		internal static global::MonoJavaBridge.MethodId _handleDataChanged16455;
+		internal static global::MonoJavaBridge.MethodId _handleDataChanged16547;
 		protected virtual void handleDataChanged() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._handleDataChanged16455);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._handleDataChanged16547);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._handleDataChanged16455);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._handleDataChanged16547);
 		}
-		internal static global::MonoJavaBridge.MethodId _isInFilterMode16456;
+		internal static global::MonoJavaBridge.MethodId _isInFilterMode16548;
 		protected virtual bool isInFilterMode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isInFilterMode16456);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._isInFilterMode16548);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isInFilterMode16456);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isInFilterMode16548);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearTextFilter16457;
+		internal static global::MonoJavaBridge.MethodId _clearTextFilter16549;
 		public virtual void clearTextFilter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._clearTextFilter16457);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._clearTextFilter16549);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._clearTextFilter16457);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._clearTextFilter16549);
 		}
-		internal static global::MonoJavaBridge.MethodId _hasTextFilter16458;
+		internal static global::MonoJavaBridge.MethodId _hasTextFilter16550;
 		public virtual bool hasTextFilter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._hasTextFilter16458);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AbsListView._hasTextFilter16550);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._hasTextFilter16458);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._hasTextFilter16550);
 		}
-		internal static global::MonoJavaBridge.MethodId _onGlobalLayout16459;
+		internal static global::MonoJavaBridge.MethodId _onGlobalLayout16551;
 		public virtual void onGlobalLayout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onGlobalLayout16459);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onGlobalLayout16551);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onGlobalLayout16459);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onGlobalLayout16551);
 		}
-		internal static global::MonoJavaBridge.MethodId _beforeTextChanged16460;
+		internal static global::MonoJavaBridge.MethodId _beforeTextChanged16552;
 		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._beforeTextChanged16460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._beforeTextChanged16552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._beforeTextChanged16460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._beforeTextChanged16552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		public void beforeTextChanged(string arg0, int arg1, int arg2, int arg3)
 		{
 			beforeTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
-		internal static global::MonoJavaBridge.MethodId _afterTextChanged16461;
+		internal static global::MonoJavaBridge.MethodId _afterTextChanged16553;
 		public virtual void afterTextChanged(android.text.Editable arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._afterTextChanged16461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._afterTextChanged16553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._afterTextChanged16461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._afterTextChanged16553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onFilterComplete16462;
+		internal static global::MonoJavaBridge.MethodId _onFilterComplete16554;
 		public virtual void onFilterComplete(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onFilterComplete16462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._onFilterComplete16554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onFilterComplete16462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onFilterComplete16554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setTranscriptMode16463;
+		internal static global::MonoJavaBridge.MethodId _setTranscriptMode16555;
 		public virtual void setTranscriptMode(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setTranscriptMode16463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setTranscriptMode16555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setTranscriptMode16463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setTranscriptMode16555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getTranscriptMode16464;
+		internal static global::MonoJavaBridge.MethodId _getTranscriptMode16556;
 		public virtual int getTranscriptMode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getTranscriptMode16464);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getTranscriptMode16556);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTranscriptMode16464);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTranscriptMode16556);
 		}
-		internal static global::MonoJavaBridge.MethodId _getCacheColorHint16465;
+		internal static global::MonoJavaBridge.MethodId _getCacheColorHint16557;
 		public virtual int getCacheColorHint() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getCacheColorHint16465);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AbsListView._getCacheColorHint16557);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getCacheColorHint16465);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getCacheColorHint16557);
 		}
-		internal static global::MonoJavaBridge.MethodId _reclaimViews16466;
+		internal static global::MonoJavaBridge.MethodId _reclaimViews16558;
 		public virtual void reclaimViews(java.util.List arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._reclaimViews16466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._reclaimViews16558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._reclaimViews16466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._reclaimViews16558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRecyclerListener16467;
+		internal static global::MonoJavaBridge.MethodId _setRecyclerListener16559;
 		public virtual void setRecyclerListener(android.widget.AbsListView.RecyclerListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setRecyclerListener16467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView._setRecyclerListener16559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setRecyclerListener16467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setRecyclerListener16559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsListView16468;
+		public void setRecyclerListener(global::android.widget.AbsListView.RecyclerListenerDelegate arg0)
+		{
+			setRecyclerListener((global::android.widget.AbsListView.RecyclerListenerDelegateWrapper)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _AbsListView16560;
 		public AbsListView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView16468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView16560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsListView16469;
+		internal static global::MonoJavaBridge.MethodId _AbsListView16561;
 		public AbsListView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView16469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView16561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AbsListView16470;
+		internal static global::MonoJavaBridge.MethodId _AbsListView16562;
 		public AbsListView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView16470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView16562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		public static int TRANSCRIPT_MODE_DISABLED
@@ -954,96 +1000,96 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsListView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView"));
-			global::android.widget.AbsListView._draw16386 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.widget.AbsListView._onRestoreInstanceState16387 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V");
-			global::android.widget.AbsListView._onSaveInstanceState16388 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;");
-			global::android.widget.AbsListView._onKeyDown16389 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.AbsListView._onKeyUp16390 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.AbsListView._onTouchEvent16391 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.AbsListView._onWindowFocusChanged16392 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onWindowFocusChanged", "(Z)V");
-			global::android.widget.AbsListView._onAttachedToWindow16393 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onAttachedToWindow", "()V");
-			global::android.widget.AbsListView._onDetachedFromWindow16394 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onDetachedFromWindow", "()V");
-			global::android.widget.AbsListView._onFocusChanged16395 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
-			global::android.widget.AbsListView._dispatchSetPressed16396 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "dispatchSetPressed", "(Z)V");
-			global::android.widget.AbsListView._addTouchables16397 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "addTouchables", "(Ljava/util/ArrayList;)V");
-			global::android.widget.AbsListView._onDisplayHint16398 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onDisplayHint", "(I)V");
-			global::android.widget.AbsListView._onCreateInputConnection16399 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onCreateInputConnection", "(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;");
-			global::android.widget.AbsListView._checkInputConnectionProxy16400 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "checkInputConnectionProxy", "(Landroid/view/View;)Z");
-			global::android.widget.AbsListView._getContextMenuInfo16401 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getContextMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
-			global::android.widget.AbsListView._onSizeChanged16402 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onSizeChanged", "(IIII)V");
-			global::android.widget.AbsListView._dispatchDraw16403 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "dispatchDraw", "(Landroid/graphics/Canvas;)V");
-			global::android.widget.AbsListView._getFocusedRect16404 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getFocusedRect", "(Landroid/graphics/Rect;)V");
-			global::android.widget.AbsListView._getTopFadingEdgeStrength16405 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getTopFadingEdgeStrength", "()F");
-			global::android.widget.AbsListView._getBottomFadingEdgeStrength16406 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getBottomFadingEdgeStrength", "()F");
-			global::android.widget.AbsListView._computeVerticalScrollRange16407 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "computeVerticalScrollRange", "()I");
-			global::android.widget.AbsListView._computeVerticalScrollOffset16408 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "computeVerticalScrollOffset", "()I");
-			global::android.widget.AbsListView._computeVerticalScrollExtent16409 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "computeVerticalScrollExtent", "()I");
-			global::android.widget.AbsListView._getSolidColor16410 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getSolidColor", "()I");
-			global::android.widget.AbsListView._onLayout16411 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onLayout", "(ZIIII)V");
-			global::android.widget.AbsListView._verifyDrawable16412 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z");
-			global::android.widget.AbsListView._drawableStateChanged16413 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "drawableStateChanged", "()V");
-			global::android.widget.AbsListView._onCreateDrawableState16414 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onCreateDrawableState", "(I)[I");
-			global::android.widget.AbsListView._requestLayout16415 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "requestLayout", "()V");
-			global::android.widget.AbsListView._onMeasure16416 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onMeasure", "(II)V");
-			global::android.widget.AbsListView._showContextMenuForChild16417 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z");
-			global::android.widget.AbsListView._onInterceptTouchEvent16418 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onInterceptTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.AbsListView._checkLayoutParams16419 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
-			global::android.widget.AbsListView._generateLayoutParams16420 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/AbsListView$LayoutParams;");
-			global::android.widget.AbsListView._generateLayoutParams16421 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;");
-			global::android.widget.AbsListView._getSelectedView16422 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getSelectedView", "()Landroid/view/View;");
-			global::android.widget.AbsListView._onTextChanged16423 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.widget.AbsListView._layoutChildren16424 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "layoutChildren", "()V");
-			global::android.widget.AbsListView._setCacheColorHint16425 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setCacheColorHint", "(I)V");
-			global::android.widget.AbsListView._setFastScrollEnabled16426 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setFastScrollEnabled", "(Z)V");
-			global::android.widget.AbsListView._isFastScrollEnabled16427 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isFastScrollEnabled", "()Z");
-			global::android.widget.AbsListView._setSmoothScrollbarEnabled16428 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setSmoothScrollbarEnabled", "(Z)V");
-			global::android.widget.AbsListView._isSmoothScrollbarEnabled16429 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isSmoothScrollbarEnabled", "()Z");
-			global::android.widget.AbsListView._setOnScrollListener16430 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setOnScrollListener", "(Landroid/widget/AbsListView$OnScrollListener;)V");
-			global::android.widget.AbsListView._isScrollingCacheEnabled16431 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isScrollingCacheEnabled", "()Z");
-			global::android.widget.AbsListView._setScrollingCacheEnabled16432 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setScrollingCacheEnabled", "(Z)V");
-			global::android.widget.AbsListView._setTextFilterEnabled16433 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setTextFilterEnabled", "(Z)V");
-			global::android.widget.AbsListView._isTextFilterEnabled16434 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isTextFilterEnabled", "()Z");
-			global::android.widget.AbsListView._isStackFromBottom16435 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isStackFromBottom", "()Z");
-			global::android.widget.AbsListView._setStackFromBottom16436 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setStackFromBottom", "(Z)V");
-			global::android.widget.AbsListView._setFilterText16437 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setFilterText", "(Ljava/lang/String;)V");
-			global::android.widget.AbsListView._getTextFilter16438 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getTextFilter", "()Ljava/lang/CharSequence;");
-			global::android.widget.AbsListView._getListPaddingTop16439 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingTop", "()I");
-			global::android.widget.AbsListView._getListPaddingBottom16440 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingBottom", "()I");
-			global::android.widget.AbsListView._getListPaddingLeft16441 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingLeft", "()I");
-			global::android.widget.AbsListView._getListPaddingRight16442 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingRight", "()I");
-			global::android.widget.AbsListView._setDrawSelectorOnTop16443 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setDrawSelectorOnTop", "(Z)V");
-			global::android.widget.AbsListView._setSelector16444 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setSelector", "(Landroid/graphics/drawable/Drawable;)V");
-			global::android.widget.AbsListView._setSelector16445 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setSelector", "(I)V");
-			global::android.widget.AbsListView._getSelector16446 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getSelector", "()Landroid/graphics/drawable/Drawable;");
-			global::android.widget.AbsListView._setScrollIndicators16447 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setScrollIndicators", "(Landroid/view/View;Landroid/view/View;)V");
-			global::android.widget.AbsListView._pointToPosition16448 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "pointToPosition", "(II)I");
-			global::android.widget.AbsListView._pointToRowId16449 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "pointToRowId", "(II)J");
-			global::android.widget.AbsListView._onTouchModeChanged16450 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onTouchModeChanged", "(Z)V");
-			global::android.widget.AbsListView._smoothScrollToPosition16451 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "smoothScrollToPosition", "(I)V");
-			global::android.widget.AbsListView._smoothScrollToPosition16452 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "smoothScrollToPosition", "(II)V");
-			global::android.widget.AbsListView._smoothScrollBy16453 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "smoothScrollBy", "(II)V");
-			global::android.widget.AbsListView._invalidateViews16454 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "invalidateViews", "()V");
-			global::android.widget.AbsListView._handleDataChanged16455 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "handleDataChanged", "()V");
-			global::android.widget.AbsListView._isInFilterMode16456 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isInFilterMode", "()Z");
-			global::android.widget.AbsListView._clearTextFilter16457 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "clearTextFilter", "()V");
-			global::android.widget.AbsListView._hasTextFilter16458 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "hasTextFilter", "()Z");
-			global::android.widget.AbsListView._onGlobalLayout16459 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onGlobalLayout", "()V");
-			global::android.widget.AbsListView._beforeTextChanged16460 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.widget.AbsListView._afterTextChanged16461 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
-			global::android.widget.AbsListView._onFilterComplete16462 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onFilterComplete", "(I)V");
-			global::android.widget.AbsListView._setTranscriptMode16463 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setTranscriptMode", "(I)V");
-			global::android.widget.AbsListView._getTranscriptMode16464 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getTranscriptMode", "()I");
-			global::android.widget.AbsListView._getCacheColorHint16465 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getCacheColorHint", "()I");
-			global::android.widget.AbsListView._reclaimViews16466 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "reclaimViews", "(Ljava/util/List;)V");
-			global::android.widget.AbsListView._setRecyclerListener16467 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setRecyclerListener", "(Landroid/widget/AbsListView$RecyclerListener;)V");
-			global::android.widget.AbsListView._AbsListView16468 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.AbsListView._AbsListView16469 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::android.widget.AbsListView._AbsListView16470 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.AbsListView._draw16478 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.widget.AbsListView._onRestoreInstanceState16479 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V");
+			global::android.widget.AbsListView._onSaveInstanceState16480 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;");
+			global::android.widget.AbsListView._onKeyDown16481 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.AbsListView._onKeyUp16482 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.AbsListView._onTouchEvent16483 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.AbsListView._onWindowFocusChanged16484 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onWindowFocusChanged", "(Z)V");
+			global::android.widget.AbsListView._onAttachedToWindow16485 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onAttachedToWindow", "()V");
+			global::android.widget.AbsListView._onDetachedFromWindow16486 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onDetachedFromWindow", "()V");
+			global::android.widget.AbsListView._onFocusChanged16487 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
+			global::android.widget.AbsListView._dispatchSetPressed16488 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "dispatchSetPressed", "(Z)V");
+			global::android.widget.AbsListView._addTouchables16489 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "addTouchables", "(Ljava/util/ArrayList;)V");
+			global::android.widget.AbsListView._onDisplayHint16490 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onDisplayHint", "(I)V");
+			global::android.widget.AbsListView._onCreateInputConnection16491 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onCreateInputConnection", "(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;");
+			global::android.widget.AbsListView._checkInputConnectionProxy16492 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "checkInputConnectionProxy", "(Landroid/view/View;)Z");
+			global::android.widget.AbsListView._getContextMenuInfo16493 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getContextMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
+			global::android.widget.AbsListView._onSizeChanged16494 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onSizeChanged", "(IIII)V");
+			global::android.widget.AbsListView._dispatchDraw16495 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "dispatchDraw", "(Landroid/graphics/Canvas;)V");
+			global::android.widget.AbsListView._getFocusedRect16496 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getFocusedRect", "(Landroid/graphics/Rect;)V");
+			global::android.widget.AbsListView._getTopFadingEdgeStrength16497 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getTopFadingEdgeStrength", "()F");
+			global::android.widget.AbsListView._getBottomFadingEdgeStrength16498 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getBottomFadingEdgeStrength", "()F");
+			global::android.widget.AbsListView._computeVerticalScrollRange16499 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "computeVerticalScrollRange", "()I");
+			global::android.widget.AbsListView._computeVerticalScrollOffset16500 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "computeVerticalScrollOffset", "()I");
+			global::android.widget.AbsListView._computeVerticalScrollExtent16501 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "computeVerticalScrollExtent", "()I");
+			global::android.widget.AbsListView._getSolidColor16502 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getSolidColor", "()I");
+			global::android.widget.AbsListView._onLayout16503 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onLayout", "(ZIIII)V");
+			global::android.widget.AbsListView._verifyDrawable16504 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z");
+			global::android.widget.AbsListView._drawableStateChanged16505 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "drawableStateChanged", "()V");
+			global::android.widget.AbsListView._onCreateDrawableState16506 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onCreateDrawableState", "(I)[I");
+			global::android.widget.AbsListView._requestLayout16507 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "requestLayout", "()V");
+			global::android.widget.AbsListView._onMeasure16508 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onMeasure", "(II)V");
+			global::android.widget.AbsListView._showContextMenuForChild16509 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "showContextMenuForChild", "(Landroid/view/View;)Z");
+			global::android.widget.AbsListView._onInterceptTouchEvent16510 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onInterceptTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.AbsListView._checkLayoutParams16511 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
+			global::android.widget.AbsListView._generateLayoutParams16512 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/AbsListView$LayoutParams;");
+			global::android.widget.AbsListView._generateLayoutParams16513 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;");
+			global::android.widget.AbsListView._getSelectedView16514 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getSelectedView", "()Landroid/view/View;");
+			global::android.widget.AbsListView._onTextChanged16515 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V");
+			global::android.widget.AbsListView._layoutChildren16516 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "layoutChildren", "()V");
+			global::android.widget.AbsListView._setCacheColorHint16517 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setCacheColorHint", "(I)V");
+			global::android.widget.AbsListView._setFastScrollEnabled16518 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setFastScrollEnabled", "(Z)V");
+			global::android.widget.AbsListView._isFastScrollEnabled16519 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isFastScrollEnabled", "()Z");
+			global::android.widget.AbsListView._setSmoothScrollbarEnabled16520 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setSmoothScrollbarEnabled", "(Z)V");
+			global::android.widget.AbsListView._isSmoothScrollbarEnabled16521 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isSmoothScrollbarEnabled", "()Z");
+			global::android.widget.AbsListView._setOnScrollListener16522 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setOnScrollListener", "(Landroid/widget/AbsListView$OnScrollListener;)V");
+			global::android.widget.AbsListView._isScrollingCacheEnabled16523 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isScrollingCacheEnabled", "()Z");
+			global::android.widget.AbsListView._setScrollingCacheEnabled16524 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setScrollingCacheEnabled", "(Z)V");
+			global::android.widget.AbsListView._setTextFilterEnabled16525 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setTextFilterEnabled", "(Z)V");
+			global::android.widget.AbsListView._isTextFilterEnabled16526 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isTextFilterEnabled", "()Z");
+			global::android.widget.AbsListView._isStackFromBottom16527 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isStackFromBottom", "()Z");
+			global::android.widget.AbsListView._setStackFromBottom16528 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setStackFromBottom", "(Z)V");
+			global::android.widget.AbsListView._setFilterText16529 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setFilterText", "(Ljava/lang/String;)V");
+			global::android.widget.AbsListView._getTextFilter16530 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getTextFilter", "()Ljava/lang/CharSequence;");
+			global::android.widget.AbsListView._getListPaddingTop16531 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingTop", "()I");
+			global::android.widget.AbsListView._getListPaddingBottom16532 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingBottom", "()I");
+			global::android.widget.AbsListView._getListPaddingLeft16533 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingLeft", "()I");
+			global::android.widget.AbsListView._getListPaddingRight16534 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getListPaddingRight", "()I");
+			global::android.widget.AbsListView._setDrawSelectorOnTop16535 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setDrawSelectorOnTop", "(Z)V");
+			global::android.widget.AbsListView._setSelector16536 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setSelector", "(Landroid/graphics/drawable/Drawable;)V");
+			global::android.widget.AbsListView._setSelector16537 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setSelector", "(I)V");
+			global::android.widget.AbsListView._getSelector16538 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getSelector", "()Landroid/graphics/drawable/Drawable;");
+			global::android.widget.AbsListView._setScrollIndicators16539 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setScrollIndicators", "(Landroid/view/View;Landroid/view/View;)V");
+			global::android.widget.AbsListView._pointToPosition16540 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "pointToPosition", "(II)I");
+			global::android.widget.AbsListView._pointToRowId16541 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "pointToRowId", "(II)J");
+			global::android.widget.AbsListView._onTouchModeChanged16542 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onTouchModeChanged", "(Z)V");
+			global::android.widget.AbsListView._smoothScrollToPosition16543 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "smoothScrollToPosition", "(I)V");
+			global::android.widget.AbsListView._smoothScrollToPosition16544 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "smoothScrollToPosition", "(II)V");
+			global::android.widget.AbsListView._smoothScrollBy16545 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "smoothScrollBy", "(II)V");
+			global::android.widget.AbsListView._invalidateViews16546 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "invalidateViews", "()V");
+			global::android.widget.AbsListView._handleDataChanged16547 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "handleDataChanged", "()V");
+			global::android.widget.AbsListView._isInFilterMode16548 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "isInFilterMode", "()Z");
+			global::android.widget.AbsListView._clearTextFilter16549 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "clearTextFilter", "()V");
+			global::android.widget.AbsListView._hasTextFilter16550 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "hasTextFilter", "()Z");
+			global::android.widget.AbsListView._onGlobalLayout16551 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onGlobalLayout", "()V");
+			global::android.widget.AbsListView._beforeTextChanged16552 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
+			global::android.widget.AbsListView._afterTextChanged16553 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
+			global::android.widget.AbsListView._onFilterComplete16554 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "onFilterComplete", "(I)V");
+			global::android.widget.AbsListView._setTranscriptMode16555 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setTranscriptMode", "(I)V");
+			global::android.widget.AbsListView._getTranscriptMode16556 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getTranscriptMode", "()I");
+			global::android.widget.AbsListView._getCacheColorHint16557 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "getCacheColorHint", "()I");
+			global::android.widget.AbsListView._reclaimViews16558 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "reclaimViews", "(Ljava/util/List;)V");
+			global::android.widget.AbsListView._setRecyclerListener16559 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "setRecyclerListener", "(Landroid/widget/AbsListView$RecyclerListener;)V");
+			global::android.widget.AbsListView._AbsListView16560 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.AbsListView._AbsListView16561 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.AbsListView._AbsListView16562 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AbsListView))]
-	public sealed partial class AbsListView_ : android.widget.AbsListView
+	internal sealed partial class AbsListView_ : android.widget.AbsListView
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AbsListView_()
@@ -1053,40 +1099,40 @@ namespace android.widget
 		internal AbsListView_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _setAdapter16474;
+		internal static global::MonoJavaBridge.MethodId _setAdapter16566;
 		public override void setAdapter(android.widget.Adapter arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView_._setAdapter16474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView_._setAdapter16566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._setAdapter16474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._setAdapter16566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAdapter16475;
+		internal static global::MonoJavaBridge.MethodId _getAdapter16567;
 		public override global::android.widget.Adapter getAdapter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Adapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView_._getAdapter16475)) as android.widget.Adapter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Adapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AbsListView_._getAdapter16567)) as android.widget.Adapter;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Adapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._getAdapter16475)) as android.widget.Adapter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Adapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._getAdapter16567)) as android.widget.Adapter;
 		}
-		internal static global::MonoJavaBridge.MethodId _setSelection16476;
+		internal static global::MonoJavaBridge.MethodId _setSelection16568;
 		public override void setSelection(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView_._setSelection16476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AbsListView_._setSelection16568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._setSelection16476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AbsListView_.staticClass, global::android.widget.AbsListView_._setSelection16568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AbsListView_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AbsListView"));
-			global::android.widget.AbsListView_._setAdapter16474 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V");
-			global::android.widget.AbsListView_._getAdapter16475 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "getAdapter", "()Landroid/widget/Adapter;");
-			global::android.widget.AbsListView_._setSelection16476 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "setSelection", "(I)V");
+			global::android.widget.AbsListView_._setAdapter16566 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "setAdapter", "(Landroid/widget/Adapter;)V");
+			global::android.widget.AbsListView_._getAdapter16567 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "getAdapter", "()Landroid/widget/Adapter;");
+			global::android.widget.AbsListView_._setSelection16568 = @__env.GetMethodIDNoThrow(global::android.widget.AbsListView_.staticClass, "setSelection", "(I)V");
 		}
 	}
 }

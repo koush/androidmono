@@ -6,7 +6,7 @@ namespace java.lang
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.Cloneable))]
-	public sealed partial class Cloneable_ : java.lang.Object, Cloneable
+	internal sealed partial class Cloneable_ : java.lang.Object, Cloneable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Cloneable_()

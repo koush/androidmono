@@ -11,26 +11,26 @@ namespace java.lang
 		protected ArrayStoreException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ArrayStoreException19597;
+		internal static global::MonoJavaBridge.MethodId _ArrayStoreException19715;
 		public ArrayStoreException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayStoreException.staticClass, global::java.lang.ArrayStoreException._ArrayStoreException19597);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayStoreException.staticClass, global::java.lang.ArrayStoreException._ArrayStoreException19715);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _ArrayStoreException19598;
+		internal static global::MonoJavaBridge.MethodId _ArrayStoreException19716;
 		public ArrayStoreException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayStoreException.staticClass, global::java.lang.ArrayStoreException._ArrayStoreException19598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayStoreException.staticClass, global::java.lang.ArrayStoreException._ArrayStoreException19716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.ArrayStoreException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/ArrayStoreException"));
-			global::java.lang.ArrayStoreException._ArrayStoreException19597 = @__env.GetMethodIDNoThrow(global::java.lang.ArrayStoreException.staticClass, "<init>", "()V");
-			global::java.lang.ArrayStoreException._ArrayStoreException19598 = @__env.GetMethodIDNoThrow(global::java.lang.ArrayStoreException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.ArrayStoreException._ArrayStoreException19715 = @__env.GetMethodIDNoThrow(global::java.lang.ArrayStoreException.staticClass, "<init>", "()V");
+			global::java.lang.ArrayStoreException._ArrayStoreException19716 = @__env.GetMethodIDNoThrow(global::java.lang.ArrayStoreException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

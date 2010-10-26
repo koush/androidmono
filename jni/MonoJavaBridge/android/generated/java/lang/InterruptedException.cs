@@ -11,26 +11,26 @@ namespace java.lang
 		protected InterruptedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _InterruptedException20120;
+		internal static global::MonoJavaBridge.MethodId _InterruptedException20238;
 		public InterruptedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InterruptedException.staticClass, global::java.lang.InterruptedException._InterruptedException20120);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InterruptedException.staticClass, global::java.lang.InterruptedException._InterruptedException20238);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _InterruptedException20121;
+		internal static global::MonoJavaBridge.MethodId _InterruptedException20239;
 		public InterruptedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InterruptedException.staticClass, global::java.lang.InterruptedException._InterruptedException20121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InterruptedException.staticClass, global::java.lang.InterruptedException._InterruptedException20239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.InterruptedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/InterruptedException"));
-			global::java.lang.InterruptedException._InterruptedException20120 = @__env.GetMethodIDNoThrow(global::java.lang.InterruptedException.staticClass, "<init>", "()V");
-			global::java.lang.InterruptedException._InterruptedException20121 = @__env.GetMethodIDNoThrow(global::java.lang.InterruptedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.InterruptedException._InterruptedException20238 = @__env.GetMethodIDNoThrow(global::java.lang.InterruptedException.staticClass, "<init>", "()V");
+			global::java.lang.InterruptedException._InterruptedException20239 = @__env.GetMethodIDNoThrow(global::java.lang.InterruptedException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

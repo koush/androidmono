@@ -11,41 +11,41 @@ namespace java.lang
 		protected Throwable(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace20787;
+		internal static global::MonoJavaBridge.MethodId _printStackTrace20905;
 		public virtual void printStackTrace(java.io.PrintStream arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._printStackTrace20787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._printStackTrace20905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20787, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace20788;
+		internal static global::MonoJavaBridge.MethodId _printStackTrace20906;
 		public virtual void printStackTrace() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._printStackTrace20788);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._printStackTrace20906);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20788);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20906);
 		}
-		internal static global::MonoJavaBridge.MethodId _printStackTrace20789;
+		internal static global::MonoJavaBridge.MethodId _printStackTrace20907;
 		public virtual void printStackTrace(java.io.PrintWriter arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._printStackTrace20789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._printStackTrace20907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._printStackTrace20907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _fillInStackTrace20790;
+		internal static global::MonoJavaBridge.MethodId _fillInStackTrace20908;
 		public virtual global::java.lang.Throwable fillInStackTrace() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._fillInStackTrace20790)) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._fillInStackTrace20908)) as java.lang.Throwable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._fillInStackTrace20790)) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._fillInStackTrace20908)) as java.lang.Throwable;
 		}
 		public new global::java.lang.Throwable Cause
 		{
@@ -54,32 +54,32 @@ namespace java.lang
 				return getCause();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCause20791;
+		internal static global::MonoJavaBridge.MethodId _getCause20909;
 		public virtual global::java.lang.Throwable getCause() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getCause20791)) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getCause20909)) as java.lang.Throwable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getCause20791)) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getCause20909)) as java.lang.Throwable;
 		}
-		internal static global::MonoJavaBridge.MethodId _initCause20792;
+		internal static global::MonoJavaBridge.MethodId _initCause20910;
 		public virtual global::java.lang.Throwable initCause(java.lang.Throwable arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._initCause20792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._initCause20910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._initCause20792, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._initCause20910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Throwable;
 		}
-		internal static global::MonoJavaBridge.MethodId _toString20793;
+		internal static global::MonoJavaBridge.MethodId _toString20911;
 		public virtual global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._toString20793)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._toString20911)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._toString20793)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._toString20911)) as java.lang.String;
 		}
 		public new global::java.lang.String Message
 		{
@@ -88,14 +88,14 @@ namespace java.lang
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage20794;
+		internal static global::MonoJavaBridge.MethodId _getMessage20912;
 		public virtual global::java.lang.String getMessage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getMessage20794)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getMessage20912)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getMessage20794)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getMessage20912)) as java.lang.String;
 		}
 		public new global::java.lang.String LocalizedMessage
 		{
@@ -104,14 +104,14 @@ namespace java.lang
 				return getLocalizedMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLocalizedMessage20795;
+		internal static global::MonoJavaBridge.MethodId _getLocalizedMessage20913;
 		public virtual global::java.lang.String getLocalizedMessage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getLocalizedMessage20795)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getLocalizedMessage20913)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getLocalizedMessage20795)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getLocalizedMessage20913)) as java.lang.String;
 		}
 		public new global::java.lang.StackTraceElement[] StackTrace
 		{
@@ -124,71 +124,71 @@ namespace java.lang
 				setStackTrace(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getStackTrace20796;
+		internal static global::MonoJavaBridge.MethodId _getStackTrace20914;
 		public virtual global::java.lang.StackTraceElement[] getStackTrace() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.StackTraceElement>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getStackTrace20796)) as java.lang.StackTraceElement[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.StackTraceElement>(@__env.CallObjectMethod(this.JvmHandle, global::java.lang.Throwable._getStackTrace20914)) as java.lang.StackTraceElement[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.StackTraceElement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getStackTrace20796)) as java.lang.StackTraceElement[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.StackTraceElement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._getStackTrace20914)) as java.lang.StackTraceElement[];
 		}
-		internal static global::MonoJavaBridge.MethodId _setStackTrace20797;
+		internal static global::MonoJavaBridge.MethodId _setStackTrace20915;
 		public virtual void setStackTrace(java.lang.StackTraceElement[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._setStackTrace20797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.lang.Throwable._setStackTrace20915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._setStackTrace20797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.Throwable.staticClass, global::java.lang.Throwable._setStackTrace20915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _Throwable20798;
+		internal static global::MonoJavaBridge.MethodId _Throwable20916;
 		public Throwable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20798);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20916);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Throwable20799;
+		internal static global::MonoJavaBridge.MethodId _Throwable20917;
 		public Throwable(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Throwable20800;
+		internal static global::MonoJavaBridge.MethodId _Throwable20918;
 		public Throwable(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _Throwable20801;
+		internal static global::MonoJavaBridge.MethodId _Throwable20919;
 		public Throwable(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Throwable.staticClass, global::java.lang.Throwable._Throwable20919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.Throwable.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/Throwable"));
-			global::java.lang.Throwable._printStackTrace20787 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintStream;)V");
-			global::java.lang.Throwable._printStackTrace20788 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "()V");
-			global::java.lang.Throwable._printStackTrace20789 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintWriter;)V");
-			global::java.lang.Throwable._fillInStackTrace20790 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "fillInStackTrace", "()Ljava/lang/Throwable;");
-			global::java.lang.Throwable._getCause20791 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getCause", "()Ljava/lang/Throwable;");
-			global::java.lang.Throwable._initCause20792 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;");
-			global::java.lang.Throwable._toString20793 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.lang.Throwable._getMessage20794 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.lang.Throwable._getLocalizedMessage20795 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getLocalizedMessage", "()Ljava/lang/String;");
-			global::java.lang.Throwable._getStackTrace20796 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
-			global::java.lang.Throwable._setStackTrace20797 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "setStackTrace", "([Ljava/lang/StackTraceElement;)V");
-			global::java.lang.Throwable._Throwable20798 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "()V");
-			global::java.lang.Throwable._Throwable20799 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.lang.Throwable._Throwable20800 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::java.lang.Throwable._Throwable20801 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::java.lang.Throwable._printStackTrace20905 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintStream;)V");
+			global::java.lang.Throwable._printStackTrace20906 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "()V");
+			global::java.lang.Throwable._printStackTrace20907 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "printStackTrace", "(Ljava/io/PrintWriter;)V");
+			global::java.lang.Throwable._fillInStackTrace20908 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "fillInStackTrace", "()Ljava/lang/Throwable;");
+			global::java.lang.Throwable._getCause20909 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getCause", "()Ljava/lang/Throwable;");
+			global::java.lang.Throwable._initCause20910 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;");
+			global::java.lang.Throwable._toString20911 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.Throwable._getMessage20912 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::java.lang.Throwable._getLocalizedMessage20913 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getLocalizedMessage", "()Ljava/lang/String;");
+			global::java.lang.Throwable._getStackTrace20914 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
+			global::java.lang.Throwable._setStackTrace20915 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "setStackTrace", "([Ljava/lang/StackTraceElement;)V");
+			global::java.lang.Throwable._Throwable20916 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "()V");
+			global::java.lang.Throwable._Throwable20917 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.Throwable._Throwable20918 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::java.lang.Throwable._Throwable20919 = @__env.GetMethodIDNoThrow(global::java.lang.Throwable.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 	}
 }

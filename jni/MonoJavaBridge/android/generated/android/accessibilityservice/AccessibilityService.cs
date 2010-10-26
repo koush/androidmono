@@ -70,7 +70,7 @@ namespace android.accessibilityservice
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.accessibilityservice.AccessibilityService))]
-	public sealed partial class AccessibilityService_ : android.accessibilityservice.AccessibilityService
+	internal sealed partial class AccessibilityService_ : android.accessibilityservice.AccessibilityService
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccessibilityService_()

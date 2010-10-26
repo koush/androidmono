@@ -6,7 +6,7 @@ namespace android.text.style
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.UpdateAppearance))]
-	public sealed partial class UpdateAppearance_ : java.lang.Object, UpdateAppearance
+	internal sealed partial class UpdateAppearance_ : java.lang.Object, UpdateAppearance
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static UpdateAppearance_()

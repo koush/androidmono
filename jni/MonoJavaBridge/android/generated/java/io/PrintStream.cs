@@ -11,404 +11,404 @@ namespace java.io
 		protected PrintStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _println19284;
+		internal static global::MonoJavaBridge.MethodId _println19402;
 		public virtual void println(char arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19285;
+		internal static global::MonoJavaBridge.MethodId _println19403;
 		public virtual void println() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19285);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19403);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19285);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19403);
 		}
-		internal static global::MonoJavaBridge.MethodId _println19286;
+		internal static global::MonoJavaBridge.MethodId _println19404;
 		public virtual void println(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19287;
+		internal static global::MonoJavaBridge.MethodId _println19405;
 		public virtual void println(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19288;
+		internal static global::MonoJavaBridge.MethodId _println19406;
 		public virtual void println(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19289;
+		internal static global::MonoJavaBridge.MethodId _println19407;
 		public virtual void println(char[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19290;
+		internal static global::MonoJavaBridge.MethodId _println19408;
 		public virtual void println(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19291;
+		internal static global::MonoJavaBridge.MethodId _println19409;
 		public virtual void println(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19292;
+		internal static global::MonoJavaBridge.MethodId _println19410;
 		public virtual void println(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _println19293;
+		internal static global::MonoJavaBridge.MethodId _println19411;
 		public virtual void println(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._println19411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._println19411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _append19294;
+		internal static global::MonoJavaBridge.MethodId _append19412;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._append19294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._append19412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._append19294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._append19412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
 		}
 		public java.lang.Appendable append(string arg0)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::MonoJavaBridge.MethodId _append19295;
+		internal static global::MonoJavaBridge.MethodId _append19413;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._append19295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Appendable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._append19413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Appendable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._append19295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Appendable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._append19413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Appendable;
 		}
 		public java.lang.Appendable append(string arg0, int arg1, int arg2)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::MonoJavaBridge.MethodId _append19296;
+		internal static global::MonoJavaBridge.MethodId _append19414;
 		public virtual global::java.lang.Appendable append(char arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._append19296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._append19414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._append19296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Appendable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._append19414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Appendable;
 		}
-		internal static global::MonoJavaBridge.MethodId _format19297;
+		internal static global::MonoJavaBridge.MethodId _format19415;
 		public virtual global::java.io.PrintStream format(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._format19297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._format19415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._format19297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._format19415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _format19298;
+		internal static global::MonoJavaBridge.MethodId _format19416;
 		public virtual global::java.io.PrintStream format(java.lang.String arg0, java.lang.Object[] arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._format19298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._format19416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._format19298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._format19416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _write19299;
+		internal static global::MonoJavaBridge.MethodId _write19417;
 		public override void write(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._write19299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._write19417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._write19299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._write19417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _write19300;
+		internal static global::MonoJavaBridge.MethodId _write19418;
 		public override void write(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._write19300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._write19418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._write19300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._write19418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19301;
+		internal static global::MonoJavaBridge.MethodId _print19419;
 		public virtual void print(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19302;
+		internal static global::MonoJavaBridge.MethodId _print19420;
 		public virtual void print(double arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19303;
+		internal static global::MonoJavaBridge.MethodId _print19421;
 		public virtual void print(char[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19304;
+		internal static global::MonoJavaBridge.MethodId _print19422;
 		public virtual void print(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19305;
+		internal static global::MonoJavaBridge.MethodId _print19423;
 		public virtual void print(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19306;
+		internal static global::MonoJavaBridge.MethodId _print19424;
 		public virtual void print(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19307;
+		internal static global::MonoJavaBridge.MethodId _print19425;
 		public virtual void print(char arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19308;
+		internal static global::MonoJavaBridge.MethodId _print19426;
 		public virtual void print(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _print19309;
+		internal static global::MonoJavaBridge.MethodId _print19427;
 		public virtual void print(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._print19427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._print19427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _flush19310;
+		internal static global::MonoJavaBridge.MethodId _flush19428;
 		public override void flush() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._flush19310);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._flush19428);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._flush19310);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._flush19428);
 		}
-		internal static global::MonoJavaBridge.MethodId _close19311;
+		internal static global::MonoJavaBridge.MethodId _close19429;
 		public override void close() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._close19311);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._close19429);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._close19311);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._close19429);
 		}
-		internal static global::MonoJavaBridge.MethodId _checkError19312;
+		internal static global::MonoJavaBridge.MethodId _checkError19430;
 		public virtual bool checkError() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.PrintStream._checkError19312);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.io.PrintStream._checkError19430);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._checkError19312);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._checkError19430);
 		}
-		internal static global::MonoJavaBridge.MethodId _setError19313;
+		internal static global::MonoJavaBridge.MethodId _setError19431;
 		protected virtual void setError() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._setError19313);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._setError19431);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._setError19313);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._setError19431);
 		}
-		internal static global::MonoJavaBridge.MethodId _clearError19314;
+		internal static global::MonoJavaBridge.MethodId _clearError19432;
 		protected virtual void clearError() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._clearError19314);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.PrintStream._clearError19432);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._clearError19314);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._clearError19432);
 		}
-		internal static global::MonoJavaBridge.MethodId _printf19315;
+		internal static global::MonoJavaBridge.MethodId _printf19433;
 		public virtual global::java.io.PrintStream printf(java.lang.String arg0, java.lang.Object[] arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._printf19315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._printf19433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._printf19315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._printf19433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.PrintStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _printf19316;
+		internal static global::MonoJavaBridge.MethodId _printf19434;
 		public virtual global::java.io.PrintStream printf(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._printf19316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.PrintStream._printf19434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._printf19316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.PrintStream.staticClass, global::java.io.PrintStream._printf19434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.io.PrintStream;
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19317;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19435;
 		public PrintStream(java.io.OutputStream arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19318;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19436;
 		public PrintStream(java.io.OutputStream arg0, bool arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19319;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19437;
 		public PrintStream(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19320;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19438;
 		public PrintStream(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19321;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19439;
 		public PrintStream(java.io.File arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19322;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19440;
 		public PrintStream(java.io.File arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _PrintStream19323;
+		internal static global::MonoJavaBridge.MethodId _PrintStream19441;
 		public PrintStream(java.io.OutputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.PrintStream.staticClass, global::java.io.PrintStream._PrintStream19441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.PrintStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/PrintStream"));
-			global::java.io.PrintStream._println19284 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(C)V");
-			global::java.io.PrintStream._println19285 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "()V");
-			global::java.io.PrintStream._println19286 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(Z)V");
-			global::java.io.PrintStream._println19287 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(Ljava/lang/Object;)V");
-			global::java.io.PrintStream._println19288 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(Ljava/lang/String;)V");
-			global::java.io.PrintStream._println19289 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "([C)V");
-			global::java.io.PrintStream._println19290 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(D)V");
-			global::java.io.PrintStream._println19291 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(F)V");
-			global::java.io.PrintStream._println19292 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(J)V");
-			global::java.io.PrintStream._println19293 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(I)V");
-			global::java.io.PrintStream._append19294 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
-			global::java.io.PrintStream._append19295 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
-			global::java.io.PrintStream._append19296 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "append", "(C)Ljava/lang/Appendable;");
-			global::java.io.PrintStream._format19297 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
-			global::java.io.PrintStream._format19298 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
-			global::java.io.PrintStream._write19299 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "write", "([BII)V");
-			global::java.io.PrintStream._write19300 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "write", "(I)V");
-			global::java.io.PrintStream._print19301 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(F)V");
-			global::java.io.PrintStream._print19302 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(D)V");
-			global::java.io.PrintStream._print19303 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "([C)V");
-			global::java.io.PrintStream._print19304 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(Ljava/lang/String;)V");
-			global::java.io.PrintStream._print19305 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(Ljava/lang/Object;)V");
-			global::java.io.PrintStream._print19306 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(Z)V");
-			global::java.io.PrintStream._print19307 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(C)V");
-			global::java.io.PrintStream._print19308 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(I)V");
-			global::java.io.PrintStream._print19309 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(J)V");
-			global::java.io.PrintStream._flush19310 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "flush", "()V");
-			global::java.io.PrintStream._close19311 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "close", "()V");
-			global::java.io.PrintStream._checkError19312 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "checkError", "()Z");
-			global::java.io.PrintStream._setError19313 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "setError", "()V");
-			global::java.io.PrintStream._clearError19314 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "clearError", "()V");
-			global::java.io.PrintStream._printf19315 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
-			global::java.io.PrintStream._printf19316 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
-			global::java.io.PrintStream._PrintStream19317 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;Z)V");
-			global::java.io.PrintStream._PrintStream19318 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;ZLjava/lang/String;)V");
-			global::java.io.PrintStream._PrintStream19319 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.PrintStream._PrintStream19320 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::java.io.PrintStream._PrintStream19321 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/File;)V");
-			global::java.io.PrintStream._PrintStream19322 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
-			global::java.io.PrintStream._PrintStream19323 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
+			global::java.io.PrintStream._println19402 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(C)V");
+			global::java.io.PrintStream._println19403 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "()V");
+			global::java.io.PrintStream._println19404 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(Z)V");
+			global::java.io.PrintStream._println19405 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(Ljava/lang/Object;)V");
+			global::java.io.PrintStream._println19406 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(Ljava/lang/String;)V");
+			global::java.io.PrintStream._println19407 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "([C)V");
+			global::java.io.PrintStream._println19408 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(D)V");
+			global::java.io.PrintStream._println19409 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(F)V");
+			global::java.io.PrintStream._println19410 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(J)V");
+			global::java.io.PrintStream._println19411 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "println", "(I)V");
+			global::java.io.PrintStream._append19412 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
+			global::java.io.PrintStream._append19413 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
+			global::java.io.PrintStream._append19414 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "append", "(C)Ljava/lang/Appendable;");
+			global::java.io.PrintStream._format19415 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
+			global::java.io.PrintStream._format19416 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
+			global::java.io.PrintStream._write19417 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "write", "([BII)V");
+			global::java.io.PrintStream._write19418 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "write", "(I)V");
+			global::java.io.PrintStream._print19419 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(F)V");
+			global::java.io.PrintStream._print19420 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(D)V");
+			global::java.io.PrintStream._print19421 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "([C)V");
+			global::java.io.PrintStream._print19422 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(Ljava/lang/String;)V");
+			global::java.io.PrintStream._print19423 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(Ljava/lang/Object;)V");
+			global::java.io.PrintStream._print19424 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(Z)V");
+			global::java.io.PrintStream._print19425 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(C)V");
+			global::java.io.PrintStream._print19426 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(I)V");
+			global::java.io.PrintStream._print19427 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "print", "(J)V");
+			global::java.io.PrintStream._flush19428 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "flush", "()V");
+			global::java.io.PrintStream._close19429 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "close", "()V");
+			global::java.io.PrintStream._checkError19430 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "checkError", "()Z");
+			global::java.io.PrintStream._setError19431 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "setError", "()V");
+			global::java.io.PrintStream._clearError19432 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "clearError", "()V");
+			global::java.io.PrintStream._printf19433 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
+			global::java.io.PrintStream._printf19434 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;");
+			global::java.io.PrintStream._PrintStream19435 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;Z)V");
+			global::java.io.PrintStream._PrintStream19436 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;ZLjava/lang/String;)V");
+			global::java.io.PrintStream._PrintStream19437 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.io.PrintStream._PrintStream19438 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::java.io.PrintStream._PrintStream19439 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/File;)V");
+			global::java.io.PrintStream._PrintStream19440 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
+			global::java.io.PrintStream._PrintStream19441 = @__env.GetMethodIDNoThrow(global::java.io.PrintStream.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
 		}
 	}
 }

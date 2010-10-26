@@ -6,7 +6,7 @@ namespace org.apache.http.protocol
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.protocol.ExecutionContext))]
-	public sealed partial class ExecutionContext_ : java.lang.Object, ExecutionContext
+	internal sealed partial class ExecutionContext_ : java.lang.Object, ExecutionContext
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ExecutionContext_()

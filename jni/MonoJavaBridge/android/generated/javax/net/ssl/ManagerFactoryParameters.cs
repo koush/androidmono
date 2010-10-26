@@ -6,7 +6,7 @@ namespace javax.net.ssl
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.net.ssl.ManagerFactoryParameters))]
-	public sealed partial class ManagerFactoryParameters_ : java.lang.Object, ManagerFactoryParameters
+	internal sealed partial class ManagerFactoryParameters_ : java.lang.Object, ManagerFactoryParameters
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ManagerFactoryParameters_()

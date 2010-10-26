@@ -11,23 +11,23 @@ namespace javax.microedition.khronos.egl
 		protected EGLDisplay(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _EGLDisplay28837;
+		internal static global::MonoJavaBridge.MethodId _EGLDisplay28955;
 		public EGLDisplay()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28837);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28955);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.microedition.khronos.egl.EGLDisplay.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/microedition/khronos/egl/EGLDisplay"));
-			global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28837 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGLDisplay.staticClass, "<init>", "()V");
+			global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28955 = @__env.GetMethodIDNoThrow(global::javax.microedition.khronos.egl.EGLDisplay.staticClass, "<init>", "()V");
 		}
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.microedition.khronos.egl.EGLDisplay))]
-	public sealed partial class EGLDisplay_ : javax.microedition.khronos.egl.EGLDisplay
+	internal sealed partial class EGLDisplay_ : javax.microedition.khronos.egl.EGLDisplay
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EGLDisplay_()

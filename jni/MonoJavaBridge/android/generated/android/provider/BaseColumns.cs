@@ -6,7 +6,7 @@ namespace android.provider
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.provider.BaseColumns))]
-	public sealed partial class BaseColumns_ : java.lang.Object, BaseColumns
+	internal sealed partial class BaseColumns_ : java.lang.Object, BaseColumns
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static BaseColumns_()

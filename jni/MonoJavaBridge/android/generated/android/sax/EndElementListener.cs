@@ -7,7 +7,7 @@ namespace android.sax
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.sax.EndElementListener))]
-	public sealed partial class EndElementListener_ : java.lang.Object, EndElementListener
+	internal sealed partial class EndElementListener_ : java.lang.Object, EndElementListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EndElementListener_()
@@ -17,20 +17,62 @@ namespace android.sax
 		internal EndElementListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _end11558;
+		internal static global::MonoJavaBridge.MethodId _end11610;
 		 void android.sax.EndElementListener.end() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_._end11558);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_._end11610);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_.staticClass, global::android.sax.EndElementListener_._end11558);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.EndElementListener_.staticClass, global::android.sax.EndElementListener_._end11610);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.sax.EndElementListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndElementListener"));
-			global::android.sax.EndElementListener_._end11558 = @__env.GetMethodIDNoThrow(global::android.sax.EndElementListener_.staticClass, "end", "()V");
+			global::android.sax.EndElementListener_._end11610 = @__env.GetMethodIDNoThrow(global::android.sax.EndElementListener_.staticClass, "end", "()V");
+		}
+	}
+
+	public delegate void EndElementListenerDelegate();
+
+	internal partial class EndElementListenerDelegateWrapper : java.lang.Object, EndElementListener
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static EndElementListenerDelegateWrapper()
+		{
+			InitJNI();
+		}
+		protected EndElementListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _EndElementListenerDelegateWrapper11611;
+		public EndElementListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.EndElementListenerDelegateWrapper.staticClass, global::android.sax.EndElementListenerDelegateWrapper._EndElementListenerDelegateWrapper11611);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.sax.EndElementListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/sax/EndElementListenerDelegateWrapper"));
+			global::android.sax.EndElementListenerDelegateWrapper._EndElementListenerDelegateWrapper11611 = @__env.GetMethodIDNoThrow(global::android.sax.EndElementListenerDelegateWrapper.staticClass, "<init>", "()V");
+		}
+	}
+	internal partial class EndElementListenerDelegateWrapper
+	{
+		private EndElementListenerDelegate myDelegate;
+		public void end()
+		{
+			myDelegate();
+		}
+		public static implicit operator EndElementListenerDelegateWrapper(EndElementListenerDelegate d)
+		{
+			global::android.sax.EndElementListenerDelegateWrapper ret = new global::android.sax.EndElementListenerDelegateWrapper();
+			ret.myDelegate = d;
+			global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+			return ret;
 		}
 	}
 }

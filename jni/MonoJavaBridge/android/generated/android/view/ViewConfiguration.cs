@@ -11,11 +11,11 @@ namespace android.view
 		protected ViewConfiguration(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _get14873;
+		internal static global::MonoJavaBridge.MethodId _get14947;
 		public static global::android.view.ViewConfiguration get(android.content.Context arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._get14873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewConfiguration;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._get14947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewConfiguration;
 		}
 		public static int ScrollBarSize
 		{
@@ -24,11 +24,11 @@ namespace android.view
 				return getScrollBarSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollBarSize14874;
+		internal static global::MonoJavaBridge.MethodId _getScrollBarSize14948;
 		public static int getScrollBarSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollBarSize14874);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollBarSize14948);
 		}
 		public new int ScaledScrollBarSize
 		{
@@ -37,14 +37,14 @@ namespace android.view
 				return getScaledScrollBarSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledScrollBarSize14875;
+		internal static global::MonoJavaBridge.MethodId _getScaledScrollBarSize14949;
 		public virtual int getScaledScrollBarSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledScrollBarSize14875);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledScrollBarSize14949);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledScrollBarSize14875);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledScrollBarSize14949);
 		}
 		public static int ScrollBarFadeDuration
 		{
@@ -53,11 +53,11 @@ namespace android.view
 				return getScrollBarFadeDuration();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollBarFadeDuration14876;
+		internal static global::MonoJavaBridge.MethodId _getScrollBarFadeDuration14950;
 		public static int getScrollBarFadeDuration() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollBarFadeDuration14876);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollBarFadeDuration14950);
 		}
 		public static int ScrollDefaultDelay
 		{
@@ -66,11 +66,11 @@ namespace android.view
 				return getScrollDefaultDelay();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollDefaultDelay14877;
+		internal static global::MonoJavaBridge.MethodId _getScrollDefaultDelay14951;
 		public static int getScrollDefaultDelay() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollDefaultDelay14877);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollDefaultDelay14951);
 		}
 		public static int FadingEdgeLength
 		{
@@ -79,11 +79,11 @@ namespace android.view
 				return getFadingEdgeLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFadingEdgeLength14878;
+		internal static global::MonoJavaBridge.MethodId _getFadingEdgeLength14952;
 		public static int getFadingEdgeLength() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getFadingEdgeLength14878);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getFadingEdgeLength14952);
 		}
 		public new int ScaledFadingEdgeLength
 		{
@@ -92,14 +92,14 @@ namespace android.view
 				return getScaledFadingEdgeLength();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledFadingEdgeLength14879;
+		internal static global::MonoJavaBridge.MethodId _getScaledFadingEdgeLength14953;
 		public virtual int getScaledFadingEdgeLength() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledFadingEdgeLength14879);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledFadingEdgeLength14953);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledFadingEdgeLength14879);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledFadingEdgeLength14953);
 		}
 		public static int PressedStateDuration
 		{
@@ -108,11 +108,11 @@ namespace android.view
 				return getPressedStateDuration();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPressedStateDuration14880;
+		internal static global::MonoJavaBridge.MethodId _getPressedStateDuration14954;
 		public static int getPressedStateDuration() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getPressedStateDuration14880);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getPressedStateDuration14954);
 		}
 		public static int LongPressTimeout
 		{
@@ -121,11 +121,11 @@ namespace android.view
 				return getLongPressTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLongPressTimeout14881;
+		internal static global::MonoJavaBridge.MethodId _getLongPressTimeout14955;
 		public static int getLongPressTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getLongPressTimeout14881);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getLongPressTimeout14955);
 		}
 		public static int TapTimeout
 		{
@@ -134,11 +134,11 @@ namespace android.view
 				return getTapTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTapTimeout14882;
+		internal static global::MonoJavaBridge.MethodId _getTapTimeout14956;
 		public static int getTapTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getTapTimeout14882);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getTapTimeout14956);
 		}
 		public static int JumpTapTimeout
 		{
@@ -147,11 +147,11 @@ namespace android.view
 				return getJumpTapTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getJumpTapTimeout14883;
+		internal static global::MonoJavaBridge.MethodId _getJumpTapTimeout14957;
 		public static int getJumpTapTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getJumpTapTimeout14883);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getJumpTapTimeout14957);
 		}
 		public static int DoubleTapTimeout
 		{
@@ -160,11 +160,11 @@ namespace android.view
 				return getDoubleTapTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDoubleTapTimeout14884;
+		internal static global::MonoJavaBridge.MethodId _getDoubleTapTimeout14958;
 		public static int getDoubleTapTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getDoubleTapTimeout14884);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getDoubleTapTimeout14958);
 		}
 		public static int EdgeSlop
 		{
@@ -173,11 +173,11 @@ namespace android.view
 				return getEdgeSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getEdgeSlop14885;
+		internal static global::MonoJavaBridge.MethodId _getEdgeSlop14959;
 		public static int getEdgeSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getEdgeSlop14885);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getEdgeSlop14959);
 		}
 		public new int ScaledEdgeSlop
 		{
@@ -186,14 +186,14 @@ namespace android.view
 				return getScaledEdgeSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledEdgeSlop14886;
+		internal static global::MonoJavaBridge.MethodId _getScaledEdgeSlop14960;
 		public virtual int getScaledEdgeSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledEdgeSlop14886);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledEdgeSlop14960);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledEdgeSlop14886);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledEdgeSlop14960);
 		}
 		public static int TouchSlop
 		{
@@ -202,11 +202,11 @@ namespace android.view
 				return getTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTouchSlop14887;
+		internal static global::MonoJavaBridge.MethodId _getTouchSlop14961;
 		public static int getTouchSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getTouchSlop14887);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getTouchSlop14961);
 		}
 		public new int ScaledTouchSlop
 		{
@@ -215,14 +215,14 @@ namespace android.view
 				return getScaledTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledTouchSlop14888;
+		internal static global::MonoJavaBridge.MethodId _getScaledTouchSlop14962;
 		public virtual int getScaledTouchSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledTouchSlop14888);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledTouchSlop14962);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledTouchSlop14888);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledTouchSlop14962);
 		}
 		public new int ScaledPagingTouchSlop
 		{
@@ -231,14 +231,14 @@ namespace android.view
 				return getScaledPagingTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledPagingTouchSlop14889;
+		internal static global::MonoJavaBridge.MethodId _getScaledPagingTouchSlop14963;
 		public virtual int getScaledPagingTouchSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledPagingTouchSlop14889);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledPagingTouchSlop14963);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledPagingTouchSlop14889);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledPagingTouchSlop14963);
 		}
 		public new int ScaledDoubleTapSlop
 		{
@@ -247,14 +247,14 @@ namespace android.view
 				return getScaledDoubleTapSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledDoubleTapSlop14890;
+		internal static global::MonoJavaBridge.MethodId _getScaledDoubleTapSlop14964;
 		public virtual int getScaledDoubleTapSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledDoubleTapSlop14890);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledDoubleTapSlop14964);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledDoubleTapSlop14890);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledDoubleTapSlop14964);
 		}
 		public static int WindowTouchSlop
 		{
@@ -263,11 +263,11 @@ namespace android.view
 				return getWindowTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getWindowTouchSlop14891;
+		internal static global::MonoJavaBridge.MethodId _getWindowTouchSlop14965;
 		public static int getWindowTouchSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getWindowTouchSlop14891);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getWindowTouchSlop14965);
 		}
 		public new int ScaledWindowTouchSlop
 		{
@@ -276,14 +276,14 @@ namespace android.view
 				return getScaledWindowTouchSlop();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledWindowTouchSlop14892;
+		internal static global::MonoJavaBridge.MethodId _getScaledWindowTouchSlop14966;
 		public virtual int getScaledWindowTouchSlop() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledWindowTouchSlop14892);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledWindowTouchSlop14966);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledWindowTouchSlop14892);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledWindowTouchSlop14966);
 		}
 		public static int MinimumFlingVelocity
 		{
@@ -292,11 +292,11 @@ namespace android.view
 				return getMinimumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumFlingVelocity14893;
+		internal static global::MonoJavaBridge.MethodId _getMinimumFlingVelocity14967;
 		public static int getMinimumFlingVelocity() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMinimumFlingVelocity14893);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMinimumFlingVelocity14967);
 		}
 		public new int ScaledMinimumFlingVelocity
 		{
@@ -305,14 +305,14 @@ namespace android.view
 				return getScaledMinimumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledMinimumFlingVelocity14894;
+		internal static global::MonoJavaBridge.MethodId _getScaledMinimumFlingVelocity14968;
 		public virtual int getScaledMinimumFlingVelocity() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14894);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14968);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14894);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14968);
 		}
 		public static int MaximumFlingVelocity
 		{
@@ -321,11 +321,11 @@ namespace android.view
 				return getMaximumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumFlingVelocity14895;
+		internal static global::MonoJavaBridge.MethodId _getMaximumFlingVelocity14969;
 		public static int getMaximumFlingVelocity() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMaximumFlingVelocity14895);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMaximumFlingVelocity14969);
 		}
 		public new int ScaledMaximumFlingVelocity
 		{
@@ -334,14 +334,14 @@ namespace android.view
 				return getScaledMaximumFlingVelocity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledMaximumFlingVelocity14896;
+		internal static global::MonoJavaBridge.MethodId _getScaledMaximumFlingVelocity14970;
 		public virtual int getScaledMaximumFlingVelocity() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14896);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14970);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14896);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14970);
 		}
 		public static int MaximumDrawingCacheSize
 		{
@@ -350,11 +350,11 @@ namespace android.view
 				return getMaximumDrawingCacheSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumDrawingCacheSize14897;
+		internal static global::MonoJavaBridge.MethodId _getMaximumDrawingCacheSize14971;
 		public static int getMaximumDrawingCacheSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14897);
+			return @__env.CallStaticIntMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14971);
 		}
 		public new int ScaledMaximumDrawingCacheSize
 		{
@@ -363,14 +363,14 @@ namespace android.view
 				return getScaledMaximumDrawingCacheSize();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScaledMaximumDrawingCacheSize14898;
+		internal static global::MonoJavaBridge.MethodId _getScaledMaximumDrawingCacheSize14972;
 		public virtual int getScaledMaximumDrawingCacheSize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14898);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14972);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14898);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14972);
 		}
 		public static long ZoomControlsTimeout
 		{
@@ -379,11 +379,11 @@ namespace android.view
 				return getZoomControlsTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getZoomControlsTimeout14899;
+		internal static global::MonoJavaBridge.MethodId _getZoomControlsTimeout14973;
 		public static long getZoomControlsTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getZoomControlsTimeout14899);
+			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getZoomControlsTimeout14973);
 		}
 		public static long GlobalActionKeyTimeout
 		{
@@ -392,11 +392,11 @@ namespace android.view
 				return getGlobalActionKeyTimeout();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGlobalActionKeyTimeout14900;
+		internal static global::MonoJavaBridge.MethodId _getGlobalActionKeyTimeout14974;
 		public static long getGlobalActionKeyTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14900);
+			return @__env.CallStaticLongMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14974);
 		}
 		public static float ScrollFriction
 		{
@@ -405,53 +405,53 @@ namespace android.view
 				return getScrollFriction();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getScrollFriction14901;
+		internal static global::MonoJavaBridge.MethodId _getScrollFriction14975;
 		public static float getScrollFriction() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticFloatMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollFriction14901);
+			return @__env.CallStaticFloatMethod(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScrollFriction14975);
 		}
-		internal static global::MonoJavaBridge.MethodId _ViewConfiguration14902;
+		internal static global::MonoJavaBridge.MethodId _ViewConfiguration14976;
 		public ViewConfiguration()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._ViewConfiguration14902);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._ViewConfiguration14976);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.ViewConfiguration.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/ViewConfiguration"));
-			global::android.view.ViewConfiguration._get14873 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "get", "(Landroid/content/Context;)Landroid/view/ViewConfiguration;");
-			global::android.view.ViewConfiguration._getScrollBarSize14874 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarSize", "()I");
-			global::android.view.ViewConfiguration._getScaledScrollBarSize14875 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledScrollBarSize", "()I");
-			global::android.view.ViewConfiguration._getScrollBarFadeDuration14876 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarFadeDuration", "()I");
-			global::android.view.ViewConfiguration._getScrollDefaultDelay14877 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollDefaultDelay", "()I");
-			global::android.view.ViewConfiguration._getFadingEdgeLength14878 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getFadingEdgeLength", "()I");
-			global::android.view.ViewConfiguration._getScaledFadingEdgeLength14879 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledFadingEdgeLength", "()I");
-			global::android.view.ViewConfiguration._getPressedStateDuration14880 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getPressedStateDuration", "()I");
-			global::android.view.ViewConfiguration._getLongPressTimeout14881 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getLongPressTimeout", "()I");
-			global::android.view.ViewConfiguration._getTapTimeout14882 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTapTimeout", "()I");
-			global::android.view.ViewConfiguration._getJumpTapTimeout14883 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getJumpTapTimeout", "()I");
-			global::android.view.ViewConfiguration._getDoubleTapTimeout14884 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getDoubleTapTimeout", "()I");
-			global::android.view.ViewConfiguration._getEdgeSlop14885 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getEdgeSlop", "()I");
-			global::android.view.ViewConfiguration._getScaledEdgeSlop14886 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledEdgeSlop", "()I");
-			global::android.view.ViewConfiguration._getTouchSlop14887 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTouchSlop", "()I");
-			global::android.view.ViewConfiguration._getScaledTouchSlop14888 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledTouchSlop", "()I");
-			global::android.view.ViewConfiguration._getScaledPagingTouchSlop14889 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledPagingTouchSlop", "()I");
-			global::android.view.ViewConfiguration._getScaledDoubleTapSlop14890 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledDoubleTapSlop", "()I");
-			global::android.view.ViewConfiguration._getWindowTouchSlop14891 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getWindowTouchSlop", "()I");
-			global::android.view.ViewConfiguration._getScaledWindowTouchSlop14892 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledWindowTouchSlop", "()I");
-			global::android.view.ViewConfiguration._getMinimumFlingVelocity14893 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMinimumFlingVelocity", "()I");
-			global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14894 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledMinimumFlingVelocity", "()I");
-			global::android.view.ViewConfiguration._getMaximumFlingVelocity14895 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumFlingVelocity", "()I");
-			global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14896 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledMaximumFlingVelocity", "()I");
-			global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14897 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumDrawingCacheSize", "()I");
-			global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14898 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledMaximumDrawingCacheSize", "()I");
-			global::android.view.ViewConfiguration._getZoomControlsTimeout14899 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getZoomControlsTimeout", "()J");
-			global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14900 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getGlobalActionKeyTimeout", "()J");
-			global::android.view.ViewConfiguration._getScrollFriction14901 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollFriction", "()F");
-			global::android.view.ViewConfiguration._ViewConfiguration14902 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "<init>", "()V");
+			global::android.view.ViewConfiguration._get14947 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "get", "(Landroid/content/Context;)Landroid/view/ViewConfiguration;");
+			global::android.view.ViewConfiguration._getScrollBarSize14948 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarSize", "()I");
+			global::android.view.ViewConfiguration._getScaledScrollBarSize14949 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledScrollBarSize", "()I");
+			global::android.view.ViewConfiguration._getScrollBarFadeDuration14950 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollBarFadeDuration", "()I");
+			global::android.view.ViewConfiguration._getScrollDefaultDelay14951 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollDefaultDelay", "()I");
+			global::android.view.ViewConfiguration._getFadingEdgeLength14952 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getFadingEdgeLength", "()I");
+			global::android.view.ViewConfiguration._getScaledFadingEdgeLength14953 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledFadingEdgeLength", "()I");
+			global::android.view.ViewConfiguration._getPressedStateDuration14954 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getPressedStateDuration", "()I");
+			global::android.view.ViewConfiguration._getLongPressTimeout14955 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getLongPressTimeout", "()I");
+			global::android.view.ViewConfiguration._getTapTimeout14956 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTapTimeout", "()I");
+			global::android.view.ViewConfiguration._getJumpTapTimeout14957 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getJumpTapTimeout", "()I");
+			global::android.view.ViewConfiguration._getDoubleTapTimeout14958 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getDoubleTapTimeout", "()I");
+			global::android.view.ViewConfiguration._getEdgeSlop14959 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getEdgeSlop", "()I");
+			global::android.view.ViewConfiguration._getScaledEdgeSlop14960 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledEdgeSlop", "()I");
+			global::android.view.ViewConfiguration._getTouchSlop14961 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getTouchSlop", "()I");
+			global::android.view.ViewConfiguration._getScaledTouchSlop14962 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledTouchSlop", "()I");
+			global::android.view.ViewConfiguration._getScaledPagingTouchSlop14963 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledPagingTouchSlop", "()I");
+			global::android.view.ViewConfiguration._getScaledDoubleTapSlop14964 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledDoubleTapSlop", "()I");
+			global::android.view.ViewConfiguration._getWindowTouchSlop14965 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getWindowTouchSlop", "()I");
+			global::android.view.ViewConfiguration._getScaledWindowTouchSlop14966 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledWindowTouchSlop", "()I");
+			global::android.view.ViewConfiguration._getMinimumFlingVelocity14967 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMinimumFlingVelocity", "()I");
+			global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity14968 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledMinimumFlingVelocity", "()I");
+			global::android.view.ViewConfiguration._getMaximumFlingVelocity14969 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumFlingVelocity", "()I");
+			global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity14970 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledMaximumFlingVelocity", "()I");
+			global::android.view.ViewConfiguration._getMaximumDrawingCacheSize14971 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getMaximumDrawingCacheSize", "()I");
+			global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize14972 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScaledMaximumDrawingCacheSize", "()I");
+			global::android.view.ViewConfiguration._getZoomControlsTimeout14973 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getZoomControlsTimeout", "()J");
+			global::android.view.ViewConfiguration._getGlobalActionKeyTimeout14974 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getGlobalActionKeyTimeout", "()J");
+			global::android.view.ViewConfiguration._getScrollFriction14975 = @__env.GetStaticMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "getScrollFriction", "()F");
+			global::android.view.ViewConfiguration._ViewConfiguration14976 = @__env.GetMethodIDNoThrow(global::android.view.ViewConfiguration.staticClass, "<init>", "()V");
 		}
 	}
 }

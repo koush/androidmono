@@ -6,7 +6,7 @@ namespace javax.microedition.khronos.opengles
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.microedition.khronos.opengles.GL))]
-	public sealed partial class GL_ : java.lang.Object, GL
+	internal sealed partial class GL_ : java.lang.Object, GL
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static GL_()

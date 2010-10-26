@@ -11,28 +11,28 @@ namespace android.app
 		protected AliasActivity(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreate1728;
+		internal static global::MonoJavaBridge.MethodId _onCreate1730;
 		protected override void onCreate(android.os.Bundle arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.AliasActivity._onCreate1728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.AliasActivity._onCreate1730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AliasActivity.staticClass, global::android.app.AliasActivity._onCreate1728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AliasActivity.staticClass, global::android.app.AliasActivity._onCreate1730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _AliasActivity1729;
+		internal static global::MonoJavaBridge.MethodId _AliasActivity1731;
 		public AliasActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AliasActivity.staticClass, global::android.app.AliasActivity._AliasActivity1729);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AliasActivity.staticClass, global::android.app.AliasActivity._AliasActivity1731);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.AliasActivity.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/AliasActivity"));
-			global::android.app.AliasActivity._onCreate1728 = @__env.GetMethodIDNoThrow(global::android.app.AliasActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.app.AliasActivity._AliasActivity1729 = @__env.GetMethodIDNoThrow(global::android.app.AliasActivity.staticClass, "<init>", "()V");
+			global::android.app.AliasActivity._onCreate1730 = @__env.GetMethodIDNoThrow(global::android.app.AliasActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
+			global::android.app.AliasActivity._AliasActivity1731 = @__env.GetMethodIDNoThrow(global::android.app.AliasActivity.staticClass, "<init>", "()V");
 		}
 	}
 }

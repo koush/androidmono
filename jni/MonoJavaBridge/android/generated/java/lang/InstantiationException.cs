@@ -11,26 +11,26 @@ namespace java.lang
 		protected InstantiationException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _InstantiationException20075;
+		internal static global::MonoJavaBridge.MethodId _InstantiationException20193;
 		public InstantiationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20075);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20193);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _InstantiationException20076;
+		internal static global::MonoJavaBridge.MethodId _InstantiationException20194;
 		public InstantiationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.InstantiationException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/InstantiationException"));
-			global::java.lang.InstantiationException._InstantiationException20075 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationException.staticClass, "<init>", "()V");
-			global::java.lang.InstantiationException._InstantiationException20076 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.InstantiationException._InstantiationException20193 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationException.staticClass, "<init>", "()V");
+			global::java.lang.InstantiationException._InstantiationException20194 = @__env.GetMethodIDNoThrow(global::java.lang.InstantiationException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

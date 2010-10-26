@@ -19,7 +19,7 @@ namespace android.widget
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.widget.AutoCompleteTextView.Validator))]
-		public sealed partial class Validator_ : java.lang.Object, Validator
+		internal sealed partial class Validator_ : java.lang.Object, Validator
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static Validator_()
@@ -29,121 +29,125 @@ namespace android.widget
 			internal Validator_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _isValid16631;
+			internal static global::MonoJavaBridge.MethodId _isValid16725;
 			 bool android.widget.AutoCompleteTextView.Validator.isValid(java.lang.CharSequence arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_._isValid16631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_._isValid16725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_.staticClass, global::android.widget.AutoCompleteTextView.Validator_._isValid16631, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_.staticClass, global::android.widget.AutoCompleteTextView.Validator_._isValid16725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _fixText16632;
+			internal static global::MonoJavaBridge.MethodId _fixText16726;
 			 global::java.lang.CharSequence android.widget.AutoCompleteTextView.Validator.fixText(java.lang.CharSequence arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_._fixText16632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_._fixText16726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_.staticClass, global::android.widget.AutoCompleteTextView.Validator_._fixText16632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.Validator_.staticClass, global::android.widget.AutoCompleteTextView.Validator_._fixText16726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.AutoCompleteTextView.Validator_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AutoCompleteTextView$Validator"));
-				global::android.widget.AutoCompleteTextView.Validator_._isValid16631 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.Validator_.staticClass, "isValid", "(Ljava/lang/CharSequence;)Z");
-				global::android.widget.AutoCompleteTextView.Validator_._fixText16632 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.Validator_.staticClass, "fixText", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
+				global::android.widget.AutoCompleteTextView.Validator_._isValid16725 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.Validator_.staticClass, "isValid", "(Ljava/lang/CharSequence;)Z");
+				global::android.widget.AutoCompleteTextView.Validator_._fixText16726 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.Validator_.staticClass, "fixText", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setThreshold16633;
+		internal static global::MonoJavaBridge.MethodId _setThreshold16727;
 		public virtual void setThreshold(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setThreshold16633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setThreshold16727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setThreshold16633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setThreshold16727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyDown16634;
+		internal static global::MonoJavaBridge.MethodId _onKeyDown16728;
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onKeyDown16634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onKeyDown16728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyDown16634, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyDown16728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyUp16635;
+		internal static global::MonoJavaBridge.MethodId _onKeyUp16729;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onKeyUp16635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onKeyUp16729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyUp16635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyUp16729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onWindowFocusChanged16636;
+		internal static global::MonoJavaBridge.MethodId _onWindowFocusChanged16730;
 		public override void onWindowFocusChanged(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onWindowFocusChanged16636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onWindowFocusChanged16730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onWindowFocusChanged16636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onWindowFocusChanged16730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16637;
+		internal static global::MonoJavaBridge.MethodId _onAttachedToWindow16731;
 		protected override void onAttachedToWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onAttachedToWindow16637);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onAttachedToWindow16731);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onAttachedToWindow16637);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onAttachedToWindow16731);
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16638;
+		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow16732;
 		protected override void onDetachedFromWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onDetachedFromWindow16638);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onDetachedFromWindow16732);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onDetachedFromWindow16638);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onDetachedFromWindow16732);
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnClickListener16639;
+		internal static global::MonoJavaBridge.MethodId _setOnClickListener16733;
 		public override void setOnClickListener(android.view.View.OnClickListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setOnClickListener16639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setOnClickListener16733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnClickListener16639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnClickListener16733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onFocusChanged16640;
+		public void setOnClickListener(global::android.view.View.OnClickListenerDelegate arg0)
+		{
+			setOnClickListener((global::android.view.View.OnClickListenerDelegateWrapper)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _onFocusChanged16734;
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onFocusChanged16640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onFocusChanged16734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onFocusChanged16640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onFocusChanged16734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDisplayHint16641;
+		internal static global::MonoJavaBridge.MethodId _onDisplayHint16735;
 		protected override void onDisplayHint(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onDisplayHint16641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onDisplayHint16735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onDisplayHint16641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onDisplayHint16735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onKeyPreIme16642;
+		internal static global::MonoJavaBridge.MethodId _onKeyPreIme16736;
 		public override bool onKeyPreIme(int arg0, android.view.KeyEvent arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onKeyPreIme16642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onKeyPreIme16736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyPreIme16642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyPreIme16736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		protected new global::android.widget.Filter Filter
 		{
@@ -152,61 +156,65 @@ namespace android.widget
 				return getFilter();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFilter16643;
+		internal static global::MonoJavaBridge.MethodId _getFilter16737;
 		protected virtual global::android.widget.Filter getFilter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getFilter16643)) as android.widget.Filter;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getFilter16737)) as android.widget.Filter;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getFilter16643)) as android.widget.Filter;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getFilter16737)) as android.widget.Filter;
 		}
-		internal static global::MonoJavaBridge.MethodId _setAdapter16644;
+		internal static global::MonoJavaBridge.MethodId _setAdapter16738;
 		public virtual void setAdapter(android.widget.ListAdapter arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setAdapter16644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setAdapter16738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setAdapter16644, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setAdapter16738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnItemSelectedListener16645;
+		internal static global::MonoJavaBridge.MethodId _setOnItemSelectedListener16739;
 		public virtual void setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setOnItemSelectedListener16645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setOnItemSelectedListener16739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnItemSelectedListener16645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnItemSelectedListener16739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOnItemClickListener16646;
+		internal static global::MonoJavaBridge.MethodId _setOnItemClickListener16740;
 		public virtual void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setOnItemClickListener16646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setOnItemClickListener16740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnItemClickListener16646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnItemClickListener16740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		public new global::android.widget.AdapterView.OnItemClickListener OnItemClickListener
+		public void setOnItemClickListener(global::android.widget.AdapterView.OnItemClickListenerDelegate arg0)
+		{
+			setOnItemClickListener((global::android.widget.AdapterView.OnItemClickListenerDelegateWrapper)arg0);
+		}
+		public new global::android.widget.AdapterView.OnItemClickListenerDelegate OnItemClickListener
 		{
 			get
 			{
-				return getOnItemClickListener();
+				return new global::android.widget.AdapterView.OnItemClickListenerDelegate(getOnItemClickListener().onItemClick);
 			}
 			set
 			{
 				setOnItemClickListener(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOnItemClickListener16647;
+		internal static global::MonoJavaBridge.MethodId _getOnItemClickListener16741;
 		public virtual global::android.widget.AdapterView.OnItemClickListener getOnItemClickListener() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getOnItemClickListener16647)) as android.widget.AdapterView.OnItemClickListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getOnItemClickListener16741)) as android.widget.AdapterView.OnItemClickListener;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getOnItemClickListener16647)) as android.widget.AdapterView.OnItemClickListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getOnItemClickListener16741)) as android.widget.AdapterView.OnItemClickListener;
 		}
 		public new global::android.widget.AdapterView.OnItemSelectedListener OnItemSelectedListener
 		{
@@ -219,14 +227,14 @@ namespace android.widget
 				setOnItemSelectedListener(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOnItemSelectedListener16648;
+		internal static global::MonoJavaBridge.MethodId _getOnItemSelectedListener16742;
 		public virtual global::android.widget.AdapterView.OnItemSelectedListener getOnItemSelectedListener() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getOnItemSelectedListener16648)) as android.widget.AdapterView.OnItemSelectedListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getOnItemSelectedListener16742)) as android.widget.AdapterView.OnItemSelectedListener;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getOnItemSelectedListener16648)) as android.widget.AdapterView.OnItemSelectedListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getOnItemSelectedListener16742)) as android.widget.AdapterView.OnItemSelectedListener;
 		}
 		public new global::android.widget.ListAdapter Adapter
 		{
@@ -239,86 +247,94 @@ namespace android.widget
 				setAdapter(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getAdapter16649;
+		internal static global::MonoJavaBridge.MethodId _getAdapter16743;
 		public virtual global::android.widget.ListAdapter getAdapter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getAdapter16649)) as android.widget.ListAdapter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getAdapter16743)) as android.widget.ListAdapter;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getAdapter16649)) as android.widget.ListAdapter;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getAdapter16743)) as android.widget.ListAdapter;
 		}
-		internal static global::MonoJavaBridge.MethodId _setFrame16650;
+		internal static global::MonoJavaBridge.MethodId _setFrame16744;
 		protected override bool setFrame(int arg0, int arg1, int arg2, int arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setFrame16650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setFrame16744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setFrame16650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setFrame16744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onCommitCompletion16651;
+		internal static global::MonoJavaBridge.MethodId _onCommitCompletion16745;
 		public override void onCommitCompletion(android.view.inputmethod.CompletionInfo arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onCommitCompletion16651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onCommitCompletion16745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onCommitCompletion16651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onCommitCompletion16745, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onFilterComplete16652;
+		internal static global::MonoJavaBridge.MethodId _onFilterComplete16746;
 		public virtual void onFilterComplete(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onFilterComplete16652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._onFilterComplete16746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onFilterComplete16652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onFilterComplete16746, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _performFiltering16653;
+		internal static global::MonoJavaBridge.MethodId _performFiltering16747;
 		protected virtual void performFiltering(java.lang.CharSequence arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._performFiltering16653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._performFiltering16747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performFiltering16653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performFiltering16747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _enoughToFilter16654;
+		protected void performFiltering(string arg0, int arg1)
+		{
+			performFiltering((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
+		internal static global::MonoJavaBridge.MethodId _enoughToFilter16748;
 		public virtual bool enoughToFilter() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._enoughToFilter16654);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._enoughToFilter16748);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._enoughToFilter16654);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._enoughToFilter16748);
 		}
-		internal static global::MonoJavaBridge.MethodId _performValidation16655;
+		internal static global::MonoJavaBridge.MethodId _performValidation16749;
 		public virtual void performValidation() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._performValidation16655);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._performValidation16749);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performValidation16655);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performValidation16749);
 		}
-		internal static global::MonoJavaBridge.MethodId _replaceText16656;
+		internal static global::MonoJavaBridge.MethodId _replaceText16750;
 		protected virtual void replaceText(java.lang.CharSequence arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._replaceText16656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._replaceText16750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._replaceText16656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._replaceText16750, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setCompletionHint16657;
+		protected void replaceText(string arg0)
+		{
+			replaceText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _setCompletionHint16751;
 		public virtual void setCompletionHint(java.lang.CharSequence arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setCompletionHint16657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setCompletionHint16751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setCompletionHint16657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setCompletionHint16751, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setCompletionHint(string arg0)
 		{
@@ -335,23 +351,23 @@ namespace android.widget
 				setDropDownWidth(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownWidth16658;
+		internal static global::MonoJavaBridge.MethodId _getDropDownWidth16752;
 		public virtual int getDropDownWidth() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownWidth16658);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownWidth16752);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownWidth16658);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownWidth16752);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownWidth16659;
+		internal static global::MonoJavaBridge.MethodId _setDropDownWidth16753;
 		public virtual void setDropDownWidth(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownWidth16659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownWidth16753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownWidth16659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownWidth16753, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DropDownHeight
 		{
@@ -364,23 +380,23 @@ namespace android.widget
 				setDropDownHeight(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownHeight16660;
+		internal static global::MonoJavaBridge.MethodId _getDropDownHeight16754;
 		public virtual int getDropDownHeight() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownHeight16660);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownHeight16754);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownHeight16660);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownHeight16754);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownHeight16661;
+		internal static global::MonoJavaBridge.MethodId _setDropDownHeight16755;
 		public virtual void setDropDownHeight(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownHeight16661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownHeight16755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownHeight16661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownHeight16755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DropDownAnchor
 		{
@@ -393,23 +409,23 @@ namespace android.widget
 				setDropDownAnchor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownAnchor16662;
+		internal static global::MonoJavaBridge.MethodId _getDropDownAnchor16756;
 		public virtual int getDropDownAnchor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownAnchor16662);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownAnchor16756);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownAnchor16662);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownAnchor16756);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownAnchor16663;
+		internal static global::MonoJavaBridge.MethodId _setDropDownAnchor16757;
 		public virtual void setDropDownAnchor(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownAnchor16663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownAnchor16757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownAnchor16663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownAnchor16757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.drawable.Drawable DropDownBackground
 		{
@@ -418,41 +434,41 @@ namespace android.widget
 				return getDropDownBackground();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownBackground16664;
+		internal static global::MonoJavaBridge.MethodId _getDropDownBackground16758;
 		public virtual global::android.graphics.drawable.Drawable getDropDownBackground() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownBackground16664)) as android.graphics.drawable.Drawable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownBackground16758)) as android.graphics.drawable.Drawable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownBackground16664)) as android.graphics.drawable.Drawable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownBackground16758)) as android.graphics.drawable.Drawable;
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownBackgroundDrawable16665;
+		internal static global::MonoJavaBridge.MethodId _setDropDownBackgroundDrawable16759;
 		public virtual void setDropDownBackgroundDrawable(android.graphics.drawable.Drawable arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable16665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable16759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable16665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable16759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownBackgroundResource16666;
+		internal static global::MonoJavaBridge.MethodId _setDropDownBackgroundResource16760;
 		public virtual void setDropDownBackgroundResource(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource16666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource16760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource16666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource16760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownVerticalOffset16667;
+		internal static global::MonoJavaBridge.MethodId _setDropDownVerticalOffset16761;
 		public virtual void setDropDownVerticalOffset(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset16667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset16761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset16667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset16761, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DropDownVerticalOffset
 		{
@@ -465,23 +481,23 @@ namespace android.widget
 				setDropDownVerticalOffset(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownVerticalOffset16668;
+		internal static global::MonoJavaBridge.MethodId _getDropDownVerticalOffset16762;
 		public virtual int getDropDownVerticalOffset() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset16668);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset16762);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset16668);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset16762);
 		}
-		internal static global::MonoJavaBridge.MethodId _setDropDownHorizontalOffset16669;
+		internal static global::MonoJavaBridge.MethodId _setDropDownHorizontalOffset16763;
 		public virtual void setDropDownHorizontalOffset(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset16669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset16763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset16669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset16763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int DropDownHorizontalOffset
 		{
@@ -494,14 +510,14 @@ namespace android.widget
 				setDropDownHorizontalOffset(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDropDownHorizontalOffset16670;
+		internal static global::MonoJavaBridge.MethodId _getDropDownHorizontalOffset16764;
 		public virtual int getDropDownHorizontalOffset() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset16670);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset16764);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset16670);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset16764);
 		}
 		public new int Threshold
 		{
@@ -514,30 +530,30 @@ namespace android.widget
 				setThreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getThreshold16671;
+		internal static global::MonoJavaBridge.MethodId _getThreshold16765;
 		public virtual int getThreshold() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getThreshold16671);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getThreshold16765);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getThreshold16671);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getThreshold16765);
 		}
-		public new global::android.widget.AdapterView.OnItemClickListener ItemClickListener
+		public new global::android.widget.AdapterView.OnItemClickListenerDelegate ItemClickListener
 		{
 			get
 			{
-				return getItemClickListener();
+				return new global::android.widget.AdapterView.OnItemClickListenerDelegate(getItemClickListener().onItemClick);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemClickListener16672;
+		internal static global::MonoJavaBridge.MethodId _getItemClickListener16766;
 		public virtual global::android.widget.AdapterView.OnItemClickListener getItemClickListener() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getItemClickListener16672)) as android.widget.AdapterView.OnItemClickListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getItemClickListener16766)) as android.widget.AdapterView.OnItemClickListener;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getItemClickListener16672)) as android.widget.AdapterView.OnItemClickListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getItemClickListener16766)) as android.widget.AdapterView.OnItemClickListener;
 		}
 		public new global::android.widget.AdapterView.OnItemSelectedListener ItemSelectedListener
 		{
@@ -546,50 +562,50 @@ namespace android.widget
 				return getItemSelectedListener();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getItemSelectedListener16673;
+		internal static global::MonoJavaBridge.MethodId _getItemSelectedListener16767;
 		public virtual global::android.widget.AdapterView.OnItemSelectedListener getItemSelectedListener() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getItemSelectedListener16673)) as android.widget.AdapterView.OnItemSelectedListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getItemSelectedListener16767)) as android.widget.AdapterView.OnItemSelectedListener;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getItemSelectedListener16673)) as android.widget.AdapterView.OnItemSelectedListener;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemSelectedListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getItemSelectedListener16767)) as android.widget.AdapterView.OnItemSelectedListener;
 		}
-		internal static global::MonoJavaBridge.MethodId _isPopupShowing16674;
+		internal static global::MonoJavaBridge.MethodId _isPopupShowing16768;
 		public virtual bool isPopupShowing() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._isPopupShowing16674);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._isPopupShowing16768);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._isPopupShowing16674);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._isPopupShowing16768);
 		}
-		internal static global::MonoJavaBridge.MethodId _convertSelectionToString16675;
+		internal static global::MonoJavaBridge.MethodId _convertSelectionToString16769;
 		protected virtual global::java.lang.CharSequence convertSelectionToString(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._convertSelectionToString16675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._convertSelectionToString16769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._convertSelectionToString16675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._convertSelectionToString16769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _clearListSelection16676;
+		internal static global::MonoJavaBridge.MethodId _clearListSelection16770;
 		public virtual void clearListSelection() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._clearListSelection16676);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._clearListSelection16770);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._clearListSelection16676);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._clearListSelection16770);
 		}
-		internal static global::MonoJavaBridge.MethodId _setListSelection16677;
+		internal static global::MonoJavaBridge.MethodId _setListSelection16771;
 		public virtual void setListSelection(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setListSelection16677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setListSelection16771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setListSelection16677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setListSelection16771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int ListSelection
 		{
@@ -602,149 +618,149 @@ namespace android.widget
 				setListSelection(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getListSelection16678;
+		internal static global::MonoJavaBridge.MethodId _getListSelection16772;
 		public virtual int getListSelection() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getListSelection16678);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getListSelection16772);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getListSelection16678);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getListSelection16772);
 		}
-		internal static global::MonoJavaBridge.MethodId _performCompletion16679;
+		internal static global::MonoJavaBridge.MethodId _performCompletion16773;
 		public virtual void performCompletion() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._performCompletion16679);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._performCompletion16773);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performCompletion16679);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performCompletion16773);
 		}
-		internal static global::MonoJavaBridge.MethodId _isPerformingCompletion16680;
+		internal static global::MonoJavaBridge.MethodId _isPerformingCompletion16774;
 		public virtual bool isPerformingCompletion() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._isPerformingCompletion16680);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._isPerformingCompletion16774);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._isPerformingCompletion16680);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._isPerformingCompletion16774);
 		}
-		internal static global::MonoJavaBridge.MethodId _dismissDropDown16681;
+		internal static global::MonoJavaBridge.MethodId _dismissDropDown16775;
 		public virtual void dismissDropDown() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._dismissDropDown16681);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._dismissDropDown16775);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._dismissDropDown16681);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._dismissDropDown16775);
 		}
-		internal static global::MonoJavaBridge.MethodId _showDropDown16682;
+		internal static global::MonoJavaBridge.MethodId _showDropDown16776;
 		public virtual void showDropDown() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._showDropDown16682);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._showDropDown16776);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._showDropDown16682);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._showDropDown16776);
 		}
-		internal static global::MonoJavaBridge.MethodId _setValidator16683;
+		internal static global::MonoJavaBridge.MethodId _setValidator16777;
 		public virtual void setValidator(android.widget.AutoCompleteTextView.Validator arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setValidator16683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._setValidator16777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setValidator16683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setValidator16777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _getValidator16684;
+		internal static global::MonoJavaBridge.MethodId _getValidator16778;
 		public virtual global::android.widget.AutoCompleteTextView.Validator getValidator() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AutoCompleteTextView.Validator>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getValidator16684)) as android.widget.AutoCompleteTextView.Validator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AutoCompleteTextView.Validator>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView._getValidator16778)) as android.widget.AutoCompleteTextView.Validator;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AutoCompleteTextView.Validator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getValidator16684)) as android.widget.AutoCompleteTextView.Validator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AutoCompleteTextView.Validator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getValidator16778)) as android.widget.AutoCompleteTextView.Validator;
 		}
-		internal static global::MonoJavaBridge.MethodId _AutoCompleteTextView16685;
+		internal static global::MonoJavaBridge.MethodId _AutoCompleteTextView16779;
 		public AutoCompleteTextView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16685, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AutoCompleteTextView16686;
+		internal static global::MonoJavaBridge.MethodId _AutoCompleteTextView16780;
 		public AutoCompleteTextView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16686, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _AutoCompleteTextView16687;
+		internal static global::MonoJavaBridge.MethodId _AutoCompleteTextView16781;
 		public AutoCompleteTextView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16687, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._AutoCompleteTextView16781, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.AutoCompleteTextView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/AutoCompleteTextView"));
-			global::android.widget.AutoCompleteTextView._setThreshold16633 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setThreshold", "(I)V");
-			global::android.widget.AutoCompleteTextView._onKeyDown16634 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.AutoCompleteTextView._onKeyUp16635 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.AutoCompleteTextView._onWindowFocusChanged16636 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onWindowFocusChanged", "(Z)V");
-			global::android.widget.AutoCompleteTextView._onAttachedToWindow16637 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onAttachedToWindow", "()V");
-			global::android.widget.AutoCompleteTextView._onDetachedFromWindow16638 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onDetachedFromWindow", "()V");
-			global::android.widget.AutoCompleteTextView._setOnClickListener16639 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setOnClickListener", "(Landroid/view/View$OnClickListener;)V");
-			global::android.widget.AutoCompleteTextView._onFocusChanged16640 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
-			global::android.widget.AutoCompleteTextView._onDisplayHint16641 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onDisplayHint", "(I)V");
-			global::android.widget.AutoCompleteTextView._onKeyPreIme16642 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onKeyPreIme", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.AutoCompleteTextView._getFilter16643 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getFilter", "()Landroid/widget/Filter;");
-			global::android.widget.AutoCompleteTextView._setAdapter16644 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setAdapter", "(Landroid/widget/ListAdapter;)V");
-			global::android.widget.AutoCompleteTextView._setOnItemSelectedListener16645 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V");
-			global::android.widget.AutoCompleteTextView._setOnItemClickListener16646 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setOnItemClickListener", "(Landroid/widget/AdapterView$OnItemClickListener;)V");
-			global::android.widget.AutoCompleteTextView._getOnItemClickListener16647 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
-			global::android.widget.AutoCompleteTextView._getOnItemSelectedListener16648 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getOnItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
-			global::android.widget.AutoCompleteTextView._getAdapter16649 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getAdapter", "()Landroid/widget/ListAdapter;");
-			global::android.widget.AutoCompleteTextView._setFrame16650 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setFrame", "(IIII)Z");
-			global::android.widget.AutoCompleteTextView._onCommitCompletion16651 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onCommitCompletion", "(Landroid/view/inputmethod/CompletionInfo;)V");
-			global::android.widget.AutoCompleteTextView._onFilterComplete16652 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onFilterComplete", "(I)V");
-			global::android.widget.AutoCompleteTextView._performFiltering16653 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "performFiltering", "(Ljava/lang/CharSequence;I)V");
-			global::android.widget.AutoCompleteTextView._enoughToFilter16654 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "enoughToFilter", "()Z");
-			global::android.widget.AutoCompleteTextView._performValidation16655 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "performValidation", "()V");
-			global::android.widget.AutoCompleteTextView._replaceText16656 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "replaceText", "(Ljava/lang/CharSequence;)V");
-			global::android.widget.AutoCompleteTextView._setCompletionHint16657 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setCompletionHint", "(Ljava/lang/CharSequence;)V");
-			global::android.widget.AutoCompleteTextView._getDropDownWidth16658 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownWidth", "()I");
-			global::android.widget.AutoCompleteTextView._setDropDownWidth16659 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownWidth", "(I)V");
-			global::android.widget.AutoCompleteTextView._getDropDownHeight16660 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownHeight", "()I");
-			global::android.widget.AutoCompleteTextView._setDropDownHeight16661 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownHeight", "(I)V");
-			global::android.widget.AutoCompleteTextView._getDropDownAnchor16662 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownAnchor", "()I");
-			global::android.widget.AutoCompleteTextView._setDropDownAnchor16663 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownAnchor", "(I)V");
-			global::android.widget.AutoCompleteTextView._getDropDownBackground16664 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownBackground", "()Landroid/graphics/drawable/Drawable;");
-			global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable16665 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V");
-			global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource16666 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownBackgroundResource", "(I)V");
-			global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset16667 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownVerticalOffset", "(I)V");
-			global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset16668 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownVerticalOffset", "()I");
-			global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset16669 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownHorizontalOffset", "(I)V");
-			global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset16670 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownHorizontalOffset", "()I");
-			global::android.widget.AutoCompleteTextView._getThreshold16671 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getThreshold", "()I");
-			global::android.widget.AutoCompleteTextView._getItemClickListener16672 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
-			global::android.widget.AutoCompleteTextView._getItemSelectedListener16673 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
-			global::android.widget.AutoCompleteTextView._isPopupShowing16674 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "isPopupShowing", "()Z");
-			global::android.widget.AutoCompleteTextView._convertSelectionToString16675 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "convertSelectionToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
-			global::android.widget.AutoCompleteTextView._clearListSelection16676 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "clearListSelection", "()V");
-			global::android.widget.AutoCompleteTextView._setListSelection16677 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setListSelection", "(I)V");
-			global::android.widget.AutoCompleteTextView._getListSelection16678 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getListSelection", "()I");
-			global::android.widget.AutoCompleteTextView._performCompletion16679 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "performCompletion", "()V");
-			global::android.widget.AutoCompleteTextView._isPerformingCompletion16680 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "isPerformingCompletion", "()Z");
-			global::android.widget.AutoCompleteTextView._dismissDropDown16681 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "dismissDropDown", "()V");
-			global::android.widget.AutoCompleteTextView._showDropDown16682 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "showDropDown", "()V");
-			global::android.widget.AutoCompleteTextView._setValidator16683 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setValidator", "(Landroid/widget/AutoCompleteTextView$Validator;)V");
-			global::android.widget.AutoCompleteTextView._getValidator16684 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getValidator", "()Landroid/widget/AutoCompleteTextView$Validator;");
-			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16685 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16686 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16687 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.AutoCompleteTextView._setThreshold16727 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setThreshold", "(I)V");
+			global::android.widget.AutoCompleteTextView._onKeyDown16728 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.AutoCompleteTextView._onKeyUp16729 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.AutoCompleteTextView._onWindowFocusChanged16730 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onWindowFocusChanged", "(Z)V");
+			global::android.widget.AutoCompleteTextView._onAttachedToWindow16731 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onAttachedToWindow", "()V");
+			global::android.widget.AutoCompleteTextView._onDetachedFromWindow16732 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onDetachedFromWindow", "()V");
+			global::android.widget.AutoCompleteTextView._setOnClickListener16733 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setOnClickListener", "(Landroid/view/View$OnClickListener;)V");
+			global::android.widget.AutoCompleteTextView._onFocusChanged16734 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V");
+			global::android.widget.AutoCompleteTextView._onDisplayHint16735 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onDisplayHint", "(I)V");
+			global::android.widget.AutoCompleteTextView._onKeyPreIme16736 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onKeyPreIme", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.AutoCompleteTextView._getFilter16737 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getFilter", "()Landroid/widget/Filter;");
+			global::android.widget.AutoCompleteTextView._setAdapter16738 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setAdapter", "(Landroid/widget/ListAdapter;)V");
+			global::android.widget.AutoCompleteTextView._setOnItemSelectedListener16739 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V");
+			global::android.widget.AutoCompleteTextView._setOnItemClickListener16740 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setOnItemClickListener", "(Landroid/widget/AdapterView$OnItemClickListener;)V");
+			global::android.widget.AutoCompleteTextView._getOnItemClickListener16741 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
+			global::android.widget.AutoCompleteTextView._getOnItemSelectedListener16742 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getOnItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
+			global::android.widget.AutoCompleteTextView._getAdapter16743 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getAdapter", "()Landroid/widget/ListAdapter;");
+			global::android.widget.AutoCompleteTextView._setFrame16744 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setFrame", "(IIII)Z");
+			global::android.widget.AutoCompleteTextView._onCommitCompletion16745 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onCommitCompletion", "(Landroid/view/inputmethod/CompletionInfo;)V");
+			global::android.widget.AutoCompleteTextView._onFilterComplete16746 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "onFilterComplete", "(I)V");
+			global::android.widget.AutoCompleteTextView._performFiltering16747 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "performFiltering", "(Ljava/lang/CharSequence;I)V");
+			global::android.widget.AutoCompleteTextView._enoughToFilter16748 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "enoughToFilter", "()Z");
+			global::android.widget.AutoCompleteTextView._performValidation16749 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "performValidation", "()V");
+			global::android.widget.AutoCompleteTextView._replaceText16750 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "replaceText", "(Ljava/lang/CharSequence;)V");
+			global::android.widget.AutoCompleteTextView._setCompletionHint16751 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setCompletionHint", "(Ljava/lang/CharSequence;)V");
+			global::android.widget.AutoCompleteTextView._getDropDownWidth16752 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownWidth", "()I");
+			global::android.widget.AutoCompleteTextView._setDropDownWidth16753 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownWidth", "(I)V");
+			global::android.widget.AutoCompleteTextView._getDropDownHeight16754 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownHeight", "()I");
+			global::android.widget.AutoCompleteTextView._setDropDownHeight16755 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownHeight", "(I)V");
+			global::android.widget.AutoCompleteTextView._getDropDownAnchor16756 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownAnchor", "()I");
+			global::android.widget.AutoCompleteTextView._setDropDownAnchor16757 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownAnchor", "(I)V");
+			global::android.widget.AutoCompleteTextView._getDropDownBackground16758 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownBackground", "()Landroid/graphics/drawable/Drawable;");
+			global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable16759 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V");
+			global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource16760 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownBackgroundResource", "(I)V");
+			global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset16761 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownVerticalOffset", "(I)V");
+			global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset16762 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownVerticalOffset", "()I");
+			global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset16763 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setDropDownHorizontalOffset", "(I)V");
+			global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset16764 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getDropDownHorizontalOffset", "()I");
+			global::android.widget.AutoCompleteTextView._getThreshold16765 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getThreshold", "()I");
+			global::android.widget.AutoCompleteTextView._getItemClickListener16766 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
+			global::android.widget.AutoCompleteTextView._getItemSelectedListener16767 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
+			global::android.widget.AutoCompleteTextView._isPopupShowing16768 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "isPopupShowing", "()Z");
+			global::android.widget.AutoCompleteTextView._convertSelectionToString16769 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "convertSelectionToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
+			global::android.widget.AutoCompleteTextView._clearListSelection16770 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "clearListSelection", "()V");
+			global::android.widget.AutoCompleteTextView._setListSelection16771 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setListSelection", "(I)V");
+			global::android.widget.AutoCompleteTextView._getListSelection16772 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getListSelection", "()I");
+			global::android.widget.AutoCompleteTextView._performCompletion16773 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "performCompletion", "()V");
+			global::android.widget.AutoCompleteTextView._isPerformingCompletion16774 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "isPerformingCompletion", "()Z");
+			global::android.widget.AutoCompleteTextView._dismissDropDown16775 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "dismissDropDown", "()V");
+			global::android.widget.AutoCompleteTextView._showDropDown16776 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "showDropDown", "()V");
+			global::android.widget.AutoCompleteTextView._setValidator16777 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "setValidator", "(Landroid/widget/AutoCompleteTextView$Validator;)V");
+			global::android.widget.AutoCompleteTextView._getValidator16778 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "getValidator", "()Landroid/widget/AutoCompleteTextView$Validator;");
+			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16779 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16780 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.AutoCompleteTextView._AutoCompleteTextView16781 = @__env.GetMethodIDNoThrow(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

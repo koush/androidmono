@@ -185,7 +185,7 @@ namespace MonoDroid
                 {
                     WriteLine("[global::MonoJavaBridge.JavaClass(typeof(global::{0}_))]", type.Name);
                 }
-                else
+                else if (!type.NoAttributes)
                 {
                     WriteLine("[global::MonoJavaBridge.JavaClass()]");
                 }
@@ -329,6 +329,7 @@ namespace MonoDroid
                 wrapperType.ParentType = myModel.FindType("java.lang.Object");
                 wrapperType.Interfaces.Add(interfaceType.Name);
                 wrapperType.InterfaceTypes.Add(interfaceType);
+                wrapperType.Scope = "internal";
 
                 var h = new HashSet<Type>();
                 AddAllInterfaces(interfaceType, h);
@@ -350,6 +351,7 @@ namespace MonoDroid
             }
             else
             {
+                wrapperType.Scope = "internal";
                 wrapperType.Parent = interfaceType.Name;
                 wrapperType.ParentType = interfaceType;
 
@@ -389,11 +391,71 @@ namespace MonoDroid
             
             if (interfaceType.IsDelegate)
             {
-                myIndent++;
+                WriteLine();
                 var delegateMethod = interfaceType.Methods.First();
-                Write("public delegate global::{0} {1}Delegate", false, delegateMethod.Return, interfaceType.Name);
+                Write("public delegate {0} {1}Delegate(", false, delegateMethod.Return, interfaceType.SimpleName);
                 WriteDelimited(delegateMethod.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
+                WriteLine(");");
+                WriteLine();
+                var delegateWrapper = new Type();
+                delegateWrapper.Name = interfaceType.Name + "DelegateWrapper";
+                delegateWrapper.NativeName = interfaceType.NativeName.Replace('$', '_') + "DelegateWrapper";
+                delegateWrapper.HasEmptyConstructor = true;
+                delegateWrapper.Scope = "internal";
+                delegateWrapper.Parent = "java.lang.Object";
+                delegateWrapper.ParentType = myModel.FindType("java.lang.Object");
+                delegateWrapper.NoAttributes = true;
+                var constructor = new Method();
+                constructor.IsConstructor = true;
+                constructor.Scope = "public";
+                constructor.Type = delegateWrapper;
+                constructor.Name = delegateWrapper.SimpleName;
+                delegateWrapper.Methods.Add(constructor);
+                delegateWrapper.Interfaces.Add(interfaceType.Name);
+                delegateWrapper.InterfaceTypes.Add(interfaceType);
                 myIndent--;
+                GenerateType(delegateWrapper);
+                myIndent++;
+
+                
+                WriteLine("internal partial class {0}", delegateWrapper.SimpleName);
+                WriteLine("{");
+                myIndent++;
+                WriteLine("private {0}Delegate myDelegate;", interfaceType.SimpleName);
+                Write("public {0} {1}(", false, delegateMethod.Return, delegateMethod.Name);
+                WriteDelimited(delegateMethod.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
+                WriteLine(")");
+                WriteLine("{");
+                myIndent++;
+                if (delegateMethod.Return != "void")
+                    Write("return myDelegate(", false);
+                else
+                    Write("myDelegate(", false);
+                WriteDelimited(delegateMethod.Parameters, (v, i) => string.Format("arg{0}", i), ",");
+                WriteLine(");");
+                myIndent--;
+                WriteLine("}");
+                WriteLine("public static implicit operator {0}({1}Delegate d)", delegateWrapper.SimpleName, interfaceType.SimpleName);
+                WriteLine("{");
+                myIndent++;
+                WriteLine("global::{0} ret = new global::{0}();", delegateWrapper.Name);
+                WriteLine("ret.myDelegate = d;");
+                WriteLine("global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);");
+                WriteLine("return ret;");
+                myIndent--;
+                WriteLine("}");
+                /*
+                WriteLine("public static implicit operator {0}Delegate({1} d)", interfaceType.SimpleName, delegateWrapper.SimpleName);
+                WriteLine("{");
+                myIndent++;
+                WriteLine("global::{0} ret = new global::{0}();", delegateWrapper.Name);
+                WriteLine("ret.myDelegate = d;");
+                WriteLine("return ret;");
+                myIndent--;
+                WriteLine("}");
+                */
+                myIndent--;
+                WriteLine("}");
             }
         }
         
@@ -585,6 +647,8 @@ namespace MonoDroid
         
         public static string GetJavaName(Type type)
         {
+            if (type.NativeName != null)
+                return type.NativeName;
             string typeName = type.SimpleName;
             
             var root = type;
@@ -694,6 +758,41 @@ namespace MonoDroid
         {
             return "ConvertToValue({0})";
         }
+        
+        protected string GetOverloadedType(Type type)
+        {
+            if (type == null)
+                return null;
+            if (type.Name == "java.lang.CharSequence")
+                return "string";
+            if (type.IsDelegate)
+                return "global::" + type.Name + "Delegate";
+            return null;
+        }
+        
+        protected List<string> GetOverloadedDelegateTypes(Method method)
+        {
+            List<string> ret = new List<string>();
+            bool hasOverload = false;
+            for (int i = 0; i < method.Parameters.Count; i++)
+            {
+                var type = method.ParameterTypes[i];
+                var overload = GetOverloadedType(type);
+                if (overload == null)
+                {
+                    ret.Add(method.Parameters[i]);
+                }
+                else
+                {
+                    hasOverload = true;
+                    ret.Add(overload);
+                }
+            }
+            if (!hasOverload)
+                return null;
+            
+            return ret;
+        }
 
         protected override void EmitMethod (Method method)
         {
@@ -713,29 +812,27 @@ namespace MonoDroid
             {
                 var propertyType = method.PropertyType.Value;
                 Write(method.Scope);
-                    if (method.Static)
-                    {
-                        Write("static");
-                    }
-                    else
-                    {
-                        Write("new");
-                    }
-                bool isCharSequence = method.Return == "java.lang.CharSequence";
-                if (!isCharSequence)
+                if (method.Static)
+                    Write("static");
+                else
+                    Write("new");
+                var overload = GetOverloadedType(method.ReturnType);
+                if (overload == null)
                     Write("{0}{1}", ObjectModel.IsSystemType(method.Return) ? string.Empty : "global::", method.Return);
                 else
-                    Write("string");
+                    Write(overload);
                 WriteLine(method.Name.Substring(3), false);
                 WriteLine("{");
                 myIndent++;
                 WriteLine("get");
                 WriteLine("{");
                 myIndent++;
-                if (!isCharSequence)
-                    WriteLine("return get{0}();", method.Name.Substring(3));
-                else
+                if (overload == "string")
                     WriteLine("return get{0}().toString();", method.Name.Substring(3));
+                else if (overload != null)
+                    WriteLine("return new {0}(get{1}().{2});", overload, method.Name.Substring(3), method.ReturnType.Methods.First().Name);
+                else
+                    WriteLine("return get{0}();", method.Name.Substring(3));
                 myIndent--;
                 WriteLine("}");
                 if (propertyType == PropertyType.ReadWrite)
@@ -743,10 +840,10 @@ namespace MonoDroid
                     WriteLine("set");
                     WriteLine("{");
                     myIndent++;
-                    if (!isCharSequence)
-                        WriteLine("set{0}(value);", method.Name.Substring(3));
-                    else
+                    if (overload == "string")
                         WriteLine("set{0}((global::java.lang.CharSequence)(global::java.lang.String)value);", method.Name.Substring(3));
+                    else
+                        WriteLine("set{0}(value);", method.Name.Substring(3));
                     myIndent--;
                     WriteLine("}");
                 }
@@ -861,13 +958,17 @@ namespace MonoDroid
                 myIndent--;
                 WriteLine("}");
                 
-                if (hasCharSequenceArgument && !method.IsConstructor && method.Scope == "public" && !method.Static)
+                var overloads = GetOverloadedDelegateTypes(method);
+                if ((overloads != null || hasCharSequenceArgument) && !method.IsConstructor && !string.IsNullOrEmpty(method.Scope))
                 {
                     var em = method;
                     //myExtensionMethods.Add(method);
-                    Write("public {0} {1}(", false, em.Return, em.Name);
+                    Write(method.Scope);
+                    if (method.Static)
+                        Write("static");
+                    Write("{0} {1}(", false, em.Return, em.Name);
                     //Write("this global::{0} __this", false, em.Type.Name);
-                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" ? "string" : v, i), ",");
+                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" ? "string" : overloads != null ? overloads[i] : v, i), ",");
                     WriteLine(")");
                     WriteLine("{");
                     myIndent++;
@@ -875,7 +976,7 @@ namespace MonoDroid
                         Write("return");
                     
                     Write("{0}(", false, em.Name);
-                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0}arg{1}", v == "java.lang.CharSequence" ? "(global::java.lang.CharSequence)(global::java.lang.String)" : string.Empty, i), ",");
+                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0}arg{1}", v == "java.lang.CharSequence" ? "(global::java.lang.CharSequence)(global::java.lang.String)" : overloads != null ? overloads[i] != em.Parameters[i] ? string.Format("({0}Wrapper)", overloads[i]) : string.Empty : string.Empty, i), ",");
                     WriteLine(");");
                     myIndent--;
                     WriteLine("}");

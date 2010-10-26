@@ -6,7 +6,7 @@ namespace org.apache.http
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.HttpStatus))]
-	public sealed partial class HttpStatus_ : java.lang.Object, HttpStatus
+	internal sealed partial class HttpStatus_ : java.lang.Object, HttpStatus
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static HttpStatus_()

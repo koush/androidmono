@@ -7,7 +7,7 @@ namespace android.test
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.test.TestSuiteProvider))]
-	public sealed partial class TestSuiteProvider_ : java.lang.Object, TestSuiteProvider
+	internal sealed partial class TestSuiteProvider_ : java.lang.Object, TestSuiteProvider
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static TestSuiteProvider_()
@@ -17,20 +17,62 @@ namespace android.test
 		internal TestSuiteProvider_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getTestSuite12266;
+		internal static global::MonoJavaBridge.MethodId _getTestSuite12323;
 		 global::junit.framework.TestSuite android.test.TestSuiteProvider.getTestSuite() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_._getTestSuite12266)) as junit.framework.TestSuite;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_.staticClass, global::android.test.TestSuiteProvider_._getTestSuite12266)) as junit.framework.TestSuite;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.TestSuiteProvider_.staticClass, global::android.test.TestSuiteProvider_._getTestSuite12323)) as junit.framework.TestSuite;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.test.TestSuiteProvider_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/TestSuiteProvider"));
-			global::android.test.TestSuiteProvider_._getTestSuite12266 = @__env.GetMethodIDNoThrow(global::android.test.TestSuiteProvider_.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
+			global::android.test.TestSuiteProvider_._getTestSuite12323 = @__env.GetMethodIDNoThrow(global::android.test.TestSuiteProvider_.staticClass, "getTestSuite", "()Ljunit/framework/TestSuite;");
+		}
+	}
+
+	public delegate junit.framework.TestSuite TestSuiteProviderDelegate();
+
+	internal partial class TestSuiteProviderDelegateWrapper : java.lang.Object, TestSuiteProvider
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static TestSuiteProviderDelegateWrapper()
+		{
+			InitJNI();
+		}
+		protected TestSuiteProviderDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _TestSuiteProviderDelegateWrapper12324;
+		public TestSuiteProviderDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.TestSuiteProviderDelegateWrapper.staticClass, global::android.test.TestSuiteProviderDelegateWrapper._TestSuiteProviderDelegateWrapper12324);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.test.TestSuiteProviderDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/test/TestSuiteProviderDelegateWrapper"));
+			global::android.test.TestSuiteProviderDelegateWrapper._TestSuiteProviderDelegateWrapper12324 = @__env.GetMethodIDNoThrow(global::android.test.TestSuiteProviderDelegateWrapper.staticClass, "<init>", "()V");
+		}
+	}
+	internal partial class TestSuiteProviderDelegateWrapper
+	{
+		private TestSuiteProviderDelegate myDelegate;
+		public junit.framework.TestSuite getTestSuite()
+		{
+			return myDelegate();
+		}
+		public static implicit operator TestSuiteProviderDelegateWrapper(TestSuiteProviderDelegate d)
+		{
+			global::android.test.TestSuiteProviderDelegateWrapper ret = new global::android.test.TestSuiteProviderDelegateWrapper();
+			ret.myDelegate = d;
+			global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+			return ret;
 		}
 	}
 }

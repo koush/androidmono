@@ -11,18 +11,18 @@ namespace java.nio.channels
 		protected NotYetConnectedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NotYetConnectedException22399;
+		internal static global::MonoJavaBridge.MethodId _NotYetConnectedException22517;
 		public NotYetConnectedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.NotYetConnectedException.staticClass, global::java.nio.channels.NotYetConnectedException._NotYetConnectedException22399);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.NotYetConnectedException.staticClass, global::java.nio.channels.NotYetConnectedException._NotYetConnectedException22517);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.NotYetConnectedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/NotYetConnectedException"));
-			global::java.nio.channels.NotYetConnectedException._NotYetConnectedException22399 = @__env.GetMethodIDNoThrow(global::java.nio.channels.NotYetConnectedException.staticClass, "<init>", "()V");
+			global::java.nio.channels.NotYetConnectedException._NotYetConnectedException22517 = @__env.GetMethodIDNoThrow(global::java.nio.channels.NotYetConnectedException.staticClass, "<init>", "()V");
 		}
 	}
 }

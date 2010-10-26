@@ -6,7 +6,7 @@ namespace java.io
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.io.Serializable))]
-	public sealed partial class Serializable_ : java.lang.Object, Serializable
+	internal sealed partial class Serializable_ : java.lang.Object, Serializable
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Serializable_()

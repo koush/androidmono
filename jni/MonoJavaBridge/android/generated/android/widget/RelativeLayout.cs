@@ -22,32 +22,32 @@ namespace android.widget
 			protected LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _debug17466;
+			internal static global::MonoJavaBridge.MethodId _debug17573;
 			public virtual global::java.lang.String debug(java.lang.String arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._debug17466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._debug17573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._debug17466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._debug17573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _addRule17467;
+			internal static global::MonoJavaBridge.MethodId _addRule17574;
 			public virtual void addRule(int arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._addRule17467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._addRule17574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._addRule17467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._addRule17574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _addRule17468;
+			internal static global::MonoJavaBridge.MethodId _addRule17575;
 			public virtual void addRule(int arg0, int arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._addRule17468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._addRule17575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._addRule17468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._addRule17575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			public new int[] Rules
 			{
@@ -56,50 +56,50 @@ namespace android.widget
 					return getRules();
 				}
 			}
-			internal static global::MonoJavaBridge.MethodId _getRules17469;
+			internal static global::MonoJavaBridge.MethodId _getRules17576;
 			public virtual int[] getRules() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._getRules17469)) as int[];
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams._getRules17576)) as int[];
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._getRules17469)) as int[];
+					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._getRules17576)) as int[];
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams17470;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams17577;
 			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams17471;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams17578;
 			public LayoutParams(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams17472;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams17579;
 			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.MethodId _LayoutParams17473;
+			internal static global::MonoJavaBridge.MethodId _LayoutParams17580;
 			public LayoutParams(android.view.ViewGroup.MarginLayoutParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._LayoutParams17580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				Init(@__env, handle);
 			}
-			internal static global::MonoJavaBridge.FieldId _alignWithParent17474;
+			internal static global::MonoJavaBridge.FieldId _alignWithParent17581;
 			public bool alignWithParent
 			{
 				get
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-					return @__env.GetBooleanField(this.JvmHandle, _alignWithParent17474);
+					return @__env.GetBooleanField(this.JvmHandle, _alignWithParent17581);
 				}
 				set
 				{
@@ -109,43 +109,43 @@ namespace android.widget
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.widget.RelativeLayout.LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RelativeLayout$LayoutParams"));
-				global::android.widget.RelativeLayout.LayoutParams._debug17466 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "debug", "(Ljava/lang/String;)Ljava/lang/String;");
-				global::android.widget.RelativeLayout.LayoutParams._addRule17467 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "addRule", "(I)V");
-				global::android.widget.RelativeLayout.LayoutParams._addRule17468 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "addRule", "(II)V");
-				global::android.widget.RelativeLayout.LayoutParams._getRules17469 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "getRules", "()[I");
-				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17470 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17471 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(II)V");
-				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17472 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
-				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17473 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
-				global::android.widget.RelativeLayout.LayoutParams._alignWithParent17474 = @__env.GetFieldIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "alignWithParent", "Z");
+				global::android.widget.RelativeLayout.LayoutParams._debug17573 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "debug", "(Ljava/lang/String;)Ljava/lang/String;");
+				global::android.widget.RelativeLayout.LayoutParams._addRule17574 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "addRule", "(I)V");
+				global::android.widget.RelativeLayout.LayoutParams._addRule17575 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "addRule", "(II)V");
+				global::android.widget.RelativeLayout.LayoutParams._getRules17576 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "getRules", "()[I");
+				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17577 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17578 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(II)V");
+				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17579 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V");
+				global::android.widget.RelativeLayout.LayoutParams._LayoutParams17580 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V");
+				global::android.widget.RelativeLayout.LayoutParams._alignWithParent17581 = @__env.GetFieldIDNoThrow(global::android.widget.RelativeLayout.LayoutParams.staticClass, "alignWithParent", "Z");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent17475;
+		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent17582;
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent17475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent17582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent17475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent17582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setGravity17476;
+		internal static global::MonoJavaBridge.MethodId _setGravity17583;
 		public virtual void setGravity(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setGravity17476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setGravity17583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setGravity17476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setGravity17583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLayout17477;
+		internal static global::MonoJavaBridge.MethodId _onLayout17584;
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._onLayout17477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._onLayout17584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._onLayout17477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._onLayout17584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		public new int Baseline
 		{
@@ -154,115 +154,115 @@ namespace android.widget
 				return getBaseline();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getBaseline17478;
+		internal static global::MonoJavaBridge.MethodId _getBaseline17585;
 		public override int getBaseline() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.RelativeLayout._getBaseline17478);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.widget.RelativeLayout._getBaseline17585);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._getBaseline17478);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._getBaseline17585);
 		}
-		internal static global::MonoJavaBridge.MethodId _requestLayout17479;
+		internal static global::MonoJavaBridge.MethodId _requestLayout17586;
 		public override void requestLayout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._requestLayout17479);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._requestLayout17586);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._requestLayout17479);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._requestLayout17586);
 		}
-		internal static global::MonoJavaBridge.MethodId _onMeasure17480;
+		internal static global::MonoJavaBridge.MethodId _onMeasure17587;
 		protected override void onMeasure(int arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._onMeasure17480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._onMeasure17587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._onMeasure17480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._onMeasure17587, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _checkLayoutParams17481;
+		internal static global::MonoJavaBridge.MethodId _checkLayoutParams17588;
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout._checkLayoutParams17481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout._checkLayoutParams17588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._checkLayoutParams17481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._checkLayoutParams17588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _generateLayoutParams17482;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams17589;
 		public virtual global::android.widget.RelativeLayout.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout._generateLayoutParams17482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.RelativeLayout.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout._generateLayoutParams17589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.RelativeLayout.LayoutParams;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateLayoutParams17482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.RelativeLayout.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateLayoutParams17589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.widget.RelativeLayout.LayoutParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _generateLayoutParams17483;
+		internal static global::MonoJavaBridge.MethodId _generateLayoutParams17590;
 		protected override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout._generateLayoutParams17483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout._generateLayoutParams17590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateLayoutParams17483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateLayoutParams17590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _generateDefaultLayoutParams17484;
+		internal static global::MonoJavaBridge.MethodId _generateDefaultLayoutParams17591;
 		protected override global::android.view.ViewGroup.LayoutParams generateDefaultLayoutParams() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout._generateDefaultLayoutParams17484)) as android.view.ViewGroup.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout._generateDefaultLayoutParams17591)) as android.view.ViewGroup.LayoutParams;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateDefaultLayoutParams17484)) as android.view.ViewGroup.LayoutParams;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateDefaultLayoutParams17591)) as android.view.ViewGroup.LayoutParams;
 		}
-		internal static global::MonoJavaBridge.MethodId _setHorizontalGravity17485;
+		internal static global::MonoJavaBridge.MethodId _setHorizontalGravity17592;
 		public virtual void setHorizontalGravity(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setHorizontalGravity17485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setHorizontalGravity17592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setHorizontalGravity17485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setHorizontalGravity17592, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setVerticalGravity17486;
+		internal static global::MonoJavaBridge.MethodId _setVerticalGravity17593;
 		public virtual void setVerticalGravity(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setVerticalGravity17486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setVerticalGravity17593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setVerticalGravity17486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setVerticalGravity17593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setIgnoreGravity17487;
+		internal static global::MonoJavaBridge.MethodId _setIgnoreGravity17594;
 		public virtual void setIgnoreGravity(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setIgnoreGravity17487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout._setIgnoreGravity17594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setIgnoreGravity17487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setIgnoreGravity17594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _RelativeLayout17488;
+		internal static global::MonoJavaBridge.MethodId _RelativeLayout17595;
 		public RelativeLayout(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._RelativeLayout17488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._RelativeLayout17595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RelativeLayout17489;
+		internal static global::MonoJavaBridge.MethodId _RelativeLayout17596;
 		public RelativeLayout(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._RelativeLayout17489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._RelativeLayout17596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _RelativeLayout17490;
+		internal static global::MonoJavaBridge.MethodId _RelativeLayout17597;
 		public RelativeLayout(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._RelativeLayout17490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._RelativeLayout17597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		public static int TRUE
@@ -388,22 +388,22 @@ namespace android.widget
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.widget.RelativeLayout.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/widget/RelativeLayout"));
-			global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent17475 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z");
-			global::android.widget.RelativeLayout._setGravity17476 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setGravity", "(I)V");
-			global::android.widget.RelativeLayout._onLayout17477 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "onLayout", "(ZIIII)V");
-			global::android.widget.RelativeLayout._getBaseline17478 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "getBaseline", "()I");
-			global::android.widget.RelativeLayout._requestLayout17479 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "requestLayout", "()V");
-			global::android.widget.RelativeLayout._onMeasure17480 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "onMeasure", "(II)V");
-			global::android.widget.RelativeLayout._checkLayoutParams17481 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
-			global::android.widget.RelativeLayout._generateLayoutParams17482 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/RelativeLayout$LayoutParams;");
-			global::android.widget.RelativeLayout._generateLayoutParams17483 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;");
-			global::android.widget.RelativeLayout._generateDefaultLayoutParams17484 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "generateDefaultLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;");
-			global::android.widget.RelativeLayout._setHorizontalGravity17485 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setHorizontalGravity", "(I)V");
-			global::android.widget.RelativeLayout._setVerticalGravity17486 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setVerticalGravity", "(I)V");
-			global::android.widget.RelativeLayout._setIgnoreGravity17487 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setIgnoreGravity", "(I)V");
-			global::android.widget.RelativeLayout._RelativeLayout17488 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.RelativeLayout._RelativeLayout17489 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.RelativeLayout._RelativeLayout17490 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent17582 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z");
+			global::android.widget.RelativeLayout._setGravity17583 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setGravity", "(I)V");
+			global::android.widget.RelativeLayout._onLayout17584 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "onLayout", "(ZIIII)V");
+			global::android.widget.RelativeLayout._getBaseline17585 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "getBaseline", "()I");
+			global::android.widget.RelativeLayout._requestLayout17586 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "requestLayout", "()V");
+			global::android.widget.RelativeLayout._onMeasure17587 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "onMeasure", "(II)V");
+			global::android.widget.RelativeLayout._checkLayoutParams17588 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z");
+			global::android.widget.RelativeLayout._generateLayoutParams17589 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/RelativeLayout$LayoutParams;");
+			global::android.widget.RelativeLayout._generateLayoutParams17590 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;");
+			global::android.widget.RelativeLayout._generateDefaultLayoutParams17591 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "generateDefaultLayoutParams", "()Landroid/view/ViewGroup$LayoutParams;");
+			global::android.widget.RelativeLayout._setHorizontalGravity17592 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setHorizontalGravity", "(I)V");
+			global::android.widget.RelativeLayout._setVerticalGravity17593 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setVerticalGravity", "(I)V");
+			global::android.widget.RelativeLayout._setIgnoreGravity17594 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "setIgnoreGravity", "(I)V");
+			global::android.widget.RelativeLayout._RelativeLayout17595 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.RelativeLayout._RelativeLayout17596 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.RelativeLayout._RelativeLayout17597 = @__env.GetMethodIDNoThrow(global::android.widget.RelativeLayout.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

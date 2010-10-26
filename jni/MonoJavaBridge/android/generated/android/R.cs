@@ -5140,7 +5140,7 @@ namespace android
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::android.R.@bool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$@bool"));
+				global::android.R.@bool.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$bool"));
 				global::android.R.@bool._bool850 = @__env.GetMethodIDNoThrow(global::android.R.@bool.staticClass, "<init>", "()V");
 			}
 		}
@@ -7297,7 +7297,7 @@ namespace android
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				global::android.R.@string.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$@string"));
+				global::android.R.@string.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/R$string"));
 				global::android.R.@string._string1113 = @__env.GetMethodIDNoThrow(global::android.R.@string.staticClass, "<init>", "()V");
 			}
 		}

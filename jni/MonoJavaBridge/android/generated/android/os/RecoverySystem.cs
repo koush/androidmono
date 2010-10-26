@@ -18,7 +18,7 @@ namespace android.os
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.RecoverySystem.ProgressListener))]
-		public sealed partial class ProgressListener_ : java.lang.Object, ProgressListener
+		internal sealed partial class ProgressListener_ : java.lang.Object, ProgressListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static ProgressListener_()
@@ -28,55 +28,101 @@ namespace android.os
 			internal ProgressListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onProgress10132;
+			internal static global::MonoJavaBridge.MethodId _onProgress10178;
 			 void android.os.RecoverySystem.ProgressListener.onProgress(int arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_._onProgress10132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_.staticClass, global::android.os.RecoverySystem.ProgressListener_._onProgress10132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.RecoverySystem.ProgressListener_.staticClass, global::android.os.RecoverySystem.ProgressListener_._onProgress10178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.RecoverySystem.ProgressListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RecoverySystem$ProgressListener"));
-				global::android.os.RecoverySystem.ProgressListener_._onProgress10132 = @__env.GetMethodIDNoThrow(global::android.os.RecoverySystem.ProgressListener_.staticClass, "onProgress", "(I)V");
+				global::android.os.RecoverySystem.ProgressListener_._onProgress10178 = @__env.GetMethodIDNoThrow(global::android.os.RecoverySystem.ProgressListener_.staticClass, "onProgress", "(I)V");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _verifyPackage10133;
+
+		public delegate void ProgressListenerDelegate(int arg0);
+
+		internal partial class ProgressListenerDelegateWrapper : java.lang.Object, ProgressListener
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static ProgressListenerDelegateWrapper()
+			{
+				InitJNI();
+			}
+			protected ProgressListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			internal static global::MonoJavaBridge.MethodId _ProgressListenerDelegateWrapper10179;
+			public ProgressListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RecoverySystem.ProgressListenerDelegateWrapper.staticClass, global::android.os.RecoverySystem.ProgressListenerDelegateWrapper._ProgressListenerDelegateWrapper10179);
+				Init(@__env, handle);
+			}
+			private static void InitJNI()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.os.RecoverySystem.ProgressListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RecoverySystem_ProgressListenerDelegateWrapper"));
+				global::android.os.RecoverySystem.ProgressListenerDelegateWrapper._ProgressListenerDelegateWrapper10179 = @__env.GetMethodIDNoThrow(global::android.os.RecoverySystem.ProgressListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+		}
+		internal partial class ProgressListenerDelegateWrapper
+		{
+			private ProgressListenerDelegate myDelegate;
+			public void onProgress(int arg0)
+			{
+				myDelegate(arg0);
+			}
+			public static implicit operator ProgressListenerDelegateWrapper(ProgressListenerDelegate d)
+			{
+				global::android.os.RecoverySystem.ProgressListenerDelegateWrapper ret = new global::android.os.RecoverySystem.ProgressListenerDelegateWrapper();
+				ret.myDelegate = d;
+				global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+				return ret;
+			}
+		}
+		internal static global::MonoJavaBridge.MethodId _verifyPackage10180;
 		public static void verifyPackage(java.io.File arg0, android.os.RecoverySystem.ProgressListener arg1, java.io.File arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._verifyPackage10133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			@__env.CallStaticVoidMethod(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._verifyPackage10180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _installPackage10134;
+		public static void verifyPackage(java.io.File arg0, global::android.os.RecoverySystem.ProgressListenerDelegate arg1, java.io.File arg2)
+		{
+			verifyPackage(arg0, (global::android.os.RecoverySystem.ProgressListenerDelegateWrapper)arg1, arg2);
+		}
+		internal static global::MonoJavaBridge.MethodId _installPackage10181;
 		public static void installPackage(android.content.Context arg0, java.io.File arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._installPackage10134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			@__env.CallStaticVoidMethod(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._installPackage10181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _rebootWipeUserData10135;
+		internal static global::MonoJavaBridge.MethodId _rebootWipeUserData10182;
 		public static void rebootWipeUserData(android.content.Context arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._rebootWipeUserData10135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			@__env.CallStaticVoidMethod(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._rebootWipeUserData10182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _RecoverySystem10136;
+		internal static global::MonoJavaBridge.MethodId _RecoverySystem10183;
 		public RecoverySystem()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._RecoverySystem10136);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RecoverySystem.staticClass, global::android.os.RecoverySystem._RecoverySystem10183);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.RecoverySystem.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/RecoverySystem"));
-			global::android.os.RecoverySystem._verifyPackage10133 = @__env.GetStaticMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "verifyPackage", "(Ljava/io/File;Landroid/os/RecoverySystem$ProgressListener;Ljava/io/File;)V");
-			global::android.os.RecoverySystem._installPackage10134 = @__env.GetStaticMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "installPackage", "(Landroid/content/Context;Ljava/io/File;)V");
-			global::android.os.RecoverySystem._rebootWipeUserData10135 = @__env.GetStaticMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "rebootWipeUserData", "(Landroid/content/Context;)V");
-			global::android.os.RecoverySystem._RecoverySystem10136 = @__env.GetMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "<init>", "()V");
+			global::android.os.RecoverySystem._verifyPackage10180 = @__env.GetStaticMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "verifyPackage", "(Ljava/io/File;Landroid/os/RecoverySystem$ProgressListener;Ljava/io/File;)V");
+			global::android.os.RecoverySystem._installPackage10181 = @__env.GetStaticMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "installPackage", "(Landroid/content/Context;Ljava/io/File;)V");
+			global::android.os.RecoverySystem._rebootWipeUserData10182 = @__env.GetStaticMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "rebootWipeUserData", "(Landroid/content/Context;)V");
+			global::android.os.RecoverySystem._RecoverySystem10183 = @__env.GetMethodIDNoThrow(global::android.os.RecoverySystem.staticClass, "<init>", "()V");
 		}
 	}
 }

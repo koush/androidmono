@@ -7,7 +7,7 @@ namespace android.os
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.os.IBinder_DeathRecipient))]
-	public sealed partial class IBinder_DeathRecipient_ : java.lang.Object, IBinder_DeathRecipient
+	internal sealed partial class IBinder_DeathRecipient_ : java.lang.Object, IBinder_DeathRecipient
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static IBinder_DeathRecipient_()
@@ -17,20 +17,62 @@ namespace android.os
 		internal IBinder_DeathRecipient_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _binderDied9852;
+		internal static global::MonoJavaBridge.MethodId _binderDied9895;
 		 void android.os.IBinder_DeathRecipient.binderDied() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.IBinder_DeathRecipient_._binderDied9852);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.IBinder_DeathRecipient_._binderDied9895);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.IBinder_DeathRecipient_.staticClass, global::android.os.IBinder_DeathRecipient_._binderDied9852);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.IBinder_DeathRecipient_.staticClass, global::android.os.IBinder_DeathRecipient_._binderDied9895);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::android.os.IBinder_DeathRecipient_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IBinder_DeathRecipient"));
-			global::android.os.IBinder_DeathRecipient_._binderDied9852 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_DeathRecipient_.staticClass, "binderDied", "()V");
+			global::android.os.IBinder_DeathRecipient_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IBinder$DeathRecipient"));
+			global::android.os.IBinder_DeathRecipient_._binderDied9895 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_DeathRecipient_.staticClass, "binderDied", "()V");
+		}
+	}
+
+	public delegate void IBinder_DeathRecipientDelegate();
+
+	internal partial class IBinder_DeathRecipientDelegateWrapper : java.lang.Object, IBinder_DeathRecipient
+	{
+		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+		static IBinder_DeathRecipientDelegateWrapper()
+		{
+			InitJNI();
+		}
+		protected IBinder_DeathRecipientDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+		{
+		}
+		internal static global::MonoJavaBridge.MethodId _IBinder_DeathRecipientDelegateWrapper9896;
+		public IBinder_DeathRecipientDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, global::android.os.IBinder_DeathRecipientDelegateWrapper._IBinder_DeathRecipientDelegateWrapper9896);
+			Init(@__env, handle);
+		}
+		private static void InitJNI()
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::android.os.IBinder_DeathRecipientDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/IBinder_DeathRecipientDelegateWrapper"));
+			global::android.os.IBinder_DeathRecipientDelegateWrapper._IBinder_DeathRecipientDelegateWrapper9896 = @__env.GetMethodIDNoThrow(global::android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, "<init>", "()V");
+		}
+	}
+	internal partial class IBinder_DeathRecipientDelegateWrapper
+	{
+		private IBinder_DeathRecipientDelegate myDelegate;
+		public void binderDied()
+		{
+			myDelegate();
+		}
+		public static implicit operator IBinder_DeathRecipientDelegateWrapper(IBinder_DeathRecipientDelegate d)
+		{
+			global::android.os.IBinder_DeathRecipientDelegateWrapper ret = new global::android.os.IBinder_DeathRecipientDelegateWrapper();
+			ret.myDelegate = d;
+			global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+			return ret;
 		}
 	}
 }

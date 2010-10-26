@@ -6,7 +6,7 @@ namespace org.apache.http.cookie
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::org.apache.http.cookie.SM))]
-	public sealed partial class SM_ : java.lang.Object, SM
+	internal sealed partial class SM_ : java.lang.Object, SM
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static SM_()

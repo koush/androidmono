@@ -11,38 +11,38 @@ namespace org.apache.http.impl
 		protected DefaultHttpServerConnection(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString32528;
+		internal static global::MonoJavaBridge.MethodId _toString32646;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection._toString32528)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection._toString32646)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._toString32528)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._toString32646)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _bind32529;
+		internal static global::MonoJavaBridge.MethodId _bind32647;
 		public virtual void bind(java.net.Socket arg0, org.apache.http.@params.HttpParams arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection._bind32529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection._bind32647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._bind32529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._bind32647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _DefaultHttpServerConnection32530;
+		internal static global::MonoJavaBridge.MethodId _DefaultHttpServerConnection32648;
 		public DefaultHttpServerConnection()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._DefaultHttpServerConnection32530);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.DefaultHttpServerConnection.staticClass, global::org.apache.http.impl.DefaultHttpServerConnection._DefaultHttpServerConnection32648);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.impl.DefaultHttpServerConnection.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/impl/DefaultHttpServerConnection"));
-			global::org.apache.http.impl.DefaultHttpServerConnection._toString32528 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "toString", "()Ljava/lang/String;");
-			global::org.apache.http.impl.DefaultHttpServerConnection._bind32529 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "bind", "(Ljava/net/Socket;Lorg/apache/http/@params/HttpParams;)V");
-			global::org.apache.http.impl.DefaultHttpServerConnection._DefaultHttpServerConnection32530 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "<init>", "()V");
+			global::org.apache.http.impl.DefaultHttpServerConnection._toString32646 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "toString", "()Ljava/lang/String;");
+			global::org.apache.http.impl.DefaultHttpServerConnection._bind32647 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "bind", "(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V");
+			global::org.apache.http.impl.DefaultHttpServerConnection._DefaultHttpServerConnection32648 = @__env.GetMethodIDNoThrow(global::org.apache.http.impl.DefaultHttpServerConnection.staticClass, "<init>", "()V");
 		}
 	}
 }

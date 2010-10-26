@@ -18,14 +18,14 @@ namespace java.util
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage26017;
+		internal static global::MonoJavaBridge.MethodId _getMessage26135;
 		public override global::java.lang.String getMessage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException._getMessage26017)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException._getMessage26135)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._getMessage26017)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._getMessage26135)) as java.lang.String;
 		}
 		public new global::java.lang.String Flags
 		{
@@ -34,29 +34,29 @@ namespace java.util
 				return getFlags();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFlags26018;
+		internal static global::MonoJavaBridge.MethodId _getFlags26136;
 		public virtual global::java.lang.String getFlags() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException._getFlags26018)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException._getFlags26136)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._getFlags26018)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._getFlags26136)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _DuplicateFormatFlagsException26019;
+		internal static global::MonoJavaBridge.MethodId _DuplicateFormatFlagsException26137;
 		public DuplicateFormatFlagsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._DuplicateFormatFlagsException26019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.DuplicateFormatFlagsException.staticClass, global::java.util.DuplicateFormatFlagsException._DuplicateFormatFlagsException26137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.DuplicateFormatFlagsException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/DuplicateFormatFlagsException"));
-			global::java.util.DuplicateFormatFlagsException._getMessage26017 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.util.DuplicateFormatFlagsException._getFlags26018 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;");
-			global::java.util.DuplicateFormatFlagsException._DuplicateFormatFlagsException26019 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.util.DuplicateFormatFlagsException._getMessage26135 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::java.util.DuplicateFormatFlagsException._getFlags26136 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "getFlags", "()Ljava/lang/String;");
+			global::java.util.DuplicateFormatFlagsException._DuplicateFormatFlagsException26137 = @__env.GetMethodIDNoThrow(global::java.util.DuplicateFormatFlagsException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

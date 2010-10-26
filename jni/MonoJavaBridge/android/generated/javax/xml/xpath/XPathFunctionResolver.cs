@@ -7,7 +7,7 @@ namespace javax.xml.xpath
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.xml.xpath.XPathFunctionResolver))]
-	public sealed partial class XPathFunctionResolver_ : java.lang.Object, XPathFunctionResolver
+	internal sealed partial class XPathFunctionResolver_ : java.lang.Object, XPathFunctionResolver
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static XPathFunctionResolver_()
@@ -17,20 +17,20 @@ namespace javax.xml.xpath
 		internal XPathFunctionResolver_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _resolveFunction31214;
+		internal static global::MonoJavaBridge.MethodId _resolveFunction31332;
 		 global::javax.xml.xpath.XPathFunction javax.xml.xpath.XPathFunctionResolver.resolveFunction(javax.xml.@namespace.QName arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.xpath.XPathFunction>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.xml.xpath.XPathFunction;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.xpath.XPathFunction>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.xml.xpath.XPathFunction;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.xpath.XPathFunction>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFunctionResolver_.staticClass, global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.xml.xpath.XPathFunction;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.xpath.XPathFunction>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathFunctionResolver_.staticClass, global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.xml.xpath.XPathFunction;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.xpath.XPathFunctionResolver_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/xpath/XPathFunctionResolver"));
-			global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31214 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFunctionResolver_.staticClass, "resolveFunction", "(Ljavax/xml/@namespace/QName;I)Ljavax/xml/xpath/XPathFunction;");
+			global::javax.xml.xpath.XPathFunctionResolver_._resolveFunction31332 = @__env.GetMethodIDNoThrow(global::javax.xml.xpath.XPathFunctionResolver_.staticClass, "resolveFunction", "(Ljavax/xml/namespace/QName;I)Ljavax/xml/xpath/XPathFunction;");
 		}
 	}
 }

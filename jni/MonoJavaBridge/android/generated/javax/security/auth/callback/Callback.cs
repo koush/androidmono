@@ -6,7 +6,7 @@ namespace javax.security.auth.callback
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.security.auth.callback.Callback))]
-	public sealed partial class Callback_ : java.lang.Object, Callback
+	internal sealed partial class Callback_ : java.lang.Object, Callback
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Callback_()

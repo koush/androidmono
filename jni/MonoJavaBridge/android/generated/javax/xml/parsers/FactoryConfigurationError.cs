@@ -18,14 +18,14 @@ namespace javax.xml.parsers
 				return getMessage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage30764;
+		internal static global::MonoJavaBridge.MethodId _getMessage30882;
 		public override global::java.lang.String getMessage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError._getMessage30764)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError._getMessage30882)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._getMessage30764)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._getMessage30882)) as java.lang.String;
 		}
 		public new global::java.lang.Exception Exception
 		{
@@ -34,53 +34,53 @@ namespace javax.xml.parsers
 				return getException();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getException30765;
+		internal static global::MonoJavaBridge.MethodId _getException30883;
 		public virtual global::java.lang.Exception getException() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError._getException30765)) as java.lang.Exception;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError._getException30883)) as java.lang.Exception;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._getException30765)) as java.lang.Exception;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._getException30883)) as java.lang.Exception;
 		}
-		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30766;
+		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30884;
 		public FactoryConfigurationError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30766);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30884);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30767;
+		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30885;
 		public FactoryConfigurationError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30768;
+		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30886;
 		public FactoryConfigurationError(java.lang.Exception arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30769;
+		internal static global::MonoJavaBridge.MethodId _FactoryConfigurationError30887;
 		public FactoryConfigurationError(java.lang.Exception arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.FactoryConfigurationError.staticClass, global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.parsers.FactoryConfigurationError.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/parsers/FactoryConfigurationError"));
-			global::javax.xml.parsers.FactoryConfigurationError._getMessage30764 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::javax.xml.parsers.FactoryConfigurationError._getException30765 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "getException", "()Ljava/lang/Exception;");
-			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30766 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "()V");
-			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30767 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30768 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;)V");
-			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30769 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;Ljava/lang/String;)V");
+			global::javax.xml.parsers.FactoryConfigurationError._getMessage30882 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::javax.xml.parsers.FactoryConfigurationError._getException30883 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "getException", "()Ljava/lang/Exception;");
+			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30884 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "()V");
+			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30885 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30886 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;)V");
+			global::javax.xml.parsers.FactoryConfigurationError._FactoryConfigurationError30887 = @__env.GetMethodIDNoThrow(global::javax.xml.parsers.FactoryConfigurationError.staticClass, "<init>", "(Ljava/lang/Exception;Ljava/lang/String;)V");
 		}
 	}
 }

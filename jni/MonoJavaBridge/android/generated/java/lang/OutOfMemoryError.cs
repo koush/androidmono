@@ -11,26 +11,26 @@ namespace java.lang
 		protected OutOfMemoryError(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _OutOfMemoryError20261;
+		internal static global::MonoJavaBridge.MethodId _OutOfMemoryError20379;
 		public OutOfMemoryError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.OutOfMemoryError.staticClass, global::java.lang.OutOfMemoryError._OutOfMemoryError20261);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.OutOfMemoryError.staticClass, global::java.lang.OutOfMemoryError._OutOfMemoryError20379);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _OutOfMemoryError20262;
+		internal static global::MonoJavaBridge.MethodId _OutOfMemoryError20380;
 		public OutOfMemoryError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.OutOfMemoryError.staticClass, global::java.lang.OutOfMemoryError._OutOfMemoryError20262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.OutOfMemoryError.staticClass, global::java.lang.OutOfMemoryError._OutOfMemoryError20380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.lang.OutOfMemoryError.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/lang/OutOfMemoryError"));
-			global::java.lang.OutOfMemoryError._OutOfMemoryError20261 = @__env.GetMethodIDNoThrow(global::java.lang.OutOfMemoryError.staticClass, "<init>", "()V");
-			global::java.lang.OutOfMemoryError._OutOfMemoryError20262 = @__env.GetMethodIDNoThrow(global::java.lang.OutOfMemoryError.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.lang.OutOfMemoryError._OutOfMemoryError20379 = @__env.GetMethodIDNoThrow(global::java.lang.OutOfMemoryError.staticClass, "<init>", "()V");
+			global::java.lang.OutOfMemoryError._OutOfMemoryError20380 = @__env.GetMethodIDNoThrow(global::java.lang.OutOfMemoryError.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

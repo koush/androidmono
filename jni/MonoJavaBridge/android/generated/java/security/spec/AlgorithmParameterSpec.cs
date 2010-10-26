@@ -6,7 +6,7 @@ namespace java.security.spec
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.security.spec.AlgorithmParameterSpec))]
-	public sealed partial class AlgorithmParameterSpec_ : java.lang.Object, AlgorithmParameterSpec
+	internal sealed partial class AlgorithmParameterSpec_ : java.lang.Object, AlgorithmParameterSpec
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AlgorithmParameterSpec_()

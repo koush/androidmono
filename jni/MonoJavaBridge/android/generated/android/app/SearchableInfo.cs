@@ -11,41 +11,41 @@ namespace android.app
 		internal SearchableInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _autoUrlDetect2102;
+		internal static global::MonoJavaBridge.MethodId _autoUrlDetect2109;
 		public bool autoUrlDetect() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._autoUrlDetect2102);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._autoUrlDetect2109);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._autoUrlDetect2102);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._autoUrlDetect2109);
 		}
-		internal static global::MonoJavaBridge.MethodId _queryAfterZeroResults2103;
+		internal static global::MonoJavaBridge.MethodId _queryAfterZeroResults2110;
 		public bool queryAfterZeroResults() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._queryAfterZeroResults2103);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._queryAfterZeroResults2110);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._queryAfterZeroResults2103);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._queryAfterZeroResults2110);
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel2104;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel2111;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.app.SearchableInfo._writeToParcel2104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.app.SearchableInfo._writeToParcel2111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._writeToParcel2104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._writeToParcel2111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents2105;
+		internal static global::MonoJavaBridge.MethodId _describeContents2112;
 		public int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._describeContents2105);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._describeContents2112);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._describeContents2105);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._describeContents2112);
 		}
 		public new int InputType
 		{
@@ -54,14 +54,14 @@ namespace android.app
 				return getInputType();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getInputType2106;
+		internal static global::MonoJavaBridge.MethodId _getInputType2113;
 		public int getInputType() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getInputType2106);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getInputType2113);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getInputType2106);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getInputType2113);
 		}
 		public new int ImeOptions
 		{
@@ -70,14 +70,14 @@ namespace android.app
 				return getImeOptions();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getImeOptions2107;
+		internal static global::MonoJavaBridge.MethodId _getImeOptions2114;
 		public int getImeOptions() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getImeOptions2107);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getImeOptions2114);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getImeOptions2107);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getImeOptions2114);
 		}
 		public new global::java.lang.String SuggestAuthority
 		{
@@ -86,14 +86,14 @@ namespace android.app
 				return getSuggestAuthority();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestAuthority2108;
+		internal static global::MonoJavaBridge.MethodId _getSuggestAuthority2115;
 		public global::java.lang.String getSuggestAuthority() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestAuthority2108)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestAuthority2115)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestAuthority2108)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestAuthority2115)) as java.lang.String;
 		}
 		public new global::java.lang.String SuggestPackage
 		{
@@ -102,14 +102,14 @@ namespace android.app
 				return getSuggestPackage();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestPackage2109;
+		internal static global::MonoJavaBridge.MethodId _getSuggestPackage2116;
 		public global::java.lang.String getSuggestPackage() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestPackage2109)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestPackage2116)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestPackage2109)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestPackage2116)) as java.lang.String;
 		}
 		public new global::android.content.ComponentName SearchActivity
 		{
@@ -118,32 +118,32 @@ namespace android.app
 				return getSearchActivity();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSearchActivity2110;
+		internal static global::MonoJavaBridge.MethodId _getSearchActivity2117;
 		public global::android.content.ComponentName getSearchActivity() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSearchActivity2110)) as android.content.ComponentName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSearchActivity2117)) as android.content.ComponentName;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSearchActivity2110)) as android.content.ComponentName;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSearchActivity2117)) as android.content.ComponentName;
 		}
-		internal static global::MonoJavaBridge.MethodId _shouldRewriteQueryFromData2111;
+		internal static global::MonoJavaBridge.MethodId _shouldRewriteQueryFromData2118;
 		public bool shouldRewriteQueryFromData() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._shouldRewriteQueryFromData2111);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._shouldRewriteQueryFromData2118);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldRewriteQueryFromData2111);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldRewriteQueryFromData2118);
 		}
-		internal static global::MonoJavaBridge.MethodId _shouldRewriteQueryFromText2112;
+		internal static global::MonoJavaBridge.MethodId _shouldRewriteQueryFromText2119;
 		public bool shouldRewriteQueryFromText() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._shouldRewriteQueryFromText2112);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._shouldRewriteQueryFromText2119);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldRewriteQueryFromText2112);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldRewriteQueryFromText2119);
 		}
 		public new int SettingsDescriptionId
 		{
@@ -152,14 +152,14 @@ namespace android.app
 				return getSettingsDescriptionId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSettingsDescriptionId2113;
+		internal static global::MonoJavaBridge.MethodId _getSettingsDescriptionId2120;
 		public int getSettingsDescriptionId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getSettingsDescriptionId2113);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getSettingsDescriptionId2120);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSettingsDescriptionId2113);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSettingsDescriptionId2120);
 		}
 		public new global::java.lang.String SuggestPath
 		{
@@ -168,14 +168,14 @@ namespace android.app
 				return getSuggestPath();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestPath2114;
+		internal static global::MonoJavaBridge.MethodId _getSuggestPath2121;
 		public global::java.lang.String getSuggestPath() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestPath2114)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestPath2121)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestPath2114)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestPath2121)) as java.lang.String;
 		}
 		public new global::java.lang.String SuggestSelection
 		{
@@ -184,14 +184,14 @@ namespace android.app
 				return getSuggestSelection();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestSelection2115;
+		internal static global::MonoJavaBridge.MethodId _getSuggestSelection2122;
 		public global::java.lang.String getSuggestSelection() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestSelection2115)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestSelection2122)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestSelection2115)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestSelection2122)) as java.lang.String;
 		}
 		public new global::java.lang.String SuggestIntentAction
 		{
@@ -200,14 +200,14 @@ namespace android.app
 				return getSuggestIntentAction();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestIntentAction2116;
+		internal static global::MonoJavaBridge.MethodId _getSuggestIntentAction2123;
 		public global::java.lang.String getSuggestIntentAction() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestIntentAction2116)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestIntentAction2123)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestIntentAction2116)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestIntentAction2123)) as java.lang.String;
 		}
 		public new global::java.lang.String SuggestIntentData
 		{
@@ -216,14 +216,14 @@ namespace android.app
 				return getSuggestIntentData();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestIntentData2117;
+		internal static global::MonoJavaBridge.MethodId _getSuggestIntentData2124;
 		public global::java.lang.String getSuggestIntentData() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestIntentData2117)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestIntentData2124)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestIntentData2117)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestIntentData2124)) as java.lang.String;
 		}
 		public new int SuggestThreshold
 		{
@@ -232,14 +232,14 @@ namespace android.app
 				return getSuggestThreshold();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSuggestThreshold2118;
+		internal static global::MonoJavaBridge.MethodId _getSuggestThreshold2125;
 		public int getSuggestThreshold() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestThreshold2118);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getSuggestThreshold2125);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestThreshold2118);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSuggestThreshold2125);
 		}
 		public new int HintId
 		{
@@ -248,14 +248,14 @@ namespace android.app
 				return getHintId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getHintId2119;
+		internal static global::MonoJavaBridge.MethodId _getHintId2126;
 		public int getHintId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getHintId2119);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getHintId2126);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getHintId2119);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getHintId2126);
 		}
 		public new bool VoiceSearchEnabled
 		{
@@ -264,14 +264,14 @@ namespace android.app
 				return getVoiceSearchEnabled();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoiceSearchEnabled2120;
+		internal static global::MonoJavaBridge.MethodId _getVoiceSearchEnabled2127;
 		public bool getVoiceSearchEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchEnabled2120);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchEnabled2127);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchEnabled2120);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchEnabled2127);
 		}
 		public new bool VoiceSearchLaunchWebSearch
 		{
@@ -280,14 +280,14 @@ namespace android.app
 				return getVoiceSearchLaunchWebSearch();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchWebSearch2121;
+		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchWebSearch2128;
 		public bool getVoiceSearchLaunchWebSearch() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch2121);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch2128);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch2121);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch2128);
 		}
 		public new bool VoiceSearchLaunchRecognizer
 		{
@@ -296,14 +296,14 @@ namespace android.app
 				return getVoiceSearchLaunchRecognizer();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchRecognizer2122;
+		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchRecognizer2129;
 		public bool getVoiceSearchLaunchRecognizer() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer2122);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer2129);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer2122);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer2129);
 		}
 		public new int VoiceLanguageModeId
 		{
@@ -312,14 +312,14 @@ namespace android.app
 				return getVoiceLanguageModeId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageModeId2123;
+		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageModeId2130;
 		public int getVoiceLanguageModeId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceLanguageModeId2123);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceLanguageModeId2130);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceLanguageModeId2123);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceLanguageModeId2130);
 		}
 		public new int VoicePromptTextId
 		{
@@ -328,14 +328,14 @@ namespace android.app
 				return getVoicePromptTextId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoicePromptTextId2124;
+		internal static global::MonoJavaBridge.MethodId _getVoicePromptTextId2131;
 		public int getVoicePromptTextId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoicePromptTextId2124);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoicePromptTextId2131);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoicePromptTextId2124);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoicePromptTextId2131);
 		}
 		public new int VoiceLanguageId
 		{
@@ -344,14 +344,14 @@ namespace android.app
 				return getVoiceLanguageId();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageId2125;
+		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageId2132;
 		public int getVoiceLanguageId() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceLanguageId2125);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceLanguageId2132);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceLanguageId2125);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceLanguageId2132);
 		}
 		public new int VoiceMaxResults
 		{
@@ -360,64 +360,64 @@ namespace android.app
 				return getVoiceMaxResults();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVoiceMaxResults2126;
+		internal static global::MonoJavaBridge.MethodId _getVoiceMaxResults2133;
 		public int getVoiceMaxResults() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceMaxResults2126);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.app.SearchableInfo._getVoiceMaxResults2133);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceMaxResults2126);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceMaxResults2133);
 		}
-		internal static global::MonoJavaBridge.MethodId _shouldIncludeInGlobalSearch2127;
+		internal static global::MonoJavaBridge.MethodId _shouldIncludeInGlobalSearch2134;
 		public bool shouldIncludeInGlobalSearch() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2127);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2134);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2127);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2134);
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR2128;
+		internal static global::MonoJavaBridge.FieldId _CREATOR2135;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.SearchableInfo.staticClass, _CREATOR2128)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.app.SearchableInfo.staticClass, _CREATOR2135)) as android.os.Parcelable_Creator;
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.app.SearchableInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/app/SearchableInfo"));
-			global::android.app.SearchableInfo._autoUrlDetect2102 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "autoUrlDetect", "()Z");
-			global::android.app.SearchableInfo._queryAfterZeroResults2103 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "queryAfterZeroResults", "()Z");
-			global::android.app.SearchableInfo._writeToParcel2104 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.app.SearchableInfo._describeContents2105 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "describeContents", "()I");
-			global::android.app.SearchableInfo._getInputType2106 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getInputType", "()I");
-			global::android.app.SearchableInfo._getImeOptions2107 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getImeOptions", "()I");
-			global::android.app.SearchableInfo._getSuggestAuthority2108 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestAuthority", "()Ljava/lang/String;");
-			global::android.app.SearchableInfo._getSuggestPackage2109 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestPackage", "()Ljava/lang/String;");
-			global::android.app.SearchableInfo._getSearchActivity2110 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSearchActivity", "()Landroid/content/ComponentName;");
-			global::android.app.SearchableInfo._shouldRewriteQueryFromData2111 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldRewriteQueryFromData", "()Z");
-			global::android.app.SearchableInfo._shouldRewriteQueryFromText2112 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldRewriteQueryFromText", "()Z");
-			global::android.app.SearchableInfo._getSettingsDescriptionId2113 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSettingsDescriptionId", "()I");
-			global::android.app.SearchableInfo._getSuggestPath2114 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestPath", "()Ljava/lang/String;");
-			global::android.app.SearchableInfo._getSuggestSelection2115 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestSelection", "()Ljava/lang/String;");
-			global::android.app.SearchableInfo._getSuggestIntentAction2116 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestIntentAction", "()Ljava/lang/String;");
-			global::android.app.SearchableInfo._getSuggestIntentData2117 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestIntentData", "()Ljava/lang/String;");
-			global::android.app.SearchableInfo._getSuggestThreshold2118 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestThreshold", "()I");
-			global::android.app.SearchableInfo._getHintId2119 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getHintId", "()I");
-			global::android.app.SearchableInfo._getVoiceSearchEnabled2120 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceSearchEnabled", "()Z");
-			global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch2121 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceSearchLaunchWebSearch", "()Z");
-			global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer2122 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceSearchLaunchRecognizer", "()Z");
-			global::android.app.SearchableInfo._getVoiceLanguageModeId2123 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceLanguageModeId", "()I");
-			global::android.app.SearchableInfo._getVoicePromptTextId2124 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoicePromptTextId", "()I");
-			global::android.app.SearchableInfo._getVoiceLanguageId2125 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceLanguageId", "()I");
-			global::android.app.SearchableInfo._getVoiceMaxResults2126 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceMaxResults", "()I");
-			global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2127 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldIncludeInGlobalSearch", "()Z");
-			global::android.app.SearchableInfo._CREATOR2128 = @__env.GetStaticFieldIDNoThrow(global::android.app.SearchableInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.app.SearchableInfo._autoUrlDetect2109 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "autoUrlDetect", "()Z");
+			global::android.app.SearchableInfo._queryAfterZeroResults2110 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "queryAfterZeroResults", "()Z");
+			global::android.app.SearchableInfo._writeToParcel2111 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.app.SearchableInfo._describeContents2112 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "describeContents", "()I");
+			global::android.app.SearchableInfo._getInputType2113 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getInputType", "()I");
+			global::android.app.SearchableInfo._getImeOptions2114 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getImeOptions", "()I");
+			global::android.app.SearchableInfo._getSuggestAuthority2115 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestAuthority", "()Ljava/lang/String;");
+			global::android.app.SearchableInfo._getSuggestPackage2116 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestPackage", "()Ljava/lang/String;");
+			global::android.app.SearchableInfo._getSearchActivity2117 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSearchActivity", "()Landroid/content/ComponentName;");
+			global::android.app.SearchableInfo._shouldRewriteQueryFromData2118 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldRewriteQueryFromData", "()Z");
+			global::android.app.SearchableInfo._shouldRewriteQueryFromText2119 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldRewriteQueryFromText", "()Z");
+			global::android.app.SearchableInfo._getSettingsDescriptionId2120 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSettingsDescriptionId", "()I");
+			global::android.app.SearchableInfo._getSuggestPath2121 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestPath", "()Ljava/lang/String;");
+			global::android.app.SearchableInfo._getSuggestSelection2122 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestSelection", "()Ljava/lang/String;");
+			global::android.app.SearchableInfo._getSuggestIntentAction2123 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestIntentAction", "()Ljava/lang/String;");
+			global::android.app.SearchableInfo._getSuggestIntentData2124 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestIntentData", "()Ljava/lang/String;");
+			global::android.app.SearchableInfo._getSuggestThreshold2125 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getSuggestThreshold", "()I");
+			global::android.app.SearchableInfo._getHintId2126 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getHintId", "()I");
+			global::android.app.SearchableInfo._getVoiceSearchEnabled2127 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceSearchEnabled", "()Z");
+			global::android.app.SearchableInfo._getVoiceSearchLaunchWebSearch2128 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceSearchLaunchWebSearch", "()Z");
+			global::android.app.SearchableInfo._getVoiceSearchLaunchRecognizer2129 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceSearchLaunchRecognizer", "()Z");
+			global::android.app.SearchableInfo._getVoiceLanguageModeId2130 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceLanguageModeId", "()I");
+			global::android.app.SearchableInfo._getVoicePromptTextId2131 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoicePromptTextId", "()I");
+			global::android.app.SearchableInfo._getVoiceLanguageId2132 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceLanguageId", "()I");
+			global::android.app.SearchableInfo._getVoiceMaxResults2133 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "getVoiceMaxResults", "()I");
+			global::android.app.SearchableInfo._shouldIncludeInGlobalSearch2134 = @__env.GetMethodIDNoThrow(global::android.app.SearchableInfo.staticClass, "shouldIncludeInGlobalSearch", "()Z");
+			global::android.app.SearchableInfo._CREATOR2135 = @__env.GetStaticFieldIDNoThrow(global::android.app.SearchableInfo.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 	}
 }

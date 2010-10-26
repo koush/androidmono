@@ -6,7 +6,7 @@ namespace javax.microedition.khronos.egl
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::javax.microedition.khronos.egl.EGL))]
-	public sealed partial class EGL_ : java.lang.Object, EGL
+	internal sealed partial class EGL_ : java.lang.Object, EGL
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static EGL_()

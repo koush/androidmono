@@ -11,98 +11,98 @@ namespace android.content
 		protected PeriodicSync(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals3475;
+		internal static global::MonoJavaBridge.MethodId _equals3490;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.PeriodicSync._equals3475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.content.PeriodicSync._equals3490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._equals3475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._equals3490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel3476;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel3491;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.PeriodicSync._writeToParcel3476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.PeriodicSync._writeToParcel3491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._writeToParcel3476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._writeToParcel3491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents3477;
+		internal static global::MonoJavaBridge.MethodId _describeContents3492;
 		public virtual int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.content.PeriodicSync._describeContents3477);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.content.PeriodicSync._describeContents3492);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._describeContents3477);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._describeContents3492);
 		}
-		internal static global::MonoJavaBridge.MethodId _PeriodicSync3478;
+		internal static global::MonoJavaBridge.MethodId _PeriodicSync3493;
 		public PeriodicSync(android.accounts.Account arg0, java.lang.String arg1, android.os.Bundle arg2, long arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._PeriodicSync3478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.PeriodicSync.staticClass, global::android.content.PeriodicSync._PeriodicSync3493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _account3479;
+		internal static global::MonoJavaBridge.FieldId _account3494;
 		public global::android.accounts.Account account
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _account3479)) as android.accounts.Account;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetObjectField(this.JvmHandle, _account3494)) as android.accounts.Account;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _authority3480;
+		internal static global::MonoJavaBridge.FieldId _authority3495;
 		public global::java.lang.String authority
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _authority3480)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _authority3495)) as java.lang.String;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _extras3481;
+		internal static global::MonoJavaBridge.FieldId _extras3496;
 		public global::android.os.Bundle extras
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.GetObjectField(this.JvmHandle, _extras3481)) as android.os.Bundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.GetObjectField(this.JvmHandle, _extras3496)) as android.os.Bundle;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _period3482;
+		internal static global::MonoJavaBridge.FieldId _period3497;
 		public long period
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetLongField(this.JvmHandle, _period3482);
+				return @__env.GetLongField(this.JvmHandle, _period3497);
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR3483;
+		internal static global::MonoJavaBridge.FieldId _CREATOR3498;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.PeriodicSync.staticClass, _CREATOR3483)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.content.PeriodicSync.staticClass, _CREATOR3498)) as android.os.Parcelable_Creator;
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.PeriodicSync.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/PeriodicSync"));
-			global::android.content.PeriodicSync._equals3475 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.PeriodicSync._writeToParcel3476 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.PeriodicSync._describeContents3477 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "describeContents", "()I");
-			global::android.content.PeriodicSync._PeriodicSync3478 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "<init>", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;J)V");
-			global::android.content.PeriodicSync._account3479 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "account", "Landroid/accounts/Account;");
-			global::android.content.PeriodicSync._authority3480 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "authority", "Ljava/lang/String;");
-			global::android.content.PeriodicSync._extras3481 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "extras", "Landroid/os/Bundle;");
-			global::android.content.PeriodicSync._period3482 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "period", "J");
-			global::android.content.PeriodicSync._CREATOR3483 = @__env.GetStaticFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.content.PeriodicSync._equals3490 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.PeriodicSync._writeToParcel3491 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.PeriodicSync._describeContents3492 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "describeContents", "()I");
+			global::android.content.PeriodicSync._PeriodicSync3493 = @__env.GetMethodIDNoThrow(global::android.content.PeriodicSync.staticClass, "<init>", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;J)V");
+			global::android.content.PeriodicSync._account3494 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "account", "Landroid/accounts/Account;");
+			global::android.content.PeriodicSync._authority3495 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "authority", "Ljava/lang/String;");
+			global::android.content.PeriodicSync._extras3496 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "extras", "Landroid/os/Bundle;");
+			global::android.content.PeriodicSync._period3497 = @__env.GetFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "period", "J");
+			global::android.content.PeriodicSync._CREATOR3498 = @__env.GetStaticFieldIDNoThrow(global::android.content.PeriodicSync.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 	}
 }

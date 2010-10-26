@@ -6,7 +6,7 @@ namespace android.text
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.InputType))]
-	public sealed partial class InputType_ : java.lang.Object, InputType
+	internal sealed partial class InputType_ : java.lang.Object, InputType
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static InputType_()

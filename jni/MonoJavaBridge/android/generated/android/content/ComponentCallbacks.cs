@@ -8,7 +8,7 @@ namespace android.content
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.content.ComponentCallbacks))]
-	public sealed partial class ComponentCallbacks_ : java.lang.Object, ComponentCallbacks
+	internal sealed partial class ComponentCallbacks_ : java.lang.Object, ComponentCallbacks
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static ComponentCallbacks_()
@@ -18,30 +18,30 @@ namespace android.content
 		internal ComponentCallbacks_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged2601;
+		internal static global::MonoJavaBridge.MethodId _onConfigurationChanged2609;
 		 void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onConfigurationChanged2601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onConfigurationChanged2609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onConfigurationChanged2601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onConfigurationChanged2609, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onLowMemory2602;
+		internal static global::MonoJavaBridge.MethodId _onLowMemory2610;
 		 void android.content.ComponentCallbacks.onLowMemory() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onLowMemory2602);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_._onLowMemory2610);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onLowMemory2602);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.ComponentCallbacks_.staticClass, global::android.content.ComponentCallbacks_._onLowMemory2610);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.content.ComponentCallbacks_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/content/ComponentCallbacks"));
-			global::android.content.ComponentCallbacks_._onConfigurationChanged2601 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
-			global::android.content.ComponentCallbacks_._onLowMemory2602 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
+			global::android.content.ComponentCallbacks_._onConfigurationChanged2609 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
+			global::android.content.ComponentCallbacks_._onLowMemory2610 = @__env.GetMethodIDNoThrow(global::android.content.ComponentCallbacks_.staticClass, "onLowMemory", "()V");
 		}
 	}
 }

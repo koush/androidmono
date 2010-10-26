@@ -21,7 +21,7 @@ namespace android.gesture
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.gesture.GestureOverlayView.OnGestureListener))]
-		public sealed partial class OnGestureListener_ : java.lang.Object, OnGestureListener
+		internal sealed partial class OnGestureListener_ : java.lang.Object, OnGestureListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static OnGestureListener_()
@@ -31,50 +31,50 @@ namespace android.gesture
 			internal OnGestureListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onGestureStarted4883;
+			internal static global::MonoJavaBridge.MethodId _onGestureStarted4901;
 			 void android.gesture.GestureOverlayView.OnGestureListener.onGestureStarted(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesture4884;
+			internal static global::MonoJavaBridge.MethodId _onGesture4902;
 			 void android.gesture.GestureOverlayView.OnGestureListener.onGesture(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGestureEnded4885;
+			internal static global::MonoJavaBridge.MethodId _onGestureEnded4903;
 			 void android.gesture.GestureOverlayView.OnGestureListener.onGestureEnded(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGestureCancelled4886;
+			internal static global::MonoJavaBridge.MethodId _onGestureCancelled4904;
 			 void android.gesture.GestureOverlayView.OnGestureListener.onGestureCancelled(android.gesture.GestureOverlayView arg0, android.view.MotionEvent arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView$OnGestureListener"));
-				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4883 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureStarted", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
-				global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4884 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGesture", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
-				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4885 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureEnded", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
-				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4886 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureCancelled", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
+				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureStarted4901 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureStarted", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
+				global::android.gesture.GestureOverlayView.OnGestureListener_._onGesture4902 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGesture", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
+				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureEnded4903 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureEnded", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
+				global::android.gesture.GestureOverlayView.OnGestureListener_._onGestureCancelled4904 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGestureListener_.staticClass, "onGestureCancelled", "(Landroid/gesture/GestureOverlayView;Landroid/view/MotionEvent;)V");
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.gesture.GestureOverlayView.OnGesturePerformedListener_))]
@@ -84,7 +84,7 @@ namespace android.gesture
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.gesture.GestureOverlayView.OnGesturePerformedListener))]
-		public sealed partial class OnGesturePerformedListener_ : java.lang.Object, OnGesturePerformedListener
+		internal sealed partial class OnGesturePerformedListener_ : java.lang.Object, OnGesturePerformedListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static OnGesturePerformedListener_()
@@ -94,20 +94,62 @@ namespace android.gesture
 			internal OnGesturePerformedListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesturePerformed4887;
+			internal static global::MonoJavaBridge.MethodId _onGesturePerformed4905;
 			 void android.gesture.GestureOverlayView.OnGesturePerformedListener.onGesturePerformed(android.gesture.GestureOverlayView arg0, android.gesture.Gesture arg1) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView$OnGesturePerformedListener"));
-				global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4887 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, "onGesturePerformed", "(Landroid/gesture/GestureOverlayView;Landroid/gesture/Gesture;)V");
+				global::android.gesture.GestureOverlayView.OnGesturePerformedListener_._onGesturePerformed4905 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListener_.staticClass, "onGesturePerformed", "(Landroid/gesture/GestureOverlayView;Landroid/gesture/Gesture;)V");
+			}
+		}
+
+		public delegate void OnGesturePerformedListenerDelegate(android.gesture.GestureOverlayView arg0, android.gesture.Gesture arg1);
+
+		internal partial class OnGesturePerformedListenerDelegateWrapper : java.lang.Object, OnGesturePerformedListener
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static OnGesturePerformedListenerDelegateWrapper()
+			{
+				InitJNI();
+			}
+			protected OnGesturePerformedListenerDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			internal static global::MonoJavaBridge.MethodId _OnGesturePerformedListenerDelegateWrapper4906;
+			public OnGesturePerformedListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906);
+				Init(@__env, handle);
+			}
+			private static void InitJNI()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView_OnGesturePerformedListenerDelegateWrapper"));
+				global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper._OnGesturePerformedListenerDelegateWrapper4906 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper.staticClass, "<init>", "()V");
+			}
+		}
+		internal partial class OnGesturePerformedListenerDelegateWrapper
+		{
+			private OnGesturePerformedListenerDelegate myDelegate;
+			public void onGesturePerformed(android.gesture.GestureOverlayView arg0, android.gesture.Gesture arg1)
+			{
+				myDelegate(arg0, arg1);
+			}
+			public static implicit operator OnGesturePerformedListenerDelegateWrapper(OnGesturePerformedListenerDelegate d)
+			{
+				global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper ret = new global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper();
+				ret.myDelegate = d;
+				global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+				return ret;
 			}
 		}
 		[global::MonoJavaBridge.JavaInterface(typeof(global::android.gesture.GestureOverlayView.OnGesturingListener_))]
@@ -118,7 +160,7 @@ namespace android.gesture
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.gesture.GestureOverlayView.OnGesturingListener))]
-		public sealed partial class OnGesturingListener_ : java.lang.Object, OnGesturingListener
+		internal sealed partial class OnGesturingListener_ : java.lang.Object, OnGesturingListener
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static OnGesturingListener_()
@@ -128,76 +170,76 @@ namespace android.gesture
 			internal OnGesturingListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesturingStarted4888;
+			internal static global::MonoJavaBridge.MethodId _onGesturingStarted4907;
 			 void android.gesture.GestureOverlayView.OnGesturingListener.onGesturingStarted(android.gesture.GestureOverlayView arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _onGesturingEnded4889;
+			internal static global::MonoJavaBridge.MethodId _onGesturingEnded4908;
 			 void android.gesture.GestureOverlayView.OnGesturingListener.onGesturingEnded(android.gesture.GestureOverlayView arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView$OnGesturingListener"));
-				global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4888 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingStarted", "(Landroid/gesture/GestureOverlayView;)V");
-				global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4889 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingEnded", "(Landroid/gesture/GestureOverlayView;)V");
+				global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingStarted4907 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingStarted", "(Landroid/gesture/GestureOverlayView;)V");
+				global::android.gesture.GestureOverlayView.OnGesturingListener_._onGesturingEnded4908 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.OnGesturingListener_.staticClass, "onGesturingEnded", "(Landroid/gesture/GestureOverlayView;)V");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _clear4890;
+		internal static global::MonoJavaBridge.MethodId _clear4909;
 		public virtual void clear(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._clear4890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._clear4909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._clear4890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._clear4909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _draw4891;
+		internal static global::MonoJavaBridge.MethodId _draw4910;
 		public override void draw(android.graphics.Canvas arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._draw4891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._draw4910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._draw4891, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._draw4910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow4892;
+		internal static global::MonoJavaBridge.MethodId _onDetachedFromWindow4911;
 		protected override void onDetachedFromWindow() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._onDetachedFromWindow4892);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._onDetachedFromWindow4911);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._onDetachedFromWindow4892);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._onDetachedFromWindow4911);
 		}
-		internal static global::MonoJavaBridge.MethodId _dispatchTouchEvent4893;
+		internal static global::MonoJavaBridge.MethodId _dispatchTouchEvent4912;
 		public override bool dispatchTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._dispatchTouchEvent4893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._dispatchTouchEvent4912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._dispatchTouchEvent4893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._dispatchTouchEvent4912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setOrientation4894;
+		internal static global::MonoJavaBridge.MethodId _setOrientation4913;
 		public virtual void setOrientation(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setOrientation4894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setOrientation4913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setOrientation4894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setOrientation4913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Orientation
 		{
@@ -210,14 +252,14 @@ namespace android.gesture
 				setOrientation(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getOrientation4895;
+		internal static global::MonoJavaBridge.MethodId _getOrientation4914;
 		public virtual int getOrientation() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getOrientation4895);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getOrientation4914);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getOrientation4895);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getOrientation4914);
 		}
 		public new global::java.util.ArrayList CurrentStroke
 		{
@@ -226,32 +268,32 @@ namespace android.gesture
 				return getCurrentStroke();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrentStroke4896;
+		internal static global::MonoJavaBridge.MethodId _getCurrentStroke4915;
 		public virtual global::java.util.ArrayList getCurrentStroke() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getCurrentStroke4896)) as java.util.ArrayList;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getCurrentStroke4915)) as java.util.ArrayList;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getCurrentStroke4896)) as java.util.ArrayList;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getCurrentStroke4915)) as java.util.ArrayList;
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureColor4897;
+		internal static global::MonoJavaBridge.MethodId _setGestureColor4916;
 		public virtual void setGestureColor(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureColor4897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureColor4916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureColor4897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureColor4916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setUncertainGestureColor4898;
+		internal static global::MonoJavaBridge.MethodId _setUncertainGestureColor4917;
 		public virtual void setUncertainGestureColor(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setUncertainGestureColor4898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setUncertainGestureColor4917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setUncertainGestureColor4898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setUncertainGestureColor4917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int UncertainGestureColor
 		{
@@ -264,14 +306,14 @@ namespace android.gesture
 				setUncertainGestureColor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getUncertainGestureColor4899;
+		internal static global::MonoJavaBridge.MethodId _getUncertainGestureColor4918;
 		public virtual int getUncertainGestureColor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getUncertainGestureColor4899);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getUncertainGestureColor4918);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getUncertainGestureColor4899);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getUncertainGestureColor4918);
 		}
 		public new int GestureColor
 		{
@@ -284,14 +326,14 @@ namespace android.gesture
 				setGestureColor(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureColor4900;
+		internal static global::MonoJavaBridge.MethodId _getGestureColor4919;
 		public virtual int getGestureColor() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureColor4900);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureColor4919);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureColor4900);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureColor4919);
 		}
 		public new float GestureStrokeWidth
 		{
@@ -304,23 +346,23 @@ namespace android.gesture
 				setGestureStrokeWidth(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeWidth4901;
+		internal static global::MonoJavaBridge.MethodId _getGestureStrokeWidth4920;
 		public virtual float getGestureStrokeWidth() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeWidth4901);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeWidth4920);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeWidth4901);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeWidth4920);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeWidth4902;
+		internal static global::MonoJavaBridge.MethodId _setGestureStrokeWidth4921;
 		public virtual void setGestureStrokeWidth(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeWidth4902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeWidth4921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeWidth4902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeWidth4921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int GestureStrokeType
 		{
@@ -333,23 +375,23 @@ namespace android.gesture
 				setGestureStrokeType(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeType4903;
+		internal static global::MonoJavaBridge.MethodId _getGestureStrokeType4922;
 		public virtual int getGestureStrokeType() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeType4903);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeType4922);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeType4903);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeType4922);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeType4904;
+		internal static global::MonoJavaBridge.MethodId _setGestureStrokeType4923;
 		public virtual void setGestureStrokeType(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeType4904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeType4923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeType4904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeType4923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float GestureStrokeLengthThreshold
 		{
@@ -362,23 +404,23 @@ namespace android.gesture
 				setGestureStrokeLengthThreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeLengthThreshold4905;
+		internal static global::MonoJavaBridge.MethodId _getGestureStrokeLengthThreshold4924;
 		public virtual float getGestureStrokeLengthThreshold() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4905);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4924);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4905);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4924);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeLengthThreshold4906;
+		internal static global::MonoJavaBridge.MethodId _setGestureStrokeLengthThreshold4925;
 		public virtual void setGestureStrokeLengthThreshold(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float GestureStrokeSquarenessTreshold
 		{
@@ -391,23 +433,23 @@ namespace android.gesture
 				setGestureStrokeSquarenessTreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeSquarenessTreshold4907;
+		internal static global::MonoJavaBridge.MethodId _getGestureStrokeSquarenessTreshold4926;
 		public virtual float getGestureStrokeSquarenessTreshold() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4907);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4926);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4907);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4926);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeSquarenessTreshold4908;
+		internal static global::MonoJavaBridge.MethodId _setGestureStrokeSquarenessTreshold4927;
 		public virtual void setGestureStrokeSquarenessTreshold(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new float GestureStrokeAngleThreshold
 		{
@@ -420,59 +462,59 @@ namespace android.gesture
 				setGestureStrokeAngleThreshold(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGestureStrokeAngleThreshold4909;
+		internal static global::MonoJavaBridge.MethodId _getGestureStrokeAngleThreshold4928;
 		public virtual float getGestureStrokeAngleThreshold() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4909);
+				return @__env.CallFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4928);
 			else
-				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4909);
+				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4928);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureStrokeAngleThreshold4910;
+		internal static global::MonoJavaBridge.MethodId _setGestureStrokeAngleThreshold4929;
 		public virtual void setGestureStrokeAngleThreshold(float arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isEventsInterceptionEnabled4911;
+		internal static global::MonoJavaBridge.MethodId _isEventsInterceptionEnabled4930;
 		public virtual bool isEventsInterceptionEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4911);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4930);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4911);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4930);
 		}
-		internal static global::MonoJavaBridge.MethodId _setEventsInterceptionEnabled4912;
+		internal static global::MonoJavaBridge.MethodId _setEventsInterceptionEnabled4931;
 		public virtual void setEventsInterceptionEnabled(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isFadeEnabled4913;
+		internal static global::MonoJavaBridge.MethodId _isFadeEnabled4932;
 		public virtual bool isFadeEnabled() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isFadeEnabled4913);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isFadeEnabled4932);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isFadeEnabled4913);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isFadeEnabled4932);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFadeEnabled4914;
+		internal static global::MonoJavaBridge.MethodId _setFadeEnabled4933;
 		public virtual void setFadeEnabled(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setFadeEnabled4914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setFadeEnabled4933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setFadeEnabled4914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setFadeEnabled4933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.gesture.Gesture Gesture
 		{
@@ -485,23 +527,23 @@ namespace android.gesture
 				setGesture(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGesture4915;
+		internal static global::MonoJavaBridge.MethodId _getGesture4934;
 		public virtual global::android.gesture.Gesture getGesture() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGesture4915)) as android.gesture.Gesture;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGesture4934)) as android.gesture.Gesture;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGesture4915)) as android.gesture.Gesture;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGesture4934)) as android.gesture.Gesture;
 		}
-		internal static global::MonoJavaBridge.MethodId _setGesture4916;
+		internal static global::MonoJavaBridge.MethodId _setGesture4935;
 		public virtual void setGesture(android.gesture.Gesture arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGesture4916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGesture4935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGesture4916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGesture4935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Path GesturePath
 		{
@@ -510,41 +552,41 @@ namespace android.gesture
 				return getGesturePath();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGesturePath4917;
+		internal static global::MonoJavaBridge.MethodId _getGesturePath4936;
 		public virtual global::android.graphics.Path getGesturePath() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGesturePath4917)) as android.graphics.Path;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGesturePath4936)) as android.graphics.Path;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGesturePath4917)) as android.graphics.Path;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGesturePath4936)) as android.graphics.Path;
 		}
-		internal static global::MonoJavaBridge.MethodId _getGesturePath4918;
+		internal static global::MonoJavaBridge.MethodId _getGesturePath4937;
 		public virtual global::android.graphics.Path getGesturePath(android.graphics.Path arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGesturePath4918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getGesturePath4937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGesturePath4918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getGesturePath4937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Path;
 		}
-		internal static global::MonoJavaBridge.MethodId _isGestureVisible4919;
+		internal static global::MonoJavaBridge.MethodId _isGestureVisible4938;
 		public virtual bool isGestureVisible() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isGestureVisible4919);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isGestureVisible4938);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isGestureVisible4919);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isGestureVisible4938);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGestureVisible4920;
+		internal static global::MonoJavaBridge.MethodId _setGestureVisible4939;
 		public virtual void setGestureVisible(bool arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureVisible4920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setGestureVisible4939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureVisible4920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setGestureVisible4939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new long FadeOffset
 		{
@@ -557,151 +599,159 @@ namespace android.gesture
 				setFadeOffset(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFadeOffset4921;
+		internal static global::MonoJavaBridge.MethodId _getFadeOffset4940;
 		public virtual long getFadeOffset() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getFadeOffset4921);
+				return @__env.CallLongMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._getFadeOffset4940);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getFadeOffset4921);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._getFadeOffset4940);
 		}
-		internal static global::MonoJavaBridge.MethodId _setFadeOffset4922;
+		internal static global::MonoJavaBridge.MethodId _setFadeOffset4941;
 		public virtual void setFadeOffset(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setFadeOffset4922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._setFadeOffset4941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setFadeOffset4922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._setFadeOffset4941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _addOnGestureListener4923;
+		internal static global::MonoJavaBridge.MethodId _addOnGestureListener4942;
 		public virtual void addOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._addOnGestureListener4923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._addOnGestureListener4942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._addOnGestureListener4923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._addOnGestureListener4942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeOnGestureListener4924;
+		internal static global::MonoJavaBridge.MethodId _removeOnGestureListener4943;
 		public virtual void removeOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeOnGestureListener4924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeOnGestureListener4943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeOnGestureListener4924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeOnGestureListener4943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAllOnGestureListeners4925;
+		internal static global::MonoJavaBridge.MethodId _removeAllOnGestureListeners4944;
 		public virtual void removeAllOnGestureListeners() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4925);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4944);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4925);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4944);
 		}
-		internal static global::MonoJavaBridge.MethodId _addOnGesturePerformedListener4926;
+		internal static global::MonoJavaBridge.MethodId _addOnGesturePerformedListener4945;
 		public virtual void addOnGesturePerformedListener(android.gesture.GestureOverlayView.OnGesturePerformedListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeOnGesturePerformedListener4927;
+		public void addOnGesturePerformedListener(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegate arg0)
+		{
+			addOnGesturePerformedListener((global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _removeOnGesturePerformedListener4946;
 		public virtual void removeOnGesturePerformedListener(android.gesture.GestureOverlayView.OnGesturePerformedListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAllOnGesturePerformedListeners4928;
+		public void removeOnGesturePerformedListener(global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegate arg0)
+		{
+			removeOnGesturePerformedListener((global::android.gesture.GestureOverlayView.OnGesturePerformedListenerDelegateWrapper)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _removeAllOnGesturePerformedListeners4947;
 		public virtual void removeAllOnGesturePerformedListeners() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4928);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4947);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4928);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4947);
 		}
-		internal static global::MonoJavaBridge.MethodId _addOnGesturingListener4929;
+		internal static global::MonoJavaBridge.MethodId _addOnGesturingListener4948;
 		public virtual void addOnGesturingListener(android.gesture.GestureOverlayView.OnGesturingListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._addOnGesturingListener4929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._addOnGesturingListener4948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._addOnGesturingListener4929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._addOnGesturingListener4948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeOnGesturingListener4930;
+		internal static global::MonoJavaBridge.MethodId _removeOnGesturingListener4949;
 		public virtual void removeOnGesturingListener(android.gesture.GestureOverlayView.OnGesturingListener arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeOnGesturingListener4930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeOnGesturingListener4949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeOnGesturingListener4930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeOnGesturingListener4949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _removeAllOnGesturingListeners4931;
+		internal static global::MonoJavaBridge.MethodId _removeAllOnGesturingListeners4950;
 		public virtual void removeAllOnGesturingListeners() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4931);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4950);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4931);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4950);
 		}
-		internal static global::MonoJavaBridge.MethodId _isGesturing4932;
+		internal static global::MonoJavaBridge.MethodId _isGesturing4951;
 		public virtual bool isGesturing() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isGesturing4932);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._isGesturing4951);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isGesturing4932);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._isGesturing4951);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancelClearAnimation4933;
+		internal static global::MonoJavaBridge.MethodId _cancelClearAnimation4952;
 		public virtual void cancelClearAnimation() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._cancelClearAnimation4933);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._cancelClearAnimation4952);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._cancelClearAnimation4933);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._cancelClearAnimation4952);
 		}
-		internal static global::MonoJavaBridge.MethodId _cancelGesture4934;
+		internal static global::MonoJavaBridge.MethodId _cancelGesture4953;
 		public virtual void cancelGesture() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._cancelGesture4934);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView._cancelGesture4953);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._cancelGesture4934);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._cancelGesture4953);
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4935;
+		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4954;
 		public GestureOverlayView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4936;
+		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4955;
 		public GestureOverlayView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4937;
+		internal static global::MonoJavaBridge.MethodId _GestureOverlayView4956;
 		public GestureOverlayView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureOverlayView.staticClass, global::android.gesture.GestureOverlayView._GestureOverlayView4956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		public static int GESTURE_STROKE_TYPE_SINGLE
@@ -736,54 +786,54 @@ namespace android.gesture
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.gesture.GestureOverlayView.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/gesture/GestureOverlayView"));
-			global::android.gesture.GestureOverlayView._clear4890 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "clear", "(Z)V");
-			global::android.gesture.GestureOverlayView._draw4891 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.gesture.GestureOverlayView._onDetachedFromWindow4892 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "onDetachedFromWindow", "()V");
-			global::android.gesture.GestureOverlayView._dispatchTouchEvent4893 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "dispatchTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.gesture.GestureOverlayView._setOrientation4894 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setOrientation", "(I)V");
-			global::android.gesture.GestureOverlayView._getOrientation4895 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getOrientation", "()I");
-			global::android.gesture.GestureOverlayView._getCurrentStroke4896 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getCurrentStroke", "()Ljava/util/ArrayList;");
-			global::android.gesture.GestureOverlayView._setGestureColor4897 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureColor", "(I)V");
-			global::android.gesture.GestureOverlayView._setUncertainGestureColor4898 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setUncertainGestureColor", "(I)V");
-			global::android.gesture.GestureOverlayView._getUncertainGestureColor4899 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getUncertainGestureColor", "()I");
-			global::android.gesture.GestureOverlayView._getGestureColor4900 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureColor", "()I");
-			global::android.gesture.GestureOverlayView._getGestureStrokeWidth4901 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeWidth", "()F");
-			global::android.gesture.GestureOverlayView._setGestureStrokeWidth4902 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeWidth", "(F)V");
-			global::android.gesture.GestureOverlayView._getGestureStrokeType4903 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeType", "()I");
-			global::android.gesture.GestureOverlayView._setGestureStrokeType4904 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeType", "(I)V");
-			global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4905 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeLengthThreshold", "()F");
-			global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4906 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeLengthThreshold", "(F)V");
-			global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4907 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeSquarenessTreshold", "()F");
-			global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4908 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeSquarenessTreshold", "(F)V");
-			global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4909 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeAngleThreshold", "()F");
-			global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4910 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeAngleThreshold", "(F)V");
-			global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4911 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isEventsInterceptionEnabled", "()Z");
-			global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4912 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setEventsInterceptionEnabled", "(Z)V");
-			global::android.gesture.GestureOverlayView._isFadeEnabled4913 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isFadeEnabled", "()Z");
-			global::android.gesture.GestureOverlayView._setFadeEnabled4914 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setFadeEnabled", "(Z)V");
-			global::android.gesture.GestureOverlayView._getGesture4915 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGesture", "()Landroid/gesture/Gesture;");
-			global::android.gesture.GestureOverlayView._setGesture4916 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGesture", "(Landroid/gesture/Gesture;)V");
-			global::android.gesture.GestureOverlayView._getGesturePath4917 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "()Landroid/graphics/Path;");
-			global::android.gesture.GestureOverlayView._getGesturePath4918 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "(Landroid/graphics/Path;)Landroid/graphics/Path;");
-			global::android.gesture.GestureOverlayView._isGestureVisible4919 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isGestureVisible", "()Z");
-			global::android.gesture.GestureOverlayView._setGestureVisible4920 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureVisible", "(Z)V");
-			global::android.gesture.GestureOverlayView._getFadeOffset4921 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getFadeOffset", "()J");
-			global::android.gesture.GestureOverlayView._setFadeOffset4922 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setFadeOffset", "(J)V");
-			global::android.gesture.GestureOverlayView._addOnGestureListener4923 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "addOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V");
-			global::android.gesture.GestureOverlayView._removeOnGestureListener4924 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V");
-			global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4925 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGestureListeners", "()V");
-			global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4926 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "addOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V");
-			global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4927 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V");
-			global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4928 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturePerformedListeners", "()V");
-			global::android.gesture.GestureOverlayView._addOnGesturingListener4929 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "addOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V");
-			global::android.gesture.GestureOverlayView._removeOnGesturingListener4930 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V");
-			global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4931 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturingListeners", "()V");
-			global::android.gesture.GestureOverlayView._isGesturing4932 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isGesturing", "()Z");
-			global::android.gesture.GestureOverlayView._cancelClearAnimation4933 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "cancelClearAnimation", "()V");
-			global::android.gesture.GestureOverlayView._cancelGesture4934 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "cancelGesture", "()V");
-			global::android.gesture.GestureOverlayView._GestureOverlayView4935 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.gesture.GestureOverlayView._GestureOverlayView4936 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.gesture.GestureOverlayView._GestureOverlayView4937 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.gesture.GestureOverlayView._clear4909 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "clear", "(Z)V");
+			global::android.gesture.GestureOverlayView._draw4910 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.gesture.GestureOverlayView._onDetachedFromWindow4911 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "onDetachedFromWindow", "()V");
+			global::android.gesture.GestureOverlayView._dispatchTouchEvent4912 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "dispatchTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.gesture.GestureOverlayView._setOrientation4913 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setOrientation", "(I)V");
+			global::android.gesture.GestureOverlayView._getOrientation4914 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getOrientation", "()I");
+			global::android.gesture.GestureOverlayView._getCurrentStroke4915 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getCurrentStroke", "()Ljava/util/ArrayList;");
+			global::android.gesture.GestureOverlayView._setGestureColor4916 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureColor", "(I)V");
+			global::android.gesture.GestureOverlayView._setUncertainGestureColor4917 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setUncertainGestureColor", "(I)V");
+			global::android.gesture.GestureOverlayView._getUncertainGestureColor4918 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getUncertainGestureColor", "()I");
+			global::android.gesture.GestureOverlayView._getGestureColor4919 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureColor", "()I");
+			global::android.gesture.GestureOverlayView._getGestureStrokeWidth4920 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeWidth", "()F");
+			global::android.gesture.GestureOverlayView._setGestureStrokeWidth4921 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeWidth", "(F)V");
+			global::android.gesture.GestureOverlayView._getGestureStrokeType4922 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeType", "()I");
+			global::android.gesture.GestureOverlayView._setGestureStrokeType4923 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeType", "(I)V");
+			global::android.gesture.GestureOverlayView._getGestureStrokeLengthThreshold4924 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeLengthThreshold", "()F");
+			global::android.gesture.GestureOverlayView._setGestureStrokeLengthThreshold4925 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeLengthThreshold", "(F)V");
+			global::android.gesture.GestureOverlayView._getGestureStrokeSquarenessTreshold4926 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeSquarenessTreshold", "()F");
+			global::android.gesture.GestureOverlayView._setGestureStrokeSquarenessTreshold4927 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeSquarenessTreshold", "(F)V");
+			global::android.gesture.GestureOverlayView._getGestureStrokeAngleThreshold4928 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGestureStrokeAngleThreshold", "()F");
+			global::android.gesture.GestureOverlayView._setGestureStrokeAngleThreshold4929 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureStrokeAngleThreshold", "(F)V");
+			global::android.gesture.GestureOverlayView._isEventsInterceptionEnabled4930 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isEventsInterceptionEnabled", "()Z");
+			global::android.gesture.GestureOverlayView._setEventsInterceptionEnabled4931 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setEventsInterceptionEnabled", "(Z)V");
+			global::android.gesture.GestureOverlayView._isFadeEnabled4932 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isFadeEnabled", "()Z");
+			global::android.gesture.GestureOverlayView._setFadeEnabled4933 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setFadeEnabled", "(Z)V");
+			global::android.gesture.GestureOverlayView._getGesture4934 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGesture", "()Landroid/gesture/Gesture;");
+			global::android.gesture.GestureOverlayView._setGesture4935 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGesture", "(Landroid/gesture/Gesture;)V");
+			global::android.gesture.GestureOverlayView._getGesturePath4936 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "()Landroid/graphics/Path;");
+			global::android.gesture.GestureOverlayView._getGesturePath4937 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getGesturePath", "(Landroid/graphics/Path;)Landroid/graphics/Path;");
+			global::android.gesture.GestureOverlayView._isGestureVisible4938 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isGestureVisible", "()Z");
+			global::android.gesture.GestureOverlayView._setGestureVisible4939 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setGestureVisible", "(Z)V");
+			global::android.gesture.GestureOverlayView._getFadeOffset4940 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "getFadeOffset", "()J");
+			global::android.gesture.GestureOverlayView._setFadeOffset4941 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "setFadeOffset", "(J)V");
+			global::android.gesture.GestureOverlayView._addOnGestureListener4942 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "addOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V");
+			global::android.gesture.GestureOverlayView._removeOnGestureListener4943 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeOnGestureListener", "(Landroid/gesture/GestureOverlayView$OnGestureListener;)V");
+			global::android.gesture.GestureOverlayView._removeAllOnGestureListeners4944 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGestureListeners", "()V");
+			global::android.gesture.GestureOverlayView._addOnGesturePerformedListener4945 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "addOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V");
+			global::android.gesture.GestureOverlayView._removeOnGesturePerformedListener4946 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturePerformedListener", "(Landroid/gesture/GestureOverlayView$OnGesturePerformedListener;)V");
+			global::android.gesture.GestureOverlayView._removeAllOnGesturePerformedListeners4947 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturePerformedListeners", "()V");
+			global::android.gesture.GestureOverlayView._addOnGesturingListener4948 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "addOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V");
+			global::android.gesture.GestureOverlayView._removeOnGesturingListener4949 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeOnGesturingListener", "(Landroid/gesture/GestureOverlayView$OnGesturingListener;)V");
+			global::android.gesture.GestureOverlayView._removeAllOnGesturingListeners4950 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "removeAllOnGesturingListeners", "()V");
+			global::android.gesture.GestureOverlayView._isGesturing4951 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "isGesturing", "()Z");
+			global::android.gesture.GestureOverlayView._cancelClearAnimation4952 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "cancelClearAnimation", "()V");
+			global::android.gesture.GestureOverlayView._cancelGesture4953 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "cancelGesture", "()V");
+			global::android.gesture.GestureOverlayView._GestureOverlayView4954 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.gesture.GestureOverlayView._GestureOverlayView4955 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.gesture.GestureOverlayView._GestureOverlayView4956 = @__env.GetMethodIDNoThrow(global::android.gesture.GestureOverlayView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

@@ -6,7 +6,7 @@ namespace java.lang.reflect
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.lang.reflect.Type))]
-	public sealed partial class Type_ : java.lang.Object, Type
+	internal sealed partial class Type_ : java.lang.Object, Type
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static Type_()

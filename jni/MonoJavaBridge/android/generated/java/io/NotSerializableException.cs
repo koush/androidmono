@@ -11,26 +11,26 @@ namespace java.io
 		protected NotSerializableException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NotSerializableException19025;
+		internal static global::MonoJavaBridge.MethodId _NotSerializableException19143;
 		public NotSerializableException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _NotSerializableException19026;
+		internal static global::MonoJavaBridge.MethodId _NotSerializableException19144;
 		public NotSerializableException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19026);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19144);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.NotSerializableException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/NotSerializableException"));
-			global::java.io.NotSerializableException._NotSerializableException19025 = @__env.GetMethodIDNoThrow(global::java.io.NotSerializableException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.NotSerializableException._NotSerializableException19026 = @__env.GetMethodIDNoThrow(global::java.io.NotSerializableException.staticClass, "<init>", "()V");
+			global::java.io.NotSerializableException._NotSerializableException19143 = @__env.GetMethodIDNoThrow(global::java.io.NotSerializableException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.io.NotSerializableException._NotSerializableException19144 = @__env.GetMethodIDNoThrow(global::java.io.NotSerializableException.staticClass, "<init>", "()V");
 		}
 	}
 }

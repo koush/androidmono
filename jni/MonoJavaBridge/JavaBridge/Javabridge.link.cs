@@ -217,6 +217,12 @@ namespace MonoJavaBridge
             return ret;
         }
         
+        public static void SetGCHandle(JNIEnv env, IJavaObject obj)
+        {
+            var handle = GCHandle.Alloc(obj, GCHandleType.Normal);
+            env.CallVoidMethod(obj.JvmHandle, mySetGCHandle, ConvertToValue((long)GCHandle.ToIntPtr(handle)));
+        }
+        
         static Expression MarshalCLRHandle(ParameterExpression obj, Type type)
         {
             MethodInfo clrHandleToObject = myCLRHandleToObject.MakeGenericMethod(type);
@@ -364,8 +370,12 @@ namespace MonoJavaBridge
             Type type = FindType(classCanonicalName);
             if (type == null)
             {
-                Console.WriteLine("Could not find clr type.");
-                return;
+                type = FindType(classCanonicalName.Replace('_', '+'));
+                if (type == null)
+                {
+                    env.ThrowNew(myJavaExceptionClass, "Unable to find class: " + classCanonicalName);
+                    return;
+                }
             }
             
             //Console.WriteLine("Found clr type: {0}", type);

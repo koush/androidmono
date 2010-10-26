@@ -11,119 +11,119 @@ namespace android.net
 		protected DhcpInfo(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString7609;
+		internal static global::MonoJavaBridge.MethodId _toString7648;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.DhcpInfo._toString7609)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.net.DhcpInfo._toString7648)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._toString7609)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._toString7648)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel7610;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel7649;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.net.DhcpInfo._writeToParcel7610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.net.DhcpInfo._writeToParcel7649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._writeToParcel7610, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._writeToParcel7649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents7611;
+		internal static global::MonoJavaBridge.MethodId _describeContents7650;
 		public virtual int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.net.DhcpInfo._describeContents7611);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.net.DhcpInfo._describeContents7650);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._describeContents7611);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._describeContents7650);
 		}
-		internal static global::MonoJavaBridge.MethodId _DhcpInfo7612;
+		internal static global::MonoJavaBridge.MethodId _DhcpInfo7651;
 		public DhcpInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._DhcpInfo7612);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._DhcpInfo7651);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _ipAddress7613;
+		internal static global::MonoJavaBridge.FieldId _ipAddress7652;
 		public int ipAddress
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _ipAddress7613);
+				return @__env.GetIntField(this.JvmHandle, _ipAddress7652);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _gateway7614;
+		internal static global::MonoJavaBridge.FieldId _gateway7653;
 		public int gateway
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _gateway7614);
+				return @__env.GetIntField(this.JvmHandle, _gateway7653);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _netmask7615;
+		internal static global::MonoJavaBridge.FieldId _netmask7654;
 		public int netmask
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _netmask7615);
+				return @__env.GetIntField(this.JvmHandle, _netmask7654);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _dns17616;
+		internal static global::MonoJavaBridge.FieldId _dns17655;
 		public int dns1
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _dns17616);
+				return @__env.GetIntField(this.JvmHandle, _dns17655);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _dns27617;
+		internal static global::MonoJavaBridge.FieldId _dns27656;
 		public int dns2
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _dns27617);
+				return @__env.GetIntField(this.JvmHandle, _dns27656);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _serverAddress7618;
+		internal static global::MonoJavaBridge.FieldId _serverAddress7657;
 		public int serverAddress
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _serverAddress7618);
+				return @__env.GetIntField(this.JvmHandle, _serverAddress7657);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _leaseDuration7619;
+		internal static global::MonoJavaBridge.FieldId _leaseDuration7658;
 		public int leaseDuration
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _leaseDuration7619);
+				return @__env.GetIntField(this.JvmHandle, _leaseDuration7658);
 			}
 			set
 			{
@@ -133,17 +133,17 @@ namespace android.net
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.net.DhcpInfo.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/net/DhcpInfo"));
-			global::android.net.DhcpInfo._toString7609 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.net.DhcpInfo._writeToParcel7610 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.net.DhcpInfo._describeContents7611 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "describeContents", "()I");
-			global::android.net.DhcpInfo._DhcpInfo7612 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "<init>", "()V");
-			global::android.net.DhcpInfo._ipAddress7613 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "ipAddress", "I");
-			global::android.net.DhcpInfo._gateway7614 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "gateway", "I");
-			global::android.net.DhcpInfo._netmask7615 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "netmask", "I");
-			global::android.net.DhcpInfo._dns17616 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "dns1", "I");
-			global::android.net.DhcpInfo._dns27617 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "dns2", "I");
-			global::android.net.DhcpInfo._serverAddress7618 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "serverAddress", "I");
-			global::android.net.DhcpInfo._leaseDuration7619 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "leaseDuration", "I");
+			global::android.net.DhcpInfo._toString7648 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.net.DhcpInfo._writeToParcel7649 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.net.DhcpInfo._describeContents7650 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "describeContents", "()I");
+			global::android.net.DhcpInfo._DhcpInfo7651 = @__env.GetMethodIDNoThrow(global::android.net.DhcpInfo.staticClass, "<init>", "()V");
+			global::android.net.DhcpInfo._ipAddress7652 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "ipAddress", "I");
+			global::android.net.DhcpInfo._gateway7653 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "gateway", "I");
+			global::android.net.DhcpInfo._netmask7654 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "netmask", "I");
+			global::android.net.DhcpInfo._dns17655 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "dns1", "I");
+			global::android.net.DhcpInfo._dns27656 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "dns2", "I");
+			global::android.net.DhcpInfo._serverAddress7657 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "serverAddress", "I");
+			global::android.net.DhcpInfo._leaseDuration7658 = @__env.GetFieldIDNoThrow(global::android.net.DhcpInfo.staticClass, "leaseDuration", "I");
 		}
 	}
 }

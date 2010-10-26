@@ -11,50 +11,50 @@ namespace java.io
 		protected FileOutputStream(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _finalize18913;
+		internal static global::MonoJavaBridge.MethodId _finalize19031;
 		protected override void finalize() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._finalize18913);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._finalize19031);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._finalize18913);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._finalize19031);
 		}
-		internal static global::MonoJavaBridge.MethodId _write18914;
+		internal static global::MonoJavaBridge.MethodId _write19032;
 		public override void write(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._write18914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._write19032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write18914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write19032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write18915;
+		internal static global::MonoJavaBridge.MethodId _write19033;
 		public override void write(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._write18915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._write19033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write18915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write19033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _write18916;
+		internal static global::MonoJavaBridge.MethodId _write19034;
 		public override void write(byte[] arg0, int arg1, int arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._write18916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._write19034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write18916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write19034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _close18917;
+		internal static global::MonoJavaBridge.MethodId _close19035;
 		public override void close() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._close18917);
+				@__env.CallVoidMethod(this.JvmHandle, global::java.io.FileOutputStream._close19035);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._close18917);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._close19035);
 		}
 		public new global::java.io.FileDescriptor FD
 		{
@@ -63,14 +63,14 @@ namespace java.io
 				return getFD();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getFD18918;
+		internal static global::MonoJavaBridge.MethodId _getFD19036;
 		public virtual global::java.io.FileDescriptor getFD() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.FileOutputStream._getFD18918)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallObjectMethod(this.JvmHandle, global::java.io.FileOutputStream._getFD19036)) as java.io.FileDescriptor;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._getFD18918)) as java.io.FileDescriptor;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.io.FileDescriptor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._getFD19036)) as java.io.FileDescriptor;
 		}
 		public new global::java.nio.channels.FileChannel Channel
 		{
@@ -79,66 +79,66 @@ namespace java.io
 				return getChannel();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getChannel18919;
+		internal static global::MonoJavaBridge.MethodId _getChannel19037;
 		public virtual global::java.nio.channels.FileChannel getChannel() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.FileOutputStream._getChannel18919)) as java.nio.channels.FileChannel;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.io.FileOutputStream._getChannel19037)) as java.nio.channels.FileChannel;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._getChannel18919)) as java.nio.channels.FileChannel;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._getChannel19037)) as java.nio.channels.FileChannel;
 		}
-		internal static global::MonoJavaBridge.MethodId _FileOutputStream18920;
+		internal static global::MonoJavaBridge.MethodId _FileOutputStream19038;
 		public FileOutputStream(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream18920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream19038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FileOutputStream18921;
+		internal static global::MonoJavaBridge.MethodId _FileOutputStream19039;
 		public FileOutputStream(java.lang.String arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream18921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream19039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FileOutputStream18922;
+		internal static global::MonoJavaBridge.MethodId _FileOutputStream19040;
 		public FileOutputStream(java.io.File arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream18922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream19040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FileOutputStream18923;
+		internal static global::MonoJavaBridge.MethodId _FileOutputStream19041;
 		public FileOutputStream(java.io.File arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream18923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream19041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _FileOutputStream18924;
+		internal static global::MonoJavaBridge.MethodId _FileOutputStream19042;
 		public FileOutputStream(java.io.FileDescriptor arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream18924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._FileOutputStream19042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.io.FileOutputStream.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/io/FileOutputStream"));
-			global::java.io.FileOutputStream._finalize18913 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "finalize", "()V");
-			global::java.io.FileOutputStream._write18914 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "write", "(I)V");
-			global::java.io.FileOutputStream._write18915 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "write", "([B)V");
-			global::java.io.FileOutputStream._write18916 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "write", "([BII)V");
-			global::java.io.FileOutputStream._close18917 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "close", "()V");
-			global::java.io.FileOutputStream._getFD18918 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "getFD", "()Ljava/io/FileDescriptor;");
-			global::java.io.FileOutputStream._getChannel18919 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "getChannel", "()Ljava/nio/channels/FileChannel;");
-			global::java.io.FileOutputStream._FileOutputStream18920 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.FileOutputStream._FileOutputStream18921 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/lang/String;Z)V");
-			global::java.io.FileOutputStream._FileOutputStream18922 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/File;)V");
-			global::java.io.FileOutputStream._FileOutputStream18923 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/File;Z)V");
-			global::java.io.FileOutputStream._FileOutputStream18924 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V");
+			global::java.io.FileOutputStream._finalize19031 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "finalize", "()V");
+			global::java.io.FileOutputStream._write19032 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "write", "(I)V");
+			global::java.io.FileOutputStream._write19033 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "write", "([B)V");
+			global::java.io.FileOutputStream._write19034 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "write", "([BII)V");
+			global::java.io.FileOutputStream._close19035 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "close", "()V");
+			global::java.io.FileOutputStream._getFD19036 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "getFD", "()Ljava/io/FileDescriptor;");
+			global::java.io.FileOutputStream._getChannel19037 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "getChannel", "()Ljava/nio/channels/FileChannel;");
+			global::java.io.FileOutputStream._FileOutputStream19038 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.io.FileOutputStream._FileOutputStream19039 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/lang/String;Z)V");
+			global::java.io.FileOutputStream._FileOutputStream19040 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/File;)V");
+			global::java.io.FileOutputStream._FileOutputStream19041 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/File;Z)V");
+			global::java.io.FileOutputStream._FileOutputStream19042 = @__env.GetMethodIDNoThrow(global::java.io.FileOutputStream.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V");
 		}
 	}
 }

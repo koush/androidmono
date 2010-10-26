@@ -49,7 +49,7 @@ namespace org.apache.http.client.@params
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::org.apache.http.client.@params.CookiePolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/@params/CookiePolicy"));
+			global::org.apache.http.client.@params.CookiePolicy.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/client/params/CookiePolicy"));
 		}
 	}
 }

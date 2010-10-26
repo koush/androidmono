@@ -22,126 +22,126 @@ namespace android.os
 			protected WakeLock(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _finalize10083;
+			internal static global::MonoJavaBridge.MethodId _finalize10129;
 			protected override void finalize() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._finalize10083);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._finalize10129);
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._finalize10083);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._finalize10129);
 			}
-			internal static global::MonoJavaBridge.MethodId _toString10084;
+			internal static global::MonoJavaBridge.MethodId _toString10130;
 			public override global::java.lang.String toString() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._toString10084)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._toString10130)) as java.lang.String;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._toString10084)) as java.lang.String;
+					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._toString10130)) as java.lang.String;
 			}
-			internal static global::MonoJavaBridge.MethodId _acquire10085;
+			internal static global::MonoJavaBridge.MethodId _acquire10131;
 			public virtual void acquire() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._acquire10085);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._acquire10131);
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._acquire10085);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._acquire10131);
 			}
-			internal static global::MonoJavaBridge.MethodId _acquire10086;
+			internal static global::MonoJavaBridge.MethodId _acquire10132;
 			public virtual void acquire(long arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._acquire10086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._acquire10132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._acquire10086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._acquire10132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _release10087;
+			internal static global::MonoJavaBridge.MethodId _release10133;
 			public virtual void release() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._release10087);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._release10133);
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._release10087);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._release10133);
 			}
-			internal static global::MonoJavaBridge.MethodId _setReferenceCounted10088;
+			internal static global::MonoJavaBridge.MethodId _setReferenceCounted10134;
 			public virtual void setReferenceCounted(bool arg0) 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._setReferenceCounted10088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._setReferenceCounted10134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._setReferenceCounted10088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._setReferenceCounted10134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _isHeld10089;
+			internal static global::MonoJavaBridge.MethodId _isHeld10135;
 			public virtual bool isHeld() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._isHeld10089);
+					return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock._isHeld10135);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._isHeld10089);
+					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._isHeld10135);
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.os.PowerManager.WakeLock.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/PowerManager$WakeLock"));
-				global::android.os.PowerManager.WakeLock._finalize10083 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "finalize", "()V");
-				global::android.os.PowerManager.WakeLock._toString10084 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "toString", "()Ljava/lang/String;");
-				global::android.os.PowerManager.WakeLock._acquire10085 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "acquire", "()V");
-				global::android.os.PowerManager.WakeLock._acquire10086 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "acquire", "(J)V");
-				global::android.os.PowerManager.WakeLock._release10087 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "release", "()V");
-				global::android.os.PowerManager.WakeLock._setReferenceCounted10088 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "setReferenceCounted", "(Z)V");
-				global::android.os.PowerManager.WakeLock._isHeld10089 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "isHeld", "()Z");
+				global::android.os.PowerManager.WakeLock._finalize10129 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "finalize", "()V");
+				global::android.os.PowerManager.WakeLock._toString10130 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "toString", "()Ljava/lang/String;");
+				global::android.os.PowerManager.WakeLock._acquire10131 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "acquire", "()V");
+				global::android.os.PowerManager.WakeLock._acquire10132 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "acquire", "(J)V");
+				global::android.os.PowerManager.WakeLock._release10133 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "release", "()V");
+				global::android.os.PowerManager.WakeLock._setReferenceCounted10134 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "setReferenceCounted", "(Z)V");
+				global::android.os.PowerManager.WakeLock._isHeld10135 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.WakeLock.staticClass, "isHeld", "()Z");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _newWakeLock10090;
+		internal static global::MonoJavaBridge.MethodId _newWakeLock10136;
 		public virtual global::android.os.PowerManager.WakeLock newWakeLock(int arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.PowerManager._newWakeLock10090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.PowerManager.WakeLock;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.os.PowerManager._newWakeLock10136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.PowerManager.WakeLock;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._newWakeLock10090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.PowerManager.WakeLock;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._newWakeLock10136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.PowerManager.WakeLock;
 		}
-		internal static global::MonoJavaBridge.MethodId _userActivity10091;
+		internal static global::MonoJavaBridge.MethodId _userActivity10137;
 		public virtual void userActivity(long arg0, bool arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager._userActivity10091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager._userActivity10137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._userActivity10091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._userActivity10137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _goToSleep10092;
+		internal static global::MonoJavaBridge.MethodId _goToSleep10138;
 		public virtual void goToSleep(long arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager._goToSleep10092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager._goToSleep10138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._goToSleep10092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._goToSleep10138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isScreenOn10093;
+		internal static global::MonoJavaBridge.MethodId _isScreenOn10139;
 		public virtual bool isScreenOn() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.PowerManager._isScreenOn10093);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.PowerManager._isScreenOn10139);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._isScreenOn10093);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._isScreenOn10139);
 		}
-		internal static global::MonoJavaBridge.MethodId _reboot10094;
+		internal static global::MonoJavaBridge.MethodId _reboot10140;
 		public virtual void reboot(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager._reboot10094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.os.PowerManager._reboot10140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._reboot10094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._reboot10140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public static int PARTIAL_WAKE_LOCK
 		{
@@ -189,11 +189,11 @@ namespace android.os
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.os.PowerManager.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/os/PowerManager"));
-			global::android.os.PowerManager._newWakeLock10090 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "newWakeLock", "(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;");
-			global::android.os.PowerManager._userActivity10091 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "userActivity", "(JZ)V");
-			global::android.os.PowerManager._goToSleep10092 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "goToSleep", "(J)V");
-			global::android.os.PowerManager._isScreenOn10093 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "isScreenOn", "()Z");
-			global::android.os.PowerManager._reboot10094 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "reboot", "(Ljava/lang/String;)V");
+			global::android.os.PowerManager._newWakeLock10136 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "newWakeLock", "(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;");
+			global::android.os.PowerManager._userActivity10137 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "userActivity", "(JZ)V");
+			global::android.os.PowerManager._goToSleep10138 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "goToSleep", "(J)V");
+			global::android.os.PowerManager._isScreenOn10139 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "isScreenOn", "()Z");
+			global::android.os.PowerManager._reboot10140 = @__env.GetMethodIDNoThrow(global::android.os.PowerManager.staticClass, "reboot", "(Ljava/lang/String;)V");
 		}
 	}
 }

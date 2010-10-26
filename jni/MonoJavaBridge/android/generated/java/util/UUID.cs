@@ -11,104 +11,104 @@ namespace java.util
 		internal UUID(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals26822;
+		internal static global::MonoJavaBridge.MethodId _equals26940;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.UUID._equals26822, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.UUID._equals26940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._equals26822, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._equals26940, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toString26823;
+		internal static global::MonoJavaBridge.MethodId _toString26941;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.UUID._toString26823)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.UUID._toString26941)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._toString26823)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._toString26941)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode26824;
+		internal static global::MonoJavaBridge.MethodId _hashCode26942;
 		public sealed override int hashCode() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._hashCode26824);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._hashCode26942);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._hashCode26824);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._hashCode26942);
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo26825;
+		internal static global::MonoJavaBridge.MethodId _compareTo26943;
 		public int compareTo(java.util.UUID arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._compareTo26825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._compareTo26943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo26825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo26943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo26826;
+		internal static global::MonoJavaBridge.MethodId _compareTo26944;
 		public int compareTo(java.lang.Object arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._compareTo26826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._compareTo26944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo26826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo26944, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _timestamp26827;
+		internal static global::MonoJavaBridge.MethodId _timestamp26945;
 		public long timestamp() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._timestamp26827);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._timestamp26945);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._timestamp26827);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._timestamp26945);
 		}
-		internal static global::MonoJavaBridge.MethodId _variant26828;
+		internal static global::MonoJavaBridge.MethodId _variant26946;
 		public int variant() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._variant26828);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._variant26946);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._variant26828);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._variant26946);
 		}
-		internal static global::MonoJavaBridge.MethodId _version26829;
+		internal static global::MonoJavaBridge.MethodId _version26947;
 		public int version() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._version26829);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._version26947);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._version26829);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._version26947);
 		}
-		internal static global::MonoJavaBridge.MethodId _node26830;
+		internal static global::MonoJavaBridge.MethodId _node26948;
 		public long node() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._node26830);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._node26948);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._node26830);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._node26948);
 		}
-		internal static global::MonoJavaBridge.MethodId _randomUUID26831;
+		internal static global::MonoJavaBridge.MethodId _randomUUID26949;
 		public static global::java.util.UUID randomUUID() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._randomUUID26831)) as java.util.UUID;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._randomUUID26949)) as java.util.UUID;
 		}
-		internal static global::MonoJavaBridge.MethodId _nameUUIDFromBytes26832;
+		internal static global::MonoJavaBridge.MethodId _nameUUIDFromBytes26950;
 		public static global::java.util.UUID nameUUIDFromBytes(byte[] arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._nameUUIDFromBytes26832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._nameUUIDFromBytes26950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
 		}
-		internal static global::MonoJavaBridge.MethodId _fromString26833;
+		internal static global::MonoJavaBridge.MethodId _fromString26951;
 		public static global::java.util.UUID fromString(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._fromString26833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
+			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.UUID>(@__env.CallStaticObjectMethod(java.util.UUID.staticClass, global::java.util.UUID._fromString26951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.UUID;
 		}
 		public new long LeastSignificantBits
 		{
@@ -117,14 +117,14 @@ namespace java.util
 				return getLeastSignificantBits();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLeastSignificantBits26834;
+		internal static global::MonoJavaBridge.MethodId _getLeastSignificantBits26952;
 		public long getLeastSignificantBits() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._getLeastSignificantBits26834);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._getLeastSignificantBits26952);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._getLeastSignificantBits26834);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._getLeastSignificantBits26952);
 		}
 		public new long MostSignificantBits
 		{
@@ -133,51 +133,51 @@ namespace java.util
 				return getMostSignificantBits();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMostSignificantBits26835;
+		internal static global::MonoJavaBridge.MethodId _getMostSignificantBits26953;
 		public long getMostSignificantBits() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._getMostSignificantBits26835);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.UUID._getMostSignificantBits26953);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._getMostSignificantBits26835);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._getMostSignificantBits26953);
 		}
-		internal static global::MonoJavaBridge.MethodId _clockSequence26836;
+		internal static global::MonoJavaBridge.MethodId _clockSequence26954;
 		public int clockSequence() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._clockSequence26836);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.UUID._clockSequence26954);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._clockSequence26836);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.UUID.staticClass, global::java.util.UUID._clockSequence26954);
 		}
-		internal static global::MonoJavaBridge.MethodId _UUID26837;
+		internal static global::MonoJavaBridge.MethodId _UUID26955;
 		public UUID(long arg0, long arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.UUID.staticClass, global::java.util.UUID._UUID26837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.UUID.staticClass, global::java.util.UUID._UUID26955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.UUID.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/UUID"));
-			global::java.util.UUID._equals26822 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.UUID._toString26823 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.util.UUID._hashCode26824 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "hashCode", "()I");
-			global::java.util.UUID._compareTo26825 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "compareTo", "(Ljava/util/UUID;)I");
-			global::java.util.UUID._compareTo26826 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.util.UUID._timestamp26827 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "timestamp", "()J");
-			global::java.util.UUID._variant26828 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "variant", "()I");
-			global::java.util.UUID._version26829 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "version", "()I");
-			global::java.util.UUID._node26830 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "node", "()J");
-			global::java.util.UUID._randomUUID26831 = @__env.GetStaticMethodIDNoThrow(global::java.util.UUID.staticClass, "randomUUID", "()Ljava/util/UUID;");
-			global::java.util.UUID._nameUUIDFromBytes26832 = @__env.GetStaticMethodIDNoThrow(global::java.util.UUID.staticClass, "nameUUIDFromBytes", "([B)Ljava/util/UUID;");
-			global::java.util.UUID._fromString26833 = @__env.GetStaticMethodIDNoThrow(global::java.util.UUID.staticClass, "fromString", "(Ljava/lang/String;)Ljava/util/UUID;");
-			global::java.util.UUID._getLeastSignificantBits26834 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "getLeastSignificantBits", "()J");
-			global::java.util.UUID._getMostSignificantBits26835 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "getMostSignificantBits", "()J");
-			global::java.util.UUID._clockSequence26836 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "clockSequence", "()I");
-			global::java.util.UUID._UUID26837 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "<init>", "(JJ)V");
+			global::java.util.UUID._equals26940 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.UUID._toString26941 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.UUID._hashCode26942 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "hashCode", "()I");
+			global::java.util.UUID._compareTo26943 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "compareTo", "(Ljava/util/UUID;)I");
+			global::java.util.UUID._compareTo26944 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.util.UUID._timestamp26945 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "timestamp", "()J");
+			global::java.util.UUID._variant26946 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "variant", "()I");
+			global::java.util.UUID._version26947 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "version", "()I");
+			global::java.util.UUID._node26948 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "node", "()J");
+			global::java.util.UUID._randomUUID26949 = @__env.GetStaticMethodIDNoThrow(global::java.util.UUID.staticClass, "randomUUID", "()Ljava/util/UUID;");
+			global::java.util.UUID._nameUUIDFromBytes26950 = @__env.GetStaticMethodIDNoThrow(global::java.util.UUID.staticClass, "nameUUIDFromBytes", "([B)Ljava/util/UUID;");
+			global::java.util.UUID._fromString26951 = @__env.GetStaticMethodIDNoThrow(global::java.util.UUID.staticClass, "fromString", "(Ljava/lang/String;)Ljava/util/UUID;");
+			global::java.util.UUID._getLeastSignificantBits26952 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "getLeastSignificantBits", "()J");
+			global::java.util.UUID._getMostSignificantBits26953 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "getMostSignificantBits", "()J");
+			global::java.util.UUID._clockSequence26954 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "clockSequence", "()I");
+			global::java.util.UUID._UUID26955 = @__env.GetMethodIDNoThrow(global::java.util.UUID.staticClass, "<init>", "(JJ)V");
 		}
 	}
 }

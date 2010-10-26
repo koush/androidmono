@@ -8,7 +8,7 @@ namespace java.util.prefs
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::java.util.prefs.NodeChangeListener))]
-	public sealed partial class NodeChangeListener_ : java.lang.Object, NodeChangeListener
+	internal sealed partial class NodeChangeListener_ : java.lang.Object, NodeChangeListener
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static NodeChangeListener_()
@@ -18,30 +18,30 @@ namespace java.util.prefs
 		internal NodeChangeListener_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _childAdded28061;
+		internal static global::MonoJavaBridge.MethodId _childAdded28179;
 		 void java.util.prefs.NodeChangeListener.childAdded(java.util.prefs.NodeChangeEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childAdded28061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childAdded28179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_.staticClass, global::java.util.prefs.NodeChangeListener_._childAdded28061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_.staticClass, global::java.util.prefs.NodeChangeListener_._childAdded28179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _childRemoved28062;
+		internal static global::MonoJavaBridge.MethodId _childRemoved28180;
 		 void java.util.prefs.NodeChangeListener.childRemoved(java.util.prefs.NodeChangeEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childRemoved28062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_._childRemoved28180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_.staticClass, global::java.util.prefs.NodeChangeListener_._childRemoved28062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_.staticClass, global::java.util.prefs.NodeChangeListener_._childRemoved28180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.prefs.NodeChangeListener_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/prefs/NodeChangeListener"));
-			global::java.util.prefs.NodeChangeListener_._childAdded28061 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V");
-			global::java.util.prefs.NodeChangeListener_._childRemoved28062 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V");
+			global::java.util.prefs.NodeChangeListener_._childAdded28179 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V");
+			global::java.util.prefs.NodeChangeListener_._childRemoved28180 = @__env.GetMethodIDNoThrow(global::java.util.prefs.NodeChangeListener_.staticClass, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V");
 		}
 	}
 }

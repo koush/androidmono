@@ -11,50 +11,50 @@ namespace android.view
 		protected WindowManager_LayoutParams(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _toString15303;
+		internal static global::MonoJavaBridge.MethodId _toString15383;
 		public override global::java.lang.String toString() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._toString15303)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._toString15383)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._toString15303)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._toString15383)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _debug15304;
+		internal static global::MonoJavaBridge.MethodId _debug15384;
 		public virtual global::java.lang.String debug(java.lang.String arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._debug15304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._debug15384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._debug15304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._debug15384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeToParcel15305;
+		internal static global::MonoJavaBridge.MethodId _writeToParcel15385;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._writeToParcel15305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._writeToParcel15385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._writeToParcel15305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._writeToParcel15385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _describeContents15306;
+		internal static global::MonoJavaBridge.MethodId _describeContents15386;
 		public virtual int describeContents() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._describeContents15306);
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._describeContents15386);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._describeContents15306);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._describeContents15386);
 		}
-		internal static global::MonoJavaBridge.MethodId _setTitle15307;
+		internal static global::MonoJavaBridge.MethodId _setTitle15387;
 		public virtual void setTitle(java.lang.CharSequence arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._setTitle15307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._setTitle15387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._setTitle15307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._setTitle15387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public void setTitle(string arg0)
 		{
@@ -71,134 +71,134 @@ namespace android.view
 				setTitle((global::java.lang.CharSequence)(global::java.lang.String)value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getTitle15308;
+		internal static global::MonoJavaBridge.MethodId _getTitle15388;
 		public virtual global::java.lang.CharSequence getTitle() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._getTitle15308)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._getTitle15388)) as java.lang.CharSequence;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._getTitle15308)) as java.lang.CharSequence;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._getTitle15388)) as java.lang.CharSequence;
 		}
-		internal static global::MonoJavaBridge.MethodId _mayUseInputMethod15309;
+		internal static global::MonoJavaBridge.MethodId _mayUseInputMethod15389;
 		public static bool mayUseInputMethod(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._mayUseInputMethod15309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			return @__env.CallStaticBooleanMethod(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._mayUseInputMethod15389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _copyFrom15310;
+		internal static global::MonoJavaBridge.MethodId _copyFrom15390;
 		public virtual int copyFrom(android.view.WindowManager_LayoutParams arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._copyFrom15310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams._copyFrom15390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._copyFrom15310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._copyFrom15390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15311;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15391;
 		public WindowManager_LayoutParams(int arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15312;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15392;
 		public WindowManager_LayoutParams(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15313;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15393;
 		public WindowManager_LayoutParams(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15314;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15394;
 		public WindowManager_LayoutParams()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15314);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15394);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15315;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15395;
 		public WindowManager_LayoutParams(int arg0, int arg1, int arg2, int arg3, int arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15316;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15396;
 		public WindowManager_LayoutParams(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15317;
+		internal static global::MonoJavaBridge.MethodId _WindowManager_LayoutParams15397;
 		public WindowManager_LayoutParams(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _x15318;
+		internal static global::MonoJavaBridge.FieldId _x15398;
 		public int x
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _x15318);
+				return @__env.GetIntField(this.JvmHandle, _x15398);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _y15319;
+		internal static global::MonoJavaBridge.FieldId _y15399;
 		public int y
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _y15319);
+				return @__env.GetIntField(this.JvmHandle, _y15399);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _horizontalWeight15320;
+		internal static global::MonoJavaBridge.FieldId _horizontalWeight15400;
 		public float horizontalWeight
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _horizontalWeight15320);
+				return @__env.GetFloatField(this.JvmHandle, _horizontalWeight15400);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _verticalWeight15321;
+		internal static global::MonoJavaBridge.FieldId _verticalWeight15401;
 		public float verticalWeight
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _verticalWeight15321);
+				return @__env.GetFloatField(this.JvmHandle, _verticalWeight15401);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _type15322;
+		internal static global::MonoJavaBridge.FieldId _type15402;
 		public int type
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _type15322);
+				return @__env.GetIntField(this.JvmHandle, _type15402);
 			}
 			set
 			{
@@ -400,13 +400,13 @@ namespace android.view
 				return 2999;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _memoryType15351;
+		internal static global::MonoJavaBridge.FieldId _memoryType15431;
 		public int memoryType
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _memoryType15351);
+				return @__env.GetIntField(this.JvmHandle, _memoryType15431);
 			}
 			set
 			{
@@ -440,13 +440,13 @@ namespace android.view
 				return 3;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _flags15356;
+		internal static global::MonoJavaBridge.FieldId _flags15436;
 		public int flags
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _flags15356);
+				return @__env.GetIntField(this.JvmHandle, _flags15436);
 			}
 			set
 			{
@@ -718,169 +718,169 @@ namespace android.view
 				return 1.0f;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _softInputMode15395;
+		internal static global::MonoJavaBridge.FieldId _softInputMode15475;
 		public int softInputMode
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _softInputMode15395);
+				return @__env.GetIntField(this.JvmHandle, _softInputMode15475);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _gravity15396;
+		internal static global::MonoJavaBridge.FieldId _gravity15476;
 		public int gravity
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _gravity15396);
+				return @__env.GetIntField(this.JvmHandle, _gravity15476);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _horizontalMargin15397;
+		internal static global::MonoJavaBridge.FieldId _horizontalMargin15477;
 		public float horizontalMargin
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _horizontalMargin15397);
+				return @__env.GetFloatField(this.JvmHandle, _horizontalMargin15477);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _verticalMargin15398;
+		internal static global::MonoJavaBridge.FieldId _verticalMargin15478;
 		public float verticalMargin
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _verticalMargin15398);
+				return @__env.GetFloatField(this.JvmHandle, _verticalMargin15478);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _format15399;
+		internal static global::MonoJavaBridge.FieldId _format15479;
 		public int format
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _format15399);
+				return @__env.GetIntField(this.JvmHandle, _format15479);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _windowAnimations15400;
+		internal static global::MonoJavaBridge.FieldId _windowAnimations15480;
 		public int windowAnimations
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _windowAnimations15400);
+				return @__env.GetIntField(this.JvmHandle, _windowAnimations15480);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _alpha15401;
+		internal static global::MonoJavaBridge.FieldId _alpha15481;
 		public float alpha
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _alpha15401);
+				return @__env.GetFloatField(this.JvmHandle, _alpha15481);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _dimAmount15402;
+		internal static global::MonoJavaBridge.FieldId _dimAmount15482;
 		public float dimAmount
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _dimAmount15402);
+				return @__env.GetFloatField(this.JvmHandle, _dimAmount15482);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _screenBrightness15403;
+		internal static global::MonoJavaBridge.FieldId _screenBrightness15483;
 		public float screenBrightness
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _screenBrightness15403);
+				return @__env.GetFloatField(this.JvmHandle, _screenBrightness15483);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _buttonBrightness15404;
+		internal static global::MonoJavaBridge.FieldId _buttonBrightness15484;
 		public float buttonBrightness
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetFloatField(this.JvmHandle, _buttonBrightness15404);
+				return @__env.GetFloatField(this.JvmHandle, _buttonBrightness15484);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _token15405;
+		internal static global::MonoJavaBridge.FieldId _token15485;
 		public global::android.os.IBinder token
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.GetObjectField(this.JvmHandle, _token15405)) as android.os.IBinder;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.GetObjectField(this.JvmHandle, _token15485)) as android.os.IBinder;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _packageName15406;
+		internal static global::MonoJavaBridge.FieldId _packageName15486;
 		public global::java.lang.String packageName
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _packageName15406)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetObjectField(this.JvmHandle, _packageName15486)) as java.lang.String;
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _screenOrientation15407;
+		internal static global::MonoJavaBridge.FieldId _screenOrientation15487;
 		public int screenOrientation
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return @__env.GetIntField(this.JvmHandle, _screenOrientation15407);
+				return @__env.GetIntField(this.JvmHandle, _screenOrientation15487);
 			}
 			set
 			{
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _CREATOR15408;
+		internal static global::MonoJavaBridge.FieldId _CREATOR15488;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.WindowManager_LayoutParams.staticClass, _CREATOR15408)) as android.os.Parcelable_Creator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable_Creator>(@__env.GetStaticObjectField(global::android.view.WindowManager_LayoutParams.staticClass, _CREATOR15488)) as android.os.Parcelable_Creator;
 			}
 		}
 		public static int LAYOUT_CHANGED
@@ -970,43 +970,43 @@ namespace android.view
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::android.view.WindowManager_LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/WindowManager_LayoutParams"));
-			global::android.view.WindowManager_LayoutParams._toString15303 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.view.WindowManager_LayoutParams._debug15304 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "debug", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.view.WindowManager_LayoutParams._writeToParcel15305 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.view.WindowManager_LayoutParams._describeContents15306 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "describeContents", "()I");
-			global::android.view.WindowManager_LayoutParams._setTitle15307 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "setTitle", "(Ljava/lang/CharSequence;)V");
-			global::android.view.WindowManager_LayoutParams._getTitle15308 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "getTitle", "()Ljava/lang/CharSequence;");
-			global::android.view.WindowManager_LayoutParams._mayUseInputMethod15309 = @__env.GetStaticMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "mayUseInputMethod", "(I)Z");
-			global::android.view.WindowManager_LayoutParams._copyFrom15310 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "copyFrom", "(Landroid/view/WindowManager$LayoutParams;)I");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15311 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(III)V");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15312 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(I)V");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15313 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(II)V");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15314 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "()V");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15315 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIII)V");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15316 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIIIII)V");
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15317 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::android.view.WindowManager_LayoutParams._x15318 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "x", "I");
-			global::android.view.WindowManager_LayoutParams._y15319 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "y", "I");
-			global::android.view.WindowManager_LayoutParams._horizontalWeight15320 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "horizontalWeight", "F");
-			global::android.view.WindowManager_LayoutParams._verticalWeight15321 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "verticalWeight", "F");
-			global::android.view.WindowManager_LayoutParams._type15322 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "type", "I");
-			global::android.view.WindowManager_LayoutParams._memoryType15351 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "memoryType", "I");
-			global::android.view.WindowManager_LayoutParams._flags15356 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "flags", "I");
-			global::android.view.WindowManager_LayoutParams._softInputMode15395 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "softInputMode", "I");
-			global::android.view.WindowManager_LayoutParams._gravity15396 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "gravity", "I");
-			global::android.view.WindowManager_LayoutParams._horizontalMargin15397 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "horizontalMargin", "F");
-			global::android.view.WindowManager_LayoutParams._verticalMargin15398 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "verticalMargin", "F");
-			global::android.view.WindowManager_LayoutParams._format15399 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "format", "I");
-			global::android.view.WindowManager_LayoutParams._windowAnimations15400 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "windowAnimations", "I");
-			global::android.view.WindowManager_LayoutParams._alpha15401 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "alpha", "F");
-			global::android.view.WindowManager_LayoutParams._dimAmount15402 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "dimAmount", "F");
-			global::android.view.WindowManager_LayoutParams._screenBrightness15403 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "screenBrightness", "F");
-			global::android.view.WindowManager_LayoutParams._buttonBrightness15404 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "buttonBrightness", "F");
-			global::android.view.WindowManager_LayoutParams._token15405 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "token", "Landroid/os/IBinder;");
-			global::android.view.WindowManager_LayoutParams._packageName15406 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "packageName", "Ljava/lang/String;");
-			global::android.view.WindowManager_LayoutParams._screenOrientation15407 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "screenOrientation", "I");
-			global::android.view.WindowManager_LayoutParams._CREATOR15408 = @__env.GetStaticFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
+			global::android.view.WindowManager_LayoutParams.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/WindowManager$LayoutParams"));
+			global::android.view.WindowManager_LayoutParams._toString15383 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.view.WindowManager_LayoutParams._debug15384 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "debug", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.view.WindowManager_LayoutParams._writeToParcel15385 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.view.WindowManager_LayoutParams._describeContents15386 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "describeContents", "()I");
+			global::android.view.WindowManager_LayoutParams._setTitle15387 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "setTitle", "(Ljava/lang/CharSequence;)V");
+			global::android.view.WindowManager_LayoutParams._getTitle15388 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "getTitle", "()Ljava/lang/CharSequence;");
+			global::android.view.WindowManager_LayoutParams._mayUseInputMethod15389 = @__env.GetStaticMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "mayUseInputMethod", "(I)Z");
+			global::android.view.WindowManager_LayoutParams._copyFrom15390 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "copyFrom", "(Landroid/view/WindowManager$LayoutParams;)I");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15391 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(III)V");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15392 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(I)V");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15393 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(II)V");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15394 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "()V");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15395 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIII)V");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15396 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIIIII)V");
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams15397 = @__env.GetMethodIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::android.view.WindowManager_LayoutParams._x15398 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "x", "I");
+			global::android.view.WindowManager_LayoutParams._y15399 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "y", "I");
+			global::android.view.WindowManager_LayoutParams._horizontalWeight15400 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "horizontalWeight", "F");
+			global::android.view.WindowManager_LayoutParams._verticalWeight15401 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "verticalWeight", "F");
+			global::android.view.WindowManager_LayoutParams._type15402 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "type", "I");
+			global::android.view.WindowManager_LayoutParams._memoryType15431 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "memoryType", "I");
+			global::android.view.WindowManager_LayoutParams._flags15436 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "flags", "I");
+			global::android.view.WindowManager_LayoutParams._softInputMode15475 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "softInputMode", "I");
+			global::android.view.WindowManager_LayoutParams._gravity15476 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "gravity", "I");
+			global::android.view.WindowManager_LayoutParams._horizontalMargin15477 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "horizontalMargin", "F");
+			global::android.view.WindowManager_LayoutParams._verticalMargin15478 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "verticalMargin", "F");
+			global::android.view.WindowManager_LayoutParams._format15479 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "format", "I");
+			global::android.view.WindowManager_LayoutParams._windowAnimations15480 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "windowAnimations", "I");
+			global::android.view.WindowManager_LayoutParams._alpha15481 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "alpha", "F");
+			global::android.view.WindowManager_LayoutParams._dimAmount15482 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "dimAmount", "F");
+			global::android.view.WindowManager_LayoutParams._screenBrightness15483 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "screenBrightness", "F");
+			global::android.view.WindowManager_LayoutParams._buttonBrightness15484 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "buttonBrightness", "F");
+			global::android.view.WindowManager_LayoutParams._token15485 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "token", "Landroid/os/IBinder;");
+			global::android.view.WindowManager_LayoutParams._packageName15486 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "packageName", "Ljava/lang/String;");
+			global::android.view.WindowManager_LayoutParams._screenOrientation15487 = @__env.GetFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "screenOrientation", "I");
+			global::android.view.WindowManager_LayoutParams._CREATOR15488 = @__env.GetStaticFieldIDNoThrow(global::android.view.WindowManager_LayoutParams.staticClass, "CREATOR", "Landroid/os/Parcelable$Creator;");
 		}
 	}
 }

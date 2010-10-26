@@ -6,7 +6,7 @@ namespace android.text
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.NoCopySpan))]
-	public sealed partial class NoCopySpan_ : java.lang.Object, NoCopySpan
+	internal sealed partial class NoCopySpan_ : java.lang.Object, NoCopySpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static NoCopySpan_()

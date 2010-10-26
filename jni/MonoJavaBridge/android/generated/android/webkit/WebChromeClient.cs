@@ -18,7 +18,7 @@ namespace android.webkit
 		}
 
 		[global::MonoJavaBridge.JavaProxy(typeof(global::android.webkit.WebChromeClient.CustomViewCallback))]
-		public sealed partial class CustomViewCallback_ : java.lang.Object, CustomViewCallback
+		internal sealed partial class CustomViewCallback_ : java.lang.Object, CustomViewCallback
 		{
 			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 			static CustomViewCallback_()
@@ -28,201 +28,259 @@ namespace android.webkit
 			internal CustomViewCallback_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _onCustomViewHidden16041;
+			internal static global::MonoJavaBridge.MethodId _onCustomViewHidden16128;
 			 void android.webkit.WebChromeClient.CustomViewCallback.onCustomViewHidden() 
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16041);
+					@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16128);
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass, global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16041);
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass, global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16128);
 			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebChromeClient$CustomViewCallback"));
-				global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16041 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass, "onCustomViewHidden", "()V");
+				global::android.webkit.WebChromeClient.CustomViewCallback_._onCustomViewHidden16128 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.CustomViewCallback_.staticClass, "onCustomViewHidden", "()V");
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _onReceivedIcon16042;
+
+		public delegate void CustomViewCallbackDelegate();
+
+		internal partial class CustomViewCallbackDelegateWrapper : java.lang.Object, CustomViewCallback
+		{
+			internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
+			static CustomViewCallbackDelegateWrapper()
+			{
+				InitJNI();
+			}
+			protected CustomViewCallbackDelegateWrapper(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
+			{
+			}
+			internal static global::MonoJavaBridge.MethodId _CustomViewCallbackDelegateWrapper16129;
+			public CustomViewCallbackDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper.staticClass, global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper._CustomViewCallbackDelegateWrapper16129);
+				Init(@__env, handle);
+			}
+			private static void InitJNI()
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebChromeClient_CustomViewCallbackDelegateWrapper"));
+				global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper._CustomViewCallbackDelegateWrapper16129 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper.staticClass, "<init>", "()V");
+			}
+		}
+		internal partial class CustomViewCallbackDelegateWrapper
+		{
+			private CustomViewCallbackDelegate myDelegate;
+			public void onCustomViewHidden()
+			{
+				myDelegate();
+			}
+			public static implicit operator CustomViewCallbackDelegateWrapper(CustomViewCallbackDelegate d)
+			{
+				global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper ret = new global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper();
+				ret.myDelegate = d;
+				global::MonoJavaBridge.JavaBridge.SetGCHandle(global::MonoJavaBridge.JNIEnv.ThreadEnv, ret);
+				return ret;
+			}
+		}
+		internal static global::MonoJavaBridge.MethodId _onReceivedIcon16130;
 		public virtual void onReceivedIcon(android.webkit.WebView arg0, android.graphics.Bitmap arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReceivedIcon16042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReceivedIcon16130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReceivedIcon16042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReceivedIcon16130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onProgressChanged16043;
+		internal static global::MonoJavaBridge.MethodId _onProgressChanged16131;
 		public virtual void onProgressChanged(android.webkit.WebView arg0, int arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onProgressChanged16043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onProgressChanged16131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onProgressChanged16043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onProgressChanged16131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onReceivedTitle16044;
+		internal static global::MonoJavaBridge.MethodId _onReceivedTitle16132;
 		public virtual void onReceivedTitle(android.webkit.WebView arg0, java.lang.String arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReceivedTitle16044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReceivedTitle16132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReceivedTitle16044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReceivedTitle16132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onReceivedTouchIconUrl16045;
+		internal static global::MonoJavaBridge.MethodId _onReceivedTouchIconUrl16133;
 		public virtual void onReceivedTouchIconUrl(android.webkit.WebView arg0, java.lang.String arg1, bool arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReceivedTouchIconUrl16045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReceivedTouchIconUrl16133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReceivedTouchIconUrl16045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReceivedTouchIconUrl16133, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onShowCustomView16046;
+		internal static global::MonoJavaBridge.MethodId _onShowCustomView16134;
 		public virtual void onShowCustomView(android.view.View arg0, android.webkit.WebChromeClient.CustomViewCallback arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onShowCustomView16046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onShowCustomView16134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onShowCustomView16046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onShowCustomView16134, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onHideCustomView16047;
+		public void onShowCustomView(android.view.View arg0, global::android.webkit.WebChromeClient.CustomViewCallbackDelegate arg1)
+		{
+			onShowCustomView(arg0, (global::android.webkit.WebChromeClient.CustomViewCallbackDelegateWrapper)arg1);
+		}
+		internal static global::MonoJavaBridge.MethodId _onHideCustomView16135;
 		public virtual void onHideCustomView() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onHideCustomView16047);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onHideCustomView16135);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onHideCustomView16047);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onHideCustomView16135);
 		}
-		internal static global::MonoJavaBridge.MethodId _onCreateWindow16048;
+		internal static global::MonoJavaBridge.MethodId _onCreateWindow16136;
 		public virtual bool onCreateWindow(android.webkit.WebView arg0, bool arg1, bool arg2, android.os.Message arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onCreateWindow16048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onCreateWindow16136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onCreateWindow16048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onCreateWindow16136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onRequestFocus16049;
+		internal static global::MonoJavaBridge.MethodId _onRequestFocus16137;
 		public virtual void onRequestFocus(android.webkit.WebView arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onRequestFocus16049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onRequestFocus16137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onRequestFocus16049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onRequestFocus16137, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onCloseWindow16050;
+		internal static global::MonoJavaBridge.MethodId _onCloseWindow16138;
 		public virtual void onCloseWindow(android.webkit.WebView arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onCloseWindow16050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onCloseWindow16138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onCloseWindow16050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onCloseWindow16138, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _onJsAlert16051;
+		internal static global::MonoJavaBridge.MethodId _onJsAlert16139;
 		public virtual bool onJsAlert(android.webkit.WebView arg0, java.lang.String arg1, java.lang.String arg2, android.webkit.JsResult arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsAlert16051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsAlert16139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsAlert16051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsAlert16139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onJsConfirm16052;
+		internal static global::MonoJavaBridge.MethodId _onJsConfirm16140;
 		public virtual bool onJsConfirm(android.webkit.WebView arg0, java.lang.String arg1, java.lang.String arg2, android.webkit.JsResult arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsConfirm16052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsConfirm16140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsConfirm16052, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsConfirm16140, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onJsPrompt16053;
+		internal static global::MonoJavaBridge.MethodId _onJsPrompt16141;
 		public virtual bool onJsPrompt(android.webkit.WebView arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, android.webkit.JsPromptResult arg4) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsPrompt16053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsPrompt16141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsPrompt16053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsPrompt16141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
-		internal static global::MonoJavaBridge.MethodId _onJsBeforeUnload16054;
+		internal static global::MonoJavaBridge.MethodId _onJsBeforeUnload16142;
 		public virtual bool onJsBeforeUnload(android.webkit.WebView arg0, java.lang.String arg1, java.lang.String arg2, android.webkit.JsResult arg3) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsBeforeUnload16054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsBeforeUnload16142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsBeforeUnload16054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsBeforeUnload16142, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
-		internal static global::MonoJavaBridge.MethodId _onExceededDatabaseQuota16055;
+		internal static global::MonoJavaBridge.MethodId _onExceededDatabaseQuota16143;
 		public virtual void onExceededDatabaseQuota(java.lang.String arg0, java.lang.String arg1, long arg2, long arg3, long arg4, android.webkit.WebStorage.QuotaUpdater arg5) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onExceededDatabaseQuota16055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onExceededDatabaseQuota16143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onExceededDatabaseQuota16055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onExceededDatabaseQuota16143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
-		internal static global::MonoJavaBridge.MethodId _onReachedMaxAppCacheSize16056;
+		public void onExceededDatabaseQuota(java.lang.String arg0, java.lang.String arg1, long arg2, long arg3, long arg4, global::android.webkit.WebStorage.QuotaUpdaterDelegate arg5)
+		{
+			onExceededDatabaseQuota(arg0, arg1, arg2, arg3, arg4, (global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper)arg5);
+		}
+		internal static global::MonoJavaBridge.MethodId _onReachedMaxAppCacheSize16144;
 		public virtual void onReachedMaxAppCacheSize(long arg0, long arg1, android.webkit.WebStorage.QuotaUpdater arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReachedMaxAppCacheSize16056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onReachedMaxAppCacheSize16144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReachedMaxAppCacheSize16056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onReachedMaxAppCacheSize16144, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onGeolocationPermissionsShowPrompt16057;
+		public void onReachedMaxAppCacheSize(long arg0, long arg1, global::android.webkit.WebStorage.QuotaUpdaterDelegate arg2)
+		{
+			onReachedMaxAppCacheSize(arg0, arg1, (global::android.webkit.WebStorage.QuotaUpdaterDelegateWrapper)arg2);
+		}
+		internal static global::MonoJavaBridge.MethodId _onGeolocationPermissionsShowPrompt16145;
 		public virtual void onGeolocationPermissionsShowPrompt(java.lang.String arg0, android.webkit.GeolocationPermissions.Callback arg1) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onGeolocationPermissionsShowPrompt16057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onGeolocationPermissionsShowPrompt16145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onGeolocationPermissionsShowPrompt16057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onGeolocationPermissionsShowPrompt16145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _onGeolocationPermissionsHidePrompt16058;
+		public void onGeolocationPermissionsShowPrompt(java.lang.String arg0, global::android.webkit.GeolocationPermissions.CallbackDelegate arg1)
+		{
+			onGeolocationPermissionsShowPrompt(arg0, (global::android.webkit.GeolocationPermissions.CallbackDelegateWrapper)arg1);
+		}
+		internal static global::MonoJavaBridge.MethodId _onGeolocationPermissionsHidePrompt16146;
 		public virtual void onGeolocationPermissionsHidePrompt() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onGeolocationPermissionsHidePrompt16058);
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onGeolocationPermissionsHidePrompt16146);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onGeolocationPermissionsHidePrompt16058);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onGeolocationPermissionsHidePrompt16146);
 		}
-		internal static global::MonoJavaBridge.MethodId _onJsTimeout16059;
+		internal static global::MonoJavaBridge.MethodId _onJsTimeout16147;
 		public virtual bool onJsTimeout() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsTimeout16059);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onJsTimeout16147);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsTimeout16059);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onJsTimeout16147);
 		}
-		internal static global::MonoJavaBridge.MethodId _onConsoleMessage16060;
+		internal static global::MonoJavaBridge.MethodId _onConsoleMessage16148;
 		public virtual void onConsoleMessage(java.lang.String arg0, int arg1, java.lang.String arg2) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onConsoleMessage16060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onConsoleMessage16148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onConsoleMessage16060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onConsoleMessage16148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
-		internal static global::MonoJavaBridge.MethodId _onConsoleMessage16061;
+		internal static global::MonoJavaBridge.MethodId _onConsoleMessage16149;
 		public virtual bool onConsoleMessage(android.webkit.ConsoleMessage arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onConsoleMessage16061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient._onConsoleMessage16149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onConsoleMessage16061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._onConsoleMessage16149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::android.graphics.Bitmap DefaultVideoPoster
 		{
@@ -231,14 +289,14 @@ namespace android.webkit
 				return getDefaultVideoPoster();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDefaultVideoPoster16062;
+		internal static global::MonoJavaBridge.MethodId _getDefaultVideoPoster16150;
 		public virtual global::android.graphics.Bitmap getDefaultVideoPoster() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient._getDefaultVideoPoster16062)) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient._getDefaultVideoPoster16150)) as android.graphics.Bitmap;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._getDefaultVideoPoster16062)) as android.graphics.Bitmap;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._getDefaultVideoPoster16150)) as android.graphics.Bitmap;
 		}
 		public new global::android.view.View VideoLoadingProgressView
 		{
@@ -247,59 +305,63 @@ namespace android.webkit
 				return getVideoLoadingProgressView();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getVideoLoadingProgressView16063;
+		internal static global::MonoJavaBridge.MethodId _getVideoLoadingProgressView16151;
 		public virtual global::android.view.View getVideoLoadingProgressView() 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient._getVideoLoadingProgressView16063)) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient._getVideoLoadingProgressView16151)) as android.view.View;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._getVideoLoadingProgressView16063)) as android.view.View;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._getVideoLoadingProgressView16151)) as android.view.View;
 		}
-		internal static global::MonoJavaBridge.MethodId _getVisitedHistory16064;
+		internal static global::MonoJavaBridge.MethodId _getVisitedHistory16152;
 		public virtual void getVisitedHistory(android.webkit.ValueCallback arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._getVisitedHistory16064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient._getVisitedHistory16152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._getVisitedHistory16064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._getVisitedHistory16152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _WebChromeClient16065;
+		public void getVisitedHistory(global::android.webkit.ValueCallbackDelegate arg0)
+		{
+			getVisitedHistory((global::android.webkit.ValueCallbackDelegateWrapper)arg0);
+		}
+		internal static global::MonoJavaBridge.MethodId _WebChromeClient16153;
 		public WebChromeClient()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._WebChromeClient16065);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebChromeClient.staticClass, global::android.webkit.WebChromeClient._WebChromeClient16153);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.webkit.WebChromeClient.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/webkit/WebChromeClient"));
-			global::android.webkit.WebChromeClient._onReceivedIcon16042 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReceivedIcon", "(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V");
-			global::android.webkit.WebChromeClient._onProgressChanged16043 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onProgressChanged", "(Landroid/webkit/WebView;I)V");
-			global::android.webkit.WebChromeClient._onReceivedTitle16044 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReceivedTitle", "(Landroid/webkit/WebView;Ljava/lang/String;)V");
-			global::android.webkit.WebChromeClient._onReceivedTouchIconUrl16045 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReceivedTouchIconUrl", "(Landroid/webkit/WebView;Ljava/lang/String;Z)V");
-			global::android.webkit.WebChromeClient._onShowCustomView16046 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onShowCustomView", "(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V");
-			global::android.webkit.WebChromeClient._onHideCustomView16047 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onHideCustomView", "()V");
-			global::android.webkit.WebChromeClient._onCreateWindow16048 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onCreateWindow", "(Landroid/webkit/WebView;ZZLandroid/os/Message;)Z");
-			global::android.webkit.WebChromeClient._onRequestFocus16049 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onRequestFocus", "(Landroid/webkit/WebView;)V");
-			global::android.webkit.WebChromeClient._onCloseWindow16050 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onCloseWindow", "(Landroid/webkit/WebView;)V");
-			global::android.webkit.WebChromeClient._onJsAlert16051 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsAlert", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z");
-			global::android.webkit.WebChromeClient._onJsConfirm16052 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsConfirm", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z");
-			global::android.webkit.WebChromeClient._onJsPrompt16053 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsPrompt", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z");
-			global::android.webkit.WebChromeClient._onJsBeforeUnload16054 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsBeforeUnload", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z");
-			global::android.webkit.WebChromeClient._onExceededDatabaseQuota16055 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onExceededDatabaseQuota", "(Ljava/lang/String;Ljava/lang/String;JJJLandroid/webkit/WebStorage$QuotaUpdater;)V");
-			global::android.webkit.WebChromeClient._onReachedMaxAppCacheSize16056 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReachedMaxAppCacheSize", "(JJLandroid/webkit/WebStorage$QuotaUpdater;)V");
-			global::android.webkit.WebChromeClient._onGeolocationPermissionsShowPrompt16057 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onGeolocationPermissionsShowPrompt", "(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V");
-			global::android.webkit.WebChromeClient._onGeolocationPermissionsHidePrompt16058 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onGeolocationPermissionsHidePrompt", "()V");
-			global::android.webkit.WebChromeClient._onJsTimeout16059 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsTimeout", "()Z");
-			global::android.webkit.WebChromeClient._onConsoleMessage16060 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onConsoleMessage", "(Ljava/lang/String;ILjava/lang/String;)V");
-			global::android.webkit.WebChromeClient._onConsoleMessage16061 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onConsoleMessage", "(Landroid/webkit/ConsoleMessage;)Z");
-			global::android.webkit.WebChromeClient._getDefaultVideoPoster16062 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getDefaultVideoPoster", "()Landroid/graphics/Bitmap;");
-			global::android.webkit.WebChromeClient._getVideoLoadingProgressView16063 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getVideoLoadingProgressView", "()Landroid/view/View;");
-			global::android.webkit.WebChromeClient._getVisitedHistory16064 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getVisitedHistory", "(Landroid/webkit/ValueCallback;)V");
-			global::android.webkit.WebChromeClient._WebChromeClient16065 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "<init>", "()V");
+			global::android.webkit.WebChromeClient._onReceivedIcon16130 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReceivedIcon", "(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V");
+			global::android.webkit.WebChromeClient._onProgressChanged16131 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onProgressChanged", "(Landroid/webkit/WebView;I)V");
+			global::android.webkit.WebChromeClient._onReceivedTitle16132 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReceivedTitle", "(Landroid/webkit/WebView;Ljava/lang/String;)V");
+			global::android.webkit.WebChromeClient._onReceivedTouchIconUrl16133 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReceivedTouchIconUrl", "(Landroid/webkit/WebView;Ljava/lang/String;Z)V");
+			global::android.webkit.WebChromeClient._onShowCustomView16134 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onShowCustomView", "(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V");
+			global::android.webkit.WebChromeClient._onHideCustomView16135 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onHideCustomView", "()V");
+			global::android.webkit.WebChromeClient._onCreateWindow16136 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onCreateWindow", "(Landroid/webkit/WebView;ZZLandroid/os/Message;)Z");
+			global::android.webkit.WebChromeClient._onRequestFocus16137 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onRequestFocus", "(Landroid/webkit/WebView;)V");
+			global::android.webkit.WebChromeClient._onCloseWindow16138 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onCloseWindow", "(Landroid/webkit/WebView;)V");
+			global::android.webkit.WebChromeClient._onJsAlert16139 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsAlert", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z");
+			global::android.webkit.WebChromeClient._onJsConfirm16140 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsConfirm", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z");
+			global::android.webkit.WebChromeClient._onJsPrompt16141 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsPrompt", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z");
+			global::android.webkit.WebChromeClient._onJsBeforeUnload16142 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsBeforeUnload", "(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z");
+			global::android.webkit.WebChromeClient._onExceededDatabaseQuota16143 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onExceededDatabaseQuota", "(Ljava/lang/String;Ljava/lang/String;JJJLandroid/webkit/WebStorage$QuotaUpdater;)V");
+			global::android.webkit.WebChromeClient._onReachedMaxAppCacheSize16144 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onReachedMaxAppCacheSize", "(JJLandroid/webkit/WebStorage$QuotaUpdater;)V");
+			global::android.webkit.WebChromeClient._onGeolocationPermissionsShowPrompt16145 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onGeolocationPermissionsShowPrompt", "(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V");
+			global::android.webkit.WebChromeClient._onGeolocationPermissionsHidePrompt16146 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onGeolocationPermissionsHidePrompt", "()V");
+			global::android.webkit.WebChromeClient._onJsTimeout16147 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onJsTimeout", "()Z");
+			global::android.webkit.WebChromeClient._onConsoleMessage16148 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onConsoleMessage", "(Ljava/lang/String;ILjava/lang/String;)V");
+			global::android.webkit.WebChromeClient._onConsoleMessage16149 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "onConsoleMessage", "(Landroid/webkit/ConsoleMessage;)Z");
+			global::android.webkit.WebChromeClient._getDefaultVideoPoster16150 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getDefaultVideoPoster", "()Landroid/graphics/Bitmap;");
+			global::android.webkit.WebChromeClient._getVideoLoadingProgressView16151 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getVideoLoadingProgressView", "()Landroid/view/View;");
+			global::android.webkit.WebChromeClient._getVisitedHistory16152 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "getVisitedHistory", "(Landroid/webkit/ValueCallback;)V");
+			global::android.webkit.WebChromeClient._WebChromeClient16153 = @__env.GetMethodIDNoThrow(global::android.webkit.WebChromeClient.staticClass, "<init>", "()V");
 		}
 	}
 }

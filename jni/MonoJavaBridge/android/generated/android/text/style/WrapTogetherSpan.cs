@@ -6,7 +6,7 @@ namespace android.text.style
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.text.style.WrapTogetherSpan))]
-	public sealed partial class WrapTogetherSpan_ : java.lang.Object, WrapTogetherSpan
+	internal sealed partial class WrapTogetherSpan_ : java.lang.Object, WrapTogetherSpan
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static WrapTogetherSpan_()

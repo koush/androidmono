@@ -8,7 +8,7 @@ namespace android.view.accessibility
 	}
 
 	[global::MonoJavaBridge.JavaProxy(typeof(global::android.view.accessibility.AccessibilityEventSource))]
-	public sealed partial class AccessibilityEventSource_ : java.lang.Object, AccessibilityEventSource
+	internal sealed partial class AccessibilityEventSource_ : java.lang.Object, AccessibilityEventSource
 	{
 		internal new static global::MonoJavaBridge.JniGlobalHandle staticClass;
 		static AccessibilityEventSource_()
@@ -18,30 +18,30 @@ namespace android.view.accessibility
 		internal AccessibilityEventSource_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEvent15477;
+		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEvent15557;
 		 void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent(int arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEventUnchecked15478;
+		internal static global::MonoJavaBridge.MethodId _sendAccessibilityEventUnchecked15558;
 		 void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent arg0) 
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEventSource_.staticClass, global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::android.view.accessibility.AccessibilityEventSource_.staticClass = @__env.NewGlobalRef(@__env.FindClass("android/view/accessibility/AccessibilityEventSource"));
-			global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15477 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEvent", "(I)V");
-			global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15478 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V");
+			global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEvent15557 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEvent", "(I)V");
+			global::android.view.accessibility.AccessibilityEventSource_._sendAccessibilityEventUnchecked15558 = @__env.GetMethodIDNoThrow(global::android.view.accessibility.AccessibilityEventSource_.staticClass, "sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V");
 		}
 	}
 }
