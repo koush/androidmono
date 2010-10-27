@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toggle16846;
-		public virtual void toggle() 
+		public virtual void toggle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._toggle16846);
 		}
 		internal static global::MonoJavaBridge.MethodId _isChecked16847;
-		public virtual bool isChecked() 
+		public virtual bool isChecked()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,8 +29,15 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._isChecked16847);
 		}
+		public new bool Checked
+		{
+			set
+			{
+				setChecked(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setChecked16848;
-		public virtual void setChecked(bool arg0) 
+		public virtual void setChecked(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +46,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setChecked16848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent16849;
-		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
+		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +55,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._dispatchPopulateAccessibilityEvent16849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onDraw16850;
-		protected override void onDraw(android.graphics.Canvas arg0) 
+		protected override void onDraw(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._onDraw16850, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _drawableStateChanged16851;
-		protected override void drawableStateChanged() 
+		protected override void drawableStateChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +73,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._drawableStateChanged16851);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateDrawableState16852;
-		protected override int[] onCreateDrawableState(int arg0) 
+		protected override int[] onCreateDrawableState(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +82,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._onCreateDrawableState16852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setPadding16853;
-		public override void setPadding(int arg0, int arg1, int arg2, int arg3) 
+		public override void setPadding(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +91,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setPadding16853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCheckMarkDrawable16854;
-		public virtual void setCheckMarkDrawable(android.graphics.drawable.Drawable arg0) 
+		public virtual void setCheckMarkDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +100,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setCheckMarkDrawable16854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCheckMarkDrawable16855;
-		public virtual void setCheckMarkDrawable(int arg0) 
+		public virtual void setCheckMarkDrawable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,21 +109,21 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setCheckMarkDrawable16855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckedTextView16856;
-		public CheckedTextView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckedTextView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckedTextView16857;
-		public CheckedTextView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckedTextView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckedTextView16858;
-		public CheckedTextView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckedTextView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._CheckedTextView16858, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

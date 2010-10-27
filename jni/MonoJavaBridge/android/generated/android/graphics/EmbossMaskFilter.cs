@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EmbossMaskFilter5266;
-		public EmbossMaskFilter(float[] arg0, float arg1, float arg2, float arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EmbossMaskFilter(float[] arg0, float arg1, float arg2, float arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.EmbossMaskFilter.staticClass, global::android.graphics.EmbossMaskFilter._EmbossMaskFilter5266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

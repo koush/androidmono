@@ -19,7 +19,7 @@ namespace javax.xml.transform
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformer30956;
-		 global::javax.xml.transform.Transformer javax.xml.transform.Templates.newTransformer() 
+		global::javax.xml.transform.Transformer javax.xml.transform.Templates.newTransformer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace javax.xml.transform
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Templates_.staticClass, global::javax.xml.transform.Templates_._newTransformer30956)) as javax.xml.transform.Transformer;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOutputProperties30957;
-		 global::java.util.Properties javax.xml.transform.Templates.getOutputProperties() 
+		global::java.util.Properties javax.xml.transform.Templates.getOutputProperties()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

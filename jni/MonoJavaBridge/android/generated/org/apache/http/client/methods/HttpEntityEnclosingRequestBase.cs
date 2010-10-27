@@ -12,7 +12,7 @@ namespace org.apache.http.client.methods
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone31913;
-		public override global::java.lang.Object clone() 
+		public override global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.client.methods
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._clone31913)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntity31914;
-		public virtual global::org.apache.http.HttpEntity getEntity() 
+		public virtual global::org.apache.http.HttpEntity getEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.client.methods
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpEntity>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._getEntity31914)) as org.apache.http.HttpEntity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEntity31915;
-		public virtual void setEntity(org.apache.http.HttpEntity arg0) 
+		public virtual void setEntity(org.apache.http.HttpEntity arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.client.methods
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._setEntity31915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _expectContinue31916;
-		public virtual bool expectContinue() 
+		public virtual bool expectContinue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.apache.http.client.methods
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._expectContinue31916);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpEntityEnclosingRequestBase31917;
-		public HttpEntityEnclosingRequestBase()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpEntityEnclosingRequestBase() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpEntityEnclosingRequestBase.staticClass, global::org.apache.http.client.methods.HttpEntityEnclosingRequestBase._HttpEntityEnclosingRequestBase31917);
@@ -78,7 +78,7 @@ namespace org.apache.http.client.methods
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getMethod31918;
-		public override global::java.lang.String getMethod() 
+		public override global::java.lang.String getMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

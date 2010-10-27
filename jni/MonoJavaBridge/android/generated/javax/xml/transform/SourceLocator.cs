@@ -21,7 +21,7 @@ namespace javax.xml.transform
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineNumber30952;
-		 int javax.xml.transform.SourceLocator.getLineNumber() 
+		int javax.xml.transform.SourceLocator.getLineNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.xml.transform
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_.staticClass, global::javax.xml.transform.SourceLocator_._getLineNumber30952);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicId30953;
-		 global::java.lang.String javax.xml.transform.SourceLocator.getPublicId() 
+		global::java.lang.String javax.xml.transform.SourceLocator.getPublicId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.xml.transform
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_.staticClass, global::javax.xml.transform.SourceLocator_._getPublicId30953)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId30954;
-		 global::java.lang.String javax.xml.transform.SourceLocator.getSystemId() 
+		global::java.lang.String javax.xml.transform.SourceLocator.getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace javax.xml.transform
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.SourceLocator_.staticClass, global::javax.xml.transform.SourceLocator_._getSystemId30954)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber30955;
-		 int javax.xml.transform.SourceLocator.getColumnNumber() 
+		int javax.xml.transform.SourceLocator.getColumnNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

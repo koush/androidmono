@@ -12,7 +12,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _add23224;
-		public sealed override void add(java.security.Permission arg0) 
+		public sealed override void add(java.security.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Permissions.staticClass, global::java.security.Permissions._add23224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _implies23225;
-		public sealed override bool implies(java.security.Permission arg0) 
+		public sealed override bool implies(java.security.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.security
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.Permissions.staticClass, global::java.security.Permissions._implies23225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _elements23226;
-		public sealed override global::java.util.Enumeration elements() 
+		public sealed override global::java.util.Enumeration elements()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Permissions.staticClass, global::java.security.Permissions._elements23226)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _Permissions23227;
-		public Permissions()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Permissions() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.Permissions.staticClass, global::java.security.Permissions._Permissions23227);

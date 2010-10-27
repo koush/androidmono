@@ -12,7 +12,7 @@ namespace java.util.concurrent.locks
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setExclusiveOwnerThread27687;
-		protected virtual void setExclusiveOwnerThread(java.lang.Thread arg0) 
+		protected virtual void setExclusiveOwnerThread(java.lang.Thread arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractOwnableSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractOwnableSynchronizer._setExclusiveOwnerThread27687, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getExclusiveOwnerThread27688;
-		protected virtual global::java.lang.Thread getExclusiveOwnerThread() 
+		protected virtual global::java.lang.Thread getExclusiveOwnerThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractOwnableSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractOwnableSynchronizer._getExclusiveOwnerThread27688)) as java.lang.Thread;
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractOwnableSynchronizer27689;
-		protected AbstractOwnableSynchronizer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AbstractOwnableSynchronizer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.AbstractOwnableSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractOwnableSynchronizer._AbstractOwnableSynchronizer27689);

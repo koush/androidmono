@@ -19,7 +19,7 @@ namespace java.util.regex
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage28321;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util.regex
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndex28322;
-		public virtual int getIndex() 
+		public virtual int getIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.util.regex
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDescription28323;
-		public virtual global::java.lang.String getDescription() 
+		public virtual global::java.lang.String getDescription()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.util.regex
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPattern28324;
-		public virtual global::java.lang.String getPattern() 
+		public virtual global::java.lang.String getPattern()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace java.util.regex
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.regex.PatternSyntaxException.staticClass, global::java.util.regex.PatternSyntaxException._getPattern28324)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PatternSyntaxException28325;
-		public PatternSyntaxException(java.lang.String arg0, java.lang.String arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PatternSyntaxException(java.lang.String arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.regex.PatternSyntaxException.staticClass, global::java.util.regex.PatternSyntaxException._PatternSyntaxException28325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

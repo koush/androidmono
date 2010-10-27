@@ -14,7 +14,7 @@ namespace javax.xml.datatype
 		internal static global::MonoJavaBridge.MethodId _add30709;
 		public abstract global::javax.xml.datatype.Duration add(javax.xml.datatype.Duration arg0);
 		internal static global::MonoJavaBridge.MethodId _equals30710;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._equals30710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString30711;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace javax.xml.datatype
 		internal static global::MonoJavaBridge.MethodId _isSet30715;
 		public abstract bool isSet(javax.xml.datatype.DatatypeConstants.Field arg0);
 		internal static global::MonoJavaBridge.MethodId _getHours30716;
-		public virtual int getHours() 
+		public virtual int getHours()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,7 +49,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getHours30716);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinutes30717;
-		public virtual int getMinutes() 
+		public virtual int getMinutes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getMinutes30717);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSeconds30718;
-		public virtual int getSeconds() 
+		public virtual int getSeconds()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getSeconds30718);
 		}
 		internal static global::MonoJavaBridge.MethodId _subtract30719;
-		public virtual global::javax.xml.datatype.Duration subtract(javax.xml.datatype.Duration arg0) 
+		public virtual global::javax.xml.datatype.Duration subtract(javax.xml.datatype.Duration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace javax.xml.datatype
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._subtract30719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.datatype.Duration;
 		}
 		internal static global::MonoJavaBridge.MethodId _multiply30720;
-		public virtual global::javax.xml.datatype.Duration multiply(int arg0) 
+		public virtual global::javax.xml.datatype.Duration multiply(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace javax.xml.datatype
 		internal static global::MonoJavaBridge.MethodId _negate30722;
 		public abstract global::javax.xml.datatype.Duration negate();
 		internal static global::MonoJavaBridge.MethodId _getTimeInMillis30723;
-		public virtual long getTimeInMillis(java.util.Calendar arg0) 
+		public virtual long getTimeInMillis(java.util.Calendar arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getTimeInMillis30723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeInMillis30724;
-		public virtual long getTimeInMillis(java.util.Date arg0) 
+		public virtual long getTimeInMillis(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getTimeInMillis30724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMonths30725;
-		public virtual int getMonths() 
+		public virtual int getMonths()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace javax.xml.datatype
 		internal static global::MonoJavaBridge.MethodId _getSign30726;
 		public abstract int getSign();
 		internal static global::MonoJavaBridge.MethodId _getXMLSchemaType30727;
-		public virtual global::javax.xml.@namespace.QName getXMLSchemaType() 
+		public virtual global::javax.xml.@namespace.QName getXMLSchemaType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace javax.xml.datatype
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getXMLSchemaType30727)) as javax.xml.@namespace.QName;
 		}
 		internal static global::MonoJavaBridge.MethodId _getYears30728;
-		public virtual int getYears() 
+		public virtual int getYears()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -136,7 +136,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._getYears30728);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDays30729;
-		public virtual int getDays() 
+		public virtual int getDays()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace javax.xml.datatype
 		internal static global::MonoJavaBridge.MethodId _addTo30730;
 		public abstract void addTo(java.util.Calendar arg0);
 		internal static global::MonoJavaBridge.MethodId _addTo30731;
-		public virtual void addTo(java.util.Date arg0) 
+		public virtual void addTo(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -158,7 +158,7 @@ namespace javax.xml.datatype
 		internal static global::MonoJavaBridge.MethodId _normalizeWith30732;
 		public abstract global::javax.xml.datatype.Duration normalizeWith(java.util.Calendar arg0);
 		internal static global::MonoJavaBridge.MethodId _isLongerThan30733;
-		public virtual bool isLongerThan(javax.xml.datatype.Duration arg0) 
+		public virtual bool isLongerThan(javax.xml.datatype.Duration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -167,7 +167,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._isLongerThan30733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isShorterThan30734;
-		public virtual bool isShorterThan(javax.xml.datatype.Duration arg0) 
+		public virtual bool isShorterThan(javax.xml.datatype.Duration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -176,7 +176,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._isShorterThan30734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Duration30735;
-		public Duration()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Duration() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.Duration.staticClass, global::javax.xml.datatype.Duration._Duration30735);
@@ -228,7 +228,7 @@ namespace javax.xml.datatype
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _add30736;
-		public override global::javax.xml.datatype.Duration add(javax.xml.datatype.Duration arg0) 
+		public override global::javax.xml.datatype.Duration add(javax.xml.datatype.Duration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -237,7 +237,7 @@ namespace javax.xml.datatype
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._add30736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.datatype.Duration;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode30737;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -246,7 +246,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._hashCode30737);
 		}
 		internal static global::MonoJavaBridge.MethodId _compare30738;
-		public override int compare(javax.xml.datatype.Duration arg0) 
+		public override int compare(javax.xml.datatype.Duration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -255,7 +255,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._compare30738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getField30739;
-		public override global::java.lang.Number getField(javax.xml.datatype.DatatypeConstants.Field arg0) 
+		public override global::java.lang.Number getField(javax.xml.datatype.DatatypeConstants.Field arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -264,7 +264,7 @@ namespace javax.xml.datatype
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._getField30739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Number;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSet30740;
-		public override bool isSet(javax.xml.datatype.DatatypeConstants.Field arg0) 
+		public override bool isSet(javax.xml.datatype.DatatypeConstants.Field arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -273,7 +273,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._isSet30740, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _multiply30741;
-		public override global::javax.xml.datatype.Duration multiply(java.math.BigDecimal arg0) 
+		public override global::javax.xml.datatype.Duration multiply(java.math.BigDecimal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -282,7 +282,7 @@ namespace javax.xml.datatype
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._multiply30741, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.datatype.Duration;
 		}
 		internal static global::MonoJavaBridge.MethodId _negate30742;
-		public override global::javax.xml.datatype.Duration negate() 
+		public override global::javax.xml.datatype.Duration negate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -291,7 +291,7 @@ namespace javax.xml.datatype
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._negate30742)) as javax.xml.datatype.Duration;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSign30743;
-		public override int getSign() 
+		public override int getSign()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -300,7 +300,7 @@ namespace javax.xml.datatype
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._getSign30743);
 		}
 		internal static global::MonoJavaBridge.MethodId _addTo30744;
-		public override void addTo(java.util.Calendar arg0) 
+		public override void addTo(java.util.Calendar arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -309,7 +309,7 @@ namespace javax.xml.datatype
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.datatype.Duration_.staticClass, global::javax.xml.datatype.Duration_._addTo30744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _normalizeWith30745;
-		public override global::javax.xml.datatype.Duration normalizeWith(java.util.Calendar arg0) 
+		public override global::javax.xml.datatype.Duration normalizeWith(java.util.Calendar arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

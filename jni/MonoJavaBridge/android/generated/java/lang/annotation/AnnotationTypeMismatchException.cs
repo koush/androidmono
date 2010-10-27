@@ -12,7 +12,7 @@ namespace java.lang.annotation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _element20944;
-		public virtual global::java.lang.reflect.Method element() 
+		public virtual global::java.lang.reflect.Method element()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.reflect.Method>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, global::java.lang.annotation.AnnotationTypeMismatchException._element20944)) as java.lang.reflect.Method;
 		}
 		internal static global::MonoJavaBridge.MethodId _foundType20945;
-		public virtual global::java.lang.String foundType() 
+		public virtual global::java.lang.String foundType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.AnnotationTypeMismatchException.staticClass, global::java.lang.annotation.AnnotationTypeMismatchException._foundType20945)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _AnnotationTypeMismatchException20946;
-		public AnnotationTypeMismatchException(java.lang.reflect.Method arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AnnotationTypeMismatchException(java.lang.reflect.Method arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.annotation.AnnotationTypeMismatchException.staticClass, global::java.lang.annotation.AnnotationTypeMismatchException._AnnotationTypeMismatchException20946, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -22,7 +22,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals26496;
-		 bool java.util.Map_Entry.equals(java.lang.Object arg0) 
+		bool java.util.Map_Entry.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -31,7 +31,7 @@ namespace java.util
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._equals26496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26497;
-		 int java.util.Map_Entry.hashCode() 
+		int java.util.Map_Entry.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace java.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._hashCode26497);
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue26498;
-		 global::java.lang.Object java.util.Map_Entry.getValue() 
+		global::java.lang.Object java.util.Map_Entry.getValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,7 +49,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._getValue26498)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getKey26499;
-		 global::java.lang.Object java.util.Map_Entry.getKey() 
+		global::java.lang.Object java.util.Map_Entry.getKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._getKey26499)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setValue26500;
-		 global::java.lang.Object java.util.Map_Entry.setValue(java.lang.Object arg0) 
+		global::java.lang.Object java.util.Map_Entry.setValue(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

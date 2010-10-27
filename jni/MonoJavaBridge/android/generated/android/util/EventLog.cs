@@ -30,7 +30,7 @@ namespace android.util
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getData13749;
-			public global::java.lang.Object getData() 
+			public global::java.lang.Object getData()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.util
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getTag13750;
-			public int getTag() 
+			public int getTag()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.util
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getThreadId13751;
-			public int getThreadId() 
+			public int getThreadId()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace android.util
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getProcessId13752;
-			public int getProcessId() 
+			public int getProcessId()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace android.util
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getTimeNanos13753;
-			public long getTimeNanos() 
+			public long getTimeNanos()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -114,49 +114,49 @@ namespace android.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTagName13754;
-		public static global::java.lang.String getTagName(int arg0) 
+		public static global::java.lang.String getTagName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.EventLog.staticClass, global::android.util.EventLog._getTagName13754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeEvent13755;
-		public static int writeEvent(int arg0, long arg1) 
+		public static int writeEvent(int arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.EventLog.staticClass, global::android.util.EventLog._writeEvent13755, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeEvent13756;
-		public static int writeEvent(int arg0, java.lang.String arg1) 
+		public static int writeEvent(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.EventLog.staticClass, global::android.util.EventLog._writeEvent13756, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeEvent13757;
-		public static int writeEvent(int arg0, java.lang.Object[] arg1) 
+		public static int writeEvent(int arg0, java.lang.Object[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.EventLog.staticClass, global::android.util.EventLog._writeEvent13757, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeEvent13758;
-		public static int writeEvent(int arg0, int arg1) 
+		public static int writeEvent(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.EventLog.staticClass, global::android.util.EventLog._writeEvent13758, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _readEvents13759;
-		public static void readEvents(int[] arg0, java.util.Collection arg1) 
+		public static void readEvents(int[] arg0, java.util.Collection arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.util.EventLog.staticClass, global::android.util.EventLog._readEvents13759, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTagCode13760;
-		public static int getTagCode(java.lang.String arg0) 
+		public static int getTagCode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.EventLog.staticClass, global::android.util.EventLog._getTagCode13760, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _EventLog13761;
-		public EventLog()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EventLog() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.EventLog.staticClass, global::android.util.EventLog._EventLog13761);

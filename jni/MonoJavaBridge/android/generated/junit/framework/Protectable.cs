@@ -18,7 +18,7 @@ namespace junit.framework
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _protect31373;
-		 void junit.framework.Protectable.protect() 
+		void junit.framework.Protectable.protect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

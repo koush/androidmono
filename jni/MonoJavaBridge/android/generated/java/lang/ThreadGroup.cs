@@ -12,7 +12,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _uncaughtException20874;
-		public virtual void uncaughtException(java.lang.Thread arg0, java.lang.Throwable arg1) 
+		public virtual void uncaughtException(java.lang.Thread arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._uncaughtException20874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20875;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.lang
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName20876;
-		public virtual global::java.lang.String getName() 
+		public virtual global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.lang
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParent20877;
-		public virtual global::java.lang.ThreadGroup getParent() 
+		public virtual global::java.lang.ThreadGroup getParent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,8 +61,15 @@ namespace java.lang
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._getParent20877)) as java.lang.ThreadGroup;
 		}
+		public new bool Daemon
+		{
+			set
+			{
+				setDaemon(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDaemon20878;
-		public virtual void setDaemon(bool arg0) 
+		public virtual void setDaemon(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +78,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._setDaemon20878, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _stop20879;
-		public virtual void stop() 
+		public virtual void stop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +87,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._stop20879);
 		}
 		internal static global::MonoJavaBridge.MethodId _interrupt20880;
-		public virtual void interrupt() 
+		public virtual void interrupt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +96,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._interrupt20880);
 		}
 		internal static global::MonoJavaBridge.MethodId _destroy20881;
-		public virtual void destroy() 
+		public virtual void destroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +105,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._destroy20881);
 		}
 		internal static global::MonoJavaBridge.MethodId _suspend20882;
-		public virtual void suspend() 
+		public virtual void suspend()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +114,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._suspend20882);
 		}
 		internal static global::MonoJavaBridge.MethodId _resume20883;
-		public virtual void resume() 
+		public virtual void resume()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +123,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._resume20883);
 		}
 		internal static global::MonoJavaBridge.MethodId _activeCount20884;
-		public virtual int activeCount() 
+		public virtual int activeCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +132,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._activeCount20884);
 		}
 		internal static global::MonoJavaBridge.MethodId _enumerate20885;
-		public virtual int enumerate(java.lang.ThreadGroup[] arg0) 
+		public virtual int enumerate(java.lang.ThreadGroup[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +141,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate20885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _enumerate20886;
-		public virtual int enumerate(java.lang.ThreadGroup[] arg0, bool arg1) 
+		public virtual int enumerate(java.lang.ThreadGroup[] arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +150,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate20886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _enumerate20887;
-		public virtual int enumerate(java.lang.Thread[] arg0, bool arg1) 
+		public virtual int enumerate(java.lang.Thread[] arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +159,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate20887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _enumerate20888;
-		public virtual int enumerate(java.lang.Thread[] arg0) 
+		public virtual int enumerate(java.lang.Thread[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +168,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate20888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDaemon20889;
-		public virtual bool isDaemon() 
+		public virtual bool isDaemon()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +177,7 @@ namespace java.lang
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._isDaemon20889);
 		}
 		internal static global::MonoJavaBridge.MethodId _checkAccess20890;
-		public virtual void checkAccess() 
+		public virtual void checkAccess()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -190,7 +197,7 @@ namespace java.lang
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxPriority20891;
-		public virtual int getMaxPriority() 
+		public virtual int getMaxPriority()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -199,7 +206,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._getMaxPriority20891);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDestroyed20892;
-		public virtual bool isDestroyed() 
+		public virtual bool isDestroyed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -208,7 +215,7 @@ namespace java.lang
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._isDestroyed20892);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaxPriority20893;
-		public virtual void setMaxPriority(int arg0) 
+		public virtual void setMaxPriority(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -217,7 +224,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._setMaxPriority20893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _parentOf20894;
-		public virtual bool parentOf(java.lang.ThreadGroup arg0) 
+		public virtual bool parentOf(java.lang.ThreadGroup arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -226,7 +233,7 @@ namespace java.lang
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._parentOf20894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _activeGroupCount20895;
-		public virtual int activeGroupCount() 
+		public virtual int activeGroupCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -235,7 +242,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._activeGroupCount20895);
 		}
 		internal static global::MonoJavaBridge.MethodId _list20896;
-		public virtual void list() 
+		public virtual void list()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -244,7 +251,7 @@ namespace java.lang
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._list20896);
 		}
 		internal static global::MonoJavaBridge.MethodId _allowThreadSuspension20897;
-		public virtual bool allowThreadSuspension(bool arg0) 
+		public virtual bool allowThreadSuspension(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -253,14 +260,14 @@ namespace java.lang
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._allowThreadSuspension20897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ThreadGroup20898;
-		public ThreadGroup(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ThreadGroup(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._ThreadGroup20898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ThreadGroup20899;
-		public ThreadGroup(java.lang.ThreadGroup arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ThreadGroup(java.lang.ThreadGroup arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._ThreadGroup20899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -12,7 +12,7 @@ namespace android.telephony.gsm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals12037;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.telephony.gsm
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._equals12037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12038;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.telephony.gsm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._toString12038)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12039;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.telephony.gsm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLac12040;
-		public virtual int getLac() 
+		public virtual int getLac()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.telephony.gsm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCid12041;
-		public virtual int getCid() 
+		public virtual int getCid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace android.telephony.gsm
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._getCid12041);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStateInvalid12042;
-		public virtual void setStateInvalid() 
+		public virtual void setStateInvalid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace android.telephony.gsm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._setStateInvalid12042);
 		}
 		internal static global::MonoJavaBridge.MethodId _fillInNotifierBundle12043;
-		public virtual void fillInNotifierBundle(android.os.Bundle arg0) 
+		public virtual void fillInNotifierBundle(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace android.telephony.gsm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._fillInNotifierBundle12043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLacAndCid12044;
-		public virtual void setLacAndCid(int arg0, int arg1) 
+		public virtual void setLacAndCid(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,14 +98,14 @@ namespace android.telephony.gsm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._setLacAndCid12044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _GsmCellLocation12045;
-		public GsmCellLocation()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public GsmCellLocation() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._GsmCellLocation12045);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _GsmCellLocation12046;
-		public GsmCellLocation(android.os.Bundle arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public GsmCellLocation(android.os.Bundle arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._GsmCellLocation12046, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -23,31 +23,31 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault29881;
-		public static global::javax.net.ssl.SSLContext getDefault() 
+		public static global::javax.net.ssl.SSLContext getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getDefault29881)) as javax.net.ssl.SSLContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance29882;
-		public static global::javax.net.ssl.SSLContext getInstance(java.lang.String arg0, java.security.Provider arg1) 
+		public static global::javax.net.ssl.SSLContext getInstance(java.lang.String arg0, java.security.Provider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getInstance29882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.net.ssl.SSLContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance29883;
-		public static global::javax.net.ssl.SSLContext getInstance(java.lang.String arg0) 
+		public static global::javax.net.ssl.SSLContext getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getInstance29883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.net.ssl.SSLContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance29884;
-		public static global::javax.net.ssl.SSLContext getInstance(java.lang.String arg0, java.lang.String arg1) 
+		public static global::javax.net.ssl.SSLContext getInstance(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getInstance29884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.net.ssl.SSLContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _init29885;
-		public virtual void init(javax.net.ssl.KeyManager[] arg0, javax.net.ssl.TrustManager[] arg1, java.security.SecureRandom arg2) 
+		public virtual void init(javax.net.ssl.KeyManager[] arg0, javax.net.ssl.TrustManager[] arg1, java.security.SecureRandom arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -63,7 +63,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProtocol29886;
-		public virtual global::java.lang.String getProtocol() 
+		public virtual global::java.lang.String getProtocol()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -72,7 +72,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getProtocol29886)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault29887;
-		public static void setDefault(javax.net.ssl.SSLContext arg0) 
+		public static void setDefault(javax.net.ssl.SSLContext arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._setDefault29887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -85,7 +85,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider29888;
-		public virtual global::java.security.Provider getProvider() 
+		public virtual global::java.security.Provider getProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,7 +101,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSocketFactory29889;
-		public virtual global::javax.net.ssl.SSLSocketFactory getSocketFactory() 
+		public virtual global::javax.net.ssl.SSLSocketFactory getSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -117,7 +117,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getServerSocketFactory29890;
-		public virtual global::javax.net.ssl.SSLServerSocketFactory getServerSocketFactory() 
+		public virtual global::javax.net.ssl.SSLServerSocketFactory getServerSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -126,7 +126,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getServerSocketFactory29890)) as javax.net.ssl.SSLServerSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSSLEngine29891;
-		public virtual global::javax.net.ssl.SSLEngine createSSLEngine() 
+		public virtual global::javax.net.ssl.SSLEngine createSSLEngine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -135,7 +135,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._createSSLEngine29891)) as javax.net.ssl.SSLEngine;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSSLEngine29892;
-		public virtual global::javax.net.ssl.SSLEngine createSSLEngine(java.lang.String arg0, int arg1) 
+		public virtual global::javax.net.ssl.SSLEngine createSSLEngine(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -151,7 +151,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getServerSessionContext29893;
-		public virtual global::javax.net.ssl.SSLSessionContext getServerSessionContext() 
+		public virtual global::javax.net.ssl.SSLSessionContext getServerSessionContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -167,7 +167,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getClientSessionContext29894;
-		public virtual global::javax.net.ssl.SSLSessionContext getClientSessionContext() 
+		public virtual global::javax.net.ssl.SSLSessionContext getClientSessionContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -176,7 +176,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.net.ssl.SSLSessionContext>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._getClientSessionContext29894)) as javax.net.ssl.SSLSessionContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLContext29895;
-		protected SSLContext(javax.net.ssl.SSLContextSpi arg0, java.security.Provider arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SSLContext(javax.net.ssl.SSLContextSpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLContext.staticClass, global::javax.net.ssl.SSLContext._SSLContext29895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

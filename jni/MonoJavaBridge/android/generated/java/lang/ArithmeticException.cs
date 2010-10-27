@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ArithmeticException19710;
-		public ArithmeticException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ArithmeticException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArithmeticException.staticClass, global::java.lang.ArithmeticException._ArithmeticException19710);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ArithmeticException19711;
-		public ArithmeticException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ArithmeticException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArithmeticException.staticClass, global::java.lang.ArithmeticException._ArithmeticException19711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

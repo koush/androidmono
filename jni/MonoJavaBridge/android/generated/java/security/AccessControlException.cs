@@ -19,7 +19,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermission22833;
-		public virtual global::java.security.Permission getPermission() 
+		public virtual global::java.security.Permission getPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,14 +28,14 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AccessControlException.staticClass, global::java.security.AccessControlException._getPermission22833)) as java.security.Permission;
 		}
 		internal static global::MonoJavaBridge.MethodId _AccessControlException22834;
-		public AccessControlException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AccessControlException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlException.staticClass, global::java.security.AccessControlException._AccessControlException22834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AccessControlException22835;
-		public AccessControlException(java.lang.String arg0, java.security.Permission arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AccessControlException(java.lang.String arg0, java.security.Permission arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AccessControlException.staticClass, global::java.security.AccessControlException._AccessControlException22835, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

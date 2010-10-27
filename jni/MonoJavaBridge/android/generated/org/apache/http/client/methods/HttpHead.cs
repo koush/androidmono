@@ -19,7 +19,7 @@ namespace org.apache.http.client.methods
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMethod31924;
-		public override global::java.lang.String getMethod() 
+		public override global::java.lang.String getMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,21 +28,21 @@ namespace org.apache.http.client.methods
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._getMethod31924)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpHead31925;
-		public HttpHead()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpHead() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._HttpHead31925);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpHead31926;
-		public HttpHead(java.net.URI arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpHead(java.net.URI arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._HttpHead31926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpHead31927;
-		public HttpHead(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpHead(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpHead.staticClass, global::org.apache.http.client.methods.HttpHead._HttpHead31927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoCopySpan_Concrete12902;
-		public NoCopySpan_Concrete()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoCopySpan_Concrete() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.NoCopySpan_Concrete.staticClass, global::android.text.NoCopySpan_Concrete._NoCopySpan_Concrete12902);

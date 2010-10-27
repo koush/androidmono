@@ -19,7 +19,7 @@ namespace org.apache.http.entity
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContent32546;
-		public virtual global::java.io.InputStream getContent() 
+		public virtual global::java.io.InputStream getContent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.entity
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._getContent32546)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeTo32547;
-		public virtual void writeTo(java.io.OutputStream arg0) 
+		public virtual void writeTo(java.io.OutputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.http.entity
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentType32548;
-		public virtual global::org.apache.http.Header getContentType() 
+		public virtual global::org.apache.http.Header getContentType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.entity
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentLength32549;
-		public virtual long getContentLength() 
+		public virtual long getContentLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace org.apache.http.entity
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentEncoding32550;
-		public virtual global::org.apache.http.Header getContentEncoding() 
+		public virtual global::org.apache.http.Header getContentEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +85,7 @@ namespace org.apache.http.entity
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._getContentEncoding32550)) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _isRepeatable32551;
-		public virtual bool isRepeatable() 
+		public virtual bool isRepeatable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace org.apache.http.entity
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._isRepeatable32551);
 		}
 		internal static global::MonoJavaBridge.MethodId _isChunked32552;
-		public virtual bool isChunked() 
+		public virtual bool isChunked()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,7 +103,7 @@ namespace org.apache.http.entity
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._isChunked32552);
 		}
 		internal static global::MonoJavaBridge.MethodId _isStreaming32553;
-		public virtual bool isStreaming() 
+		public virtual bool isStreaming()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,7 +112,7 @@ namespace org.apache.http.entity
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._isStreaming32553);
 		}
 		internal static global::MonoJavaBridge.MethodId _consumeContent32554;
-		public virtual void consumeContent() 
+		public virtual void consumeContent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -121,7 +121,7 @@ namespace org.apache.http.entity
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._consumeContent32554);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpEntityWrapper32555;
-		public HttpEntityWrapper(org.apache.http.HttpEntity arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpEntityWrapper(org.apache.http.HttpEntity arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.entity.HttpEntityWrapper.staticClass, global::org.apache.http.entity.HttpEntityWrapper._HttpEntityWrapper32555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

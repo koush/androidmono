@@ -12,21 +12,21 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ProtocolException31742;
-		public ProtocolException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProtocolException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31742);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProtocolException31743;
-		public ProtocolException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProtocolException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31743, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProtocolException31744;
-		public ProtocolException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProtocolException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ProtocolException.staticClass, global::org.apache.http.ProtocolException._ProtocolException31744, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

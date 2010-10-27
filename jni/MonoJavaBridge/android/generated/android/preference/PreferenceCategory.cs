@@ -12,7 +12,7 @@ namespace android.preference
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isEnabled10409;
-		public override bool isEnabled() 
+		public override bool isEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._isEnabled10409);
 		}
 		internal static global::MonoJavaBridge.MethodId _onPrepareAddPreference10410;
-		protected override bool onPrepareAddPreference(android.preference.Preference arg0) 
+		protected override bool onPrepareAddPreference(android.preference.Preference arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,21 +30,21 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._onPrepareAddPreference10410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PreferenceCategory10411;
-		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._PreferenceCategory10411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PreferenceCategory10412;
-		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._PreferenceCategory10412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PreferenceCategory10413;
-		public PreferenceCategory(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PreferenceCategory(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._PreferenceCategory10413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

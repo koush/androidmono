@@ -18,7 +18,7 @@ namespace javax.crypto.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getX28736;
-		 global::java.math.BigInteger javax.crypto.interfaces.DHPrivateKey.getX() 
+		global::java.math.BigInteger javax.crypto.interfaces.DHPrivateKey.getX()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHPrivateKey_.staticClass, global::javax.crypto.interfaces.DHPrivateKey_._getX28736)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams28737;
-		 global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams() 
+		global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHPrivateKey_.staticClass, global::javax.crypto.interfaces.DHPrivateKey_._getParams28737)) as javax.crypto.spec.DHParameterSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded28738;
-		 byte[] java.security.Key.getEncoded() 
+		byte[] java.security.Key.getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHPrivateKey_.staticClass, global::javax.crypto.interfaces.DHPrivateKey_._getEncoded28738)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28739;
-		 global::java.lang.String java.security.Key.getAlgorithm() 
+		global::java.lang.String java.security.Key.getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,7 +54,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHPrivateKey_.staticClass, global::javax.crypto.interfaces.DHPrivateKey_._getAlgorithm28739)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat28740;
-		 global::java.lang.String java.security.Key.getFormat() 
+		global::java.lang.String java.security.Key.getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

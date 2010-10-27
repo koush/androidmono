@@ -12,28 +12,28 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ProviderException23290;
-		public ProviderException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProviderException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23290);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProviderException23291;
-		public ProviderException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProviderException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProviderException23292;
-		public ProviderException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProviderException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProviderException23293;
-		public ProviderException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProviderException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.ProviderException.staticClass, global::java.security.ProviderException._ProviderException23293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

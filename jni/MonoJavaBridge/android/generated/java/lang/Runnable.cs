@@ -18,7 +18,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _run20428;
-		 void java.lang.Runnable.run() 
+		void java.lang.Runnable.run()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

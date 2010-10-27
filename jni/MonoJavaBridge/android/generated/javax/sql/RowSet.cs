@@ -126,7 +126,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setReadOnly30289;
-		 void javax.sql.RowSet.setReadOnly(bool arg0) 
+		void javax.sql.RowSet.setReadOnly(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -135,7 +135,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setReadOnly30289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBoolean30290;
-		 void javax.sql.RowSet.setBoolean(java.lang.String arg0, bool arg1) 
+		void javax.sql.RowSet.setBoolean(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -144,7 +144,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBoolean30290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBoolean30291;
-		 void javax.sql.RowSet.setBoolean(int arg0, bool arg1) 
+		void javax.sql.RowSet.setBoolean(int arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -153,7 +153,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBoolean30291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setByte30292;
-		 void javax.sql.RowSet.setByte(java.lang.String arg0, byte arg1) 
+		void javax.sql.RowSet.setByte(java.lang.String arg0, byte arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -162,7 +162,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setByte30292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setByte30293;
-		 void javax.sql.RowSet.setByte(int arg0, byte arg1) 
+		void javax.sql.RowSet.setByte(int arg0, byte arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -171,7 +171,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setByte30293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShort30294;
-		 void javax.sql.RowSet.setShort(int arg0, short arg1) 
+		void javax.sql.RowSet.setShort(int arg0, short arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -180,7 +180,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setShort30294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShort30295;
-		 void javax.sql.RowSet.setShort(java.lang.String arg0, short arg1) 
+		void javax.sql.RowSet.setShort(java.lang.String arg0, short arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -189,7 +189,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setShort30295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInt30296;
-		 void javax.sql.RowSet.setInt(java.lang.String arg0, int arg1) 
+		void javax.sql.RowSet.setInt(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -198,7 +198,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setInt30296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInt30297;
-		 void javax.sql.RowSet.setInt(int arg0, int arg1) 
+		void javax.sql.RowSet.setInt(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -207,7 +207,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setInt30297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLong30298;
-		 void javax.sql.RowSet.setLong(int arg0, long arg1) 
+		void javax.sql.RowSet.setLong(int arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -216,7 +216,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setLong30298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLong30299;
-		 void javax.sql.RowSet.setLong(java.lang.String arg0, long arg1) 
+		void javax.sql.RowSet.setLong(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -225,7 +225,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setLong30299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFloat30300;
-		 void javax.sql.RowSet.setFloat(java.lang.String arg0, float arg1) 
+		void javax.sql.RowSet.setFloat(java.lang.String arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -234,7 +234,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setFloat30300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFloat30301;
-		 void javax.sql.RowSet.setFloat(int arg0, float arg1) 
+		void javax.sql.RowSet.setFloat(int arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -243,7 +243,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setFloat30301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDouble30302;
-		 void javax.sql.RowSet.setDouble(int arg0, double arg1) 
+		void javax.sql.RowSet.setDouble(int arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -252,7 +252,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDouble30302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDouble30303;
-		 void javax.sql.RowSet.setDouble(java.lang.String arg0, double arg1) 
+		void javax.sql.RowSet.setDouble(java.lang.String arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -261,7 +261,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDouble30303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadOnly30304;
-		 bool javax.sql.RowSet.isReadOnly() 
+		bool javax.sql.RowSet.isReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -270,7 +270,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._isReadOnly30304);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTimestamp30305;
-		 void javax.sql.RowSet.setTimestamp(int arg0, java.sql.Timestamp arg1, java.util.Calendar arg2) 
+		void javax.sql.RowSet.setTimestamp(int arg0, java.sql.Timestamp arg1, java.util.Calendar arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -279,7 +279,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTimestamp30305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTimestamp30306;
-		 void javax.sql.RowSet.setTimestamp(java.lang.String arg0, java.sql.Timestamp arg1, java.util.Calendar arg2) 
+		void javax.sql.RowSet.setTimestamp(java.lang.String arg0, java.sql.Timestamp arg1, java.util.Calendar arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -288,7 +288,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTimestamp30306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTimestamp30307;
-		 void javax.sql.RowSet.setTimestamp(int arg0, java.sql.Timestamp arg1) 
+		void javax.sql.RowSet.setTimestamp(int arg0, java.sql.Timestamp arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -297,7 +297,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTimestamp30307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTimestamp30308;
-		 void javax.sql.RowSet.setTimestamp(java.lang.String arg0, java.sql.Timestamp arg1) 
+		void javax.sql.RowSet.setTimestamp(java.lang.String arg0, java.sql.Timestamp arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -306,7 +306,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTimestamp30308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setURL30309;
-		 void javax.sql.RowSet.setURL(int arg0, java.net.URL arg1) 
+		void javax.sql.RowSet.setURL(int arg0, java.net.URL arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -315,7 +315,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setURL30309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime30310;
-		 void javax.sql.RowSet.setTime(java.lang.String arg0, java.sql.Time arg1, java.util.Calendar arg2) 
+		void javax.sql.RowSet.setTime(java.lang.String arg0, java.sql.Time arg1, java.util.Calendar arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -324,7 +324,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTime30310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime30311;
-		 void javax.sql.RowSet.setTime(java.lang.String arg0, java.sql.Time arg1) 
+		void javax.sql.RowSet.setTime(java.lang.String arg0, java.sql.Time arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -333,7 +333,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTime30311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime30312;
-		 void javax.sql.RowSet.setTime(int arg0, java.sql.Time arg1, java.util.Calendar arg2) 
+		void javax.sql.RowSet.setTime(int arg0, java.sql.Time arg1, java.util.Calendar arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -342,7 +342,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTime30312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime30313;
-		 void javax.sql.RowSet.setTime(int arg0, java.sql.Time arg1) 
+		void javax.sql.RowSet.setTime(int arg0, java.sql.Time arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -351,7 +351,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTime30313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDate30314;
-		 void javax.sql.RowSet.setDate(int arg0, java.sql.Date arg1, java.util.Calendar arg2) 
+		void javax.sql.RowSet.setDate(int arg0, java.sql.Date arg1, java.util.Calendar arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -360,7 +360,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDate30314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDate30315;
-		 void javax.sql.RowSet.setDate(int arg0, java.sql.Date arg1) 
+		void javax.sql.RowSet.setDate(int arg0, java.sql.Date arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -369,7 +369,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDate30315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDate30316;
-		 void javax.sql.RowSet.setDate(java.lang.String arg0, java.sql.Date arg1, java.util.Calendar arg2) 
+		void javax.sql.RowSet.setDate(java.lang.String arg0, java.sql.Date arg1, java.util.Calendar arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -378,7 +378,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDate30316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDate30317;
-		 void javax.sql.RowSet.setDate(java.lang.String arg0, java.sql.Date arg1) 
+		void javax.sql.RowSet.setDate(java.lang.String arg0, java.sql.Date arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -387,7 +387,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDate30317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _execute30318;
-		 void javax.sql.RowSet.execute() 
+		void javax.sql.RowSet.execute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -396,7 +396,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._execute30318);
 		}
 		internal static global::MonoJavaBridge.MethodId _setPassword30319;
-		 void javax.sql.RowSet.setPassword(java.lang.String arg0) 
+		void javax.sql.RowSet.setPassword(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -405,7 +405,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setPassword30319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setType30320;
-		 void javax.sql.RowSet.setType(int arg0) 
+		void javax.sql.RowSet.setType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -414,7 +414,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setType30320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPassword30321;
-		 global::java.lang.String javax.sql.RowSet.getPassword() 
+		global::java.lang.String javax.sql.RowSet.getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -423,7 +423,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getPassword30321)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setString30322;
-		 void javax.sql.RowSet.setString(int arg0, java.lang.String arg1) 
+		void javax.sql.RowSet.setString(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -432,7 +432,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setString30322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setString30323;
-		 void javax.sql.RowSet.setString(java.lang.String arg0, java.lang.String arg1) 
+		void javax.sql.RowSet.setString(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -441,7 +441,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setString30323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setObject30324;
-		 void javax.sql.RowSet.setObject(java.lang.String arg0, java.lang.Object arg1, int arg2, int arg3) 
+		void javax.sql.RowSet.setObject(java.lang.String arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -450,7 +450,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setObject30324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setObject30325;
-		 void javax.sql.RowSet.setObject(int arg0, java.lang.Object arg1, int arg2, int arg3) 
+		void javax.sql.RowSet.setObject(int arg0, java.lang.Object arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -459,7 +459,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setObject30325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _setObject30326;
-		 void javax.sql.RowSet.setObject(int arg0, java.lang.Object arg1, int arg2) 
+		void javax.sql.RowSet.setObject(int arg0, java.lang.Object arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -468,7 +468,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setObject30326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setObject30327;
-		 void javax.sql.RowSet.setObject(java.lang.String arg0, java.lang.Object arg1, int arg2) 
+		void javax.sql.RowSet.setObject(java.lang.String arg0, java.lang.Object arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -477,7 +477,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setObject30327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setObject30328;
-		 void javax.sql.RowSet.setObject(java.lang.String arg0, java.lang.Object arg1) 
+		void javax.sql.RowSet.setObject(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -486,7 +486,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setObject30328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setObject30329;
-		 void javax.sql.RowSet.setObject(int arg0, java.lang.Object arg1) 
+		void javax.sql.RowSet.setObject(int arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -495,7 +495,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setObject30329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getUrl30330;
-		 global::java.lang.String javax.sql.RowSet.getUrl() 
+		global::java.lang.String javax.sql.RowSet.getUrl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -504,7 +504,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getUrl30330)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUrl30331;
-		 void javax.sql.RowSet.setUrl(java.lang.String arg0) 
+		void javax.sql.RowSet.setUrl(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -513,7 +513,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setUrl30331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBytes30332;
-		 void javax.sql.RowSet.setBytes(java.lang.String arg0, byte[] arg1) 
+		void javax.sql.RowSet.setBytes(java.lang.String arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -522,7 +522,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBytes30332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBytes30333;
-		 void javax.sql.RowSet.setBytes(int arg0, byte[] arg1) 
+		void javax.sql.RowSet.setBytes(int arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -531,7 +531,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBytes30333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBinaryStream30334;
-		 void javax.sql.RowSet.setBinaryStream(java.lang.String arg0, java.io.InputStream arg1, int arg2) 
+		void javax.sql.RowSet.setBinaryStream(java.lang.String arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -540,7 +540,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBinaryStream30334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBinaryStream30335;
-		 void javax.sql.RowSet.setBinaryStream(int arg0, java.io.InputStream arg1, int arg2) 
+		void javax.sql.RowSet.setBinaryStream(int arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -549,7 +549,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBinaryStream30335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBinaryStream30336;
-		 void javax.sql.RowSet.setBinaryStream(java.lang.String arg0, java.io.InputStream arg1) 
+		void javax.sql.RowSet.setBinaryStream(java.lang.String arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -558,7 +558,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBinaryStream30336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBinaryStream30337;
-		 void javax.sql.RowSet.setBinaryStream(int arg0, java.io.InputStream arg1) 
+		void javax.sql.RowSet.setBinaryStream(int arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -567,7 +567,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBinaryStream30337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNull30338;
-		 void javax.sql.RowSet.setNull(java.lang.String arg0, int arg1, java.lang.String arg2) 
+		void javax.sql.RowSet.setNull(java.lang.String arg0, int arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -576,7 +576,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNull30338, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNull30339;
-		 void javax.sql.RowSet.setNull(int arg0, int arg1, java.lang.String arg2) 
+		void javax.sql.RowSet.setNull(int arg0, int arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -585,7 +585,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNull30339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNull30340;
-		 void javax.sql.RowSet.setNull(int arg0, int arg1) 
+		void javax.sql.RowSet.setNull(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -594,7 +594,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNull30340, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNull30341;
-		 void javax.sql.RowSet.setNull(java.lang.String arg0, int arg1) 
+		void javax.sql.RowSet.setNull(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -603,7 +603,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNull30341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBigDecimal30342;
-		 void javax.sql.RowSet.setBigDecimal(java.lang.String arg0, java.math.BigDecimal arg1) 
+		void javax.sql.RowSet.setBigDecimal(java.lang.String arg0, java.math.BigDecimal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -612,7 +612,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBigDecimal30342, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBigDecimal30343;
-		 void javax.sql.RowSet.setBigDecimal(int arg0, java.math.BigDecimal arg1) 
+		void javax.sql.RowSet.setBigDecimal(int arg0, java.math.BigDecimal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -621,7 +621,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBigDecimal30343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAsciiStream30344;
-		 void javax.sql.RowSet.setAsciiStream(int arg0, java.io.InputStream arg1, int arg2) 
+		void javax.sql.RowSet.setAsciiStream(int arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -630,7 +630,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setAsciiStream30344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAsciiStream30345;
-		 void javax.sql.RowSet.setAsciiStream(java.lang.String arg0, java.io.InputStream arg1, int arg2) 
+		void javax.sql.RowSet.setAsciiStream(java.lang.String arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -639,7 +639,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setAsciiStream30345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAsciiStream30346;
-		 void javax.sql.RowSet.setAsciiStream(int arg0, java.io.InputStream arg1) 
+		void javax.sql.RowSet.setAsciiStream(int arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -648,7 +648,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setAsciiStream30346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAsciiStream30347;
-		 void javax.sql.RowSet.setAsciiStream(java.lang.String arg0, java.io.InputStream arg1) 
+		void javax.sql.RowSet.setAsciiStream(java.lang.String arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -657,7 +657,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setAsciiStream30347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream30348;
-		 void javax.sql.RowSet.setCharacterStream(java.lang.String arg0, java.io.Reader arg1, int arg2) 
+		void javax.sql.RowSet.setCharacterStream(java.lang.String arg0, java.io.Reader arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -666,7 +666,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setCharacterStream30348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream30349;
-		 void javax.sql.RowSet.setCharacterStream(java.lang.String arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setCharacterStream(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -675,7 +675,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setCharacterStream30349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream30350;
-		 void javax.sql.RowSet.setCharacterStream(int arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setCharacterStream(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -684,7 +684,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setCharacterStream30350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream30351;
-		 void javax.sql.RowSet.setCharacterStream(int arg0, java.io.Reader arg1, int arg2) 
+		void javax.sql.RowSet.setCharacterStream(int arg0, java.io.Reader arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -693,7 +693,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setCharacterStream30351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNString30352;
-		 void javax.sql.RowSet.setNString(java.lang.String arg0, java.lang.String arg1) 
+		void javax.sql.RowSet.setNString(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -702,7 +702,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNString30352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNString30353;
-		 void javax.sql.RowSet.setNString(int arg0, java.lang.String arg1) 
+		void javax.sql.RowSet.setNString(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -711,7 +711,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNString30353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNCharacterStream30354;
-		 void javax.sql.RowSet.setNCharacterStream(int arg0, java.io.Reader arg1, long arg2) 
+		void javax.sql.RowSet.setNCharacterStream(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -720,7 +720,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNCharacterStream30354, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNCharacterStream30355;
-		 void javax.sql.RowSet.setNCharacterStream(int arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setNCharacterStream(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -729,7 +729,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNCharacterStream30355, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNCharacterStream30356;
-		 void javax.sql.RowSet.setNCharacterStream(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void javax.sql.RowSet.setNCharacterStream(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -738,7 +738,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNCharacterStream30356, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNCharacterStream30357;
-		 void javax.sql.RowSet.setNCharacterStream(java.lang.String arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setNCharacterStream(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -747,7 +747,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNCharacterStream30357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNClob30358;
-		 void javax.sql.RowSet.setNClob(java.lang.String arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setNClob(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -756,7 +756,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNClob30358, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNClob30359;
-		 void javax.sql.RowSet.setNClob(int arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setNClob(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -765,7 +765,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNClob30359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNClob30360;
-		 void javax.sql.RowSet.setNClob(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void javax.sql.RowSet.setNClob(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -774,7 +774,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNClob30360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNClob30361;
-		 void javax.sql.RowSet.setNClob(int arg0, java.io.Reader arg1, long arg2) 
+		void javax.sql.RowSet.setNClob(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -783,7 +783,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setNClob30361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClob30362;
-		 void javax.sql.RowSet.setClob(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void javax.sql.RowSet.setClob(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -792,7 +792,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setClob30362, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClob30363;
-		 void javax.sql.RowSet.setClob(java.lang.String arg0, java.sql.Clob arg1) 
+		void javax.sql.RowSet.setClob(java.lang.String arg0, java.sql.Clob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -801,7 +801,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setClob30363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClob30364;
-		 void javax.sql.RowSet.setClob(java.lang.String arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setClob(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -810,7 +810,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setClob30364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClob30365;
-		 void javax.sql.RowSet.setClob(int arg0, java.sql.Clob arg1) 
+		void javax.sql.RowSet.setClob(int arg0, java.sql.Clob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -819,7 +819,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setClob30365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClob30366;
-		 void javax.sql.RowSet.setClob(int arg0, java.io.Reader arg1, long arg2) 
+		void javax.sql.RowSet.setClob(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -828,7 +828,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setClob30366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClob30367;
-		 void javax.sql.RowSet.setClob(int arg0, java.io.Reader arg1) 
+		void javax.sql.RowSet.setClob(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -837,7 +837,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setClob30367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlob30368;
-		 void javax.sql.RowSet.setBlob(int arg0, java.io.InputStream arg1) 
+		void javax.sql.RowSet.setBlob(int arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -846,7 +846,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBlob30368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlob30369;
-		 void javax.sql.RowSet.setBlob(java.lang.String arg0, java.sql.Blob arg1) 
+		void javax.sql.RowSet.setBlob(java.lang.String arg0, java.sql.Blob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -855,7 +855,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBlob30369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlob30370;
-		 void javax.sql.RowSet.setBlob(java.lang.String arg0, java.io.InputStream arg1) 
+		void javax.sql.RowSet.setBlob(java.lang.String arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -864,7 +864,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBlob30370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlob30371;
-		 void javax.sql.RowSet.setBlob(int arg0, java.sql.Blob arg1) 
+		void javax.sql.RowSet.setBlob(int arg0, java.sql.Blob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -873,7 +873,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBlob30371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlob30372;
-		 void javax.sql.RowSet.setBlob(int arg0, java.io.InputStream arg1, long arg2) 
+		void javax.sql.RowSet.setBlob(int arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -882,7 +882,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBlob30372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBlob30373;
-		 void javax.sql.RowSet.setBlob(java.lang.String arg0, java.io.InputStream arg1, long arg2) 
+		void javax.sql.RowSet.setBlob(java.lang.String arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -891,7 +891,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setBlob30373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearParameters30374;
-		 void javax.sql.RowSet.clearParameters() 
+		void javax.sql.RowSet.clearParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -900,7 +900,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._clearParameters30374);
 		}
 		internal static global::MonoJavaBridge.MethodId _setRef30375;
-		 void javax.sql.RowSet.setRef(int arg0, java.sql.Ref arg1) 
+		void javax.sql.RowSet.setRef(int arg0, java.sql.Ref arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -909,7 +909,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setRef30375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setArray30376;
-		 void javax.sql.RowSet.setArray(int arg0, java.sql.Array arg1) 
+		void javax.sql.RowSet.setArray(int arg0, java.sql.Array arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -918,7 +918,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setArray30376, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxFieldSize30377;
-		 int javax.sql.RowSet.getMaxFieldSize() 
+		int javax.sql.RowSet.getMaxFieldSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -927,7 +927,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getMaxFieldSize30377);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaxFieldSize30378;
-		 void javax.sql.RowSet.setMaxFieldSize(int arg0) 
+		void javax.sql.RowSet.setMaxFieldSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -936,7 +936,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setMaxFieldSize30378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxRows30379;
-		 int javax.sql.RowSet.getMaxRows() 
+		int javax.sql.RowSet.getMaxRows()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -945,7 +945,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getMaxRows30379);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaxRows30380;
-		 void javax.sql.RowSet.setMaxRows(int arg0) 
+		void javax.sql.RowSet.setMaxRows(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -954,7 +954,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setMaxRows30380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setEscapeProcessing30381;
-		 void javax.sql.RowSet.setEscapeProcessing(bool arg0) 
+		void javax.sql.RowSet.setEscapeProcessing(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -963,7 +963,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setEscapeProcessing30381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getQueryTimeout30382;
-		 int javax.sql.RowSet.getQueryTimeout() 
+		int javax.sql.RowSet.getQueryTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -972,7 +972,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getQueryTimeout30382);
 		}
 		internal static global::MonoJavaBridge.MethodId _setQueryTimeout30383;
-		 void javax.sql.RowSet.setQueryTimeout(int arg0) 
+		void javax.sql.RowSet.setQueryTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -981,7 +981,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setQueryTimeout30383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTransactionIsolation30384;
-		 void javax.sql.RowSet.setTransactionIsolation(int arg0) 
+		void javax.sql.RowSet.setTransactionIsolation(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -990,7 +990,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTransactionIsolation30384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTransactionIsolation30385;
-		 int javax.sql.RowSet.getTransactionIsolation() 
+		int javax.sql.RowSet.getTransactionIsolation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -999,7 +999,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTransactionIsolation30385);
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeMap30386;
-		 global::java.util.Map javax.sql.RowSet.getTypeMap() 
+		global::java.util.Map javax.sql.RowSet.getTypeMap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1008,7 +1008,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTypeMap30386)) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTypeMap30387;
-		 void javax.sql.RowSet.setTypeMap(java.util.Map arg0) 
+		void javax.sql.RowSet.setTypeMap(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1017,7 +1017,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setTypeMap30387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDataSourceName30388;
-		 global::java.lang.String javax.sql.RowSet.getDataSourceName() 
+		global::java.lang.String javax.sql.RowSet.getDataSourceName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1026,7 +1026,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDataSourceName30388)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDataSourceName30389;
-		 void javax.sql.RowSet.setDataSourceName(java.lang.String arg0) 
+		void javax.sql.RowSet.setDataSourceName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1035,7 +1035,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setDataSourceName30389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getUsername30390;
-		 global::java.lang.String javax.sql.RowSet.getUsername() 
+		global::java.lang.String javax.sql.RowSet.getUsername()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1044,7 +1044,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getUsername30390)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUsername30391;
-		 void javax.sql.RowSet.setUsername(java.lang.String arg0) 
+		void javax.sql.RowSet.setUsername(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1053,7 +1053,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setUsername30391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCommand30392;
-		 global::java.lang.String javax.sql.RowSet.getCommand() 
+		global::java.lang.String javax.sql.RowSet.getCommand()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1062,7 +1062,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getCommand30392)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCommand30393;
-		 void javax.sql.RowSet.setCommand(java.lang.String arg0) 
+		void javax.sql.RowSet.setCommand(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1071,7 +1071,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setCommand30393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getEscapeProcessing30394;
-		 bool javax.sql.RowSet.getEscapeProcessing() 
+		bool javax.sql.RowSet.getEscapeProcessing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1080,7 +1080,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getEscapeProcessing30394);
 		}
 		internal static global::MonoJavaBridge.MethodId _setConcurrency30395;
-		 void javax.sql.RowSet.setConcurrency(int arg0) 
+		void javax.sql.RowSet.setConcurrency(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1089,7 +1089,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setConcurrency30395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addRowSetListener30396;
-		 void javax.sql.RowSet.addRowSetListener(javax.sql.RowSetListener arg0) 
+		void javax.sql.RowSet.addRowSetListener(javax.sql.RowSetListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1098,7 +1098,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._addRowSetListener30396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeRowSetListener30397;
-		 void javax.sql.RowSet.removeRowSetListener(javax.sql.RowSetListener arg0) 
+		void javax.sql.RowSet.removeRowSetListener(javax.sql.RowSetListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1107,7 +1107,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._removeRowSetListener30397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getObject30398;
-		 global::java.lang.Object java.sql.ResultSet.getObject(java.lang.String arg0) 
+		global::java.lang.Object java.sql.ResultSet.getObject(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1116,7 +1116,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getObject30398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getObject30399;
-		 global::java.lang.Object java.sql.ResultSet.getObject(int arg0, java.util.Map arg1) 
+		global::java.lang.Object java.sql.ResultSet.getObject(int arg0, java.util.Map arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1125,7 +1125,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getObject30399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getObject30400;
-		 global::java.lang.Object java.sql.ResultSet.getObject(int arg0) 
+		global::java.lang.Object java.sql.ResultSet.getObject(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1134,7 +1134,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getObject30400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getObject30401;
-		 global::java.lang.Object java.sql.ResultSet.getObject(java.lang.String arg0, java.util.Map arg1) 
+		global::java.lang.Object java.sql.ResultSet.getObject(java.lang.String arg0, java.util.Map arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1143,7 +1143,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getObject30401, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean30402;
-		 bool java.sql.ResultSet.getBoolean(java.lang.String arg0) 
+		bool java.sql.ResultSet.getBoolean(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1152,7 +1152,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBoolean30402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean30403;
-		 bool java.sql.ResultSet.getBoolean(int arg0) 
+		bool java.sql.ResultSet.getBoolean(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1161,7 +1161,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBoolean30403, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByte30404;
-		 byte java.sql.ResultSet.getByte(java.lang.String arg0) 
+		byte java.sql.ResultSet.getByte(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1170,7 +1170,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getByte30404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByte30405;
-		 byte java.sql.ResultSet.getByte(int arg0) 
+		byte java.sql.ResultSet.getByte(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1179,7 +1179,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getByte30405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getShort30406;
-		 short java.sql.ResultSet.getShort(int arg0) 
+		short java.sql.ResultSet.getShort(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1188,7 +1188,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getShort30406, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getShort30407;
-		 short java.sql.ResultSet.getShort(java.lang.String arg0) 
+		short java.sql.ResultSet.getShort(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1197,7 +1197,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getShort30407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt30408;
-		 int java.sql.ResultSet.getInt(java.lang.String arg0) 
+		int java.sql.ResultSet.getInt(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1206,7 +1206,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getInt30408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt30409;
-		 int java.sql.ResultSet.getInt(int arg0) 
+		int java.sql.ResultSet.getInt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1215,7 +1215,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getInt30409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong30410;
-		 long java.sql.ResultSet.getLong(java.lang.String arg0) 
+		long java.sql.ResultSet.getLong(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1224,7 +1224,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getLong30410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong30411;
-		 long java.sql.ResultSet.getLong(int arg0) 
+		long java.sql.ResultSet.getLong(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1233,7 +1233,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getLong30411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat30412;
-		 float java.sql.ResultSet.getFloat(java.lang.String arg0) 
+		float java.sql.ResultSet.getFloat(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1242,7 +1242,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getFloat30412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat30413;
-		 float java.sql.ResultSet.getFloat(int arg0) 
+		float java.sql.ResultSet.getFloat(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1251,7 +1251,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getFloat30413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble30414;
-		 double java.sql.ResultSet.getDouble(int arg0) 
+		double java.sql.ResultSet.getDouble(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1260,7 +1260,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDouble30414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble30415;
-		 double java.sql.ResultSet.getDouble(java.lang.String arg0) 
+		double java.sql.ResultSet.getDouble(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1269,7 +1269,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDouble30415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytes30416;
-		 byte[] java.sql.ResultSet.getBytes(java.lang.String arg0) 
+		byte[] java.sql.ResultSet.getBytes(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1278,7 +1278,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBytes30416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytes30417;
-		 byte[] java.sql.ResultSet.getBytes(int arg0) 
+		byte[] java.sql.ResultSet.getBytes(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1287,7 +1287,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBytes30417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getArray30418;
-		 global::java.sql.Array java.sql.ResultSet.getArray(java.lang.String arg0) 
+		global::java.sql.Array java.sql.ResultSet.getArray(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1296,7 +1296,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Array>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getArray30418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Array;
 		}
 		internal static global::MonoJavaBridge.MethodId _getArray30419;
-		 global::java.sql.Array java.sql.ResultSet.getArray(int arg0) 
+		global::java.sql.Array java.sql.ResultSet.getArray(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1305,7 +1305,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Array>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getArray30419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Array;
 		}
 		internal static global::MonoJavaBridge.MethodId _next30420;
-		 bool java.sql.ResultSet.next() 
+		bool java.sql.ResultSet.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1314,7 +1314,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._next30420);
 		}
 		internal static global::MonoJavaBridge.MethodId _getURL30421;
-		 global::java.net.URL java.sql.ResultSet.getURL(java.lang.String arg0) 
+		global::java.net.URL java.sql.ResultSet.getURL(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1323,7 +1323,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getURL30421, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _getURL30422;
-		 global::java.net.URL java.sql.ResultSet.getURL(int arg0) 
+		global::java.net.URL java.sql.ResultSet.getURL(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1332,7 +1332,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getURL30422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _close30423;
-		 void java.sql.ResultSet.close() 
+		void java.sql.ResultSet.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1341,7 +1341,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._close30423);
 		}
 		internal static global::MonoJavaBridge.MethodId _getType30424;
-		 int java.sql.ResultSet.getType() 
+		int java.sql.ResultSet.getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1350,7 +1350,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getType30424);
 		}
 		internal static global::MonoJavaBridge.MethodId _previous30425;
-		 bool java.sql.ResultSet.previous() 
+		bool java.sql.ResultSet.previous()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1359,7 +1359,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._previous30425);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRef30426;
-		 global::java.sql.Ref java.sql.ResultSet.getRef(int arg0) 
+		global::java.sql.Ref java.sql.ResultSet.getRef(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1368,7 +1368,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Ref>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getRef30426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Ref;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRef30427;
-		 global::java.sql.Ref java.sql.ResultSet.getRef(java.lang.String arg0) 
+		global::java.sql.Ref java.sql.ResultSet.getRef(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1377,7 +1377,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Ref>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getRef30427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Ref;
 		}
 		internal static global::MonoJavaBridge.MethodId _getString30428;
-		 global::java.lang.String java.sql.ResultSet.getString(java.lang.String arg0) 
+		global::java.lang.String java.sql.ResultSet.getString(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1386,7 +1386,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getString30428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getString30429;
-		 global::java.lang.String java.sql.ResultSet.getString(int arg0) 
+		global::java.lang.String java.sql.ResultSet.getString(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1395,7 +1395,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getString30429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isFirst30430;
-		 bool java.sql.ResultSet.isFirst() 
+		bool java.sql.ResultSet.isFirst()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1404,7 +1404,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._isFirst30430);
 		}
 		internal static global::MonoJavaBridge.MethodId _getTime30431;
-		 global::java.sql.Time java.sql.ResultSet.getTime(java.lang.String arg0, java.util.Calendar arg1) 
+		global::java.sql.Time java.sql.ResultSet.getTime(java.lang.String arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1413,7 +1413,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTime30431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Time;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTime30432;
-		 global::java.sql.Time java.sql.ResultSet.getTime(java.lang.String arg0) 
+		global::java.sql.Time java.sql.ResultSet.getTime(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1422,7 +1422,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTime30432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Time;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTime30433;
-		 global::java.sql.Time java.sql.ResultSet.getTime(int arg0, java.util.Calendar arg1) 
+		global::java.sql.Time java.sql.ResultSet.getTime(int arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1431,7 +1431,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTime30433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Time;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTime30434;
-		 global::java.sql.Time java.sql.ResultSet.getTime(int arg0) 
+		global::java.sql.Time java.sql.ResultSet.getTime(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1440,7 +1440,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTime30434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Time;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDate30435;
-		 global::java.sql.Date java.sql.ResultSet.getDate(java.lang.String arg0) 
+		global::java.sql.Date java.sql.ResultSet.getDate(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1449,7 +1449,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDate30435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDate30436;
-		 global::java.sql.Date java.sql.ResultSet.getDate(java.lang.String arg0, java.util.Calendar arg1) 
+		global::java.sql.Date java.sql.ResultSet.getDate(java.lang.String arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1458,7 +1458,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDate30436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDate30437;
-		 global::java.sql.Date java.sql.ResultSet.getDate(int arg0) 
+		global::java.sql.Date java.sql.ResultSet.getDate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1467,7 +1467,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDate30437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDate30438;
-		 global::java.sql.Date java.sql.ResultSet.getDate(int arg0, java.util.Calendar arg1) 
+		global::java.sql.Date java.sql.ResultSet.getDate(int arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1476,7 +1476,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getDate30438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _isClosed30439;
-		 bool java.sql.ResultSet.isClosed() 
+		bool java.sql.ResultSet.isClosed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1485,7 +1485,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._isClosed30439);
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimestamp30440;
-		 global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(java.lang.String arg0) 
+		global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1494,7 +1494,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTimestamp30440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimestamp30441;
-		 global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(int arg0, java.util.Calendar arg1) 
+		global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(int arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1503,7 +1503,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTimestamp30441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimestamp30442;
-		 global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(java.lang.String arg0, java.util.Calendar arg1) 
+		global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(java.lang.String arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1512,7 +1512,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTimestamp30442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.sql.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimestamp30443;
-		 global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(int arg0) 
+		global::java.sql.Timestamp java.sql.ResultSet.getTimestamp(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1521,7 +1521,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getTimestamp30443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _last30444;
-		 bool java.sql.ResultSet.last() 
+		bool java.sql.ResultSet.last()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1530,7 +1530,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._last30444);
 		}
 		internal static global::MonoJavaBridge.MethodId _first30445;
-		 bool java.sql.ResultSet.first() 
+		bool java.sql.ResultSet.first()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1539,7 +1539,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._first30445);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBytes30446;
-		 void java.sql.ResultSet.updateBytes(java.lang.String arg0, byte[] arg1) 
+		void java.sql.ResultSet.updateBytes(java.lang.String arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1548,7 +1548,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBytes30446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBytes30447;
-		 void java.sql.ResultSet.updateBytes(int arg0, byte[] arg1) 
+		void java.sql.ResultSet.updateBytes(int arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1557,7 +1557,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBytes30447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLast30448;
-		 bool java.sql.ResultSet.isLast() 
+		bool java.sql.ResultSet.isLast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1566,7 +1566,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._isLast30448);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBeforeFirst30449;
-		 bool java.sql.ResultSet.isBeforeFirst() 
+		bool java.sql.ResultSet.isBeforeFirst()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1575,7 +1575,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._isBeforeFirst30449);
 		}
 		internal static global::MonoJavaBridge.MethodId _isAfterLast30450;
-		 bool java.sql.ResultSet.isAfterLast() 
+		bool java.sql.ResultSet.isAfterLast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1584,7 +1584,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._isAfterLast30450);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBlob30451;
-		 global::java.sql.Blob java.sql.ResultSet.getBlob(java.lang.String arg0) 
+		global::java.sql.Blob java.sql.ResultSet.getBlob(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1593,7 +1593,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Blob>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBlob30451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Blob;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBlob30452;
-		 global::java.sql.Blob java.sql.ResultSet.getBlob(int arg0) 
+		global::java.sql.Blob java.sql.ResultSet.getBlob(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1602,7 +1602,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Blob>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBlob30452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Blob;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDate30453;
-		 void java.sql.ResultSet.updateDate(int arg0, java.sql.Date arg1) 
+		void java.sql.ResultSet.updateDate(int arg0, java.sql.Date arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1611,7 +1611,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateDate30453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDate30454;
-		 void java.sql.ResultSet.updateDate(java.lang.String arg0, java.sql.Date arg1) 
+		void java.sql.ResultSet.updateDate(java.lang.String arg0, java.sql.Date arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1620,7 +1620,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateDate30454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateTime30455;
-		 void java.sql.ResultSet.updateTime(int arg0, java.sql.Time arg1) 
+		void java.sql.ResultSet.updateTime(int arg0, java.sql.Time arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1629,7 +1629,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateTime30455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateTime30456;
-		 void java.sql.ResultSet.updateTime(java.lang.String arg0, java.sql.Time arg1) 
+		void java.sql.ResultSet.updateTime(java.lang.String arg0, java.sql.Time arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1638,7 +1638,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateTime30456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteRow30457;
-		 void java.sql.ResultSet.deleteRow() 
+		void java.sql.ResultSet.deleteRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1647,7 +1647,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._deleteRow30457);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob30458;
-		 void java.sql.ResultSet.updateBlob(java.lang.String arg0, java.sql.Blob arg1) 
+		void java.sql.ResultSet.updateBlob(java.lang.String arg0, java.sql.Blob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1656,7 +1656,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBlob30458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob30459;
-		 void java.sql.ResultSet.updateBlob(java.lang.String arg0, java.io.InputStream arg1, long arg2) 
+		void java.sql.ResultSet.updateBlob(java.lang.String arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1665,7 +1665,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBlob30459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob30460;
-		 void java.sql.ResultSet.updateBlob(int arg0, java.io.InputStream arg1) 
+		void java.sql.ResultSet.updateBlob(int arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1674,7 +1674,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBlob30460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob30461;
-		 void java.sql.ResultSet.updateBlob(int arg0, java.io.InputStream arg1, long arg2) 
+		void java.sql.ResultSet.updateBlob(int arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1683,7 +1683,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBlob30461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob30462;
-		 void java.sql.ResultSet.updateBlob(java.lang.String arg0, java.io.InputStream arg1) 
+		void java.sql.ResultSet.updateBlob(java.lang.String arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1692,7 +1692,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBlob30462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBlob30463;
-		 void java.sql.ResultSet.updateBlob(int arg0, java.sql.Blob arg1) 
+		void java.sql.ResultSet.updateBlob(int arg0, java.sql.Blob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1701,7 +1701,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBlob30463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDouble30464;
-		 void java.sql.ResultSet.updateDouble(int arg0, double arg1) 
+		void java.sql.ResultSet.updateDouble(int arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1710,7 +1710,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateDouble30464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDouble30465;
-		 void java.sql.ResultSet.updateDouble(java.lang.String arg0, double arg1) 
+		void java.sql.ResultSet.updateDouble(java.lang.String arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1719,7 +1719,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateDouble30465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateFloat30466;
-		 void java.sql.ResultSet.updateFloat(java.lang.String arg0, float arg1) 
+		void java.sql.ResultSet.updateFloat(java.lang.String arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1728,7 +1728,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateFloat30466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateFloat30467;
-		 void java.sql.ResultSet.updateFloat(int arg0, float arg1) 
+		void java.sql.ResultSet.updateFloat(int arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1737,7 +1737,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateFloat30467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateInt30468;
-		 void java.sql.ResultSet.updateInt(java.lang.String arg0, int arg1) 
+		void java.sql.ResultSet.updateInt(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1746,7 +1746,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateInt30468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateInt30469;
-		 void java.sql.ResultSet.updateInt(int arg0, int arg1) 
+		void java.sql.ResultSet.updateInt(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1755,7 +1755,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateInt30469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateLong30470;
-		 void java.sql.ResultSet.updateLong(java.lang.String arg0, long arg1) 
+		void java.sql.ResultSet.updateLong(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1764,7 +1764,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateLong30470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateLong30471;
-		 void java.sql.ResultSet.updateLong(int arg0, long arg1) 
+		void java.sql.ResultSet.updateLong(int arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1773,7 +1773,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateLong30471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateShort30472;
-		 void java.sql.ResultSet.updateShort(int arg0, short arg1) 
+		void java.sql.ResultSet.updateShort(int arg0, short arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1782,7 +1782,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateShort30472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateShort30473;
-		 void java.sql.ResultSet.updateShort(java.lang.String arg0, short arg1) 
+		void java.sql.ResultSet.updateShort(java.lang.String arg0, short arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1791,7 +1791,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateShort30473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateString30474;
-		 void java.sql.ResultSet.updateString(int arg0, java.lang.String arg1) 
+		void java.sql.ResultSet.updateString(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1800,7 +1800,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateString30474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateString30475;
-		 void java.sql.ResultSet.updateString(java.lang.String arg0, java.lang.String arg1) 
+		void java.sql.ResultSet.updateString(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1809,7 +1809,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateString30475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _wasNull30476;
-		 bool java.sql.ResultSet.wasNull() 
+		bool java.sql.ResultSet.wasNull()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1818,7 +1818,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._wasNull30476);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBigDecimal30477;
-		 global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(int arg0, int arg1) 
+		global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1827,7 +1827,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBigDecimal30477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.math.BigDecimal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBigDecimal30478;
-		 global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(int arg0) 
+		global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1836,7 +1836,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBigDecimal30478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.BigDecimal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBigDecimal30479;
-		 global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(java.lang.String arg0) 
+		global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1845,7 +1845,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBigDecimal30479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.BigDecimal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBigDecimal30480;
-		 global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(java.lang.String arg0, int arg1) 
+		global::java.math.BigDecimal java.sql.ResultSet.getBigDecimal(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1854,7 +1854,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBigDecimal30480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.math.BigDecimal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsciiStream30481;
-		 global::java.io.InputStream java.sql.ResultSet.getAsciiStream(java.lang.String arg0) 
+		global::java.io.InputStream java.sql.ResultSet.getAsciiStream(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1863,7 +1863,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getAsciiStream30481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsciiStream30482;
-		 global::java.io.InputStream java.sql.ResultSet.getAsciiStream(int arg0) 
+		global::java.io.InputStream java.sql.ResultSet.getAsciiStream(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1872,7 +1872,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getAsciiStream30482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUnicodeStream30483;
-		 global::java.io.InputStream java.sql.ResultSet.getUnicodeStream(java.lang.String arg0) 
+		global::java.io.InputStream java.sql.ResultSet.getUnicodeStream(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1881,7 +1881,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getUnicodeStream30483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUnicodeStream30484;
-		 global::java.io.InputStream java.sql.ResultSet.getUnicodeStream(int arg0) 
+		global::java.io.InputStream java.sql.ResultSet.getUnicodeStream(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1890,7 +1890,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getUnicodeStream30484, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBinaryStream30485;
-		 global::java.io.InputStream java.sql.ResultSet.getBinaryStream(int arg0) 
+		global::java.io.InputStream java.sql.ResultSet.getBinaryStream(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1899,7 +1899,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBinaryStream30485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBinaryStream30486;
-		 global::java.io.InputStream java.sql.ResultSet.getBinaryStream(java.lang.String arg0) 
+		global::java.io.InputStream java.sql.ResultSet.getBinaryStream(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1908,7 +1908,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getBinaryStream30486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _getWarnings30487;
-		 global::java.sql.SQLWarning java.sql.ResultSet.getWarnings() 
+		global::java.sql.SQLWarning java.sql.ResultSet.getWarnings()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1917,7 +1917,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getWarnings30487)) as java.sql.SQLWarning;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearWarnings30488;
-		 void java.sql.ResultSet.clearWarnings() 
+		void java.sql.ResultSet.clearWarnings()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1926,7 +1926,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._clearWarnings30488);
 		}
 		internal static global::MonoJavaBridge.MethodId _getCursorName30489;
-		 global::java.lang.String java.sql.ResultSet.getCursorName() 
+		global::java.lang.String java.sql.ResultSet.getCursorName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1935,7 +1935,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getCursorName30489)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetaData30490;
-		 global::java.sql.ResultSetMetaData java.sql.ResultSet.getMetaData() 
+		global::java.sql.ResultSetMetaData java.sql.ResultSet.getMetaData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1944,7 +1944,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.ResultSetMetaData>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getMetaData30490)) as java.sql.ResultSetMetaData;
 		}
 		internal static global::MonoJavaBridge.MethodId _findColumn30491;
-		 int java.sql.ResultSet.findColumn(java.lang.String arg0) 
+		int java.sql.ResultSet.findColumn(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1953,7 +1953,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._findColumn30491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharacterStream30492;
-		 global::java.io.Reader java.sql.ResultSet.getCharacterStream(java.lang.String arg0) 
+		global::java.io.Reader java.sql.ResultSet.getCharacterStream(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1962,7 +1962,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getCharacterStream30492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharacterStream30493;
-		 global::java.io.Reader java.sql.ResultSet.getCharacterStream(int arg0) 
+		global::java.io.Reader java.sql.ResultSet.getCharacterStream(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1971,7 +1971,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getCharacterStream30493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _beforeFirst30494;
-		 void java.sql.ResultSet.beforeFirst() 
+		void java.sql.ResultSet.beforeFirst()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1980,7 +1980,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._beforeFirst30494);
 		}
 		internal static global::MonoJavaBridge.MethodId _afterLast30495;
-		 void java.sql.ResultSet.afterLast() 
+		void java.sql.ResultSet.afterLast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1989,7 +1989,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._afterLast30495);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRow30496;
-		 int java.sql.ResultSet.getRow() 
+		int java.sql.ResultSet.getRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1998,7 +1998,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getRow30496);
 		}
 		internal static global::MonoJavaBridge.MethodId _absolute30497;
-		 bool java.sql.ResultSet.absolute(int arg0) 
+		bool java.sql.ResultSet.absolute(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2007,7 +2007,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._absolute30497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _relative30498;
-		 bool java.sql.ResultSet.relative(int arg0) 
+		bool java.sql.ResultSet.relative(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2016,7 +2016,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._relative30498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFetchDirection30499;
-		 void java.sql.ResultSet.setFetchDirection(int arg0) 
+		void java.sql.ResultSet.setFetchDirection(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2025,7 +2025,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setFetchDirection30499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFetchDirection30500;
-		 int java.sql.ResultSet.getFetchDirection() 
+		int java.sql.ResultSet.getFetchDirection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2034,7 +2034,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getFetchDirection30500);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFetchSize30501;
-		 void java.sql.ResultSet.setFetchSize(int arg0) 
+		void java.sql.ResultSet.setFetchSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2043,7 +2043,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._setFetchSize30501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFetchSize30502;
-		 int java.sql.ResultSet.getFetchSize() 
+		int java.sql.ResultSet.getFetchSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2052,7 +2052,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getFetchSize30502);
 		}
 		internal static global::MonoJavaBridge.MethodId _getConcurrency30503;
-		 int java.sql.ResultSet.getConcurrency() 
+		int java.sql.ResultSet.getConcurrency()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2061,7 +2061,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getConcurrency30503);
 		}
 		internal static global::MonoJavaBridge.MethodId _rowUpdated30504;
-		 bool java.sql.ResultSet.rowUpdated() 
+		bool java.sql.ResultSet.rowUpdated()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2070,7 +2070,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._rowUpdated30504);
 		}
 		internal static global::MonoJavaBridge.MethodId _rowInserted30505;
-		 bool java.sql.ResultSet.rowInserted() 
+		bool java.sql.ResultSet.rowInserted()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2079,7 +2079,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._rowInserted30505);
 		}
 		internal static global::MonoJavaBridge.MethodId _rowDeleted30506;
-		 bool java.sql.ResultSet.rowDeleted() 
+		bool java.sql.ResultSet.rowDeleted()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2088,7 +2088,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._rowDeleted30506);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNull30507;
-		 void java.sql.ResultSet.updateNull(java.lang.String arg0) 
+		void java.sql.ResultSet.updateNull(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2097,7 +2097,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNull30507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNull30508;
-		 void java.sql.ResultSet.updateNull(int arg0) 
+		void java.sql.ResultSet.updateNull(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2106,7 +2106,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNull30508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBoolean30509;
-		 void java.sql.ResultSet.updateBoolean(int arg0, bool arg1) 
+		void java.sql.ResultSet.updateBoolean(int arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2115,7 +2115,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBoolean30509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBoolean30510;
-		 void java.sql.ResultSet.updateBoolean(java.lang.String arg0, bool arg1) 
+		void java.sql.ResultSet.updateBoolean(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2124,7 +2124,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBoolean30510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateByte30511;
-		 void java.sql.ResultSet.updateByte(int arg0, byte arg1) 
+		void java.sql.ResultSet.updateByte(int arg0, byte arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2133,7 +2133,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateByte30511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateByte30512;
-		 void java.sql.ResultSet.updateByte(java.lang.String arg0, byte arg1) 
+		void java.sql.ResultSet.updateByte(java.lang.String arg0, byte arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2142,7 +2142,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateByte30512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBigDecimal30513;
-		 void java.sql.ResultSet.updateBigDecimal(int arg0, java.math.BigDecimal arg1) 
+		void java.sql.ResultSet.updateBigDecimal(int arg0, java.math.BigDecimal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2151,7 +2151,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBigDecimal30513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBigDecimal30514;
-		 void java.sql.ResultSet.updateBigDecimal(java.lang.String arg0, java.math.BigDecimal arg1) 
+		void java.sql.ResultSet.updateBigDecimal(java.lang.String arg0, java.math.BigDecimal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2160,7 +2160,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBigDecimal30514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateTimestamp30515;
-		 void java.sql.ResultSet.updateTimestamp(java.lang.String arg0, java.sql.Timestamp arg1) 
+		void java.sql.ResultSet.updateTimestamp(java.lang.String arg0, java.sql.Timestamp arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2169,7 +2169,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateTimestamp30515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateTimestamp30516;
-		 void java.sql.ResultSet.updateTimestamp(int arg0, java.sql.Timestamp arg1) 
+		void java.sql.ResultSet.updateTimestamp(int arg0, java.sql.Timestamp arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2178,7 +2178,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateTimestamp30516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAsciiStream30517;
-		 void java.sql.ResultSet.updateAsciiStream(java.lang.String arg0, java.io.InputStream arg1) 
+		void java.sql.ResultSet.updateAsciiStream(java.lang.String arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2187,7 +2187,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateAsciiStream30517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAsciiStream30518;
-		 void java.sql.ResultSet.updateAsciiStream(java.lang.String arg0, java.io.InputStream arg1, long arg2) 
+		void java.sql.ResultSet.updateAsciiStream(java.lang.String arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2196,7 +2196,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateAsciiStream30518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAsciiStream30519;
-		 void java.sql.ResultSet.updateAsciiStream(int arg0, java.io.InputStream arg1, long arg2) 
+		void java.sql.ResultSet.updateAsciiStream(int arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2205,7 +2205,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateAsciiStream30519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAsciiStream30520;
-		 void java.sql.ResultSet.updateAsciiStream(java.lang.String arg0, java.io.InputStream arg1, int arg2) 
+		void java.sql.ResultSet.updateAsciiStream(java.lang.String arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2214,7 +2214,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateAsciiStream30520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAsciiStream30521;
-		 void java.sql.ResultSet.updateAsciiStream(int arg0, java.io.InputStream arg1) 
+		void java.sql.ResultSet.updateAsciiStream(int arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2223,7 +2223,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateAsciiStream30521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAsciiStream30522;
-		 void java.sql.ResultSet.updateAsciiStream(int arg0, java.io.InputStream arg1, int arg2) 
+		void java.sql.ResultSet.updateAsciiStream(int arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2232,7 +2232,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateAsciiStream30522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBinaryStream30523;
-		 void java.sql.ResultSet.updateBinaryStream(java.lang.String arg0, java.io.InputStream arg1, int arg2) 
+		void java.sql.ResultSet.updateBinaryStream(java.lang.String arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2241,7 +2241,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBinaryStream30523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBinaryStream30524;
-		 void java.sql.ResultSet.updateBinaryStream(int arg0, java.io.InputStream arg1, int arg2) 
+		void java.sql.ResultSet.updateBinaryStream(int arg0, java.io.InputStream arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2250,7 +2250,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBinaryStream30524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBinaryStream30525;
-		 void java.sql.ResultSet.updateBinaryStream(int arg0, java.io.InputStream arg1, long arg2) 
+		void java.sql.ResultSet.updateBinaryStream(int arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2259,7 +2259,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBinaryStream30525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBinaryStream30526;
-		 void java.sql.ResultSet.updateBinaryStream(java.lang.String arg0, java.io.InputStream arg1, long arg2) 
+		void java.sql.ResultSet.updateBinaryStream(java.lang.String arg0, java.io.InputStream arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2268,7 +2268,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBinaryStream30526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBinaryStream30527;
-		 void java.sql.ResultSet.updateBinaryStream(int arg0, java.io.InputStream arg1) 
+		void java.sql.ResultSet.updateBinaryStream(int arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2277,7 +2277,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBinaryStream30527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateBinaryStream30528;
-		 void java.sql.ResultSet.updateBinaryStream(java.lang.String arg0, java.io.InputStream arg1) 
+		void java.sql.ResultSet.updateBinaryStream(java.lang.String arg0, java.io.InputStream arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2286,7 +2286,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateBinaryStream30528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCharacterStream30529;
-		 void java.sql.ResultSet.updateCharacterStream(java.lang.String arg0, java.io.Reader arg1, int arg2) 
+		void java.sql.ResultSet.updateCharacterStream(java.lang.String arg0, java.io.Reader arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2295,7 +2295,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateCharacterStream30529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCharacterStream30530;
-		 void java.sql.ResultSet.updateCharacterStream(int arg0, java.io.Reader arg1, int arg2) 
+		void java.sql.ResultSet.updateCharacterStream(int arg0, java.io.Reader arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2304,7 +2304,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateCharacterStream30530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCharacterStream30531;
-		 void java.sql.ResultSet.updateCharacterStream(int arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateCharacterStream(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2313,7 +2313,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateCharacterStream30531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCharacterStream30532;
-		 void java.sql.ResultSet.updateCharacterStream(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateCharacterStream(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2322,7 +2322,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateCharacterStream30532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCharacterStream30533;
-		 void java.sql.ResultSet.updateCharacterStream(int arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateCharacterStream(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2331,7 +2331,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateCharacterStream30533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateCharacterStream30534;
-		 void java.sql.ResultSet.updateCharacterStream(java.lang.String arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateCharacterStream(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2340,7 +2340,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateCharacterStream30534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateObject30535;
-		 void java.sql.ResultSet.updateObject(java.lang.String arg0, java.lang.Object arg1) 
+		void java.sql.ResultSet.updateObject(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2349,7 +2349,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateObject30535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateObject30536;
-		 void java.sql.ResultSet.updateObject(int arg0, java.lang.Object arg1) 
+		void java.sql.ResultSet.updateObject(int arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2358,7 +2358,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateObject30536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateObject30537;
-		 void java.sql.ResultSet.updateObject(int arg0, java.lang.Object arg1, int arg2) 
+		void java.sql.ResultSet.updateObject(int arg0, java.lang.Object arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2367,7 +2367,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateObject30537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateObject30538;
-		 void java.sql.ResultSet.updateObject(java.lang.String arg0, java.lang.Object arg1, int arg2) 
+		void java.sql.ResultSet.updateObject(java.lang.String arg0, java.lang.Object arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2376,7 +2376,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateObject30538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _insertRow30539;
-		 void java.sql.ResultSet.insertRow() 
+		void java.sql.ResultSet.insertRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2385,7 +2385,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._insertRow30539);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateRow30540;
-		 void java.sql.ResultSet.updateRow() 
+		void java.sql.ResultSet.updateRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2394,7 +2394,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateRow30540);
 		}
 		internal static global::MonoJavaBridge.MethodId _refreshRow30541;
-		 void java.sql.ResultSet.refreshRow() 
+		void java.sql.ResultSet.refreshRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2403,7 +2403,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._refreshRow30541);
 		}
 		internal static global::MonoJavaBridge.MethodId _cancelRowUpdates30542;
-		 void java.sql.ResultSet.cancelRowUpdates() 
+		void java.sql.ResultSet.cancelRowUpdates()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2412,7 +2412,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._cancelRowUpdates30542);
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToInsertRow30543;
-		 void java.sql.ResultSet.moveToInsertRow() 
+		void java.sql.ResultSet.moveToInsertRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2421,7 +2421,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._moveToInsertRow30543);
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToCurrentRow30544;
-		 void java.sql.ResultSet.moveToCurrentRow() 
+		void java.sql.ResultSet.moveToCurrentRow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2430,7 +2430,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._moveToCurrentRow30544);
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatement30545;
-		 global::java.sql.Statement java.sql.ResultSet.getStatement() 
+		global::java.sql.Statement java.sql.ResultSet.getStatement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2439,7 +2439,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Statement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getStatement30545)) as java.sql.Statement;
 		}
 		internal static global::MonoJavaBridge.MethodId _getClob30546;
-		 global::java.sql.Clob java.sql.ResultSet.getClob(java.lang.String arg0) 
+		global::java.sql.Clob java.sql.ResultSet.getClob(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2448,7 +2448,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Clob>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getClob30546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Clob;
 		}
 		internal static global::MonoJavaBridge.MethodId _getClob30547;
-		 global::java.sql.Clob java.sql.ResultSet.getClob(int arg0) 
+		global::java.sql.Clob java.sql.ResultSet.getClob(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2457,7 +2457,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Clob>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getClob30547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Clob;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateRef30548;
-		 void java.sql.ResultSet.updateRef(java.lang.String arg0, java.sql.Ref arg1) 
+		void java.sql.ResultSet.updateRef(java.lang.String arg0, java.sql.Ref arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2466,7 +2466,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateRef30548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateRef30549;
-		 void java.sql.ResultSet.updateRef(int arg0, java.sql.Ref arg1) 
+		void java.sql.ResultSet.updateRef(int arg0, java.sql.Ref arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2475,7 +2475,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateRef30549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateClob30550;
-		 void java.sql.ResultSet.updateClob(java.lang.String arg0, java.sql.Clob arg1) 
+		void java.sql.ResultSet.updateClob(java.lang.String arg0, java.sql.Clob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2484,7 +2484,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateClob30550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateClob30551;
-		 void java.sql.ResultSet.updateClob(int arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateClob(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2493,7 +2493,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateClob30551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateClob30552;
-		 void java.sql.ResultSet.updateClob(java.lang.String arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateClob(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2502,7 +2502,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateClob30552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateClob30553;
-		 void java.sql.ResultSet.updateClob(int arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateClob(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2511,7 +2511,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateClob30553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateClob30554;
-		 void java.sql.ResultSet.updateClob(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateClob(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2520,7 +2520,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateClob30554, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateClob30555;
-		 void java.sql.ResultSet.updateClob(int arg0, java.sql.Clob arg1) 
+		void java.sql.ResultSet.updateClob(int arg0, java.sql.Clob arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2529,7 +2529,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateClob30555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateArray30556;
-		 void java.sql.ResultSet.updateArray(int arg0, java.sql.Array arg1) 
+		void java.sql.ResultSet.updateArray(int arg0, java.sql.Array arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2538,7 +2538,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateArray30556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateArray30557;
-		 void java.sql.ResultSet.updateArray(java.lang.String arg0, java.sql.Array arg1) 
+		void java.sql.ResultSet.updateArray(java.lang.String arg0, java.sql.Array arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2547,7 +2547,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateArray30557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getHoldability30558;
-		 int java.sql.ResultSet.getHoldability() 
+		int java.sql.ResultSet.getHoldability()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2556,7 +2556,7 @@ namespace javax.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getHoldability30558);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNString30559;
-		 void java.sql.ResultSet.updateNString(java.lang.String arg0, java.lang.String arg1) 
+		void java.sql.ResultSet.updateNString(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2565,7 +2565,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNString30559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNString30560;
-		 void java.sql.ResultSet.updateNString(int arg0, java.lang.String arg1) 
+		void java.sql.ResultSet.updateNString(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2574,7 +2574,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNString30560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNClob30561;
-		 void java.sql.ResultSet.updateNClob(int arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateNClob(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2583,7 +2583,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNClob30561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNClob30562;
-		 void java.sql.ResultSet.updateNClob(int arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateNClob(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2592,7 +2592,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNClob30562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNClob30563;
-		 void java.sql.ResultSet.updateNClob(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateNClob(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2601,7 +2601,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNClob30563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNClob30564;
-		 void java.sql.ResultSet.updateNClob(java.lang.String arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateNClob(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2610,7 +2610,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNClob30564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getNString30565;
-		 global::java.lang.String java.sql.ResultSet.getNString(java.lang.String arg0) 
+		global::java.lang.String java.sql.ResultSet.getNString(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2619,7 +2619,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getNString30565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNString30566;
-		 global::java.lang.String java.sql.ResultSet.getNString(int arg0) 
+		global::java.lang.String java.sql.ResultSet.getNString(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2628,7 +2628,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getNString30566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNCharacterStream30567;
-		 global::java.io.Reader java.sql.ResultSet.getNCharacterStream(int arg0) 
+		global::java.io.Reader java.sql.ResultSet.getNCharacterStream(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2637,7 +2637,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getNCharacterStream30567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNCharacterStream30568;
-		 global::java.io.Reader java.sql.ResultSet.getNCharacterStream(java.lang.String arg0) 
+		global::java.io.Reader java.sql.ResultSet.getNCharacterStream(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2646,7 +2646,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._getNCharacterStream30568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.io.Reader;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNCharacterStream30569;
-		 void java.sql.ResultSet.updateNCharacterStream(int arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateNCharacterStream(int arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2655,7 +2655,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNCharacterStream30569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNCharacterStream30570;
-		 void java.sql.ResultSet.updateNCharacterStream(java.lang.String arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateNCharacterStream(java.lang.String arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2664,7 +2664,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNCharacterStream30570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNCharacterStream30571;
-		 void java.sql.ResultSet.updateNCharacterStream(int arg0, java.io.Reader arg1, long arg2) 
+		void java.sql.ResultSet.updateNCharacterStream(int arg0, java.io.Reader arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -2673,7 +2673,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSet_.staticClass, global::javax.sql.RowSet_._updateNCharacterStream30571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNCharacterStream30572;
-		 void java.sql.ResultSet.updateNCharacterStream(java.lang.String arg0, java.io.Reader arg1) 
+		void java.sql.ResultSet.updateNCharacterStream(java.lang.String arg0, java.io.Reader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

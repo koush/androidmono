@@ -12,7 +12,7 @@ namespace javax.xml.parsers
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _reset30831;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._reset30831);
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30832;
-		public virtual global::org.w3c.dom.Document parse(java.io.InputStream arg0) 
+		public virtual global::org.w3c.dom.Document parse(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._parse30832, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Document;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30833;
-		public virtual global::org.w3c.dom.Document parse(java.io.InputStream arg0, java.lang.String arg1) 
+		public virtual global::org.w3c.dom.Document parse(java.io.InputStream arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._parse30833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Document;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30834;
-		public virtual global::org.w3c.dom.Document parse(java.lang.String arg0) 
+		public virtual global::org.w3c.dom.Document parse(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._parse30834, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Document;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30835;
-		public virtual global::org.w3c.dom.Document parse(java.io.File arg0) 
+		public virtual global::org.w3c.dom.Document parse(java.io.File arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace javax.xml.parsers
 		internal static global::MonoJavaBridge.MethodId _getDOMImplementation30842;
 		public abstract global::org.w3c.dom.DOMImplementation getDOMImplementation();
 		internal static global::MonoJavaBridge.MethodId _getSchema30843;
-		public virtual global::javax.xml.validation.Schema getSchema() 
+		public virtual global::javax.xml.validation.Schema getSchema()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._getSchema30843)) as javax.xml.validation.Schema;
 		}
 		internal static global::MonoJavaBridge.MethodId _isXIncludeAware30844;
-		public virtual bool isXIncludeAware() 
+		public virtual bool isXIncludeAware()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace javax.xml.parsers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._isXIncludeAware30844);
 		}
 		internal static global::MonoJavaBridge.MethodId _DocumentBuilder30845;
-		protected DocumentBuilder()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected DocumentBuilder() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.DocumentBuilder.staticClass, global::javax.xml.parsers.DocumentBuilder._DocumentBuilder30845);
@@ -129,7 +129,7 @@ namespace javax.xml.parsers
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30846;
-		public override global::org.w3c.dom.Document parse(org.xml.sax.InputSource arg0) 
+		public override global::org.w3c.dom.Document parse(org.xml.sax.InputSource arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._parse30846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Document;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEntityResolver30847;
-		public override void setEntityResolver(org.xml.sax.EntityResolver arg0) 
+		public override void setEntityResolver(org.xml.sax.EntityResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._setEntityResolver30847, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorHandler30848;
-		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0) 
+		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,7 +156,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._setErrorHandler30848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isNamespaceAware30849;
-		public override bool isNamespaceAware() 
+		public override bool isNamespaceAware()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace javax.xml.parsers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._isNamespaceAware30849);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidating30850;
-		public override bool isValidating() 
+		public override bool isValidating()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace javax.xml.parsers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._isValidating30850);
 		}
 		internal static global::MonoJavaBridge.MethodId _newDocument30851;
-		public override global::org.w3c.dom.Document newDocument() 
+		public override global::org.w3c.dom.Document newDocument()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -183,7 +183,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.DocumentBuilder_.staticClass, global::javax.xml.parsers.DocumentBuilder_._newDocument30851)) as org.w3c.dom.Document;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDOMImplementation30852;
-		public override global::org.w3c.dom.DOMImplementation getDOMImplementation() 
+		public override global::org.w3c.dom.DOMImplementation getDOMImplementation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

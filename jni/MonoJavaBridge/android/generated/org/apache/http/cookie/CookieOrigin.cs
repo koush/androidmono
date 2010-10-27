@@ -12,7 +12,7 @@ namespace org.apache.http.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString32409;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.cookie
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath32410;
-		public global::java.lang.String getPath() 
+		public global::java.lang.String getPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.http.cookie
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPort32411;
-		public int getPort() 
+		public int getPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.cookie
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHost32412;
-		public global::java.lang.String getHost() 
+		public global::java.lang.String getHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.apache.http.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.CookieOrigin.staticClass, global::org.apache.http.cookie.CookieOrigin._getHost32412)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSecure32413;
-		public bool isSecure() 
+		public bool isSecure()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.cookie
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.cookie.CookieOrigin.staticClass, global::org.apache.http.cookie.CookieOrigin._isSecure32413);
 		}
 		internal static global::MonoJavaBridge.MethodId _CookieOrigin32414;
-		public CookieOrigin(java.lang.String arg0, int arg1, java.lang.String arg2, bool arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CookieOrigin(java.lang.String arg0, int arg1, java.lang.String arg2, bool arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieOrigin.staticClass, global::org.apache.http.cookie.CookieOrigin._CookieOrigin32414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

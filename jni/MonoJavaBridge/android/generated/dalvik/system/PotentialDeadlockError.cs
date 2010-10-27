@@ -12,14 +12,14 @@ namespace dalvik.system
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _PotentialDeadlockError18605;
-		public PotentialDeadlockError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PotentialDeadlockError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PotentialDeadlockError.staticClass, global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18605);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PotentialDeadlockError18606;
-		public PotentialDeadlockError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PotentialDeadlockError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PotentialDeadlockError.staticClass, global::dalvik.system.PotentialDeadlockError._PotentialDeadlockError18606, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -11,8 +11,15 @@ namespace org.apache.http.conn.@params
 		protected ConnConnectionParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int MaxStatusLineGarbage
+		{
+			set
+			{
+				setMaxStatusLineGarbage(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setMaxStatusLineGarbage32173;
-		public virtual void setMaxStatusLineGarbage(int arg0) 
+		public virtual void setMaxStatusLineGarbage(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +28,7 @@ namespace org.apache.http.conn.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnConnectionParamBean.staticClass, global::org.apache.http.conn.@params.ConnConnectionParamBean._setMaxStatusLineGarbage32173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnConnectionParamBean32174;
-		public ConnConnectionParamBean(org.apache.http.@params.HttpParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnConnectionParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnConnectionParamBean.staticClass, global::org.apache.http.conn.@params.ConnConnectionParamBean._ConnConnectionParamBean32174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

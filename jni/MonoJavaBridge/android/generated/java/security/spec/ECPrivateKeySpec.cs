@@ -19,7 +19,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams24005;
-		public virtual global::java.security.spec.ECParameterSpec getParams() 
+		public virtual global::java.security.spec.ECParameterSpec getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getS24006;
-		public virtual global::java.math.BigInteger getS() 
+		public virtual global::java.math.BigInteger getS()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.ECPrivateKeySpec.staticClass, global::java.security.spec.ECPrivateKeySpec._getS24006)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _ECPrivateKeySpec24007;
-		public ECPrivateKeySpec(java.math.BigInteger arg0, java.security.spec.ECParameterSpec arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ECPrivateKeySpec(java.math.BigInteger arg0, java.security.spec.ECParameterSpec arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECPrivateKeySpec.staticClass, global::java.security.spec.ECPrivateKeySpec._ECPrivateKeySpec24007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

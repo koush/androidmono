@@ -18,7 +18,7 @@ namespace org.apache.http.conn.routing
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _determineRoute32246;
-		 global::org.apache.http.conn.routing.HttpRoute org.apache.http.conn.routing.HttpRoutePlanner.determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2) 
+		global::org.apache.http.conn.routing.HttpRoute org.apache.http.conn.routing.HttpRoutePlanner.determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace android.app.backup
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKey2309;
-		public virtual global::java.lang.String getKey() 
+		public virtual global::java.lang.String getKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.app.backup
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.backup.BackupDataInput.staticClass, global::android.app.backup.BackupDataInput._getKey2309)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readNextHeader2310;
-		public virtual bool readNextHeader() 
+		public virtual bool readNextHeader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.app.backup
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDataSize2311;
-		public virtual int getDataSize() 
+		public virtual int getDataSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.app.backup
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupDataInput.staticClass, global::android.app.backup.BackupDataInput._getDataSize2311);
 		}
 		internal static global::MonoJavaBridge.MethodId _readEntityData2312;
-		public virtual int readEntityData(byte[] arg0, int arg1, int arg2) 
+		public virtual int readEntityData(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.app.backup
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupDataInput.staticClass, global::android.app.backup.BackupDataInput._readEntityData2312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _skipEntityData2313;
-		public virtual void skipEntityData() 
+		public virtual void skipEntityData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

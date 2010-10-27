@@ -18,7 +18,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23511;
-		 global::java.lang.Object java.security.cert.CertPathParameters.clone() 
+		global::java.lang.Object java.security.cert.CertPathParameters.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

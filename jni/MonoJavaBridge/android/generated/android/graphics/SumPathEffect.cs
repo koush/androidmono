@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SumPathEffect5803;
-		public SumPathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SumPathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.SumPathEffect.staticClass, global::android.graphics.SumPathEffect._SumPathEffect5803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

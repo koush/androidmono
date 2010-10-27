@@ -12,7 +12,7 @@ namespace android.text.style
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel13560;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.text.style
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._writeToParcel13560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents13561;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.text.style
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSpanTypeId13562;
-		public virtual int getSpanTypeId() 
+		public virtual int getSpanTypeId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.text.style
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._getSpanTypeId13562);
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13563;
-		public override void updateDrawState(android.text.TextPaint arg0) 
+		public override void updateDrawState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.text.style
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._updateDrawState13563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateMeasureState13564;
-		public override void updateMeasureState(android.text.TextPaint arg0) 
+		public override void updateMeasureState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace android.text.style
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getScaleX13565;
-		public virtual float getScaleX() 
+		public virtual float getScaleX()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,14 +80,14 @@ namespace android.text.style
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._getScaleX13565);
 		}
 		internal static global::MonoJavaBridge.MethodId _ScaleXSpan13566;
-		public ScaleXSpan(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ScaleXSpan(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._ScaleXSpan13566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ScaleXSpan13567;
-		public ScaleXSpan(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ScaleXSpan(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.ScaleXSpan.staticClass, global::android.text.style.ScaleXSpan._ScaleXSpan13567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

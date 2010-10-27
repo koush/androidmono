@@ -12,7 +12,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLKeyException29990;
-		public SSLKeyException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SSLKeyException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLKeyException.staticClass, global::javax.net.ssl.SSLKeyException._SSLKeyException29990, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

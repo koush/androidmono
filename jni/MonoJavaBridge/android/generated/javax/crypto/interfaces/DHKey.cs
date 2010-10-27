@@ -18,7 +18,7 @@ namespace javax.crypto.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams28735;
-		 global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams() 
+		global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

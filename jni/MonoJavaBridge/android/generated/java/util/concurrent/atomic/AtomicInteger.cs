@@ -12,7 +12,7 @@ namespace java.util.concurrent.atomic
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get27531;
-		public virtual int get() 
+		public virtual int get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._get27531);
 		}
 		internal static global::MonoJavaBridge.MethodId _toString27532;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.concurrent.atomic
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._toString27532)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _set27533;
-		public virtual void set(int arg0) 
+		public virtual void set(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.concurrent.atomic
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._set27533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _intValue27534;
-		public override int intValue() 
+		public override int intValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._intValue27534);
 		}
 		internal static global::MonoJavaBridge.MethodId _longValue27535;
-		public override long longValue() 
+		public override long longValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._longValue27535);
 		}
 		internal static global::MonoJavaBridge.MethodId _floatValue27536;
-		public override float floatValue() 
+		public override float floatValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._floatValue27536);
 		}
 		internal static global::MonoJavaBridge.MethodId _doubleValue27537;
-		public override double doubleValue() 
+		public override double doubleValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._doubleValue27537);
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndAdd27538;
-		public virtual int getAndAdd(int arg0) 
+		public virtual int getAndAdd(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._getAndAdd27538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lazySet27539;
-		public virtual void lazySet(int arg0) 
+		public virtual void lazySet(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace java.util.concurrent.atomic
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._lazySet27539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndSet27540;
-		public virtual int getAndSet(int arg0) 
+		public virtual int getAndSet(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._getAndSet27540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareAndSet27541;
-		public virtual bool compareAndSet(int arg0, int arg1) 
+		public virtual bool compareAndSet(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._compareAndSet27541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _weakCompareAndSet27542;
-		public virtual bool weakCompareAndSet(int arg0, int arg1) 
+		public virtual bool weakCompareAndSet(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace java.util.concurrent.atomic
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndIncrement27543;
-		public virtual int getAndIncrement() 
+		public virtual int getAndIncrement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace java.util.concurrent.atomic
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndDecrement27544;
-		public virtual int getAndDecrement() 
+		public virtual int getAndDecrement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._getAndDecrement27544);
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementAndGet27545;
-		public virtual int incrementAndGet() 
+		public virtual int incrementAndGet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._incrementAndGet27545);
 		}
 		internal static global::MonoJavaBridge.MethodId _decrementAndGet27546;
-		public virtual int decrementAndGet() 
+		public virtual int decrementAndGet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._decrementAndGet27546);
 		}
 		internal static global::MonoJavaBridge.MethodId _addAndGet27547;
-		public virtual int addAndGet(int arg0) 
+		public virtual int addAndGet(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,14 +179,14 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._addAndGet27547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AtomicInteger27548;
-		public AtomicInteger(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AtomicInteger(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._AtomicInteger27548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AtomicInteger27549;
-		public AtomicInteger()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AtomicInteger() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicInteger.staticClass, global::java.util.concurrent.atomic.AtomicInteger._AtomicInteger27549);

@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize9924;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._finalize9924);
 		}
 		internal static global::MonoJavaBridge.MethodId _length9925;
-		public virtual int length() 
+		public virtual int length()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.os
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._length9925);
 		}
 		internal static global::MonoJavaBridge.MethodId _close9926;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream9927;
-		public virtual global::java.io.InputStream getInputStream() 
+		public virtual global::java.io.InputStream getInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._getInputStream9927)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _readBytes9928;
-		public virtual int readBytes(byte[] arg0, int arg1, int arg2, int arg3) 
+		public virtual int readBytes(byte[] arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace android.os
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._readBytes9928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeBytes9929;
-		public virtual void writeBytes(byte[] arg0, int arg1, int arg2, int arg3) 
+		public virtual void writeBytes(byte[] arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOutputStream9930;
-		public virtual global::java.io.OutputStream getOutputStream() 
+		public virtual global::java.io.OutputStream getOutputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._getOutputStream9930)) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _isPurgingAllowed9931;
-		public virtual bool isPurgingAllowed() 
+		public virtual bool isPurgingAllowed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._isPurgingAllowed9931);
 		}
 		internal static global::MonoJavaBridge.MethodId _allowPurging9932;
-		public virtual bool allowPurging(bool arg0) 
+		public virtual bool allowPurging(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._allowPurging9932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _MemoryFile9933;
-		public MemoryFile(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MemoryFile(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.MemoryFile.staticClass, global::android.os.MemoryFile._MemoryFile9933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

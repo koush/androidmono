@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22489;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.nio.channels
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._toString22489)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _size22490;
-		public virtual long size() 
+		public virtual long size()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.nio.channels
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._size22490);
 		}
 		internal static global::MonoJavaBridge.MethodId _position22491;
-		public virtual long position() 
+		public virtual long position()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _release22492;
 		public abstract void release();
 		internal static global::MonoJavaBridge.MethodId _channel22493;
-		public virtual global::java.nio.channels.FileChannel channel() 
+		public virtual global::java.nio.channels.FileChannel channel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace java.nio.channels
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._channel22493)) as java.nio.channels.FileChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _isShared22494;
-		public virtual bool isShared() 
+		public virtual bool isShared()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _isValid22495;
 		public abstract bool isValid();
 		internal static global::MonoJavaBridge.MethodId _overlaps22496;
-		public virtual bool overlaps(long arg0, long arg1) 
+		public virtual bool overlaps(long arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace java.nio.channels
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._overlaps22496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _FileLock22497;
-		protected FileLock(java.nio.channels.FileChannel arg0, long arg1, long arg2, bool arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected FileLock(java.nio.channels.FileChannel arg0, long arg1, long arg2, bool arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._FileLock22497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
@@ -104,7 +104,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _release22498;
-		public override void release() 
+		public override void release()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +113,7 @@ namespace java.nio.channels
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.FileLock_.staticClass, global::java.nio.channels.FileLock_._release22498);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValid22499;
-		public override bool isValid() 
+		public override bool isValid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

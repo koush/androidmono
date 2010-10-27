@@ -12,7 +12,7 @@ namespace java.util.jar
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _putNextEntry27882;
-		public override void putNextEntry(java.util.zip.ZipEntry arg0) 
+		public override void putNextEntry(java.util.zip.ZipEntry arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,14 +21,14 @@ namespace java.util.jar
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.JarOutputStream.staticClass, global::java.util.jar.JarOutputStream._putNextEntry27882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _JarOutputStream27883;
-		public JarOutputStream(java.io.OutputStream arg0, java.util.jar.Manifest arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarOutputStream(java.io.OutputStream arg0, java.util.jar.Manifest arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarOutputStream.staticClass, global::java.util.jar.JarOutputStream._JarOutputStream27883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _JarOutputStream27884;
-		public JarOutputStream(java.io.OutputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarOutputStream(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarOutputStream.staticClass, global::java.util.jar.JarOutputStream._JarOutputStream27884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

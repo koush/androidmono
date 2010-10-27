@@ -12,7 +12,7 @@ namespace android.content.pm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3977;
-		public override void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.content.pm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getReadPermission3978;
-		public virtual global::java.lang.String getReadPermission() 
+		public virtual global::java.lang.String getReadPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.content.pm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWritePermission3979;
-		public virtual global::java.lang.String getWritePermission() 
+		public virtual global::java.lang.String getWritePermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,14 +53,14 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._getWritePermission3979)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PathPermission3980;
-		public PathPermission(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PathPermission(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._PathPermission3980, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PathPermission3981;
-		public PathPermission(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PathPermission(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PathPermission.staticClass, global::android.content.pm.PathPermission._PathPermission3981, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

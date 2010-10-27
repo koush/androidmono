@@ -18,7 +18,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _formatTo26181;
-		 void java.util.Formattable.formatTo(java.util.Formatter arg0, int arg1, int arg2, int arg3) 
+		void java.util.Formattable.formatTo(java.util.Formatter arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,7 +12,7 @@ namespace org.apache.http.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _initCause34013;
-		public static void initCause(java.lang.Throwable arg0, java.lang.Throwable arg1) 
+		public static void initCause(java.lang.Throwable arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.util.ExceptionUtils.staticClass, global::org.apache.http.util.ExceptionUtils._initCause34013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

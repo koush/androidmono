@@ -11,8 +11,15 @@ namespace org.apache.http.@params
 		protected HttpConnectionParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int SoTimeout
+		{
+			set
+			{
+				setSoTimeout(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setSoTimeout33765;
-		public virtual void setSoTimeout(int arg0) 
+		public virtual void setSoTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +27,15 @@ namespace org.apache.http.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._setSoTimeout33765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool TcpNoDelay
+		{
+			set
+			{
+				setTcpNoDelay(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setTcpNoDelay33766;
-		public virtual void setTcpNoDelay(bool arg0) 
+		public virtual void setTcpNoDelay(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,8 +43,15 @@ namespace org.apache.http.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._setTcpNoDelay33766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int SocketBufferSize
+		{
+			set
+			{
+				setSocketBufferSize(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setSocketBufferSize33767;
-		public virtual void setSocketBufferSize(int arg0) 
+		public virtual void setSocketBufferSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,8 +59,15 @@ namespace org.apache.http.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._setSocketBufferSize33767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Linger
+		{
+			set
+			{
+				setLinger(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setLinger33768;
-		public virtual void setLinger(int arg0) 
+		public virtual void setLinger(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,8 +75,15 @@ namespace org.apache.http.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._setLinger33768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int ConnectionTimeout
+		{
+			set
+			{
+				setConnectionTimeout(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setConnectionTimeout33769;
-		public virtual void setConnectionTimeout(int arg0) 
+		public virtual void setConnectionTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,8 +91,15 @@ namespace org.apache.http.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._setConnectionTimeout33769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool StaleCheckingEnabled
+		{
+			set
+			{
+				setStaleCheckingEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setStaleCheckingEnabled33770;
-		public virtual void setStaleCheckingEnabled(bool arg0) 
+		public virtual void setStaleCheckingEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +108,7 @@ namespace org.apache.http.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._setStaleCheckingEnabled33770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpConnectionParamBean33771;
-		public HttpConnectionParamBean(org.apache.http.@params.HttpParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpConnectionParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.HttpConnectionParamBean.staticClass, global::org.apache.http.@params.HttpConnectionParamBean._HttpConnectionParamBean33771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

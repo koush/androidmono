@@ -18,7 +18,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _update26536;
-		 void java.util.Observer.update(java.util.Observable arg0, java.lang.Object arg1) 
+		void java.util.Observer.update(java.util.Observable arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

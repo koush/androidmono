@@ -12,14 +12,14 @@ namespace junit.framework
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionFailedError31369;
-		public AssertionFailedError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionFailedError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.AssertionFailedError.staticClass, global::junit.framework.AssertionFailedError._AssertionFailedError31369);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionFailedError31370;
-		public AssertionFailedError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionFailedError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(junit.framework.AssertionFailedError.staticClass, global::junit.framework.AssertionFailedError._AssertionFailedError31370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

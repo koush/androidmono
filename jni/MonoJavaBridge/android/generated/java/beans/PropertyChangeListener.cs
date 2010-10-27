@@ -18,7 +18,7 @@ namespace java.beans
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _propertyChange18781;
-		 void java.beans.PropertyChangeListener.propertyChange(java.beans.PropertyChangeEvent arg0) 
+		void java.beans.PropertyChangeListener.propertyChange(java.beans.PropertyChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

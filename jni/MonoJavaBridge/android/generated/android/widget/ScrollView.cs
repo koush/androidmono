@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent17675;
-		public override bool onTouchEvent(android.view.MotionEvent arg0) 
+		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onTouchEvent17675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent17676;
-		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
+		public override bool dispatchKeyEvent(android.view.KeyEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._dispatchKeyEvent17676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView17677;
-		public override void addView(android.view.View arg0) 
+		public override void addView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView17677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView17678;
-		public override void addView(android.view.View arg0, int arg1) 
+		public override void addView(android.view.View arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView17678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView17679;
-		public override void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
+		public override void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView17679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView17680;
-		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
+		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView17680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSizeChanged17681;
-		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
+		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onSizeChanged17681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _scrollTo17682;
-		public override void scrollTo(int arg0, int arg1) 
+		public override void scrollTo(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._scrollTo17682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _computeScroll17683;
-		public override void computeScroll() 
+		public override void computeScroll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTopFadingEdgeStrength17684;
-		protected override float getTopFadingEdgeStrength() 
+		protected override float getTopFadingEdgeStrength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBottomFadingEdgeStrength17685;
-		protected override float getBottomFadingEdgeStrength() 
+		protected override float getBottomFadingEdgeStrength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace android.widget
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._getBottomFadingEdgeStrength17685);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollRange17686;
-		protected override int computeVerticalScrollRange() 
+		protected override int computeVerticalScrollRange()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._computeVerticalScrollRange17686);
 		}
 		internal static global::MonoJavaBridge.MethodId _computeVerticalScrollOffset17687;
-		protected override int computeVerticalScrollOffset() 
+		protected override int computeVerticalScrollOffset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._computeVerticalScrollOffset17687);
 		}
 		internal static global::MonoJavaBridge.MethodId _onLayout17688;
-		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
+		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onLayout17688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestLayout17689;
-		public override void requestLayout() 
+		public override void requestLayout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._requestLayout17689);
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure17690;
-		protected override void onMeasure(int arg0, int arg1) 
+		protected override void onMeasure(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onMeasure17690, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestChildFocus17691;
-		public override void requestChildFocus(android.view.View arg0, android.view.View arg1) 
+		public override void requestChildFocus(android.view.View arg0, android.view.View arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +179,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._requestChildFocus17691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestChildRectangleOnScreen17692;
-		public override bool requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2) 
+		public override bool requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._requestChildRectangleOnScreen17692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onInterceptTouchEvent17693;
-		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0) 
+		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -197,7 +197,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onInterceptTouchEvent17693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onRequestFocusInDescendants17694;
-		protected override bool onRequestFocusInDescendants(int arg0, android.graphics.Rect arg1) 
+		protected override bool onRequestFocusInDescendants(int arg0, android.graphics.Rect arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onRequestFocusInDescendants17694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _measureChild17695;
-		protected override void measureChild(android.view.View arg0, int arg1, int arg2) 
+		protected override void measureChild(android.view.View arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -215,7 +215,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._measureChild17695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _measureChildWithMargins17696;
-		protected override void measureChildWithMargins(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
+		protected override void measureChildWithMargins(android.view.View arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -231,7 +231,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxScrollAmount17697;
-		public virtual int getMaxScrollAmount() 
+		public virtual int getMaxScrollAmount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -240,7 +240,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._getMaxScrollAmount17697);
 		}
 		internal static global::MonoJavaBridge.MethodId _smoothScrollBy17698;
-		public virtual void smoothScrollBy(int arg0, int arg1) 
+		public virtual void smoothScrollBy(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -249,7 +249,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._smoothScrollBy17698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _fling17699;
-		public virtual void fling(int arg0) 
+		public virtual void fling(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -258,7 +258,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._fling17699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isFillViewport17700;
-		public virtual bool isFillViewport() 
+		public virtual bool isFillViewport()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -266,8 +266,15 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._isFillViewport17700);
 		}
+		public new bool FillViewport
+		{
+			set
+			{
+				setFillViewport(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setFillViewport17701;
-		public virtual void setFillViewport(bool arg0) 
+		public virtual void setFillViewport(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -276,7 +283,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._setFillViewport17701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSmoothScrollingEnabled17702;
-		public virtual bool isSmoothScrollingEnabled() 
+		public virtual bool isSmoothScrollingEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -284,8 +291,15 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._isSmoothScrollingEnabled17702);
 		}
+		public new bool SmoothScrollingEnabled
+		{
+			set
+			{
+				setSmoothScrollingEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setSmoothScrollingEnabled17703;
-		public virtual void setSmoothScrollingEnabled(bool arg0) 
+		public virtual void setSmoothScrollingEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -294,7 +308,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._setSmoothScrollingEnabled17703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _executeKeyEvent17704;
-		public virtual bool executeKeyEvent(android.view.KeyEvent arg0) 
+		public virtual bool executeKeyEvent(android.view.KeyEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -303,7 +317,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._executeKeyEvent17704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _pageScroll17705;
-		public virtual bool pageScroll(int arg0) 
+		public virtual bool pageScroll(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -312,7 +326,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._pageScroll17705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _fullScroll17706;
-		public virtual bool fullScroll(int arg0) 
+		public virtual bool fullScroll(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -321,7 +335,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._fullScroll17706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _arrowScroll17707;
-		public virtual bool arrowScroll(int arg0) 
+		public virtual bool arrowScroll(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -330,7 +344,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._arrowScroll17707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _smoothScrollTo17708;
-		public virtual void smoothScrollTo(int arg0, int arg1) 
+		public virtual void smoothScrollTo(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -339,7 +353,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._smoothScrollTo17708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _computeScrollDeltaToGetChildRectOnScreen17709;
-		protected virtual int computeScrollDeltaToGetChildRectOnScreen(android.graphics.Rect arg0) 
+		protected virtual int computeScrollDeltaToGetChildRectOnScreen(android.graphics.Rect arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -348,21 +362,21 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._computeScrollDeltaToGetChildRectOnScreen17709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ScrollView17710;
-		public ScrollView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ScrollView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ScrollView.staticClass, global::android.widget.ScrollView._ScrollView17710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ScrollView17711;
-		public ScrollView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ScrollView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ScrollView.staticClass, global::android.widget.ScrollView._ScrollView17711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ScrollView17712;
-		public ScrollView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ScrollView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ScrollView.staticClass, global::android.widget.ScrollView._ScrollView17712, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

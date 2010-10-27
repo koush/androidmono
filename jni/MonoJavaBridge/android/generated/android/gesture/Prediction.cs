@@ -12,7 +12,7 @@ namespace android.gesture
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString5006;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

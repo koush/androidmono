@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _write19359;
-		public override void write(char[] arg0, int arg1, int arg2) 
+		public override void write(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._write19359, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19360;
-		public override void write(java.lang.String arg0, int arg1, int arg2) 
+		public override void write(java.lang.String arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._write19360, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19361;
-		public override void write(int arg0) 
+		public override void write(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._write19361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush19362;
-		public override void flush() 
+		public override void flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._flush19362);
 		}
 		internal static global::MonoJavaBridge.MethodId _close19363;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoding19364;
-		public virtual global::java.lang.String getEncoding() 
+		public virtual global::java.lang.String getEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,28 +73,28 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._getEncoding19364)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _OutputStreamWriter19365;
-		public OutputStreamWriter(java.io.OutputStream arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OutputStreamWriter(java.io.OutputStream arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._OutputStreamWriter19365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _OutputStreamWriter19366;
-		public OutputStreamWriter(java.io.OutputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OutputStreamWriter(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._OutputStreamWriter19366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _OutputStreamWriter19367;
-		public OutputStreamWriter(java.io.OutputStream arg0, java.nio.charset.Charset arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OutputStreamWriter(java.io.OutputStream arg0, java.nio.charset.Charset arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._OutputStreamWriter19367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _OutputStreamWriter19368;
-		public OutputStreamWriter(java.io.OutputStream arg0, java.nio.charset.CharsetEncoder arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OutputStreamWriter(java.io.OutputStream arg0, java.nio.charset.CharsetEncoder arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.OutputStreamWriter.staticClass, global::java.io.OutputStreamWriter._OutputStreamWriter19368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

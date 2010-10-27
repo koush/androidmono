@@ -23,7 +23,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getSession30062;
-		 global::javax.net.ssl.SSLSession javax.net.ssl.SSLSessionContext.getSession(byte[] arg0) 
+		global::javax.net.ssl.SSLSession javax.net.ssl.SSLSessionContext.getSession(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.net.ssl.SSLSession>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_.staticClass, global::javax.net.ssl.SSLSessionContext_._getSession30062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.net.ssl.SSLSession;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIds30063;
-		 global::java.util.Enumeration javax.net.ssl.SSLSessionContext.getIds() 
+		global::java.util.Enumeration javax.net.ssl.SSLSessionContext.getIds()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_.staticClass, global::javax.net.ssl.SSLSessionContext_._getIds30063)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSessionTimeout30064;
-		 void javax.net.ssl.SSLSessionContext.setSessionTimeout(int arg0) 
+		void javax.net.ssl.SSLSessionContext.setSessionTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_.staticClass, global::javax.net.ssl.SSLSessionContext_._setSessionTimeout30064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSessionTimeout30065;
-		 int javax.net.ssl.SSLSessionContext.getSessionTimeout() 
+		int javax.net.ssl.SSLSessionContext.getSessionTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_.staticClass, global::javax.net.ssl.SSLSessionContext_._getSessionTimeout30065);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSessionCacheSize30066;
-		 void javax.net.ssl.SSLSessionContext.setSessionCacheSize(int arg0) 
+		void javax.net.ssl.SSLSessionContext.setSessionCacheSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLSessionContext_.staticClass, global::javax.net.ssl.SSLSessionContext_._setSessionCacheSize30066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSessionCacheSize30067;
-		 int javax.net.ssl.SSLSessionContext.getSessionCacheSize() 
+		int javax.net.ssl.SSLSessionContext.getSessionCacheSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

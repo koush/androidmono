@@ -18,7 +18,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _engineGetKeyManagers29873;
 		protected abstract global::javax.net.ssl.KeyManager[] engineGetKeyManagers();
 		internal static global::MonoJavaBridge.MethodId _KeyManagerFactorySpi29874;
-		public KeyManagerFactorySpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public KeyManagerFactorySpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.KeyManagerFactorySpi.staticClass, global::javax.net.ssl.KeyManagerFactorySpi._KeyManagerFactorySpi29874);
@@ -47,7 +47,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit29875;
-		protected override void engineInit(java.security.KeyStore arg0, char[] arg1) 
+		protected override void engineInit(java.security.KeyStore arg0, char[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.KeyManagerFactorySpi_.staticClass, global::javax.net.ssl.KeyManagerFactorySpi_._engineInit29875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit29876;
-		protected override void engineInit(javax.net.ssl.ManagerFactoryParameters arg0) 
+		protected override void engineInit(javax.net.ssl.ManagerFactoryParameters arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.KeyManagerFactorySpi_.staticClass, global::javax.net.ssl.KeyManagerFactorySpi_._engineInit29876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetKeyManagers29877;
-		protected override global::javax.net.ssl.KeyManager[] engineGetKeyManagers() 
+		protected override global::javax.net.ssl.KeyManager[] engineGetKeyManagers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

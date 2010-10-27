@@ -17,7 +17,7 @@ namespace android.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _start11619;
-		 void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0) 
+		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -26,7 +26,7 @@ namespace android.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.sax.TextElementListener_.staticClass, global::android.sax.TextElementListener_._start11619, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _end11620;
-		 void android.sax.EndTextElementListener.end(java.lang.String arg0) 
+		void android.sax.EndTextElementListener.end(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

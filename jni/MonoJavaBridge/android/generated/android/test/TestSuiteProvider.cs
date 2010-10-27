@@ -18,7 +18,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getTestSuite12323;
-		 global::junit.framework.TestSuite android.test.TestSuiteProvider.getTestSuite() 
+		global::junit.framework.TestSuite android.test.TestSuiteProvider.getTestSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _TestSuiteProviderDelegateWrapper12324;
-		public TestSuiteProviderDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TestSuiteProviderDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.TestSuiteProviderDelegateWrapper.staticClass, global::android.test.TestSuiteProviderDelegateWrapper._TestSuiteProviderDelegateWrapper12324);

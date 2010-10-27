@@ -20,7 +20,7 @@ namespace java.security.acl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _addOwner23461;
-		 bool java.security.acl.Owner.addOwner(java.security.Principal arg0, java.security.Principal arg1) 
+		bool java.security.acl.Owner.addOwner(java.security.Principal arg0, java.security.Principal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_.staticClass, global::java.security.acl.Owner_._addOwner23461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteOwner23462;
-		 bool java.security.acl.Owner.deleteOwner(java.security.Principal arg0, java.security.Principal arg1) 
+		bool java.security.acl.Owner.deleteOwner(java.security.Principal arg0, java.security.Principal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Owner_.staticClass, global::java.security.acl.Owner_._deleteOwner23462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isOwner23463;
-		 bool java.security.acl.Owner.isOwner(java.security.Principal arg0) 
+		bool java.security.acl.Owner.isOwner(java.security.Principal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

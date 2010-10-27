@@ -12,14 +12,14 @@ namespace org.apache.http.impl.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DateParseException33295;
-		public DateParseException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DateParseException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.DateParseException.staticClass, global::org.apache.http.impl.cookie.DateParseException._DateParseException33295);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DateParseException33296;
-		public DateParseException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DateParseException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.DateParseException.staticClass, global::org.apache.http.impl.cookie.DateParseException._DateParseException33296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

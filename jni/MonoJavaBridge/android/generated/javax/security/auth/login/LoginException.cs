@@ -12,14 +12,14 @@ namespace javax.security.auth.login
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _LoginException30207;
-		public LoginException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LoginException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.login.LoginException.staticClass, global::javax.security.auth.login.LoginException._LoginException30207);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LoginException30208;
-		public LoginException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LoginException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.login.LoginException.staticClass, global::javax.security.auth.login.LoginException._LoginException30208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

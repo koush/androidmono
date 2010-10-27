@@ -12,7 +12,7 @@ namespace org.w3c.dom.ls
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _LSException34887;
-		public LSException(short arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LSException(short arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.w3c.dom.ls.LSException.staticClass, global::org.w3c.dom.ls.LSException._LSException34887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

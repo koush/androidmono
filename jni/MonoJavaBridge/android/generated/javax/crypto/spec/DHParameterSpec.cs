@@ -19,7 +19,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getP28769;
-		public virtual global::java.math.BigInteger getP() 
+		public virtual global::java.math.BigInteger getP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getG28770;
-		public virtual global::java.math.BigInteger getG() 
+		public virtual global::java.math.BigInteger getG()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getL28771;
-		public virtual int getL() 
+		public virtual int getL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,14 +60,14 @@ namespace javax.crypto.spec
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.DHParameterSpec.staticClass, global::javax.crypto.spec.DHParameterSpec._getL28771);
 		}
 		internal static global::MonoJavaBridge.MethodId _DHParameterSpec28772;
-		public DHParameterSpec(java.math.BigInteger arg0, java.math.BigInteger arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DHParameterSpec(java.math.BigInteger arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DHParameterSpec.staticClass, global::javax.crypto.spec.DHParameterSpec._DHParameterSpec28772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DHParameterSpec28773;
-		public DHParameterSpec(java.math.BigInteger arg0, java.math.BigInteger arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DHParameterSpec(java.math.BigInteger arg0, java.math.BigInteger arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DHParameterSpec.staticClass, global::javax.crypto.spec.DHParameterSpec._DHParameterSpec28773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

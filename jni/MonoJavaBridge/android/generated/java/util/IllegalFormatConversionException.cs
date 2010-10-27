@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage26314;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConversion26315;
-		public virtual char getConversion() 
+		public virtual char getConversion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getArgumentClass26316;
-		public virtual global::java.lang.Class getArgumentClass() 
+		public virtual global::java.lang.Class getArgumentClass()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._getArgumentClass26316)) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatConversionException26317;
-		public IllegalFormatConversionException(char arg0, java.lang.Class arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalFormatConversionException(char arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatConversionException.staticClass, global::java.util.IllegalFormatConversionException._IllegalFormatConversionException26317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

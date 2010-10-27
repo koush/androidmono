@@ -14,7 +14,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _engineValidate23528;
 		public abstract global::java.security.cert.CertPathValidatorResult engineValidate(java.security.cert.CertPath arg0, java.security.cert.CertPathParameters arg1);
 		internal static global::MonoJavaBridge.MethodId _CertPathValidatorSpi23529;
-		public CertPathValidatorSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertPathValidatorSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathValidatorSpi.staticClass, global::java.security.cert.CertPathValidatorSpi._CertPathValidatorSpi23529);
@@ -41,7 +41,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineValidate23530;
-		public override global::java.security.cert.CertPathValidatorResult engineValidate(java.security.cert.CertPath arg0, java.security.cert.CertPathParameters arg1) 
+		public override global::java.security.cert.CertPathValidatorResult engineValidate(java.security.cert.CertPath arg0, java.security.cert.CertPathParameters arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

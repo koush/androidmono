@@ -18,7 +18,7 @@ namespace java.util.concurrent.atomic
 		internal static global::MonoJavaBridge.MethodId _lazySet27668;
 		public abstract void lazySet(java.lang.Object arg0, java.lang.Object arg1);
 		internal static global::MonoJavaBridge.MethodId _getAndSet27669;
-		public virtual global::java.lang.Object getAndSet(java.lang.Object arg0, java.lang.Object arg1) 
+		public virtual global::java.lang.Object getAndSet(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -31,13 +31,13 @@ namespace java.util.concurrent.atomic
 		internal static global::MonoJavaBridge.MethodId _weakCompareAndSet27671;
 		public abstract bool weakCompareAndSet(java.lang.Object arg0, java.lang.Object arg1, java.lang.Object arg2);
 		internal static global::MonoJavaBridge.MethodId _newUpdater27672;
-		public static global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater newUpdater(java.lang.Class arg0, java.lang.Class arg1, java.lang.String arg2) 
+		public static global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater newUpdater(java.lang.Class arg0, java.lang.Class arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.util.concurrent.atomic.AtomicReferenceFieldUpdater.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater._newUpdater27672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 		}
 		internal static global::MonoJavaBridge.MethodId _AtomicReferenceFieldUpdater27673;
-		protected AtomicReferenceFieldUpdater()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AtomicReferenceFieldUpdater() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.atomic.AtomicReferenceFieldUpdater.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater._AtomicReferenceFieldUpdater27673);
@@ -70,7 +70,7 @@ namespace java.util.concurrent.atomic
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get27674;
-		public override global::java.lang.Object get(java.lang.Object arg0) 
+		public override global::java.lang.Object get(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace java.util.concurrent.atomic
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._get27674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _set27675;
-		public override void set(java.lang.Object arg0, java.lang.Object arg1) 
+		public override void set(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace java.util.concurrent.atomic
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._set27675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _lazySet27676;
-		public override void lazySet(java.lang.Object arg0, java.lang.Object arg1) 
+		public override void lazySet(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace java.util.concurrent.atomic
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._lazySet27676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareAndSet27677;
-		public override bool compareAndSet(java.lang.Object arg0, java.lang.Object arg1, java.lang.Object arg2) 
+		public override bool compareAndSet(java.lang.Object arg0, java.lang.Object arg1, java.lang.Object arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +106,7 @@ namespace java.util.concurrent.atomic
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_.staticClass, global::java.util.concurrent.atomic.AtomicReferenceFieldUpdater_._compareAndSet27677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _weakCompareAndSet27678;
-		public override bool weakCompareAndSet(java.lang.Object arg0, java.lang.Object arg1, java.lang.Object arg2) 
+		public override bool weakCompareAndSet(java.lang.Object arg0, java.lang.Object arg1, java.lang.Object arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

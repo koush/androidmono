@@ -19,7 +19,7 @@ namespace junit.framework
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _run31374;
-		 void junit.framework.Test.run(junit.framework.TestResult arg0) 
+		void junit.framework.Test.run(junit.framework.TestResult arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace junit.framework
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.Test_.staticClass, global::junit.framework.Test_._run31374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _countTestCases31375;
-		 int junit.framework.Test.countTestCases() 
+		int junit.framework.Test.countTestCases()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -23,7 +23,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _reset31535;
-		 void org.apache.http.HttpConnectionMetrics.reset() 
+		void org.apache.http.HttpConnectionMetrics.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.apache.http
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._reset31535);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestCount31536;
-		 long org.apache.http.HttpConnectionMetrics.getRequestCount() 
+		long org.apache.http.HttpConnectionMetrics.getRequestCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getRequestCount31536);
 		}
 		internal static global::MonoJavaBridge.MethodId _getResponseCount31537;
-		 long org.apache.http.HttpConnectionMetrics.getResponseCount() 
+		long org.apache.http.HttpConnectionMetrics.getResponseCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getResponseCount31537);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSentBytesCount31538;
-		 long org.apache.http.HttpConnectionMetrics.getSentBytesCount() 
+		long org.apache.http.HttpConnectionMetrics.getSentBytesCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getSentBytesCount31538);
 		}
 		internal static global::MonoJavaBridge.MethodId _getReceivedBytesCount31539;
-		 long org.apache.http.HttpConnectionMetrics.getReceivedBytesCount() 
+		long org.apache.http.HttpConnectionMetrics.getReceivedBytesCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.HttpConnectionMetrics_.staticClass, global::org.apache.http.HttpConnectionMetrics_._getReceivedBytesCount31539);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetric31540;
-		 global::java.lang.Object org.apache.http.HttpConnectionMetrics.getMetric(java.lang.String arg0) 
+		global::java.lang.Object org.apache.http.HttpConnectionMetrics.getMetric(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

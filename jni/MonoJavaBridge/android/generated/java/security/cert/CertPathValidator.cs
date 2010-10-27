@@ -12,19 +12,19 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23512;
-		public static global::java.security.cert.CertPathValidator getInstance(java.lang.String arg0, java.lang.String arg1) 
+		public static global::java.security.cert.CertPathValidator getInstance(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertPathValidator.staticClass, global::java.security.cert.CertPathValidator._getInstance23512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.cert.CertPathValidator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23513;
-		public static global::java.security.cert.CertPathValidator getInstance(java.lang.String arg0, java.security.Provider arg1) 
+		public static global::java.security.cert.CertPathValidator getInstance(java.lang.String arg0, java.security.Provider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertPathValidator.staticClass, global::java.security.cert.CertPathValidator._getInstance23513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.cert.CertPathValidator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23514;
-		public static global::java.security.cert.CertPathValidator getInstance(java.lang.String arg0) 
+		public static global::java.security.cert.CertPathValidator getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertPathValidator.staticClass, global::java.security.cert.CertPathValidator._getInstance23514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CertPathValidator;
@@ -37,7 +37,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23515;
-		public virtual global::java.lang.String getAlgorithm() 
+		public virtual global::java.lang.String getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider23516;
-		public virtual global::java.security.Provider getProvider() 
+		public virtual global::java.security.Provider getProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertPathValidator.staticClass, global::java.security.cert.CertPathValidator._getProvider23516)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _validate23517;
-		public virtual global::java.security.cert.CertPathValidatorResult validate(java.security.cert.CertPath arg0, java.security.cert.CertPathParameters arg1) 
+		public virtual global::java.security.cert.CertPathValidatorResult validate(java.security.cert.CertPath arg0, java.security.cert.CertPathParameters arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,13 +78,13 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultType23518;
-		public static global::java.lang.String getDefaultType() 
+		public static global::java.lang.String getDefaultType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.security.cert.CertPathValidator.staticClass, global::java.security.cert.CertPathValidator._getDefaultType23518)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _CertPathValidator23519;
-		protected CertPathValidator(java.security.cert.CertPathValidatorSpi arg0, java.security.Provider arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected CertPathValidator(java.security.cert.CertPathValidatorSpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertPathValidator.staticClass, global::java.security.cert.CertPathValidator._CertPathValidator23519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

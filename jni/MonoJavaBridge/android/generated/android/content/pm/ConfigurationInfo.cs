@@ -12,7 +12,7 @@ namespace android.content.pm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString3701;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._toString3701)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3702;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.content.pm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._writeToParcel3702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3703;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.content.pm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGlEsVersion3704;
-		public virtual global::java.lang.String getGlEsVersion() 
+		public virtual global::java.lang.String getGlEsVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,14 +55,14 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._getGlEsVersion3704)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _ConfigurationInfo3705;
-		public ConfigurationInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConfigurationInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._ConfigurationInfo3705);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ConfigurationInfo3706;
-		public ConfigurationInfo(android.content.pm.ConfigurationInfo arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConfigurationInfo(android.content.pm.ConfigurationInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ConfigurationInfo.staticClass, global::android.content.pm.ConfigurationInfo._ConfigurationInfo3706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

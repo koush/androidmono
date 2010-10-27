@@ -20,7 +20,7 @@ namespace javax.crypto.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getPassword28748;
-		 char[] javax.crypto.interfaces.PBEKey.getPassword() 
+		char[] javax.crypto.interfaces.PBEKey.getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.PBEKey_.staticClass, global::javax.crypto.interfaces.PBEKey_._getPassword28748)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getIterationCount28749;
-		 int javax.crypto.interfaces.PBEKey.getIterationCount() 
+		int javax.crypto.interfaces.PBEKey.getIterationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace javax.crypto.interfaces
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.interfaces.PBEKey_.staticClass, global::javax.crypto.interfaces.PBEKey_._getIterationCount28749);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSalt28750;
-		 byte[] javax.crypto.interfaces.PBEKey.getSalt() 
+		byte[] javax.crypto.interfaces.PBEKey.getSalt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.PBEKey_.staticClass, global::javax.crypto.interfaces.PBEKey_._getSalt28750)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded28751;
-		 byte[] java.security.Key.getEncoded() 
+		byte[] java.security.Key.getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.PBEKey_.staticClass, global::javax.crypto.interfaces.PBEKey_._getEncoded28751)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28752;
-		 global::java.lang.String java.security.Key.getAlgorithm() 
+		global::java.lang.String java.security.Key.getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace javax.crypto.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.PBEKey_.staticClass, global::javax.crypto.interfaces.PBEKey_._getAlgorithm28752)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat28753;
-		 global::java.lang.String java.security.Key.getFormat() 
+		global::java.lang.String java.security.Key.getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

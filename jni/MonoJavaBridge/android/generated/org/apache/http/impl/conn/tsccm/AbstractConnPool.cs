@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdown33105;
-		public virtual void shutdown() 
+		public virtual void shutdown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool._shutdown33105);
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntry33106;
-		public virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntry getEntry(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1, long arg2, java.util.concurrent.TimeUnit arg3) 
+		public virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntry getEntry(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1, long arg2, java.util.concurrent.TimeUnit arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _freeEntry33107;
 		public abstract void freeEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0, bool arg1, long arg2, java.util.concurrent.TimeUnit arg3);
 		internal static global::MonoJavaBridge.MethodId _closeIdleConnections33108;
-		public virtual void closeIdleConnections(long arg0, java.util.concurrent.TimeUnit arg1) 
+		public virtual void closeIdleConnections(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool._closeIdleConnections33108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _closeExpiredConnections33109;
-		public virtual void closeExpiredConnections() 
+		public virtual void closeExpiredConnections()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool._closeExpiredConnections33109);
 		}
 		internal static global::MonoJavaBridge.MethodId _enableConnectionGC33110;
-		public virtual void enableConnectionGC() 
+		public virtual void enableConnectionGC()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _requestPoolEntry33111;
 		public abstract global::org.apache.http.impl.conn.tsccm.PoolEntryRequest requestPoolEntry(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1);
 		internal static global::MonoJavaBridge.MethodId _handleReference33112;
-		public virtual void handleReference(java.lang.@ref.Reference arg0) 
+		public virtual void handleReference(java.lang.@ref.Reference arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -74,7 +74,7 @@ namespace org.apache.http.impl.conn.tsccm
 		internal static global::MonoJavaBridge.MethodId _deleteClosedConnections33114;
 		public abstract void deleteClosedConnections();
 		internal static global::MonoJavaBridge.MethodId _closeConnection33115;
-		protected virtual void closeConnection(org.apache.http.conn.OperatedClientConnection arg0) 
+		protected virtual void closeConnection(org.apache.http.conn.OperatedClientConnection arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool._closeConnection33115, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractConnPool33116;
-		protected AbstractConnPool()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AbstractConnPool() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.AbstractConnPool.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool._AbstractConnPool33116);
@@ -120,7 +120,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _freeEntry33117;
-		public override void freeEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0, bool arg1, long arg2, java.util.concurrent.TimeUnit arg3) 
+		public override void freeEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0, bool arg1, long arg2, java.util.concurrent.TimeUnit arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._freeEntry33117, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestPoolEntry33118;
-		public override global::org.apache.http.impl.conn.tsccm.PoolEntryRequest requestPoolEntry(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1) 
+		public override global::org.apache.http.impl.conn.tsccm.PoolEntryRequest requestPoolEntry(org.apache.http.conn.routing.HttpRoute arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.impl.conn.tsccm.PoolEntryRequest>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._requestPoolEntry33118, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.impl.conn.tsccm.PoolEntryRequest;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleLostEntry33119;
-		protected override void handleLostEntry(org.apache.http.conn.routing.HttpRoute arg0) 
+		protected override void handleLostEntry(org.apache.http.conn.routing.HttpRoute arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_.staticClass, global::org.apache.http.impl.conn.tsccm.AbstractConnPool_._handleLostEntry33119, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteClosedConnections33120;
-		public override void deleteClosedConnections() 
+		public override void deleteClosedConnections()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

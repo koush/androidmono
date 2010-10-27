@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InstantiationException20193;
-		public InstantiationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InstantiationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20193);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InstantiationException20194;
-		public InstantiationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InstantiationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.InstantiationException.staticClass, global::java.lang.InstantiationException._InstantiationException20194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

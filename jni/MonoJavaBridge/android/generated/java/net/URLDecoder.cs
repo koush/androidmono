@@ -12,19 +12,19 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _decode21970;
-		public static global::java.lang.String decode(java.lang.String arg0) 
+		public static global::java.lang.String decode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.net.URLDecoder.staticClass, global::java.net.URLDecoder._decode21970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _decode21971;
-		public static global::java.lang.String decode(java.lang.String arg0, java.lang.String arg1) 
+		public static global::java.lang.String decode(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.net.URLDecoder.staticClass, global::java.net.URLDecoder._decode21971, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _URLDecoder21972;
-		public URLDecoder()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public URLDecoder() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.URLDecoder.staticClass, global::java.net.URLDecoder._URLDecoder21972);

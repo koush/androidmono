@@ -19,7 +19,7 @@ namespace java.nio.charset
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage22817;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.nio.charset
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputLength22818;
-		public virtual int getInputLength() 
+		public virtual int getInputLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.charset.UnmappableCharacterException.staticClass, global::java.nio.charset.UnmappableCharacterException._getInputLength22818);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnmappableCharacterException22819;
-		public UnmappableCharacterException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnmappableCharacterException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.UnmappableCharacterException.staticClass, global::java.nio.charset.UnmappableCharacterException._UnmappableCharacterException22819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,14 +12,14 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SurfaceHolder_BadSurfaceTypeException14565;
-		public SurfaceHolder_BadSurfaceTypeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SurfaceHolder_BadSurfaceTypeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, global::android.view.SurfaceHolder_BadSurfaceTypeException._SurfaceHolder_BadSurfaceTypeException14565);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SurfaceHolder_BadSurfaceTypeException14566;
-		public SurfaceHolder_BadSurfaceTypeException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SurfaceHolder_BadSurfaceTypeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, global::android.view.SurfaceHolder_BadSurfaceTypeException._SurfaceHolder_BadSurfaceTypeException14566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

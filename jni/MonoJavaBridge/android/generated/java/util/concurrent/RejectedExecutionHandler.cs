@@ -18,7 +18,7 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _rejectedExecution27366;
-		 void java.util.concurrent.RejectedExecutionHandler.rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1) 
+		void java.util.concurrent.RejectedExecutionHandler.rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

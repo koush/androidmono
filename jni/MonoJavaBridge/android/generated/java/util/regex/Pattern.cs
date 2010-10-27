@@ -12,7 +12,7 @@ namespace java.util.regex
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString28303;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.regex
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._toString28303)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _flags28304;
-		public int flags() 
+		public int flags()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.regex
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._flags28304);
 		}
 		internal static global::MonoJavaBridge.MethodId _matches28305;
-		public static bool matches(java.lang.String arg0, java.lang.CharSequence arg1) 
+		public static bool matches(java.lang.String arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._matches28305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -40,7 +40,7 @@ namespace java.util.regex
 			return matches(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _split28306;
-		public global::java.lang.String[] split(java.lang.CharSequence arg0) 
+		public global::java.lang.String[] split(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.util.regex
 			return split((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _split28307;
-		public global::java.lang.String[] split(java.lang.CharSequence arg0, int arg1) 
+		public global::java.lang.String[] split(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,19 +66,19 @@ namespace java.util.regex
 			return split((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _compile28308;
-		public static global::java.util.regex.Pattern compile(java.lang.String arg0, int arg1) 
+		public static global::java.util.regex.Pattern compile(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._compile28308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.regex.Pattern;
 		}
 		internal static global::MonoJavaBridge.MethodId _compile28309;
-		public static global::java.util.regex.Pattern compile(java.lang.String arg0) 
+		public static global::java.util.regex.Pattern compile(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.regex.Pattern>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._compile28309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.regex.Pattern;
 		}
 		internal static global::MonoJavaBridge.MethodId _matcher28310;
-		public global::java.util.regex.Matcher matcher(java.lang.CharSequence arg0) 
+		public global::java.util.regex.Matcher matcher(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,13 +91,13 @@ namespace java.util.regex
 			return matcher((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _quote28311;
-		public static global::java.lang.String quote(java.lang.String arg0) 
+		public static global::java.lang.String quote(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._quote28311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _pattern28312;
-		public global::java.lang.String pattern() 
+		public global::java.lang.String pattern()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,13 +12,13 @@ namespace java.lang.annotation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _values20951;
-		public static global::java.lang.annotation.ElementType[] values() 
+		public static global::java.lang.annotation.ElementType[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.ElementType>(@__env.CallStaticObjectMethod(java.lang.annotation.ElementType.staticClass, global::java.lang.annotation.ElementType._values20951)) as java.lang.annotation.ElementType[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20952;
-		public static global::java.lang.annotation.ElementType valueOf(java.lang.String arg0) 
+		public static global::java.lang.annotation.ElementType valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.ElementType>(@__env.CallStaticObjectMethod(java.lang.annotation.ElementType.staticClass, global::java.lang.annotation.ElementType._valueOf20952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.ElementType;

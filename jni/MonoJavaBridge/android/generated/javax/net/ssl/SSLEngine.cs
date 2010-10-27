@@ -12,7 +12,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap29911;
-		public virtual global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer[] arg0, java.nio.ByteBuffer arg1) 
+		public virtual global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer[] arg0, java.nio.ByteBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _wrap29912;
 		public abstract global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer[] arg0, int arg1, int arg2, java.nio.ByteBuffer arg3);
 		internal static global::MonoJavaBridge.MethodId _wrap29913;
-		public virtual global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer arg1) 
+		public virtual global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites29914;
 		public abstract global::java.lang.String[] getSupportedCipherSuites();
 		internal static global::MonoJavaBridge.MethodId _unwrap29915;
-		public virtual global::javax.net.ssl.SSLEngineResult unwrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer arg1) 
+		public virtual global::javax.net.ssl.SSLEngineResult unwrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine.staticClass, global::javax.net.ssl.SSLEngine._unwrap29915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as javax.net.ssl.SSLEngineResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _unwrap29916;
-		public virtual global::javax.net.ssl.SSLEngineResult unwrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer[] arg1) 
+		public virtual global::javax.net.ssl.SSLEngineResult unwrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getEnableSessionCreation29931;
 		public abstract bool getEnableSessionCreation();
 		internal static global::MonoJavaBridge.MethodId _getPeerHost29932;
-		public virtual global::java.lang.String getPeerHost() 
+		public virtual global::java.lang.String getPeerHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine.staticClass, global::javax.net.ssl.SSLEngine._getPeerHost29932)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPeerPort29933;
-		public virtual int getPeerPort() 
+		public virtual int getPeerPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,14 +114,14 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getHandshakeStatus29940;
 		public abstract global::javax.net.ssl.SSLEngineResult.HandshakeStatus getHandshakeStatus();
 		internal static global::MonoJavaBridge.MethodId _SSLEngine29941;
-		protected SSLEngine(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SSLEngine(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLEngine.staticClass, global::javax.net.ssl.SSLEngine._SSLEngine29941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLEngine29942;
-		protected SSLEngine()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SSLEngine() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLEngine.staticClass, global::javax.net.ssl.SSLEngine._SSLEngine29942);
@@ -178,7 +178,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap29943;
-		public override global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer[] arg0, int arg1, int arg2, java.nio.ByteBuffer arg3) 
+		public override global::javax.net.ssl.SSLEngineResult wrap(java.nio.ByteBuffer[] arg0, int arg1, int arg2, java.nio.ByteBuffer arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -187,7 +187,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._wrap29943, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as javax.net.ssl.SSLEngineResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites29944;
-		public override global::java.lang.String[] getSupportedCipherSuites() 
+		public override global::java.lang.String[] getSupportedCipherSuites()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -196,7 +196,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getSupportedCipherSuites29944)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _unwrap29945;
-		public override global::javax.net.ssl.SSLEngineResult unwrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer[] arg1, int arg2, int arg3) 
+		public override global::javax.net.ssl.SSLEngineResult unwrap(java.nio.ByteBuffer arg0, java.nio.ByteBuffer[] arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -205,7 +205,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._unwrap29945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as javax.net.ssl.SSLEngineResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSession29946;
-		public override global::javax.net.ssl.SSLSession getSession() 
+		public override global::javax.net.ssl.SSLSession getSession()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -214,7 +214,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.net.ssl.SSLSession>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getSession29946)) as javax.net.ssl.SSLSession;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEnabledCipherSuites29947;
-		public override global::java.lang.String[] getEnabledCipherSuites() 
+		public override global::java.lang.String[] getEnabledCipherSuites()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -223,7 +223,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getEnabledCipherSuites29947)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setEnabledCipherSuites29948;
-		public override void setEnabledCipherSuites(java.lang.String[] arg0) 
+		public override void setEnabledCipherSuites(java.lang.String[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -232,7 +232,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._setEnabledCipherSuites29948, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSupportedProtocols29949;
-		public override global::java.lang.String[] getSupportedProtocols() 
+		public override global::java.lang.String[] getSupportedProtocols()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -241,7 +241,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getSupportedProtocols29949)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getEnabledProtocols29950;
-		public override global::java.lang.String[] getEnabledProtocols() 
+		public override global::java.lang.String[] getEnabledProtocols()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -250,7 +250,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getEnabledProtocols29950)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setEnabledProtocols29951;
-		public override void setEnabledProtocols(java.lang.String[] arg0) 
+		public override void setEnabledProtocols(java.lang.String[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -259,7 +259,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._setEnabledProtocols29951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setUseClientMode29952;
-		public override void setUseClientMode(bool arg0) 
+		public override void setUseClientMode(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -268,7 +268,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._setUseClientMode29952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getUseClientMode29953;
-		public override bool getUseClientMode() 
+		public override bool getUseClientMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -277,7 +277,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getUseClientMode29953);
 		}
 		internal static global::MonoJavaBridge.MethodId _setNeedClientAuth29954;
-		public override void setNeedClientAuth(bool arg0) 
+		public override void setNeedClientAuth(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -286,7 +286,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._setNeedClientAuth29954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getNeedClientAuth29955;
-		public override bool getNeedClientAuth() 
+		public override bool getNeedClientAuth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -295,7 +295,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getNeedClientAuth29955);
 		}
 		internal static global::MonoJavaBridge.MethodId _setWantClientAuth29956;
-		public override void setWantClientAuth(bool arg0) 
+		public override void setWantClientAuth(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -304,7 +304,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._setWantClientAuth29956, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getWantClientAuth29957;
-		public override bool getWantClientAuth() 
+		public override bool getWantClientAuth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -313,7 +313,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getWantClientAuth29957);
 		}
 		internal static global::MonoJavaBridge.MethodId _setEnableSessionCreation29958;
-		public override void setEnableSessionCreation(bool arg0) 
+		public override void setEnableSessionCreation(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -322,7 +322,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._setEnableSessionCreation29958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getEnableSessionCreation29959;
-		public override bool getEnableSessionCreation() 
+		public override bool getEnableSessionCreation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -331,7 +331,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getEnableSessionCreation29959);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDelegatedTask29960;
-		public override global::java.lang.Runnable getDelegatedTask() 
+		public override global::java.lang.Runnable getDelegatedTask()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -340,7 +340,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.Runnable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._getDelegatedTask29960)) as java.lang.Runnable;
 		}
 		internal static global::MonoJavaBridge.MethodId _closeInbound29961;
-		public override void closeInbound() 
+		public override void closeInbound()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -349,7 +349,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._closeInbound29961);
 		}
 		internal static global::MonoJavaBridge.MethodId _isInboundDone29962;
-		public override bool isInboundDone() 
+		public override bool isInboundDone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -358,7 +358,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._isInboundDone29962);
 		}
 		internal static global::MonoJavaBridge.MethodId _closeOutbound29963;
-		public override void closeOutbound() 
+		public override void closeOutbound()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -367,7 +367,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._closeOutbound29963);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOutboundDone29964;
-		public override bool isOutboundDone() 
+		public override bool isOutboundDone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -376,7 +376,7 @@ namespace javax.net.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._isOutboundDone29964);
 		}
 		internal static global::MonoJavaBridge.MethodId _beginHandshake29965;
-		public override void beginHandshake() 
+		public override void beginHandshake()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -385,7 +385,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.SSLEngine_.staticClass, global::javax.net.ssl.SSLEngine_._beginHandshake29965);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHandshakeStatus29966;
-		public override global::javax.net.ssl.SSLEngineResult.HandshakeStatus getHandshakeStatus() 
+		public override global::javax.net.ssl.SSLEngineResult.HandshakeStatus getHandshakeStatus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

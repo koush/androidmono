@@ -12,7 +12,7 @@ namespace android.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7648;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._toString7648)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7649;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._writeToParcel7649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7650;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._describeContents7650);
 		}
 		internal static global::MonoJavaBridge.MethodId _DhcpInfo7651;
-		public DhcpInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DhcpInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._DhcpInfo7651);

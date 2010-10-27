@@ -12,7 +12,7 @@ namespace java.security.acl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AclNotFoundException23450;
-		public AclNotFoundException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AclNotFoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.acl.AclNotFoundException.staticClass, global::java.security.acl.AclNotFoundException._AclNotFoundException23450);

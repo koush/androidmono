@@ -21,7 +21,7 @@ namespace org.apache.http.message
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _formatElements33689;
-		 global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatElements(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.HeaderElement[] arg1, bool arg2) 
+		global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatElements(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.HeaderElement[] arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueFormatter_.staticClass, global::org.apache.http.message.HeaderValueFormatter_._formatElements33689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatHeaderElement33690;
-		 global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatHeaderElement(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.HeaderElement arg1, bool arg2) 
+		global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatHeaderElement(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.HeaderElement arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueFormatter_.staticClass, global::org.apache.http.message.HeaderValueFormatter_._formatHeaderElement33690, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatParameters33691;
-		 global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatParameters(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.NameValuePair[] arg1, bool arg2) 
+		global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatParameters(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.NameValuePair[] arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.HeaderValueFormatter_.staticClass, global::org.apache.http.message.HeaderValueFormatter_._formatParameters33691, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatNameValuePair33692;
-		 global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatNameValuePair(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.NameValuePair arg1, bool arg2) 
+		global::org.apache.http.util.CharArrayBuffer org.apache.http.message.HeaderValueFormatter.formatNameValuePair(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.NameValuePair arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _determineRoute33043;
-		public virtual global::org.apache.http.conn.routing.HttpRoute determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2) 
+		public virtual global::org.apache.http.conn.routing.HttpRoute determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.conn
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.DefaultHttpRoutePlanner.staticClass, global::org.apache.http.impl.conn.DefaultHttpRoutePlanner._determineRoute33043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.conn.routing.HttpRoute;
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultHttpRoutePlanner33044;
-		public DefaultHttpRoutePlanner(org.apache.http.conn.scheme.SchemeRegistry arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DefaultHttpRoutePlanner(org.apache.http.conn.scheme.SchemeRegistry arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.DefaultHttpRoutePlanner.staticClass, global::org.apache.http.impl.conn.DefaultHttpRoutePlanner._DefaultHttpRoutePlanner33044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

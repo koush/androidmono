@@ -12,7 +12,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _handleGetObject26583;
-		protected override global::java.lang.Object handleGetObject(java.lang.String arg0) 
+		protected override global::java.lang.Object handleGetObject(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeys26584;
-		public override global::java.util.Enumeration getKeys() 
+		public override global::java.util.Enumeration getKeys()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

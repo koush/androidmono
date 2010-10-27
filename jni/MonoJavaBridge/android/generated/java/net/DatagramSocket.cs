@@ -12,7 +12,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close21390;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._close21390);
 		}
 		internal static global::MonoJavaBridge.MethodId _send21391;
-		public virtual void send(java.net.DatagramPacket arg0) 
+		public virtual void send(java.net.DatagramPacket arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPort21392;
-		public virtual int getPort() 
+		public virtual int getPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChannel21393;
-		public virtual global::java.nio.channels.DatagramChannel getChannel() 
+		public virtual global::java.nio.channels.DatagramChannel getChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getChannel21393)) as java.nio.channels.DatagramChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21394;
-		public virtual void connect(java.net.SocketAddress arg0) 
+		public virtual void connect(java.net.SocketAddress arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._connect21394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21395;
-		public virtual void connect(java.net.InetAddress arg0, int arg1) 
+		public virtual void connect(java.net.InetAddress arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._connect21395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isClosed21396;
-		public virtual bool isClosed() 
+		public virtual bool isClosed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBroadcast21397;
-		public virtual bool getBroadcast() 
+		public virtual bool getBroadcast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getBroadcast21397);
 		}
 		internal static global::MonoJavaBridge.MethodId _bind21398;
-		public virtual void bind(java.net.SocketAddress arg0) 
+		public virtual void bind(java.net.SocketAddress arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._bind21398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _disconnect21399;
-		public virtual void disconnect() 
+		public virtual void disconnect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._disconnect21399);
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnected21400;
-		public virtual bool isConnected() 
+		public virtual bool isConnected()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalSocketAddress21401;
-		public virtual global::java.net.SocketAddress getLocalSocketAddress() 
+		public virtual global::java.net.SocketAddress getLocalSocketAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getLocalSocketAddress21401)) as java.net.SocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _setReceiveBufferSize21402;
-		public virtual void setReceiveBufferSize(int arg0) 
+		public virtual void setReceiveBufferSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -172,7 +172,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getReceiveBufferSize21403;
-		public virtual int getReceiveBufferSize() 
+		public virtual int getReceiveBufferSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -181,7 +181,7 @@ namespace java.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getReceiveBufferSize21403);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSoTimeout21404;
-		public virtual void setSoTimeout(int arg0) 
+		public virtual void setSoTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -201,7 +201,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSoTimeout21405;
-		public virtual int getSoTimeout() 
+		public virtual int getSoTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -210,7 +210,7 @@ namespace java.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getSoTimeout21405);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSendBufferSize21406;
-		public virtual void setSendBufferSize(int arg0) 
+		public virtual void setSendBufferSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -230,7 +230,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSendBufferSize21407;
-		public virtual int getSendBufferSize() 
+		public virtual int getSendBufferSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -246,7 +246,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemoteSocketAddress21408;
-		public virtual global::java.net.SocketAddress getRemoteSocketAddress() 
+		public virtual global::java.net.SocketAddress getRemoteSocketAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -255,7 +255,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getRemoteSocketAddress21408)) as java.net.SocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _isBound21409;
-		public virtual bool isBound() 
+		public virtual bool isBound()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -271,7 +271,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInetAddress21410;
-		public virtual global::java.net.InetAddress getInetAddress() 
+		public virtual global::java.net.InetAddress getInetAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -287,7 +287,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalAddress21411;
-		public virtual global::java.net.InetAddress getLocalAddress() 
+		public virtual global::java.net.InetAddress getLocalAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -303,7 +303,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalPort21412;
-		public virtual int getLocalPort() 
+		public virtual int getLocalPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -312,7 +312,7 @@ namespace java.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getLocalPort21412);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTrafficClass21413;
-		public virtual void setTrafficClass(int arg0) 
+		public virtual void setTrafficClass(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -332,7 +332,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTrafficClass21414;
-		public virtual int getTrafficClass() 
+		public virtual int getTrafficClass()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -341,7 +341,7 @@ namespace java.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getTrafficClass21414);
 		}
 		internal static global::MonoJavaBridge.MethodId _setReuseAddress21415;
-		public virtual void setReuseAddress(bool arg0) 
+		public virtual void setReuseAddress(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -361,7 +361,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getReuseAddress21416;
-		public virtual bool getReuseAddress() 
+		public virtual bool getReuseAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -370,7 +370,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getReuseAddress21416);
 		}
 		internal static global::MonoJavaBridge.MethodId _receive21417;
-		public virtual void receive(java.net.DatagramPacket arg0) 
+		public virtual void receive(java.net.DatagramPacket arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -379,7 +379,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._receive21417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBroadcast21418;
-		public virtual void setBroadcast(bool arg0) 
+		public virtual void setBroadcast(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -387,42 +387,49 @@ namespace java.net
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setBroadcast21418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public static global::java.net.DatagramSocketImplFactory DatagramSocketImplFactory
+		{
+			set
+			{
+				setDatagramSocketImplFactory(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDatagramSocketImplFactory21419;
-		public static void setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory arg0) 
+		public static void setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setDatagramSocketImplFactory21419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DatagramSocket21420;
-		public DatagramSocket(java.net.SocketAddress arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatagramSocket(java.net.SocketAddress arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket21420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatagramSocket21421;
-		public DatagramSocket()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatagramSocket() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket21421);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatagramSocket21422;
-		protected DatagramSocket(java.net.DatagramSocketImpl arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected DatagramSocket(java.net.DatagramSocketImpl arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket21422, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatagramSocket21423;
-		public DatagramSocket(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatagramSocket(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket21423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatagramSocket21424;
-		public DatagramSocket(int arg0, java.net.InetAddress arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatagramSocket(int arg0, java.net.InetAddress arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket21424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

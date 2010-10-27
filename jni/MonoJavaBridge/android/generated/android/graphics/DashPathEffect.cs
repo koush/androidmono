@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DashPathEffect5262;
-		public DashPathEffect(float[] arg0, float arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DashPathEffect(float[] arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.DashPathEffect.staticClass, global::android.graphics.DashPathEffect._DashPathEffect5262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

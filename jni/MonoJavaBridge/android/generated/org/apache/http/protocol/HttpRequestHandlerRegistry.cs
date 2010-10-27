@@ -12,7 +12,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _register33903;
-		public virtual void register(java.lang.String arg0, org.apache.http.protocol.HttpRequestHandler arg1) 
+		public virtual void register(java.lang.String arg0, org.apache.http.protocol.HttpRequestHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._register33903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _lookup33904;
-		public virtual global::org.apache.http.protocol.HttpRequestHandler lookup(java.lang.String arg0) 
+		public virtual global::org.apache.http.protocol.HttpRequestHandler lookup(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.protocol.HttpRequestHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._lookup33904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.protocol.HttpRequestHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _unregister33905;
-		public virtual void unregister(java.lang.String arg0) 
+		public virtual void unregister(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,8 +38,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._unregister33905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.Map Handlers
+		{
+			set
+			{
+				setHandlers(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setHandlers33906;
-		public virtual void setHandlers(java.util.Map arg0) 
+		public virtual void setHandlers(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +55,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._setHandlers33906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _matchUriRequestPattern33907;
-		protected virtual bool matchUriRequestPattern(java.lang.String arg0, java.lang.String arg1) 
+		protected virtual bool matchUriRequestPattern(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace org.apache.http.protocol
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._matchUriRequestPattern33907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpRequestHandlerRegistry33908;
-		public HttpRequestHandlerRegistry()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpRequestHandlerRegistry() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpRequestHandlerRegistry.staticClass, global::org.apache.http.protocol.HttpRequestHandlerRegistry._HttpRequestHandlerRegistry33908);

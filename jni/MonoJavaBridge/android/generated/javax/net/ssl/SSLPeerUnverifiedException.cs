@@ -12,7 +12,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLPeerUnverifiedException29991;
-		public SSLPeerUnverifiedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SSLPeerUnverifiedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLPeerUnverifiedException.staticClass, global::javax.net.ssl.SSLPeerUnverifiedException._SSLPeerUnverifiedException29991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

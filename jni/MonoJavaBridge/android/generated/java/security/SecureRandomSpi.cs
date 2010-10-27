@@ -18,7 +18,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineGenerateSeed23319;
 		protected abstract byte[] engineGenerateSeed(int arg0);
 		internal static global::MonoJavaBridge.MethodId _SecureRandomSpi23320;
-		public SecureRandomSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SecureRandomSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SecureRandomSpi.staticClass, global::java.security.SecureRandomSpi._SecureRandomSpi23320);
@@ -47,7 +47,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineSetSeed23321;
-		protected override void engineSetSeed(byte[] arg0) 
+		protected override void engineSetSeed(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SecureRandomSpi_.staticClass, global::java.security.SecureRandomSpi_._engineSetSeed23321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineNextBytes23322;
-		protected override void engineNextBytes(byte[] arg0) 
+		protected override void engineNextBytes(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SecureRandomSpi_.staticClass, global::java.security.SecureRandomSpi_._engineNextBytes23322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateSeed23323;
-		protected override byte[] engineGenerateSeed(int arg0) 
+		protected override byte[] engineGenerateSeed(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

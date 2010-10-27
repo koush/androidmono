@@ -12,7 +12,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _runTest12215;
-		public override void runTest(junit.framework.Test arg0, junit.framework.TestResult arg1) 
+		public override void runTest(junit.framework.Test arg0, junit.framework.TestResult arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._runTest12215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addTestSuite12216;
-		public override void addTestSuite(java.lang.Class arg0) 
+		public override void addTestSuite(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,21 +30,21 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._addTestSuite12216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationTestSuite12217;
-		public InstrumentationTestSuite(android.app.Instrumentation arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InstrumentationTestSuite(android.app.Instrumentation arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12217, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationTestSuite12218;
-		public InstrumentationTestSuite(java.lang.String arg0, android.app.Instrumentation arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InstrumentationTestSuite(java.lang.String arg0, android.app.Instrumentation arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12218, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationTestSuite12219;
-		public InstrumentationTestSuite(java.lang.Class arg0, android.app.Instrumentation arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InstrumentationTestSuite(java.lang.Class arg0, android.app.Instrumentation arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestSuite.staticClass, global::android.test.InstrumentationTestSuite._InstrumentationTestSuite12219, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

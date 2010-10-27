@@ -29,7 +29,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _ellipsized13042;
-			 void android.text.TextUtils.EllipsizeCallback.ellipsized(int arg0, int arg1) 
+			void android.text.TextUtils.EllipsizeCallback.ellipsized(int arg0, int arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _EllipsizeCallbackDelegateWrapper13043;
-			public EllipsizeCallbackDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public EllipsizeCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.EllipsizeCallbackDelegateWrapper.staticClass, global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper._EllipsizeCallbackDelegateWrapper13043);
@@ -102,7 +102,7 @@ namespace android.text
 				return global::java.lang.IterableHelper.WrapIterator(iterator());
 			}
 			internal static global::MonoJavaBridge.MethodId _iterator13044;
-			public virtual global::java.util.Iterator iterator() 
+			public virtual global::java.util.Iterator iterator()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace android.text
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._iterator13044)) as java.util.Iterator;
 			}
 			internal static global::MonoJavaBridge.MethodId _hasNext13045;
-			public virtual bool hasNext() 
+			public virtual bool hasNext()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace android.text
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._hasNext13045);
 			}
 			internal static global::MonoJavaBridge.MethodId _next13046;
-			public virtual global::java.lang.Object next() 
+			public virtual global::java.lang.Object next()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace android.text
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._next13046)) as java.lang.Object;
 			}
 			internal static global::MonoJavaBridge.MethodId _remove13047;
-			public virtual void remove() 
+			public virtual void remove()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -137,8 +137,15 @@ namespace android.text
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._remove13047);
 			}
+			public new global::java.lang.String String
+			{
+				set
+				{
+					setString(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setString13048;
-			public virtual void setString(java.lang.String arg0) 
+			public virtual void setString(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -147,7 +154,7 @@ namespace android.text
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._setString13048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _SimpleStringSplitter13049;
-			public SimpleStringSplitter(char arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public SimpleStringSplitter(char arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._SimpleStringSplitter13049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -183,7 +190,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _setString13050;
-			 void android.text.TextUtils.StringSplitter.setString(java.lang.String arg0) 
+			void android.text.TextUtils.StringSplitter.setString(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -196,7 +203,7 @@ namespace android.text
 				return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 			}
 			internal static global::MonoJavaBridge.MethodId _iterator13051;
-			 global::java.util.Iterator java.lang.Iterable.iterator() 
+			global::java.util.Iterator java.lang.Iterable.iterator()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -224,13 +231,13 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values13052;
-			public static global::android.text.TextUtils.TruncateAt[] values() 
+			public static global::android.text.TextUtils.TruncateAt[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.TextUtils.TruncateAt>(@__env.CallStaticObjectMethod(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._values13052)) as android.text.TextUtils.TruncateAt[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf13053;
-			public static global::android.text.TextUtils.TruncateAt valueOf(java.lang.String arg0) 
+			public static global::android.text.TextUtils.TruncateAt valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.TextUtils.TruncateAt>(@__env.CallStaticObjectMethod(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._valueOf13053, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.TextUtils.TruncateAt;
@@ -284,7 +291,7 @@ namespace android.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _equals13058;
-		public static bool equals(java.lang.CharSequence arg0, java.lang.CharSequence arg1) 
+		public static bool equals(java.lang.CharSequence arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._equals13058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -294,7 +301,7 @@ namespace android.text
 			return equals((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOf13059;
-		public static int indexOf(java.lang.CharSequence arg0, char arg1, int arg2) 
+		public static int indexOf(java.lang.CharSequence arg0, char arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -304,7 +311,7 @@ namespace android.text
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOf13060;
-		public static int indexOf(java.lang.CharSequence arg0, char arg1, int arg2, int arg3) 
+		public static int indexOf(java.lang.CharSequence arg0, char arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
@@ -314,7 +321,7 @@ namespace android.text
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOf13061;
-		public static int indexOf(java.lang.CharSequence arg0, char arg1) 
+		public static int indexOf(java.lang.CharSequence arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13061, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -324,7 +331,7 @@ namespace android.text
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOf13062;
-		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1) 
+		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -334,7 +341,7 @@ namespace android.text
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOf13063;
-		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1, int arg2) 
+		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -344,7 +351,7 @@ namespace android.text
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOf13064;
-		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1, int arg2, int arg3) 
+		public static int indexOf(java.lang.CharSequence arg0, java.lang.CharSequence arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._indexOf13064, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
@@ -354,7 +361,7 @@ namespace android.text
 			return indexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty13065;
-		public static bool isEmpty(java.lang.CharSequence arg0) 
+		public static bool isEmpty(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isEmpty13065, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -364,7 +371,7 @@ namespace android.text
 			return isEmpty((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getChars13066;
-		public static void getChars(java.lang.CharSequence arg0, int arg1, int arg2, char[] arg3, int arg4) 
+		public static void getChars(java.lang.CharSequence arg0, int arg1, int arg2, char[] arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getChars13066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
@@ -374,7 +381,7 @@ namespace android.text
 			getChars((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4);
 		}
 		internal static global::MonoJavaBridge.MethodId _regionMatches13067;
-		public static bool regionMatches(java.lang.CharSequence arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4) 
+		public static bool regionMatches(java.lang.CharSequence arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._regionMatches13067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
@@ -384,7 +391,7 @@ namespace android.text
 			return regionMatches((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2, arg3, arg4);
 		}
 		internal static global::MonoJavaBridge.MethodId _lastIndexOf13068;
-		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1, int arg2) 
+		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._lastIndexOf13068, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -394,7 +401,7 @@ namespace android.text
 			return lastIndexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _lastIndexOf13069;
-		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1, int arg2, int arg3) 
+		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._lastIndexOf13069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
@@ -404,7 +411,7 @@ namespace android.text
 			return lastIndexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _lastIndexOf13070;
-		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1) 
+		public static int lastIndexOf(java.lang.CharSequence arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._lastIndexOf13070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -414,7 +421,7 @@ namespace android.text
 			return lastIndexOf((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _substring13071;
-		public static global::java.lang.String substring(java.lang.CharSequence arg0, int arg1, int arg2) 
+		public static global::java.lang.String substring(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._substring13071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
@@ -424,13 +431,13 @@ namespace android.text
 			return substring((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _concat13072;
-		public static global::java.lang.CharSequence concat(java.lang.CharSequence[] arg0) 
+		public static global::java.lang.CharSequence concat(java.lang.CharSequence[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._concat13072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _replace13073;
-		public static global::java.lang.CharSequence replace(java.lang.CharSequence arg0, java.lang.String[] arg1, java.lang.CharSequence[] arg2) 
+		public static global::java.lang.CharSequence replace(java.lang.CharSequence arg0, java.lang.String[] arg1, java.lang.CharSequence[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._replace13073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
@@ -440,19 +447,19 @@ namespace android.text
 			return replace((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _split13074;
-		public static global::java.lang.String[] split(java.lang.String arg0, java.lang.String arg1) 
+		public static global::java.lang.String[] split(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._split13074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _split13075;
-		public static global::java.lang.String[] split(java.lang.String arg0, java.util.regex.Pattern arg1) 
+		public static global::java.lang.String[] split(java.lang.String arg0, java.util.regex.Pattern arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._split13075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _join13076;
-		public static global::java.lang.String join(java.lang.CharSequence arg0, java.lang.Object[] arg1) 
+		public static global::java.lang.String join(java.lang.CharSequence arg0, java.lang.Object[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._join13076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
@@ -462,7 +469,7 @@ namespace android.text
 			return join((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _join13077;
-		public static global::java.lang.String join(java.lang.CharSequence arg0, java.lang.Iterable arg1) 
+		public static global::java.lang.String join(java.lang.CharSequence arg0, java.lang.Iterable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._join13077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
@@ -472,7 +479,7 @@ namespace android.text
 			return join((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _ellipsize13078;
-		public static global::java.lang.CharSequence ellipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3) 
+		public static global::java.lang.CharSequence ellipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._ellipsize13078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.CharSequence;
@@ -482,7 +489,7 @@ namespace android.text
 			return ellipsize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _ellipsize13079;
-		public static global::java.lang.CharSequence ellipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3, bool arg4, android.text.TextUtils.EllipsizeCallback arg5) 
+		public static global::java.lang.CharSequence ellipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, android.text.TextUtils.TruncateAt arg3, bool arg4, android.text.TextUtils.EllipsizeCallback arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._ellipsize13079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.lang.CharSequence;
@@ -492,7 +499,7 @@ namespace android.text
 			return ellipsize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, (global::android.text.TextUtils.EllipsizeCallbackDelegateWrapper)arg5);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel13080;
-		public static void writeToParcel(java.lang.CharSequence arg0, android.os.Parcel arg1, int arg2) 
+		public static void writeToParcel(java.lang.CharSequence arg0, android.os.Parcel arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._writeToParcel13080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -502,7 +509,7 @@ namespace android.text
 			writeToParcel((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _stringOrSpannedString13081;
-		public static global::java.lang.CharSequence stringOrSpannedString(java.lang.CharSequence arg0) 
+		public static global::java.lang.CharSequence stringOrSpannedString(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._stringOrSpannedString13081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
@@ -512,7 +519,7 @@ namespace android.text
 			return stringOrSpannedString((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getTrimmedLength13082;
-		public static int getTrimmedLength(java.lang.CharSequence arg0) 
+		public static int getTrimmedLength(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getTrimmedLength13082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -522,7 +529,7 @@ namespace android.text
 			return getTrimmedLength((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getReverse13083;
-		public static global::java.lang.CharSequence getReverse(java.lang.CharSequence arg0, int arg1, int arg2) 
+		public static global::java.lang.CharSequence getReverse(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getReverse13083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
@@ -532,7 +539,7 @@ namespace android.text
 			return getReverse((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _dumpSpans13084;
-		public static void dumpSpans(java.lang.CharSequence arg0, android.util.Printer arg1, java.lang.String arg2) 
+		public static void dumpSpans(java.lang.CharSequence arg0, android.util.Printer arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._dumpSpans13084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -542,7 +549,7 @@ namespace android.text
 			dumpSpans((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.util.PrinterDelegateWrapper)arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _expandTemplate13085;
-		public static global::java.lang.CharSequence expandTemplate(java.lang.CharSequence arg0, java.lang.CharSequence[] arg1) 
+		public static global::java.lang.CharSequence expandTemplate(java.lang.CharSequence arg0, java.lang.CharSequence[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._expandTemplate13085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
@@ -552,7 +559,7 @@ namespace android.text
 			return expandTemplate((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _getOffsetBefore13086;
-		public static int getOffsetBefore(java.lang.CharSequence arg0, int arg1) 
+		public static int getOffsetBefore(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getOffsetBefore13086, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -562,7 +569,7 @@ namespace android.text
 			return getOffsetBefore((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _getOffsetAfter13087;
-		public static int getOffsetAfter(java.lang.CharSequence arg0, int arg1) 
+		public static int getOffsetAfter(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getOffsetAfter13087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -572,13 +579,13 @@ namespace android.text
 			return getOffsetAfter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _copySpansFrom13088;
-		public static void copySpansFrom(android.text.Spanned arg0, int arg1, int arg2, java.lang.Class arg3, android.text.Spannable arg4, int arg5) 
+		public static void copySpansFrom(android.text.Spanned arg0, int arg1, int arg2, java.lang.Class arg3, android.text.Spannable arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._copySpansFrom13088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _commaEllipsize13089;
-		public static global::java.lang.CharSequence commaEllipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, java.lang.String arg3, java.lang.String arg4) 
+		public static global::java.lang.CharSequence commaEllipsize(java.lang.CharSequence arg0, android.text.TextPaint arg1, float arg2, java.lang.String arg3, java.lang.String arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._commaEllipsize13089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as java.lang.CharSequence;
@@ -588,13 +595,13 @@ namespace android.text
 			return commaEllipsize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4);
 		}
 		internal static global::MonoJavaBridge.MethodId _htmlEncode13090;
-		public static global::java.lang.String htmlEncode(java.lang.String arg0) 
+		public static global::java.lang.String htmlEncode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._htmlEncode13090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isGraphic13091;
-		public static bool isGraphic(java.lang.CharSequence arg0) 
+		public static bool isGraphic(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isGraphic13091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -604,13 +611,13 @@ namespace android.text
 			return isGraphic((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _isGraphic13092;
-		public static bool isGraphic(char arg0) 
+		public static bool isGraphic(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isGraphic13092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDigitsOnly13093;
-		public static bool isDigitsOnly(java.lang.CharSequence arg0) 
+		public static bool isDigitsOnly(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._isDigitsOnly13093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -620,7 +627,7 @@ namespace android.text
 			return isDigitsOnly((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getCapsMode13094;
-		public static int getCapsMode(java.lang.CharSequence arg0, int arg1, int arg2) 
+		public static int getCapsMode(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.TextUtils.staticClass, global::android.text.TextUtils._getCapsMode13094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

@@ -12,14 +12,14 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _PortUnreachableException21654;
-		public PortUnreachableException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PortUnreachableException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.PortUnreachableException.staticClass, global::java.net.PortUnreachableException._PortUnreachableException21654, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PortUnreachableException21655;
-		public PortUnreachableException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PortUnreachableException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.PortUnreachableException.staticClass, global::java.net.PortUnreachableException._PortUnreachableException21655);

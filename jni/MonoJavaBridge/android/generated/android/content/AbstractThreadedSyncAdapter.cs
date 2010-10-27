@@ -12,7 +12,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getContext2558;
-		public virtual global::android.content.Context getContext() 
+		public virtual global::android.content.Context getContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.AbstractThreadedSyncAdapter.staticClass, global::android.content.AbstractThreadedSyncAdapter._getContext2558)) as android.content.Context;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSyncAdapterBinder2559;
-		public virtual global::android.os.IBinder getSyncAdapterBinder() 
+		public virtual global::android.os.IBinder getSyncAdapterBinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.content
 		internal static global::MonoJavaBridge.MethodId _onPerformSync2560;
 		public abstract void onPerformSync(android.accounts.Account arg0, android.os.Bundle arg1, java.lang.String arg2, android.content.ContentProviderClient arg3, android.content.SyncResult arg4);
 		internal static global::MonoJavaBridge.MethodId _onSyncCanceled2561;
-		public virtual void onSyncCanceled() 
+		public virtual void onSyncCanceled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.AbstractThreadedSyncAdapter.staticClass, global::android.content.AbstractThreadedSyncAdapter._onSyncCanceled2561);
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractThreadedSyncAdapter2562;
-		public AbstractThreadedSyncAdapter(android.content.Context arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AbstractThreadedSyncAdapter(android.content.Context arg0, bool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.AbstractThreadedSyncAdapter.staticClass, global::android.content.AbstractThreadedSyncAdapter._AbstractThreadedSyncAdapter2562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -78,7 +78,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onPerformSync2564;
-		public override void onPerformSync(android.accounts.Account arg0, android.os.Bundle arg1, java.lang.String arg2, android.content.ContentProviderClient arg3, android.content.SyncResult arg4) 
+		public override void onPerformSync(android.accounts.Account arg0, android.os.Bundle arg1, java.lang.String arg2, android.content.ContentProviderClient arg3, android.content.SyncResult arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

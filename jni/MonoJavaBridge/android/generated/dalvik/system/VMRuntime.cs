@@ -19,7 +19,7 @@ namespace dalvik.system
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRuntime18662;
-		public static global::dalvik.system.VMRuntime getRuntime() 
+		public static global::dalvik.system.VMRuntime getRuntime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<dalvik.system.VMRuntime>(@__env.CallStaticObjectMethod(dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._getRuntime18662)) as dalvik.system.VMRuntime;
@@ -30,9 +30,13 @@ namespace dalvik.system
 			{
 				return getTargetHeapUtilization();
 			}
+			set
+			{
+				setTargetHeapUtilization(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetHeapUtilization18663;
-		public float getTargetHeapUtilization() 
+		public float getTargetHeapUtilization()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +45,7 @@ namespace dalvik.system
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._getTargetHeapUtilization18663);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetHeapUtilization18664;
-		public float setTargetHeapUtilization(float arg0) 
+		public float setTargetHeapUtilization(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,9 +59,13 @@ namespace dalvik.system
 			{
 				return getMinimumHeapSize();
 			}
+			set
+			{
+				setMinimumHeapSize(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinimumHeapSize18665;
-		public long getMinimumHeapSize() 
+		public long getMinimumHeapSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +74,7 @@ namespace dalvik.system
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._getMinimumHeapSize18665);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMinimumHeapSize18666;
-		public long setMinimumHeapSize(long arg0) 
+		public long setMinimumHeapSize(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +83,7 @@ namespace dalvik.system
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._setMinimumHeapSize18666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _gcSoftReferences18667;
-		public void gcSoftReferences() 
+		public void gcSoftReferences()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +92,7 @@ namespace dalvik.system
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::dalvik.system.VMRuntime.staticClass, global::dalvik.system.VMRuntime._gcSoftReferences18667);
 		}
 		internal static global::MonoJavaBridge.MethodId _runFinalizationSync18668;
-		public void runFinalizationSync() 
+		public void runFinalizationSync()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +108,7 @@ namespace dalvik.system
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExternalBytesAllocated18669;
-		public long getExternalBytesAllocated() 
+		public long getExternalBytesAllocated()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

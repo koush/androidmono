@@ -20,7 +20,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toggle16843;
-		 void android.widget.Checkable.toggle() 
+		void android.widget.Checkable.toggle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.Checkable_.staticClass, global::android.widget.Checkable_._toggle16843);
 		}
 		internal static global::MonoJavaBridge.MethodId _isChecked16844;
-		 bool android.widget.Checkable.isChecked() 
+		bool android.widget.Checkable.isChecked()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.Checkable_.staticClass, global::android.widget.Checkable_._isChecked16844);
 		}
 		internal static global::MonoJavaBridge.MethodId _setChecked16845;
-		 void android.widget.Checkable.setChecked(bool arg0) 
+		void android.widget.Checkable.setChecked(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

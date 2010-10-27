@@ -12,7 +12,7 @@ namespace org.apache.http.client.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _process32043;
-		public virtual void process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1) 
+		public virtual void process(org.apache.http.HttpRequest arg0, org.apache.http.protocol.HttpContext arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.client.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.protocol.RequestTargetAuthentication.staticClass, global::org.apache.http.client.protocol.RequestTargetAuthentication._process32043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RequestTargetAuthentication32044;
-		public RequestTargetAuthentication()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RequestTargetAuthentication() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.protocol.RequestTargetAuthentication.staticClass, global::org.apache.http.client.protocol.RequestTargetAuthentication._RequestTargetAuthentication32044);

@@ -12,7 +12,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString13734;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +20,15 @@ namespace android.util
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._toString13734)) as java.lang.String;
 		}
+		public new global::android.util.DisplayMetrics To
+		{
+			set
+			{
+				setTo(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setTo13735;
-		public virtual void setTo(android.util.DisplayMetrics arg0) 
+		public virtual void setTo(android.util.DisplayMetrics arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +37,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setTo13735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setToDefaults13736;
-		public virtual void setToDefaults() 
+		public virtual void setToDefaults()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +46,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setToDefaults13736);
 		}
 		internal static global::MonoJavaBridge.MethodId _DisplayMetrics13737;
-		public DisplayMetrics()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DisplayMetrics() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._DisplayMetrics13737);

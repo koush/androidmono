@@ -21,7 +21,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getModifiers21090;
-		 int java.lang.reflect.Member.getModifiers() 
+		int java.lang.reflect.Member.getModifiers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Member_.staticClass, global::java.lang.reflect.Member_._getModifiers21090);
 		}
 		internal static global::MonoJavaBridge.MethodId _getName21091;
-		 global::java.lang.String java.lang.reflect.Member.getName() 
+		global::java.lang.String java.lang.reflect.Member.getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Member_.staticClass, global::java.lang.reflect.Member_._getName21091)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSynthetic21092;
-		 bool java.lang.reflect.Member.isSynthetic() 
+		bool java.lang.reflect.Member.isSynthetic()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Member_.staticClass, global::java.lang.reflect.Member_._isSynthetic21092);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaringClass21093;
-		 global::java.lang.Class java.lang.reflect.Member.getDeclaringClass() 
+		global::java.lang.Class java.lang.reflect.Member.getDeclaringClass()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

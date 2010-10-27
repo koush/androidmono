@@ -19,7 +19,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue28326;
-		public virtual long getValue() 
+		public virtual long getValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._getValue28326);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28327;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._reset28327);
 		}
 		internal static global::MonoJavaBridge.MethodId _update28328;
-		public virtual void update(byte[] arg0) 
+		public virtual void update(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._update28328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28329;
-		public virtual void update(byte[] arg0, int arg1, int arg2) 
+		public virtual void update(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._update28329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28330;
-		public virtual void update(int arg0) 
+		public virtual void update(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._update28330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Adler3228331;
-		public Adler32()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Adler32() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Adler32.staticClass, global::java.util.zip.Adler32._Adler3228331);

@@ -12,7 +12,7 @@ namespace org.apache.http.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString34021;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackage34022;
-		public virtual global::java.lang.String getPackage() 
+		public virtual global::java.lang.String getPackage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.http.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimestamp34023;
-		public virtual global::java.lang.String getTimestamp() 
+		public virtual global::java.lang.String getTimestamp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getModule34024;
-		public virtual global::java.lang.String getModule() 
+		public virtual global::java.lang.String getModule()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace org.apache.http.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRelease34025;
-		public virtual global::java.lang.String getRelease() 
+		public virtual global::java.lang.String getRelease()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace org.apache.http.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getClassloader34026;
-		public virtual global::java.lang.String getClassloader() 
+		public virtual global::java.lang.String getClassloader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,25 +101,25 @@ namespace org.apache.http.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._getClassloader34026)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadVersionInfo34027;
-		public static global::org.apache.http.util.VersionInfo[] loadVersionInfo(java.lang.String[] arg0, java.lang.ClassLoader arg1) 
+		public static global::org.apache.http.util.VersionInfo[] loadVersionInfo(java.lang.String[] arg0, java.lang.ClassLoader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.util.VersionInfo>(@__env.CallStaticObjectMethod(org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._loadVersionInfo34027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.VersionInfo[];
 		}
 		internal static global::MonoJavaBridge.MethodId _loadVersionInfo34028;
-		public static global::org.apache.http.util.VersionInfo loadVersionInfo(java.lang.String arg0, java.lang.ClassLoader arg1) 
+		public static global::org.apache.http.util.VersionInfo loadVersionInfo(java.lang.String arg0, java.lang.ClassLoader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._loadVersionInfo34028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.VersionInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _fromMap34029;
-		protected static global::org.apache.http.util.VersionInfo fromMap(java.lang.String arg0, java.util.Map arg1, java.lang.ClassLoader arg2) 
+		protected static global::org.apache.http.util.VersionInfo fromMap(java.lang.String arg0, java.util.Map arg1, java.lang.ClassLoader arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._fromMap34029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.util.VersionInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _VersionInfo34030;
-		protected VersionInfo(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected VersionInfo(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.util.VersionInfo.staticClass, global::org.apache.http.util.VersionInfo._VersionInfo34030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));

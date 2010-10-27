@@ -12,7 +12,7 @@ namespace javax.security.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _combine30194;
-		public virtual global::java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1) 
+		public virtual global::java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace javax.security.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubject30195;
-		public virtual global::javax.security.auth.Subject getSubject() 
+		public virtual global::javax.security.auth.Subject getSubject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace javax.security.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.Subject>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._getSubject30195)) as javax.security.auth.Subject;
 		}
 		internal static global::MonoJavaBridge.MethodId _SubjectDomainCombiner30196;
-		public SubjectDomainCombiner(javax.security.auth.Subject arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SubjectDomainCombiner(javax.security.auth.Subject arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.SubjectDomainCombiner.staticClass, global::javax.security.auth.SubjectDomainCombiner._SubjectDomainCombiner30196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

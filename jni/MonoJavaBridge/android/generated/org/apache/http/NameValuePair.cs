@@ -19,7 +19,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getName31737;
-		 global::java.lang.String org.apache.http.NameValuePair.getName() 
+		global::java.lang.String org.apache.http.NameValuePair.getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.NameValuePair_.staticClass, global::org.apache.http.NameValuePair_._getName31737)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue31738;
-		 global::java.lang.String org.apache.http.NameValuePair.getValue() 
+		global::java.lang.String org.apache.http.NameValuePair.getValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

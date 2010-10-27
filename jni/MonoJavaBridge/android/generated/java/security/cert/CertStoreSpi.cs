@@ -16,7 +16,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _engineGetCRLs23549;
 		public abstract global::java.util.Collection engineGetCRLs(java.security.cert.CRLSelector arg0);
 		internal static global::MonoJavaBridge.MethodId _CertStoreSpi23550;
-		public CertStoreSpi(java.security.cert.CertStoreParameters arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertStoreSpi(java.security.cert.CertStoreParameters arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertStoreSpi.staticClass, global::java.security.cert.CertStoreSpi._CertStoreSpi23550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -44,7 +44,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetCertificates23551;
-		public override global::java.util.Collection engineGetCertificates(java.security.cert.CertSelector arg0) 
+		public override global::java.util.Collection engineGetCertificates(java.security.cert.CertSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertStoreSpi_.staticClass, global::java.security.cert.CertStoreSpi_._engineGetCertificates23551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetCRLs23552;
-		public override global::java.util.Collection engineGetCRLs(java.security.cert.CRLSelector arg0) 
+		public override global::java.util.Collection engineGetCRLs(java.security.cert.CRLSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

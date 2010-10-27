@@ -21,7 +21,7 @@ namespace junit.framework
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _addError31396;
-		 void junit.framework.TestListener.addError(junit.framework.Test arg0, java.lang.Throwable arg1) 
+		void junit.framework.TestListener.addError(junit.framework.Test arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace junit.framework
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestListener_.staticClass, global::junit.framework.TestListener_._addError31396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addFailure31397;
-		 void junit.framework.TestListener.addFailure(junit.framework.Test arg0, junit.framework.AssertionFailedError arg1) 
+		void junit.framework.TestListener.addFailure(junit.framework.Test arg0, junit.framework.AssertionFailedError arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace junit.framework
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestListener_.staticClass, global::junit.framework.TestListener_._addFailure31397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _endTest31398;
-		 void junit.framework.TestListener.endTest(junit.framework.Test arg0) 
+		void junit.framework.TestListener.endTest(junit.framework.Test arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace junit.framework
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::junit.framework.TestListener_.staticClass, global::junit.framework.TestListener_._endTest31398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startTest31399;
-		 void junit.framework.TestListener.startTest(junit.framework.Test arg0) 
+		void junit.framework.TestListener.startTest(junit.framework.Test arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

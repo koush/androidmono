@@ -19,7 +19,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getP23972;
-		public virtual global::java.math.BigInteger getP() 
+		public virtual global::java.math.BigInteger getP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getQ23973;
-		public virtual global::java.math.BigInteger getQ() 
+		public virtual global::java.math.BigInteger getQ()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getG23974;
-		public virtual global::java.math.BigInteger getG() 
+		public virtual global::java.math.BigInteger getG()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getY23975;
-		public virtual global::java.math.BigInteger getY() 
+		public virtual global::java.math.BigInteger getY()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._getY23975)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _DSAPublicKeySpec23976;
-		public DSAPublicKeySpec(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2, java.math.BigInteger arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DSAPublicKeySpec(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2, java.math.BigInteger arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.DSAPublicKeySpec.staticClass, global::java.security.spec.DSAPublicKeySpec._DSAPublicKeySpec23976, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

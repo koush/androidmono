@@ -20,7 +20,7 @@ namespace java.security.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getP23897;
-		 global::java.math.BigInteger java.security.interfaces.DSAParams.getP() 
+		global::java.math.BigInteger java.security.interfaces.DSAParams.getP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAParams_.staticClass, global::java.security.interfaces.DSAParams_._getP23897)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getQ23898;
-		 global::java.math.BigInteger java.security.interfaces.DSAParams.getQ() 
+		global::java.math.BigInteger java.security.interfaces.DSAParams.getQ()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.DSAParams_.staticClass, global::java.security.interfaces.DSAParams_._getQ23898)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getG23899;
-		 global::java.math.BigInteger java.security.interfaces.DSAParams.getG() 
+		global::java.math.BigInteger java.security.interfaces.DSAParams.getG()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCipherSuite29830;
-		public virtual global::java.lang.String getCipherSuite() 
+		public virtual global::java.lang.String getCipherSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal29831;
-		public virtual global::java.security.Principal getPeerPrincipal() 
+		public virtual global::java.security.Principal getPeerPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal29832;
-		public virtual global::java.security.Principal getLocalPrincipal() 
+		public virtual global::java.security.Principal getLocalPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSocket29833;
-		public virtual global::javax.net.ssl.SSLSocket getSocket() 
+		public virtual global::javax.net.ssl.SSLSocket getSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSession29834;
-		public virtual global::javax.net.ssl.SSLSession getSession() 
+		public virtual global::javax.net.ssl.SSLSession getSession()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalCertificates29835;
-		public virtual global::java.security.cert.Certificate[] getLocalCertificates() 
+		public virtual global::java.security.cert.Certificate[] getLocalCertificates()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPeerCertificates29836;
-		public virtual global::java.security.cert.Certificate[] getPeerCertificates() 
+		public virtual global::java.security.cert.Certificate[] getPeerCertificates()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -131,7 +131,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPeerCertificateChain29837;
-		public virtual global::javax.security.cert.X509Certificate[] getPeerCertificateChain() 
+		public virtual global::javax.security.cert.X509Certificate[] getPeerCertificateChain()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -140,7 +140,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<javax.security.cert.X509Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.HandshakeCompletedEvent.staticClass, global::javax.net.ssl.HandshakeCompletedEvent._getPeerCertificateChain29837)) as javax.security.cert.X509Certificate[];
 		}
 		internal static global::MonoJavaBridge.MethodId _HandshakeCompletedEvent29838;
-		public HandshakeCompletedEvent(javax.net.ssl.SSLSocket arg0, javax.net.ssl.SSLSession arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HandshakeCompletedEvent(javax.net.ssl.SSLSocket arg0, javax.net.ssl.SSLSession arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.HandshakeCompletedEvent.staticClass, global::javax.net.ssl.HandshakeCompletedEvent._HandshakeCompletedEvent29838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

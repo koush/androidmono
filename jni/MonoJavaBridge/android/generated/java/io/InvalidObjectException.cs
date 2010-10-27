@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidObjectException19121;
-		public InvalidObjectException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidObjectException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InvalidObjectException.staticClass, global::java.io.InvalidObjectException._InvalidObjectException19121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

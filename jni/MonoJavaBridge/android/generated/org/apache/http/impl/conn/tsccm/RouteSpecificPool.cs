@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _freeEntry33157;
-		public virtual void freeEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0) 
+		public virtual void freeEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._freeEntry33157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteEntry33158;
-		public virtual bool deleteEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0) 
+		public virtual bool deleteEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRoute33159;
-		public virtual global::org.apache.http.conn.routing.HttpRoute getRoute() 
+		public virtual global::org.apache.http.conn.routing.HttpRoute getRoute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxEntries33160;
-		public virtual int getMaxEntries() 
+		public virtual int getMaxEntries()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._getMaxEntries33160);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnused33161;
-		public virtual bool isUnused() 
+		public virtual bool isUnused()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCapacity33162;
-		public virtual int getCapacity() 
+		public virtual int getCapacity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntryCount33163;
-		public virtual int getEntryCount() 
+		public virtual int getEntryCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,7 +103,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._getEntryCount33163);
 		}
 		internal static global::MonoJavaBridge.MethodId _allocEntry33164;
-		public virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntry allocEntry(java.lang.Object arg0) 
+		public virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntry allocEntry(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,7 +112,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._allocEntry33164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.impl.conn.tsccm.BasicPoolEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _createdEntry33165;
-		public virtual void createdEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0) 
+		public virtual void createdEntry(org.apache.http.impl.conn.tsccm.BasicPoolEntry arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -121,7 +121,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._createdEntry33165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dropEntry33166;
-		public virtual void dropEntry() 
+		public virtual void dropEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +130,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._dropEntry33166);
 		}
 		internal static global::MonoJavaBridge.MethodId _queueThread33167;
-		public virtual void queueThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0) 
+		public virtual void queueThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,7 +139,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._queueThread33167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasThread33168;
-		public virtual bool hasThread() 
+		public virtual bool hasThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -148,7 +148,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._hasThread33168);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextThread33169;
-		public virtual global::org.apache.http.impl.conn.tsccm.WaitingThread nextThread() 
+		public virtual global::org.apache.http.impl.conn.tsccm.WaitingThread nextThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -157,7 +157,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._nextThread33169)) as org.apache.http.impl.conn.tsccm.WaitingThread;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeThread33170;
-		public virtual void removeThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0) 
+		public virtual void removeThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -166,7 +166,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._removeThread33170, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _RouteSpecificPool33171;
-		public RouteSpecificPool(org.apache.http.conn.routing.HttpRoute arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RouteSpecificPool(org.apache.http.conn.routing.HttpRoute arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.RouteSpecificPool.staticClass, global::org.apache.http.impl.conn.tsccm.RouteSpecificPool._RouteSpecificPool33171, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -19,13 +19,13 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance13276;
-		public static global::android.text.method.DialerKeyListener getInstance() 
+		public static global::android.text.method.DialerKeyListener getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInstance13276)) as android.text.method.DialerKeyListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _lookup13277;
-		protected override int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1) 
+		protected override int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputType13278;
-		public override int getInputType() 
+		public override int getInputType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13279;
-		protected override char[] getAcceptedChars() 
+		protected override char[] getAcceptedChars()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.text.method
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getAcceptedChars13279)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DialerKeyListener13280;
-		public DialerKeyListener()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DialerKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._DialerKeyListener13280);

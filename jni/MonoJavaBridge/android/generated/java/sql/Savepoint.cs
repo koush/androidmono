@@ -19,7 +19,7 @@ namespace java.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getSavepointId25042;
-		 int java.sql.Savepoint.getSavepointId() 
+		int java.sql.Savepoint.getSavepointId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Savepoint_.staticClass, global::java.sql.Savepoint_._getSavepointId25042);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSavepointName25043;
-		 global::java.lang.String java.sql.Savepoint.getSavepointName() 
+		global::java.lang.String java.sql.Savepoint.getSavepointName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

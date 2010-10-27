@@ -12,19 +12,19 @@ namespace java.math
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _values21317;
-		public static global::java.math.RoundingMode[] values() 
+		public static global::java.math.RoundingMode[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._values21317)) as java.math.RoundingMode[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf21318;
-		public static global::java.math.RoundingMode valueOf(java.lang.String arg0) 
+		public static global::java.math.RoundingMode valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._valueOf21318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.RoundingMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf21319;
-		public static global::java.math.RoundingMode valueOf(int arg0) 
+		public static global::java.math.RoundingMode valueOf(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallStaticObjectMethod(java.math.RoundingMode.staticClass, global::java.math.RoundingMode._valueOf21319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.math.RoundingMode;

@@ -23,7 +23,7 @@ namespace android.os
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _close9785;
-			public virtual void close() 
+			public virtual void close()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.os
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getInputStream9786;
-			public virtual global::java.io.InputStream getInputStream() 
+			public virtual global::java.io.InputStream getInputStream()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.os
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getTag9787;
-			public virtual global::java.lang.String getTag() 
+			public virtual global::java.lang.String getTag()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace android.os
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._getTag9787)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _getText9788;
-			public virtual global::java.lang.String getText(int arg0) 
+			public virtual global::java.lang.String getText(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.os
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._getText9788, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _writeToParcel9789;
-			public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+			public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace android.os
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._writeToParcel9789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _describeContents9790;
-			public virtual int describeContents() 
+			public virtual int describeContents()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace android.os
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getFlags9791;
-			public virtual int getFlags() 
+			public virtual int getFlags()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -114,7 +114,7 @@ namespace android.os
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getTimeMillis9792;
-			public virtual long getTimeMillis() 
+			public virtual long getTimeMillis()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -123,35 +123,35 @@ namespace android.os
 					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._getTimeMillis9792);
 			}
 			internal static global::MonoJavaBridge.MethodId _Entry9793;
-			public Entry(java.lang.String arg0, long arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Entry(java.lang.String arg0, long arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._Entry9793, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _Entry9794;
-			public Entry(java.lang.String arg0, long arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Entry(java.lang.String arg0, long arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._Entry9794, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _Entry9795;
-			public Entry(java.lang.String arg0, long arg1, byte[] arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Entry(java.lang.String arg0, long arg1, byte[] arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._Entry9795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _Entry9796;
-			public Entry(java.lang.String arg0, long arg1, android.os.ParcelFileDescriptor arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Entry(java.lang.String arg0, long arg1, android.os.ParcelFileDescriptor arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._Entry9796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _Entry9797;
-			public Entry(java.lang.String arg0, long arg1, java.io.File arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Entry(java.lang.String arg0, long arg1, java.io.File arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DropBoxManager.Entry.staticClass, global::android.os.DropBoxManager.Entry._Entry9797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
@@ -187,7 +187,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNextEntry9799;
-		public virtual global::android.os.DropBoxManager.Entry getNextEntry(java.lang.String arg0, long arg1) 
+		public virtual global::android.os.DropBoxManager.Entry getNextEntry(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -196,7 +196,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.DropBoxManager.staticClass, global::android.os.DropBoxManager._getNextEntry9799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.DropBoxManager.Entry;
 		}
 		internal static global::MonoJavaBridge.MethodId _addText9800;
-		public virtual void addText(java.lang.String arg0, java.lang.String arg1) 
+		public virtual void addText(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -205,7 +205,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.DropBoxManager.staticClass, global::android.os.DropBoxManager._addText9800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addData9801;
-		public virtual void addData(java.lang.String arg0, byte[] arg1, int arg2) 
+		public virtual void addData(java.lang.String arg0, byte[] arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -214,7 +214,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.DropBoxManager.staticClass, global::android.os.DropBoxManager._addData9801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _addFile9802;
-		public virtual void addFile(java.lang.String arg0, java.io.File arg1, int arg2) 
+		public virtual void addFile(java.lang.String arg0, java.io.File arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -223,7 +223,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.DropBoxManager.staticClass, global::android.os.DropBoxManager._addFile9802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _isTagEnabled9803;
-		public virtual bool isTagEnabled(java.lang.String arg0) 
+		public virtual bool isTagEnabled(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -232,7 +232,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.DropBoxManager.staticClass, global::android.os.DropBoxManager._isTagEnabled9803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DropBoxManager9804;
-		protected DropBoxManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected DropBoxManager() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.DropBoxManager.staticClass, global::android.os.DropBoxManager._DropBoxManager9804);

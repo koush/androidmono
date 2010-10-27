@@ -19,7 +19,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPassword28791;
-		public virtual char[] getPassword() 
+		public virtual char[] getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace javax.crypto.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getPassword28791)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPassword28792;
-		public virtual void clearPassword() 
+		public virtual void clearPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIterationCount28793;
-		public virtual int getIterationCount() 
+		public virtual int getIterationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSalt28794;
-		public virtual byte[] getSalt() 
+		public virtual byte[] getSalt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeyLength28795;
-		public virtual int getKeyLength() 
+		public virtual int getKeyLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,21 +85,21 @@ namespace javax.crypto.spec
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._getKeyLength28795);
 		}
 		internal static global::MonoJavaBridge.MethodId _PBEKeySpec28796;
-		public PBEKeySpec(char[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PBEKeySpec(char[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._PBEKeySpec28796, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PBEKeySpec28797;
-		public PBEKeySpec(char[] arg0, byte[] arg1, int arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PBEKeySpec(char[] arg0, byte[] arg1, int arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._PBEKeySpec28797, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PBEKeySpec28798;
-		public PBEKeySpec(char[] arg0, byte[] arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PBEKeySpec(char[] arg0, byte[] arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PBEKeySpec.staticClass, global::javax.crypto.spec.PBEKeySpec._PBEKeySpec28798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

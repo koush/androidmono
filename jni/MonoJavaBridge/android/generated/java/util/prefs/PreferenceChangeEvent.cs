@@ -19,7 +19,7 @@ namespace java.util.prefs
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKey28181;
-		public virtual global::java.lang.String getKey() 
+		public virtual global::java.lang.String getKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util.prefs
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNewValue28182;
-		public virtual global::java.lang.String getNewValue() 
+		public virtual global::java.lang.String getNewValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.util.prefs
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNode28183;
-		public virtual global::java.util.prefs.Preferences getNode() 
+		public virtual global::java.util.prefs.Preferences getNode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.util.prefs
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.PreferenceChangeEvent.staticClass, global::java.util.prefs.PreferenceChangeEvent._getNode28183)) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _PreferenceChangeEvent28184;
-		public PreferenceChangeEvent(java.util.prefs.Preferences arg0, java.lang.String arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PreferenceChangeEvent(java.util.prefs.Preferences arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.PreferenceChangeEvent.staticClass, global::java.util.prefs.PreferenceChangeEvent._PreferenceChangeEvent28184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

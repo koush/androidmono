@@ -12,7 +12,7 @@ namespace javax.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals30223;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace javax.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString30224;
 		public abstract global::java.lang.String toString();
 		internal static global::MonoJavaBridge.MethodId _hashCode30225;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace javax.security.cert
 		internal static global::MonoJavaBridge.MethodId _getPublicKey30229;
 		public abstract global::java.security.PublicKey getPublicKey();
 		internal static global::MonoJavaBridge.MethodId _Certificate30230;
-		public Certificate()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Certificate() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.Certificate.staticClass, global::javax.security.cert.Certificate._Certificate30230);
@@ -73,7 +73,7 @@ namespace javax.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString30231;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace javax.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.cert.Certificate_.staticClass, global::javax.security.cert.Certificate_._toString30231)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded30232;
-		public override byte[] getEncoded() 
+		public override byte[] getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace javax.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.cert.Certificate_.staticClass, global::javax.security.cert.Certificate_._getEncoded30232)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _verify30233;
-		public override void verify(java.security.PublicKey arg0) 
+		public override void verify(java.security.PublicKey arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace javax.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.cert.Certificate_.staticClass, global::javax.security.cert.Certificate_._verify30233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _verify30234;
-		public override void verify(java.security.PublicKey arg0, java.lang.String arg1) 
+		public override void verify(java.security.PublicKey arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace javax.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.cert.Certificate_.staticClass, global::javax.security.cert.Certificate_._verify30234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicKey30235;
-		public override global::java.security.PublicKey getPublicKey() 
+		public override global::java.security.PublicKey getPublicKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,14 +12,14 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CursorIndexOutOfBoundsException4514;
-		public CursorIndexOutOfBoundsException(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CursorIndexOutOfBoundsException(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.CursorIndexOutOfBoundsException.staticClass, global::android.database.CursorIndexOutOfBoundsException._CursorIndexOutOfBoundsException4514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CursorIndexOutOfBoundsException4515;
-		public CursorIndexOutOfBoundsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CursorIndexOutOfBoundsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.CursorIndexOutOfBoundsException.staticClass, global::android.database.CursorIndexOutOfBoundsException._CursorIndexOutOfBoundsException4515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

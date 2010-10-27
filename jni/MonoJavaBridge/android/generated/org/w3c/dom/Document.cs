@@ -48,7 +48,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDoctype34385;
-		 global::org.w3c.dom.DocumentType org.w3c.dom.Document.getDoctype() 
+		global::org.w3c.dom.DocumentType org.w3c.dom.Document.getDoctype()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DocumentType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getDoctype34385)) as org.w3c.dom.DocumentType;
 		}
 		internal static global::MonoJavaBridge.MethodId _getImplementation34386;
-		 global::org.w3c.dom.DOMImplementation org.w3c.dom.Document.getImplementation() 
+		global::org.w3c.dom.DOMImplementation org.w3c.dom.Document.getImplementation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMImplementation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getImplementation34386)) as org.w3c.dom.DOMImplementation;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputEncoding34387;
-		 global::java.lang.String org.w3c.dom.Document.getInputEncoding() 
+		global::java.lang.String org.w3c.dom.Document.getInputEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getInputEncoding34387)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDocumentElement34388;
-		 global::org.w3c.dom.Element org.w3c.dom.Document.getDocumentElement() 
+		global::org.w3c.dom.Element org.w3c.dom.Document.getDocumentElement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Element>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getDocumentElement34388)) as org.w3c.dom.Element;
 		}
 		internal static global::MonoJavaBridge.MethodId _createElement34389;
-		 global::org.w3c.dom.Element org.w3c.dom.Document.createElement(java.lang.String arg0) 
+		global::org.w3c.dom.Element org.w3c.dom.Document.createElement(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Element>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createElement34389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Element;
 		}
 		internal static global::MonoJavaBridge.MethodId _createDocumentFragment34390;
-		 global::org.w3c.dom.DocumentFragment org.w3c.dom.Document.createDocumentFragment() 
+		global::org.w3c.dom.DocumentFragment org.w3c.dom.Document.createDocumentFragment()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DocumentFragment>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createDocumentFragment34390)) as org.w3c.dom.DocumentFragment;
 		}
 		internal static global::MonoJavaBridge.MethodId _createTextNode34391;
-		 global::org.w3c.dom.Text org.w3c.dom.Document.createTextNode(java.lang.String arg0) 
+		global::org.w3c.dom.Text org.w3c.dom.Document.createTextNode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Text>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createTextNode34391, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Text;
 		}
 		internal static global::MonoJavaBridge.MethodId _createComment34392;
-		 global::org.w3c.dom.Comment org.w3c.dom.Document.createComment(java.lang.String arg0) 
+		global::org.w3c.dom.Comment org.w3c.dom.Document.createComment(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Comment>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createComment34392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Comment;
 		}
 		internal static global::MonoJavaBridge.MethodId _createCDATASection34393;
-		 global::org.w3c.dom.CDATASection org.w3c.dom.Document.createCDATASection(java.lang.String arg0) 
+		global::org.w3c.dom.CDATASection org.w3c.dom.Document.createCDATASection(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.CDATASection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createCDATASection34393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.CDATASection;
 		}
 		internal static global::MonoJavaBridge.MethodId _createProcessingInstruction34394;
-		 global::org.w3c.dom.ProcessingInstruction org.w3c.dom.Document.createProcessingInstruction(java.lang.String arg0, java.lang.String arg1) 
+		global::org.w3c.dom.ProcessingInstruction org.w3c.dom.Document.createProcessingInstruction(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ProcessingInstruction>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createProcessingInstruction34394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.ProcessingInstruction;
 		}
 		internal static global::MonoJavaBridge.MethodId _createAttribute34395;
-		 global::org.w3c.dom.Attr org.w3c.dom.Document.createAttribute(java.lang.String arg0) 
+		global::org.w3c.dom.Attr org.w3c.dom.Document.createAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Attr>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createAttribute34395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Attr;
 		}
 		internal static global::MonoJavaBridge.MethodId _createEntityReference34396;
-		 global::org.w3c.dom.EntityReference org.w3c.dom.Document.createEntityReference(java.lang.String arg0) 
+		global::org.w3c.dom.EntityReference org.w3c.dom.Document.createEntityReference(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,7 +156,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.EntityReference>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createEntityReference34396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.EntityReference;
 		}
 		internal static global::MonoJavaBridge.MethodId _getElementsByTagName34397;
-		 global::org.w3c.dom.NodeList org.w3c.dom.Document.getElementsByTagName(java.lang.String arg0) 
+		global::org.w3c.dom.NodeList org.w3c.dom.Document.getElementsByTagName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.NodeList>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getElementsByTagName34397, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.NodeList;
 		}
 		internal static global::MonoJavaBridge.MethodId _importNode34398;
-		 global::org.w3c.dom.Node org.w3c.dom.Document.importNode(org.w3c.dom.Node arg0, bool arg1) 
+		global::org.w3c.dom.Node org.w3c.dom.Document.importNode(org.w3c.dom.Node arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._importNode34398, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _createElementNS34399;
-		 global::org.w3c.dom.Element org.w3c.dom.Document.createElementNS(java.lang.String arg0, java.lang.String arg1) 
+		global::org.w3c.dom.Element org.w3c.dom.Document.createElementNS(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -183,7 +183,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Element>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createElementNS34399, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Element;
 		}
 		internal static global::MonoJavaBridge.MethodId _createAttributeNS34400;
-		 global::org.w3c.dom.Attr org.w3c.dom.Document.createAttributeNS(java.lang.String arg0, java.lang.String arg1) 
+		global::org.w3c.dom.Attr org.w3c.dom.Document.createAttributeNS(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -192,7 +192,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Attr>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._createAttributeNS34400, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Attr;
 		}
 		internal static global::MonoJavaBridge.MethodId _getElementsByTagNameNS34401;
-		 global::org.w3c.dom.NodeList org.w3c.dom.Document.getElementsByTagNameNS(java.lang.String arg0, java.lang.String arg1) 
+		global::org.w3c.dom.NodeList org.w3c.dom.Document.getElementsByTagNameNS(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -201,7 +201,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.NodeList>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getElementsByTagNameNS34401, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.NodeList;
 		}
 		internal static global::MonoJavaBridge.MethodId _getElementById34402;
-		 global::org.w3c.dom.Element org.w3c.dom.Document.getElementById(java.lang.String arg0) 
+		global::org.w3c.dom.Element org.w3c.dom.Document.getElementById(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -210,7 +210,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Element>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getElementById34402, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Element;
 		}
 		internal static global::MonoJavaBridge.MethodId _getXmlEncoding34403;
-		 global::java.lang.String org.w3c.dom.Document.getXmlEncoding() 
+		global::java.lang.String org.w3c.dom.Document.getXmlEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -219,7 +219,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getXmlEncoding34403)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getXmlStandalone34404;
-		 bool org.w3c.dom.Document.getXmlStandalone() 
+		bool org.w3c.dom.Document.getXmlStandalone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -228,7 +228,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getXmlStandalone34404);
 		}
 		internal static global::MonoJavaBridge.MethodId _setXmlStandalone34405;
-		 void org.w3c.dom.Document.setXmlStandalone(bool arg0) 
+		void org.w3c.dom.Document.setXmlStandalone(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -237,7 +237,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setXmlStandalone34405, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getXmlVersion34406;
-		 global::java.lang.String org.w3c.dom.Document.getXmlVersion() 
+		global::java.lang.String org.w3c.dom.Document.getXmlVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -246,7 +246,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getXmlVersion34406)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setXmlVersion34407;
-		 void org.w3c.dom.Document.setXmlVersion(java.lang.String arg0) 
+		void org.w3c.dom.Document.setXmlVersion(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -255,7 +255,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setXmlVersion34407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrictErrorChecking34408;
-		 bool org.w3c.dom.Document.getStrictErrorChecking() 
+		bool org.w3c.dom.Document.getStrictErrorChecking()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -264,7 +264,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getStrictErrorChecking34408);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrictErrorChecking34409;
-		 void org.w3c.dom.Document.setStrictErrorChecking(bool arg0) 
+		void org.w3c.dom.Document.setStrictErrorChecking(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -273,7 +273,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setStrictErrorChecking34409, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDocumentURI34410;
-		 global::java.lang.String org.w3c.dom.Document.getDocumentURI() 
+		global::java.lang.String org.w3c.dom.Document.getDocumentURI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -282,7 +282,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getDocumentURI34410)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDocumentURI34411;
-		 void org.w3c.dom.Document.setDocumentURI(java.lang.String arg0) 
+		void org.w3c.dom.Document.setDocumentURI(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -291,7 +291,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setDocumentURI34411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _adoptNode34412;
-		 global::org.w3c.dom.Node org.w3c.dom.Document.adoptNode(org.w3c.dom.Node arg0) 
+		global::org.w3c.dom.Node org.w3c.dom.Document.adoptNode(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -300,7 +300,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._adoptNode34412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDomConfig34413;
-		 global::org.w3c.dom.DOMConfiguration org.w3c.dom.Document.getDomConfig() 
+		global::org.w3c.dom.DOMConfiguration org.w3c.dom.Document.getDomConfig()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -309,7 +309,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DOMConfiguration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getDomConfig34413)) as org.w3c.dom.DOMConfiguration;
 		}
 		internal static global::MonoJavaBridge.MethodId _normalizeDocument34414;
-		 void org.w3c.dom.Document.normalizeDocument() 
+		void org.w3c.dom.Document.normalizeDocument()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -318,7 +318,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._normalizeDocument34414);
 		}
 		internal static global::MonoJavaBridge.MethodId _renameNode34415;
-		 global::org.w3c.dom.Node org.w3c.dom.Document.renameNode(org.w3c.dom.Node arg0, java.lang.String arg1, java.lang.String arg2) 
+		global::org.w3c.dom.Node org.w3c.dom.Document.renameNode(org.w3c.dom.Node arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -327,7 +327,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._renameNode34415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _normalize34416;
-		 void org.w3c.dom.Node.normalize() 
+		void org.w3c.dom.Node.normalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -336,7 +336,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._normalize34416);
 		}
 		internal static global::MonoJavaBridge.MethodId _isSupported34417;
-		 bool org.w3c.dom.Node.isSupported(java.lang.String arg0, java.lang.String arg1) 
+		bool org.w3c.dom.Node.isSupported(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -345,7 +345,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._isSupported34417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributes34418;
-		 global::org.w3c.dom.NamedNodeMap org.w3c.dom.Node.getAttributes() 
+		global::org.w3c.dom.NamedNodeMap org.w3c.dom.Node.getAttributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -354,7 +354,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.NamedNodeMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getAttributes34418)) as org.w3c.dom.NamedNodeMap;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrefix34419;
-		 global::java.lang.String org.w3c.dom.Node.getPrefix() 
+		global::java.lang.String org.w3c.dom.Node.getPrefix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -363,7 +363,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getPrefix34419)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFirstChild34420;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.getFirstChild() 
+		global::org.w3c.dom.Node org.w3c.dom.Node.getFirstChild()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -372,7 +372,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getFirstChild34420)) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNodeType34421;
-		 short org.w3c.dom.Node.getNodeType() 
+		short org.w3c.dom.Node.getNodeType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -381,7 +381,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getNodeType34421);
 		}
 		internal static global::MonoJavaBridge.MethodId _getNodeName34422;
-		 global::java.lang.String org.w3c.dom.Node.getNodeName() 
+		global::java.lang.String org.w3c.dom.Node.getNodeName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -390,7 +390,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getNodeName34422)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNodeValue34423;
-		 global::java.lang.String org.w3c.dom.Node.getNodeValue() 
+		global::java.lang.String org.w3c.dom.Node.getNodeValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -399,7 +399,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getNodeValue34423)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNextSibling34424;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.getNextSibling() 
+		global::org.w3c.dom.Node org.w3c.dom.Node.getNextSibling()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -408,7 +408,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getNextSibling34424)) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalName34425;
-		 global::java.lang.String org.w3c.dom.Node.getLocalName() 
+		global::java.lang.String org.w3c.dom.Node.getLocalName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -417,7 +417,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getLocalName34425)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasAttributes34426;
-		 bool org.w3c.dom.Node.hasAttributes() 
+		bool org.w3c.dom.Node.hasAttributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -426,7 +426,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._hasAttributes34426);
 		}
 		internal static global::MonoJavaBridge.MethodId _getNamespaceURI34427;
-		 global::java.lang.String org.w3c.dom.Node.getNamespaceURI() 
+		global::java.lang.String org.w3c.dom.Node.getNamespaceURI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -435,7 +435,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getNamespaceURI34427)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasChildNodes34428;
-		 bool org.w3c.dom.Node.hasChildNodes() 
+		bool org.w3c.dom.Node.hasChildNodes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -444,7 +444,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._hasChildNodes34428);
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserData34429;
-		 global::java.lang.Object org.w3c.dom.Node.getUserData(java.lang.String arg0) 
+		global::java.lang.Object org.w3c.dom.Node.getUserData(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -453,7 +453,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getUserData34429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUserData34430;
-		 global::java.lang.Object org.w3c.dom.Node.setUserData(java.lang.String arg0, java.lang.Object arg1, org.w3c.dom.UserDataHandler arg2) 
+		global::java.lang.Object org.w3c.dom.Node.setUserData(java.lang.String arg0, java.lang.Object arg1, org.w3c.dom.UserDataHandler arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -462,7 +462,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setUserData34430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature34431;
-		 global::java.lang.Object org.w3c.dom.Node.getFeature(java.lang.String arg0, java.lang.String arg1) 
+		global::java.lang.Object org.w3c.dom.Node.getFeature(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -471,7 +471,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getFeature34431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setPrefix34432;
-		 void org.w3c.dom.Node.setPrefix(java.lang.String arg0) 
+		void org.w3c.dom.Node.setPrefix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -480,7 +480,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setPrefix34432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNodeValue34433;
-		 void org.w3c.dom.Node.setNodeValue(java.lang.String arg0) 
+		void org.w3c.dom.Node.setNodeValue(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -489,7 +489,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setNodeValue34433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParentNode34434;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.getParentNode() 
+		global::org.w3c.dom.Node org.w3c.dom.Node.getParentNode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -498,7 +498,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getParentNode34434)) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getChildNodes34435;
-		 global::org.w3c.dom.NodeList org.w3c.dom.Node.getChildNodes() 
+		global::org.w3c.dom.NodeList org.w3c.dom.Node.getChildNodes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -507,7 +507,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.NodeList>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getChildNodes34435)) as org.w3c.dom.NodeList;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLastChild34436;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.getLastChild() 
+		global::org.w3c.dom.Node org.w3c.dom.Node.getLastChild()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -516,7 +516,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getLastChild34436)) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPreviousSibling34437;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.getPreviousSibling() 
+		global::org.w3c.dom.Node org.w3c.dom.Node.getPreviousSibling()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -525,7 +525,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getPreviousSibling34437)) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOwnerDocument34438;
-		 global::org.w3c.dom.Document org.w3c.dom.Node.getOwnerDocument() 
+		global::org.w3c.dom.Document org.w3c.dom.Node.getOwnerDocument()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -534,7 +534,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Document>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getOwnerDocument34438)) as org.w3c.dom.Document;
 		}
 		internal static global::MonoJavaBridge.MethodId _insertBefore34439;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.insertBefore(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1) 
+		global::org.w3c.dom.Node org.w3c.dom.Node.insertBefore(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -543,7 +543,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._insertBefore34439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _replaceChild34440;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.replaceChild(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1) 
+		global::org.w3c.dom.Node org.w3c.dom.Node.replaceChild(org.w3c.dom.Node arg0, org.w3c.dom.Node arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -552,7 +552,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._replaceChild34440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeChild34441;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.removeChild(org.w3c.dom.Node arg0) 
+		global::org.w3c.dom.Node org.w3c.dom.Node.removeChild(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -561,7 +561,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._removeChild34441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _appendChild34442;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.appendChild(org.w3c.dom.Node arg0) 
+		global::org.w3c.dom.Node org.w3c.dom.Node.appendChild(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -570,7 +570,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._appendChild34442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _cloneNode34443;
-		 global::org.w3c.dom.Node org.w3c.dom.Node.cloneNode(bool arg0) 
+		global::org.w3c.dom.Node org.w3c.dom.Node.cloneNode(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -579,7 +579,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.Node>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._cloneNode34443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.w3c.dom.Node;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBaseURI34444;
-		 global::java.lang.String org.w3c.dom.Node.getBaseURI() 
+		global::java.lang.String org.w3c.dom.Node.getBaseURI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -588,7 +588,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getBaseURI34444)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _compareDocumentPosition34445;
-		 short org.w3c.dom.Node.compareDocumentPosition(org.w3c.dom.Node arg0) 
+		short org.w3c.dom.Node.compareDocumentPosition(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -597,7 +597,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._compareDocumentPosition34445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextContent34446;
-		 global::java.lang.String org.w3c.dom.Node.getTextContent() 
+		global::java.lang.String org.w3c.dom.Node.getTextContent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -606,7 +606,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._getTextContent34446)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextContent34447;
-		 void org.w3c.dom.Node.setTextContent(java.lang.String arg0) 
+		void org.w3c.dom.Node.setTextContent(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -615,7 +615,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._setTextContent34447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSameNode34448;
-		 bool org.w3c.dom.Node.isSameNode(org.w3c.dom.Node arg0) 
+		bool org.w3c.dom.Node.isSameNode(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -624,7 +624,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._isSameNode34448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lookupPrefix34449;
-		 global::java.lang.String org.w3c.dom.Node.lookupPrefix(java.lang.String arg0) 
+		global::java.lang.String org.w3c.dom.Node.lookupPrefix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -633,7 +633,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._lookupPrefix34449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDefaultNamespace34450;
-		 bool org.w3c.dom.Node.isDefaultNamespace(java.lang.String arg0) 
+		bool org.w3c.dom.Node.isDefaultNamespace(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -642,7 +642,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._isDefaultNamespace34450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lookupNamespaceURI34451;
-		 global::java.lang.String org.w3c.dom.Node.lookupNamespaceURI(java.lang.String arg0) 
+		global::java.lang.String org.w3c.dom.Node.lookupNamespaceURI(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -651,7 +651,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.Document_.staticClass, global::org.w3c.dom.Document_._lookupNamespaceURI34451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isEqualNode34452;
-		 bool org.w3c.dom.Node.isEqualNode(org.w3c.dom.Node arg0) 
+		bool org.w3c.dom.Node.isEqualNode(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

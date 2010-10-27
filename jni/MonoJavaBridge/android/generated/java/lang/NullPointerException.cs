@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NullPointerException20352;
-		public NullPointerException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NullPointerException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NullPointerException.staticClass, global::java.lang.NullPointerException._NullPointerException20352);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NullPointerException20353;
-		public NullPointerException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NullPointerException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NullPointerException.staticClass, global::java.lang.NullPointerException._NullPointerException20353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

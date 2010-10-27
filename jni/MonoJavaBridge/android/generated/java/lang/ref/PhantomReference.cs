@@ -12,7 +12,7 @@ namespace java.lang.@ref
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get20983;
-		public override global::java.lang.Object get() 
+		public override global::java.lang.Object get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang.@ref
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.PhantomReference.staticClass, global::java.lang.@ref.PhantomReference._get20983)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _PhantomReference20984;
-		public PhantomReference(java.lang.Object arg0, java.lang.@ref.ReferenceQueue arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PhantomReference(java.lang.Object arg0, java.lang.@ref.ReferenceQueue arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.PhantomReference.staticClass, global::java.lang.@ref.PhantomReference._PhantomReference20984, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

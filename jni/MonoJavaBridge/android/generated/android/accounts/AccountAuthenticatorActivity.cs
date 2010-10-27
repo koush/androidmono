@@ -12,7 +12,7 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1288;
-		protected override void onCreate(android.os.Bundle arg0) 
+		protected override void onCreate(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +20,15 @@ namespace android.accounts
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._onCreate1288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.os.Bundle AccountAuthenticatorResult
+		{
+			set
+			{
+				setAccountAuthenticatorResult(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setAccountAuthenticatorResult1289;
-		public virtual void setAccountAuthenticatorResult(android.os.Bundle arg0) 
+		public virtual void setAccountAuthenticatorResult(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +37,7 @@ namespace android.accounts
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult1289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _finish1290;
-		public override void finish() 
+		public override void finish()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +46,7 @@ namespace android.accounts
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._finish1290);
 		}
 		internal static global::MonoJavaBridge.MethodId _AccountAuthenticatorActivity1291;
-		public AccountAuthenticatorActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AccountAuthenticatorActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._AccountAuthenticatorActivity1291);

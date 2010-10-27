@@ -12,7 +12,7 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getShort4677;
-		public override short getShort(int arg0) 
+		public override short getShort(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.database
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getShort4677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt4678;
-		public override int getInt(int arg0) 
+		public override int getInt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.database
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getInt4678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong4679;
-		public override long getLong(int arg0) 
+		public override long getLong(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.database
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getLong4679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat4680;
-		public override float getFloat(int arg0) 
+		public override float getFloat(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.database
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getFloat4680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble4681;
-		public override double getDouble(int arg0) 
+		public override double getDouble(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.database
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getDouble4681, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _close4682;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._close4682);
 		}
 		internal static global::MonoJavaBridge.MethodId _getString4683;
-		public override global::java.lang.String getString(int arg0) 
+		public override global::java.lang.String getString(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace android.database
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getString4683, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _registerContentObserver4684;
-		public override void registerContentObserver(android.database.ContentObserver arg0) 
+		public override void registerContentObserver(android.database.ContentObserver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._registerContentObserver4684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterContentObserver4685;
-		public override void unregisterContentObserver(android.database.ContentObserver arg0) 
+		public override void unregisterContentObserver(android.database.ContentObserver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace android.database
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCount4686;
-		public override int getCount() 
+		public override int getCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.database
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNames4687;
-		public override global::java.lang.String[] getColumnNames() 
+		public override global::java.lang.String[] getColumnNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace android.database
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getColumnNames4687)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getBlob4688;
-		public override byte[] getBlob(int arg0) 
+		public override byte[] getBlob(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.database
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getBlob4688, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _isNull4689;
-		public override bool isNull(int arg0) 
+		public override bool isNull(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace android.database
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._isNull4689, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _deactivate4690;
-		public override void deactivate() 
+		public override void deactivate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._deactivate4690);
 		}
 		internal static global::MonoJavaBridge.MethodId _requery4691;
-		public override bool requery() 
+		public override bool requery()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace android.database
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._requery4691);
 		}
 		internal static global::MonoJavaBridge.MethodId _registerDataSetObserver4692;
-		public override void registerDataSetObserver(android.database.DataSetObserver arg0) 
+		public override void registerDataSetObserver(android.database.DataSetObserver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._registerDataSetObserver4692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterDataSetObserver4693;
-		public override void unregisterDataSetObserver(android.database.DataSetObserver arg0) 
+		public override void unregisterDataSetObserver(android.database.DataSetObserver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +179,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._unregisterDataSetObserver4693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onMove4694;
-		public override bool onMove(int arg0, int arg1) 
+		public override bool onMove(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace android.database
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._onMove4694, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _MergeCursor4695;
-		public MergeCursor(android.database.Cursor[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MergeCursor(android.database.Cursor[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.MergeCursor.staticClass, global::android.database.MergeCursor._MergeCursor4695, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

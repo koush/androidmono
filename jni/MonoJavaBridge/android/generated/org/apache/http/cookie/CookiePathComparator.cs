@@ -12,7 +12,7 @@ namespace org.apache.http.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _compare32415;
-		public virtual int compare(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.Cookie arg1) 
+		public virtual int compare(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.Cookie arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.cookie
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookiePathComparator.staticClass, global::org.apache.http.cookie.CookiePathComparator._compare32415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _compare32416;
-		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1) 
+		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.cookie
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.cookie.CookiePathComparator.staticClass, global::org.apache.http.cookie.CookiePathComparator._compare32416, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _CookiePathComparator32417;
-		public CookiePathComparator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CookiePathComparator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookiePathComparator.staticClass, global::org.apache.http.cookie.CookiePathComparator._CookiePathComparator32417);

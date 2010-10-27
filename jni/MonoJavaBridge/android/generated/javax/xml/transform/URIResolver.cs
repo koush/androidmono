@@ -18,7 +18,7 @@ namespace javax.xml.transform
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _resolve31038;
-		 global::javax.xml.transform.Source javax.xml.transform.URIResolver.resolve(java.lang.String arg0, java.lang.String arg1) 
+		global::javax.xml.transform.Source javax.xml.transform.URIResolver.resolve(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

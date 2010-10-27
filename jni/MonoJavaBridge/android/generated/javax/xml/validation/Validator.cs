@@ -12,7 +12,7 @@ namespace javax.xml.validation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setProperty31220;
-		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1) 
+		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._setProperty31220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getProperty31221;
-		public virtual global::java.lang.Object getProperty(java.lang.String arg0) 
+		public virtual global::java.lang.Object getProperty(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _validate31223;
 		public abstract void validate(javax.xml.transform.Source arg0, javax.xml.transform.Result arg1);
 		internal static global::MonoJavaBridge.MethodId _validate31224;
-		public virtual void validate(javax.xml.transform.Source arg0) 
+		public virtual void validate(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._validate31224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature31225;
-		public virtual void setFeature(java.lang.String arg0, bool arg1) 
+		public virtual void setFeature(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._setFeature31225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature31226;
-		public virtual bool getFeature(java.lang.String arg0) 
+		public virtual bool getFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _getResourceResolver31230;
 		public abstract global::org.w3c.dom.ls.LSResourceResolver getResourceResolver();
 		internal static global::MonoJavaBridge.MethodId _Validator31231;
-		protected Validator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected Validator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Validator.staticClass, global::javax.xml.validation.Validator._Validator31231);
@@ -106,7 +106,7 @@ namespace javax.xml.validation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _reset31232;
-		public override void reset() 
+		public override void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator_.staticClass, global::javax.xml.validation.Validator_._reset31232);
 		}
 		internal static global::MonoJavaBridge.MethodId _validate31233;
-		public override void validate(javax.xml.transform.Source arg0, javax.xml.transform.Result arg1) 
+		public override void validate(javax.xml.transform.Source arg0, javax.xml.transform.Result arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -124,7 +124,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator_.staticClass, global::javax.xml.validation.Validator_._validate31233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorHandler31234;
-		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0) 
+		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator_.staticClass, global::javax.xml.validation.Validator_._setErrorHandler31234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorHandler31235;
-		public override global::org.xml.sax.ErrorHandler getErrorHandler() 
+		public override global::org.xml.sax.ErrorHandler getErrorHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -142,7 +142,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ErrorHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.Validator_.staticClass, global::javax.xml.validation.Validator_._getErrorHandler31235)) as org.xml.sax.ErrorHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResourceResolver31236;
-		public override void setResourceResolver(org.w3c.dom.ls.LSResourceResolver arg0) 
+		public override void setResourceResolver(org.w3c.dom.ls.LSResourceResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -151,7 +151,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.Validator_.staticClass, global::javax.xml.validation.Validator_._setResourceResolver31236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResourceResolver31237;
-		public override global::org.w3c.dom.ls.LSResourceResolver getResourceResolver() 
+		public override global::org.w3c.dom.ls.LSResourceResolver getResourceResolver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

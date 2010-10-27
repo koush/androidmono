@@ -12,7 +12,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ReceiverCallNotAllowedException3499;
-		public ReceiverCallNotAllowedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ReceiverCallNotAllowedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ReceiverCallNotAllowedException.staticClass, global::android.content.ReceiverCallNotAllowedException._ReceiverCallNotAllowedException3499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

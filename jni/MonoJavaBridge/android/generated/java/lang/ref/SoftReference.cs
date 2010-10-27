@@ -12,7 +12,7 @@ namespace java.lang.@ref
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get20993;
-		public override global::java.lang.Object get() 
+		public override global::java.lang.Object get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,14 +21,14 @@ namespace java.lang.@ref
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.SoftReference.staticClass, global::java.lang.@ref.SoftReference._get20993)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _SoftReference20994;
-		public SoftReference(java.lang.Object arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SoftReference(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.SoftReference.staticClass, global::java.lang.@ref.SoftReference._SoftReference20994, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SoftReference20995;
-		public SoftReference(java.lang.Object arg0, java.lang.@ref.ReferenceQueue arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SoftReference(java.lang.Object arg0, java.lang.@ref.ReferenceQueue arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.SoftReference.staticClass, global::java.lang.@ref.SoftReference._SoftReference20995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

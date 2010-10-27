@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _stop7443;
-		public virtual void stop() 
+		public virtual void stop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._stop7443);
 		}
 		internal static global::MonoJavaBridge.MethodId _getTitle7444;
-		public virtual global::java.lang.String getTitle(android.content.Context arg0) 
+		public virtual global::java.lang.String getTitle(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.media
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._getTitle7444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _play7445;
-		public virtual void play() 
+		public virtual void play()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStreamType7446;
-		public virtual int getStreamType() 
+		public virtual int getStreamType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._getStreamType7446);
 		}
 		internal static global::MonoJavaBridge.MethodId _isPlaying7447;
-		public virtual bool isPlaying() 
+		public virtual bool isPlaying()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace android.media
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._isPlaying7447);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStreamType7448;
-		public virtual void setStreamType(int arg0) 
+		public virtual void setStreamType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

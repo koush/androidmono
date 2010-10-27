@@ -21,7 +21,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19761;
-		 global::java.lang.String java.lang.CharSequence.toString() 
+		global::java.lang.String java.lang.CharSequence.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.CharSequence_.staticClass, global::java.lang.CharSequence_._toString19761)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _length19762;
-		 int java.lang.CharSequence.length() 
+		int java.lang.CharSequence.length()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.CharSequence_.staticClass, global::java.lang.CharSequence_._length19762);
 		}
 		internal static global::MonoJavaBridge.MethodId _charAt19763;
-		 char java.lang.CharSequence.charAt(int arg0) 
+		char java.lang.CharSequence.charAt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.lang
 				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.lang.CharSequence_.staticClass, global::java.lang.CharSequence_._charAt19763, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _subSequence19764;
-		 global::java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1) 
+		global::java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

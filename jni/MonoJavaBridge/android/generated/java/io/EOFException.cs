@@ -12,14 +12,14 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EOFException18948;
-		public EOFException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EOFException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.EOFException.staticClass, global::java.io.EOFException._EOFException18948);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _EOFException18949;
-		public EOFException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EOFException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.EOFException.staticClass, global::java.io.EOFException._EOFException18949, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

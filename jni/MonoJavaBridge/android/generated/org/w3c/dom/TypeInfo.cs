@@ -20,7 +20,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeName34868;
-		 global::java.lang.String org.w3c.dom.TypeInfo.getTypeName() 
+		global::java.lang.String org.w3c.dom.TypeInfo.getTypeName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_.staticClass, global::org.w3c.dom.TypeInfo_._getTypeName34868)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeNamespace34869;
-		 global::java.lang.String org.w3c.dom.TypeInfo.getTypeNamespace() 
+		global::java.lang.String org.w3c.dom.TypeInfo.getTypeNamespace()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.TypeInfo_.staticClass, global::org.w3c.dom.TypeInfo_._getTypeNamespace34869)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDerivedFrom34870;
-		 bool org.w3c.dom.TypeInfo.isDerivedFrom(java.lang.String arg0, java.lang.String arg1, int arg2) 
+		bool org.w3c.dom.TypeInfo.isDerivedFrom(java.lang.String arg0, java.lang.String arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

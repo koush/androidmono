@@ -12,7 +12,7 @@ namespace android.content.pm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString3753;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString3753)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3754;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.content.pm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel3754, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3755;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.content.pm
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents3755);
 		}
 		internal static global::MonoJavaBridge.MethodId _PackageInfo3756;
-		public PackageInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PackageInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._PackageInfo3756);

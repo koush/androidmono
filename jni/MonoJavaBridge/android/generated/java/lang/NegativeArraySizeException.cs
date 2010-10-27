@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NegativeArraySizeException20340;
-		public NegativeArraySizeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NegativeArraySizeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NegativeArraySizeException.staticClass, global::java.lang.NegativeArraySizeException._NegativeArraySizeException20340);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NegativeArraySizeException20341;
-		public NegativeArraySizeException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NegativeArraySizeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NegativeArraySizeException.staticClass, global::java.lang.NegativeArraySizeException._NegativeArraySizeException20341, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -18,7 +18,7 @@ namespace javax.xml.xpath
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _evaluate31329;
-		 global::java.lang.Object javax.xml.xpath.XPathFunction.evaluate(java.util.List arg0) 
+		global::java.lang.Object javax.xml.xpath.XPathFunction.evaluate(java.util.List arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

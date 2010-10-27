@@ -16,7 +16,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _close27959;
 		public abstract void close();
 		internal static global::MonoJavaBridge.MethodId _getEncoding27960;
-		public virtual global::java.lang.String getEncoding() 
+		public virtual global::java.lang.String getEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._getEncoding27960)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEncoding27961;
-		public virtual void setEncoding(java.lang.String arg0) 
+		public virtual void setEncoding(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._setEncoding27961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLevel27962;
-		public virtual void setLevel(java.util.logging.Level arg0) 
+		public virtual void setLevel(java.util.logging.Level arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._setLevel27962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLevel27963;
-		public virtual global::java.util.logging.Level getLevel() 
+		public virtual global::java.util.logging.Level getLevel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._getLevel27963)) as java.util.logging.Level;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFilter27964;
-		public virtual global::java.util.logging.Filter getFilter() 
+		public virtual global::java.util.logging.Filter getFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.logging.Filter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._getFilter27964)) as java.util.logging.Filter;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFilter27965;
-		public virtual void setFilter(java.util.logging.Filter arg0) 
+		public virtual void setFilter(java.util.logging.Filter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._setFilter27965, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isLoggable27966;
-		public virtual bool isLoggable(java.util.logging.LogRecord arg0) 
+		public virtual bool isLoggable(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -81,7 +81,7 @@ namespace java.util.logging
 		internal static global::MonoJavaBridge.MethodId _publish27967;
 		public abstract void publish(java.util.logging.LogRecord arg0);
 		internal static global::MonoJavaBridge.MethodId _setFormatter27968;
-		public virtual void setFormatter(java.util.logging.Formatter arg0) 
+		public virtual void setFormatter(java.util.logging.Formatter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,7 +90,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._setFormatter27968, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormatter27969;
-		public virtual global::java.util.logging.Formatter getFormatter() 
+		public virtual global::java.util.logging.Formatter getFormatter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._getFormatter27969)) as java.util.logging.Formatter;
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorManager27970;
-		public virtual void setErrorManager(java.util.logging.ErrorManager arg0) 
+		public virtual void setErrorManager(java.util.logging.ErrorManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._setErrorManager27970, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorManager27971;
-		public virtual global::java.util.logging.ErrorManager getErrorManager() 
+		public virtual global::java.util.logging.ErrorManager getErrorManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -117,7 +117,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._getErrorManager27971)) as java.util.logging.ErrorManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _reportError27972;
-		protected virtual void reportError(java.lang.String arg0, java.lang.Exception arg1, int arg2) 
+		protected virtual void reportError(java.lang.String arg0, java.lang.Exception arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -126,7 +126,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler.staticClass, global::java.util.logging.Handler._reportError27972, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _Handler27973;
-		protected Handler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected Handler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.Handler.staticClass, global::java.util.logging.Handler._Handler27973);
@@ -167,7 +167,7 @@ namespace java.util.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _flush27974;
-		public override void flush() 
+		public override void flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -176,7 +176,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler_.staticClass, global::java.util.logging.Handler_._flush27974);
 		}
 		internal static global::MonoJavaBridge.MethodId _close27975;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -185,7 +185,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.Handler_.staticClass, global::java.util.logging.Handler_._close27975);
 		}
 		internal static global::MonoJavaBridge.MethodId _publish27976;
-		public override void publish(java.util.logging.LogRecord arg0) 
+		public override void publish(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

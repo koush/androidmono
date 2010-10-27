@@ -12,14 +12,14 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InputMismatchException26327;
-		public InputMismatchException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InputMismatchException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26327);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InputMismatchException26328;
-		public InputMismatchException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InputMismatchException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InputMismatchException.staticClass, global::java.util.InputMismatchException._InputMismatchException26328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _FileLockInterruptionException22500;
-		public FileLockInterruptionException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FileLockInterruptionException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.FileLockInterruptionException.staticClass, global::java.nio.channels.FileLockInterruptionException._FileLockInterruptionException22500);

@@ -19,7 +19,7 @@ namespace javax.net.ssl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameters29878;
-		public virtual global::java.util.List getParameters() 
+		public virtual global::java.util.List getParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,14 +28,14 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.KeyStoreBuilderParameters.staticClass, global::javax.net.ssl.KeyStoreBuilderParameters._getParameters29878)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyStoreBuilderParameters29879;
-		public KeyStoreBuilderParameters(java.security.KeyStore.Builder arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public KeyStoreBuilderParameters(java.security.KeyStore.Builder arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.KeyStoreBuilderParameters.staticClass, global::javax.net.ssl.KeyStoreBuilderParameters._KeyStoreBuilderParameters29879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyStoreBuilderParameters29880;
-		public KeyStoreBuilderParameters(java.util.List arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public KeyStoreBuilderParameters(java.util.List arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.KeyStoreBuilderParameters.staticClass, global::javax.net.ssl.KeyStoreBuilderParameters._KeyStoreBuilderParameters29880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

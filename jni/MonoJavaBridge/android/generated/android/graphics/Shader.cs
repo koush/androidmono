@@ -23,13 +23,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5794;
-			public static global::android.graphics.Shader.TileMode[] values() 
+			public static global::android.graphics.Shader.TileMode[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Shader.TileMode>(@__env.CallStaticObjectMethod(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._values5794)) as android.graphics.Shader.TileMode[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5795;
-			public static global::android.graphics.Shader.TileMode valueOf(java.lang.String arg0) 
+			public static global::android.graphics.Shader.TileMode valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallStaticObjectMethod(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf5795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Shader.TileMode;
@@ -73,7 +73,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5799;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._finalize5799);
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalMatrix5800;
-		public virtual bool getLocalMatrix(android.graphics.Matrix arg0) 
+		public virtual bool getLocalMatrix(android.graphics.Matrix arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,8 +90,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._getLocalMatrix5800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.Matrix LocalMatrix
+		{
+			set
+			{
+				setLocalMatrix(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setLocalMatrix5801;
-		public virtual void setLocalMatrix(android.graphics.Matrix arg0) 
+		public virtual void setLocalMatrix(android.graphics.Matrix arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +107,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._setLocalMatrix5801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Shader5802;
-		public Shader()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Shader() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Shader.staticClass, global::android.graphics.Shader._Shader5802);

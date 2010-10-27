@@ -18,7 +18,7 @@ namespace android.text.style
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _drawBackground13521;
-		 void android.text.style.LineBackgroundSpan.drawBackground(android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.lang.CharSequence arg7, int arg8, int arg9, int arg10) 
+		void android.text.style.LineBackgroundSpan.drawBackground(android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.lang.CharSequence arg7, int arg8, int arg9, int arg10)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

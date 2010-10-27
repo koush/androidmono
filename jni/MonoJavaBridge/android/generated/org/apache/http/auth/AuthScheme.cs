@@ -24,7 +24,7 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameter31776;
-		 global::java.lang.String org.apache.http.auth.AuthScheme.getParameter(java.lang.String arg0) 
+		global::java.lang.String org.apache.http.auth.AuthScheme.getParameter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._getParameter31776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSchemeName31777;
-		 global::java.lang.String org.apache.http.auth.AuthScheme.getSchemeName() 
+		global::java.lang.String org.apache.http.auth.AuthScheme.getSchemeName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._getSchemeName31777)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _processChallenge31778;
-		 void org.apache.http.auth.AuthScheme.processChallenge(org.apache.http.Header arg0) 
+		void org.apache.http.auth.AuthScheme.processChallenge(org.apache.http.Header arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.apache.http.auth
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._processChallenge31778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getRealm31779;
-		 global::java.lang.String org.apache.http.auth.AuthScheme.getRealm() 
+		global::java.lang.String org.apache.http.auth.AuthScheme.getRealm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._getRealm31779)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnectionBased31780;
-		 bool org.apache.http.auth.AuthScheme.isConnectionBased() 
+		bool org.apache.http.auth.AuthScheme.isConnectionBased()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.apache.http.auth
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._isConnectionBased31780);
 		}
 		internal static global::MonoJavaBridge.MethodId _isComplete31781;
-		 bool org.apache.http.auth.AuthScheme.isComplete() 
+		bool org.apache.http.auth.AuthScheme.isComplete()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.auth
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.auth.AuthScheme_.staticClass, global::org.apache.http.auth.AuthScheme_._isComplete31781);
 		}
 		internal static global::MonoJavaBridge.MethodId _authenticate31782;
-		 global::org.apache.http.Header org.apache.http.auth.AuthScheme.authenticate(org.apache.http.auth.Credentials arg0, org.apache.http.HttpRequest arg1) 
+		global::org.apache.http.Header org.apache.http.auth.AuthScheme.authenticate(org.apache.http.auth.Credentials arg0, org.apache.http.HttpRequest arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

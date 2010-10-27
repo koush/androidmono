@@ -12,7 +12,7 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals31833;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.auth
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.auth.NTCredentials.staticClass, global::org.apache.http.auth.NTCredentials._equals31833, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString31834;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.NTCredentials.staticClass, global::org.apache.http.auth.NTCredentials._toString31834)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode31835;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDomain31836;
-		public virtual global::java.lang.String getDomain() 
+		public virtual global::java.lang.String getDomain()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPassword31837;
-		public virtual global::java.lang.String getPassword() 
+		public virtual global::java.lang.String getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserName31838;
-		public virtual global::java.lang.String getUserName() 
+		public virtual global::java.lang.String getUserName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserPrincipal31839;
-		public virtual global::java.security.Principal getUserPrincipal() 
+		public virtual global::java.security.Principal getUserPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -110,7 +110,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWorkstation31840;
-		public virtual global::java.lang.String getWorkstation() 
+		public virtual global::java.lang.String getWorkstation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -119,14 +119,14 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.NTCredentials.staticClass, global::org.apache.http.auth.NTCredentials._getWorkstation31840)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _NTCredentials31841;
-		public NTCredentials(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NTCredentials(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.NTCredentials.staticClass, global::org.apache.http.auth.NTCredentials._NTCredentials31841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NTCredentials31842;
-		public NTCredentials(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NTCredentials(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.NTCredentials.staticClass, global::org.apache.http.auth.NTCredentials._NTCredentials31842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

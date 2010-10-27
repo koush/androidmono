@@ -12,7 +12,7 @@ namespace javax.xml.@namespace
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals30821;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.xml.@namespace
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._equals30821, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString30822;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.xml.@namespace
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._toString30822)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode30823;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.xml.@namespace
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._hashCode30823);
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf30824;
-		public static global::javax.xml.@namespace.QName valueOf(java.lang.String arg0) 
+		public static global::javax.xml.@namespace.QName valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._valueOf30824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.@namespace.QName;
@@ -52,7 +52,7 @@ namespace javax.xml.@namespace
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrefix30825;
-		public virtual global::java.lang.String getPrefix() 
+		public virtual global::java.lang.String getPrefix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace javax.xml.@namespace
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNamespaceURI30826;
-		public virtual global::java.lang.String getNamespaceURI() 
+		public virtual global::java.lang.String getNamespaceURI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace javax.xml.@namespace
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalPart30827;
-		public virtual global::java.lang.String getLocalPart() 
+		public virtual global::java.lang.String getLocalPart()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,21 +93,21 @@ namespace javax.xml.@namespace
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._getLocalPart30827)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _QName30828;
-		public QName(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public QName(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._QName30828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _QName30829;
-		public QName(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public QName(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._QName30829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _QName30830;
-		public QName(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public QName(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.@namespace.QName.staticClass, global::javax.xml.@namespace.QName._QName30830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

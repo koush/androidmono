@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize9539;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._finalize9539);
 		}
 		internal static global::MonoJavaBridge.MethodId _dump9540;
-		protected virtual void dump(java.io.FileDescriptor arg0, java.io.PrintWriter arg1, java.lang.String[] arg2) 
+		protected virtual void dump(java.io.FileDescriptor arg0, java.io.PrintWriter arg1, java.lang.String[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._dump9540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _dump9541;
-		public virtual void dump(java.io.FileDescriptor arg0, java.lang.String[] arg1) 
+		public virtual void dump(java.io.FileDescriptor arg0, java.lang.String[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInterfaceDescriptor9542;
-		public virtual global::java.lang.String getInterfaceDescriptor() 
+		public virtual global::java.lang.String getInterfaceDescriptor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._getInterfaceDescriptor9542)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _pingBinder9543;
-		public virtual bool pingBinder() 
+		public virtual bool pingBinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._pingBinder9543);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBinderAlive9544;
-		public virtual bool isBinderAlive() 
+		public virtual bool isBinderAlive()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._isBinderAlive9544);
 		}
 		internal static global::MonoJavaBridge.MethodId _queryLocalInterface9545;
-		public virtual global::android.os.IInterface queryLocalInterface(java.lang.String arg0) 
+		public virtual global::android.os.IInterface queryLocalInterface(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IInterface>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._queryLocalInterface9545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IInterface;
 		}
 		internal static global::MonoJavaBridge.MethodId _transact9546;
-		public virtual bool transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3) 
+		public virtual bool transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._transact9546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _linkToDeath9547;
-		public virtual void linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
+		public virtual void linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +104,7 @@ namespace android.os
 			linkToDeath((global::android.os.IBinder_DeathRecipientDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _unlinkToDeath9548;
-		public virtual bool unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
+		public virtual bool unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -124,7 +124,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallingPid9549;
-		public static int getCallingPid() 
+		public static int getCallingPid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Binder.staticClass, global::android.os.Binder._getCallingPid9549);
@@ -137,37 +137,37 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallingUid9550;
-		public static int getCallingUid() 
+		public static int getCallingUid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Binder.staticClass, global::android.os.Binder._getCallingUid9550);
 		}
 		internal static global::MonoJavaBridge.MethodId _clearCallingIdentity9551;
-		public static long clearCallingIdentity() 
+		public static long clearCallingIdentity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.os.Binder.staticClass, global::android.os.Binder._clearCallingIdentity9551);
 		}
 		internal static global::MonoJavaBridge.MethodId _restoreCallingIdentity9552;
-		public static void restoreCallingIdentity(long arg0) 
+		public static void restoreCallingIdentity(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Binder.staticClass, global::android.os.Binder._restoreCallingIdentity9552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _flushPendingCommands9553;
-		public static void flushPendingCommands() 
+		public static void flushPendingCommands()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Binder.staticClass, global::android.os.Binder._flushPendingCommands9553);
 		}
 		internal static global::MonoJavaBridge.MethodId _joinThreadPool9554;
-		public static void joinThreadPool() 
+		public static void joinThreadPool()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Binder.staticClass, global::android.os.Binder._joinThreadPool9554);
 		}
 		internal static global::MonoJavaBridge.MethodId _attachInterface9555;
-		public virtual void attachInterface(android.os.IInterface arg0, java.lang.String arg1) 
+		public virtual void attachInterface(android.os.IInterface arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -180,7 +180,7 @@ namespace android.os
 			attachInterface((global::android.os.IInterfaceDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _onTransact9556;
-		protected virtual bool onTransact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3) 
+		protected virtual bool onTransact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -189,7 +189,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Binder.staticClass, global::android.os.Binder._onTransact9556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _Binder9557;
-		public Binder()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Binder() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Binder.staticClass, global::android.os.Binder._Binder9557);

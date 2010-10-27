@@ -19,7 +19,7 @@ namespace java.security.acl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals23464;
-		 bool java.security.acl.Permission.equals(java.lang.Object arg0) 
+		bool java.security.acl.Permission.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Permission_.staticClass, global::java.security.acl.Permission_._equals23464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23465;
-		 global::java.lang.String java.security.acl.Permission.toString() 
+		global::java.lang.String java.security.acl.Permission.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalBlockingModeException22507;
-		public IllegalBlockingModeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalBlockingModeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.IllegalBlockingModeException.staticClass, global::java.nio.channels.IllegalBlockingModeException._IllegalBlockingModeException22507);

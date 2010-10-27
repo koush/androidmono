@@ -18,7 +18,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _runQuery17087;
-		 global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0) 
+		global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _FilterQueryProviderDelegateWrapper17088;
-		public FilterQueryProviderDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FilterQueryProviderDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterQueryProviderDelegateWrapper.staticClass, global::android.widget.FilterQueryProviderDelegateWrapper._FilterQueryProviderDelegateWrapper17088);

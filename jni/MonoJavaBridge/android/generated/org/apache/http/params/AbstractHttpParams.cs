@@ -20,7 +20,7 @@ namespace org.apache.http.@params
 		internal static global::MonoJavaBridge.MethodId _removeParameter33716;
 		public abstract bool removeParameter(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _getLongParameter33717;
-		public virtual long getLongParameter(java.lang.String arg0, long arg1) 
+		public virtual long getLongParameter(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http.@params
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._getLongParameter33717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLongParameter33718;
-		public virtual global::org.apache.http.@params.HttpParams setLongParameter(java.lang.String arg0, long arg1) 
+		public virtual global::org.apache.http.@params.HttpParams setLongParameter(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._setLongParameter33718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntParameter33719;
-		public virtual int getIntParameter(java.lang.String arg0, int arg1) 
+		public virtual int getIntParameter(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace org.apache.http.@params
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._getIntParameter33719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIntParameter33720;
-		public virtual global::org.apache.http.@params.HttpParams setIntParameter(java.lang.String arg0, int arg1) 
+		public virtual global::org.apache.http.@params.HttpParams setIntParameter(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._setIntParameter33720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDoubleParameter33721;
-		public virtual double getDoubleParameter(java.lang.String arg0, double arg1) 
+		public virtual double getDoubleParameter(java.lang.String arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace org.apache.http.@params
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._getDoubleParameter33721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDoubleParameter33722;
-		public virtual global::org.apache.http.@params.HttpParams setDoubleParameter(java.lang.String arg0, double arg1) 
+		public virtual global::org.apache.http.@params.HttpParams setDoubleParameter(java.lang.String arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -74,7 +74,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._setDoubleParameter33722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBooleanParameter33723;
-		public virtual bool getBooleanParameter(java.lang.String arg0, bool arg1) 
+		public virtual bool getBooleanParameter(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace org.apache.http.@params
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._getBooleanParameter33723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBooleanParameter33724;
-		public virtual global::org.apache.http.@params.HttpParams setBooleanParameter(java.lang.String arg0, bool arg1) 
+		public virtual global::org.apache.http.@params.HttpParams setBooleanParameter(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._setBooleanParameter33724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _isParameterTrue33725;
-		public virtual bool isParameterTrue(java.lang.String arg0) 
+		public virtual bool isParameterTrue(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,7 +101,7 @@ namespace org.apache.http.@params
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._isParameterTrue33725, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isParameterFalse33726;
-		public virtual bool isParameterFalse(java.lang.String arg0) 
+		public virtual bool isParameterFalse(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -110,7 +110,7 @@ namespace org.apache.http.@params
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._isParameterFalse33726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractHttpParams33727;
-		protected AbstractHttpParams()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AbstractHttpParams() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.AbstractHttpParams.staticClass, global::org.apache.http.@params.AbstractHttpParams._AbstractHttpParams33727);
@@ -150,7 +150,7 @@ namespace org.apache.http.@params
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _copy33728;
-		public override global::org.apache.http.@params.HttpParams copy() 
+		public override global::org.apache.http.@params.HttpParams copy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -159,7 +159,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams_.staticClass, global::org.apache.http.@params.AbstractHttpParams_._copy33728)) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _setParameter33729;
-		public override global::org.apache.http.@params.HttpParams setParameter(java.lang.String arg0, java.lang.Object arg1) 
+		public override global::org.apache.http.@params.HttpParams setParameter(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams_.staticClass, global::org.apache.http.@params.AbstractHttpParams_._setParameter33729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameter33730;
-		public override global::java.lang.Object getParameter(java.lang.String arg0) 
+		public override global::java.lang.Object getParameter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace org.apache.http.@params
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.@params.AbstractHttpParams_.staticClass, global::org.apache.http.@params.AbstractHttpParams_._getParameter33730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeParameter33731;
-		public override bool removeParameter(java.lang.String arg0) 
+		public override bool removeParameter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

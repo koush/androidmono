@@ -18,7 +18,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentTypeFor21465;
-		 global::java.lang.String java.net.FileNameMap.getContentTypeFor(java.lang.String arg0) 
+		global::java.lang.String java.net.FileNameMap.getContentTypeFor(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

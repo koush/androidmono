@@ -12,14 +12,14 @@ namespace javax.xml.parsers
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ParserConfigurationException30888;
-		public ParserConfigurationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParserConfigurationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30888);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParserConfigurationException30889;
-		public ParserConfigurationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParserConfigurationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.ParserConfigurationException.staticClass, global::javax.xml.parsers.ParserConfigurationException._ParserConfigurationException30889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -18,7 +18,7 @@ namespace javax.xml.xpath
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveVariable31333;
-		 global::java.lang.Object javax.xml.xpath.XPathVariableResolver.resolveVariable(javax.xml.@namespace.QName arg0) 
+		global::java.lang.Object javax.xml.xpath.XPathVariableResolver.resolveVariable(javax.xml.@namespace.QName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

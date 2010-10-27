@@ -23,7 +23,7 @@ namespace org.xml.sax.helpers
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineNumber35202;
-		public virtual int getLineNumber() 
+		public virtual int getLineNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace org.xml.sax.helpers
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicId35203;
-		public virtual global::java.lang.String getPublicId() 
+		public virtual global::java.lang.String getPublicId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -63,7 +63,7 @@ namespace org.xml.sax.helpers
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId35204;
-		public virtual global::java.lang.String getSystemId() 
+		public virtual global::java.lang.String getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace org.xml.sax.helpers
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber35205;
-		public virtual int getColumnNumber() 
+		public virtual int getColumnNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace org.xml.sax.helpers
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._getColumnNumber35205);
 		}
 		internal static global::MonoJavaBridge.MethodId _setLineNumber35206;
-		public virtual void setLineNumber(int arg0) 
+		public virtual void setLineNumber(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,7 +101,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._setLineNumber35206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId35207;
-		public virtual void setSystemId(java.lang.String arg0) 
+		public virtual void setSystemId(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -110,7 +110,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._setSystemId35207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPublicId35208;
-		public virtual void setPublicId(java.lang.String arg0) 
+		public virtual void setPublicId(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -119,7 +119,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._setPublicId35208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setColumnNumber35209;
-		public virtual void setColumnNumber(int arg0) 
+		public virtual void setColumnNumber(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,14 +128,14 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._setColumnNumber35209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LocatorImpl35210;
-		public LocatorImpl()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocatorImpl() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._LocatorImpl35210);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LocatorImpl35211;
-		public LocatorImpl(org.xml.sax.Locator arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocatorImpl(org.xml.sax.Locator arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.helpers.LocatorImpl.staticClass, global::org.xml.sax.helpers.LocatorImpl._LocatorImpl35211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

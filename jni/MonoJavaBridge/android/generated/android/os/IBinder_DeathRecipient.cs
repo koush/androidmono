@@ -18,7 +18,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _binderDied9895;
-		 void android.os.IBinder_DeathRecipient.binderDied() 
+		void android.os.IBinder_DeathRecipient.binderDied()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IBinder_DeathRecipientDelegateWrapper9896;
-		public IBinder_DeathRecipientDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IBinder_DeathRecipientDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IBinder_DeathRecipientDelegateWrapper.staticClass, global::android.os.IBinder_DeathRecipientDelegateWrapper._IBinder_DeathRecipientDelegateWrapper9896);

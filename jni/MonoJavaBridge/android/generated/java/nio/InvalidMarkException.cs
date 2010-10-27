@@ -12,7 +12,7 @@ namespace java.nio
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidMarkException22278;
-		public InvalidMarkException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidMarkException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.InvalidMarkException.staticClass, global::java.nio.InvalidMarkException._InvalidMarkException22278);

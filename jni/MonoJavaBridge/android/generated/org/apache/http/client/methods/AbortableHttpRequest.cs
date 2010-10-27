@@ -20,7 +20,7 @@ namespace org.apache.http.client.methods
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _abort31905;
-		 void org.apache.http.client.methods.AbortableHttpRequest.abort() 
+		void org.apache.http.client.methods.AbortableHttpRequest.abort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http.client.methods
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, global::org.apache.http.client.methods.AbortableHttpRequest_._abort31905);
 		}
 		internal static global::MonoJavaBridge.MethodId _setConnectionRequest31906;
-		 void org.apache.http.client.methods.AbortableHttpRequest.setConnectionRequest(org.apache.http.conn.ClientConnectionRequest arg0) 
+		void org.apache.http.client.methods.AbortableHttpRequest.setConnectionRequest(org.apache.http.conn.ClientConnectionRequest arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http.client.methods
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.methods.AbortableHttpRequest_.staticClass, global::org.apache.http.client.methods.AbortableHttpRequest_._setConnectionRequest31906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setReleaseTrigger31907;
-		 void org.apache.http.client.methods.AbortableHttpRequest.setReleaseTrigger(org.apache.http.conn.ConnectionReleaseTrigger arg0) 
+		void org.apache.http.client.methods.AbortableHttpRequest.setReleaseTrigger(org.apache.http.conn.ConnectionReleaseTrigger arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -23,7 +23,7 @@ namespace android.net.wifi
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _finalize8059;
-			protected override void finalize() 
+			protected override void finalize()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.net.wifi
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._finalize8059);
 			}
 			internal static global::MonoJavaBridge.MethodId _toString8060;
-			public override global::java.lang.String toString() 
+			public override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._toString8060)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _acquire8061;
-			public virtual void acquire() 
+			public virtual void acquire()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace android.net.wifi
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._acquire8061);
 			}
 			internal static global::MonoJavaBridge.MethodId _release8062;
-			public virtual void release() 
+			public virtual void release()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,8 +58,15 @@ namespace android.net.wifi
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._release8062);
 			}
+			public new bool ReferenceCounted
+			{
+				set
+				{
+					setReferenceCounted(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setReferenceCounted8063;
-			public virtual void setReferenceCounted(bool arg0) 
+			public virtual void setReferenceCounted(bool arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -68,7 +75,7 @@ namespace android.net.wifi
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._setReferenceCounted8063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _isHeld8064;
-			public virtual bool isHeld() 
+			public virtual bool isHeld()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -100,7 +107,7 @@ namespace android.net.wifi
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _finalize8065;
-			protected override void finalize() 
+			protected override void finalize()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -109,7 +116,7 @@ namespace android.net.wifi
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._finalize8065);
 			}
 			internal static global::MonoJavaBridge.MethodId _toString8066;
-			public override global::java.lang.String toString() 
+			public override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -118,7 +125,7 @@ namespace android.net.wifi
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._toString8066)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _acquire8067;
-			public virtual void acquire() 
+			public virtual void acquire()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -127,7 +134,7 @@ namespace android.net.wifi
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._acquire8067);
 			}
 			internal static global::MonoJavaBridge.MethodId _release8068;
-			public virtual void release() 
+			public virtual void release()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -135,8 +142,15 @@ namespace android.net.wifi
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._release8068);
 			}
+			public new bool ReferenceCounted
+			{
+				set
+				{
+					setReferenceCounted(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setReferenceCounted8069;
-			public virtual void setReferenceCounted(bool arg0) 
+			public virtual void setReferenceCounted(bool arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -145,7 +159,7 @@ namespace android.net.wifi
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._setReferenceCounted8069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _isHeld8070;
-			public virtual bool isHeld() 
+			public virtual bool isHeld()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -166,7 +180,7 @@ namespace android.net.wifi
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _reconnect8071;
-		public virtual bool reconnect() 
+		public virtual bool reconnect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -175,7 +189,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._reconnect8071);
 		}
 		internal static global::MonoJavaBridge.MethodId _disconnect8072;
-		public virtual bool disconnect() 
+		public virtual bool disconnect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -191,7 +205,7 @@ namespace android.net.wifi
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConfiguredNetworks8073;
-		public virtual global::java.util.List getConfiguredNetworks() 
+		public virtual global::java.util.List getConfiguredNetworks()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -200,7 +214,7 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getConfiguredNetworks8073)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _addNetwork8074;
-		public virtual int addNetwork(android.net.wifi.WifiConfiguration arg0) 
+		public virtual int addNetwork(android.net.wifi.WifiConfiguration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -209,7 +223,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._addNetwork8074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateNetwork8075;
-		public virtual int updateNetwork(android.net.wifi.WifiConfiguration arg0) 
+		public virtual int updateNetwork(android.net.wifi.WifiConfiguration arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -218,7 +232,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._updateNetwork8075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeNetwork8076;
-		public virtual bool removeNetwork(int arg0) 
+		public virtual bool removeNetwork(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -227,7 +241,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._removeNetwork8076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _enableNetwork8077;
-		public virtual bool enableNetwork(int arg0, bool arg1) 
+		public virtual bool enableNetwork(int arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -236,7 +250,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._enableNetwork8077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _disableNetwork8078;
-		public virtual bool disableNetwork(int arg0) 
+		public virtual bool disableNetwork(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -245,7 +259,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._disableNetwork8078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _reassociate8079;
-		public virtual bool reassociate() 
+		public virtual bool reassociate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -254,7 +268,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._reassociate8079);
 		}
 		internal static global::MonoJavaBridge.MethodId _pingSupplicant8080;
-		public virtual bool pingSupplicant() 
+		public virtual bool pingSupplicant()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -263,7 +277,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._pingSupplicant8080);
 		}
 		internal static global::MonoJavaBridge.MethodId _startScan8081;
-		public virtual bool startScan() 
+		public virtual bool startScan()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -279,7 +293,7 @@ namespace android.net.wifi
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnectionInfo8082;
-		public virtual global::android.net.wifi.WifiInfo getConnectionInfo() 
+		public virtual global::android.net.wifi.WifiInfo getConnectionInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -295,7 +309,7 @@ namespace android.net.wifi
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getScanResults8083;
-		public virtual global::java.util.List getScanResults() 
+		public virtual global::java.util.List getScanResults()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -304,7 +318,7 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getScanResults8083)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _saveConfiguration8084;
-		public virtual bool saveConfiguration() 
+		public virtual bool saveConfiguration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -320,7 +334,7 @@ namespace android.net.wifi
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDhcpInfo8085;
-		public virtual global::android.net.DhcpInfo getDhcpInfo() 
+		public virtual global::android.net.DhcpInfo getDhcpInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -328,8 +342,15 @@ namespace android.net.wifi
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getDhcpInfo8085)) as android.net.DhcpInfo;
 		}
+		public new bool WifiEnabled
+		{
+			set
+			{
+				setWifiEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setWifiEnabled8086;
-		public virtual bool setWifiEnabled(bool arg0) 
+		public virtual bool setWifiEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -345,7 +366,7 @@ namespace android.net.wifi
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWifiState8087;
-		public virtual int getWifiState() 
+		public virtual int getWifiState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -354,7 +375,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getWifiState8087);
 		}
 		internal static global::MonoJavaBridge.MethodId _isWifiEnabled8088;
-		public virtual bool isWifiEnabled() 
+		public virtual bool isWifiEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -363,19 +384,19 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._isWifiEnabled8088);
 		}
 		internal static global::MonoJavaBridge.MethodId _calculateSignalLevel8089;
-		public static int calculateSignalLevel(int arg0, int arg1) 
+		public static int calculateSignalLevel(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._calculateSignalLevel8089, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareSignalLevel8090;
-		public static int compareSignalLevel(int arg0, int arg1) 
+		public static int compareSignalLevel(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._compareSignalLevel8090, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _createWifiLock8091;
-		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(int arg0, java.lang.String arg1) 
+		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -384,7 +405,7 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._createWifiLock8091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.wifi.WifiManager.WifiLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _createWifiLock8092;
-		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(java.lang.String arg0) 
+		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -393,7 +414,7 @@ namespace android.net.wifi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._createWifiLock8092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.wifi.WifiManager.WifiLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _createMulticastLock8093;
-		public virtual global::android.net.wifi.WifiManager.MulticastLock createMulticastLock(java.lang.String arg0) 
+		public virtual global::android.net.wifi.WifiManager.MulticastLock createMulticastLock(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,14 +12,14 @@ namespace javax.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateNotYetValidException30242;
-		public CertificateNotYetValidException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateNotYetValidException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateNotYetValidException.staticClass, global::javax.security.cert.CertificateNotYetValidException._CertificateNotYetValidException30242);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateNotYetValidException30243;
-		public CertificateNotYetValidException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateNotYetValidException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateNotYetValidException.staticClass, global::javax.security.cert.CertificateNotYetValidException._CertificateNotYetValidException30243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

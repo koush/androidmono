@@ -12,28 +12,28 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedOperationException20928;
-		public UnsupportedOperationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedOperationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20928);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedOperationException20929;
-		public UnsupportedOperationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedOperationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedOperationException20930;
-		public UnsupportedOperationException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedOperationException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedOperationException20931;
-		public UnsupportedOperationException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedOperationException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedOperationException.staticClass, global::java.lang.UnsupportedOperationException._UnsupportedOperationException20931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23625;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PKIXBuilderParameters.staticClass, global::java.security.cert.PKIXBuilderParameters._toString23625)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaxPathLength23626;
-		public virtual void setMaxPathLength(int arg0) 
+		public virtual void setMaxPathLength(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxPathLength23627;
-		public virtual int getMaxPathLength() 
+		public virtual int getMaxPathLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,14 +50,14 @@ namespace java.security.cert
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.cert.PKIXBuilderParameters.staticClass, global::java.security.cert.PKIXBuilderParameters._getMaxPathLength23627);
 		}
 		internal static global::MonoJavaBridge.MethodId _PKIXBuilderParameters23628;
-		public PKIXBuilderParameters(java.util.Set arg0, java.security.cert.CertSelector arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PKIXBuilderParameters(java.util.Set arg0, java.security.cert.CertSelector arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXBuilderParameters.staticClass, global::java.security.cert.PKIXBuilderParameters._PKIXBuilderParameters23628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PKIXBuilderParameters23629;
-		public PKIXBuilderParameters(java.security.KeyStore arg0, java.security.cert.CertSelector arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PKIXBuilderParameters(java.security.KeyStore arg0, java.security.cert.CertSelector arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXBuilderParameters.staticClass, global::java.security.cert.PKIXBuilderParameters._PKIXBuilderParameters23629, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -12,7 +12,7 @@ namespace javax.microedition.khronos.egl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EGLDisplay28955;
-		public EGLDisplay()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EGLDisplay() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay28955);

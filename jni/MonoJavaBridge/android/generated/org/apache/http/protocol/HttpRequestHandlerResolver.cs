@@ -18,7 +18,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _lookup33909;
-		 global::org.apache.http.protocol.HttpRequestHandler org.apache.http.protocol.HttpRequestHandlerResolver.lookup(java.lang.String arg0) 
+		global::org.apache.http.protocol.HttpRequestHandler org.apache.http.protocol.HttpRequestHandlerResolver.lookup(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

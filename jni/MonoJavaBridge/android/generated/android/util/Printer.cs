@@ -18,7 +18,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _println13834;
-		 void android.util.Printer.println(java.lang.String arg0) 
+		void android.util.Printer.println(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _PrinterDelegateWrapper13835;
-		public PrinterDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PrinterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.PrinterDelegateWrapper.staticClass, global::android.util.PrinterDelegateWrapper._PrinterDelegateWrapper13835);

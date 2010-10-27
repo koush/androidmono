@@ -12,7 +12,7 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close32094;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._close32094);
 		}
 		internal static global::MonoJavaBridge.MethodId _read32095;
-		public override int read(byte[] arg0, int arg1, int arg2) 
+		public override int read(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._read32095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read32096;
-		public override int read(byte[] arg0) 
+		public override int read(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._read32096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _read32097;
-		public override int read() 
+		public override int read()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._read32097);
 		}
 		internal static global::MonoJavaBridge.MethodId _available32098;
-		public override int available() 
+		public override int available()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._available32098);
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseConnection32099;
-		public virtual void releaseConnection() 
+		public virtual void releaseConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._releaseConnection32099);
 		}
 		internal static global::MonoJavaBridge.MethodId _abortConnection32100;
-		public virtual void abortConnection() 
+		public virtual void abortConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._abortConnection32100);
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadAllowed32101;
-		protected virtual bool isReadAllowed() 
+		protected virtual bool isReadAllowed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._isReadAllowed32101);
 		}
 		internal static global::MonoJavaBridge.MethodId _checkEOF32102;
-		protected virtual void checkEOF(int arg0) 
+		protected virtual void checkEOF(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._checkEOF32102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _checkClose32103;
-		protected virtual void checkClose() 
+		protected virtual void checkClose()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._checkClose32103);
 		}
 		internal static global::MonoJavaBridge.MethodId _checkAbort32104;
-		protected virtual void checkAbort() 
+		protected virtual void checkAbort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._checkAbort32104);
 		}
 		internal static global::MonoJavaBridge.MethodId _EofSensorInputStream32105;
-		public EofSensorInputStream(java.io.InputStream arg0, org.apache.http.conn.EofSensorWatcher arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EofSensorInputStream(java.io.InputStream arg0, org.apache.http.conn.EofSensorWatcher arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.EofSensorInputStream.staticClass, global::org.apache.http.conn.EofSensorInputStream._EofSensorInputStream32105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

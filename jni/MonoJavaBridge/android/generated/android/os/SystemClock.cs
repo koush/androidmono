@@ -12,31 +12,38 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _sleep10209;
-		public static void sleep(long arg0) 
+		public static void sleep(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.SystemClock.staticClass, global::android.os.SystemClock._sleep10209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _uptimeMillis10210;
-		public static long uptimeMillis() 
+		public static long uptimeMillis()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.os.SystemClock.staticClass, global::android.os.SystemClock._uptimeMillis10210);
 		}
+		public static long CurrentTimeMillis
+		{
+			set
+			{
+				setCurrentTimeMillis(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setCurrentTimeMillis10211;
-		public static bool setCurrentTimeMillis(long arg0) 
+		public static bool setCurrentTimeMillis(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.os.SystemClock.staticClass, global::android.os.SystemClock._setCurrentTimeMillis10211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _elapsedRealtime10212;
-		public static long elapsedRealtime() 
+		public static long elapsedRealtime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.os.SystemClock.staticClass, global::android.os.SystemClock._elapsedRealtime10212);
 		}
 		internal static global::MonoJavaBridge.MethodId _currentThreadTimeMillis10213;
-		public static long currentThreadTimeMillis() 
+		public static long currentThreadTimeMillis()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.os.SystemClock.staticClass, global::android.os.SystemClock._currentThreadTimeMillis10213);

@@ -18,7 +18,7 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _run1351;
-		 void android.accounts.AccountManagerCallback.run(android.accounts.AccountManagerFuture arg0) 
+		void android.accounts.AccountManagerCallback.run(android.accounts.AccountManagerFuture arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AccountManagerCallbackDelegateWrapper1352;
-		public AccountManagerCallbackDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AccountManagerCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AccountManagerCallbackDelegateWrapper.staticClass, global::android.accounts.AccountManagerCallbackDelegateWrapper._AccountManagerCallbackDelegateWrapper1352);

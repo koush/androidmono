@@ -19,7 +19,7 @@ namespace org.apache.http.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _reset33468;
-		 void org.apache.http.io.HttpTransportMetrics.reset() 
+		void org.apache.http.io.HttpTransportMetrics.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.io.HttpTransportMetrics_.staticClass, global::org.apache.http.io.HttpTransportMetrics_._reset33468);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesTransferred33469;
-		 long org.apache.http.io.HttpTransportMetrics.getBytesTransferred() 
+		long org.apache.http.io.HttpTransportMetrics.getBytesTransferred()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

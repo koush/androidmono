@@ -22,7 +22,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getLength34670;
-		 int org.w3c.dom.NameList.getLength() 
+		int org.w3c.dom.NameList.getLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -31,7 +31,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.NameList_.staticClass, global::org.w3c.dom.NameList_._getLength34670);
 		}
 		internal static global::MonoJavaBridge.MethodId _getName34671;
-		 global::java.lang.String org.w3c.dom.NameList.getName(int arg0) 
+		global::java.lang.String org.w3c.dom.NameList.getName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.NameList_.staticClass, global::org.w3c.dom.NameList_._getName34671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _contains34672;
-		 bool org.w3c.dom.NameList.contains(java.lang.String arg0) 
+		bool org.w3c.dom.NameList.contains(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,7 +49,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.NameList_.staticClass, global::org.w3c.dom.NameList_._contains34672, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getNamespaceURI34673;
-		 global::java.lang.String org.w3c.dom.NameList.getNamespaceURI(int arg0) 
+		global::java.lang.String org.w3c.dom.NameList.getNamespaceURI(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.NameList_.staticClass, global::org.w3c.dom.NameList_._getNamespaceURI34673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _containsNS34674;
-		 bool org.w3c.dom.NameList.containsNS(java.lang.String arg0, java.lang.String arg1) 
+		bool org.w3c.dom.NameList.containsNS(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

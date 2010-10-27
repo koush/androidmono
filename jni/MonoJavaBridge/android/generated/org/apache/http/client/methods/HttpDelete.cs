@@ -19,7 +19,7 @@ namespace org.apache.http.client.methods
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMethod31908;
-		public override global::java.lang.String getMethod() 
+		public override global::java.lang.String getMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,21 +28,21 @@ namespace org.apache.http.client.methods
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._getMethod31908)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpDelete31909;
-		public HttpDelete()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpDelete() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._HttpDelete31909);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpDelete31910;
-		public HttpDelete(java.net.URI arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpDelete(java.net.URI arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._HttpDelete31910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpDelete31911;
-		public HttpDelete(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpDelete(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.methods.HttpDelete.staticClass, global::org.apache.http.client.methods.HttpDelete._HttpDelete31911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

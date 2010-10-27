@@ -29,7 +29,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onDismiss17439;
-			 void android.widget.PopupWindow.OnDismissListener.onDismiss() 
+			void android.widget.PopupWindow.OnDismissListener.onDismiss()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnDismissListenerDelegateWrapper17440;
-			public OnDismissListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnDismissListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.OnDismissListenerDelegateWrapper.staticClass, global::android.widget.PopupWindow.OnDismissListenerDelegateWrapper._OnDismissListenerDelegateWrapper17440);
@@ -87,7 +87,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _update17441;
-		public virtual void update(int arg0, int arg1, int arg2, int arg3) 
+		public virtual void update(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -96,7 +96,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update17441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _update17442;
-		public virtual void update() 
+		public virtual void update()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -105,7 +105,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update17442);
 		}
 		internal static global::MonoJavaBridge.MethodId _update17443;
-		public virtual void update(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
+		public virtual void update(android.view.View arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +114,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update17443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _update17444;
-		public virtual void update(android.view.View arg0, int arg1, int arg2) 
+		public virtual void update(android.view.View arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -123,7 +123,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update17444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _update17445;
-		public virtual void update(int arg0, int arg1, int arg2, int arg3, bool arg4) 
+		public virtual void update(int arg0, int arg1, int arg2, int arg3, bool arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +132,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update17445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _update17446;
-		public virtual void update(int arg0, int arg1) 
+		public virtual void update(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWidth17447;
-		public virtual int getWidth() 
+		public virtual int getWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -172,7 +172,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeight17448;
-		public virtual int getHeight() 
+		public virtual int getHeight()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -181,7 +181,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getHeight17448);
 		}
 		internal static global::MonoJavaBridge.MethodId _setContentView17449;
-		public virtual void setContentView(android.view.View arg0) 
+		public virtual void setContentView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -190,7 +190,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setContentView17449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSoftInputMode17450;
-		public virtual void setSoftInputMode(int arg0) 
+		public virtual void setSoftInputMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -198,8 +198,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setSoftInputMode17450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.drawable.Drawable BackgroundDrawable
+		{
+			set
+			{
+				setBackgroundDrawable(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setBackgroundDrawable17451;
-		public virtual void setBackgroundDrawable(android.graphics.drawable.Drawable arg0) 
+		public virtual void setBackgroundDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -207,8 +214,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setBackgroundDrawable17451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool Focusable
+		{
+			set
+			{
+				setFocusable(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setFocusable17452;
-		public virtual void setFocusable(bool arg0) 
+		public virtual void setFocusable(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -217,7 +231,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setFocusable17452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isFocusable17453;
-		public virtual bool isFocusable() 
+		public virtual bool isFocusable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,7 +247,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBackground17454;
-		public virtual global::android.graphics.drawable.Drawable getBackground() 
+		public virtual global::android.graphics.drawable.Drawable getBackground()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -242,7 +256,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getBackground17454)) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _isShowing17455;
-		public virtual bool isShowing() 
+		public virtual bool isShowing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -251,7 +265,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isShowing17455);
 		}
 		internal static global::MonoJavaBridge.MethodId _dismiss17456;
-		public virtual void dismiss() 
+		public virtual void dismiss()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -260,7 +274,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._dismiss17456);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnDismissListener17457;
-		public virtual void setOnDismissListener(android.widget.PopupWindow.OnDismissListener arg0) 
+		public virtual void setOnDismissListener(android.widget.PopupWindow.OnDismissListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -273,7 +287,7 @@ namespace android.widget
 			setOnDismissListener((global::android.widget.PopupWindow.OnDismissListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setHeight17458;
-		public virtual void setHeight(int arg0) 
+		public virtual void setHeight(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -282,7 +296,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setHeight17458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWidth17459;
-		public virtual void setWidth(int arg0) 
+		public virtual void setWidth(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -302,7 +316,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnimationStyle17460;
-		public virtual int getAnimationStyle() 
+		public virtual int getAnimationStyle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -311,7 +325,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getAnimationStyle17460);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIgnoreCheekPress17461;
-		public virtual void setIgnoreCheekPress() 
+		public virtual void setIgnoreCheekPress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -320,7 +334,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setIgnoreCheekPress17461);
 		}
 		internal static global::MonoJavaBridge.MethodId _setAnimationStyle17462;
-		public virtual void setAnimationStyle(int arg0) 
+		public virtual void setAnimationStyle(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -340,7 +354,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentView17463;
-		public virtual global::android.view.View getContentView() 
+		public virtual global::android.view.View getContentView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -348,8 +362,15 @@ namespace android.widget
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getContentView17463)) as android.view.View;
 		}
+		public new global::android.view.View.OnTouchListener TouchInterceptor
+		{
+			set
+			{
+				setTouchInterceptor(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setTouchInterceptor17464;
-		public virtual void setTouchInterceptor(android.view.View.OnTouchListener arg0) 
+		public virtual void setTouchInterceptor(android.view.View.OnTouchListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -373,7 +394,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputMethodMode17465;
-		public virtual int getInputMethodMode() 
+		public virtual int getInputMethodMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -382,7 +403,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getInputMethodMode17465);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInputMethodMode17466;
-		public virtual void setInputMethodMode(int arg0) 
+		public virtual void setInputMethodMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -402,7 +423,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSoftInputMode17467;
-		public virtual int getSoftInputMode() 
+		public virtual int getSoftInputMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -411,7 +432,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getSoftInputMode17467);
 		}
 		internal static global::MonoJavaBridge.MethodId _isTouchable17468;
-		public virtual bool isTouchable() 
+		public virtual bool isTouchable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -419,8 +440,15 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isTouchable17468);
 		}
+		public new bool Touchable
+		{
+			set
+			{
+				setTouchable(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setTouchable17469;
-		public virtual void setTouchable(bool arg0) 
+		public virtual void setTouchable(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -429,7 +457,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setTouchable17469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isOutsideTouchable17470;
-		public virtual bool isOutsideTouchable() 
+		public virtual bool isOutsideTouchable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -437,8 +465,15 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isOutsideTouchable17470);
 		}
+		public new bool OutsideTouchable
+		{
+			set
+			{
+				setOutsideTouchable(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setOutsideTouchable17471;
-		public virtual void setOutsideTouchable(bool arg0) 
+		public virtual void setOutsideTouchable(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -447,7 +482,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setOutsideTouchable17471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isClippingEnabled17472;
-		public virtual bool isClippingEnabled() 
+		public virtual bool isClippingEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -455,8 +490,15 @@ namespace android.widget
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isClippingEnabled17472);
 		}
+		public new bool ClippingEnabled
+		{
+			set
+			{
+				setClippingEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setClippingEnabled17473;
-		public virtual void setClippingEnabled(bool arg0) 
+		public virtual void setClippingEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -465,7 +507,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setClippingEnabled17473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWindowLayoutMode17474;
-		public virtual void setWindowLayoutMode(int arg0, int arg1) 
+		public virtual void setWindowLayoutMode(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -474,7 +516,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setWindowLayoutMode17474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _showAtLocation17475;
-		public virtual void showAtLocation(android.view.View arg0, int arg1, int arg2, int arg3) 
+		public virtual void showAtLocation(android.view.View arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -483,7 +525,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._showAtLocation17475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _showAsDropDown17476;
-		public virtual void showAsDropDown(android.view.View arg0) 
+		public virtual void showAsDropDown(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -492,7 +534,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._showAsDropDown17476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _showAsDropDown17477;
-		public virtual void showAsDropDown(android.view.View arg0, int arg1, int arg2) 
+		public virtual void showAsDropDown(android.view.View arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -501,7 +543,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._showAsDropDown17477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _isAboveAnchor17478;
-		public virtual bool isAboveAnchor() 
+		public virtual bool isAboveAnchor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -510,7 +552,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isAboveAnchor17478);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxAvailableHeight17479;
-		public virtual int getMaxAvailableHeight(android.view.View arg0, int arg1) 
+		public virtual int getMaxAvailableHeight(android.view.View arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -519,7 +561,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getMaxAvailableHeight17479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxAvailableHeight17480;
-		public virtual int getMaxAvailableHeight(android.view.View arg0) 
+		public virtual int getMaxAvailableHeight(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -528,56 +570,56 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getMaxAvailableHeight17480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17481;
-		public PopupWindow(android.view.View arg0, int arg1, int arg2, bool arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(android.view.View arg0, int arg1, int arg2, bool arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17482;
-		public PopupWindow(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17483;
-		public PopupWindow(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17484;
-		public PopupWindow()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17484);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17485;
-		public PopupWindow(android.view.View arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(android.view.View arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17486;
-		public PopupWindow(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17487;
-		public PopupWindow(android.view.View arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(android.view.View arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PopupWindow17488;
-		public PopupWindow(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PopupWindow(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._PopupWindow17488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

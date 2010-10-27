@@ -12,7 +12,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onFinished3546;
-		public virtual void onFinished(android.content.SyncResult arg0) 
+		public virtual void onFinished(android.content.SyncResult arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.content
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSyncContextBinder3547;
-		public virtual global::android.os.IBinder getSyncContextBinder() 
+		public virtual global::android.os.IBinder getSyncContextBinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

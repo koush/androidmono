@@ -19,7 +19,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputStream16079;
-		public global::java.io.InputStream getInputStream() 
+		public global::java.io.InputStream getInputStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentLength16080;
-		public long getContentLength() 
+		public long getContentLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaders16081;
-		public global::java.util.Map getHeaders() 
+		public global::java.util.Map getHeaders()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatusCode16082;
-		public int getStatusCode() 
+		public int getStatusCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace android.webkit
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getStatusCode16082);
 		}
 		internal static global::MonoJavaBridge.MethodId _PluginData16083;
-		public PluginData(java.io.InputStream arg0, long arg1, java.util.Map arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PluginData(java.io.InputStream arg0, long arg1, java.util.Map arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.PluginData.staticClass, global::android.webkit.PluginData._PluginData16083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

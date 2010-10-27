@@ -12,28 +12,28 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalStateException20179;
-		public IllegalStateException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalStateException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalStateException.staticClass, global::java.lang.IllegalStateException._IllegalStateException20179);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalStateException20180;
-		public IllegalStateException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalStateException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalStateException.staticClass, global::java.lang.IllegalStateException._IllegalStateException20180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalStateException20181;
-		public IllegalStateException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalStateException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalStateException.staticClass, global::java.lang.IllegalStateException._IllegalStateException20181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalStateException20182;
-		public IllegalStateException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalStateException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalStateException.staticClass, global::java.lang.IllegalStateException._IllegalStateException20182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

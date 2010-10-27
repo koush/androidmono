@@ -12,13 +12,13 @@ namespace javax.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault29817;
-		public static global::javax.net.SocketFactory getDefault() 
+		public static global::javax.net.SocketFactory getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._getDefault29817)) as javax.net.SocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29818;
-		public virtual global::java.net.Socket createSocket() 
+		public virtual global::java.net.Socket createSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace javax.net
 		internal static global::MonoJavaBridge.MethodId _createSocket29822;
 		public abstract global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3);
 		internal static global::MonoJavaBridge.MethodId _SocketFactory29823;
-		protected SocketFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SocketFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._SocketFactory29823);
@@ -67,7 +67,7 @@ namespace javax.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29824;
-		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1) 
+		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace javax.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_.staticClass, global::javax.net.SocketFactory_._createSocket29824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29825;
-		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3) 
+		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +85,7 @@ namespace javax.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_.staticClass, global::javax.net.SocketFactory_._createSocket29825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29826;
-		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1) 
+		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace javax.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.SocketFactory_.staticClass, global::javax.net.SocketFactory_._createSocket29826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket29827;
-		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3) 
+		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

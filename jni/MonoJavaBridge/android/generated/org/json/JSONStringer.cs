@@ -12,7 +12,7 @@ namespace org.json
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _value34125;
-		public virtual global::org.json.JSONStringer value(java.lang.Object arg0) 
+		public virtual global::org.json.JSONStringer value(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._value34125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _value34126;
-		public virtual global::org.json.JSONStringer value(bool arg0) 
+		public virtual global::org.json.JSONStringer value(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._value34126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _value34127;
-		public virtual global::org.json.JSONStringer value(double arg0) 
+		public virtual global::org.json.JSONStringer value(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._value34127, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _value34128;
-		public virtual global::org.json.JSONStringer value(long arg0) 
+		public virtual global::org.json.JSONStringer value(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._value34128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString34129;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._toString34129)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _array34130;
-		public virtual global::org.json.JSONStringer array() 
+		public virtual global::org.json.JSONStringer array()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._array34130)) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _key34131;
-		public virtual global::org.json.JSONStringer key(java.lang.String arg0) 
+		public virtual global::org.json.JSONStringer key(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._key34131, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _object34132;
-		public virtual global::org.json.JSONStringer @object() 
+		public virtual global::org.json.JSONStringer @object()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._object34132)) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _endArray34133;
-		public virtual global::org.json.JSONStringer endArray() 
+		public virtual global::org.json.JSONStringer endArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._endArray34133)) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _endObject34134;
-		public virtual global::org.json.JSONStringer endObject() 
+		public virtual global::org.json.JSONStringer endObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace org.json
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.json.JSONStringer.staticClass, global::org.json.JSONStringer._endObject34134)) as org.json.JSONStringer;
 		}
 		internal static global::MonoJavaBridge.MethodId _JSONStringer34135;
-		public JSONStringer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JSONStringer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.json.JSONStringer.staticClass, global::org.json.JSONStringer._JSONStringer34135);

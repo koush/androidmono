@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals19043;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.FilePermission.staticClass, global::java.io.FilePermission._equals19043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode19044;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.FilePermission.staticClass, global::java.io.FilePermission._hashCode19044);
 		}
 		internal static global::MonoJavaBridge.MethodId _implies19045;
-		public sealed override bool implies(java.security.Permission arg0) 
+		public sealed override bool implies(java.security.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getActions19046;
-		public sealed override global::java.lang.String getActions() 
+		public sealed override global::java.lang.String getActions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.FilePermission.staticClass, global::java.io.FilePermission._getActions19046)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _newPermissionCollection19047;
-		public sealed override global::java.security.PermissionCollection newPermissionCollection() 
+		public sealed override global::java.security.PermissionCollection newPermissionCollection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.FilePermission.staticClass, global::java.io.FilePermission._newPermissionCollection19047)) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _FilePermission19048;
-		public FilePermission(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FilePermission(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.FilePermission.staticClass, global::java.io.FilePermission._FilePermission19048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -12,13 +12,20 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isDefault7449;
-		public static bool isDefault(android.net.Uri arg0) 
+		public static bool isDefault(android.net.Uri arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._isDefault7449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Type
+		{
+			set
+			{
+				setType(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setType7450;
-		public virtual void setType(int arg0) 
+		public virtual void setType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +34,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setType7450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _inferStreamType7451;
-		public virtual int inferStreamType() 
+		public virtual int inferStreamType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +43,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._inferStreamType7451);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStopPreviousRingtone7452;
-		public virtual void setStopPreviousRingtone(bool arg0) 
+		public virtual void setStopPreviousRingtone(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +52,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setStopPreviousRingtone7452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopPreviousRingtone7453;
-		public virtual void stopPreviousRingtone() 
+		public virtual void stopPreviousRingtone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,19 +60,8 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._stopPreviousRingtone7453);
 		}
-		public new bool StopPreviousRingtone
-		{
-			get
-			{
-				return getStopPreviousRingtone();
-			}
-			set
-			{
-				setStopPreviousRingtone(value);
-			}
-		}
 		internal static global::MonoJavaBridge.MethodId _getStopPreviousRingtone7454;
-		public virtual bool getStopPreviousRingtone() 
+		public virtual bool getStopPreviousRingtone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +81,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIncludeDrm7455;
-		public virtual bool getIncludeDrm() 
+		public virtual bool getIncludeDrm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +90,7 @@ namespace android.media
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getIncludeDrm7455);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIncludeDrm7456;
-		public virtual void setIncludeDrm(bool arg0) 
+		public virtual void setIncludeDrm(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -110,7 +106,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCursor7457;
-		public virtual global::android.database.Cursor getCursor() 
+		public virtual global::android.database.Cursor getCursor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -119,7 +115,7 @@ namespace android.media
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getCursor7457)) as android.database.Cursor;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRingtone7458;
-		public virtual global::android.media.Ringtone getRingtone(int arg0) 
+		public virtual global::android.media.Ringtone getRingtone(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,13 +124,13 @@ namespace android.media
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtone7458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.media.Ringtone;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRingtone7459;
-		public static global::android.media.Ringtone getRingtone(android.content.Context arg0, android.net.Uri arg1) 
+		public static global::android.media.Ringtone getRingtone(android.content.Context arg0, android.net.Uri arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtone7459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.media.Ringtone;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRingtoneUri7460;
-		public virtual global::android.net.Uri getRingtoneUri(int arg0) 
+		public virtual global::android.net.Uri getRingtoneUri(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +139,7 @@ namespace android.media
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtoneUri7460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRingtonePosition7461;
-		public virtual int getRingtonePosition(android.net.Uri arg0) 
+		public virtual int getRingtonePosition(android.net.Uri arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,44 +148,44 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtonePosition7461, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getValidRingtoneUri7462;
-		public static global::android.net.Uri getValidRingtoneUri(android.content.Context arg0) 
+		public static global::android.net.Uri getValidRingtoneUri(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getValidRingtoneUri7462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _getActualDefaultRingtoneUri7463;
-		public static global::android.net.Uri getActualDefaultRingtoneUri(android.content.Context arg0, int arg1) 
+		public static global::android.net.Uri getActualDefaultRingtoneUri(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getActualDefaultRingtoneUri7463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _setActualDefaultRingtoneUri7464;
-		public static void setActualDefaultRingtoneUri(android.content.Context arg0, int arg1, android.net.Uri arg2) 
+		public static void setActualDefaultRingtoneUri(android.content.Context arg0, int arg1, android.net.Uri arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setActualDefaultRingtoneUri7464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultType7465;
-		public static int getDefaultType(android.net.Uri arg0) 
+		public static int getDefaultType(android.net.Uri arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getDefaultType7465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultUri7466;
-		public static global::android.net.Uri getDefaultUri(int arg0) 
+		public static global::android.net.Uri getDefaultUri(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getDefaultUri7466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _RingtoneManager7467;
-		public RingtoneManager(android.app.Activity arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RingtoneManager(android.app.Activity arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._RingtoneManager7467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RingtoneManager7468;
-		public RingtoneManager(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RingtoneManager(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._RingtoneManager7468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

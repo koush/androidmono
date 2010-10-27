@@ -20,7 +20,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getExtensionValue23703;
 		public abstract byte[] getExtensionValue(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _equals23704;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509CRL.staticClass, global::java.security.cert.X509CRL._equals23704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23705;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getIssuerDN23711;
 		public abstract global::java.security.Principal getIssuerDN();
 		internal static global::MonoJavaBridge.MethodId _getIssuerX500Principal23712;
-		public virtual global::javax.security.auth.x500.X500Principal getIssuerX500Principal() 
+		public virtual global::javax.security.auth.x500.X500Principal getIssuerX500Principal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getNextUpdate23717;
 		public abstract global::java.util.Date getNextUpdate();
 		internal static global::MonoJavaBridge.MethodId _getRevokedCertificate23718;
-		public virtual global::java.security.cert.X509CRLEntry getRevokedCertificate(java.security.cert.X509Certificate arg0) 
+		public virtual global::java.security.cert.X509CRLEntry getRevokedCertificate(java.security.cert.X509Certificate arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getTBSCertList23721;
 		public abstract byte[] getTBSCertList();
 		internal static global::MonoJavaBridge.MethodId _X509CRL23722;
-		protected X509CRL()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected X509CRL() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.X509CRL.staticClass, global::java.security.cert.X509CRL._X509CRL23722);
@@ -132,7 +132,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _hasUnsupportedCriticalExtension23723;
-		public override bool hasUnsupportedCriticalExtension() 
+		public override bool hasUnsupportedCriticalExtension()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -141,7 +141,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._hasUnsupportedCriticalExtension23723);
 		}
 		internal static global::MonoJavaBridge.MethodId _getCriticalExtensionOIDs23724;
-		public override global::java.util.Set getCriticalExtensionOIDs() 
+		public override global::java.util.Set getCriticalExtensionOIDs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -150,7 +150,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getCriticalExtensionOIDs23724)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNonCriticalExtensionOIDs23725;
-		public override global::java.util.Set getNonCriticalExtensionOIDs() 
+		public override global::java.util.Set getNonCriticalExtensionOIDs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -159,7 +159,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getNonCriticalExtensionOIDs23725)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtensionValue23726;
-		public override byte[] getExtensionValue(java.lang.String arg0) 
+		public override byte[] getExtensionValue(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getExtensionValue23726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getSignature23727;
-		public override byte[] getSignature() 
+		public override byte[] getSignature()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSignature23727)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded23728;
-		public override byte[] getEncoded() 
+		public override byte[] getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -186,7 +186,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getEncoded23728)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _verify23729;
-		public override void verify(java.security.PublicKey arg0, java.lang.String arg1) 
+		public override void verify(java.security.PublicKey arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -195,7 +195,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._verify23729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _verify23730;
-		public override void verify(java.security.PublicKey arg0) 
+		public override void verify(java.security.PublicKey arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -204,7 +204,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._verify23730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getVersion23731;
-		public override int getVersion() 
+		public override int getVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -213,7 +213,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getVersion23731);
 		}
 		internal static global::MonoJavaBridge.MethodId _getIssuerDN23732;
-		public override global::java.security.Principal getIssuerDN() 
+		public override global::java.security.Principal getIssuerDN()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -222,7 +222,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getIssuerDN23732)) as java.security.Principal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSigAlgName23733;
-		public override global::java.lang.String getSigAlgName() 
+		public override global::java.lang.String getSigAlgName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -231,7 +231,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgName23733)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSigAlgOID23734;
-		public override global::java.lang.String getSigAlgOID() 
+		public override global::java.lang.String getSigAlgOID()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -240,7 +240,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgOID23734)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSigAlgParams23735;
-		public override byte[] getSigAlgParams() 
+		public override byte[] getSigAlgParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -249,7 +249,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getSigAlgParams23735)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getThisUpdate23736;
-		public override global::java.util.Date getThisUpdate() 
+		public override global::java.util.Date getThisUpdate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -258,7 +258,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getThisUpdate23736)) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNextUpdate23737;
-		public override global::java.util.Date getNextUpdate() 
+		public override global::java.util.Date getNextUpdate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -267,7 +267,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getNextUpdate23737)) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRevokedCertificate23738;
-		public override global::java.security.cert.X509CRLEntry getRevokedCertificate(java.math.BigInteger arg0) 
+		public override global::java.security.cert.X509CRLEntry getRevokedCertificate(java.math.BigInteger arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -276,7 +276,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getRevokedCertificate23738, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.X509CRLEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRevokedCertificates23739;
-		public override global::java.util.Set getRevokedCertificates() 
+		public override global::java.util.Set getRevokedCertificates()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -285,7 +285,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getRevokedCertificates23739)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTBSCertList23740;
-		public override byte[] getTBSCertList() 
+		public override byte[] getTBSCertList()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -294,7 +294,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._getTBSCertList23740)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23741;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -303,7 +303,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRL_.staticClass, global::java.security.cert.X509CRL_._toString23741)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isRevoked23742;
-		public override bool isRevoked(java.security.cert.Certificate arg0) 
+		public override bool isRevoked(java.security.cert.Certificate arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

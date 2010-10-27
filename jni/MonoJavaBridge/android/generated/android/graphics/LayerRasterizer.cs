@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _addLayer5292;
-		public virtual void addLayer(android.graphics.Paint arg0, float arg1, float arg2) 
+		public virtual void addLayer(android.graphics.Paint arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer5292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _addLayer5293;
-		public virtual void addLayer(android.graphics.Paint arg0) 
+		public virtual void addLayer(android.graphics.Paint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._addLayer5293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LayerRasterizer5294;
-		public LayerRasterizer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LayerRasterizer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.LayerRasterizer.staticClass, global::android.graphics.LayerRasterizer._LayerRasterizer5294);

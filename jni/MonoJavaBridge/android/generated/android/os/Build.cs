@@ -23,7 +23,7 @@ namespace android.os
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _VERSION9558;
-			public VERSION()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public VERSION() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Build.VERSION.staticClass, global::android.os.Build.VERSION._VERSION9558);
@@ -95,7 +95,7 @@ namespace android.os
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _VERSION_CODES9564;
-			public VERSION_CODES()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public VERSION_CODES() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Build.VERSION_CODES.staticClass, global::android.os.Build.VERSION_CODES._VERSION_CODES9564);
@@ -172,7 +172,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _Build9574;
-		public Build()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Build() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Build.staticClass, global::android.os.Build._Build9574);

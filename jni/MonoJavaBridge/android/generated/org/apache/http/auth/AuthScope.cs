@@ -12,7 +12,7 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals31790;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.auth
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._equals31790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString31791;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._toString31791)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode31792;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getScheme31793;
-		public virtual global::java.lang.String getScheme() 
+		public virtual global::java.lang.String getScheme()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPort31794;
-		public virtual int getPort() 
+		public virtual int getPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHost31795;
-		public virtual global::java.lang.String getHost() 
+		public virtual global::java.lang.String getHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._getHost31795)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _match31796;
-		public virtual int match(org.apache.http.auth.AuthScope arg0) 
+		public virtual int match(org.apache.http.auth.AuthScope arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,7 +103,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRealm31797;
-		public virtual global::java.lang.String getRealm() 
+		public virtual global::java.lang.String getRealm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,28 +112,28 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._getRealm31797)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthScope31798;
-		public AuthScope(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthScope(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._AuthScope31798, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthScope31799;
-		public AuthScope(java.lang.String arg0, int arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthScope(java.lang.String arg0, int arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._AuthScope31799, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthScope31800;
-		public AuthScope(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthScope(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._AuthScope31800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthScope31801;
-		public AuthScope(org.apache.http.auth.AuthScope arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthScope(org.apache.http.auth.AuthScope arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthScope.staticClass, global::org.apache.http.auth.AuthScope._AuthScope31801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

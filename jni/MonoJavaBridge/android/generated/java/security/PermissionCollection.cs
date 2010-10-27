@@ -14,7 +14,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _add23214;
 		public abstract void add(java.security.Permission arg0);
 		internal static global::MonoJavaBridge.MethodId _toString23215;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _implies23216;
 		public abstract bool implies(java.security.Permission arg0);
 		internal static global::MonoJavaBridge.MethodId _setReadOnly23217;
-		public virtual void setReadOnly() 
+		public virtual void setReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _elements23218;
 		public abstract global::java.util.Enumeration elements();
 		internal static global::MonoJavaBridge.MethodId _isReadOnly23219;
-		public virtual bool isReadOnly() 
+		public virtual bool isReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace java.security
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.PermissionCollection.staticClass, global::java.security.PermissionCollection._isReadOnly23219);
 		}
 		internal static global::MonoJavaBridge.MethodId _PermissionCollection23220;
-		public PermissionCollection()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PermissionCollection() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.PermissionCollection.staticClass, global::java.security.PermissionCollection._PermissionCollection23220);
@@ -77,7 +77,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _add23221;
-		public override void add(java.security.Permission arg0) 
+		public override void add(java.security.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.PermissionCollection_.staticClass, global::java.security.PermissionCollection_._add23221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _implies23222;
-		public override bool implies(java.security.Permission arg0) 
+		public override bool implies(java.security.Permission arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +95,7 @@ namespace java.security
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.PermissionCollection_.staticClass, global::java.security.PermissionCollection_._implies23222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _elements23223;
-		public override global::java.util.Enumeration elements() 
+		public override global::java.util.Enumeration elements()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,13 +12,13 @@ namespace org.apache.http.message
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _formatHeader33593;
-		public static global::java.lang.String formatHeader(org.apache.http.Header arg0, org.apache.http.message.LineFormatter arg1) 
+		public static global::java.lang.String formatHeader(org.apache.http.Header arg0, org.apache.http.message.LineFormatter arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatHeader33593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatHeader33594;
-		public virtual global::org.apache.http.util.CharArrayBuffer formatHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.Header arg1) 
+		public virtual global::org.apache.http.util.CharArrayBuffer formatHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.Header arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatHeader33594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _appendProtocolVersion33595;
-		public virtual global::org.apache.http.util.CharArrayBuffer appendProtocolVersion(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.ProtocolVersion arg1) 
+		public virtual global::org.apache.http.util.CharArrayBuffer appendProtocolVersion(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.ProtocolVersion arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,13 +36,13 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._appendProtocolVersion33595, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatRequestLine33596;
-		public static global::java.lang.String formatRequestLine(org.apache.http.RequestLine arg0, org.apache.http.message.LineFormatter arg1) 
+		public static global::java.lang.String formatRequestLine(org.apache.http.RequestLine arg0, org.apache.http.message.LineFormatter arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatRequestLine33596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatRequestLine33597;
-		public virtual global::org.apache.http.util.CharArrayBuffer formatRequestLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.RequestLine arg1) 
+		public virtual global::org.apache.http.util.CharArrayBuffer formatRequestLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.RequestLine arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatRequestLine33597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatStatusLine33598;
-		public virtual global::org.apache.http.util.CharArrayBuffer formatStatusLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.StatusLine arg1) 
+		public virtual global::org.apache.http.util.CharArrayBuffer formatStatusLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.StatusLine arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,13 +60,13 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatStatusLine33598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatStatusLine33599;
-		public static global::java.lang.String formatStatusLine(org.apache.http.StatusLine arg0, org.apache.http.message.LineFormatter arg1) 
+		public static global::java.lang.String formatStatusLine(org.apache.http.StatusLine arg0, org.apache.http.message.LineFormatter arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatStatusLine33599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _initBuffer33600;
-		protected virtual global::org.apache.http.util.CharArrayBuffer initBuffer(org.apache.http.util.CharArrayBuffer arg0) 
+		protected virtual global::org.apache.http.util.CharArrayBuffer initBuffer(org.apache.http.util.CharArrayBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,13 +75,13 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.util.CharArrayBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._initBuffer33600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.util.CharArrayBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatProtocolVersion33601;
-		public static global::java.lang.String formatProtocolVersion(org.apache.http.ProtocolVersion arg0, org.apache.http.message.LineFormatter arg1) 
+		public static global::java.lang.String formatProtocolVersion(org.apache.http.ProtocolVersion arg0, org.apache.http.message.LineFormatter arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._formatProtocolVersion33601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _estimateProtocolVersionLen33602;
-		protected virtual int estimateProtocolVersionLen(org.apache.http.ProtocolVersion arg0) 
+		protected virtual int estimateProtocolVersionLen(org.apache.http.ProtocolVersion arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,7 +90,7 @@ namespace org.apache.http.message
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._estimateProtocolVersionLen33602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFormatRequestLine33603;
-		protected virtual void doFormatRequestLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.RequestLine arg1) 
+		protected virtual void doFormatRequestLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.RequestLine arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace org.apache.http.message
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._doFormatRequestLine33603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFormatStatusLine33604;
-		protected virtual void doFormatStatusLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.StatusLine arg1) 
+		protected virtual void doFormatStatusLine(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.StatusLine arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace org.apache.http.message
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._doFormatStatusLine33604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _doFormatHeader33605;
-		protected virtual void doFormatHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.Header arg1) 
+		protected virtual void doFormatHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.Header arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -117,7 +117,7 @@ namespace org.apache.http.message
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._doFormatHeader33605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicLineFormatter33606;
-		public BasicLineFormatter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BasicLineFormatter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicLineFormatter.staticClass, global::org.apache.http.message.BasicLineFormatter._BasicLineFormatter33606);

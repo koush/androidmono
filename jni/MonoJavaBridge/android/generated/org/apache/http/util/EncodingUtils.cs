@@ -12,37 +12,37 @@ namespace org.apache.http.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytes34003;
-		public static byte[] getBytes(java.lang.String arg0, java.lang.String arg1) 
+		public static byte[] getBytes(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getBytes34003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getString34004;
-		public static global::java.lang.String getString(byte[] arg0, int arg1, int arg2, java.lang.String arg3) 
+		public static global::java.lang.String getString(byte[] arg0, int arg1, int arg2, java.lang.String arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getString34004, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getString34005;
-		public static global::java.lang.String getString(byte[] arg0, java.lang.String arg1) 
+		public static global::java.lang.String getString(byte[] arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getString34005, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsciiBytes34006;
-		public static byte[] getAsciiBytes(java.lang.String arg0) 
+		public static byte[] getAsciiBytes(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getAsciiBytes34006, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsciiString34007;
-		public static global::java.lang.String getAsciiString(byte[] arg0, int arg1, int arg2) 
+		public static global::java.lang.String getAsciiString(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getAsciiString34007, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAsciiString34008;
-		public static global::java.lang.String getAsciiString(byte[] arg0) 
+		public static global::java.lang.String getAsciiString(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.util.EncodingUtils.staticClass, global::org.apache.http.util.EncodingUtils._getAsciiString34008, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;

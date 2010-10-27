@@ -19,7 +19,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getOption21814;
-		 global::java.lang.Object java.net.SocketOptions.getOption(int arg0) 
+		global::java.lang.Object java.net.SocketOptions.getOption(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SocketOptions_.staticClass, global::java.net.SocketOptions_._getOption21814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setOption21815;
-		 void java.net.SocketOptions.setOption(int arg0, java.lang.Object arg1) 
+		void java.net.SocketOptions.setOption(int arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

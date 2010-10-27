@@ -12,7 +12,7 @@ namespace org.apache.http.impl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getReason32649;
-		public virtual global::java.lang.String getReason(int arg0, java.util.Locale arg1) 
+		public virtual global::java.lang.String getReason(int arg0, java.util.Locale arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, global::org.apache.http.impl.EnglishReasonPhraseCatalog._getReason32649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _EnglishReasonPhraseCatalog32650;
-		protected EnglishReasonPhraseCatalog()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected EnglishReasonPhraseCatalog() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.EnglishReasonPhraseCatalog.staticClass, global::org.apache.http.impl.EnglishReasonPhraseCatalog._EnglishReasonPhraseCatalog32650);

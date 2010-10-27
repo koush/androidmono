@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString9913;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,19 +21,19 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Looper.staticClass, global::android.os.Looper._toString9913)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _loop9914;
-		public static void loop() 
+		public static void loop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._loop9914);
 		}
 		internal static global::MonoJavaBridge.MethodId _prepare9915;
-		public static void prepare() 
+		public static void prepare()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepare9915);
 		}
 		internal static global::MonoJavaBridge.MethodId _dump9916;
-		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
+		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,25 +53,32 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMainLooper9917;
-		public static global::android.os.Looper getMainLooper() 
+		public static global::android.os.Looper getMainLooper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._getMainLooper9917)) as android.os.Looper;
 		}
 		internal static global::MonoJavaBridge.MethodId _prepareMainLooper9918;
-		public static void prepareMainLooper() 
+		public static void prepareMainLooper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepareMainLooper9918);
 		}
 		internal static global::MonoJavaBridge.MethodId _myLooper9919;
-		public static global::android.os.Looper myLooper() 
+		public static global::android.os.Looper myLooper()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._myLooper9919)) as android.os.Looper;
 		}
+		public new global::android.util.Printer MessageLogging
+		{
+			set
+			{
+				setMessageLogging(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setMessageLogging9920;
-		public virtual void setMessageLogging(android.util.Printer arg0) 
+		public virtual void setMessageLogging(android.util.Printer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,13 +91,13 @@ namespace android.os
 			setMessageLogging((global::android.util.PrinterDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _myQueue9921;
-		public static global::android.os.MessageQueue myQueue() 
+		public static global::android.os.MessageQueue myQueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.os.Looper.staticClass, global::android.os.Looper._myQueue9921)) as android.os.MessageQueue;
 		}
 		internal static global::MonoJavaBridge.MethodId _quit9922;
-		public virtual void quit() 
+		public virtual void quit()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +113,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getThread9923;
-		public virtual global::java.lang.Thread getThread() 
+		public virtual global::java.lang.Thread getThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

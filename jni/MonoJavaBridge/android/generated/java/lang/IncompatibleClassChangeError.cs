@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IncompatibleClassChangeError20185;
-		public IncompatibleClassChangeError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IncompatibleClassChangeError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IncompatibleClassChangeError.staticClass, global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20185);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IncompatibleClassChangeError20186;
-		public IncompatibleClassChangeError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IncompatibleClassChangeError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IncompatibleClassChangeError.staticClass, global::java.lang.IncompatibleClassChangeError._IncompatibleClassChangeError20186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

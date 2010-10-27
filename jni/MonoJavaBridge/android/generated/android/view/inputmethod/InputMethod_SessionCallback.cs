@@ -18,7 +18,7 @@ namespace android.view.inputmethod
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _sessionCreated15912;
-		 void android.view.inputmethod.InputMethod_SessionCallback.sessionCreated(android.view.inputmethod.InputMethodSession arg0) 
+		void android.view.inputmethod.InputMethod_SessionCallback.sessionCreated(android.view.inputmethod.InputMethodSession arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.view.inputmethod
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InputMethod_SessionCallbackDelegateWrapper15913;
-		public InputMethod_SessionCallbackDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InputMethod_SessionCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper.staticClass, global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper._InputMethod_SessionCallbackDelegateWrapper15913);

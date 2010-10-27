@@ -23,7 +23,7 @@ namespace java.util.concurrent.locks
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _hasWaiters27690;
-			protected virtual bool hasWaiters() 
+			protected virtual bool hasWaiters()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.concurrent.locks
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getWaitQueueLength27691;
-			protected virtual int getWaitQueueLength() 
+			protected virtual int getWaitQueueLength()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace java.util.concurrent.locks
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getWaitingThreads27692;
-			protected virtual global::java.util.Collection getWaitingThreads() 
+			protected virtual global::java.util.Collection getWaitingThreads()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace java.util.concurrent.locks
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._getWaitingThreads27692)) as java.util.Collection;
 			}
 			internal static global::MonoJavaBridge.MethodId _await27693;
-			public virtual bool await(long arg0, java.util.concurrent.TimeUnit arg1) 
+			public virtual bool await(long arg0, java.util.concurrent.TimeUnit arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace java.util.concurrent.locks
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._await27693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _await27694;
-			public virtual void await() 
+			public virtual void await()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace java.util.concurrent.locks
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._await27694);
 			}
 			internal static global::MonoJavaBridge.MethodId _signal27695;
-			public virtual void signal() 
+			public virtual void signal()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace java.util.concurrent.locks
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._signal27695);
 			}
 			internal static global::MonoJavaBridge.MethodId _signalAll27696;
-			public virtual void signalAll() 
+			public virtual void signalAll()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace java.util.concurrent.locks
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._signalAll27696);
 			}
 			internal static global::MonoJavaBridge.MethodId _awaitUninterruptibly27697;
-			public virtual void awaitUninterruptibly() 
+			public virtual void awaitUninterruptibly()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace java.util.concurrent.locks
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._awaitUninterruptibly27697);
 			}
 			internal static global::MonoJavaBridge.MethodId _awaitNanos27698;
-			public virtual long awaitNanos(long arg0) 
+			public virtual long awaitNanos(long arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace java.util.concurrent.locks
 					return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._awaitNanos27698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _awaitUntil27699;
-			public virtual bool awaitUntil(java.util.Date arg0) 
+			public virtual bool awaitUntil(java.util.Date arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace java.util.concurrent.locks
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._awaitUntil27699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _ConditionObject27700;
-			public ConditionObject(java.util.concurrent.locks.AbstractQueuedSynchronizer arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public ConditionObject(java.util.concurrent.locks.AbstractQueuedSynchronizer arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject._ConditionObject27700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -151,7 +151,7 @@ namespace java.util.concurrent.locks
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString27701;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -160,7 +160,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._toString27701)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getState27702;
-		protected virtual int getState() 
+		protected virtual int getState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -169,7 +169,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getState27702);
 		}
 		internal static global::MonoJavaBridge.MethodId _setState27703;
-		protected virtual void setState(int arg0) 
+		protected virtual void setState(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -178,7 +178,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._setState27703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _acquire27704;
-		public virtual void acquire(int arg0) 
+		public virtual void acquire(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -187,7 +187,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._acquire27704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _release27705;
-		public virtual bool release(int arg0) 
+		public virtual bool release(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -196,7 +196,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._release27705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasQueuedThreads27706;
-		public virtual bool hasQueuedThreads() 
+		public virtual bool hasQueuedThreads()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -205,7 +205,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._hasQueuedThreads27706);
 		}
 		internal static global::MonoJavaBridge.MethodId _getQueueLength27707;
-		public virtual int getQueueLength() 
+		public virtual int getQueueLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -214,7 +214,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getQueueLength27707);
 		}
 		internal static global::MonoJavaBridge.MethodId _getQueuedThreads27708;
-		public virtual global::java.util.Collection getQueuedThreads() 
+		public virtual global::java.util.Collection getQueuedThreads()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -223,7 +223,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getQueuedThreads27708)) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasWaiters27709;
-		public virtual bool hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0) 
+		public virtual bool hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -232,7 +232,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._hasWaiters27709, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getWaitQueueLength27710;
-		public virtual int getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0) 
+		public virtual int getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -241,7 +241,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getWaitQueueLength27710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getWaitingThreads27711;
-		public virtual global::java.util.Collection getWaitingThreads(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0) 
+		public virtual global::java.util.Collection getWaitingThreads(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -250,7 +250,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getWaitingThreads27711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _acquireInterruptibly27712;
-		public virtual void acquireInterruptibly(int arg0) 
+		public virtual void acquireInterruptibly(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -259,7 +259,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._acquireInterruptibly27712, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryAcquireNanos27713;
-		public virtual bool tryAcquireNanos(int arg0, long arg1) 
+		public virtual bool tryAcquireNanos(int arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -268,7 +268,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._tryAcquireNanos27713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isHeldExclusively27714;
-		protected virtual bool isHeldExclusively() 
+		protected virtual bool isHeldExclusively()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -277,7 +277,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._isHeldExclusively27714);
 		}
 		internal static global::MonoJavaBridge.MethodId _isQueued27715;
-		public virtual bool isQueued(java.lang.Thread arg0) 
+		public virtual bool isQueued(java.lang.Thread arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -286,7 +286,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._isQueued27715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryAcquire27716;
-		protected virtual bool tryAcquire(int arg0) 
+		protected virtual bool tryAcquire(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -295,7 +295,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._tryAcquire27716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareAndSetState27717;
-		protected virtual bool compareAndSetState(int arg0, int arg1) 
+		protected virtual bool compareAndSetState(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -304,7 +304,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._compareAndSetState27717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryRelease27718;
-		protected virtual bool tryRelease(int arg0) 
+		protected virtual bool tryRelease(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -313,7 +313,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._tryRelease27718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryAcquireShared27719;
-		protected virtual int tryAcquireShared(int arg0) 
+		protected virtual int tryAcquireShared(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -322,7 +322,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._tryAcquireShared27719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryReleaseShared27720;
-		protected virtual bool tryReleaseShared(int arg0) 
+		protected virtual bool tryReleaseShared(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -331,7 +331,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._tryReleaseShared27720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _acquireShared27721;
-		public virtual void acquireShared(int arg0) 
+		public virtual void acquireShared(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -340,7 +340,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._acquireShared27721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _acquireSharedInterruptibly27722;
-		public virtual void acquireSharedInterruptibly(int arg0) 
+		public virtual void acquireSharedInterruptibly(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -349,7 +349,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._acquireSharedInterruptibly27722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tryAcquireSharedNanos27723;
-		public virtual bool tryAcquireSharedNanos(int arg0, long arg1) 
+		public virtual bool tryAcquireSharedNanos(int arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -358,7 +358,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._tryAcquireSharedNanos27723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseShared27724;
-		public virtual bool releaseShared(int arg0) 
+		public virtual bool releaseShared(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -367,7 +367,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._releaseShared27724, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasContended27725;
-		public virtual bool hasContended() 
+		public virtual bool hasContended()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -376,7 +376,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._hasContended27725);
 		}
 		internal static global::MonoJavaBridge.MethodId _getFirstQueuedThread27726;
-		public virtual global::java.lang.Thread getFirstQueuedThread() 
+		public virtual global::java.lang.Thread getFirstQueuedThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -385,7 +385,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getFirstQueuedThread27726)) as java.lang.Thread;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExclusiveQueuedThreads27727;
-		public virtual global::java.util.Collection getExclusiveQueuedThreads() 
+		public virtual global::java.util.Collection getExclusiveQueuedThreads()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -394,7 +394,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getExclusiveQueuedThreads27727)) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSharedQueuedThreads27728;
-		public virtual global::java.util.Collection getSharedQueuedThreads() 
+		public virtual global::java.util.Collection getSharedQueuedThreads()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -403,7 +403,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._getSharedQueuedThreads27728)) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _owns27729;
-		public virtual bool owns(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0) 
+		public virtual bool owns(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -412,7 +412,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._owns27729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractQueuedSynchronizer27730;
-		protected AbstractQueuedSynchronizer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AbstractQueuedSynchronizer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.locks.AbstractQueuedSynchronizer.staticClass, global::java.util.concurrent.locks.AbstractQueuedSynchronizer._AbstractQueuedSynchronizer27730);

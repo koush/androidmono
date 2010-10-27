@@ -23,7 +23,7 @@ namespace javax.xml.datatype
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _toString30638;
-			public sealed override global::java.lang.String toString() 
+			public sealed override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.xml.datatype
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getId30639;
-			public int getId() 
+			public int getId()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)

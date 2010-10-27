@@ -18,7 +18,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close18883;
-		 void java.io.Closeable.close() 
+		void java.io.Closeable.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

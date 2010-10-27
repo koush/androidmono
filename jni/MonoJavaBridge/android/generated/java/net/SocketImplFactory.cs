@@ -18,7 +18,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocketImpl21813;
-		 global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl() 
+		global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

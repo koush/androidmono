@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clear2212;
-		public virtual void clear() 
+		public virtual void clear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._clear2212);
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance2213;
-		public static global::android.app.WallpaperManager getInstance(android.content.Context arg0) 
+		public static global::android.app.WallpaperManager getInstance(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getInstance2213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.WallpaperManager;
@@ -34,7 +34,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDrawable2214;
-		public virtual global::android.graphics.drawable.Drawable getDrawable() 
+		public virtual global::android.graphics.drawable.Drawable getDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,8 +42,15 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDrawable2214)) as android.graphics.drawable.Drawable;
 		}
+		public new global::android.graphics.Bitmap Bitmap
+		{
+			set
+			{
+				setBitmap(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setBitmap2215;
-		public virtual void setBitmap(android.graphics.Bitmap arg0) 
+		public virtual void setBitmap(android.graphics.Bitmap arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +59,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setBitmap2215, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _peekDrawable2216;
-		public virtual global::android.graphics.drawable.Drawable peekDrawable() 
+		public virtual global::android.graphics.drawable.Drawable peekDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +75,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFastDrawable2217;
-		public virtual global::android.graphics.drawable.Drawable getFastDrawable() 
+		public virtual global::android.graphics.drawable.Drawable getFastDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +84,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getFastDrawable2217)) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _peekFastDrawable2218;
-		public virtual global::android.graphics.drawable.Drawable peekFastDrawable() 
+		public virtual global::android.graphics.drawable.Drawable peekFastDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +100,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWallpaperInfo2219;
-		public virtual global::android.app.WallpaperInfo getWallpaperInfo() 
+		public virtual global::android.app.WallpaperInfo getWallpaperInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,8 +108,15 @@ namespace android.app
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.app.WallpaperInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getWallpaperInfo2219)) as android.app.WallpaperInfo;
 		}
+		public new int Resource
+		{
+			set
+			{
+				setResource(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setResource2220;
-		public virtual void setResource(int arg0) 
+		public virtual void setResource(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -110,8 +124,15 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setResource2220, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.io.InputStream Stream
+		{
+			set
+			{
+				setStream(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setStream2221;
-		public virtual void setStream(java.io.InputStream arg0) 
+		public virtual void setStream(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +148,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDesiredMinimumWidth2222;
-		public virtual int getDesiredMinimumWidth() 
+		public virtual int getDesiredMinimumWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +164,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDesiredMinimumHeight2223;
-		public virtual int getDesiredMinimumHeight() 
+		public virtual int getDesiredMinimumHeight()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +173,7 @@ namespace android.app
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDesiredMinimumHeight2223);
 		}
 		internal static global::MonoJavaBridge.MethodId _suggestDesiredDimensions2224;
-		public virtual void suggestDesiredDimensions(int arg0, int arg1) 
+		public virtual void suggestDesiredDimensions(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +182,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._suggestDesiredDimensions2224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWallpaperOffsets2225;
-		public virtual void setWallpaperOffsets(android.os.IBinder arg0, float arg1, float arg2) 
+		public virtual void setWallpaperOffsets(android.os.IBinder arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +191,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setWallpaperOffsets2225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setWallpaperOffsetSteps2226;
-		public virtual void setWallpaperOffsetSteps(float arg0, float arg1) 
+		public virtual void setWallpaperOffsetSteps(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +200,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setWallpaperOffsetSteps2226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _sendWallpaperCommand2227;
-		public virtual void sendWallpaperCommand(android.os.IBinder arg0, java.lang.String arg1, int arg2, int arg3, int arg4, android.os.Bundle arg5) 
+		public virtual void sendWallpaperCommand(android.os.IBinder arg0, java.lang.String arg1, int arg2, int arg3, int arg4, android.os.Bundle arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +209,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._sendWallpaperCommand2227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearWallpaperOffsets2228;
-		public virtual void clearWallpaperOffsets(android.os.IBinder arg0) 
+		public virtual void clearWallpaperOffsets(android.os.IBinder arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

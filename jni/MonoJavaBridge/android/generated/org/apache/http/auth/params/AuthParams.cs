@@ -12,13 +12,13 @@ namespace org.apache.http.auth.@params
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setCredentialCharset31861;
-		public static void setCredentialCharset(org.apache.http.@params.HttpParams arg0, java.lang.String arg1) 
+		public static void setCredentialCharset(org.apache.http.@params.HttpParams arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.auth.@params.AuthParams.staticClass, global::org.apache.http.auth.@params.AuthParams._setCredentialCharset31861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCredentialCharset31862;
-		public static global::java.lang.String getCredentialCharset(org.apache.http.@params.HttpParams arg0) 
+		public static global::java.lang.String getCredentialCharset(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.auth.@params.AuthParams.staticClass, global::org.apache.http.auth.@params.AuthParams._getCredentialCharset31862, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;

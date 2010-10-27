@@ -12,7 +12,7 @@ namespace android.graphics.drawable.shapes
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _draw6240;
-		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1) 
+		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.graphics.drawable.shapes
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.shapes.ArcShape.staticClass, global::android.graphics.drawable.shapes.ArcShape._draw6240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ArcShape6241;
-		public ArcShape(float arg0, float arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ArcShape(float arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.ArcShape.staticClass, global::android.graphics.drawable.shapes.ArcShape._ArcShape6241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

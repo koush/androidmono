@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _PorterDuffXfermode5663;
-		public PorterDuffXfermode(android.graphics.PorterDuff.Mode arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PorterDuffXfermode(android.graphics.PorterDuff.Mode arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuffXfermode.staticClass, global::android.graphics.PorterDuffXfermode._PorterDuffXfermode5663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

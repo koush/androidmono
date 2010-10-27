@@ -29,7 +29,7 @@ namespace android.webkit
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _handleClickEvent16065;
-			 void android.webkit.Plugin.PreferencesClickHandler.handleClickEvent(android.content.Context arg0) 
+			void android.webkit.Plugin.PreferencesClickHandler.handleClickEvent(android.content.Context arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.webkit
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _PreferencesClickHandlerDelegateWrapper16066;
-			public PreferencesClickHandlerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public PreferencesClickHandlerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper.staticClass, global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper._PreferencesClickHandlerDelegateWrapper16066);
@@ -87,7 +87,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString16067;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName16068;
-		public virtual global::java.lang.String getName() 
+		public virtual global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.webkit
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getName16068)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setName16069;
-		public virtual void setName(java.lang.String arg0) 
+		public virtual void setName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -136,7 +136,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFileName16070;
-		public virtual global::java.lang.String getFileName() 
+		public virtual global::java.lang.String getFileName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,7 +156,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath16071;
-		public virtual global::java.lang.String getPath() 
+		public virtual global::java.lang.String getPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace android.webkit
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getPath16071)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setPath16072;
-		public virtual void setPath(java.lang.String arg0) 
+		public virtual void setPath(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -185,7 +185,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDescription16073;
-		public virtual global::java.lang.String getDescription() 
+		public virtual global::java.lang.String getDescription()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -194,7 +194,7 @@ namespace android.webkit
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getDescription16073)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFileName16074;
-		public virtual void setFileName(java.lang.String arg0) 
+		public virtual void setFileName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -203,7 +203,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setFileName16074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDescription16075;
-		public virtual void setDescription(java.lang.String arg0) 
+		public virtual void setDescription(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -211,8 +211,15 @@ namespace android.webkit
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setDescription16075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.webkit.Plugin.PreferencesClickHandler ClickHandler
+		{
+			set
+			{
+				setClickHandler(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setClickHandler16076;
-		public virtual void setClickHandler(android.webkit.Plugin.PreferencesClickHandler arg0) 
+		public virtual void setClickHandler(android.webkit.Plugin.PreferencesClickHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -225,7 +232,7 @@ namespace android.webkit
 			setClickHandler((global::android.webkit.Plugin.PreferencesClickHandlerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchClickEvent16077;
-		public virtual void dispatchClickEvent(android.content.Context arg0) 
+		public virtual void dispatchClickEvent(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -234,7 +241,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._dispatchClickEvent16077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Plugin16078;
-		public Plugin(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Plugin(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.Plugin.staticClass, global::android.webkit.Plugin._Plugin16078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

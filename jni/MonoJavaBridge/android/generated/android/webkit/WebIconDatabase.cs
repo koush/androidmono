@@ -29,7 +29,7 @@ namespace android.webkit
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onReceivedIcon16160;
-			 void android.webkit.WebIconDatabase.IconListener.onReceivedIcon(java.lang.String arg0, android.graphics.Bitmap arg1) 
+			void android.webkit.WebIconDatabase.IconListener.onReceivedIcon(java.lang.String arg0, android.graphics.Bitmap arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.webkit
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _IconListenerDelegateWrapper16161;
-			public IconListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public IconListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.WebIconDatabase.IconListenerDelegateWrapper.staticClass, global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper._IconListenerDelegateWrapper16161);
@@ -94,13 +94,13 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance16162;
-		public static global::android.webkit.WebIconDatabase getInstance() 
+		public static global::android.webkit.WebIconDatabase getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.WebIconDatabase>(@__env.CallStaticObjectMethod(android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._getInstance16162)) as android.webkit.WebIconDatabase;
 		}
 		internal static global::MonoJavaBridge.MethodId _close16163;
-		public void close() 
+		public void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._close16163);
 		}
 		internal static global::MonoJavaBridge.MethodId _open16164;
-		public void open(java.lang.String arg0) 
+		public void open(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._open16164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAllIcons16165;
-		public void removeAllIcons() 
+		public void removeAllIcons()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._removeAllIcons16165);
 		}
 		internal static global::MonoJavaBridge.MethodId _requestIconForPageUrl16166;
-		public void requestIconForPageUrl(java.lang.String arg0, android.webkit.WebIconDatabase.IconListener arg1) 
+		public void requestIconForPageUrl(java.lang.String arg0, android.webkit.WebIconDatabase.IconListener arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -140,7 +140,7 @@ namespace android.webkit
 			requestIconForPageUrl(arg0, (global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _retainIconForPageUrl16167;
-		public void retainIconForPageUrl(java.lang.String arg0) 
+		public void retainIconForPageUrl(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -149,7 +149,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._retainIconForPageUrl16167, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseIconForPageUrl16168;
-		public void releaseIconForPageUrl(java.lang.String arg0) 
+		public void releaseIconForPageUrl(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

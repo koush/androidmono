@@ -18,7 +18,7 @@ namespace org.apache.http.entity
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _determineLength32528;
-		 long org.apache.http.entity.ContentLengthStrategy.determineLength(org.apache.http.HttpMessage arg0) 
+		long org.apache.http.entity.ContentLengthStrategy.determineLength(org.apache.http.HttpMessage arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

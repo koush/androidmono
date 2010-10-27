@@ -12,7 +12,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _register33959;
-		public virtual void register(java.lang.String arg0, java.lang.Object arg1) 
+		public virtual void register(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._register33959, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _lookup33960;
-		public virtual global::java.lang.Object lookup(java.lang.String arg0) 
+		public virtual global::java.lang.Object lookup(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._lookup33960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _unregister33961;
-		public virtual void unregister(java.lang.String arg0) 
+		public virtual void unregister(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,8 +38,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._unregister33961, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.Map Handlers
+		{
+			set
+			{
+				setHandlers(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setHandlers33962;
-		public virtual void setHandlers(java.util.Map arg0) 
+		public virtual void setHandlers(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +55,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._setHandlers33962, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _matchUriRequestPattern33963;
-		protected virtual bool matchUriRequestPattern(java.lang.String arg0, java.lang.String arg1) 
+		protected virtual bool matchUriRequestPattern(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace org.apache.http.protocol
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._matchUriRequestPattern33963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _UriPatternMatcher33964;
-		public UriPatternMatcher()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UriPatternMatcher() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.UriPatternMatcher.staticClass, global::org.apache.http.protocol.UriPatternMatcher._UriPatternMatcher33964);

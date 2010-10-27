@@ -18,7 +18,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _filter12785;
-		 global::java.lang.CharSequence android.text.InputFilter.filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		global::java.lang.CharSequence android.text.InputFilter.filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InputFilterDelegateWrapper12786;
-		public InputFilterDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InputFilterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.InputFilterDelegateWrapper.staticClass, global::android.text.InputFilterDelegateWrapper._InputFilterDelegateWrapper12786);

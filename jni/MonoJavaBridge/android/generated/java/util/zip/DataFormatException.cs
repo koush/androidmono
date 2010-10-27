@@ -12,14 +12,14 @@ namespace java.util.zip
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DataFormatException28351;
-		public DataFormatException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DataFormatException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.DataFormatException.staticClass, global::java.util.zip.DataFormatException._DataFormatException28351);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DataFormatException28352;
-		public DataFormatException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DataFormatException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.DataFormatException.staticClass, global::java.util.zip.DataFormatException._DataFormatException28352, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

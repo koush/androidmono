@@ -18,7 +18,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _handleError34348;
-		 bool org.w3c.dom.DOMErrorHandler.handleError(org.w3c.dom.DOMError arg0) 
+		bool org.w3c.dom.DOMErrorHandler.handleError(org.w3c.dom.DOMError arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

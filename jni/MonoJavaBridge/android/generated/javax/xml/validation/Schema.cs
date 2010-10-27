@@ -16,7 +16,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _newValidatorHandler31180;
 		public abstract global::javax.xml.validation.ValidatorHandler newValidatorHandler();
 		internal static global::MonoJavaBridge.MethodId _Schema31181;
-		protected Schema()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected Schema() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.Schema.staticClass, global::javax.xml.validation.Schema._Schema31181);
@@ -44,7 +44,7 @@ namespace javax.xml.validation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newValidator31182;
-		public override global::javax.xml.validation.Validator newValidator() 
+		public override global::javax.xml.validation.Validator newValidator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.Schema_.staticClass, global::javax.xml.validation.Schema_._newValidator31182)) as javax.xml.validation.Validator;
 		}
 		internal static global::MonoJavaBridge.MethodId _newValidatorHandler31183;
-		public override global::javax.xml.validation.ValidatorHandler newValidatorHandler() 
+		public override global::javax.xml.validation.ValidatorHandler newValidatorHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

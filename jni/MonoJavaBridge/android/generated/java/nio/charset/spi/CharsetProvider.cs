@@ -16,7 +16,7 @@ namespace java.nio.charset.spi
 		internal static global::MonoJavaBridge.MethodId _charsets22823;
 		public abstract global::java.util.Iterator charsets();
 		internal static global::MonoJavaBridge.MethodId _CharsetProvider22824;
-		protected CharsetProvider()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected CharsetProvider() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.spi.CharsetProvider.staticClass, global::java.nio.charset.spi.CharsetProvider._CharsetProvider22824);
@@ -44,7 +44,7 @@ namespace java.nio.charset.spi
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _charsetForName22825;
-		public override global::java.nio.charset.Charset charsetForName(java.lang.String arg0) 
+		public override global::java.nio.charset.Charset charsetForName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.nio.charset.spi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.spi.CharsetProvider_.staticClass, global::java.nio.charset.spi.CharsetProvider_._charsetForName22825, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.charset.Charset;
 		}
 		internal static global::MonoJavaBridge.MethodId _charsets22826;
-		public override global::java.util.Iterator charsets() 
+		public override global::java.util.Iterator charsets()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

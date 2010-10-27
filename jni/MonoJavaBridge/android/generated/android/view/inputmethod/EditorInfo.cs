@@ -12,7 +12,7 @@ namespace android.view.inputmethod
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _dump15810;
-		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
+		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace android.view.inputmethod
 			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15811;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.view.inputmethod
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._writeToParcel15811, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15812;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.view.inputmethod
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._describeContents15812);
 		}
 		internal static global::MonoJavaBridge.MethodId _EditorInfo15813;
-		public EditorInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EditorInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._EditorInfo15813);

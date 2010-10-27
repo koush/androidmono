@@ -24,7 +24,7 @@ namespace org.apache.http.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _readLine33470;
-		 int org.apache.http.io.SessionInputBuffer.readLine(org.apache.http.util.CharArrayBuffer arg0) 
+		int org.apache.http.io.SessionInputBuffer.readLine(org.apache.http.util.CharArrayBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace org.apache.http.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._readLine33470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readLine33471;
-		 global::java.lang.String org.apache.http.io.SessionInputBuffer.readLine() 
+		global::java.lang.String org.apache.http.io.SessionInputBuffer.readLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace org.apache.http.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._readLine33471)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _read33472;
-		 int org.apache.http.io.SessionInputBuffer.read(byte[] arg0, int arg1, int arg2) 
+		int org.apache.http.io.SessionInputBuffer.read(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.apache.http.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._read33472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read33473;
-		 int org.apache.http.io.SessionInputBuffer.read(byte[] arg0) 
+		int org.apache.http.io.SessionInputBuffer.read(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._read33473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _read33474;
-		 int org.apache.http.io.SessionInputBuffer.read() 
+		int org.apache.http.io.SessionInputBuffer.read()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.apache.http.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._read33474);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetrics33475;
-		 global::org.apache.http.io.HttpTransportMetrics org.apache.http.io.SessionInputBuffer.getMetrics() 
+		global::org.apache.http.io.HttpTransportMetrics org.apache.http.io.SessionInputBuffer.getMetrics()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.io
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.io.HttpTransportMetrics>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.io.SessionInputBuffer_.staticClass, global::org.apache.http.io.SessionInputBuffer_._getMetrics33475)) as org.apache.http.io.HttpTransportMetrics;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDataAvailable33476;
-		 bool org.apache.http.io.SessionInputBuffer.isDataAvailable(int arg0) 
+		bool org.apache.http.io.SessionInputBuffer.isDataAvailable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

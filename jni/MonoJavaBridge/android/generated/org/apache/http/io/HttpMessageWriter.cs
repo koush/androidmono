@@ -18,7 +18,7 @@ namespace org.apache.http.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _write33467;
-		 void org.apache.http.io.HttpMessageWriter.write(org.apache.http.HttpMessage arg0) 
+		void org.apache.http.io.HttpMessageWriter.write(org.apache.http.HttpMessage arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

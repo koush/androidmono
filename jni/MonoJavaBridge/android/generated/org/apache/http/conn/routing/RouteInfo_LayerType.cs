@@ -12,13 +12,13 @@ namespace org.apache.http.conn.routing
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _values32247;
-		public static global::org.apache.http.conn.routing.RouteInfo_LayerType[] values() 
+		public static global::org.apache.http.conn.routing.RouteInfo_LayerType[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, global::org.apache.http.conn.routing.RouteInfo_LayerType._values32247)) as org.apache.http.conn.routing.RouteInfo_LayerType[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf32248;
-		public static global::org.apache.http.conn.routing.RouteInfo_LayerType valueOf(java.lang.String arg0) 
+		public static global::org.apache.http.conn.routing.RouteInfo_LayerType valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_LayerType.staticClass, global::org.apache.http.conn.routing.RouteInfo_LayerType._valueOf32248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.RouteInfo_LayerType;

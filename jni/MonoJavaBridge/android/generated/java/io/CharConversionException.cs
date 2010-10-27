@@ -12,14 +12,14 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CharConversionException18881;
-		public CharConversionException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CharConversionException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.CharConversionException.staticClass, global::java.io.CharConversionException._CharConversionException18881);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CharConversionException18882;
-		public CharConversionException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CharConversionException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.CharConversionException.staticClass, global::java.io.CharConversionException._CharConversionException18882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

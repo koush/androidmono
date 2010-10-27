@@ -12,14 +12,14 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ShortBufferException28733;
-		public ShortBufferException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ShortBufferException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ShortBufferException.staticClass, global::javax.crypto.ShortBufferException._ShortBufferException28733);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ShortBufferException28734;
-		public ShortBufferException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ShortBufferException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ShortBufferException.staticClass, global::javax.crypto.ShortBufferException._ShortBufferException28734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

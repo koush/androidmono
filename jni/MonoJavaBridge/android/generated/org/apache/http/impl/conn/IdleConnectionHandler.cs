@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _add33047;
-		public virtual void add(org.apache.http.HttpConnection arg0, long arg1, java.util.concurrent.TimeUnit arg2) 
+		public virtual void add(org.apache.http.HttpConnection arg0, long arg1, java.util.concurrent.TimeUnit arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._add33047, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _remove33048;
-		public virtual bool remove(org.apache.http.HttpConnection arg0) 
+		public virtual bool remove(org.apache.http.HttpConnection arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.impl.conn
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._remove33048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAll33049;
-		public virtual void removeAll() 
+		public virtual void removeAll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.impl.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._removeAll33049);
 		}
 		internal static global::MonoJavaBridge.MethodId _closeIdleConnections33050;
-		public virtual void closeIdleConnections(long arg0) 
+		public virtual void closeIdleConnections(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.apache.http.impl.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._closeIdleConnections33050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _closeExpiredConnections33051;
-		public virtual void closeExpiredConnections() 
+		public virtual void closeExpiredConnections()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace org.apache.http.impl.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._closeExpiredConnections33051);
 		}
 		internal static global::MonoJavaBridge.MethodId _IdleConnectionHandler33052;
-		public IdleConnectionHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IdleConnectionHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.IdleConnectionHandler.staticClass, global::org.apache.http.impl.conn.IdleConnectionHandler._IdleConnectionHandler33052);

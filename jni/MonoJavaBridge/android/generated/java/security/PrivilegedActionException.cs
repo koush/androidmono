@@ -19,7 +19,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCause23247;
-		public override global::java.lang.Throwable getCause() 
+		public override global::java.lang.Throwable getCause()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._getCause23247)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23248;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getException23249;
-		public virtual global::java.lang.Exception getException() 
+		public virtual global::java.lang.Exception getException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._getException23249)) as java.lang.Exception;
 		}
 		internal static global::MonoJavaBridge.MethodId _PrivilegedActionException23250;
-		public PrivilegedActionException(java.lang.Exception arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PrivilegedActionException(java.lang.Exception arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.PrivilegedActionException.staticClass, global::java.security.PrivilegedActionException._PrivilegedActionException23250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

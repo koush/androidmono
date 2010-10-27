@@ -18,7 +18,7 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _execute27260;
-		 void java.util.concurrent.Executor.execute(java.lang.Runnable arg0) 
+		void java.util.concurrent.Executor.execute(java.lang.Runnable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

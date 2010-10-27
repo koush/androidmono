@@ -12,14 +12,14 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _BadPaddingException28488;
-		public BadPaddingException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BadPaddingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._BadPaddingException28488);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BadPaddingException28489;
-		public BadPaddingException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BadPaddingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.BadPaddingException.staticClass, global::javax.crypto.BadPaddingException._BadPaddingException28489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

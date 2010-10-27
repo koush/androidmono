@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel16056;
-		public virtual void cancel() 
+		public virtual void cancel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel16056);
 		}
 		internal static global::MonoJavaBridge.MethodId _confirm16057;
-		public virtual void confirm() 
+		public virtual void confirm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm16057);
 		}
 		internal static global::MonoJavaBridge.MethodId _wakeUp16058;
-		protected virtual void wakeUp() 
+		protected virtual void wakeUp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

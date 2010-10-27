@@ -12,14 +12,14 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ProtocolException21656;
-		public ProtocolException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProtocolException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProtocolException.staticClass, global::java.net.ProtocolException._ProtocolException21656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProtocolException21657;
-		public ProtocolException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProtocolException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProtocolException.staticClass, global::java.net.ProtocolException._ProtocolException21657);

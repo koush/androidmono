@@ -12,14 +12,14 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidPropertiesFormatException26329;
-		public InvalidPropertiesFormatException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidPropertiesFormatException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InvalidPropertiesFormatException.staticClass, global::java.util.InvalidPropertiesFormatException._InvalidPropertiesFormatException26329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidPropertiesFormatException26330;
-		public InvalidPropertiesFormatException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidPropertiesFormatException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.InvalidPropertiesFormatException.staticClass, global::java.util.InvalidPropertiesFormatException._InvalidPropertiesFormatException26330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

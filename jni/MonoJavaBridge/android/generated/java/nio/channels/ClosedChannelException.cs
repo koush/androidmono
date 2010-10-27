@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ClosedChannelException22417;
-		public ClosedChannelException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClosedChannelException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ClosedChannelException.staticClass, global::java.nio.channels.ClosedChannelException._ClosedChannelException22417);

@@ -21,7 +21,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals23238;
-		 bool java.security.Principal.equals(java.lang.Object arg0) 
+		bool java.security.Principal.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.security
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._equals23238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23239;
-		 global::java.lang.String java.security.Principal.toString() 
+		global::java.lang.String java.security.Principal.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._toString23239)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23240;
-		 int java.security.Principal.hashCode() 
+		int java.security.Principal.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.security
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.Principal_.staticClass, global::java.security.Principal_._hashCode23240);
 		}
 		internal static global::MonoJavaBridge.MethodId _getName23241;
-		 global::java.lang.String java.security.Principal.getName() 
+		global::java.lang.String java.security.Principal.getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

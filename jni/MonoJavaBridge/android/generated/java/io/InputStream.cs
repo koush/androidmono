@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close19094;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._close19094);
 		}
 		internal static global::MonoJavaBridge.MethodId _mark19095;
-		public virtual void mark(int arg0) 
+		public virtual void mark(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._mark19095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _reset19096;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._reset19096);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19097;
-		public virtual int read(byte[] arg0, int arg1, int arg2) 
+		public virtual int read(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._read19097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read19098;
-		public virtual int read(byte[] arg0) 
+		public virtual int read(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace java.io
 		internal static global::MonoJavaBridge.MethodId _read19099;
 		public abstract int read();
 		internal static global::MonoJavaBridge.MethodId _skip19100;
-		public virtual long skip(long arg0) 
+		public virtual long skip(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.io
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._skip19100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _available19101;
-		public virtual int available() 
+		public virtual int available()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._available19101);
 		}
 		internal static global::MonoJavaBridge.MethodId _markSupported19102;
-		public virtual bool markSupported() 
+		public virtual bool markSupported()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace java.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.InputStream.staticClass, global::java.io.InputStream._markSupported19102);
 		}
 		internal static global::MonoJavaBridge.MethodId _InputStream19103;
-		public InputStream()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InputStream() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.InputStream.staticClass, global::java.io.InputStream._InputStream19103);
@@ -121,7 +121,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _read19104;
-		public override int read() 
+		public override int read()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

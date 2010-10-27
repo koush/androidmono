@@ -19,7 +19,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExponentSize28766;
-		public virtual int getExponentSize() 
+		public virtual int getExponentSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrimeSize28767;
-		public virtual int getPrimeSize() 
+		public virtual int getPrimeSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace javax.crypto.spec
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.DHGenParameterSpec.staticClass, global::javax.crypto.spec.DHGenParameterSpec._getPrimeSize28767);
 		}
 		internal static global::MonoJavaBridge.MethodId _DHGenParameterSpec28768;
-		public DHGenParameterSpec(int arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DHGenParameterSpec(int arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.DHGenParameterSpec.staticClass, global::javax.crypto.spec.DHGenParameterSpec._DHGenParameterSpec28768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

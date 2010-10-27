@@ -12,28 +12,28 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthenticatorException1376;
-		public AuthenticatorException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthenticatorException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1376);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthenticatorException1377;
-		public AuthenticatorException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthenticatorException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1377, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthenticatorException1378;
-		public AuthenticatorException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthenticatorException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthenticatorException1379;
-		public AuthenticatorException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthenticatorException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.AuthenticatorException.staticClass, global::android.accounts.AuthenticatorException._AuthenticatorException1379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -29,7 +29,7 @@ namespace android.location
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onGpsStatusChanged6875;
-			 void android.location.GpsStatus.Listener.onGpsStatusChanged(int arg0) 
+			void android.location.GpsStatus.Listener.onGpsStatusChanged(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.location
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _ListenerDelegateWrapper6876;
-			public ListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public ListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.GpsStatus.ListenerDelegateWrapper.staticClass, global::android.location.GpsStatus.ListenerDelegateWrapper._ListenerDelegateWrapper6876);
@@ -104,7 +104,7 @@ namespace android.location
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onNmeaReceived6877;
-			 void android.location.GpsStatus.NmeaListener.onNmeaReceived(long arg0, java.lang.String arg1) 
+			void android.location.GpsStatus.NmeaListener.onNmeaReceived(long arg0, java.lang.String arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace android.location
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _NmeaListenerDelegateWrapper6878;
-			public NmeaListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public NmeaListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.location.GpsStatus.NmeaListenerDelegateWrapper.staticClass, global::android.location.GpsStatus.NmeaListenerDelegateWrapper._NmeaListenerDelegateWrapper6878);
@@ -169,7 +169,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeToFirstFix6879;
-		public int getTimeToFirstFix() 
+		public int getTimeToFirstFix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -185,7 +185,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSatellites6880;
-		public global::java.lang.Iterable getSatellites() 
+		public global::java.lang.Iterable getSatellites()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -201,7 +201,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxSatellites6881;
-		public int getMaxSatellites() 
+		public int getMaxSatellites()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

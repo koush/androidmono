@@ -12,14 +12,14 @@ namespace java.util.jar
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _JarException27862;
-		public JarException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarException.staticClass, global::java.util.jar.JarException._JarException27862);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _JarException27863;
-		public JarException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarException.staticClass, global::java.util.jar.JarException._JarException27863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace java.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25263;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.text
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._equals25263, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25264;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._hashCode25264);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone25265;
-		public override global::java.lang.Object clone() 
+		public override global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._clone25265)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _format25266;
-		public override global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
+		public override global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._format25266, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _format25267;
-		public override global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
+		public override global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,19 +57,19 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._format25267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextDouble25268;
-		public static double nextDouble(double arg0, bool arg1) 
+		public static double nextDouble(double arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._nextDouble25268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextDouble25269;
-		public static double nextDouble(double arg0) 
+		public static double nextDouble(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._nextDouble25269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse25270;
-		public override global::java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1) 
+		public override global::java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +85,7 @@ namespace java.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormats25271;
-		public virtual global::java.lang.Object[] getFormats() 
+		public virtual global::java.lang.Object[] getFormats()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._getFormats25271)) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _applyPattern25272;
-		public virtual void applyPattern(java.lang.String arg0) 
+		public virtual void applyPattern(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,7 +103,7 @@ namespace java.text
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._applyPattern25272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toPattern25273;
-		public virtual global::java.lang.String toPattern() 
+		public virtual global::java.lang.String toPattern()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,7 +112,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._toPattern25273)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setChoices25274;
-		public virtual void setChoices(double[] arg0, java.lang.String[] arg1) 
+		public virtual void setChoices(double[] arg0, java.lang.String[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,7 +128,7 @@ namespace java.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLimits25275;
-		public virtual double[] getLimits() 
+		public virtual double[] getLimits()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -137,20 +137,20 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<double>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._getLimits25275)) as double[];
 		}
 		internal static global::MonoJavaBridge.MethodId _previousDouble25276;
-		public static double previousDouble(double arg0) 
+		public static double previousDouble(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._previousDouble25276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ChoiceFormat25277;
-		public ChoiceFormat(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ChoiceFormat(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._ChoiceFormat25277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ChoiceFormat25278;
-		public ChoiceFormat(double[] arg0, java.lang.String[] arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ChoiceFormat(double[] arg0, java.lang.String[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.ChoiceFormat.staticClass, global::java.text.ChoiceFormat._ChoiceFormat25278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

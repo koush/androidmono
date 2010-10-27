@@ -21,7 +21,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close30285;
-		 void javax.sql.PooledConnection.close() 
+		void javax.sql.PooledConnection.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.PooledConnection_.staticClass, global::javax.sql.PooledConnection_._close30285);
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection30286;
-		 global::java.sql.Connection javax.sql.PooledConnection.getConnection() 
+		global::java.sql.Connection javax.sql.PooledConnection.getConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Connection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.PooledConnection_.staticClass, global::javax.sql.PooledConnection_._getConnection30286)) as java.sql.Connection;
 		}
 		internal static global::MonoJavaBridge.MethodId _addConnectionEventListener30287;
-		 void javax.sql.PooledConnection.addConnectionEventListener(javax.sql.ConnectionEventListener arg0) 
+		void javax.sql.PooledConnection.addConnectionEventListener(javax.sql.ConnectionEventListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.PooledConnection_.staticClass, global::javax.sql.PooledConnection_._addConnectionEventListener30287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeConnectionEventListener30288;
-		 void javax.sql.PooledConnection.removeConnectionEventListener(javax.sql.ConnectionEventListener arg0) 
+		void javax.sql.PooledConnection.removeConnectionEventListener(javax.sql.ConnectionEventListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

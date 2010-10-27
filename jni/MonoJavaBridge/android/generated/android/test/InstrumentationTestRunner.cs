@@ -19,7 +19,7 @@ namespace android.test
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLoader12198;
-		public virtual global::java.lang.ClassLoader getLoader() 
+		public virtual global::java.lang.ClassLoader getLoader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getLoader12198)) as java.lang.ClassLoader;
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate12199;
-		public override void onCreate(android.os.Bundle arg0) 
+		public override void onCreate(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._onCreate12199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart12200;
-		public override void onStart() 
+		public override void onStart()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.test
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAndroidTestRunner12201;
-		protected virtual global::android.test.AndroidTestRunner getAndroidTestRunner() 
+		protected virtual global::android.test.AndroidTestRunner getAndroidTestRunner()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace android.test
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTestSuite12202;
-		public virtual global::junit.framework.TestSuite getTestSuite() 
+		public virtual global::junit.framework.TestSuite getTestSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +85,7 @@ namespace android.test
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllTests12203;
-		public virtual global::junit.framework.TestSuite getAllTests() 
+		public virtual global::junit.framework.TestSuite getAllTests()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._getAllTests12203)) as junit.framework.TestSuite;
 		}
 		internal static global::MonoJavaBridge.MethodId _InstrumentationTestRunner12204;
-		public InstrumentationTestRunner()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InstrumentationTestRunner() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.InstrumentationTestRunner.staticClass, global::android.test.InstrumentationTestRunner._InstrumentationTestRunner12204);

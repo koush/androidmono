@@ -12,14 +12,14 @@ namespace dalvik.system
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AllocationLimitError18582;
-		public AllocationLimitError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AllocationLimitError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.AllocationLimitError.staticClass, global::dalvik.system.AllocationLimitError._AllocationLimitError18582);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AllocationLimitError18583;
-		public AllocationLimitError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AllocationLimitError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.AllocationLimitError.staticClass, global::dalvik.system.AllocationLimitError._AllocationLimitError18583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

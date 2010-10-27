@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _subSequence13014;
-		public global::java.lang.CharSequence subSequence(int arg0, int arg1) 
+		public global::java.lang.CharSequence subSequence(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.text
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.SpannedString.staticClass, global::android.text.SpannedString._subSequence13014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf13015;
-		public static global::android.text.SpannedString valueOf(java.lang.CharSequence arg0) 
+		public static global::android.text.SpannedString valueOf(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.text.SpannedString>(@__env.CallStaticObjectMethod(android.text.SpannedString.staticClass, global::android.text.SpannedString._valueOf13015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.SpannedString;
@@ -31,7 +31,7 @@ namespace android.text
 			return valueOf((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _SpannedString13016;
-		public SpannedString(java.lang.CharSequence arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SpannedString(java.lang.CharSequence arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.SpannedString.staticClass, global::android.text.SpannedString._SpannedString13016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -23,7 +23,7 @@ namespace javax.xml.transform.sax
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHandler31064;
-		public virtual global::org.xml.sax.ContentHandler getHandler() 
+		public virtual global::org.xml.sax.ContentHandler getHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace javax.xml.transform.sax
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId31065;
-		public virtual global::java.lang.String getSystemId() 
+		public virtual global::java.lang.String getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXResult.staticClass, global::javax.xml.transform.sax.SAXResult._getSystemId31065)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId31066;
-		public virtual void setSystemId(java.lang.String arg0) 
+		public virtual void setSystemId(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace javax.xml.transform.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXResult.staticClass, global::javax.xml.transform.sax.SAXResult._setSystemId31066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setHandler31067;
-		public virtual void setHandler(org.xml.sax.ContentHandler arg0) 
+		public virtual void setHandler(org.xml.sax.ContentHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace javax.xml.transform.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXResult.staticClass, global::javax.xml.transform.sax.SAXResult._setHandler31067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLexicalHandler31068;
-		public virtual void setLexicalHandler(org.xml.sax.ext.LexicalHandler arg0) 
+		public virtual void setLexicalHandler(org.xml.sax.ext.LexicalHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,7 +90,7 @@ namespace javax.xml.transform.sax
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLexicalHandler31069;
-		public virtual global::org.xml.sax.ext.LexicalHandler getLexicalHandler() 
+		public virtual global::org.xml.sax.ext.LexicalHandler getLexicalHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,14 +99,14 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ext.LexicalHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXResult.staticClass, global::javax.xml.transform.sax.SAXResult._getLexicalHandler31069)) as org.xml.sax.ext.LexicalHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _SAXResult31070;
-		public SAXResult(org.xml.sax.ContentHandler arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SAXResult(org.xml.sax.ContentHandler arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXResult.staticClass, global::javax.xml.transform.sax.SAXResult._SAXResult31070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SAXResult31071;
-		public SAXResult()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SAXResult() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXResult.staticClass, global::javax.xml.transform.sax.SAXResult._SAXResult31071);

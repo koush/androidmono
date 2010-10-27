@@ -19,79 +19,86 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getElapsedCpuTime10147;
-		public static long getElapsedCpuTime() 
+		public static long getElapsedCpuTime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.os.Process.staticClass, global::android.os.Process._getElapsedCpuTime10147);
 		}
 		internal static global::MonoJavaBridge.MethodId _myPid10148;
-		public static int myPid() 
+		public static int myPid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Process.staticClass, global::android.os.Process._myPid10148);
 		}
 		internal static global::MonoJavaBridge.MethodId _myTid10149;
-		public static int myTid() 
+		public static int myTid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Process.staticClass, global::android.os.Process._myTid10149);
 		}
 		internal static global::MonoJavaBridge.MethodId _myUid10150;
-		public static int myUid() 
+		public static int myUid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Process.staticClass, global::android.os.Process._myUid10150);
 		}
 		internal static global::MonoJavaBridge.MethodId _getUidForName10151;
-		public static int getUidForName(java.lang.String arg0) 
+		public static int getUidForName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Process.staticClass, global::android.os.Process._getUidForName10151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getGidForName10152;
-		public static int getGidForName(java.lang.String arg0) 
+		public static int getGidForName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Process.staticClass, global::android.os.Process._getGidForName10152, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setThreadPriority10153;
-		public static void setThreadPriority(int arg0, int arg1) 
+		public static void setThreadPriority(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Process.staticClass, global::android.os.Process._setThreadPriority10153, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public static int ThreadPriority
+		{
+			set
+			{
+				setThreadPriority(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setThreadPriority10154;
-		public static void setThreadPriority(int arg0) 
+		public static void setThreadPriority(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Process.staticClass, global::android.os.Process._setThreadPriority10154, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getThreadPriority10155;
-		public static int getThreadPriority(int arg0) 
+		public static int getThreadPriority(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.os.Process.staticClass, global::android.os.Process._getThreadPriority10155, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsProcesses10156;
-		public static bool supportsProcesses() 
+		public static bool supportsProcesses()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.os.Process.staticClass, global::android.os.Process._supportsProcesses10156);
 		}
 		internal static global::MonoJavaBridge.MethodId _killProcess10157;
-		public static void killProcess(int arg0) 
+		public static void killProcess(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Process.staticClass, global::android.os.Process._killProcess10157, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _sendSignal10158;
-		public static void sendSignal(int arg0, int arg1) 
+		public static void sendSignal(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.os.Process.staticClass, global::android.os.Process._sendSignal10158, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _Process10159;
-		public Process()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Process() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.Process.staticClass, global::android.os.Process._Process10159);

@@ -12,19 +12,19 @@ namespace org.xmlpull.v1
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance35370;
-		public static global::org.xmlpull.v1.XmlPullParserFactory newInstance(java.lang.String arg0, java.lang.Class arg1) 
+		public static global::org.xmlpull.v1.XmlPullParserFactory newInstance(java.lang.String arg0, java.lang.Class arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._newInstance35370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.xmlpull.v1.XmlPullParserFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance35371;
-		public static global::org.xmlpull.v1.XmlPullParserFactory newInstance() 
+		public static global::org.xmlpull.v1.XmlPullParserFactory newInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._newInstance35371)) as org.xmlpull.v1.XmlPullParserFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature35372;
-		public virtual void setFeature(java.lang.String arg0, bool arg1) 
+		public virtual void setFeature(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace org.xmlpull.v1
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._setFeature35372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature35373;
-		public virtual bool getFeature(java.lang.String arg0) 
+		public virtual bool getFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace org.xmlpull.v1
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._getFeature35373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _newPullParser35374;
-		public virtual global::org.xmlpull.v1.XmlPullParser newPullParser() 
+		public virtual global::org.xmlpull.v1.XmlPullParser newPullParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.xmlpull.v1
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xmlpull.v1.XmlPullParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._newPullParser35374)) as org.xmlpull.v1.XmlPullParser;
 		}
 		internal static global::MonoJavaBridge.MethodId _newSerializer35375;
-		public virtual global::org.xmlpull.v1.XmlSerializer newSerializer() 
+		public virtual global::org.xmlpull.v1.XmlSerializer newSerializer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.xmlpull.v1
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xmlpull.v1.XmlSerializer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._newSerializer35375)) as org.xmlpull.v1.XmlSerializer;
 		}
 		internal static global::MonoJavaBridge.MethodId _isNamespaceAware35376;
-		public virtual bool isNamespaceAware() 
+		public virtual bool isNamespaceAware()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.xmlpull.v1
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._isNamespaceAware35376);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidating35377;
-		public virtual bool isValidating() 
+		public virtual bool isValidating()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,8 +77,15 @@ namespace org.xmlpull.v1
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._isValidating35377);
 		}
+		public new bool NamespaceAware
+		{
+			set
+			{
+				setNamespaceAware(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setNamespaceAware35378;
-		public virtual void setNamespaceAware(bool arg0) 
+		public virtual void setNamespaceAware(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,8 +93,15 @@ namespace org.xmlpull.v1
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._setNamespaceAware35378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool Validating
+		{
+			set
+			{
+				setValidating(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setValidating35379;
-		public virtual void setValidating(bool arg0) 
+		public virtual void setValidating(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -96,7 +110,7 @@ namespace org.xmlpull.v1
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._setValidating35379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _XmlPullParserFactory35380;
-		protected XmlPullParserFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected XmlPullParserFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.XmlPullParserFactory.staticClass, global::org.xmlpull.v1.XmlPullParserFactory._XmlPullParserFactory35380);

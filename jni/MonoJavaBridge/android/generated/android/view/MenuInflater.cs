@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate14344;
-		public virtual void inflate(int arg0, android.view.Menu arg1) 
+		public virtual void inflate(int arg0, android.view.Menu arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.view
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.MenuInflater.staticClass, global::android.view.MenuInflater._inflate14344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _MenuInflater14345;
-		public MenuInflater(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MenuInflater(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.MenuInflater.staticClass, global::android.view.MenuInflater._MenuInflater14345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

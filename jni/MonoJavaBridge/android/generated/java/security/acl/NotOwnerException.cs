@@ -12,7 +12,7 @@ namespace java.security.acl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NotOwnerException23460;
-		public NotOwnerException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NotOwnerException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.acl.NotOwnerException.staticClass, global::java.security.acl.NotOwnerException._NotOwnerException23460);

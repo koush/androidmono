@@ -23,7 +23,7 @@ namespace android
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _permission0;
-			public permission()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public permission() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission.staticClass, global::android.Manifest.permission._permission0);
@@ -846,7 +846,7 @@ namespace android
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _permission_group115;
-			public permission_group()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public permission_group() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.permission_group.staticClass, global::android.Manifest.permission_group._permission_group115);
@@ -937,7 +937,7 @@ namespace android
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _Manifest127;
-		public Manifest()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Manifest() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.Manifest.staticClass, global::android.Manifest._Manifest127);

@@ -14,7 +14,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _compareTo25291;
 		public abstract int compareTo(java.text.CollationKey arg0);
 		internal static global::MonoJavaBridge.MethodId _compareTo25292;
-		public virtual int compareTo(java.lang.Object arg0) 
+		public virtual int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _toByteArray25293;
 		public abstract byte[] toByteArray();
 		internal static global::MonoJavaBridge.MethodId _getSourceString25294;
-		public virtual global::java.lang.String getSourceString() 
+		public virtual global::java.lang.String getSourceString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.CollationKey.staticClass, global::java.text.CollationKey._getSourceString25294)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _CollationKey25295;
-		protected CollationKey(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected CollationKey(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.CollationKey.staticClass, global::java.text.CollationKey._CollationKey25295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -64,7 +64,7 @@ namespace java.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo25296;
-		public override int compareTo(java.text.CollationKey arg0) 
+		public override int compareTo(java.text.CollationKey arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.CollationKey_.staticClass, global::java.text.CollationKey_._compareTo25296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toByteArray25297;
-		public override byte[] toByteArray() 
+		public override byte[] toByteArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

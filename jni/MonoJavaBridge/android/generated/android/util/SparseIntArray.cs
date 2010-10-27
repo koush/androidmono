@@ -12,7 +12,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get13864;
-		public virtual int get(int arg0) 
+		public virtual int get(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._get13864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _get13865;
-		public virtual int get(int arg0, int arg1) 
+		public virtual int get(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._get13865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _put13866;
-		public virtual void put(int arg0, int arg1) 
+		public virtual void put(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._put13866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _append13867;
-		public virtual void append(int arg0, int arg1) 
+		public virtual void append(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._append13867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _clear13868;
-		public virtual void clear() 
+		public virtual void clear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._clear13868);
 		}
 		internal static global::MonoJavaBridge.MethodId _size13869;
-		public virtual int size() 
+		public virtual int size()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._size13869);
 		}
 		internal static global::MonoJavaBridge.MethodId _delete13870;
-		public virtual void delete(int arg0) 
+		public virtual void delete(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._delete13870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _keyAt13871;
-		public virtual int keyAt(int arg0) 
+		public virtual int keyAt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._keyAt13871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _valueAt13872;
-		public virtual int valueAt(int arg0) 
+		public virtual int valueAt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._valueAt13872, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOfKey13873;
-		public virtual int indexOfKey(int arg0) 
+		public virtual int indexOfKey(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._indexOfKey13873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _indexOfValue13874;
-		public virtual int indexOfValue(int arg0) 
+		public virtual int indexOfValue(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace android.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._indexOfValue13874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAt13875;
-		public virtual void removeAt(int arg0) 
+		public virtual void removeAt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,14 +120,14 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._removeAt13875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SparseIntArray13876;
-		public SparseIntArray(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SparseIntArray(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._SparseIntArray13876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SparseIntArray13877;
-		public SparseIntArray()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SparseIntArray() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.SparseIntArray.staticClass, global::android.util.SparseIntArray._SparseIntArray13877);

@@ -12,7 +12,7 @@ namespace android.view.accessibility
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString15506;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getClassName15507;
-		public global::java.lang.CharSequence getClassName() 
+		public global::java.lang.CharSequence getClassName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageName15508;
-		public global::java.lang.CharSequence getPackageName() 
+		public global::java.lang.CharSequence getPackageName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getText15509;
-		public global::java.util.List getText() 
+		public global::java.util.List getText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace android.view.accessibility
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getText15509)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _isChecked15510;
-		public bool isChecked() 
+		public bool isChecked()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,8 +85,15 @@ namespace android.view.accessibility
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isChecked15510);
 		}
+		public new bool Checked
+		{
+			set
+			{
+				setChecked(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setChecked15511;
-		public void setChecked(bool arg0) 
+		public void setChecked(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +102,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setChecked15511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isEnabled15512;
-		public bool isEnabled() 
+		public bool isEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,8 +110,15 @@ namespace android.view.accessibility
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isEnabled15512);
 		}
+		public new bool Enabled
+		{
+			set
+			{
+				setEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setEnabled15513;
-		public void setEnabled(bool arg0) 
+		public void setEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +127,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setEnabled15513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isPassword15514;
-		public bool isPassword() 
+		public bool isPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -121,8 +135,15 @@ namespace android.view.accessibility
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isPassword15514);
 		}
+		public new bool Password
+		{
+			set
+			{
+				setPassword(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setPassword15515;
-		public void setPassword(bool arg0) 
+		public void setPassword(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,8 +151,15 @@ namespace android.view.accessibility
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setPassword15515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool FullScreen
+		{
+			set
+			{
+				setFullScreen(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setFullScreen15516;
-		public void setFullScreen(bool arg0) 
+		public void setFullScreen(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -140,7 +168,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setFullScreen15516, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isFullScreen15517;
-		public bool isFullScreen() 
+		public bool isFullScreen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -160,7 +188,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEventType15518;
-		public int getEventType() 
+		public int getEventType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -169,7 +197,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getEventType15518);
 		}
 		internal static global::MonoJavaBridge.MethodId _setEventType15519;
-		public void setEventType(int arg0) 
+		public void setEventType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -189,7 +217,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getItemCount15520;
-		public int getItemCount() 
+		public int getItemCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -198,7 +226,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getItemCount15520);
 		}
 		internal static global::MonoJavaBridge.MethodId _setItemCount15521;
-		public void setItemCount(int arg0) 
+		public void setItemCount(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -218,7 +246,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentItemIndex15522;
-		public int getCurrentItemIndex() 
+		public int getCurrentItemIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -227,7 +255,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getCurrentItemIndex15522);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCurrentItemIndex15523;
-		public void setCurrentItemIndex(int arg0) 
+		public void setCurrentItemIndex(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -247,7 +275,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFromIndex15524;
-		public int getFromIndex() 
+		public int getFromIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -256,7 +284,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getFromIndex15524);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFromIndex15525;
-		public void setFromIndex(int arg0) 
+		public void setFromIndex(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -276,7 +304,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAddedCount15526;
-		public int getAddedCount() 
+		public int getAddedCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -285,7 +313,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getAddedCount15526);
 		}
 		internal static global::MonoJavaBridge.MethodId _setAddedCount15527;
-		public void setAddedCount(int arg0) 
+		public void setAddedCount(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -305,7 +333,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemovedCount15528;
-		public int getRemovedCount() 
+		public int getRemovedCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -314,7 +342,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getRemovedCount15528);
 		}
 		internal static global::MonoJavaBridge.MethodId _setRemovedCount15529;
-		public void setRemovedCount(int arg0) 
+		public void setRemovedCount(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -334,7 +362,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEventTime15530;
-		public long getEventTime() 
+		public long getEventTime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -343,7 +371,7 @@ namespace android.view.accessibility
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getEventTime15530);
 		}
 		internal static global::MonoJavaBridge.MethodId _setEventTime15531;
-		public void setEventTime(long arg0) 
+		public void setEventTime(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -352,7 +380,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setEventTime15531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setClassName15532;
-		public void setClassName(java.lang.CharSequence arg0) 
+		public void setClassName(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -365,7 +393,7 @@ namespace android.view.accessibility
 			setClassName((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setPackageName15533;
-		public void setPackageName(java.lang.CharSequence arg0) 
+		public void setPackageName(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -389,7 +417,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBeforeText15534;
-		public global::java.lang.CharSequence getBeforeText() 
+		public global::java.lang.CharSequence getBeforeText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -398,7 +426,7 @@ namespace android.view.accessibility
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getBeforeText15534)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _setBeforeText15535;
-		public void setBeforeText(java.lang.CharSequence arg0) 
+		public void setBeforeText(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -422,7 +450,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentDescription15536;
-		public global::java.lang.CharSequence getContentDescription() 
+		public global::java.lang.CharSequence getContentDescription()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -431,7 +459,7 @@ namespace android.view.accessibility
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getContentDescription15536)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _setContentDescription15537;
-		public void setContentDescription(java.lang.CharSequence arg0) 
+		public void setContentDescription(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -455,7 +483,7 @@ namespace android.view.accessibility
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParcelableData15538;
-		public global::android.os.Parcelable getParcelableData() 
+		public global::android.os.Parcelable getParcelableData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -464,7 +492,7 @@ namespace android.view.accessibility
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getParcelableData15538)) as android.os.Parcelable;
 		}
 		internal static global::MonoJavaBridge.MethodId _setParcelableData15539;
-		public void setParcelableData(android.os.Parcelable arg0) 
+		public void setParcelableData(android.os.Parcelable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -473,19 +501,19 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setParcelableData15539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain15540;
-		public static global::android.view.accessibility.AccessibilityEvent obtain() 
+		public static global::android.view.accessibility.AccessibilityEvent obtain()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.accessibility.AccessibilityEvent>(@__env.CallStaticObjectMethod(android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._obtain15540)) as android.view.accessibility.AccessibilityEvent;
 		}
 		internal static global::MonoJavaBridge.MethodId _obtain15541;
-		public static global::android.view.accessibility.AccessibilityEvent obtain(int arg0) 
+		public static global::android.view.accessibility.AccessibilityEvent obtain(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.accessibility.AccessibilityEvent>(@__env.CallStaticObjectMethod(android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._obtain15541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.accessibility.AccessibilityEvent;
 		}
 		internal static global::MonoJavaBridge.MethodId _recycle15542;
-		public void recycle() 
+		public void recycle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -494,7 +522,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._recycle15542);
 		}
 		internal static global::MonoJavaBridge.MethodId _initFromParcel15543;
-		public void initFromParcel(android.os.Parcel arg0) 
+		public void initFromParcel(android.os.Parcel arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -503,7 +531,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._initFromParcel15543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel15544;
-		public void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -512,7 +540,7 @@ namespace android.view.accessibility
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._writeToParcel15544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents15545;
-		public int describeContents() 
+		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

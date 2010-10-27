@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AsynchronousCloseException22398;
-		public AsynchronousCloseException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AsynchronousCloseException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.AsynchronousCloseException.staticClass, global::java.nio.channels.AsynchronousCloseException._AsynchronousCloseException22398);

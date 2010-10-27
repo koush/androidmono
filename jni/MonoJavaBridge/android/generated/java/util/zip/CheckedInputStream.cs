@@ -12,7 +12,7 @@ namespace java.util.zip
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _read28338;
-		public override int read() 
+		public override int read()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.CheckedInputStream.staticClass, global::java.util.zip.CheckedInputStream._read28338);
 		}
 		internal static global::MonoJavaBridge.MethodId _read28339;
-		public override int read(byte[] arg0, int arg1, int arg2) 
+		public override int read(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.CheckedInputStream.staticClass, global::java.util.zip.CheckedInputStream._read28339, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _skip28340;
-		public override long skip(long arg0) 
+		public override long skip(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChecksum28341;
-		public virtual global::java.util.zip.Checksum getChecksum() 
+		public virtual global::java.util.zip.Checksum getChecksum()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace java.util.zip
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.zip.Checksum>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.zip.CheckedInputStream.staticClass, global::java.util.zip.CheckedInputStream._getChecksum28341)) as java.util.zip.Checksum;
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckedInputStream28342;
-		public CheckedInputStream(java.io.InputStream arg0, java.util.zip.Checksum arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckedInputStream(java.io.InputStream arg0, java.util.zip.Checksum arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.CheckedInputStream.staticClass, global::java.util.zip.CheckedInputStream._CheckedInputStream28342, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -18,7 +18,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _invoke21083;
-		 global::java.lang.Object java.lang.reflect.InvocationHandler.invoke(java.lang.Object arg0, java.lang.reflect.Method arg1, java.lang.Object[] arg2) 
+		global::java.lang.Object java.lang.reflect.InvocationHandler.invoke(java.lang.Object arg0, java.lang.reflect.Method arg1, java.lang.Object[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

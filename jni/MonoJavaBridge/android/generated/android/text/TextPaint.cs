@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _set13033;
-		public virtual void set(android.text.TextPaint arg0) 
+		public virtual void set(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,21 +21,21 @@ namespace android.text
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.TextPaint.staticClass, global::android.text.TextPaint._set13033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _TextPaint13034;
-		public TextPaint()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TextPaint() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint13034);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _TextPaint13035;
-		public TextPaint(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TextPaint(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint13035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _TextPaint13036;
-		public TextPaint(android.graphics.Paint arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TextPaint(android.graphics.Paint arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.TextPaint.staticClass, global::android.text.TextPaint._TextPaint13036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

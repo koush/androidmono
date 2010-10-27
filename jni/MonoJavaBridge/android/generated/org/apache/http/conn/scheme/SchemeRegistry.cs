@@ -12,7 +12,7 @@ namespace org.apache.http.conn.scheme
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get32310;
-		public global::org.apache.http.conn.scheme.Scheme get(java.lang.String arg0) 
+		public global::org.apache.http.conn.scheme.Scheme get(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._get32310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
 		internal static global::MonoJavaBridge.MethodId _register32311;
-		public global::org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme arg0) 
+		public global::org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._register32311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
 		internal static global::MonoJavaBridge.MethodId _getScheme32312;
-		public global::org.apache.http.conn.scheme.Scheme getScheme(org.apache.http.HttpHost arg0) 
+		public global::org.apache.http.conn.scheme.Scheme getScheme(org.apache.http.HttpHost arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
 		internal static global::MonoJavaBridge.MethodId _getScheme32313;
-		public global::org.apache.http.conn.scheme.Scheme getScheme(java.lang.String arg0) 
+		public global::org.apache.http.conn.scheme.Scheme getScheme(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,8 +47,15 @@ namespace org.apache.http.conn.scheme
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.Scheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getScheme32313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.scheme.Scheme;
 		}
+		public new global::java.util.Map Items
+		{
+			set
+			{
+				setItems(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setItems32314;
-		public void setItems(java.util.Map arg0) 
+		public void setItems(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace org.apache.http.conn.scheme
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._setItems32314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregister32315;
-		public global::org.apache.http.conn.scheme.Scheme unregister(java.lang.String arg0) 
+		public global::org.apache.http.conn.scheme.Scheme unregister(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +80,7 @@ namespace org.apache.http.conn.scheme
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSchemeNames32316;
-		public global::java.util.List getSchemeNames() 
+		public global::java.util.List getSchemeNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +89,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._getSchemeNames32316)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _SchemeRegistry32317;
-		public SchemeRegistry()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SchemeRegistry() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.SchemeRegistry.staticClass, global::org.apache.http.conn.scheme.SchemeRegistry._SchemeRegistry32317);

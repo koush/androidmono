@@ -12,7 +12,7 @@ namespace org.apache.http.impl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdown32684;
-		public override void shutdown() 
+		public override void shutdown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._shutdown32684);
 		}
 		internal static global::MonoJavaBridge.MethodId _close32685;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.impl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._close32685);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen32686;
-		public override bool isOpen() 
+		public override bool isOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.impl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._isOpen32686);
 		}
 		internal static global::MonoJavaBridge.MethodId _bind32687;
-		protected virtual void bind(java.net.Socket arg0, org.apache.http.@params.HttpParams arg1) 
+		protected virtual void bind(java.net.Socket arg0, org.apache.http.@params.HttpParams arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace org.apache.http.impl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalAddress32688;
-		public virtual global::java.net.InetAddress getLocalAddress() 
+		public virtual global::java.net.InetAddress getLocalAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace org.apache.http.impl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalPort32689;
-		public virtual int getLocalPort() 
+		public virtual int getLocalPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace org.apache.http.impl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSocket32690;
-		protected virtual global::java.net.Socket getSocket() 
+		protected virtual global::java.net.Socket getSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -96,7 +96,7 @@ namespace org.apache.http.impl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._getSocket32690)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSocketTimeout32691;
-		public override void setSocketTimeout(int arg0) 
+		public override void setSocketTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace org.apache.http.impl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSocketTimeout32692;
-		public override int getSocketTimeout() 
+		public override int getSocketTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +132,7 @@ namespace org.apache.http.impl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemoteAddress32693;
-		public virtual global::java.net.InetAddress getRemoteAddress() 
+		public virtual global::java.net.InetAddress getRemoteAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -148,7 +148,7 @@ namespace org.apache.http.impl
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemotePort32694;
-		public virtual int getRemotePort() 
+		public virtual int getRemotePort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -157,7 +157,7 @@ namespace org.apache.http.impl
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._getRemotePort32694);
 		}
 		internal static global::MonoJavaBridge.MethodId _assertOpen32695;
-		protected override void assertOpen() 
+		protected override void assertOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -166,7 +166,7 @@ namespace org.apache.http.impl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._assertOpen32695);
 		}
 		internal static global::MonoJavaBridge.MethodId _assertNotOpen32696;
-		protected virtual void assertNotOpen() 
+		protected virtual void assertNotOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -175,7 +175,7 @@ namespace org.apache.http.impl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._assertNotOpen32696);
 		}
 		internal static global::MonoJavaBridge.MethodId _createHttpDataReceiver32697;
-		protected virtual global::org.apache.http.io.SessionInputBuffer createHttpDataReceiver(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2) 
+		protected virtual global::org.apache.http.io.SessionInputBuffer createHttpDataReceiver(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -184,7 +184,7 @@ namespace org.apache.http.impl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.io.SessionInputBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._createHttpDataReceiver32697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.io.SessionInputBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _createHttpDataTransmitter32698;
-		protected virtual global::org.apache.http.io.SessionOutputBuffer createHttpDataTransmitter(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2) 
+		protected virtual global::org.apache.http.io.SessionOutputBuffer createHttpDataTransmitter(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -193,7 +193,7 @@ namespace org.apache.http.impl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.io.SessionOutputBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._createHttpDataTransmitter32698, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.io.SessionOutputBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketHttpServerConnection32699;
-		public SocketHttpServerConnection()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketHttpServerConnection() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.SocketHttpServerConnection.staticClass, global::org.apache.http.impl.SocketHttpServerConnection._SocketHttpServerConnection32699);

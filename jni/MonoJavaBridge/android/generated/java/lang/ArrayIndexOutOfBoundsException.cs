@@ -12,21 +12,21 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ArrayIndexOutOfBoundsException19712;
-		public ArrayIndexOutOfBoundsException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ArrayIndexOutOfBoundsException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayIndexOutOfBoundsException.staticClass, global::java.lang.ArrayIndexOutOfBoundsException._ArrayIndexOutOfBoundsException19712);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ArrayIndexOutOfBoundsException19713;
-		public ArrayIndexOutOfBoundsException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ArrayIndexOutOfBoundsException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayIndexOutOfBoundsException.staticClass, global::java.lang.ArrayIndexOutOfBoundsException._ArrayIndexOutOfBoundsException19713, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ArrayIndexOutOfBoundsException19714;
-		public ArrayIndexOutOfBoundsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ArrayIndexOutOfBoundsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ArrayIndexOutOfBoundsException.staticClass, global::java.lang.ArrayIndexOutOfBoundsException._ArrayIndexOutOfBoundsException19714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

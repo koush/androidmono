@@ -23,7 +23,7 @@ namespace org.xml.sax.ext
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoding35142;
-		public virtual global::java.lang.String getEncoding() 
+		public virtual global::java.lang.String getEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.xml.sax.ext
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._getEncoding35142)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEncoding35143;
-		public virtual void setEncoding(java.lang.String arg0) 
+		public virtual void setEncoding(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace org.xml.sax.ext
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getXMLVersion35144;
-		public virtual global::java.lang.String getXMLVersion() 
+		public virtual global::java.lang.String getXMLVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace org.xml.sax.ext
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._getXMLVersion35144)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setXMLVersion35145;
-		public virtual void setXMLVersion(java.lang.String arg0) 
+		public virtual void setXMLVersion(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,14 +70,14 @@ namespace org.xml.sax.ext
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._setXMLVersion35145, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Locator2Impl35146;
-		public Locator2Impl()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Locator2Impl() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._Locator2Impl35146);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Locator2Impl35147;
-		public Locator2Impl(org.xml.sax.Locator arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Locator2Impl(org.xml.sax.Locator arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.ext.Locator2Impl.staticClass, global::org.xml.sax.ext.Locator2Impl._Locator2Impl35147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

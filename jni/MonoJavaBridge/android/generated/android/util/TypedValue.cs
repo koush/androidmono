@@ -12,7 +12,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString13895;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat13896;
-		public virtual float getFloat() 
+		public virtual float getFloat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,8 +36,15 @@ namespace android.util
 			else
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFloat13896);
 		}
+		public new global::android.util.TypedValue To
+		{
+			set
+			{
+				setTo(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setTo13897;
-		public virtual void setTo(android.util.TypedValue arg0) 
+		public virtual void setTo(android.util.TypedValue arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +53,7 @@ namespace android.util
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._setTo13897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDimension13898;
-		public virtual float getDimension(android.util.DisplayMetrics arg0) 
+		public virtual float getDimension(android.util.DisplayMetrics arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +62,7 @@ namespace android.util
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getDimension13898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFraction13899;
-		public virtual float getFraction(float arg0, float arg1) 
+		public virtual float getFraction(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,49 +71,49 @@ namespace android.util
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFraction13899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToFloat13900;
-		public static float complexToFloat(int arg0) 
+		public static float complexToFloat(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToFloat13900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimension13901;
-		public static float complexToDimension(int arg0, android.util.DisplayMetrics arg1) 
+		public static float complexToDimension(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimension13901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimensionPixelOffset13902;
-		public static int complexToDimensionPixelOffset(int arg0, android.util.DisplayMetrics arg1) 
+		public static int complexToDimensionPixelOffset(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimensionPixelOffset13902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimensionPixelSize13903;
-		public static int complexToDimensionPixelSize(int arg0, android.util.DisplayMetrics arg1) 
+		public static int complexToDimensionPixelSize(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimensionPixelSize13903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToDimensionNoisy13904;
-		public static float complexToDimensionNoisy(int arg0, android.util.DisplayMetrics arg1) 
+		public static float complexToDimensionNoisy(int arg0, android.util.DisplayMetrics arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToDimensionNoisy13904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _applyDimension13905;
-		public static float applyDimension(int arg0, float arg1, android.util.DisplayMetrics arg2) 
+		public static float applyDimension(int arg0, float arg1, android.util.DisplayMetrics arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._applyDimension13905, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _complexToFraction13906;
-		public static float complexToFraction(int arg0, float arg1, float arg2) 
+		public static float complexToFraction(int arg0, float arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._complexToFraction13906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _coerceToString13907;
-		public virtual global::java.lang.CharSequence coerceToString() 
+		public virtual global::java.lang.CharSequence coerceToString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,13 +122,13 @@ namespace android.util
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._coerceToString13907)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _coerceToString13908;
-		public static global::java.lang.String coerceToString(int arg0, int arg1) 
+		public static global::java.lang.String coerceToString(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.TypedValue.staticClass, global::android.util.TypedValue._coerceToString13908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TypedValue13909;
-		public TypedValue()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TypedValue() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.TypedValue.staticClass, global::android.util.TypedValue._TypedValue13909);

@@ -12,7 +12,7 @@ namespace java.util.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close27933;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._close27933);
 		}
 		internal static global::MonoJavaBridge.MethodId _publish27934;
-		public override void publish(java.util.logging.LogRecord arg0) 
+		public override void publish(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._publish27934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ConsoleHandler27935;
-		public ConsoleHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConsoleHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.ConsoleHandler.staticClass, global::java.util.logging.ConsoleHandler._ConsoleHandler27935);

@@ -12,25 +12,25 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23039;
-		public static global::java.security.KeyPairGenerator getInstance(java.lang.String arg0) 
+		public static global::java.security.KeyPairGenerator getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._getInstance23039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyPairGenerator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23040;
-		public static global::java.security.KeyPairGenerator getInstance(java.lang.String arg0, java.lang.String arg1) 
+		public static global::java.security.KeyPairGenerator getInstance(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._getInstance23040, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.KeyPairGenerator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23041;
-		public static global::java.security.KeyPairGenerator getInstance(java.lang.String arg0, java.security.Provider arg1) 
+		public static global::java.security.KeyPairGenerator getInstance(java.lang.String arg0, java.security.Provider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._getInstance23041, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.KeyPairGenerator;
 		}
 		internal static global::MonoJavaBridge.MethodId _initialize23042;
-		public virtual void initialize(java.security.spec.AlgorithmParameterSpec arg0) 
+		public virtual void initialize(java.security.spec.AlgorithmParameterSpec arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._initialize23042, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _initialize23043;
-		public override void initialize(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1) 
+		public override void initialize(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._initialize23043, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _initialize23044;
-		public virtual void initialize(int arg0) 
+		public virtual void initialize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._initialize23044, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _initialize23045;
-		public override void initialize(int arg0, java.security.SecureRandom arg1) 
+		public override void initialize(int arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._initialize23045, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23046;
-		public virtual global::java.lang.String getAlgorithm() 
+		public virtual global::java.lang.String getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._getAlgorithm23046)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider23047;
-		public virtual global::java.security.Provider getProvider() 
+		public virtual global::java.security.Provider getProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._getProvider23047)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _genKeyPair23048;
-		public virtual global::java.security.KeyPair genKeyPair() 
+		public virtual global::java.security.KeyPair genKeyPair()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyPair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._genKeyPair23048)) as java.security.KeyPair;
 		}
 		internal static global::MonoJavaBridge.MethodId _generateKeyPair23049;
-		public override global::java.security.KeyPair generateKeyPair() 
+		public override global::java.security.KeyPair generateKeyPair()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyPair>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._generateKeyPair23049)) as java.security.KeyPair;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyPairGenerator23050;
-		protected KeyPairGenerator(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected KeyPairGenerator(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyPairGenerator.staticClass, global::java.security.KeyPairGenerator._KeyPairGenerator23050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

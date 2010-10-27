@@ -20,7 +20,7 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _openConnection32082;
-		 void org.apache.http.conn.ClientConnectionOperator.openConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, java.net.InetAddress arg2, org.apache.http.protocol.HttpContext arg3, org.apache.http.@params.HttpParams arg4) 
+		void org.apache.http.conn.ClientConnectionOperator.openConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, java.net.InetAddress arg2, org.apache.http.protocol.HttpContext arg3, org.apache.http.@params.HttpParams arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionOperator_.staticClass, global::org.apache.http.conn.ClientConnectionOperator_._openConnection32082, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _createConnection32083;
-		 global::org.apache.http.conn.OperatedClientConnection org.apache.http.conn.ClientConnectionOperator.createConnection() 
+		global::org.apache.http.conn.OperatedClientConnection org.apache.http.conn.ClientConnectionOperator.createConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http.conn
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.OperatedClientConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionOperator_.staticClass, global::org.apache.http.conn.ClientConnectionOperator_._createConnection32083)) as org.apache.http.conn.OperatedClientConnection;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateSecureConnection32084;
-		 void org.apache.http.conn.ClientConnectionOperator.updateSecureConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, org.apache.http.protocol.HttpContext arg2, org.apache.http.@params.HttpParams arg3) 
+		void org.apache.http.conn.ClientConnectionOperator.updateSecureConnection(org.apache.http.conn.OperatedClientConnection arg0, org.apache.http.HttpHost arg1, org.apache.http.protocol.HttpContext arg2, org.apache.http.@params.HttpParams arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

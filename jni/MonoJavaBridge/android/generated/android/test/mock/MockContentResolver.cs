@@ -12,7 +12,7 @@ namespace android.test.mock
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _addProvider12395;
-		public virtual void addProvider(java.lang.String arg0, android.content.ContentProvider arg1) 
+		public virtual void addProvider(java.lang.String arg0, android.content.ContentProvider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockContentResolver.staticClass, global::android.test.mock.MockContentResolver._addProvider12395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _notifyChange12396;
-		public override void notifyChange(android.net.Uri arg0, android.database.ContentObserver arg1, bool arg2) 
+		public override void notifyChange(android.net.Uri arg0, android.database.ContentObserver arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockContentResolver.staticClass, global::android.test.mock.MockContentResolver._notifyChange12396, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _MockContentResolver12397;
-		public MockContentResolver()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MockContentResolver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockContentResolver.staticClass, global::android.test.mock.MockContentResolver._MockContentResolver12397);

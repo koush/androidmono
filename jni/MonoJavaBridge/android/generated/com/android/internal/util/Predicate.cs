@@ -18,7 +18,7 @@ namespace com.android.@internal.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _apply18336;
-		 bool com.android.@internal.util.Predicate.apply(java.lang.Object arg0) 
+		bool com.android.@internal.util.Predicate.apply(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace android.sax
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentHandler11614;
-		public virtual global::org.xml.sax.ContentHandler getContentHandler() 
+		public virtual global::org.xml.sax.ContentHandler getContentHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,14 +28,14 @@ namespace android.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ContentHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler11614)) as org.xml.sax.ContentHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _RootElement11615;
-		public RootElement(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RootElement(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement11615, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RootElement11616;
-		public RootElement(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RootElement(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement11616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

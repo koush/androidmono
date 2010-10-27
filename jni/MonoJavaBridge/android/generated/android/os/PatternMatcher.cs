@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString10117;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType10118;
-		public virtual int getType() 
+		public virtual int getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPath10119;
-		public virtual global::java.lang.String getPath() 
+		public virtual global::java.lang.String getPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getPath10119)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _match10120;
-		public virtual bool match(java.lang.String arg0) 
+		public virtual bool match(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._match10120, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel10121;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._writeToParcel10121, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents10122;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,14 +80,14 @@ namespace android.os
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._describeContents10122);
 		}
 		internal static global::MonoJavaBridge.MethodId _PatternMatcher10123;
-		public PatternMatcher(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PatternMatcher(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._PatternMatcher10123, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PatternMatcher10124;
-		public PatternMatcher(android.os.Parcel arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PatternMatcher(android.os.Parcel arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._PatternMatcher10124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

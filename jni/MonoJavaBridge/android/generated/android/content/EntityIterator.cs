@@ -19,7 +19,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close3095;
-		 void android.content.EntityIterator.close() 
+		void android.content.EntityIterator.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._close3095);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset3096;
-		 void android.content.EntityIterator.reset() 
+		void android.content.EntityIterator.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._reset3096);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext3097;
-		 bool java.util.Iterator.hasNext() 
+		bool java.util.Iterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.content
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._hasNext3097);
 		}
 		internal static global::MonoJavaBridge.MethodId _next3098;
-		 global::java.lang.Object java.util.Iterator.next() 
+		global::java.lang.Object java.util.Iterator.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.EntityIterator_.staticClass, global::android.content.EntityIterator_._next3098)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove3099;
-		 void java.util.Iterator.remove() 
+		void java.util.Iterator.remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

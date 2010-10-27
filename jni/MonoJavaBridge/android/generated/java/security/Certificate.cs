@@ -24,7 +24,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22911;
-		 global::java.lang.String java.security.Certificate.toString(bool arg0) 
+		global::java.lang.String java.security.Certificate.toString(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._toString22911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _decode22912;
-		 void java.security.Certificate.decode(java.io.InputStream arg0) 
+		void java.security.Certificate.decode(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._decode22912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _encode22913;
-		 void java.security.Certificate.encode(java.io.OutputStream arg0) 
+		void java.security.Certificate.encode(java.io.OutputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._encode22913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicKey22914;
-		 global::java.security.PublicKey java.security.Certificate.getPublicKey() 
+		global::java.security.PublicKey java.security.Certificate.getPublicKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PublicKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._getPublicKey22914)) as java.security.PublicKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat22915;
-		 global::java.lang.String java.security.Certificate.getFormat() 
+		global::java.lang.String java.security.Certificate.getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._getFormat22915)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getGuarantor22916;
-		 global::java.security.Principal java.security.Certificate.getGuarantor() 
+		global::java.security.Principal java.security.Certificate.getGuarantor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.Certificate_.staticClass, global::java.security.Certificate_._getGuarantor22916)) as java.security.Principal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrincipal22917;
-		 global::java.security.Principal java.security.Certificate.getPrincipal() 
+		global::java.security.Principal java.security.Certificate.getPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

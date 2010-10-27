@@ -24,7 +24,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _addRequestInterceptor33910;
-		 void org.apache.http.protocol.HttpRequestInterceptorList.addRequestInterceptor(org.apache.http.HttpRequestInterceptor arg0) 
+		void org.apache.http.protocol.HttpRequestInterceptorList.addRequestInterceptor(org.apache.http.HttpRequestInterceptor arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._addRequestInterceptor33910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addRequestInterceptor33911;
-		 void org.apache.http.protocol.HttpRequestInterceptorList.addRequestInterceptor(org.apache.http.HttpRequestInterceptor arg0, int arg1) 
+		void org.apache.http.protocol.HttpRequestInterceptorList.addRequestInterceptor(org.apache.http.HttpRequestInterceptor arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._addRequestInterceptor33911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestInterceptor33912;
-		 global::org.apache.http.HttpRequestInterceptor org.apache.http.protocol.HttpRequestInterceptorList.getRequestInterceptor(int arg0) 
+		global::org.apache.http.HttpRequestInterceptor org.apache.http.protocol.HttpRequestInterceptorList.getRequestInterceptor(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpRequestInterceptor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._getRequestInterceptor33912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpRequestInterceptor;
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestInterceptorCount33913;
-		 int org.apache.http.protocol.HttpRequestInterceptorList.getRequestInterceptorCount() 
+		int org.apache.http.protocol.HttpRequestInterceptorList.getRequestInterceptorCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.protocol
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._getRequestInterceptorCount33913);
 		}
 		internal static global::MonoJavaBridge.MethodId _clearRequestInterceptors33914;
-		 void org.apache.http.protocol.HttpRequestInterceptorList.clearRequestInterceptors() 
+		void org.apache.http.protocol.HttpRequestInterceptorList.clearRequestInterceptors()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._clearRequestInterceptors33914);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeRequestInterceptorByClass33915;
-		 void org.apache.http.protocol.HttpRequestInterceptorList.removeRequestInterceptorByClass(java.lang.Class arg0) 
+		void org.apache.http.protocol.HttpRequestInterceptorList.removeRequestInterceptorByClass(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpRequestInterceptorList_.staticClass, global::org.apache.http.protocol.HttpRequestInterceptorList_._removeRequestInterceptorByClass33915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInterceptors33916;
-		 void org.apache.http.protocol.HttpRequestInterceptorList.setInterceptors(java.util.List arg0) 
+		void org.apache.http.protocol.HttpRequestInterceptorList.setInterceptors(java.util.List arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

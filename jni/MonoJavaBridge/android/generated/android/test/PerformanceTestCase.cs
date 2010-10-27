@@ -19,7 +19,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _startPerformance12272;
-		 int android.test.PerformanceTestCase.startPerformance(android.test.PerformanceTestCase_Intermediates arg0) 
+		int android.test.PerformanceTestCase.startPerformance(android.test.PerformanceTestCase_Intermediates arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.test
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.PerformanceTestCase_.staticClass, global::android.test.PerformanceTestCase_._startPerformance12272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isPerformanceOnly12273;
-		 bool android.test.PerformanceTestCase.isPerformanceOnly() 
+		bool android.test.PerformanceTestCase.isPerformanceOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

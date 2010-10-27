@@ -35,7 +35,7 @@ namespace org.apache.commons.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _debug31471;
-		 void org.apache.commons.logging.Log.debug(java.lang.Object arg0) 
+		void org.apache.commons.logging.Log.debug(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._debug31471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _debug31472;
-		 void org.apache.commons.logging.Log.debug(java.lang.Object arg0, java.lang.Throwable arg1) 
+		void org.apache.commons.logging.Log.debug(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._debug31472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _error31473;
-		 void org.apache.commons.logging.Log.error(java.lang.Object arg0) 
+		void org.apache.commons.logging.Log.error(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._error31473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _error31474;
-		 void org.apache.commons.logging.Log.error(java.lang.Object arg0, java.lang.Throwable arg1) 
+		void org.apache.commons.logging.Log.error(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._error31474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _info31475;
-		 void org.apache.commons.logging.Log.info(java.lang.Object arg0) 
+		void org.apache.commons.logging.Log.info(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._info31475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _info31476;
-		 void org.apache.commons.logging.Log.info(java.lang.Object arg0, java.lang.Throwable arg1) 
+		void org.apache.commons.logging.Log.info(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._info31476, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _trace31477;
-		 void org.apache.commons.logging.Log.trace(java.lang.Object arg0) 
+		void org.apache.commons.logging.Log.trace(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._trace31477, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _trace31478;
-		 void org.apache.commons.logging.Log.trace(java.lang.Object arg0, java.lang.Throwable arg1) 
+		void org.apache.commons.logging.Log.trace(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._trace31478, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDebugEnabled31479;
-		 bool org.apache.commons.logging.Log.isDebugEnabled() 
+		bool org.apache.commons.logging.Log.isDebugEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace org.apache.commons.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._isDebugEnabled31479);
 		}
 		internal static global::MonoJavaBridge.MethodId _isErrorEnabled31480;
-		 bool org.apache.commons.logging.Log.isErrorEnabled() 
+		bool org.apache.commons.logging.Log.isErrorEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace org.apache.commons.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._isErrorEnabled31480);
 		}
 		internal static global::MonoJavaBridge.MethodId _isFatalEnabled31481;
-		 bool org.apache.commons.logging.Log.isFatalEnabled() 
+		bool org.apache.commons.logging.Log.isFatalEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace org.apache.commons.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._isFatalEnabled31481);
 		}
 		internal static global::MonoJavaBridge.MethodId _isInfoEnabled31482;
-		 bool org.apache.commons.logging.Log.isInfoEnabled() 
+		bool org.apache.commons.logging.Log.isInfoEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace org.apache.commons.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._isInfoEnabled31482);
 		}
 		internal static global::MonoJavaBridge.MethodId _isTraceEnabled31483;
-		 bool org.apache.commons.logging.Log.isTraceEnabled() 
+		bool org.apache.commons.logging.Log.isTraceEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace org.apache.commons.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._isTraceEnabled31483);
 		}
 		internal static global::MonoJavaBridge.MethodId _isWarnEnabled31484;
-		 bool org.apache.commons.logging.Log.isWarnEnabled() 
+		bool org.apache.commons.logging.Log.isWarnEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace org.apache.commons.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._isWarnEnabled31484);
 		}
 		internal static global::MonoJavaBridge.MethodId _warn31485;
-		 void org.apache.commons.logging.Log.warn(java.lang.Object arg0, java.lang.Throwable arg1) 
+		void org.apache.commons.logging.Log.warn(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._warn31485, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _warn31486;
-		 void org.apache.commons.logging.Log.warn(java.lang.Object arg0) 
+		void org.apache.commons.logging.Log.warn(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +179,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._warn31486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _fatal31487;
-		 void org.apache.commons.logging.Log.fatal(java.lang.Object arg0) 
+		void org.apache.commons.logging.Log.fatal(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace org.apache.commons.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.commons.logging.Log_.staticClass, global::org.apache.commons.logging.Log_._fatal31487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _fatal31488;
-		 void org.apache.commons.logging.Log.fatal(java.lang.Object arg0, java.lang.Throwable arg1) 
+		void org.apache.commons.logging.Log.fatal(java.lang.Object arg0, java.lang.Throwable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

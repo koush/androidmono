@@ -25,7 +25,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _dump9897;
-		 void android.os.IBinder.dump(java.io.FileDescriptor arg0, java.lang.String[] arg1) 
+		void android.os.IBinder.dump(java.io.FileDescriptor arg0, java.lang.String[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._dump9897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInterfaceDescriptor9898;
-		 global::java.lang.String android.os.IBinder.getInterfaceDescriptor() 
+		global::java.lang.String android.os.IBinder.getInterfaceDescriptor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._getInterfaceDescriptor9898)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _pingBinder9899;
-		 bool android.os.IBinder.pingBinder() 
+		bool android.os.IBinder.pingBinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._pingBinder9899);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBinderAlive9900;
-		 bool android.os.IBinder.isBinderAlive() 
+		bool android.os.IBinder.isBinderAlive()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._isBinderAlive9900);
 		}
 		internal static global::MonoJavaBridge.MethodId _queryLocalInterface9901;
-		 global::android.os.IInterface android.os.IBinder.queryLocalInterface(java.lang.String arg0) 
+		global::android.os.IInterface android.os.IBinder.queryLocalInterface(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IInterface>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._queryLocalInterface9901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IInterface;
 		}
 		internal static global::MonoJavaBridge.MethodId _transact9902;
-		 bool android.os.IBinder.transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3) 
+		bool android.os.IBinder.transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._transact9902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _linkToDeath9903;
-		 void android.os.IBinder.linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
+		void android.os.IBinder.linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.IBinder_.staticClass, global::android.os.IBinder_._linkToDeath9903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _unlinkToDeath9904;
-		 bool android.os.IBinder.unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
+		bool android.os.IBinder.unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

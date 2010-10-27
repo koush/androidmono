@@ -12,7 +12,7 @@ namespace android.app.backup
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeEntityHeader2319;
-		public virtual int writeEntityHeader(java.lang.String arg0, int arg1) 
+		public virtual int writeEntityHeader(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app.backup
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupDataOutput.staticClass, global::android.app.backup.BackupDataOutput._writeEntityHeader2319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeEntityData2320;
-		public virtual int writeEntityData(byte[] arg0, int arg1) 
+		public virtual int writeEntityData(byte[] arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

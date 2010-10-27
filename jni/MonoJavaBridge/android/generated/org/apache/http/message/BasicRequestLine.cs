@@ -12,7 +12,7 @@ namespace org.apache.http.message
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString33638;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._toString33638)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone33639;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace org.apache.http.message
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMethod33640;
-		public virtual global::java.lang.String getMethod() 
+		public virtual global::java.lang.String getMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace org.apache.http.message
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion33641;
-		public virtual global::org.apache.http.ProtocolVersion getProtocolVersion() 
+		public virtual global::org.apache.http.ProtocolVersion getProtocolVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.apache.http.message
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUri33642;
-		public virtual global::java.lang.String getUri() 
+		public virtual global::java.lang.String getUri()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._getUri33642)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicRequestLine33643;
-		public BasicRequestLine(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BasicRequestLine(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicRequestLine.staticClass, global::org.apache.http.message.BasicRequestLine._BasicRequestLine33643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

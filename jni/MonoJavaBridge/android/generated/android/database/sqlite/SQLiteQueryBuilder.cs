@@ -12,7 +12,7 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _query4842;
-		public virtual global::android.database.Cursor query(android.database.sqlite.SQLiteDatabase arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6) 
+		public virtual global::android.database.Cursor query(android.database.sqlite.SQLiteDatabase arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.database.sqlite
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._query4842, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6))) as android.database.Cursor;
 		}
 		internal static global::MonoJavaBridge.MethodId _query4843;
-		public virtual global::android.database.Cursor query(android.database.sqlite.SQLiteDatabase arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7) 
+		public virtual global::android.database.Cursor query(android.database.sqlite.SQLiteDatabase arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,8 +29,15 @@ namespace android.database.sqlite
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._query4843, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7))) as android.database.Cursor;
 		}
+		public new bool Distinct
+		{
+			set
+			{
+				setDistinct(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDistinct4844;
-		public virtual void setDistinct(bool arg0) 
+		public virtual void setDistinct(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +57,7 @@ namespace android.database.sqlite
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTables4845;
-		public virtual global::java.lang.String getTables() 
+		public virtual global::java.lang.String getTables()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +66,7 @@ namespace android.database.sqlite
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._getTables4845)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTables4846;
-		public virtual void setTables(java.lang.String arg0) 
+		public virtual void setTables(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +75,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._setTables4846, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _appendWhere4847;
-		public virtual void appendWhere(java.lang.CharSequence arg0) 
+		public virtual void appendWhere(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -81,7 +88,7 @@ namespace android.database.sqlite
 			appendWhere((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _appendWhereEscapeString4848;
-		public virtual void appendWhereEscapeString(java.lang.String arg0) 
+		public virtual void appendWhereEscapeString(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,8 +96,15 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._appendWhereEscapeString4848, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.Map ProjectionMap
+		{
+			set
+			{
+				setProjectionMap(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setProjectionMap4849;
-		public virtual void setProjectionMap(java.util.Map arg0) 
+		public virtual void setProjectionMap(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,8 +112,15 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._setProjectionMap4849, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.database.sqlite.SQLiteDatabase.CursorFactory CursorFactory
+		{
+			set
+			{
+				setCursorFactory(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setCursorFactory4850;
-		public virtual void setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory arg0) 
+		public virtual void setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,19 +133,19 @@ namespace android.database.sqlite
 			setCursorFactory((global::android.database.sqlite.SQLiteDatabase.CursorFactoryDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _buildQueryString4851;
-		public static global::java.lang.String buildQueryString(bool arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7) 
+		public static global::java.lang.String buildQueryString(bool arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._buildQueryString4851, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _appendColumns4852;
-		public static void appendColumns(java.lang.StringBuilder arg0, java.lang.String[] arg1) 
+		public static void appendColumns(java.lang.StringBuilder arg0, java.lang.String[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._appendColumns4852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _buildQuery4853;
-		public virtual global::java.lang.String buildQuery(java.lang.String[] arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6) 
+		public virtual global::java.lang.String buildQuery(java.lang.String[] arg0, java.lang.String arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -133,7 +154,7 @@ namespace android.database.sqlite
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._buildQuery4853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _buildUnionSubQuery4854;
-		public virtual global::java.lang.String buildUnionSubQuery(java.lang.String arg0, java.lang.String[] arg1, java.util.Set arg2, int arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String[] arg6, java.lang.String arg7, java.lang.String arg8) 
+		public virtual global::java.lang.String buildUnionSubQuery(java.lang.String arg0, java.lang.String[] arg1, java.util.Set arg2, int arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String[] arg6, java.lang.String arg7, java.lang.String arg8)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -142,7 +163,7 @@ namespace android.database.sqlite
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._buildUnionSubQuery4854, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg7), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg8))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _buildUnionQuery4855;
-		public virtual global::java.lang.String buildUnionQuery(java.lang.String[] arg0, java.lang.String arg1, java.lang.String arg2) 
+		public virtual global::java.lang.String buildUnionQuery(java.lang.String[] arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -151,7 +172,7 @@ namespace android.database.sqlite
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._buildUnionQuery4855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteQueryBuilder4856;
-		public SQLiteQueryBuilder()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteQueryBuilder() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._SQLiteQueryBuilder4856);

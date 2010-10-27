@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage26318;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFlags26319;
-		public virtual global::java.lang.String getFlags() 
+		public virtual global::java.lang.String getFlags()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.IllegalFormatFlagsException.staticClass, global::java.util.IllegalFormatFlagsException._getFlags26319)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatFlagsException26320;
-		public IllegalFormatFlagsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalFormatFlagsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatFlagsException.staticClass, global::java.util.IllegalFormatFlagsException._IllegalFormatFlagsException26320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

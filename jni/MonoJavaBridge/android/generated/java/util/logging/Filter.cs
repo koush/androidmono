@@ -18,7 +18,7 @@ namespace java.util.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isLoggable27951;
-		 bool java.util.logging.Filter.isLoggable(java.util.logging.LogRecord arg0) 
+		bool java.util.logging.Filter.isLoggable(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

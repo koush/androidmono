@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalSelectorException22508;
-		public IllegalSelectorException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalSelectorException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.IllegalSelectorException.staticClass, global::java.nio.channels.IllegalSelectorException._IllegalSelectorException22508);

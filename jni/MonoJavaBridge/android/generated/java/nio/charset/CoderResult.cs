@@ -12,7 +12,7 @@ namespace java.nio.charset
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22796;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.nio.charset
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._toString22796)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _length22797;
-		public virtual int length() 
+		public virtual int length()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._length22797);
 		}
 		internal static global::MonoJavaBridge.MethodId _throwException22798;
-		public virtual void throwException() 
+		public virtual void throwException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.nio.charset
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._throwException22798);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnderflow22799;
-		public virtual bool isUnderflow() 
+		public virtual bool isUnderflow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnderflow22799);
 		}
 		internal static global::MonoJavaBridge.MethodId _isError22800;
-		public virtual bool isError() 
+		public virtual bool isError()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError22800);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOverflow22801;
-		public virtual bool isOverflow() 
+		public virtual bool isOverflow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,13 +66,13 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow22801);
 		}
 		internal static global::MonoJavaBridge.MethodId _malformedForLength22802;
-		public static global::java.nio.charset.CoderResult malformedForLength(int arg0) 
+		public static global::java.nio.charset.CoderResult malformedForLength(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._malformedForLength22802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.charset.CoderResult;
 		}
 		internal static global::MonoJavaBridge.MethodId _isMalformed22803;
-		public virtual bool isMalformed() 
+		public virtual bool isMalformed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -81,7 +81,7 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed22803);
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnmappable22804;
-		public virtual bool isUnmappable() 
+		public virtual bool isUnmappable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,7 +90,7 @@ namespace java.nio.charset
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable22804);
 		}
 		internal static global::MonoJavaBridge.MethodId _unmappableForLength22805;
-		public static global::java.nio.charset.CoderResult unmappableForLength(int arg0) 
+		public static global::java.nio.charset.CoderResult unmappableForLength(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._unmappableForLength22805, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.charset.CoderResult;

@@ -12,7 +12,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _Config13726;
-		public Config()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Config() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.Config.staticClass, global::android.util.Config._Config13726);

@@ -18,7 +18,7 @@ namespace java.lang.annotation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _value20978;
-		 global::java.lang.annotation.ElementType[] java.lang.annotation.Target.value() 
+		global::java.lang.annotation.ElementType[] java.lang.annotation.Target.value()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace java.lang.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.ElementType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Target_.staticClass, global::java.lang.annotation.Target_._value20978)) as java.lang.annotation.ElementType[];
 		}
 		internal static global::MonoJavaBridge.MethodId _equals20979;
-		 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.lang.annotation
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.annotation.Target_.staticClass, global::java.lang.annotation.Target_._equals20979, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20980;
-		 global::java.lang.String java.lang.annotation.Annotation.toString() 
+		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace java.lang.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.annotation.Target_.staticClass, global::java.lang.annotation.Target_._toString20980)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20981;
-		 int java.lang.annotation.Annotation.hashCode() 
+		int java.lang.annotation.Annotation.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,7 +54,7 @@ namespace java.lang.annotation
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.annotation.Target_.staticClass, global::java.lang.annotation.Target_._hashCode20981);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType20982;
-		 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

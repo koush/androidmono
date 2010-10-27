@@ -12,25 +12,25 @@ namespace android.gesture
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _fromFile4881;
-		public static global::android.gesture.GestureLibrary fromFile(java.lang.String arg0) 
+		public static global::android.gesture.GestureLibrary fromFile(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromFile4881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.gesture.GestureLibrary;
 		}
 		internal static global::MonoJavaBridge.MethodId _fromFile4882;
-		public static global::android.gesture.GestureLibrary fromFile(java.io.File arg0) 
+		public static global::android.gesture.GestureLibrary fromFile(java.io.File arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromFile4882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.gesture.GestureLibrary;
 		}
 		internal static global::MonoJavaBridge.MethodId _fromPrivateFile4883;
-		public static global::android.gesture.GestureLibrary fromPrivateFile(android.content.Context arg0, java.lang.String arg1) 
+		public static global::android.gesture.GestureLibrary fromPrivateFile(android.content.Context arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromPrivateFile4883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.gesture.GestureLibrary;
 		}
 		internal static global::MonoJavaBridge.MethodId _fromRawResource4884;
-		public static global::android.gesture.GestureLibrary fromRawResource(android.content.Context arg0, int arg1) 
+		public static global::android.gesture.GestureLibrary fromRawResource(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromRawResource4884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.gesture.GestureLibrary;

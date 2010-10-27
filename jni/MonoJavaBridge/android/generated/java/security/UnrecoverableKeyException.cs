@@ -12,14 +12,14 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnrecoverableKeyException23416;
-		public UnrecoverableKeyException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnrecoverableKeyException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.UnrecoverableKeyException.staticClass, global::java.security.UnrecoverableKeyException._UnrecoverableKeyException23416);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnrecoverableKeyException23417;
-		public UnrecoverableKeyException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnrecoverableKeyException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.UnrecoverableKeyException.staticClass, global::java.security.UnrecoverableKeyException._UnrecoverableKeyException23417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

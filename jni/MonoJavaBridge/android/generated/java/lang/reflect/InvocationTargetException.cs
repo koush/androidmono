@@ -19,7 +19,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCause21084;
-		public override global::java.lang.Throwable getCause() 
+		public override global::java.lang.Throwable getCause()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetException21085;
-		public virtual global::java.lang.Throwable getTargetException() 
+		public virtual global::java.lang.Throwable getTargetException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,21 +44,21 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._getTargetException21085)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _InvocationTargetException21086;
-		protected InvocationTargetException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected InvocationTargetException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._InvocationTargetException21086);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvocationTargetException21087;
-		public InvocationTargetException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvocationTargetException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._InvocationTargetException21087, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvocationTargetException21088;
-		public InvocationTargetException(java.lang.Throwable arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvocationTargetException(java.lang.Throwable arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.InvocationTargetException.staticClass, global::java.lang.reflect.InvocationTargetException._InvocationTargetException21088, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

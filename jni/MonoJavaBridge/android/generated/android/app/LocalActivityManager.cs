@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _startActivity1955;
-		public virtual global::android.view.Window startActivity(java.lang.String arg0, android.content.Intent arg1) 
+		public virtual global::android.view.Window startActivity(java.lang.String arg0, android.content.Intent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._startActivity1955, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.Window;
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivity1956;
-		public virtual global::android.app.Activity getActivity(java.lang.String arg0) 
+		public virtual global::android.app.Activity getActivity(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentActivity1957;
-		public virtual global::android.app.Activity getCurrentActivity() 
+		public virtual global::android.app.Activity getCurrentActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._getCurrentActivity1957)) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _destroyActivity1958;
-		public virtual global::android.view.Window destroyActivity(java.lang.String arg0, bool arg1) 
+		public virtual global::android.view.Window destroyActivity(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentId1959;
-		public virtual global::java.lang.String getCurrentId() 
+		public virtual global::java.lang.String getCurrentId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._getCurrentId1959)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchCreate1960;
-		public virtual void dispatchCreate(android.os.Bundle arg0) 
+		public virtual void dispatchCreate(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._dispatchCreate1960, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _saveInstanceState1961;
-		public virtual global::android.os.Bundle saveInstanceState() 
+		public virtual global::android.os.Bundle saveInstanceState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Bundle>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._saveInstanceState1961)) as android.os.Bundle;
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchResume1962;
-		public virtual void dispatchResume() 
+		public virtual void dispatchResume()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._dispatchResume1962);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchPause1963;
-		public virtual void dispatchPause(bool arg0) 
+		public virtual void dispatchPause(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._dispatchPause1963, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchStop1964;
-		public virtual void dispatchStop() 
+		public virtual void dispatchStop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._dispatchStop1964);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAllActivities1965;
-		public virtual void removeAllActivities() 
+		public virtual void removeAllActivities()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._removeAllActivities1965);
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchDestroy1966;
-		public virtual void dispatchDestroy(bool arg0) 
+		public virtual void dispatchDestroy(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._dispatchDestroy1966, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalActivityManager1967;
-		public LocalActivityManager(android.app.Activity arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocalActivityManager(android.app.Activity arg0, bool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LocalActivityManager.staticClass, global::android.app.LocalActivityManager._LocalActivityManager1967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

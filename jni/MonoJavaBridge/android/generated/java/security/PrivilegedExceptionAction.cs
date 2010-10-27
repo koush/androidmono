@@ -18,7 +18,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _run23251;
-		 global::java.lang.Object java.security.PrivilegedExceptionAction.run() 
+		global::java.lang.Object java.security.PrivilegedExceptionAction.run()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

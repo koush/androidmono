@@ -12,7 +12,7 @@ namespace org.apache.http.impl.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parse33335;
-		public override void parse(org.apache.http.cookie.SetCookie arg0, java.lang.String arg1) 
+		public override void parse(org.apache.http.cookie.SetCookie arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.cookie
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, global::org.apache.http.impl.cookie.RFC2109VersionHandler._parse33335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _validate33336;
-		public override void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1) 
+		public override void validate(org.apache.http.cookie.Cookie arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.impl.cookie
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, global::org.apache.http.impl.cookie.RFC2109VersionHandler._validate33336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RFC2109VersionHandler33337;
-		public RFC2109VersionHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RFC2109VersionHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.RFC2109VersionHandler.staticClass, global::org.apache.http.impl.cookie.RFC2109VersionHandler._RFC2109VersionHandler33337);

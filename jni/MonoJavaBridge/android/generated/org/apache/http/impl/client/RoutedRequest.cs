@@ -19,7 +19,7 @@ namespace org.apache.http.impl.client
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRoute32952;
-		public virtual global::org.apache.http.conn.routing.HttpRoute getRoute() 
+		public virtual global::org.apache.http.conn.routing.HttpRoute getRoute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace org.apache.http.impl.client
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequest32953;
-		public virtual global::org.apache.http.impl.client.RequestWrapper getRequest() 
+		public virtual global::org.apache.http.impl.client.RequestWrapper getRequest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.http.impl.client
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.client.RoutedRequest.staticClass, global::org.apache.http.impl.client.RoutedRequest._getRequest32953)) as org.apache.http.impl.client.RequestWrapper;
 		}
 		internal static global::MonoJavaBridge.MethodId _RoutedRequest32954;
-		public RoutedRequest(org.apache.http.impl.client.RequestWrapper arg0, org.apache.http.conn.routing.HttpRoute arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RoutedRequest(org.apache.http.impl.client.RequestWrapper arg0, org.apache.http.conn.routing.HttpRoute arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.client.RoutedRequest.staticClass, global::org.apache.http.impl.client.RoutedRequest._RoutedRequest32954, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

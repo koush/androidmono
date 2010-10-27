@@ -12,14 +12,14 @@ namespace org.xml.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SAXNotSupportedException35036;
-		public SAXNotSupportedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SAXNotSupportedException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXNotSupportedException.staticClass, global::org.xml.sax.SAXNotSupportedException._SAXNotSupportedException35036);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SAXNotSupportedException35037;
-		public SAXNotSupportedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SAXNotSupportedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.SAXNotSupportedException.staticClass, global::org.xml.sax.SAXNotSupportedException._SAXNotSupportedException35037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

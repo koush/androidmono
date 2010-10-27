@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent18325;
-		public override bool onTouchEvent(android.view.MotionEvent arg0) 
+		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._onTouchEvent18325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hasFocus18326;
-		public override bool hasFocus() 
+		public override bool hasFocus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hasFocus18326);
 		}
 		internal static global::MonoJavaBridge.MethodId _show18327;
-		public virtual void show() 
+		public virtual void show()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._show18327);
 		}
 		internal static global::MonoJavaBridge.MethodId _hide18328;
-		public virtual void hide() 
+		public virtual void hide()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,8 +47,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hide18328);
 		}
+		public new long ZoomSpeed
+		{
+			set
+			{
+				setZoomSpeed(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setZoomSpeed18329;
-		public virtual void setZoomSpeed(long arg0) 
+		public virtual void setZoomSpeed(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,8 +63,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setZoomSpeed18329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.view.View.OnClickListener OnZoomInClickListener
+		{
+			set
+			{
+				setOnZoomInClickListener(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setOnZoomInClickListener18330;
-		public virtual void setOnZoomInClickListener(android.view.View.OnClickListener arg0) 
+		public virtual void setOnZoomInClickListener(android.view.View.OnClickListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,8 +83,15 @@ namespace android.widget
 		{
 			setOnZoomInClickListener((global::android.view.View.OnClickListenerDelegateWrapper)arg0);
 		}
+		public new global::android.view.View.OnClickListener OnZoomOutClickListener
+		{
+			set
+			{
+				setOnZoomOutClickListener(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setOnZoomOutClickListener18331;
-		public virtual void setOnZoomOutClickListener(android.view.View.OnClickListener arg0) 
+		public virtual void setOnZoomOutClickListener(android.view.View.OnClickListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,8 +103,15 @@ namespace android.widget
 		{
 			setOnZoomOutClickListener((global::android.view.View.OnClickListenerDelegateWrapper)arg0);
 		}
+		public new bool IsZoomInEnabled
+		{
+			set
+			{
+				setIsZoomInEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setIsZoomInEnabled18332;
-		public virtual void setIsZoomInEnabled(bool arg0) 
+		public virtual void setIsZoomInEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,8 +119,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomInEnabled18332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool IsZoomOutEnabled
+		{
+			set
+			{
+				setIsZoomOutEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setIsZoomOutEnabled18333;
-		public virtual void setIsZoomOutEnabled(bool arg0) 
+		public virtual void setIsZoomOutEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,14 +136,14 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomOutEnabled18333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ZoomControls18334;
-		public ZoomControls(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ZoomControls(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._ZoomControls18334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ZoomControls18335;
-		public ZoomControls(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ZoomControls(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._ZoomControls18335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

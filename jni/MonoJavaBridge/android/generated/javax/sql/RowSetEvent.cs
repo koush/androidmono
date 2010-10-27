@@ -12,7 +12,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _RowSetEvent30573;
-		public RowSetEvent(javax.sql.RowSet arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RowSetEvent(javax.sql.RowSet arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.RowSetEvent.staticClass, global::javax.sql.RowSetEvent._RowSetEvent30573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -18,7 +18,7 @@ namespace org.apache.http.client
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserToken31902;
-		 global::java.lang.Object org.apache.http.client.UserTokenHandler.getUserToken(org.apache.http.protocol.HttpContext arg0) 
+		global::java.lang.Object org.apache.http.client.UserTokenHandler.getUserToken(org.apache.http.protocol.HttpContext arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

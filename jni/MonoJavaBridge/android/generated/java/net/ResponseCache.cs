@@ -16,19 +16,19 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _put21678;
 		public abstract global::java.net.CacheRequest put(java.net.URI arg0, java.net.URLConnection arg1);
 		internal static global::MonoJavaBridge.MethodId _getDefault21679;
-		public static global::java.net.ResponseCache getDefault() 
+		public static global::java.net.ResponseCache getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.ResponseCache.staticClass, global::java.net.ResponseCache._getDefault21679)) as java.net.ResponseCache;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault21680;
-		public static void setDefault(java.net.ResponseCache arg0) 
+		public static void setDefault(java.net.ResponseCache arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.net.ResponseCache.staticClass, global::java.net.ResponseCache._setDefault21680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ResponseCache21681;
-		public ResponseCache()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ResponseCache() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ResponseCache.staticClass, global::java.net.ResponseCache._ResponseCache21681);
@@ -58,7 +58,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get21682;
-		public override global::java.net.CacheResponse get(java.net.URI arg0, java.lang.String arg1, java.util.Map arg2) 
+		public override global::java.net.CacheResponse get(java.net.URI arg0, java.lang.String arg1, java.util.Map arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ResponseCache_.staticClass, global::java.net.ResponseCache_._get21682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.net.CacheResponse;
 		}
 		internal static global::MonoJavaBridge.MethodId _put21683;
-		public override global::java.net.CacheRequest put(java.net.URI arg0, java.net.URLConnection arg1) 
+		public override global::java.net.CacheRequest put(java.net.URI arg0, java.net.URLConnection arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

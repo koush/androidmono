@@ -25,7 +25,7 @@ namespace java.security.acl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23429;
-		 global::java.lang.String java.security.acl.Acl.toString() 
+		global::java.lang.String java.security.acl.Acl.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace java.security.acl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._toString23429)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getName23430;
-		 global::java.lang.String java.security.acl.Acl.getName() 
+		global::java.lang.String java.security.acl.Acl.getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace java.security.acl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._getName23430)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _checkPermission23431;
-		 bool java.security.acl.Acl.checkPermission(java.security.Principal arg0, java.security.acl.Permission arg1) 
+		bool java.security.acl.Acl.checkPermission(java.security.Principal arg0, java.security.acl.Permission arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._checkPermission23431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermissions23432;
-		 global::java.util.Enumeration java.security.acl.Acl.getPermissions(java.security.Principal arg0) 
+		global::java.util.Enumeration java.security.acl.Acl.getPermissions(java.security.Principal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace java.security.acl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._getPermissions23432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _setName23433;
-		 void java.security.acl.Acl.setName(java.security.Principal arg0, java.lang.String arg1) 
+		void java.security.acl.Acl.setName(java.security.Principal arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace java.security.acl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._setName23433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addEntry23434;
-		 bool java.security.acl.Acl.addEntry(java.security.Principal arg0, java.security.acl.AclEntry arg1) 
+		bool java.security.acl.Acl.addEntry(java.security.Principal arg0, java.security.acl.AclEntry arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._addEntry23434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _entries23435;
-		 global::java.util.Enumeration java.security.acl.Acl.entries() 
+		global::java.util.Enumeration java.security.acl.Acl.entries()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace java.security.acl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._entries23435)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeEntry23436;
-		 bool java.security.acl.Acl.removeEntry(java.security.Principal arg0, java.security.acl.AclEntry arg1) 
+		bool java.security.acl.Acl.removeEntry(java.security.Principal arg0, java.security.acl.AclEntry arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._removeEntry23436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addOwner23437;
-		 bool java.security.acl.Owner.addOwner(java.security.Principal arg0, java.security.Principal arg1) 
+		bool java.security.acl.Owner.addOwner(java.security.Principal arg0, java.security.Principal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +106,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._addOwner23437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteOwner23438;
-		 bool java.security.acl.Owner.deleteOwner(java.security.Principal arg0, java.security.Principal arg1) 
+		bool java.security.acl.Owner.deleteOwner(java.security.Principal arg0, java.security.Principal arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace java.security.acl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.acl.Acl_.staticClass, global::java.security.acl.Acl_._deleteOwner23438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isOwner23439;
-		 bool java.security.acl.Owner.isOwner(java.security.Principal arg0) 
+		bool java.security.acl.Owner.isOwner(java.security.Principal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

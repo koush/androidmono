@@ -19,7 +19,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance13271;
-		public static global::android.text.method.DateTimeKeyListener getInstance() 
+		public static global::android.text.method.DateTimeKeyListener getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._getInstance13271)) as android.text.method.DateTimeKeyListener;
@@ -32,7 +32,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputType13272;
-		public override int getInputType() 
+		public override int getInputType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13273;
-		protected override char[] getAcceptedChars() 
+		protected override char[] getAcceptedChars()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.text.method
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._getAcceptedChars13273)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DateTimeKeyListener13274;
-		public DateTimeKeyListener()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DateTimeKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.DateTimeKeyListener.staticClass, global::android.text.method.DateTimeKeyListener._DateTimeKeyListener13274);

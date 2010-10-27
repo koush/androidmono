@@ -17,7 +17,7 @@ namespace android.test.suitebuilder.annotation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals12655;
-		 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -26,7 +26,7 @@ namespace android.test.suitebuilder.annotation
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.SmallTest_.staticClass, global::android.test.suitebuilder.annotation.SmallTest_._equals12655, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12656;
-		 global::java.lang.String java.lang.annotation.Annotation.toString() 
+		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace android.test.suitebuilder.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.SmallTest_.staticClass, global::android.test.suitebuilder.annotation.SmallTest_._toString12656)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12657;
-		 int java.lang.annotation.Annotation.hashCode() 
+		int java.lang.annotation.Annotation.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.test.suitebuilder.annotation
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.suitebuilder.annotation.SmallTest_.staticClass, global::android.test.suitebuilder.annotation.SmallTest_._hashCode12657);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType12658;
-		 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

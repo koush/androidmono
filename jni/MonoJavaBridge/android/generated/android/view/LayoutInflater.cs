@@ -29,7 +29,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onCreateView14291;
-			 global::android.view.View android.view.LayoutInflater.Factory.onCreateView(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2) 
+			global::android.view.View android.view.LayoutInflater.Factory.onCreateView(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _FactoryDelegateWrapper14292;
-			public FactoryDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public FactoryDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FactoryDelegateWrapper.staticClass, global::android.view.LayoutInflater.FactoryDelegateWrapper._FactoryDelegateWrapper14292);
@@ -104,7 +104,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onLoadClass14293;
-			 bool android.view.LayoutInflater.Filter.onLoadClass(java.lang.Class arg0) 
+			bool android.view.LayoutInflater.Filter.onLoadClass(java.lang.Class arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _FilterDelegateWrapper14294;
-			public FilterDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public FilterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.FilterDelegateWrapper.staticClass, global::android.view.LayoutInflater.FilterDelegateWrapper._FilterDelegateWrapper14294);
@@ -162,13 +162,13 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _from14295;
-		public static global::android.view.LayoutInflater from(android.content.Context arg0) 
+		public static global::android.view.LayoutInflater from(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._from14295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.LayoutInflater;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFactory14296;
-		public virtual global::android.view.LayoutInflater.Factory getFactory() 
+		public virtual global::android.view.LayoutInflater.Factory getFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.LayoutInflater.Factory>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._getFactory14296)) as android.view.LayoutInflater.Factory;
 		}
 		internal static global::MonoJavaBridge.MethodId _getContext14297;
-		public virtual global::android.content.Context getContext() 
+		public virtual global::android.content.Context getContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -186,7 +186,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._getContext14297)) as android.content.Context;
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate14298;
-		public virtual global::android.view.View inflate(org.xmlpull.v1.XmlPullParser arg0, android.view.ViewGroup arg1) 
+		public virtual global::android.view.View inflate(org.xmlpull.v1.XmlPullParser arg0, android.view.ViewGroup arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -195,7 +195,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._inflate14298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate14299;
-		public virtual global::android.view.View inflate(org.xmlpull.v1.XmlPullParser arg0, android.view.ViewGroup arg1, bool arg2) 
+		public virtual global::android.view.View inflate(org.xmlpull.v1.XmlPullParser arg0, android.view.ViewGroup arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -204,7 +204,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._inflate14299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate14300;
-		public virtual global::android.view.View inflate(int arg0, android.view.ViewGroup arg1, bool arg2) 
+		public virtual global::android.view.View inflate(int arg0, android.view.ViewGroup arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -213,7 +213,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._inflate14300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate14301;
-		public virtual global::android.view.View inflate(int arg0, android.view.ViewGroup arg1) 
+		public virtual global::android.view.View inflate(int arg0, android.view.ViewGroup arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -222,7 +222,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._inflate14301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateView14302;
-		protected virtual global::android.view.View onCreateView(java.lang.String arg0, android.util.AttributeSet arg1) 
+		protected virtual global::android.view.View onCreateView(java.lang.String arg0, android.util.AttributeSet arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,7 +233,7 @@ namespace android.view
 		internal static global::MonoJavaBridge.MethodId _cloneInContext14303;
 		public abstract global::android.view.LayoutInflater cloneInContext(android.content.Context arg0);
 		internal static global::MonoJavaBridge.MethodId _setFactory14304;
-		public virtual void setFactory(android.view.LayoutInflater.Factory arg0) 
+		public virtual void setFactory(android.view.LayoutInflater.Factory arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -246,7 +246,7 @@ namespace android.view
 			setFactory((global::android.view.LayoutInflater.FactoryDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getFilter14305;
-		public virtual global::android.view.LayoutInflater.Filter getFilter() 
+		public virtual global::android.view.LayoutInflater.Filter getFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -255,7 +255,7 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.LayoutInflater.Filter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._getFilter14305)) as android.view.LayoutInflater.Filter;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFilter14306;
-		public virtual void setFilter(android.view.LayoutInflater.Filter arg0) 
+		public virtual void setFilter(android.view.LayoutInflater.Filter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -268,7 +268,7 @@ namespace android.view
 			setFilter((global::android.view.LayoutInflater.FilterDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _createView14307;
-		public virtual global::android.view.View createView(java.lang.String arg0, java.lang.String arg1, android.util.AttributeSet arg2) 
+		public virtual global::android.view.View createView(java.lang.String arg0, java.lang.String arg1, android.util.AttributeSet arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -277,14 +277,14 @@ namespace android.view
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._createView14307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _LayoutInflater14308;
-		protected LayoutInflater(android.view.LayoutInflater arg0, android.content.Context arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected LayoutInflater(android.view.LayoutInflater arg0, android.content.Context arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._LayoutInflater14308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LayoutInflater14309;
-		protected LayoutInflater(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected LayoutInflater(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.LayoutInflater.staticClass, global::android.view.LayoutInflater._LayoutInflater14309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -324,7 +324,7 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _cloneInContext14310;
-		public override global::android.view.LayoutInflater cloneInContext(android.content.Context arg0) 
+		public override global::android.view.LayoutInflater cloneInContext(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

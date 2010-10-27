@@ -12,13 +12,13 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isObjectSelected13732;
-		public static bool isObjectSelected(java.lang.Object arg0) 
+		public static bool isObjectSelected(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._isObjectSelected13732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DebugUtils13733;
-		public DebugUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DebugUtils() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._DebugUtils13733);

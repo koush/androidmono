@@ -37,7 +37,7 @@ namespace android.inputmethodservice
 			internal static global::MonoJavaBridge.MethodId _hideSoftInput6533;
 			public abstract void hideSoftInput(int arg0, android.os.ResultReceiver arg1);
 			internal static global::MonoJavaBridge.MethodId _createSession6534;
-			public virtual void createSession(android.view.inputmethod.InputMethod_SessionCallback arg0) 
+			public virtual void createSession(android.view.inputmethod.InputMethod_SessionCallback arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace android.inputmethodservice
 				createSession((global::android.view.inputmethod.InputMethod_SessionCallbackDelegateWrapper)arg0);
 			}
 			internal static global::MonoJavaBridge.MethodId _setSessionEnabled6535;
-			public virtual void setSessionEnabled(android.view.inputmethod.InputMethodSession arg0, bool arg1) 
+			public virtual void setSessionEnabled(android.view.inputmethod.InputMethodSession arg0, bool arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._setSessionEnabled6535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _revokeSession6536;
-			public virtual void revokeSession(android.view.inputmethod.InputMethodSession arg0) 
+			public virtual void revokeSession(android.view.inputmethod.InputMethodSession arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._revokeSession6536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _AbstractInputMethodImpl6537;
-			public AbstractInputMethodImpl(android.inputmethodservice.AbstractInputMethodService arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public AbstractInputMethodImpl(android.inputmethodservice.AbstractInputMethodService arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._AbstractInputMethodImpl6537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -104,7 +104,7 @@ namespace android.inputmethodservice
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _attachToken6538;
-			public override void attachToken(android.os.IBinder arg0) 
+			public override void attachToken(android.os.IBinder arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -113,7 +113,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._attachToken6538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _bindInput6539;
-			public override void bindInput(android.view.inputmethod.InputBinding arg0) 
+			public override void bindInput(android.view.inputmethod.InputBinding arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -122,7 +122,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._bindInput6539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _unbindInput6540;
-			public override void unbindInput() 
+			public override void unbindInput()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -131,7 +131,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._unbindInput6540);
 			}
 			internal static global::MonoJavaBridge.MethodId _startInput6541;
-			public override void startInput(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.EditorInfo arg1) 
+			public override void startInput(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.EditorInfo arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -140,7 +140,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._startInput6541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _restartInput6542;
-			public override void restartInput(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.EditorInfo arg1) 
+			public override void restartInput(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.EditorInfo arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -149,7 +149,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._restartInput6542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _showSoftInput6543;
-			public override void showSoftInput(int arg0, android.os.ResultReceiver arg1) 
+			public override void showSoftInput(int arg0, android.os.ResultReceiver arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -158,7 +158,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl_._showSoftInput6543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _hideSoftInput6544;
-			public override void hideSoftInput(int arg0, android.os.ResultReceiver arg1) 
+			public override void hideSoftInput(int arg0, android.os.ResultReceiver arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -205,7 +205,7 @@ namespace android.inputmethodservice
 			internal static global::MonoJavaBridge.MethodId _toggleSoftInput6551;
 			public abstract void toggleSoftInput(int arg0, int arg1);
 			internal static global::MonoJavaBridge.MethodId _isEnabled6552;
-			public virtual bool isEnabled() 
+			public virtual bool isEnabled()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -214,7 +214,7 @@ namespace android.inputmethodservice
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._isEnabled6552);
 			}
 			internal static global::MonoJavaBridge.MethodId _setEnabled6553;
-			public virtual void setEnabled(bool arg0) 
+			public virtual void setEnabled(bool arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -223,7 +223,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._setEnabled6553, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _dispatchKeyEvent6554;
-			public virtual void dispatchKeyEvent(int arg0, android.view.KeyEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2) 
+			public virtual void dispatchKeyEvent(int arg0, android.view.KeyEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -236,7 +236,7 @@ namespace android.inputmethodservice
 				dispatchKeyEvent(arg0, arg1, (global::android.view.inputmethod.InputMethodSession_EventCallbackDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _dispatchTrackballEvent6555;
-			public virtual void dispatchTrackballEvent(int arg0, android.view.MotionEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2) 
+			public virtual void dispatchTrackballEvent(int arg0, android.view.MotionEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -249,7 +249,7 @@ namespace android.inputmethodservice
 				dispatchTrackballEvent(arg0, arg1, (global::android.view.inputmethod.InputMethodSession_EventCallbackDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _isRevoked6556;
-			public virtual bool isRevoked() 
+			public virtual bool isRevoked()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -258,7 +258,7 @@ namespace android.inputmethodservice
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._isRevoked6556);
 			}
 			internal static global::MonoJavaBridge.MethodId _revokeSelf6557;
-			public virtual void revokeSelf() 
+			public virtual void revokeSelf()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -267,7 +267,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._revokeSelf6557);
 			}
 			internal static global::MonoJavaBridge.MethodId _AbstractInputMethodSessionImpl6558;
-			public AbstractInputMethodSessionImpl(android.inputmethodservice.AbstractInputMethodService arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public AbstractInputMethodSessionImpl(android.inputmethodservice.AbstractInputMethodService arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._AbstractInputMethodSessionImpl6558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -306,7 +306,7 @@ namespace android.inputmethodservice
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _finishInput6559;
-			public override void finishInput() 
+			public override void finishInput()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -315,7 +315,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._finishInput6559);
 			}
 			internal static global::MonoJavaBridge.MethodId _updateSelection6560;
-			public override void updateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
+			public override void updateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -324,7 +324,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._updateSelection6560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 			}
 			internal static global::MonoJavaBridge.MethodId _updateCursor6561;
-			public override void updateCursor(android.graphics.Rect arg0) 
+			public override void updateCursor(android.graphics.Rect arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -333,7 +333,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._updateCursor6561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _displayCompletions6562;
-			public override void displayCompletions(android.view.inputmethod.CompletionInfo[] arg0) 
+			public override void displayCompletions(android.view.inputmethod.CompletionInfo[] arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -342,7 +342,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._displayCompletions6562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _updateExtractedText6563;
-			public override void updateExtractedText(int arg0, android.view.inputmethod.ExtractedText arg1) 
+			public override void updateExtractedText(int arg0, android.view.inputmethod.ExtractedText arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -351,7 +351,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._updateExtractedText6563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _appPrivateCommand6564;
-			public override void appPrivateCommand(java.lang.String arg0, android.os.Bundle arg1) 
+			public override void appPrivateCommand(java.lang.String arg0, android.os.Bundle arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -360,7 +360,7 @@ namespace android.inputmethodservice
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl_._appPrivateCommand6564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
 			internal static global::MonoJavaBridge.MethodId _toggleSoftInput6565;
-			public override void toggleSoftInput(int arg0, int arg1) 
+			public override void toggleSoftInput(int arg0, int arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -390,7 +390,7 @@ namespace android.inputmethodservice
 		internal static global::MonoJavaBridge.MethodId _onKeyMultiple6569;
 		public abstract bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2);
 		internal static global::MonoJavaBridge.MethodId _onBind6570;
-		public sealed override global::android.os.IBinder onBind(android.content.Intent arg0) 
+		public sealed override global::android.os.IBinder onBind(android.content.Intent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -399,7 +399,7 @@ namespace android.inputmethodservice
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IBinder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._onBind6570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IBinder;
 		}
 		internal static global::MonoJavaBridge.MethodId _dump6571;
-		protected override void dump(java.io.FileDescriptor arg0, java.io.PrintWriter arg1, java.lang.String[] arg2) 
+		protected override void dump(java.io.FileDescriptor arg0, java.io.PrintWriter arg1, java.lang.String[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -408,7 +408,7 @@ namespace android.inputmethodservice
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._dump6571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onTrackballEvent6572;
-		public virtual bool onTrackballEvent(android.view.MotionEvent arg0) 
+		public virtual bool onTrackballEvent(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -417,7 +417,7 @@ namespace android.inputmethodservice
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._onTrackballEvent6572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeyDispatcherState6573;
-		public virtual global::android.view.KeyEvent.DispatcherState getKeyDispatcherState() 
+		public virtual global::android.view.KeyEvent.DispatcherState getKeyDispatcherState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -430,7 +430,7 @@ namespace android.inputmethodservice
 		internal static global::MonoJavaBridge.MethodId _onCreateInputMethodSessionInterface6575;
 		public abstract global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface();
 		internal static global::MonoJavaBridge.MethodId _AbstractInputMethodService6576;
-		public AbstractInputMethodService()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AbstractInputMethodService() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._AbstractInputMethodService6576);
@@ -466,7 +466,7 @@ namespace android.inputmethodservice
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown6577;
-		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
+		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -475,7 +475,7 @@ namespace android.inputmethodservice
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService_.staticClass, global::android.inputmethodservice.AbstractInputMethodService_._onKeyDown6577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyLongPress6578;
-		public override bool onKeyLongPress(int arg0, android.view.KeyEvent arg1) 
+		public override bool onKeyLongPress(int arg0, android.view.KeyEvent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -484,7 +484,7 @@ namespace android.inputmethodservice
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService_.staticClass, global::android.inputmethodservice.AbstractInputMethodService_._onKeyLongPress6578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyUp6579;
-		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
+		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -493,7 +493,7 @@ namespace android.inputmethodservice
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService_.staticClass, global::android.inputmethodservice.AbstractInputMethodService_._onKeyUp6579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyMultiple6580;
-		public override bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2) 
+		public override bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -502,7 +502,7 @@ namespace android.inputmethodservice
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService_.staticClass, global::android.inputmethodservice.AbstractInputMethodService_._onKeyMultiple6580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateInputMethodInterface6581;
-		public override global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl onCreateInputMethodInterface() 
+		public override global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl onCreateInputMethodInterface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -511,7 +511,7 @@ namespace android.inputmethodservice
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.inputmethodservice.AbstractInputMethodService_.staticClass, global::android.inputmethodservice.AbstractInputMethodService_._onCreateInputMethodInterface6581)) as android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl;
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateInputMethodSessionInterface6582;
-		public override global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface() 
+		public override global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

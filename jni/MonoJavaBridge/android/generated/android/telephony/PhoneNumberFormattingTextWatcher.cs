@@ -12,7 +12,7 @@ namespace android.telephony
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onTextChanged11793;
-		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
+		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace android.telephony
 			onTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _beforeTextChanged11794;
-		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
+		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.telephony
 			beforeTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _afterTextChanged11795;
-		public virtual void afterTextChanged(android.text.Editable arg0) 
+		public virtual void afterTextChanged(android.text.Editable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.telephony
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged11795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PhoneNumberFormattingTextWatcher11796;
-		public PhoneNumberFormattingTextWatcher()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PhoneNumberFormattingTextWatcher() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.PhoneNumberFormattingTextWatcher.staticClass, global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher11796);

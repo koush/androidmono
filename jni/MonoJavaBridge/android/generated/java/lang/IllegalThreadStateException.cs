@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalThreadStateException20183;
-		public IllegalThreadStateException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalThreadStateException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalThreadStateException.staticClass, global::java.lang.IllegalThreadStateException._IllegalThreadStateException20183);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalThreadStateException20184;
-		public IllegalThreadStateException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalThreadStateException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalThreadStateException.staticClass, global::java.lang.IllegalThreadStateException._IllegalThreadStateException20184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CancelledKeyException22404;
-		public CancelledKeyException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CancelledKeyException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.CancelledKeyException.staticClass, global::java.nio.channels.CancelledKeyException._CancelledKeyException22404);

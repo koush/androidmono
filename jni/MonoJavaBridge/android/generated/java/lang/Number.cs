@@ -12,7 +12,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _byteValue20354;
-		public virtual byte byteValue() 
+		public virtual byte byteValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.lang.Number.staticClass, global::java.lang.Number._byteValue20354);
 		}
 		internal static global::MonoJavaBridge.MethodId _shortValue20355;
-		public virtual short shortValue() 
+		public virtual short shortValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.lang
 		internal static global::MonoJavaBridge.MethodId _doubleValue20359;
 		public abstract double doubleValue();
 		internal static global::MonoJavaBridge.MethodId _Number20360;
-		public Number()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Number() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Number.staticClass, global::java.lang.Number._Number20360);
@@ -70,7 +70,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _intValue20361;
-		public override int intValue() 
+		public override int intValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._intValue20361);
 		}
 		internal static global::MonoJavaBridge.MethodId _longValue20362;
-		public override long longValue() 
+		public override long longValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace java.lang
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._longValue20362);
 		}
 		internal static global::MonoJavaBridge.MethodId _floatValue20363;
-		public override float floatValue() 
+		public override float floatValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace java.lang
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.lang.Number_.staticClass, global::java.lang.Number_._floatValue20363);
 		}
 		internal static global::MonoJavaBridge.MethodId _doubleValue20364;
-		public override double doubleValue() 
+		public override double doubleValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

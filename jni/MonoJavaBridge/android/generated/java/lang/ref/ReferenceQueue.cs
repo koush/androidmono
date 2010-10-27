@@ -12,7 +12,7 @@ namespace java.lang.@ref
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _remove20989;
-		public virtual global::java.lang.@ref.Reference remove(long arg0) 
+		public virtual global::java.lang.@ref.Reference remove(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang.@ref
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._remove20989, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.@ref.Reference;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove20990;
-		public virtual global::java.lang.@ref.Reference remove() 
+		public virtual global::java.lang.@ref.Reference remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang.@ref
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._remove20990)) as java.lang.@ref.Reference;
 		}
 		internal static global::MonoJavaBridge.MethodId _poll20991;
-		public virtual global::java.lang.@ref.Reference poll() 
+		public virtual global::java.lang.@ref.Reference poll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.lang.@ref
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._poll20991)) as java.lang.@ref.Reference;
 		}
 		internal static global::MonoJavaBridge.MethodId _ReferenceQueue20992;
-		public ReferenceQueue()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ReferenceQueue() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.@ref.ReferenceQueue.staticClass, global::java.lang.@ref.ReferenceQueue._ReferenceQueue20992);

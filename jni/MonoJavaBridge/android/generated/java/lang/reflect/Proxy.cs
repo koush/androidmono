@@ -12,31 +12,31 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isProxyClass21147;
-		public static bool isProxyClass(java.lang.Class arg0) 
+		public static bool isProxyClass(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._isProxyClass21147, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getProxyClass21148;
-		public static global::java.lang.Class getProxyClass(java.lang.ClassLoader arg0, java.lang.Class[] arg1) 
+		public static global::java.lang.Class getProxyClass(java.lang.ClassLoader arg0, java.lang.Class[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallStaticObjectMethod(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._getProxyClass21148, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _newProxyInstance21149;
-		public static global::java.lang.Object newProxyInstance(java.lang.ClassLoader arg0, java.lang.Class[] arg1, java.lang.reflect.InvocationHandler arg2) 
+		public static global::java.lang.Object newProxyInstance(java.lang.ClassLoader arg0, java.lang.Class[] arg1, java.lang.reflect.InvocationHandler arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._newProxyInstance21149, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInvocationHandler21150;
-		public static global::java.lang.reflect.InvocationHandler getInvocationHandler(java.lang.Object arg0) 
+		public static global::java.lang.reflect.InvocationHandler getInvocationHandler(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.InvocationHandler>(@__env.CallStaticObjectMethod(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._getInvocationHandler21150, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.reflect.InvocationHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _Proxy21151;
-		protected Proxy(java.lang.reflect.InvocationHandler arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected Proxy(java.lang.reflect.InvocationHandler arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.Proxy.staticClass, global::java.lang.reflect.Proxy._Proxy21151, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

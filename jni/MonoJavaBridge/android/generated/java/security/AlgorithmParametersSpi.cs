@@ -26,7 +26,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineToString22881;
 		protected abstract global::java.lang.String engineToString();
 		internal static global::MonoJavaBridge.MethodId _AlgorithmParametersSpi22882;
-		public AlgorithmParametersSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AlgorithmParametersSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParametersSpi.staticClass, global::java.security.AlgorithmParametersSpi._AlgorithmParametersSpi22882);
@@ -59,7 +59,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit22883;
-		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0) 
+		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineInit22883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit22884;
-		protected override void engineInit(byte[] arg0) 
+		protected override void engineInit(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineInit22884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit22885;
-		protected override void engineInit(byte[] arg0, java.lang.String arg1) 
+		protected override void engineInit(byte[] arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineInit22885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetParameterSpec22886;
-		protected override global::java.security.spec.AlgorithmParameterSpec engineGetParameterSpec(java.lang.Class arg0) 
+		protected override global::java.security.spec.AlgorithmParameterSpec engineGetParameterSpec(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +95,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineGetParameterSpec22886, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.spec.AlgorithmParameterSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetEncoded22887;
-		protected override byte[] engineGetEncoded() 
+		protected override byte[] engineGetEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +104,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineGetEncoded22887)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetEncoded22888;
-		protected override byte[] engineGetEncoded(java.lang.String arg0) 
+		protected override byte[] engineGetEncoded(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +113,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParametersSpi_.staticClass, global::java.security.AlgorithmParametersSpi_._engineGetEncoded22888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineToString22889;
-		protected override global::java.lang.String engineToString() 
+		protected override global::java.lang.String engineToString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

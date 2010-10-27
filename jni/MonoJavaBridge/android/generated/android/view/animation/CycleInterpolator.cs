@@ -12,7 +12,7 @@ namespace android.view.animation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getInterpolation15676;
-		public virtual float getInterpolation(float arg0) 
+		public virtual float getInterpolation(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,14 +21,14 @@ namespace android.view.animation
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._getInterpolation15676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _CycleInterpolator15677;
-		public CycleInterpolator(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CycleInterpolator(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._CycleInterpolator15677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CycleInterpolator15678;
-		public CycleInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CycleInterpolator(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.CycleInterpolator.staticClass, global::android.view.animation.CycleInterpolator._CycleInterpolator15678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

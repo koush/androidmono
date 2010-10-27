@@ -12,7 +12,7 @@ namespace android.graphics.drawable
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _draw6233;
-		public override void draw(android.graphics.Canvas arg0) 
+		public override void draw(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._draw6233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _startTransition6234;
-		public virtual void startTransition(int arg0) 
+		public virtual void startTransition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._startTransition6234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _resetTransition6235;
-		public virtual void resetTransition() 
+		public virtual void resetTransition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._resetTransition6235);
 		}
 		internal static global::MonoJavaBridge.MethodId _reverseTransition6236;
-		public virtual void reverseTransition(int arg0) 
+		public virtual void reverseTransition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,8 +47,15 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._reverseTransition6236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool CrossFadeEnabled
+		{
+			set
+			{
+				setCrossFadeEnabled(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setCrossFadeEnabled6237;
-		public virtual void setCrossFadeEnabled(bool arg0) 
+		public virtual void setCrossFadeEnabled(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._setCrossFadeEnabled6237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCrossFadeEnabled6238;
-		public virtual bool isCrossFadeEnabled() 
+		public virtual bool isCrossFadeEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +73,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._isCrossFadeEnabled6238);
 		}
 		internal static global::MonoJavaBridge.MethodId _TransitionDrawable6239;
-		public TransitionDrawable(android.graphics.drawable.Drawable[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TransitionDrawable(android.graphics.drawable.Drawable[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.TransitionDrawable.staticClass, global::android.graphics.drawable.TransitionDrawable._TransitionDrawable6239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

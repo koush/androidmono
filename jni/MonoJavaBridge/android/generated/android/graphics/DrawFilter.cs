@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5264;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._finalize5264);
 		}
 		internal static global::MonoJavaBridge.MethodId _DrawFilter5265;
-		public DrawFilter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DrawFilter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._DrawFilter5265);

@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get12692;
-		public static global::java.lang.String get(java.lang.CharSequence arg0, int arg1, int arg2, android.view.View arg3) 
+		public static global::java.lang.String get(java.lang.CharSequence arg0, int arg1, int arg2, android.view.View arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.AutoText.staticClass, global::android.text.AutoText._get12692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
@@ -22,7 +22,7 @@ namespace android.text
 			return get((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSize12693;
-		public static int getSize(android.view.View arg0) 
+		public static int getSize(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.AutoText.staticClass, global::android.text.AutoText._getSize12693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

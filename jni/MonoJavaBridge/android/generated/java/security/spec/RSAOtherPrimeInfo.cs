@@ -19,7 +19,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExponent24059;
-		public virtual global::java.math.BigInteger getExponent() 
+		public virtual global::java.math.BigInteger getExponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCrtCoefficient24060;
-		public virtual global::java.math.BigInteger getCrtCoefficient() 
+		public virtual global::java.math.BigInteger getCrtCoefficient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrime24061;
-		public virtual global::java.math.BigInteger getPrime() 
+		public virtual global::java.math.BigInteger getPrime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._getPrime24061)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _RSAOtherPrimeInfo24062;
-		public RSAOtherPrimeInfo(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RSAOtherPrimeInfo(java.math.BigInteger arg0, java.math.BigInteger arg1, java.math.BigInteger arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAOtherPrimeInfo.staticClass, global::java.security.spec.RSAOtherPrimeInfo._RSAOtherPrimeInfo24062, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

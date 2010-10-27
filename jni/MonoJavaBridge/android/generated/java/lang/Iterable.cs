@@ -22,7 +22,7 @@ namespace java.lang
 			return global::java.lang.IterableHelper.WrapIterator(((global::java.lang.Iterable)this).iterator());
 		}
 		internal static global::MonoJavaBridge.MethodId _iterator20240;
-		 global::java.util.Iterator java.lang.Iterable.iterator() 
+		global::java.util.Iterator java.lang.Iterable.iterator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

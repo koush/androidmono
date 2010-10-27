@@ -12,7 +12,7 @@ namespace android.preference
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onClick10227;
-		protected override void onClick() 
+		protected override void onClick()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onClick10227);
 		}
 		internal static global::MonoJavaBridge.MethodId _isChecked10228;
-		public virtual bool isChecked() 
+		public virtual bool isChecked()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,8 +29,15 @@ namespace android.preference
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._isChecked10228);
 		}
+		public new bool Checked
+		{
+			set
+			{
+				setChecked(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setChecked10229;
-		public virtual void setChecked(bool arg0) 
+		public virtual void setChecked(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +46,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setChecked10229, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState10230;
-		protected override void onRestoreInstanceState(android.os.Parcelable arg0) 
+		protected override void onRestoreInstanceState(android.os.Parcelable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +55,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onRestoreInstanceState10230, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState10231;
-		protected override global::android.os.Parcelable onSaveInstanceState() 
+		protected override global::android.os.Parcelable onSaveInstanceState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onSaveInstanceState10231)) as android.os.Parcelable;
 		}
 		internal static global::MonoJavaBridge.MethodId _onBindView10232;
-		protected override void onBindView(android.view.View arg0) 
+		protected override void onBindView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +73,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onBindView10232, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _shouldDisableDependents10233;
-		public override bool shouldDisableDependents() 
+		public override bool shouldDisableDependents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +82,7 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._shouldDisableDependents10233);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSummaryOn10234;
-		public virtual void setSummaryOn(int arg0) 
+		public virtual void setSummaryOn(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +91,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOn10234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSummaryOn10235;
-		public virtual void setSummaryOn(java.lang.CharSequence arg0) 
+		public virtual void setSummaryOn(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +115,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSummaryOn10236;
-		public virtual global::java.lang.CharSequence getSummaryOn() 
+		public virtual global::java.lang.CharSequence getSummaryOn()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -117,7 +124,7 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._getSummaryOn10236)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSummaryOff10237;
-		public virtual void setSummaryOff(int arg0) 
+		public virtual void setSummaryOff(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -126,7 +133,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOff10237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSummaryOff10238;
-		public virtual void setSummaryOff(java.lang.CharSequence arg0) 
+		public virtual void setSummaryOff(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -150,7 +157,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSummaryOff10239;
-		public virtual global::java.lang.CharSequence getSummaryOff() 
+		public virtual global::java.lang.CharSequence getSummaryOff()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +177,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisableDependentsState10240;
-		public virtual bool getDisableDependentsState() 
+		public virtual bool getDisableDependentsState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +186,7 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._getDisableDependentsState10240);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDisableDependentsState10241;
-		public virtual void setDisableDependentsState(bool arg0) 
+		public virtual void setDisableDependentsState(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +195,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setDisableDependentsState10241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onGetDefaultValue10242;
-		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1) 
+		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -197,7 +204,7 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onGetDefaultValue10242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _onSetInitialValue10243;
-		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1) 
+		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,21 +213,21 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onSetInitialValue10243, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckBoxPreference10244;
-		public CheckBoxPreference(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckBoxPreference(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._CheckBoxPreference10244, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckBoxPreference10245;
-		public CheckBoxPreference(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckBoxPreference(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._CheckBoxPreference10245, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CheckBoxPreference10246;
-		public CheckBoxPreference(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CheckBoxPreference(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._CheckBoxPreference10246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

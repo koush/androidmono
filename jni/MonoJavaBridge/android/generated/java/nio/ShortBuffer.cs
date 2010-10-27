@@ -14,7 +14,7 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _get22360;
 		public abstract short get();
 		internal static global::MonoJavaBridge.MethodId _get22361;
-		public virtual global::java.nio.ShortBuffer get(short[] arg0) 
+		public virtual global::java.nio.ShortBuffer get(short[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._get22361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _get22362;
-		public virtual global::java.nio.ShortBuffer get(short[] arg0, int arg1, int arg2) 
+		public virtual global::java.nio.ShortBuffer get(short[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _get22363;
 		public abstract short get(int arg0);
 		internal static global::MonoJavaBridge.MethodId _put22364;
-		public virtual global::java.nio.ShortBuffer put(java.nio.ShortBuffer arg0) 
+		public virtual global::java.nio.ShortBuffer put(java.nio.ShortBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _put22366;
 		public abstract global::java.nio.ShortBuffer put(int arg0, short arg1);
 		internal static global::MonoJavaBridge.MethodId _put22367;
-		public virtual global::java.nio.ShortBuffer put(short[] arg0, int arg1, int arg2) 
+		public virtual global::java.nio.ShortBuffer put(short[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._put22367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _put22368;
-		public virtual global::java.nio.ShortBuffer put(short[] arg0) 
+		public virtual global::java.nio.ShortBuffer put(short[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._put22368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals22369;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -74,7 +74,7 @@ namespace java.nio
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._equals22369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22370;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._toString22370)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22371;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace java.nio
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._hashCode22371);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo22372;
-		public virtual int compareTo(java.lang.Object arg0) 
+		public virtual int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,7 +101,7 @@ namespace java.nio
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._compareTo22372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo22373;
-		public virtual int compareTo(java.nio.ShortBuffer arg0) 
+		public virtual int compareTo(java.nio.ShortBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,7 +112,7 @@ namespace java.nio
 		internal static global::MonoJavaBridge.MethodId _isDirect22374;
 		public abstract bool isDirect();
 		internal static global::MonoJavaBridge.MethodId _hasArray22375;
-		public sealed override bool hasArray() 
+		public sealed override bool hasArray()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -121,7 +121,7 @@ namespace java.nio
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._hasArray22375);
 		}
 		internal static global::MonoJavaBridge.MethodId _array22376;
-		public override global::java.lang.Object array() 
+		public override global::java.lang.Object array()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +130,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._array22376)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _arrayOffset22377;
-		public sealed override int arrayOffset() 
+		public sealed override int arrayOffset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,19 +139,19 @@ namespace java.nio
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._arrayOffset22377);
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap22378;
-		public static global::java.nio.ShortBuffer wrap(short[] arg0, int arg1, int arg2) 
+		public static global::java.nio.ShortBuffer wrap(short[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._wrap22378, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap22379;
-		public static global::java.nio.ShortBuffer wrap(short[] arg0) 
+		public static global::java.nio.ShortBuffer wrap(short[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._wrap22379, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _allocate22380;
-		public static global::java.nio.ShortBuffer allocate(int arg0) 
+		public static global::java.nio.ShortBuffer allocate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._allocate22380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
@@ -211,7 +211,7 @@ namespace java.nio
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get22386;
-		public override short get() 
+		public override short get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -220,7 +220,7 @@ namespace java.nio
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._get22386);
 		}
 		internal static global::MonoJavaBridge.MethodId _get22387;
-		public override short get(int arg0) 
+		public override short get(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -229,7 +229,7 @@ namespace java.nio
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._get22387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _put22388;
-		public override global::java.nio.ShortBuffer put(short arg0) 
+		public override global::java.nio.ShortBuffer put(short arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -238,7 +238,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._put22388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _put22389;
-		public override global::java.nio.ShortBuffer put(int arg0, short arg1) 
+		public override global::java.nio.ShortBuffer put(int arg0, short arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -247,7 +247,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._put22389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _isDirect22390;
-		public override bool isDirect() 
+		public override bool isDirect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -256,7 +256,7 @@ namespace java.nio
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._isDirect22390);
 		}
 		internal static global::MonoJavaBridge.MethodId _duplicate22391;
-		public override global::java.nio.ShortBuffer duplicate() 
+		public override global::java.nio.ShortBuffer duplicate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -265,7 +265,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._duplicate22391)) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _slice22392;
-		public override global::java.nio.ShortBuffer slice() 
+		public override global::java.nio.ShortBuffer slice()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -274,7 +274,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._slice22392)) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _asReadOnlyBuffer22393;
-		public override global::java.nio.ShortBuffer asReadOnlyBuffer() 
+		public override global::java.nio.ShortBuffer asReadOnlyBuffer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -283,7 +283,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._asReadOnlyBuffer22393)) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _compact22394;
-		public override global::java.nio.ShortBuffer compact() 
+		public override global::java.nio.ShortBuffer compact()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -292,7 +292,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._compact22394)) as java.nio.ShortBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _order22395;
-		public override global::java.nio.ByteOrder order() 
+		public override global::java.nio.ByteOrder order()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -301,7 +301,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ShortBuffer_.staticClass, global::java.nio.ShortBuffer_._order22395)) as java.nio.ByteOrder;
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadOnly22396;
-		public override bool isReadOnly() 
+		public override bool isReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

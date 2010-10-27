@@ -12,7 +12,7 @@ namespace org.apache.http.impl.entity
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _determineLength33375;
-		public virtual long determineLength(org.apache.http.HttpMessage arg0) 
+		public virtual long determineLength(org.apache.http.HttpMessage arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.entity
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.LaxContentLengthStrategy._determineLength33375, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LaxContentLengthStrategy33376;
-		public LaxContentLengthStrategy()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LaxContentLengthStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.LaxContentLengthStrategy.staticClass, global::org.apache.http.impl.entity.LaxContentLengthStrategy._LaxContentLengthStrategy33376);

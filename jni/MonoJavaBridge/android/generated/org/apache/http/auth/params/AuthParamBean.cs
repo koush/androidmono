@@ -11,8 +11,15 @@ namespace org.apache.http.auth.@params
 		protected AuthParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::java.lang.String CredentialCharset
+		{
+			set
+			{
+				setCredentialCharset(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setCredentialCharset31859;
-		public virtual void setCredentialCharset(java.lang.String arg0) 
+		public virtual void setCredentialCharset(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +28,7 @@ namespace org.apache.http.auth.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.auth.@params.AuthParamBean.staticClass, global::org.apache.http.auth.@params.AuthParamBean._setCredentialCharset31859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthParamBean31860;
-		public AuthParamBean(org.apache.http.@params.HttpParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.@params.AuthParamBean.staticClass, global::org.apache.http.auth.@params.AuthParamBean._AuthParamBean31860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

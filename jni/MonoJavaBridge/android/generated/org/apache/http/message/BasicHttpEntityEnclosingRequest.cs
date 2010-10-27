@@ -23,7 +23,7 @@ namespace org.apache.http.message
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntity33567;
-		public virtual global::org.apache.http.HttpEntity getEntity() 
+		public virtual global::org.apache.http.HttpEntity getEntity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.apache.http.message
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpEntity>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.message.BasicHttpEntityEnclosingRequest.staticClass, global::org.apache.http.message.BasicHttpEntityEnclosingRequest._getEntity33567)) as org.apache.http.HttpEntity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEntity33568;
-		public virtual void setEntity(org.apache.http.HttpEntity arg0) 
+		public virtual void setEntity(org.apache.http.HttpEntity arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http.message
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.message.BasicHttpEntityEnclosingRequest.staticClass, global::org.apache.http.message.BasicHttpEntityEnclosingRequest._setEntity33568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _expectContinue33569;
-		public virtual bool expectContinue() 
+		public virtual bool expectContinue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,21 +50,21 @@ namespace org.apache.http.message
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.message.BasicHttpEntityEnclosingRequest.staticClass, global::org.apache.http.message.BasicHttpEntityEnclosingRequest._expectContinue33569);
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHttpEntityEnclosingRequest33570;
-		public BasicHttpEntityEnclosingRequest(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BasicHttpEntityEnclosingRequest(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpEntityEnclosingRequest.staticClass, global::org.apache.http.message.BasicHttpEntityEnclosingRequest._BasicHttpEntityEnclosingRequest33570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHttpEntityEnclosingRequest33571;
-		public BasicHttpEntityEnclosingRequest(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BasicHttpEntityEnclosingRequest(java.lang.String arg0, java.lang.String arg1, org.apache.http.ProtocolVersion arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpEntityEnclosingRequest.staticClass, global::org.apache.http.message.BasicHttpEntityEnclosingRequest._BasicHttpEntityEnclosingRequest33571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicHttpEntityEnclosingRequest33572;
-		public BasicHttpEntityEnclosingRequest(org.apache.http.RequestLine arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BasicHttpEntityEnclosingRequest(org.apache.http.RequestLine arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.message.BasicHttpEntityEnclosingRequest.staticClass, global::org.apache.http.message.BasicHttpEntityEnclosingRequest._BasicHttpEntityEnclosingRequest33572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

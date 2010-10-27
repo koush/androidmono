@@ -12,19 +12,19 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance21907;
-		public static global::java.net.URLClassLoader newInstance(java.net.URL[] arg0, java.lang.ClassLoader arg1) 
+		public static global::java.net.URLClassLoader newInstance(java.net.URL[] arg0, java.lang.ClassLoader arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._newInstance21907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.URLClassLoader;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance21908;
-		public static global::java.net.URLClassLoader newInstance(java.net.URL[] arg0) 
+		public static global::java.net.URLClassLoader newInstance(java.net.URL[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._newInstance21908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URLClassLoader;
 		}
 		internal static global::MonoJavaBridge.MethodId _findClass21909;
-		protected override global::java.lang.Class findClass(java.lang.String arg0) 
+		protected override global::java.lang.Class findClass(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findClass21909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResource21910;
-		public virtual global::java.net.URL findResource(java.lang.String arg0) 
+		public virtual global::java.net.URL findResource(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findResource21910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResources21911;
-		public virtual global::java.util.Enumeration findResources(java.lang.String arg0) 
+		public virtual global::java.util.Enumeration findResources(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._findResources21911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _definePackage21912;
-		protected virtual global::java.lang.Package definePackage(java.lang.String arg0, java.util.jar.Manifest arg1, java.net.URL arg2) 
+		protected virtual global::java.lang.Package definePackage(java.lang.String arg0, java.util.jar.Manifest arg1, java.net.URL arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._definePackage21912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Package;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermissions21913;
-		protected override global::java.security.PermissionCollection getPermissions(java.security.CodeSource arg0) 
+		protected override global::java.security.PermissionCollection getPermissions(java.security.CodeSource arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._getPermissions21913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.PermissionCollection;
 		}
 		internal static global::MonoJavaBridge.MethodId _addURL21914;
-		protected virtual void addURL(java.net.URL arg0) 
+		protected virtual void addURL(java.net.URL arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +85,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getURLs21915;
-		public virtual global::java.net.URL[] getURLs() 
+		public virtual global::java.net.URL[] getURLs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,21 +94,21 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._getURLs21915)) as java.net.URL[];
 		}
 		internal static global::MonoJavaBridge.MethodId _URLClassLoader21916;
-		public URLClassLoader(java.net.URL[] arg0, java.lang.ClassLoader arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public URLClassLoader(java.net.URL[] arg0, java.lang.ClassLoader arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._URLClassLoader21916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _URLClassLoader21917;
-		public URLClassLoader(java.net.URL[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public URLClassLoader(java.net.URL[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._URLClassLoader21917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _URLClassLoader21918;
-		public URLClassLoader(java.net.URL[] arg0, java.lang.ClassLoader arg1, java.net.URLStreamHandlerFactory arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public URLClassLoader(java.net.URL[] arg0, java.lang.ClassLoader arg1, java.net.URLStreamHandlerFactory arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.URLClassLoader.staticClass, global::java.net.URLClassLoader._URLClassLoader21918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

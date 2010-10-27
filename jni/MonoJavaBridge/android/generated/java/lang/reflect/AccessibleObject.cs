@@ -12,7 +12,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnnotation20998;
-		public virtual global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0) 
+		public virtual global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getAnnotation20998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.Annotation;
 		}
 		internal static global::MonoJavaBridge.MethodId _isAnnotationPresent20999;
-		public virtual bool isAnnotationPresent(java.lang.Class arg0) 
+		public virtual bool isAnnotationPresent(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnnotations21000;
-		public virtual global::java.lang.annotation.Annotation[] getAnnotations() 
+		public virtual global::java.lang.annotation.Annotation[] getAnnotations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations21001;
-		public virtual global::java.lang.annotation.Annotation[] getDeclaredAnnotations() 
+		public virtual global::java.lang.annotation.Annotation[] getDeclaredAnnotations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,13 +62,20 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._getDeclaredAnnotations21001)) as java.lang.annotation.Annotation[];
 		}
 		internal static global::MonoJavaBridge.MethodId _setAccessible21002;
-		public static void setAccessible(java.lang.reflect.AccessibleObject[] arg0, bool arg1) 
+		public static void setAccessible(java.lang.reflect.AccessibleObject[] arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._setAccessible21002, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new bool Accessible
+		{
+			set
+			{
+				setAccessible(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setAccessible21003;
-		public virtual void setAccessible(bool arg0) 
+		public virtual void setAccessible(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +84,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._setAccessible21003, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isAccessible21004;
-		public virtual bool isAccessible() 
+		public virtual bool isAccessible()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +93,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._isAccessible21004);
 		}
 		internal static global::MonoJavaBridge.MethodId _AccessibleObject21005;
-		protected AccessibleObject()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AccessibleObject() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.AccessibleObject.staticClass, global::java.lang.reflect.AccessibleObject._AccessibleObject21005);

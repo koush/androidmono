@@ -18,7 +18,7 @@ namespace dalvik.annotation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _value18344;
-		 global::java.lang.Class dalvik.annotation.TestTargetClass.value() 
+		global::java.lang.Class dalvik.annotation.TestTargetClass.value()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace dalvik.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTargetClass_.staticClass, global::dalvik.annotation.TestTargetClass_._value18344)) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals18345;
-		 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+		bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace dalvik.annotation
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::dalvik.annotation.TestTargetClass_.staticClass, global::dalvik.annotation.TestTargetClass_._equals18345, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString18346;
-		 global::java.lang.String java.lang.annotation.Annotation.toString() 
+		global::java.lang.String java.lang.annotation.Annotation.toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace dalvik.annotation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.annotation.TestTargetClass_.staticClass, global::dalvik.annotation.TestTargetClass_._toString18346)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode18347;
-		 int java.lang.annotation.Annotation.hashCode() 
+		int java.lang.annotation.Annotation.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,7 +54,7 @@ namespace dalvik.annotation
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::dalvik.annotation.TestTargetClass_.staticClass, global::dalvik.annotation.TestTargetClass_._hashCode18347);
 		}
 		internal static global::MonoJavaBridge.MethodId _annotationType18348;
-		 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+		global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

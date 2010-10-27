@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalAccessException20171;
-		public IllegalAccessException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalAccessException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalAccessException.staticClass, global::java.lang.IllegalAccessException._IllegalAccessException20171);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalAccessException20172;
-		public IllegalAccessException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalAccessException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IllegalAccessException.staticClass, global::java.lang.IllegalAccessException._IllegalAccessException20172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,13 +12,13 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getBitsPerPixel5267;
-		public static int getBitsPerPixel(int arg0) 
+		public static int getBitsPerPixel(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._getBitsPerPixel5267, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ImageFormat5268;
-		public ImageFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ImageFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ImageFormat.staticClass, global::android.graphics.ImageFormat._ImageFormat5268);

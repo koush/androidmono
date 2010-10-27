@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getHost33069;
-		protected virtual global::java.lang.String getHost(java.net.InetSocketAddress arg0) 
+		protected virtual global::java.lang.String getHost(java.net.InetSocketAddress arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.conn
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._getHost33069, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _determineRoute33070;
-		public virtual global::org.apache.http.conn.routing.HttpRoute determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2) 
+		public virtual global::org.apache.http.conn.routing.HttpRoute determineRoute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http.impl.conn
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProxySelector33071;
-		public virtual global::java.net.ProxySelector getProxySelector() 
+		public virtual global::java.net.ProxySelector getProxySelector()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace org.apache.http.impl.conn
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._getProxySelector33071)) as java.net.ProxySelector;
 		}
 		internal static global::MonoJavaBridge.MethodId _setProxySelector33072;
-		public virtual void setProxySelector(java.net.ProxySelector arg0) 
+		public virtual void setProxySelector(java.net.ProxySelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace org.apache.http.impl.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._setProxySelector33072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _determineProxy33073;
-		protected virtual global::org.apache.http.HttpHost determineProxy(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2) 
+		protected virtual global::org.apache.http.HttpHost determineProxy(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace org.apache.http.impl.conn
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._determineProxy33073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.apache.http.HttpHost;
 		}
 		internal static global::MonoJavaBridge.MethodId _chooseProxy33074;
-		protected virtual global::java.net.Proxy chooseProxy(java.util.List arg0, org.apache.http.HttpHost arg1, org.apache.http.HttpRequest arg2, org.apache.http.protocol.HttpContext arg3) 
+		protected virtual global::java.net.Proxy chooseProxy(java.util.List arg0, org.apache.http.HttpHost arg1, org.apache.http.HttpRequest arg2, org.apache.http.protocol.HttpContext arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace org.apache.http.impl.conn
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._chooseProxy33074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.net.Proxy;
 		}
 		internal static global::MonoJavaBridge.MethodId _ProxySelectorRoutePlanner33075;
-		public ProxySelectorRoutePlanner(org.apache.http.conn.scheme.SchemeRegistry arg0, java.net.ProxySelector arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProxySelectorRoutePlanner(org.apache.http.conn.scheme.SchemeRegistry arg0, java.net.ProxySelector arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.ProxySelectorRoutePlanner.staticClass, global::org.apache.http.impl.conn.ProxySelectorRoutePlanner._ProxySelectorRoutePlanner33075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

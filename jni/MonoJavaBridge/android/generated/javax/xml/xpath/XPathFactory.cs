@@ -12,19 +12,19 @@ namespace javax.xml.xpath
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance31309;
-		public static global::javax.xml.xpath.XPathFactory newInstance(java.lang.String arg0) 
+		public static global::javax.xml.xpath.XPathFactory newInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.xpath.XPathFactory.staticClass, global::javax.xml.xpath.XPathFactory._newInstance31309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.xpath.XPathFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance31310;
-		public static global::javax.xml.xpath.XPathFactory newInstance(java.lang.String arg0, java.lang.String arg1, java.lang.ClassLoader arg2) 
+		public static global::javax.xml.xpath.XPathFactory newInstance(java.lang.String arg0, java.lang.String arg1, java.lang.ClassLoader arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.xpath.XPathFactory.staticClass, global::javax.xml.xpath.XPathFactory._newInstance31310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as javax.xml.xpath.XPathFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance31311;
-		public static global::javax.xml.xpath.XPathFactory newInstance() 
+		public static global::javax.xml.xpath.XPathFactory newInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.xpath.XPathFactory.staticClass, global::javax.xml.xpath.XPathFactory._newInstance31311)) as javax.xml.xpath.XPathFactory;
@@ -42,7 +42,7 @@ namespace javax.xml.xpath
 		internal static global::MonoJavaBridge.MethodId _newXPath31317;
 		public abstract global::javax.xml.xpath.XPath newXPath();
 		internal static global::MonoJavaBridge.MethodId _XPathFactory31318;
-		protected XPathFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected XPathFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathFactory.staticClass, global::javax.xml.xpath.XPathFactory._XPathFactory31318);
@@ -91,7 +91,7 @@ namespace javax.xml.xpath
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature31321;
-		public override void setFeature(java.lang.String arg0, bool arg1) 
+		public override void setFeature(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace javax.xml.xpath
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_.staticClass, global::javax.xml.xpath.XPathFactory_._setFeature31321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature31322;
-		public override bool getFeature(java.lang.String arg0) 
+		public override bool getFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace javax.xml.xpath
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_.staticClass, global::javax.xml.xpath.XPathFactory_._getFeature31322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setXPathVariableResolver31323;
-		public override void setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver arg0) 
+		public override void setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace javax.xml.xpath
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_.staticClass, global::javax.xml.xpath.XPathFactory_._setXPathVariableResolver31323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setXPathFunctionResolver31324;
-		public override void setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver arg0) 
+		public override void setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace javax.xml.xpath
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_.staticClass, global::javax.xml.xpath.XPathFactory_._setXPathFunctionResolver31324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isObjectModelSupported31325;
-		public override bool isObjectModelSupported(java.lang.String arg0) 
+		public override bool isObjectModelSupported(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -136,7 +136,7 @@ namespace javax.xml.xpath
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.xpath.XPathFactory_.staticClass, global::javax.xml.xpath.XPathFactory_._isObjectModelSupported31325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _newXPath31326;
-		public override global::javax.xml.xpath.XPath newXPath() 
+		public override global::javax.xml.xpath.XPath newXPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

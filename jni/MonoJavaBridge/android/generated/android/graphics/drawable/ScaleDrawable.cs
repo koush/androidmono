@@ -12,7 +12,7 @@ namespace android.graphics.drawable
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate6177;
-		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
+		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDrawable6178;
-		public virtual global::android.graphics.drawable.Drawable getDrawable() 
+		public virtual global::android.graphics.drawable.Drawable getDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._getDrawable6178)) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _draw6179;
-		public override void draw(android.graphics.Canvas arg0) 
+		public override void draw(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations6180;
-		public override int getChangingConfigurations() 
+		public override int getChangingConfigurations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,8 +61,15 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._getChangingConfigurations6180);
 		}
+		public new int Alpha
+		{
+			set
+			{
+				setAlpha(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setAlpha6181;
-		public override void setAlpha(int arg0) 
+		public override void setAlpha(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,8 +77,15 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._setAlpha6181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.ColorFilter ColorFilter
+		{
+			set
+			{
+				setColorFilter(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setColorFilter6182;
-		public override void setColorFilter(android.graphics.ColorFilter arg0) 
+		public override void setColorFilter(android.graphics.ColorFilter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +94,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._setColorFilter6182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isStateful6183;
-		public override bool isStateful() 
+		public override bool isStateful()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +103,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._isStateful6183);
 		}
 		internal static global::MonoJavaBridge.MethodId _setVisible6184;
-		public override bool setVisible(bool arg0, bool arg1) 
+		public override bool setVisible(bool arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -105,7 +119,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity6185;
-		public override int getOpacity() 
+		public override int getOpacity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +128,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._getOpacity6185);
 		}
 		internal static global::MonoJavaBridge.MethodId _onStateChange6186;
-		protected override bool onStateChange(int[] arg0) 
+		protected override bool onStateChange(int[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -123,7 +137,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._onStateChange6186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onLevelChange6187;
-		protected override bool onLevelChange(int arg0) 
+		protected override bool onLevelChange(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +146,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._onLevelChange6187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onBoundsChange6188;
-		protected override void onBoundsChange(android.graphics.Rect arg0) 
+		protected override void onBoundsChange(android.graphics.Rect arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -148,7 +162,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth6189;
-		public override int getIntrinsicWidth() 
+		public override int getIntrinsicWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -164,7 +178,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight6190;
-		public override int getIntrinsicHeight() 
+		public override int getIntrinsicHeight()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -173,7 +187,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._getIntrinsicHeight6190);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPadding6191;
-		public override bool getPadding(android.graphics.Rect arg0) 
+		public override bool getPadding(android.graphics.Rect arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -182,7 +196,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._getPadding6191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _mutate6192;
-		public override global::android.graphics.drawable.Drawable mutate() 
+		public override global::android.graphics.drawable.Drawable mutate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -198,7 +212,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState6193;
-		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
+		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -207,7 +221,7 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._getConstantState6193)) as android.graphics.drawable.Drawable.ConstantState;
 		}
 		internal static global::MonoJavaBridge.MethodId _invalidateDrawable6194;
-		public virtual void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
+		public virtual void invalidateDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -216,7 +230,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._invalidateDrawable6194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _scheduleDrawable6195;
-		public virtual void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2) 
+		public virtual void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -225,7 +239,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._scheduleDrawable6195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _unscheduleDrawable6196;
-		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1) 
+		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -234,7 +248,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._unscheduleDrawable6196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ScaleDrawable6197;
-		public ScaleDrawable(android.graphics.drawable.Drawable arg0, int arg1, float arg2, float arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ScaleDrawable(android.graphics.drawable.Drawable arg0, int arg1, float arg2, float arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.ScaleDrawable.staticClass, global::android.graphics.drawable.ScaleDrawable._ScaleDrawable6197, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

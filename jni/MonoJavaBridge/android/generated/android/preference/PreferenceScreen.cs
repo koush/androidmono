@@ -12,7 +12,7 @@ namespace android.preference
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onDismiss10450;
-		public void onDismiss(android.content.DialogInterface arg0) 
+		public void onDismiss(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._onDismiss10450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _bind10451;
-		public void bind(android.widget.ListView arg0) 
+		public void bind(android.widget.ListView arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDialog10452;
-		public global::android.app.Dialog getDialog() 
+		public global::android.app.Dialog getDialog()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRootAdapter10453;
-		public global::android.widget.ListAdapter getRootAdapter() 
+		public global::android.widget.ListAdapter getRootAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.PreferenceScreen.staticClass, global::android.preference.PreferenceScreen._getRootAdapter10453)) as android.widget.ListAdapter;
 		}
 		internal static global::MonoJavaBridge.MethodId _onItemClick10454;
-		public void onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3) 
+		public void onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

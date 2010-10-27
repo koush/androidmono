@@ -12,14 +12,14 @@ namespace javax.security.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DestroyFailedException30164;
-		public DestroyFailedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DestroyFailedException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.DestroyFailedException.staticClass, global::javax.security.auth.DestroyFailedException._DestroyFailedException30164);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DestroyFailedException30165;
-		public DestroyFailedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DestroyFailedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.DestroyFailedException.staticClass, global::javax.security.auth.DestroyFailedException._DestroyFailedException30165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

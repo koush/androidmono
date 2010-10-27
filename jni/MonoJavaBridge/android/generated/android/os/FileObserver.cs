@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize9833;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._finalize9833);
 		}
 		internal static global::MonoJavaBridge.MethodId _startWatching9834;
-		public virtual void startWatching() 
+		public virtual void startWatching()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._startWatching9834);
 		}
 		internal static global::MonoJavaBridge.MethodId _stopWatching9835;
-		public virtual void stopWatching() 
+		public virtual void stopWatching()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,14 +41,14 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _onEvent9836;
 		public abstract void onEvent(int arg0, java.lang.String arg1);
 		internal static global::MonoJavaBridge.MethodId _FileObserver9837;
-		public FileObserver(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FileObserver(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.FileObserver.staticClass, global::android.os.FileObserver._FileObserver9837, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _FileObserver9838;
-		public FileObserver(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FileObserver(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.FileObserver.staticClass, global::android.os.FileObserver._FileObserver9838, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -170,7 +170,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onEvent9852;
-		public override void onEvent(int arg0, java.lang.String arg1) 
+		public override void onEvent(int arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

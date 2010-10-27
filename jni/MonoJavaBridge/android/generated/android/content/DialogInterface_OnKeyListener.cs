@@ -18,7 +18,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onKey3073;
-		 bool android.content.DialogInterface_OnKeyListener.onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2) 
+		bool android.content.DialogInterface_OnKeyListener.onKey(android.content.DialogInterface arg0, int arg1, android.view.KeyEvent arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnKeyListenerDelegateWrapper3074;
-		public DialogInterface_OnKeyListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DialogInterface_OnKeyListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnKeyListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnKeyListenerDelegateWrapper._DialogInterface_OnKeyListenerDelegateWrapper3074);

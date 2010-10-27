@@ -23,7 +23,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _createIconThumbnail1926;
-			public virtual global::android.graphics.drawable.Drawable createIconThumbnail(android.graphics.drawable.Drawable arg0) 
+			public virtual global::android.graphics.drawable.Drawable createIconThumbnail(android.graphics.drawable.Drawable arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._createIconThumbnail1926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 			}
 			internal static global::MonoJavaBridge.MethodId _IconResizer1927;
-			public IconResizer(android.app.LauncherActivity arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public IconResizer(android.app.LauncherActivity arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._IconResizer1927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -58,7 +58,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _ListItem1928;
-			public ListItem()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public ListItem() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.ListItem.staticClass, global::android.app.LauncherActivity.ListItem._ListItem1928);
@@ -150,7 +150,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1935;
-		protected override void onCreate(android.os.Bundle arg0) 
+		protected override void onCreate(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -159,7 +159,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onCreate1935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSetContentView1936;
-		protected virtual void onSetContentView() 
+		protected virtual void onSetContentView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onSetContentView1936);
 		}
 		internal static global::MonoJavaBridge.MethodId _onListItemClick1937;
-		protected override void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3) 
+		protected override void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onListItemClick1937, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _intentForPosition1938;
-		protected virtual global::android.content.Intent intentForPosition(int arg0) 
+		protected virtual global::android.content.Intent intentForPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -186,7 +186,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._intentForPosition1938, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _itemForPosition1939;
-		protected virtual global::android.app.LauncherActivity.ListItem itemForPosition(int arg0) 
+		protected virtual global::android.app.LauncherActivity.ListItem itemForPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -195,7 +195,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._itemForPosition1939, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.LauncherActivity.ListItem;
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetIntent1940;
-		protected virtual global::android.content.Intent getTargetIntent() 
+		protected virtual global::android.content.Intent getTargetIntent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -204,7 +204,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._getTargetIntent1940)) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _onQueryPackageManager1941;
-		protected virtual global::java.util.List onQueryPackageManager(android.content.Intent arg0) 
+		protected virtual global::java.util.List onQueryPackageManager(android.content.Intent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -213,7 +213,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onQueryPackageManager1941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _makeListItems1942;
-		public virtual global::java.util.List makeListItems() 
+		public virtual global::java.util.List makeListItems()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -222,7 +222,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._makeListItems1942)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _LauncherActivity1943;
-		public LauncherActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LauncherActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._LauncherActivity1943);

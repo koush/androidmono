@@ -12,7 +12,7 @@ namespace org.apache.http.impl.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parse33379;
-		public virtual global::org.apache.http.HttpMessage parse() 
+		public virtual global::org.apache.http.HttpMessage parse()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,13 +23,13 @@ namespace org.apache.http.impl.io
 		internal static global::MonoJavaBridge.MethodId _parseHead33380;
 		protected abstract global::org.apache.http.HttpMessage parseHead(org.apache.http.io.SessionInputBuffer arg0);
 		internal static global::MonoJavaBridge.MethodId _parseHeaders33381;
-		public static global::org.apache.http.Header[] parseHeaders(org.apache.http.io.SessionInputBuffer arg0, int arg1, int arg2, org.apache.http.message.LineParser arg3) 
+		public static global::org.apache.http.Header[] parseHeaders(org.apache.http.io.SessionInputBuffer arg0, int arg1, int arg2, org.apache.http.message.LineParser arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.Header>(@__env.CallStaticObjectMethod(org.apache.http.impl.io.AbstractMessageParser.staticClass, global::org.apache.http.impl.io.AbstractMessageParser._parseHeaders33381, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as org.apache.http.Header[];
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractMessageParser33382;
-		public AbstractMessageParser(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.message.LineParser arg1, org.apache.http.@params.HttpParams arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AbstractMessageParser(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.message.LineParser arg1, org.apache.http.@params.HttpParams arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.AbstractMessageParser.staticClass, global::org.apache.http.impl.io.AbstractMessageParser._AbstractMessageParser33382, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -58,7 +58,7 @@ namespace org.apache.http.impl.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parseHead33383;
-		protected override global::org.apache.http.HttpMessage parseHead(org.apache.http.io.SessionInputBuffer arg0) 
+		protected override global::org.apache.http.HttpMessage parseHead(org.apache.http.io.SessionInputBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

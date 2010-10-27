@@ -12,7 +12,7 @@ namespace android.content.pm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString4046;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._toString4046)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _dump4047;
-		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
+		public virtual void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.content.pm
 			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel4048;
-		public override void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.content.pm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._writeToParcel4048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents4049;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,14 +52,14 @@ namespace android.content.pm
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._describeContents4049);
 		}
 		internal static global::MonoJavaBridge.MethodId _ServiceInfo4050;
-		public ServiceInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ServiceInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._ServiceInfo4050);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ServiceInfo4051;
-		public ServiceInfo(android.content.pm.ServiceInfo arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ServiceInfo(android.content.pm.ServiceInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.ServiceInfo.staticClass, global::android.content.pm.ServiceInfo._ServiceInfo4051, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

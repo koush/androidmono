@@ -18,7 +18,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getFilter17089;
-		 global::android.widget.Filter android.widget.Filterable.getFilter() 
+		global::android.widget.Filter android.widget.Filterable.getFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _FilterableDelegateWrapper17090;
-		public FilterableDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FilterableDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.FilterableDelegateWrapper.staticClass, global::android.widget.FilterableDelegateWrapper._FilterableDelegateWrapper17090);

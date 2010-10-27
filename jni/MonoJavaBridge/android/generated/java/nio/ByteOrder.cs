@@ -12,7 +12,7 @@ namespace java.nio
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22114;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.nio
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._toString22114)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nativeOrder22115;
-		public static global::java.nio.ByteOrder nativeOrder() 
+		public static global::java.nio.ByteOrder nativeOrder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.nio.ByteOrder>(@__env.CallStaticObjectMethod(java.nio.ByteOrder.staticClass, global::java.nio.ByteOrder._nativeOrder22115)) as java.nio.ByteOrder;

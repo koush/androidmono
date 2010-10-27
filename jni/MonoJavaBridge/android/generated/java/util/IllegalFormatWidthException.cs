@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage26324;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWidth26325;
-		public virtual int getWidth() 
+		public virtual int getWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._getWidth26325);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatWidthException26326;
-		public IllegalFormatWidthException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalFormatWidthException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatWidthException.staticClass, global::java.util.IllegalFormatWidthException._IllegalFormatWidthException26326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

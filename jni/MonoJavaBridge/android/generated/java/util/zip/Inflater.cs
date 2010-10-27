@@ -12,7 +12,7 @@ namespace java.util.zip
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize28400;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._finalize28400);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28401;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._reset28401);
 		}
 		internal static global::MonoJavaBridge.MethodId _finished28402;
-		public virtual bool finished() 
+		public virtual bool finished()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._finished28402);
 		}
 		internal static global::MonoJavaBridge.MethodId _end28403;
-		public virtual void end() 
+		public virtual void end()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._end28403);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInput28404;
-		public virtual void setInput(byte[] arg0, int arg1, int arg2) 
+		public virtual void setInput(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,8 +56,15 @@ namespace java.util.zip
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._setInput28404, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new byte[] Input
+		{
+			set
+			{
+				setInput(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setInput28405;
-		public virtual void setInput(byte[] arg0) 
+		public virtual void setInput(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +80,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesWritten28406;
-		public virtual long getBytesWritten() 
+		public virtual long getBytesWritten()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +89,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._getBytesWritten28406);
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate28407;
-		public virtual int inflate(byte[] arg0) 
+		public virtual int inflate(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +98,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._inflate28407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate28408;
-		public virtual int inflate(byte[] arg0, int arg1, int arg2) 
+		public virtual int inflate(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +107,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._inflate28408, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _needsDictionary28409;
-		public virtual bool needsDictionary() 
+		public virtual bool needsDictionary()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +116,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._needsDictionary28409);
 		}
 		internal static global::MonoJavaBridge.MethodId _needsInput28410;
-		public virtual bool needsInput() 
+		public virtual bool needsInput()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +125,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._needsInput28410);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDictionary28411;
-		public virtual void setDictionary(byte[] arg0, int arg1, int arg2) 
+		public virtual void setDictionary(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -126,8 +133,15 @@ namespace java.util.zip
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._setDictionary28411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new byte[] Dictionary
+		{
+			set
+			{
+				setDictionary(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDictionary28412;
-		public virtual void setDictionary(byte[] arg0) 
+		public virtual void setDictionary(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +157,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRemaining28413;
-		public virtual int getRemaining() 
+		public virtual int getRemaining()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -159,7 +173,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAdler28414;
-		public virtual int getAdler() 
+		public virtual int getAdler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -175,7 +189,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTotalIn28415;
-		public virtual int getTotalIn() 
+		public virtual int getTotalIn()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -191,7 +205,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesRead28416;
-		public virtual long getBytesRead() 
+		public virtual long getBytesRead()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -207,7 +221,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTotalOut28417;
-		public virtual int getTotalOut() 
+		public virtual int getTotalOut()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -216,14 +230,14 @@ namespace java.util.zip
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._getTotalOut28417);
 		}
 		internal static global::MonoJavaBridge.MethodId _Inflater28418;
-		public Inflater(bool arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Inflater(bool arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._Inflater28418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Inflater28419;
-		public Inflater()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Inflater() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Inflater.staticClass, global::java.util.zip.Inflater._Inflater28419);

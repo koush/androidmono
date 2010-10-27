@@ -12,7 +12,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals22918;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.security
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._equals22918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22919;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._toString22919)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode22920;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSignerCertPath22921;
-		public global::java.security.cert.CertPath getSignerCertPath() 
+		public global::java.security.cert.CertPath getSignerCertPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimestamp22922;
-		public global::java.security.Timestamp getTimestamp() 
+		public global::java.security.Timestamp getTimestamp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.Timestamp>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._getTimestamp22922)) as java.security.Timestamp;
 		}
 		internal static global::MonoJavaBridge.MethodId _CodeSigner22923;
-		public CodeSigner(java.security.cert.CertPath arg0, java.security.Timestamp arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CodeSigner(java.security.cert.CertPath arg0, java.security.Timestamp arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.CodeSigner.staticClass, global::java.security.CodeSigner._CodeSigner22923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

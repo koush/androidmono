@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get7226;
-		public static global::android.media.CamcorderProfile get(int arg0) 
+		public static global::android.media.CamcorderProfile get(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.media.CamcorderProfile.staticClass, global::android.media.CamcorderProfile._get7226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.media.CamcorderProfile;

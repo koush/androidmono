@@ -19,13 +19,13 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance16033;
-		public static global::android.webkit.CookieSyncManager getInstance() 
+		public static global::android.webkit.CookieSyncManager getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.CookieSyncManager>(@__env.CallStaticObjectMethod(android.webkit.CookieSyncManager.staticClass, global::android.webkit.CookieSyncManager._getInstance16033)) as android.webkit.CookieSyncManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _createInstance16034;
-		public static global::android.webkit.CookieSyncManager createInstance(android.content.Context arg0) 
+		public static global::android.webkit.CookieSyncManager createInstance(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.CookieSyncManager>(@__env.CallStaticObjectMethod(android.webkit.CookieSyncManager.staticClass, global::android.webkit.CookieSyncManager._createInstance16034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.webkit.CookieSyncManager;

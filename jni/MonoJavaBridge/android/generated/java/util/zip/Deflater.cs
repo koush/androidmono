@@ -12,7 +12,7 @@ namespace java.util.zip
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize28353;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._finalize28353);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28354;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._reset28354);
 		}
 		internal static global::MonoJavaBridge.MethodId _finished28355;
-		public virtual bool finished() 
+		public virtual bool finished()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._finished28355);
 		}
 		internal static global::MonoJavaBridge.MethodId _end28356;
-		public virtual void end() 
+		public virtual void end()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,8 +47,15 @@ namespace java.util.zip
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._end28356);
 		}
+		public new byte[] Input
+		{
+			set
+			{
+				setInput(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setInput28357;
-		public virtual void setInput(byte[] arg0) 
+		public virtual void setInput(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._setInput28357, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInput28358;
-		public virtual void setInput(byte[] arg0, int arg1, int arg2) 
+		public virtual void setInput(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +80,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesWritten28359;
-		public virtual long getBytesWritten() 
+		public virtual long getBytesWritten()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +89,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._getBytesWritten28359);
 		}
 		internal static global::MonoJavaBridge.MethodId _needsInput28360;
-		public virtual bool needsInput() 
+		public virtual bool needsInput()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,8 +97,15 @@ namespace java.util.zip
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._needsInput28360);
 		}
+		public new byte[] Dictionary
+		{
+			set
+			{
+				setDictionary(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDictionary28361;
-		public virtual void setDictionary(byte[] arg0) 
+		public virtual void setDictionary(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +114,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._setDictionary28361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDictionary28362;
-		public virtual void setDictionary(byte[] arg0, int arg1, int arg2) 
+		public virtual void setDictionary(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +130,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAdler28363;
-		public virtual int getAdler() 
+		public virtual int getAdler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +146,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTotalIn28364;
-		public virtual int getTotalIn() 
+		public virtual int getTotalIn()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -148,7 +162,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesRead28365;
-		public virtual long getBytesRead() 
+		public virtual long getBytesRead()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -164,7 +178,7 @@ namespace java.util.zip
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTotalOut28366;
-		public virtual int getTotalOut() 
+		public virtual int getTotalOut()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -172,8 +186,15 @@ namespace java.util.zip
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._getTotalOut28366);
 		}
+		public new int Level
+		{
+			set
+			{
+				setLevel(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setLevel28367;
-		public virtual void setLevel(int arg0) 
+		public virtual void setLevel(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -182,7 +203,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._setLevel28367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _finish28368;
-		public virtual void finish() 
+		public virtual void finish()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -191,7 +212,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._finish28368);
 		}
 		internal static global::MonoJavaBridge.MethodId _deflate28369;
-		public virtual int deflate(byte[] arg0, int arg1, int arg2) 
+		public virtual int deflate(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -200,7 +221,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._deflate28369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _deflate28370;
-		public virtual int deflate(byte[] arg0) 
+		public virtual int deflate(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -208,8 +229,15 @@ namespace java.util.zip
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._deflate28370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Strategy
+		{
+			set
+			{
+				setStrategy(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setStrategy28371;
-		public virtual void setStrategy(int arg0) 
+		public virtual void setStrategy(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -218,21 +246,21 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._setStrategy28371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Deflater28372;
-		public Deflater(int arg0, bool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Deflater(int arg0, bool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._Deflater28372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Deflater28373;
-		public Deflater(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Deflater(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._Deflater28373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Deflater28374;
-		public Deflater()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Deflater() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.Deflater.staticClass, global::java.util.zip.Deflater._Deflater28374);

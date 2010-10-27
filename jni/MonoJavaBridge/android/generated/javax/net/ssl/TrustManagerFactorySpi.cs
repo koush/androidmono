@@ -18,7 +18,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _engineGetTrustManagers30133;
 		protected abstract global::javax.net.ssl.TrustManager[] engineGetTrustManagers();
 		internal static global::MonoJavaBridge.MethodId _TrustManagerFactorySpi30134;
-		public TrustManagerFactorySpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TrustManagerFactorySpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.TrustManagerFactorySpi.staticClass, global::javax.net.ssl.TrustManagerFactorySpi._TrustManagerFactorySpi30134);
@@ -47,7 +47,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit30135;
-		protected override void engineInit(java.security.KeyStore arg0) 
+		protected override void engineInit(java.security.KeyStore arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30135, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit30136;
-		protected override void engineInit(javax.net.ssl.ManagerFactoryParameters arg0) 
+		protected override void engineInit(javax.net.ssl.ManagerFactoryParameters arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace javax.net.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.TrustManagerFactorySpi_.staticClass, global::javax.net.ssl.TrustManagerFactorySpi_._engineInit30136, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetTrustManagers30137;
-		protected override global::javax.net.ssl.TrustManager[] engineGetTrustManagers() 
+		protected override global::javax.net.ssl.TrustManager[] engineGetTrustManagers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

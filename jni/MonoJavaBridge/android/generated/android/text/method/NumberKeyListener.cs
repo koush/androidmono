@@ -12,7 +12,7 @@ namespace android.text.method
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _lookup13350;
-		protected virtual int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1) 
+		protected virtual int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,13 +21,13 @@ namespace android.text.method
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._lookup13350, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ok13351;
-		protected static bool ok(char[] arg0, char arg1) 
+		protected static bool ok(char[] arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._ok13351, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _filter13352;
-		public virtual global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		public virtual global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace android.text.method
 			return filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown13353;
-		public override bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3) 
+		public override bool onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace android.text.method
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13354;
 		protected abstract char[] getAcceptedChars();
 		internal static global::MonoJavaBridge.MethodId _NumberKeyListener13355;
-		public NumberKeyListener()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NumberKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.NumberKeyListener.staticClass, global::android.text.method.NumberKeyListener._NumberKeyListener13355);
@@ -82,7 +82,7 @@ namespace android.text.method
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13356;
-		protected override char[] getAcceptedChars() 
+		protected override char[] getAcceptedChars()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace android.text.method
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.NumberKeyListener_.staticClass, global::android.text.method.NumberKeyListener_._getAcceptedChars13356)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputType13357;
-		public override int getInputType() 
+		public override int getInputType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

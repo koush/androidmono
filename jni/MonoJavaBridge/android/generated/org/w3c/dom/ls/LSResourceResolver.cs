@@ -18,7 +18,7 @@ namespace org.w3c.dom.ls
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveResource34936;
-		 global::org.w3c.dom.ls.LSInput org.w3c.dom.ls.LSResourceResolver.resolveResource(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4) 
+		global::org.w3c.dom.ls.LSInput org.w3c.dom.ls.LSResourceResolver.resolveResource(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

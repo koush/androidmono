@@ -18,7 +18,7 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _call27101;
-		 global::java.lang.Object java.util.concurrent.Callable.call() 
+		global::java.lang.Object java.util.concurrent.Callable.call()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

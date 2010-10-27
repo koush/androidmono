@@ -12,7 +12,7 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _execute4857;
-		public virtual void execute() 
+		public virtual void execute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._execute4857);
 		}
 		internal static global::MonoJavaBridge.MethodId _executeInsert4858;
-		public virtual long executeInsert() 
+		public virtual long executeInsert()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.database.sqlite
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._executeInsert4858);
 		}
 		internal static global::MonoJavaBridge.MethodId _simpleQueryForLong4859;
-		public virtual long simpleQueryForLong() 
+		public virtual long simpleQueryForLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.database.sqlite
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._simpleQueryForLong4859);
 		}
 		internal static global::MonoJavaBridge.MethodId _simpleQueryForString4860;
-		public virtual global::java.lang.String simpleQueryForString() 
+		public virtual global::java.lang.String simpleQueryForString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

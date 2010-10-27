@@ -23,13 +23,13 @@ namespace java.net
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values21658;
-			public static global::java.net.Proxy.Type[] values() 
+			public static global::java.net.Proxy.Type[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.net.Proxy.Type>(@__env.CallStaticObjectMethod(java.net.Proxy.Type.staticClass, global::java.net.Proxy.Type._values21658)) as java.net.Proxy.Type[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf21659;
-			public static global::java.net.Proxy.Type valueOf(java.lang.String arg0) 
+			public static global::java.net.Proxy.Type valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.CallStaticObjectMethod(java.net.Proxy.Type.staticClass, global::java.net.Proxy.Type._valueOf21659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.Proxy.Type;
@@ -73,7 +73,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _type21663;
-		public virtual global::java.net.Proxy.Type type() 
+		public virtual global::java.net.Proxy.Type type()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.Proxy.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Proxy.staticClass, global::java.net.Proxy._type21663)) as java.net.Proxy.Type;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals21664;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.Proxy.staticClass, global::java.net.Proxy._equals21664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21665;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Proxy.staticClass, global::java.net.Proxy._toString21665)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21666;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace java.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.Proxy.staticClass, global::java.net.Proxy._hashCode21666);
 		}
 		internal static global::MonoJavaBridge.MethodId _address21667;
-		public virtual global::java.net.SocketAddress address() 
+		public virtual global::java.net.SocketAddress address()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.Proxy.staticClass, global::java.net.Proxy._address21667)) as java.net.SocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _Proxy21668;
-		public Proxy(java.net.Proxy.Type arg0, java.net.SocketAddress arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Proxy(java.net.Proxy.Type arg0, java.net.SocketAddress arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.Proxy.staticClass, global::java.net.Proxy._Proxy21668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

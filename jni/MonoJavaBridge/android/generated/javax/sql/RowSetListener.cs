@@ -20,7 +20,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _rowSetChanged30579;
-		 void javax.sql.RowSetListener.rowSetChanged(javax.sql.RowSetEvent arg0) 
+		void javax.sql.RowSetListener.rowSetChanged(javax.sql.RowSetEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowSetChanged30579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _rowChanged30580;
-		 void javax.sql.RowSetListener.rowChanged(javax.sql.RowSetEvent arg0) 
+		void javax.sql.RowSetListener.rowChanged(javax.sql.RowSetEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace javax.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.sql.RowSetListener_.staticClass, global::javax.sql.RowSetListener_._rowChanged30580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cursorMoved30581;
-		 void javax.sql.RowSetListener.cursorMoved(javax.sql.RowSetEvent arg0) 
+		void javax.sql.RowSetListener.cursorMoved(javax.sql.RowSetEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

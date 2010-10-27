@@ -18,7 +18,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onCancel3067;
-		 void android.content.DialogInterface_OnCancelListener.onCancel(android.content.DialogInterface arg0) 
+		void android.content.DialogInterface_OnCancelListener.onCancel(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnCancelListenerDelegateWrapper3068;
-		public DialogInterface_OnCancelListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DialogInterface_OnCancelListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnCancelListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnCancelListenerDelegateWrapper._DialogInterface_OnCancelListenerDelegateWrapper3068);

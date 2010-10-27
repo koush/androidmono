@@ -23,13 +23,13 @@ namespace android.net
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values7710;
-			public static global::android.net.NetworkInfo.DetailedState[] values() 
+			public static global::android.net.NetworkInfo.DetailedState[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo.DetailedState>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.DetailedState.staticClass, global::android.net.NetworkInfo.DetailedState._values7710)) as android.net.NetworkInfo.DetailedState[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf7711;
-			public static global::android.net.NetworkInfo.DetailedState valueOf(java.lang.String arg0) 
+			public static global::android.net.NetworkInfo.DetailedState valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.DetailedState>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.DetailedState.staticClass, global::android.net.NetworkInfo.DetailedState._valueOf7711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo.DetailedState;
@@ -154,13 +154,13 @@ namespace android.net
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values7722;
-			public static global::android.net.NetworkInfo.State[] values() 
+			public static global::android.net.NetworkInfo.State[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.NetworkInfo.State>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.State.staticClass, global::android.net.NetworkInfo.State._values7722)) as android.net.NetworkInfo.State[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf7723;
-			public static global::android.net.NetworkInfo.State valueOf(java.lang.String arg0) 
+			public static global::android.net.NetworkInfo.State valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.NetworkInfo.State>(@__env.CallStaticObjectMethod(android.net.NetworkInfo.State.staticClass, global::android.net.NetworkInfo.State._valueOf7723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.NetworkInfo.State;
@@ -234,7 +234,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7730;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -243,7 +243,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._toString7730)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getState7731;
-		public virtual global::android.net.NetworkInfo.State getState() 
+		public virtual global::android.net.NetworkInfo.State getState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -259,7 +259,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType7732;
-		public virtual int getType() 
+		public virtual int getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -275,7 +275,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeName7733;
-		public virtual global::java.lang.String getTypeName() 
+		public virtual global::java.lang.String getTypeName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -284,7 +284,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getTypeName7733)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isAvailable7734;
-		public virtual bool isAvailable() 
+		public virtual bool isAvailable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -293,7 +293,7 @@ namespace android.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isAvailable7734);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7735;
-		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public virtual void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -302,7 +302,7 @@ namespace android.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._writeToParcel7735, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7736;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -318,7 +318,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getReason7737;
-		public virtual global::java.lang.String getReason() 
+		public virtual global::java.lang.String getReason()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -327,7 +327,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getReason7737)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnected7738;
-		public virtual bool isConnected() 
+		public virtual bool isConnected()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -336,7 +336,7 @@ namespace android.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isConnected7738);
 		}
 		internal static global::MonoJavaBridge.MethodId _isFailover7739;
-		public virtual bool isFailover() 
+		public virtual bool isFailover()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -352,7 +352,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubtype7740;
-		public virtual int getSubtype() 
+		public virtual int getSubtype()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -368,7 +368,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubtypeName7741;
-		public virtual global::java.lang.String getSubtypeName() 
+		public virtual global::java.lang.String getSubtypeName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -377,7 +377,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtypeName7741)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnectedOrConnecting7742;
-		public virtual bool isConnectedOrConnecting() 
+		public virtual bool isConnectedOrConnecting()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -386,7 +386,7 @@ namespace android.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isConnectedOrConnecting7742);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRoaming7743;
-		public virtual bool isRoaming() 
+		public virtual bool isRoaming()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -395,7 +395,7 @@ namespace android.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isRoaming7743);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDetailedState7744;
-		public virtual global::android.net.NetworkInfo.DetailedState getDetailedState() 
+		public virtual global::android.net.NetworkInfo.DetailedState getDetailedState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -411,7 +411,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtraInfo7745;
-		public virtual global::java.lang.String getExtraInfo() 
+		public virtual global::java.lang.String getExtraInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

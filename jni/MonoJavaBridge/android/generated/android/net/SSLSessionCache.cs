@@ -12,14 +12,14 @@ namespace android.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLSessionCache7766;
-		public SSLSessionCache(java.io.File arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SSLSessionCache(java.io.File arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.SSLSessionCache.staticClass, global::android.net.SSLSessionCache._SSLSessionCache7766, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SSLSessionCache7767;
-		public SSLSessionCache(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SSLSessionCache(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.SSLSessionCache.staticClass, global::android.net.SSLSessionCache._SSLSessionCache7767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

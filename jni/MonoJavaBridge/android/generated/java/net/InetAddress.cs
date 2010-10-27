@@ -12,7 +12,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals21561;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._equals21561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21562;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._toString21562)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21563;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAddress21564;
-		public virtual byte[] getAddress() 
+		public virtual byte[] getAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHostName21565;
-		public virtual global::java.lang.String getHostName() 
+		public virtual global::java.lang.String getHostName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHostAddress21566;
-		public virtual global::java.lang.String getHostAddress() 
+		public virtual global::java.lang.String getHostAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,13 +87,13 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getHostAddress21566)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getByName21567;
-		public static global::java.net.InetAddress getByName(java.lang.String arg0) 
+		public static global::java.net.InetAddress getByName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetAddress.staticClass, global::java.net.InetAddress._getByName21567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _isAnyLocalAddress21568;
-		public virtual bool isAnyLocalAddress() 
+		public virtual bool isAnyLocalAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isAnyLocalAddress21568);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMulticastAddress21569;
-		public virtual bool isMulticastAddress() 
+		public virtual bool isMulticastAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMulticastAddress21569);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLoopbackAddress21570;
-		public virtual bool isLoopbackAddress() 
+		public virtual bool isLoopbackAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isLoopbackAddress21570);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLinkLocalAddress21571;
-		public virtual bool isLinkLocalAddress() 
+		public virtual bool isLinkLocalAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isLinkLocalAddress21571);
 		}
 		internal static global::MonoJavaBridge.MethodId _isSiteLocalAddress21572;
-		public virtual bool isSiteLocalAddress() 
+		public virtual bool isSiteLocalAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isSiteLocalAddress21572);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMCGlobal21573;
-		public virtual bool isMCGlobal() 
+		public virtual bool isMCGlobal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCGlobal21573);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMCNodeLocal21574;
-		public virtual bool isMCNodeLocal() 
+		public virtual bool isMCNodeLocal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,7 +156,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCNodeLocal21574);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMCLinkLocal21575;
-		public virtual bool isMCLinkLocal() 
+		public virtual bool isMCLinkLocal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCLinkLocal21575);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMCSiteLocal21576;
-		public virtual bool isMCSiteLocal() 
+		public virtual bool isMCSiteLocal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCSiteLocal21576);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMCOrgLocal21577;
-		public virtual bool isMCOrgLocal() 
+		public virtual bool isMCOrgLocal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -183,7 +183,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCOrgLocal21577);
 		}
 		internal static global::MonoJavaBridge.MethodId _isReachable21578;
-		public virtual bool isReachable(java.net.NetworkInterface arg0, int arg1, int arg2) 
+		public virtual bool isReachable(java.net.NetworkInterface arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -192,7 +192,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isReachable21578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _isReachable21579;
-		public virtual bool isReachable(int arg0) 
+		public virtual bool isReachable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -208,7 +208,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCanonicalHostName21580;
-		public virtual global::java.lang.String getCanonicalHostName() 
+		public virtual global::java.lang.String getCanonicalHostName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -217,19 +217,19 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getCanonicalHostName21580)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getByAddress21581;
-		public static global::java.net.InetAddress getByAddress(byte[] arg0) 
+		public static global::java.net.InetAddress getByAddress(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetAddress.staticClass, global::java.net.InetAddress._getByAddress21581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _getByAddress21582;
-		public static global::java.net.InetAddress getByAddress(java.lang.String arg0, byte[] arg1) 
+		public static global::java.net.InetAddress getByAddress(java.lang.String arg0, byte[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetAddress.staticClass, global::java.net.InetAddress._getByAddress21582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.InetAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllByName21583;
-		public static global::java.net.InetAddress[] getAllByName(java.lang.String arg0) 
+		public static global::java.net.InetAddress[] getAllByName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.net.InetAddress>(@__env.CallStaticObjectMethod(java.net.InetAddress.staticClass, global::java.net.InetAddress._getAllByName21583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress[];
@@ -242,7 +242,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalHost21584;
-		public static global::java.net.InetAddress getLocalHost() 
+		public static global::java.net.InetAddress getLocalHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.InetAddress.staticClass, global::java.net.InetAddress._getLocalHost21584)) as java.net.InetAddress;

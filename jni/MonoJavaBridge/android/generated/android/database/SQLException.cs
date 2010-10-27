@@ -12,14 +12,14 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLException4700;
-		public SQLException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.SQLException.staticClass, global::android.database.SQLException._SQLException4700);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLException4701;
-		public SQLException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.SQLException.staticClass, global::android.database.SQLException._SQLException4701, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

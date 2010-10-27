@@ -14,13 +14,13 @@ namespace javax.microedition.khronos.egl
 		internal static global::MonoJavaBridge.MethodId _getGL28951;
 		public abstract global::javax.microedition.khronos.opengles.GL getGL();
 		internal static global::MonoJavaBridge.MethodId _getEGL28952;
-		public static global::javax.microedition.khronos.egl.EGL getEGL() 
+		public static global::javax.microedition.khronos.egl.EGL getEGL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.microedition.khronos.egl.EGL>(@__env.CallStaticObjectMethod(javax.microedition.khronos.egl.EGLContext.staticClass, global::javax.microedition.khronos.egl.EGLContext._getEGL28952)) as javax.microedition.khronos.egl.EGL;
 		}
 		internal static global::MonoJavaBridge.MethodId _EGLContext28953;
-		public EGLContext()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EGLContext() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLContext.staticClass, global::javax.microedition.khronos.egl.EGLContext._EGLContext28953);
@@ -48,7 +48,7 @@ namespace javax.microedition.khronos.egl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getGL28954;
-		public override global::javax.microedition.khronos.opengles.GL getGL() 
+		public override global::javax.microedition.khronos.opengles.GL getGL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

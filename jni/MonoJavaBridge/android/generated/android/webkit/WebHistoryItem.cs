@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone16154;
-		protected virtual global::android.webkit.WebHistoryItem clone() 
+		protected virtual global::android.webkit.WebHistoryItem clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getId16155;
-		public virtual int getId() 
+		public virtual int getId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTitle16156;
-		public virtual global::java.lang.String getTitle() 
+		public virtual global::java.lang.String getTitle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUrl16157;
-		public virtual global::java.lang.String getUrl() 
+		public virtual global::java.lang.String getUrl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOriginalUrl16158;
-		public virtual global::java.lang.String getOriginalUrl() 
+		public virtual global::java.lang.String getOriginalUrl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFavicon16159;
-		public virtual global::android.graphics.Bitmap getFavicon() 
+		public virtual global::android.graphics.Bitmap getFavicon()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace android.text.style
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaskFilter13525;
-		public virtual global::android.graphics.MaskFilter getMaskFilter() 
+		public virtual global::android.graphics.MaskFilter getMaskFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.text.style
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._getMaskFilter13525)) as android.graphics.MaskFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13526;
-		public override void updateDrawState(android.text.TextPaint arg0) 
+		public override void updateDrawState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.text.style
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._updateDrawState13526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _MaskFilterSpan13527;
-		public MaskFilterSpan(android.graphics.MaskFilter arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MaskFilterSpan(android.graphics.MaskFilter arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.MaskFilterSpan.staticClass, global::android.text.style.MaskFilterSpan._MaskFilterSpan13527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,7 +19,7 @@ namespace java.util.prefs
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParent28176;
-		public virtual global::java.util.prefs.Preferences getParent() 
+		public virtual global::java.util.prefs.Preferences getParent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util.prefs
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChild28177;
-		public virtual global::java.util.prefs.Preferences getChild() 
+		public virtual global::java.util.prefs.Preferences getChild()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.util.prefs
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.NodeChangeEvent.staticClass, global::java.util.prefs.NodeChangeEvent._getChild28177)) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _NodeChangeEvent28178;
-		public NodeChangeEvent(java.util.prefs.Preferences arg0, java.util.prefs.Preferences arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NodeChangeEvent(java.util.prefs.Preferences arg0, java.util.prefs.Preferences arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.NodeChangeEvent.staticClass, global::java.util.prefs.NodeChangeEvent._NodeChangeEvent28178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -19,7 +19,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _hasMoreElements26170;
-		 bool java.util.Enumeration.hasMoreElements() 
+		bool java.util.Enumeration.hasMoreElements()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.util
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Enumeration_.staticClass, global::java.util.Enumeration_._hasMoreElements26170);
 		}
 		internal static global::MonoJavaBridge.MethodId _nextElement26171;
-		 global::java.lang.Object java.util.Enumeration.nextElement() 
+		global::java.lang.Object java.util.Enumeration.nextElement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

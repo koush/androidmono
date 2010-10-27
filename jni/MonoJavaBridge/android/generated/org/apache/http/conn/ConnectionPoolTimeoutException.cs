@@ -12,14 +12,14 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionPoolTimeoutException32090;
-		public ConnectionPoolTimeoutException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnectionPoolTimeoutException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException32090);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionPoolTimeoutException32091;
-		public ConnectionPoolTimeoutException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnectionPoolTimeoutException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ConnectionPoolTimeoutException.staticClass, global::org.apache.http.conn.ConnectionPoolTimeoutException._ConnectionPoolTimeoutException32091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

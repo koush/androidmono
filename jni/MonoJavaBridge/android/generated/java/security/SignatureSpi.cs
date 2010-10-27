@@ -12,7 +12,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23373;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineInitVerify23374;
 		protected abstract void engineInitVerify(java.security.PublicKey arg0);
 		internal static global::MonoJavaBridge.MethodId _engineInitSign23375;
-		protected virtual void engineInitSign(java.security.PrivateKey arg0, java.security.SecureRandom arg1) 
+		protected virtual void engineInitSign(java.security.PrivateKey arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineSign23377;
 		protected abstract byte[] engineSign();
 		internal static global::MonoJavaBridge.MethodId _engineSign23378;
-		protected virtual int engineSign(byte[] arg0, int arg1, int arg2) 
+		protected virtual int engineSign(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineVerify23379;
 		protected abstract bool engineVerify(byte[] arg0);
 		internal static global::MonoJavaBridge.MethodId _engineVerify23380;
-		protected virtual bool engineVerify(byte[] arg0, int arg1, int arg2) 
+		protected virtual bool engineVerify(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23381;
 		protected abstract void engineUpdate(byte arg0);
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23382;
-		protected virtual void engineUpdate(java.nio.ByteBuffer arg0) 
+		protected virtual void engineUpdate(java.nio.ByteBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23383;
 		protected abstract void engineUpdate(byte[] arg0, int arg1, int arg2);
 		internal static global::MonoJavaBridge.MethodId _engineSetParameter23384;
-		protected virtual void engineSetParameter(java.security.spec.AlgorithmParameterSpec arg0) 
+		protected virtual void engineSetParameter(java.security.spec.AlgorithmParameterSpec arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineSetParameter23385;
 		protected abstract void engineSetParameter(java.lang.String arg0, java.lang.Object arg1);
 		internal static global::MonoJavaBridge.MethodId _engineGetParameters23386;
-		protected virtual global::java.security.AlgorithmParameters engineGetParameters() 
+		protected virtual global::java.security.AlgorithmParameters engineGetParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineGetParameter23387;
 		protected abstract global::java.lang.Object engineGetParameter(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _SignatureSpi23388;
-		public SignatureSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SignatureSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SignatureSpi.staticClass, global::java.security.SignatureSpi._SignatureSpi23388);
@@ -132,7 +132,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInitVerify23389;
-		protected override void engineInitVerify(java.security.PublicKey arg0) 
+		protected override void engineInitVerify(java.security.PublicKey arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -141,7 +141,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineInitVerify23389, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInitSign23390;
-		protected override void engineInitSign(java.security.PrivateKey arg0) 
+		protected override void engineInitSign(java.security.PrivateKey arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -150,7 +150,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineInitSign23390, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineSign23391;
-		protected override byte[] engineSign() 
+		protected override byte[] engineSign()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -159,7 +159,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineSign23391)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineVerify23392;
-		protected override bool engineVerify(byte[] arg0) 
+		protected override bool engineVerify(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace java.security
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineVerify23392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23393;
-		protected override void engineUpdate(byte arg0) 
+		protected override void engineUpdate(byte arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineUpdate23393, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23394;
-		protected override void engineUpdate(byte[] arg0, int arg1, int arg2) 
+		protected override void engineUpdate(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -186,7 +186,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineUpdate23394, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineSetParameter23395;
-		protected override void engineSetParameter(java.lang.String arg0, java.lang.Object arg1) 
+		protected override void engineSetParameter(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -195,7 +195,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.SignatureSpi_.staticClass, global::java.security.SignatureSpi_._engineSetParameter23395, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGetParameter23396;
-		protected override global::java.lang.Object engineGetParameter(java.lang.String arg0) 
+		protected override global::java.lang.Object engineGetParameter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

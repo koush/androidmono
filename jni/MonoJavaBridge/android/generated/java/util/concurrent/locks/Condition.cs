@@ -24,7 +24,7 @@ namespace java.util.concurrent.locks
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _await27731;
-		 void java.util.concurrent.locks.Condition.await() 
+		void java.util.concurrent.locks.Condition.await()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._await27731);
 		}
 		internal static global::MonoJavaBridge.MethodId _await27732;
-		 bool java.util.concurrent.locks.Condition.await(long arg0, java.util.concurrent.TimeUnit arg1) 
+		bool java.util.concurrent.locks.Condition.await(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._await27732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _signal27733;
-		 void java.util.concurrent.locks.Condition.signal() 
+		void java.util.concurrent.locks.Condition.signal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._signal27733);
 		}
 		internal static global::MonoJavaBridge.MethodId _signalAll27734;
-		 void java.util.concurrent.locks.Condition.signalAll() 
+		void java.util.concurrent.locks.Condition.signalAll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._signalAll27734);
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitUninterruptibly27735;
-		 void java.util.concurrent.locks.Condition.awaitUninterruptibly() 
+		void java.util.concurrent.locks.Condition.awaitUninterruptibly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._awaitUninterruptibly27735);
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitNanos27736;
-		 long java.util.concurrent.locks.Condition.awaitNanos(long arg0) 
+		long java.util.concurrent.locks.Condition.awaitNanos(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.locks.Condition_.staticClass, global::java.util.concurrent.locks.Condition_._awaitNanos27736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _awaitUntil27737;
-		 bool java.util.concurrent.locks.Condition.awaitUntil(java.util.Date arg0) 
+		bool java.util.concurrent.locks.Condition.awaitUntil(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,21 +12,21 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidCredentialsException31827;
-		public InvalidCredentialsException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidCredentialsException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.InvalidCredentialsException.staticClass, global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31827);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidCredentialsException31828;
-		public InvalidCredentialsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidCredentialsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.InvalidCredentialsException.staticClass, global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidCredentialsException31829;
-		public InvalidCredentialsException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidCredentialsException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.InvalidCredentialsException.staticClass, global::org.apache.http.auth.InvalidCredentialsException._InvalidCredentialsException31829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

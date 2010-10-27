@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnknownError20922;
-		public UnknownError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnknownError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnknownError.staticClass, global::java.lang.UnknownError._UnknownError20922);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnknownError20923;
-		public UnknownError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnknownError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnknownError.staticClass, global::java.lang.UnknownError._UnknownError20923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -18,7 +18,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getReason31758;
-		 global::java.lang.String org.apache.http.ReasonPhraseCatalog.getReason(int arg0, java.util.Locale arg1) 
+		global::java.lang.String org.apache.http.ReasonPhraseCatalog.getReason(int arg0, java.util.Locale arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

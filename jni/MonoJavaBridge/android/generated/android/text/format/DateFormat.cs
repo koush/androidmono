@@ -12,7 +12,7 @@ namespace android.text.format
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _format13102;
-		public static global::java.lang.CharSequence format(java.lang.CharSequence arg0, java.util.Calendar arg1) 
+		public static global::java.lang.CharSequence format(java.lang.CharSequence arg0, java.util.Calendar arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._format13102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
@@ -22,7 +22,7 @@ namespace android.text.format
 			return format((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _format13103;
-		public static global::java.lang.CharSequence format(java.lang.CharSequence arg0, long arg1) 
+		public static global::java.lang.CharSequence format(java.lang.CharSequence arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._format13103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
@@ -32,7 +32,7 @@ namespace android.text.format
 			return format((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _format13104;
-		public static global::java.lang.CharSequence format(java.lang.CharSequence arg0, java.util.Date arg1) 
+		public static global::java.lang.CharSequence format(java.lang.CharSequence arg0, java.util.Date arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._format13104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.CharSequence;
@@ -42,43 +42,43 @@ namespace android.text.format
 			return format((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _is24HourFormat13105;
-		public static bool is24HourFormat(android.content.Context arg0) 
+		public static bool is24HourFormat(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._is24HourFormat13105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeFormat13106;
-		public static global::java.text.DateFormat getTimeFormat(android.content.Context arg0) 
+		public static global::java.text.DateFormat getTimeFormat(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._getTimeFormat13106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.DateFormat;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDateFormat13107;
-		public static global::java.text.DateFormat getDateFormat(android.content.Context arg0) 
+		public static global::java.text.DateFormat getDateFormat(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._getDateFormat13107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.DateFormat;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLongDateFormat13108;
-		public static global::java.text.DateFormat getLongDateFormat(android.content.Context arg0) 
+		public static global::java.text.DateFormat getLongDateFormat(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._getLongDateFormat13108, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.DateFormat;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMediumDateFormat13109;
-		public static global::java.text.DateFormat getMediumDateFormat(android.content.Context arg0) 
+		public static global::java.text.DateFormat getMediumDateFormat(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._getMediumDateFormat13109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.DateFormat;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDateFormatOrder13110;
-		public static char[] getDateFormatOrder(android.content.Context arg0) 
+		public static char[] getDateFormatOrder(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallStaticObjectMethod(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._getDateFormatOrder13110, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _DateFormat13111;
-		public DateFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DateFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.format.DateFormat.staticClass, global::android.text.format.DateFormat._DateFormat13111);

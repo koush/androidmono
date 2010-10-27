@@ -23,7 +23,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _create1673;
-			public virtual global::android.app.AlertDialog create() 
+			public virtual global::android.app.AlertDialog create()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._create1673)) as android.app.AlertDialog;
 			}
 			internal static global::MonoJavaBridge.MethodId _setTitle1674;
-			public virtual global::android.app.AlertDialog.Builder setTitle(int arg0) 
+			public virtual global::android.app.AlertDialog.Builder setTitle(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setTitle1674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _setTitle1675;
-			public virtual global::android.app.AlertDialog.Builder setTitle(java.lang.CharSequence arg0) 
+			public virtual global::android.app.AlertDialog.Builder setTitle(java.lang.CharSequence arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -53,8 +53,15 @@ namespace android.app
 			{
 				return setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 			}
+			public new global::android.content.DialogInterface_OnKeyListener OnKeyListener
+			{
+				set
+				{
+					setOnKeyListener(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setOnKeyListener1676;
-			public virtual global::android.app.AlertDialog.Builder setOnKeyListener(android.content.DialogInterface_OnKeyListener arg0) 
+			public virtual global::android.app.AlertDialog.Builder setOnKeyListener(android.content.DialogInterface_OnKeyListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -67,7 +74,7 @@ namespace android.app
 				return setOnKeyListener((global::android.content.DialogInterface_OnKeyListenerDelegateWrapper)arg0);
 			}
 			internal static global::MonoJavaBridge.MethodId _setIcon1677;
-			public virtual global::android.app.AlertDialog.Builder setIcon(int arg0) 
+			public virtual global::android.app.AlertDialog.Builder setIcon(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -76,7 +83,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setIcon1677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _setIcon1678;
-			public virtual global::android.app.AlertDialog.Builder setIcon(android.graphics.drawable.Drawable arg0) 
+			public virtual global::android.app.AlertDialog.Builder setIcon(android.graphics.drawable.Drawable arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -85,7 +92,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setIcon1678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _show1679;
-			public virtual global::android.app.AlertDialog show() 
+			public virtual global::android.app.AlertDialog show()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -93,8 +100,15 @@ namespace android.app
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._show1679)) as android.app.AlertDialog;
 			}
+			public new bool Cancelable
+			{
+				set
+				{
+					setCancelable(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setCancelable1680;
-			public virtual global::android.app.AlertDialog.Builder setCancelable(bool arg0) 
+			public virtual global::android.app.AlertDialog.Builder setCancelable(bool arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -102,8 +116,15 @@ namespace android.app
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setCancelable1680, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
+			public new global::android.content.DialogInterface_OnCancelListener OnCancelListener
+			{
+				set
+				{
+					setOnCancelListener(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setOnCancelListener1681;
-			public virtual global::android.app.AlertDialog.Builder setOnCancelListener(android.content.DialogInterface_OnCancelListener arg0) 
+			public virtual global::android.app.AlertDialog.Builder setOnCancelListener(android.content.DialogInterface_OnCancelListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -115,8 +136,15 @@ namespace android.app
 			{
 				return setOnCancelListener((global::android.content.DialogInterface_OnCancelListenerDelegateWrapper)arg0);
 			}
+			public new global::android.view.View CustomTitle
+			{
+				set
+				{
+					setCustomTitle(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setCustomTitle1682;
-			public virtual global::android.app.AlertDialog.Builder setCustomTitle(android.view.View arg0) 
+			public virtual global::android.app.AlertDialog.Builder setCustomTitle(android.view.View arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -125,7 +153,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setCustomTitle1682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _setMessage1683;
-			public virtual global::android.app.AlertDialog.Builder setMessage(java.lang.CharSequence arg0) 
+			public virtual global::android.app.AlertDialog.Builder setMessage(java.lang.CharSequence arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -138,7 +166,7 @@ namespace android.app
 				return setMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 			}
 			internal static global::MonoJavaBridge.MethodId _setMessage1684;
-			public virtual global::android.app.AlertDialog.Builder setMessage(int arg0) 
+			public virtual global::android.app.AlertDialog.Builder setMessage(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -147,7 +175,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMessage1684, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _setPositiveButton1685;
-			public virtual global::android.app.AlertDialog.Builder setPositiveButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setPositiveButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -160,7 +188,7 @@ namespace android.app
 				return setPositiveButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setPositiveButton1686;
-			public virtual global::android.app.AlertDialog.Builder setPositiveButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setPositiveButton(int arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -173,7 +201,7 @@ namespace android.app
 				return setPositiveButton(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setNegativeButton1687;
-			public virtual global::android.app.AlertDialog.Builder setNegativeButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setNegativeButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -186,7 +214,7 @@ namespace android.app
 				return setNegativeButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setNegativeButton1688;
-			public virtual global::android.app.AlertDialog.Builder setNegativeButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setNegativeButton(int arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -199,7 +227,7 @@ namespace android.app
 				return setNegativeButton(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setNeutralButton1689;
-			public virtual global::android.app.AlertDialog.Builder setNeutralButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setNeutralButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -212,7 +240,7 @@ namespace android.app
 				return setNeutralButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setNeutralButton1690;
-			public virtual global::android.app.AlertDialog.Builder setNeutralButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setNeutralButton(int arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -225,7 +253,7 @@ namespace android.app
 				return setNeutralButton(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setItems1691;
-			public virtual global::android.app.AlertDialog.Builder setItems(int arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setItems(int arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -238,7 +266,7 @@ namespace android.app
 				return setItems(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setItems1692;
-			public virtual global::android.app.AlertDialog.Builder setItems(java.lang.CharSequence[] arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setItems(java.lang.CharSequence[] arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -251,7 +279,7 @@ namespace android.app
 				return setItems(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setAdapter1693;
-			public virtual global::android.app.AlertDialog.Builder setAdapter(android.widget.ListAdapter arg0, android.content.DialogInterface_OnClickListener arg1) 
+			public virtual global::android.app.AlertDialog.Builder setAdapter(android.widget.ListAdapter arg0, android.content.DialogInterface_OnClickListener arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -264,7 +292,7 @@ namespace android.app
 				return setAdapter(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 			}
 			internal static global::MonoJavaBridge.MethodId _setCursor1694;
-			public virtual global::android.app.AlertDialog.Builder setCursor(android.database.Cursor arg0, android.content.DialogInterface_OnClickListener arg1, java.lang.String arg2) 
+			public virtual global::android.app.AlertDialog.Builder setCursor(android.database.Cursor arg0, android.content.DialogInterface_OnClickListener arg1, java.lang.String arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -277,7 +305,7 @@ namespace android.app
 				return setCursor(arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1, arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _setMultiChoiceItems1695;
-			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(android.database.Cursor arg0, java.lang.String arg1, java.lang.String arg2, android.content.DialogInterface_OnMultiChoiceClickListener arg3) 
+			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(android.database.Cursor arg0, java.lang.String arg1, java.lang.String arg2, android.content.DialogInterface_OnMultiChoiceClickListener arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -290,7 +318,7 @@ namespace android.app
 				return setMultiChoiceItems(arg0, arg1, arg2, (global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper)arg3);
 			}
 			internal static global::MonoJavaBridge.MethodId _setMultiChoiceItems1696;
-			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(java.lang.CharSequence[] arg0, bool[] arg1, android.content.DialogInterface_OnMultiChoiceClickListener arg2) 
+			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(java.lang.CharSequence[] arg0, bool[] arg1, android.content.DialogInterface_OnMultiChoiceClickListener arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -303,7 +331,7 @@ namespace android.app
 				return setMultiChoiceItems(arg0, arg1, (global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _setMultiChoiceItems1697;
-			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(int arg0, bool[] arg1, android.content.DialogInterface_OnMultiChoiceClickListener arg2) 
+			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(int arg0, bool[] arg1, android.content.DialogInterface_OnMultiChoiceClickListener arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -316,7 +344,7 @@ namespace android.app
 				return setMultiChoiceItems(arg0, arg1, (global::android.content.DialogInterface_OnMultiChoiceClickListenerDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _setSingleChoiceItems1698;
-			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(int arg0, int arg1, android.content.DialogInterface_OnClickListener arg2) 
+			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(int arg0, int arg1, android.content.DialogInterface_OnClickListener arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -329,7 +357,7 @@ namespace android.app
 				return setSingleChoiceItems(arg0, arg1, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _setSingleChoiceItems1699;
-			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(android.widget.ListAdapter arg0, int arg1, android.content.DialogInterface_OnClickListener arg2) 
+			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(android.widget.ListAdapter arg0, int arg1, android.content.DialogInterface_OnClickListener arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -342,7 +370,7 @@ namespace android.app
 				return setSingleChoiceItems(arg0, arg1, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _setSingleChoiceItems1700;
-			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(java.lang.CharSequence[] arg0, int arg1, android.content.DialogInterface_OnClickListener arg2) 
+			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(java.lang.CharSequence[] arg0, int arg1, android.content.DialogInterface_OnClickListener arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -355,7 +383,7 @@ namespace android.app
 				return setSingleChoiceItems(arg0, arg1, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg2);
 			}
 			internal static global::MonoJavaBridge.MethodId _setSingleChoiceItems1701;
-			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(android.database.Cursor arg0, int arg1, java.lang.String arg2, android.content.DialogInterface_OnClickListener arg3) 
+			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(android.database.Cursor arg0, int arg1, java.lang.String arg2, android.content.DialogInterface_OnClickListener arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -367,8 +395,15 @@ namespace android.app
 			{
 				return setSingleChoiceItems(arg0, arg1, arg2, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg3);
 			}
+			public new global::android.widget.AdapterView.OnItemSelectedListener OnItemSelectedListener
+			{
+				set
+				{
+					setOnItemSelectedListener(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setOnItemSelectedListener1702;
-			public virtual global::android.app.AlertDialog.Builder setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0) 
+			public virtual global::android.app.AlertDialog.Builder setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -376,8 +411,15 @@ namespace android.app
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setOnItemSelectedListener1702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
+			public new global::android.view.View View
+			{
+				set
+				{
+					setView(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setView1703;
-			public virtual global::android.app.AlertDialog.Builder setView(android.view.View arg0) 
+			public virtual global::android.app.AlertDialog.Builder setView(android.view.View arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -385,8 +427,15 @@ namespace android.app
 				else
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setView1703, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
+			public new bool InverseBackgroundForced
+			{
+				set
+				{
+					setInverseBackgroundForced(value);
+				}
+			}
 			internal static global::MonoJavaBridge.MethodId _setInverseBackgroundForced1704;
-			public virtual global::android.app.AlertDialog.Builder setInverseBackgroundForced(bool arg0) 
+			public virtual global::android.app.AlertDialog.Builder setInverseBackgroundForced(bool arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -395,7 +444,7 @@ namespace android.app
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setInverseBackgroundForced1704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.AlertDialog.Builder;
 			}
 			internal static global::MonoJavaBridge.MethodId _Builder1705;
-			public Builder(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Builder(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._Builder1705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -441,7 +490,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate1706;
-		protected override void onCreate(android.os.Bundle arg0) 
+		protected override void onCreate(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -450,7 +499,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._onCreate1706, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyDown1707;
-		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
+		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -459,7 +508,7 @@ namespace android.app
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._onKeyDown1707, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onKeyUp1708;
-		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
+		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -467,8 +516,15 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._onKeyUp1708, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.lang.CharSequence Title
+		{
+			set
+			{
+				setTitle(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setTitle1709;
-		public override void setTitle(java.lang.CharSequence arg0) 
+		public override void setTitle(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -481,7 +537,7 @@ namespace android.app
 			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setIcon1710;
-		public virtual void setIcon(int arg0) 
+		public virtual void setIcon(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -490,7 +546,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setIcon1710, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIcon1711;
-		public virtual void setIcon(android.graphics.drawable.Drawable arg0) 
+		public virtual void setIcon(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -498,8 +554,15 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setIcon1711, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.view.View CustomTitle
+		{
+			set
+			{
+				setCustomTitle(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setCustomTitle1712;
-		public virtual void setCustomTitle(android.view.View arg0) 
+		public virtual void setCustomTitle(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -507,8 +570,15 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setCustomTitle1712, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.lang.CharSequence Message
+		{
+			set
+			{
+				setMessage(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setMessage1713;
-		public virtual void setMessage(java.lang.CharSequence arg0) 
+		public virtual void setMessage(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -521,7 +591,7 @@ namespace android.app
 			setMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setView1714;
-		public virtual void setView(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
+		public virtual void setView(android.view.View arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -529,8 +599,15 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setView1714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
+		public new global::android.view.View View
+		{
+			set
+			{
+				setView(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setView1715;
-		public virtual void setView(android.view.View arg0) 
+		public virtual void setView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -538,8 +615,15 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setView1715, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool InverseBackgroundForced
+		{
+			set
+			{
+				setInverseBackgroundForced(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setInverseBackgroundForced1716;
-		public virtual void setInverseBackgroundForced(bool arg0) 
+		public virtual void setInverseBackgroundForced(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -548,7 +632,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setInverseBackgroundForced1716, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getButton1717;
-		public virtual global::android.widget.Button getButton(int arg0) 
+		public virtual global::android.widget.Button getButton(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -564,7 +648,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getListView1718;
-		public virtual global::android.widget.ListView getListView() 
+		public virtual global::android.widget.ListView getListView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -573,7 +657,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._getListView1718)) as android.widget.ListView;
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton1719;
-		public virtual void setButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
+		public virtual void setButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -586,7 +670,7 @@ namespace android.app
 			setButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton1720;
-		public virtual void setButton(java.lang.CharSequence arg0, android.os.Message arg1) 
+		public virtual void setButton(java.lang.CharSequence arg0, android.os.Message arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -599,7 +683,7 @@ namespace android.app
 			setButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton1721;
-		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.content.DialogInterface_OnClickListener arg2) 
+		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.content.DialogInterface_OnClickListener arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -612,7 +696,7 @@ namespace android.app
 			setButton(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton1722;
-		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.os.Message arg2) 
+		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.os.Message arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -625,7 +709,7 @@ namespace android.app
 			setButton(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton21723;
-		public virtual void setButton2(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
+		public virtual void setButton2(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -638,7 +722,7 @@ namespace android.app
 			setButton2((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton21724;
-		public virtual void setButton2(java.lang.CharSequence arg0, android.os.Message arg1) 
+		public virtual void setButton2(java.lang.CharSequence arg0, android.os.Message arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -651,7 +735,7 @@ namespace android.app
 			setButton2((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton31725;
-		public virtual void setButton3(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
+		public virtual void setButton3(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -664,7 +748,7 @@ namespace android.app
 			setButton3((global::java.lang.CharSequence)(global::java.lang.String)arg0, (global::android.content.DialogInterface_OnClickListenerDelegateWrapper)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _setButton31726;
-		public virtual void setButton3(java.lang.CharSequence arg0, android.os.Message arg1) 
+		public virtual void setButton3(java.lang.CharSequence arg0, android.os.Message arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -677,21 +761,21 @@ namespace android.app
 			setButton3((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _AlertDialog1727;
-		protected AlertDialog(android.content.Context arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AlertDialog(android.content.Context arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AlertDialog.staticClass, global::android.app.AlertDialog._AlertDialog1727, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AlertDialog1728;
-		protected AlertDialog(android.content.Context arg0, bool arg1, android.content.DialogInterface_OnCancelListener arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AlertDialog(android.content.Context arg0, bool arg1, android.content.DialogInterface_OnCancelListener arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AlertDialog.staticClass, global::android.app.AlertDialog._AlertDialog1728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AlertDialog1729;
-		protected AlertDialog(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AlertDialog(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.AlertDialog.staticClass, global::android.app.AlertDialog._AlertDialog1729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

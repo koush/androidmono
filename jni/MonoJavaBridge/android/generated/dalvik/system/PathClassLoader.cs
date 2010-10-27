@@ -12,7 +12,7 @@ namespace dalvik.system
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString18597;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace dalvik.system
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._toString18597)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackage18598;
-		protected override global::java.lang.Package getPackage(java.lang.String arg0) 
+		protected override global::java.lang.Package getPackage(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace dalvik.system
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._getPackage18598, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Package;
 		}
 		internal static global::MonoJavaBridge.MethodId _findClass18599;
-		protected override global::java.lang.Class findClass(java.lang.String arg0) 
+		protected override global::java.lang.Class findClass(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace dalvik.system
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._findClass18599, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResource18600;
-		protected override global::java.net.URL findResource(java.lang.String arg0) 
+		protected override global::java.net.URL findResource(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace dalvik.system
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.net.URL>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._findResource18600, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.URL;
 		}
 		internal static global::MonoJavaBridge.MethodId _findResources18601;
-		protected override global::java.util.Enumeration findResources(java.lang.String arg0) 
+		protected override global::java.util.Enumeration findResources(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace dalvik.system
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._findResources18601, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _findLibrary18602;
-		protected override global::java.lang.String findLibrary(java.lang.String arg0) 
+		protected override global::java.lang.String findLibrary(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,14 +66,14 @@ namespace dalvik.system
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._findLibrary18602, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PathClassLoader18603;
-		public PathClassLoader(java.lang.String arg0, java.lang.ClassLoader arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PathClassLoader(java.lang.String arg0, java.lang.ClassLoader arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._PathClassLoader18603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PathClassLoader18604;
-		public PathClassLoader(java.lang.String arg0, java.lang.String arg1, java.lang.ClassLoader arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PathClassLoader(java.lang.String arg0, java.lang.String arg1, java.lang.ClassLoader arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.PathClassLoader.staticClass, global::dalvik.system.PathClassLoader._PathClassLoader18604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

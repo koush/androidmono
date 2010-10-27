@@ -19,7 +19,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance13414;
-		public static global::android.text.method.TimeKeyListener getInstance() 
+		public static global::android.text.method.TimeKeyListener getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.method.TimeKeyListener.staticClass, global::android.text.method.TimeKeyListener._getInstance13414)) as android.text.method.TimeKeyListener;
@@ -32,7 +32,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputType13415;
-		public override int getInputType() 
+		public override int getInputType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.text.method
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAcceptedChars13416;
-		protected override char[] getAcceptedChars() 
+		protected override char[] getAcceptedChars()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.text.method
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<char>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.method.TimeKeyListener.staticClass, global::android.text.method.TimeKeyListener._getAcceptedChars13416)) as char[];
 		}
 		internal static global::MonoJavaBridge.MethodId _TimeKeyListener13417;
-		public TimeKeyListener()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TimeKeyListener() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.method.TimeKeyListener.staticClass, global::android.text.method.TimeKeyListener._TimeKeyListener13417);

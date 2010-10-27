@@ -23,7 +23,7 @@ namespace android.view.animation
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _AnimationParameters15712;
-			public AnimationParameters()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public AnimationParameters() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.AnimationParameters.staticClass, global::android.view.animation.LayoutAnimationController.AnimationParameters._AnimationParameters15712);
@@ -63,7 +63,7 @@ namespace android.view.animation
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _start15715;
-		public virtual void start() 
+		public virtual void start()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace android.view.animation
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnimation15716;
-		public virtual global::android.view.animation.Animation getAnimation() 
+		public virtual global::android.view.animation.Animation getAnimation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace android.view.animation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimation15716)) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAnimation15717;
-		public virtual void setAnimation(android.content.Context arg0, int arg1) 
+		public virtual void setAnimation(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,7 +101,7 @@ namespace android.view.animation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setAnimation15717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAnimation15718;
-		public virtual void setAnimation(android.view.animation.Animation arg0) 
+		public virtual void setAnimation(android.view.animation.Animation arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -121,7 +121,7 @@ namespace android.view.animation
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOrder15719;
-		public virtual int getOrder() 
+		public virtual int getOrder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +130,7 @@ namespace android.view.animation
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getOrder15719);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone15720;
-		public virtual bool isDone() 
+		public virtual bool isDone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,7 +139,7 @@ namespace android.view.animation
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._isDone15720);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOrder15721;
-		public virtual void setOrder(int arg0) 
+		public virtual void setOrder(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -148,7 +148,7 @@ namespace android.view.animation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setOrder15721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInterpolator15722;
-		public virtual void setInterpolator(android.view.animation.Interpolator arg0) 
+		public virtual void setInterpolator(android.view.animation.Interpolator arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace android.view.animation
 			setInterpolator((global::android.view.animation.InterpolatorDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInterpolator15723;
-		public virtual void setInterpolator(android.content.Context arg0, int arg1) 
+		public virtual void setInterpolator(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -181,7 +181,7 @@ namespace android.view.animation
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInterpolator15724;
-		public virtual global::android.view.animation.Interpolator getInterpolator() 
+		public virtual global::android.view.animation.Interpolator getInterpolator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -201,7 +201,7 @@ namespace android.view.animation
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDelay15725;
-		public virtual float getDelay() 
+		public virtual float getDelay()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -210,7 +210,7 @@ namespace android.view.animation
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelay15725);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDelay15726;
-		public virtual void setDelay(float arg0) 
+		public virtual void setDelay(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -219,7 +219,7 @@ namespace android.view.animation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._setDelay15726, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _willOverlap15727;
-		public virtual bool willOverlap() 
+		public virtual bool willOverlap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -228,7 +228,7 @@ namespace android.view.animation
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._willOverlap15727);
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnimationForView15728;
-		public virtual global::android.view.animation.Animation getAnimationForView(android.view.View arg0) 
+		public virtual global::android.view.animation.Animation getAnimationForView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -237,7 +237,7 @@ namespace android.view.animation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getAnimationForView15728, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDelayForView15729;
-		protected virtual long getDelayForView(android.view.View arg0) 
+		protected virtual long getDelayForView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -246,7 +246,7 @@ namespace android.view.animation
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getDelayForView15729, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTransformedIndex15730;
-		protected virtual int getTransformedIndex(android.view.animation.LayoutAnimationController.AnimationParameters arg0) 
+		protected virtual int getTransformedIndex(android.view.animation.LayoutAnimationController.AnimationParameters arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -255,21 +255,21 @@ namespace android.view.animation
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._getTransformedIndex15730, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController15731;
-		public LayoutAnimationController(android.view.animation.Animation arg0, float arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LayoutAnimationController(android.view.animation.Animation arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController15731, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController15732;
-		public LayoutAnimationController(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LayoutAnimationController(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController15732, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LayoutAnimationController15733;
-		public LayoutAnimationController(android.view.animation.Animation arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LayoutAnimationController(android.view.animation.Animation arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.LayoutAnimationController.staticClass, global::android.view.animation.LayoutAnimationController._LayoutAnimationController15733, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

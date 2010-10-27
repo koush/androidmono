@@ -23,7 +23,7 @@ namespace android.provider
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _BookmarkColumns10474;
-			public BookmarkColumns()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public BookmarkColumns() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Browser.BookmarkColumns.staticClass, global::android.provider.Browser.BookmarkColumns._BookmarkColumns10474);
@@ -97,7 +97,7 @@ namespace android.provider
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _SearchColumns10482;
-			public SearchColumns()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public SearchColumns() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Browser.SearchColumns.staticClass, global::android.provider.Browser.SearchColumns._SearchColumns10482);
@@ -132,79 +132,79 @@ namespace android.provider
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _saveBookmark10486;
-		public static void saveBookmark(android.content.Context arg0, java.lang.String arg1, java.lang.String arg2) 
+		public static void saveBookmark(android.content.Context arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._saveBookmark10486, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _sendString10487;
-		public static void sendString(android.content.Context arg0, java.lang.String arg1) 
+		public static void sendString(android.content.Context arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._sendString10487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllBookmarks10488;
-		public static global::android.database.Cursor getAllBookmarks(android.content.ContentResolver arg0) 
+		public static global::android.database.Cursor getAllBookmarks(android.content.ContentResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.Browser.staticClass, global::android.provider.Browser._getAllBookmarks10488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllVisitedUrls10489;
-		public static global::android.database.Cursor getAllVisitedUrls(android.content.ContentResolver arg0) 
+		public static global::android.database.Cursor getAllVisitedUrls(android.content.ContentResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.Browser.staticClass, global::android.provider.Browser._getAllVisitedUrls10489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.database.Cursor;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateVisitedHistory10490;
-		public static void updateVisitedHistory(android.content.ContentResolver arg0, java.lang.String arg1, bool arg2) 
+		public static void updateVisitedHistory(android.content.ContentResolver arg0, java.lang.String arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._updateVisitedHistory10490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _truncateHistory10491;
-		public static void truncateHistory(android.content.ContentResolver arg0) 
+		public static void truncateHistory(android.content.ContentResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._truncateHistory10491, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _canClearHistory10492;
-		public static bool canClearHistory(android.content.ContentResolver arg0) 
+		public static bool canClearHistory(android.content.ContentResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.provider.Browser.staticClass, global::android.provider.Browser._canClearHistory10492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearHistory10493;
-		public static void clearHistory(android.content.ContentResolver arg0) 
+		public static void clearHistory(android.content.ContentResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._clearHistory10493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteHistoryTimeFrame10494;
-		public static void deleteHistoryTimeFrame(android.content.ContentResolver arg0, long arg1, long arg2) 
+		public static void deleteHistoryTimeFrame(android.content.ContentResolver arg0, long arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._deleteHistoryTimeFrame10494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _deleteFromHistory10495;
-		public static void deleteFromHistory(android.content.ContentResolver arg0, java.lang.String arg1) 
+		public static void deleteFromHistory(android.content.ContentResolver arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._deleteFromHistory10495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addSearchUrl10496;
-		public static void addSearchUrl(android.content.ContentResolver arg0, java.lang.String arg1) 
+		public static void addSearchUrl(android.content.ContentResolver arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._addSearchUrl10496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearSearches10497;
-		public static void clearSearches(android.content.ContentResolver arg0) 
+		public static void clearSearches(android.content.ContentResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._clearSearches10497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestAllIcons10498;
-		public static void requestAllIcons(android.content.ContentResolver arg0, java.lang.String arg1, android.webkit.WebIconDatabase.IconListener arg2) 
+		public static void requestAllIcons(android.content.ContentResolver arg0, java.lang.String arg1, android.webkit.WebIconDatabase.IconListener arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._requestAllIcons10498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -214,7 +214,7 @@ namespace android.provider
 			requestAllIcons(arg0, arg1, (global::android.webkit.WebIconDatabase.IconListenerDelegateWrapper)arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _Browser10499;
-		public Browser()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Browser() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.Browser.staticClass, global::android.provider.Browser._Browser10499);

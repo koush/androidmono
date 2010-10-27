@@ -19,7 +19,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOrder23994;
-		public virtual global::java.math.BigInteger getOrder() 
+		public virtual global::java.math.BigInteger getOrder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurve23995;
-		public virtual global::java.security.spec.EllipticCurve getCurve() 
+		public virtual global::java.security.spec.EllipticCurve getCurve()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGenerator23996;
-		public virtual global::java.security.spec.ECPoint getGenerator() 
+		public virtual global::java.security.spec.ECPoint getGenerator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCofactor23997;
-		public virtual int getCofactor() 
+		public virtual int getCofactor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace java.security.spec
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._getCofactor23997);
 		}
 		internal static global::MonoJavaBridge.MethodId _ECParameterSpec23998;
-		public ECParameterSpec(java.security.spec.EllipticCurve arg0, java.security.spec.ECPoint arg1, java.math.BigInteger arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ECParameterSpec(java.security.spec.EllipticCurve arg0, java.security.spec.ECPoint arg1, java.math.BigInteger arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECParameterSpec.staticClass, global::java.security.spec.ECParameterSpec._ECParameterSpec23998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

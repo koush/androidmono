@@ -12,7 +12,7 @@ namespace android.app.backup
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate2298;
-		public virtual void onCreate() 
+		public virtual void onCreate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app.backup
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.BackupAgent.staticClass, global::android.app.backup.BackupAgent._onCreate2298);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDestroy2299;
-		public virtual void onDestroy() 
+		public virtual void onDestroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.app.backup
 		internal static global::MonoJavaBridge.MethodId _onRestore2301;
 		public abstract void onRestore(android.app.backup.BackupDataInput arg0, int arg1, android.os.ParcelFileDescriptor arg2);
 		internal static global::MonoJavaBridge.MethodId _BackupAgent2302;
-		public BackupAgent()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BackupAgent() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.BackupAgent.staticClass, global::android.app.backup.BackupAgent._BackupAgent2302);
@@ -64,7 +64,7 @@ namespace android.app.backup
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onBackup2303;
-		public override void onBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2) 
+		public override void onBackup(android.os.ParcelFileDescriptor arg0, android.app.backup.BackupDataOutput arg1, android.os.ParcelFileDescriptor arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.app.backup
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.BackupAgent_.staticClass, global::android.app.backup.BackupAgent_._onBackup2303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestore2304;
-		public override void onRestore(android.app.backup.BackupDataInput arg0, int arg1, android.os.ParcelFileDescriptor arg2) 
+		public override void onRestore(android.app.backup.BackupDataInput arg0, int arg1, android.os.ParcelFileDescriptor arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

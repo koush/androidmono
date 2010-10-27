@@ -23,7 +23,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _disableKeyguard1919;
-			public virtual void disableKeyguard() 
+			public virtual void disableKeyguard()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.app
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.KeyguardManager.KeyguardLock.staticClass, global::android.app.KeyguardManager.KeyguardLock._disableKeyguard1919);
 			}
 			internal static global::MonoJavaBridge.MethodId _reenableKeyguard1920;
-			public virtual void reenableKeyguard() 
+			public virtual void reenableKeyguard()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onKeyguardExitResult1921;
-			 void android.app.KeyguardManager.OnKeyguardExitResult.onKeyguardExitResult(bool arg0) 
+			void android.app.KeyguardManager.OnKeyguardExitResult.onKeyguardExitResult(bool arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -95,7 +95,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnKeyguardExitResultDelegateWrapper1922;
-			public OnKeyguardExitResultDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnKeyguardExitResultDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper.staticClass, global::android.app.KeyguardManager.OnKeyguardExitResultDelegateWrapper._OnKeyguardExitResultDelegateWrapper1922);
@@ -124,7 +124,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _newKeyguardLock1923;
-		public virtual global::android.app.KeyguardManager.KeyguardLock newKeyguardLock(java.lang.String arg0) 
+		public virtual global::android.app.KeyguardManager.KeyguardLock newKeyguardLock(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.KeyguardManager.staticClass, global::android.app.KeyguardManager._newKeyguardLock1923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.app.KeyguardManager.KeyguardLock;
 		}
 		internal static global::MonoJavaBridge.MethodId _inKeyguardRestrictedInputMode1924;
-		public virtual bool inKeyguardRestrictedInputMode() 
+		public virtual bool inKeyguardRestrictedInputMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -142,7 +142,7 @@ namespace android.app
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.KeyguardManager.staticClass, global::android.app.KeyguardManager._inKeyguardRestrictedInputMode1924);
 		}
 		internal static global::MonoJavaBridge.MethodId _exitKeyguardSecurely1925;
-		public virtual void exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult arg0) 
+		public virtual void exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

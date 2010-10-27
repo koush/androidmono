@@ -12,7 +12,7 @@ namespace org.apache.http.impl.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isDataAvailable33463;
-		public override bool isDataAvailable(int arg0) 
+		public override bool isDataAvailable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.io.SocketInputBuffer.staticClass, global::org.apache.http.impl.io.SocketInputBuffer._isDataAvailable33463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketInputBuffer33464;
-		public SocketInputBuffer(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketInputBuffer(java.net.Socket arg0, int arg1, org.apache.http.@params.HttpParams arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.SocketInputBuffer.staticClass, global::org.apache.http.impl.io.SocketInputBuffer._SocketInputBuffer33464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

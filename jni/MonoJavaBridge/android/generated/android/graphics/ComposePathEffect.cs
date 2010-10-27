@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ComposePathEffect5258;
-		public ComposePathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ComposePathEffect(android.graphics.PathEffect arg0, android.graphics.PathEffect arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ComposePathEffect.staticClass, global::android.graphics.ComposePathEffect._ComposePathEffect5258, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

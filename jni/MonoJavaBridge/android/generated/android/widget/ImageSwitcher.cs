@@ -11,8 +11,15 @@ namespace android.widget
 		protected ImageSwitcher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new int ImageResource
+		{
+			set
+			{
+				setImageResource(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setImageResource17247;
-		public virtual void setImageResource(int arg0) 
+		public virtual void setImageResource(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +27,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ImageSwitcher.staticClass, global::android.widget.ImageSwitcher._setImageResource17247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.net.Uri ImageURI
+		{
+			set
+			{
+				setImageURI(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setImageURI17248;
-		public virtual void setImageURI(android.net.Uri arg0) 
+		public virtual void setImageURI(android.net.Uri arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,8 +43,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ImageSwitcher.staticClass, global::android.widget.ImageSwitcher._setImageURI17248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.drawable.Drawable ImageDrawable
+		{
+			set
+			{
+				setImageDrawable(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setImageDrawable17249;
-		public virtual void setImageDrawable(android.graphics.drawable.Drawable arg0) 
+		public virtual void setImageDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,14 +60,14 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ImageSwitcher.staticClass, global::android.widget.ImageSwitcher._setImageDrawable17249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ImageSwitcher17250;
-		public ImageSwitcher(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ImageSwitcher(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageSwitcher.staticClass, global::android.widget.ImageSwitcher._ImageSwitcher17250, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ImageSwitcher17251;
-		public ImageSwitcher(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ImageSwitcher(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ImageSwitcher.staticClass, global::android.widget.ImageSwitcher._ImageSwitcher17251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

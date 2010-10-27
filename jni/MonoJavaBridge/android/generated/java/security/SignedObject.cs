@@ -19,7 +19,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getObject23397;
-		public global::java.lang.Object getObject() 
+		public global::java.lang.Object getObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSignature23398;
-		public byte[] getSignature() 
+		public byte[] getSignature()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getSignature23398)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _verify23399;
-		public bool verify(java.security.PublicKey arg0, java.security.Signature arg1) 
+		public bool verify(java.security.PublicKey arg0, java.security.Signature arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23400;
-		public global::java.lang.String getAlgorithm() 
+		public global::java.lang.String getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.SignedObject.staticClass, global::java.security.SignedObject._getAlgorithm23400)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _SignedObject23401;
-		public SignedObject(java.io.Serializable arg0, java.security.PrivateKey arg1, java.security.Signature arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SignedObject(java.io.Serializable arg0, java.security.PrivateKey arg1, java.security.Signature arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.SignedObject.staticClass, global::java.security.SignedObject._SignedObject23401, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

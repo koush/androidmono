@@ -18,7 +18,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _setCallbackHandler22899;
 		public abstract void setCallbackHandler(javax.security.auth.callback.CallbackHandler arg0);
 		internal static global::MonoJavaBridge.MethodId _AuthProvider22900;
-		protected AuthProvider(java.lang.String arg0, double arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AuthProvider(java.lang.String arg0, double arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AuthProvider.staticClass, global::java.security.AuthProvider._AuthProvider22900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -47,7 +47,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _login22901;
-		public override void login(javax.security.auth.Subject arg0, javax.security.auth.callback.CallbackHandler arg1) 
+		public override void login(javax.security.auth.Subject arg0, javax.security.auth.callback.CallbackHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AuthProvider_.staticClass, global::java.security.AuthProvider_._login22901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _logout22902;
-		public override void logout() 
+		public override void logout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AuthProvider_.staticClass, global::java.security.AuthProvider_._logout22902);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCallbackHandler22903;
-		public override void setCallbackHandler(javax.security.auth.callback.CallbackHandler arg0) 
+		public override void setCallbackHandler(javax.security.auth.callback.CallbackHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

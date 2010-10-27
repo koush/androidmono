@@ -12,14 +12,14 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoRouteToHostException21649;
-		public NoRouteToHostException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoRouteToHostException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.NoRouteToHostException.staticClass, global::java.net.NoRouteToHostException._NoRouteToHostException21649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NoRouteToHostException21650;
-		public NoRouteToHostException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoRouteToHostException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.NoRouteToHostException.staticClass, global::java.net.NoRouteToHostException._NoRouteToHostException21650);

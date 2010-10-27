@@ -19,7 +19,7 @@ namespace org.apache.http.impl.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _generateType1Msg32736;
-		 global::java.lang.String org.apache.http.impl.auth.NTLMEngine.generateType1Msg(java.lang.String arg0, java.lang.String arg1) 
+		global::java.lang.String org.apache.http.impl.auth.NTLMEngine.generateType1Msg(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.impl.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.auth.NTLMEngine_.staticClass, global::org.apache.http.impl.auth.NTLMEngine_._generateType1Msg32736, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _generateType3Msg32737;
-		 global::java.lang.String org.apache.http.impl.auth.NTLMEngine.generateType3Msg(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4) 
+		global::java.lang.String org.apache.http.impl.auth.NTLMEngine.generateType3Msg(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

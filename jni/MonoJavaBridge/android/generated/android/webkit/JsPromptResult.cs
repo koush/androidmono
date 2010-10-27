@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _confirm16055;
-		public virtual void confirm(java.lang.String arg0) 
+		public virtual void confirm(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

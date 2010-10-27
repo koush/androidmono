@@ -18,7 +18,7 @@ namespace android.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _start11617;
-		 void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0) 
+		void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _StartElementListenerDelegateWrapper11618;
-		public StartElementListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StartElementListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.StartElementListenerDelegateWrapper.staticClass, global::android.sax.StartElementListenerDelegateWrapper._StartElementListenerDelegateWrapper11618);

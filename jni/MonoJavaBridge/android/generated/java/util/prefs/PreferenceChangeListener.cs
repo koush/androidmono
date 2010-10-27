@@ -18,7 +18,7 @@ namespace java.util.prefs
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _preferenceChange28185;
-		 void java.util.prefs.PreferenceChangeListener.preferenceChange(java.util.prefs.PreferenceChangeEvent arg0) 
+		void java.util.prefs.PreferenceChangeListener.preferenceChange(java.util.prefs.PreferenceChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

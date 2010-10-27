@@ -12,31 +12,31 @@ namespace dalvik.system
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _fork18675;
-		public static int fork() 
+		public static int fork()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._fork18675);
 		}
 		internal static global::MonoJavaBridge.MethodId _forkAndSpecialize18676;
-		public static int forkAndSpecialize(int arg0, int arg1, int[] arg2, int arg3, int[][] arg4) 
+		public static int forkAndSpecialize(int arg0, int arg1, int[] arg2, int arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkAndSpecialize18676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _forkAndSpecialize18677;
-		public static int forkAndSpecialize(int arg0, int arg1, int[] arg2, bool arg3, int[][] arg4) 
+		public static int forkAndSpecialize(int arg0, int arg1, int[] arg2, bool arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkAndSpecialize18677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _forkSystemServer18678;
-		public static int forkSystemServer(int arg0, int arg1, int[] arg2, int arg3, int[][] arg4) 
+		public static int forkSystemServer(int arg0, int arg1, int[] arg2, int arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkSystemServer18678, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _forkSystemServer18679;
-		public static int forkSystemServer(int arg0, int arg1, int[] arg2, bool arg3, int[][] arg4) 
+		public static int forkSystemServer(int arg0, int arg1, int[] arg2, bool arg3, int[][] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(dalvik.system.Zygote.staticClass, global::dalvik.system.Zygote._forkSystemServer18679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));

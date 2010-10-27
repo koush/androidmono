@@ -12,14 +12,14 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ColorMatrixColorFilter5256;
-		public ColorMatrixColorFilter(android.graphics.ColorMatrix arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ColorMatrixColorFilter(android.graphics.ColorMatrix arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5256, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ColorMatrixColorFilter5257;
-		public ColorMatrixColorFilter(float[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ColorMatrixColorFilter(float[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter5257, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,7 +19,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getManager33127;
-		protected override global::org.apache.http.conn.ClientConnectionManager getManager() 
+		protected override global::org.apache.http.conn.ClientConnectionManager getManager()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ClientConnectionManager>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getManager33127)) as org.apache.http.conn.ClientConnectionManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _detach33128;
-		protected override void detach() 
+		protected override void detach()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPoolEntry33129;
-		protected virtual global::org.apache.http.impl.conn.AbstractPoolEntry getPoolEntry() 
+		protected virtual global::org.apache.http.impl.conn.AbstractPoolEntry getPoolEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._getPoolEntry33129)) as org.apache.http.impl.conn.AbstractPoolEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicPooledConnAdapter33130;
-		protected BasicPooledConnAdapter(org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager arg0, org.apache.http.impl.conn.AbstractPoolEntry arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected BasicPooledConnAdapter(org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager arg0, org.apache.http.impl.conn.AbstractPoolEntry arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter._BasicPooledConnAdapter33130, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

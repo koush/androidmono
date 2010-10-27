@@ -12,7 +12,7 @@ namespace org.xml.sax.helpers
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _reset35212;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._reset35212);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrefix35213;
-		public virtual global::java.lang.String getPrefix(java.lang.String arg0) 
+		public virtual global::java.lang.String getPrefix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.xml.sax.helpers
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._getPrefix35213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getURI35214;
-		public virtual global::java.lang.String getURI(java.lang.String arg0) 
+		public virtual global::java.lang.String getURI(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.xml.sax.helpers
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._getURI35214, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _pushContext35215;
-		public virtual void pushContext() 
+		public virtual void pushContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._pushContext35215);
 		}
 		internal static global::MonoJavaBridge.MethodId _declarePrefix35216;
-		public virtual bool declarePrefix(java.lang.String arg0, java.lang.String arg1) 
+		public virtual bool declarePrefix(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace org.xml.sax.helpers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._declarePrefix35216, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _popContext35217;
-		public virtual void popContext() 
+		public virtual void popContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._popContext35217);
 		}
 		internal static global::MonoJavaBridge.MethodId _processName35218;
-		public virtual global::java.lang.String[] processName(java.lang.String arg0, java.lang.String[] arg1, bool arg2) 
+		public virtual global::java.lang.String[] processName(java.lang.String arg0, java.lang.String[] arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace org.xml.sax.helpers
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrefixes35219;
-		public virtual global::java.util.Enumeration getPrefixes() 
+		public virtual global::java.util.Enumeration getPrefixes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace org.xml.sax.helpers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._getPrefixes35219)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrefixes35220;
-		public virtual global::java.util.Enumeration getPrefixes(java.lang.String arg0) 
+		public virtual global::java.util.Enumeration getPrefixes(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace org.xml.sax.helpers
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaredPrefixes35221;
-		public virtual global::java.util.Enumeration getDeclaredPrefixes() 
+		public virtual global::java.util.Enumeration getDeclaredPrefixes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,8 +115,15 @@ namespace org.xml.sax.helpers
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._getDeclaredPrefixes35221)) as java.util.Enumeration;
 		}
+		public new bool NamespaceDeclUris
+		{
+			set
+			{
+				setNamespaceDeclUris(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setNamespaceDeclUris35222;
-		public virtual void setNamespaceDeclUris(bool arg0) 
+		public virtual void setNamespaceDeclUris(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +132,7 @@ namespace org.xml.sax.helpers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._setNamespaceDeclUris35222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isNamespaceDeclUris35223;
-		public virtual bool isNamespaceDeclUris() 
+		public virtual bool isNamespaceDeclUris()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +141,7 @@ namespace org.xml.sax.helpers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._isNamespaceDeclUris35223);
 		}
 		internal static global::MonoJavaBridge.MethodId _NamespaceSupport35224;
-		public NamespaceSupport()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NamespaceSupport() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xml.sax.helpers.NamespaceSupport.staticClass, global::org.xml.sax.helpers.NamespaceSupport._NamespaceSupport35224);

@@ -19,7 +19,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicExponent24046;
-		public virtual global::java.math.BigInteger getPublicExponent() 
+		public virtual global::java.math.BigInteger getPublicExponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeysize24047;
-		public virtual int getKeysize() 
+		public virtual int getKeysize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.security.spec
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._getKeysize24047);
 		}
 		internal static global::MonoJavaBridge.MethodId _RSAKeyGenParameterSpec24048;
-		public RSAKeyGenParameterSpec(int arg0, java.math.BigInteger arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RSAKeyGenParameterSpec(int arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAKeyGenParameterSpec.staticClass, global::java.security.spec.RSAKeyGenParameterSpec._RSAKeyGenParameterSpec24048, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

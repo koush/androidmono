@@ -12,7 +12,7 @@ namespace android.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString7701;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.MailTo.staticClass, global::android.net.MailTo._toString7701)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _parse7702;
-		public static global::android.net.MailTo parse(java.lang.String arg0) 
+		public static global::android.net.MailTo parse(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.net.MailTo.staticClass, global::android.net.MailTo._parse7702, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.MailTo;
@@ -34,7 +34,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaders7703;
-		public virtual global::java.util.Map getHeaders() 
+		public virtual global::java.util.Map getHeaders()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.MailTo.staticClass, global::android.net.MailTo._getHeaders7703)) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _isMailTo7704;
-		public static bool isMailTo(java.lang.String arg0) 
+		public static bool isMailTo(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.net.MailTo.staticClass, global::android.net.MailTo._isMailTo7704, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -56,7 +56,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTo7705;
-		public virtual global::java.lang.String getTo() 
+		public virtual global::java.lang.String getTo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -72,7 +72,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCc7706;
-		public virtual global::java.lang.String getCc() 
+		public virtual global::java.lang.String getCc()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubject7707;
-		public virtual global::java.lang.String getSubject() 
+		public virtual global::java.lang.String getSubject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +104,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBody7708;
-		public virtual global::java.lang.String getBody() 
+		public virtual global::java.lang.String getBody()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

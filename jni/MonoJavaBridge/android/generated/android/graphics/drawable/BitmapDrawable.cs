@@ -12,7 +12,7 @@ namespace android.graphics.drawable
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _inflate5852;
-		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
+		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._inflate5852, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _draw5853;
-		public override void draw(android.graphics.Canvas arg0) 
+		public override void draw(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChangingConfigurations5854;
-		public override int getChangingConfigurations() 
+		public override int getChangingConfigurations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,8 +45,15 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getChangingConfigurations5854);
 		}
+		public new bool Dither
+		{
+			set
+			{
+				setDither(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDither5855;
-		public override void setDither(bool arg0) 
+		public override void setDither(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,8 +61,15 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setDither5855, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool FilterBitmap
+		{
+			set
+			{
+				setFilterBitmap(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setFilterBitmap5856;
-		public override void setFilterBitmap(bool arg0) 
+		public override void setFilterBitmap(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -63,8 +77,15 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setFilterBitmap5856, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Alpha
+		{
+			set
+			{
+				setAlpha(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setAlpha5857;
-		public override void setAlpha(int arg0) 
+		public override void setAlpha(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -72,8 +93,15 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setAlpha5857, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.graphics.ColorFilter ColorFilter
+		{
+			set
+			{
+				setColorFilter(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setColorFilter5858;
-		public override void setColorFilter(android.graphics.ColorFilter arg0) 
+		public override void setColorFilter(android.graphics.ColorFilter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +117,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOpacity5859;
-		public override int getOpacity() 
+		public override int getOpacity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +126,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getOpacity5859);
 		}
 		internal static global::MonoJavaBridge.MethodId _onBoundsChange5860;
-		protected override void onBoundsChange(android.graphics.Rect arg0) 
+		protected override void onBoundsChange(android.graphics.Rect arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +142,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicWidth5861;
-		public override int getIntrinsicWidth() 
+		public override int getIntrinsicWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +158,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIntrinsicHeight5862;
-		public override int getIntrinsicHeight() 
+		public override int getIntrinsicHeight()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,7 +167,7 @@ namespace android.graphics.drawable
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getIntrinsicHeight5862);
 		}
 		internal static global::MonoJavaBridge.MethodId _mutate5863;
-		public override global::android.graphics.drawable.Drawable mutate() 
+		public override global::android.graphics.drawable.Drawable mutate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -155,7 +183,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConstantState5864;
-		public sealed override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
+		public sealed override global::android.graphics.drawable.Drawable.ConstantState getConstantState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -164,7 +192,7 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getConstantState5864)) as android.graphics.drawable.Drawable.ConstantState;
 		}
 		internal static global::MonoJavaBridge.MethodId _setGravity5865;
-		public virtual void setGravity(int arg0) 
+		public virtual void setGravity(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -180,7 +208,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPaint5866;
-		public virtual global::android.graphics.Paint getPaint() 
+		public virtual global::android.graphics.Paint getPaint()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -200,7 +228,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGravity5867;
-		public virtual int getGravity() 
+		public virtual int getGravity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -208,8 +236,15 @@ namespace android.graphics.drawable
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getGravity5867);
 		}
+		public new bool AntiAlias
+		{
+			set
+			{
+				setAntiAlias(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setAntiAlias5868;
-		public virtual void setAntiAlias(bool arg0) 
+		public virtual void setAntiAlias(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -225,7 +260,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBitmap5869;
-		public virtual global::android.graphics.Bitmap getBitmap() 
+		public virtual global::android.graphics.Bitmap getBitmap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -234,7 +269,7 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getBitmap5869)) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5870;
-		public virtual void setTargetDensity(android.graphics.Canvas arg0) 
+		public virtual void setTargetDensity(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -243,7 +278,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTargetDensity5870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5871;
-		public virtual void setTargetDensity(android.util.DisplayMetrics arg0) 
+		public virtual void setTargetDensity(android.util.DisplayMetrics arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -252,7 +287,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTargetDensity5871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTargetDensity5872;
-		public virtual void setTargetDensity(int arg0) 
+		public virtual void setTargetDensity(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -272,7 +307,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTileModeX5873;
-		public virtual global::android.graphics.Shader.TileMode getTileModeX() 
+		public virtual global::android.graphics.Shader.TileMode getTileModeX()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -292,7 +327,7 @@ namespace android.graphics.drawable
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTileModeY5874;
-		public virtual global::android.graphics.Shader.TileMode getTileModeY() 
+		public virtual global::android.graphics.Shader.TileMode getTileModeY()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -301,7 +336,7 @@ namespace android.graphics.drawable
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Shader.TileMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._getTileModeY5874)) as android.graphics.Shader.TileMode;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeX5875;
-		public virtual void setTileModeX(android.graphics.Shader.TileMode arg0) 
+		public virtual void setTileModeX(android.graphics.Shader.TileMode arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -310,7 +345,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTileModeX5875, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeY5876;
-		public virtual void setTileModeY(android.graphics.Shader.TileMode arg0) 
+		public virtual void setTileModeY(android.graphics.Shader.TileMode arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -319,7 +354,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTileModeY5876, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setTileModeXY5877;
-		public virtual void setTileModeXY(android.graphics.Shader.TileMode arg0, android.graphics.Shader.TileMode arg1) 
+		public virtual void setTileModeXY(android.graphics.Shader.TileMode arg0, android.graphics.Shader.TileMode arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -328,56 +363,56 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._setTileModeXY5877, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5878;
-		public BitmapDrawable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5878);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5879;
-		public BitmapDrawable(android.content.res.Resources arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(android.content.res.Resources arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5880;
-		public BitmapDrawable(android.graphics.Bitmap arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(android.graphics.Bitmap arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5880, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5881;
-		public BitmapDrawable(android.content.res.Resources arg0, android.graphics.Bitmap arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(android.content.res.Resources arg0, android.graphics.Bitmap arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5881, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5882;
-		public BitmapDrawable(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5882, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5883;
-		public BitmapDrawable(android.content.res.Resources arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(android.content.res.Resources arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5883, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5884;
-		public BitmapDrawable(java.io.InputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _BitmapDrawable5885;
-		public BitmapDrawable(android.content.res.Resources arg0, java.io.InputStream arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BitmapDrawable(android.content.res.Resources arg0, java.io.InputStream arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.BitmapDrawable.staticClass, global::android.graphics.drawable.BitmapDrawable._BitmapDrawable5885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

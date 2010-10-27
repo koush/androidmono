@@ -18,7 +18,7 @@ namespace android.view.inputmethod
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _finishedEvent15978;
-		 void android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent(int arg0, bool arg1) 
+		void android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent(int arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.view.inputmethod
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InputMethodSession_EventCallbackDelegateWrapper15979;
-		public InputMethodSession_EventCallbackDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InputMethodSession_EventCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.inputmethod.InputMethodSession_EventCallbackDelegateWrapper.staticClass, global::android.view.inputmethod.InputMethodSession_EventCallbackDelegateWrapper._InputMethodSession_EventCallbackDelegateWrapper15979);

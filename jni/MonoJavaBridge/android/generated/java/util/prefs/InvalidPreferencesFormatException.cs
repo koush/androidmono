@@ -12,21 +12,21 @@ namespace java.util.prefs
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidPreferencesFormatException28173;
-		public InvalidPreferencesFormatException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidPreferencesFormatException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.InvalidPreferencesFormatException.staticClass, global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidPreferencesFormatException28174;
-		public InvalidPreferencesFormatException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidPreferencesFormatException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.InvalidPreferencesFormatException.staticClass, global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidPreferencesFormatException28175;
-		public InvalidPreferencesFormatException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidPreferencesFormatException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.prefs.InvalidPreferencesFormatException.staticClass, global::java.util.prefs.InvalidPreferencesFormatException._InvalidPreferencesFormatException28175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

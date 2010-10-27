@@ -12,7 +12,7 @@ namespace java.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25298;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.text
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.Collator.staticClass, global::java.text.Collator._equals25298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _equals25299;
-		public virtual bool equals(java.lang.String arg0, java.lang.String arg1) 
+		public virtual bool equals(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _hashCode25300;
 		public abstract int hashCode();
 		internal static global::MonoJavaBridge.MethodId _clone25301;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _compare25302;
 		public abstract int compare(java.lang.String arg0, java.lang.String arg1);
 		internal static global::MonoJavaBridge.MethodId _compare25303;
-		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1) 
+		public virtual int compare(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,19 +52,19 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Collator.staticClass, global::java.text.Collator._compare25303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance25304;
-		public static global::java.text.Collator getInstance() 
+		public static global::java.text.Collator getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.Collator.staticClass, global::java.text.Collator._getInstance25304)) as java.text.Collator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance25305;
-		public static global::java.text.Collator getInstance(java.util.Locale arg0) 
+		public static global::java.text.Collator getInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.text.Collator.staticClass, global::java.text.Collator._getInstance25305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.Collator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAvailableLocales25306;
-		public static global::java.util.Locale[] getAvailableLocales() 
+		public static global::java.util.Locale[] getAvailableLocales()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.text.Collator.staticClass, global::java.text.Collator._getAvailableLocales25306)) as java.util.Locale[];
@@ -72,7 +72,7 @@ namespace java.text
 		internal static global::MonoJavaBridge.MethodId _getCollationKey25307;
 		public abstract global::java.text.CollationKey getCollationKey(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _getDecomposition25308;
-		public virtual int getDecomposition() 
+		public virtual int getDecomposition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -81,7 +81,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Collator.staticClass, global::java.text.Collator._getDecomposition25308);
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrength25309;
-		public virtual int getStrength() 
+		public virtual int getStrength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,7 +90,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Collator.staticClass, global::java.text.Collator._getStrength25309);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrength25310;
-		public virtual void setStrength(int arg0) 
+		public virtual void setStrength(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace java.text
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.Collator.staticClass, global::java.text.Collator._setStrength25310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDecomposition25311;
-		public virtual void setDecomposition(int arg0) 
+		public virtual void setDecomposition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace java.text
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.Collator.staticClass, global::java.text.Collator._setDecomposition25311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Collator25312;
-		protected Collator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected Collator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.Collator.staticClass, global::java.text.Collator._Collator25312);
@@ -197,7 +197,7 @@ namespace java.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode25320;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Collator_.staticClass, global::java.text.Collator_._hashCode25320);
 		}
 		internal static global::MonoJavaBridge.MethodId _compare25321;
-		public override int compare(java.lang.String arg0, java.lang.String arg1) 
+		public override int compare(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -215,7 +215,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.Collator_.staticClass, global::java.text.Collator_._compare25321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCollationKey25322;
-		public override global::java.text.CollationKey getCollationKey(java.lang.String arg0) 
+		public override global::java.text.CollationKey getCollationKey(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

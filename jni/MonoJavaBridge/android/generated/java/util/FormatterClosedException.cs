@@ -12,7 +12,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _FormatterClosedException26211;
-		public FormatterClosedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FormatterClosedException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.FormatterClosedException.staticClass, global::java.util.FormatterClosedException._FormatterClosedException26211);

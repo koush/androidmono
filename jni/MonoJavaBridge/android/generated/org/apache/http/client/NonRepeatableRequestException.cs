@@ -12,14 +12,14 @@ namespace org.apache.http.client
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NonRepeatableRequestException31893;
-		public NonRepeatableRequestException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NonRepeatableRequestException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.NonRepeatableRequestException.staticClass, global::org.apache.http.client.NonRepeatableRequestException._NonRepeatableRequestException31893);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NonRepeatableRequestException31894;
-		public NonRepeatableRequestException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NonRepeatableRequestException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.NonRepeatableRequestException.staticClass, global::org.apache.http.client.NonRepeatableRequestException._NonRepeatableRequestException31894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

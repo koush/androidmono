@@ -20,7 +20,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _hasNext26331;
-		 bool java.util.Iterator.hasNext() 
+		bool java.util.Iterator.hasNext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.util
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Iterator_.staticClass, global::java.util.Iterator_._hasNext26331);
 		}
 		internal static global::MonoJavaBridge.MethodId _next26332;
-		 global::java.lang.Object java.util.Iterator.next() 
+		global::java.lang.Object java.util.Iterator.next()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Iterator_.staticClass, global::java.util.Iterator_._next26332)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26333;
-		 void java.util.Iterator.remove() 
+		void java.util.Iterator.remove()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

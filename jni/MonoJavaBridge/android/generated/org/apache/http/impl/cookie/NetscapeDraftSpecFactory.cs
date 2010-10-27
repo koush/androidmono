@@ -12,7 +12,7 @@ namespace org.apache.http.impl.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance33318;
-		public virtual global::org.apache.http.cookie.CookieSpec newInstance(org.apache.http.@params.HttpParams arg0) 
+		public virtual global::org.apache.http.cookie.CookieSpec newInstance(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.cookie.CookieSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.cookie.NetscapeDraftSpecFactory.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpecFactory._newInstance33318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.cookie.CookieSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _NetscapeDraftSpecFactory33319;
-		public NetscapeDraftSpecFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NetscapeDraftSpecFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.NetscapeDraftSpecFactory.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpecFactory._NetscapeDraftSpecFactory33319);

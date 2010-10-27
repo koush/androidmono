@@ -18,7 +18,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeData30621;
-		 bool javax.sql.RowSetWriter.writeData(javax.sql.RowSetInternal arg0) 
+		bool javax.sql.RowSetWriter.writeData(javax.sql.RowSetInternal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

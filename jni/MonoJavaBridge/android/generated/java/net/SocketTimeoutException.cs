@@ -12,14 +12,14 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketTimeoutException21836;
-		public SocketTimeoutException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketTimeoutException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketTimeoutException.staticClass, global::java.net.SocketTimeoutException._SocketTimeoutException21836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketTimeoutException21837;
-		public SocketTimeoutException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketTimeoutException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketTimeoutException.staticClass, global::java.net.SocketTimeoutException._SocketTimeoutException21837);

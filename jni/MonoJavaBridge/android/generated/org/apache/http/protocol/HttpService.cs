@@ -12,7 +12,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _handleException33924;
-		protected virtual void handleException(org.apache.http.HttpException arg0, org.apache.http.HttpResponse arg1) 
+		protected virtual void handleException(org.apache.http.HttpException arg0, org.apache.http.HttpResponse arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.apache.http.protocol
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams33925;
-		public virtual global::org.apache.http.@params.HttpParams getParams() 
+		public virtual global::org.apache.http.@params.HttpParams getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.@params.HttpParams>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._getParams33925)) as org.apache.http.@params.HttpParams;
 		}
 		internal static global::MonoJavaBridge.MethodId _setParams33926;
-		public virtual void setParams(org.apache.http.@params.HttpParams arg0) 
+		public virtual void setParams(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,8 +49,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._setParams33926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::org.apache.http.protocol.HttpProcessor HttpProcessor
+		{
+			set
+			{
+				setHttpProcessor(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setHttpProcessor33927;
-		public virtual void setHttpProcessor(org.apache.http.protocol.HttpProcessor arg0) 
+		public virtual void setHttpProcessor(org.apache.http.protocol.HttpProcessor arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,8 +65,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._setHttpProcessor33927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::org.apache.http.ConnectionReuseStrategy ConnReuseStrategy
+		{
+			set
+			{
+				setConnReuseStrategy(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setConnReuseStrategy33928;
-		public virtual void setConnReuseStrategy(org.apache.http.ConnectionReuseStrategy arg0) 
+		public virtual void setConnReuseStrategy(org.apache.http.ConnectionReuseStrategy arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,8 +81,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._setConnReuseStrategy33928, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::org.apache.http.HttpResponseFactory ResponseFactory
+		{
+			set
+			{
+				setResponseFactory(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setResponseFactory33929;
-		public virtual void setResponseFactory(org.apache.http.HttpResponseFactory arg0) 
+		public virtual void setResponseFactory(org.apache.http.HttpResponseFactory arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,8 +97,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._setResponseFactory33929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::org.apache.http.protocol.HttpRequestHandlerResolver HandlerResolver
+		{
+			set
+			{
+				setHandlerResolver(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setHandlerResolver33930;
-		public virtual void setHandlerResolver(org.apache.http.protocol.HttpRequestHandlerResolver arg0) 
+		public virtual void setHandlerResolver(org.apache.http.protocol.HttpRequestHandlerResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,8 +113,15 @@ namespace org.apache.http.protocol
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._setHandlerResolver33930, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::org.apache.http.protocol.HttpExpectationVerifier ExpectationVerifier
+		{
+			set
+			{
+				setExpectationVerifier(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setExpectationVerifier33931;
-		public virtual void setExpectationVerifier(org.apache.http.protocol.HttpExpectationVerifier arg0) 
+		public virtual void setExpectationVerifier(org.apache.http.protocol.HttpExpectationVerifier arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +130,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._setExpectationVerifier33931, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _handleRequest33932;
-		public virtual void handleRequest(org.apache.http.HttpServerConnection arg0, org.apache.http.protocol.HttpContext arg1) 
+		public virtual void handleRequest(org.apache.http.HttpServerConnection arg0, org.apache.http.protocol.HttpContext arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +139,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._handleRequest33932, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _doService33933;
-		protected virtual void doService(org.apache.http.HttpRequest arg0, org.apache.http.HttpResponse arg1, org.apache.http.protocol.HttpContext arg2) 
+		protected virtual void doService(org.apache.http.HttpRequest arg0, org.apache.http.HttpResponse arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +148,7 @@ namespace org.apache.http.protocol
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._doService33933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpService33934;
-		public HttpService(org.apache.http.protocol.HttpProcessor arg0, org.apache.http.ConnectionReuseStrategy arg1, org.apache.http.HttpResponseFactory arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpService(org.apache.http.protocol.HttpProcessor arg0, org.apache.http.ConnectionReuseStrategy arg1, org.apache.http.HttpResponseFactory arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpService.staticClass, global::org.apache.http.protocol.HttpService._HttpService33934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

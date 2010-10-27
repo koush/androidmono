@@ -23,13 +23,13 @@ namespace android.net
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values7692;
-			public static global::android.net.LocalSocketAddress.Namespace[] values() 
+			public static global::android.net.LocalSocketAddress.Namespace[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.LocalSocketAddress.Namespace>(@__env.CallStaticObjectMethod(android.net.LocalSocketAddress.Namespace.staticClass, global::android.net.LocalSocketAddress.Namespace._values7692)) as android.net.LocalSocketAddress.Namespace[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf7693;
-			public static global::android.net.LocalSocketAddress.Namespace valueOf(java.lang.String arg0) 
+			public static global::android.net.LocalSocketAddress.Namespace valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.CallStaticObjectMethod(android.net.LocalSocketAddress.Namespace.staticClass, global::android.net.LocalSocketAddress.Namespace._valueOf7693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.LocalSocketAddress.Namespace;
@@ -80,7 +80,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName7697;
-		public virtual global::java.lang.String getName() 
+		public virtual global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getName7697)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNamespace7698;
-		public virtual global::android.net.LocalSocketAddress.Namespace getNamespace() 
+		public virtual global::android.net.LocalSocketAddress.Namespace getNamespace()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,14 +98,14 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.LocalSocketAddress.Namespace>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getNamespace7698)) as android.net.LocalSocketAddress.Namespace;
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalSocketAddress7699;
-		public LocalSocketAddress(java.lang.String arg0, android.net.LocalSocketAddress.Namespace arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocalSocketAddress(java.lang.String arg0, android.net.LocalSocketAddress.Namespace arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._LocalSocketAddress7699, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalSocketAddress7700;
-		public LocalSocketAddress(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocalSocketAddress(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._LocalSocketAddress7700, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,14 +12,14 @@ namespace org.apache.http.client.entity
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UrlEncodedFormEntity31903;
-		public UrlEncodedFormEntity(java.util.List arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UrlEncodedFormEntity(java.util.List arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.entity.UrlEncodedFormEntity.staticClass, global::org.apache.http.client.entity.UrlEncodedFormEntity._UrlEncodedFormEntity31903, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UrlEncodedFormEntity31904;
-		public UrlEncodedFormEntity(java.util.List arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UrlEncodedFormEntity(java.util.List arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.entity.UrlEncodedFormEntity.staticClass, global::org.apache.http.client.entity.UrlEncodedFormEntity._UrlEncodedFormEntity31904, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

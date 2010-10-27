@@ -12,7 +12,7 @@ namespace java.lang.@ref
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get20985;
-		public virtual global::java.lang.Object get() 
+		public virtual global::java.lang.Object get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang.@ref
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._get20985)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _clear20986;
-		public virtual void clear() 
+		public virtual void clear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang.@ref
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._clear20986);
 		}
 		internal static global::MonoJavaBridge.MethodId _isEnqueued20987;
-		public virtual bool isEnqueued() 
+		public virtual bool isEnqueued()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.lang.@ref
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.@ref.Reference.staticClass, global::java.lang.@ref.Reference._isEnqueued20987);
 		}
 		internal static global::MonoJavaBridge.MethodId _enqueue20988;
-		public virtual bool enqueue() 
+		public virtual bool enqueue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

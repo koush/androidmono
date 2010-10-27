@@ -22,7 +22,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal21688;
 		public abstract global::java.security.Principal getLocalPrincipal();
 		internal static global::MonoJavaBridge.MethodId _SecureCacheResponse21689;
-		public SecureCacheResponse()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SecureCacheResponse() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SecureCacheResponse.staticClass, global::java.net.SecureCacheResponse._SecureCacheResponse21689);
@@ -53,7 +53,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getCipherSuite21690;
-		public override global::java.lang.String getCipherSuite() 
+		public override global::java.lang.String getCipherSuite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getCipherSuite21690)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalCertificateChain21691;
-		public override global::java.util.List getLocalCertificateChain() 
+		public override global::java.util.List getLocalCertificateChain()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getLocalCertificateChain21691)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getServerCertificateChain21692;
-		public override global::java.util.List getServerCertificateChain() 
+		public override global::java.util.List getServerCertificateChain()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getServerCertificateChain21692)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPeerPrincipal21693;
-		public override global::java.security.Principal getPeerPrincipal() 
+		public override global::java.security.Principal getPeerPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getPeerPrincipal21693)) as java.security.Principal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalPrincipal21694;
-		public override global::java.security.Principal getLocalPrincipal() 
+		public override global::java.security.Principal getLocalPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.Principal>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getLocalPrincipal21694)) as java.security.Principal;
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaders21695;
-		public override global::java.util.Map getHeaders() 
+		public override global::java.util.Map getHeaders()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.SecureCacheResponse_.staticClass, global::java.net.SecureCacheResponse_._getHeaders21695)) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBody21696;
-		public override global::java.io.InputStream getBody() 
+		public override global::java.io.InputStream getBody()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

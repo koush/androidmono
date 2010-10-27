@@ -12,7 +12,7 @@ namespace android.app.admin
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isAdminActive2271;
-		public virtual bool isAdminActive(android.content.ComponentName arg0) 
+		public virtual bool isAdminActive(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.app.admin
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getActiveAdmins2272;
-		public virtual global::java.util.List getActiveAdmins() 
+		public virtual global::java.util.List getActiveAdmins()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.app.admin
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getActiveAdmins2272)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeActiveAdmin2273;
-		public virtual void removeActiveAdmin(android.content.ComponentName arg0) 
+		public virtual void removeActiveAdmin(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.app.admin
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._removeActiveAdmin2273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPasswordQuality2274;
-		public virtual void setPasswordQuality(android.content.ComponentName arg0, int arg1) 
+		public virtual void setPasswordQuality(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.app.admin
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setPasswordQuality2274, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPasswordQuality2275;
-		public virtual int getPasswordQuality(android.content.ComponentName arg0) 
+		public virtual int getPasswordQuality(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordQuality2275, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPasswordMinimumLength2276;
-		public virtual void setPasswordMinimumLength(android.content.ComponentName arg0, int arg1) 
+		public virtual void setPasswordMinimumLength(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.app.admin
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setPasswordMinimumLength2276, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPasswordMinimumLength2277;
-		public virtual int getPasswordMinimumLength(android.content.ComponentName arg0) 
+		public virtual int getPasswordMinimumLength(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordMinimumLength2277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPasswordMaximumLength2278;
-		public virtual int getPasswordMaximumLength(int arg0) 
+		public virtual int getPasswordMaximumLength(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getPasswordMaximumLength2278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isActivePasswordSufficient2279;
-		public virtual bool isActivePasswordSufficient() 
+		public virtual bool isActivePasswordSufficient()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace android.app.admin
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentFailedPasswordAttempts2280;
-		public virtual int getCurrentFailedPasswordAttempts() 
+		public virtual int getCurrentFailedPasswordAttempts()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getCurrentFailedPasswordAttempts2280);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaximumFailedPasswordsForWipe2281;
-		public virtual void setMaximumFailedPasswordsForWipe(android.content.ComponentName arg0, int arg1) 
+		public virtual void setMaximumFailedPasswordsForWipe(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace android.app.admin
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setMaximumFailedPasswordsForWipe2281, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaximumFailedPasswordsForWipe2282;
-		public virtual int getMaximumFailedPasswordsForWipe(android.content.ComponentName arg0) 
+		public virtual int getMaximumFailedPasswordsForWipe(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getMaximumFailedPasswordsForWipe2282, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _resetPassword2283;
-		public virtual bool resetPassword(java.lang.String arg0, int arg1) 
+		public virtual bool resetPassword(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._resetPassword2283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaximumTimeToLock2284;
-		public virtual void setMaximumTimeToLock(android.content.ComponentName arg0, long arg1) 
+		public virtual void setMaximumTimeToLock(android.content.ComponentName arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.app.admin
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._setMaximumTimeToLock2284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaximumTimeToLock2285;
-		public virtual long getMaximumTimeToLock(android.content.ComponentName arg0) 
+		public virtual long getMaximumTimeToLock(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace android.app.admin
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._getMaximumTimeToLock2285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lockNow2286;
-		public virtual void lockNow() 
+		public virtual void lockNow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace android.app.admin
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.admin.DevicePolicyManager.staticClass, global::android.app.admin.DevicePolicyManager._lockNow2286);
 		}
 		internal static global::MonoJavaBridge.MethodId _wipeData2287;
-		public virtual void wipeData(int arg0) 
+		public virtual void wipeData(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

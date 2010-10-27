@@ -16,7 +16,7 @@ namespace javax.xml.parsers
 		internal static global::MonoJavaBridge.MethodId _getProperty30891;
 		public abstract global::java.lang.Object getProperty(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _reset30892;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._reset30892);
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30893;
-		public virtual void parse(java.io.InputStream arg0, org.xml.sax.helpers.DefaultHandler arg1, java.lang.String arg2) 
+		public virtual void parse(java.io.InputStream arg0, org.xml.sax.helpers.DefaultHandler arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30894;
-		public virtual void parse(java.lang.String arg0, org.xml.sax.HandlerBase arg1) 
+		public virtual void parse(java.lang.String arg0, org.xml.sax.HandlerBase arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30895;
-		public virtual void parse(java.lang.String arg0, org.xml.sax.helpers.DefaultHandler arg1) 
+		public virtual void parse(java.lang.String arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30896;
-		public virtual void parse(java.io.File arg0, org.xml.sax.HandlerBase arg1) 
+		public virtual void parse(java.io.File arg0, org.xml.sax.HandlerBase arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30897;
-		public virtual void parse(java.io.File arg0, org.xml.sax.helpers.DefaultHandler arg1) 
+		public virtual void parse(java.io.File arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30898;
-		public virtual void parse(org.xml.sax.InputSource arg0, org.xml.sax.helpers.DefaultHandler arg1) 
+		public virtual void parse(org.xml.sax.InputSource arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30899;
-		public virtual void parse(org.xml.sax.InputSource arg0, org.xml.sax.HandlerBase arg1) 
+		public virtual void parse(org.xml.sax.InputSource arg0, org.xml.sax.HandlerBase arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30900;
-		public virtual void parse(java.io.InputStream arg0, org.xml.sax.HandlerBase arg1) 
+		public virtual void parse(java.io.InputStream arg0, org.xml.sax.HandlerBase arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30901;
-		public virtual void parse(java.io.InputStream arg0, org.xml.sax.HandlerBase arg1, java.lang.String arg2) 
+		public virtual void parse(java.io.InputStream arg0, org.xml.sax.HandlerBase arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +106,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._parse30901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse30902;
-		public virtual void parse(java.io.InputStream arg0, org.xml.sax.helpers.DefaultHandler arg1) 
+		public virtual void parse(java.io.InputStream arg0, org.xml.sax.helpers.DefaultHandler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -119,7 +119,7 @@ namespace javax.xml.parsers
 		internal static global::MonoJavaBridge.MethodId _isValidating30904;
 		public abstract bool isValidating();
 		internal static global::MonoJavaBridge.MethodId _getSchema30905;
-		public virtual global::javax.xml.validation.Schema getSchema() 
+		public virtual global::javax.xml.validation.Schema getSchema()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,7 +128,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._getSchema30905)) as javax.xml.validation.Schema;
 		}
 		internal static global::MonoJavaBridge.MethodId _isXIncludeAware30906;
-		public virtual bool isXIncludeAware() 
+		public virtual bool isXIncludeAware()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -141,7 +141,7 @@ namespace javax.xml.parsers
 		internal static global::MonoJavaBridge.MethodId _getXMLReader30908;
 		public abstract global::org.xml.sax.XMLReader getXMLReader();
 		internal static global::MonoJavaBridge.MethodId _SAXParser30909;
-		protected SAXParser()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SAXParser() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.parsers.SAXParser.staticClass, global::javax.xml.parsers.SAXParser._SAXParser30909);
@@ -186,7 +186,7 @@ namespace javax.xml.parsers
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setProperty30910;
-		public override void setProperty(java.lang.String arg0, java.lang.Object arg1) 
+		public override void setProperty(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -195,7 +195,7 @@ namespace javax.xml.parsers
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser_.staticClass, global::javax.xml.parsers.SAXParser_._setProperty30910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getProperty30911;
-		public override global::java.lang.Object getProperty(java.lang.String arg0) 
+		public override global::java.lang.Object getProperty(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -204,7 +204,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser_.staticClass, global::javax.xml.parsers.SAXParser_._getProperty30911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _isNamespaceAware30912;
-		public override bool isNamespaceAware() 
+		public override bool isNamespaceAware()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -213,7 +213,7 @@ namespace javax.xml.parsers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser_.staticClass, global::javax.xml.parsers.SAXParser_._isNamespaceAware30912);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidating30913;
-		public override bool isValidating() 
+		public override bool isValidating()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -222,7 +222,7 @@ namespace javax.xml.parsers
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser_.staticClass, global::javax.xml.parsers.SAXParser_._isValidating30913);
 		}
 		internal static global::MonoJavaBridge.MethodId _getParser30914;
-		public override global::org.xml.sax.Parser getParser() 
+		public override global::org.xml.sax.Parser getParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -231,7 +231,7 @@ namespace javax.xml.parsers
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.Parser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.parsers.SAXParser_.staticClass, global::javax.xml.parsers.SAXParser_._getParser30914)) as org.xml.sax.Parser;
 		}
 		internal static global::MonoJavaBridge.MethodId _getXMLReader30915;
-		public override global::org.xml.sax.XMLReader getXMLReader() 
+		public override global::org.xml.sax.XMLReader getXMLReader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

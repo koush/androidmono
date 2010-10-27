@@ -12,7 +12,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23633;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _getSupportedExtensions23637;
 		public abstract global::java.util.Set getSupportedExtensions();
 		internal static global::MonoJavaBridge.MethodId _PKIXCertPathChecker23638;
-		protected PKIXCertPathChecker()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected PKIXCertPathChecker() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.PKIXCertPathChecker.staticClass, global::java.security.cert.PKIXCertPathChecker._PKIXCertPathChecker23638);
@@ -60,7 +60,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _init23639;
-		public override void init(bool arg0) 
+		public override void init(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_.staticClass, global::java.security.cert.PKIXCertPathChecker_._init23639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _check23640;
-		public override void check(java.security.cert.Certificate arg0, java.util.Collection arg1) 
+		public override void check(java.security.cert.Certificate arg0, java.util.Collection arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_.staticClass, global::java.security.cert.PKIXCertPathChecker_._check23640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isForwardCheckingSupported23641;
-		public override bool isForwardCheckingSupported() 
+		public override bool isForwardCheckingSupported()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.PKIXCertPathChecker_.staticClass, global::java.security.cert.PKIXCertPathChecker_._isForwardCheckingSupported23641);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSupportedExtensions23642;
-		public override global::java.util.Set getSupportedExtensions() 
+		public override global::java.util.Set getSupportedExtensions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

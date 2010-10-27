@@ -12,7 +12,7 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _write28541;
-		public override void write(int arg0) 
+		public override void write(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._write28541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write28542;
-		public override void write(byte[] arg0) 
+		public override void write(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._write28542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write28543;
-		public override void write(byte[] arg0, int arg1, int arg2) 
+		public override void write(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._write28543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _flush28544;
-		public override void flush() 
+		public override void flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._flush28544);
 		}
 		internal static global::MonoJavaBridge.MethodId _close28545;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,14 +57,14 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._close28545);
 		}
 		internal static global::MonoJavaBridge.MethodId _CipherOutputStream28546;
-		public CipherOutputStream(java.io.OutputStream arg0, javax.crypto.Cipher arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CipherOutputStream(java.io.OutputStream arg0, javax.crypto.Cipher arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._CipherOutputStream28546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CipherOutputStream28547;
-		protected CipherOutputStream(java.io.OutputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected CipherOutputStream(java.io.OutputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.CipherOutputStream.staticClass, global::javax.crypto.CipherOutputStream._CipherOutputStream28547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

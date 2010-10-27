@@ -23,13 +23,13 @@ namespace android.provider
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _addWord11582;
-			public static void addWord(android.content.Context arg0, java.lang.String arg1, int arg2, int arg3) 
+			public static void addWord(android.content.Context arg0, java.lang.String arg1, int arg2, int arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				@__env.CallStaticVoidMethod(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._addWord11582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			internal static global::MonoJavaBridge.MethodId _Words11583;
-			public Words()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Words() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._Words11583);
@@ -124,7 +124,7 @@ namespace android.provider
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _UserDictionary11595;
-		public UserDictionary()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UserDictionary() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.UserDictionary.staticClass, global::android.provider.UserDictionary._UserDictionary11595);

@@ -18,7 +18,7 @@ namespace android.text.style
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlignment13441;
-		 global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
+		global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

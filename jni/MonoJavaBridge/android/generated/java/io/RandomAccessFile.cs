@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _length19512;
-		public virtual long length() 
+		public virtual long length()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.io
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._length19512);
 		}
 		internal static global::MonoJavaBridge.MethodId _write19513;
-		public virtual void write(byte[] arg0) 
+		public virtual void write(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write19513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19514;
-		public virtual void write(int arg0) 
+		public virtual void write(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write19514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _write19515;
-		public virtual void write(byte[] arg0, int arg1, int arg2) 
+		public virtual void write(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._write19515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _readLine19516;
-		public virtual global::java.lang.String readLine() 
+		public virtual global::java.lang.String readLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readLine19516)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _close19517;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._close19517);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeInt19518;
-		public virtual void writeInt(int arg0) 
+		public virtual void writeInt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeInt19518, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readInt19519;
-		public virtual int readInt() 
+		public virtual int readInt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readInt19519);
 		}
 		internal static global::MonoJavaBridge.MethodId _setLength19520;
-		public virtual void setLength(long arg0) 
+		public virtual void setLength(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._setLength19520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeChar19521;
-		public virtual void writeChar(int arg0) 
+		public virtual void writeChar(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeChar19521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readChar19522;
-		public virtual char readChar() 
+		public virtual char readChar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace java.io
 				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readChar19522);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19523;
-		public virtual int read() 
+		public virtual int read()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read19523);
 		}
 		internal static global::MonoJavaBridge.MethodId _read19524;
-		public virtual int read(byte[] arg0, int arg1, int arg2) 
+		public virtual int read(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._read19524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _read19525;
-		public virtual int read(byte[] arg0) 
+		public virtual int read(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -145,7 +145,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFD19526;
-		public virtual global::java.io.FileDescriptor getFD() 
+		public virtual global::java.io.FileDescriptor getFD()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChannel19527;
-		public virtual global::java.nio.channels.FileChannel getChannel() 
+		public virtual global::java.nio.channels.FileChannel getChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getChannel19527)) as java.nio.channels.FileChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeBytes19528;
-		public virtual void writeBytes(java.lang.String arg0) 
+		public virtual void writeBytes(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +179,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeBytes19528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeUTF19529;
-		public virtual void writeUTF(java.lang.String arg0) 
+		public virtual void writeUTF(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeUTF19529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readUTF19530;
-		public virtual global::java.lang.String readUTF() 
+		public virtual global::java.lang.String readUTF()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -197,7 +197,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUTF19530)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readFully19531;
-		public virtual void readFully(byte[] arg0, int arg1, int arg2) 
+		public virtual void readFully(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFully19531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _readFully19532;
-		public virtual void readFully(byte[] arg0) 
+		public virtual void readFully(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -215,7 +215,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFully19532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readLong19533;
-		public virtual long readLong() 
+		public virtual long readLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -224,7 +224,7 @@ namespace java.io
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readLong19533);
 		}
 		internal static global::MonoJavaBridge.MethodId _readByte19534;
-		public virtual byte readByte() 
+		public virtual byte readByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,7 +233,7 @@ namespace java.io
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readByte19534);
 		}
 		internal static global::MonoJavaBridge.MethodId _readShort19535;
-		public virtual short readShort() 
+		public virtual short readShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -242,7 +242,7 @@ namespace java.io
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readShort19535);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeLong19536;
-		public virtual void writeLong(long arg0) 
+		public virtual void writeLong(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -251,7 +251,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeLong19536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeByte19537;
-		public virtual void writeByte(int arg0) 
+		public virtual void writeByte(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -260,7 +260,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeByte19537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeShort19538;
-		public virtual void writeShort(int arg0) 
+		public virtual void writeShort(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -269,7 +269,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeShort19538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeFloat19539;
-		public virtual void writeFloat(float arg0) 
+		public virtual void writeFloat(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -278,7 +278,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeFloat19539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readFloat19540;
-		public virtual float readFloat() 
+		public virtual float readFloat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -287,7 +287,7 @@ namespace java.io
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readFloat19540);
 		}
 		internal static global::MonoJavaBridge.MethodId _skipBytes19541;
-		public virtual int skipBytes(int arg0) 
+		public virtual int skipBytes(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -296,7 +296,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._skipBytes19541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readBoolean19542;
-		public virtual bool readBoolean() 
+		public virtual bool readBoolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -305,7 +305,7 @@ namespace java.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readBoolean19542);
 		}
 		internal static global::MonoJavaBridge.MethodId _readUnsignedByte19543;
-		public virtual int readUnsignedByte() 
+		public virtual int readUnsignedByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -314,7 +314,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUnsignedByte19543);
 		}
 		internal static global::MonoJavaBridge.MethodId _readUnsignedShort19544;
-		public virtual int readUnsignedShort() 
+		public virtual int readUnsignedShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -323,7 +323,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readUnsignedShort19544);
 		}
 		internal static global::MonoJavaBridge.MethodId _readDouble19545;
-		public virtual double readDouble() 
+		public virtual double readDouble()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -332,7 +332,7 @@ namespace java.io
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._readDouble19545);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeDouble19546;
-		public virtual void writeDouble(double arg0) 
+		public virtual void writeDouble(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -341,7 +341,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeDouble19546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeBoolean19547;
-		public virtual void writeBoolean(bool arg0) 
+		public virtual void writeBoolean(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -350,7 +350,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._writeBoolean19547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeChars19548;
-		public virtual void writeChars(java.lang.String arg0) 
+		public virtual void writeChars(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -366,7 +366,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFilePointer19549;
-		public virtual long getFilePointer() 
+		public virtual long getFilePointer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -375,7 +375,7 @@ namespace java.io
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._getFilePointer19549);
 		}
 		internal static global::MonoJavaBridge.MethodId _seek19550;
-		public virtual void seek(long arg0) 
+		public virtual void seek(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -384,14 +384,14 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._seek19550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _RandomAccessFile19551;
-		public RandomAccessFile(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RandomAccessFile(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile19551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RandomAccessFile19552;
-		public RandomAccessFile(java.io.File arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RandomAccessFile(java.io.File arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.RandomAccessFile.staticClass, global::java.io.RandomAccessFile._RandomAccessFile19552, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

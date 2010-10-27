@@ -12,7 +12,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivity12124;
-		protected virtual global::android.app.Activity getActivity() 
+		protected virtual global::android.app.Activity getActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._getActivity12124)) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setActivity12125;
-		protected virtual void setActivity(android.app.Activity arg0) 
+		protected virtual void setActivity(android.app.Activity arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._setActivity12125, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _scrubClass12126;
-		protected virtual void scrubClass(java.lang.Class arg0) 
+		protected virtual void scrubClass(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._scrubClass12126, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ActivityTestCase12127;
-		public ActivityTestCase()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ActivityTestCase() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ActivityTestCase.staticClass, global::android.test.ActivityTestCase._ActivityTestCase12127);

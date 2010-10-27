@@ -12,14 +12,14 @@ namespace javax.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateParsingException30244;
-		public CertificateParsingException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateParsingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateParsingException.staticClass, global::javax.security.cert.CertificateParsingException._CertificateParsingException30244);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateParsingException30245;
-		public CertificateParsingException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateParsingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateParsingException.staticClass, global::javax.security.cert.CertificateParsingException._CertificateParsingException30245, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

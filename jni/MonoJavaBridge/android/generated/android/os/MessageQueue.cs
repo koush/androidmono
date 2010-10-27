@@ -29,7 +29,7 @@ namespace android.os
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _queueIdle9962;
-			 bool android.os.MessageQueue.IdleHandler.queueIdle() 
+			bool android.os.MessageQueue.IdleHandler.queueIdle()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.os
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _IdleHandlerDelegateWrapper9963;
-			public IdleHandlerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public IdleHandlerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.MessageQueue.IdleHandlerDelegateWrapper.staticClass, global::android.os.MessageQueue.IdleHandlerDelegateWrapper._IdleHandlerDelegateWrapper9963);
@@ -87,7 +87,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _addIdleHandler9964;
-		public virtual void addIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
+		public virtual void addIdleHandler(android.os.MessageQueue.IdleHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace android.os
 			addIdleHandler((global::android.os.MessageQueue.IdleHandlerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeIdleHandler9965;
-		public virtual void removeIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
+		public virtual void removeIdleHandler(android.os.MessageQueue.IdleHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

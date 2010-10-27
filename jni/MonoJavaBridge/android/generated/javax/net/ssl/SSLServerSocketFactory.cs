@@ -12,7 +12,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault30027;
-		public static global::javax.net.ServerSocketFactory getDefault() 
+		public static global::javax.net.ServerSocketFactory getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ssl.SSLServerSocketFactory.staticClass, global::javax.net.ssl.SSLServerSocketFactory._getDefault30027)) as javax.net.ServerSocketFactory;
@@ -22,7 +22,7 @@ namespace javax.net.ssl
 		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites30029;
 		public abstract global::java.lang.String[] getSupportedCipherSuites();
 		internal static global::MonoJavaBridge.MethodId _SSLServerSocketFactory30030;
-		protected SSLServerSocketFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SSLServerSocketFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ssl.SSLServerSocketFactory.staticClass, global::javax.net.ssl.SSLServerSocketFactory._SSLServerSocketFactory30030);
@@ -51,7 +51,7 @@ namespace javax.net.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultCipherSuites30031;
-		public override global::java.lang.String[] getDefaultCipherSuites() 
+		public override global::java.lang.String[] getDefaultCipherSuites()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLServerSocketFactory_.staticClass, global::javax.net.ssl.SSLServerSocketFactory_._getDefaultCipherSuites30031)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getSupportedCipherSuites30032;
-		public override global::java.lang.String[] getSupportedCipherSuites() 
+		public override global::java.lang.String[] getSupportedCipherSuites()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLServerSocketFactory_.staticClass, global::javax.net.ssl.SSLServerSocketFactory_._getSupportedCipherSuites30032)) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket30033;
-		public override global::java.net.ServerSocket createServerSocket(int arg0) 
+		public override global::java.net.ServerSocket createServerSocket(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLServerSocketFactory_.staticClass, global::javax.net.ssl.SSLServerSocketFactory_._createServerSocket30033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket30034;
-		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1) 
+		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace javax.net.ssl
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.SSLServerSocketFactory_.staticClass, global::javax.net.ssl.SSLServerSocketFactory_._createServerSocket30034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket30035;
-		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1, java.net.InetAddress arg2) 
+		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1, java.net.InetAddress arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

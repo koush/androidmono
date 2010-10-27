@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkageError20241;
-		public LinkageError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LinkageError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.LinkageError.staticClass, global::java.lang.LinkageError._LinkageError20241);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkageError20242;
-		public LinkageError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LinkageError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.LinkageError.staticClass, global::java.lang.LinkageError._LinkageError20242, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -14,7 +14,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _accept22619;
 		public abstract global::java.nio.channels.SocketChannel accept();
 		internal static global::MonoJavaBridge.MethodId _open22620;
-		public static global::java.nio.channels.ServerSocketChannel open() 
+		public static global::java.nio.channels.ServerSocketChannel open()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.nio.channels.ServerSocketChannel.staticClass, global::java.nio.channels.ServerSocketChannel._open22620)) as java.nio.channels.ServerSocketChannel;
@@ -22,7 +22,7 @@ namespace java.nio.channels
 		internal static global::MonoJavaBridge.MethodId _socket22621;
 		public abstract global::java.net.ServerSocket socket();
 		internal static global::MonoJavaBridge.MethodId _validOps22622;
-		public sealed override int validOps() 
+		public sealed override int validOps()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -31,7 +31,7 @@ namespace java.nio.channels
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel.staticClass, global::java.nio.channels.ServerSocketChannel._validOps22622);
 		}
 		internal static global::MonoJavaBridge.MethodId _ServerSocketChannel22623;
-		protected ServerSocketChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected ServerSocketChannel(java.nio.channels.spi.SelectorProvider arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ServerSocketChannel.staticClass, global::java.nio.channels.ServerSocketChannel._ServerSocketChannel22623, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -61,7 +61,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _accept22624;
-		public override global::java.nio.channels.SocketChannel accept() 
+		public override global::java.nio.channels.SocketChannel accept()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace java.nio.channels
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_.staticClass, global::java.nio.channels.ServerSocketChannel_._accept22624)) as java.nio.channels.SocketChannel;
 		}
 		internal static global::MonoJavaBridge.MethodId _socket22625;
-		public override global::java.net.ServerSocket socket() 
+		public override global::java.net.ServerSocket socket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace java.nio.channels
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_.staticClass, global::java.nio.channels.ServerSocketChannel_._socket22625)) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22626;
-		protected override void implCloseSelectableChannel() 
+		protected override void implCloseSelectableChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace java.nio.channels
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.ServerSocketChannel_.staticClass, global::java.nio.channels.ServerSocketChannel_._implCloseSelectableChannel22626);
 		}
 		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22627;
-		protected override void implConfigureBlocking(bool arg0) 
+		protected override void implConfigureBlocking(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

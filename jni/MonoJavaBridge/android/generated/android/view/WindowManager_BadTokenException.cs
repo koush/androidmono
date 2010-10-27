@@ -12,14 +12,14 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _WindowManager_BadTokenException15381;
-		public WindowManager_BadTokenException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public WindowManager_BadTokenException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_BadTokenException.staticClass, global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15381);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _WindowManager_BadTokenException15382;
-		public WindowManager_BadTokenException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public WindowManager_BadTokenException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.WindowManager_BadTokenException.staticClass, global::android.view.WindowManager_BadTokenException._WindowManager_BadTokenException15382, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

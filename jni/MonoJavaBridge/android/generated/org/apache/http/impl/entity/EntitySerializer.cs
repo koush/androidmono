@@ -12,7 +12,7 @@ namespace org.apache.http.impl.entity
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _serialize33372;
-		public virtual void serialize(org.apache.http.io.SessionOutputBuffer arg0, org.apache.http.HttpMessage arg1, org.apache.http.HttpEntity arg2) 
+		public virtual void serialize(org.apache.http.io.SessionOutputBuffer arg0, org.apache.http.HttpMessage arg1, org.apache.http.HttpEntity arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.entity
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.entity.EntitySerializer.staticClass, global::org.apache.http.impl.entity.EntitySerializer._serialize33372, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _doSerialize33373;
-		protected virtual global::java.io.OutputStream doSerialize(org.apache.http.io.SessionOutputBuffer arg0, org.apache.http.HttpMessage arg1) 
+		protected virtual global::java.io.OutputStream doSerialize(org.apache.http.io.SessionOutputBuffer arg0, org.apache.http.HttpMessage arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.impl.entity
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.entity.EntitySerializer.staticClass, global::org.apache.http.impl.entity.EntitySerializer._doSerialize33373, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.io.OutputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _EntitySerializer33374;
-		public EntitySerializer(org.apache.http.entity.ContentLengthStrategy arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EntitySerializer(org.apache.http.entity.ContentLengthStrategy arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.EntitySerializer.staticClass, global::org.apache.http.impl.entity.EntitySerializer._EntitySerializer33374, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

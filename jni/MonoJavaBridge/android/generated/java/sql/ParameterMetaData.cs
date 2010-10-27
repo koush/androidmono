@@ -26,7 +26,7 @@ namespace java.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getScale24645;
-		 int java.sql.ParameterMetaData.getScale(int arg0) 
+		int java.sql.ParameterMetaData.getScale(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getScale24645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrecision24646;
-		 int java.sql.ParameterMetaData.getPrecision(int arg0) 
+		int java.sql.ParameterMetaData.getPrecision(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getPrecision24646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isNullable24647;
-		 int java.sql.ParameterMetaData.isNullable(int arg0) 
+		int java.sql.ParameterMetaData.isNullable(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._isNullable24647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSigned24648;
-		 bool java.sql.ParameterMetaData.isSigned(int arg0) 
+		bool java.sql.ParameterMetaData.isSigned(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.sql
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._isSigned24648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterCount24649;
-		 int java.sql.ParameterMetaData.getParameterCount() 
+		int java.sql.ParameterMetaData.getParameterCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getParameterCount24649);
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterType24650;
-		 int java.sql.ParameterMetaData.getParameterType(int arg0) 
+		int java.sql.ParameterMetaData.getParameterType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getParameterType24650, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterTypeName24651;
-		 global::java.lang.String java.sql.ParameterMetaData.getParameterTypeName(int arg0) 
+		global::java.lang.String java.sql.ParameterMetaData.getParameterTypeName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace java.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getParameterTypeName24651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterClassName24652;
-		 global::java.lang.String java.sql.ParameterMetaData.getParameterClassName(int arg0) 
+		global::java.lang.String java.sql.ParameterMetaData.getParameterClassName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace java.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.ParameterMetaData_.staticClass, global::java.sql.ParameterMetaData_._getParameterClassName24652, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterMode24653;
-		 int java.sql.ParameterMetaData.getParameterMode(int arg0) 
+		int java.sql.ParameterMetaData.getParameterMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

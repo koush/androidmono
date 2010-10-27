@@ -26,7 +26,7 @@ namespace java.util
 		internal static global::MonoJavaBridge.MethodId _keys26126;
 		public abstract global::java.util.Enumeration keys();
 		internal static global::MonoJavaBridge.MethodId _Dictionary26127;
-		public Dictionary()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Dictionary() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Dictionary.staticClass, global::java.util.Dictionary._Dictionary26127);
@@ -59,7 +59,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get26128;
-		public override global::java.lang.Object get(java.lang.Object arg0) 
+		public override global::java.lang.Object get(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._get26128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _put26129;
-		public override global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1) 
+		public override global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._put26129, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _isEmpty26130;
-		public override bool isEmpty() 
+		public override bool isEmpty()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace java.util
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._isEmpty26130);
 		}
 		internal static global::MonoJavaBridge.MethodId _size26131;
-		public override int size() 
+		public override int size()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +95,7 @@ namespace java.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._size26131);
 		}
 		internal static global::MonoJavaBridge.MethodId _remove26132;
-		public override global::java.lang.Object remove(java.lang.Object arg0) 
+		public override global::java.lang.Object remove(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +104,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._remove26132, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _elements26133;
-		public override global::java.util.Enumeration elements() 
+		public override global::java.util.Enumeration elements()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +113,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Dictionary_.staticClass, global::java.util.Dictionary_._elements26133)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _keys26134;
-		public override global::java.util.Enumeration keys() 
+		public override global::java.util.Enumeration keys()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

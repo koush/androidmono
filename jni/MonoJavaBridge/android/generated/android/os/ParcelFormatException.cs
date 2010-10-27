@@ -12,14 +12,14 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ParcelFormatException10100;
-		public ParcelFormatException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParcelFormatException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException10100);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParcelFormatException10101;
-		public ParcelFormatException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParcelFormatException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.ParcelFormatException.staticClass, global::android.os.ParcelFormatException._ParcelFormatException10101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CornerPathEffect5261;
-		public CornerPathEffect(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CornerPathEffect(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.CornerPathEffect.staticClass, global::android.graphics.CornerPathEffect._CornerPathEffect5261, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

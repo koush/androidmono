@@ -21,7 +21,7 @@ namespace java.util.zip
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue28347;
-		 long java.util.zip.Checksum.getValue() 
+		long java.util.zip.Checksum.getValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.zip
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.zip.Checksum_.staticClass, global::java.util.zip.Checksum_._getValue28347);
 		}
 		internal static global::MonoJavaBridge.MethodId _reset28348;
-		 void java.util.zip.Checksum.reset() 
+		void java.util.zip.Checksum.reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Checksum_.staticClass, global::java.util.zip.Checksum_._reset28348);
 		}
 		internal static global::MonoJavaBridge.MethodId _update28349;
-		 void java.util.zip.Checksum.update(int arg0) 
+		void java.util.zip.Checksum.update(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.util.zip
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.zip.Checksum_.staticClass, global::java.util.zip.Checksum_._update28349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _update28350;
-		 void java.util.zip.Checksum.update(byte[] arg0, int arg1, int arg2) 
+		void java.util.zip.Checksum.update(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

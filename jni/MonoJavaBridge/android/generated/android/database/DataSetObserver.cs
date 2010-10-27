@@ -12,7 +12,7 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onChanged4601;
-		public virtual void onChanged() 
+		public virtual void onChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onChanged4601);
 		}
 		internal static global::MonoJavaBridge.MethodId _onInvalidated4602;
-		public virtual void onInvalidated() 
+		public virtual void onInvalidated()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onInvalidated4602);
 		}
 		internal static global::MonoJavaBridge.MethodId _DataSetObserver4603;
-		public DataSetObserver()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DataSetObserver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._DataSetObserver4603);

@@ -12,14 +12,14 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NotSerializableException19143;
-		public NotSerializableException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NotSerializableException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19143, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NotSerializableException19144;
-		public NotSerializableException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NotSerializableException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotSerializableException.staticClass, global::java.io.NotSerializableException._NotSerializableException19144);

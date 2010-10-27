@@ -14,7 +14,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getContent21360;
 		public abstract global::java.lang.Object getContent(java.net.URLConnection arg0);
 		internal static global::MonoJavaBridge.MethodId _getContent21361;
-		public virtual global::java.lang.Object getContent(java.net.URLConnection arg0, java.lang.Class[] arg1) 
+		public virtual global::java.lang.Object getContent(java.net.URLConnection arg0, java.lang.Class[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ContentHandler.staticClass, global::java.net.ContentHandler._getContent21361, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentHandler21362;
-		public ContentHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ContentHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ContentHandler.staticClass, global::java.net.ContentHandler._ContentHandler21362);
@@ -51,7 +51,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getContent21363;
-		public override global::java.lang.Object getContent(java.net.URLConnection arg0) 
+		public override global::java.lang.Object getContent(java.net.URLConnection arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

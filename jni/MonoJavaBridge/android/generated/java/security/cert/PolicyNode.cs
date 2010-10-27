@@ -24,7 +24,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getParent23679;
-		 global::java.security.cert.PolicyNode java.security.cert.PolicyNode.getParent() 
+		global::java.security.cert.PolicyNode java.security.cert.PolicyNode.getParent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.cert.PolicyNode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._getParent23679)) as java.security.cert.PolicyNode;
 		}
 		internal static global::MonoJavaBridge.MethodId _isCritical23680;
-		 bool java.security.cert.PolicyNode.isCritical() 
+		bool java.security.cert.PolicyNode.isCritical()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._isCritical23680);
 		}
 		internal static global::MonoJavaBridge.MethodId _getDepth23681;
-		 int java.security.cert.PolicyNode.getDepth() 
+		int java.security.cert.PolicyNode.getDepth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._getDepth23681);
 		}
 		internal static global::MonoJavaBridge.MethodId _getChildren23682;
-		 global::java.util.Iterator java.security.cert.PolicyNode.getChildren() 
+		global::java.util.Iterator java.security.cert.PolicyNode.getChildren()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._getChildren23682)) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValidPolicy23683;
-		 global::java.lang.String java.security.cert.PolicyNode.getValidPolicy() 
+		global::java.lang.String java.security.cert.PolicyNode.getValidPolicy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._getValidPolicy23683)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPolicyQualifiers23684;
-		 global::java.util.Set java.security.cert.PolicyNode.getPolicyQualifiers() 
+		global::java.util.Set java.security.cert.PolicyNode.getPolicyQualifiers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.PolicyNode_.staticClass, global::java.security.cert.PolicyNode_._getPolicyQualifiers23684)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExpectedPolicies23685;
-		 global::java.util.Set java.security.cert.PolicyNode.getExpectedPolicies() 
+		global::java.util.Set java.security.cert.PolicyNode.getExpectedPolicies()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

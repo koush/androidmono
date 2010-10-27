@@ -12,325 +12,325 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _abs20284;
-		public static long abs(long arg0) 
+		public static long abs(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(java.lang.Math.staticClass, global::java.lang.Math._abs20284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _abs20285;
-		public static double abs(double arg0) 
+		public static double abs(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._abs20285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _abs20286;
-		public static float abs(float arg0) 
+		public static float abs(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._abs20286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _abs20287;
-		public static int abs(int arg0) 
+		public static int abs(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.Math.staticClass, global::java.lang.Math._abs20287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _sin20288;
-		public static double sin(double arg0) 
+		public static double sin(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._sin20288, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cos20289;
-		public static double cos(double arg0) 
+		public static double cos(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._cos20289, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tan20290;
-		public static double tan(double arg0) 
+		public static double tan(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._tan20290, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _atan220291;
-		public static double atan2(double arg0, double arg1) 
+		public static double atan2(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._atan220291, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _sqrt20292;
-		public static double sqrt(double arg0) 
+		public static double sqrt(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._sqrt20292, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _log20293;
-		public static double log(double arg0) 
+		public static double log(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._log20293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _log1020294;
-		public static double log10(double arg0) 
+		public static double log10(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._log1020294, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _pow20295;
-		public static double pow(double arg0, double arg1) 
+		public static double pow(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._pow20295, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _exp20296;
-		public static double exp(double arg0) 
+		public static double exp(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._exp20296, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _min20297;
-		public static double min(double arg0, double arg1) 
+		public static double min(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._min20297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _min20298;
-		public static float min(float arg0, float arg1) 
+		public static float min(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._min20298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _min20299;
-		public static long min(long arg0, long arg1) 
+		public static long min(long arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(java.lang.Math.staticClass, global::java.lang.Math._min20299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _min20300;
-		public static int min(int arg0, int arg1) 
+		public static int min(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.Math.staticClass, global::java.lang.Math._min20300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _max20301;
-		public static float max(float arg0, float arg1) 
+		public static float max(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._max20301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _max20302;
-		public static long max(long arg0, long arg1) 
+		public static long max(long arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(java.lang.Math.staticClass, global::java.lang.Math._max20302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _max20303;
-		public static int max(int arg0, int arg1) 
+		public static int max(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.Math.staticClass, global::java.lang.Math._max20303, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _max20304;
-		public static double max(double arg0, double arg1) 
+		public static double max(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._max20304, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _scalb20305;
-		public static float scalb(float arg0, int arg1) 
+		public static float scalb(float arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._scalb20305, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _scalb20306;
-		public static double scalb(double arg0, int arg1) 
+		public static double scalb(double arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._scalb20306, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getExponent20307;
-		public static int getExponent(double arg0) 
+		public static int getExponent(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.Math.staticClass, global::java.lang.Math._getExponent20307, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getExponent20308;
-		public static int getExponent(float arg0) 
+		public static int getExponent(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.Math.staticClass, global::java.lang.Math._getExponent20308, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _signum20309;
-		public static float signum(float arg0) 
+		public static float signum(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._signum20309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _signum20310;
-		public static double signum(double arg0) 
+		public static double signum(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._signum20310, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _asin20311;
-		public static double asin(double arg0) 
+		public static double asin(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._asin20311, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _acos20312;
-		public static double acos(double arg0) 
+		public static double acos(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._acos20312, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _atan20313;
-		public static double atan(double arg0) 
+		public static double atan(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._atan20313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toRadians20314;
-		public static double toRadians(double arg0) 
+		public static double toRadians(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._toRadians20314, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toDegrees20315;
-		public static double toDegrees(double arg0) 
+		public static double toDegrees(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._toDegrees20315, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cbrt20316;
-		public static double cbrt(double arg0) 
+		public static double cbrt(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._cbrt20316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _IEEEremainder20317;
-		public static double IEEEremainder(double arg0, double arg1) 
+		public static double IEEEremainder(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._IEEEremainder20317, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ceil20318;
-		public static double ceil(double arg0) 
+		public static double ceil(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._ceil20318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _floor20319;
-		public static double floor(double arg0) 
+		public static double floor(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._floor20319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _rint20320;
-		public static double rint(double arg0) 
+		public static double rint(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._rint20320, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _round20321;
-		public static int round(float arg0) 
+		public static int round(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.Math.staticClass, global::java.lang.Math._round20321, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _round20322;
-		public static long round(double arg0) 
+		public static long round(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(java.lang.Math.staticClass, global::java.lang.Math._round20322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _random20323;
-		public static double random() 
+		public static double random()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._random20323);
 		}
 		internal static global::MonoJavaBridge.MethodId _ulp20324;
-		public static double ulp(double arg0) 
+		public static double ulp(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._ulp20324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ulp20325;
-		public static float ulp(float arg0) 
+		public static float ulp(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._ulp20325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _sinh20326;
-		public static double sinh(double arg0) 
+		public static double sinh(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._sinh20326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _cosh20327;
-		public static double cosh(double arg0) 
+		public static double cosh(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._cosh20327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tanh20328;
-		public static double tanh(double arg0) 
+		public static double tanh(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._tanh20328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hypot20329;
-		public static double hypot(double arg0, double arg1) 
+		public static double hypot(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._hypot20329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _expm120330;
-		public static double expm1(double arg0) 
+		public static double expm1(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._expm120330, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _log1p20331;
-		public static double log1p(double arg0) 
+		public static double log1p(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._log1p20331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _copySign20332;
-		public static float copySign(float arg0, float arg1) 
+		public static float copySign(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._copySign20332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _copySign20333;
-		public static double copySign(double arg0, double arg1) 
+		public static double copySign(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._copySign20333, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextAfter20334;
-		public static double nextAfter(double arg0, double arg1) 
+		public static double nextAfter(double arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._nextAfter20334, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextAfter20335;
-		public static float nextAfter(float arg0, double arg1) 
+		public static float nextAfter(float arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._nextAfter20335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextUp20336;
-		public static float nextUp(float arg0) 
+		public static float nextUp(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.Math.staticClass, global::java.lang.Math._nextUp20336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _nextUp20337;
-		public static double nextUp(double arg0) 
+		public static double nextUp(double arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.Math.staticClass, global::java.lang.Math._nextUp20337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

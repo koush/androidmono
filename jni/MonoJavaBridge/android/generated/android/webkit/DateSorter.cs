@@ -12,7 +12,7 @@ namespace android.webkit
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndex16035;
-		public virtual int getIndex(long arg0) 
+		public virtual int getIndex(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.webkit
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getIndex16035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLabel16036;
-		public virtual global::java.lang.String getLabel(int arg0) 
+		public virtual global::java.lang.String getLabel(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.webkit
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getLabel16036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoundary16037;
-		public virtual long getBoundary(int arg0) 
+		public virtual long getBoundary(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.webkit
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getBoundary16037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _DateSorter16038;
-		public DateSorter(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DateSorter(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._DateSorter16038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

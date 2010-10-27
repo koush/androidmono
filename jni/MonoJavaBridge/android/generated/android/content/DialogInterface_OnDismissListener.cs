@@ -18,7 +18,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onDismiss3071;
-		 void android.content.DialogInterface_OnDismissListener.onDismiss(android.content.DialogInterface arg0) 
+		void android.content.DialogInterface_OnDismissListener.onDismiss(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnDismissListenerDelegateWrapper3072;
-		public DialogInterface_OnDismissListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DialogInterface_OnDismissListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnDismissListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnDismissListenerDelegateWrapper._DialogInterface_OnDismissListenerDelegateWrapper3072);

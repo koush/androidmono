@@ -12,7 +12,7 @@ namespace java.nio.channels.spi
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _register22667;
-		public sealed override global::java.nio.channels.SelectionKey register(java.nio.channels.Selector arg0, int arg1, java.lang.Object arg2) 
+		public sealed override global::java.nio.channels.SelectionKey register(java.nio.channels.Selector arg0, int arg1, java.lang.Object arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.nio.channels.spi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._register22667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.nio.channels.SelectionKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _provider22668;
-		public sealed override global::java.nio.channels.spi.SelectorProvider provider() 
+		public sealed override global::java.nio.channels.spi.SelectorProvider provider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.nio.channels.spi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._provider22668)) as java.nio.channels.spi.SelectorProvider;
 		}
 		internal static global::MonoJavaBridge.MethodId _isRegistered22669;
-		public sealed override bool isRegistered() 
+		public sealed override bool isRegistered()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.nio.channels.spi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered22669);
 		}
 		internal static global::MonoJavaBridge.MethodId _isBlocking22670;
-		public sealed override bool isBlocking() 
+		public sealed override bool isBlocking()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.nio.channels.spi
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking22670);
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseChannel22671;
-		protected sealed override void implCloseChannel() 
+		protected sealed override void implCloseChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.nio.channels.spi
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel22671);
 		}
 		internal static global::MonoJavaBridge.MethodId _keyFor22672;
-		public sealed override global::java.nio.channels.SelectionKey keyFor(java.nio.channels.Selector arg0) 
+		public sealed override global::java.nio.channels.SelectionKey keyFor(java.nio.channels.Selector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.nio.channels.spi
 		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22673;
 		protected abstract void implCloseSelectableChannel();
 		internal static global::MonoJavaBridge.MethodId _blockingLock22674;
-		public sealed override global::java.lang.Object blockingLock() 
+		public sealed override global::java.lang.Object blockingLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.nio.channels.spi
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock22674)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _configureBlocking22675;
-		public sealed override global::java.nio.channels.SelectableChannel configureBlocking(bool arg0) 
+		public sealed override global::java.nio.channels.SelectableChannel configureBlocking(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace java.nio.channels.spi
 		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22676;
 		protected abstract void implConfigureBlocking(bool arg0);
 		internal static global::MonoJavaBridge.MethodId _AbstractSelectableChannel22677;
-		protected AbstractSelectableChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AbstractSelectableChannel(java.nio.channels.spi.SelectorProvider arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.spi.AbstractSelectableChannel.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel._AbstractSelectableChannel22677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -124,7 +124,7 @@ namespace java.nio.channels.spi
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _implCloseSelectableChannel22678;
-		protected override void implCloseSelectableChannel() 
+		protected override void implCloseSelectableChannel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace java.nio.channels.spi
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel_._implCloseSelectableChannel22678);
 		}
 		internal static global::MonoJavaBridge.MethodId _implConfigureBlocking22679;
-		protected override void implConfigureBlocking(bool arg0) 
+		protected override void implConfigureBlocking(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -142,7 +142,7 @@ namespace java.nio.channels.spi
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.spi.AbstractSelectableChannel_.staticClass, global::java.nio.channels.spi.AbstractSelectableChannel_._implConfigureBlocking22679, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _validOps22680;
-		public override int validOps() 
+		public override int validOps()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

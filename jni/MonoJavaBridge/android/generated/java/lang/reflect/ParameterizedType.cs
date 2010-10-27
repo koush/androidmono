@@ -20,7 +20,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getActualTypeArguments21144;
-		 global::java.lang.reflect.Type[] java.lang.reflect.ParameterizedType.getActualTypeArguments() 
+		global::java.lang.reflect.Type[] java.lang.reflect.ParameterizedType.getActualTypeArguments()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.ParameterizedType_.staticClass, global::java.lang.reflect.ParameterizedType_._getActualTypeArguments21144)) as java.lang.reflect.Type[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getRawType21145;
-		 global::java.lang.reflect.Type java.lang.reflect.ParameterizedType.getRawType() 
+		global::java.lang.reflect.Type java.lang.reflect.ParameterizedType.getRawType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.ParameterizedType_.staticClass, global::java.lang.reflect.ParameterizedType_._getRawType21145)) as java.lang.reflect.Type;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOwnerType21146;
-		 global::java.lang.reflect.Type java.lang.reflect.ParameterizedType.getOwnerType() 
+		global::java.lang.reflect.Type java.lang.reflect.ParameterizedType.getOwnerType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

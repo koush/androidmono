@@ -112,16 +112,15 @@ namespace MonoDroid
 						//Console.WriteLine("{0}", method.OverrideMethod);
 					}
 					*/
-					if (method.Parameters.Count != 0)
-						continue;
                     if (method.Type.IsInterface || method.Type.Abstract)
                         continue;
 					if (method.PropertyType != null)
 						continue;
                     if (method.IsConstructor)
                         continue;
-					if (!method.Name.StartsWith("get") || method.Name == "get")
+					if ((!method.Name.StartsWith("get") && !method.Name.StartsWith("set")) || method.Name == "get" || method.Name == "set")
 						continue;
+                    var methodType = method.Name.Substring(0, 3);
                     var propertyName = method.Name.Substring(3);
                     if (FindType(method.Type.Name + "." + propertyName) != null)
                         continue;
@@ -129,18 +128,50 @@ namespace MonoDroid
                         continue;
                     if (!char.IsLetter(propertyName[0]))
                         continue;
-					string setterName = "set" + propertyName;
-					var matchedSetter = (from setter in type.Methods where setter.Name == setterName && setter.Parameters.Count == 1 && setter.Return == "void" && setter.Parameters[0] == method.Return select setter).FirstOrDefault();
-					if (matchedSetter != null)
-					{
-						matchedSetter.PropertyType = method.PropertyType = PropertyType.ReadWrite;
-						matchedSetter.OtherPropertyAccessor = method;
-						method.OtherPropertyAccessor = matchedSetter;
-					}
-					else
-					{
-						method.PropertyType = PropertyType.ReadOnly;
-					}
+                    if ((from m in type.Methods where m.Name.Equals(propertyName, StringComparison.CurrentCultureIgnoreCase) select m).Count() != 0)
+                        continue;
+                    if (methodType == "get")
+                    {
+                        if (method.Parameters.Count != 0)
+                            continue;
+                        // don't try to make getters where there are multiple versions.
+                        if ((from getter in type.Methods where getter.Name == method.Name && getter.Parameters.Count == 0 && getter.Return != "void" select getter).Count() != 1)
+                            continue;
+                        string setterName = "set" + propertyName;
+                        var matchedSetter = (from setter in type.Methods where setter.Name == setterName && setter.Parameters.Count == 1 && setter.Return == "void" && setter.Parameters[0] == method.Return select setter).FirstOrDefault();
+                        if (matchedSetter != null)
+                        {
+                            matchedSetter.PropertyType = method.PropertyType = PropertyType.ReadWrite;
+                            matchedSetter.OtherPropertyAccessor = method;
+                            method.OtherPropertyAccessor = matchedSetter;
+                        }
+                        else
+                        {
+                            method.PropertyType = PropertyType.ReadOnly;
+                        }
+                    }
+                    else
+                    {
+                        if (method.Parameters.Count != 1)
+                            continue;
+                        // don't try to make setters where there are multiple versions.
+                        if ((from setter in type.Methods where setter.Name == method.Name && setter.Parameters.Count == 1 select setter).Count() != 1)
+                            continue;
+                        string getterName = "get" + propertyName;
+                        var matchedGetter = (from getter in type.Methods where getter.Name == getterName && getter.Parameters.Count == 0 && getter.Return == method.Parameters[0] select getter).FirstOrDefault();
+                        if (matchedGetter != null)
+                        {
+                            matchedGetter.PropertyType = method.PropertyType = PropertyType.ReadWrite;
+                            matchedGetter.OtherPropertyAccessor = method;
+                            method.OtherPropertyAccessor = matchedGetter;
+                        }
+                        else
+                        {
+                            if ((from getter in type.Methods where getter.Name == "get" + propertyName && getter.Parameters.Count == 0 && getter.Return != "void" select getter).Count() != 0)
+                                continue;
+                            method.PropertyType = PropertyType.WriteOnly;
+                        }
+                    }
 				}
 			}
 		}
@@ -407,7 +438,8 @@ namespace MonoDroid
 	public enum PropertyType
 	{
 		ReadOnly,
-		ReadWrite
+		ReadWrite,
+        WriteOnly,
 	}
 	
 	public class Methods : SerializableDictionary<string, Method>

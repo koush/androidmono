@@ -12,7 +12,7 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeZone13887;
-		public static global::java.util.TimeZone getTimeZone(int arg0, bool arg1, long arg2, java.lang.String arg3) 
+		public static global::java.util.TimeZone getTimeZone(int arg0, bool arg1, long arg2, java.lang.String arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZone13887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.TimeZone;
@@ -25,13 +25,13 @@ namespace android.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTimeZoneDatabaseVersion13888;
-		public static global::java.lang.String getTimeZoneDatabaseVersion() 
+		public static global::java.lang.String getTimeZoneDatabaseVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._getTimeZoneDatabaseVersion13888)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _TimeUtils13889;
-		public TimeUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TimeUtils() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.TimeUtils.staticClass, global::android.util.TimeUtils._TimeUtils13889);

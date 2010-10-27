@@ -12,7 +12,7 @@ namespace java.nio.charset
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CharacterCodingException22720;
-		public CharacterCodingException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CharacterCodingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharacterCodingException.staticClass, global::java.nio.charset.CharacterCodingException._CharacterCodingException22720);

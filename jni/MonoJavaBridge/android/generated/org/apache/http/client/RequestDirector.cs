@@ -18,7 +18,7 @@ namespace org.apache.http.client
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _execute31900;
-		 global::org.apache.http.HttpResponse org.apache.http.client.RequestDirector.execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2) 
+		global::org.apache.http.HttpResponse org.apache.http.client.RequestDirector.execute(org.apache.http.HttpHost arg0, org.apache.http.HttpRequest arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

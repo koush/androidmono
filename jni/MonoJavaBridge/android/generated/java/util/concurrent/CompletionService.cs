@@ -22,7 +22,7 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _poll27104;
-		 global::java.util.concurrent.Future java.util.concurrent.CompletionService.poll() 
+		global::java.util.concurrent.Future java.util.concurrent.CompletionService.poll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -31,7 +31,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.CompletionService_.staticClass, global::java.util.concurrent.CompletionService_._poll27104)) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _poll27105;
-		 global::java.util.concurrent.Future java.util.concurrent.CompletionService.poll(long arg0, java.util.concurrent.TimeUnit arg1) 
+		global::java.util.concurrent.Future java.util.concurrent.CompletionService.poll(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.CompletionService_.staticClass, global::java.util.concurrent.CompletionService_._poll27105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _submit27106;
-		 global::java.util.concurrent.Future java.util.concurrent.CompletionService.submit(java.util.concurrent.Callable arg0) 
+		global::java.util.concurrent.Future java.util.concurrent.CompletionService.submit(java.util.concurrent.Callable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,7 +49,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.CompletionService_.staticClass, global::java.util.concurrent.CompletionService_._submit27106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _submit27107;
-		 global::java.util.concurrent.Future java.util.concurrent.CompletionService.submit(java.lang.Runnable arg0, java.lang.Object arg1) 
+		global::java.util.concurrent.Future java.util.concurrent.CompletionService.submit(java.lang.Runnable arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.Future>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.CompletionService_.staticClass, global::java.util.concurrent.CompletionService_._submit27107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.concurrent.Future;
 		}
 		internal static global::MonoJavaBridge.MethodId _take27108;
-		 global::java.util.concurrent.Future java.util.concurrent.CompletionService.take() 
+		global::java.util.concurrent.Future java.util.concurrent.CompletionService.take()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

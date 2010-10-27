@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState2163;
-		protected override void onRestoreInstanceState(android.os.Bundle arg0) 
+		protected override void onRestoreInstanceState(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onRestoreInstanceState2163, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onPostCreate2164;
-		protected override void onPostCreate(android.os.Bundle arg0) 
+		protected override void onPostCreate(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onPostCreate2164, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState2165;
-		protected override void onSaveInstanceState(android.os.Bundle arg0) 
+		protected override void onSaveInstanceState(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onSaveInstanceState2165, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onContentChanged2166;
-		public override void onContentChanged() 
+		public override void onContentChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onContentChanged2166);
 		}
 		internal static global::MonoJavaBridge.MethodId _onChildTitleChanged2167;
-		protected override void onChildTitleChanged(android.app.Activity arg0, java.lang.CharSequence arg1) 
+		protected override void onChildTitleChanged(android.app.Activity arg0, java.lang.CharSequence arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace android.app
 			onChildTitleChanged(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultTab2168;
-		public virtual void setDefaultTab(int arg0) 
+		public virtual void setDefaultTab(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._setDefaultTab2168, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultTab2169;
-		public virtual void setDefaultTab(java.lang.String arg0) 
+		public virtual void setDefaultTab(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTabHost2170;
-		public virtual global::android.widget.TabHost getTabHost() 
+		public virtual global::android.widget.TabHost getTabHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTabWidget2171;
-		public virtual global::android.widget.TabWidget getTabWidget() 
+		public virtual global::android.widget.TabWidget getTabWidget()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._getTabWidget2171)) as android.widget.TabWidget;
 		}
 		internal static global::MonoJavaBridge.MethodId _TabActivity2172;
-		public TabActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TabActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.TabActivity.staticClass, global::android.app.TabActivity._TabActivity2172);

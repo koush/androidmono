@@ -20,7 +20,7 @@ namespace org.apache.http.conn.scheme
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket32318;
-		 global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.createSocket() 
+		global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.createSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SocketFactory_.staticClass, global::org.apache.http.conn.scheme.SocketFactory_._createSocket32318)) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _connectSocket32319;
-		 global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5) 
+		global::java.net.Socket org.apache.http.conn.scheme.SocketFactory.connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.SocketFactory_.staticClass, global::org.apache.http.conn.scheme.SocketFactory_._connectSocket32319, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSecure32320;
-		 bool org.apache.http.conn.scheme.SocketFactory.isSecure(java.net.Socket arg0) 
+		bool org.apache.http.conn.scheme.SocketFactory.isSecure(java.net.Socket arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,7 +12,7 @@ namespace org.apache.http.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _register32425;
-		public void register(java.lang.String arg0, org.apache.http.cookie.CookieSpecFactory arg1) 
+		public void register(java.lang.String arg0, org.apache.http.cookie.CookieSpecFactory arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +20,15 @@ namespace org.apache.http.cookie
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._register32425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.util.Map Items
+		{
+			set
+			{
+				setItems(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setItems32426;
-		public void setItems(java.util.Map arg0) 
+		public void setItems(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +37,7 @@ namespace org.apache.http.cookie
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._setItems32426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregister32427;
-		public void unregister(java.lang.String arg0) 
+		public void unregister(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +46,7 @@ namespace org.apache.http.cookie
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._unregister32427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCookieSpec32428;
-		public global::org.apache.http.cookie.CookieSpec getCookieSpec(java.lang.String arg0, org.apache.http.@params.HttpParams arg1) 
+		public global::org.apache.http.cookie.CookieSpec getCookieSpec(java.lang.String arg0, org.apache.http.@params.HttpParams arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +55,7 @@ namespace org.apache.http.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.cookie.CookieSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._getCookieSpec32428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.cookie.CookieSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCookieSpec32429;
-		public global::org.apache.http.cookie.CookieSpec getCookieSpec(java.lang.String arg0) 
+		public global::org.apache.http.cookie.CookieSpec getCookieSpec(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +71,7 @@ namespace org.apache.http.cookie
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSpecNames32430;
-		public global::java.util.List getSpecNames() 
+		public global::java.util.List getSpecNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +80,7 @@ namespace org.apache.http.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._getSpecNames32430)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _CookieSpecRegistry32431;
-		public CookieSpecRegistry()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CookieSpecRegistry() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.CookieSpecRegistry.staticClass, global::org.apache.http.cookie.CookieSpecRegistry._CookieSpecRegistry32431);

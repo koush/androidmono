@@ -20,7 +20,7 @@ namespace javax.xml.transform
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _fatalError30933;
-		 void javax.xml.transform.ErrorListener.fatalError(javax.xml.transform.TransformerException arg0) 
+		void javax.xml.transform.ErrorListener.fatalError(javax.xml.transform.TransformerException arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace javax.xml.transform
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.ErrorListener_.staticClass, global::javax.xml.transform.ErrorListener_._fatalError30933, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _error30934;
-		 void javax.xml.transform.ErrorListener.error(javax.xml.transform.TransformerException arg0) 
+		void javax.xml.transform.ErrorListener.error(javax.xml.transform.TransformerException arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace javax.xml.transform
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.ErrorListener_.staticClass, global::javax.xml.transform.ErrorListener_._error30934, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _warning30935;
-		 void javax.xml.transform.ErrorListener.warning(javax.xml.transform.TransformerException arg0) 
+		void javax.xml.transform.ErrorListener.warning(javax.xml.transform.TransformerException arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

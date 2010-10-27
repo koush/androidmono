@@ -30,7 +30,7 @@ namespace javax.crypto.spec
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _getValue28802;
-			public byte[] getValue() 
+			public byte[] getValue()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.crypto.spec
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource.PSpecified.staticClass, global::javax.crypto.spec.PSource.PSpecified._getValue28802)) as byte[];
 			}
 			internal static global::MonoJavaBridge.MethodId _PSpecified28803;
-			public PSpecified(byte[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public PSpecified(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PSource.PSpecified.staticClass, global::javax.crypto.spec.PSource.PSpecified._PSpecified28803, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -71,7 +71,7 @@ namespace javax.crypto.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm28805;
-		public virtual global::java.lang.String getAlgorithm() 
+		public virtual global::java.lang.String getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace javax.crypto.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._getAlgorithm28805)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PSource28806;
-		protected PSource(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected PSource(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PSource.staticClass, global::javax.crypto.spec.PSource._PSource28806, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,13 +19,13 @@ namespace android.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance12739;
-		public static global::android.text.Editable_Factory getInstance() 
+		public static global::android.text.Editable_Factory getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._getInstance12739)) as android.text.Editable_Factory;
 		}
 		internal static global::MonoJavaBridge.MethodId _newEditable12740;
-		public virtual global::android.text.Editable newEditable(java.lang.CharSequence arg0) 
+		public virtual global::android.text.Editable newEditable(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.text
 			return newEditable((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _Editable_Factory12741;
-		public Editable_Factory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Editable_Factory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._Editable_Factory12741);

@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NonReadableChannelException22514;
-		public NonReadableChannelException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NonReadableChannelException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.NonReadableChannelException.staticClass, global::java.nio.channels.NonReadableChannelException._NonReadableChannelException22514);

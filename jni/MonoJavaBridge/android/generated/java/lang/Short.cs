@@ -12,7 +12,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals20505;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,13 +21,13 @@ namespace java.lang
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._equals20505, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20506;
-		public static global::java.lang.String toString(short arg0) 
+		public static global::java.lang.String toString(short arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.lang.Short.staticClass, global::java.lang.Short._toString20506, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _toString20507;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._toString20507)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode20508;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,13 +45,13 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._hashCode20508);
 		}
 		internal static global::MonoJavaBridge.MethodId _reverseBytes20509;
-		public static short reverseBytes(short arg0) 
+		public static short reverseBytes(short arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticShortMethod(java.lang.Short.staticClass, global::java.lang.Short._reverseBytes20509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo20510;
-		public int compareTo(java.lang.Object arg0) 
+		public int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._compareTo20510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo20511;
-		public int compareTo(java.lang.Short arg0) 
+		public int compareTo(java.lang.Short arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,31 +69,31 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._compareTo20511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20512;
-		public static global::java.lang.Short valueOf(short arg0) 
+		public static global::java.lang.Short valueOf(short arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Short>(@__env.CallStaticObjectMethod(java.lang.Short.staticClass, global::java.lang.Short._valueOf20512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20513;
-		public static global::java.lang.Short valueOf(java.lang.String arg0) 
+		public static global::java.lang.Short valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Short>(@__env.CallStaticObjectMethod(java.lang.Short.staticClass, global::java.lang.Short._valueOf20513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20514;
-		public static global::java.lang.Short valueOf(java.lang.String arg0, int arg1) 
+		public static global::java.lang.Short valueOf(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Short>(@__env.CallStaticObjectMethod(java.lang.Short.staticClass, global::java.lang.Short._valueOf20514, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Short;
 		}
 		internal static global::MonoJavaBridge.MethodId _decode20515;
-		public static global::java.lang.Short decode(java.lang.String arg0) 
+		public static global::java.lang.Short decode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Short>(@__env.CallStaticObjectMethod(java.lang.Short.staticClass, global::java.lang.Short._decode20515, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Short;
 		}
 		internal static global::MonoJavaBridge.MethodId _byteValue20516;
-		public sealed override byte byteValue() 
+		public sealed override byte byteValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace java.lang
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._byteValue20516);
 		}
 		internal static global::MonoJavaBridge.MethodId _shortValue20517;
-		public sealed override short shortValue() 
+		public sealed override short shortValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace java.lang
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._shortValue20517);
 		}
 		internal static global::MonoJavaBridge.MethodId _intValue20518;
-		public sealed override int intValue() 
+		public sealed override int intValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._intValue20518);
 		}
 		internal static global::MonoJavaBridge.MethodId _longValue20519;
-		public sealed override long longValue() 
+		public sealed override long longValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace java.lang
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._longValue20519);
 		}
 		internal static global::MonoJavaBridge.MethodId _floatValue20520;
-		public sealed override float floatValue() 
+		public sealed override float floatValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace java.lang
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._floatValue20520);
 		}
 		internal static global::MonoJavaBridge.MethodId _doubleValue20521;
-		public sealed override double doubleValue() 
+		public sealed override double doubleValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,26 +147,26 @@ namespace java.lang
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::java.lang.Short.staticClass, global::java.lang.Short._doubleValue20521);
 		}
 		internal static global::MonoJavaBridge.MethodId _parseShort20522;
-		public static short parseShort(java.lang.String arg0, int arg1) 
+		public static short parseShort(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticShortMethod(java.lang.Short.staticClass, global::java.lang.Short._parseShort20522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _parseShort20523;
-		public static short parseShort(java.lang.String arg0) 
+		public static short parseShort(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticShortMethod(java.lang.Short.staticClass, global::java.lang.Short._parseShort20523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Short20524;
-		public Short(short arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Short(short arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Short.staticClass, global::java.lang.Short._Short20524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Short20525;
-		public Short(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Short(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.Short.staticClass, global::java.lang.Short._Short20525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

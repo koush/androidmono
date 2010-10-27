@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttribute7246;
-		public virtual global::java.lang.String getAttribute(java.lang.String arg0) 
+		public virtual global::java.lang.String getAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.media
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttribute7246, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributeInt7247;
-		public virtual int getAttributeInt(java.lang.String arg0, int arg1) 
+		public virtual int getAttributeInt(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttributeInt7247, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributeDouble7248;
-		public virtual double getAttributeDouble(java.lang.String arg0, double arg1) 
+		public virtual double getAttributeDouble(java.lang.String arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.media
 				return @__env.CallNonVirtualDoubleMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttributeDouble7248, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute7249;
-		public virtual void setAttribute(java.lang.String arg0, java.lang.String arg1) 
+		public virtual void setAttribute(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._setAttribute7249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _saveAttributes7250;
-		public virtual void saveAttributes() 
+		public virtual void saveAttributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._saveAttributes7250);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasThumbnail7251;
-		public virtual bool hasThumbnail() 
+		public virtual bool hasThumbnail()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getThumbnail7252;
-		public virtual byte[] getThumbnail() 
+		public virtual byte[] getThumbnail()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace android.media
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getThumbnail7252)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getLatLong7253;
-		public virtual bool getLatLong(float[] arg0) 
+		public virtual bool getLatLong(float[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace android.media
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getLatLong7253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ExifInterface7254;
-		public ExifInterface(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ExifInterface(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.ExifInterface.staticClass, global::android.media.ExifInterface._ExifInterface7254, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

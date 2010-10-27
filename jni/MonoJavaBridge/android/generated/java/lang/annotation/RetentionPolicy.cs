@@ -12,13 +12,13 @@ namespace java.lang.annotation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _values20973;
-		public static global::java.lang.annotation.RetentionPolicy[] values() 
+		public static global::java.lang.annotation.RetentionPolicy[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.RetentionPolicy>(@__env.CallStaticObjectMethod(java.lang.annotation.RetentionPolicy.staticClass, global::java.lang.annotation.RetentionPolicy._values20973)) as java.lang.annotation.RetentionPolicy[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf20974;
-		public static global::java.lang.annotation.RetentionPolicy valueOf(java.lang.String arg0) 
+		public static global::java.lang.annotation.RetentionPolicy valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.annotation.RetentionPolicy>(@__env.CallStaticObjectMethod(java.lang.annotation.RetentionPolicy.staticClass, global::java.lang.annotation.RetentionPolicy._valueOf20974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.annotation.RetentionPolicy;

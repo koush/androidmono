@@ -12,14 +12,14 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedChunkCodingException31733;
-		public MalformedChunkCodingException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedChunkCodingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MalformedChunkCodingException.staticClass, global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31733);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedChunkCodingException31734;
-		public MalformedChunkCodingException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedChunkCodingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.MalformedChunkCodingException.staticClass, global::org.apache.http.MalformedChunkCodingException._MalformedChunkCodingException31734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

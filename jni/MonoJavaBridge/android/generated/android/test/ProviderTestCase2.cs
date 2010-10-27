@@ -12,7 +12,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider12280;
-		public virtual global::android.content.ContentProvider getProvider() 
+		public virtual global::android.content.ContentProvider getProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getProvider12280)) as android.content.ContentProvider;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12281;
-		protected override void setUp() 
+		protected override void setUp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._setUp12281);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMockContentResolver12282;
-		public virtual global::android.test.mock.MockContentResolver getMockContentResolver() 
+		public virtual global::android.test.mock.MockContentResolver getMockContentResolver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getMockContentResolver12282)) as android.test.mock.MockContentResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMockContext12283;
-		public virtual global::android.test.IsolatedContext getMockContext() 
+		public virtual global::android.test.IsolatedContext getMockContext()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,13 +48,13 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._getMockContext12283)) as android.test.IsolatedContext;
 		}
 		internal static global::MonoJavaBridge.MethodId _newResolverWithContentProviderFromSql12284;
-		public static global::android.content.ContentResolver newResolverWithContentProviderFromSql(android.content.Context arg0, java.lang.String arg1, java.lang.Class arg2, java.lang.String arg3, java.lang.String arg4, int arg5, java.lang.String arg6) 
+		public static global::android.content.ContentResolver newResolverWithContentProviderFromSql(android.content.Context arg0, java.lang.String arg1, java.lang.Class arg2, java.lang.String arg3, java.lang.String arg4, int arg5, java.lang.String arg6)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._newResolverWithContentProviderFromSql12284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg6))) as android.content.ContentResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _ProviderTestCase212285;
-		public ProviderTestCase2(java.lang.Class arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProviderTestCase2(java.lang.Class arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.ProviderTestCase2.staticClass, global::android.test.ProviderTestCase2._ProviderTestCase212285, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

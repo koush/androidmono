@@ -12,7 +12,7 @@ namespace java.nio
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _BufferOverflowException22014;
-		public BufferOverflowException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BufferOverflowException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.BufferOverflowException.staticClass, global::java.nio.BufferOverflowException._BufferOverflowException22014);

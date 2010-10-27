@@ -12,7 +12,7 @@ namespace android.provider
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _truncateHistory11329;
-		protected virtual void truncateHistory(android.content.ContentResolver arg0, int arg1) 
+		protected virtual void truncateHistory(android.content.ContentResolver arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.provider
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._truncateHistory11329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearHistory11330;
-		public virtual void clearHistory() 
+		public virtual void clearHistory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.provider
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._clearHistory11330);
 		}
 		internal static global::MonoJavaBridge.MethodId _saveRecentQuery11331;
-		public virtual void saveRecentQuery(java.lang.String arg0, java.lang.String arg1) 
+		public virtual void saveRecentQuery(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.provider
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._saveRecentQuery11331, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _SearchRecentSuggestions11332;
-		public SearchRecentSuggestions(android.content.Context arg0, java.lang.String arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SearchRecentSuggestions(android.content.Context arg0, java.lang.String arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._SearchRecentSuggestions11332, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

@@ -29,7 +29,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onFilterComplete17074;
-			 void android.widget.Filter.FilterListener.onFilterComplete(int arg0) 
+			void android.widget.Filter.FilterListener.onFilterComplete(int arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _FilterListenerDelegateWrapper17075;
-			public FilterListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public FilterListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.FilterListenerDelegateWrapper.staticClass, global::android.widget.Filter.FilterListenerDelegateWrapper._FilterListenerDelegateWrapper17075);
@@ -98,7 +98,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _FilterResults17076;
-			public FilterResults()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public FilterResults() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.FilterResults.staticClass, global::android.widget.Filter.FilterResults._FilterResults17076);
@@ -138,7 +138,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _filter17079;
-		public virtual void filter(java.lang.CharSequence arg0) 
+		public virtual void filter(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -151,7 +151,7 @@ namespace android.widget
 			filter((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _filter17080;
-		public virtual void filter(java.lang.CharSequence arg0, android.widget.Filter.FilterListener arg1) 
+		public virtual void filter(java.lang.CharSequence arg0, android.widget.Filter.FilterListener arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _publishResults17082;
 		protected abstract void publishResults(java.lang.CharSequence arg0, android.widget.Filter.FilterResults arg1);
 		internal static global::MonoJavaBridge.MethodId _convertResultToString17083;
-		public virtual global::java.lang.CharSequence convertResultToString(java.lang.Object arg0) 
+		public virtual global::java.lang.CharSequence convertResultToString(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.Filter.staticClass, global::android.widget.Filter._convertResultToString17083, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _Filter17084;
-		public Filter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Filter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.Filter.staticClass, global::android.widget.Filter._Filter17084);
@@ -208,7 +208,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _performFiltering17085;
-		protected override global::android.widget.Filter.FilterResults performFiltering(java.lang.CharSequence arg0) 
+		protected override global::android.widget.Filter.FilterResults performFiltering(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -221,7 +221,7 @@ namespace android.widget
 			return performFiltering((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _publishResults17086;
-		protected override void publishResults(java.lang.CharSequence arg0, android.widget.Filter.FilterResults arg1) 
+		protected override void publishResults(java.lang.CharSequence arg0, android.widget.Filter.FilterResults arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

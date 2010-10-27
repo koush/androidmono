@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString2196;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageName2197;
-		public global::java.lang.String getPackageName() 
+		public global::java.lang.String getPackageName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponent2198;
-		public global::android.content.ComponentName getComponent() 
+		public global::android.content.ComponentName getComponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._getComponent2198)) as android.content.ComponentName;
 		}
 		internal static global::MonoJavaBridge.MethodId _dump2199;
-		public void dump(android.util.Printer arg0, java.lang.String arg1) 
+		public void dump(android.util.Printer arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.app
 			dump((global::android.util.PrinterDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2200;
-		public void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._writeToParcel2200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents2201;
-		public int describeContents() 
+		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getServiceInfo2202;
-		public global::android.content.pm.ServiceInfo getServiceInfo() 
+		public global::android.content.pm.ServiceInfo getServiceInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._getServiceInfo2202)) as android.content.pm.ServiceInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadDescription2203;
-		public global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0) 
+		public global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._loadDescription2203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadLabel2204;
-		public global::java.lang.CharSequence loadLabel(android.content.pm.PackageManager arg0) 
+		public global::java.lang.CharSequence loadLabel(android.content.pm.PackageManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._loadLabel2204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadIcon2205;
-		public global::android.graphics.drawable.Drawable loadIcon(android.content.pm.PackageManager arg0) 
+		public global::android.graphics.drawable.Drawable loadIcon(android.content.pm.PackageManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getServiceName2206;
-		public global::java.lang.String getServiceName() 
+		public global::java.lang.String getServiceName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._getServiceName2206)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadThumbnail2207;
-		public global::android.graphics.drawable.Drawable loadThumbnail(android.content.pm.PackageManager arg0) 
+		public global::android.graphics.drawable.Drawable loadThumbnail(android.content.pm.PackageManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._loadThumbnail2207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadAuthor2208;
-		public global::java.lang.CharSequence loadAuthor(android.content.pm.PackageManager arg0) 
+		public global::java.lang.CharSequence loadAuthor(android.content.pm.PackageManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSettingsActivity2209;
-		public global::java.lang.String getSettingsActivity() 
+		public global::java.lang.String getSettingsActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._getSettingsActivity2209)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _WallpaperInfo2210;
-		public WallpaperInfo(android.content.Context arg0, android.content.pm.ResolveInfo arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public WallpaperInfo(android.content.Context arg0, android.content.pm.ResolveInfo arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.WallpaperInfo.staticClass, global::android.app.WallpaperInfo._WallpaperInfo2210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

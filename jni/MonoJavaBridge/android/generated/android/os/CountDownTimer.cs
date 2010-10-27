@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _start9688;
-		public virtual global::android.os.CountDownTimer start() 
+		public virtual global::android.os.CountDownTimer start()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.CountDownTimer.staticClass, global::android.os.CountDownTimer._start9688)) as android.os.CountDownTimer;
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel9689;
-		public virtual void cancel() 
+		public virtual void cancel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _onFinish9691;
 		public abstract void onFinish();
 		internal static global::MonoJavaBridge.MethodId _CountDownTimer9692;
-		public CountDownTimer(long arg0, long arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CountDownTimer(long arg0, long arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.CountDownTimer.staticClass, global::android.os.CountDownTimer._CountDownTimer9692, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -64,7 +64,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onTick9693;
-		public override void onTick(long arg0) 
+		public override void onTick(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.CountDownTimer_.staticClass, global::android.os.CountDownTimer_._onTick9693, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onFinish9694;
-		public override void onFinish() 
+		public override void onFinish()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

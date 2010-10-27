@@ -12,25 +12,25 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createVideoThumbnail7506;
-		public static global::android.graphics.Bitmap createVideoThumbnail(java.lang.String arg0, int arg1) 
+		public static global::android.graphics.Bitmap createVideoThumbnail(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.media.ThumbnailUtils.staticClass, global::android.media.ThumbnailUtils._createVideoThumbnail7506, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _extractThumbnail7507;
-		public static global::android.graphics.Bitmap extractThumbnail(android.graphics.Bitmap arg0, int arg1, int arg2) 
+		public static global::android.graphics.Bitmap extractThumbnail(android.graphics.Bitmap arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.media.ThumbnailUtils.staticClass, global::android.media.ThumbnailUtils._extractThumbnail7507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _extractThumbnail7508;
-		public static global::android.graphics.Bitmap extractThumbnail(android.graphics.Bitmap arg0, int arg1, int arg2, int arg3) 
+		public static global::android.graphics.Bitmap extractThumbnail(android.graphics.Bitmap arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.media.ThumbnailUtils.staticClass, global::android.media.ThumbnailUtils._extractThumbnail7508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Bitmap;
 		}
 		internal static global::MonoJavaBridge.MethodId _ThumbnailUtils7509;
-		public ThumbnailUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ThumbnailUtils() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.ThumbnailUtils.staticClass, global::android.media.ThumbnailUtils._ThumbnailUtils7509);

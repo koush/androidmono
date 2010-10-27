@@ -755,6 +755,31 @@ namespace MonoDroid
             
             return ret;
         }
+        
+        private string FixCasing(Method method)
+        {
+            return method.Name;
+            // this causes all sorts of fun errors. For example, java has a type called Format, which has a method called format.
+            /*
+            if (method.IsConstructor)
+                return method.Name;
+            string name = method.Name; 
+            int index = name.LastIndexOf('.');
+            if (index == -1)
+                index = 0;
+            else
+                index++;
+            if (char.IsUpper(name[index]))
+                return name;
+            
+            var ret = name.Substring(0, index) + char.ToUpper(name[index]) + (index == name.Length - 1 ? string.Empty : name.Substring(index + 1));
+            if (!method.Type.IsInterface && ret == method.Type.SimpleName)
+                return method.Name;
+            if (FindType(method.Type.Name + "." + ret) != null)
+                return method.Name;
+            return ret;
+            */
+        }
 
         protected override void EmitMethod (Method method)
         {
@@ -770,34 +795,39 @@ namespace MonoDroid
                 }
             }
             
-            if (method.PropertyType.HasValue && method.Name.StartsWith("get"))
+            if (method.PropertyType.HasValue && (method.Name.StartsWith("get") || (method.Name.StartsWith("set") && method.PropertyType == PropertyType.WriteOnly)))
             {
                 var propertyType = method.PropertyType.Value;
-                Write(method.Scope);
+                if (method.Scope != null)
+                    Write(method.Scope);
                 if (method.Static)
                     Write("static");
                 else
                     Write("new");
                 var overload = GetOverloadedType(method.ReturnType);
+                var returnType = propertyType == PropertyType.WriteOnly ? method.Parameters[0] : method.Return;
                 if (overload == null)
-                    Write("{0}{1}", ObjectModel.IsSystemType(method.Return) ? string.Empty : "global::", method.Return);
+                    Write("{0}{1}", ObjectModel.IsSystemType(returnType) ? string.Empty : "global::", returnType);
                 else
                     Write(overload);
                 WriteLine(method.Name.Substring(3), false);
                 WriteLine("{");
                 myIndent++;
-                WriteLine("get");
-                WriteLine("{");
-                myIndent++;
-                if (overload == "string")
-                    WriteLine("return get{0}().toString();", method.Name.Substring(3));
-                else if (overload != null)
-                    WriteLine("return new {0}(get{1}().{2});", overload, method.Name.Substring(3), method.ReturnType.Methods.First().Name);
-                else
-                    WriteLine("return get{0}();", method.Name.Substring(3));
-                myIndent--;
-                WriteLine("}");
-                if (propertyType == PropertyType.ReadWrite)
+                if (propertyType == PropertyType.ReadWrite || propertyType == PropertyType.ReadOnly)
+                {
+                    WriteLine("get");
+                    WriteLine("{");
+                    myIndent++;
+                    if (overload == "string")
+                        WriteLine("return get{0}().toString();", method.Name.Substring(3));
+                    else if (overload != null)
+                        WriteLine("return new {0}(get{1}().{2});", overload, method.Name.Substring(3), method.ReturnType.Methods.First().Name);
+                    else
+                        WriteLine("return get{0}();", method.Name.Substring(3));
+                    myIndent--;
+                    WriteLine("}");
+                }
+                if (propertyType == PropertyType.ReadWrite || propertyType == PropertyType.WriteOnly)
                 {
                     WriteLine("set");
                     WriteLine("{");
@@ -840,7 +870,8 @@ namespace MonoDroid
                 myInitJni.Add(initJni);
                 WriteLine("internal static global::MonoJavaBridge.MethodId {0};", methodId);
                 
-                Write(method.Scope);
+                if (method.Scope != null)
+                    Write(method.Scope);
                 if (method.Abstract)
                     Write("abstract");
                 else
@@ -864,7 +895,7 @@ namespace MonoDroid
             }
             if (method.Return != null)
                 Write("{0}{1}", ObjectModel.IsSystemType(method.Return) ? string.Empty : "global::", method.Return);
-            Write(method.Name, false);
+            Write(FixCasing(method), false);
             Write("(", false);
             WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
             if (method.Type.IsInterface || method.Abstract || method.Scope == "internal")
@@ -873,10 +904,11 @@ namespace MonoDroid
             }
             else
             {
-                Write(")");
+                Write(")", false);
                 if (method.IsConstructor)
-                    Write(" : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)");
-                WriteLine();
+                    WriteLine(" : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)");
+                else
+                    WriteLine();
                 WriteLine("{");
                 myIndent++;
                 WriteLine("global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;");

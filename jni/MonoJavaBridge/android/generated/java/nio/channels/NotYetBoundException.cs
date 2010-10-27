@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NotYetBoundException22516;
-		public NotYetBoundException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NotYetBoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.NotYetBoundException.staticClass, global::java.nio.channels.NotYetBoundException._NotYetBoundException22516);

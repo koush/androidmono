@@ -18,7 +18,7 @@ namespace org.apache.http.conn.scheme
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _resolve32288;
-		 global::java.net.InetAddress org.apache.http.conn.scheme.HostNameResolver.resolve(java.lang.String arg0) 
+		global::java.net.InetAddress org.apache.http.conn.scheme.HostNameResolver.resolve(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

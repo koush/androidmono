@@ -20,7 +20,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getLength34382;
-		 int org.w3c.dom.DOMStringList.getLength() 
+		int org.w3c.dom.DOMStringList.getLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_.staticClass, global::org.w3c.dom.DOMStringList_._getLength34382);
 		}
 		internal static global::MonoJavaBridge.MethodId _contains34383;
-		 bool org.w3c.dom.DOMStringList.contains(java.lang.String arg0) 
+		bool org.w3c.dom.DOMStringList.contains(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMStringList_.staticClass, global::org.w3c.dom.DOMStringList_._contains34383, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _item34384;
-		 global::java.lang.String org.w3c.dom.DOMStringList.item(int arg0) 
+		global::java.lang.String org.w3c.dom.DOMStringList.item(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

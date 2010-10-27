@@ -12,19 +12,19 @@ namespace android.net.wifi
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _values7981;
-		public static global::android.net.wifi.SupplicantState[] values() 
+		public static global::android.net.wifi.SupplicantState[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.net.wifi.SupplicantState>(@__env.CallStaticObjectMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._values7981)) as android.net.wifi.SupplicantState[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf7982;
-		public static global::android.net.wifi.SupplicantState valueOf(java.lang.String arg0) 
+		public static global::android.net.wifi.SupplicantState valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.net.wifi.SupplicantState>(@__env.CallStaticObjectMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._valueOf7982, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.wifi.SupplicantState;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel7983;
-		public void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace android.net.wifi
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._writeToParcel7983, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents7984;
-		public int describeContents() 
+		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace android.net.wifi
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._describeContents7984);
 		}
 		internal static global::MonoJavaBridge.MethodId _isValidState7985;
-		public static bool isValidState(android.net.wifi.SupplicantState arg0) 
+		public static bool isValidState(android.net.wifi.SupplicantState arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._isValidState7985, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

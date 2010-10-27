@@ -12,56 +12,56 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19717;
-		public AssertionError(double arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(double arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19717, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19718;
-		public AssertionError(java.lang.Object arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(java.lang.Object arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19718, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19719;
-		public AssertionError(bool arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(bool arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19719, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19720;
-		public AssertionError(char arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(char arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19720, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19721;
-		public AssertionError(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19721, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19722;
-		public AssertionError(long arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(long arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19722, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19723;
-		public AssertionError(float arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError(float arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19723, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionError19724;
-		public AssertionError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AssertionError.staticClass, global::java.lang.AssertionError._AssertionError19724);

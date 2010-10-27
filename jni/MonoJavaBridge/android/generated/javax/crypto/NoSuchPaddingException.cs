@@ -12,14 +12,14 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoSuchPaddingException28704;
-		public NoSuchPaddingException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoSuchPaddingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.NoSuchPaddingException.staticClass, global::javax.crypto.NoSuchPaddingException._NoSuchPaddingException28704);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NoSuchPaddingException28705;
-		public NoSuchPaddingException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoSuchPaddingException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.NoSuchPaddingException.staticClass, global::javax.crypto.NoSuchPaddingException._NoSuchPaddingException28705, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

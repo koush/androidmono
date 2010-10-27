@@ -12,7 +12,7 @@ namespace javax.xml.validation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setProperty31184;
-		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1) 
+		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._setProperty31184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getProperty31185;
-		public virtual global::java.lang.Object getProperty(java.lang.String arg0) 
+		public virtual global::java.lang.Object getProperty(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,19 +30,19 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._getProperty31185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance31186;
-		public static global::javax.xml.validation.SchemaFactory newInstance(java.lang.String arg0, java.lang.String arg1, java.lang.ClassLoader arg2) 
+		public static global::javax.xml.validation.SchemaFactory newInstance(java.lang.String arg0, java.lang.String arg1, java.lang.ClassLoader arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._newInstance31186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as javax.xml.validation.SchemaFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance31187;
-		public static global::javax.xml.validation.SchemaFactory newInstance(java.lang.String arg0) 
+		public static global::javax.xml.validation.SchemaFactory newInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._newInstance31187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.validation.SchemaFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature31188;
-		public virtual void setFeature(java.lang.String arg0, bool arg1) 
+		public virtual void setFeature(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._setFeature31188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature31189;
-		public virtual bool getFeature(java.lang.String arg0) 
+		public virtual bool getFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _isSchemaLanguageSupported31194;
 		public abstract bool isSchemaLanguageSupported(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _newSchema31195;
-		public virtual global::javax.xml.validation.Schema newSchema(java.io.File arg0) 
+		public virtual global::javax.xml.validation.Schema newSchema(java.io.File arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._newSchema31195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.validation.Schema;
 		}
 		internal static global::MonoJavaBridge.MethodId _newSchema31196;
-		public virtual global::javax.xml.validation.Schema newSchema(java.net.URL arg0) 
+		public virtual global::javax.xml.validation.Schema newSchema(java.net.URL arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _newSchema31198;
 		public abstract global::javax.xml.validation.Schema newSchema();
 		internal static global::MonoJavaBridge.MethodId _newSchema31199;
-		public virtual global::javax.xml.validation.Schema newSchema(javax.xml.transform.Source arg0) 
+		public virtual global::javax.xml.validation.Schema newSchema(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -101,7 +101,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._newSchema31199, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.validation.Schema;
 		}
 		internal static global::MonoJavaBridge.MethodId _SchemaFactory31200;
-		protected SchemaFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SchemaFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.SchemaFactory.staticClass, global::javax.xml.validation.SchemaFactory._SchemaFactory31200);
@@ -143,7 +143,7 @@ namespace javax.xml.validation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorHandler31201;
-		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0) 
+		public override void setErrorHandler(org.xml.sax.ErrorHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._setErrorHandler31201, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorHandler31202;
-		public override global::org.xml.sax.ErrorHandler getErrorHandler() 
+		public override global::org.xml.sax.ErrorHandler getErrorHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ErrorHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._getErrorHandler31202)) as org.xml.sax.ErrorHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _setResourceResolver31203;
-		public override void setResourceResolver(org.w3c.dom.ls.LSResourceResolver arg0) 
+		public override void setResourceResolver(org.w3c.dom.ls.LSResourceResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace javax.xml.validation
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._setResourceResolver31203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResourceResolver31204;
-		public override global::org.w3c.dom.ls.LSResourceResolver getResourceResolver() 
+		public override global::org.w3c.dom.ls.LSResourceResolver getResourceResolver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -179,7 +179,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.ls.LSResourceResolver>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._getResourceResolver31204)) as org.w3c.dom.ls.LSResourceResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSchemaLanguageSupported31205;
-		public override bool isSchemaLanguageSupported(java.lang.String arg0) 
+		public override bool isSchemaLanguageSupported(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace javax.xml.validation
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._isSchemaLanguageSupported31205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _newSchema31206;
-		public override global::javax.xml.validation.Schema newSchema(javax.xml.transform.Source[] arg0) 
+		public override global::javax.xml.validation.Schema newSchema(javax.xml.transform.Source[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -197,7 +197,7 @@ namespace javax.xml.validation
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.validation.SchemaFactory_.staticClass, global::javax.xml.validation.SchemaFactory_._newSchema31206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.validation.Schema;
 		}
 		internal static global::MonoJavaBridge.MethodId _newSchema31207;
-		public override global::javax.xml.validation.Schema newSchema() 
+		public override global::javax.xml.validation.Schema newSchema()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

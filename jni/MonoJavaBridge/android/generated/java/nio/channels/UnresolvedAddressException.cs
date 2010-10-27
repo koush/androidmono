@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnresolvedAddressException22654;
-		public UnresolvedAddressException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnresolvedAddressException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.UnresolvedAddressException.staticClass, global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22654);

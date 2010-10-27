@@ -18,7 +18,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeParameters21081;
-		 global::java.lang.reflect.TypeVariable[] java.lang.reflect.GenericDeclaration.getTypeParameters() 
+		global::java.lang.reflect.TypeVariable[] java.lang.reflect.GenericDeclaration.getTypeParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,14 +12,14 @@ namespace dalvik.system
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _StaleDexCacheError18607;
-		public StaleDexCacheError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StaleDexCacheError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.StaleDexCacheError.staticClass, global::dalvik.system.StaleDexCacheError._StaleDexCacheError18607);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _StaleDexCacheError18608;
-		public StaleDexCacheError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StaleDexCacheError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.StaleDexCacheError.staticClass, global::dalvik.system.StaleDexCacheError._StaleDexCacheError18608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

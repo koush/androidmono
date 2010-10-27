@@ -12,14 +12,14 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteDiskIOException4799;
-		public SQLiteDiskIOException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteDiskIOException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteDiskIOException.staticClass, global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException4799);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteDiskIOException4800;
-		public SQLiteDiskIOException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteDiskIOException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteDiskIOException.staticClass, global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException4800, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,13 +12,13 @@ namespace android.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _concatGroups13819;
-		public static global::java.lang.String concatGroups(java.util.regex.Matcher arg0) 
+		public static global::java.lang.String concatGroups(java.util.regex.Matcher arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._concatGroups13819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _digitsAndPlusOnly13820;
-		public static global::java.lang.String digitsAndPlusOnly(java.util.regex.Matcher arg0) 
+		public static global::java.lang.String digitsAndPlusOnly(java.util.regex.Matcher arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.util.Patterns.staticClass, global::android.util.Patterns._digitsAndPlusOnly13820, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;

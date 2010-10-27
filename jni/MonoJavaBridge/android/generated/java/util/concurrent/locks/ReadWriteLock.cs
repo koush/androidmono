@@ -19,7 +19,7 @@ namespace java.util.concurrent.locks
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _readLock27752;
-		 global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.readLock() 
+		global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.readLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.util.concurrent.locks
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, global::java.util.concurrent.locks.ReadWriteLock_._readLock27752)) as java.util.concurrent.locks.Lock;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeLock27753;
-		 global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.writeLock() 
+		global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.writeLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

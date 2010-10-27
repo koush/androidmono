@@ -12,14 +12,14 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ActivityNotFoundException2565;
-		public ActivityNotFoundException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ActivityNotFoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ActivityNotFoundException.staticClass, global::android.content.ActivityNotFoundException._ActivityNotFoundException2565);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ActivityNotFoundException2566;
-		public ActivityNotFoundException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ActivityNotFoundException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.ActivityNotFoundException.staticClass, global::android.content.ActivityNotFoundException._ActivityNotFoundException2566, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

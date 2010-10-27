@@ -23,7 +23,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _AdapterContextMenuInfo16628;
-			public AdapterContextMenuInfo(android.view.View arg0, int arg1, long arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public AdapterContextMenuInfo(android.view.View arg0, int arg1, long arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AdapterView.AdapterContextMenuInfo.staticClass, global::android.widget.AdapterView.AdapterContextMenuInfo._AdapterContextMenuInfo16628, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
@@ -93,7 +93,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onItemClick16632;
-			 void android.widget.AdapterView.OnItemClickListener.onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3) 
+			void android.widget.AdapterView.OnItemClickListener.onItemClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -122,7 +122,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnItemClickListenerDelegateWrapper16633;
-			public OnItemClickListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnItemClickListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AdapterView.OnItemClickListenerDelegateWrapper.staticClass, global::android.widget.AdapterView.OnItemClickListenerDelegateWrapper._OnItemClickListenerDelegateWrapper16633);
@@ -168,7 +168,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onItemLongClick16634;
-			 bool android.widget.AdapterView.OnItemLongClickListener.onItemLongClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3) 
+			bool android.widget.AdapterView.OnItemLongClickListener.onItemLongClick(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -197,7 +197,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnItemLongClickListenerDelegateWrapper16635;
-			public OnItemLongClickListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnItemLongClickListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AdapterView.OnItemLongClickListenerDelegateWrapper.staticClass, global::android.widget.AdapterView.OnItemLongClickListenerDelegateWrapper._OnItemLongClickListenerDelegateWrapper16635);
@@ -244,7 +244,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onItemSelected16636;
-			 void android.widget.AdapterView.OnItemSelectedListener.onItemSelected(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3) 
+			void android.widget.AdapterView.OnItemSelectedListener.onItemSelected(android.widget.AdapterView arg0, android.view.View arg1, int arg2, long arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -253,7 +253,7 @@ namespace android.widget
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.OnItemSelectedListener_.staticClass, global::android.widget.AdapterView.OnItemSelectedListener_._onItemSelected16636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			}
 			internal static global::MonoJavaBridge.MethodId _onNothingSelected16637;
-			 void android.widget.AdapterView.OnItemSelectedListener.onNothingSelected(android.widget.AdapterView arg0) 
+			void android.widget.AdapterView.OnItemSelectedListener.onNothingSelected(android.widget.AdapterView arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -270,7 +270,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchPopulateAccessibilityEvent16638;
-		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
+		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -279,7 +279,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._dispatchPopulateAccessibilityEvent16638, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView16639;
-		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
+		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -288,7 +288,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._addView16639, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView16640;
-		public override void addView(android.view.View arg0) 
+		public override void addView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -297,7 +297,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._addView16640, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView16641;
-		public override void addView(android.view.View arg0, int arg1) 
+		public override void addView(android.view.View arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -306,7 +306,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._addView16641, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _addView16642;
-		public override void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
+		public override void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -315,7 +315,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._addView16642, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeView16643;
-		public override void removeView(android.view.View arg0) 
+		public override void removeView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -324,7 +324,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._removeView16643, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnClickListener16644;
-		public override void setOnClickListener(android.view.View.OnClickListener arg0) 
+		public override void setOnClickListener(android.view.View.OnClickListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -337,7 +337,7 @@ namespace android.widget
 			setOnClickListener((global::android.view.View.OnClickListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFocusable16645;
-		public override void setFocusable(bool arg0) 
+		public override void setFocusable(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -346,7 +346,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._setFocusable16645, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFocusableInTouchMode16646;
-		public override void setFocusableInTouchMode(bool arg0) 
+		public override void setFocusableInTouchMode(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -355,7 +355,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._setFocusableInTouchMode16646, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchSaveInstanceState16647;
-		protected override void dispatchSaveInstanceState(android.util.SparseArray arg0) 
+		protected override void dispatchSaveInstanceState(android.util.SparseArray arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -364,7 +364,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._dispatchSaveInstanceState16647, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchRestoreInstanceState16648;
-		protected override void dispatchRestoreInstanceState(android.util.SparseArray arg0) 
+		protected override void dispatchRestoreInstanceState(android.util.SparseArray arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -373,7 +373,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._dispatchRestoreInstanceState16648, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onLayout16649;
-		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
+		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -382,7 +382,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._onLayout16649, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCount16650;
-		public virtual int getCount() 
+		public virtual int getCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -391,7 +391,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getCount16650);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeViewAt16651;
-		public override void removeViewAt(int arg0) 
+		public override void removeViewAt(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -400,7 +400,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._removeViewAt16651, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAllViews16652;
-		public override void removeAllViews() 
+		public override void removeAllViews()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -409,7 +409,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._removeAllViews16652);
 		}
 		internal static global::MonoJavaBridge.MethodId _canAnimate16653;
-		protected override bool canAnimate() 
+		protected override bool canAnimate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -420,7 +420,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setAdapter16654;
 		public abstract void setAdapter(android.widget.Adapter arg0);
 		internal static global::MonoJavaBridge.MethodId _setOnItemSelectedListener16655;
-		public virtual void setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0) 
+		public virtual void setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -429,7 +429,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._setOnItemSelectedListener16655, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnItemClickListener16656;
-		public virtual void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0) 
+		public virtual void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -442,7 +442,7 @@ namespace android.widget
 			setOnItemClickListener((global::android.widget.AdapterView.OnItemClickListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getOnItemClickListener16657;
-		public virtual global::android.widget.AdapterView.OnItemClickListener getOnItemClickListener() 
+		public virtual global::android.widget.AdapterView.OnItemClickListener getOnItemClickListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -451,7 +451,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getOnItemClickListener16657)) as android.widget.AdapterView.OnItemClickListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _performItemClick16658;
-		public virtual bool performItemClick(android.view.View arg0, int arg1, long arg2) 
+		public virtual bool performItemClick(android.view.View arg0, int arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -460,7 +460,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._performItemClick16658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnItemLongClickListener16659;
-		public virtual void setOnItemLongClickListener(android.widget.AdapterView.OnItemLongClickListener arg0) 
+		public virtual void setOnItemLongClickListener(android.widget.AdapterView.OnItemLongClickListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -473,7 +473,7 @@ namespace android.widget
 			setOnItemLongClickListener((global::android.widget.AdapterView.OnItemLongClickListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getOnItemLongClickListener16660;
-		public virtual global::android.widget.AdapterView.OnItemLongClickListener getOnItemLongClickListener() 
+		public virtual global::android.widget.AdapterView.OnItemLongClickListener getOnItemLongClickListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -482,7 +482,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.AdapterView.OnItemLongClickListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getOnItemLongClickListener16660)) as android.widget.AdapterView.OnItemLongClickListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _getOnItemSelectedListener16661;
-		public virtual global::android.widget.AdapterView.OnItemSelectedListener getOnItemSelectedListener() 
+		public virtual global::android.widget.AdapterView.OnItemSelectedListener getOnItemSelectedListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -493,7 +493,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getAdapter16662;
 		public abstract global::android.widget.Adapter getAdapter();
 		internal static global::MonoJavaBridge.MethodId _getSelectedItemPosition16663;
-		public virtual int getSelectedItemPosition() 
+		public virtual int getSelectedItemPosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -502,7 +502,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getSelectedItemPosition16663);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedItemId16664;
-		public virtual long getSelectedItemId() 
+		public virtual long getSelectedItemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -513,7 +513,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _getSelectedView16665;
 		public abstract global::android.view.View getSelectedView();
 		internal static global::MonoJavaBridge.MethodId _getSelectedItem16666;
-		public virtual global::java.lang.Object getSelectedItem() 
+		public virtual global::java.lang.Object getSelectedItem()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -522,7 +522,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getSelectedItem16666)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPositionForView16667;
-		public virtual int getPositionForView(android.view.View arg0) 
+		public virtual int getPositionForView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -531,7 +531,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getPositionForView16667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFirstVisiblePosition16668;
-		public virtual int getFirstVisiblePosition() 
+		public virtual int getFirstVisiblePosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -540,7 +540,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getFirstVisiblePosition16668);
 		}
 		internal static global::MonoJavaBridge.MethodId _getLastVisiblePosition16669;
-		public virtual int getLastVisiblePosition() 
+		public virtual int getLastVisiblePosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -551,7 +551,7 @@ namespace android.widget
 		internal static global::MonoJavaBridge.MethodId _setSelection16670;
 		public abstract void setSelection(int arg0);
 		internal static global::MonoJavaBridge.MethodId _setEmptyView16671;
-		public virtual void setEmptyView(android.view.View arg0) 
+		public virtual void setEmptyView(android.view.View arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -560,7 +560,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._setEmptyView16671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getEmptyView16672;
-		public virtual global::android.view.View getEmptyView() 
+		public virtual global::android.view.View getEmptyView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -569,7 +569,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getEmptyView16672)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _getItemAtPosition16673;
-		public virtual global::java.lang.Object getItemAtPosition(int arg0) 
+		public virtual global::java.lang.Object getItemAtPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -578,7 +578,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getItemAtPosition16673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getItemIdAtPosition16674;
-		public virtual long getItemIdAtPosition(int arg0) 
+		public virtual long getItemIdAtPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -587,21 +587,21 @@ namespace android.widget
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.widget.AdapterView.staticClass, global::android.widget.AdapterView._getItemIdAtPosition16674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AdapterView16675;
-		public AdapterView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AdapterView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AdapterView.staticClass, global::android.widget.AdapterView._AdapterView16675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AdapterView16676;
-		public AdapterView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AdapterView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AdapterView.staticClass, global::android.widget.AdapterView._AdapterView16676, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AdapterView16677;
-		public AdapterView(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AdapterView(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.AdapterView.staticClass, global::android.widget.AdapterView._AdapterView16677, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -694,7 +694,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setAdapter16682;
-		public override void setAdapter(android.widget.Adapter arg0) 
+		public override void setAdapter(android.widget.Adapter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -703,7 +703,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.AdapterView_.staticClass, global::android.widget.AdapterView_._setAdapter16682, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAdapter16683;
-		public override global::android.widget.Adapter getAdapter() 
+		public override global::android.widget.Adapter getAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -712,7 +712,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.Adapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView_.staticClass, global::android.widget.AdapterView_._getAdapter16683)) as android.widget.Adapter;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedView16684;
-		public override global::android.view.View getSelectedView() 
+		public override global::android.view.View getSelectedView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -721,7 +721,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.AdapterView_.staticClass, global::android.widget.AdapterView_._getSelectedView16684)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelection16685;
-		public override void setSelection(int arg0) 
+		public override void setSelection(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

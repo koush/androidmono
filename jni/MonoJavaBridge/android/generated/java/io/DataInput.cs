@@ -32,7 +32,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _readLine18884;
-		 global::java.lang.String java.io.DataInput.readLine() 
+		global::java.lang.String java.io.DataInput.readLine()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readLine18884)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readInt18885;
-		 int java.io.DataInput.readInt() 
+		int java.io.DataInput.readInt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readInt18885);
 		}
 		internal static global::MonoJavaBridge.MethodId _readChar18886;
-		 char java.io.DataInput.readChar() 
+		char java.io.DataInput.readChar()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace java.io
 				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readChar18886);
 		}
 		internal static global::MonoJavaBridge.MethodId _readUTF18887;
-		 global::java.lang.String java.io.DataInput.readUTF() 
+		global::java.lang.String java.io.DataInput.readUTF()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readUTF18887)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readFully18888;
-		 void java.io.DataInput.readFully(byte[] arg0) 
+		void java.io.DataInput.readFully(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readFully18888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readFully18889;
-		 void java.io.DataInput.readFully(byte[] arg0, int arg1, int arg2) 
+		void java.io.DataInput.readFully(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readFully18889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _readLong18890;
-		 long java.io.DataInput.readLong() 
+		long java.io.DataInput.readLong()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +95,7 @@ namespace java.io
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readLong18890);
 		}
 		internal static global::MonoJavaBridge.MethodId _readByte18891;
-		 byte java.io.DataInput.readByte() 
+		byte java.io.DataInput.readByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +104,7 @@ namespace java.io
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readByte18891);
 		}
 		internal static global::MonoJavaBridge.MethodId _readShort18892;
-		 short java.io.DataInput.readShort() 
+		short java.io.DataInput.readShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +113,7 @@ namespace java.io
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readShort18892);
 		}
 		internal static global::MonoJavaBridge.MethodId _readFloat18893;
-		 float java.io.DataInput.readFloat() 
+		float java.io.DataInput.readFloat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -122,7 +122,7 @@ namespace java.io
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readFloat18893);
 		}
 		internal static global::MonoJavaBridge.MethodId _skipBytes18894;
-		 int java.io.DataInput.skipBytes(int arg0) 
+		int java.io.DataInput.skipBytes(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -131,7 +131,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._skipBytes18894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readBoolean18895;
-		 bool java.io.DataInput.readBoolean() 
+		bool java.io.DataInput.readBoolean()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -140,7 +140,7 @@ namespace java.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readBoolean18895);
 		}
 		internal static global::MonoJavaBridge.MethodId _readUnsignedByte18896;
-		 int java.io.DataInput.readUnsignedByte() 
+		int java.io.DataInput.readUnsignedByte()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -149,7 +149,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readUnsignedByte18896);
 		}
 		internal static global::MonoJavaBridge.MethodId _readUnsignedShort18897;
-		 int java.io.DataInput.readUnsignedShort() 
+		int java.io.DataInput.readUnsignedShort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -158,7 +158,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.DataInput_.staticClass, global::java.io.DataInput_._readUnsignedShort18897);
 		}
 		internal static global::MonoJavaBridge.MethodId _readDouble18898;
-		 double java.io.DataInput.readDouble() 
+		double java.io.DataInput.readDouble()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

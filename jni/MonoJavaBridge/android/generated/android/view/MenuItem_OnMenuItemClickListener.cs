@@ -18,7 +18,7 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onMenuItemClick14346;
-		 bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0) 
+		bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _MenuItem_OnMenuItemClickListenerDelegateWrapper14347;
-		public MenuItem_OnMenuItemClickListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MenuItem_OnMenuItemClickListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper.staticClass, global::android.view.MenuItem_OnMenuItemClickListenerDelegateWrapper._MenuItem_OnMenuItemClickListenerDelegateWrapper14347);

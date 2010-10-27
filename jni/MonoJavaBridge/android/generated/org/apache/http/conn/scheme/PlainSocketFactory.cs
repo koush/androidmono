@@ -12,7 +12,7 @@ namespace org.apache.http.conn.scheme
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals32293;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.conn.scheme
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._equals32293, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode32294;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.conn.scheme
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._hashCode32294);
 		}
 		internal static global::MonoJavaBridge.MethodId _createSocket32295;
-		public global::java.net.Socket createSocket() 
+		public global::java.net.Socket createSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,13 +46,13 @@ namespace org.apache.http.conn.scheme
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSocketFactory32296;
-		public static global::org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory() 
+		public static global::org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.scheme.PlainSocketFactory>(@__env.CallStaticObjectMethod(org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._getSocketFactory32296)) as org.apache.http.conn.scheme.PlainSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _connectSocket32297;
-		public global::java.net.Socket connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5) 
+		public global::java.net.Socket connectSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, java.net.InetAddress arg3, int arg4, org.apache.http.@params.HttpParams arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace org.apache.http.conn.scheme
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._connectSocket32297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as java.net.Socket;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSecure32298;
-		public bool isSecure(java.net.Socket arg0) 
+		public bool isSecure(java.net.Socket arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,14 +70,14 @@ namespace org.apache.http.conn.scheme
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._isSecure32298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PlainSocketFactory32299;
-		public PlainSocketFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PlainSocketFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._PlainSocketFactory32299);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PlainSocketFactory32300;
-		public PlainSocketFactory(org.apache.http.conn.scheme.HostNameResolver arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PlainSocketFactory(org.apache.http.conn.scheme.HostNameResolver arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.scheme.PlainSocketFactory.staticClass, global::org.apache.http.conn.scheme.PlainSocketFactory._PlainSocketFactory32300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

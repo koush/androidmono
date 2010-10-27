@@ -18,7 +18,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _readData30620;
-		 void javax.sql.RowSetReader.readData(javax.sql.RowSetInternal arg0) 
+		void javax.sql.RowSetReader.readData(javax.sql.RowSetInternal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

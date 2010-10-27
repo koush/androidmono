@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19338;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._toString19338)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isPrimitive19339;
-		public virtual bool isPrimitive() 
+		public virtual bool isPrimitive()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._isPrimitive19339);
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo19340;
-		public virtual int compareTo(java.lang.Object arg0) 
+		public virtual int compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName19341;
-		public virtual global::java.lang.String getName() 
+		public virtual global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType19342;
-		public virtual global::java.lang.Class getType() 
+		public virtual global::java.lang.Class getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeCode19343;
-		public virtual char getTypeCode() 
+		public virtual char getTypeCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeString19344;
-		public virtual global::java.lang.String getTypeString() 
+		public virtual global::java.lang.String getTypeString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +114,7 @@ namespace java.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOffset19345;
-		public virtual int getOffset() 
+		public virtual int getOffset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -123,7 +123,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._getOffset19345);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOffset19346;
-		protected virtual void setOffset(int arg0) 
+		protected virtual void setOffset(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +132,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._setOffset19346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnshared19347;
-		public virtual bool isUnshared() 
+		public virtual bool isUnshared()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -141,14 +141,14 @@ namespace java.io
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._isUnshared19347);
 		}
 		internal static global::MonoJavaBridge.MethodId _ObjectStreamField19348;
-		public ObjectStreamField(java.lang.String arg0, java.lang.Class arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ObjectStreamField(java.lang.String arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._ObjectStreamField19348, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ObjectStreamField19349;
-		public ObjectStreamField(java.lang.String arg0, java.lang.Class arg1, bool arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ObjectStreamField(java.lang.String arg0, java.lang.Class arg1, bool arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.ObjectStreamField.staticClass, global::java.io.ObjectStreamField._ObjectStreamField19349, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

@@ -19,7 +19,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getLength34372;
-		 int org.w3c.dom.DOMImplementationList.getLength() 
+		int org.w3c.dom.DOMImplementationList.getLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementationList_.staticClass, global::org.w3c.dom.DOMImplementationList_._getLength34372);
 		}
 		internal static global::MonoJavaBridge.MethodId _item34373;
-		 global::org.w3c.dom.DOMImplementation org.w3c.dom.DOMImplementationList.item(int arg0) 
+		global::org.w3c.dom.DOMImplementation org.w3c.dom.DOMImplementationList.item(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

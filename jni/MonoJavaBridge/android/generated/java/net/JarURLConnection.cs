@@ -12,7 +12,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificates21596;
-		public virtual global::java.security.cert.Certificate[] getCertificates() 
+		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getCertificates21596)) as java.security.cert.Certificate[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getManifest21597;
-		public virtual global::java.util.jar.Manifest getManifest() 
+		public virtual global::java.util.jar.Manifest getManifest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getManifest21597)) as java.util.jar.Manifest;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributes21598;
-		public virtual global::java.util.jar.Attributes getAttributes() 
+		public virtual global::java.util.jar.Attributes getAttributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getAttributes21598)) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _getMainAttributes21599;
-		public virtual global::java.util.jar.Attributes getMainAttributes() 
+		public virtual global::java.util.jar.Attributes getMainAttributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getMainAttributes21599)) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _getJarFileURL21600;
-		public virtual global::java.net.URL getJarFileURL() 
+		public virtual global::java.net.URL getJarFileURL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getJarFile21601;
 		public abstract global::java.util.jar.JarFile getJarFile();
 		internal static global::MonoJavaBridge.MethodId _getJarEntry21602;
-		public virtual global::java.util.jar.JarEntry getJarEntry() 
+		public virtual global::java.util.jar.JarEntry getJarEntry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getJarEntry21602)) as java.util.jar.JarEntry;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntryName21603;
-		public virtual global::java.lang.String getEntryName() 
+		public virtual global::java.lang.String getEntryName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._getEntryName21603)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _JarURLConnection21604;
-		protected JarURLConnection(java.net.URL arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected JarURLConnection(java.net.URL arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.JarURLConnection.staticClass, global::java.net.JarURLConnection._JarURLConnection21604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -111,7 +111,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getJarFile21605;
-		public override global::java.util.jar.JarFile getJarFile() 
+		public override global::java.util.jar.JarFile getJarFile()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.JarURLConnection_.staticClass, global::java.net.JarURLConnection_._getJarFile21605)) as java.util.jar.JarFile;
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21606;
-		public override void connect() 
+		public override void connect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

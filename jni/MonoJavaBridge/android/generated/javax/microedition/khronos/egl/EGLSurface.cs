@@ -12,7 +12,7 @@ namespace javax.microedition.khronos.egl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EGLSurface28956;
-		public EGLSurface()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EGLSurface() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLSurface.staticClass, global::javax.microedition.khronos.egl.EGLSurface._EGLSurface28956);

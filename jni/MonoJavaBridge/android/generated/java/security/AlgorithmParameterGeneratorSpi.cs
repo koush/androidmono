@@ -18,7 +18,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineGenerateParameters22857;
 		protected abstract global::java.security.AlgorithmParameters engineGenerateParameters();
 		internal static global::MonoJavaBridge.MethodId _AlgorithmParameterGeneratorSpi22858;
-		public AlgorithmParameterGeneratorSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AlgorithmParameterGeneratorSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParameterGeneratorSpi.staticClass, global::java.security.AlgorithmParameterGeneratorSpi._AlgorithmParameterGeneratorSpi22858);
@@ -47,7 +47,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit22859;
-		protected override void engineInit(int arg0, java.security.SecureRandom arg1) 
+		protected override void engineInit(int arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParameterGeneratorSpi_.staticClass, global::java.security.AlgorithmParameterGeneratorSpi_._engineInit22859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit22860;
-		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1) 
+		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParameterGeneratorSpi_.staticClass, global::java.security.AlgorithmParameterGeneratorSpi_._engineInit22860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateParameters22861;
-		protected override global::java.security.AlgorithmParameters engineGenerateParameters() 
+		protected override global::java.security.AlgorithmParameters engineGenerateParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -18,7 +18,7 @@ namespace java.security.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams23894;
-		 global::java.security.interfaces.DSAParams java.security.interfaces.DSAKey.getParams() 
+		global::java.security.interfaces.DSAParams java.security.interfaces.DSAKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

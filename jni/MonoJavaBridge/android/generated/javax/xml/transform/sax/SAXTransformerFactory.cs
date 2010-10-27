@@ -24,7 +24,7 @@ namespace javax.xml.transform.sax
 		internal static global::MonoJavaBridge.MethodId _newXMLFilter31089;
 		public abstract global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Templates arg0);
 		internal static global::MonoJavaBridge.MethodId _SAXTransformerFactory31090;
-		protected SAXTransformerFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SAXTransformerFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.transform.sax.SAXTransformerFactory.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory._SAXTransformerFactory31090);
@@ -70,7 +70,7 @@ namespace javax.xml.transform.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformerHandler31093;
-		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler(javax.xml.transform.Source arg0) 
+		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TransformerHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31093, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.sax.TransformerHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformerHandler31094;
-		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler(javax.xml.transform.Templates arg0) 
+		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler(javax.xml.transform.Templates arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TransformerHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31094, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.sax.TransformerHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformerHandler31095;
-		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler() 
+		public override global::javax.xml.transform.sax.TransformerHandler newTransformerHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TransformerHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformerHandler31095)) as javax.xml.transform.sax.TransformerHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTemplatesHandler31096;
-		public override global::javax.xml.transform.sax.TemplatesHandler newTemplatesHandler() 
+		public override global::javax.xml.transform.sax.TemplatesHandler newTemplatesHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +106,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.sax.TemplatesHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplatesHandler31096)) as javax.xml.transform.sax.TemplatesHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _newXMLFilter31097;
-		public override global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Source arg0) 
+		public override global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLFilter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31097, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.XMLFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _newXMLFilter31098;
-		public override global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Templates arg0) 
+		public override global::org.xml.sax.XMLFilter newXMLFilter(javax.xml.transform.Templates arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -124,7 +124,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.XMLFilter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newXMLFilter31098, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.XMLFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttribute31099;
-		public override global::java.lang.Object getAttribute(java.lang.String arg0) 
+		public override global::java.lang.Object getAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._getAttribute31099, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature31100;
-		public override void setFeature(java.lang.String arg0, bool arg1) 
+		public override void setFeature(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -142,7 +142,7 @@ namespace javax.xml.transform.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._setFeature31100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature31101;
-		public override bool getFeature(java.lang.String arg0) 
+		public override bool getFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -151,7 +151,7 @@ namespace javax.xml.transform.sax
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._getFeature31101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute31102;
-		public override void setAttribute(java.lang.String arg0, java.lang.Object arg1) 
+		public override void setAttribute(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -160,7 +160,7 @@ namespace javax.xml.transform.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._setAttribute31102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformer31103;
-		public override global::javax.xml.transform.Transformer newTransformer() 
+		public override global::javax.xml.transform.Transformer newTransformer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -169,7 +169,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31103)) as javax.xml.transform.Transformer;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTransformer31104;
-		public override global::javax.xml.transform.Transformer newTransformer(javax.xml.transform.Source arg0) 
+		public override global::javax.xml.transform.Transformer newTransformer(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -178,7 +178,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTransformer31104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.Transformer;
 		}
 		internal static global::MonoJavaBridge.MethodId _setURIResolver31105;
-		public override void setURIResolver(javax.xml.transform.URIResolver arg0) 
+		public override void setURIResolver(javax.xml.transform.URIResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -187,7 +187,7 @@ namespace javax.xml.transform.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._setURIResolver31105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getURIResolver31106;
-		public override global::javax.xml.transform.URIResolver getURIResolver() 
+		public override global::javax.xml.transform.URIResolver getURIResolver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -196,7 +196,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.URIResolver>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._getURIResolver31106)) as javax.xml.transform.URIResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorListener31107;
-		public override void setErrorListener(javax.xml.transform.ErrorListener arg0) 
+		public override void setErrorListener(javax.xml.transform.ErrorListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -205,7 +205,7 @@ namespace javax.xml.transform.sax
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._setErrorListener31107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorListener31108;
-		public override global::javax.xml.transform.ErrorListener getErrorListener() 
+		public override global::javax.xml.transform.ErrorListener getErrorListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -214,7 +214,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.ErrorListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._getErrorListener31108)) as javax.xml.transform.ErrorListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _newTemplates31109;
-		public override global::javax.xml.transform.Templates newTemplates(javax.xml.transform.Source arg0) 
+		public override global::javax.xml.transform.Templates newTemplates(javax.xml.transform.Source arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -223,7 +223,7 @@ namespace javax.xml.transform.sax
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::javax.xml.transform.Templates>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.sax.SAXTransformerFactory_.staticClass, global::javax.xml.transform.sax.SAXTransformerFactory_._newTemplates31109, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.xml.transform.Templates;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAssociatedStylesheet31110;
-		public override global::javax.xml.transform.Source getAssociatedStylesheet(javax.xml.transform.Source arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
+		public override global::javax.xml.transform.Source getAssociatedStylesheet(javax.xml.transform.Source arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

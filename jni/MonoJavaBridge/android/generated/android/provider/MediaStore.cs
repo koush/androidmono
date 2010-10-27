@@ -123,13 +123,13 @@ namespace android.provider
 				{
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11128;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Albums.staticClass, global::android.provider.MediaStore.Audio.Albums._getContentUri11128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _Albums11129;
-				public Albums()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Albums() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Albums.staticClass, global::android.provider.MediaStore.Audio.Albums._Albums11129);
@@ -261,13 +261,13 @@ namespace android.provider
 					{
 					}
 					internal static global::MonoJavaBridge.MethodId _getContentUri11139;
-					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1) 
+					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Artists.Albums.staticClass, global::android.provider.MediaStore.Audio.Artists.Albums._getContentUri11139, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 					}
 					internal static global::MonoJavaBridge.MethodId _Albums11140;
-					public Albums()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+					public Albums() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Artists.Albums.staticClass, global::android.provider.MediaStore.Audio.Artists.Albums._Albums11140);
@@ -282,13 +282,13 @@ namespace android.provider
 					}
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11141;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Artists.staticClass, global::android.provider.MediaStore.Audio.Artists._getContentUri11141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _Artists11142;
-				public Artists()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Artists() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Artists.staticClass, global::android.provider.MediaStore.Audio.Artists._Artists11142);
@@ -518,13 +518,13 @@ namespace android.provider
 					{
 					}
 					internal static global::MonoJavaBridge.MethodId _getContentUri11166;
-					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1) 
+					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Genres.Members.staticClass, global::android.provider.MediaStore.Audio.Genres.Members._getContentUri11166, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 					}
 					internal static global::MonoJavaBridge.MethodId _Members11167;
-					public Members()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+					public Members() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Genres.Members.staticClass, global::android.provider.MediaStore.Audio.Genres.Members._Members11167);
@@ -567,13 +567,13 @@ namespace android.provider
 					}
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11172;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Genres.staticClass, global::android.provider.MediaStore.Audio.Genres._getContentUri11172, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _Genres11173;
-				public Genres()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Genres() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Genres.staticClass, global::android.provider.MediaStore.Audio.Genres._Genres11173);
@@ -673,19 +673,19 @@ namespace android.provider
 				{
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11180;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._getContentUri11180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUriForPath11181;
-				public static global::android.net.Uri getContentUriForPath(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUriForPath(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._getContentUriForPath11181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _Media11182;
-				public Media()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Media() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._Media11182);
@@ -771,19 +771,19 @@ namespace android.provider
 					{
 					}
 					internal static global::MonoJavaBridge.MethodId _getContentUri11189;
-					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1) 
+					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._getContentUri11189, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.net.Uri;
 					}
 					internal static global::MonoJavaBridge.MethodId _moveItem11190;
-					public static bool moveItem(android.content.ContentResolver arg0, long arg1, int arg2, int arg3) 
+					public static bool moveItem(android.content.ContentResolver arg0, long arg1, int arg2, int arg3)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						return @__env.CallStaticBooleanMethod(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._moveItem11190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 					}
 					internal static global::MonoJavaBridge.MethodId _Members11191;
-					public Members()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+					public Members() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 					{
 						global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 						global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._Members11191);
@@ -841,13 +841,13 @@ namespace android.provider
 					}
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11198;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.Playlists.staticClass, global::android.provider.MediaStore.Audio.Playlists._getContentUri11198, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _Playlists11199;
-				public Playlists()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Playlists() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.Playlists.staticClass, global::android.provider.MediaStore.Audio.Playlists._Playlists11199);
@@ -957,13 +957,13 @@ namespace android.provider
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _keyFor11209;
-			public static global::java.lang.String keyFor(java.lang.String arg0) 
+			public static global::java.lang.String keyFor(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Audio.staticClass, global::android.provider.MediaStore.Audio._keyFor11209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _Audio11210;
-			public Audio()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Audio() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Audio.staticClass, global::android.provider.MediaStore.Audio._Audio11210);
@@ -1096,49 +1096,49 @@ namespace android.provider
 				{
 				}
 				internal static global::MonoJavaBridge.MethodId _query11221;
-				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2) 
+				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query11221, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.Cursor;
 				}
 				internal static global::MonoJavaBridge.MethodId _query11222;
-				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4) 
+				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query11222, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.database.Cursor;
 				}
 				internal static global::MonoJavaBridge.MethodId _query11223;
-				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String[] arg4, java.lang.String arg5) 
+				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String[] arg4, java.lang.String arg5)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query11223, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5))) as android.database.Cursor;
 				}
 				internal static global::MonoJavaBridge.MethodId _getBitmap11224;
-				public static global::android.graphics.Bitmap getBitmap(android.content.ContentResolver arg0, android.net.Uri arg1) 
+				public static global::android.graphics.Bitmap getBitmap(android.content.ContentResolver arg0, android.net.Uri arg1)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._getBitmap11224, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.graphics.Bitmap;
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11225;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._getContentUri11225, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _insertImage11226;
-				public static global::java.lang.String insertImage(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
+				public static global::java.lang.String insertImage(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._insertImage11226, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
 				}
 				internal static global::MonoJavaBridge.MethodId _insertImage11227;
-				public static global::java.lang.String insertImage(android.content.ContentResolver arg0, android.graphics.Bitmap arg1, java.lang.String arg2, java.lang.String arg3) 
+				public static global::java.lang.String insertImage(android.content.ContentResolver arg0, android.graphics.Bitmap arg1, java.lang.String arg2, java.lang.String arg3)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._insertImage11227, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.lang.String;
 				}
 				internal static global::MonoJavaBridge.MethodId _Media11228;
-				public Media()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Media() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._Media11228);
@@ -1204,55 +1204,55 @@ namespace android.provider
 				{
 				}
 				internal static global::MonoJavaBridge.MethodId _query11233;
-				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2) 
+				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._query11233, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.Cursor;
 				}
 				internal static global::MonoJavaBridge.MethodId _getThumbnail11234;
-				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, long arg2, int arg3, android.graphics.BitmapFactory.Options arg4) 
+				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, long arg2, int arg3, android.graphics.BitmapFactory.Options arg4)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getThumbnail11234, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.graphics.Bitmap;
 				}
 				internal static global::MonoJavaBridge.MethodId _getThumbnail11235;
-				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, android.graphics.BitmapFactory.Options arg3) 
+				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, android.graphics.BitmapFactory.Options arg3)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getThumbnail11235, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Bitmap;
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11236;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getContentUri11236, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _queryMiniThumbnails11237;
-				public static global::android.database.Cursor queryMiniThumbnails(android.content.ContentResolver arg0, android.net.Uri arg1, int arg2, java.lang.String[] arg3) 
+				public static global::android.database.Cursor queryMiniThumbnails(android.content.ContentResolver arg0, android.net.Uri arg1, int arg2, java.lang.String[] arg3)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnails11237, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.database.Cursor;
 				}
 				internal static global::MonoJavaBridge.MethodId _queryMiniThumbnail11238;
-				public static global::android.database.Cursor queryMiniThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, java.lang.String[] arg3) 
+				public static global::android.database.Cursor queryMiniThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, java.lang.String[] arg3)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnail11238, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.database.Cursor;
 				}
 				internal static global::MonoJavaBridge.MethodId _cancelThumbnailRequest11239;
-				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1, long arg2) 
+				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1, long arg2)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					@__env.CallStaticVoidMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest11239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				}
 				internal static global::MonoJavaBridge.MethodId _cancelThumbnailRequest11240;
-				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1) 
+				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					@__env.CallStaticVoidMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest11240, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				}
 				internal static global::MonoJavaBridge.MethodId _Thumbnails11241;
-				public Thumbnails()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Thumbnails() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._Thumbnails11241);
@@ -1364,7 +1364,7 @@ namespace android.provider
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _Images11254;
-			public Images()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Images() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Images.staticClass, global::android.provider.MediaStore.Images._Images11254);
@@ -1475,13 +1475,13 @@ namespace android.provider
 				{
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11262;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Video.Media.staticClass, global::android.provider.MediaStore.Video.Media._getContentUri11262, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _Media11263;
-				public Media()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Media() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Video.Media.staticClass, global::android.provider.MediaStore.Video.Media._Media11263);
@@ -1541,37 +1541,37 @@ namespace android.provider
 				{
 				}
 				internal static global::MonoJavaBridge.MethodId _getThumbnail11268;
-				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, android.graphics.BitmapFactory.Options arg3) 
+				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, android.graphics.BitmapFactory.Options arg3)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getThumbnail11268, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as android.graphics.Bitmap;
 				}
 				internal static global::MonoJavaBridge.MethodId _getThumbnail11269;
-				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, long arg2, int arg3, android.graphics.BitmapFactory.Options arg4) 
+				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, long arg2, int arg3, android.graphics.BitmapFactory.Options arg4)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Bitmap>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getThumbnail11269, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4))) as android.graphics.Bitmap;
 				}
 				internal static global::MonoJavaBridge.MethodId _getContentUri11270;
-				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
+				public static global::android.net.Uri getContentUri(java.lang.String arg0)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getContentUri11270, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.net.Uri;
 				}
 				internal static global::MonoJavaBridge.MethodId _cancelThumbnailRequest11271;
-				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1) 
+				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					@__env.CallStaticVoidMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest11271, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 				}
 				internal static global::MonoJavaBridge.MethodId _cancelThumbnailRequest11272;
-				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1, long arg2) 
+				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1, long arg2)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					@__env.CallStaticVoidMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest11272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 				}
 				internal static global::MonoJavaBridge.MethodId _Thumbnails11273;
-				public Thumbnails()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+				public Thumbnails() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 				{
 					global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 					global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._Thumbnails11273);
@@ -1811,13 +1811,13 @@ namespace android.provider
 				}
 			}
 			internal static global::MonoJavaBridge.MethodId _query11301;
-			public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2) 
+			public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.database.Cursor>(@__env.CallStaticObjectMethod(android.provider.MediaStore.Video.staticClass, global::android.provider.MediaStore.Video._query11301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.database.Cursor;
 			}
 			internal static global::MonoJavaBridge.MethodId _Video11302;
-			public Video()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Video() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.Video.staticClass, global::android.provider.MediaStore.Video._Video11302);
@@ -1846,13 +1846,13 @@ namespace android.provider
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMediaScannerUri11304;
-		public static global::android.net.Uri getMediaScannerUri() 
+		public static global::android.net.Uri getMediaScannerUri()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.provider.MediaStore.staticClass, global::android.provider.MediaStore._getMediaScannerUri11304)) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _MediaStore11305;
-		public MediaStore()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MediaStore() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.MediaStore.staticClass, global::android.provider.MediaStore._MediaStore11305);

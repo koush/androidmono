@@ -12,7 +12,7 @@ namespace java.util.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _push28088;
-		public virtual void push() 
+		public virtual void push()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._push28088);
 		}
 		internal static global::MonoJavaBridge.MethodId _flush28089;
-		public override void flush() 
+		public override void flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._flush28089);
 		}
 		internal static global::MonoJavaBridge.MethodId _close28090;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._close28090);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLoggable28091;
-		public override bool isLoggable(java.util.logging.LogRecord arg0) 
+		public override bool isLoggable(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.util.logging
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._isLoggable28091, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _publish28092;
-		public override void publish(java.util.logging.LogRecord arg0) 
+		public override void publish(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._publish28092, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPushLevel28093;
-		public virtual void setPushLevel(java.util.logging.Level arg0) 
+		public virtual void setPushLevel(java.util.logging.Level arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.util.logging
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPushLevel28094;
-		public virtual global::java.util.logging.Level getPushLevel() 
+		public virtual global::java.util.logging.Level getPushLevel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,14 +86,14 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._getPushLevel28094)) as java.util.logging.Level;
 		}
 		internal static global::MonoJavaBridge.MethodId _MemoryHandler28095;
-		public MemoryHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MemoryHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._MemoryHandler28095);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _MemoryHandler28096;
-		public MemoryHandler(java.util.logging.Handler arg0, int arg1, java.util.logging.Level arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MemoryHandler(java.util.logging.Handler arg0, int arg1, java.util.logging.Level arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.MemoryHandler.staticClass, global::java.util.logging.MemoryHandler._MemoryHandler28096, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

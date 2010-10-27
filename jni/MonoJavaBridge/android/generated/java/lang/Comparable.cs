@@ -18,7 +18,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo20078;
-		 int java.lang.Comparable.compareTo(java.lang.Object arg0) 
+		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

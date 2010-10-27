@@ -12,7 +12,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EmptyStackException26138;
-		public EmptyStackException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EmptyStackException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.EmptyStackException.staticClass, global::java.util.EmptyStackException._EmptyStackException26138);

@@ -12,14 +12,14 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CancellationException27102;
-		public CancellationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CancellationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.CancellationException.staticClass, global::java.util.concurrent.CancellationException._CancellationException27102);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CancellationException27103;
-		public CancellationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CancellationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.CancellationException.staticClass, global::java.util.concurrent.CancellationException._CancellationException27103, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

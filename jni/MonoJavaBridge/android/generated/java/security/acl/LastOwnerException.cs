@@ -12,7 +12,7 @@ namespace java.security.acl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _LastOwnerException23459;
-		public LastOwnerException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LastOwnerException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.acl.LastOwnerException.staticClass, global::java.security.acl.LastOwnerException._LastOwnerException23459);

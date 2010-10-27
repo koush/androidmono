@@ -19,7 +19,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel10113;
-		 void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1) 
+		void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Parcelable_.staticClass, global::android.os.Parcelable_._writeToParcel10113, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents10114;
-		 int android.os.Parcelable.describeContents() 
+		int android.os.Parcelable.describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

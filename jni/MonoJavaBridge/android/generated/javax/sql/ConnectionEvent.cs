@@ -19,7 +19,7 @@ namespace javax.sql
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSQLException30276;
-		public virtual global::java.sql.SQLException getSQLException() 
+		public virtual global::java.sql.SQLException getSQLException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,14 +28,14 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.ConnectionEvent.staticClass, global::javax.sql.ConnectionEvent._getSQLException30276)) as java.sql.SQLException;
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionEvent30277;
-		public ConnectionEvent(javax.sql.PooledConnection arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnectionEvent(javax.sql.PooledConnection arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.ConnectionEvent.staticClass, global::javax.sql.ConnectionEvent._ConnectionEvent30277, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionEvent30278;
-		public ConnectionEvent(javax.sql.PooledConnection arg0, java.sql.SQLException arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnectionEvent(javax.sql.PooledConnection arg0, java.sql.SQLException arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.sql.ConnectionEvent.staticClass, global::javax.sql.ConnectionEvent._ConnectionEvent30278, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

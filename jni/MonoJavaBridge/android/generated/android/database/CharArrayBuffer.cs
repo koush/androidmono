@@ -12,14 +12,14 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CharArrayBuffer4423;
-		public CharArrayBuffer(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CharArrayBuffer(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.CharArrayBuffer.staticClass, global::android.database.CharArrayBuffer._CharArrayBuffer4423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CharArrayBuffer4424;
-		public CharArrayBuffer(char[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CharArrayBuffer(char[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.CharArrayBuffer.staticClass, global::android.database.CharArrayBuffer._CharArrayBuffer4424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

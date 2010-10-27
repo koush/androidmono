@@ -12,25 +12,25 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _selectAll12906;
-		public static void selectAll(android.text.Spannable arg0) 
+		public static void selectAll(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._selectAll12906, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelection12907;
-		public static void setSelection(android.text.Spannable arg0, int arg1, int arg2) 
+		public static void setSelection(android.text.Spannable arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._setSelection12907, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelection12908;
-		public static void setSelection(android.text.Spannable arg0, int arg1) 
+		public static void setSelection(android.text.Spannable arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._setSelection12908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectionStart12909;
-		public static int getSelectionStart(java.lang.CharSequence arg0) 
+		public static int getSelectionStart(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.Selection.staticClass, global::android.text.Selection._getSelectionStart12909, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -40,7 +40,7 @@ namespace android.text
 			return getSelectionStart((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectionEnd12910;
-		public static int getSelectionEnd(java.lang.CharSequence arg0) 
+		public static int getSelectionEnd(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.text.Selection.staticClass, global::android.text.Selection._getSelectionEnd12910, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -50,85 +50,85 @@ namespace android.text
 			return getSelectionEnd((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _extendSelection12911;
-		public static void extendSelection(android.text.Spannable arg0, int arg1) 
+		public static void extendSelection(android.text.Spannable arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._extendSelection12911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeSelection12912;
-		public static void removeSelection(android.text.Spannable arg0) 
+		public static void removeSelection(android.text.Spannable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.Selection.staticClass, global::android.text.Selection._removeSelection12912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveUp12913;
-		public static bool moveUp(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool moveUp(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveUp12913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveDown12914;
-		public static bool moveDown(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool moveDown(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveDown12914, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveLeft12915;
-		public static bool moveLeft(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool moveLeft(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveLeft12915, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveRight12916;
-		public static bool moveRight(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool moveRight(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveRight12916, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendUp12917;
-		public static bool extendUp(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool extendUp(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendUp12917, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendDown12918;
-		public static bool extendDown(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool extendDown(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendDown12918, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendLeft12919;
-		public static bool extendLeft(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool extendLeft(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendLeft12919, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendRight12920;
-		public static bool extendRight(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool extendRight(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendRight12920, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendToLeftEdge12921;
-		public static bool extendToLeftEdge(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool extendToLeftEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendToLeftEdge12921, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _extendToRightEdge12922;
-		public static bool extendToRightEdge(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool extendToRightEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._extendToRightEdge12922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToLeftEdge12923;
-		public static bool moveToLeftEdge(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool moveToLeftEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveToLeftEdge12923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _moveToRightEdge12924;
-		public static bool moveToRightEdge(android.text.Spannable arg0, android.text.Layout arg1) 
+		public static bool moveToRightEdge(android.text.Spannable arg0, android.text.Layout arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(android.text.Selection.staticClass, global::android.text.Selection._moveToRightEdge12924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

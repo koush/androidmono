@@ -23,13 +23,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5386;
-			public static global::android.graphics.Paint.Align[] values() 
+			public static global::android.graphics.Paint.Align[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Paint.Align>(@__env.CallStaticObjectMethod(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._values5386)) as android.graphics.Paint.Align[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5387;
-			public static global::android.graphics.Paint.Align valueOf(java.lang.String arg0) 
+			public static global::android.graphics.Paint.Align valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.CallStaticObjectMethod(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._valueOf5387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Align;
@@ -84,13 +84,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5391;
-			public static global::android.graphics.Paint.Cap[] values() 
+			public static global::android.graphics.Paint.Cap[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Paint.Cap>(@__env.CallStaticObjectMethod(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._values5391)) as android.graphics.Paint.Cap[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5392;
-			public static global::android.graphics.Paint.Cap valueOf(java.lang.String arg0) 
+			public static global::android.graphics.Paint.Cap valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.CallStaticObjectMethod(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._valueOf5392, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Cap;
@@ -145,7 +145,7 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _FontMetrics5396;
-			public FontMetrics()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public FontMetrics() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Paint.FontMetrics.staticClass, global::android.graphics.Paint.FontMetrics._FontMetrics5396);
@@ -235,7 +235,7 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _toString5402;
-			public override global::java.lang.String toString() 
+			public override global::java.lang.String toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -244,7 +244,7 @@ namespace android.graphics
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.FontMetricsInt.staticClass, global::android.graphics.Paint.FontMetricsInt._toString5402)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _FontMetricsInt5403;
-			public FontMetricsInt()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public FontMetricsInt() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Paint.FontMetricsInt.staticClass, global::android.graphics.Paint.FontMetricsInt._FontMetricsInt5403);
@@ -335,13 +335,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5409;
-			public static global::android.graphics.Paint.Join[] values() 
+			public static global::android.graphics.Paint.Join[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Paint.Join>(@__env.CallStaticObjectMethod(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._values5409)) as android.graphics.Paint.Join[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5410;
-			public static global::android.graphics.Paint.Join valueOf(java.lang.String arg0) 
+			public static global::android.graphics.Paint.Join valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.CallStaticObjectMethod(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._valueOf5410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Join;
@@ -396,13 +396,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5414;
-			public static global::android.graphics.Paint.Style[] values() 
+			public static global::android.graphics.Paint.Style[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.Paint.Style>(@__env.CallStaticObjectMethod(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._values5414)) as android.graphics.Paint.Style[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5415;
-			public static global::android.graphics.Paint.Style valueOf(java.lang.String arg0) 
+			public static global::android.graphics.Paint.Style valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.CallStaticObjectMethod(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._valueOf5415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Paint.Style;
@@ -446,7 +446,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize5419;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -455,7 +455,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._finalize5419);
 		}
 		internal static global::MonoJavaBridge.MethodId _set5420;
-		public virtual void set(android.graphics.Paint arg0) 
+		public virtual void set(android.graphics.Paint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -464,7 +464,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._set5420, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _reset5421;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -484,7 +484,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFlags5422;
-		public virtual int getFlags() 
+		public virtual int getFlags()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -493,7 +493,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFlags5422);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFlags5423;
-		public virtual void setFlags(int arg0) 
+		public virtual void setFlags(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -513,7 +513,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColor5424;
-		public virtual int getColor() 
+		public virtual int getColor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -521,8 +521,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getColor5424);
 		}
+		public new bool Dither
+		{
+			set
+			{
+				setDither(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDither5425;
-		public virtual void setDither(bool arg0) 
+		public virtual void setDither(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -530,8 +537,15 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setDither5425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool FilterBitmap
+		{
+			set
+			{
+				setFilterBitmap(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setFilterBitmap5426;
-		public virtual void setFilterBitmap(bool arg0) 
+		public virtual void setFilterBitmap(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -540,7 +554,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setFilterBitmap5426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAlpha5427;
-		public virtual void setAlpha(int arg0) 
+		public virtual void setAlpha(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -549,7 +563,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setAlpha5427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setColorFilter5428;
-		public virtual global::android.graphics.ColorFilter setColorFilter(android.graphics.ColorFilter arg0) 
+		public virtual global::android.graphics.ColorFilter setColorFilter(android.graphics.ColorFilter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -558,7 +572,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setColorFilter5428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.ColorFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTypeface5429;
-		public virtual global::android.graphics.Typeface setTypeface(android.graphics.Typeface arg0) 
+		public virtual global::android.graphics.Typeface setTypeface(android.graphics.Typeface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -578,7 +592,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextSize5430;
-		public virtual float getTextSize() 
+		public virtual float getTextSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -587,7 +601,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextSize5430);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextSize5431;
-		public virtual void setTextSize(float arg0) 
+		public virtual void setTextSize(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -607,7 +621,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextScaleX5432;
-		public virtual float getTextScaleX() 
+		public virtual float getTextScaleX()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -616,7 +630,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextScaleX5432);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextScaleX5433;
-		public virtual void setTextScaleX(float arg0) 
+		public virtual void setTextScaleX(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -630,9 +644,13 @@ namespace android.graphics
 			{
 				return getTypeface();
 			}
+			set
+			{
+				setTypeface(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTypeface5434;
-		public virtual global::android.graphics.Typeface getTypeface() 
+		public virtual global::android.graphics.Typeface getTypeface()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -641,7 +659,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTypeface5434)) as android.graphics.Typeface;
 		}
 		internal static global::MonoJavaBridge.MethodId _setShadowLayer5435;
-		public virtual void setShadowLayer(float arg0, float arg1, float arg2, int arg3) 
+		public virtual void setShadowLayer(float arg0, float arg1, float arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -661,7 +679,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlpha5436;
-		public virtual int getAlpha() 
+		public virtual int getAlpha()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -670,7 +688,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getAlpha5436);
 		}
 		internal static global::MonoJavaBridge.MethodId _isAntiAlias5437;
-		public virtual bool isAntiAlias() 
+		public virtual bool isAntiAlias()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -678,8 +696,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isAntiAlias5437);
 		}
+		public new bool AntiAlias
+		{
+			set
+			{
+				setAntiAlias(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setAntiAlias5438;
-		public virtual void setAntiAlias(bool arg0) 
+		public virtual void setAntiAlias(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -688,7 +713,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setAntiAlias5438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isDither5439;
-		public virtual bool isDither() 
+		public virtual bool isDither()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -697,7 +722,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isDither5439);
 		}
 		internal static global::MonoJavaBridge.MethodId _isLinearText5440;
-		public virtual bool isLinearText() 
+		public virtual bool isLinearText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -705,8 +730,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isLinearText5440);
 		}
+		public new bool LinearText
+		{
+			set
+			{
+				setLinearText(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setLinearText5441;
-		public virtual void setLinearText(bool arg0) 
+		public virtual void setLinearText(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -715,7 +747,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setLinearText5441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSubpixelText5442;
-		public virtual bool isSubpixelText() 
+		public virtual bool isSubpixelText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -723,8 +755,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isSubpixelText5442);
 		}
+		public new bool SubpixelText
+		{
+			set
+			{
+				setSubpixelText(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setSubpixelText5443;
-		public virtual void setSubpixelText(bool arg0) 
+		public virtual void setSubpixelText(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -733,7 +772,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setSubpixelText5443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isUnderlineText5444;
-		public virtual bool isUnderlineText() 
+		public virtual bool isUnderlineText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -741,8 +780,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isUnderlineText5444);
 		}
+		public new bool UnderlineText
+		{
+			set
+			{
+				setUnderlineText(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setUnderlineText5445;
-		public virtual void setUnderlineText(bool arg0) 
+		public virtual void setUnderlineText(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -751,7 +797,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setUnderlineText5445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isStrikeThruText5446;
-		public virtual bool isStrikeThruText() 
+		public virtual bool isStrikeThruText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -759,8 +805,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isStrikeThruText5446);
 		}
+		public new bool StrikeThruText
+		{
+			set
+			{
+				setStrikeThruText(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setStrikeThruText5447;
-		public virtual void setStrikeThruText(bool arg0) 
+		public virtual void setStrikeThruText(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -769,7 +822,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrikeThruText5447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isFakeBoldText5448;
-		public virtual bool isFakeBoldText() 
+		public virtual bool isFakeBoldText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -777,8 +830,15 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isFakeBoldText5448);
 		}
+		public new bool FakeBoldText
+		{
+			set
+			{
+				setFakeBoldText(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setFakeBoldText5449;
-		public virtual void setFakeBoldText(bool arg0) 
+		public virtual void setFakeBoldText(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -787,7 +847,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setFakeBoldText5449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isFilterBitmap5450;
-		public virtual bool isFilterBitmap() 
+		public virtual bool isFilterBitmap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -796,7 +856,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isFilterBitmap5450);
 		}
 		internal static global::MonoJavaBridge.MethodId _getStyle5451;
-		public virtual global::android.graphics.Paint.Style getStyle() 
+		public virtual global::android.graphics.Paint.Style getStyle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -805,7 +865,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Style>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStyle5451)) as android.graphics.Paint.Style;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStyle5452;
-		public virtual void setStyle(android.graphics.Paint.Style arg0) 
+		public virtual void setStyle(android.graphics.Paint.Style arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -814,7 +874,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStyle5452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setColor5453;
-		public virtual void setColor(int arg0) 
+		public virtual void setColor(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -823,7 +883,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setColor5453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setARGB5454;
-		public virtual void setARGB(int arg0, int arg1, int arg2, int arg3) 
+		public virtual void setARGB(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -843,7 +903,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrokeWidth5455;
-		public virtual float getStrokeWidth() 
+		public virtual float getStrokeWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -852,7 +912,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeWidth5455);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrokeWidth5456;
-		public virtual void setStrokeWidth(float arg0) 
+		public virtual void setStrokeWidth(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -872,7 +932,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrokeMiter5457;
-		public virtual float getStrokeMiter() 
+		public virtual float getStrokeMiter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -881,7 +941,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeMiter5457);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrokeMiter5458;
-		public virtual void setStrokeMiter(float arg0) 
+		public virtual void setStrokeMiter(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -901,7 +961,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrokeCap5459;
-		public virtual global::android.graphics.Paint.Cap getStrokeCap() 
+		public virtual global::android.graphics.Paint.Cap getStrokeCap()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -910,7 +970,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Cap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeCap5459)) as android.graphics.Paint.Cap;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrokeCap5460;
-		public virtual void setStrokeCap(android.graphics.Paint.Cap arg0) 
+		public virtual void setStrokeCap(android.graphics.Paint.Cap arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -930,7 +990,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStrokeJoin5461;
-		public virtual global::android.graphics.Paint.Join getStrokeJoin() 
+		public virtual global::android.graphics.Paint.Join getStrokeJoin()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -939,7 +999,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Join>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeJoin5461)) as android.graphics.Paint.Join;
 		}
 		internal static global::MonoJavaBridge.MethodId _setStrokeJoin5462;
-		public virtual void setStrokeJoin(android.graphics.Paint.Join arg0) 
+		public virtual void setStrokeJoin(android.graphics.Paint.Join arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -948,7 +1008,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrokeJoin5462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFillPath5463;
-		public virtual bool getFillPath(android.graphics.Path arg0, android.graphics.Path arg1) 
+		public virtual bool getFillPath(android.graphics.Path arg0, android.graphics.Path arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -962,9 +1022,13 @@ namespace android.graphics
 			{
 				return getShader();
 			}
+			set
+			{
+				setShader(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShader5464;
-		public virtual global::android.graphics.Shader getShader() 
+		public virtual global::android.graphics.Shader getShader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -973,7 +1037,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getShader5464)) as android.graphics.Shader;
 		}
 		internal static global::MonoJavaBridge.MethodId _setShader5465;
-		public virtual global::android.graphics.Shader setShader(android.graphics.Shader arg0) 
+		public virtual global::android.graphics.Shader setShader(android.graphics.Shader arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -987,9 +1051,13 @@ namespace android.graphics
 			{
 				return getColorFilter();
 			}
+			set
+			{
+				setColorFilter(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColorFilter5466;
-		public virtual global::android.graphics.ColorFilter getColorFilter() 
+		public virtual global::android.graphics.ColorFilter getColorFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1003,9 +1071,13 @@ namespace android.graphics
 			{
 				return getXfermode();
 			}
+			set
+			{
+				setXfermode(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getXfermode5467;
-		public virtual global::android.graphics.Xfermode getXfermode() 
+		public virtual global::android.graphics.Xfermode getXfermode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1014,7 +1086,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getXfermode5467)) as android.graphics.Xfermode;
 		}
 		internal static global::MonoJavaBridge.MethodId _setXfermode5468;
-		public virtual global::android.graphics.Xfermode setXfermode(android.graphics.Xfermode arg0) 
+		public virtual global::android.graphics.Xfermode setXfermode(android.graphics.Xfermode arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1028,9 +1100,13 @@ namespace android.graphics
 			{
 				return getPathEffect();
 			}
+			set
+			{
+				setPathEffect(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPathEffect5469;
-		public virtual global::android.graphics.PathEffect getPathEffect() 
+		public virtual global::android.graphics.PathEffect getPathEffect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1039,7 +1115,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getPathEffect5469)) as android.graphics.PathEffect;
 		}
 		internal static global::MonoJavaBridge.MethodId _setPathEffect5470;
-		public virtual global::android.graphics.PathEffect setPathEffect(android.graphics.PathEffect arg0) 
+		public virtual global::android.graphics.PathEffect setPathEffect(android.graphics.PathEffect arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1053,9 +1129,13 @@ namespace android.graphics
 			{
 				return getMaskFilter();
 			}
+			set
+			{
+				setMaskFilter(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaskFilter5471;
-		public virtual global::android.graphics.MaskFilter getMaskFilter() 
+		public virtual global::android.graphics.MaskFilter getMaskFilter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1064,7 +1144,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getMaskFilter5471)) as android.graphics.MaskFilter;
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaskFilter5472;
-		public virtual global::android.graphics.MaskFilter setMaskFilter(android.graphics.MaskFilter arg0) 
+		public virtual global::android.graphics.MaskFilter setMaskFilter(android.graphics.MaskFilter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1078,9 +1158,13 @@ namespace android.graphics
 			{
 				return getRasterizer();
 			}
+			set
+			{
+				setRasterizer(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRasterizer5473;
-		public virtual global::android.graphics.Rasterizer getRasterizer() 
+		public virtual global::android.graphics.Rasterizer getRasterizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1089,7 +1173,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getRasterizer5473)) as android.graphics.Rasterizer;
 		}
 		internal static global::MonoJavaBridge.MethodId _setRasterizer5474;
-		public virtual global::android.graphics.Rasterizer setRasterizer(android.graphics.Rasterizer arg0) 
+		public virtual global::android.graphics.Rasterizer setRasterizer(android.graphics.Rasterizer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1098,7 +1182,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setRasterizer5474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.Rasterizer;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearShadowLayer5475;
-		public virtual void clearShadowLayer() 
+		public virtual void clearShadowLayer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1118,7 +1202,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextAlign5476;
-		public virtual global::android.graphics.Paint.Align getTextAlign() 
+		public virtual global::android.graphics.Paint.Align getTextAlign()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1127,7 +1211,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.Paint.Align>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextAlign5476)) as android.graphics.Paint.Align;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextAlign5477;
-		public virtual void setTextAlign(android.graphics.Paint.Align arg0) 
+		public virtual void setTextAlign(android.graphics.Paint.Align arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1147,7 +1231,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextSkewX5478;
-		public virtual float getTextSkewX() 
+		public virtual float getTextSkewX()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1156,7 +1240,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextSkewX5478);
 		}
 		internal static global::MonoJavaBridge.MethodId _setTextSkewX5479;
-		public virtual void setTextSkewX(float arg0) 
+		public virtual void setTextSkewX(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1165,7 +1249,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setTextSkewX5479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ascent5480;
-		public virtual float ascent() 
+		public virtual float ascent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1174,7 +1258,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._ascent5480);
 		}
 		internal static global::MonoJavaBridge.MethodId _descent5481;
-		public virtual float descent() 
+		public virtual float descent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1183,7 +1267,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._descent5481);
 		}
 		internal static global::MonoJavaBridge.MethodId _getFontMetrics5482;
-		public virtual global::android.graphics.Paint.FontMetrics getFontMetrics() 
+		public virtual global::android.graphics.Paint.FontMetrics getFontMetrics()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1192,7 +1276,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetrics5482)) as android.graphics.Paint.FontMetrics;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFontMetrics5483;
-		public virtual float getFontMetrics(android.graphics.Paint.FontMetrics arg0) 
+		public virtual float getFontMetrics(android.graphics.Paint.FontMetrics arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1201,7 +1285,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetrics5483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFontMetricsInt5484;
-		public virtual global::android.graphics.Paint.FontMetricsInt getFontMetricsInt() 
+		public virtual global::android.graphics.Paint.FontMetricsInt getFontMetricsInt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1210,7 +1294,7 @@ namespace android.graphics
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetricsInt5484)) as android.graphics.Paint.FontMetricsInt;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFontMetricsInt5485;
-		public virtual int getFontMetricsInt(android.graphics.Paint.FontMetricsInt arg0) 
+		public virtual int getFontMetricsInt(android.graphics.Paint.FontMetricsInt arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1226,7 +1310,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFontSpacing5486;
-		public virtual float getFontSpacing() 
+		public virtual float getFontSpacing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1235,7 +1319,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontSpacing5486);
 		}
 		internal static global::MonoJavaBridge.MethodId _measureText5487;
-		public virtual float measureText(java.lang.String arg0, int arg1, int arg2) 
+		public virtual float measureText(java.lang.String arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1244,7 +1328,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText5487, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _measureText5488;
-		public virtual float measureText(java.lang.String arg0) 
+		public virtual float measureText(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1253,7 +1337,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText5488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _measureText5489;
-		public virtual float measureText(java.lang.CharSequence arg0, int arg1, int arg2) 
+		public virtual float measureText(java.lang.CharSequence arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1266,7 +1350,7 @@ namespace android.graphics
 			return measureText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _measureText5490;
-		public virtual float measureText(char[] arg0, int arg1, int arg2) 
+		public virtual float measureText(char[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1275,7 +1359,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText5490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _breakText5491;
-		public virtual int breakText(java.lang.CharSequence arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5) 
+		public virtual int breakText(java.lang.CharSequence arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1288,7 +1372,7 @@ namespace android.graphics
 			return breakText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 		internal static global::MonoJavaBridge.MethodId _breakText5492;
-		public virtual int breakText(java.lang.String arg0, bool arg1, float arg2, float[] arg3) 
+		public virtual int breakText(java.lang.String arg0, bool arg1, float arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1297,7 +1381,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._breakText5492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _breakText5493;
-		public virtual int breakText(char[] arg0, int arg1, int arg2, float arg3, float[] arg4) 
+		public virtual int breakText(char[] arg0, int arg1, int arg2, float arg3, float[] arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1306,7 +1390,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._breakText5493, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextWidths5494;
-		public virtual int getTextWidths(java.lang.CharSequence arg0, int arg1, int arg2, float[] arg3) 
+		public virtual int getTextWidths(java.lang.CharSequence arg0, int arg1, int arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1319,7 +1403,7 @@ namespace android.graphics
 			return getTextWidths((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextWidths5495;
-		public virtual int getTextWidths(java.lang.String arg0, int arg1, int arg2, float[] arg3) 
+		public virtual int getTextWidths(java.lang.String arg0, int arg1, int arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1328,7 +1412,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths5495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextWidths5496;
-		public virtual int getTextWidths(java.lang.String arg0, float[] arg1) 
+		public virtual int getTextWidths(java.lang.String arg0, float[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1337,7 +1421,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths5496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextWidths5497;
-		public virtual int getTextWidths(char[] arg0, int arg1, int arg2, float[] arg3) 
+		public virtual int getTextWidths(char[] arg0, int arg1, int arg2, float[] arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1346,7 +1430,7 @@ namespace android.graphics
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths5497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextPath5498;
-		public virtual void getTextPath(java.lang.String arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Path arg5) 
+		public virtual void getTextPath(java.lang.String arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Path arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1355,7 +1439,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextPath5498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextPath5499;
-		public virtual void getTextPath(char[] arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Path arg5) 
+		public virtual void getTextPath(char[] arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Path arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1364,7 +1448,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextPath5499, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextBounds5500;
-		public virtual void getTextBounds(java.lang.String arg0, int arg1, int arg2, android.graphics.Rect arg3) 
+		public virtual void getTextBounds(java.lang.String arg0, int arg1, int arg2, android.graphics.Rect arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1373,7 +1457,7 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextBounds5500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTextBounds5501;
-		public virtual void getTextBounds(char[] arg0, int arg1, int arg2, android.graphics.Rect arg3) 
+		public virtual void getTextBounds(char[] arg0, int arg1, int arg2, android.graphics.Rect arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -1382,21 +1466,21 @@ namespace android.graphics
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextBounds5501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _Paint5502;
-		public Paint()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Paint() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Paint.staticClass, global::android.graphics.Paint._Paint5502);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Paint5503;
-		public Paint(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Paint(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Paint.staticClass, global::android.graphics.Paint._Paint5503, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Paint5504;
-		public Paint(android.graphics.Paint arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Paint(android.graphics.Paint arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.Paint.staticClass, global::android.graphics.Paint._Paint5504, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

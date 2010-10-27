@@ -12,7 +12,7 @@ namespace javax.xml.xpath
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace31297;
-		public override void printStackTrace(java.io.PrintStream arg0) 
+		public override void printStackTrace(java.io.PrintStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.xml.xpath
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._printStackTrace31297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace31298;
-		public override void printStackTrace() 
+		public override void printStackTrace()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.xml.xpath
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._printStackTrace31298);
 		}
 		internal static global::MonoJavaBridge.MethodId _printStackTrace31299;
-		public override void printStackTrace(java.io.PrintWriter arg0) 
+		public override void printStackTrace(java.io.PrintWriter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace javax.xml.xpath
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCause31300;
-		public override global::java.lang.Throwable getCause() 
+		public override global::java.lang.Throwable getCause()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,14 +55,14 @@ namespace javax.xml.xpath
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._getCause31300)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _XPathException31301;
-		public XPathException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public XPathException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._XPathException31301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _XPathException31302;
-		public XPathException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public XPathException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.xpath.XPathException.staticClass, global::javax.xml.xpath.XPathException._XPathException31302, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage26311;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCodePoint26312;
-		public virtual int getCodePoint() 
+		public virtual int getCodePoint()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.IllegalFormatCodePointException.staticClass, global::java.util.IllegalFormatCodePointException._getCodePoint26312);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalFormatCodePointException26313;
-		public IllegalFormatCodePointException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalFormatCodePointException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.IllegalFormatCodePointException.staticClass, global::java.util.IllegalFormatCodePointException._IllegalFormatCodePointException26313, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

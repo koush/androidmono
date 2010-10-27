@@ -11,8 +11,15 @@ namespace org.apache.http.conn.@params
 		protected ConnRouteParamBean(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
+		public new global::org.apache.http.HttpHost DefaultProxy
+		{
+			set
+			{
+				setDefaultProxy(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultProxy32202;
-		public virtual void setDefaultProxy(org.apache.http.HttpHost arg0) 
+		public virtual void setDefaultProxy(org.apache.http.HttpHost arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +27,15 @@ namespace org.apache.http.conn.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, global::org.apache.http.conn.@params.ConnRouteParamBean._setDefaultProxy32202, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.net.InetAddress LocalAddress
+		{
+			set
+			{
+				setLocalAddress(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setLocalAddress32203;
-		public virtual void setLocalAddress(java.net.InetAddress arg0) 
+		public virtual void setLocalAddress(java.net.InetAddress arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,8 +43,15 @@ namespace org.apache.http.conn.@params
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, global::org.apache.http.conn.@params.ConnRouteParamBean._setLocalAddress32203, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::org.apache.http.conn.routing.HttpRoute ForcedRoute
+		{
+			set
+			{
+				setForcedRoute(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setForcedRoute32204;
-		public virtual void setForcedRoute(org.apache.http.conn.routing.HttpRoute arg0) 
+		public virtual void setForcedRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +60,7 @@ namespace org.apache.http.conn.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnRouteParamBean.staticClass, global::org.apache.http.conn.@params.ConnRouteParamBean._setForcedRoute32204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnRouteParamBean32205;
-		public ConnRouteParamBean(org.apache.http.@params.HttpParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnRouteParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnRouteParamBean.staticClass, global::org.apache.http.conn.@params.ConnRouteParamBean._ConnRouteParamBean32205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

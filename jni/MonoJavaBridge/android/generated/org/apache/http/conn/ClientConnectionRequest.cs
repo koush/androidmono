@@ -19,7 +19,7 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection32085;
-		 global::org.apache.http.conn.ManagedClientConnection org.apache.http.conn.ClientConnectionRequest.getConnection(long arg0, java.util.concurrent.TimeUnit arg1) 
+		global::org.apache.http.conn.ManagedClientConnection org.apache.http.conn.ClientConnectionRequest.getConnection(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.conn
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.conn.ManagedClientConnection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.ClientConnectionRequest_.staticClass, global::org.apache.http.conn.ClientConnectionRequest_._getConnection32085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.conn.ManagedClientConnection;
 		}
 		internal static global::MonoJavaBridge.MethodId _abortRequest32086;
-		 void org.apache.http.conn.ClientConnectionRequest.abortRequest() 
+		void org.apache.http.conn.ClientConnectionRequest.abortRequest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

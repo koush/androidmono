@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _register10184;
-		public virtual bool register(android.os.IInterface arg0) 
+		public virtual bool register(android.os.IInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace android.os
 			return register((global::android.os.IInterfaceDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _register10185;
-		public virtual bool register(android.os.IInterface arg0, java.lang.Object arg1) 
+		public virtual bool register(android.os.IInterface arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.os
 			return register((global::android.os.IInterfaceDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _unregister10186;
-		public virtual bool unregister(android.os.IInterface arg0) 
+		public virtual bool unregister(android.os.IInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace android.os
 			return unregister((global::android.os.IInterfaceDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _kill10187;
-		public virtual void kill() 
+		public virtual void kill()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._kill10187);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCallbackDied10188;
-		public virtual void onCallbackDied(android.os.IInterface arg0) 
+		public virtual void onCallbackDied(android.os.IInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace android.os
 			onCallbackDied((global::android.os.IInterfaceDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCallbackDied10189;
-		public virtual void onCallbackDied(android.os.IInterface arg0, java.lang.Object arg1) 
+		public virtual void onCallbackDied(android.os.IInterface arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace android.os
 			onCallbackDied((global::android.os.IInterfaceDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _beginBroadcast10190;
-		public virtual int beginBroadcast() 
+		public virtual int beginBroadcast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,7 +95,7 @@ namespace android.os
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._beginBroadcast10190);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBroadcastItem10191;
-		public virtual global::android.os.IInterface getBroadcastItem(int arg0) 
+		public virtual global::android.os.IInterface getBroadcastItem(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -104,7 +104,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.IInterface>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._getBroadcastItem10191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.IInterface;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBroadcastCookie10192;
-		public virtual global::java.lang.Object getBroadcastCookie(int arg0) 
+		public virtual global::java.lang.Object getBroadcastCookie(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -113,7 +113,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._getBroadcastCookie10192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _finishBroadcast10193;
-		public virtual void finishBroadcast() 
+		public virtual void finishBroadcast()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -122,7 +122,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._finishBroadcast10193);
 		}
 		internal static global::MonoJavaBridge.MethodId _RemoteCallbackList10194;
-		public RemoteCallbackList()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RemoteCallbackList() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._RemoteCallbackList10194);

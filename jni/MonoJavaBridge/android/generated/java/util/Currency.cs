@@ -12,7 +12,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString26079;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,13 +21,13 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._toString26079)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance26080;
-		public static global::java.util.Currency getInstance(java.util.Locale arg0) 
+		public static global::java.util.Currency getInstance(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Currency>(@__env.CallStaticObjectMethod(java.util.Currency.staticClass, global::java.util.Currency._getInstance26080, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Currency;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance26081;
-		public static global::java.util.Currency getInstance(java.lang.String arg0) 
+		public static global::java.util.Currency getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Currency>(@__env.CallStaticObjectMethod(java.util.Currency.staticClass, global::java.util.Currency._getInstance26081, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Currency;
@@ -40,7 +40,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrencyCode26082;
-		public global::java.lang.String getCurrencyCode() 
+		public global::java.lang.String getCurrencyCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,7 +49,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Currency.staticClass, global::java.util.Currency._getCurrencyCode26082)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getSymbol26083;
-		public global::java.lang.String getSymbol(java.util.Locale arg0) 
+		public global::java.lang.String getSymbol(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSymbol26084;
-		public global::java.lang.String getSymbol() 
+		public global::java.lang.String getSymbol()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -81,7 +81,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultFractionDigits26085;
-		public int getDefaultFractionDigits() 
+		public int getDefaultFractionDigits()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoClassDefFoundError20342;
-		public NoClassDefFoundError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoClassDefFoundError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError20342);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NoClassDefFoundError20343;
-		public NoClassDefFoundError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoClassDefFoundError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoClassDefFoundError.staticClass, global::java.lang.NoClassDefFoundError._NoClassDefFoundError20343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

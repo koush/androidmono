@@ -12,7 +12,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23613;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._toString23613)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23614;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCollection23615;
-		public virtual global::java.util.Collection getCollection() 
+		public virtual global::java.util.Collection getCollection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,14 +46,14 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._getCollection23615)) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _CollectionCertStoreParameters23616;
-		public CollectionCertStoreParameters(java.util.Collection arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CollectionCertStoreParameters(java.util.Collection arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._CollectionCertStoreParameters23616, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CollectionCertStoreParameters23617;
-		public CollectionCertStoreParameters()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CollectionCertStoreParameters() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CollectionCertStoreParameters.staticClass, global::java.security.cert.CollectionCertStoreParameters._CollectionCertStoreParameters23617);

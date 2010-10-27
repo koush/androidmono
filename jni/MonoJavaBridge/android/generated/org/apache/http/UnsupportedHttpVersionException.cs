@@ -12,14 +12,14 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedHttpVersionException31770;
-		public UnsupportedHttpVersionException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedHttpVersionException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.UnsupportedHttpVersionException.staticClass, global::org.apache.http.UnsupportedHttpVersionException._UnsupportedHttpVersionException31770);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedHttpVersionException31771;
-		public UnsupportedHttpVersionException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedHttpVersionException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.UnsupportedHttpVersionException.staticClass, global::org.apache.http.UnsupportedHttpVersionException._UnsupportedHttpVersionException31771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get21049;
-		public global::java.lang.Object get(java.lang.Object arg0) 
+		public global::java.lang.Object get(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._get21049, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _equals21050;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._equals21050, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString21051;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._toString21051)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode21052;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getModifiers21053;
-		public int getModifiers() 
+		public int getModifiers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getModifiers21053);
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean21054;
-		public bool getBoolean(java.lang.Object arg0) 
+		public bool getBoolean(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getBoolean21054, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByte21055;
-		public byte getByte(java.lang.Object arg0) 
+		public byte getByte(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualByteMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getByte21055, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getShort21056;
-		public short getShort(java.lang.Object arg0) 
+		public short getShort(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getShort21056, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getChar21057;
-		public char getChar(java.lang.Object arg0) 
+		public char getChar(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getChar21057, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt21058;
-		public int getInt(java.lang.Object arg0) 
+		public int getInt(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getInt21058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong21059;
-		public long getLong(java.lang.Object arg0) 
+		public long getLong(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getLong21059, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat21060;
-		public float getFloat(java.lang.Object arg0) 
+		public float getFloat(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace java.lang.reflect
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getFloat21060, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble21061;
-		public double getDouble(java.lang.Object arg0) 
+		public double getDouble(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName21062;
-		public global::java.lang.String getName() 
+		public global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getName21062)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isSynthetic21063;
-		public bool isSynthetic() 
+		public bool isSynthetic()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -168,7 +168,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaringClass21064;
-		public global::java.lang.Class getDeclaringClass() 
+		public global::java.lang.Class getDeclaringClass()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -177,7 +177,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getDeclaringClass21064)) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAnnotation21065;
-		public sealed override global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0) 
+		public sealed override global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -193,7 +193,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeclaredAnnotations21066;
-		public sealed override global::java.lang.annotation.Annotation[] getDeclaredAnnotations() 
+		public sealed override global::java.lang.annotation.Annotation[] getDeclaredAnnotations()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -202,7 +202,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.annotation.Annotation>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getDeclaredAnnotations21066)) as java.lang.annotation.Annotation[];
 		}
 		internal static global::MonoJavaBridge.MethodId _isEnumConstant21067;
-		public bool isEnumConstant() 
+		public bool isEnumConstant()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -218,7 +218,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType21068;
-		public global::java.lang.Class getType() 
+		public global::java.lang.Class getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -234,7 +234,7 @@ namespace java.lang.reflect
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getGenericType21069;
-		public global::java.lang.reflect.Type getGenericType() 
+		public global::java.lang.reflect.Type getGenericType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -243,7 +243,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._getGenericType21069)) as java.lang.reflect.Type;
 		}
 		internal static global::MonoJavaBridge.MethodId _toGenericString21070;
-		public global::java.lang.String toGenericString() 
+		public global::java.lang.String toGenericString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -252,7 +252,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._toGenericString21070)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _set21071;
-		public void set(java.lang.Object arg0, java.lang.Object arg1) 
+		public void set(java.lang.Object arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -261,7 +261,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._set21071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBoolean21072;
-		public void setBoolean(java.lang.Object arg0, bool arg1) 
+		public void setBoolean(java.lang.Object arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -270,7 +270,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setBoolean21072, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setByte21073;
-		public void setByte(java.lang.Object arg0, byte arg1) 
+		public void setByte(java.lang.Object arg0, byte arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -279,7 +279,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setByte21073, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setChar21074;
-		public void setChar(java.lang.Object arg0, char arg1) 
+		public void setChar(java.lang.Object arg0, char arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -288,7 +288,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setChar21074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShort21075;
-		public void setShort(java.lang.Object arg0, short arg1) 
+		public void setShort(java.lang.Object arg0, short arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -297,7 +297,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setShort21075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInt21076;
-		public void setInt(java.lang.Object arg0, int arg1) 
+		public void setInt(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -306,7 +306,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setInt21076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLong21077;
-		public void setLong(java.lang.Object arg0, long arg1) 
+		public void setLong(java.lang.Object arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -315,7 +315,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setLong21077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFloat21078;
-		public void setFloat(java.lang.Object arg0, float arg1) 
+		public void setFloat(java.lang.Object arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -324,7 +324,7 @@ namespace java.lang.reflect
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.lang.reflect.Field.staticClass, global::java.lang.reflect.Field._setFloat21078, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDouble21079;
-		public void setDouble(java.lang.Object arg0, double arg1) 
+		public void setDouble(java.lang.Object arg0, double arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

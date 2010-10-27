@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ClosedByInterruptException22416;
-		public ClosedByInterruptException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClosedByInterruptException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ClosedByInterruptException.staticClass, global::java.nio.channels.ClosedByInterruptException._ClosedByInterruptException22416);

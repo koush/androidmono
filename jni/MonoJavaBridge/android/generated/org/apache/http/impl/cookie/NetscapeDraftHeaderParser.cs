@@ -12,7 +12,7 @@ namespace org.apache.http.impl.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parseHeader33309;
-		public virtual global::org.apache.http.HeaderElement parseHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1) 
+		public virtual global::org.apache.http.HeaderElement parseHeader(org.apache.http.util.CharArrayBuffer arg0, org.apache.http.message.ParserCursor arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HeaderElement>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser._parseHeader33309, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HeaderElement;
 		}
 		internal static global::MonoJavaBridge.MethodId _NetscapeDraftHeaderParser33310;
-		public NetscapeDraftHeaderParser()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NetscapeDraftHeaderParser() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.NetscapeDraftHeaderParser.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftHeaderParser._NetscapeDraftHeaderParser33310);

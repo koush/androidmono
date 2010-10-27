@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ClosedSelectorException22418;
-		public ClosedSelectorException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClosedSelectorException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ClosedSelectorException.staticClass, global::java.nio.channels.ClosedSelectorException._ClosedSelectorException22418);

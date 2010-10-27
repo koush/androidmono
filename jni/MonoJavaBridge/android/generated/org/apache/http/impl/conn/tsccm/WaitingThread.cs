@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _interrupt33184;
-		public virtual void interrupt() 
+		public virtual void interrupt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPool33185;
-		public virtual global::org.apache.http.impl.conn.tsccm.RouteSpecificPool getPool() 
+		public virtual global::org.apache.http.impl.conn.tsccm.RouteSpecificPool getPool()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getThread33186;
-		public virtual global::java.lang.Thread getThread() 
+		public virtual global::java.lang.Thread getThread()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.WaitingThread.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThread._getThread33186)) as java.lang.Thread;
 		}
 		internal static global::MonoJavaBridge.MethodId _wakeup33187;
-		public virtual void wakeup() 
+		public virtual void wakeup()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.WaitingThread.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThread._wakeup33187);
 		}
 		internal static global::MonoJavaBridge.MethodId _await33188;
-		public virtual bool await(java.util.Date arg0) 
+		public virtual bool await(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCondition33189;
-		public virtual global::java.util.concurrent.locks.Condition getCondition() 
+		public virtual global::java.util.concurrent.locks.Condition getCondition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Condition>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.WaitingThread.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThread._getCondition33189)) as java.util.concurrent.locks.Condition;
 		}
 		internal static global::MonoJavaBridge.MethodId _WaitingThread33190;
-		public WaitingThread(java.util.concurrent.locks.Condition arg0, org.apache.http.impl.conn.tsccm.RouteSpecificPool arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public WaitingThread(java.util.concurrent.locks.Condition arg0, org.apache.http.impl.conn.tsccm.RouteSpecificPool arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.WaitingThread.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThread._WaitingThread33190, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

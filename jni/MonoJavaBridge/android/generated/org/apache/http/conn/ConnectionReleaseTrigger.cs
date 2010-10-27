@@ -19,7 +19,7 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseConnection32092;
-		 void org.apache.http.conn.ConnectionReleaseTrigger.releaseConnection() 
+		void org.apache.http.conn.ConnectionReleaseTrigger.releaseConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.conn
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ConnectionReleaseTrigger_.staticClass, global::org.apache.http.conn.ConnectionReleaseTrigger_._releaseConnection32092);
 		}
 		internal static global::MonoJavaBridge.MethodId _abortConnection32093;
-		 void org.apache.http.conn.ConnectionReleaseTrigger.abortConnection() 
+		void org.apache.http.conn.ConnectionReleaseTrigger.abortConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

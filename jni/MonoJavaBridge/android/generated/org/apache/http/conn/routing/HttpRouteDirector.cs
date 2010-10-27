@@ -18,7 +18,7 @@ namespace org.apache.http.conn.routing
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _nextStep32238;
-		 int org.apache.http.conn.routing.HttpRouteDirector.nextStep(org.apache.http.conn.routing.RouteInfo arg0, org.apache.http.conn.routing.RouteInfo arg1) 
+		int org.apache.http.conn.routing.HttpRouteDirector.nextStep(org.apache.http.conn.routing.RouteInfo arg0, org.apache.http.conn.routing.RouteInfo arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

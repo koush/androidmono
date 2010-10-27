@@ -12,7 +12,7 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivity12314;
-		public virtual global::android.app.Activity getActivity() 
+		public virtual global::android.app.Activity getActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.test
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._getActivity12314)) as android.app.Activity;
 		}
 		internal static global::MonoJavaBridge.MethodId _setUp12315;
-		protected override void setUp() 
+		protected override void setUp()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._setUp12315);
 		}
 		internal static global::MonoJavaBridge.MethodId _tearDown12316;
-		protected override void tearDown() 
+		protected override void tearDown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._tearDown12316);
 		}
 		internal static global::MonoJavaBridge.MethodId _testActivityTestCaseSetUpProperly12317;
-		public virtual void testActivityTestCaseSetUpProperly() 
+		public virtual void testActivityTestCaseSetUpProperly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.test
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._testActivityTestCaseSetUpProperly12317);
 		}
 		internal static global::MonoJavaBridge.MethodId _SingleLaunchActivityTestCase12318;
-		public SingleLaunchActivityTestCase(java.lang.String arg0, java.lang.Class arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SingleLaunchActivityTestCase(java.lang.String arg0, java.lang.Class arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.SingleLaunchActivityTestCase.staticClass, global::android.test.SingleLaunchActivityTestCase._SingleLaunchActivityTestCase12318, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

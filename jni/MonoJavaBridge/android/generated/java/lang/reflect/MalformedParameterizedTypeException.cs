@@ -12,7 +12,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedParameterizedTypeException21089;
-		public MalformedParameterizedTypeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedParameterizedTypeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.MalformedParameterizedTypeException.staticClass, global::java.lang.reflect.MalformedParameterizedTypeException._MalformedParameterizedTypeException21089);

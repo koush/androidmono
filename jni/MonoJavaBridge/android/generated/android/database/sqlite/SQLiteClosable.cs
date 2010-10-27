@@ -14,7 +14,7 @@ namespace android.database.sqlite
 		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased4706;
 		protected abstract void onAllReferencesReleased();
 		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleasedFromContainer4707;
-		protected virtual void onAllReferencesReleasedFromContainer() 
+		protected virtual void onAllReferencesReleasedFromContainer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._onAllReferencesReleasedFromContainer4707);
 		}
 		internal static global::MonoJavaBridge.MethodId _acquireReference4708;
-		public virtual void acquireReference() 
+		public virtual void acquireReference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._acquireReference4708);
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseReference4709;
-		public virtual void releaseReference() 
+		public virtual void releaseReference()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._releaseReference4709);
 		}
 		internal static global::MonoJavaBridge.MethodId _releaseReferenceFromContainer4710;
-		public virtual void releaseReferenceFromContainer() 
+		public virtual void releaseReferenceFromContainer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._releaseReferenceFromContainer4710);
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteClosable4711;
-		public SQLiteClosable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteClosable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteClosable.staticClass, global::android.database.sqlite.SQLiteClosable._SQLiteClosable4711);
@@ -81,7 +81,7 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onAllReferencesReleased4712;
-		protected override void onAllReferencesReleased() 
+		protected override void onAllReferencesReleased()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

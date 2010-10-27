@@ -12,7 +12,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState17492;
-		public virtual void onRestoreInstanceState(android.os.Parcelable arg0) 
+		public virtual void onRestoreInstanceState(android.os.Parcelable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._onRestoreInstanceState17492, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSaveInstanceState17493;
-		public virtual global::android.os.Parcelable onSaveInstanceState() 
+		public virtual global::android.os.Parcelable onSaveInstanceState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.os.Parcelable>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._onSaveInstanceState17493)) as android.os.Parcelable;
 		}
 		internal static global::MonoJavaBridge.MethodId _setProgress17494;
-		public virtual void setProgress(int arg0) 
+		public virtual void setProgress(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setProgress17494, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSecondaryProgress17495;
-		public virtual void setSecondaryProgress(int arg0) 
+		public virtual void setSecondaryProgress(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,8 +47,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setSecondaryProgress17495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new int Visibility
+		{
+			set
+			{
+				setVisibility(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setVisibility17496;
-		public override void setVisibility(int arg0) 
+		public override void setVisibility(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +64,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setVisibility17496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onVisibilityChanged17497;
-		protected override void onVisibilityChanged(android.view.View arg0, int arg1) 
+		protected override void onVisibilityChanged(android.view.View arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +73,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._onVisibilityChanged17497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSizeChanged17498;
-		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
+		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +82,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._onSizeChanged17498, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _postInvalidate17499;
-		public override void postInvalidate() 
+		public override void postInvalidate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +91,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._postInvalidate17499);
 		}
 		internal static global::MonoJavaBridge.MethodId _onDraw17500;
-		protected override void onDraw(android.graphics.Canvas arg0) 
+		protected override void onDraw(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +100,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._onDraw17500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _invalidateDrawable17501;
-		public override void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
+		public override void invalidateDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +109,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._invalidateDrawable17501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _verifyDrawable17502;
-		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
+		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +118,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._verifyDrawable17502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _drawableStateChanged17503;
-		protected override void drawableStateChanged() 
+		protected override void drawableStateChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +127,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._drawableStateChanged17503);
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure17504;
-		protected override void onMeasure(int arg0, int arg1) 
+		protected override void onMeasure(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -140,7 +147,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProgress17505;
-		public virtual int getProgress() 
+		public virtual int getProgress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -160,7 +167,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSecondaryProgress17506;
-		public virtual int getSecondaryProgress() 
+		public virtual int getSecondaryProgress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -180,7 +187,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMax17507;
-		public virtual int getMax() 
+		public virtual int getMax()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -189,7 +196,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._getMax17507);
 		}
 		internal static global::MonoJavaBridge.MethodId _setMax17508;
-		public virtual void setMax(int arg0) 
+		public virtual void setMax(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -198,7 +205,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setMax17508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementProgressBy17509;
-		public virtual void incrementProgressBy(int arg0) 
+		public virtual void incrementProgressBy(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -207,7 +214,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._incrementProgressBy17509, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementSecondaryProgressBy17510;
-		public virtual void incrementSecondaryProgressBy(int arg0) 
+		public virtual void incrementSecondaryProgressBy(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -216,7 +223,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._incrementSecondaryProgressBy17510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setProgressDrawable17511;
-		public virtual void setProgressDrawable(android.graphics.drawable.Drawable arg0) 
+		public virtual void setProgressDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -225,7 +232,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setProgressDrawable17511, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIndeterminateDrawable17512;
-		public virtual void setIndeterminateDrawable(android.graphics.drawable.Drawable arg0) 
+		public virtual void setIndeterminateDrawable(android.graphics.drawable.Drawable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,8 +240,15 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setIndeterminateDrawable17512, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new bool Indeterminate
+		{
+			set
+			{
+				setIndeterminate(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setIndeterminate17513;
-		public virtual void setIndeterminate(bool arg0) 
+		public virtual void setIndeterminate(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -243,7 +257,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._setIndeterminate17513, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIndeterminate17514;
-		public virtual bool isIndeterminate() 
+		public virtual bool isIndeterminate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -252,7 +266,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._isIndeterminate17514);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInterpolator17515;
-		public virtual void setInterpolator(android.view.animation.Interpolator arg0) 
+		public virtual void setInterpolator(android.view.animation.Interpolator arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -265,7 +279,7 @@ namespace android.widget
 			setInterpolator((global::android.view.animation.InterpolatorDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInterpolator17516;
-		public virtual void setInterpolator(android.content.Context arg0, int arg1) 
+		public virtual void setInterpolator(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -285,7 +299,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInterpolator17517;
-		public virtual global::android.view.animation.Interpolator getInterpolator() 
+		public virtual global::android.view.animation.Interpolator getInterpolator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -305,7 +319,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndeterminateDrawable17518;
-		public virtual global::android.graphics.drawable.Drawable getIndeterminateDrawable() 
+		public virtual global::android.graphics.drawable.Drawable getIndeterminateDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -325,7 +339,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProgressDrawable17519;
-		public virtual global::android.graphics.drawable.Drawable getProgressDrawable() 
+		public virtual global::android.graphics.drawable.Drawable getProgressDrawable()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -334,21 +348,21 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._getProgressDrawable17519)) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _ProgressBar17520;
-		public ProgressBar(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProgressBar(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._ProgressBar17520, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProgressBar17521;
-		public ProgressBar(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProgressBar(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._ProgressBar17521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ProgressBar17522;
-		public ProgressBar(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProgressBar(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.ProgressBar.staticClass, global::android.widget.ProgressBar._ProgressBar17522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

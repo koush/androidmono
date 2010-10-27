@@ -12,7 +12,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23765;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._toString23765)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23766;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._clone23766)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _match23767;
-		public virtual bool match(java.security.cert.CRL arg0) 
+		public virtual bool match(java.security.cert.CRL arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._match23767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIssuers23768;
-		public virtual void setIssuers(java.util.Collection arg0) 
+		public virtual void setIssuers(java.util.Collection arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._setIssuers23768, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setIssuerNames23769;
-		public virtual void setIssuerNames(java.util.Collection arg0) 
+		public virtual void setIssuerNames(java.util.Collection arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._setIssuerNames23769, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addIssuer23770;
-		public virtual void addIssuer(javax.security.auth.x500.X500Principal arg0) 
+		public virtual void addIssuer(javax.security.auth.x500.X500Principal arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._addIssuer23770, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addIssuerName23771;
-		public virtual void addIssuerName(java.lang.String arg0) 
+		public virtual void addIssuerName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._addIssuerName23771, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addIssuerName23772;
-		public virtual void addIssuerName(byte[] arg0) 
+		public virtual void addIssuerName(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,8 +83,15 @@ namespace java.security.cert
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._addIssuerName23772, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.math.BigInteger MinCRLNumber
+		{
+			set
+			{
+				setMinCRLNumber(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setMinCRLNumber23773;
-		public virtual void setMinCRLNumber(java.math.BigInteger arg0) 
+		public virtual void setMinCRLNumber(java.math.BigInteger arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,8 +99,15 @@ namespace java.security.cert
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._setMinCRLNumber23773, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.math.BigInteger MaxCRLNumber
+		{
+			set
+			{
+				setMaxCRLNumber(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setMaxCRLNumber23774;
-		public virtual void setMaxCRLNumber(java.math.BigInteger arg0) 
+		public virtual void setMaxCRLNumber(java.math.BigInteger arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +116,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._setMaxCRLNumber23774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDateAndTime23775;
-		public virtual void setDateAndTime(java.util.Date arg0) 
+		public virtual void setDateAndTime(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +125,7 @@ namespace java.security.cert
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._setDateAndTime23775, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCertificateChecking23776;
-		public virtual void setCertificateChecking(java.security.cert.X509Certificate arg0) 
+		public virtual void setCertificateChecking(java.security.cert.X509Certificate arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -131,7 +145,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIssuers23777;
-		public virtual global::java.util.Collection getIssuers() 
+		public virtual global::java.util.Collection getIssuers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -151,7 +165,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIssuerNames23778;
-		public virtual global::java.util.Collection getIssuerNames() 
+		public virtual global::java.util.Collection getIssuerNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -167,7 +181,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinCRL23779;
-		public virtual global::java.math.BigInteger getMinCRL() 
+		public virtual global::java.math.BigInteger getMinCRL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -183,7 +197,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxCRL23780;
-		public virtual global::java.math.BigInteger getMaxCRL() 
+		public virtual global::java.math.BigInteger getMaxCRL()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -203,7 +217,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDateAndTime23781;
-		public virtual global::java.util.Date getDateAndTime() 
+		public virtual global::java.util.Date getDateAndTime()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -223,7 +237,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificateChecking23782;
-		public virtual global::java.security.cert.X509Certificate getCertificateChecking() 
+		public virtual global::java.security.cert.X509Certificate getCertificateChecking()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -232,7 +246,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._getCertificateChecking23782)) as java.security.cert.X509Certificate;
 		}
 		internal static global::MonoJavaBridge.MethodId _X509CRLSelector23783;
-		public X509CRLSelector()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public X509CRLSelector() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.X509CRLSelector.staticClass, global::java.security.cert.X509CRLSelector._X509CRLSelector23783);

@@ -18,7 +18,7 @@ namespace org.apache.http.client
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _retryRequest31890;
-		 bool org.apache.http.client.HttpRequestRetryHandler.retryRequest(java.io.IOException arg0, int arg1, org.apache.http.protocol.HttpContext arg2) 
+		bool org.apache.http.client.HttpRequestRetryHandler.retryRequest(java.io.IOException arg0, int arg1, org.apache.http.protocol.HttpContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

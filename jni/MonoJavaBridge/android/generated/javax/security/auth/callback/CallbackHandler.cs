@@ -18,7 +18,7 @@ namespace javax.security.auth.callback
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _handle30197;
-		 void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0) 
+		void javax.security.auth.callback.CallbackHandler.handle(javax.security.auth.callback.Callback[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newArray10111;
-		 global::java.lang.Object[] android.os.Parcelable_Creator.newArray(int arg0) 
+		global::java.lang.Object[] android.os.Parcelable_Creator.newArray(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.Parcelable_Creator_.staticClass, global::android.os.Parcelable_Creator_._newArray10111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _createFromParcel10112;
-		 global::java.lang.Object android.os.Parcelable_Creator.createFromParcel(android.os.Parcel arg0) 
+		global::java.lang.Object android.os.Parcelable_Creator.createFromParcel(android.os.Parcel arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _PorterDuffColorFilter5662;
-		public PorterDuffColorFilter(int arg0, android.graphics.PorterDuff.Mode arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PorterDuffColorFilter(int arg0, android.graphics.PorterDuff.Mode arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PorterDuffColorFilter.staticClass, global::android.graphics.PorterDuffColorFilter._PorterDuffColorFilter5662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

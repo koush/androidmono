@@ -12,7 +12,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ThreadDeath20873;
-		public ThreadDeath()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ThreadDeath() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ThreadDeath.staticClass, global::java.lang.ThreadDeath._ThreadDeath20873);

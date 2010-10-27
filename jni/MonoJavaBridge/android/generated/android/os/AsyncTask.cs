@@ -23,13 +23,13 @@ namespace android.os
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values9494;
-			public static global::android.os.AsyncTask.Status[] values() 
+			public static global::android.os.AsyncTask.Status[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.os.AsyncTask.Status>(@__env.CallStaticObjectMethod(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._values9494)) as android.os.AsyncTask.Status[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf9495;
-			public static global::android.os.AsyncTask.Status valueOf(java.lang.String arg0) 
+			public static global::android.os.AsyncTask.Status valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.AsyncTask.Status>(@__env.CallStaticObjectMethod(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._valueOf9495, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.AsyncTask.Status;
@@ -73,7 +73,7 @@ namespace android.os
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _get9499;
-		public virtual global::java.lang.Object get() 
+		public virtual global::java.lang.Object get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._get9499)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _get9500;
-		public virtual global::java.lang.Object get(long arg0, java.util.concurrent.TimeUnit arg1) 
+		public virtual global::java.lang.Object get(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._get9500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _execute9501;
-		public virtual global::android.os.AsyncTask execute(java.lang.Object[] arg0) 
+		public virtual global::android.os.AsyncTask execute(java.lang.Object[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace android.os
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._execute9501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.os.AsyncTask;
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel9502;
-		public virtual bool cancel(bool arg0) 
+		public virtual bool cancel(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._cancel9502, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCancelled9503;
-		public virtual bool isCancelled() 
+		public virtual bool isCancelled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -118,7 +118,7 @@ namespace android.os
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._isCancelled9503);
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatus9504;
-		public virtual global::android.os.AsyncTask.Status getStatus() 
+		public virtual global::android.os.AsyncTask.Status getStatus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace android.os
 		internal static global::MonoJavaBridge.MethodId _doInBackground9505;
 		protected abstract global::java.lang.Object doInBackground(java.lang.Object[] arg0);
 		internal static global::MonoJavaBridge.MethodId _onPreExecute9506;
-		protected virtual void onPreExecute() 
+		protected virtual void onPreExecute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onPreExecute9506);
 		}
 		internal static global::MonoJavaBridge.MethodId _onPostExecute9507;
-		protected virtual void onPostExecute(java.lang.Object arg0) 
+		protected virtual void onPostExecute(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onPostExecute9507, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onProgressUpdate9508;
-		protected virtual void onProgressUpdate(java.lang.Object[] arg0) 
+		protected virtual void onProgressUpdate(java.lang.Object[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,7 +156,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onProgressUpdate9508, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onCancelled9509;
-		protected virtual void onCancelled() 
+		protected virtual void onCancelled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onCancelled9509);
 		}
 		internal static global::MonoJavaBridge.MethodId _publishProgress9510;
-		protected virtual void publishProgress(java.lang.Object[] arg0) 
+		protected virtual void publishProgress(java.lang.Object[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace android.os
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._publishProgress9510, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AsyncTask9511;
-		public AsyncTask()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AsyncTask() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.AsyncTask.staticClass, global::android.os.AsyncTask._AsyncTask9511);
@@ -212,7 +212,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _doInBackground9512;
-		protected override global::java.lang.Object doInBackground(java.lang.Object[] arg0) 
+		protected override global::java.lang.Object doInBackground(java.lang.Object[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

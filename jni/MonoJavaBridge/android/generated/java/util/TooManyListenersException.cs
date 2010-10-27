@@ -12,14 +12,14 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _TooManyListenersException26878;
-		public TooManyListenersException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TooManyListenersException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TooManyListenersException.staticClass, global::java.util.TooManyListenersException._TooManyListenersException26878);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _TooManyListenersException26879;
-		public TooManyListenersException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TooManyListenersException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.TooManyListenersException.staticClass, global::java.util.TooManyListenersException._TooManyListenersException26879, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

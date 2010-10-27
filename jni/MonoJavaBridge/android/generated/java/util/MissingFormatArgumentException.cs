@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage26515;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormatSpecifier26516;
-		public virtual global::java.lang.String getFormatSpecifier() 
+		public virtual global::java.lang.String getFormatSpecifier()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.MissingFormatArgumentException.staticClass, global::java.util.MissingFormatArgumentException._getFormatSpecifier26516)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _MissingFormatArgumentException26517;
-		public MissingFormatArgumentException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MissingFormatArgumentException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.MissingFormatArgumentException.staticClass, global::java.util.MissingFormatArgumentException._MissingFormatArgumentException26517, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

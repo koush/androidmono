@@ -21,7 +21,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature34368;
-		 global::java.lang.Object org.w3c.dom.DOMImplementation.getFeature(java.lang.String arg0, java.lang.String arg1) 
+		global::java.lang.Object org.w3c.dom.DOMImplementation.getFeature(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementation_.staticClass, global::org.w3c.dom.DOMImplementation_._getFeature34368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasFeature34369;
-		 bool org.w3c.dom.DOMImplementation.hasFeature(java.lang.String arg0, java.lang.String arg1) 
+		bool org.w3c.dom.DOMImplementation.hasFeature(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementation_.staticClass, global::org.w3c.dom.DOMImplementation_._hasFeature34369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _createDocumentType34370;
-		 global::org.w3c.dom.DocumentType org.w3c.dom.DOMImplementation.createDocumentType(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
+		global::org.w3c.dom.DocumentType org.w3c.dom.DOMImplementation.createDocumentType(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.w3c.dom.DocumentType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMImplementation_.staticClass, global::org.w3c.dom.DOMImplementation_._createDocumentType34370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as org.w3c.dom.DocumentType;
 		}
 		internal static global::MonoJavaBridge.MethodId _createDocument34371;
-		 global::org.w3c.dom.Document org.w3c.dom.DOMImplementation.createDocument(java.lang.String arg0, java.lang.String arg1, org.w3c.dom.DocumentType arg2) 
+		global::org.w3c.dom.Document org.w3c.dom.DOMImplementation.createDocument(java.lang.String arg0, java.lang.String arg1, org.w3c.dom.DocumentType arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

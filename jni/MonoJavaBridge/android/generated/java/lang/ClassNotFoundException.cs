@@ -19,7 +19,7 @@ namespace java.lang
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCause20071;
-		public override global::java.lang.Throwable getCause() 
+		public override global::java.lang.Throwable getCause()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.lang
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getException20072;
-		public virtual global::java.lang.Throwable getException() 
+		public virtual global::java.lang.Throwable getException()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,21 +44,21 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._getException20072)) as java.lang.Throwable;
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassNotFoundException20073;
-		public ClassNotFoundException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassNotFoundException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._ClassNotFoundException20073);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassNotFoundException20074;
-		public ClassNotFoundException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassNotFoundException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._ClassNotFoundException20074, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassNotFoundException20075;
-		public ClassNotFoundException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassNotFoundException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassNotFoundException.staticClass, global::java.lang.ClassNotFoundException._ClassNotFoundException20075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

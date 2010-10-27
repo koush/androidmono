@@ -12,7 +12,7 @@ namespace org.apache.http.impl.entity
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _doDeserialize33369;
-		protected virtual global::org.apache.http.entity.BasicHttpEntity doDeserialize(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.HttpMessage arg1) 
+		protected virtual global::org.apache.http.entity.BasicHttpEntity doDeserialize(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.HttpMessage arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.entity
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.entity.EntityDeserializer.staticClass, global::org.apache.http.impl.entity.EntityDeserializer._doDeserialize33369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.entity.BasicHttpEntity;
 		}
 		internal static global::MonoJavaBridge.MethodId _deserialize33370;
-		public virtual global::org.apache.http.HttpEntity deserialize(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.HttpMessage arg1) 
+		public virtual global::org.apache.http.HttpEntity deserialize(org.apache.http.io.SessionInputBuffer arg0, org.apache.http.HttpMessage arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.impl.entity
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpEntity>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.entity.EntityDeserializer.staticClass, global::org.apache.http.impl.entity.EntityDeserializer._deserialize33370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as org.apache.http.HttpEntity;
 		}
 		internal static global::MonoJavaBridge.MethodId _EntityDeserializer33371;
-		public EntityDeserializer(org.apache.http.entity.ContentLengthStrategy arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EntityDeserializer(org.apache.http.entity.ContentLengthStrategy arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.entity.EntityDeserializer.staticClass, global::org.apache.http.impl.entity.EntityDeserializer._EntityDeserializer33371, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

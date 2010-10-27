@@ -23,13 +23,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5094;
-			public static global::android.graphics.BlurMaskFilter.Blur[] values() 
+			public static global::android.graphics.BlurMaskFilter.Blur[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.BlurMaskFilter.Blur>(@__env.CallStaticObjectMethod(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._values5094)) as android.graphics.BlurMaskFilter.Blur[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5095;
-			public static global::android.graphics.BlurMaskFilter.Blur valueOf(java.lang.String arg0) 
+			public static global::android.graphics.BlurMaskFilter.Blur valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.BlurMaskFilter.Blur>(@__env.CallStaticObjectMethod(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._valueOf5095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.BlurMaskFilter.Blur;
@@ -83,7 +83,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _BlurMaskFilter5100;
-		public BlurMaskFilter(float arg0, android.graphics.BlurMaskFilter.Blur arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BlurMaskFilter(float arg0, android.graphics.BlurMaskFilter.Blur arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.BlurMaskFilter.staticClass, global::android.graphics.BlurMaskFilter._BlurMaskFilter5100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

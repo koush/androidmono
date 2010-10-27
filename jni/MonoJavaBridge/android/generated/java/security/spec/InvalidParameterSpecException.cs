@@ -12,14 +12,14 @@ namespace java.security.spec
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidParameterSpecException24027;
-		public InvalidParameterSpecException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidParameterSpecException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.InvalidParameterSpecException.staticClass, global::java.security.spec.InvalidParameterSpecException._InvalidParameterSpecException24027);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidParameterSpecException24028;
-		public InvalidParameterSpecException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidParameterSpecException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.InvalidParameterSpecException.staticClass, global::java.security.spec.InvalidParameterSpecException._InvalidParameterSpecException24028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -14,7 +14,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _toString23466;
 		public abstract global::java.lang.String toString();
 		internal static global::MonoJavaBridge.MethodId _getType23467;
-		public virtual global::java.lang.String getType() 
+		public virtual global::java.lang.String getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _isRevoked23468;
 		public abstract bool isRevoked(java.security.cert.Certificate arg0);
 		internal static global::MonoJavaBridge.MethodId _CRL23469;
-		protected CRL(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected CRL(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CRL.staticClass, global::java.security.cert.CRL._CRL23469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -54,7 +54,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString23470;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -63,7 +63,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CRL_.staticClass, global::java.security.cert.CRL_._toString23470)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isRevoked23471;
-		public override bool isRevoked(java.security.cert.Certificate arg0) 
+		public override bool isRevoked(java.security.cert.Certificate arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

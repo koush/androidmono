@@ -12,49 +12,49 @@ namespace android.view.animation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _currentAnimationTimeMillis15656;
-		public static long currentAnimationTimeMillis() 
+		public static long currentAnimationTimeMillis()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._currentAnimationTimeMillis15656);
 		}
 		internal static global::MonoJavaBridge.MethodId _loadAnimation15657;
-		public static global::android.view.animation.Animation loadAnimation(android.content.Context arg0, int arg1) 
+		public static global::android.view.animation.Animation loadAnimation(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._loadAnimation15657, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadLayoutAnimation15658;
-		public static global::android.view.animation.LayoutAnimationController loadLayoutAnimation(android.content.Context arg0, int arg1) 
+		public static global::android.view.animation.LayoutAnimationController loadLayoutAnimation(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._loadLayoutAnimation15658, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.animation.LayoutAnimationController;
 		}
 		internal static global::MonoJavaBridge.MethodId _makeInAnimation15659;
-		public static global::android.view.animation.Animation makeInAnimation(android.content.Context arg0, bool arg1) 
+		public static global::android.view.animation.Animation makeInAnimation(android.content.Context arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._makeInAnimation15659, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _makeOutAnimation15660;
-		public static global::android.view.animation.Animation makeOutAnimation(android.content.Context arg0, bool arg1) 
+		public static global::android.view.animation.Animation makeOutAnimation(android.content.Context arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._makeOutAnimation15660, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _makeInChildBottomAnimation15661;
-		public static global::android.view.animation.Animation makeInChildBottomAnimation(android.content.Context arg0) 
+		public static global::android.view.animation.Animation makeInChildBottomAnimation(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._makeInChildBottomAnimation15661, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.animation.Animation;
 		}
 		internal static global::MonoJavaBridge.MethodId _loadInterpolator15662;
-		public static global::android.view.animation.Interpolator loadInterpolator(android.content.Context arg0, int arg1) 
+		public static global::android.view.animation.Interpolator loadInterpolator(android.content.Context arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.view.animation.Interpolator>(@__env.CallStaticObjectMethod(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._loadInterpolator15662, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.view.animation.Interpolator;
 		}
 		internal static global::MonoJavaBridge.MethodId _AnimationUtils15663;
-		public AnimationUtils()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AnimationUtils() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.AnimationUtils.staticClass, global::android.view.animation.AnimationUtils._AnimationUtils15663);

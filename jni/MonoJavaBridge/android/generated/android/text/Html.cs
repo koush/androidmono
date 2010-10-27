@@ -29,7 +29,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _getDrawable12774;
-			 global::android.graphics.drawable.Drawable android.text.Html.ImageGetter.getDrawable(java.lang.String arg0) 
+			global::android.graphics.drawable.Drawable android.text.Html.ImageGetter.getDrawable(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _ImageGetterDelegateWrapper12775;
-			public ImageGetterDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public ImageGetterDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Html.ImageGetterDelegateWrapper.staticClass, global::android.text.Html.ImageGetterDelegateWrapper._ImageGetterDelegateWrapper12775);
@@ -104,7 +104,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _handleTag12776;
-			 void android.text.Html.TagHandler.handleTag(bool arg0, java.lang.String arg1, android.text.Editable arg2, org.xml.sax.XMLReader arg3) 
+			void android.text.Html.TagHandler.handleTag(bool arg0, java.lang.String arg1, android.text.Editable arg2, org.xml.sax.XMLReader arg3)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _TagHandlerDelegateWrapper12777;
-			public TagHandlerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public TagHandlerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.Html.TagHandlerDelegateWrapper.staticClass, global::android.text.Html.TagHandlerDelegateWrapper._TagHandlerDelegateWrapper12777);
@@ -162,13 +162,13 @@ namespace android.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _fromHtml12778;
-		public static global::android.text.Spanned fromHtml(java.lang.String arg0) 
+		public static global::android.text.Spanned fromHtml(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Spanned>(@__env.CallStaticObjectMethod(android.text.Html.staticClass, global::android.text.Html._fromHtml12778, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.Spanned;
 		}
 		internal static global::MonoJavaBridge.MethodId _fromHtml12779;
-		public static global::android.text.Spanned fromHtml(java.lang.String arg0, android.text.Html.ImageGetter arg1, android.text.Html.TagHandler arg2) 
+		public static global::android.text.Spanned fromHtml(java.lang.String arg0, android.text.Html.ImageGetter arg1, android.text.Html.TagHandler arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.text.Spanned>(@__env.CallStaticObjectMethod(android.text.Html.staticClass, global::android.text.Html._fromHtml12779, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.text.Spanned;
@@ -178,7 +178,7 @@ namespace android.text
 			return fromHtml(arg0, (global::android.text.Html.ImageGetterDelegateWrapper)arg1, (global::android.text.Html.TagHandlerDelegateWrapper)arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _toHtml12780;
-		public static global::java.lang.String toHtml(android.text.Spanned arg0) 
+		public static global::java.lang.String toHtml(android.text.Spanned arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.text.Html.staticClass, global::android.text.Html._toHtml12780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;

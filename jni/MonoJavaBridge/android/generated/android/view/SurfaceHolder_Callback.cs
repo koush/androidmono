@@ -20,7 +20,7 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _surfaceCreated14567;
-		 void android.view.SurfaceHolder_Callback.surfaceCreated(android.view.SurfaceHolder arg0) 
+		void android.view.SurfaceHolder_Callback.surfaceCreated(android.view.SurfaceHolder arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace android.view
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_.staticClass, global::android.view.SurfaceHolder_Callback_._surfaceCreated14567, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _surfaceDestroyed14568;
-		 void android.view.SurfaceHolder_Callback.surfaceDestroyed(android.view.SurfaceHolder arg0) 
+		void android.view.SurfaceHolder_Callback.surfaceDestroyed(android.view.SurfaceHolder arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.view
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.SurfaceHolder_Callback_.staticClass, global::android.view.SurfaceHolder_Callback_._surfaceDestroyed14568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _surfaceChanged14569;
-		 void android.view.SurfaceHolder_Callback.surfaceChanged(android.view.SurfaceHolder arg0, int arg1, int arg2, int arg3) 
+		void android.view.SurfaceHolder_Callback.surfaceChanged(android.view.SurfaceHolder arg0, int arg1, int arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

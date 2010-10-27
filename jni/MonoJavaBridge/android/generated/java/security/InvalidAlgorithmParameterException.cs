@@ -12,28 +12,28 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidAlgorithmParameterException22995;
-		public InvalidAlgorithmParameterException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidAlgorithmParameterException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.InvalidAlgorithmParameterException.staticClass, global::java.security.InvalidAlgorithmParameterException._InvalidAlgorithmParameterException22995);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidAlgorithmParameterException22996;
-		public InvalidAlgorithmParameterException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidAlgorithmParameterException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.InvalidAlgorithmParameterException.staticClass, global::java.security.InvalidAlgorithmParameterException._InvalidAlgorithmParameterException22996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidAlgorithmParameterException22997;
-		public InvalidAlgorithmParameterException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidAlgorithmParameterException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.InvalidAlgorithmParameterException.staticClass, global::java.security.InvalidAlgorithmParameterException._InvalidAlgorithmParameterException22997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _InvalidAlgorithmParameterException22998;
-		public InvalidAlgorithmParameterException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InvalidAlgorithmParameterException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.InvalidAlgorithmParameterException.staticClass, global::java.security.InvalidAlgorithmParameterException._InvalidAlgorithmParameterException22998, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,7 +19,7 @@ namespace android.text.style
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTabStop13596;
-		public virtual int getTabStop() 
+		public virtual int getTabStop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.text.style
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._getTabStop13596);
 		}
 		internal static global::MonoJavaBridge.MethodId _TabStopSpan_Standard13597;
-		public TabStopSpan_Standard(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TabStopSpan_Standard(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._TabStopSpan_Standard13597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

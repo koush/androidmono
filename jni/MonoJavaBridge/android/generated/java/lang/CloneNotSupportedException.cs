@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CloneNotSupportedException20076;
-		public CloneNotSupportedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CloneNotSupportedException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.CloneNotSupportedException.staticClass, global::java.lang.CloneNotSupportedException._CloneNotSupportedException20076);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CloneNotSupportedException20077;
-		public CloneNotSupportedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CloneNotSupportedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.CloneNotSupportedException.staticClass, global::java.lang.CloneNotSupportedException._CloneNotSupportedException20077, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

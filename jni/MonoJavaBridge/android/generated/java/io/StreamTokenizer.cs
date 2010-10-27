@@ -12,7 +12,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString19577;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.io
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._toString19577)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _nextToken19578;
-		public virtual int nextToken() 
+		public virtual int nextToken()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._nextToken19578);
 		}
 		internal static global::MonoJavaBridge.MethodId _pushBack19579;
-		public virtual void pushBack() 
+		public virtual void pushBack()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._pushBack19579);
 		}
 		internal static global::MonoJavaBridge.MethodId _resetSyntax19580;
-		public virtual void resetSyntax() 
+		public virtual void resetSyntax()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._resetSyntax19580);
 		}
 		internal static global::MonoJavaBridge.MethodId _wordChars19581;
-		public virtual void wordChars(int arg0, int arg1) 
+		public virtual void wordChars(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._wordChars19581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _whitespaceChars19582;
-		public virtual void whitespaceChars(int arg0, int arg1) 
+		public virtual void whitespaceChars(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._whitespaceChars19582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ordinaryChars19583;
-		public virtual void ordinaryChars(int arg0, int arg1) 
+		public virtual void ordinaryChars(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._ordinaryChars19583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ordinaryChar19584;
-		public virtual void ordinaryChar(int arg0) 
+		public virtual void ordinaryChar(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._ordinaryChar19584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _commentChar19585;
-		public virtual void commentChar(int arg0) 
+		public virtual void commentChar(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._commentChar19585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _quoteChar19586;
-		public virtual void quoteChar(int arg0) 
+		public virtual void quoteChar(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._quoteChar19586, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _parseNumbers19587;
-		public virtual void parseNumbers() 
+		public virtual void parseNumbers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._parseNumbers19587);
 		}
 		internal static global::MonoJavaBridge.MethodId _eolIsSignificant19588;
-		public virtual void eolIsSignificant(bool arg0) 
+		public virtual void eolIsSignificant(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._eolIsSignificant19588, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _slashStarComments19589;
-		public virtual void slashStarComments(bool arg0) 
+		public virtual void slashStarComments(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._slashStarComments19589, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _slashSlashComments19590;
-		public virtual void slashSlashComments(bool arg0) 
+		public virtual void slashSlashComments(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._slashSlashComments19590, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lowerCaseMode19591;
-		public virtual void lowerCaseMode(bool arg0) 
+		public virtual void lowerCaseMode(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._lowerCaseMode19591, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _lineno19592;
-		public virtual int lineno() 
+		public virtual int lineno()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,14 +156,14 @@ namespace java.io
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._lineno19592);
 		}
 		internal static global::MonoJavaBridge.MethodId _StreamTokenizer19593;
-		public StreamTokenizer(java.io.InputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StreamTokenizer(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._StreamTokenizer19593, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _StreamTokenizer19594;
-		public StreamTokenizer(java.io.Reader arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StreamTokenizer(java.io.Reader arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.StreamTokenizer.staticClass, global::java.io.StreamTokenizer._StreamTokenizer19594, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,7 +19,7 @@ namespace java.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorOffset25610;
-		public virtual int getErrorOffset() 
+		public virtual int getErrorOffset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.text
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.ParseException.staticClass, global::java.text.ParseException._getErrorOffset25610);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParseException25611;
-		public ParseException(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParseException(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.ParseException.staticClass, global::java.text.ParseException._ParseException25611, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

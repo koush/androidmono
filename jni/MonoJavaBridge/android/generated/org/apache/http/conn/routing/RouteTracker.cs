@@ -12,7 +12,7 @@ namespace org.apache.http.conn.routing
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals32265;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.conn.routing
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._equals32265, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString32266;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._toString32266)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode32267;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.conn.routing
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._hashCode32267);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone32268;
-		public global::java.lang.Object clone() 
+		public global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._clone32268)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _isConnected32269;
-		public bool isConnected() 
+		public bool isConnected()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace org.apache.http.conn.routing
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._isConnected32269);
 		}
 		internal static global::MonoJavaBridge.MethodId _isSecure32270;
-		public bool isSecure() 
+		public bool isSecure()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace org.apache.http.conn.routing
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalAddress32271;
-		public global::java.net.InetAddress getLocalAddress() 
+		public global::java.net.InetAddress getLocalAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._getLocalAddress32271)) as java.net.InetAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _tunnelTarget32272;
-		public void tunnelTarget(bool arg0) 
+		public void tunnelTarget(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace org.apache.http.conn.routing
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._tunnelTarget32272, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _tunnelProxy32273;
-		public void tunnelProxy(org.apache.http.HttpHost arg0, bool arg1) 
+		public void tunnelProxy(org.apache.http.HttpHost arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,7 +100,7 @@ namespace org.apache.http.conn.routing
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._tunnelProxy32273, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _layerProtocol32274;
-		public void layerProtocol(bool arg0) 
+		public void layerProtocol(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace org.apache.http.conn.routing
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTargetHost32275;
-		public global::org.apache.http.HttpHost getTargetHost() 
+		public global::org.apache.http.HttpHost getTargetHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +132,7 @@ namespace org.apache.http.conn.routing
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHopCount32276;
-		public int getHopCount() 
+		public int getHopCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -141,7 +141,7 @@ namespace org.apache.http.conn.routing
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._getHopCount32276);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHopTarget32277;
-		public global::org.apache.http.HttpHost getHopTarget(int arg0) 
+		public global::org.apache.http.HttpHost getHopTarget(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -157,7 +157,7 @@ namespace org.apache.http.conn.routing
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProxyHost32278;
-		public global::org.apache.http.HttpHost getProxyHost() 
+		public global::org.apache.http.HttpHost getProxyHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -173,7 +173,7 @@ namespace org.apache.http.conn.routing
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getTunnelType32279;
-		public global::org.apache.http.conn.routing.RouteInfo_TunnelType getTunnelType() 
+		public global::org.apache.http.conn.routing.RouteInfo_TunnelType getTunnelType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -182,7 +182,7 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_TunnelType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._getTunnelType32279)) as org.apache.http.conn.routing.RouteInfo_TunnelType;
 		}
 		internal static global::MonoJavaBridge.MethodId _isTunnelled32280;
-		public bool isTunnelled() 
+		public bool isTunnelled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -198,7 +198,7 @@ namespace org.apache.http.conn.routing
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLayerType32281;
-		public global::org.apache.http.conn.routing.RouteInfo_LayerType getLayerType() 
+		public global::org.apache.http.conn.routing.RouteInfo_LayerType getLayerType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -207,7 +207,7 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_LayerType>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._getLayerType32281)) as org.apache.http.conn.routing.RouteInfo_LayerType;
 		}
 		internal static global::MonoJavaBridge.MethodId _isLayered32282;
-		public bool isLayered() 
+		public bool isLayered()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -216,7 +216,7 @@ namespace org.apache.http.conn.routing
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._isLayered32282);
 		}
 		internal static global::MonoJavaBridge.MethodId _connectTarget32283;
-		public void connectTarget(bool arg0) 
+		public void connectTarget(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -225,7 +225,7 @@ namespace org.apache.http.conn.routing
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._connectTarget32283, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _connectProxy32284;
-		public void connectProxy(org.apache.http.HttpHost arg0, bool arg1) 
+		public void connectProxy(org.apache.http.HttpHost arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -234,7 +234,7 @@ namespace org.apache.http.conn.routing
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._connectProxy32284, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _toRoute32285;
-		public global::org.apache.http.conn.routing.HttpRoute toRoute() 
+		public global::org.apache.http.conn.routing.HttpRoute toRoute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -243,14 +243,14 @@ namespace org.apache.http.conn.routing
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._toRoute32285)) as org.apache.http.conn.routing.HttpRoute;
 		}
 		internal static global::MonoJavaBridge.MethodId _RouteTracker32286;
-		public RouteTracker(org.apache.http.conn.routing.HttpRoute arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RouteTracker(org.apache.http.conn.routing.HttpRoute arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._RouteTracker32286, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RouteTracker32287;
-		public RouteTracker(org.apache.http.HttpHost arg0, java.net.InetAddress arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RouteTracker(org.apache.http.HttpHost arg0, java.net.InetAddress arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.routing.RouteTracker.staticClass, global::org.apache.http.conn.routing.RouteTracker._RouteTracker32287, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

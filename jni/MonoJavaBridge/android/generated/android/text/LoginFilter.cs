@@ -23,7 +23,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _isAllowed12887;
-			public override bool isAllowed(char arg0) 
+			public override bool isAllowed(char arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -32,14 +32,14 @@ namespace android.text
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.LoginFilter.PasswordFilterGMail.staticClass, global::android.text.LoginFilter.PasswordFilterGMail._isAllowed12887, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _PasswordFilterGMail12888;
-			public PasswordFilterGMail()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public PasswordFilterGMail() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.PasswordFilterGMail.staticClass, global::android.text.LoginFilter.PasswordFilterGMail._PasswordFilterGMail12888);
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _PasswordFilterGMail12889;
-			public PasswordFilterGMail(bool arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public PasswordFilterGMail(bool arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.PasswordFilterGMail.staticClass, global::android.text.LoginFilter.PasswordFilterGMail._PasswordFilterGMail12889, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -66,7 +66,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _isAllowed12890;
-			public override bool isAllowed(char arg0) 
+			public override bool isAllowed(char arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -75,14 +75,14 @@ namespace android.text
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.LoginFilter.UsernameFilterGMail.staticClass, global::android.text.LoginFilter.UsernameFilterGMail._isAllowed12890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _UsernameFilterGMail12891;
-			public UsernameFilterGMail()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public UsernameFilterGMail() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.UsernameFilterGMail.staticClass, global::android.text.LoginFilter.UsernameFilterGMail._UsernameFilterGMail12891);
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _UsernameFilterGMail12892;
-			public UsernameFilterGMail(bool arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public UsernameFilterGMail(bool arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.UsernameFilterGMail.staticClass, global::android.text.LoginFilter.UsernameFilterGMail._UsernameFilterGMail12892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -109,7 +109,7 @@ namespace android.text
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _isAllowed12893;
-			public override bool isAllowed(char arg0) 
+			public override bool isAllowed(char arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -118,14 +118,14 @@ namespace android.text
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.text.LoginFilter.UsernameFilterGeneric.staticClass, global::android.text.LoginFilter.UsernameFilterGeneric._isAllowed12893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _UsernameFilterGeneric12894;
-			public UsernameFilterGeneric()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public UsernameFilterGeneric() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.UsernameFilterGeneric.staticClass, global::android.text.LoginFilter.UsernameFilterGeneric._UsernameFilterGeneric12894);
 				Init(@__env, handle);
 			}
 			internal static global::MonoJavaBridge.MethodId _UsernameFilterGeneric12895;
-			public UsernameFilterGeneric(bool arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public UsernameFilterGeneric(bool arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.LoginFilter.UsernameFilterGeneric.staticClass, global::android.text.LoginFilter.UsernameFilterGeneric._UsernameFilterGeneric12895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -141,7 +141,7 @@ namespace android.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _filter12896;
-		public virtual global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		public virtual global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -154,7 +154,7 @@ namespace android.text
 			return filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 		internal static global::MonoJavaBridge.MethodId _onStart12897;
-		public virtual void onStart() 
+		public virtual void onStart()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -163,7 +163,7 @@ namespace android.text
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._onStart12897);
 		}
 		internal static global::MonoJavaBridge.MethodId _onStop12898;
-		public virtual void onStop() 
+		public virtual void onStop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace android.text
 		internal static global::MonoJavaBridge.MethodId _isAllowed12899;
 		public abstract bool isAllowed(char arg0);
 		internal static global::MonoJavaBridge.MethodId _onInvalidCharacter12900;
-		public virtual void onInvalidCharacter(char arg0) 
+		public virtual void onInvalidCharacter(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isAllowed12901;
-		public override bool isAllowed(char arg0) 
+		public override bool isAllowed(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

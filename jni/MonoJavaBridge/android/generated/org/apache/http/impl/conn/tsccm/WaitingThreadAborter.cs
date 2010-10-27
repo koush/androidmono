@@ -12,7 +12,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _abort33191;
-		public virtual void abort() 
+		public virtual void abort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +20,15 @@ namespace org.apache.http.impl.conn.tsccm
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._abort33191);
 		}
+		public new global::org.apache.http.impl.conn.tsccm.WaitingThread WaitingThread
+		{
+			set
+			{
+				setWaitingThread(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setWaitingThread33192;
-		public virtual void setWaitingThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0) 
+		public virtual void setWaitingThread(org.apache.http.impl.conn.tsccm.WaitingThread arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +37,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._setWaitingThread33192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _WaitingThreadAborter33193;
-		public WaitingThreadAborter()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public WaitingThreadAborter() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.WaitingThreadAborter.staticClass, global::org.apache.http.impl.conn.tsccm.WaitingThreadAborter._WaitingThreadAborter33193);

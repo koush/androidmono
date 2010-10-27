@@ -21,7 +21,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setParameter34335;
-		 void org.w3c.dom.DOMConfiguration.setParameter(java.lang.String arg0, java.lang.Object arg1) 
+		void org.w3c.dom.DOMConfiguration.setParameter(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.w3c.dom
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._setParameter34335, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameter34336;
-		 global::java.lang.Object org.w3c.dom.DOMConfiguration.getParameter(java.lang.String arg0) 
+		global::java.lang.Object org.w3c.dom.DOMConfiguration.getParameter(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.w3c.dom
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._getParameter34336, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _canSetParameter34337;
-		 bool org.w3c.dom.DOMConfiguration.canSetParameter(java.lang.String arg0, java.lang.Object arg1) 
+		bool org.w3c.dom.DOMConfiguration.canSetParameter(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.w3c.dom
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.w3c.dom.DOMConfiguration_.staticClass, global::org.w3c.dom.DOMConfiguration_._canSetParameter34337, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterNames34338;
-		 global::org.w3c.dom.DOMStringList org.w3c.dom.DOMConfiguration.getParameterNames() 
+		global::org.w3c.dom.DOMStringList org.w3c.dom.DOMConfiguration.getParameterNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

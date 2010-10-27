@@ -12,7 +12,7 @@ namespace org.apache.http.impl.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _reset33447;
-		public virtual void reset() 
+		public virtual void reset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.apache.http.impl.io
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBytesTransferred33448;
-		public virtual long getBytesTransferred() 
+		public virtual long getBytesTransferred()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http.impl.io
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, global::org.apache.http.impl.io.HttpTransportMetricsImpl._getBytesTransferred33448);
 		}
 		internal static global::MonoJavaBridge.MethodId _setBytesTransferred33449;
-		public virtual void setBytesTransferred(long arg0) 
+		public virtual void setBytesTransferred(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace org.apache.http.impl.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, global::org.apache.http.impl.io.HttpTransportMetricsImpl._setBytesTransferred33449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _incrementBytesTransferred33450;
-		public virtual void incrementBytesTransferred(long arg0) 
+		public virtual void incrementBytesTransferred(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace org.apache.http.impl.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, global::org.apache.http.impl.io.HttpTransportMetricsImpl._incrementBytesTransferred33450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpTransportMetricsImpl33451;
-		public HttpTransportMetricsImpl()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpTransportMetricsImpl() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.io.HttpTransportMetricsImpl.staticClass, global::org.apache.http.impl.io.HttpTransportMetricsImpl._HttpTransportMetricsImpl33451);

@@ -18,7 +18,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createURLStreamHandler21989;
-		 global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0) 
+		global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

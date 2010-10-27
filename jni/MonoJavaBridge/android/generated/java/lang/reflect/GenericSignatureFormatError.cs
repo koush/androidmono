@@ -12,7 +12,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _GenericSignatureFormatError21082;
-		public GenericSignatureFormatError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public GenericSignatureFormatError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.reflect.GenericSignatureFormatError.staticClass, global::java.lang.reflect.GenericSignatureFormatError._GenericSignatureFormatError21082);

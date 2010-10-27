@@ -18,7 +18,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _write22656;
-		 int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0) 
+		int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace java.nio.channels
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.nio.channels.WritableByteChannel_.staticClass, global::java.nio.channels.WritableByteChannel_._write22656, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _close22657;
-		 void java.nio.channels.Channel.close() 
+		void java.nio.channels.Channel.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.nio.channels
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.WritableByteChannel_.staticClass, global::java.nio.channels.WritableByteChannel_._close22657);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen22658;
-		 bool java.nio.channels.Channel.isOpen() 
+		bool java.nio.channels.Channel.isOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace java.nio.channels
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.WritableByteChannel_.staticClass, global::java.nio.channels.WritableByteChannel_._isOpen22658);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22659;
-		 void java.io.Closeable.close() 
+		void java.io.Closeable.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

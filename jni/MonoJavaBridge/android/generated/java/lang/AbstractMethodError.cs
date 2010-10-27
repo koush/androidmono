@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractMethodError19654;
-		public AbstractMethodError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AbstractMethodError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AbstractMethodError.staticClass, global::java.lang.AbstractMethodError._AbstractMethodError19654);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractMethodError19655;
-		public AbstractMethodError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AbstractMethodError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.AbstractMethodError.staticClass, global::java.lang.AbstractMethodError._AbstractMethodError19655, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

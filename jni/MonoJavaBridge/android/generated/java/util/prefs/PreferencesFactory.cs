@@ -19,7 +19,7 @@ namespace java.util.prefs
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _userRoot28263;
-		 global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.userRoot() 
+		global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.userRoot()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.util.prefs
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.prefs.PreferencesFactory_.staticClass, global::java.util.prefs.PreferencesFactory_._userRoot28263)) as java.util.prefs.Preferences;
 		}
 		internal static global::MonoJavaBridge.MethodId _systemRoot28264;
-		 global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.systemRoot() 
+		global::java.util.prefs.Preferences java.util.prefs.PreferencesFactory.systemRoot()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

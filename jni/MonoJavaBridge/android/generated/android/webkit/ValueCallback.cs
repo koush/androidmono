@@ -18,7 +18,7 @@ namespace android.webkit
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onReceiveValue16121;
-		 void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0) 
+		void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.webkit
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ValueCallbackDelegateWrapper16122;
-		public ValueCallbackDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ValueCallbackDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.webkit.ValueCallbackDelegateWrapper.staticClass, global::android.webkit.ValueCallbackDelegateWrapper._ValueCallbackDelegateWrapper16122);

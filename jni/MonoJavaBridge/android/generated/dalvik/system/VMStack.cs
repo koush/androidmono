@@ -12,7 +12,7 @@ namespace dalvik.system
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getClasses18670;
-		public static global::java.lang.Class[] getClasses(int arg0, bool arg1) 
+		public static global::java.lang.Class[] getClasses(int arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Class>(@__env.CallStaticObjectMethod(dalvik.system.VMStack.staticClass, global::dalvik.system.VMStack._getClasses18670, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Class[];
@@ -25,7 +25,7 @@ namespace dalvik.system
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallingClassLoader18671;
-		public static global::java.lang.ClassLoader getCallingClassLoader() 
+		public static global::java.lang.ClassLoader getCallingClassLoader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(dalvik.system.VMStack.staticClass, global::dalvik.system.VMStack._getCallingClassLoader18671)) as java.lang.ClassLoader;
@@ -38,19 +38,19 @@ namespace dalvik.system
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallingClassLoader218672;
-		public static global::java.lang.ClassLoader getCallingClassLoader2() 
+		public static global::java.lang.ClassLoader getCallingClassLoader2()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(dalvik.system.VMStack.staticClass, global::dalvik.system.VMStack._getCallingClassLoader218672)) as java.lang.ClassLoader;
 		}
 		internal static global::MonoJavaBridge.MethodId _getThreadStackTrace18673;
-		public static global::java.lang.StackTraceElement[] getThreadStackTrace(java.lang.Thread arg0) 
+		public static global::java.lang.StackTraceElement[] getThreadStackTrace(java.lang.Thread arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.StackTraceElement>(@__env.CallStaticObjectMethod(dalvik.system.VMStack.staticClass, global::dalvik.system.VMStack._getThreadStackTrace18673, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.StackTraceElement[];
 		}
 		internal static global::MonoJavaBridge.MethodId _VMStack18674;
-		public VMStack()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public VMStack() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(dalvik.system.VMStack.staticClass, global::dalvik.system.VMStack._VMStack18674);

@@ -12,7 +12,7 @@ namespace java.util.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close28099;
-		public override void close() 
+		public override void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._close28099);
 		}
 		internal static global::MonoJavaBridge.MethodId _publish28100;
-		public override void publish(java.util.logging.LogRecord arg0) 
+		public override void publish(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,14 +30,14 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._publish28100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketHandler28101;
-		public SocketHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._SocketHandler28101);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketHandler28102;
-		public SocketHandler(java.lang.String arg0, int arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketHandler(java.lang.String arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.SocketHandler.staticClass, global::java.util.logging.SocketHandler._SocketHandler28102, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

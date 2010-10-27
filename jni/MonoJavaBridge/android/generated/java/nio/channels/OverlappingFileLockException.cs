@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _OverlappingFileLockException22518;
-		public OverlappingFileLockException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OverlappingFileLockException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.OverlappingFileLockException.staticClass, global::java.nio.channels.OverlappingFileLockException._OverlappingFileLockException22518);

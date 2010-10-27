@@ -20,7 +20,7 @@ namespace javax.crypto
 		internal static global::MonoJavaBridge.MethodId _engineGenerateKey28665;
 		protected abstract global::javax.crypto.SecretKey engineGenerateKey();
 		internal static global::MonoJavaBridge.MethodId _KeyGeneratorSpi28666;
-		public KeyGeneratorSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public KeyGeneratorSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.KeyGeneratorSpi.staticClass, global::javax.crypto.KeyGeneratorSpi._KeyGeneratorSpi28666);
@@ -50,7 +50,7 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28667;
-		protected override void engineInit(java.security.SecureRandom arg0) 
+		protected override void engineInit(java.security.SecureRandom arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_.staticClass, global::javax.crypto.KeyGeneratorSpi_._engineInit28667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28668;
-		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1) 
+		protected override void engineInit(java.security.spec.AlgorithmParameterSpec arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_.staticClass, global::javax.crypto.KeyGeneratorSpi_._engineInit28668, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineInit28669;
-		protected override void engineInit(int arg0, java.security.SecureRandom arg1) 
+		protected override void engineInit(int arg0, java.security.SecureRandom arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace javax.crypto
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.crypto.KeyGeneratorSpi_.staticClass, global::javax.crypto.KeyGeneratorSpi_._engineInit28669, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateKey28670;
-		protected override global::javax.crypto.SecretKey engineGenerateKey() 
+		protected override global::javax.crypto.SecretKey engineGenerateKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

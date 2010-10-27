@@ -18,7 +18,7 @@ namespace org.apache.http.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance32424;
-		 global::org.apache.http.cookie.CookieSpec org.apache.http.cookie.CookieSpecFactory.newInstance(org.apache.http.@params.HttpParams arg0) 
+		global::org.apache.http.cookie.CookieSpec org.apache.http.cookie.CookieSpecFactory.newInstance(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

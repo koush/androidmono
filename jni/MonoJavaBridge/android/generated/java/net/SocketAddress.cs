@@ -12,7 +12,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SocketAddress21772;
-		public SocketAddress()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SocketAddress() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.SocketAddress.staticClass, global::java.net.SocketAddress._SocketAddress21772);

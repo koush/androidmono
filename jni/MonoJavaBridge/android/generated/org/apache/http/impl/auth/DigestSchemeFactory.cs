@@ -12,7 +12,7 @@ namespace org.apache.http.impl.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance32734;
-		public virtual global::org.apache.http.auth.AuthScheme newInstance(org.apache.http.@params.HttpParams arg0) 
+		public virtual global::org.apache.http.auth.AuthScheme newInstance(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl.auth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.auth.AuthScheme>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.auth.DigestSchemeFactory.staticClass, global::org.apache.http.impl.auth.DigestSchemeFactory._newInstance32734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.auth.AuthScheme;
 		}
 		internal static global::MonoJavaBridge.MethodId _DigestSchemeFactory32735;
-		public DigestSchemeFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DigestSchemeFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.auth.DigestSchemeFactory.staticClass, global::org.apache.http.impl.auth.DigestSchemeFactory._DigestSchemeFactory32735);

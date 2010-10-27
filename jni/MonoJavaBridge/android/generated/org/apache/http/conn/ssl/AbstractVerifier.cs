@@ -14,7 +14,7 @@ namespace org.apache.http.conn.ssl
 		internal static global::MonoJavaBridge.MethodId _verify32321;
 		public abstract void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2);
 		internal static global::MonoJavaBridge.MethodId _verify32322;
-		public virtual void verify(java.lang.String arg0, javax.net.ssl.SSLSocket arg1) 
+		public virtual void verify(java.lang.String arg0, javax.net.ssl.SSLSocket arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace org.apache.http.conn.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._verify32322, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _verify32323;
-		public virtual bool verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1) 
+		public virtual bool verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace org.apache.http.conn.ssl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._verify32323, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _verify32324;
-		public virtual void verify(java.lang.String arg0, java.security.cert.X509Certificate arg1) 
+		public virtual void verify(java.lang.String arg0, java.security.cert.X509Certificate arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace org.apache.http.conn.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._verify32324, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _verify32325;
-		public virtual void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2, bool arg3) 
+		public virtual void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2, bool arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,31 +50,31 @@ namespace org.apache.http.conn.ssl
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._verify32325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _acceptableCountryWildcard32326;
-		public static bool acceptableCountryWildcard(java.lang.String arg0) 
+		public static bool acceptableCountryWildcard(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._acceptableCountryWildcard32326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCNs32327;
-		public static global::java.lang.String[] getCNs(java.security.cert.X509Certificate arg0) 
+		public static global::java.lang.String[] getCNs(java.security.cert.X509Certificate arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._getCNs32327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getDNSSubjectAlts32328;
-		public static global::java.lang.String[] getDNSSubjectAlts(java.security.cert.X509Certificate arg0) 
+		public static global::java.lang.String[] getDNSSubjectAlts(java.security.cert.X509Certificate arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._getDNSSubjectAlts32328, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _countDots32329;
-		public static int countDots(java.lang.String arg0) 
+		public static int countDots(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._countDots32329, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _AbstractVerifier32330;
-		public AbstractVerifier()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AbstractVerifier() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.ssl.AbstractVerifier.staticClass, global::org.apache.http.conn.ssl.AbstractVerifier._AbstractVerifier32330);
@@ -109,7 +109,7 @@ namespace org.apache.http.conn.ssl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _verify32331;
-		public override void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2) 
+		public override void verify(java.lang.String arg0, java.lang.String[] arg1, java.lang.String[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

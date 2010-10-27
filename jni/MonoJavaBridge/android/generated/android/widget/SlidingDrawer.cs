@@ -29,7 +29,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onDrawerClosed17802;
-			 void android.widget.SlidingDrawer.OnDrawerCloseListener.onDrawerClosed() 
+			void android.widget.SlidingDrawer.OnDrawerCloseListener.onDrawerClosed()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnDrawerCloseListenerDelegateWrapper17803;
-			public OnDrawerCloseListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnDrawerCloseListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SlidingDrawer.OnDrawerCloseListenerDelegateWrapper.staticClass, global::android.widget.SlidingDrawer.OnDrawerCloseListenerDelegateWrapper._OnDrawerCloseListenerDelegateWrapper17803);
@@ -104,7 +104,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onDrawerOpened17804;
-			 void android.widget.SlidingDrawer.OnDrawerOpenListener.onDrawerOpened() 
+			void android.widget.SlidingDrawer.OnDrawerOpenListener.onDrawerOpened()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnDrawerOpenListenerDelegateWrapper17805;
-			public OnDrawerOpenListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnDrawerOpenListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SlidingDrawer.OnDrawerOpenListenerDelegateWrapper.staticClass, global::android.widget.SlidingDrawer.OnDrawerOpenListenerDelegateWrapper._OnDrawerOpenListenerDelegateWrapper17805);
@@ -180,7 +180,7 @@ namespace android.widget
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onScrollStarted17806;
-			 void android.widget.SlidingDrawer.OnDrawerScrollListener.onScrollStarted() 
+			void android.widget.SlidingDrawer.OnDrawerScrollListener.onScrollStarted()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -189,7 +189,7 @@ namespace android.widget
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.OnDrawerScrollListener_.staticClass, global::android.widget.SlidingDrawer.OnDrawerScrollListener_._onScrollStarted17806);
 			}
 			internal static global::MonoJavaBridge.MethodId _onScrollEnded17807;
-			 void android.widget.SlidingDrawer.OnDrawerScrollListener.onScrollEnded() 
+			void android.widget.SlidingDrawer.OnDrawerScrollListener.onScrollEnded()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _lock17808;
-		public virtual void @lock() 
+		public virtual void @lock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -215,7 +215,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._lock17808);
 		}
 		internal static global::MonoJavaBridge.MethodId _close17809;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -231,7 +231,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContent17810;
-		public virtual global::android.view.View getContent() 
+		public virtual global::android.view.View getContent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -240,7 +240,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._getContent17810)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _open17811;
-		public virtual void open() 
+		public virtual void open()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -249,7 +249,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._open17811);
 		}
 		internal static global::MonoJavaBridge.MethodId _unlock17812;
-		public virtual void unlock() 
+		public virtual void unlock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -258,7 +258,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._unlock17812);
 		}
 		internal static global::MonoJavaBridge.MethodId _toggle17813;
-		public virtual void toggle() 
+		public virtual void toggle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -267,7 +267,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._toggle17813);
 		}
 		internal static global::MonoJavaBridge.MethodId _onTouchEvent17814;
-		public override bool onTouchEvent(android.view.MotionEvent arg0) 
+		public override bool onTouchEvent(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -276,7 +276,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onTouchEvent17814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchDraw17815;
-		protected override void dispatchDraw(android.graphics.Canvas arg0) 
+		protected override void dispatchDraw(android.graphics.Canvas arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -285,7 +285,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._dispatchDraw17815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onLayout17816;
-		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
+		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -294,7 +294,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onLayout17816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _onFinishInflate17817;
-		protected override void onFinishInflate() 
+		protected override void onFinishInflate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -303,7 +303,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onFinishInflate17817);
 		}
 		internal static global::MonoJavaBridge.MethodId _onMeasure17818;
-		protected override void onMeasure(int arg0, int arg1) 
+		protected override void onMeasure(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -312,7 +312,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onMeasure17818, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onInterceptTouchEvent17819;
-		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0) 
+		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -321,7 +321,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onInterceptTouchEvent17819, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _animateToggle17820;
-		public virtual void animateToggle() 
+		public virtual void animateToggle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -330,7 +330,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._animateToggle17820);
 		}
 		internal static global::MonoJavaBridge.MethodId _animateClose17821;
-		public virtual void animateClose() 
+		public virtual void animateClose()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -339,7 +339,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._animateClose17821);
 		}
 		internal static global::MonoJavaBridge.MethodId _animateOpen17822;
-		public virtual void animateOpen() 
+		public virtual void animateOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -348,7 +348,7 @@ namespace android.widget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._animateOpen17822);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnDrawerOpenListener17823;
-		public virtual void setOnDrawerOpenListener(android.widget.SlidingDrawer.OnDrawerOpenListener arg0) 
+		public virtual void setOnDrawerOpenListener(android.widget.SlidingDrawer.OnDrawerOpenListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -361,7 +361,7 @@ namespace android.widget
 			setOnDrawerOpenListener((global::android.widget.SlidingDrawer.OnDrawerOpenListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnDrawerCloseListener17824;
-		public virtual void setOnDrawerCloseListener(android.widget.SlidingDrawer.OnDrawerCloseListener arg0) 
+		public virtual void setOnDrawerCloseListener(android.widget.SlidingDrawer.OnDrawerCloseListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -374,7 +374,7 @@ namespace android.widget
 			setOnDrawerCloseListener((global::android.widget.SlidingDrawer.OnDrawerCloseListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnDrawerScrollListener17825;
-		public virtual void setOnDrawerScrollListener(android.widget.SlidingDrawer.OnDrawerScrollListener arg0) 
+		public virtual void setOnDrawerScrollListener(android.widget.SlidingDrawer.OnDrawerScrollListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -390,7 +390,7 @@ namespace android.widget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHandle17826;
-		public virtual global::android.view.View getHandle() 
+		public virtual global::android.view.View getHandle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -399,7 +399,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._getHandle17826)) as android.view.View;
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpened17827;
-		public virtual bool isOpened() 
+		public virtual bool isOpened()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -408,7 +408,7 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._isOpened17827);
 		}
 		internal static global::MonoJavaBridge.MethodId _isMoving17828;
-		public virtual bool isMoving() 
+		public virtual bool isMoving()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -417,14 +417,14 @@ namespace android.widget
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._isMoving17828);
 		}
 		internal static global::MonoJavaBridge.MethodId _SlidingDrawer17829;
-		public SlidingDrawer(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SlidingDrawer(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._SlidingDrawer17829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SlidingDrawer17830;
-		public SlidingDrawer(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SlidingDrawer(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._SlidingDrawer17830, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

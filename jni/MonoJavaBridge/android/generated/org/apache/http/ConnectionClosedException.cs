@@ -12,7 +12,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionClosedException31489;
-		public ConnectionClosedException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnectionClosedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ConnectionClosedException.staticClass, global::org.apache.http.ConnectionClosedException._ConnectionClosedException31489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

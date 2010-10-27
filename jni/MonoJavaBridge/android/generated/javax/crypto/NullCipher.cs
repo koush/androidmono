@@ -12,7 +12,7 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NullCipher28706;
-		public NullCipher()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NullCipher() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.NullCipher.staticClass, global::javax.crypto.NullCipher._NullCipher28706);

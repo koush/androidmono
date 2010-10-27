@@ -19,7 +19,7 @@ namespace org.apache.http.conn.@params
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultMax32191;
-		public int getDefaultMax() 
+		public int getDefaultMax()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,8 +27,15 @@ namespace org.apache.http.conn.@params
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._getDefaultMax32191);
 		}
+		public new int DefaultMaxPerRoute
+		{
+			set
+			{
+				setDefaultMaxPerRoute(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultMaxPerRoute32192;
-		public void setDefaultMaxPerRoute(int arg0) 
+		public void setDefaultMaxPerRoute(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +44,7 @@ namespace org.apache.http.conn.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._setDefaultMaxPerRoute32192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setMaxForRoute32193;
-		public void setMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0, int arg1) 
+		public void setMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +53,7 @@ namespace org.apache.http.conn.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._setMaxForRoute32193, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxForRoute32194;
-		public int getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0) 
+		public int getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,8 +61,15 @@ namespace org.apache.http.conn.@params
 			else
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._getMaxForRoute32194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::java.util.Map MaxForRoutes
+		{
+			set
+			{
+				setMaxForRoutes(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setMaxForRoutes32195;
-		public void setMaxForRoutes(java.util.Map arg0) 
+		public void setMaxForRoutes(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,14 +78,14 @@ namespace org.apache.http.conn.@params
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._setMaxForRoutes32195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnPerRouteBean32196;
-		public ConnPerRouteBean(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnPerRouteBean(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._ConnPerRouteBean32196, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnPerRouteBean32197;
-		public ConnPerRouteBean()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnPerRouteBean() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.conn.@params.ConnPerRouteBean.staticClass, global::org.apache.http.conn.@params.ConnPerRouteBean._ConnPerRouteBean32197);

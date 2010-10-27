@@ -12,7 +12,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _BatteryManager9515;
-		public BatteryManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BatteryManager() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager9515);

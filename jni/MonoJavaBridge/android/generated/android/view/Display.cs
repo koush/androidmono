@@ -19,7 +19,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWidth14014;
-		public virtual int getWidth() 
+		public virtual int getWidth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeight14015;
-		public virtual int getHeight() 
+		public virtual int getHeight()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOrientation14016;
-		public virtual int getOrientation() 
+		public virtual int getOrientation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayId14017;
-		public virtual int getDisplayId() 
+		public virtual int getDisplayId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRotation14018;
-		public virtual int getRotation() 
+		public virtual int getRotation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPixelFormat14019;
-		public virtual int getPixelFormat() 
+		public virtual int getPixelFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRefreshRate14020;
-		public virtual float getRefreshRate() 
+		public virtual float getRefreshRate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -124,7 +124,7 @@ namespace android.view
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.view.Display.staticClass, global::android.view.Display._getRefreshRate14020);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetrics14021;
-		public virtual void getMetrics(android.util.DisplayMetrics arg0) 
+		public virtual void getMetrics(android.util.DisplayMetrics arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

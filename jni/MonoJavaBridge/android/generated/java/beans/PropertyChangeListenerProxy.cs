@@ -19,7 +19,7 @@ namespace java.beans
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPropertyName18782;
-		public virtual global::java.lang.String getPropertyName() 
+		public virtual global::java.lang.String getPropertyName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.beans
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.beans.PropertyChangeListenerProxy.staticClass, global::java.beans.PropertyChangeListenerProxy._getPropertyName18782)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _propertyChange18783;
-		public virtual void propertyChange(java.beans.PropertyChangeEvent arg0) 
+		public virtual void propertyChange(java.beans.PropertyChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.beans
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.beans.PropertyChangeListenerProxy.staticClass, global::java.beans.PropertyChangeListenerProxy._propertyChange18783, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _PropertyChangeListenerProxy18784;
-		public PropertyChangeListenerProxy(java.lang.String arg0, java.beans.PropertyChangeListener arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PropertyChangeListenerProxy(java.lang.String arg0, java.beans.PropertyChangeListener arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.PropertyChangeListenerProxy.staticClass, global::java.beans.PropertyChangeListenerProxy._PropertyChangeListenerProxy18784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

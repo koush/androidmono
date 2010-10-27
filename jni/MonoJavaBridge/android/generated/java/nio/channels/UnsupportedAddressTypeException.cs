@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedAddressTypeException22655;
-		public UnsupportedAddressTypeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedAddressTypeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.UnsupportedAddressTypeException.staticClass, global::java.nio.channels.UnsupportedAddressTypeException._UnsupportedAddressTypeException22655);

@@ -12,14 +12,14 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteConstraintException4713;
-		public SQLiteConstraintException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteConstraintException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteConstraintException.staticClass, global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4713);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteConstraintException4714;
-		public SQLiteConstraintException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteConstraintException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteConstraintException.staticClass, global::android.database.sqlite.SQLiteConstraintException._SQLiteConstraintException4714, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

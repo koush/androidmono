@@ -12,7 +12,7 @@ namespace android.view
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getContantForFocusDirection14482;
-		public static int getContantForFocusDirection(int arg0) 
+		public static int getContantForFocusDirection(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.view.SoundEffectConstants.staticClass, global::android.view.SoundEffectConstants._getContantForFocusDirection14482, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

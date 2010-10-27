@@ -14,7 +14,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCertificate23594;
 		public abstract global::java.security.cert.Certificate engineGenerateCertificate(java.io.InputStream arg0);
 		internal static global::MonoJavaBridge.MethodId _engineGetCertPathEncodings23595;
-		public virtual global::java.util.Iterator engineGetCertPathEncodings() 
+		public virtual global::java.util.Iterator engineGetCertPathEncodings()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Iterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi.staticClass, global::java.security.cert.CertificateFactorySpi._engineGetCertPathEncodings23595)) as java.util.Iterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCertPath23596;
-		public virtual global::java.security.cert.CertPath engineGenerateCertPath(java.util.List arg0) 
+		public virtual global::java.security.cert.CertPath engineGenerateCertPath(java.util.List arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi.staticClass, global::java.security.cert.CertificateFactorySpi._engineGenerateCertPath23596, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CertPath;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCertPath23597;
-		public virtual global::java.security.cert.CertPath engineGenerateCertPath(java.io.InputStream arg0) 
+		public virtual global::java.security.cert.CertPath engineGenerateCertPath(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi.staticClass, global::java.security.cert.CertificateFactorySpi._engineGenerateCertPath23597, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CertPath;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCertPath23598;
-		public virtual global::java.security.cert.CertPath engineGenerateCertPath(java.io.InputStream arg0, java.lang.String arg1) 
+		public virtual global::java.security.cert.CertPath engineGenerateCertPath(java.io.InputStream arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace java.security.cert
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCRLs23601;
 		public abstract global::java.util.Collection engineGenerateCRLs(java.io.InputStream arg0);
 		internal static global::MonoJavaBridge.MethodId _CertificateFactorySpi23602;
-		public CertificateFactorySpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateFactorySpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertificateFactorySpi.staticClass, global::java.security.cert.CertificateFactorySpi._CertificateFactorySpi23602);
@@ -90,7 +90,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCertificate23603;
-		public override global::java.security.cert.Certificate engineGenerateCertificate(java.io.InputStream arg0) 
+		public override global::java.security.cert.Certificate engineGenerateCertificate(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi_.staticClass, global::java.security.cert.CertificateFactorySpi_._engineGenerateCertificate23603, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.Certificate;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCertificates23604;
-		public override global::java.util.Collection engineGenerateCertificates(java.io.InputStream arg0) 
+		public override global::java.util.Collection engineGenerateCertificates(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Collection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi_.staticClass, global::java.security.cert.CertificateFactorySpi_._engineGenerateCertificates23604, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Collection;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCRL23605;
-		public override global::java.security.cert.CRL engineGenerateCRL(java.io.InputStream arg0) 
+		public override global::java.security.cert.CRL engineGenerateCRL(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -117,7 +117,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertificateFactorySpi_.staticClass, global::java.security.cert.CertificateFactorySpi_._engineGenerateCRL23605, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.cert.CRL;
 		}
 		internal static global::MonoJavaBridge.MethodId _engineGenerateCRLs23606;
-		public override global::java.util.Collection engineGenerateCRLs(java.io.InputStream arg0) 
+		public override global::java.util.Collection engineGenerateCRLs(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

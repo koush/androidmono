@@ -12,14 +12,14 @@ namespace android.test
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionFailedError12177;
-		public AssertionFailedError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionFailedError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.AssertionFailedError.staticClass, global::android.test.AssertionFailedError._AssertionFailedError12177);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _AssertionFailedError12178;
-		public AssertionFailedError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AssertionFailedError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.AssertionFailedError.staticClass, global::android.test.AssertionFailedError._AssertionFailedError12178, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

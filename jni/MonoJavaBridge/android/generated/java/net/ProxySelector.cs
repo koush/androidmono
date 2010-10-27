@@ -12,13 +12,13 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault21670;
-		public static global::java.net.ProxySelector getDefault() 
+		public static global::java.net.ProxySelector getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._getDefault21670)) as java.net.ProxySelector;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault21671;
-		public static void setDefault(java.net.ProxySelector arg0) 
+		public static void setDefault(java.net.ProxySelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._setDefault21671, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -28,7 +28,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _connectFailed21673;
 		public abstract void connectFailed(java.net.URI arg0, java.net.SocketAddress arg1, java.io.IOException arg2);
 		internal static global::MonoJavaBridge.MethodId _ProxySelector21674;
-		public ProxySelector()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ProxySelector() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.ProxySelector.staticClass, global::java.net.ProxySelector._ProxySelector21674);
@@ -58,7 +58,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _select21675;
-		public override global::java.util.List select(java.net.URI arg0) 
+		public override global::java.util.List select(java.net.URI arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ProxySelector_.staticClass, global::java.net.ProxySelector_._select21675, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _connectFailed21676;
-		public override void connectFailed(java.net.URI arg0, java.net.SocketAddress arg1, java.io.IOException arg2) 
+		public override void connectFailed(java.net.URI arg0, java.net.SocketAddress arg1, java.io.IOException arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

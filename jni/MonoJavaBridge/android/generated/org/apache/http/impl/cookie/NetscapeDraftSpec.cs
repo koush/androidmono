@@ -12,7 +12,7 @@ namespace org.apache.http.impl.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parse33312;
-		public override global::java.util.List parse(org.apache.http.Header arg0, org.apache.http.cookie.CookieOrigin arg1) 
+		public override global::java.util.List parse(org.apache.http.Header arg0, org.apache.http.cookie.CookieOrigin arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.impl.cookie
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVersion33313;
-		public override int getVersion() 
+		public override int getVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace org.apache.http.impl.cookie
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpec._getVersion33313);
 		}
 		internal static global::MonoJavaBridge.MethodId _formatCookies33314;
-		public override global::java.util.List formatCookies(java.util.List arg0) 
+		public override global::java.util.List formatCookies(java.util.List arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace org.apache.http.impl.cookie
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVersionHeader33315;
-		public override global::org.apache.http.Header getVersionHeader() 
+		public override global::org.apache.http.Header getVersionHeader()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,14 +62,14 @@ namespace org.apache.http.impl.cookie
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.Header>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpec._getVersionHeader33315)) as org.apache.http.Header;
 		}
 		internal static global::MonoJavaBridge.MethodId _NetscapeDraftSpec33316;
-		public NetscapeDraftSpec(java.lang.String[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NetscapeDraftSpec(java.lang.String[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpec._NetscapeDraftSpec33316, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NetscapeDraftSpec33317;
-		public NetscapeDraftSpec()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NetscapeDraftSpec() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.cookie.NetscapeDraftSpec.staticClass, global::org.apache.http.impl.cookie.NetscapeDraftSpec._NetscapeDraftSpec33317);

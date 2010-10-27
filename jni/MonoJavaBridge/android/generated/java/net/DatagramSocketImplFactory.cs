@@ -18,7 +18,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createDatagramSocketImpl21464;
-		 global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl() 
+		global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

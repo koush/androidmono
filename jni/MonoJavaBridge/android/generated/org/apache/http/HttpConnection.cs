@@ -24,7 +24,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _shutdown31528;
-		 void org.apache.http.HttpConnection.shutdown() 
+		void org.apache.http.HttpConnection.shutdown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace org.apache.http
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._shutdown31528);
 		}
 		internal static global::MonoJavaBridge.MethodId _close31529;
-		 void org.apache.http.HttpConnection.close() 
+		void org.apache.http.HttpConnection.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -42,7 +42,7 @@ namespace org.apache.http
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._close31529);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen31530;
-		 bool org.apache.http.HttpConnection.isOpen() 
+		bool org.apache.http.HttpConnection.isOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._isOpen31530);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMetrics31531;
-		 global::org.apache.http.HttpConnectionMetrics org.apache.http.HttpConnection.getMetrics() 
+		global::org.apache.http.HttpConnectionMetrics org.apache.http.HttpConnection.getMetrics()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.HttpConnectionMetrics>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._getMetrics31531)) as org.apache.http.HttpConnectionMetrics;
 		}
 		internal static global::MonoJavaBridge.MethodId _isStale31532;
-		 bool org.apache.http.HttpConnection.isStale() 
+		bool org.apache.http.HttpConnection.isStale()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -69,7 +69,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._isStale31532);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSocketTimeout31533;
-		 void org.apache.http.HttpConnection.setSocketTimeout(int arg0) 
+		void org.apache.http.HttpConnection.setSocketTimeout(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace org.apache.http
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.HttpConnection_.staticClass, global::org.apache.http.HttpConnection_._setSocketTimeout31533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSocketTimeout31534;
-		 int org.apache.http.HttpConnection.getSocketTimeout() 
+		int org.apache.http.HttpConnection.getSocketTimeout()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

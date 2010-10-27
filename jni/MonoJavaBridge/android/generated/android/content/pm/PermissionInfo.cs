@@ -12,7 +12,7 @@ namespace android.content.pm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString3992;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._toString3992)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel3993;
-		public override void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public override void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.content.pm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._writeToParcel3993, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents3994;
-		public virtual int describeContents() 
+		public virtual int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.content.pm
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._describeContents3994);
 		}
 		internal static global::MonoJavaBridge.MethodId _loadDescription3995;
-		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0) 
+		public virtual global::java.lang.CharSequence loadDescription(android.content.pm.PackageManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,14 +48,14 @@ namespace android.content.pm
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._loadDescription3995, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _PermissionInfo3996;
-		public PermissionInfo()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PermissionInfo() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._PermissionInfo3996);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PermissionInfo3997;
-		public PermissionInfo(android.content.pm.PermissionInfo arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PermissionInfo(android.content.pm.PermissionInfo arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.pm.PermissionInfo.staticClass, global::android.content.pm.PermissionInfo._PermissionInfo3997, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

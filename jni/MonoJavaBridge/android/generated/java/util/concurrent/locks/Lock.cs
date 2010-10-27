@@ -23,7 +23,7 @@ namespace java.util.concurrent.locks
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _lock27738;
-		 void java.util.concurrent.locks.Lock.@lock() 
+		void java.util.concurrent.locks.Lock.@lock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_.staticClass, global::java.util.concurrent.locks.Lock_._lock27738);
 		}
 		internal static global::MonoJavaBridge.MethodId _unlock27739;
-		 void java.util.concurrent.locks.Lock.unlock() 
+		void java.util.concurrent.locks.Lock.unlock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -41,7 +41,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_.staticClass, global::java.util.concurrent.locks.Lock_._unlock27739);
 		}
 		internal static global::MonoJavaBridge.MethodId _lockInterruptibly27740;
-		 void java.util.concurrent.locks.Lock.lockInterruptibly() 
+		void java.util.concurrent.locks.Lock.lockInterruptibly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -50,7 +50,7 @@ namespace java.util.concurrent.locks
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_.staticClass, global::java.util.concurrent.locks.Lock_._lockInterruptibly27740);
 		}
 		internal static global::MonoJavaBridge.MethodId _tryLock27741;
-		 bool java.util.concurrent.locks.Lock.tryLock() 
+		bool java.util.concurrent.locks.Lock.tryLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -59,7 +59,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_.staticClass, global::java.util.concurrent.locks.Lock_._tryLock27741);
 		}
 		internal static global::MonoJavaBridge.MethodId _tryLock27742;
-		 bool java.util.concurrent.locks.Lock.tryLock(long arg0, java.util.concurrent.TimeUnit arg1) 
+		bool java.util.concurrent.locks.Lock.tryLock(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.util.concurrent.locks
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.locks.Lock_.staticClass, global::java.util.concurrent.locks.Lock_._tryLock27742, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _newCondition27743;
-		 global::java.util.concurrent.locks.Condition java.util.concurrent.locks.Lock.newCondition() 
+		global::java.util.concurrent.locks.Condition java.util.concurrent.locks.Lock.newCondition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

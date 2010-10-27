@@ -12,7 +12,7 @@ namespace android.location
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getName6968;
-		public virtual global::java.lang.String getName() 
+		public virtual global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.location
 		internal static global::MonoJavaBridge.MethodId _supportsBearing6977;
 		public abstract bool supportsBearing();
 		internal static global::MonoJavaBridge.MethodId _meetsCriteria6978;
-		public virtual bool meetsCriteria(android.location.Criteria arg0) 
+		public virtual bool meetsCriteria(android.location.Criteria arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace android.location
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getAccuracy6982;
-		public override int getAccuracy() 
+		public override int getAccuracy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace android.location
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._getAccuracy6982);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPowerRequirement6983;
-		public override int getPowerRequirement() 
+		public override int getPowerRequirement()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.location
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._getPowerRequirement6983);
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresNetwork6984;
-		public override bool requiresNetwork() 
+		public override bool requiresNetwork()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._requiresNetwork6984);
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresSatellite6985;
-		public override bool requiresSatellite() 
+		public override bool requiresSatellite()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._requiresSatellite6985);
 		}
 		internal static global::MonoJavaBridge.MethodId _requiresCell6986;
-		public override bool requiresCell() 
+		public override bool requiresCell()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._requiresCell6986);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasMonetaryCost6987;
-		public override bool hasMonetaryCost() 
+		public override bool hasMonetaryCost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._hasMonetaryCost6987);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsAltitude6988;
-		public override bool supportsAltitude() 
+		public override bool supportsAltitude()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._supportsAltitude6988);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsSpeed6989;
-		public override bool supportsSpeed() 
+		public override bool supportsSpeed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.LocationProvider_.staticClass, global::android.location.LocationProvider_._supportsSpeed6989);
 		}
 		internal static global::MonoJavaBridge.MethodId _supportsBearing6990;
-		public override bool supportsBearing() 
+		public override bool supportsBearing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

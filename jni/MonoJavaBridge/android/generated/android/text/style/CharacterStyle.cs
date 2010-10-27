@@ -12,7 +12,7 @@ namespace android.text.style
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _wrap13459;
-		public static global::android.text.style.CharacterStyle wrap(android.text.style.CharacterStyle arg0) 
+		public static global::android.text.style.CharacterStyle wrap(android.text.style.CharacterStyle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._wrap13459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.style.CharacterStyle;
@@ -20,7 +20,7 @@ namespace android.text.style
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13460;
 		public abstract void updateDrawState(android.text.TextPaint arg0);
 		internal static global::MonoJavaBridge.MethodId _getUnderlying13461;
-		public virtual global::android.text.style.CharacterStyle getUnderlying() 
+		public virtual global::android.text.style.CharacterStyle getUnderlying()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace android.text.style
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._getUnderlying13461)) as android.text.style.CharacterStyle;
 		}
 		internal static global::MonoJavaBridge.MethodId _CharacterStyle13462;
-		public CharacterStyle()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CharacterStyle() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.style.CharacterStyle.staticClass, global::android.text.style.CharacterStyle._CharacterStyle13462);
@@ -58,7 +58,7 @@ namespace android.text.style
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _updateDrawState13463;
-		public override void updateDrawState(android.text.TextPaint arg0) 
+		public override void updateDrawState(android.text.TextPaint arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,7 +12,7 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _register31784;
-		public void register(java.lang.String arg0, org.apache.http.auth.AuthSchemeFactory arg1) 
+		public void register(java.lang.String arg0, org.apache.http.auth.AuthSchemeFactory arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -20,8 +20,15 @@ namespace org.apache.http.auth
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.auth.AuthSchemeRegistry.staticClass, global::org.apache.http.auth.AuthSchemeRegistry._register31784, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::java.util.Map Items
+		{
+			set
+			{
+				setItems(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setItems31785;
-		public void setItems(java.util.Map arg0) 
+		public void setItems(java.util.Map arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +37,7 @@ namespace org.apache.http.auth
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.auth.AuthSchemeRegistry.staticClass, global::org.apache.http.auth.AuthSchemeRegistry._setItems31785, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregister31786;
-		public void unregister(java.lang.String arg0) 
+		public void unregister(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +46,7 @@ namespace org.apache.http.auth
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.auth.AuthSchemeRegistry.staticClass, global::org.apache.http.auth.AuthSchemeRegistry._unregister31786, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAuthScheme31787;
-		public global::org.apache.http.auth.AuthScheme getAuthScheme(java.lang.String arg0, org.apache.http.@params.HttpParams arg1) 
+		public global::org.apache.http.auth.AuthScheme getAuthScheme(java.lang.String arg0, org.apache.http.@params.HttpParams arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +62,7 @@ namespace org.apache.http.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSchemeNames31788;
-		public global::java.util.List getSchemeNames() 
+		public global::java.util.List getSchemeNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +71,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.AuthSchemeRegistry.staticClass, global::org.apache.http.auth.AuthSchemeRegistry._getSchemeNames31788)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _AuthSchemeRegistry31789;
-		public AuthSchemeRegistry()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AuthSchemeRegistry() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.auth.AuthSchemeRegistry.staticClass, global::org.apache.http.auth.AuthSchemeRegistry._AuthSchemeRegistry31789);

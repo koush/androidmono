@@ -12,14 +12,14 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ExemptionMechanismException28606;
-		public ExemptionMechanismException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ExemptionMechanismException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanismException.staticClass, global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28606);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ExemptionMechanismException28607;
-		public ExemptionMechanismException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ExemptionMechanismException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.ExemptionMechanismException.staticClass, global::javax.crypto.ExemptionMechanismException._ExemptionMechanismException28607, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

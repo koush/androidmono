@@ -12,14 +12,14 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedURLException21607;
-		public MalformedURLException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedURLException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.MalformedURLException.staticClass, global::java.net.MalformedURLException._MalformedURLException21607);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedURLException21608;
-		public MalformedURLException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedURLException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.MalformedURLException.staticClass, global::java.net.MalformedURLException._MalformedURLException21608, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

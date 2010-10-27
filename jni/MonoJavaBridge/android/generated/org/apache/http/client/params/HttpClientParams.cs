@@ -12,37 +12,37 @@ namespace org.apache.http.client.@params
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setCookiePolicy32015;
-		public static void setCookiePolicy(org.apache.http.@params.HttpParams arg0, java.lang.String arg1) 
+		public static void setCookiePolicy(org.apache.http.@params.HttpParams arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._setCookiePolicy32015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isRedirecting32016;
-		public static bool isRedirecting(org.apache.http.@params.HttpParams arg0) 
+		public static bool isRedirecting(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._isRedirecting32016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setRedirecting32017;
-		public static void setRedirecting(org.apache.http.@params.HttpParams arg0, bool arg1) 
+		public static void setRedirecting(org.apache.http.@params.HttpParams arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._setRedirecting32017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _isAuthenticating32018;
-		public static bool isAuthenticating(org.apache.http.@params.HttpParams arg0) 
+		public static bool isAuthenticating(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._isAuthenticating32018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setAuthenticating32019;
-		public static void setAuthenticating(org.apache.http.@params.HttpParams arg0, bool arg1) 
+		public static void setAuthenticating(org.apache.http.@params.HttpParams arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._setAuthenticating32019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCookiePolicy32020;
-		public static global::java.lang.String getCookiePolicy(org.apache.http.@params.HttpParams arg0) 
+		public static global::java.lang.String getCookiePolicy(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.client.@params.HttpClientParams.staticClass, global::org.apache.http.client.@params.HttpClientParams._getCookiePolicy32020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;

@@ -19,7 +19,7 @@ namespace org.apache.http.protocol
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentDate33888;
-		public virtual global::java.lang.String getCurrentDate() 
+		public virtual global::java.lang.String getCurrentDate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._getCurrentDate33888)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpDateGenerator33889;
-		public HttpDateGenerator()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpDateGenerator() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.protocol.HttpDateGenerator.staticClass, global::org.apache.http.protocol.HttpDateGenerator._HttpDateGenerator33889);

@@ -12,7 +12,7 @@ namespace org.apache.http.@params
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpAbstractParamBean33764;
-		public HttpAbstractParamBean(org.apache.http.@params.HttpParams arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpAbstractParamBean(org.apache.http.@params.HttpParams arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.@params.HttpAbstractParamBean.staticClass, global::org.apache.http.@params.HttpAbstractParamBean._HttpAbstractParamBean33764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

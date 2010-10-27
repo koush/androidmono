@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _VirtualMachineError20934;
-		public VirtualMachineError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public VirtualMachineError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._VirtualMachineError20934);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _VirtualMachineError20935;
-		public VirtualMachineError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public VirtualMachineError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.VirtualMachineError.staticClass, global::java.lang.VirtualMachineError._VirtualMachineError20935, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

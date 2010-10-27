@@ -17,7 +17,7 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDelay27384;
-		 long java.util.concurrent.Delayed.getDelay(java.util.concurrent.TimeUnit arg0) 
+		long java.util.concurrent.Delayed.getDelay(java.util.concurrent.TimeUnit arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -26,7 +26,7 @@ namespace java.util.concurrent
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._getDelay27384, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _compareTo27385;
-		 int java.lang.Comparable.compareTo(java.lang.Object arg0) 
+		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util.concurrent
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._compareTo27385, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _get27386;
-		 global::java.lang.Object java.util.concurrent.Future.get() 
+		global::java.lang.Object java.util.concurrent.Future.get()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._get27386)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _get27387;
-		 global::java.lang.Object java.util.concurrent.Future.get(long arg0, java.util.concurrent.TimeUnit arg1) 
+		global::java.lang.Object java.util.concurrent.Future.get(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.util.concurrent
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._get27387, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel27388;
-		 bool java.util.concurrent.Future.cancel(bool arg0) 
+		bool java.util.concurrent.Future.cancel(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.util.concurrent
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._cancel27388, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCancelled27389;
-		 bool java.util.concurrent.Future.isCancelled() 
+		bool java.util.concurrent.Future.isCancelled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace java.util.concurrent
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.concurrent.ScheduledFuture_.staticClass, global::java.util.concurrent.ScheduledFuture_._isCancelled27389);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone27390;
-		 bool java.util.concurrent.Future.isDone() 
+		bool java.util.concurrent.Future.isDone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

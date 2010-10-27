@@ -12,7 +12,7 @@ namespace javax.security.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals30176;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace javax.security.auth
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._equals30176, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString30177;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace javax.security.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._toString30177)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode30178;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace javax.security.auth
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._hashCode30178);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrincipals30179;
-		public global::java.util.Set getPrincipals(java.lang.Class arg0) 
+		public global::java.util.Set getPrincipals(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace javax.security.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrincipals30180;
-		public global::java.util.Set getPrincipals() 
+		public global::java.util.Set getPrincipals()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace javax.security.auth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._getPrincipals30180)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _setReadOnly30181;
-		public void setReadOnly() 
+		public void setReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace javax.security.auth
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._setReadOnly30181);
 		}
 		internal static global::MonoJavaBridge.MethodId _isReadOnly30182;
-		public bool isReadOnly() 
+		public bool isReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,31 +82,31 @@ namespace javax.security.auth
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._isReadOnly30182);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubject30183;
-		public static global::javax.security.auth.Subject getSubject(java.security.AccessControlContext arg0) 
+		public static global::javax.security.auth.Subject getSubject(java.security.AccessControlContext arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<javax.security.auth.Subject>(@__env.CallStaticObjectMethod(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._getSubject30183, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as javax.security.auth.Subject;
 		}
 		internal static global::MonoJavaBridge.MethodId _doAs30184;
-		public static global::java.lang.Object doAs(javax.security.auth.Subject arg0, java.security.PrivilegedExceptionAction arg1) 
+		public static global::java.lang.Object doAs(javax.security.auth.Subject arg0, java.security.PrivilegedExceptionAction arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._doAs30184, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _doAs30185;
-		public static global::java.lang.Object doAs(javax.security.auth.Subject arg0, java.security.PrivilegedAction arg1) 
+		public static global::java.lang.Object doAs(javax.security.auth.Subject arg0, java.security.PrivilegedAction arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._doAs30185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _doAsPrivileged30186;
-		public static global::java.lang.Object doAsPrivileged(javax.security.auth.Subject arg0, java.security.PrivilegedAction arg1, java.security.AccessControlContext arg2) 
+		public static global::java.lang.Object doAsPrivileged(javax.security.auth.Subject arg0, java.security.PrivilegedAction arg1, java.security.AccessControlContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._doAsPrivileged30186, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _doAsPrivileged30187;
-		public static global::java.lang.Object doAsPrivileged(javax.security.auth.Subject arg0, java.security.PrivilegedExceptionAction arg1, java.security.AccessControlContext arg2) 
+		public static global::java.lang.Object doAsPrivileged(javax.security.auth.Subject arg0, java.security.PrivilegedExceptionAction arg1, java.security.AccessControlContext arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._doAsPrivileged30187, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.Object;
@@ -119,7 +119,7 @@ namespace javax.security.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicCredentials30188;
-		public global::java.util.Set getPublicCredentials() 
+		public global::java.util.Set getPublicCredentials()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,7 +128,7 @@ namespace javax.security.auth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._getPublicCredentials30188)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicCredentials30189;
-		public global::java.util.Set getPublicCredentials(java.lang.Class arg0) 
+		public global::java.util.Set getPublicCredentials(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -144,7 +144,7 @@ namespace javax.security.auth
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrivateCredentials30190;
-		public global::java.util.Set getPrivateCredentials() 
+		public global::java.util.Set getPrivateCredentials()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -153,7 +153,7 @@ namespace javax.security.auth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._getPrivateCredentials30190)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrivateCredentials30191;
-		public global::java.util.Set getPrivateCredentials(java.lang.Class arg0) 
+		public global::java.util.Set getPrivateCredentials(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -162,14 +162,14 @@ namespace javax.security.auth
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._getPrivateCredentials30191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _Subject30192;
-		public Subject(bool arg0, java.util.Set arg1, java.util.Set arg2, java.util.Set arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Subject(bool arg0, java.util.Set arg1, java.util.Set arg2, java.util.Set arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._Subject30192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Subject30193;
-		public Subject()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Subject() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.auth.Subject.staticClass, global::javax.security.auth.Subject._Subject30193);

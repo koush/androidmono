@@ -20,7 +20,7 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _eofDetected32106;
-		 bool org.apache.http.conn.EofSensorWatcher.eofDetected(java.io.InputStream arg0) 
+		bool org.apache.http.conn.EofSensorWatcher.eofDetected(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_.staticClass, global::org.apache.http.conn.EofSensorWatcher_._eofDetected32106, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _streamClosed32107;
-		 bool org.apache.http.conn.EofSensorWatcher.streamClosed(java.io.InputStream arg0) 
+		bool org.apache.http.conn.EofSensorWatcher.streamClosed(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http.conn
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.conn.EofSensorWatcher_.staticClass, global::org.apache.http.conn.EofSensorWatcher_._streamClosed32107, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _streamAbort32108;
-		 bool org.apache.http.conn.EofSensorWatcher.streamAbort(java.io.InputStream arg0) 
+		bool org.apache.http.conn.EofSensorWatcher.streamAbort(java.io.InputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

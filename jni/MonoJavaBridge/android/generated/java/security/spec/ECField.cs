@@ -18,7 +18,7 @@ namespace java.security.spec
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getFieldSize23977;
-		 int java.security.spec.ECField.getFieldSize() 
+		int java.security.spec.ECField.getFieldSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

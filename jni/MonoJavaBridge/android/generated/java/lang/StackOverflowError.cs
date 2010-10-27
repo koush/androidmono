@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _StackOverflowError20530;
-		public StackOverflowError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StackOverflowError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StackOverflowError.staticClass, global::java.lang.StackOverflowError._StackOverflowError20530);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _StackOverflowError20531;
-		public StackOverflowError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StackOverflowError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StackOverflowError.staticClass, global::java.lang.StackOverflowError._StackOverflowError20531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

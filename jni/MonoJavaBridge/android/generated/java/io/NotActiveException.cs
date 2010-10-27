@@ -12,14 +12,14 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NotActiveException19141;
-		public NotActiveException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NotActiveException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotActiveException.staticClass, global::java.io.NotActiveException._NotActiveException19141, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NotActiveException19142;
-		public NotActiveException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NotActiveException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.NotActiveException.staticClass, global::java.io.NotActiveException._NotActiveException19142);

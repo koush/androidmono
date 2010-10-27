@@ -20,7 +20,7 @@ namespace android.widget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getSections17733;
-		 global::java.lang.Object[] android.widget.SectionIndexer.getSections() 
+		global::java.lang.Object[] android.widget.SectionIndexer.getSections()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace android.widget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.widget.SectionIndexer_.staticClass, global::android.widget.SectionIndexer_._getSections17733)) as java.lang.Object[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getPositionForSection17734;
-		 int android.widget.SectionIndexer.getPositionForSection(int arg0) 
+		int android.widget.SectionIndexer.getPositionForSection(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.widget
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.widget.SectionIndexer_.staticClass, global::android.widget.SectionIndexer_._getPositionForSection17734, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSectionForPosition17735;
-		 int android.widget.SectionIndexer.getSectionForPosition(int arg0) 
+		int android.widget.SectionIndexer.getSectionForPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

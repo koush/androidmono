@@ -18,7 +18,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _handleReference33152;
-		 void org.apache.http.impl.conn.tsccm.RefQueueHandler.handleReference(java.lang.@ref.Reference arg0) 
+		void org.apache.http.impl.conn.tsccm.RefQueueHandler.handleReference(java.lang.@ref.Reference arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

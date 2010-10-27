@@ -16,7 +16,7 @@ namespace android.gesture
 		internal static global::MonoJavaBridge.MethodId _save4886;
 		public abstract bool save();
 		internal static global::MonoJavaBridge.MethodId _isReadOnly4887;
-		public virtual bool isReadOnly() 
+		public virtual bool isReadOnly()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace android.gesture
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._isReadOnly4887);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOrientationStyle4888;
-		public virtual void setOrientationStyle(int arg0) 
+		public virtual void setOrientationStyle(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.gesture
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._setOrientationStyle4888, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getOrientationStyle4889;
-		public virtual int getOrientationStyle() 
+		public virtual int getOrientationStyle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.gesture
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._getOrientationStyle4889);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSequenceType4890;
-		public virtual void setSequenceType(int arg0) 
+		public virtual void setSequenceType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace android.gesture
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._setSequenceType4890, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSequenceType4891;
-		public virtual int getSequenceType() 
+		public virtual int getSequenceType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace android.gesture
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._getSequenceType4891);
 		}
 		internal static global::MonoJavaBridge.MethodId _getGestureEntries4892;
-		public virtual global::java.util.Set getGestureEntries() 
+		public virtual global::java.util.Set getGestureEntries()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._getGestureEntries4892)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _recognize4893;
-		public virtual global::java.util.ArrayList recognize(android.gesture.Gesture arg0) 
+		public virtual global::java.util.ArrayList recognize(android.gesture.Gesture arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._recognize4893, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.ArrayList;
 		}
 		internal static global::MonoJavaBridge.MethodId _addGesture4894;
-		public virtual void addGesture(java.lang.String arg0, android.gesture.Gesture arg1) 
+		public virtual void addGesture(java.lang.String arg0, android.gesture.Gesture arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace android.gesture
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._addGesture4894, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeGesture4895;
-		public virtual void removeGesture(java.lang.String arg0, android.gesture.Gesture arg1) 
+		public virtual void removeGesture(java.lang.String arg0, android.gesture.Gesture arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace android.gesture
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._removeGesture4895, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _removeEntry4896;
-		public virtual void removeEntry(java.lang.String arg0) 
+		public virtual void removeEntry(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +106,7 @@ namespace android.gesture
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._removeEntry4896, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getGestures4897;
-		public virtual global::java.util.ArrayList getGestures(java.lang.String arg0) 
+		public virtual global::java.util.ArrayList getGestures(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace android.gesture
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._getGestures4897, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.ArrayList;
 		}
 		internal static global::MonoJavaBridge.MethodId _GestureLibrary4898;
-		protected GestureLibrary()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected GestureLibrary() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.gesture.GestureLibrary.staticClass, global::android.gesture.GestureLibrary._GestureLibrary4898);
@@ -154,7 +154,7 @@ namespace android.gesture
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _load4899;
-		public override bool load() 
+		public override bool load()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -163,7 +163,7 @@ namespace android.gesture
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.gesture.GestureLibrary_.staticClass, global::android.gesture.GestureLibrary_._load4899);
 		}
 		internal static global::MonoJavaBridge.MethodId _save4900;
-		public override bool save() 
+		public override bool save()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

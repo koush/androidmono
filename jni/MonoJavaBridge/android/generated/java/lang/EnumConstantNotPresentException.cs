@@ -12,7 +12,7 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _enumType20126;
-		public virtual global::java.lang.Class enumType() 
+		public virtual global::java.lang.Class enumType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.EnumConstantNotPresentException.staticClass, global::java.lang.EnumConstantNotPresentException._enumType20126)) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _constantName20127;
-		public virtual global::java.lang.String constantName() 
+		public virtual global::java.lang.String constantName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.lang
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.EnumConstantNotPresentException.staticClass, global::java.lang.EnumConstantNotPresentException._constantName20127)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _EnumConstantNotPresentException20128;
-		public EnumConstantNotPresentException(java.lang.Class arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EnumConstantNotPresentException(java.lang.Class arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.EnumConstantNotPresentException.staticClass, global::java.lang.EnumConstantNotPresentException._EnumConstantNotPresentException20128, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

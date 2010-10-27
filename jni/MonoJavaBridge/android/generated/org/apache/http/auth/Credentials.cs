@@ -19,7 +19,7 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getPassword31825;
-		 global::java.lang.String org.apache.http.auth.Credentials.getPassword() 
+		global::java.lang.String org.apache.http.auth.Credentials.getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.auth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.auth.Credentials_.staticClass, global::org.apache.http.auth.Credentials_._getPassword31825)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserPrincipal31826;
-		 global::java.security.Principal org.apache.http.auth.Credentials.getUserPrincipal() 
+		global::java.security.Principal org.apache.http.auth.Credentials.getUserPrincipal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

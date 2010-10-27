@@ -12,7 +12,7 @@ namespace java.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString25094;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,13 +21,13 @@ namespace java.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.Time.staticClass, global::java.sql.Time._toString25094)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf25095;
-		public static global::java.sql.Time valueOf(java.lang.String arg0) 
+		public static global::java.sql.Time valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.sql.Time.staticClass, global::java.sql.Time._valueOf25095, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.sql.Time;
 		}
 		internal static global::MonoJavaBridge.MethodId _setTime25096;
-		public override void setTime(long arg0) 
+		public override void setTime(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace java.sql
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getYear25097;
-		public override int getYear() 
+		public override int getYear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.sql
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMonth25098;
-		public override int getMonth() 
+		public override int getMonth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace java.sql
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDate25099;
-		public override int getDate() 
+		public override int getDate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -96,7 +96,7 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Time.staticClass, global::java.sql.Time._getDate25099);
 		}
 		internal static global::MonoJavaBridge.MethodId _setDate25100;
-		public override void setDate(int arg0) 
+		public override void setDate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -105,7 +105,7 @@ namespace java.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Time.staticClass, global::java.sql.Time._setDate25100, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setMonth25101;
-		public override void setMonth(int arg0) 
+		public override void setMonth(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +114,7 @@ namespace java.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.Time.staticClass, global::java.sql.Time._setMonth25101, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setYear25102;
-		public override void setYear(int arg0) 
+		public override void setYear(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +130,7 @@ namespace java.sql
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDay25103;
-		public override int getDay() 
+		public override int getDay()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,14 +139,14 @@ namespace java.sql
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.sql.Time.staticClass, global::java.sql.Time._getDay25103);
 		}
 		internal static global::MonoJavaBridge.MethodId _Time25104;
-		public Time(int arg0, int arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Time(int arg0, int arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.Time.staticClass, global::java.sql.Time._Time25104, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Time25105;
-		public Time(long arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Time(long arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.sql.Time.staticClass, global::java.sql.Time._Time25105, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

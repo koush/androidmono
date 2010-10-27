@@ -23,13 +23,13 @@ namespace java.security
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values23057;
-			public static global::java.security.KeyRep.Type[] values() 
+			public static global::java.security.KeyRep.Type[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.KeyRep.Type>(@__env.CallStaticObjectMethod(java.security.KeyRep.Type.staticClass, global::java.security.KeyRep.Type._values23057)) as java.security.KeyRep.Type[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf23058;
-			public static global::java.security.KeyRep.Type valueOf(java.lang.String arg0) 
+			public static global::java.security.KeyRep.Type valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.security.KeyRep.Type>(@__env.CallStaticObjectMethod(java.security.KeyRep.Type.staticClass, global::java.security.KeyRep.Type._valueOf23058, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.KeyRep.Type;
@@ -73,7 +73,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _readResolve23062;
-		protected virtual global::java.lang.Object readResolve() 
+		protected virtual global::java.lang.Object readResolve()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyRep.staticClass, global::java.security.KeyRep._readResolve23062)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyRep23063;
-		public KeyRep(java.security.KeyRep.Type arg0, java.lang.String arg1, java.lang.String arg2, byte[] arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public KeyRep(java.security.KeyRep.Type arg0, java.lang.String arg1, java.lang.String arg2, byte[] arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyRep.staticClass, global::java.security.KeyRep._KeyRep23063, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

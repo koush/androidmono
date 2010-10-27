@@ -12,7 +12,7 @@ namespace android.text.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _tokenize13666;
-		public static void tokenize(java.lang.CharSequence arg0, java.util.Collection arg1) 
+		public static void tokenize(java.lang.CharSequence arg0, java.util.Collection arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._tokenize13666, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
@@ -22,7 +22,7 @@ namespace android.text.util
 			tokenize((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _tokenize13667;
-		public static global::android.text.util.Rfc822Token[] tokenize(java.lang.CharSequence arg0) 
+		public static global::android.text.util.Rfc822Token[] tokenize(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.text.util.Rfc822Token>(@__env.CallStaticObjectMethod(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._tokenize13667, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.text.util.Rfc822Token[];
@@ -32,7 +32,7 @@ namespace android.text.util
 			return tokenize((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _findTokenStart13668;
-		public virtual int findTokenStart(java.lang.CharSequence arg0, int arg1) 
+		public virtual int findTokenStart(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace android.text.util
 			return findTokenStart((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _findTokenEnd13669;
-		public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1) 
+		public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.text.util
 			return findTokenEnd((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _terminateToken13670;
-		public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0) 
+		public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace android.text.util
 			return terminateToken((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _Rfc822Tokenizer13671;
-		public Rfc822Tokenizer()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Rfc822Tokenizer() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer13671);

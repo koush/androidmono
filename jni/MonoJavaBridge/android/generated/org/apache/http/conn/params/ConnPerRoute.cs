@@ -18,7 +18,7 @@ namespace org.apache.http.conn.@params
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxForRoute32190;
-		 int org.apache.http.conn.@params.ConnPerRoute.getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0) 
+		int org.apache.http.conn.@params.ConnPerRoute.getMaxForRoute(org.apache.http.conn.routing.HttpRoute arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getName6432;
-		public virtual global::java.lang.String getName() 
+		public virtual global::java.lang.String getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType6433;
-		public virtual int getType() 
+		public virtual int getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVersion6434;
-		public virtual int getVersion() 
+		public virtual int getVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVendor6435;
-		public virtual global::java.lang.String getVendor() 
+		public virtual global::java.lang.String getVendor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaximumRange6436;
-		public virtual float getMaximumRange() 
+		public virtual float getMaximumRange()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getResolution6437;
-		public virtual float getResolution() 
+		public virtual float getResolution()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -115,7 +115,7 @@ namespace android.hardware
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPower6438;
-		public virtual float getPower() 
+		public virtual float getPower()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

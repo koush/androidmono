@@ -12,7 +12,7 @@ namespace android.app.backup
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _dataChanged2324;
-		public virtual void dataChanged() 
+		public virtual void dataChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,13 +21,13 @@ namespace android.app.backup
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._dataChanged2324);
 		}
 		internal static global::MonoJavaBridge.MethodId _dataChanged2325;
-		public static void dataChanged(java.lang.String arg0) 
+		public static void dataChanged(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._dataChanged2325, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _requestRestore2326;
-		public virtual int requestRestore(android.app.backup.RestoreObserver arg0) 
+		public virtual int requestRestore(android.app.backup.RestoreObserver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace android.app.backup
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._requestRestore2326, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _BackupManager2327;
-		public BackupManager(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BackupManager(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.backup.BackupManager.staticClass, global::android.app.backup.BackupManager._BackupManager2327, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

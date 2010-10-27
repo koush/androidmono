@@ -12,7 +12,7 @@ namespace android.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getPort7747;
-		public static int getPort(android.content.Context arg0) 
+		public static int getPort(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getPort7747, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -25,13 +25,13 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultPort7748;
-		public static int getDefaultPort() 
+		public static int getDefaultPort()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultPort7748);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHost7749;
-		public static global::java.lang.String getHost(android.content.Context arg0) 
+		public static global::java.lang.String getHost(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getHost7749, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
@@ -44,13 +44,13 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultHost7750;
-		public static global::java.lang.String getDefaultHost() 
+		public static global::java.lang.String getDefaultHost()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultHost7750)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Proxy7751;
-		public Proxy()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Proxy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.Proxy.staticClass, global::android.net.Proxy._Proxy7751);

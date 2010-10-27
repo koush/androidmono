@@ -12,13 +12,13 @@ namespace org.xml.sax.helpers
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _makeParser35251;
-		public static global::org.xml.sax.Parser makeParser() 
+		public static global::org.xml.sax.Parser makeParser()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.Parser>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.ParserFactory.staticClass, global::org.xml.sax.helpers.ParserFactory._makeParser35251)) as org.xml.sax.Parser;
 		}
 		internal static global::MonoJavaBridge.MethodId _makeParser35252;
-		public static global::org.xml.sax.Parser makeParser(java.lang.String arg0) 
+		public static global::org.xml.sax.Parser makeParser(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.Parser>(@__env.CallStaticObjectMethod(org.xml.sax.helpers.ParserFactory.staticClass, global::org.xml.sax.helpers.ParserFactory._makeParser35252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.xml.sax.Parser;

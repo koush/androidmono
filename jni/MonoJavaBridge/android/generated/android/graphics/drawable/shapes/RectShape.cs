@@ -12,7 +12,7 @@ namespace android.graphics.drawable.shapes
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone6248;
-		public virtual global::android.graphics.drawable.shapes.RectShape clone() 
+		public virtual global::android.graphics.drawable.shapes.RectShape clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.graphics.drawable.shapes
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._clone6248)) as android.graphics.drawable.shapes.RectShape;
 		}
 		internal static global::MonoJavaBridge.MethodId _draw6249;
-		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1) 
+		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.graphics.drawable.shapes
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._draw6249, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _rect6250;
-		protected virtual global::android.graphics.RectF rect() 
+		protected virtual global::android.graphics.RectF rect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.graphics.drawable.shapes
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._rect6250)) as android.graphics.RectF;
 		}
 		internal static global::MonoJavaBridge.MethodId _onResize6251;
-		protected override void onResize(float arg0, float arg1) 
+		protected override void onResize(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.graphics.drawable.shapes
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._onResize6251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _RectShape6252;
-		public RectShape()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RectShape() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.drawable.shapes.RectShape.staticClass, global::android.graphics.drawable.shapes.RectShape._RectShape6252);

@@ -19,7 +19,7 @@ namespace javax.xml.transform
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId30946;
-		 global::java.lang.String javax.xml.transform.Result.getSystemId() 
+		global::java.lang.String javax.xml.transform.Result.getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace javax.xml.transform
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.xml.transform.Result_.staticClass, global::javax.xml.transform.Result_._getSystemId30946)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId30947;
-		 void javax.xml.transform.Result.setSystemId(java.lang.String arg0) 
+		void javax.xml.transform.Result.setSystemId(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -16,7 +16,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _getBody21354;
 		public abstract global::java.io.InputStream getBody();
 		internal static global::MonoJavaBridge.MethodId _CacheResponse21355;
-		public CacheResponse()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CacheResponse() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.CacheResponse.staticClass, global::java.net.CacheResponse._CacheResponse21355);
@@ -44,7 +44,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaders21356;
-		public override global::java.util.Map getHeaders() 
+		public override global::java.util.Map getHeaders()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.CacheResponse_.staticClass, global::java.net.CacheResponse_._getHeaders21356)) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBody21357;
-		public override global::java.io.InputStream getBody() 
+		public override global::java.io.InputStream getBody()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

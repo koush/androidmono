@@ -18,7 +18,7 @@ namespace org.w3c.dom
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _handle34875;
-		 void org.w3c.dom.UserDataHandler.handle(short arg0, java.lang.String arg1, java.lang.Object arg2, org.w3c.dom.Node arg3, org.w3c.dom.Node arg4) 
+		void org.w3c.dom.UserDataHandler.handle(short arg0, java.lang.String arg1, java.lang.Object arg2, org.w3c.dom.Node arg3, org.w3c.dom.Node arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

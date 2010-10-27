@@ -20,7 +20,7 @@ namespace java.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getSQLTypeName24966;
-		 global::java.lang.String java.sql.SQLData.getSQLTypeName() 
+		global::java.lang.String java.sql.SQLData.getSQLTypeName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.sql
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._getSQLTypeName24966)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _readSQL24967;
-		 void java.sql.SQLData.readSQL(java.sql.SQLInput arg0, java.lang.String arg1) 
+		void java.sql.SQLData.readSQL(java.sql.SQLInput arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.sql
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.sql.SQLData_.staticClass, global::java.sql.SQLData_._readSQL24967, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _writeSQL24968;
-		 void java.sql.SQLData.writeSQL(java.sql.SQLOutput arg0) 
+		void java.sql.SQLData.writeSQL(java.sql.SQLOutput arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

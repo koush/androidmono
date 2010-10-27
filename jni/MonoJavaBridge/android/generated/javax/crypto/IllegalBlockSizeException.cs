@@ -12,14 +12,14 @@ namespace javax.crypto
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalBlockSizeException28621;
-		public IllegalBlockSizeException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalBlockSizeException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28621);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalBlockSizeException28622;
-		public IllegalBlockSizeException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalBlockSizeException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.IllegalBlockSizeException.staticClass, global::javax.crypto.IllegalBlockSizeException._IllegalBlockSizeException28622, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

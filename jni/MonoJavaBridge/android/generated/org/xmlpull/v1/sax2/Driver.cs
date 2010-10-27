@@ -12,7 +12,7 @@ namespace org.xmlpull.v1.sax2
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setProperty35407;
-		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1) 
+		public virtual void setProperty(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.xmlpull.v1.sax2
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._setProperty35407, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getProperty35408;
-		public virtual global::java.lang.Object getProperty(java.lang.String arg0) 
+		public virtual global::java.lang.Object getProperty(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLength35409;
-		public virtual int getLength() 
+		public virtual int getLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace org.xmlpull.v1.sax2
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getLength35409);
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue35410;
-		public virtual global::java.lang.String getValue(int arg0) 
+		public virtual global::java.lang.String getValue(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getValue35410, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue35411;
-		public virtual global::java.lang.String getValue(java.lang.String arg0, java.lang.String arg1) 
+		public virtual global::java.lang.String getValue(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -64,7 +64,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getValue35411, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getValue35412;
-		public virtual global::java.lang.String getValue(java.lang.String arg0) 
+		public virtual global::java.lang.String getValue(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getValue35412, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getType35413;
-		public virtual global::java.lang.String getType(java.lang.String arg0, java.lang.String arg1) 
+		public virtual global::java.lang.String getType(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getType35413, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getType35414;
-		public virtual global::java.lang.String getType(int arg0) 
+		public virtual global::java.lang.String getType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -91,7 +91,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getType35414, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getType35415;
-		public virtual global::java.lang.String getType(java.lang.String arg0) 
+		public virtual global::java.lang.String getType(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLineNumber35416;
-		public virtual int getLineNumber() 
+		public virtual int getLineNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace org.xmlpull.v1.sax2
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getLineNumber35416);
 		}
 		internal static global::MonoJavaBridge.MethodId _parse35417;
-		public virtual void parse(org.xml.sax.InputSource arg0) 
+		public virtual void parse(org.xml.sax.InputSource arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace org.xmlpull.v1.sax2
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._parse35417, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _parse35418;
-		public virtual void parse(java.lang.String arg0) 
+		public virtual void parse(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace org.xmlpull.v1.sax2
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._parse35418, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndex35419;
-		public virtual int getIndex(java.lang.String arg0) 
+		public virtual int getIndex(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace org.xmlpull.v1.sax2
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getIndex35419, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndex35420;
-		public virtual int getIndex(java.lang.String arg0, java.lang.String arg1) 
+		public virtual int getIndex(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -163,7 +163,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getContentHandler35421;
-		public virtual global::org.xml.sax.ContentHandler getContentHandler() 
+		public virtual global::org.xml.sax.ContentHandler getContentHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -172,7 +172,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ContentHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getContentHandler35421)) as org.xml.sax.ContentHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _startElement35422;
-		protected virtual void startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
+		protected virtual void startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicId35423;
-		public virtual global::java.lang.String getPublicId() 
+		public virtual global::java.lang.String getPublicId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -204,7 +204,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId35424;
-		public virtual global::java.lang.String getSystemId() 
+		public virtual global::java.lang.String getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -213,7 +213,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getSystemId35424)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getQName35425;
-		public virtual global::java.lang.String getQName(int arg0) 
+		public virtual global::java.lang.String getQName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -222,7 +222,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getQName35425, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalName35426;
-		public virtual global::java.lang.String getLocalName(int arg0) 
+		public virtual global::java.lang.String getLocalName(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -231,7 +231,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getLocalName35426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getURI35427;
-		public virtual global::java.lang.String getURI(int arg0) 
+		public virtual global::java.lang.String getURI(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -247,7 +247,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getColumnNumber35428;
-		public virtual int getColumnNumber() 
+		public virtual int getColumnNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -256,7 +256,7 @@ namespace org.xmlpull.v1.sax2
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getColumnNumber35428);
 		}
 		internal static global::MonoJavaBridge.MethodId _setFeature35429;
-		public virtual void setFeature(java.lang.String arg0, bool arg1) 
+		public virtual void setFeature(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -265,7 +265,7 @@ namespace org.xmlpull.v1.sax2
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._setFeature35429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFeature35430;
-		public virtual bool getFeature(java.lang.String arg0) 
+		public virtual bool getFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -274,7 +274,7 @@ namespace org.xmlpull.v1.sax2
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getFeature35430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setEntityResolver35431;
-		public virtual void setEntityResolver(org.xml.sax.EntityResolver arg0) 
+		public virtual void setEntityResolver(org.xml.sax.EntityResolver arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -294,7 +294,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEntityResolver35432;
-		public virtual global::org.xml.sax.EntityResolver getEntityResolver() 
+		public virtual global::org.xml.sax.EntityResolver getEntityResolver()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -303,7 +303,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.EntityResolver>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getEntityResolver35432)) as org.xml.sax.EntityResolver;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDTDHandler35433;
-		public virtual void setDTDHandler(org.xml.sax.DTDHandler arg0) 
+		public virtual void setDTDHandler(org.xml.sax.DTDHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -323,7 +323,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDTDHandler35434;
-		public virtual global::org.xml.sax.DTDHandler getDTDHandler() 
+		public virtual global::org.xml.sax.DTDHandler getDTDHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -332,7 +332,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.DTDHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getDTDHandler35434)) as org.xml.sax.DTDHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _setContentHandler35435;
-		public virtual void setContentHandler(org.xml.sax.ContentHandler arg0) 
+		public virtual void setContentHandler(org.xml.sax.ContentHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -341,7 +341,7 @@ namespace org.xmlpull.v1.sax2
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._setContentHandler35435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setErrorHandler35436;
-		public virtual void setErrorHandler(org.xml.sax.ErrorHandler arg0) 
+		public virtual void setErrorHandler(org.xml.sax.ErrorHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -361,7 +361,7 @@ namespace org.xmlpull.v1.sax2
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getErrorHandler35437;
-		public virtual global::org.xml.sax.ErrorHandler getErrorHandler() 
+		public virtual global::org.xml.sax.ErrorHandler getErrorHandler()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -370,7 +370,7 @@ namespace org.xmlpull.v1.sax2
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.xml.sax.ErrorHandler>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._getErrorHandler35437)) as org.xml.sax.ErrorHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseSubTree35438;
-		public virtual void parseSubTree(org.xmlpull.v1.XmlPullParser arg0) 
+		public virtual void parseSubTree(org.xmlpull.v1.XmlPullParser arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -379,14 +379,14 @@ namespace org.xmlpull.v1.sax2
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._parseSubTree35438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _Driver35439;
-		public Driver(org.xmlpull.v1.XmlPullParser arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Driver(org.xmlpull.v1.XmlPullParser arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._Driver35439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Driver35440;
-		public Driver()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Driver() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.xmlpull.v1.sax2.Driver.staticClass, global::org.xmlpull.v1.sax2.Driver._Driver35440);

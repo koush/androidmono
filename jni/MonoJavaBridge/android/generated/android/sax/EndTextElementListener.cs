@@ -18,7 +18,7 @@ namespace android.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _end11612;
-		 void android.sax.EndTextElementListener.end(java.lang.String arg0) 
+		void android.sax.EndTextElementListener.end(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.sax
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EndTextElementListenerDelegateWrapper11613;
-		public EndTextElementListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EndTextElementListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.sax.EndTextElementListenerDelegateWrapper.staticClass, global::android.sax.EndTextElementListenerDelegateWrapper._EndTextElementListenerDelegateWrapper11613);

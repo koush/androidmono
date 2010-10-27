@@ -12,7 +12,7 @@ namespace android.graphics
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _PixelXorXfermode5618;
-		public PixelXorXfermode(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PixelXorXfermode(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.PixelXorXfermode.staticClass, global::android.graphics.PixelXorXfermode._PixelXorXfermode5618, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

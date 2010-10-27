@@ -19,7 +19,7 @@ namespace java.util.prefs
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _childAdded28179;
-		 void java.util.prefs.NodeChangeListener.childAdded(java.util.prefs.NodeChangeEvent arg0) 
+		void java.util.prefs.NodeChangeListener.childAdded(java.util.prefs.NodeChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.util.prefs
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.prefs.NodeChangeListener_.staticClass, global::java.util.prefs.NodeChangeListener_._childAdded28179, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _childRemoved28180;
-		 void java.util.prefs.NodeChangeListener.childRemoved(java.util.prefs.NodeChangeEvent arg0) 
+		void java.util.prefs.NodeChangeListener.childRemoved(java.util.prefs.NodeChangeEvent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

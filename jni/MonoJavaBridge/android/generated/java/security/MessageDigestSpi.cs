@@ -12,7 +12,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23182;
-		public virtual global::java.lang.Object clone() 
+		public virtual global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -25,7 +25,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23184;
 		protected abstract void engineUpdate(byte[] arg0, int arg1, int arg2);
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23185;
-		protected virtual void engineUpdate(java.nio.ByteBuffer arg0) 
+		protected virtual void engineUpdate(java.nio.ByteBuffer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineDigest23186;
 		protected abstract byte[] engineDigest();
 		internal static global::MonoJavaBridge.MethodId _engineDigest23187;
-		protected virtual int engineDigest(byte[] arg0, int arg1, int arg2) 
+		protected virtual int engineDigest(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace java.security
 		internal static global::MonoJavaBridge.MethodId _engineReset23188;
 		protected abstract void engineReset();
 		internal static global::MonoJavaBridge.MethodId _engineGetDigestLength23189;
-		protected virtual int engineGetDigestLength() 
+		protected virtual int engineGetDigestLength()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace java.security
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.MessageDigestSpi.staticClass, global::java.security.MessageDigestSpi._engineGetDigestLength23189);
 		}
 		internal static global::MonoJavaBridge.MethodId _MessageDigestSpi23190;
-		public MessageDigestSpi()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MessageDigestSpi() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.MessageDigestSpi.staticClass, global::java.security.MessageDigestSpi._MessageDigestSpi23190);
@@ -90,7 +90,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23191;
-		protected override void engineUpdate(byte arg0) 
+		protected override void engineUpdate(byte arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.MessageDigestSpi_.staticClass, global::java.security.MessageDigestSpi_._engineUpdate23191, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineUpdate23192;
-		protected override void engineUpdate(byte[] arg0, int arg1, int arg2) 
+		protected override void engineUpdate(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.MessageDigestSpi_.staticClass, global::java.security.MessageDigestSpi_._engineUpdate23192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _engineDigest23193;
-		protected override byte[] engineDigest() 
+		protected override byte[] engineDigest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -117,7 +117,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.MessageDigestSpi_.staticClass, global::java.security.MessageDigestSpi_._engineDigest23193)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _engineReset23194;
-		protected override void engineReset() 
+		protected override void engineReset()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

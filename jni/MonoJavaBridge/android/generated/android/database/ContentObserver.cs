@@ -12,7 +12,7 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _deliverSelfNotifications4431;
-		public virtual bool deliverSelfNotifications() 
+		public virtual bool deliverSelfNotifications()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.database
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._deliverSelfNotifications4431);
 		}
 		internal static global::MonoJavaBridge.MethodId _onChange4432;
-		public virtual void onChange(bool arg0) 
+		public virtual void onChange(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._onChange4432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _dispatchChange4433;
-		public virtual void dispatchChange(bool arg0) 
+		public virtual void dispatchChange(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._dispatchChange4433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ContentObserver4434;
-		public ContentObserver(android.os.Handler arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ContentObserver(android.os.Handler arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.ContentObserver.staticClass, global::android.database.ContentObserver._ContentObserver4434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

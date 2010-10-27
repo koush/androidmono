@@ -19,7 +19,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrn6868;
-		public int getPrn() 
+		public int getPrn()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSnr6869;
-		public float getSnr() 
+		public float getSnr()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getElevation6870;
-		public float getElevation() 
+		public float getElevation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace android.location
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAzimuth6871;
-		public float getAzimuth() 
+		public float getAzimuth()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace android.location
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getAzimuth6871);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasEphemeris6872;
-		public bool hasEphemeris() 
+		public bool hasEphemeris()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -85,7 +85,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasEphemeris6872);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasAlmanac6873;
-		public bool hasAlmanac() 
+		public bool hasAlmanac()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace android.location
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasAlmanac6873);
 		}
 		internal static global::MonoJavaBridge.MethodId _usedInFix6874;
-		public bool usedInFix() 
+		public bool usedInFix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

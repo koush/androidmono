@@ -18,7 +18,7 @@ namespace org.apache.http.auth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance31783;
-		 global::org.apache.http.auth.AuthScheme org.apache.http.auth.AuthSchemeFactory.newInstance(org.apache.http.@params.HttpParams arg0) 
+		global::org.apache.http.auth.AuthScheme org.apache.http.auth.AuthSchemeFactory.newInstance(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

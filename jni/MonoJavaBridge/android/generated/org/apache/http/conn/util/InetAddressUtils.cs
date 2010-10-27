@@ -12,25 +12,25 @@ namespace org.apache.http.conn.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isIPv4Address32363;
-		public static bool isIPv4Address(java.lang.String arg0) 
+		public static bool isIPv4Address(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv4Address32363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIPv6StdAddress32364;
-		public static bool isIPv6StdAddress(java.lang.String arg0) 
+		public static bool isIPv6StdAddress(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv6StdAddress32364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIPv6HexCompressedAddress32365;
-		public static bool isIPv6HexCompressedAddress(java.lang.String arg0) 
+		public static bool isIPv6HexCompressedAddress(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv6HexCompressedAddress32365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isIPv6Address32366;
-		public static bool isIPv6Address(java.lang.String arg0) 
+		public static bool isIPv6Address(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.conn.util.InetAddressUtils.staticClass, global::org.apache.http.conn.util.InetAddressUtils._isIPv6Address32366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

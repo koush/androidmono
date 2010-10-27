@@ -19,7 +19,7 @@ namespace android.text.method
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onFocusChanged13423;
-		 void android.text.method.TransformationMethod.onFocusChanged(android.view.View arg0, java.lang.CharSequence arg1, bool arg2, int arg3, android.graphics.Rect arg4) 
+		void android.text.method.TransformationMethod.onFocusChanged(android.view.View arg0, java.lang.CharSequence arg1, bool arg2, int arg3, android.graphics.Rect arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.text.method
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.text.method.TransformationMethod_.staticClass, global::android.text.method.TransformationMethod_._onFocusChanged13423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _getTransformation13424;
-		 global::java.lang.CharSequence android.text.method.TransformationMethod.getTransformation(java.lang.CharSequence arg0, android.view.View arg1) 
+		global::java.lang.CharSequence android.text.method.TransformationMethod.getTransformation(java.lang.CharSequence arg0, android.view.View arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

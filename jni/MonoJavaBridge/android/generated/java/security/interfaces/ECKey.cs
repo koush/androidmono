@@ -18,7 +18,7 @@ namespace java.security.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams23912;
-		 global::java.security.spec.ECParameterSpec java.security.interfaces.ECKey.getParams() 
+		global::java.security.spec.ECParameterSpec java.security.interfaces.ECKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

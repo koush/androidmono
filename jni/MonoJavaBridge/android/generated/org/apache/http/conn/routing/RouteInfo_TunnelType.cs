@@ -12,13 +12,13 @@ namespace org.apache.http.conn.routing
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _values32251;
-		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType[] values() 
+		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType[] values()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<org.apache.http.conn.routing.RouteInfo_TunnelType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, global::org.apache.http.conn.routing.RouteInfo_TunnelType._values32251)) as org.apache.http.conn.routing.RouteInfo_TunnelType[];
 		}
 		internal static global::MonoJavaBridge.MethodId _valueOf32252;
-		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType valueOf(java.lang.String arg0) 
+		public static global::org.apache.http.conn.routing.RouteInfo_TunnelType valueOf(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.RouteInfo_TunnelType>(@__env.CallStaticObjectMethod(org.apache.http.conn.routing.RouteInfo_TunnelType.staticClass, global::org.apache.http.conn.routing.RouteInfo_TunnelType._valueOf32252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.RouteInfo_TunnelType;

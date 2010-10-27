@@ -12,7 +12,7 @@ namespace java.nio.charset
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CoderMalfunctionError22795;
-		public CoderMalfunctionError(java.lang.Exception arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CoderMalfunctionError(java.lang.Exception arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CoderMalfunctionError.staticClass, global::java.nio.charset.CoderMalfunctionError._CoderMalfunctionError22795, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

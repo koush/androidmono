@@ -18,7 +18,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onStatusChanged3588;
-		 void android.content.SyncStatusObserver.onStatusChanged(int arg0) 
+		void android.content.SyncStatusObserver.onStatusChanged(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SyncStatusObserverDelegateWrapper3589;
-		public SyncStatusObserverDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SyncStatusObserverDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.SyncStatusObserverDelegateWrapper.staticClass, global::android.content.SyncStatusObserverDelegateWrapper._SyncStatusObserverDelegateWrapper3589);

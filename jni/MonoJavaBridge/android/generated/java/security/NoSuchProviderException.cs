@@ -12,14 +12,14 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoSuchProviderException23199;
-		public NoSuchProviderException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoSuchProviderException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.NoSuchProviderException.staticClass, global::java.security.NoSuchProviderException._NoSuchProviderException23199);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NoSuchProviderException23200;
-		public NoSuchProviderException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoSuchProviderException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.NoSuchProviderException.staticClass, global::java.security.NoSuchProviderException._NoSuchProviderException23200, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

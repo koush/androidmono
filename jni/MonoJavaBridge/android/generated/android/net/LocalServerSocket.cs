@@ -12,7 +12,7 @@ namespace android.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close7659;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._close7659);
 		}
 		internal static global::MonoJavaBridge.MethodId _accept7660;
-		public virtual global::android.net.LocalSocket accept() 
+		public virtual global::android.net.LocalSocket accept()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFileDescriptor7661;
-		public virtual global::java.io.FileDescriptor getFileDescriptor() 
+		public virtual global::java.io.FileDescriptor getFileDescriptor()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace android.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalSocketAddress7662;
-		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress() 
+		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,14 +62,14 @@ namespace android.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getLocalSocketAddress7662)) as android.net.LocalSocketAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalServerSocket7663;
-		public LocalServerSocket(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocalServerSocket(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._LocalServerSocket7663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LocalServerSocket7664;
-		public LocalServerSocket(java.io.FileDescriptor arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LocalServerSocket(java.io.FileDescriptor arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._LocalServerSocket7664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

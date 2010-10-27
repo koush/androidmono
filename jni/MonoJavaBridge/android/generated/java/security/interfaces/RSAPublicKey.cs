@@ -18,7 +18,7 @@ namespace java.security.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublicExponent23957;
-		 global::java.math.BigInteger java.security.interfaces.RSAPublicKey.getPublicExponent() 
+		global::java.math.BigInteger java.security.interfaces.RSAPublicKey.getPublicExponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPublicKey_.staticClass, global::java.security.interfaces.RSAPublicKey_._getPublicExponent23957)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded23958;
-		 byte[] java.security.Key.getEncoded() 
+		byte[] java.security.Key.getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPublicKey_.staticClass, global::java.security.interfaces.RSAPublicKey_._getEncoded23958)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23959;
-		 global::java.lang.String java.security.Key.getAlgorithm() 
+		global::java.lang.String java.security.Key.getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPublicKey_.staticClass, global::java.security.interfaces.RSAPublicKey_._getAlgorithm23959)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat23960;
-		 global::java.lang.String java.security.Key.getFormat() 
+		global::java.lang.String java.security.Key.getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,7 +54,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.RSAPublicKey_.staticClass, global::java.security.interfaces.RSAPublicKey_._getFormat23960)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getModulus23961;
-		 global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus() 
+		global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

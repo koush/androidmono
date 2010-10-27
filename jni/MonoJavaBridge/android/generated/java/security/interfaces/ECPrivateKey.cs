@@ -18,7 +18,7 @@ namespace java.security.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getS23913;
-		 global::java.math.BigInteger java.security.interfaces.ECPrivateKey.getS() 
+		global::java.math.BigInteger java.security.interfaces.ECPrivateKey.getS()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.ECPrivateKey_.staticClass, global::java.security.interfaces.ECPrivateKey_._getS23913)) as java.math.BigInteger;
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded23914;
-		 byte[] java.security.Key.getEncoded() 
+		byte[] java.security.Key.getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.ECPrivateKey_.staticClass, global::java.security.interfaces.ECPrivateKey_._getEncoded23914)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm23915;
-		 global::java.lang.String java.security.Key.getAlgorithm() 
+		global::java.lang.String java.security.Key.getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.ECPrivateKey_.staticClass, global::java.security.interfaces.ECPrivateKey_._getAlgorithm23915)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat23916;
-		 global::java.lang.String java.security.Key.getFormat() 
+		global::java.lang.String java.security.Key.getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,7 +54,7 @@ namespace java.security.interfaces
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.interfaces.ECPrivateKey_.staticClass, global::java.security.interfaces.ECPrivateKey_._getFormat23916)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParams23917;
-		 global::java.security.spec.ECParameterSpec java.security.interfaces.ECKey.getParams() 
+		global::java.security.spec.ECParameterSpec java.security.interfaces.ECKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

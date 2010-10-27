@@ -19,7 +19,7 @@ namespace java.nio.charset
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharsetName22812;
-		public virtual global::java.lang.String getCharsetName() 
+		public virtual global::java.lang.String getCharsetName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.nio.charset
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.nio.charset.IllegalCharsetNameException.staticClass, global::java.nio.charset.IllegalCharsetNameException._getCharsetName22812)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _IllegalCharsetNameException22813;
-		public IllegalCharsetNameException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IllegalCharsetNameException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.IllegalCharsetNameException.staticClass, global::java.nio.charset.IllegalCharsetNameException._IllegalCharsetNameException22813, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

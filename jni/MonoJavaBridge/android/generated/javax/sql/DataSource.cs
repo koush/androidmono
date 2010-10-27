@@ -19,7 +19,7 @@ namespace javax.sql
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection30283;
-		 global::java.sql.Connection javax.sql.DataSource.getConnection() 
+		global::java.sql.Connection javax.sql.DataSource.getConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace javax.sql
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.sql.Connection>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.sql.DataSource_.staticClass, global::javax.sql.DataSource_._getConnection30283)) as java.sql.Connection;
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection30284;
-		 global::java.sql.Connection javax.sql.DataSource.getConnection(java.lang.String arg0, java.lang.String arg1) 
+		global::java.sql.Connection javax.sql.DataSource.getConnection(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

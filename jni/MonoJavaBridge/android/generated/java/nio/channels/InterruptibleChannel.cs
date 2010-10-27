@@ -18,7 +18,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close22509;
-		 void java.nio.channels.InterruptibleChannel.close() 
+		void java.nio.channels.InterruptibleChannel.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace java.nio.channels
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._close22509);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22510;
-		 void java.nio.channels.Channel.close() 
+		void java.nio.channels.Channel.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace java.nio.channels
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._close22510);
 		}
 		internal static global::MonoJavaBridge.MethodId _isOpen22511;
-		 bool java.nio.channels.Channel.isOpen() 
+		bool java.nio.channels.Channel.isOpen()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace java.nio.channels
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.nio.channels.InterruptibleChannel_.staticClass, global::java.nio.channels.InterruptibleChannel_._isOpen22511);
 		}
 		internal static global::MonoJavaBridge.MethodId _close22512;
-		 void java.io.Closeable.close() 
+		void java.io.Closeable.close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

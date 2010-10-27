@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedClassVersionError20926;
-		public UnsupportedClassVersionError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedClassVersionError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedClassVersionError.staticClass, global::java.lang.UnsupportedClassVersionError._UnsupportedClassVersionError20926);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnsupportedClassVersionError20927;
-		public UnsupportedClassVersionError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnsupportedClassVersionError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.UnsupportedClassVersionError.staticClass, global::java.lang.UnsupportedClassVersionError._UnsupportedClassVersionError20927, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

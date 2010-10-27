@@ -18,7 +18,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onClick3069;
-		 void android.content.DialogInterface_OnClickListener.onClick(android.content.DialogInterface arg0, int arg1) 
+		void android.content.DialogInterface_OnClickListener.onClick(android.content.DialogInterface arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DialogInterface_OnClickListenerDelegateWrapper3070;
-		public DialogInterface_OnClickListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DialogInterface_OnClickListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.content.DialogInterface_OnClickListenerDelegateWrapper.staticClass, global::android.content.DialogInterface_OnClickListenerDelegateWrapper._DialogInterface_OnClickListenerDelegateWrapper3070);

@@ -20,7 +20,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getProtocolVersion31762;
-		 global::org.apache.http.ProtocolVersion org.apache.http.StatusLine.getProtocolVersion() 
+		global::org.apache.http.ProtocolVersion org.apache.http.StatusLine.getProtocolVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getProtocolVersion31762)) as org.apache.http.ProtocolVersion;
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatusCode31763;
-		 int org.apache.http.StatusLine.getStatusCode() 
+		int org.apache.http.StatusLine.getStatusCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.StatusLine_.staticClass, global::org.apache.http.StatusLine_._getStatusCode31763);
 		}
 		internal static global::MonoJavaBridge.MethodId _getReasonPhrase31764;
-		 global::java.lang.String org.apache.http.StatusLine.getReasonPhrase() 
+		global::java.lang.String org.apache.http.StatusLine.getReasonPhrase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

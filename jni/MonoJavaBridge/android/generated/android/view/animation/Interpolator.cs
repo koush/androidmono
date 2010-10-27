@@ -18,7 +18,7 @@ namespace android.view.animation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getInterpolation15710;
-		 float android.view.animation.Interpolator.getInterpolation(float arg0) 
+		float android.view.animation.Interpolator.getInterpolation(float arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.view.animation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _InterpolatorDelegateWrapper15711;
-		public InterpolatorDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public InterpolatorDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.animation.InterpolatorDelegateWrapper.staticClass, global::android.view.animation.InterpolatorDelegateWrapper._InterpolatorDelegateWrapper15711);

@@ -12,7 +12,7 @@ namespace android.text
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _setText12721;
-		public virtual void setText(java.lang.CharSequence arg0) 
+		public virtual void setText(java.lang.CharSequence arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace android.text
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getText12722;
-		public virtual global::java.lang.CharSequence getText() 
+		public virtual global::java.lang.CharSequence getText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace android.text
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._getText12722)) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasText12723;
-		public virtual bool hasText() 
+		public virtual bool hasText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

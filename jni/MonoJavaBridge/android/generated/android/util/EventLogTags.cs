@@ -49,7 +49,7 @@ namespace android.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _get13764;
-		public virtual global::android.util.EventLogTags.Description get(java.lang.String arg0) 
+		public virtual global::android.util.EventLogTags.Description get(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13764, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.EventLogTags.Description;
 		}
 		internal static global::MonoJavaBridge.MethodId _get13765;
-		public virtual global::android.util.EventLogTags.Description get(int arg0) 
+		public virtual global::android.util.EventLogTags.Description get(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,14 +67,14 @@ namespace android.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get13765, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.util.EventLogTags.Description;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventLogTags13766;
-		public EventLogTags()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EventLogTags() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.EventLogTags.staticClass, global::android.util.EventLogTags._EventLogTags13766);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _EventLogTags13767;
-		public EventLogTags(java.io.BufferedReader arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EventLogTags(java.io.BufferedReader arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.util.EventLogTags.staticClass, global::android.util.EventLogTags._EventLogTags13767, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

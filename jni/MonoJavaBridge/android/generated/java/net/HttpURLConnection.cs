@@ -12,7 +12,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermission21471;
-		public override global::java.security.Permission getPermission() 
+		public override global::java.security.Permission getPermission()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getPermission21471)) as java.security.Permission;
 		}
 		internal static global::MonoJavaBridge.MethodId _setRequestMethod21472;
-		public virtual void setRequestMethod(java.lang.String arg0) 
+		public virtual void setRequestMethod(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._setRequestMethod21472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getResponseCode21473;
-		public virtual int getResponseCode() 
+		public virtual int getResponseCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.net
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getResponseCode21473);
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaderField21474;
-		public override global::java.lang.String getHeaderField(int arg0) 
+		public override global::java.lang.String getHeaderField(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getHeaderField21474, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaderFieldKey21475;
-		public override global::java.lang.String getHeaderFieldKey(int arg0) 
+		public override global::java.lang.String getHeaderFieldKey(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getHeaderFieldKey21475, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getHeaderFieldDate21476;
-		public override long getHeaderFieldDate(java.lang.String arg0, long arg1) 
+		public override long getHeaderFieldDate(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _disconnect21477;
 		public abstract void disconnect();
 		internal static global::MonoJavaBridge.MethodId _getErrorStream21478;
-		public virtual global::java.io.InputStream getErrorStream() 
+		public virtual global::java.io.InputStream getErrorStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getErrorStream21478)) as java.io.InputStream;
 		}
 		internal static global::MonoJavaBridge.MethodId _setFixedLengthStreamingMode21479;
-		public virtual void setFixedLengthStreamingMode(int arg0) 
+		public virtual void setFixedLengthStreamingMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,7 +86,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._setFixedLengthStreamingMode21479, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setChunkedStreamingMode21480;
-		public virtual void setChunkedStreamingMode(int arg0) 
+		public virtual void setChunkedStreamingMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -95,19 +95,19 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._setChunkedStreamingMode21480, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFollowRedirects21481;
-		public static void setFollowRedirects(bool arg0) 
+		public static void setFollowRedirects(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._setFollowRedirects21481, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFollowRedirects21482;
-		public static bool getFollowRedirects() 
+		public static bool getFollowRedirects()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getFollowRedirects21482);
 		}
 		internal static global::MonoJavaBridge.MethodId _setInstanceFollowRedirects21483;
-		public virtual void setInstanceFollowRedirects(bool arg0) 
+		public virtual void setInstanceFollowRedirects(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._setInstanceFollowRedirects21483, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstanceFollowRedirects21484;
-		public virtual bool getInstanceFollowRedirects() 
+		public virtual bool getInstanceFollowRedirects()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getInstanceFollowRedirects21484);
 		}
 		internal static global::MonoJavaBridge.MethodId _getRequestMethod21485;
-		public virtual global::java.lang.String getRequestMethod() 
+		public virtual global::java.lang.String getRequestMethod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._getRequestMethod21485)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getResponseMessage21486;
-		public virtual global::java.lang.String getResponseMessage() 
+		public virtual global::java.lang.String getResponseMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -145,7 +145,7 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _usingProxy21487;
 		public abstract bool usingProxy();
 		internal static global::MonoJavaBridge.MethodId _HttpURLConnection21488;
-		protected HttpURLConnection(java.net.URL arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected HttpURLConnection(java.net.URL arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.HttpURLConnection.staticClass, global::java.net.HttpURLConnection._HttpURLConnection21488, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -440,7 +440,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _disconnect21525;
-		public override void disconnect() 
+		public override void disconnect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -449,7 +449,7 @@ namespace java.net
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.net.HttpURLConnection_.staticClass, global::java.net.HttpURLConnection_._disconnect21525);
 		}
 		internal static global::MonoJavaBridge.MethodId _usingProxy21526;
-		public override bool usingProxy() 
+		public override bool usingProxy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -458,7 +458,7 @@ namespace java.net
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.net.HttpURLConnection_.staticClass, global::java.net.HttpURLConnection_._usingProxy21526);
 		}
 		internal static global::MonoJavaBridge.MethodId _connect21527;
-		public override void connect() 
+		public override void connect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

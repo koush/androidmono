@@ -18,7 +18,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _flush19089;
-		 void java.io.Flushable.flush() 
+		void java.io.Flushable.flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

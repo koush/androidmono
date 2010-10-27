@@ -12,7 +12,7 @@ namespace android.preference
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onClick10455;
-		protected override void onClick() 
+		protected override void onClick()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onClick10455);
 		}
 		internal static global::MonoJavaBridge.MethodId _onActivityResult10456;
-		public virtual bool onActivityResult(int arg0, int arg1, android.content.Intent arg2) 
+		public virtual bool onActivityResult(int arg0, int arg1, android.content.Intent arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onActivityResult10456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onGetDefaultValue10457;
-		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1) 
+		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onGetDefaultValue10457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _onSetInitialValue10458;
-		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1) 
+		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onSetInitialValue10458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _onAttachedToHierarchy10459;
-		protected override void onAttachedToHierarchy(android.preference.PreferenceManager arg0) 
+		protected override void onAttachedToHierarchy(android.preference.PreferenceManager arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -68,7 +68,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getRingtoneType10460;
-		public virtual int getRingtoneType() 
+		public virtual int getRingtoneType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -77,7 +77,7 @@ namespace android.preference
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._getRingtoneType10460);
 		}
 		internal static global::MonoJavaBridge.MethodId _setRingtoneType10461;
-		public virtual void setRingtoneType(int arg0) 
+		public virtual void setRingtoneType(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -97,7 +97,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShowDefault10462;
-		public virtual bool getShowDefault() 
+		public virtual bool getShowDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -106,7 +106,7 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._getShowDefault10462);
 		}
 		internal static global::MonoJavaBridge.MethodId _setShowDefault10463;
-		public virtual void setShowDefault(bool arg0) 
+		public virtual void setShowDefault(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -126,7 +126,7 @@ namespace android.preference
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getShowSilent10464;
-		public virtual bool getShowSilent() 
+		public virtual bool getShowSilent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -135,7 +135,7 @@ namespace android.preference
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._getShowSilent10464);
 		}
 		internal static global::MonoJavaBridge.MethodId _setShowSilent10465;
-		public virtual void setShowSilent(bool arg0) 
+		public virtual void setShowSilent(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -144,7 +144,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._setShowSilent10465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onPrepareRingtonePickerIntent10466;
-		protected virtual void onPrepareRingtonePickerIntent(android.content.Intent arg0) 
+		protected virtual void onPrepareRingtonePickerIntent(android.content.Intent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -153,7 +153,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onPrepareRingtonePickerIntent10466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onSaveRingtone10467;
-		protected virtual void onSaveRingtone(android.net.Uri arg0) 
+		protected virtual void onSaveRingtone(android.net.Uri arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -162,7 +162,7 @@ namespace android.preference
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onSaveRingtone10467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreRingtone10468;
-		protected virtual global::android.net.Uri onRestoreRingtone() 
+		protected virtual global::android.net.Uri onRestoreRingtone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -171,21 +171,21 @@ namespace android.preference
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onRestoreRingtone10468)) as android.net.Uri;
 		}
 		internal static global::MonoJavaBridge.MethodId _RingtonePreference10469;
-		public RingtonePreference(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RingtonePreference(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._RingtonePreference10469, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RingtonePreference10470;
-		public RingtonePreference(android.content.Context arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RingtonePreference(android.content.Context arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._RingtonePreference10470, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RingtonePreference10471;
-		public RingtonePreference(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RingtonePreference(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._RingtonePreference10471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

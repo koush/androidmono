@@ -12,7 +12,7 @@ namespace android.test.mock
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _checkPermission12526;
-		public override int checkPermission(java.lang.String arg0, java.lang.String arg1) 
+		public override int checkPermission(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._checkPermission12526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageInfo12527;
-		public override global::android.content.pm.PackageInfo getPackageInfo(java.lang.String arg0, int arg1) 
+		public override global::android.content.pm.PackageInfo getPackageInfo(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPackageInfo12527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PackageInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationInfo12528;
-		public override global::android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String arg0, int arg1) 
+		public override global::android.content.pm.ApplicationInfo getApplicationInfo(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getApplicationInfo12528, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ApplicationInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getText12529;
-		public override global::java.lang.CharSequence getText(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2) 
+		public override global::java.lang.CharSequence getText(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getText12529, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveActivity12530;
-		public override global::android.content.pm.ResolveInfo resolveActivity(android.content.Intent arg0, int arg1) 
+		public override global::android.content.pm.ResolveInfo resolveActivity(android.content.Intent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._resolveActivity12530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ResolveInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDrawable12531;
-		public override global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2) 
+		public override global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getDrawable12531, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getXml12532;
-		public override global::android.content.res.XmlResourceParser getXml(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2) 
+		public override global::android.content.res.XmlResourceParser getXml(java.lang.String arg0, int arg1, android.content.pm.ApplicationInfo arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,7 +75,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.res.XmlResourceParser>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getXml12532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as android.content.res.XmlResourceParser;
 		}
 		internal static global::MonoJavaBridge.MethodId _currentToCanonicalPackageNames12533;
-		public override global::java.lang.String[] currentToCanonicalPackageNames(java.lang.String[] arg0) 
+		public override global::java.lang.String[] currentToCanonicalPackageNames(java.lang.String[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -84,7 +84,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._currentToCanonicalPackageNames12533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _canonicalToCurrentPackageNames12534;
-		public override global::java.lang.String[] canonicalToCurrentPackageNames(java.lang.String[] arg0) 
+		public override global::java.lang.String[] canonicalToCurrentPackageNames(java.lang.String[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._canonicalToCurrentPackageNames12534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getLaunchIntentForPackage12535;
-		public override global::android.content.Intent getLaunchIntentForPackage(java.lang.String arg0) 
+		public override global::android.content.Intent getLaunchIntentForPackage(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -102,7 +102,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getLaunchIntentForPackage12535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageGids12536;
-		public override int[] getPackageGids(java.lang.String arg0) 
+		public override int[] getPackageGids(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -111,7 +111,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<int>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPackageGids12536, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as int[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermissionInfo12537;
-		public override global::android.content.pm.PermissionInfo getPermissionInfo(java.lang.String arg0, int arg1) 
+		public override global::android.content.pm.PermissionInfo getPermissionInfo(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -120,7 +120,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPermissionInfo12537, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PermissionInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _queryPermissionsByGroup12538;
-		public override global::java.util.List queryPermissionsByGroup(java.lang.String arg0, int arg1) 
+		public override global::java.util.List queryPermissionsByGroup(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -129,7 +129,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryPermissionsByGroup12538, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPermissionGroupInfo12539;
-		public override global::android.content.pm.PermissionGroupInfo getPermissionGroupInfo(java.lang.String arg0, int arg1) 
+		public override global::android.content.pm.PermissionGroupInfo getPermissionGroupInfo(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -138,7 +138,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPermissionGroupInfo12539, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PermissionGroupInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAllPermissionGroups12540;
-		public override global::java.util.List getAllPermissionGroups(int arg0) 
+		public override global::java.util.List getAllPermissionGroups(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,7 +147,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getAllPermissionGroups12540, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivityInfo12541;
-		public override global::android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName arg0, int arg1) 
+		public override global::android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -156,7 +156,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getActivityInfo12541, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ActivityInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getReceiverInfo12542;
-		public override global::android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName arg0, int arg1) 
+		public override global::android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getReceiverInfo12542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ActivityInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getServiceInfo12543;
-		public override global::android.content.pm.ServiceInfo getServiceInfo(android.content.ComponentName arg0, int arg1) 
+		public override global::android.content.pm.ServiceInfo getServiceInfo(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getServiceInfo12543, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ServiceInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstalledPackages12544;
-		public override global::java.util.List getInstalledPackages(int arg0) 
+		public override global::java.util.List getInstalledPackages(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -183,7 +183,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getInstalledPackages12544, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _addPermission12545;
-		public override bool addPermission(android.content.pm.PermissionInfo arg0) 
+		public override bool addPermission(android.content.pm.PermissionInfo arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -192,7 +192,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._addPermission12545, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _addPermissionAsync12546;
-		public override bool addPermissionAsync(android.content.pm.PermissionInfo arg0) 
+		public override bool addPermissionAsync(android.content.pm.PermissionInfo arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -201,7 +201,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._addPermissionAsync12546, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePermission12547;
-		public override void removePermission(java.lang.String arg0) 
+		public override void removePermission(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -210,7 +210,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._removePermission12547, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _checkSignatures12548;
-		public override int checkSignatures(int arg0, int arg1) 
+		public override int checkSignatures(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -219,7 +219,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._checkSignatures12548, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _checkSignatures12549;
-		public override int checkSignatures(java.lang.String arg0, java.lang.String arg1) 
+		public override int checkSignatures(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -228,7 +228,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._checkSignatures12549, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackagesForUid12550;
-		public override global::java.lang.String[] getPackagesForUid(int arg0) 
+		public override global::java.lang.String[] getPackagesForUid(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -237,7 +237,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPackagesForUid12550, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getNameForUid12551;
-		public override global::java.lang.String getNameForUid(int arg0) 
+		public override global::java.lang.String getNameForUid(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -246,7 +246,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getNameForUid12551, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstalledApplications12552;
-		public override global::java.util.List getInstalledApplications(int arg0) 
+		public override global::java.util.List getInstalledApplications(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -262,7 +262,7 @@ namespace android.test.mock
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemSharedLibraryNames12553;
-		public override global::java.lang.String[] getSystemSharedLibraryNames() 
+		public override global::java.lang.String[] getSystemSharedLibraryNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -278,7 +278,7 @@ namespace android.test.mock
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemAvailableFeatures12554;
-		public override global::android.content.pm.FeatureInfo[] getSystemAvailableFeatures() 
+		public override global::android.content.pm.FeatureInfo[] getSystemAvailableFeatures()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -287,7 +287,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.content.pm.FeatureInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getSystemAvailableFeatures12554)) as android.content.pm.FeatureInfo[];
 		}
 		internal static global::MonoJavaBridge.MethodId _hasSystemFeature12555;
-		public override bool hasSystemFeature(java.lang.String arg0) 
+		public override bool hasSystemFeature(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -296,7 +296,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._hasSystemFeature12555, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _queryIntentActivities12556;
-		public override global::java.util.List queryIntentActivities(android.content.Intent arg0, int arg1) 
+		public override global::java.util.List queryIntentActivities(android.content.Intent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -305,7 +305,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryIntentActivities12556, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _queryIntentActivityOptions12557;
-		public override global::java.util.List queryIntentActivityOptions(android.content.ComponentName arg0, android.content.Intent[] arg1, android.content.Intent arg2, int arg3) 
+		public override global::java.util.List queryIntentActivityOptions(android.content.ComponentName arg0, android.content.Intent[] arg1, android.content.Intent arg2, int arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -314,7 +314,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryIntentActivityOptions12557, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _queryBroadcastReceivers12558;
-		public override global::java.util.List queryBroadcastReceivers(android.content.Intent arg0, int arg1) 
+		public override global::java.util.List queryBroadcastReceivers(android.content.Intent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -323,7 +323,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryBroadcastReceivers12558, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveService12559;
-		public override global::android.content.pm.ResolveInfo resolveService(android.content.Intent arg0, int arg1) 
+		public override global::android.content.pm.ResolveInfo resolveService(android.content.Intent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -332,7 +332,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._resolveService12559, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ResolveInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _queryIntentServices12560;
-		public override global::java.util.List queryIntentServices(android.content.Intent arg0, int arg1) 
+		public override global::java.util.List queryIntentServices(android.content.Intent arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -341,7 +341,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryIntentServices12560, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _resolveContentProvider12561;
-		public override global::android.content.pm.ProviderInfo resolveContentProvider(java.lang.String arg0, int arg1) 
+		public override global::android.content.pm.ProviderInfo resolveContentProvider(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -350,7 +350,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.pm.ProviderInfo>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._resolveContentProvider12561, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.ProviderInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _queryContentProviders12562;
-		public override global::java.util.List queryContentProviders(java.lang.String arg0, int arg1, int arg2) 
+		public override global::java.util.List queryContentProviders(java.lang.String arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -359,7 +359,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryContentProviders12562, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstrumentationInfo12563;
-		public override global::android.content.pm.InstrumentationInfo getInstrumentationInfo(android.content.ComponentName arg0, int arg1) 
+		public override global::android.content.pm.InstrumentationInfo getInstrumentationInfo(android.content.ComponentName arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -368,7 +368,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getInstrumentationInfo12563, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.InstrumentationInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _queryInstrumentation12564;
-		public override global::java.util.List queryInstrumentation(java.lang.String arg0, int arg1) 
+		public override global::java.util.List queryInstrumentation(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -377,7 +377,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._queryInstrumentation12564, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivityIcon12565;
-		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName arg0) 
+		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -386,7 +386,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getActivityIcon12565, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getActivityIcon12566;
-		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.Intent arg0) 
+		public override global::android.graphics.drawable.Drawable getActivityIcon(android.content.Intent arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -402,7 +402,7 @@ namespace android.test.mock
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultActivityIcon12567;
-		public override global::android.graphics.drawable.Drawable getDefaultActivityIcon() 
+		public override global::android.graphics.drawable.Drawable getDefaultActivityIcon()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -411,7 +411,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getDefaultActivityIcon12567)) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationIcon12568;
-		public override global::android.graphics.drawable.Drawable getApplicationIcon(android.content.pm.ApplicationInfo arg0) 
+		public override global::android.graphics.drawable.Drawable getApplicationIcon(android.content.pm.ApplicationInfo arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -420,7 +420,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getApplicationIcon12568, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationIcon12569;
-		public override global::android.graphics.drawable.Drawable getApplicationIcon(java.lang.String arg0) 
+		public override global::android.graphics.drawable.Drawable getApplicationIcon(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -429,7 +429,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getApplicationIcon12569, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.drawable.Drawable;
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationLabel12570;
-		public override global::java.lang.CharSequence getApplicationLabel(android.content.pm.ApplicationInfo arg0) 
+		public override global::java.lang.CharSequence getApplicationLabel(android.content.pm.ApplicationInfo arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -438,7 +438,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.lang.CharSequence>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getApplicationLabel12570, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.CharSequence;
 		}
 		internal static global::MonoJavaBridge.MethodId _getResourcesForActivity12571;
-		public override global::android.content.res.Resources getResourcesForActivity(android.content.ComponentName arg0) 
+		public override global::android.content.res.Resources getResourcesForActivity(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -447,7 +447,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getResourcesForActivity12571, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
 		}
 		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication12572;
-		public override global::android.content.res.Resources getResourcesForApplication(java.lang.String arg0) 
+		public override global::android.content.res.Resources getResourcesForApplication(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -456,7 +456,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getResourcesForApplication12572, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
 		}
 		internal static global::MonoJavaBridge.MethodId _getResourcesForApplication12573;
-		public override global::android.content.res.Resources getResourcesForApplication(android.content.pm.ApplicationInfo arg0) 
+		public override global::android.content.res.Resources getResourcesForApplication(android.content.pm.ApplicationInfo arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -465,7 +465,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getResourcesForApplication12573, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.res.Resources;
 		}
 		internal static global::MonoJavaBridge.MethodId _getPackageArchiveInfo12574;
-		public override global::android.content.pm.PackageInfo getPackageArchiveInfo(java.lang.String arg0, int arg1) 
+		public override global::android.content.pm.PackageInfo getPackageArchiveInfo(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -474,7 +474,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPackageArchiveInfo12574, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.content.pm.PackageInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstallerPackageName12575;
-		public override global::java.lang.String getInstallerPackageName(java.lang.String arg0) 
+		public override global::java.lang.String getInstallerPackageName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -483,7 +483,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getInstallerPackageName12575, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _addPackageToPreferred12576;
-		public override void addPackageToPreferred(java.lang.String arg0) 
+		public override void addPackageToPreferred(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -492,7 +492,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._addPackageToPreferred12576, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _removePackageFromPreferred12577;
-		public override void removePackageFromPreferred(java.lang.String arg0) 
+		public override void removePackageFromPreferred(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -501,7 +501,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._removePackageFromPreferred12577, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPreferredPackages12578;
-		public override global::java.util.List getPreferredPackages(int arg0) 
+		public override global::java.util.List getPreferredPackages(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -510,7 +510,7 @@ namespace android.test.mock
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPreferredPackages12578, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _addPreferredActivity12579;
-		public override void addPreferredActivity(android.content.IntentFilter arg0, int arg1, android.content.ComponentName[] arg2, android.content.ComponentName arg3) 
+		public override void addPreferredActivity(android.content.IntentFilter arg0, int arg1, android.content.ComponentName[] arg2, android.content.ComponentName arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -519,7 +519,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._addPreferredActivity12579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 		}
 		internal static global::MonoJavaBridge.MethodId _clearPackagePreferredActivities12580;
-		public override void clearPackagePreferredActivities(java.lang.String arg0) 
+		public override void clearPackagePreferredActivities(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -528,7 +528,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._clearPackagePreferredActivities12580, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getPreferredActivities12581;
-		public override int getPreferredActivities(java.util.List arg0, java.util.List arg1, java.lang.String arg2) 
+		public override int getPreferredActivities(java.util.List arg0, java.util.List arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -537,7 +537,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getPreferredActivities12581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setComponentEnabledSetting12582;
-		public override void setComponentEnabledSetting(android.content.ComponentName arg0, int arg1, int arg2) 
+		public override void setComponentEnabledSetting(android.content.ComponentName arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -546,7 +546,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._setComponentEnabledSetting12582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getComponentEnabledSetting12583;
-		public override int getComponentEnabledSetting(android.content.ComponentName arg0) 
+		public override int getComponentEnabledSetting(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -555,7 +555,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getComponentEnabledSetting12583, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setApplicationEnabledSetting12584;
-		public override void setApplicationEnabledSetting(java.lang.String arg0, int arg1, int arg2) 
+		public override void setApplicationEnabledSetting(java.lang.String arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -564,7 +564,7 @@ namespace android.test.mock
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._setApplicationEnabledSetting12584, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _getApplicationEnabledSetting12585;
-		public override int getApplicationEnabledSetting(java.lang.String arg0) 
+		public override int getApplicationEnabledSetting(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -573,7 +573,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._getApplicationEnabledSetting12585, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isSafeMode12586;
-		public override bool isSafeMode() 
+		public override bool isSafeMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -582,7 +582,7 @@ namespace android.test.mock
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._isSafeMode12586);
 		}
 		internal static global::MonoJavaBridge.MethodId _MockPackageManager12587;
-		public MockPackageManager()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MockPackageManager() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.test.mock.MockPackageManager.staticClass, global::android.test.mock.MockPackageManager._MockPackageManager12587);

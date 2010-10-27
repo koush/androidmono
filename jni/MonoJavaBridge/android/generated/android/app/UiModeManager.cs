@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _enableCarMode2182;
-		public virtual void enableCarMode(int arg0) 
+		public virtual void enableCarMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._enableCarMode2182, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _disableCarMode2183;
-		public virtual void disableCarMode(int arg0) 
+		public virtual void disableCarMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCurrentModeType2184;
-		public virtual int getCurrentModeType() 
+		public virtual int getCurrentModeType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.app
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.UiModeManager.staticClass, global::android.app.UiModeManager._getCurrentModeType2184);
 		}
 		internal static global::MonoJavaBridge.MethodId _setNightMode2185;
-		public virtual void setNightMode(int arg0) 
+		public virtual void setNightMode(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -66,7 +66,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNightMode2186;
-		public virtual int getNightMode() 
+		public virtual int getNightMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

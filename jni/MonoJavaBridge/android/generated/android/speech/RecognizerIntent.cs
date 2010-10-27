@@ -12,7 +12,7 @@ namespace android.speech
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceDetailsIntent11674;
-		public static global::android.content.Intent getVoiceDetailsIntent(android.content.Context arg0) 
+		public static global::android.content.Intent getVoiceDetailsIntent(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.speech.RecognizerIntent.staticClass, global::android.speech.RecognizerIntent._getVoiceDetailsIntent11674, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.content.Intent;

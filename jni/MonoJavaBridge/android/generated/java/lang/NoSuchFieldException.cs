@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoSuchFieldException20346;
-		public NoSuchFieldException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoSuchFieldException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoSuchFieldException.staticClass, global::java.lang.NoSuchFieldException._NoSuchFieldException20346);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _NoSuchFieldException20347;
-		public NoSuchFieldException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoSuchFieldException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.NoSuchFieldException.staticClass, global::java.lang.NoSuchFieldException._NoSuchFieldException20347, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -19,7 +19,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPublic23036;
-		public global::java.security.PublicKey getPublic() 
+		public global::java.security.PublicKey getPublic()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPrivate23037;
-		public global::java.security.PrivateKey getPrivate() 
+		public global::java.security.PrivateKey getPrivate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.PrivateKey>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.KeyPair.staticClass, global::java.security.KeyPair._getPrivate23037)) as java.security.PrivateKey;
 		}
 		internal static global::MonoJavaBridge.MethodId _KeyPair23038;
-		public KeyPair(java.security.PublicKey arg0, java.security.PrivateKey arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public KeyPair(java.security.PublicKey arg0, java.security.PrivateKey arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.KeyPair.staticClass, global::java.security.KeyPair._KeyPair23038, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

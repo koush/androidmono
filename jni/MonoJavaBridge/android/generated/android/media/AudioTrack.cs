@@ -30,7 +30,7 @@ namespace android.media
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onMarkerReached7177;
-			 void android.media.AudioTrack.OnPlaybackPositionUpdateListener.onMarkerReached(android.media.AudioTrack arg0) 
+			void android.media.AudioTrack.OnPlaybackPositionUpdateListener.onMarkerReached(android.media.AudioTrack arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.media
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_.staticClass, global::android.media.AudioTrack.OnPlaybackPositionUpdateListener_._onMarkerReached7177, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _onPeriodicNotification7178;
-			 void android.media.AudioTrack.OnPlaybackPositionUpdateListener.onPeriodicNotification(android.media.AudioTrack arg0) 
+			void android.media.AudioTrack.OnPlaybackPositionUpdateListener.onPeriodicNotification(android.media.AudioTrack arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _finalize7179;
-		protected override void finalize() 
+		protected override void finalize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._finalize7179);
 		}
 		internal static global::MonoJavaBridge.MethodId _write7180;
-		public virtual int write(byte[] arg0, int arg1, int arg2) 
+		public virtual int write(byte[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -74,7 +74,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._write7180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _write7181;
-		public virtual int write(short[] arg0, int arg1, int arg2) 
+		public virtual int write(short[] arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -83,7 +83,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._write7181, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _stop7182;
-		public virtual void stop() 
+		public virtual void stop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,7 +103,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getState7183;
-		public virtual int getState() 
+		public virtual int getState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -112,7 +112,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getState7183);
 		}
 		internal static global::MonoJavaBridge.MethodId _flush7184;
-		public virtual void flush() 
+		public virtual void flush()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -121,7 +121,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._flush7184);
 		}
 		internal static global::MonoJavaBridge.MethodId _setState7185;
-		protected virtual void setState(int arg0) 
+		protected virtual void setState(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +130,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setState7185, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _release7186;
-		public virtual void release() 
+		public virtual void release()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,7 +139,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._release7186);
 		}
 		internal static global::MonoJavaBridge.MethodId _play7187;
-		public virtual void play() 
+		public virtual void play()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -155,7 +155,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSampleRate7188;
-		public virtual int getSampleRate() 
+		public virtual int getSampleRate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -171,7 +171,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAudioFormat7189;
-		public virtual int getAudioFormat() 
+		public virtual int getAudioFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -187,7 +187,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChannelConfiguration7190;
-		public virtual int getChannelConfiguration() 
+		public virtual int getChannelConfiguration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -203,7 +203,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getChannelCount7191;
-		public virtual int getChannelCount() 
+		public virtual int getChannelCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -217,9 +217,13 @@ namespace android.media
 			{
 				return getNotificationMarkerPosition();
 			}
+			set
+			{
+				setNotificationMarkerPosition(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNotificationMarkerPosition7192;
-		public virtual int getNotificationMarkerPosition() 
+		public virtual int getNotificationMarkerPosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,9 +237,13 @@ namespace android.media
 			{
 				return getPositionNotificationPeriod();
 			}
+			set
+			{
+				setPositionNotificationPeriod(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPositionNotificationPeriod7193;
-		public virtual int getPositionNotificationPeriod() 
+		public virtual int getPositionNotificationPeriod()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -244,13 +252,13 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getPositionNotificationPeriod7193);
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinBufferSize7194;
-		public static int getMinBufferSize(int arg0, int arg1, int arg2) 
+		public static int getMinBufferSize(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getMinBufferSize7194, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setNotificationMarkerPosition7195;
-		public virtual int setNotificationMarkerPosition(int arg0) 
+		public virtual int setNotificationMarkerPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -259,7 +267,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setNotificationMarkerPosition7195, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPositionNotificationPeriod7196;
-		public virtual int setPositionNotificationPeriod(int arg0) 
+		public virtual int setPositionNotificationPeriod(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -275,7 +283,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMinVolume7197;
-		public static float getMinVolume() 
+		public static float getMinVolume()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getMinVolume7197);
@@ -288,7 +296,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMaxVolume7198;
-		public static float getMaxVolume() 
+		public static float getMaxVolume()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getMaxVolume7198);
@@ -299,9 +307,13 @@ namespace android.media
 			{
 				return getPlaybackRate();
 			}
+			set
+			{
+				setPlaybackRate(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlaybackRate7199;
-		public virtual int getPlaybackRate() 
+		public virtual int getPlaybackRate()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -317,7 +329,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStreamType7200;
-		public virtual int getStreamType() 
+		public virtual int getStreamType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -333,7 +345,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlayState7201;
-		public virtual int getPlayState() 
+		public virtual int getPlayState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -349,7 +361,7 @@ namespace android.media
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNativeFrameCount7202;
-		protected virtual int getNativeFrameCount() 
+		protected virtual int getNativeFrameCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -363,9 +375,13 @@ namespace android.media
 			{
 				return getPlaybackHeadPosition();
 			}
+			set
+			{
+				setPlaybackHeadPosition(value);
+			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlaybackHeadPosition7203;
-		public virtual int getPlaybackHeadPosition() 
+		public virtual int getPlaybackHeadPosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -374,13 +390,13 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getPlaybackHeadPosition7203);
 		}
 		internal static global::MonoJavaBridge.MethodId _getNativeOutputSampleRate7204;
-		public static int getNativeOutputSampleRate(int arg0) 
+		public static int getNativeOutputSampleRate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._getNativeOutputSampleRate7204, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPlaybackPositionUpdateListener7205;
-		public virtual void setPlaybackPositionUpdateListener(android.media.AudioTrack.OnPlaybackPositionUpdateListener arg0, android.os.Handler arg1) 
+		public virtual void setPlaybackPositionUpdateListener(android.media.AudioTrack.OnPlaybackPositionUpdateListener arg0, android.os.Handler arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -388,8 +404,15 @@ namespace android.media
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setPlaybackPositionUpdateListener7205, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public new global::android.media.AudioTrack.OnPlaybackPositionUpdateListener PlaybackPositionUpdateListener
+		{
+			set
+			{
+				setPlaybackPositionUpdateListener(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setPlaybackPositionUpdateListener7206;
-		public virtual void setPlaybackPositionUpdateListener(android.media.AudioTrack.OnPlaybackPositionUpdateListener arg0) 
+		public virtual void setPlaybackPositionUpdateListener(android.media.AudioTrack.OnPlaybackPositionUpdateListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -398,7 +421,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setPlaybackPositionUpdateListener7206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setStereoVolume7207;
-		public virtual int setStereoVolume(float arg0, float arg1) 
+		public virtual int setStereoVolume(float arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -407,7 +430,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setStereoVolume7207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPlaybackRate7208;
-		public virtual int setPlaybackRate(int arg0) 
+		public virtual int setPlaybackRate(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -416,7 +439,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setPlaybackRate7208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setPlaybackHeadPosition7209;
-		public virtual int setPlaybackHeadPosition(int arg0) 
+		public virtual int setPlaybackHeadPosition(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -425,7 +448,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setPlaybackHeadPosition7209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLoopPoints7210;
-		public virtual int setLoopPoints(int arg0, int arg1, int arg2) 
+		public virtual int setLoopPoints(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -434,7 +457,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._setLoopPoints7210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _pause7211;
-		public virtual void pause() 
+		public virtual void pause()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -443,7 +466,7 @@ namespace android.media
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._pause7211);
 		}
 		internal static global::MonoJavaBridge.MethodId _reloadStaticData7212;
-		public virtual int reloadStaticData() 
+		public virtual int reloadStaticData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -452,7 +475,7 @@ namespace android.media
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.media.AudioTrack.staticClass, global::android.media.AudioTrack._reloadStaticData7212);
 		}
 		internal static global::MonoJavaBridge.MethodId _AudioTrack7213;
-		public AudioTrack(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AudioTrack(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioTrack.staticClass, global::android.media.AudioTrack._AudioTrack7213, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg5));

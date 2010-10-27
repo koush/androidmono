@@ -20,7 +20,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getName21154;
-		 global::java.lang.String java.lang.reflect.TypeVariable.getName() 
+		global::java.lang.String java.lang.reflect.TypeVariable.getName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_.staticClass, global::java.lang.reflect.TypeVariable_._getName21154)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getBounds21155;
-		 global::java.lang.reflect.Type[] java.lang.reflect.TypeVariable.getBounds() 
+		global::java.lang.reflect.Type[] java.lang.reflect.TypeVariable.getBounds()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace java.lang.reflect
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.reflect.Type>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.lang.reflect.TypeVariable_.staticClass, global::java.lang.reflect.TypeVariable_._getBounds21155)) as java.lang.reflect.Type[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getGenericDeclaration21156;
-		 global::java.lang.reflect.GenericDeclaration java.lang.reflect.TypeVariable.getGenericDeclaration() 
+		global::java.lang.reflect.GenericDeclaration java.lang.reflect.TypeVariable.getGenericDeclaration()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

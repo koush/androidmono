@@ -18,7 +18,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createContentHandler21364;
-		 global::java.net.ContentHandler java.net.ContentHandlerFactory.createContentHandler(java.lang.String arg0) 
+		global::java.net.ContentHandler java.net.ContentHandlerFactory.createContentHandler(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

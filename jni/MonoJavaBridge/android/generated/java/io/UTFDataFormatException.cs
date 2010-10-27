@@ -12,14 +12,14 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UTFDataFormatException19631;
-		public UTFDataFormatException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UTFDataFormatException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.UTFDataFormatException.staticClass, global::java.io.UTFDataFormatException._UTFDataFormatException19631);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UTFDataFormatException19632;
-		public UTFDataFormatException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UTFDataFormatException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.io.UTFDataFormatException.staticClass, global::java.io.UTFDataFormatException._UTFDataFormatException19632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

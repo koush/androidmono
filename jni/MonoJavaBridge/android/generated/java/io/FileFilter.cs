@@ -18,7 +18,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _accept19016;
-		 bool java.io.FileFilter.accept(java.io.File arg0) 
+		bool java.io.FileFilter.accept(java.io.File arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

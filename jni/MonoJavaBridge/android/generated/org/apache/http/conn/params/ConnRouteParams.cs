@@ -12,37 +12,37 @@ namespace org.apache.http.conn.@params
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocalAddress32206;
-		public static global::java.net.InetAddress getLocalAddress(org.apache.http.@params.HttpParams arg0) 
+		public static global::java.net.InetAddress getLocalAddress(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getLocalAddress32206, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.InetAddress;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefaultProxy32207;
-		public static void setDefaultProxy(org.apache.http.@params.HttpParams arg0, org.apache.http.HttpHost arg1) 
+		public static void setDefaultProxy(org.apache.http.@params.HttpParams arg0, org.apache.http.HttpHost arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._setDefaultProxy32207, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLocalAddress32208;
-		public static void setLocalAddress(org.apache.http.@params.HttpParams arg0, java.net.InetAddress arg1) 
+		public static void setLocalAddress(org.apache.http.@params.HttpParams arg0, java.net.InetAddress arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._setLocalAddress32208, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _setForcedRoute32209;
-		public static void setForcedRoute(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.routing.HttpRoute arg1) 
+		public static void setForcedRoute(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.routing.HttpRoute arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._setForcedRoute32209, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultProxy32210;
-		public static global::org.apache.http.HttpHost getDefaultProxy(org.apache.http.@params.HttpParams arg0) 
+		public static global::org.apache.http.HttpHost getDefaultProxy(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.HttpHost>(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getDefaultProxy32210, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.HttpHost;
 		}
 		internal static global::MonoJavaBridge.MethodId _getForcedRoute32211;
-		public static global::org.apache.http.conn.routing.HttpRoute getForcedRoute(org.apache.http.@params.HttpParams arg0) 
+		public static global::org.apache.http.conn.routing.HttpRoute getForcedRoute(org.apache.http.@params.HttpParams arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<org.apache.http.conn.routing.HttpRoute>(@__env.CallStaticObjectMethod(org.apache.http.conn.@params.ConnRouteParams.staticClass, global::org.apache.http.conn.@params.ConnRouteParams._getForcedRoute32211, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.conn.routing.HttpRoute;

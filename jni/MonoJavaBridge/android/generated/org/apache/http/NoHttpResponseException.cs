@@ -12,7 +12,7 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _NoHttpResponseException31739;
-		public NoHttpResponseException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public NoHttpResponseException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.NoHttpResponseException.staticClass, global::org.apache.http.NoHttpResponseException._NoHttpResponseException31739, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AlreadyConnectedException22397;
-		public AlreadyConnectedException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AlreadyConnectedException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.AlreadyConnectedException.staticClass, global::java.nio.channels.AlreadyConnectedException._AlreadyConnectedException22397);

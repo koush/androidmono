@@ -18,7 +18,7 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onAccountsUpdated1384;
-		 void android.accounts.OnAccountsUpdateListener.onAccountsUpdated(android.accounts.Account[] arg0) 
+		void android.accounts.OnAccountsUpdateListener.onAccountsUpdated(android.accounts.Account[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _OnAccountsUpdateListenerDelegateWrapper1385;
-		public OnAccountsUpdateListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OnAccountsUpdateListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.accounts.OnAccountsUpdateListenerDelegateWrapper.staticClass, global::android.accounts.OnAccountsUpdateListenerDelegateWrapper._OnAccountsUpdateListenerDelegateWrapper1385);

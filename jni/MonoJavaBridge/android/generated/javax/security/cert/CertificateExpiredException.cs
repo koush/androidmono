@@ -12,14 +12,14 @@ namespace javax.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateExpiredException30240;
-		public CertificateExpiredException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateExpiredException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateExpiredException.staticClass, global::javax.security.cert.CertificateExpiredException._CertificateExpiredException30240);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateExpiredException30241;
-		public CertificateExpiredException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateExpiredException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateExpiredException.staticClass, global::javax.security.cert.CertificateExpiredException._CertificateExpiredException30241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

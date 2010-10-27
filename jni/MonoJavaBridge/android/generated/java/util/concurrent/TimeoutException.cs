@@ -12,14 +12,14 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _TimeoutException27520;
-		public TimeoutException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TimeoutException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.TimeoutException.staticClass, global::java.util.concurrent.TimeoutException._TimeoutException27520);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _TimeoutException27521;
-		public TimeoutException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public TimeoutException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.TimeoutException.staticClass, global::java.util.concurrent.TimeoutException._TimeoutException27521, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

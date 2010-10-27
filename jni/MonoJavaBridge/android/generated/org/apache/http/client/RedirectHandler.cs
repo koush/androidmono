@@ -19,7 +19,7 @@ namespace org.apache.http.client
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isRedirectRequested31898;
-		 bool org.apache.http.client.RedirectHandler.isRedirectRequested(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
+		bool org.apache.http.client.RedirectHandler.isRedirectRequested(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.client
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.client.RedirectHandler_.staticClass, global::org.apache.http.client.RedirectHandler_._isRedirectRequested31898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLocationURI31899;
-		 global::java.net.URI org.apache.http.client.RedirectHandler.getLocationURI(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
+		global::java.net.URI org.apache.http.client.RedirectHandler.getLocationURI(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

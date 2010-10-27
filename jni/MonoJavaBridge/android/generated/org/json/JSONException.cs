@@ -12,7 +12,7 @@ namespace org.json
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _JSONException34079;
-		public JSONException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JSONException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.json.JSONException.staticClass, global::org.json.JSONException._JSONException34079, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

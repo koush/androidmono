@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IndexOutOfBoundsException20187;
-		public IndexOutOfBoundsException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IndexOutOfBoundsException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IndexOutOfBoundsException.staticClass, global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20187);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _IndexOutOfBoundsException20188;
-		public IndexOutOfBoundsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IndexOutOfBoundsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.IndexOutOfBoundsException.staticClass, global::java.lang.IndexOutOfBoundsException._IndexOutOfBoundsException20188, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

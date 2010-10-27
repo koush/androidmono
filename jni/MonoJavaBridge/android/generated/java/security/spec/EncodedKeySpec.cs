@@ -12,7 +12,7 @@ namespace java.security.spec
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded24019;
-		public virtual byte[] getEncoded() 
+		public virtual byte[] getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace java.security.spec
 		internal static global::MonoJavaBridge.MethodId _getFormat24020;
 		public abstract global::java.lang.String getFormat();
 		internal static global::MonoJavaBridge.MethodId _EncodedKeySpec24021;
-		public EncodedKeySpec(byte[] arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EncodedKeySpec(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.EncodedKeySpec.staticClass, global::java.security.spec.EncodedKeySpec._EncodedKeySpec24021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -51,7 +51,7 @@ namespace java.security.spec
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getFormat24022;
-		public override global::java.lang.String getFormat() 
+		public override global::java.lang.String getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

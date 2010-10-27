@@ -12,7 +12,7 @@ namespace android.telephony.cdma
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals12023;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.telephony.cdma
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._equals12023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString12024;
-		public override global::java.lang.String toString() 
+		public override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.telephony.cdma
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._toString12024)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode12025;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.telephony.cdma
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId12026;
-		public virtual int getSystemId() 
+		public virtual int getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.telephony.cdma
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkId12027;
-		public virtual int getNetworkId() 
+		public virtual int getNetworkId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace android.telephony.cdma
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBaseStationId12028;
-		public virtual int getBaseStationId() 
+		public virtual int getBaseStationId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -94,7 +94,7 @@ namespace android.telephony.cdma
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBaseStationLatitude12029;
-		public virtual int getBaseStationLatitude() 
+		public virtual int getBaseStationLatitude()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -110,7 +110,7 @@ namespace android.telephony.cdma
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getBaseStationLongitude12030;
-		public virtual int getBaseStationLongitude() 
+		public virtual int getBaseStationLongitude()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -119,7 +119,7 @@ namespace android.telephony.cdma
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLongitude12030);
 		}
 		internal static global::MonoJavaBridge.MethodId _setStateInvalid12031;
-		public virtual void setStateInvalid() 
+		public virtual void setStateInvalid()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,7 +128,7 @@ namespace android.telephony.cdma
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._setStateInvalid12031);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCellLocationData12032;
-		public virtual void setCellLocationData(int arg0, int arg1, int arg2, int arg3, int arg4) 
+		public virtual void setCellLocationData(int arg0, int arg1, int arg2, int arg3, int arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -137,7 +137,7 @@ namespace android.telephony.cdma
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._setCellLocationData12032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _setCellLocationData12033;
-		public virtual void setCellLocationData(int arg0, int arg1, int arg2) 
+		public virtual void setCellLocationData(int arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -146,7 +146,7 @@ namespace android.telephony.cdma
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._setCellLocationData12033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _fillInNotifierBundle12034;
-		public virtual void fillInNotifierBundle(android.os.Bundle arg0) 
+		public virtual void fillInNotifierBundle(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -155,14 +155,14 @@ namespace android.telephony.cdma
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._fillInNotifierBundle12034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _CdmaCellLocation12035;
-		public CdmaCellLocation()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CdmaCellLocation() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._CdmaCellLocation12035);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CdmaCellLocation12036;
-		public CdmaCellLocation(android.os.Bundle arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CdmaCellLocation(android.os.Bundle arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._CdmaCellLocation12036, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

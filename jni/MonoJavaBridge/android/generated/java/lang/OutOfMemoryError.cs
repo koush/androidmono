@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _OutOfMemoryError20379;
-		public OutOfMemoryError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OutOfMemoryError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.OutOfMemoryError.staticClass, global::java.lang.OutOfMemoryError._OutOfMemoryError20379);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _OutOfMemoryError20380;
-		public OutOfMemoryError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public OutOfMemoryError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.OutOfMemoryError.staticClass, global::java.lang.OutOfMemoryError._OutOfMemoryError20380, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -18,7 +18,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _combine22951;
-		 global::java.security.ProtectionDomain[] java.security.DomainCombiner.combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1) 
+		global::java.security.ProtectionDomain[] java.security.DomainCombiner.combine(java.security.ProtectionDomain[] arg0, java.security.ProtectionDomain[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

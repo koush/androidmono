@@ -18,7 +18,7 @@ namespace org.apache.http.entity
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeTo32531;
-		 void org.apache.http.entity.ContentProducer.writeTo(java.io.OutputStream arg0) 
+		void org.apache.http.entity.ContentProducer.writeTo(java.io.OutputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -19,7 +19,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getObject22957;
-		public virtual global::java.lang.Object getObject() 
+		public virtual global::java.lang.Object getObject()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.GuardedObject.staticClass, global::java.security.GuardedObject._getObject22957)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _GuardedObject22958;
-		public GuardedObject(java.lang.Object arg0, java.security.Guard arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public GuardedObject(java.lang.Object arg0, java.security.Guard arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.GuardedObject.staticClass, global::java.security.GuardedObject._GuardedObject22958, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

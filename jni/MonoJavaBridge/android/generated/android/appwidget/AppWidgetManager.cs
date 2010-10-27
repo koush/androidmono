@@ -12,13 +12,13 @@ namespace android.appwidget
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance2363;
-		public static global::android.appwidget.AppWidgetManager getInstance(android.content.Context arg0) 
+		public static global::android.appwidget.AppWidgetManager getInstance(android.content.Context arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getInstance2363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.appwidget.AppWidgetManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAppWidgetInfo2364;
-		public virtual global::android.appwidget.AppWidgetProviderInfo getAppWidgetInfo(int arg0) 
+		public virtual global::android.appwidget.AppWidgetProviderInfo getAppWidgetInfo(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -27,7 +27,7 @@ namespace android.appwidget
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getAppWidgetInfo2364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.appwidget.AppWidgetProviderInfo;
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAppWidget2365;
-		public virtual void updateAppWidget(android.content.ComponentName arg0, android.widget.RemoteViews arg1) 
+		public virtual void updateAppWidget(android.content.ComponentName arg0, android.widget.RemoteViews arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace android.appwidget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget2365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAppWidget2366;
-		public virtual void updateAppWidget(int[] arg0, android.widget.RemoteViews arg1) 
+		public virtual void updateAppWidget(int[] arg0, android.widget.RemoteViews arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace android.appwidget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget2366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _updateAppWidget2367;
-		public virtual void updateAppWidget(int arg0, android.widget.RemoteViews arg1) 
+		public virtual void updateAppWidget(int arg0, android.widget.RemoteViews arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace android.appwidget
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstalledProviders2368;
-		public virtual global::java.util.List getInstalledProviders() 
+		public virtual global::java.util.List getInstalledProviders()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace android.appwidget
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getInstalledProviders2368)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _bindAppWidgetId2369;
-		public virtual void bindAppWidgetId(int arg0, android.content.ComponentName arg1) 
+		public virtual void bindAppWidgetId(int arg0, android.content.ComponentName arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace android.appwidget
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._bindAppWidgetId2369, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getAppWidgetIds2370;
-		public virtual int[] getAppWidgetIds(android.content.ComponentName arg0) 
+		public virtual int[] getAppWidgetIds(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,28 +12,28 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkedHashSet26343;
-		public LinkedHashSet(int arg0, float arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LinkedHashSet(int arg0, float arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26343, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkedHashSet26344;
-		public LinkedHashSet(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LinkedHashSet(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26344, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkedHashSet26345;
-		public LinkedHashSet()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LinkedHashSet() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26345);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _LinkedHashSet26346;
-		public LinkedHashSet(java.util.Collection arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public LinkedHashSet(java.util.Collection arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.LinkedHashSet.staticClass, global::java.util.LinkedHashSet._LinkedHashSet26346, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

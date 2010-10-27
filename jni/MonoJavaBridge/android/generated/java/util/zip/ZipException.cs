@@ -12,14 +12,14 @@ namespace java.util.zip
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ZipException28455;
-		public ZipException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ZipException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.ZipException.staticClass, global::java.util.zip.ZipException._ZipException28455);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ZipException28456;
-		public ZipException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ZipException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.zip.ZipException.staticClass, global::java.util.zip.ZipException._ZipException28456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

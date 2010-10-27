@@ -23,13 +23,13 @@ namespace android.provider
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _getLastOutgoingCall10519;
-			public static global::java.lang.String getLastOutgoingCall(android.content.Context arg0) 
+			public static global::java.lang.String getLastOutgoingCall(android.content.Context arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._getLastOutgoingCall10519, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _Calls10520;
-			public Calls()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public Calls() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._Calls10520);
@@ -162,7 +162,7 @@ namespace android.provider
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _CallLog10537;
-		public CallLog()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CallLog() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.provider.CallLog.staticClass, global::android.provider.CallLog._CallLog10537);

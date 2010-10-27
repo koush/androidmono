@@ -18,7 +18,7 @@ namespace java.security.interfaces
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getModulus23925;
-		 global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus() 
+		global::java.math.BigInteger java.security.interfaces.RSAKey.getModulus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

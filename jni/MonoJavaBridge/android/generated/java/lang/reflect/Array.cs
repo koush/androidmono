@@ -12,127 +12,127 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get21010;
-		public static global::java.lang.Object get(java.lang.Object arg0, int arg1) 
+		public static global::java.lang.Object get(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._get21010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLength21011;
-		public static int getLength(java.lang.Object arg0) 
+		public static int getLength(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getLength21011, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean21012;
-		public static bool getBoolean(java.lang.Object arg0, int arg1) 
+		public static bool getBoolean(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getBoolean21012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByte21013;
-		public static byte getByte(java.lang.Object arg0, int arg1) 
+		public static byte getByte(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticByteMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getByte21013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getShort21014;
-		public static short getShort(java.lang.Object arg0, int arg1) 
+		public static short getShort(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticShortMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getShort21014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getChar21015;
-		public static char getChar(java.lang.Object arg0, int arg1) 
+		public static char getChar(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticCharMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getChar21015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt21016;
-		public static int getInt(java.lang.Object arg0, int arg1) 
+		public static int getInt(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getInt21016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong21017;
-		public static long getLong(java.lang.Object arg0, int arg1) 
+		public static long getLong(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticLongMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getLong21017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat21018;
-		public static float getFloat(java.lang.Object arg0, int arg1) 
+		public static float getFloat(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticFloatMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getFloat21018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getDouble21019;
-		public static double getDouble(java.lang.Object arg0, int arg1) 
+		public static double getDouble(java.lang.Object arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticDoubleMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._getDouble21019, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance21020;
-		public static global::java.lang.Object newInstance(java.lang.Class arg0, int[] arg1) 
+		public static global::java.lang.Object newInstance(java.lang.Class arg0, int[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._newInstance21020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance21021;
-		public static global::java.lang.Object newInstance(java.lang.Class arg0, int arg1) 
+		public static global::java.lang.Object newInstance(java.lang.Class arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._newInstance21021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _set21022;
-		public static void set(java.lang.Object arg0, int arg1, java.lang.Object arg2) 
+		public static void set(java.lang.Object arg0, int arg1, java.lang.Object arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._set21022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setBoolean21023;
-		public static void setBoolean(java.lang.Object arg0, int arg1, bool arg2) 
+		public static void setBoolean(java.lang.Object arg0, int arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setBoolean21023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setByte21024;
-		public static void setByte(java.lang.Object arg0, int arg1, byte arg2) 
+		public static void setByte(java.lang.Object arg0, int arg1, byte arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setByte21024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setChar21025;
-		public static void setChar(java.lang.Object arg0, int arg1, char arg2) 
+		public static void setChar(java.lang.Object arg0, int arg1, char arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setChar21025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setShort21026;
-		public static void setShort(java.lang.Object arg0, int arg1, short arg2) 
+		public static void setShort(java.lang.Object arg0, int arg1, short arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setShort21026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setInt21027;
-		public static void setInt(java.lang.Object arg0, int arg1, int arg2) 
+		public static void setInt(java.lang.Object arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setInt21027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setLong21028;
-		public static void setLong(java.lang.Object arg0, int arg1, long arg2) 
+		public static void setLong(java.lang.Object arg0, int arg1, long arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setLong21028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setFloat21029;
-		public static void setFloat(java.lang.Object arg0, int arg1, float arg2) 
+		public static void setFloat(java.lang.Object arg0, int arg1, float arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setFloat21029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setDouble21030;
-		public static void setDouble(java.lang.Object arg0, int arg1, double arg2) 
+		public static void setDouble(java.lang.Object arg0, int arg1, double arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.lang.reflect.Array.staticClass, global::java.lang.reflect.Array._setDouble21030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

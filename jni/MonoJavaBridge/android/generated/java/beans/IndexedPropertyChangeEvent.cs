@@ -19,7 +19,7 @@ namespace java.beans
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getIndex18773;
-		public virtual int getIndex() 
+		public virtual int getIndex()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.beans
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._getIndex18773);
 		}
 		internal static global::MonoJavaBridge.MethodId _IndexedPropertyChangeEvent18774;
-		public IndexedPropertyChangeEvent(java.lang.Object arg0, java.lang.String arg1, java.lang.Object arg2, java.lang.Object arg3, int arg4)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IndexedPropertyChangeEvent(java.lang.Object arg0, java.lang.String arg1, java.lang.Object arg2, java.lang.Object arg3, int arg4) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.IndexedPropertyChangeEvent.staticClass, global::java.beans.IndexedPropertyChangeEvent._IndexedPropertyChangeEvent18774, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));

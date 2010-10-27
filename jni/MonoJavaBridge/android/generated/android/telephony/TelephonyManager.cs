@@ -19,7 +19,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeviceId11960;
-		public virtual global::java.lang.String getDeviceId() 
+		public virtual global::java.lang.String getDeviceId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.telephony
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDeviceId11960)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _listen11961;
-		public virtual void listen(android.telephony.PhoneStateListener arg0, int arg1) 
+		public virtual void listen(android.telephony.PhoneStateListener arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkType11962;
-		public virtual int getNetworkType() 
+		public virtual int getNetworkType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDeviceSoftwareVersion11963;
-		public virtual global::java.lang.String getDeviceSoftwareVersion() 
+		public virtual global::java.lang.String getDeviceSoftwareVersion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -76,7 +76,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCellLocation11964;
-		public virtual global::android.telephony.CellLocation getCellLocation() 
+		public virtual global::android.telephony.CellLocation getCellLocation()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -92,7 +92,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNeighboringCellInfo11965;
-		public virtual global::java.util.List getNeighboringCellInfo() 
+		public virtual global::java.util.List getNeighboringCellInfo()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPhoneType11966;
-		public virtual int getPhoneType() 
+		public virtual int getPhoneType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -124,7 +124,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkOperatorName11967;
-		public virtual global::java.lang.String getNetworkOperatorName() 
+		public virtual global::java.lang.String getNetworkOperatorName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -140,7 +140,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkOperator11968;
-		public virtual global::java.lang.String getNetworkOperator() 
+		public virtual global::java.lang.String getNetworkOperator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -149,7 +149,7 @@ namespace android.telephony
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkOperator11968)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _isNetworkRoaming11969;
-		public virtual bool isNetworkRoaming() 
+		public virtual bool isNetworkRoaming()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNetworkCountryIso11970;
-		public virtual global::java.lang.String getNetworkCountryIso() 
+		public virtual global::java.lang.String getNetworkCountryIso()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -174,7 +174,7 @@ namespace android.telephony
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkCountryIso11970)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hasIccCard11971;
-		public virtual bool hasIccCard() 
+		public virtual bool hasIccCard()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -190,7 +190,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSimState11972;
-		public virtual int getSimState() 
+		public virtual int getSimState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSimOperator11973;
-		public virtual global::java.lang.String getSimOperator() 
+		public virtual global::java.lang.String getSimOperator()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -222,7 +222,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSimOperatorName11974;
-		public virtual global::java.lang.String getSimOperatorName() 
+		public virtual global::java.lang.String getSimOperatorName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -238,7 +238,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSimCountryIso11975;
-		public virtual global::java.lang.String getSimCountryIso() 
+		public virtual global::java.lang.String getSimCountryIso()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -254,7 +254,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSimSerialNumber11976;
-		public virtual global::java.lang.String getSimSerialNumber() 
+		public virtual global::java.lang.String getSimSerialNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -270,7 +270,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSubscriberId11977;
-		public virtual global::java.lang.String getSubscriberId() 
+		public virtual global::java.lang.String getSubscriberId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -286,7 +286,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLine1Number11978;
-		public virtual global::java.lang.String getLine1Number() 
+		public virtual global::java.lang.String getLine1Number()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -302,7 +302,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceMailNumber11979;
-		public virtual global::java.lang.String getVoiceMailNumber() 
+		public virtual global::java.lang.String getVoiceMailNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -318,7 +318,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceMailAlphaTag11980;
-		public virtual global::java.lang.String getVoiceMailAlphaTag() 
+		public virtual global::java.lang.String getVoiceMailAlphaTag()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -334,7 +334,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallState11981;
-		public virtual int getCallState() 
+		public virtual int getCallState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -350,7 +350,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDataActivity11982;
-		public virtual int getDataActivity() 
+		public virtual int getDataActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -366,7 +366,7 @@ namespace android.telephony
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDataState11983;
-		public virtual int getDataState() 
+		public virtual int getDataState()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

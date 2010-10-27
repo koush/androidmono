@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassCastException20034;
-		public ClassCastException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassCastException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassCastException.staticClass, global::java.lang.ClassCastException._ClassCastException20034);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassCastException20035;
-		public ClassCastException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassCastException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassCastException.staticClass, global::java.lang.ClassCastException._ClassCastException20035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

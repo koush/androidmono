@@ -29,7 +29,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _retrieveReturn14977;
-			 bool android.view.ViewDebug.CapturedViewProperty.retrieveReturn() 
+			bool android.view.ViewDebug.CapturedViewProperty.retrieveReturn()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._retrieveReturn14977);
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14978;
-			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._equals14978, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString14979;
-			 global::java.lang.String java.lang.annotation.Annotation.toString() 
+			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -56,7 +56,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._toString14979)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14980;
-			 int java.lang.annotation.Annotation.hashCode() 
+			int java.lang.annotation.Annotation.hashCode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -65,7 +65,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.CapturedViewProperty_.staticClass, global::android.view.ViewDebug.CapturedViewProperty_._hashCode14980);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType14981;
-			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -107,7 +107,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _prefix14982;
-			 global::java.lang.String android.view.ViewDebug.ExportedProperty.prefix() 
+			global::java.lang.String android.view.ViewDebug.ExportedProperty.prefix()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -116,7 +116,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._prefix14982)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _resolveId14983;
-			 bool android.view.ViewDebug.ExportedProperty.resolveId() 
+			bool android.view.ViewDebug.ExportedProperty.resolveId()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -125,7 +125,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._resolveId14983);
 			}
 			internal static global::MonoJavaBridge.MethodId _mapping14984;
-			 global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.mapping() 
+			global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.mapping()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -134,7 +134,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.IntToString>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._mapping14984)) as android.view.ViewDebug.IntToString[];
 			}
 			internal static global::MonoJavaBridge.MethodId _indexMapping14985;
-			 global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.indexMapping() 
+			global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.indexMapping()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -143,7 +143,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.IntToString>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._indexMapping14985)) as android.view.ViewDebug.IntToString[];
 			}
 			internal static global::MonoJavaBridge.MethodId _flagMapping14986;
-			 global::android.view.ViewDebug.FlagToString[] android.view.ViewDebug.ExportedProperty.flagMapping() 
+			global::android.view.ViewDebug.FlagToString[] android.view.ViewDebug.ExportedProperty.flagMapping()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -152,7 +152,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.FlagToString>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._flagMapping14986)) as android.view.ViewDebug.FlagToString[];
 			}
 			internal static global::MonoJavaBridge.MethodId _deepExport14987;
-			 bool android.view.ViewDebug.ExportedProperty.deepExport() 
+			bool android.view.ViewDebug.ExportedProperty.deepExport()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -161,7 +161,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._deepExport14987);
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14988;
-			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -170,7 +170,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._equals14988, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString14989;
-			 global::java.lang.String java.lang.annotation.Annotation.toString() 
+			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -179,7 +179,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._toString14989)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14990;
-			 int java.lang.annotation.Annotation.hashCode() 
+			int java.lang.annotation.Annotation.hashCode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -188,7 +188,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.ExportedProperty_.staticClass, global::android.view.ViewDebug.ExportedProperty_._hashCode14990);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType14991;
-			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -233,7 +233,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _name14992;
-			 global::java.lang.String android.view.ViewDebug.FlagToString.name() 
+			global::java.lang.String android.view.ViewDebug.FlagToString.name()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -242,7 +242,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._name14992)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14993;
-			 int android.view.ViewDebug.FlagToString.equals() 
+			int android.view.ViewDebug.FlagToString.equals()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -251,7 +251,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._equals14993);
 			}
 			internal static global::MonoJavaBridge.MethodId _mask14994;
-			 int android.view.ViewDebug.FlagToString.mask() 
+			int android.view.ViewDebug.FlagToString.mask()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -260,7 +260,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._mask14994);
 			}
 			internal static global::MonoJavaBridge.MethodId _outputIf14995;
-			 bool android.view.ViewDebug.FlagToString.outputIf() 
+			bool android.view.ViewDebug.FlagToString.outputIf()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -269,7 +269,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._outputIf14995);
 			}
 			internal static global::MonoJavaBridge.MethodId _equals14996;
-			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -278,7 +278,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._equals14996, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString14997;
-			 global::java.lang.String java.lang.annotation.Annotation.toString() 
+			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -287,7 +287,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._toString14997)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode14998;
-			 int java.lang.annotation.Annotation.hashCode() 
+			int java.lang.annotation.Annotation.hashCode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -296,7 +296,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.FlagToString_.staticClass, global::android.view.ViewDebug.FlagToString_._hashCode14998);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType14999;
-			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -330,13 +330,13 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values15000;
-			public static global::android.view.ViewDebug.HierarchyTraceType[] values() 
+			public static global::android.view.ViewDebug.HierarchyTraceType[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.HierarchyTraceType>(@__env.CallStaticObjectMethod(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._values15000)) as android.view.ViewDebug.HierarchyTraceType[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf15001;
-			public static global::android.view.ViewDebug.HierarchyTraceType valueOf(java.lang.String arg0) 
+			public static global::android.view.ViewDebug.HierarchyTraceType valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.HierarchyTraceType>(@__env.CallStaticObjectMethod(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._valueOf15001, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewDebug.HierarchyTraceType;
@@ -448,7 +448,7 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _from15010;
-			 int android.view.ViewDebug.IntToString.from() 
+			int android.view.ViewDebug.IntToString.from()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -457,7 +457,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._from15010);
 			}
 			internal static global::MonoJavaBridge.MethodId _to15011;
-			 global::java.lang.String android.view.ViewDebug.IntToString.to() 
+			global::java.lang.String android.view.ViewDebug.IntToString.to()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -466,7 +466,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._to15011)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _equals15012;
-			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
+			bool java.lang.annotation.Annotation.equals(java.lang.Object arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -475,7 +475,7 @@ namespace android.view
 					return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._equals15012, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _toString15013;
-			 global::java.lang.String java.lang.annotation.Annotation.toString() 
+			global::java.lang.String java.lang.annotation.Annotation.toString()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -484,7 +484,7 @@ namespace android.view
 					return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._toString15013)) as java.lang.String;
 			}
 			internal static global::MonoJavaBridge.MethodId _hashCode15014;
-			 int java.lang.annotation.Annotation.hashCode() 
+			int java.lang.annotation.Annotation.hashCode()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -493,7 +493,7 @@ namespace android.view
 					return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.view.ViewDebug.IntToString_.staticClass, global::android.view.ViewDebug.IntToString_._hashCode15014);
 			}
 			internal static global::MonoJavaBridge.MethodId _annotationType15015;
-			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
+			global::java.lang.Class java.lang.annotation.Annotation.annotationType()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -525,13 +525,13 @@ namespace android.view
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values15016;
-			public static global::android.view.ViewDebug.RecyclerTraceType[] values() 
+			public static global::android.view.ViewDebug.RecyclerTraceType[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.view.ViewDebug.RecyclerTraceType>(@__env.CallStaticObjectMethod(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._values15016)) as android.view.ViewDebug.RecyclerTraceType[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf15017;
-			public static global::android.view.ViewDebug.RecyclerTraceType valueOf(java.lang.String arg0) 
+			public static global::android.view.ViewDebug.RecyclerTraceType valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.view.ViewDebug.RecyclerTraceType>(@__env.CallStaticObjectMethod(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._valueOf15017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.view.ViewDebug.RecyclerTraceType;
@@ -605,49 +605,49 @@ namespace android.view
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _trace15024;
-		public static void trace(android.view.View arg0, android.view.ViewDebug.RecyclerTraceType arg1, int[] arg2) 
+		public static void trace(android.view.View arg0, android.view.ViewDebug.RecyclerTraceType arg1, int[] arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._trace15024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _trace15025;
-		public static void trace(android.view.View arg0, android.view.ViewDebug.HierarchyTraceType arg1) 
+		public static void trace(android.view.View arg0, android.view.ViewDebug.HierarchyTraceType arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._trace15025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _startRecyclerTracing15026;
-		public static void startRecyclerTracing(java.lang.String arg0, android.view.View arg1) 
+		public static void startRecyclerTracing(java.lang.String arg0, android.view.View arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._startRecyclerTracing15026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopRecyclerTracing15027;
-		public static void stopRecyclerTracing() 
+		public static void stopRecyclerTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._stopRecyclerTracing15027);
 		}
 		internal static global::MonoJavaBridge.MethodId _startHierarchyTracing15028;
-		public static void startHierarchyTracing(java.lang.String arg0, android.view.View arg1) 
+		public static void startHierarchyTracing(java.lang.String arg0, android.view.View arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._startHierarchyTracing15028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopHierarchyTracing15029;
-		public static void stopHierarchyTracing() 
+		public static void stopHierarchyTracing()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._stopHierarchyTracing15029);
 		}
 		internal static global::MonoJavaBridge.MethodId _dumpCapturedView15030;
-		public static void dumpCapturedView(java.lang.String arg0, java.lang.Object arg1) 
+		public static void dumpCapturedView(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._dumpCapturedView15030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _ViewDebug15031;
-		public ViewDebug()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ViewDebug() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.view.ViewDebug.staticClass, global::android.view.ViewDebug._ViewDebug15031);

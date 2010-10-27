@@ -20,7 +20,7 @@ namespace android.graphics.drawable
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _start5834;
-		 void android.graphics.drawable.Animatable.start() 
+		void android.graphics.drawable.Animatable.start()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.Animatable_.staticClass, global::android.graphics.drawable.Animatable_._start5834);
 		}
 		internal static global::MonoJavaBridge.MethodId _stop5835;
-		 void android.graphics.drawable.Animatable.stop() 
+		void android.graphics.drawable.Animatable.stop()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace android.graphics.drawable
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.Animatable_.staticClass, global::android.graphics.drawable.Animatable_._stop5835);
 		}
 		internal static global::MonoJavaBridge.MethodId _isRunning5836;
-		 bool android.graphics.drawable.Animatable.isRunning() 
+		bool android.graphics.drawable.Animatable.isRunning()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

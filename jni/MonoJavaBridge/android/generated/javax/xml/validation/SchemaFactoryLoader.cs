@@ -14,7 +14,7 @@ namespace javax.xml.validation
 		internal static global::MonoJavaBridge.MethodId _newFactory31208;
 		public abstract global::javax.xml.validation.SchemaFactory newFactory(java.lang.String arg0);
 		internal static global::MonoJavaBridge.MethodId _SchemaFactoryLoader31209;
-		protected SchemaFactoryLoader()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected SchemaFactoryLoader() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.validation.SchemaFactoryLoader.staticClass, global::javax.xml.validation.SchemaFactoryLoader._SchemaFactoryLoader31209);
@@ -41,7 +41,7 @@ namespace javax.xml.validation
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newFactory31210;
-		public override global::javax.xml.validation.SchemaFactory newFactory(java.lang.String arg0) 
+		public override global::javax.xml.validation.SchemaFactory newFactory(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

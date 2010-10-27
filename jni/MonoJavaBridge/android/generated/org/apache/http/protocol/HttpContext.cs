@@ -20,7 +20,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttribute33884;
-		 global::java.lang.Object org.apache.http.protocol.HttpContext.getAttribute(java.lang.String arg0) 
+		global::java.lang.Object org.apache.http.protocol.HttpContext.getAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpContext_.staticClass, global::org.apache.http.protocol.HttpContext_._getAttribute33884, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAttribute33885;
-		 global::java.lang.Object org.apache.http.protocol.HttpContext.removeAttribute(java.lang.String arg0) 
+		global::java.lang.Object org.apache.http.protocol.HttpContext.removeAttribute(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.apache.http.protocol
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.protocol.HttpContext_.staticClass, global::org.apache.http.protocol.HttpContext_._removeAttribute33885, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAttribute33886;
-		 void org.apache.http.protocol.HttpContext.setAttribute(java.lang.String arg0, java.lang.Object arg1) 
+		void org.apache.http.protocol.HttpContext.setAttribute(java.lang.String arg0, java.lang.Object arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

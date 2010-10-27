@@ -12,14 +12,14 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteMisuseException4807;
-		public SQLiteMisuseException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteMisuseException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteMisuseException.staticClass, global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException4807);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteMisuseException4808;
-		public SQLiteMisuseException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteMisuseException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteMisuseException.staticClass, global::android.database.sqlite.SQLiteMisuseException._SQLiteMisuseException4808, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

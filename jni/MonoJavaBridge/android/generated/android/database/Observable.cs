@@ -12,7 +12,7 @@ namespace android.database
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _registerObserver4696;
-		public virtual void registerObserver(java.lang.Object arg0) 
+		public virtual void registerObserver(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Observable.staticClass, global::android.database.Observable._registerObserver4696, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterObserver4697;
-		public virtual void unregisterObserver(java.lang.Object arg0) 
+		public virtual void unregisterObserver(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Observable.staticClass, global::android.database.Observable._unregisterObserver4697, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterAll4698;
-		public virtual void unregisterAll() 
+		public virtual void unregisterAll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.database
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.Observable.staticClass, global::android.database.Observable._unregisterAll4698);
 		}
 		internal static global::MonoJavaBridge.MethodId _Observable4699;
-		public Observable()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Observable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.Observable.staticClass, global::android.database.Observable._Observable4699);

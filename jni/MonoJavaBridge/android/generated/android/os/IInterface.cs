@@ -18,7 +18,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _asBinder9911;
-		 global::android.os.IBinder android.os.IInterface.asBinder() 
+		global::android.os.IBinder android.os.IInterface.asBinder()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -47,7 +47,7 @@ namespace android.os
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _IInterfaceDelegateWrapper9912;
-		public IInterfaceDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public IInterfaceDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.os.IInterfaceDelegateWrapper.staticClass, global::android.os.IInterfaceDelegateWrapper._IInterfaceDelegateWrapper9912);

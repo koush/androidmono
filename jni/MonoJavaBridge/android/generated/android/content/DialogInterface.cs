@@ -19,7 +19,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel3079;
-		 void android.content.DialogInterface.cancel() 
+		void android.content.DialogInterface.cancel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.DialogInterface_.staticClass, global::android.content.DialogInterface_._cancel3079);
 		}
 		internal static global::MonoJavaBridge.MethodId _dismiss3080;
-		 void android.content.DialogInterface.dismiss() 
+		void android.content.DialogInterface.dismiss()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

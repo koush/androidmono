@@ -19,7 +19,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clone23506;
-		 global::java.lang.Object java.security.cert.CertPathBuilderResult.clone() 
+		global::java.lang.Object java.security.cert.CertPathBuilderResult.clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertPathBuilderResult_.staticClass, global::java.security.cert.CertPathBuilderResult_._clone23506)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertPath23507;
-		 global::java.security.cert.CertPath java.security.cert.CertPathBuilderResult.getCertPath() 
+		global::java.security.cert.CertPath java.security.cert.CertPathBuilderResult.getCertPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

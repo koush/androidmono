@@ -19,7 +19,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPassword21651;
-		public char[] getPassword() 
+		public char[] getPassword()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.net
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getUserName21652;
-		public global::java.lang.String getUserName() 
+		public global::java.lang.String getUserName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -44,7 +44,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.PasswordAuthentication.staticClass, global::java.net.PasswordAuthentication._getUserName21652)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _PasswordAuthentication21653;
-		public PasswordAuthentication(java.lang.String arg0, char[] arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PasswordAuthentication(java.lang.String arg0, char[] arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.PasswordAuthentication.staticClass, global::java.net.PasswordAuthentication._PasswordAuthentication21653, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

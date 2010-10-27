@@ -12,7 +12,7 @@ namespace org.apache.http.impl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _keepAlive32632;
-		public virtual bool keepAlive(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1) 
+		public virtual bool keepAlive(org.apache.http.HttpResponse arg0, org.apache.http.protocol.HttpContext arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace org.apache.http.impl
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._keepAlive32632, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _createTokenIterator32633;
-		protected virtual global::org.apache.http.TokenIterator createTokenIterator(org.apache.http.HeaderIterator arg0) 
+		protected virtual global::org.apache.http.TokenIterator createTokenIterator(org.apache.http.HeaderIterator arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.impl
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::org.apache.http.TokenIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._createTokenIterator32633, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as org.apache.http.TokenIterator;
 		}
 		internal static global::MonoJavaBridge.MethodId _DefaultConnectionReuseStrategy32634;
-		public DefaultConnectionReuseStrategy()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DefaultConnectionReuseStrategy() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.DefaultConnectionReuseStrategy.staticClass, global::org.apache.http.impl.DefaultConnectionReuseStrategy._DefaultConnectionReuseStrategy32634);

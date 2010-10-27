@@ -19,7 +19,7 @@ namespace java.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _writeExternal18950;
-		 void java.io.Externalizable.writeExternal(java.io.ObjectOutput arg0) 
+		void java.io.Externalizable.writeExternal(java.io.ObjectOutput arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.io
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.io.Externalizable_.staticClass, global::java.io.Externalizable_._writeExternal18950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _readExternal18951;
-		 void java.io.Externalizable.readExternal(java.io.ObjectInput arg0) 
+		void java.io.Externalizable.readExternal(java.io.ObjectInput arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

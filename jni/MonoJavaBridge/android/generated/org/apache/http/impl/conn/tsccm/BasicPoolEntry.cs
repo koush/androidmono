@@ -19,7 +19,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConnection33121;
-		protected virtual global::org.apache.http.conn.OperatedClientConnection getConnection() 
+		protected virtual global::org.apache.http.conn.OperatedClientConnection getConnection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPlannedRoute33122;
-		protected virtual global::org.apache.http.conn.routing.HttpRoute getPlannedRoute() 
+		protected virtual global::org.apache.http.conn.routing.HttpRoute getPlannedRoute()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace org.apache.http.impl.conn.tsccm
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getWeakRef33123;
-		protected virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntryRef getWeakRef() 
+		protected virtual global::org.apache.http.impl.conn.tsccm.BasicPoolEntryRef getWeakRef()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace org.apache.http.impl.conn.tsccm
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._getWeakRef33123)) as org.apache.http.impl.conn.tsccm.BasicPoolEntryRef;
 		}
 		internal static global::MonoJavaBridge.MethodId _BasicPoolEntry33124;
-		public BasicPoolEntry(org.apache.http.conn.ClientConnectionOperator arg0, org.apache.http.conn.routing.HttpRoute arg1, java.lang.@ref.ReferenceQueue arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public BasicPoolEntry(org.apache.http.conn.ClientConnectionOperator arg0, org.apache.http.conn.routing.HttpRoute arg1, java.lang.@ref.ReferenceQueue arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.impl.conn.tsccm.BasicPoolEntry.staticClass, global::org.apache.http.impl.conn.tsccm.BasicPoolEntry._BasicPoolEntry33124, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

@@ -23,13 +23,13 @@ namespace android.graphics
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _values5009;
-			public static global::android.graphics.AvoidXfermode.Mode[] values() 
+			public static global::android.graphics.AvoidXfermode.Mode[] values()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<android.graphics.AvoidXfermode.Mode>(@__env.CallStaticObjectMethod(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._values5009)) as android.graphics.AvoidXfermode.Mode[];
 			}
 			internal static global::MonoJavaBridge.MethodId _valueOf5010;
-			public static global::android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0) 
+			public static global::android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.graphics.AvoidXfermode.Mode>(@__env.CallStaticObjectMethod(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf5010, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as android.graphics.AvoidXfermode.Mode;
@@ -63,7 +63,7 @@ namespace android.graphics
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _AvoidXfermode5013;
-		public AvoidXfermode(int arg0, int arg1, android.graphics.AvoidXfermode.Mode arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AvoidXfermode(int arg0, int arg1, android.graphics.AvoidXfermode.Mode arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.graphics.AvoidXfermode.staticClass, global::android.graphics.AvoidXfermode._AvoidXfermode5013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

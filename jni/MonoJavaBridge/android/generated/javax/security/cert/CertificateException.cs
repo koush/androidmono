@@ -12,14 +12,14 @@ namespace javax.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateException30238;
-		public CertificateException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateException.staticClass, global::javax.security.cert.CertificateException._CertificateException30238);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _CertificateException30239;
-		public CertificateException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CertificateException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.security.cert.CertificateException.staticClass, global::javax.security.cert.CertificateException._CertificateException30239, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

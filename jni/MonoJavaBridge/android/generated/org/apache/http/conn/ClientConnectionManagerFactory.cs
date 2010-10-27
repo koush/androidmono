@@ -18,7 +18,7 @@ namespace org.apache.http.conn
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _newInstance32081;
-		 global::org.apache.http.conn.ClientConnectionManager org.apache.http.conn.ClientConnectionManagerFactory.newInstance(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.scheme.SchemeRegistry arg1) 
+		global::org.apache.http.conn.ClientConnectionManager org.apache.http.conn.ClientConnectionManagerFactory.newInstance(org.apache.http.@params.HttpParams arg0, org.apache.http.conn.scheme.SchemeRegistry arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

@@ -12,13 +12,13 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _encode21973;
-		public static global::java.lang.String encode(java.lang.String arg0) 
+		public static global::java.lang.String encode(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.net.URLEncoder.staticClass, global::java.net.URLEncoder._encode21973, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _encode21974;
-		public static global::java.lang.String encode(java.lang.String arg0, java.lang.String arg1) 
+		public static global::java.lang.String encode(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.net.URLEncoder.staticClass, global::java.net.URLEncoder._encode21974, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;

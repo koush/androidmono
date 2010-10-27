@@ -19,7 +19,7 @@ namespace java.beans
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPropertyName18775;
-		public virtual global::java.lang.String getPropertyName() 
+		public virtual global::java.lang.String getPropertyName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.beans
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getNewValue18776;
-		public virtual global::java.lang.Object getNewValue() 
+		public virtual global::java.lang.Object getNewValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.beans
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getOldValue18777;
-		public virtual global::java.lang.Object getOldValue() 
+		public virtual global::java.lang.Object getOldValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.beans
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.beans.PropertyChangeEvent.staticClass, global::java.beans.PropertyChangeEvent._getOldValue18777)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _setPropagationId18778;
-		public virtual void setPropagationId(java.lang.Object arg0) 
+		public virtual void setPropagationId(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -80,7 +80,7 @@ namespace java.beans
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getPropagationId18779;
-		public virtual global::java.lang.Object getPropagationId() 
+		public virtual global::java.lang.Object getPropagationId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -89,7 +89,7 @@ namespace java.beans
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.beans.PropertyChangeEvent.staticClass, global::java.beans.PropertyChangeEvent._getPropagationId18779)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _PropertyChangeEvent18780;
-		public PropertyChangeEvent(java.lang.Object arg0, java.lang.String arg1, java.lang.Object arg2, java.lang.Object arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PropertyChangeEvent(java.lang.Object arg0, java.lang.String arg1, java.lang.Object arg2, java.lang.Object arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.beans.PropertyChangeEvent.staticClass, global::java.beans.PropertyChangeEvent._PropertyChangeEvent18780, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

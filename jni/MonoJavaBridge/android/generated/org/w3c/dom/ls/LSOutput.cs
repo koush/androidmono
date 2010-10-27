@@ -25,7 +25,7 @@ namespace org.w3c.dom.ls
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoding34907;
-		 global::java.lang.String org.w3c.dom.ls.LSOutput.getEncoding() 
+		global::java.lang.String org.w3c.dom.ls.LSOutput.getEncoding()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace org.w3c.dom.ls
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._getEncoding34907)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setEncoding34908;
-		 void org.w3c.dom.ls.LSOutput.setEncoding(java.lang.String arg0) 
+		void org.w3c.dom.ls.LSOutput.setEncoding(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace org.w3c.dom.ls
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._setEncoding34908, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getSystemId34909;
-		 global::java.lang.String org.w3c.dom.ls.LSOutput.getSystemId() 
+		global::java.lang.String org.w3c.dom.ls.LSOutput.getSystemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace org.w3c.dom.ls
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._getSystemId34909)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCharacterStream34910;
-		 global::java.io.Writer org.w3c.dom.ls.LSOutput.getCharacterStream() 
+		global::java.io.Writer org.w3c.dom.ls.LSOutput.getCharacterStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace org.w3c.dom.ls
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._getCharacterStream34910)) as java.io.Writer;
 		}
 		internal static global::MonoJavaBridge.MethodId _setCharacterStream34911;
-		 void org.w3c.dom.ls.LSOutput.setCharacterStream(java.io.Writer arg0) 
+		void org.w3c.dom.ls.LSOutput.setCharacterStream(java.io.Writer arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace org.w3c.dom.ls
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._setCharacterStream34911, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setSystemId34912;
-		 void org.w3c.dom.ls.LSOutput.setSystemId(java.lang.String arg0) 
+		void org.w3c.dom.ls.LSOutput.setSystemId(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace org.w3c.dom.ls
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._setSystemId34912, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setByteStream34913;
-		 void org.w3c.dom.ls.LSOutput.setByteStream(java.io.OutputStream arg0) 
+		void org.w3c.dom.ls.LSOutput.setByteStream(java.io.OutputStream arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace org.w3c.dom.ls
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.w3c.dom.ls.LSOutput_.staticClass, global::org.w3c.dom.ls.LSOutput_._setByteStream34913, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getByteStream34914;
-		 global::java.io.OutputStream org.w3c.dom.ls.LSOutput.getByteStream() 
+		global::java.io.OutputStream org.w3c.dom.ls.LSOutput.getByteStream()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

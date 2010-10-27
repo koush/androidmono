@@ -12,7 +12,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getListener26172;
-		public virtual global::java.util.EventListener getListener() 
+		public virtual global::java.util.EventListener getListener()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.EventListener>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.EventListenerProxy.staticClass, global::java.util.EventListenerProxy._getListener26172)) as java.util.EventListener;
 		}
 		internal static global::MonoJavaBridge.MethodId _EventListenerProxy26173;
-		public EventListenerProxy(java.util.EventListener arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EventListenerProxy(java.util.EventListener arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.EventListenerProxy.staticClass, global::java.util.EventListenerProxy._EventListenerProxy26173, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

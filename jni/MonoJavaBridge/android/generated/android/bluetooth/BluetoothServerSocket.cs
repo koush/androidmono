@@ -12,7 +12,7 @@ namespace android.bluetooth
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close2550;
-		public void close() 
+		public void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.bluetooth
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.bluetooth.BluetoothServerSocket.staticClass, global::android.bluetooth.BluetoothServerSocket._close2550);
 		}
 		internal static global::MonoJavaBridge.MethodId _accept2551;
-		public global::android.bluetooth.BluetoothSocket accept() 
+		public global::android.bluetooth.BluetoothSocket accept()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.bluetooth
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.bluetooth.BluetoothSocket>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.bluetooth.BluetoothServerSocket.staticClass, global::android.bluetooth.BluetoothServerSocket._accept2551)) as android.bluetooth.BluetoothSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _accept2552;
-		public global::android.bluetooth.BluetoothSocket accept(int arg0) 
+		public global::android.bluetooth.BluetoothSocket accept(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

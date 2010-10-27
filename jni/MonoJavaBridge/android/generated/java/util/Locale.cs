@@ -12,7 +12,7 @@ namespace java.util
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals26449;
-		public sealed override bool equals(java.lang.Object arg0) 
+		public sealed override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.util
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._equals26449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _toString26450;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._toString26450)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode26451;
-		public sealed override int hashCode() 
+		public sealed override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._hashCode26451);
 		}
 		internal static global::MonoJavaBridge.MethodId _clone26452;
-		public global::java.lang.Object clone() 
+		public global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getLanguage26453;
-		public global::java.lang.String getLanguage() 
+		public global::java.lang.String getLanguage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -75,13 +75,13 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault26454;
-		public static global::java.util.Locale getDefault() 
+		public static global::java.util.Locale getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Locale>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getDefault26454)) as java.util.Locale;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault26455;
-		public static void setDefault(java.util.Locale arg0) 
+		public static void setDefault(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.util.Locale.staticClass, global::java.util.Locale._setDefault26455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
@@ -94,7 +94,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAvailableLocales26456;
-		public static global::java.util.Locale[] getAvailableLocales() 
+		public static global::java.util.Locale[] getAvailableLocales()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.util.Locale>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getAvailableLocales26456)) as java.util.Locale[];
@@ -107,7 +107,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getISOCountries26457;
-		public static global::java.lang.String[] getISOCountries() 
+		public static global::java.lang.String[] getISOCountries()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getISOCountries26457)) as java.lang.String[];
@@ -120,7 +120,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getISOLanguages26458;
-		public static global::java.lang.String[] getISOLanguages() 
+		public static global::java.lang.String[] getISOLanguages()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.String>(@__env.CallStaticObjectMethod(java.util.Locale.staticClass, global::java.util.Locale._getISOLanguages26458)) as java.lang.String[];
@@ -133,7 +133,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCountry26459;
-		public global::java.lang.String getCountry() 
+		public global::java.lang.String getCountry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -149,7 +149,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVariant26460;
-		public global::java.lang.String getVariant() 
+		public global::java.lang.String getVariant()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -165,7 +165,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getISO3Language26461;
-		public global::java.lang.String getISO3Language() 
+		public global::java.lang.String getISO3Language()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -181,7 +181,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getISO3Country26462;
-		public global::java.lang.String getISO3Country() 
+		public global::java.lang.String getISO3Country()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -190,7 +190,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Country26462)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayLanguage26463;
-		public global::java.lang.String getDisplayLanguage(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayLanguage(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayLanguage26464;
-		public global::java.lang.String getDisplayLanguage() 
+		public global::java.lang.String getDisplayLanguage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -215,7 +215,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage26464)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayCountry26465;
-		public global::java.lang.String getDisplayCountry(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayCountry(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -231,7 +231,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayCountry26466;
-		public global::java.lang.String getDisplayCountry() 
+		public global::java.lang.String getDisplayCountry()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -247,7 +247,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayVariant26467;
-		public global::java.lang.String getDisplayVariant() 
+		public global::java.lang.String getDisplayVariant()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -256,7 +256,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant26467)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayVariant26468;
-		public global::java.lang.String getDisplayVariant(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayVariant(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -265,7 +265,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant26468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26469;
-		public global::java.lang.String getDisplayName(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayName(java.util.Locale arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -281,7 +281,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDisplayName26470;
-		public global::java.lang.String getDisplayName() 
+		public global::java.lang.String getDisplayName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -290,21 +290,21 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName26470)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _Locale26471;
-		public Locale(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Locale(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale26471, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Locale26472;
-		public Locale(java.lang.String arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Locale(java.lang.String arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale26472, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _Locale26473;
-		public Locale(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public Locale(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale26473, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

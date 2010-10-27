@@ -19,7 +19,7 @@ namespace java.util.jar
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificates27856;
-		public virtual global::java.security.cert.Certificate[] getCertificates() 
+		public virtual global::java.security.cert.Certificate[] getCertificates()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util.jar
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCodeSigners27857;
-		public virtual global::java.security.CodeSigner[] getCodeSigners() 
+		public virtual global::java.security.CodeSigner[] getCodeSigners()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.util.jar
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAttributes27858;
-		public virtual global::java.util.jar.Attributes getAttributes() 
+		public virtual global::java.util.jar.Attributes getAttributes()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,21 +60,21 @@ namespace java.util.jar
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._getAttributes27858)) as java.util.jar.Attributes;
 		}
 		internal static global::MonoJavaBridge.MethodId _JarEntry27859;
-		public JarEntry(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarEntry(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._JarEntry27859, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _JarEntry27860;
-		public JarEntry(java.util.zip.ZipEntry arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarEntry(java.util.zip.ZipEntry arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._JarEntry27860, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _JarEntry27861;
-		public JarEntry(java.util.jar.JarEntry arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public JarEntry(java.util.jar.JarEntry arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.jar.JarEntry.staticClass, global::java.util.jar.JarEntry._JarEntry27861, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

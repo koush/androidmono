@@ -12,7 +12,7 @@ namespace org.apache.http.protocol
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _isWhitespace33853;
-		public static bool isWhitespace(char arg0) 
+		public static bool isWhitespace(char arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticBooleanMethod(org.apache.http.protocol.HTTP.staticClass, global::org.apache.http.protocol.HTTP._isWhitespace33853, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -20,7 +20,7 @@ namespace org.w3c.dom.ls
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _startElement34929;
-		 short org.w3c.dom.ls.LSParserFilter.startElement(org.w3c.dom.Element arg0) 
+		short org.w3c.dom.ls.LSParserFilter.startElement(org.w3c.dom.Element arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -29,7 +29,7 @@ namespace org.w3c.dom.ls
 				return @__env.CallNonVirtualShortMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_.staticClass, global::org.w3c.dom.ls.LSParserFilter_._startElement34929, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getWhatToShow34930;
-		 int org.w3c.dom.ls.LSParserFilter.getWhatToShow() 
+		int org.w3c.dom.ls.LSParserFilter.getWhatToShow()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -38,7 +38,7 @@ namespace org.w3c.dom.ls
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.w3c.dom.ls.LSParserFilter_.staticClass, global::org.w3c.dom.ls.LSParserFilter_._getWhatToShow34930);
 		}
 		internal static global::MonoJavaBridge.MethodId _acceptNode34931;
-		 short org.w3c.dom.ls.LSParserFilter.acceptNode(org.w3c.dom.Node arg0) 
+		short org.w3c.dom.ls.LSParserFilter.acceptNode(org.w3c.dom.Node arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

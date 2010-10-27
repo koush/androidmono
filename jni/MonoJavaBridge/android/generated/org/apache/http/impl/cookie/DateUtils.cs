@@ -12,31 +12,31 @@ namespace org.apache.http.impl.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parseDate33297;
-		public static global::java.util.Date parseDate(java.lang.String arg0) 
+		public static global::java.util.Date parseDate(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.impl.cookie.DateUtils.staticClass, global::org.apache.http.impl.cookie.DateUtils._parseDate33297, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseDate33298;
-		public static global::java.util.Date parseDate(java.lang.String arg0, java.lang.String[] arg1) 
+		public static global::java.util.Date parseDate(java.lang.String arg0, java.lang.String[] arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.impl.cookie.DateUtils.staticClass, global::org.apache.http.impl.cookie.DateUtils._parseDate33298, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _parseDate33299;
-		public static global::java.util.Date parseDate(java.lang.String arg0, java.lang.String[] arg1, java.util.Date arg2) 
+		public static global::java.util.Date parseDate(java.lang.String arg0, java.lang.String[] arg1, java.util.Date arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(org.apache.http.impl.cookie.DateUtils.staticClass, global::org.apache.http.impl.cookie.DateUtils._parseDate33299, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.util.Date;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatDate33300;
-		public static global::java.lang.String formatDate(java.util.Date arg0) 
+		public static global::java.lang.String formatDate(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.impl.cookie.DateUtils.staticClass, global::org.apache.http.impl.cookie.DateUtils._formatDate33300, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _formatDate33301;
-		public static global::java.lang.String formatDate(java.util.Date arg0, java.lang.String arg1) 
+		public static global::java.lang.String formatDate(java.util.Date arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(org.apache.http.impl.cookie.DateUtils.staticClass, global::org.apache.http.impl.cookie.DateUtils._formatDate33301, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;

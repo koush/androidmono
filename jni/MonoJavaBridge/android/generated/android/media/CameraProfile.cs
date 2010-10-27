@@ -12,13 +12,13 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getJpegEncodingQualityParameter7241;
-		public static int getJpegEncodingQualityParameter(int arg0) 
+		public static int getJpegEncodingQualityParameter(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return @__env.CallStaticIntMethod(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._getJpegEncodingQualityParameter7241, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _CameraProfile7242;
-		public CameraProfile()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CameraProfile() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.CameraProfile.staticClass, global::android.media.CameraProfile._CameraProfile7242);

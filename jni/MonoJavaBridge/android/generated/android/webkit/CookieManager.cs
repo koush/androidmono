@@ -19,13 +19,13 @@ namespace android.webkit
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance16024;
-		public static global::android.webkit.CookieManager getInstance() 
+		public static global::android.webkit.CookieManager getInstance()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.webkit.CookieManager>(@__env.CallStaticObjectMethod(android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._getInstance16024)) as android.webkit.CookieManager;
 		}
 		internal static global::MonoJavaBridge.MethodId _setAcceptCookie16025;
-		public void setAcceptCookie(bool arg0) 
+		public void setAcceptCookie(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -34,7 +34,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._setAcceptCookie16025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _acceptCookie16026;
-		public bool acceptCookie() 
+		public bool acceptCookie()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.webkit
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._acceptCookie16026);
 		}
 		internal static global::MonoJavaBridge.MethodId _setCookie16027;
-		public void setCookie(java.lang.String arg0, java.lang.String arg1) 
+		public void setCookie(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._setCookie16027, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCookie16028;
-		public global::java.lang.String getCookie(java.lang.String arg0) 
+		public global::java.lang.String getCookie(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -61,7 +61,7 @@ namespace android.webkit
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._getCookie16028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _removeSessionCookie16029;
-		public void removeSessionCookie() 
+		public void removeSessionCookie()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -70,7 +70,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._removeSessionCookie16029);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeAllCookie16030;
-		public void removeAllCookie() 
+		public void removeAllCookie()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -79,7 +79,7 @@ namespace android.webkit
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._removeAllCookie16030);
 		}
 		internal static global::MonoJavaBridge.MethodId _hasCookies16031;
-		public bool hasCookies() 
+		public bool hasCookies()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -88,7 +88,7 @@ namespace android.webkit
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._hasCookies16031);
 		}
 		internal static global::MonoJavaBridge.MethodId _removeExpiredCookie16032;
-		public void removeExpiredCookie() 
+		public void removeExpiredCookie()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

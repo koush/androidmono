@@ -12,13 +12,13 @@ namespace javax.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefault29808;
-		public static global::javax.net.ServerSocketFactory getDefault() 
+		public static global::javax.net.ServerSocketFactory getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(javax.net.ServerSocketFactory.staticClass, global::javax.net.ServerSocketFactory._getDefault29808)) as javax.net.ServerSocketFactory;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29809;
-		public virtual global::java.net.ServerSocket createServerSocket() 
+		public virtual global::java.net.ServerSocket createServerSocket()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -33,7 +33,7 @@ namespace javax.net
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29812;
 		public abstract global::java.net.ServerSocket createServerSocket(int arg0, int arg1, java.net.InetAddress arg2);
 		internal static global::MonoJavaBridge.MethodId _ServerSocketFactory29813;
-		protected ServerSocketFactory()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected ServerSocketFactory() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.net.ServerSocketFactory.staticClass, global::javax.net.ServerSocketFactory._ServerSocketFactory29813);
@@ -64,7 +64,7 @@ namespace javax.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29814;
-		public override global::java.net.ServerSocket createServerSocket(int arg0) 
+		public override global::java.net.ServerSocket createServerSocket(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace javax.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ServerSocketFactory_.staticClass, global::javax.net.ServerSocketFactory_._createServerSocket29814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29815;
-		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1) 
+		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace javax.net
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ServerSocketFactory_.staticClass, global::javax.net.ServerSocketFactory_._createServerSocket29815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.net.ServerSocket;
 		}
 		internal static global::MonoJavaBridge.MethodId _createServerSocket29816;
-		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1, java.net.InetAddress arg2) 
+		public override global::java.net.ServerSocket createServerSocket(int arg0, int arg1, java.net.InetAddress arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

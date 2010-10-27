@@ -12,7 +12,7 @@ namespace java.security.spec
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _equals23987;
-		public override bool equals(java.lang.Object arg0) 
+		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace java.security.spec
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._equals23987, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _hashCode23988;
-		public override int hashCode() 
+		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getP23989;
-		public virtual global::java.math.BigInteger getP() 
+		public virtual global::java.math.BigInteger getP()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -53,7 +53,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFieldSize23990;
-		public virtual int getFieldSize() 
+		public virtual int getFieldSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.security.spec
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._getFieldSize23990);
 		}
 		internal static global::MonoJavaBridge.MethodId _ECFieldFp23991;
-		public ECFieldFp(java.math.BigInteger arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ECFieldFp(java.math.BigInteger arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.ECFieldFp.staticClass, global::java.security.spec.ECFieldFp._ECFieldFp23991, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

@@ -27,7 +27,7 @@ namespace android.content
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getBoolean3522;
-		 bool android.content.SharedPreferences.getBoolean(java.lang.String arg0, bool arg1) 
+		bool android.content.SharedPreferences.getBoolean(java.lang.String arg0, bool arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -36,7 +36,7 @@ namespace android.content
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._getBoolean3522, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getInt3523;
-		 int android.content.SharedPreferences.getInt(java.lang.String arg0, int arg1) 
+		int android.content.SharedPreferences.getInt(java.lang.String arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -45,7 +45,7 @@ namespace android.content
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._getInt3523, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getLong3524;
-		 long android.content.SharedPreferences.getLong(java.lang.String arg0, long arg1) 
+		long android.content.SharedPreferences.getLong(java.lang.String arg0, long arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -54,7 +54,7 @@ namespace android.content
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._getLong3524, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getFloat3525;
-		 float android.content.SharedPreferences.getFloat(java.lang.String arg0, float arg1) 
+		float android.content.SharedPreferences.getFloat(java.lang.String arg0, float arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -63,7 +63,7 @@ namespace android.content
 				return @__env.CallNonVirtualFloatMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._getFloat3525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _contains3526;
-		 bool android.content.SharedPreferences.contains(java.lang.String arg0) 
+		bool android.content.SharedPreferences.contains(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -72,7 +72,7 @@ namespace android.content
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._contains3526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getString3527;
-		 global::java.lang.String android.content.SharedPreferences.getString(java.lang.String arg0, java.lang.String arg1) 
+		global::java.lang.String android.content.SharedPreferences.getString(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -81,7 +81,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._getString3527, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _edit3528;
-		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences.edit() 
+		global::android.content.SharedPreferences_Editor android.content.SharedPreferences.edit()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -90,7 +90,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.content.SharedPreferences_Editor>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._edit3528)) as android.content.SharedPreferences_Editor;
 		}
 		internal static global::MonoJavaBridge.MethodId _getAll3529;
-		 global::java.util.Map android.content.SharedPreferences.getAll() 
+		global::java.util.Map android.content.SharedPreferences.getAll()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -99,7 +99,7 @@ namespace android.content
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._getAll3529)) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _registerOnSharedPreferenceChangeListener3530;
-		 void android.content.SharedPreferences.registerOnSharedPreferenceChangeListener(android.content.SharedPreferences_OnSharedPreferenceChangeListener arg0) 
+		void android.content.SharedPreferences.registerOnSharedPreferenceChangeListener(android.content.SharedPreferences_OnSharedPreferenceChangeListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -108,7 +108,7 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.content.SharedPreferences_.staticClass, global::android.content.SharedPreferences_._registerOnSharedPreferenceChangeListener3530, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _unregisterOnSharedPreferenceChangeListener3531;
-		 void android.content.SharedPreferences.unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences_OnSharedPreferenceChangeListener arg0) 
+		void android.content.SharedPreferences.unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences_OnSharedPreferenceChangeListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

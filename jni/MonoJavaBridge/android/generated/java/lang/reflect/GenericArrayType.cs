@@ -18,7 +18,7 @@ namespace java.lang.reflect
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getGenericComponentType21080;
-		 global::java.lang.reflect.Type java.lang.reflect.GenericArrayType.getGenericComponentType() 
+		global::java.lang.reflect.Type java.lang.reflect.GenericArrayType.getGenericComponentType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

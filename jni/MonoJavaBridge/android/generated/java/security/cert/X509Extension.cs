@@ -21,7 +21,7 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _hasUnsupportedCriticalExtension23890;
-		 bool java.security.cert.X509Extension.hasUnsupportedCriticalExtension() 
+		bool java.security.cert.X509Extension.hasUnsupportedCriticalExtension()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.security.cert
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._hasUnsupportedCriticalExtension23890);
 		}
 		internal static global::MonoJavaBridge.MethodId _getCriticalExtensionOIDs23891;
-		 global::java.util.Set java.security.cert.X509Extension.getCriticalExtensionOIDs() 
+		global::java.util.Set java.security.cert.X509Extension.getCriticalExtensionOIDs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._getCriticalExtensionOIDs23891)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getNonCriticalExtensionOIDs23892;
-		 global::java.util.Set java.security.cert.X509Extension.getNonCriticalExtensionOIDs() 
+		global::java.util.Set java.security.cert.X509Extension.getNonCriticalExtensionOIDs()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.X509Extension_.staticClass, global::java.security.cert.X509Extension_._getNonCriticalExtensionOIDs23892)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _getExtensionValue23893;
-		 byte[] java.security.cert.X509Extension.getExtensionValue(java.lang.String arg0) 
+		byte[] java.security.cert.X509Extension.getExtensionValue(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

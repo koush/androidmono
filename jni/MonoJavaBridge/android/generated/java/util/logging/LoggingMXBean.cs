@@ -21,7 +21,7 @@ namespace java.util.logging
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getLoggerNames28083;
-		 global::java.util.List java.util.logging.LoggingMXBean.getLoggerNames() 
+		global::java.util.List java.util.logging.LoggingMXBean.getLoggerNames()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LoggingMXBean_.staticClass, global::java.util.logging.LoggingMXBean_._getLoggerNames28083)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _getLoggerLevel28084;
-		 global::java.lang.String java.util.logging.LoggingMXBean.getLoggerLevel(java.lang.String arg0) 
+		global::java.lang.String java.util.logging.LoggingMXBean.getLoggerLevel(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace java.util.logging
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LoggingMXBean_.staticClass, global::java.util.logging.LoggingMXBean_._getLoggerLevel28084, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _setLoggerLevel28085;
-		 void java.util.logging.LoggingMXBean.setLoggerLevel(java.lang.String arg0, java.lang.String arg1) 
+		void java.util.logging.LoggingMXBean.setLoggerLevel(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.util.logging
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LoggingMXBean_.staticClass, global::java.util.logging.LoggingMXBean_._setLoggerLevel28085, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _getParentLoggerName28086;
-		 global::java.lang.String java.util.logging.LoggingMXBean.getParentLoggerName(java.lang.String arg0) 
+		global::java.lang.String java.util.logging.LoggingMXBean.getParentLoggerName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

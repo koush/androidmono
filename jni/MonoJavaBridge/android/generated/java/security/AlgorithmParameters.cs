@@ -12,7 +12,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _toString22862;
-		public sealed override global::java.lang.String toString() 
+		public sealed override global::java.lang.String toString()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,25 +21,25 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._toString22862)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance22863;
-		public static global::java.security.AlgorithmParameters getInstance(java.lang.String arg0) 
+		public static global::java.security.AlgorithmParameters getInstance(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._getInstance22863, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.AlgorithmParameters;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance22864;
-		public static global::java.security.AlgorithmParameters getInstance(java.lang.String arg0, java.lang.String arg1) 
+		public static global::java.security.AlgorithmParameters getInstance(java.lang.String arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._getInstance22864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.AlgorithmParameters;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance22865;
-		public static global::java.security.AlgorithmParameters getInstance(java.lang.String arg0, java.security.Provider arg1) 
+		public static global::java.security.AlgorithmParameters getInstance(java.lang.String arg0, java.security.Provider arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._getInstance22865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.AlgorithmParameters;
 		}
 		internal static global::MonoJavaBridge.MethodId _init22866;
-		public virtual void init(byte[] arg0) 
+		public virtual void init(byte[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._init22866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _init22867;
-		public virtual void init(java.security.spec.AlgorithmParameterSpec arg0) 
+		public virtual void init(java.security.spec.AlgorithmParameterSpec arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace java.security
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._init22867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _init22868;
-		public virtual void init(byte[] arg0, java.lang.String arg1) 
+		public virtual void init(byte[] arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -73,7 +73,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded22869;
-		public virtual byte[] getEncoded() 
+		public virtual byte[] getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +82,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._getEncoded22869)) as byte[];
 		}
 		internal static global::MonoJavaBridge.MethodId _getEncoded22870;
-		public virtual byte[] getEncoded(java.lang.String arg0) 
+		public virtual byte[] getEncoded(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +98,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getAlgorithm22871;
-		public virtual global::java.lang.String getAlgorithm() 
+		public virtual global::java.lang.String getAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +114,7 @@ namespace java.security
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider22872;
-		public virtual global::java.security.Provider getProvider() 
+		public virtual global::java.security.Provider getProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -123,7 +123,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._getProvider22872)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _getParameterSpec22873;
-		public virtual global::java.security.spec.AlgorithmParameterSpec getParameterSpec(java.lang.Class arg0) 
+		public virtual global::java.security.spec.AlgorithmParameterSpec getParameterSpec(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -132,7 +132,7 @@ namespace java.security
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._getParameterSpec22873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.security.spec.AlgorithmParameterSpec;
 		}
 		internal static global::MonoJavaBridge.MethodId _AlgorithmParameters22874;
-		protected AlgorithmParameters(java.security.AlgorithmParametersSpi arg0, java.security.Provider arg1, java.lang.String arg2)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected AlgorithmParameters(java.security.AlgorithmParametersSpi arg0, java.security.Provider arg1, java.lang.String arg2) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.AlgorithmParameters.staticClass, global::java.security.AlgorithmParameters._AlgorithmParameters22874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));

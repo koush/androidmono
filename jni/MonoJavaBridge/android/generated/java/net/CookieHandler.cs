@@ -16,19 +16,19 @@ namespace java.net
 		internal static global::MonoJavaBridge.MethodId _put21366;
 		public abstract void put(java.net.URI arg0, java.util.Map arg1);
 		internal static global::MonoJavaBridge.MethodId _getDefault21367;
-		public static global::java.net.CookieHandler getDefault() 
+		public static global::java.net.CookieHandler getDefault()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.net.CookieHandler.staticClass, global::java.net.CookieHandler._getDefault21367)) as java.net.CookieHandler;
 		}
 		internal static global::MonoJavaBridge.MethodId _setDefault21368;
-		public static void setDefault(java.net.CookieHandler arg0) 
+		public static void setDefault(java.net.CookieHandler arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			@__env.CallStaticVoidMethod(java.net.CookieHandler.staticClass, global::java.net.CookieHandler._setDefault21368, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _CookieHandler21369;
-		public CookieHandler()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public CookieHandler() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.net.CookieHandler.staticClass, global::java.net.CookieHandler._CookieHandler21369);
@@ -58,7 +58,7 @@ namespace java.net
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _get21370;
-		public override global::java.util.Map get(java.net.URI arg0, java.util.Map arg1) 
+		public override global::java.util.Map get(java.net.URI arg0, java.util.Map arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -67,7 +67,7 @@ namespace java.net
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Map>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.CookieHandler_.staticClass, global::java.net.CookieHandler_._get21370, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.util.Map;
 		}
 		internal static global::MonoJavaBridge.MethodId _put21371;
-		public override void put(java.net.URI arg0, java.util.Map arg1) 
+		public override void put(java.net.URI arg0, java.util.Map arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

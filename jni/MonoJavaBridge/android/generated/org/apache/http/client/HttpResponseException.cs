@@ -19,7 +19,7 @@ namespace org.apache.http.client
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getStatusCode31891;
-		public virtual int getStatusCode() 
+		public virtual int getStatusCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.client
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::org.apache.http.client.HttpResponseException.staticClass, global::org.apache.http.client.HttpResponseException._getStatusCode31891);
 		}
 		internal static global::MonoJavaBridge.MethodId _HttpResponseException31892;
-		public HttpResponseException(int arg0, java.lang.String arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public HttpResponseException(int arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.client.HttpResponseException.staticClass, global::org.apache.http.client.HttpResponseException._HttpResponseException31892, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -12,28 +12,28 @@ namespace java.util.concurrent
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _RejectedExecutionException27362;
-		public RejectedExecutionException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RejectedExecutionException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.RejectedExecutionException.staticClass, global::java.util.concurrent.RejectedExecutionException._RejectedExecutionException27362);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RejectedExecutionException27363;
-		public RejectedExecutionException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RejectedExecutionException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.RejectedExecutionException.staticClass, global::java.util.concurrent.RejectedExecutionException._RejectedExecutionException27363, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RejectedExecutionException27364;
-		public RejectedExecutionException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RejectedExecutionException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.RejectedExecutionException.staticClass, global::java.util.concurrent.RejectedExecutionException._RejectedExecutionException27364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _RejectedExecutionException27365;
-		public RejectedExecutionException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public RejectedExecutionException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.concurrent.RejectedExecutionException.staticClass, global::java.util.concurrent.RejectedExecutionException._RejectedExecutionException27365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

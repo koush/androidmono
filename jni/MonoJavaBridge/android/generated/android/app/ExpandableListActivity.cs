@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState1824;
-		protected override void onRestoreInstanceState(android.os.Bundle arg0) 
+		protected override void onRestoreInstanceState(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._onRestoreInstanceState1824, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onContentChanged1825;
-		public override void onContentChanged() 
+		public override void onContentChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._onContentChanged1825);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreateContextMenu1826;
-		public override void onCreateContextMenu(android.view.ContextMenu arg0, android.view.View arg1, android.view.ContextMenu_ContextMenuInfo arg2) 
+		public override void onCreateContextMenu(android.view.ContextMenu arg0, android.view.View arg1, android.view.ContextMenu_ContextMenuInfo arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._onCreateContextMenu1826, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _onChildClick1827;
-		public virtual bool onChildClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, int arg3, long arg4) 
+		public virtual bool onChildClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, int arg3, long arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace android.app
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._onChildClick1827, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _onGroupCollapse1828;
-		public virtual void onGroupCollapse(int arg0) 
+		public virtual void onGroupCollapse(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +57,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._onGroupCollapse1828, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onGroupExpand1829;
-		public virtual void onGroupExpand(int arg0) 
+		public virtual void onGroupExpand(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,8 +65,15 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._onGroupExpand1829, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public new global::android.widget.ExpandableListAdapter ListAdapter
+		{
+			set
+			{
+				setListAdapter(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setListAdapter1830;
-		public virtual void setListAdapter(android.widget.ExpandableListAdapter arg0) 
+		public virtual void setListAdapter(android.widget.ExpandableListAdapter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,7 +89,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExpandableListView1831;
-		public virtual global::android.widget.ExpandableListView getExpandableListView() 
+		public virtual global::android.widget.ExpandableListView getExpandableListView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -98,7 +105,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getExpandableListAdapter1832;
-		public virtual global::android.widget.ExpandableListAdapter getExpandableListAdapter() 
+		public virtual global::android.widget.ExpandableListAdapter getExpandableListAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -114,7 +121,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedId1833;
-		public virtual long getSelectedId() 
+		public virtual long getSelectedId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -130,7 +137,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedPosition1834;
-		public virtual long getSelectedPosition() 
+		public virtual long getSelectedPosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -139,7 +146,7 @@ namespace android.app
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._getSelectedPosition1834);
 		}
 		internal static global::MonoJavaBridge.MethodId _setSelectedChild1835;
-		public virtual bool setSelectedChild(int arg0, int arg1, bool arg2) 
+		public virtual bool setSelectedChild(int arg0, int arg1, bool arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -147,8 +154,15 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._setSelectedChild1835, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public new int SelectedGroup
+		{
+			set
+			{
+				setSelectedGroup(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setSelectedGroup1836;
-		public virtual void setSelectedGroup(int arg0) 
+		public virtual void setSelectedGroup(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -157,7 +171,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._setSelectedGroup1836, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _ExpandableListActivity1837;
-		public ExpandableListActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ExpandableListActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ExpandableListActivity.staticClass, global::android.app.ExpandableListActivity._ExpandableListActivity1837);

@@ -12,7 +12,7 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _close4809;
-		public virtual void close() 
+		public virtual void close()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -23,7 +23,7 @@ namespace android.database.sqlite
 		internal static global::MonoJavaBridge.MethodId _onCreate4810;
 		public abstract void onCreate(android.database.sqlite.SQLiteDatabase arg0);
 		internal static global::MonoJavaBridge.MethodId _getWritableDatabase4811;
-		public virtual global::android.database.sqlite.SQLiteDatabase getWritableDatabase() 
+		public virtual global::android.database.sqlite.SQLiteDatabase getWritableDatabase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -32,7 +32,7 @@ namespace android.database.sqlite
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._getWritableDatabase4811)) as android.database.sqlite.SQLiteDatabase;
 		}
 		internal static global::MonoJavaBridge.MethodId _getReadableDatabase4812;
-		public virtual global::android.database.sqlite.SQLiteDatabase getReadableDatabase() 
+		public virtual global::android.database.sqlite.SQLiteDatabase getReadableDatabase()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -43,7 +43,7 @@ namespace android.database.sqlite
 		internal static global::MonoJavaBridge.MethodId _onUpgrade4813;
 		public abstract void onUpgrade(android.database.sqlite.SQLiteDatabase arg0, int arg1, int arg2);
 		internal static global::MonoJavaBridge.MethodId _onOpen4814;
-		public virtual void onOpen(android.database.sqlite.SQLiteDatabase arg0) 
+		public virtual void onOpen(android.database.sqlite.SQLiteDatabase arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -52,7 +52,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._onOpen4814, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _SQLiteOpenHelper4815;
-		public SQLiteOpenHelper(android.content.Context arg0, java.lang.String arg1, android.database.sqlite.SQLiteDatabase.CursorFactory arg2, int arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public SQLiteOpenHelper(android.content.Context arg0, java.lang.String arg1, android.database.sqlite.SQLiteDatabase.CursorFactory arg2, int arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._SQLiteOpenHelper4815, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
@@ -84,7 +84,7 @@ namespace android.database.sqlite
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onCreate4816;
-		public override void onCreate(android.database.sqlite.SQLiteDatabase arg0) 
+		public override void onCreate(android.database.sqlite.SQLiteDatabase arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -93,7 +93,7 @@ namespace android.database.sqlite
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.database.sqlite.SQLiteOpenHelper_.staticClass, global::android.database.sqlite.SQLiteOpenHelper_._onCreate4816, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onUpgrade4817;
-		public override void onUpgrade(android.database.sqlite.SQLiteDatabase arg0, int arg1, int arg2) 
+		public override void onUpgrade(android.database.sqlite.SQLiteDatabase arg0, int arg1, int arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

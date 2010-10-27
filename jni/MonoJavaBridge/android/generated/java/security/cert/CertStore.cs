@@ -12,25 +12,25 @@ namespace java.security.cert
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23533;
-		public static global::java.security.cert.CertStore getInstance(java.lang.String arg0, java.security.cert.CertStoreParameters arg1, java.lang.String arg2) 
+		public static global::java.security.cert.CertStore getInstance(java.lang.String arg0, java.security.cert.CertStoreParameters arg1, java.lang.String arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._getInstance23533, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.security.cert.CertStore;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23534;
-		public static global::java.security.cert.CertStore getInstance(java.lang.String arg0, java.security.cert.CertStoreParameters arg1) 
+		public static global::java.security.cert.CertStore getInstance(java.lang.String arg0, java.security.cert.CertStoreParameters arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._getInstance23534, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.security.cert.CertStore;
 		}
 		internal static global::MonoJavaBridge.MethodId _getInstance23535;
-		public static global::java.security.cert.CertStore getInstance(java.lang.String arg0, java.security.cert.CertStoreParameters arg1, java.security.Provider arg2) 
+		public static global::java.security.cert.CertStore getInstance(java.lang.String arg0, java.security.cert.CertStoreParameters arg1, java.security.Provider arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallStaticObjectMethod(java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._getInstance23535, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.security.cert.CertStore;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertificates23536;
-		public virtual global::java.util.Collection getCertificates(java.security.cert.CertSelector arg0) 
+		public virtual global::java.util.Collection getCertificates(java.security.cert.CertSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getType23537;
-		public virtual global::java.lang.String getType() 
+		public virtual global::java.lang.String getType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getProvider23538;
-		public virtual global::java.security.Provider getProvider() 
+		public virtual global::java.security.Provider getProvider()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._getProvider23538)) as java.security.Provider;
 		}
 		internal static global::MonoJavaBridge.MethodId _getCRLs23539;
-		public virtual global::java.util.Collection getCRLs(java.security.cert.CRLSelector arg0) 
+		public virtual global::java.util.Collection getCRLs(java.security.cert.CRLSelector arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDefaultType23540;
-		public static global::java.lang.String getDefaultType() 
+		public static global::java.lang.String getDefaultType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallStaticObjectMethod(java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._getDefaultType23540)) as java.lang.String;
@@ -100,7 +100,7 @@ namespace java.security.cert
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCertStoreParameters23541;
-		public virtual global::java.security.cert.CertStoreParameters getCertStoreParameters() 
+		public virtual global::java.security.cert.CertStoreParameters getCertStoreParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -109,7 +109,7 @@ namespace java.security.cert
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.cert.CertStoreParameters>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._getCertStoreParameters23541)) as java.security.cert.CertStoreParameters;
 		}
 		internal static global::MonoJavaBridge.MethodId _CertStore23542;
-		protected CertStore(java.security.cert.CertStoreSpi arg0, java.security.Provider arg1, java.lang.String arg2, java.security.cert.CertStoreParameters arg3)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		protected CertStore(java.security.cert.CertStoreSpi arg0, java.security.Provider arg1, java.lang.String arg2, java.security.cert.CertStoreParameters arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.cert.CertStore.staticClass, global::java.security.cert.CertStore._CertStore23542, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));

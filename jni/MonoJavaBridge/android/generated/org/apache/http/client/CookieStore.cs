@@ -21,7 +21,7 @@ namespace org.apache.http.client
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _clear31873;
-		 void org.apache.http.client.CookieStore.clear() 
+		void org.apache.http.client.CookieStore.clear()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace org.apache.http.client
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CookieStore_.staticClass, global::org.apache.http.client.CookieStore_._clear31873);
 		}
 		internal static global::MonoJavaBridge.MethodId _addCookie31874;
-		 void org.apache.http.client.CookieStore.addCookie(org.apache.http.cookie.Cookie arg0) 
+		void org.apache.http.client.CookieStore.addCookie(org.apache.http.cookie.Cookie arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace org.apache.http.client
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.client.CookieStore_.staticClass, global::org.apache.http.client.CookieStore_._addCookie31874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _getCookies31875;
-		 global::java.util.List org.apache.http.client.CookieStore.getCookies() 
+		global::java.util.List org.apache.http.client.CookieStore.getCookies()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -48,7 +48,7 @@ namespace org.apache.http.client
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.List>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::org.apache.http.client.CookieStore_.staticClass, global::org.apache.http.client.CookieStore_._getCookies31875)) as java.util.List;
 		}
 		internal static global::MonoJavaBridge.MethodId _clearExpired31876;
-		 bool org.apache.http.client.CookieStore.clearExpired(java.util.Date arg0) 
+		bool org.apache.http.client.CookieStore.clearExpired(java.util.Date arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

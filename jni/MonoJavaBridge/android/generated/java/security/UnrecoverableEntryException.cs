@@ -12,14 +12,14 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _UnrecoverableEntryException23414;
-		public UnrecoverableEntryException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnrecoverableEntryException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.UnrecoverableEntryException.staticClass, global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23414);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _UnrecoverableEntryException23415;
-		public UnrecoverableEntryException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public UnrecoverableEntryException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.UnrecoverableEntryException.staticClass, global::java.security.UnrecoverableEntryException._UnrecoverableEntryException23415, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

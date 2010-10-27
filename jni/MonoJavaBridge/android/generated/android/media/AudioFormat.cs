@@ -12,7 +12,7 @@ namespace android.media
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _AudioFormat6994;
-		public AudioFormat()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public AudioFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat6994);

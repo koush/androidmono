@@ -12,28 +12,28 @@ namespace javax.xml.datatype
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30634;
-		public DatatypeConfigurationException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatatypeConfigurationException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30634);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30635;
-		public DatatypeConfigurationException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatatypeConfigurationException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30635, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30636;
-		public DatatypeConfigurationException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatatypeConfigurationException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30636, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DatatypeConfigurationException30637;
-		public DatatypeConfigurationException(java.lang.Throwable arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public DatatypeConfigurationException(java.lang.Throwable arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.xml.datatype.DatatypeConfigurationException.staticClass, global::javax.xml.datatype.DatatypeConfigurationException._DatatypeConfigurationException30637, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

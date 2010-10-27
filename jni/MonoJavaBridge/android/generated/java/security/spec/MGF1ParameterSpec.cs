@@ -19,7 +19,7 @@ namespace java.security.spec
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm24029;
-		public virtual global::java.lang.String getDigestAlgorithm() 
+		public virtual global::java.lang.String getDigestAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.security.spec
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.MGF1ParameterSpec.staticClass, global::java.security.spec.MGF1ParameterSpec._getDigestAlgorithm24029)) as java.lang.String;
 		}
 		internal static global::MonoJavaBridge.MethodId _MGF1ParameterSpec24030;
-		public MGF1ParameterSpec(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MGF1ParameterSpec(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.MGF1ParameterSpec.staticClass, global::java.security.spec.MGF1ParameterSpec._MGF1ParameterSpec24030, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

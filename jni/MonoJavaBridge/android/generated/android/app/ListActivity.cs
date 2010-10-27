@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _onDestroy1944;
-		protected override void onDestroy() 
+		protected override void onDestroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onDestroy1944);
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState1945;
-		protected override void onRestoreInstanceState(android.os.Bundle arg0) 
+		protected override void onRestoreInstanceState(android.os.Bundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onRestoreInstanceState1945, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onContentChanged1946;
-		public override void onContentChanged() 
+		public override void onContentChanged()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,7 +46,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getListView1947;
-		public virtual global::android.widget.ListView getListView() 
+		public virtual global::android.widget.ListView getListView()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -62,7 +62,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedItemPosition1948;
-		public virtual int getSelectedItemPosition() 
+		public virtual int getSelectedItemPosition()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -78,7 +78,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSelectedItemId1949;
-		public virtual long getSelectedItemId() 
+		public virtual long getSelectedItemId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -86,8 +86,15 @@ namespace android.app
 			else
 				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getSelectedItemId1949);
 		}
+		public new int Selection
+		{
+			set
+			{
+				setSelection(value);
+			}
+		}
 		internal static global::MonoJavaBridge.MethodId _setSelection1950;
-		public virtual void setSelection(int arg0) 
+		public virtual void setSelection(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -96,7 +103,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._setSelection1950, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _setListAdapter1951;
-		public virtual void setListAdapter(android.widget.ListAdapter arg0) 
+		public virtual void setListAdapter(android.widget.ListAdapter arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -105,7 +112,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._setListAdapter1951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onListItemClick1952;
-		protected virtual void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3) 
+		protected virtual void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -125,7 +132,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getListAdapter1953;
-		public virtual global::android.widget.ListAdapter getListAdapter() 
+		public virtual global::android.widget.ListAdapter getListAdapter()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -134,7 +141,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::android.widget.ListAdapter>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getListAdapter1953)) as android.widget.ListAdapter;
 		}
 		internal static global::MonoJavaBridge.MethodId _ListActivity1954;
-		public ListActivity()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ListActivity() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.ListActivity.staticClass, global::android.app.ListActivity._ListActivity1954);

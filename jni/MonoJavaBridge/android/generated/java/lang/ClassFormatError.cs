@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassFormatError20038;
-		public ClassFormatError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassFormatError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassFormatError.staticClass, global::java.lang.ClassFormatError._ClassFormatError20038);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassFormatError20039;
-		public ClassFormatError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassFormatError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassFormatError.staticClass, global::java.lang.ClassFormatError._ClassFormatError20039, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

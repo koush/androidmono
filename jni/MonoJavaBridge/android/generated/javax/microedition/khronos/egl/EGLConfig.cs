@@ -12,7 +12,7 @@ namespace javax.microedition.khronos.egl
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _EGLConfig28950;
-		public EGLConfig()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public EGLConfig() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.microedition.khronos.egl.EGLConfig.staticClass, global::javax.microedition.khronos.egl.EGLConfig._EGLConfig28950);

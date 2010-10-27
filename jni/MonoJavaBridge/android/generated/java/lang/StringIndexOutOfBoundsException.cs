@@ -12,21 +12,21 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _StringIndexOutOfBoundsException20775;
-		public StringIndexOutOfBoundsException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StringIndexOutOfBoundsException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringIndexOutOfBoundsException.staticClass, global::java.lang.StringIndexOutOfBoundsException._StringIndexOutOfBoundsException20775);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _StringIndexOutOfBoundsException20776;
-		public StringIndexOutOfBoundsException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StringIndexOutOfBoundsException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringIndexOutOfBoundsException.staticClass, global::java.lang.StringIndexOutOfBoundsException._StringIndexOutOfBoundsException20776, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _StringIndexOutOfBoundsException20777;
-		public StringIndexOutOfBoundsException(int arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public StringIndexOutOfBoundsException(int arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.StringIndexOutOfBoundsException.staticClass, global::java.lang.StringIndexOutOfBoundsException._StringIndexOutOfBoundsException20777, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

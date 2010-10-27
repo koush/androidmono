@@ -12,7 +12,7 @@ namespace android.app
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _autoUrlDetect2109;
-		public bool autoUrlDetect() 
+		public bool autoUrlDetect()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -21,7 +21,7 @@ namespace android.app
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._autoUrlDetect2109);
 		}
 		internal static global::MonoJavaBridge.MethodId _queryAfterZeroResults2110;
-		public bool queryAfterZeroResults() 
+		public bool queryAfterZeroResults()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -30,7 +30,7 @@ namespace android.app
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._queryAfterZeroResults2110);
 		}
 		internal static global::MonoJavaBridge.MethodId _writeToParcel2111;
-		public void writeToParcel(android.os.Parcel arg0, int arg1) 
+		public void writeToParcel(android.os.Parcel arg0, int arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -39,7 +39,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._writeToParcel2111, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		internal static global::MonoJavaBridge.MethodId _describeContents2112;
-		public int describeContents() 
+		public int describeContents()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -55,7 +55,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getInputType2113;
-		public int getInputType() 
+		public int getInputType()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -71,7 +71,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getImeOptions2114;
-		public int getImeOptions() 
+		public int getImeOptions()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -87,7 +87,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestAuthority2115;
-		public global::java.lang.String getSuggestAuthority() 
+		public global::java.lang.String getSuggestAuthority()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -103,7 +103,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestPackage2116;
-		public global::java.lang.String getSuggestPackage() 
+		public global::java.lang.String getSuggestPackage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -119,7 +119,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSearchActivity2117;
-		public global::android.content.ComponentName getSearchActivity() 
+		public global::android.content.ComponentName getSearchActivity()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -128,7 +128,7 @@ namespace android.app
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.content.ComponentName>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getSearchActivity2117)) as android.content.ComponentName;
 		}
 		internal static global::MonoJavaBridge.MethodId _shouldRewriteQueryFromData2118;
-		public bool shouldRewriteQueryFromData() 
+		public bool shouldRewriteQueryFromData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -137,7 +137,7 @@ namespace android.app
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._shouldRewriteQueryFromData2118);
 		}
 		internal static global::MonoJavaBridge.MethodId _shouldRewriteQueryFromText2119;
-		public bool shouldRewriteQueryFromText() 
+		public bool shouldRewriteQueryFromText()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -153,7 +153,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSettingsDescriptionId2120;
-		public int getSettingsDescriptionId() 
+		public int getSettingsDescriptionId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -169,7 +169,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestPath2121;
-		public global::java.lang.String getSuggestPath() 
+		public global::java.lang.String getSuggestPath()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -185,7 +185,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestSelection2122;
-		public global::java.lang.String getSuggestSelection() 
+		public global::java.lang.String getSuggestSelection()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -201,7 +201,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestIntentAction2123;
-		public global::java.lang.String getSuggestIntentAction() 
+		public global::java.lang.String getSuggestIntentAction()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -217,7 +217,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestIntentData2124;
-		public global::java.lang.String getSuggestIntentData() 
+		public global::java.lang.String getSuggestIntentData()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,7 +233,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSuggestThreshold2125;
-		public int getSuggestThreshold() 
+		public int getSuggestThreshold()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -249,7 +249,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getHintId2126;
-		public int getHintId() 
+		public int getHintId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -265,7 +265,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceSearchEnabled2127;
-		public bool getVoiceSearchEnabled() 
+		public bool getVoiceSearchEnabled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -281,7 +281,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchWebSearch2128;
-		public bool getVoiceSearchLaunchWebSearch() 
+		public bool getVoiceSearchLaunchWebSearch()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -297,7 +297,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceSearchLaunchRecognizer2129;
-		public bool getVoiceSearchLaunchRecognizer() 
+		public bool getVoiceSearchLaunchRecognizer()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -313,7 +313,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageModeId2130;
-		public int getVoiceLanguageModeId() 
+		public int getVoiceLanguageModeId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -329,7 +329,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoicePromptTextId2131;
-		public int getVoicePromptTextId() 
+		public int getVoicePromptTextId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -345,7 +345,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceLanguageId2132;
-		public int getVoiceLanguageId() 
+		public int getVoiceLanguageId()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -361,7 +361,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getVoiceMaxResults2133;
-		public int getVoiceMaxResults() 
+		public int getVoiceMaxResults()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -370,7 +370,7 @@ namespace android.app
 				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::android.app.SearchableInfo.staticClass, global::android.app.SearchableInfo._getVoiceMaxResults2133);
 		}
 		internal static global::MonoJavaBridge.MethodId _shouldIncludeInGlobalSearch2134;
-		public bool shouldIncludeInGlobalSearch() 
+		public bool shouldIncludeInGlobalSearch()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

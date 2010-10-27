@@ -12,14 +12,14 @@ namespace org.apache.http
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ParseException31740;
-		public ParseException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParseException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ParseException.staticClass, global::org.apache.http.ParseException._ParseException31740);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ParseException31741;
-		public ParseException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ParseException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ParseException.staticClass, global::org.apache.http.ParseException._ParseException31741, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

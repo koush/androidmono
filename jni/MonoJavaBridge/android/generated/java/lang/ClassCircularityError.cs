@@ -12,14 +12,14 @@ namespace java.lang
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassCircularityError20036;
-		public ClassCircularityError()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassCircularityError() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassCircularityError.staticClass, global::java.lang.ClassCircularityError._ClassCircularityError20036);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _ClassCircularityError20037;
-		public ClassCircularityError(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ClassCircularityError(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.lang.ClassCircularityError.staticClass, global::java.lang.ClassCircularityError._ClassCircularityError20037, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

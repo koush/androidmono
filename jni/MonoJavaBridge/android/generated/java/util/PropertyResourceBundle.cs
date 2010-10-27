@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getKeys26578;
-		public override global::java.util.Enumeration getKeys() 
+		public override global::java.util.Enumeration getKeys()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Enumeration>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._getKeys26578)) as java.util.Enumeration;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleGetObject26579;
-		public virtual global::java.lang.Object handleGetObject(java.lang.String arg0) 
+		public virtual global::java.lang.Object handleGetObject(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -37,7 +37,7 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._handleGetObject26579, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _handleKeySet26580;
-		protected override global::java.util.Set handleKeySet() 
+		protected override global::java.util.Set handleKeySet()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -46,14 +46,14 @@ namespace java.util
 				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.Set>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._handleKeySet26580)) as java.util.Set;
 		}
 		internal static global::MonoJavaBridge.MethodId _PropertyResourceBundle26581;
-		public PropertyResourceBundle(java.io.InputStream arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PropertyResourceBundle(java.io.InputStream arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._PropertyResourceBundle26581, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _PropertyResourceBundle26582;
-		public PropertyResourceBundle(java.io.Reader arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public PropertyResourceBundle(java.io.Reader arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.PropertyResourceBundle.staticClass, global::java.util.PropertyResourceBundle._PropertyResourceBundle26582, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));

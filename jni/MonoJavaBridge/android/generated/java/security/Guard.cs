@@ -18,7 +18,7 @@ namespace java.security
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _checkGuard22956;
-		 void java.security.Guard.checkGuard(java.lang.Object arg0) 
+		void java.security.Guard.checkGuard(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

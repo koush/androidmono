@@ -19,7 +19,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getMessage26177;
-		public override global::java.lang.String getMessage() 
+		public override global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -35,7 +35,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getFlags26178;
-		public virtual global::java.lang.String getFlags() 
+		public virtual global::java.lang.String getFlags()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -51,7 +51,7 @@ namespace java.util
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getConversion26179;
-		public virtual char getConversion() 
+		public virtual char getConversion()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -60,7 +60,7 @@ namespace java.util
 				return @__env.CallNonVirtualCharMethod(this.JvmHandle, global::java.util.FormatFlagsConversionMismatchException.staticClass, global::java.util.FormatFlagsConversionMismatchException._getConversion26179);
 		}
 		internal static global::MonoJavaBridge.MethodId _FormatFlagsConversionMismatchException26180;
-		public FormatFlagsConversionMismatchException(java.lang.String arg0, char arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public FormatFlagsConversionMismatchException(java.lang.String arg0, char arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.FormatFlagsConversionMismatchException.staticClass, global::java.util.FormatFlagsConversionMismatchException._FormatFlagsConversionMismatchException26180, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

@@ -19,7 +19,7 @@ namespace org.apache.http.impl.conn.tsccm
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _abortRequest33150;
-		 void org.apache.http.impl.conn.tsccm.PoolEntryRequest.abortRequest() 
+		void org.apache.http.impl.conn.tsccm.PoolEntryRequest.abortRequest()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace org.apache.http.impl.conn.tsccm
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_.staticClass, global::org.apache.http.impl.conn.tsccm.PoolEntryRequest_._abortRequest33150);
 		}
 		internal static global::MonoJavaBridge.MethodId _getPoolEntry33151;
-		 global::org.apache.http.impl.conn.tsccm.BasicPoolEntry org.apache.http.impl.conn.tsccm.PoolEntryRequest.getPoolEntry(long arg0, java.util.concurrent.TimeUnit arg1) 
+		global::org.apache.http.impl.conn.tsccm.BasicPoolEntry org.apache.http.impl.conn.tsccm.PoolEntryRequest.getPoolEntry(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

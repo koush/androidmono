@@ -18,7 +18,7 @@ namespace org.apache.http.io
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _parse33466;
-		 global::org.apache.http.HttpMessage org.apache.http.io.HttpMessageParser.parse() 
+		global::org.apache.http.HttpMessage org.apache.http.io.HttpMessageParser.parse()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

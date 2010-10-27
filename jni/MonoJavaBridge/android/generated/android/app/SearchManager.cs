@@ -29,7 +29,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onCancel2062;
-			 void android.app.SearchManager.OnCancelListener.onCancel() 
+			void android.app.SearchManager.OnCancelListener.onCancel()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnCancelListenerDelegateWrapper2063;
-			public OnCancelListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnCancelListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.SearchManager.OnCancelListenerDelegateWrapper.staticClass, global::android.app.SearchManager.OnCancelListenerDelegateWrapper._OnCancelListenerDelegateWrapper2063);
@@ -104,7 +104,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _onDismiss2064;
-			 void android.app.SearchManager.OnDismissListener.onDismiss() 
+			void android.app.SearchManager.OnDismissListener.onDismiss()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -133,7 +133,7 @@ namespace android.app
 			{
 			}
 			internal static global::MonoJavaBridge.MethodId _OnDismissListenerDelegateWrapper2065;
-			public OnDismissListenerDelegateWrapper()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+			public OnDismissListenerDelegateWrapper() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(android.app.SearchManager.OnDismissListenerDelegateWrapper.staticClass, global::android.app.SearchManager.OnDismissListenerDelegateWrapper._OnDismissListenerDelegateWrapper2065);
@@ -162,7 +162,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _startSearch2066;
-		public virtual void startSearch(java.lang.String arg0, bool arg1, android.content.ComponentName arg2, android.os.Bundle arg3, bool arg4) 
+		public virtual void startSearch(java.lang.String arg0, bool arg1, android.content.ComponentName arg2, android.os.Bundle arg3, bool arg4)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -171,7 +171,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._startSearch2066, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg4));
 		}
 		internal static global::MonoJavaBridge.MethodId _triggerSearch2067;
-		public virtual void triggerSearch(java.lang.String arg0, android.content.ComponentName arg1, android.os.Bundle arg2) 
+		public virtual void triggerSearch(java.lang.String arg0, android.content.ComponentName arg1, android.os.Bundle arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -180,7 +180,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._triggerSearch2067, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnCancelListener2068;
-		public virtual void setOnCancelListener(android.app.SearchManager.OnCancelListener arg0) 
+		public virtual void setOnCancelListener(android.app.SearchManager.OnCancelListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -193,7 +193,7 @@ namespace android.app
 			setOnCancelListener((global::android.app.SearchManager.OnCancelListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setOnDismissListener2069;
-		public virtual void setOnDismissListener(android.app.SearchManager.OnDismissListener arg0) 
+		public virtual void setOnDismissListener(android.app.SearchManager.OnDismissListener arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -206,7 +206,7 @@ namespace android.app
 			setOnDismissListener((global::android.app.SearchManager.OnDismissListenerDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _onCancel2070;
-		public virtual void onCancel(android.content.DialogInterface arg0) 
+		public virtual void onCancel(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -215,7 +215,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._onCancel2070, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _onDismiss2071;
-		public virtual void onDismiss(android.content.DialogInterface arg0) 
+		public virtual void onDismiss(android.content.DialogInterface arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -224,7 +224,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._onDismiss2071, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _stopSearch2072;
-		public virtual void stopSearch() 
+		public virtual void stopSearch()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -233,7 +233,7 @@ namespace android.app
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._stopSearch2072);
 		}
 		internal static global::MonoJavaBridge.MethodId _getSearchableInfo2073;
-		public virtual global::android.app.SearchableInfo getSearchableInfo(android.content.ComponentName arg0) 
+		public virtual global::android.app.SearchableInfo getSearchableInfo(android.content.ComponentName arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -249,7 +249,7 @@ namespace android.app
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getSearchablesInGlobalSearch2074;
-		public virtual global::java.util.List getSearchablesInGlobalSearch() 
+		public virtual global::java.util.List getSearchablesInGlobalSearch()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

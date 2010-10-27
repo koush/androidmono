@@ -19,7 +19,7 @@ namespace junit.runner
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _load31468;
-		 global::java.lang.Class junit.runner.TestSuiteLoader.load(java.lang.String arg0) 
+		global::java.lang.Class junit.runner.TestSuiteLoader.load(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -28,7 +28,7 @@ namespace junit.runner
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.Class>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::junit.runner.TestSuiteLoader_.staticClass, global::junit.runner.TestSuiteLoader_._load31468, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Class;
 		}
 		internal static global::MonoJavaBridge.MethodId _reload31469;
-		 global::java.lang.Class junit.runner.TestSuiteLoader.reload(java.lang.Class arg0) 
+		global::java.lang.Class junit.runner.TestSuiteLoader.reload(java.lang.Class arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

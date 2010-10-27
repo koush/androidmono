@@ -22,7 +22,7 @@ namespace android.accounts
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _cancel1353;
-		 bool android.accounts.AccountManagerFuture.cancel(bool arg0) 
+		bool android.accounts.AccountManagerFuture.cancel(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -31,7 +31,7 @@ namespace android.accounts
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._cancel1353, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		internal static global::MonoJavaBridge.MethodId _isCancelled1354;
-		 bool android.accounts.AccountManagerFuture.isCancelled() 
+		bool android.accounts.AccountManagerFuture.isCancelled()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -40,7 +40,7 @@ namespace android.accounts
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._isCancelled1354);
 		}
 		internal static global::MonoJavaBridge.MethodId _isDone1355;
-		 bool android.accounts.AccountManagerFuture.isDone() 
+		bool android.accounts.AccountManagerFuture.isDone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -49,7 +49,7 @@ namespace android.accounts
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._isDone1355);
 		}
 		internal static global::MonoJavaBridge.MethodId _getResult1356;
-		 global::java.lang.Object android.accounts.AccountManagerFuture.getResult() 
+		global::java.lang.Object android.accounts.AccountManagerFuture.getResult()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -58,7 +58,7 @@ namespace android.accounts
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::android.accounts.AccountManagerFuture_.staticClass, global::android.accounts.AccountManagerFuture_._getResult1356)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _getResult1357;
-		 global::java.lang.Object android.accounts.AccountManagerFuture.getResult(long arg0, java.util.concurrent.TimeUnit arg1) 
+		global::java.lang.Object android.accounts.AccountManagerFuture.getResult(long arg0, java.util.concurrent.TimeUnit arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)

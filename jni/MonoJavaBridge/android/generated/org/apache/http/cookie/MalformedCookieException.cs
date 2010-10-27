@@ -12,21 +12,21 @@ namespace org.apache.http.cookie
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedCookieException32432;
-		public MalformedCookieException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedCookieException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.MalformedCookieException.staticClass, global::org.apache.http.cookie.MalformedCookieException._MalformedCookieException32432);
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedCookieException32433;
-		public MalformedCookieException(java.lang.String arg0)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedCookieException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.MalformedCookieException.staticClass, global::org.apache.http.cookie.MalformedCookieException._MalformedCookieException32433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _MalformedCookieException32434;
-		public MalformedCookieException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public MalformedCookieException(java.lang.String arg0, java.lang.Throwable arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.cookie.MalformedCookieException.staticClass, global::org.apache.http.cookie.MalformedCookieException._MalformedCookieException32434, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));

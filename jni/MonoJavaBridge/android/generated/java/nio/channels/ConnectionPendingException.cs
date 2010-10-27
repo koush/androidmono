@@ -12,7 +12,7 @@ namespace java.nio.channels
 		{
 		}
 		internal static global::MonoJavaBridge.MethodId _ConnectionPendingException22419;
-		public ConnectionPendingException()  : base(global::MonoJavaBridge.JNIEnv.ThreadEnv) 
+		public ConnectionPendingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.ConnectionPendingException.staticClass, global::java.nio.channels.ConnectionPendingException._ConnectionPendingException22419);
