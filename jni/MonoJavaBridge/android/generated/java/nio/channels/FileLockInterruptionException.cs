@@ -11,18 +11,18 @@ namespace java.nio.channels
 		protected FileLockInterruptionException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _FileLockInterruptionException22500;
+		internal static global::MonoJavaBridge.MethodId _FileLockInterruptionException22501;
 		public FileLockInterruptionException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.FileLockInterruptionException.staticClass, global::java.nio.channels.FileLockInterruptionException._FileLockInterruptionException22500);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.FileLockInterruptionException.staticClass, global::java.nio.channels.FileLockInterruptionException._FileLockInterruptionException22501);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.FileLockInterruptionException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/FileLockInterruptionException"));
-			global::java.nio.channels.FileLockInterruptionException._FileLockInterruptionException22500 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLockInterruptionException.staticClass, "<init>", "()V");
+			global::java.nio.channels.FileLockInterruptionException._FileLockInterruptionException22501 = @__env.GetMethodIDNoThrow(global::java.nio.channels.FileLockInterruptionException.staticClass, "<init>", "()V");
 		}
 	}
 }

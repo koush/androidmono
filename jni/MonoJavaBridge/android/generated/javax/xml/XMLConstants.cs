@@ -11,22 +11,22 @@ namespace javax.xml
 		internal XMLConstants(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.FieldId _NULL_NS_URI30622;
+		internal static global::MonoJavaBridge.FieldId _NULL_NS_URI30623;
 		public static global::java.lang.String NULL_NS_URI
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _NULL_NS_URI30622)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _NULL_NS_URI30623)) as java.lang.String;
 			}
 		}
-		internal static global::MonoJavaBridge.FieldId _DEFAULT_NS_PREFIX30623;
+		internal static global::MonoJavaBridge.FieldId _DEFAULT_NS_PREFIX30624;
 		public static global::java.lang.String DEFAULT_NS_PREFIX
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _DEFAULT_NS_PREFIX30623)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.GetStaticObjectField(global::javax.xml.XMLConstants.staticClass, _DEFAULT_NS_PREFIX30624)) as java.lang.String;
 			}
 		}
 		public static global::java.lang.String XML_NS_URI
@@ -103,8 +103,8 @@ namespace javax.xml
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.xml.XMLConstants.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/xml/XMLConstants"));
-			global::javax.xml.XMLConstants._NULL_NS_URI30622 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "NULL_NS_URI", "Ljava/lang/String;");
-			global::javax.xml.XMLConstants._DEFAULT_NS_PREFIX30623 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "DEFAULT_NS_PREFIX", "Ljava/lang/String;");
+			global::javax.xml.XMLConstants._NULL_NS_URI30623 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "NULL_NS_URI", "Ljava/lang/String;");
+			global::javax.xml.XMLConstants._DEFAULT_NS_PREFIX30624 = @__env.GetStaticFieldIDNoThrow(global::javax.xml.XMLConstants.staticClass, "DEFAULT_NS_PREFIX", "Ljava/lang/String;");
 		}
 	}
 }

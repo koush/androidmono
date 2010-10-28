@@ -11,26 +11,26 @@ namespace java.util
 		protected NoSuchElementException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NoSuchElementException26524;
+		internal static global::MonoJavaBridge.MethodId _NoSuchElementException26525;
 		public NoSuchElementException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.NoSuchElementException.staticClass, global::java.util.NoSuchElementException._NoSuchElementException26524);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.NoSuchElementException.staticClass, global::java.util.NoSuchElementException._NoSuchElementException26525);
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.MethodId _NoSuchElementException26525;
+		internal static global::MonoJavaBridge.MethodId _NoSuchElementException26526;
 		public NoSuchElementException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.NoSuchElementException.staticClass, global::java.util.NoSuchElementException._NoSuchElementException26525, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.NoSuchElementException.staticClass, global::java.util.NoSuchElementException._NoSuchElementException26526, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.NoSuchElementException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/NoSuchElementException"));
-			global::java.util.NoSuchElementException._NoSuchElementException26524 = @__env.GetMethodIDNoThrow(global::java.util.NoSuchElementException.staticClass, "<init>", "()V");
-			global::java.util.NoSuchElementException._NoSuchElementException26525 = @__env.GetMethodIDNoThrow(global::java.util.NoSuchElementException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.util.NoSuchElementException._NoSuchElementException26525 = @__env.GetMethodIDNoThrow(global::java.util.NoSuchElementException.staticClass, "<init>", "()V");
+			global::java.util.NoSuchElementException._NoSuchElementException26526 = @__env.GetMethodIDNoThrow(global::java.util.NoSuchElementException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

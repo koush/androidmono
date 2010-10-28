@@ -11,18 +11,18 @@ namespace java.nio.charset
 		protected CharacterCodingException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _CharacterCodingException22720;
+		internal static global::MonoJavaBridge.MethodId _CharacterCodingException22721;
 		public CharacterCodingException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharacterCodingException.staticClass, global::java.nio.charset.CharacterCodingException._CharacterCodingException22720);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.charset.CharacterCodingException.staticClass, global::java.nio.charset.CharacterCodingException._CharacterCodingException22721);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.charset.CharacterCodingException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/charset/CharacterCodingException"));
-			global::java.nio.charset.CharacterCodingException._CharacterCodingException22720 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharacterCodingException.staticClass, "<init>", "()V");
+			global::java.nio.charset.CharacterCodingException._CharacterCodingException22721 = @__env.GetMethodIDNoThrow(global::java.nio.charset.CharacterCodingException.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -11,31 +11,31 @@ namespace java.security.spec
 		protected EncodedKeySpec(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getEncoded24019;
+		internal static global::MonoJavaBridge.MethodId _getEncoded24020;
 		public virtual byte[] getEncoded()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec._getEncoded24019)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec._getEncoded24020)) as byte[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec.staticClass, global::java.security.spec.EncodedKeySpec._getEncoded24019)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec.staticClass, global::java.security.spec.EncodedKeySpec._getEncoded24020)) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormat24020;
+		internal static global::MonoJavaBridge.MethodId _getFormat24021;
 		public abstract global::java.lang.String getFormat();
-		internal static global::MonoJavaBridge.MethodId _EncodedKeySpec24021;
+		internal static global::MonoJavaBridge.MethodId _EncodedKeySpec24022;
 		public EncodedKeySpec(byte[] arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.EncodedKeySpec.staticClass, global::java.security.spec.EncodedKeySpec._EncodedKeySpec24021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.EncodedKeySpec.staticClass, global::java.security.spec.EncodedKeySpec._EncodedKeySpec24022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.EncodedKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/EncodedKeySpec"));
-			global::java.security.spec.EncodedKeySpec._getEncoded24019 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "getEncoded", "()[B");
-			global::java.security.spec.EncodedKeySpec._getFormat24020 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
-			global::java.security.spec.EncodedKeySpec._EncodedKeySpec24021 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "<init>", "([B)V");
+			global::java.security.spec.EncodedKeySpec._getEncoded24020 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "getEncoded", "()[B");
+			global::java.security.spec.EncodedKeySpec._getFormat24021 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "getFormat", "()Ljava/lang/String;");
+			global::java.security.spec.EncodedKeySpec._EncodedKeySpec24022 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec.staticClass, "<init>", "([B)V");
 		}
 	}
 
@@ -50,20 +50,20 @@ namespace java.security.spec
 		internal EncodedKeySpec_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getFormat24022;
+		internal static global::MonoJavaBridge.MethodId _getFormat24023;
 		public override global::java.lang.String getFormat()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec_._getFormat24022)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec_._getFormat24023)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec_.staticClass, global::java.security.spec.EncodedKeySpec_._getFormat24022)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.EncodedKeySpec_.staticClass, global::java.security.spec.EncodedKeySpec_._getFormat24023)) as java.lang.String;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.EncodedKeySpec_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/EncodedKeySpec"));
-			global::java.security.spec.EncodedKeySpec_._getFormat24022 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec_.staticClass, "getFormat", "()Ljava/lang/String;");
+			global::java.security.spec.EncodedKeySpec_._getFormat24023 = @__env.GetMethodIDNoThrow(global::java.security.spec.EncodedKeySpec_.staticClass, "getFormat", "()Ljava/lang/String;");
 		}
 	}
 }

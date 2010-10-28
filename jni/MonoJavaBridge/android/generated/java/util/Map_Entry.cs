@@ -21,60 +21,60 @@ namespace java.util
 		internal Map_Entry_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals26496;
+		internal static global::MonoJavaBridge.MethodId _equals26497;
 		bool java.util.Map_Entry.equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Map_Entry_._equals26496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.Map_Entry_._equals26497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._equals26496, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._equals26497, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode26497;
+		internal static global::MonoJavaBridge.MethodId _hashCode26498;
 		int java.util.Map_Entry.hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Map_Entry_._hashCode26497);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.Map_Entry_._hashCode26498);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._hashCode26497);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._hashCode26498);
 		}
-		internal static global::MonoJavaBridge.MethodId _getValue26498;
+		internal static global::MonoJavaBridge.MethodId _getValue26499;
 		global::java.lang.Object java.util.Map_Entry.getValue()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Map_Entry_._getValue26498)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Map_Entry_._getValue26499)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._getValue26498)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._getValue26499)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _getKey26499;
+		internal static global::MonoJavaBridge.MethodId _getKey26500;
 		global::java.lang.Object java.util.Map_Entry.getKey()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Map_Entry_._getKey26499)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Map_Entry_._getKey26500)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._getKey26499)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._getKey26500)) as java.lang.Object;
 		}
-		internal static global::MonoJavaBridge.MethodId _setValue26500;
+		internal static global::MonoJavaBridge.MethodId _setValue26501;
 		global::java.lang.Object java.util.Map_Entry.setValue(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Map_Entry_._setValue26500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.Map_Entry_._setValue26501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._setValue26500, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.Map_Entry_.staticClass, global::java.util.Map_Entry_._setValue26501, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.lang.Object;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.Map_Entry_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/Map$Entry"));
-			global::java.util.Map_Entry_._equals26496 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.Map_Entry_._hashCode26497 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "hashCode", "()I");
-			global::java.util.Map_Entry_._getValue26498 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "getValue", "()Ljava/lang/Object;");
-			global::java.util.Map_Entry_._getKey26499 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "getKey", "()Ljava/lang/Object;");
-			global::java.util.Map_Entry_._setValue26500 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "setValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
+			global::java.util.Map_Entry_._equals26497 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.Map_Entry_._hashCode26498 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "hashCode", "()I");
+			global::java.util.Map_Entry_._getValue26499 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "getValue", "()Ljava/lang/Object;");
+			global::java.util.Map_Entry_._getKey26500 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "getKey", "()Ljava/lang/Object;");
+			global::java.util.Map_Entry_._setValue26501 = @__env.GetMethodIDNoThrow(global::java.util.Map_Entry_.staticClass, "setValue", "(Ljava/lang/Object;)Ljava/lang/Object;");
 		}
 	}
 }

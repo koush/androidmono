@@ -11,18 +11,18 @@ namespace org.apache.http
 		protected ConnectionClosedException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _ConnectionClosedException31489;
+		internal static global::MonoJavaBridge.MethodId _ConnectionClosedException31490;
 		public ConnectionClosedException(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ConnectionClosedException.staticClass, global::org.apache.http.ConnectionClosedException._ConnectionClosedException31489, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(org.apache.http.ConnectionClosedException.staticClass, global::org.apache.http.ConnectionClosedException._ConnectionClosedException31490, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::org.apache.http.ConnectionClosedException.staticClass = @__env.NewGlobalRef(@__env.FindClass("org/apache/http/ConnectionClosedException"));
-			global::org.apache.http.ConnectionClosedException._ConnectionClosedException31489 = @__env.GetMethodIDNoThrow(global::org.apache.http.ConnectionClosedException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::org.apache.http.ConnectionClosedException._ConnectionClosedException31490 = @__env.GetMethodIDNoThrow(global::org.apache.http.ConnectionClosedException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

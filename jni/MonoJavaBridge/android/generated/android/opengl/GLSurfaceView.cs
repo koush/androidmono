@@ -521,6 +521,10 @@ namespace android.opengl
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._queueEvent9451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public void queueEvent(global::java.lang.RunnableDelegate arg0)
+		{
+			queueEvent((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _GLSurfaceView9452;
 		public GLSurfaceView(android.content.Context arg0, android.util.AttributeSet arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{

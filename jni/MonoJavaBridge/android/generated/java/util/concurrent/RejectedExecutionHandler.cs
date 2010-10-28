@@ -17,20 +17,20 @@ namespace java.util.concurrent
 		internal RejectedExecutionHandler_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _rejectedExecution27366;
+		internal static global::MonoJavaBridge.MethodId _rejectedExecution27367;
 		void java.util.concurrent.RejectedExecutionHandler.rejectedExecution(java.lang.Runnable arg0, java.util.concurrent.ThreadPoolExecutor arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.RejectedExecutionHandler_.staticClass, global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27366, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.concurrent.RejectedExecutionHandler_.staticClass, global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27367, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.RejectedExecutionHandler_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/RejectedExecutionHandler"));
-			global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27366 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.RejectedExecutionHandler_.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
+			global::java.util.concurrent.RejectedExecutionHandler_._rejectedExecution27367 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.RejectedExecutionHandler_.staticClass, "rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V");
 		}
 	}
 }

@@ -46,6 +46,10 @@ namespace android.os
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<android.os.Message>(@__env.CallStaticObjectMethod(android.os.Message.staticClass, global::android.os.Message._obtain9936, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as android.os.Message;
 		}
+		public static android.os.Message obtain(android.os.Handler arg0, global::java.lang.RunnableDelegate arg1)
+		{
+			return obtain(arg0, (global::java.lang.RunnableDelegateWrapper)arg1);
+		}
 		internal static global::MonoJavaBridge.MethodId _obtain9937;
 		public static global::android.os.Message obtain(android.os.Handler arg0, int arg1)
 		{
@@ -124,11 +128,11 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Message.staticClass, global::android.os.Message._setData9947, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		public new global::java.lang.Runnable Callback
+		public new global::java.lang.RunnableDelegate Callback
 		{
 			get
 			{
-				return getCallback();
+				return new global::java.lang.RunnableDelegate(getCallback().run);
 			}
 		}
 		internal static global::MonoJavaBridge.MethodId _getCallback9948;

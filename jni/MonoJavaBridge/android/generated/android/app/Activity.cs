@@ -1544,6 +1544,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Activity.staticClass, global::android.app.Activity._runOnUiThread1532, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public void runOnUiThread(global::java.lang.RunnableDelegate arg0)
+		{
+			runOnUiThread((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _onCreateView1533;
 		public virtual global::android.view.View onCreateView(java.lang.String arg0, android.content.Context arg1, android.util.AttributeSet arg2)
 		{

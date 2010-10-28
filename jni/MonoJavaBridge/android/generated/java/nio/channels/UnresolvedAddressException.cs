@@ -11,18 +11,18 @@ namespace java.nio.channels
 		protected UnresolvedAddressException(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _UnresolvedAddressException22654;
+		internal static global::MonoJavaBridge.MethodId _UnresolvedAddressException22655;
 		public UnresolvedAddressException() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.UnresolvedAddressException.staticClass, global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22654);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.nio.channels.UnresolvedAddressException.staticClass, global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22655);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.nio.channels.UnresolvedAddressException.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/nio/channels/UnresolvedAddressException"));
-			global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22654 = @__env.GetMethodIDNoThrow(global::java.nio.channels.UnresolvedAddressException.staticClass, "<init>", "()V");
+			global::java.nio.channels.UnresolvedAddressException._UnresolvedAddressException22655 = @__env.GetMethodIDNoThrow(global::java.nio.channels.UnresolvedAddressException.staticClass, "<init>", "()V");
 		}
 	}
 }

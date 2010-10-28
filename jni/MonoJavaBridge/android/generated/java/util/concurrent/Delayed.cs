@@ -17,30 +17,30 @@ namespace java.util.concurrent
 		internal Delayed_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getDelay27251;
+		internal static global::MonoJavaBridge.MethodId _getDelay27252;
 		long java.util.concurrent.Delayed.getDelay(java.util.concurrent.TimeUnit arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.Delayed_._getDelay27251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.concurrent.Delayed_._getDelay27252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.Delayed_.staticClass, global::java.util.concurrent.Delayed_._getDelay27251, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.concurrent.Delayed_.staticClass, global::java.util.concurrent.Delayed_._getDelay27252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _compareTo27252;
+		internal static global::MonoJavaBridge.MethodId _compareTo27253;
 		int java.lang.Comparable.compareTo(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.Delayed_._compareTo27252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.concurrent.Delayed_._compareTo27253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.Delayed_.staticClass, global::java.util.concurrent.Delayed_._compareTo27252, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.concurrent.Delayed_.staticClass, global::java.util.concurrent.Delayed_._compareTo27253, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.Delayed_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/Delayed"));
-			global::java.util.concurrent.Delayed_._getDelay27251 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Delayed_.staticClass, "getDelay", "(Ljava/util/concurrent/TimeUnit;)J");
-			global::java.util.concurrent.Delayed_._compareTo27252 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Delayed_.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.util.concurrent.Delayed_._getDelay27252 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Delayed_.staticClass, "getDelay", "(Ljava/util/concurrent/TimeUnit;)J");
+			global::java.util.concurrent.Delayed_._compareTo27253 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.Delayed_.staticClass, "compareTo", "(Ljava/lang/Object;)I");
 		}
 	}
 }

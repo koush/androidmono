@@ -129,7 +129,7 @@ namespace MonoJavaBridge
         
         static void Initialize(IntPtr vm)
         {
-            myVM = JNIEnv.defaultVM = new JavaVM(vm);
+            myVM = new JavaVM(vm);
             Log("Setting JVM");
             var env = JNIEnv.GetEnvForVm(myVM);
 
@@ -137,6 +137,12 @@ namespace MonoJavaBridge
             myJavaExceptionClass = env.NewGlobalRef(env.FindClass("java/lang/Exception"));
             mySetGCHandle = env.GetMethodID(myMonoProxyClass, "setGCHandle", "(J)V");
             myGetGCHandle = env.GetMethodID(myMonoProxyClass, "getGCHandle", "()J");
+            
+            var classClass = env.FindClass("java/lang/Class");
+            var getClassLoader = env.GetMethodID(classClass, "getClassLoader", "()Ljava/lang/ClassLoader;");
+            var bridgeClass = env.FindClass("com/koushikdutta/monojavabridge/MonoBridge");
+            var classLoader = env.NewGlobalRef(env.CallObjectMethod(bridgeClass, getClassLoader));
+            myVM.DefaultClassLoader = classLoader;
         }
         
         static List<string> myAssemblies = new List<string>();

@@ -11,44 +11,35 @@ namespace java.text
 		protected DecimalFormat(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _equals25423;
+		internal static global::MonoJavaBridge.MethodId _equals25424;
 		public override bool equals(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat._equals25423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat._equals25424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._equals25423, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._equals25424, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _hashCode25424;
+		internal static global::MonoJavaBridge.MethodId _hashCode25425;
 		public override int hashCode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._hashCode25424);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._hashCode25425);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._hashCode25424);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._hashCode25425);
 		}
-		internal static global::MonoJavaBridge.MethodId _clone25425;
+		internal static global::MonoJavaBridge.MethodId _clone25426;
 		public override global::java.lang.Object clone()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._clone25425)) as java.lang.Object;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._clone25426)) as java.lang.Object;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._clone25425)) as java.lang.Object;
-		}
-		internal static global::MonoJavaBridge.MethodId _format25426;
-		public override global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
-		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._format25426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
-			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._format25426, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._clone25426)) as java.lang.Object;
 		}
 		internal static global::MonoJavaBridge.MethodId _format25427;
-		public override global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
+		public override global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -57,7 +48,7 @@ namespace java.text
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._format25427, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
 		}
 		internal static global::MonoJavaBridge.MethodId _format25428;
-		public sealed override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
+		public override global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -65,23 +56,32 @@ namespace java.text
 			else
 				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._format25428, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
 		}
-		internal static global::MonoJavaBridge.MethodId _parse25429;
+		internal static global::MonoJavaBridge.MethodId _format25429;
+		public sealed override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2)
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._format25429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
+			else
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.StringBuffer>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._format25429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2))) as java.lang.StringBuffer;
+		}
+		internal static global::MonoJavaBridge.MethodId _parse25430;
 		public override global::java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._parse25429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Number;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._parse25430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Number;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._parse25429, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Number;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._parse25430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1))) as java.lang.Number;
 		}
-		internal static global::MonoJavaBridge.MethodId _formatToCharacterIterator25430;
+		internal static global::MonoJavaBridge.MethodId _formatToCharacterIterator25431;
 		public override global::java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.text.AttributedCharacterIterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._formatToCharacterIterator25430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.AttributedCharacterIterator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.text.AttributedCharacterIterator>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._formatToCharacterIterator25431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.AttributedCharacterIterator;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.text.AttributedCharacterIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._formatToCharacterIterator25430, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.AttributedCharacterIterator;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.text.AttributedCharacterIterator>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._formatToCharacterIterator25431, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.text.AttributedCharacterIterator;
 		}
 		public new global::java.math.RoundingMode RoundingMode
 		{
@@ -94,32 +94,32 @@ namespace java.text
 				setRoundingMode(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getRoundingMode25431;
+		internal static global::MonoJavaBridge.MethodId _getRoundingMode25432;
 		public override global::java.math.RoundingMode getRoundingMode()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getRoundingMode25431)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getRoundingMode25432)) as java.math.RoundingMode;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getRoundingMode25431)) as java.math.RoundingMode;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.math.RoundingMode>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getRoundingMode25432)) as java.math.RoundingMode;
 		}
-		internal static global::MonoJavaBridge.MethodId _applyPattern25432;
+		internal static global::MonoJavaBridge.MethodId _applyPattern25433;
 		public virtual void applyPattern(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._applyPattern25432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._applyPattern25433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._applyPattern25432, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._applyPattern25433, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toPattern25433;
+		internal static global::MonoJavaBridge.MethodId _toPattern25434;
 		public virtual global::java.lang.String toPattern()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._toPattern25433)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._toPattern25434)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._toPattern25433)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._toPattern25434)) as java.lang.String;
 		}
 		public new int MaximumIntegerDigits
 		{
@@ -132,23 +132,23 @@ namespace java.text
 				setMaximumIntegerDigits(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumIntegerDigits25434;
+		internal static global::MonoJavaBridge.MethodId _getMaximumIntegerDigits25435;
 		public override int getMaximumIntegerDigits()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMaximumIntegerDigits25434);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMaximumIntegerDigits25435);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMaximumIntegerDigits25434);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMaximumIntegerDigits25435);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumIntegerDigits25435;
+		internal static global::MonoJavaBridge.MethodId _setMaximumIntegerDigits25436;
 		public override void setMaximumIntegerDigits(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMaximumIntegerDigits25435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMaximumIntegerDigits25436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMaximumIntegerDigits25435, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMaximumIntegerDigits25436, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MinimumIntegerDigits
 		{
@@ -161,23 +161,23 @@ namespace java.text
 				setMinimumIntegerDigits(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumIntegerDigits25436;
+		internal static global::MonoJavaBridge.MethodId _getMinimumIntegerDigits25437;
 		public override int getMinimumIntegerDigits()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMinimumIntegerDigits25436);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMinimumIntegerDigits25437);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMinimumIntegerDigits25436);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMinimumIntegerDigits25437);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMinimumIntegerDigits25437;
+		internal static global::MonoJavaBridge.MethodId _setMinimumIntegerDigits25438;
 		public override void setMinimumIntegerDigits(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMinimumIntegerDigits25437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMinimumIntegerDigits25438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMinimumIntegerDigits25437, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMinimumIntegerDigits25438, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MaximumFractionDigits
 		{
@@ -190,23 +190,23 @@ namespace java.text
 				setMaximumFractionDigits(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMaximumFractionDigits25438;
+		internal static global::MonoJavaBridge.MethodId _getMaximumFractionDigits25439;
 		public override int getMaximumFractionDigits()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMaximumFractionDigits25438);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMaximumFractionDigits25439);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMaximumFractionDigits25438);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMaximumFractionDigits25439);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMaximumFractionDigits25439;
+		internal static global::MonoJavaBridge.MethodId _setMaximumFractionDigits25440;
 		public override void setMaximumFractionDigits(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMaximumFractionDigits25439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMaximumFractionDigits25440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMaximumFractionDigits25439, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMaximumFractionDigits25440, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int MinimumFractionDigits
 		{
@@ -219,23 +219,23 @@ namespace java.text
 				setMinimumFractionDigits(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMinimumFractionDigits25440;
+		internal static global::MonoJavaBridge.MethodId _getMinimumFractionDigits25441;
 		public override int getMinimumFractionDigits()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMinimumFractionDigits25440);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMinimumFractionDigits25441);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMinimumFractionDigits25440);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMinimumFractionDigits25441);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMinimumFractionDigits25441;
+		internal static global::MonoJavaBridge.MethodId _setMinimumFractionDigits25442;
 		public override void setMinimumFractionDigits(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMinimumFractionDigits25441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMinimumFractionDigits25442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMinimumFractionDigits25441, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMinimumFractionDigits25442, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.Currency Currency
 		{
@@ -248,32 +248,32 @@ namespace java.text
 				setCurrency(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getCurrency25442;
+		internal static global::MonoJavaBridge.MethodId _getCurrency25443;
 		public override global::java.util.Currency getCurrency()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Currency>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getCurrency25442)) as java.util.Currency;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Currency>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getCurrency25443)) as java.util.Currency;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Currency>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getCurrency25442)) as java.util.Currency;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.util.Currency>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getCurrency25443)) as java.util.Currency;
 		}
-		internal static global::MonoJavaBridge.MethodId _setCurrency25443;
+		internal static global::MonoJavaBridge.MethodId _setCurrency25444;
 		public override void setCurrency(java.util.Currency arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setCurrency25443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setCurrency25444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setCurrency25443, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setCurrency25444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setRoundingMode25444;
+		internal static global::MonoJavaBridge.MethodId _setRoundingMode25445;
 		public override void setRoundingMode(java.math.RoundingMode arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setRoundingMode25444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setRoundingMode25445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setRoundingMode25444, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setRoundingMode25445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new bool DecimalSeparatorAlwaysShown
 		{
@@ -282,14 +282,14 @@ namespace java.text
 				setDecimalSeparatorAlwaysShown(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setDecimalSeparatorAlwaysShown25445;
+		internal static global::MonoJavaBridge.MethodId _setDecimalSeparatorAlwaysShown25446;
 		public virtual void setDecimalSeparatorAlwaysShown(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setDecimalSeparatorAlwaysShown25445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setDecimalSeparatorAlwaysShown25446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setDecimalSeparatorAlwaysShown25445, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setDecimalSeparatorAlwaysShown25446, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.text.DecimalFormatSymbols DecimalFormatSymbols
 		{
@@ -302,23 +302,23 @@ namespace java.text
 				setDecimalFormatSymbols(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDecimalFormatSymbols25446;
+		internal static global::MonoJavaBridge.MethodId _getDecimalFormatSymbols25447;
 		public virtual global::java.text.DecimalFormatSymbols getDecimalFormatSymbols()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getDecimalFormatSymbols25446)) as java.text.DecimalFormatSymbols;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getDecimalFormatSymbols25447)) as java.text.DecimalFormatSymbols;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getDecimalFormatSymbols25446)) as java.text.DecimalFormatSymbols;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getDecimalFormatSymbols25447)) as java.text.DecimalFormatSymbols;
 		}
-		internal static global::MonoJavaBridge.MethodId _setDecimalFormatSymbols25447;
+		internal static global::MonoJavaBridge.MethodId _setDecimalFormatSymbols25448;
 		public virtual void setDecimalFormatSymbols(java.text.DecimalFormatSymbols arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setDecimalFormatSymbols25447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setDecimalFormatSymbols25448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setDecimalFormatSymbols25447, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setDecimalFormatSymbols25448, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String PositivePrefix
 		{
@@ -331,23 +331,23 @@ namespace java.text
 				setPositivePrefix(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPositivePrefix25448;
+		internal static global::MonoJavaBridge.MethodId _getPositivePrefix25449;
 		public virtual global::java.lang.String getPositivePrefix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getPositivePrefix25448)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getPositivePrefix25449)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getPositivePrefix25448)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getPositivePrefix25449)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setPositivePrefix25449;
+		internal static global::MonoJavaBridge.MethodId _setPositivePrefix25450;
 		public virtual void setPositivePrefix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setPositivePrefix25449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setPositivePrefix25450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setPositivePrefix25449, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setPositivePrefix25450, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String NegativePrefix
 		{
@@ -360,23 +360,23 @@ namespace java.text
 				setNegativePrefix(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getNegativePrefix25450;
+		internal static global::MonoJavaBridge.MethodId _getNegativePrefix25451;
 		public virtual global::java.lang.String getNegativePrefix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getNegativePrefix25450)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getNegativePrefix25451)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getNegativePrefix25450)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getNegativePrefix25451)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setNegativePrefix25451;
+		internal static global::MonoJavaBridge.MethodId _setNegativePrefix25452;
 		public virtual void setNegativePrefix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setNegativePrefix25451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setNegativePrefix25452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setNegativePrefix25451, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setNegativePrefix25452, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String PositiveSuffix
 		{
@@ -389,23 +389,23 @@ namespace java.text
 				setPositiveSuffix(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPositiveSuffix25452;
+		internal static global::MonoJavaBridge.MethodId _getPositiveSuffix25453;
 		public virtual global::java.lang.String getPositiveSuffix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getPositiveSuffix25452)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getPositiveSuffix25453)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getPositiveSuffix25452)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getPositiveSuffix25453)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setPositiveSuffix25453;
+		internal static global::MonoJavaBridge.MethodId _setPositiveSuffix25454;
 		public virtual void setPositiveSuffix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setPositiveSuffix25453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setPositiveSuffix25454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setPositiveSuffix25453, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setPositiveSuffix25454, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String NegativeSuffix
 		{
@@ -418,23 +418,23 @@ namespace java.text
 				setNegativeSuffix(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getNegativeSuffix25454;
+		internal static global::MonoJavaBridge.MethodId _getNegativeSuffix25455;
 		public virtual global::java.lang.String getNegativeSuffix()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getNegativeSuffix25454)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._getNegativeSuffix25455)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getNegativeSuffix25454)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getNegativeSuffix25455)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setNegativeSuffix25455;
+		internal static global::MonoJavaBridge.MethodId _setNegativeSuffix25456;
 		public virtual void setNegativeSuffix(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setNegativeSuffix25455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setNegativeSuffix25456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setNegativeSuffix25455, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setNegativeSuffix25456, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int Multiplier
 		{
@@ -447,23 +447,23 @@ namespace java.text
 				setMultiplier(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMultiplier25456;
+		internal static global::MonoJavaBridge.MethodId _getMultiplier25457;
 		public virtual int getMultiplier()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMultiplier25456);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getMultiplier25457);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMultiplier25456);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getMultiplier25457);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMultiplier25457;
+		internal static global::MonoJavaBridge.MethodId _setMultiplier25458;
 		public virtual void setMultiplier(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMultiplier25457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setMultiplier25458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMultiplier25457, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setMultiplier25458, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new int GroupingSize
 		{
@@ -476,41 +476,41 @@ namespace java.text
 				setGroupingSize(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getGroupingSize25458;
+		internal static global::MonoJavaBridge.MethodId _getGroupingSize25459;
 		public virtual int getGroupingSize()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getGroupingSize25458);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.text.DecimalFormat._getGroupingSize25459);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getGroupingSize25458);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._getGroupingSize25459);
 		}
-		internal static global::MonoJavaBridge.MethodId _setGroupingSize25459;
+		internal static global::MonoJavaBridge.MethodId _setGroupingSize25460;
 		public virtual void setGroupingSize(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setGroupingSize25459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setGroupingSize25460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setGroupingSize25459, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setGroupingSize25460, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _isDecimalSeparatorAlwaysShown25460;
+		internal static global::MonoJavaBridge.MethodId _isDecimalSeparatorAlwaysShown25461;
 		public virtual bool isDecimalSeparatorAlwaysShown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat._isDecimalSeparatorAlwaysShown25460);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat._isDecimalSeparatorAlwaysShown25461);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._isDecimalSeparatorAlwaysShown25460);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._isDecimalSeparatorAlwaysShown25461);
 		}
-		internal static global::MonoJavaBridge.MethodId _isParseBigDecimal25461;
+		internal static global::MonoJavaBridge.MethodId _isParseBigDecimal25462;
 		public virtual bool isParseBigDecimal()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat._isParseBigDecimal25461);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat._isParseBigDecimal25462);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._isParseBigDecimal25461);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._isParseBigDecimal25462);
 		}
 		public new bool ParseBigDecimal
 		{
@@ -519,103 +519,103 @@ namespace java.text
 				setParseBigDecimal(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _setParseBigDecimal25462;
+		internal static global::MonoJavaBridge.MethodId _setParseBigDecimal25463;
 		public virtual void setParseBigDecimal(bool arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setParseBigDecimal25462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._setParseBigDecimal25463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setParseBigDecimal25462, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._setParseBigDecimal25463, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _toLocalizedPattern25463;
+		internal static global::MonoJavaBridge.MethodId _toLocalizedPattern25464;
 		public virtual global::java.lang.String toLocalizedPattern()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._toLocalizedPattern25463)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.text.DecimalFormat._toLocalizedPattern25464)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._toLocalizedPattern25463)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._toLocalizedPattern25464)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _applyLocalizedPattern25464;
+		internal static global::MonoJavaBridge.MethodId _applyLocalizedPattern25465;
 		public virtual void applyLocalizedPattern(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._applyLocalizedPattern25464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.text.DecimalFormat._applyLocalizedPattern25465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._applyLocalizedPattern25464, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._applyLocalizedPattern25465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _DecimalFormat25465;
+		internal static global::MonoJavaBridge.MethodId _DecimalFormat25466;
 		public DecimalFormat(java.lang.String arg0) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25465, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			Init(@__env, handle);
-		}
-		internal static global::MonoJavaBridge.MethodId _DecimalFormat25466;
-		public DecimalFormat(java.lang.String arg0, java.text.DecimalFormatSymbols arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
-		{
-			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25466, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			Init(@__env, handle);
 		}
 		internal static global::MonoJavaBridge.MethodId _DecimalFormat25467;
+		public DecimalFormat(java.lang.String arg0, java.text.DecimalFormatSymbols arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
+		{
+			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25467, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			Init(@__env, handle);
+		}
+		internal static global::MonoJavaBridge.MethodId _DecimalFormat25468;
 		public DecimalFormat() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25467);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.text.DecimalFormat.staticClass, global::java.text.DecimalFormat._DecimalFormat25468);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.text.DecimalFormat.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/text/DecimalFormat"));
-			global::java.text.DecimalFormat._equals25423 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.text.DecimalFormat._hashCode25424 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "hashCode", "()I");
-			global::java.text.DecimalFormat._clone25425 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.text.DecimalFormat._format25426 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			global::java.text.DecimalFormat._format25427 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			global::java.text.DecimalFormat._format25428 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			global::java.text.DecimalFormat._parse25429 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;");
-			global::java.text.DecimalFormat._formatToCharacterIterator25430 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "formatToCharacterIterator", "(Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;");
-			global::java.text.DecimalFormat._getRoundingMode25431 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getRoundingMode", "()Ljava/math/RoundingMode;");
-			global::java.text.DecimalFormat._applyPattern25432 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "applyPattern", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._toPattern25433 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "toPattern", "()Ljava/lang/String;");
-			global::java.text.DecimalFormat._getMaximumIntegerDigits25434 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMaximumIntegerDigits", "()I");
-			global::java.text.DecimalFormat._setMaximumIntegerDigits25435 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMaximumIntegerDigits", "(I)V");
-			global::java.text.DecimalFormat._getMinimumIntegerDigits25436 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMinimumIntegerDigits", "()I");
-			global::java.text.DecimalFormat._setMinimumIntegerDigits25437 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMinimumIntegerDigits", "(I)V");
-			global::java.text.DecimalFormat._getMaximumFractionDigits25438 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMaximumFractionDigits", "()I");
-			global::java.text.DecimalFormat._setMaximumFractionDigits25439 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMaximumFractionDigits", "(I)V");
-			global::java.text.DecimalFormat._getMinimumFractionDigits25440 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMinimumFractionDigits", "()I");
-			global::java.text.DecimalFormat._setMinimumFractionDigits25441 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMinimumFractionDigits", "(I)V");
-			global::java.text.DecimalFormat._getCurrency25442 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getCurrency", "()Ljava/util/Currency;");
-			global::java.text.DecimalFormat._setCurrency25443 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setCurrency", "(Ljava/util/Currency;)V");
-			global::java.text.DecimalFormat._setRoundingMode25444 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setRoundingMode", "(Ljava/math/RoundingMode;)V");
-			global::java.text.DecimalFormat._setDecimalSeparatorAlwaysShown25445 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setDecimalSeparatorAlwaysShown", "(Z)V");
-			global::java.text.DecimalFormat._getDecimalFormatSymbols25446 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getDecimalFormatSymbols", "()Ljava/text/DecimalFormatSymbols;");
-			global::java.text.DecimalFormat._setDecimalFormatSymbols25447 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setDecimalFormatSymbols", "(Ljava/text/DecimalFormatSymbols;)V");
-			global::java.text.DecimalFormat._getPositivePrefix25448 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getPositivePrefix", "()Ljava/lang/String;");
-			global::java.text.DecimalFormat._setPositivePrefix25449 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setPositivePrefix", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._getNegativePrefix25450 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getNegativePrefix", "()Ljava/lang/String;");
-			global::java.text.DecimalFormat._setNegativePrefix25451 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setNegativePrefix", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._getPositiveSuffix25452 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getPositiveSuffix", "()Ljava/lang/String;");
-			global::java.text.DecimalFormat._setPositiveSuffix25453 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setPositiveSuffix", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._getNegativeSuffix25454 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getNegativeSuffix", "()Ljava/lang/String;");
-			global::java.text.DecimalFormat._setNegativeSuffix25455 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setNegativeSuffix", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._getMultiplier25456 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMultiplier", "()I");
-			global::java.text.DecimalFormat._setMultiplier25457 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMultiplier", "(I)V");
-			global::java.text.DecimalFormat._getGroupingSize25458 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getGroupingSize", "()I");
-			global::java.text.DecimalFormat._setGroupingSize25459 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setGroupingSize", "(I)V");
-			global::java.text.DecimalFormat._isDecimalSeparatorAlwaysShown25460 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "isDecimalSeparatorAlwaysShown", "()Z");
-			global::java.text.DecimalFormat._isParseBigDecimal25461 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "isParseBigDecimal", "()Z");
-			global::java.text.DecimalFormat._setParseBigDecimal25462 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setParseBigDecimal", "(Z)V");
-			global::java.text.DecimalFormat._toLocalizedPattern25463 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "toLocalizedPattern", "()Ljava/lang/String;");
-			global::java.text.DecimalFormat._applyLocalizedPattern25464 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "applyLocalizedPattern", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._DecimalFormat25465 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.text.DecimalFormat._DecimalFormat25466 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V");
-			global::java.text.DecimalFormat._DecimalFormat25467 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "()V");
+			global::java.text.DecimalFormat._equals25424 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.DecimalFormat._hashCode25425 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "hashCode", "()I");
+			global::java.text.DecimalFormat._clone25426 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.text.DecimalFormat._format25427 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
+			global::java.text.DecimalFormat._format25428 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
+			global::java.text.DecimalFormat._format25429 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
+			global::java.text.DecimalFormat._parse25430 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;");
+			global::java.text.DecimalFormat._formatToCharacterIterator25431 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "formatToCharacterIterator", "(Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;");
+			global::java.text.DecimalFormat._getRoundingMode25432 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getRoundingMode", "()Ljava/math/RoundingMode;");
+			global::java.text.DecimalFormat._applyPattern25433 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "applyPattern", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._toPattern25434 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "toPattern", "()Ljava/lang/String;");
+			global::java.text.DecimalFormat._getMaximumIntegerDigits25435 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMaximumIntegerDigits", "()I");
+			global::java.text.DecimalFormat._setMaximumIntegerDigits25436 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMaximumIntegerDigits", "(I)V");
+			global::java.text.DecimalFormat._getMinimumIntegerDigits25437 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMinimumIntegerDigits", "()I");
+			global::java.text.DecimalFormat._setMinimumIntegerDigits25438 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMinimumIntegerDigits", "(I)V");
+			global::java.text.DecimalFormat._getMaximumFractionDigits25439 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMaximumFractionDigits", "()I");
+			global::java.text.DecimalFormat._setMaximumFractionDigits25440 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMaximumFractionDigits", "(I)V");
+			global::java.text.DecimalFormat._getMinimumFractionDigits25441 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMinimumFractionDigits", "()I");
+			global::java.text.DecimalFormat._setMinimumFractionDigits25442 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMinimumFractionDigits", "(I)V");
+			global::java.text.DecimalFormat._getCurrency25443 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getCurrency", "()Ljava/util/Currency;");
+			global::java.text.DecimalFormat._setCurrency25444 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setCurrency", "(Ljava/util/Currency;)V");
+			global::java.text.DecimalFormat._setRoundingMode25445 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setRoundingMode", "(Ljava/math/RoundingMode;)V");
+			global::java.text.DecimalFormat._setDecimalSeparatorAlwaysShown25446 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setDecimalSeparatorAlwaysShown", "(Z)V");
+			global::java.text.DecimalFormat._getDecimalFormatSymbols25447 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getDecimalFormatSymbols", "()Ljava/text/DecimalFormatSymbols;");
+			global::java.text.DecimalFormat._setDecimalFormatSymbols25448 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setDecimalFormatSymbols", "(Ljava/text/DecimalFormatSymbols;)V");
+			global::java.text.DecimalFormat._getPositivePrefix25449 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getPositivePrefix", "()Ljava/lang/String;");
+			global::java.text.DecimalFormat._setPositivePrefix25450 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setPositivePrefix", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._getNegativePrefix25451 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getNegativePrefix", "()Ljava/lang/String;");
+			global::java.text.DecimalFormat._setNegativePrefix25452 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setNegativePrefix", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._getPositiveSuffix25453 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getPositiveSuffix", "()Ljava/lang/String;");
+			global::java.text.DecimalFormat._setPositiveSuffix25454 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setPositiveSuffix", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._getNegativeSuffix25455 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getNegativeSuffix", "()Ljava/lang/String;");
+			global::java.text.DecimalFormat._setNegativeSuffix25456 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setNegativeSuffix", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._getMultiplier25457 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getMultiplier", "()I");
+			global::java.text.DecimalFormat._setMultiplier25458 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setMultiplier", "(I)V");
+			global::java.text.DecimalFormat._getGroupingSize25459 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "getGroupingSize", "()I");
+			global::java.text.DecimalFormat._setGroupingSize25460 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setGroupingSize", "(I)V");
+			global::java.text.DecimalFormat._isDecimalSeparatorAlwaysShown25461 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "isDecimalSeparatorAlwaysShown", "()Z");
+			global::java.text.DecimalFormat._isParseBigDecimal25462 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "isParseBigDecimal", "()Z");
+			global::java.text.DecimalFormat._setParseBigDecimal25463 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "setParseBigDecimal", "(Z)V");
+			global::java.text.DecimalFormat._toLocalizedPattern25464 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "toLocalizedPattern", "()Ljava/lang/String;");
+			global::java.text.DecimalFormat._applyLocalizedPattern25465 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "applyLocalizedPattern", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._DecimalFormat25466 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.text.DecimalFormat._DecimalFormat25467 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V");
+			global::java.text.DecimalFormat._DecimalFormat25468 = @__env.GetMethodIDNoThrow(global::java.text.DecimalFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

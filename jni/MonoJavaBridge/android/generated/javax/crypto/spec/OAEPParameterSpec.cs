@@ -18,14 +18,14 @@ namespace javax.crypto.spec
 				return getDigestAlgorithm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm28785;
+		internal static global::MonoJavaBridge.MethodId _getDigestAlgorithm28786;
 		public virtual global::java.lang.String getDigestAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28785)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28785)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786)) as java.lang.String;
 		}
 		public new global::java.lang.String MGFAlgorithm
 		{
@@ -34,14 +34,14 @@ namespace javax.crypto.spec
 				return getMGFAlgorithm();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMGFAlgorithm28786;
+		internal static global::MonoJavaBridge.MethodId _getMGFAlgorithm28787;
 		public virtual global::java.lang.String getMGFAlgorithm()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28786)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28786)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787)) as java.lang.String;
 		}
 		public new global::java.security.spec.AlgorithmParameterSpec MGFParameters
 		{
@@ -50,14 +50,14 @@ namespace javax.crypto.spec
 				return getMGFParameters();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMGFParameters28787;
+		internal static global::MonoJavaBridge.MethodId _getMGFParameters28788;
 		public virtual global::java.security.spec.AlgorithmParameterSpec getMGFParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28787)) as java.security.spec.AlgorithmParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788)) as java.security.spec.AlgorithmParameterSpec;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28787)) as java.security.spec.AlgorithmParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.security.spec.AlgorithmParameterSpec>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788)) as java.security.spec.AlgorithmParameterSpec;
 		}
 		public new global::javax.crypto.spec.PSource PSource
 		{
@@ -66,41 +66,41 @@ namespace javax.crypto.spec
 				return getPSource();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPSource28788;
+		internal static global::MonoJavaBridge.MethodId _getPSource28789;
 		public virtual global::javax.crypto.spec.PSource getPSource()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getPSource28788)) as javax.crypto.spec.PSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec._getPSource28789)) as javax.crypto.spec.PSource;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getPSource28788)) as javax.crypto.spec.PSource;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._getPSource28789)) as javax.crypto.spec.PSource;
 		}
-		internal static global::MonoJavaBridge.MethodId _OAEPParameterSpec28789;
+		internal static global::MonoJavaBridge.MethodId _OAEPParameterSpec28790;
 		public OAEPParameterSpec(java.lang.String arg0, java.lang.String arg1, java.security.spec.AlgorithmParameterSpec arg2, javax.crypto.spec.PSource arg3) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._OAEPParameterSpec28789, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.OAEPParameterSpec.staticClass, global::javax.crypto.spec.OAEPParameterSpec._OAEPParameterSpec28790, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg3));
 			Init(@__env, handle);
 		}
-		internal static global::MonoJavaBridge.FieldId _DEFAULT28790;
+		internal static global::MonoJavaBridge.FieldId _DEFAULT28791;
 		public static global::javax.crypto.spec.OAEPParameterSpec DEFAULT
 		{
 			get
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.crypto.spec.OAEPParameterSpec.staticClass, _DEFAULT28790)) as javax.crypto.spec.OAEPParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.GetStaticObjectField(global::javax.crypto.spec.OAEPParameterSpec.staticClass, _DEFAULT28791)) as javax.crypto.spec.OAEPParameterSpec;
 			}
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.OAEPParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/OAEPParameterSpec"));
-			global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28785 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;");
-			global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28786 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFAlgorithm", "()Ljava/lang/String;");
-			global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28787 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;");
-			global::javax.crypto.spec.OAEPParameterSpec._getPSource28788 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getPSource", "()Ljavax/crypto/spec/PSource;");
-			global::javax.crypto.spec.OAEPParameterSpec._OAEPParameterSpec28789 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/spec/PSource;)V");
-			global::javax.crypto.spec.OAEPParameterSpec._DEFAULT28790 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "DEFAULT", "Ljavax/crypto/spec/OAEPParameterSpec;");
+			global::javax.crypto.spec.OAEPParameterSpec._getDigestAlgorithm28786 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getDigestAlgorithm", "()Ljava/lang/String;");
+			global::javax.crypto.spec.OAEPParameterSpec._getMGFAlgorithm28787 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFAlgorithm", "()Ljava/lang/String;");
+			global::javax.crypto.spec.OAEPParameterSpec._getMGFParameters28788 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getMGFParameters", "()Ljava/security/spec/AlgorithmParameterSpec;");
+			global::javax.crypto.spec.OAEPParameterSpec._getPSource28789 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "getPSource", "()Ljavax/crypto/spec/PSource;");
+			global::javax.crypto.spec.OAEPParameterSpec._OAEPParameterSpec28790 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/spec/PSource;)V");
+			global::javax.crypto.spec.OAEPParameterSpec._DEFAULT28791 = @__env.GetStaticFieldIDNoThrow(global::javax.crypto.spec.OAEPParameterSpec.staticClass, "DEFAULT", "Ljavax/crypto/spec/OAEPParameterSpec;");
 		}
 	}
 }

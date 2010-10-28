@@ -238,6 +238,10 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._scheduleDrawable6174, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public void scheduleDrawable(android.graphics.drawable.Drawable arg0, global::java.lang.RunnableDelegate arg1, long arg2)
+		{
+			scheduleDrawable(arg0, (global::java.lang.RunnableDelegateWrapper)arg1, arg2);
+		}
 		internal static global::MonoJavaBridge.MethodId _unscheduleDrawable6175;
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1)
 		{
@@ -246,6 +250,10 @@ namespace android.graphics.drawable
 				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable._unscheduleDrawable6175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.RotateDrawable.staticClass, global::android.graphics.drawable.RotateDrawable._unscheduleDrawable6175, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public void unscheduleDrawable(android.graphics.drawable.Drawable arg0, global::java.lang.RunnableDelegate arg1)
+		{
+			unscheduleDrawable(arg0, (global::java.lang.RunnableDelegateWrapper)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _RotateDrawable6176;
 		public RotateDrawable() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)

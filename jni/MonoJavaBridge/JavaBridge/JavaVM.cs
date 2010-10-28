@@ -33,6 +33,7 @@ namespace MonoJavaBridge
     [ReflectionPermission(SecurityAction.Assert, Unrestricted = true)]
     public unsafe partial class JavaVM
     {
+        internal static JavaVM defaultVM;
         private readonly IntPtr native;
         private JNIInvokeInterface functions;
 
@@ -71,9 +72,20 @@ namespace MonoJavaBridge
         private Delegates.DetachCurrentThread detachCurrentThread;
         private Delegates.GetEnv getEnv;
 
+  
+        public JniGlobalHandle DefaultClassLoader
+        {
+            get;
+            set;
+        }
+        internal MethodId findClass;
+        
         public JavaVM(IntPtr native)
         {
+            if (defaultVM != null)
+                throw new Exception("Why is a second VM being initialized?");
             this.native = native;
+            defaultVM = this;
             functions = *(*(JavaPtr*) native.ToPointer()).functions;
 
             Helper.GetDelegateForFunctionPointer(functions.AttachCurrentThreadAsDaemon, ref attachCurrentThreadAsDaemon);
@@ -81,6 +93,10 @@ namespace MonoJavaBridge
             Helper.GetDelegateForFunctionPointer(functions.DestroyJavaVM, ref destroyJavaVM);
             Helper.GetDelegateForFunctionPointer(functions.DetachCurrentThread, ref detachCurrentThread);
             Helper.GetDelegateForFunctionPointer(functions.GetEnv, ref getEnv);
+            
+            var env = JNIEnv.ThreadEnv;
+            var classLoaderClass = env.FindClass("java/lang/ClassLoader");
+            findClass = env.GetMethodID(classLoaderClass, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;");
         }
 
         public JNIResult AttachCurrentThread(out JNIEnv penv, JavaVMInitArgs? args)

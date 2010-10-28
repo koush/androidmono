@@ -94,7 +94,7 @@ namespace MonoDroid
                     field.ContainingType = type;
                 }
                 
-                type.IsDelegate = type.IsInterface && type.Methods.Count == 1 && type.Interfaces.Count == 0 && type.Name.StartsWith("android.");
+                type.IsDelegate = type.Name == "java.lang.Runnable" || (type.IsInterface && type.Methods.Count == 1 && type.Interfaces.Count == 0 && type.Name.StartsWith("android."));
 				
 				foreach (var method in type.Methods)
 				{

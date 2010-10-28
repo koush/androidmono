@@ -11,18 +11,18 @@ namespace javax.crypto
 		protected NullCipher(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _NullCipher28706;
+		internal static global::MonoJavaBridge.MethodId _NullCipher28707;
 		public NullCipher() : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.NullCipher.staticClass, global::javax.crypto.NullCipher._NullCipher28706);
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.NullCipher.staticClass, global::javax.crypto.NullCipher._NullCipher28707);
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.NullCipher.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/NullCipher"));
-			global::javax.crypto.NullCipher._NullCipher28706 = @__env.GetMethodIDNoThrow(global::javax.crypto.NullCipher.staticClass, "<init>", "()V");
+			global::javax.crypto.NullCipher._NullCipher28707 = @__env.GetMethodIDNoThrow(global::javax.crypto.NullCipher.staticClass, "<init>", "()V");
 		}
 	}
 }

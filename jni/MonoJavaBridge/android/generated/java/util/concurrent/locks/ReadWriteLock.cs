@@ -18,30 +18,30 @@ namespace java.util.concurrent.locks
 		internal ReadWriteLock_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _readLock27752;
+		internal static global::MonoJavaBridge.MethodId _readLock27753;
 		global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.readLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_._readLock27752)) as java.util.concurrent.locks.Lock;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_._readLock27753)) as java.util.concurrent.locks.Lock;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, global::java.util.concurrent.locks.ReadWriteLock_._readLock27752)) as java.util.concurrent.locks.Lock;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, global::java.util.concurrent.locks.ReadWriteLock_._readLock27753)) as java.util.concurrent.locks.Lock;
 		}
-		internal static global::MonoJavaBridge.MethodId _writeLock27753;
+		internal static global::MonoJavaBridge.MethodId _writeLock27754;
 		global::java.util.concurrent.locks.Lock java.util.concurrent.locks.ReadWriteLock.writeLock()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_._writeLock27753)) as java.util.concurrent.locks.Lock;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754)) as java.util.concurrent.locks.Lock;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, global::java.util.concurrent.locks.ReadWriteLock_._writeLock27753)) as java.util.concurrent.locks.Lock;
+				return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.concurrent.locks.Lock>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.concurrent.locks.ReadWriteLock_.staticClass, global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754)) as java.util.concurrent.locks.Lock;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.concurrent.locks.ReadWriteLock_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/concurrent/locks/ReadWriteLock"));
-			global::java.util.concurrent.locks.ReadWriteLock_._readLock27752 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "readLock", "()Ljava/util/concurrent/locks/Lock;");
-			global::java.util.concurrent.locks.ReadWriteLock_._writeLock27753 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "writeLock", "()Ljava/util/concurrent/locks/Lock;");
+			global::java.util.concurrent.locks.ReadWriteLock_._readLock27753 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "readLock", "()Ljava/util/concurrent/locks/Lock;");
+			global::java.util.concurrent.locks.ReadWriteLock_._writeLock27754 = @__env.GetMethodIDNoThrow(global::java.util.concurrent.locks.ReadWriteLock_.staticClass, "writeLock", "()Ljava/util/concurrent/locks/Lock;");
 		}
 	}
 }

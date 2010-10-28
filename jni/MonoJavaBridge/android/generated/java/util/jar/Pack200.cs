@@ -32,44 +32,35 @@ namespace java.util.jar
 			internal Packer_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _properties27897;
+			internal static global::MonoJavaBridge.MethodId _properties27898;
 			global::java.util.SortedMap java.util.jar.Pack200.Packer.properties()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._properties27897)) as java.util.SortedMap;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._properties27898)) as java.util.SortedMap;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._properties27897)) as java.util.SortedMap;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._properties27898)) as java.util.SortedMap;
 			}
-			internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener27898;
+			internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener27899;
 			void java.util.jar.Pack200.Packer.addPropertyChangeListener(java.beans.PropertyChangeListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._addPropertyChangeListener27898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._addPropertyChangeListener27899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._addPropertyChangeListener27898, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._addPropertyChangeListener27899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener27899;
+			internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener27900;
 			void java.util.jar.Pack200.Packer.removePropertyChangeListener(java.beans.PropertyChangeListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._removePropertyChangeListener27899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._removePropertyChangeListener27900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._removePropertyChangeListener27899, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			}
-			internal static global::MonoJavaBridge.MethodId _pack27900;
-			void java.util.jar.Pack200.Packer.pack(java.util.jar.JarFile arg0, java.io.OutputStream arg1)
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._pack27900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._pack27900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._removePropertyChangeListener27900, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _pack27901;
-			void java.util.jar.Pack200.Packer.pack(java.util.jar.JarInputStream arg0, java.io.OutputStream arg1)
+			void java.util.jar.Pack200.Packer.pack(java.util.jar.JarFile arg0, java.io.OutputStream arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -77,15 +68,24 @@ namespace java.util.jar
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._pack27901, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
+			internal static global::MonoJavaBridge.MethodId _pack27902;
+			void java.util.jar.Pack200.Packer.pack(java.util.jar.JarInputStream arg0, java.io.OutputStream arg1)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_._pack27902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				else
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Packer_.staticClass, global::java.util.jar.Pack200.Packer_._pack27902, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.jar.Pack200.Packer_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Pack200$Packer"));
-				global::java.util.jar.Pack200.Packer_._properties27897 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "properties", "()Ljava/util/SortedMap;");
-				global::java.util.jar.Pack200.Packer_._addPropertyChangeListener27898 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
-				global::java.util.jar.Pack200.Packer_._removePropertyChangeListener27899 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
-				global::java.util.jar.Pack200.Packer_._pack27900 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "pack", "(Ljava/util/jar/JarFile;Ljava/io/OutputStream;)V");
-				global::java.util.jar.Pack200.Packer_._pack27901 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "pack", "(Ljava/util/jar/JarInputStream;Ljava/io/OutputStream;)V");
+				global::java.util.jar.Pack200.Packer_._properties27898 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "properties", "()Ljava/util/SortedMap;");
+				global::java.util.jar.Pack200.Packer_._addPropertyChangeListener27899 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
+				global::java.util.jar.Pack200.Packer_._removePropertyChangeListener27900 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
+				global::java.util.jar.Pack200.Packer_._pack27901 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "pack", "(Ljava/util/jar/JarFile;Ljava/io/OutputStream;)V");
+				global::java.util.jar.Pack200.Packer_._pack27902 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Packer_.staticClass, "pack", "(Ljava/util/jar/JarInputStream;Ljava/io/OutputStream;)V");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -246,44 +246,35 @@ namespace java.util.jar
 			internal Unpacker_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::MonoJavaBridge.MethodId _properties27921;
+			internal static global::MonoJavaBridge.MethodId _properties27922;
 			global::java.util.SortedMap java.util.jar.Pack200.Unpacker.properties()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._properties27921)) as java.util.SortedMap;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._properties27922)) as java.util.SortedMap;
 				else
-					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._properties27921)) as java.util.SortedMap;
+					return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.SortedMap>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._properties27922)) as java.util.SortedMap;
 			}
-			internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener27922;
+			internal static global::MonoJavaBridge.MethodId _addPropertyChangeListener27923;
 			void java.util.jar.Pack200.Unpacker.addPropertyChangeListener(java.beans.PropertyChangeListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._addPropertyChangeListener27922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._addPropertyChangeListener27923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._addPropertyChangeListener27922, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._addPropertyChangeListener27923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
-			internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener27923;
+			internal static global::MonoJavaBridge.MethodId _removePropertyChangeListener27924;
 			void java.util.jar.Pack200.Unpacker.removePropertyChangeListener(java.beans.PropertyChangeListener arg0)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._removePropertyChangeListener27923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._removePropertyChangeListener27924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._removePropertyChangeListener27923, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
-			}
-			internal static global::MonoJavaBridge.MethodId _unpack27924;
-			void java.util.jar.Pack200.Unpacker.unpack(java.io.InputStream arg0, java.util.jar.JarOutputStream arg1)
-			{
-				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._unpack27924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
-				else
-					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._unpack27924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._removePropertyChangeListener27924, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			}
 			internal static global::MonoJavaBridge.MethodId _unpack27925;
-			void java.util.jar.Pack200.Unpacker.unpack(java.io.File arg0, java.util.jar.JarOutputStream arg1)
+			void java.util.jar.Pack200.Unpacker.unpack(java.io.InputStream arg0, java.util.jar.JarOutputStream arg1)
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
@@ -291,15 +282,24 @@ namespace java.util.jar
 				else
 					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._unpack27925, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			}
+			internal static global::MonoJavaBridge.MethodId _unpack27926;
+			void java.util.jar.Pack200.Unpacker.unpack(java.io.File arg0, java.util.jar.JarOutputStream arg1)
+			{
+				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					@__env.CallVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_._unpack27926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				else
+					@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.jar.Pack200.Unpacker_.staticClass, global::java.util.jar.Pack200.Unpacker_._unpack27926, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			}
 			private static void InitJNI()
 			{
 				global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 				global::java.util.jar.Pack200.Unpacker_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Pack200$Unpacker"));
-				global::java.util.jar.Pack200.Unpacker_._properties27921 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "properties", "()Ljava/util/SortedMap;");
-				global::java.util.jar.Pack200.Unpacker_._addPropertyChangeListener27922 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
-				global::java.util.jar.Pack200.Unpacker_._removePropertyChangeListener27923 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
-				global::java.util.jar.Pack200.Unpacker_._unpack27924 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "unpack", "(Ljava/io/InputStream;Ljava/util/jar/JarOutputStream;)V");
-				global::java.util.jar.Pack200.Unpacker_._unpack27925 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "unpack", "(Ljava/io/File;Ljava/util/jar/JarOutputStream;)V");
+				global::java.util.jar.Pack200.Unpacker_._properties27922 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "properties", "()Ljava/util/SortedMap;");
+				global::java.util.jar.Pack200.Unpacker_._addPropertyChangeListener27923 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
+				global::java.util.jar.Pack200.Unpacker_._removePropertyChangeListener27924 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V");
+				global::java.util.jar.Pack200.Unpacker_._unpack27925 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "unpack", "(Ljava/io/InputStream;Ljava/util/jar/JarOutputStream;)V");
+				global::java.util.jar.Pack200.Unpacker_._unpack27926 = @__env.GetMethodIDNoThrow(global::java.util.jar.Pack200.Unpacker_.staticClass, "unpack", "(Ljava/io/File;Ljava/util/jar/JarOutputStream;)V");
 			}
 		}
 		[global::MonoJavaBridge.JavaClass()]
@@ -341,24 +341,24 @@ namespace java.util.jar
 				}
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _newPacker27931;
+		internal static global::MonoJavaBridge.MethodId _newPacker27932;
 		public static global::java.util.jar.Pack200.Packer newPacker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.jar.Pack200.Packer>(@__env.CallStaticObjectMethod(java.util.jar.Pack200.staticClass, global::java.util.jar.Pack200._newPacker27931)) as java.util.jar.Pack200.Packer;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.jar.Pack200.Packer>(@__env.CallStaticObjectMethod(java.util.jar.Pack200.staticClass, global::java.util.jar.Pack200._newPacker27932)) as java.util.jar.Pack200.Packer;
 		}
-		internal static global::MonoJavaBridge.MethodId _newUnpacker27932;
+		internal static global::MonoJavaBridge.MethodId _newUnpacker27933;
 		public static global::java.util.jar.Pack200.Unpacker newUnpacker()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.jar.Pack200.Unpacker>(@__env.CallStaticObjectMethod(java.util.jar.Pack200.staticClass, global::java.util.jar.Pack200._newUnpacker27932)) as java.util.jar.Pack200.Unpacker;
+			return global::MonoJavaBridge.JavaBridge.WrapIJavaObject<global::java.util.jar.Pack200.Unpacker>(@__env.CallStaticObjectMethod(java.util.jar.Pack200.staticClass, global::java.util.jar.Pack200._newUnpacker27933)) as java.util.jar.Pack200.Unpacker;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.jar.Pack200.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/jar/Pack200"));
-			global::java.util.jar.Pack200._newPacker27931 = @__env.GetStaticMethodIDNoThrow(global::java.util.jar.Pack200.staticClass, "newPacker", "()Ljava/util/jar/Pack200$Packer;");
-			global::java.util.jar.Pack200._newUnpacker27932 = @__env.GetStaticMethodIDNoThrow(global::java.util.jar.Pack200.staticClass, "newUnpacker", "()Ljava/util/jar/Pack200$Unpacker;");
+			global::java.util.jar.Pack200._newPacker27932 = @__env.GetStaticMethodIDNoThrow(global::java.util.jar.Pack200.staticClass, "newPacker", "()Ljava/util/jar/Pack200$Packer;");
+			global::java.util.jar.Pack200._newUnpacker27933 = @__env.GetStaticMethodIDNoThrow(global::java.util.jar.Pack200.staticClass, "newUnpacker", "()Ljava/util/jar/Pack200$Unpacker;");
 		}
 	}
 

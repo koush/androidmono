@@ -409,6 +409,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._waitForIdle1869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public void waitForIdle(global::java.lang.RunnableDelegate arg0)
+		{
+			waitForIdle((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _waitForIdleSync1870;
 		public virtual void waitForIdleSync()
 		{
@@ -426,6 +430,10 @@ namespace android.app
 				@__env.CallVoidMethod(this.JvmHandle, global::android.app.Instrumentation._runOnMainSync1871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._runOnMainSync1871, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public void runOnMainSync(global::java.lang.RunnableDelegate arg0)
+		{
+			runOnMainSync((global::java.lang.RunnableDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _startActivitySync1872;
 		public virtual global::android.app.Activity startActivitySync(android.content.Intent arg0)

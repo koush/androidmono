@@ -18,14 +18,14 @@ namespace java.security.spec
 				return getModulus();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getModulus24073;
+		internal static global::MonoJavaBridge.MethodId _getModulus24074;
 		public virtual global::java.math.BigInteger getModulus()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec._getModulus24073)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec._getModulus24074)) as java.math.BigInteger;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec.staticClass, global::java.security.spec.RSAPublicKeySpec._getModulus24073)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec.staticClass, global::java.security.spec.RSAPublicKeySpec._getModulus24074)) as java.math.BigInteger;
 		}
 		public new global::java.math.BigInteger PublicExponent
 		{
@@ -34,29 +34,29 @@ namespace java.security.spec
 				return getPublicExponent();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getPublicExponent24074;
+		internal static global::MonoJavaBridge.MethodId _getPublicExponent24075;
 		public virtual global::java.math.BigInteger getPublicExponent()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec._getPublicExponent24074)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec._getPublicExponent24075)) as java.math.BigInteger;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec.staticClass, global::java.security.spec.RSAPublicKeySpec._getPublicExponent24074)) as java.math.BigInteger;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.security.spec.RSAPublicKeySpec.staticClass, global::java.security.spec.RSAPublicKeySpec._getPublicExponent24075)) as java.math.BigInteger;
 		}
-		internal static global::MonoJavaBridge.MethodId _RSAPublicKeySpec24075;
+		internal static global::MonoJavaBridge.MethodId _RSAPublicKeySpec24076;
 		public RSAPublicKeySpec(java.math.BigInteger arg0, java.math.BigInteger arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAPublicKeySpec.staticClass, global::java.security.spec.RSAPublicKeySpec._RSAPublicKeySpec24075, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.security.spec.RSAPublicKeySpec.staticClass, global::java.security.spec.RSAPublicKeySpec._RSAPublicKeySpec24076, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.security.spec.RSAPublicKeySpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/security/spec/RSAPublicKeySpec"));
-			global::java.security.spec.RSAPublicKeySpec._getModulus24073 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPublicKeySpec.staticClass, "getModulus", "()Ljava/math/BigInteger;");
-			global::java.security.spec.RSAPublicKeySpec._getPublicExponent24074 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPublicKeySpec.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
-			global::java.security.spec.RSAPublicKeySpec._RSAPublicKeySpec24075 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPublicKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
+			global::java.security.spec.RSAPublicKeySpec._getModulus24074 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPublicKeySpec.staticClass, "getModulus", "()Ljava/math/BigInteger;");
+			global::java.security.spec.RSAPublicKeySpec._getPublicExponent24075 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPublicKeySpec.staticClass, "getPublicExponent", "()Ljava/math/BigInteger;");
+			global::java.security.spec.RSAPublicKeySpec._RSAPublicKeySpec24076 = @__env.GetMethodIDNoThrow(global::java.security.spec.RSAPublicKeySpec.staticClass, "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V");
 		}
 	}
 }

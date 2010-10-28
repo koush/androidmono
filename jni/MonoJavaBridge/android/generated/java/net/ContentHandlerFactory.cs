@@ -17,20 +17,20 @@ namespace java.net
 		internal ContentHandlerFactory_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _createContentHandler21364;
+		internal static global::MonoJavaBridge.MethodId _createContentHandler21365;
 		global::java.net.ContentHandler java.net.ContentHandlerFactory.createContentHandler(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_._createContentHandler21364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_.staticClass, global::java.net.ContentHandlerFactory_._createContentHandler21364, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.net.ContentHandlerFactory_.staticClass, global::java.net.ContentHandlerFactory_._createContentHandler21365, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0))) as java.net.ContentHandler;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.net.ContentHandlerFactory_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/net/ContentHandlerFactory"));
-			global::java.net.ContentHandlerFactory_._createContentHandler21364 = @__env.GetMethodIDNoThrow(global::java.net.ContentHandlerFactory_.staticClass, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;");
+			global::java.net.ContentHandlerFactory_._createContentHandler21365 = @__env.GetMethodIDNoThrow(global::java.net.ContentHandlerFactory_.staticClass, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;");
 		}
 	}
 }

@@ -372,6 +372,8 @@ namespace MonoDroid
                 var delegateWrapper = new Type();
                 delegateWrapper.Name = interfaceType.Name + "DelegateWrapper";
                 delegateWrapper.NativeName = interfaceType.NativeName.Replace('$', '_') + "DelegateWrapper";
+                if (delegateWrapper.NativeName.StartsWith("java."))
+                    delegateWrapper.NativeName = delegateWrapper.NativeName.Replace("java.", "internal.java.");
                 delegateWrapper.HasEmptyConstructor = true;
                 delegateWrapper.Scope = "internal";
                 delegateWrapper.Parent = "java.lang.Object";

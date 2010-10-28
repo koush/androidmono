@@ -81,6 +81,10 @@ namespace android.test
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.test.InstrumentationTestCase.staticClass, global::android.test.InstrumentationTestCase._runTestOnUiThread12192, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public void runTestOnUiThread(global::java.lang.RunnableDelegate arg0)
+		{
+			runTestOnUiThread((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _runTest12193;
 		protected override void runTest()
 		{

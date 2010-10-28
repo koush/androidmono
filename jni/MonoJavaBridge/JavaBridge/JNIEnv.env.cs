@@ -29,22 +29,16 @@ namespace MonoJavaBridge
 {
     unsafe partial class JNIEnv
     {
-        public static JavaVM defaultVM;
         [ThreadStatic] public static JNIEnv threadJNIEnv;
 
         public readonly IntPtr envPtr;
         private JNINativeInterface functions;
-        private JavaVM javaVM;
 
         public JNIEnv(IntPtr native)
         {
             this.envPtr = native;
             functions = *(*(JavaPtr*) native.ToPointer()).functions;
             InitMethods();
-            if (defaultVM == null)
-            {
-                defaultVM = GetJavaVM();
-            }
         }
 
         public static JNIEnv ThreadEnv
@@ -54,12 +48,7 @@ namespace MonoJavaBridge
             {
                 if (threadJNIEnv == null)
                 {
-                    if (defaultVM == null)
-                    {
-                        throw new JNIException(
-                            "AttachCurrentThreadAsDaemon failed: Java VM is not attached, call JNI.CreateJavaVM() first");
-                    }
-                    JNIResult result = defaultVM.AttachCurrentThreadAsDaemon(out threadJNIEnv, null);
+                    JNIResult result = JavaVM.defaultVM.AttachCurrentThreadAsDaemon(out threadJNIEnv, null);
                     if (result != JNIResult.JNI_OK)
                     {
                         throw new JNIException("AttachCurrentThreadAsDaemon failed: " + result);

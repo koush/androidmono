@@ -22,14 +22,14 @@ namespace java.util.logging
 				setMessage(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMessage28010;
+		internal static global::MonoJavaBridge.MethodId _getMessage28011;
 		public virtual global::java.lang.String getMessage()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getMessage28010)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getMessage28011)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getMessage28010)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getMessage28011)) as java.lang.String;
 		}
 		public new global::java.lang.Object[] Parameters
 		{
@@ -42,14 +42,14 @@ namespace java.util.logging
 				setParameters(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getParameters28011;
+		internal static global::MonoJavaBridge.MethodId _getParameters28012;
 		public virtual global::java.lang.Object[] getParameters()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getParameters28011)) as java.lang.Object[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getParameters28012)) as java.lang.Object[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getParameters28011)) as java.lang.Object[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.lang.Object>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getParameters28012)) as java.lang.Object[];
 		}
 		public new long Millis
 		{
@@ -62,32 +62,32 @@ namespace java.util.logging
 				setMillis(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getMillis28012;
+		internal static global::MonoJavaBridge.MethodId _getMillis28013;
 		public virtual long getMillis()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.logging.LogRecord._getMillis28012);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.logging.LogRecord._getMillis28013);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getMillis28012);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getMillis28013);
 		}
-		internal static global::MonoJavaBridge.MethodId _setMillis28013;
+		internal static global::MonoJavaBridge.MethodId _setMillis28014;
 		public virtual void setMillis(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setMillis28013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setMillis28014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setMillis28013, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setMillis28014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setLevel28014;
+		internal static global::MonoJavaBridge.MethodId _setLevel28015;
 		public virtual void setLevel(java.util.logging.Level arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setLevel28014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setLevel28015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setLevel28014, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setLevel28015, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.logging.Level Level
 		{
@@ -100,32 +100,32 @@ namespace java.util.logging
 				setLevel(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLevel28015;
+		internal static global::MonoJavaBridge.MethodId _getLevel28016;
 		public virtual global::java.util.logging.Level getLevel()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getLevel28015)) as java.util.logging.Level;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getLevel28016)) as java.util.logging.Level;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getLevel28015)) as java.util.logging.Level;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getLevel28016)) as java.util.logging.Level;
 		}
-		internal static global::MonoJavaBridge.MethodId _setMessage28016;
+		internal static global::MonoJavaBridge.MethodId _setMessage28017;
 		public virtual void setMessage(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setMessage28016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setMessage28017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setMessage28016, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setMessage28017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setParameters28017;
+		internal static global::MonoJavaBridge.MethodId _setParameters28018;
 		public virtual void setParameters(java.lang.Object[] arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setParameters28017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setParameters28018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setParameters28017, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setParameters28018, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.util.ResourceBundle ResourceBundle
 		{
@@ -138,14 +138,14 @@ namespace java.util.logging
 				setResourceBundle(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getResourceBundle28018;
+		internal static global::MonoJavaBridge.MethodId _getResourceBundle28019;
 		public virtual global::java.util.ResourceBundle getResourceBundle()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getResourceBundle28018)) as java.util.ResourceBundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getResourceBundle28019)) as java.util.ResourceBundle;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getResourceBundle28018)) as java.util.ResourceBundle;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getResourceBundle28019)) as java.util.ResourceBundle;
 		}
 		public new global::java.lang.String ResourceBundleName
 		{
@@ -158,68 +158,68 @@ namespace java.util.logging
 				setResourceBundleName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getResourceBundleName28019;
+		internal static global::MonoJavaBridge.MethodId _getResourceBundleName28020;
 		public virtual global::java.lang.String getResourceBundleName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getResourceBundleName28019)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getResourceBundleName28020)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getResourceBundleName28019)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getResourceBundleName28020)) as java.lang.String;
 		}
-		internal static global::MonoJavaBridge.MethodId _setLoggerName28020;
+		internal static global::MonoJavaBridge.MethodId _setLoggerName28021;
 		public virtual void setLoggerName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setLoggerName28020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setLoggerName28021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setLoggerName28020, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setLoggerName28021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setResourceBundleName28021;
+		internal static global::MonoJavaBridge.MethodId _setResourceBundleName28022;
 		public virtual void setResourceBundleName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setResourceBundleName28021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setResourceBundleName28022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setResourceBundleName28021, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setResourceBundleName28022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setResourceBundle28022;
+		internal static global::MonoJavaBridge.MethodId _setResourceBundle28023;
 		public virtual void setResourceBundle(java.util.ResourceBundle arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setResourceBundle28022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setResourceBundle28023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setResourceBundle28022, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setResourceBundle28023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setThrown28023;
+		internal static global::MonoJavaBridge.MethodId _setThrown28024;
 		public virtual void setThrown(java.lang.Throwable arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setThrown28023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setThrown28024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setThrown28023, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setThrown28024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSourceClassName28024;
+		internal static global::MonoJavaBridge.MethodId _setSourceClassName28025;
 		public virtual void setSourceClassName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setSourceClassName28024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setSourceClassName28025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setSourceClassName28024, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setSourceClassName28025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
-		internal static global::MonoJavaBridge.MethodId _setSourceMethodName28025;
+		internal static global::MonoJavaBridge.MethodId _setSourceMethodName28026;
 		public virtual void setSourceMethodName(java.lang.String arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setSourceMethodName28025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setSourceMethodName28026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setSourceMethodName28025, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setSourceMethodName28026, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String LoggerName
 		{
@@ -232,14 +232,14 @@ namespace java.util.logging
 				setLoggerName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getLoggerName28026;
+		internal static global::MonoJavaBridge.MethodId _getLoggerName28027;
 		public virtual global::java.lang.String getLoggerName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getLoggerName28026)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getLoggerName28027)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getLoggerName28026)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getLoggerName28027)) as java.lang.String;
 		}
 		public new long SequenceNumber
 		{
@@ -252,23 +252,23 @@ namespace java.util.logging
 				setSequenceNumber(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSequenceNumber28027;
+		internal static global::MonoJavaBridge.MethodId _getSequenceNumber28028;
 		public virtual long getSequenceNumber()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this.JvmHandle, global::java.util.logging.LogRecord._getSequenceNumber28027);
+				return @__env.CallLongMethod(this.JvmHandle, global::java.util.logging.LogRecord._getSequenceNumber28028);
 			else
-				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getSequenceNumber28027);
+				return @__env.CallNonVirtualLongMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getSequenceNumber28028);
 		}
-		internal static global::MonoJavaBridge.MethodId _setSequenceNumber28028;
+		internal static global::MonoJavaBridge.MethodId _setSequenceNumber28029;
 		public virtual void setSequenceNumber(long arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setSequenceNumber28028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setSequenceNumber28029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setSequenceNumber28028, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setSequenceNumber28029, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.String SourceClassName
 		{
@@ -281,14 +281,14 @@ namespace java.util.logging
 				setSourceClassName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSourceClassName28029;
+		internal static global::MonoJavaBridge.MethodId _getSourceClassName28030;
 		public virtual global::java.lang.String getSourceClassName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getSourceClassName28029)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getSourceClassName28030)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getSourceClassName28029)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getSourceClassName28030)) as java.lang.String;
 		}
 		public new global::java.lang.String SourceMethodName
 		{
@@ -301,14 +301,14 @@ namespace java.util.logging
 				setSourceMethodName(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSourceMethodName28030;
+		internal static global::MonoJavaBridge.MethodId _getSourceMethodName28031;
 		public virtual global::java.lang.String getSourceMethodName()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getSourceMethodName28030)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getSourceMethodName28031)) as java.lang.String;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getSourceMethodName28030)) as java.lang.String;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObjectSealedClass<java.lang.String>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getSourceMethodName28031)) as java.lang.String;
 		}
 		public new int ThreadID
 		{
@@ -321,23 +321,23 @@ namespace java.util.logging
 				setThreadID(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getThreadID28031;
+		internal static global::MonoJavaBridge.MethodId _getThreadID28032;
 		public virtual int getThreadID()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::java.util.logging.LogRecord._getThreadID28031);
+				return @__env.CallIntMethod(this.JvmHandle, global::java.util.logging.LogRecord._getThreadID28032);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getThreadID28031);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getThreadID28032);
 		}
-		internal static global::MonoJavaBridge.MethodId _setThreadID28032;
+		internal static global::MonoJavaBridge.MethodId _setThreadID28033;
 		public virtual void setThreadID(int arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setThreadID28032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord._setThreadID28033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setThreadID28032, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._setThreadID28033, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		public new global::java.lang.Throwable Thrown
 		{
@@ -350,51 +350,51 @@ namespace java.util.logging
 				setThrown(value);
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getThrown28033;
+		internal static global::MonoJavaBridge.MethodId _getThrown28034;
 		public virtual global::java.lang.Throwable getThrown()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getThrown28033)) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord._getThrown28034)) as java.lang.Throwable;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getThrown28033)) as java.lang.Throwable;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._getThrown28034)) as java.lang.Throwable;
 		}
-		internal static global::MonoJavaBridge.MethodId _LogRecord28034;
+		internal static global::MonoJavaBridge.MethodId _LogRecord28035;
 		public LogRecord(java.util.logging.Level arg0, java.lang.String arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._LogRecord28034, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(java.util.logging.LogRecord.staticClass, global::java.util.logging.LogRecord._LogRecord28035, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.LogRecord.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/LogRecord"));
-			global::java.util.logging.LogRecord._getMessage28010 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getMessage", "()Ljava/lang/String;");
-			global::java.util.logging.LogRecord._getParameters28011 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getParameters", "()[Ljava/lang/Object;");
-			global::java.util.logging.LogRecord._getMillis28012 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getMillis", "()J");
-			global::java.util.logging.LogRecord._setMillis28013 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setMillis", "(J)V");
-			global::java.util.logging.LogRecord._setLevel28014 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setLevel", "(Ljava/util/logging/Level;)V");
-			global::java.util.logging.LogRecord._getLevel28015 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getLevel", "()Ljava/util/logging/Level;");
-			global::java.util.logging.LogRecord._setMessage28016 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setMessage", "(Ljava/lang/String;)V");
-			global::java.util.logging.LogRecord._setParameters28017 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setParameters", "([Ljava/lang/Object;)V");
-			global::java.util.logging.LogRecord._getResourceBundle28018 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getResourceBundle", "()Ljava/util/ResourceBundle;");
-			global::java.util.logging.LogRecord._getResourceBundleName28019 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getResourceBundleName", "()Ljava/lang/String;");
-			global::java.util.logging.LogRecord._setLoggerName28020 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setLoggerName", "(Ljava/lang/String;)V");
-			global::java.util.logging.LogRecord._setResourceBundleName28021 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setResourceBundleName", "(Ljava/lang/String;)V");
-			global::java.util.logging.LogRecord._setResourceBundle28022 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setResourceBundle", "(Ljava/util/ResourceBundle;)V");
-			global::java.util.logging.LogRecord._setThrown28023 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setThrown", "(Ljava/lang/Throwable;)V");
-			global::java.util.logging.LogRecord._setSourceClassName28024 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setSourceClassName", "(Ljava/lang/String;)V");
-			global::java.util.logging.LogRecord._setSourceMethodName28025 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setSourceMethodName", "(Ljava/lang/String;)V");
-			global::java.util.logging.LogRecord._getLoggerName28026 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getLoggerName", "()Ljava/lang/String;");
-			global::java.util.logging.LogRecord._getSequenceNumber28027 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getSequenceNumber", "()J");
-			global::java.util.logging.LogRecord._setSequenceNumber28028 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setSequenceNumber", "(J)V");
-			global::java.util.logging.LogRecord._getSourceClassName28029 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getSourceClassName", "()Ljava/lang/String;");
-			global::java.util.logging.LogRecord._getSourceMethodName28030 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getSourceMethodName", "()Ljava/lang/String;");
-			global::java.util.logging.LogRecord._getThreadID28031 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getThreadID", "()I");
-			global::java.util.logging.LogRecord._setThreadID28032 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setThreadID", "(I)V");
-			global::java.util.logging.LogRecord._getThrown28033 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getThrown", "()Ljava/lang/Throwable;");
-			global::java.util.logging.LogRecord._LogRecord28034 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "<init>", "(Ljava/util/logging/Level;Ljava/lang/String;)V");
+			global::java.util.logging.LogRecord._getMessage28011 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getMessage", "()Ljava/lang/String;");
+			global::java.util.logging.LogRecord._getParameters28012 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getParameters", "()[Ljava/lang/Object;");
+			global::java.util.logging.LogRecord._getMillis28013 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getMillis", "()J");
+			global::java.util.logging.LogRecord._setMillis28014 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setMillis", "(J)V");
+			global::java.util.logging.LogRecord._setLevel28015 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setLevel", "(Ljava/util/logging/Level;)V");
+			global::java.util.logging.LogRecord._getLevel28016 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getLevel", "()Ljava/util/logging/Level;");
+			global::java.util.logging.LogRecord._setMessage28017 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setMessage", "(Ljava/lang/String;)V");
+			global::java.util.logging.LogRecord._setParameters28018 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setParameters", "([Ljava/lang/Object;)V");
+			global::java.util.logging.LogRecord._getResourceBundle28019 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getResourceBundle", "()Ljava/util/ResourceBundle;");
+			global::java.util.logging.LogRecord._getResourceBundleName28020 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getResourceBundleName", "()Ljava/lang/String;");
+			global::java.util.logging.LogRecord._setLoggerName28021 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setLoggerName", "(Ljava/lang/String;)V");
+			global::java.util.logging.LogRecord._setResourceBundleName28022 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setResourceBundleName", "(Ljava/lang/String;)V");
+			global::java.util.logging.LogRecord._setResourceBundle28023 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setResourceBundle", "(Ljava/util/ResourceBundle;)V");
+			global::java.util.logging.LogRecord._setThrown28024 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setThrown", "(Ljava/lang/Throwable;)V");
+			global::java.util.logging.LogRecord._setSourceClassName28025 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setSourceClassName", "(Ljava/lang/String;)V");
+			global::java.util.logging.LogRecord._setSourceMethodName28026 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setSourceMethodName", "(Ljava/lang/String;)V");
+			global::java.util.logging.LogRecord._getLoggerName28027 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getLoggerName", "()Ljava/lang/String;");
+			global::java.util.logging.LogRecord._getSequenceNumber28028 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getSequenceNumber", "()J");
+			global::java.util.logging.LogRecord._setSequenceNumber28029 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setSequenceNumber", "(J)V");
+			global::java.util.logging.LogRecord._getSourceClassName28030 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getSourceClassName", "()Ljava/lang/String;");
+			global::java.util.logging.LogRecord._getSourceMethodName28031 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getSourceMethodName", "()Ljava/lang/String;");
+			global::java.util.logging.LogRecord._getThreadID28032 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getThreadID", "()I");
+			global::java.util.logging.LogRecord._setThreadID28033 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "setThreadID", "(I)V");
+			global::java.util.logging.LogRecord._getThrown28034 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "getThrown", "()Ljava/lang/Throwable;");
+			global::java.util.logging.LogRecord._LogRecord28035 = @__env.GetMethodIDNoThrow(global::java.util.logging.LogRecord.staticClass, "<init>", "(Ljava/util/logging/Level;Ljava/lang/String;)V");
 		}
 	}
 }

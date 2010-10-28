@@ -56,6 +56,10 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.AnimationDrawable.staticClass, global::android.graphics.drawable.AnimationDrawable._unscheduleSelf5841, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public void unscheduleSelf(global::java.lang.RunnableDelegate arg0)
+		{
+			unscheduleSelf((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _setVisible5842;
 		public override bool setVisible(bool arg0, bool arg1)
 		{

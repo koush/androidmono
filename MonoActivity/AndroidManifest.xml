@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.koushikdutta.mono"
       android:versionCode="261" android:versionName="2.6.1"
-      android:installLocation="preferExternal">
+      android:installLocation="internalOnly">
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
         <activity android:name=".MonoActivity"
                   android:label="@string/app_name">

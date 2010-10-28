@@ -879,6 +879,10 @@ namespace android.view
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._post14663, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public bool post(global::java.lang.RunnableDelegate arg0)
+		{
+			return post((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _postDelayed14664;
 		public virtual bool postDelayed(java.lang.Runnable arg0, long arg1)
 		{
@@ -888,6 +892,10 @@ namespace android.view
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._postDelayed14664, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public bool postDelayed(global::java.lang.RunnableDelegate arg0, long arg1)
+		{
+			return postDelayed((global::java.lang.RunnableDelegateWrapper)arg0, arg1);
+		}
 		internal static global::MonoJavaBridge.MethodId _removeCallbacks14665;
 		public virtual bool removeCallbacks(java.lang.Runnable arg0)
 		{
@@ -896,6 +904,10 @@ namespace android.view
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.view.View._removeCallbacks14665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._removeCallbacks14665, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public bool removeCallbacks(global::java.lang.RunnableDelegate arg0)
+		{
+			return removeCallbacks((global::java.lang.RunnableDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _onRestoreInstanceState14666;
 		protected virtual void onRestoreInstanceState(android.os.Parcelable arg0)
@@ -3250,6 +3262,10 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._scheduleDrawable14873, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 		}
+		public void scheduleDrawable(android.graphics.drawable.Drawable arg0, global::java.lang.RunnableDelegate arg1, long arg2)
+		{
+			scheduleDrawable(arg0, (global::java.lang.RunnableDelegateWrapper)arg1, arg2);
+		}
 		internal static global::MonoJavaBridge.MethodId _unscheduleDrawable14874;
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1)
 		{
@@ -3258,6 +3274,10 @@ namespace android.view
 				@__env.CallVoidMethod(this.JvmHandle, global::android.view.View._unscheduleDrawable14874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.view.View.staticClass, global::android.view.View._unscheduleDrawable14874, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public void unscheduleDrawable(android.graphics.drawable.Drawable arg0, global::java.lang.RunnableDelegate arg1)
+		{
+			unscheduleDrawable(arg0, (global::java.lang.RunnableDelegateWrapper)arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _unscheduleDrawable14875;
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0)

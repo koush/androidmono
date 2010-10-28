@@ -18,30 +18,30 @@ namespace javax.security.auth
 		internal Destroyable_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _destroy30166;
+		internal static global::MonoJavaBridge.MethodId _destroy30167;
 		void javax.security.auth.Destroyable.destroy()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._destroy30166);
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._destroy30167);
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._destroy30166);
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._destroy30167);
 		}
-		internal static global::MonoJavaBridge.MethodId _isDestroyed30167;
+		internal static global::MonoJavaBridge.MethodId _isDestroyed30168;
 		bool javax.security.auth.Destroyable.isDestroyed()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._isDestroyed30167);
+				return @__env.CallBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_._isDestroyed30168);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._isDestroyed30167);
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::javax.security.auth.Destroyable_.staticClass, global::javax.security.auth.Destroyable_._isDestroyed30168);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.security.auth.Destroyable_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/security/auth/Destroyable"));
-			global::javax.security.auth.Destroyable_._destroy30166 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V");
-			global::javax.security.auth.Destroyable_._isDestroyed30167 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z");
+			global::javax.security.auth.Destroyable_._destroy30167 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "destroy", "()V");
+			global::javax.security.auth.Destroyable_._isDestroyed30168 = @__env.GetMethodIDNoThrow(global::javax.security.auth.Destroyable_.staticClass, "isDestroyed", "()Z");
 		}
 	}
 }

@@ -18,14 +18,14 @@ namespace javax.crypto.spec
 				return getIterationCount();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getIterationCount28799;
+		internal static global::MonoJavaBridge.MethodId _getIterationCount28800;
 		public virtual int getIterationCount()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec._getIterationCount28799);
+				return @__env.CallIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec._getIterationCount28800);
 			else
-				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec.staticClass, global::javax.crypto.spec.PBEParameterSpec._getIterationCount28799);
+				return @__env.CallNonVirtualIntMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec.staticClass, global::javax.crypto.spec.PBEParameterSpec._getIterationCount28800);
 		}
 		public new byte[] Salt
 		{
@@ -34,29 +34,29 @@ namespace javax.crypto.spec
 				return getSalt();
 			}
 		}
-		internal static global::MonoJavaBridge.MethodId _getSalt28800;
+		internal static global::MonoJavaBridge.MethodId _getSalt28801;
 		public virtual byte[] getSalt()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec._getSalt28800)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec._getSalt28801)) as byte[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec.staticClass, global::javax.crypto.spec.PBEParameterSpec._getSalt28800)) as byte[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<byte>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.spec.PBEParameterSpec.staticClass, global::javax.crypto.spec.PBEParameterSpec._getSalt28801)) as byte[];
 		}
-		internal static global::MonoJavaBridge.MethodId _PBEParameterSpec28801;
+		internal static global::MonoJavaBridge.MethodId _PBEParameterSpec28802;
 		public PBEParameterSpec(byte[] arg0, int arg1) : base(global::MonoJavaBridge.JNIEnv.ThreadEnv)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
-			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PBEParameterSpec.staticClass, global::javax.crypto.spec.PBEParameterSpec._PBEParameterSpec28801, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+			global::MonoJavaBridge.JniLocalHandle handle = @__env.NewObject(javax.crypto.spec.PBEParameterSpec.staticClass, global::javax.crypto.spec.PBEParameterSpec._PBEParameterSpec28802, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			Init(@__env, handle);
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.spec.PBEParameterSpec.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/spec/PBEParameterSpec"));
-			global::javax.crypto.spec.PBEParameterSpec._getIterationCount28799 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEParameterSpec.staticClass, "getIterationCount", "()I");
-			global::javax.crypto.spec.PBEParameterSpec._getSalt28800 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEParameterSpec.staticClass, "getSalt", "()[B");
-			global::javax.crypto.spec.PBEParameterSpec._PBEParameterSpec28801 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEParameterSpec.staticClass, "<init>", "([BI)V");
+			global::javax.crypto.spec.PBEParameterSpec._getIterationCount28800 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEParameterSpec.staticClass, "getIterationCount", "()I");
+			global::javax.crypto.spec.PBEParameterSpec._getSalt28801 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEParameterSpec.staticClass, "getSalt", "()[B");
+			global::javax.crypto.spec.PBEParameterSpec._PBEParameterSpec28802 = @__env.GetMethodIDNoThrow(global::javax.crypto.spec.PBEParameterSpec.staticClass, "<init>", "([BI)V");
 		}
 	}
 }

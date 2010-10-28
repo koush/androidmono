@@ -180,6 +180,10 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._post9864, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public bool post(global::java.lang.RunnableDelegate arg0)
+		{
+			return post((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _postAtTime9865;
 		public virtual bool postAtTime(java.lang.Runnable arg0, java.lang.Object arg1, long arg2)
 		{
@@ -188,6 +192,10 @@ namespace android.os
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.Handler._postAtTime9865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._postAtTime9865, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg2));
+		}
+		public bool postAtTime(global::java.lang.RunnableDelegate arg0, java.lang.Object arg1, long arg2)
+		{
+			return postAtTime((global::java.lang.RunnableDelegateWrapper)arg0, arg1, arg2);
 		}
 		internal static global::MonoJavaBridge.MethodId _postAtTime9866;
 		public virtual bool postAtTime(java.lang.Runnable arg0, long arg1)
@@ -198,6 +206,10 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._postAtTime9866, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public bool postAtTime(global::java.lang.RunnableDelegate arg0, long arg1)
+		{
+			return postAtTime((global::java.lang.RunnableDelegateWrapper)arg0, arg1);
+		}
 		internal static global::MonoJavaBridge.MethodId _postDelayed9867;
 		public virtual bool postDelayed(java.lang.Runnable arg0, long arg1)
 		{
@@ -206,6 +218,10 @@ namespace android.os
 				return @__env.CallBooleanMethod(this.JvmHandle, global::android.os.Handler._postDelayed9867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._postDelayed9867, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public bool postDelayed(global::java.lang.RunnableDelegate arg0, long arg1)
+		{
+			return postDelayed((global::java.lang.RunnableDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _postAtFrontOfQueue9868;
 		public virtual bool postAtFrontOfQueue(java.lang.Runnable arg0)
@@ -216,6 +232,10 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._postAtFrontOfQueue9868, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public bool postAtFrontOfQueue(global::java.lang.RunnableDelegate arg0)
+		{
+			return postAtFrontOfQueue((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _removeCallbacks9869;
 		public virtual void removeCallbacks(java.lang.Runnable arg0)
 		{
@@ -225,6 +245,10 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._removeCallbacks9869, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
+		public void removeCallbacks(global::java.lang.RunnableDelegate arg0)
+		{
+			removeCallbacks((global::java.lang.RunnableDelegateWrapper)arg0);
+		}
 		internal static global::MonoJavaBridge.MethodId _removeCallbacks9870;
 		public virtual void removeCallbacks(java.lang.Runnable arg0, java.lang.Object arg1)
 		{
@@ -233,6 +257,10 @@ namespace android.os
 				@__env.CallVoidMethod(this.JvmHandle, global::android.os.Handler._removeCallbacks9870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.os.Handler.staticClass, global::android.os.Handler._removeCallbacks9870, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+		}
+		public void removeCallbacks(global::java.lang.RunnableDelegate arg0, java.lang.Object arg1)
+		{
+			removeCallbacks((global::java.lang.RunnableDelegateWrapper)arg0, arg1);
 		}
 		internal static global::MonoJavaBridge.MethodId _sendMessage9871;
 		public virtual bool sendMessage(android.os.Message arg0)

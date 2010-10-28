@@ -17,20 +17,20 @@ namespace java.util.logging
 		internal Filter_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _isLoggable27951;
+		internal static global::MonoJavaBridge.MethodId _isLoggable27952;
 		bool java.util.logging.Filter.isLoggable(java.util.logging.LogRecord arg0)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.logging.Filter_._isLoggable27951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallBooleanMethod(this.JvmHandle, global::java.util.logging.Filter_._isLoggable27952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.logging.Filter_.staticClass, global::java.util.logging.Filter_._isLoggable27951, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this.JvmHandle, global::java.util.logging.Filter_.staticClass, global::java.util.logging.Filter_._isLoggable27952, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::java.util.logging.Filter_.staticClass = @__env.NewGlobalRef(@__env.FindClass("java/util/logging/Filter"));
-			global::java.util.logging.Filter_._isLoggable27951 = @__env.GetMethodIDNoThrow(global::java.util.logging.Filter_.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z");
+			global::java.util.logging.Filter_._isLoggable27952 = @__env.GetMethodIDNoThrow(global::java.util.logging.Filter_.staticClass, "isLoggable", "(Ljava/util/logging/LogRecord;)Z");
 		}
 	}
 }

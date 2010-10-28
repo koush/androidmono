@@ -282,6 +282,10 @@ namespace android.graphics.drawable
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._scheduleSelf5941, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
+		public void scheduleSelf(global::java.lang.RunnableDelegate arg0, long arg1)
+		{
+			scheduleSelf((global::java.lang.RunnableDelegateWrapper)arg0, arg1);
+		}
 		internal static global::MonoJavaBridge.MethodId _unscheduleSelf5942;
 		public virtual void unscheduleSelf(java.lang.Runnable arg0)
 		{
@@ -290,6 +294,10 @@ namespace android.graphics.drawable
 				@__env.CallVoidMethod(this.JvmHandle, global::android.graphics.drawable.Drawable._unscheduleSelf5942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._unscheduleSelf5942, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0));
+		}
+		public void unscheduleSelf(global::java.lang.RunnableDelegate arg0)
+		{
+			unscheduleSelf((global::java.lang.RunnableDelegateWrapper)arg0);
 		}
 		internal static global::MonoJavaBridge.MethodId _setAlpha5943;
 		public abstract void setAlpha(int arg0);

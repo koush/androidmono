@@ -19,40 +19,40 @@ namespace javax.net.ssl
 		internal X509TrustManager_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _checkClientTrusted30159;
+		internal static global::MonoJavaBridge.MethodId _checkClientTrusted30160;
 		void javax.net.ssl.X509TrustManager.checkClientTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_._checkClientTrusted30159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_._checkClientTrusted30160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._checkClientTrusted30159, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._checkClientTrusted30160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _checkServerTrusted30160;
+		internal static global::MonoJavaBridge.MethodId _checkServerTrusted30161;
 		void javax.net.ssl.X509TrustManager.checkServerTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1)
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_._checkServerTrusted30160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_._checkServerTrusted30161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._checkServerTrusted30160, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
+				@__env.CallNonVirtualVoidMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._checkServerTrusted30161, global::MonoJavaBridge.JavaBridge.ConvertToValue(arg0), global::MonoJavaBridge.JavaBridge.ConvertToValue(arg1));
 		}
-		internal static global::MonoJavaBridge.MethodId _getAcceptedIssuers30161;
+		internal static global::MonoJavaBridge.MethodId _getAcceptedIssuers30162;
 		global::java.security.cert.X509Certificate[] javax.net.ssl.X509TrustManager.getAcceptedIssuers()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.X509Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30161)) as java.security.cert.X509Certificate[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.X509Certificate>(@__env.CallObjectMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30162)) as java.security.cert.X509Certificate[];
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.X509Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30161)) as java.security.cert.X509Certificate[];
+				return global::MonoJavaBridge.JavaBridge.WrapJavaArrayObject<java.security.cert.X509Certificate>(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.net.ssl.X509TrustManager_.staticClass, global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30162)) as java.security.cert.X509Certificate[];
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.net.ssl.X509TrustManager_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/net/ssl/X509TrustManager"));
-			global::javax.net.ssl.X509TrustManager_._checkClientTrusted30159 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "checkClientTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V");
-			global::javax.net.ssl.X509TrustManager_._checkServerTrusted30160 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V");
-			global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30161 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "getAcceptedIssuers", "()[Ljava/security/cert/X509Certificate;");
+			global::javax.net.ssl.X509TrustManager_._checkClientTrusted30160 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "checkClientTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V");
+			global::javax.net.ssl.X509TrustManager_._checkServerTrusted30161 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V");
+			global::javax.net.ssl.X509TrustManager_._getAcceptedIssuers30162 = @__env.GetMethodIDNoThrow(global::javax.net.ssl.X509TrustManager_.staticClass, "getAcceptedIssuers", "()[Ljava/security/cert/X509Certificate;");
 		}
 	}
 }

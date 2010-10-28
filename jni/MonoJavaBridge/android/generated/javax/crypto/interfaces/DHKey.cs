@@ -17,20 +17,20 @@ namespace javax.crypto.interfaces
 		internal DHKey_(global::MonoJavaBridge.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::MonoJavaBridge.MethodId _getParams28735;
+		internal static global::MonoJavaBridge.MethodId _getParams28736;
 		global::javax.crypto.spec.DHParameterSpec javax.crypto.interfaces.DHKey.getParams()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_._getParams28735)) as javax.crypto.spec.DHParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
 			else
-				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_.staticClass, global::javax.crypto.interfaces.DHKey_._getParams28735)) as javax.crypto.spec.DHParameterSpec;
+				return global::MonoJavaBridge.JavaBridge.WrapJavaObject(@__env.CallNonVirtualObjectMethod(this.JvmHandle, global::javax.crypto.interfaces.DHKey_.staticClass, global::javax.crypto.interfaces.DHKey_._getParams28736)) as javax.crypto.spec.DHParameterSpec;
 		}
 		private static void InitJNI()
 		{
 			global::MonoJavaBridge.JNIEnv @__env = global::MonoJavaBridge.JNIEnv.ThreadEnv;
 			global::javax.crypto.interfaces.DHKey_.staticClass = @__env.NewGlobalRef(@__env.FindClass("javax/crypto/interfaces/DHKey"));
-			global::javax.crypto.interfaces.DHKey_._getParams28735 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;");
+			global::javax.crypto.interfaces.DHKey_._getParams28736 = @__env.GetMethodIDNoThrow(global::javax.crypto.interfaces.DHKey_.staticClass, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;");
 		}
 	}
 }

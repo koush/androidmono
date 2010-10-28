@@ -42,18 +42,6 @@ namespace MonoJavaBridge
             return version;
         }
 
-        public JavaVM GetJavaVM()
-        {
-            if (javaVM == null)
-            {
-                IntPtr jvm;
-                getJavaVM.Invoke(envPtr, out jvm);
-                ExceptionTest();
-                javaVM = new JavaVM(jvm);
-            }
-            return javaVM;
-        }
-
         #endregion
 
         #region reflection
@@ -67,8 +55,21 @@ namespace MonoJavaBridge
 
         public JniLocalHandle FindClass(string name)
         {
-            JniLocalHandle clazz = findClass.Invoke(envPtr, name);
-            ExceptionTest();
+            JniLocalHandle clazz;
+            if (JniGlobalHandle.IsNull(JavaVM.defaultVM.DefaultClassLoader)) {
+                clazz = findClass.Invoke(envPtr, name);
+                ExceptionTest();
+            }
+            else {
+                clazz = findClass.Invoke(envPtr, name);
+                if (ExceptionRead())
+                {
+                    Value value = new Value();
+                    value._object = NewString(name.Replace('/', '.'));
+                    clazz = CallObjectMethod(JavaVM.defaultVM.DefaultClassLoader, JavaVM.defaultVM.findClass, value);
+                    ExceptionTest();                    
+                }
+            }
             return clazz;
         }
 
@@ -840,7 +841,7 @@ namespace MonoJavaBridge
                 throw new ArgumentNullException("lobj");
             }
             JniGlobalHandleNs res = newGlobalRef(envPtr, lobj);
-            return new JniGlobalHandle(res.handle, GetJavaVM());
+            return new JniGlobalHandle(res.handle, JavaVM.defaultVM);
         }
 
         [SuppressUnmanagedCodeSecurity]
@@ -985,7 +986,7 @@ namespace MonoJavaBridge
             JniLocalHandle occurred = ExceptionOccurred();
             if (!JniLocalHandle.IsNull(occurred))
             {
-                ExceptionDescribe();
+                //ExceptionDescribe();
                 ExceptionClear();
                 Exception ex = JavaBridge.WrapJavaObject(occurred) as Exception;
                 throw ex;
