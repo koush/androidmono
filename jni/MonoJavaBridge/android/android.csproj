@@ -2351,7 +2351,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="android\" />
     <Folder Include="java\" />
     <Folder Include="java\lang\" />
   </ItemGroup>
