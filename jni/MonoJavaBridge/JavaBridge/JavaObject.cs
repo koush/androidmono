@@ -44,7 +44,8 @@ namespace MonoJavaBridge
         
         ~JavaObject()
         {
-            MonoJavaBridge.JavaBridge.AddToMortuary(this);
+            if (IsClrObject)
+                MonoJavaBridge.JavaBridge.AddToMortuary(this);
         }
     }
 }
